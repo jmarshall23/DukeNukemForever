@@ -9,6 +9,22 @@ entityDef player_doommarine {
    "hud"                "guis/hud.gui"
    "def_weapon0"		"weapon_pistol"
    "def_weapon1"		"weapon_pistol"
+   "def_weapon2"						""
+   "def_weapon3"						""
+   "def_weapon4"						""
+   "def_weapon5"						""
+   "def_weapon6"						""
+   "def_weapon7"						""
+   "def_weapon8"						""
+   "def_weapon9"						""
+   "def_weapon10"						""
+   "def_weapon11"						""
+   "def_weapon12"						""
+   "def_weapon13"						""	
+   "def_weapon14"						""
+   "def_weapon15"						""
+
+
 
    "bone_hips"	  "Legs"
    "bone_chest"	  "Torso"

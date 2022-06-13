@@ -74,6 +74,8 @@ void idMD5Anim::Free( void ) {
 	animLength	= 0;
 	name		= "";
 
+	renderModel = nullptr;
+
 	totaldelta.Zero();
 
 	jointInfo.Clear();
@@ -137,7 +139,7 @@ bool idMD5Anim::Reload( void ) {
 	filename = name;
 	Free();
 
-	return LoadAnim( filename );
+	return LoadAnim( filename, renderModel);
 }
 
 /*
@@ -155,7 +157,7 @@ size_t idMD5Anim::Allocated( void ) const {
 idMD5Anim::LoadAnim
 ====================
 */
-bool idMD5Anim::LoadAnim( const char *filename ) {
+bool idMD5Anim::LoadAnim( const char *filename, idRenderModel* model) {
 	int		version;
 	idLexer	parser( LEXFL_ALLOWPATHNAMES | LEXFL_NOSTRINGESCAPECHARS | LEXFL_NOSTRINGCONCAT );
 	idToken	token;
@@ -167,6 +169,8 @@ bool idMD5Anim::LoadAnim( const char *filename ) {
 	}
 
 	Free();
+
+	renderModel = model;
 
 	name = filename;
 
@@ -247,9 +251,15 @@ bool idMD5Anim::LoadAnim( const char *filename ) {
 	parser.ExpectTokenString( "{" );
 	bounds.SetGranularity( 1 );
 	bounds.SetNum( numFrames );
+
+	idBounds renderModelBounds = model->Bounds();
 	for( i = 0; i < numFrames; i++ ) {
-		parser.Parse1DMatrix( 3, bounds[ i ][ 0 ].ToFloatPtr() );
-		parser.Parse1DMatrix( 3, bounds[ i ][ 1 ].ToFloatPtr() );
+		idBounds discardBounds;
+
+		parser.Parse1DMatrix( 3, discardBounds[ 0 ].ToFloatPtr() );
+		parser.Parse1DMatrix( 3, discardBounds[ 1 ].ToFloatPtr() );
+
+		bounds[i] = renderModelBounds;
 	}
 	parser.ExpectTokenString( "}" );
 
@@ -950,7 +960,7 @@ void idAnimManager::Shutdown( void ) {
 idAnimManager::GetAnim
 ====================
 */
-idMD5Anim *idAnimManager::GetAnim( const char *name ) {
+idMD5Anim *idAnimManager::GetAnim(const char *name, idRenderModel* model) {
 	idMD5Anim **animptrptr;
 	idMD5Anim *anim;
 
@@ -968,7 +978,7 @@ idMD5Anim *idAnimManager::GetAnim( const char *name ) {
 		}
 
 		anim = new idMD5Anim();
-		if ( !anim->LoadAnim( filename ) ) {
+		if ( !anim->LoadAnim( filename, model ) ) {
 			gameLocal.Warning( "Couldn't load anim: '%s'", filename.c_str() );
 			delete anim;
 			anim = NULL;

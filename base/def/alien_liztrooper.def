@@ -1,0 +1,10 @@
+model alien_liztrooper
+{
+	mesh				models/characters/alien_Liztrooper/alien_liztrooper.md5mesh
+	anim af_pose		models/characters/alien_Liztrooper/alien_Liztrooper_IdleA.md5anim
+	anim ik_pose		models/characters/alien_Liztrooper/alien_Liztrooper_IdleA.md5anim
+
+	anim initial		models/characters/alien_Liztrooper/alien_Liztrooper_IdleA.md5anim
+
+	anim walk 			models/characters/alien_Liztrooper//alien_Liztrooper_walk.md5anim
+}

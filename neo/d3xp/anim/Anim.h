@@ -201,6 +201,9 @@ private:
 	idStr					name;
 	idVec3					totaldelta;
 	mutable int				ref_count;
+// jmarshall
+	idRenderModel*			renderModel;
+// jmarshall end
 
 public:
 							idMD5Anim();
@@ -210,7 +213,7 @@ public:
 	bool					Reload( void );
 	size_t					Allocated( void ) const;
 	size_t					Size( void ) const { return sizeof( *this ) + Allocated(); };
-	bool					LoadAnim( const char *filename );
+	bool					LoadAnim( const char *filename, idRenderModel *model );
 
 	void					IncreaseRefs( void ) const;
 	void					DecreaseRefs( void ) const;
@@ -573,7 +576,7 @@ public:
 	static bool					forceExport;
 
 	void						Shutdown( void );
-	idMD5Anim *					GetAnim( const char *name );
+	idMD5Anim *					GetAnim(const char *name, idRenderModel* model);
 	void						ReloadAnims( void );
 	void						ListAnims( void ) const;
 	int							JointIndex( const char *name );

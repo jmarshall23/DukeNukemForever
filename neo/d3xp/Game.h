@@ -247,7 +247,7 @@ public:
 	virtual const idMD5Anim *	ANIM_GetAnimFromEntityDef( const char *classname, const char *animname );
 	virtual int					ANIM_GetNumAnimsFromEntityDef( const idDict *args );
 	virtual const char *		ANIM_GetAnimNameFromEntityDef( const idDict *args, int animNum );
-	virtual const idMD5Anim *	ANIM_GetAnim( const char *fileName );
+	virtual const idMD5Anim *	ANIM_GetAnim( const char *fileName, idRenderModel *renderModel );
 	virtual int					ANIM_GetLength( const idMD5Anim *anim );
 	virtual int					ANIM_GetNumFrames( const idMD5Anim *anim );
 	virtual void				ANIM_CreateAnimFrame( const idRenderModel *model, const idMD5Anim *anim, int numJoints, idJointMat *frame, int time, const idVec3 &offset, bool remove_origin_offset );

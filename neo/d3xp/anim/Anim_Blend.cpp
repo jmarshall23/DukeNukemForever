@@ -2531,7 +2531,7 @@ bool idDeclModelDef::ParseAnim( idLexer &src, int numDefaultAnims ) {
 		}
 
 		// lookup the animation
-		md5anim = animationLib.GetAnim( token );
+		md5anim = animationLib.GetAnim( token, ModelHandle());
 		if ( !md5anim ) {
 			src.Warning( "Couldn't load anim '%s'", token.c_str() );
 			MakeDefault();
@@ -4939,8 +4939,8 @@ const char *idGameEdit::ANIM_GetAnimNameFromEntityDef( const idDict *args, int a
 idGameEdit::ANIM_GetAnim
 =====================
 */
-const idMD5Anim *idGameEdit::ANIM_GetAnim( const char *fileName ) {
-	return animationLib.GetAnim( fileName );
+const idMD5Anim *idGameEdit::ANIM_GetAnim( const char *fileName, idRenderModel* renderModel) {
+	return animationLib.GetAnim( fileName, renderModel);
 }
 
 /*
@@ -5084,7 +5084,7 @@ idRenderModel *idGameEdit::ANIM_CreateMeshForAnim( idRenderModel *model, const c
 			animname = args->GetString( va( "anim %s", animname ) );
 		}
 
-		md5anim = animationLib.GetAnim( animname );
+		md5anim = animationLib.GetAnim(animname, model);
 		offset.Zero();
 	}
 

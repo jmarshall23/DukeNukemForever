@@ -1730,6 +1730,7 @@ static classVariableInfo_t idMD5Anim_typeInfo[] = {
 	{ "idStr", "name", (intptr_t)(&((idMD5Anim *)0)->name), sizeof( ((idMD5Anim *)0)->name ) },
 	{ "idVec3", "totaldelta", (intptr_t)(&((idMD5Anim *)0)->totaldelta), sizeof( ((idMD5Anim *)0)->totaldelta ) },
 	{ "mutable int", "ref_count", (intptr_t)(&((idMD5Anim *)0)->ref_count), sizeof( ((idMD5Anim *)0)->ref_count ) },
+	{ "idRenderModel *", "renderModel", (intptr_t)(&((idMD5Anim *)0)->renderModel), sizeof( ((idMD5Anim *)0)->renderModel ) },
 	{ NULL, 0 }
 };
 

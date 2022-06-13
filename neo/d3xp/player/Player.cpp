@@ -4336,6 +4336,7 @@ void idPlayer::NextWeapon( void ) {
 		if ( w >= MAX_WEAPONS ) {
 			w = 0;
 		} 
+
 		weap = spawnArgs.GetString( va( "def_weapon%d", w ) );
 		if ( !spawnArgs.GetBool( va( "weapon%d_cycle", w ) ) ) {
 			continue;
