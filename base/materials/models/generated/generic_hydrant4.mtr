@@ -1,0 +1,14 @@
+models/generic/hydrant4/hydrant4_0
+{
+	diffusemap models/generic/hydrant4/hydrant4_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/hydrant4/hydrant4_1
+{
+	diffusemap models/generic/hydrant4/hydrant4_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

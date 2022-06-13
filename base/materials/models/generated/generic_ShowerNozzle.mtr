@@ -1,0 +1,14 @@
+models/generic/ShowerNozzle/ShowerNozzle_0
+{
+	diffusemap models/generic/ShowerNozzle/ShowerNozzle_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ShowerNozzle/ShowerNozzle_1
+{
+	diffusemap models/generic/ShowerNozzle/ShowerNozzle_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

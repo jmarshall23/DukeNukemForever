@@ -1,0 +1,28 @@
+models/characters/BUDDbot/BuddBot_0
+{
+	diffusemap models/characters/BUDDbot/BuddBot_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/BUDDbot/BuddBot_1
+{
+	diffusemap models/characters/BUDDbot/BuddBot_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/BUDDbot/BuddBot_2
+{
+	diffusemap models/characters/BUDDbot/BuddBot_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/BUDDbot/BuddBot_3
+{
+	diffusemap models/characters/BUDDbot/BuddBot_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

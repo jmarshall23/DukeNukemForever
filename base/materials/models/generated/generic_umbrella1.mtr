@@ -1,0 +1,14 @@
+models/generic/umbrella1/umbrella1_0
+{
+	diffusemap models/generic/umbrella1/umbrella1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/umbrella1/umbrella1_1
+{
+	diffusemap models/generic/umbrella1/umbrella1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

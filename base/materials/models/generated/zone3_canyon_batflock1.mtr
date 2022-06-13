@@ -1,0 +1,7 @@
+models/zone3_canyon/batflock1/batflock1_0
+{
+	diffusemap models/zone3_canyon/batflock1/batflock1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

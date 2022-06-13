@@ -1,0 +1,35 @@
+models/weapons/Turret_Ceiling/Turret_Ceiling_0
+{
+	diffusemap models/weapons/Turret_Ceiling/Turret_Ceiling_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Ceiling/Turret_Ceiling_1
+{
+	diffusemap models/weapons/Turret_Ceiling/Turret_Ceiling_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Ceiling/Turret_Ceiling_2
+{
+	diffusemap models/weapons/Turret_Ceiling/Turret_Ceiling_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Ceiling/Turret_Ceiling_3
+{
+	diffusemap models/weapons/Turret_Ceiling/Turret_Ceiling_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Ceiling/Turret_Ceiling_4
+{
+	diffusemap models/weapons/Turret_Ceiling/Turret_Ceiling_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

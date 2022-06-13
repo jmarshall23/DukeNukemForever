@@ -1,0 +1,42 @@
+models/characters/alien_snatcher/alien_snatcher.obj
+{
+	diffusemap models/characters/alien_snatcher/alien_snatcher.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_snatcher/alien_snatcher_0
+{
+	diffusemap models/characters/alien_snatcher/alien_snatcher_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_snatcher/alien_snatcher_1
+{
+	diffusemap models/characters/alien_snatcher/alien_snatcher_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_snatcher/alien_snatcher_2
+{
+	diffusemap models/characters/alien_snatcher/alien_snatcher_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_snatcher/alien_snatcher_3
+{
+	diffusemap models/characters/alien_snatcher/alien_snatcher_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_snatcher/alien_snatcher_4
+{
+	diffusemap models/characters/alien_snatcher/alien_snatcher_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

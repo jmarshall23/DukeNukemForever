@@ -1,0 +1,28 @@
+models/weapons/m16/M16_0
+{
+	diffusemap models/weapons/m16/M16_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/m16/M16_1
+{
+	diffusemap models/weapons/m16/M16_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/m16/M16_2
+{
+	diffusemap models/weapons/m16/M16_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/m16/M16_3
+{
+	diffusemap models/weapons/m16/M16_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

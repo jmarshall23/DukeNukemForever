@@ -1,0 +1,14 @@
+models/generic/Switch_TurnA/Switch_TurnA_0
+{
+	diffusemap models/generic/Switch_TurnA/Switch_TurnA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Switch_TurnA/Switch_TurnA_1
+{
+	diffusemap models/generic/Switch_TurnA/Switch_TurnA_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

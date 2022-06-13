@@ -1,0 +1,7 @@
+models/generic/digital_clock2/digital_clock2_0
+{
+	diffusemap models/generic/digital_clock2/digital_clock2_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

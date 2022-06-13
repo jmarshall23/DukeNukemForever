@@ -1,0 +1,49 @@
+models/weapons/RPG/RPG_0
+{
+	diffusemap models/weapons/RPG/RPG_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/RPG/RPG_1
+{
+	diffusemap models/weapons/RPG/RPG_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/RPG/RPG_2
+{
+	diffusemap models/weapons/RPG/RPG_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/RPG/RPG_3
+{
+	diffusemap models/weapons/RPG/RPG_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/RPG/RPG_4
+{
+	diffusemap models/weapons/RPG/RPG_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/RPG/RPG_5
+{
+	diffusemap models/weapons/RPG/RPG_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/RPG/RPG_6
+{
+	diffusemap models/weapons/RPG/RPG_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

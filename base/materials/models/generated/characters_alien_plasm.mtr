@@ -1,0 +1,35 @@
+models/characters/alien_plasm/alien_plasm_0
+{
+	diffusemap models/characters/alien_plasm/alien_plasm_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_plasm/alien_plasm_1
+{
+	diffusemap models/characters/alien_plasm/alien_plasm_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_plasm/alien_plasm_2
+{
+	diffusemap models/characters/alien_plasm/alien_plasm_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_plasm/alien_plasm_3
+{
+	diffusemap models/characters/alien_plasm/alien_plasm_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_plasm/alien_plasm_4
+{
+	diffusemap models/characters/alien_plasm/alien_plasm_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

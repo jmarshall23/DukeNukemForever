@@ -1,0 +1,14 @@
+models/generic/ShowerCurtain/ShowerCurtain_0
+{
+	diffusemap models/generic/ShowerCurtain/ShowerCurtain_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ShowerCurtain/ShowerCurtain_1
+{
+	diffusemap models/generic/ShowerCurtain/ShowerCurtain_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

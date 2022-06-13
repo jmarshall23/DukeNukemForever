@@ -1,0 +1,7 @@
+models/weapons/shotbox_cl_reg/shotbox_cl_reg_0
+{
+	diffusemap models/weapons/shotbox_cl_reg/shotbox_cl_reg_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

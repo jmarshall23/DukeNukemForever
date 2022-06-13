@@ -1,0 +1,28 @@
+models/characters/Edf_heavyweps/EDF_heavyweps_0
+{
+	diffusemap models/characters/Edf_heavyweps/EDF_heavyweps_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_heavyweps/EDF_heavyweps_1
+{
+	diffusemap models/characters/Edf_heavyweps/EDF_heavyweps_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_heavyweps/EDF_heavyweps_2
+{
+	diffusemap models/characters/Edf_heavyweps/EDF_heavyweps_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_heavyweps/EDF_heavyweps_3
+{
+	diffusemap models/characters/Edf_heavyweps/EDF_heavyweps_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

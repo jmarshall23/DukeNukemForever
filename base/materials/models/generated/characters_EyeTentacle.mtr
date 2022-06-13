@@ -1,0 +1,28 @@
+models/characters/EyeTentacle/EyeTentacle.obj
+{
+	diffusemap models/characters/EyeTentacle/EyeTentacle.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EyeTentacle/EyeTentacle_0
+{
+	diffusemap models/characters/EyeTentacle/EyeTentacle_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EyeTentacle/EyeTentacle_1
+{
+	diffusemap models/characters/EyeTentacle/EyeTentacle_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EyeTentacle/EyeTentacle_2
+{
+	diffusemap models/characters/EyeTentacle/EyeTentacle_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,14 @@
+models/generic/emergencylight1/emergencylight1_0
+{
+	diffusemap models/generic/emergencylight1/emergencylight1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/emergencylight1/emergencylight1_1
+{
+	diffusemap models/generic/emergencylight1/emergencylight1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

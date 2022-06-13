@@ -1,0 +1,49 @@
+models/weapons/Flamethrower_H/Flamethrower_H_0
+{
+	diffusemap models/weapons/Flamethrower_H/Flamethrower_H_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Flamethrower_H/Flamethrower_H_1
+{
+	diffusemap models/weapons/Flamethrower_H/Flamethrower_H_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Flamethrower_H/Flamethrower_H_2
+{
+	diffusemap models/weapons/Flamethrower_H/Flamethrower_H_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Flamethrower_H/Flamethrower_H_3
+{
+	diffusemap models/weapons/Flamethrower_H/Flamethrower_H_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Flamethrower_H/Flamethrower_H_4
+{
+	diffusemap models/weapons/Flamethrower_H/Flamethrower_H_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Flamethrower_H/Flamethrower_H_5
+{
+	diffusemap models/weapons/Flamethrower_H/Flamethrower_H_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Flamethrower_H/Flamethrower_H_6
+{
+	diffusemap models/weapons/Flamethrower_H/Flamethrower_H_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

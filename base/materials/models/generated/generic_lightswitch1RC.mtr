@@ -1,0 +1,14 @@
+models/generic/lightswitch1RC/lightswitch1RC_0
+{
+	diffusemap models/generic/lightswitch1RC/lightswitch1RC_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/lightswitch1RC/lightswitch1RC_1
+{
+	diffusemap models/generic/lightswitch1RC/lightswitch1RC_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

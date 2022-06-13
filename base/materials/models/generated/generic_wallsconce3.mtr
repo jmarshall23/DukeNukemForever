@@ -1,0 +1,14 @@
+models/generic/wallsconce3/wallsconce3_0
+{
+	diffusemap models/generic/wallsconce3/wallsconce3_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/wallsconce3/wallsconce3_1
+{
+	diffusemap models/generic/wallsconce3/wallsconce3_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

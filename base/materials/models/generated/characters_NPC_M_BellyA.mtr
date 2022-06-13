@@ -1,0 +1,35 @@
+models/characters/NPC_M_BellyA/NPC_M_BellyA_0
+{
+	diffusemap models/characters/NPC_M_BellyA/NPC_M_BellyA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_BellyA/NPC_M_BellyA_1
+{
+	diffusemap models/characters/NPC_M_BellyA/NPC_M_BellyA_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_BellyA/NPC_M_BellyA_2
+{
+	diffusemap models/characters/NPC_M_BellyA/NPC_M_BellyA_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_BellyA/NPC_M_BellyA_3
+{
+	diffusemap models/characters/NPC_M_BellyA/NPC_M_BellyA_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_BellyA/NPC_M_BellyA_4
+{
+	diffusemap models/characters/NPC_M_BellyA/NPC_M_BellyA_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

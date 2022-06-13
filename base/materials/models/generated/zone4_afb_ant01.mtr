@@ -1,0 +1,7 @@
+models/zone4_afb/ant01/ant01_0
+{
+	diffusemap models/zone4_afb/ant01/ant01_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

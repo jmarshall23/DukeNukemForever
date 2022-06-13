@@ -1,0 +1,28 @@
+models/characters/NPC_M_Anchorman/NPC_M_Anchorman_0
+{
+	diffusemap models/characters/NPC_M_Anchorman/NPC_M_Anchorman_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_Anchorman/NPC_M_Anchorman_1
+{
+	diffusemap models/characters/NPC_M_Anchorman/NPC_M_Anchorman_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_Anchorman/NPC_M_Anchorman_2
+{
+	diffusemap models/characters/NPC_M_Anchorman/NPC_M_Anchorman_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_Anchorman/NPC_M_Anchorman_3
+{
+	diffusemap models/characters/NPC_M_Anchorman/NPC_M_Anchorman_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

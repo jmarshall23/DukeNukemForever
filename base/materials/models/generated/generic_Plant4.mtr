@@ -1,0 +1,7 @@
+models/generic/Plant4/Plant4_0
+{
+	diffusemap models/generic/Plant4/Plant4_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

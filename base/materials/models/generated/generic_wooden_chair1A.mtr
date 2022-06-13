@@ -1,0 +1,14 @@
+models/generic/wooden_chair1A/wooden_chair1A_0
+{
+	diffusemap models/generic/wooden_chair1A/wooden_chair1A_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/wooden_chair1A/wooden_chair1A_1
+{
+	diffusemap models/generic/wooden_chair1A/wooden_chair1A_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

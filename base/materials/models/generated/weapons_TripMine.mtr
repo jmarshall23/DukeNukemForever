@@ -1,0 +1,42 @@
+models/weapons/TripMine/TripMine_0
+{
+	diffusemap models/weapons/TripMine/TripMine_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/TripMine/TripMine_1
+{
+	diffusemap models/weapons/TripMine/TripMine_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/TripMine/TripMine_2
+{
+	diffusemap models/weapons/TripMine/TripMine_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/TripMine/TripMine_3
+{
+	diffusemap models/weapons/TripMine/TripMine_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/TripMine/TripMine_4
+{
+	diffusemap models/weapons/TripMine/TripMine_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/TripMine/TripMine_5
+{
+	diffusemap models/weapons/TripMine/TripMine_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

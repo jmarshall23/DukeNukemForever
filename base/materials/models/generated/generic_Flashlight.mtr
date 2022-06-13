@@ -1,0 +1,21 @@
+models/generic/Flashlight/Flashlight_0
+{
+	diffusemap models/generic/Flashlight/Flashlight_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Flashlight/Flashlight_1
+{
+	diffusemap models/generic/Flashlight/Flashlight_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Flashlight/Flashlight_2
+{
+	diffusemap models/generic/Flashlight/Flashlight_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

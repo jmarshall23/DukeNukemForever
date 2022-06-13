@@ -1,0 +1,35 @@
+models/characters/NPC_M_FatA/NPC_M_FatA_0
+{
+	diffusemap models/characters/NPC_M_FatA/NPC_M_FatA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_FatA/NPC_M_FatA_1
+{
+	diffusemap models/characters/NPC_M_FatA/NPC_M_FatA_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_FatA/NPC_M_FatA_2
+{
+	diffusemap models/characters/NPC_M_FatA/NPC_M_FatA_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_FatA/NPC_M_FatA_3
+{
+	diffusemap models/characters/NPC_M_FatA/NPC_M_FatA_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_FatA/NPC_M_FatA_4
+{
+	diffusemap models/characters/NPC_M_FatA/NPC_M_FatA_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

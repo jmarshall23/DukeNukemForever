@@ -1,0 +1,42 @@
+models/hands/keithcontrols/keithcontrols_0
+{
+	diffusemap models/hands/keithcontrols/keithcontrols_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/keithcontrols/keithcontrols_1
+{
+	diffusemap models/hands/keithcontrols/keithcontrols_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/keithcontrols/keithcontrols_2
+{
+	diffusemap models/hands/keithcontrols/keithcontrols_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/keithcontrols/keithcontrols_3
+{
+	diffusemap models/hands/keithcontrols/keithcontrols_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/keithcontrols/keithcontrols_4
+{
+	diffusemap models/hands/keithcontrols/keithcontrols_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/keithcontrols/keithcontrols_5
+{
+	diffusemap models/hands/keithcontrols/keithcontrols_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

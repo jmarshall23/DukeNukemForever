@@ -1,0 +1,28 @@
+models/weapons/MultibombDetonator/MultibombDetonator_0
+{
+	diffusemap models/weapons/MultibombDetonator/MultibombDetonator_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/MultibombDetonator/MultibombDetonator_1
+{
+	diffusemap models/weapons/MultibombDetonator/MultibombDetonator_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/MultibombDetonator/MultibombDetonator_2
+{
+	diffusemap models/weapons/MultibombDetonator/MultibombDetonator_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/MultibombDetonator/MultibombDetonator_3
+{
+	diffusemap models/weapons/MultibombDetonator/MultibombDetonator_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

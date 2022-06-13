@@ -1,0 +1,14 @@
+models/generic/dollarbill/dollarbill_0
+{
+	diffusemap models/generic/dollarbill/dollarbill_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/dollarbill/dollarbill_1
+{
+	diffusemap models/generic/dollarbill/dollarbill_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

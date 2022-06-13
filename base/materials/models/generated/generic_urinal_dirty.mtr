@@ -1,0 +1,14 @@
+models/generic/urinal_dirty/urinal_dirty_0
+{
+	diffusemap models/generic/urinal_dirty/urinal_dirty_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/urinal_dirty/urinal_dirty_1
+{
+	diffusemap models/generic/urinal_dirty/urinal_dirty_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

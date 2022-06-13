@@ -1,0 +1,28 @@
+models/hands/hawg/hawg_0
+{
+	diffusemap models/hands/hawg/hawg_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/hawg/hawg_1
+{
+	diffusemap models/hands/hawg/hawg_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/hawg/hawg_2
+{
+	diffusemap models/hands/hawg/hawg_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/hawg/hawg_3
+{
+	diffusemap models/hands/hawg/hawg_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

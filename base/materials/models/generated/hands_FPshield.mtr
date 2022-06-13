@@ -1,0 +1,42 @@
+models/hands/FPshield/FPshield_0
+{
+	diffusemap models/hands/FPshield/FPshield_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/FPshield/FPshield_1
+{
+	diffusemap models/hands/FPshield/FPshield_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/FPshield/FPshield_2
+{
+	diffusemap models/hands/FPshield/FPshield_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/FPshield/FPshield_3
+{
+	diffusemap models/hands/FPshield/FPshield_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/FPshield/FPshield_4
+{
+	diffusemap models/hands/FPshield/FPshield_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/FPshield/FPshield_5
+{
+	diffusemap models/hands/FPshield/FPshield_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

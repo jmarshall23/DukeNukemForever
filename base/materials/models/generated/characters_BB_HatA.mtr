@@ -1,0 +1,14 @@
+models/characters/BB_HatA/BB_HatA.obj
+{
+	diffusemap models/characters/BB_HatA/BB_HatA.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/BB_HatA/BB_HatA_0
+{
+	diffusemap models/characters/BB_HatA/BB_HatA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

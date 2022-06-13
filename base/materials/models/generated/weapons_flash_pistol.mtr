@@ -1,0 +1,14 @@
+models/weapons/flash_pistol/flash_pistol_0
+{
+	diffusemap models/weapons/flash_pistol/flash_pistol_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/flash_pistol/flash_pistol_1
+{
+	diffusemap models/weapons/flash_pistol/flash_pistol_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

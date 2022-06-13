@@ -1,0 +1,14 @@
+models/generic/firestrobe_whte/firestrobe_whte_0
+{
+	diffusemap models/generic/firestrobe_whte/firestrobe_whte_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/firestrobe_whte/firestrobe_whte_1
+{
+	diffusemap models/generic/firestrobe_whte/firestrobe_whte_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

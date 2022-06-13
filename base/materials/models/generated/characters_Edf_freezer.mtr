@@ -1,0 +1,28 @@
+models/characters/Edf_freezer/EDF_freezer_0
+{
+	diffusemap models/characters/Edf_freezer/EDF_freezer_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_freezer/EDF_freezer_1
+{
+	diffusemap models/characters/Edf_freezer/EDF_freezer_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_freezer/EDF_freezer_2
+{
+	diffusemap models/characters/Edf_freezer/EDF_freezer_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_freezer/EDF_freezer_3
+{
+	diffusemap models/characters/Edf_freezer/EDF_freezer_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

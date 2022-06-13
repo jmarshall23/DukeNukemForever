@@ -1,0 +1,28 @@
+models/characters/alien_GreyGood/alien_GreyGood_0
+{
+	diffusemap models/characters/alien_GreyGood/alien_GreyGood_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_GreyGood/alien_GreyGood_1
+{
+	diffusemap models/characters/alien_GreyGood/alien_GreyGood_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_GreyGood/alien_GreyGood_2
+{
+	diffusemap models/characters/alien_GreyGood/alien_GreyGood_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_GreyGood/alien_GreyGood_3
+{
+	diffusemap models/characters/alien_GreyGood/alien_GreyGood_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

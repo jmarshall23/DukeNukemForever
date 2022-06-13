@@ -1,0 +1,63 @@
+models/weapons/IceCannon/IceCannon_0
+{
+	diffusemap models/weapons/IceCannon/IceCannon_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_1
+{
+	diffusemap models/weapons/IceCannon/IceCannon_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_2
+{
+	diffusemap models/weapons/IceCannon/IceCannon_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_3
+{
+	diffusemap models/weapons/IceCannon/IceCannon_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_4
+{
+	diffusemap models/weapons/IceCannon/IceCannon_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_5
+{
+	diffusemap models/weapons/IceCannon/IceCannon_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_6
+{
+	diffusemap models/weapons/IceCannon/IceCannon_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_7
+{
+	diffusemap models/weapons/IceCannon/IceCannon_7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/IceCannon/IceCannon_8
+{
+	diffusemap models/weapons/IceCannon/IceCannon_8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

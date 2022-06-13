@@ -1,0 +1,14 @@
+models/characters/EDFshield/EDFshield.obj
+{
+	diffusemap models/characters/EDFshield/EDFshield.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDFshield/EDFshield_0
+{
+	diffusemap models/characters/EDFshield/EDFshield_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,35 @@
+models/zone2_dam/generator_dam/generator_dam_0
+{
+	diffusemap models/zone2_dam/generator_dam/generator_dam_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/generator_dam/generator_dam_1
+{
+	diffusemap models/zone2_dam/generator_dam/generator_dam_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/generator_dam/generator_dam_2
+{
+	diffusemap models/zone2_dam/generator_dam/generator_dam_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/generator_dam/generator_dam_3
+{
+	diffusemap models/zone2_dam/generator_dam/generator_dam_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/generator_dam/generator_dam_4
+{
+	diffusemap models/zone2_dam/generator_dam/generator_dam_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

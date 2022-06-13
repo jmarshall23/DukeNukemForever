@@ -1,0 +1,28 @@
+models/generic/CardboardBoxA/CardboardBoxA_0
+{
+	diffusemap models/generic/CardboardBoxA/CardboardBoxA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/CardboardBoxA/CardboardBoxA_1
+{
+	diffusemap models/generic/CardboardBoxA/CardboardBoxA_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/CardboardBoxA/CardboardBoxA_2
+{
+	diffusemap models/generic/CardboardBoxA/CardboardBoxA_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/CardboardBoxA/CardboardBoxA_3
+{
+	diffusemap models/generic/CardboardBoxA/CardboardBoxA_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

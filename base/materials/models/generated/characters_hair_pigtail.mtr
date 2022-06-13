@@ -1,0 +1,7 @@
+models/characters/hair_pigtail/hair_pigtail_0
+{
+	diffusemap models/characters/hair_pigtail/hair_pigtail_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

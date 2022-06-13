@@ -1,0 +1,7 @@
+models/zone2_dam/column416/column416_0
+{
+	diffusemap models/zone2_dam/column416/column416_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

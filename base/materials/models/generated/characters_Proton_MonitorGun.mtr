@@ -1,0 +1,14 @@
+models/characters/Proton_MonitorGun/Proton_MonitorGun.obj
+{
+	diffusemap models/characters/Proton_MonitorGun/Proton_MonitorGun.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Proton_MonitorGun/Proton_MonitorGun_0
+{
+	diffusemap models/characters/Proton_MonitorGun/Proton_MonitorGun_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

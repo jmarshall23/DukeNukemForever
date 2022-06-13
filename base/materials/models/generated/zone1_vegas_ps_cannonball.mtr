@@ -1,0 +1,7 @@
+models/zone1_vegas/ps_cannonball/ps_cannonball_0
+{
+	diffusemap models/zone1_vegas/ps_cannonball/ps_cannonball_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

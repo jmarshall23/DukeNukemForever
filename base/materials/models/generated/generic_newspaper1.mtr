@@ -1,0 +1,7 @@
+models/generic/newspaper1/newspaper1_0
+{
+	diffusemap models/generic/newspaper1/newspaper1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

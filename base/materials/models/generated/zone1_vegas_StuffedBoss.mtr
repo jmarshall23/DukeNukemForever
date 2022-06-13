@@ -1,0 +1,28 @@
+models/zone1_vegas/StuffedBoss/stuffedboss_0
+{
+	diffusemap models/zone1_vegas/StuffedBoss/stuffedboss_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/StuffedBoss/stuffedboss_1
+{
+	diffusemap models/zone1_vegas/StuffedBoss/stuffedboss_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/StuffedBoss/stuffedboss_2
+{
+	diffusemap models/zone1_vegas/StuffedBoss/stuffedboss_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/StuffedBoss/stuffedboss_3
+{
+	diffusemap models/zone1_vegas/StuffedBoss/stuffedboss_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

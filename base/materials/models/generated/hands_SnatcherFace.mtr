@@ -1,0 +1,42 @@
+models/hands/SnatcherFace/SnatcherFace_0
+{
+	diffusemap models/hands/SnatcherFace/SnatcherFace_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/SnatcherFace/SnatcherFace_1
+{
+	diffusemap models/hands/SnatcherFace/SnatcherFace_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/SnatcherFace/SnatcherFace_2
+{
+	diffusemap models/hands/SnatcherFace/SnatcherFace_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/SnatcherFace/SnatcherFace_3
+{
+	diffusemap models/hands/SnatcherFace/SnatcherFace_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/SnatcherFace/SnatcherFace_4
+{
+	diffusemap models/hands/SnatcherFace/SnatcherFace_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/SnatcherFace/SnatcherFace_5
+{
+	diffusemap models/hands/SnatcherFace/SnatcherFace_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

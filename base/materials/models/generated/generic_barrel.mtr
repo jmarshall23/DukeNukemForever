@@ -1,0 +1,14 @@
+models/generic/barrel/Barrel_0
+{
+	diffusemap models/generic/barrel/Barrel_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/barrel/Barrel_1
+{
+	diffusemap models/generic/barrel/Barrel_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

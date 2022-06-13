@@ -1,0 +1,14 @@
+models/dukeitems/Jetpack2/JetPack2_0
+{
+	diffusemap models/dukeitems/Jetpack2/JetPack2_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/dukeitems/Jetpack2/JetPack2_1
+{
+	diffusemap models/dukeitems/Jetpack2/JetPack2_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

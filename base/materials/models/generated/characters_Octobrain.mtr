@@ -1,0 +1,35 @@
+models/characters/Octobrain/Octobrain_0
+{
+	diffusemap models/characters/Octobrain/Octobrain_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Octobrain/Octobrain_1
+{
+	diffusemap models/characters/Octobrain/Octobrain_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Octobrain/Octobrain_2
+{
+	diffusemap models/characters/Octobrain/Octobrain_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Octobrain/Octobrain_3
+{
+	diffusemap models/characters/Octobrain/Octobrain_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Octobrain/Octobrain_4
+{
+	diffusemap models/characters/Octobrain/Octobrain_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

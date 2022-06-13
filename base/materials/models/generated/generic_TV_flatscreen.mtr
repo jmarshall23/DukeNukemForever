@@ -1,0 +1,14 @@
+models/generic/TV_flatscreen/TV_flatscreen_0
+{
+	diffusemap models/generic/TV_flatscreen/TV_flatscreen_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/TV_flatscreen/TV_flatscreen_1
+{
+	diffusemap models/generic/TV_flatscreen/TV_flatscreen_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,35 @@
+models/characters/Edf_sapper/EDF_sapper_0
+{
+	diffusemap models/characters/Edf_sapper/EDF_sapper_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_sapper/EDF_sapper_1
+{
+	diffusemap models/characters/Edf_sapper/EDF_sapper_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_sapper/EDF_sapper_2
+{
+	diffusemap models/characters/Edf_sapper/EDF_sapper_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_sapper/EDF_sapper_3
+{
+	diffusemap models/characters/Edf_sapper/EDF_sapper_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_sapper/EDF_sapper_4
+{
+	diffusemap models/characters/Edf_sapper/EDF_sapper_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

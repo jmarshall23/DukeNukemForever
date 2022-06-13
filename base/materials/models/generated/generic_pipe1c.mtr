@@ -1,0 +1,14 @@
+models/generic/pipe1c/pipe1c_0
+{
+	diffusemap models/generic/pipe1c/pipe1c_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/pipe1c/pipe1c_1
+{
+	diffusemap models/generic/pipe1c/pipe1c_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

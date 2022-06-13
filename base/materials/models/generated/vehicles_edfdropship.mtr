@@ -1,0 +1,28 @@
+models/vehicles/edfdropship/edfdropship_0
+{
+	diffusemap models/vehicles/edfdropship/edfdropship_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edfdropship/edfdropship_1
+{
+	diffusemap models/vehicles/edfdropship/edfdropship_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edfdropship/edfdropship_2
+{
+	diffusemap models/vehicles/edfdropship/edfdropship_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edfdropship/edfdropship_3
+{
+	diffusemap models/vehicles/edfdropship/edfdropship_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,28 @@
+models/weapons/pistol/Pistol_0
+{
+	diffusemap models/weapons/pistol/Pistol_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/pistol/Pistol_1
+{
+	diffusemap models/weapons/pistol/Pistol_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/pistol/Pistol_2
+{
+	diffusemap models/weapons/pistol/Pistol_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/pistol/Pistol_3
+{
+	diffusemap models/weapons/pistol/Pistol_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

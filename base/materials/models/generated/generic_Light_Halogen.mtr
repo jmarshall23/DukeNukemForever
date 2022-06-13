@@ -1,0 +1,14 @@
+models/generic/Light_Halogen/light_halogen_0
+{
+	diffusemap models/generic/Light_Halogen/light_halogen_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Light_Halogen/light_halogen_1
+{
+	diffusemap models/generic/Light_Halogen/light_halogen_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

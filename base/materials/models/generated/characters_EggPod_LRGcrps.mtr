@@ -1,0 +1,35 @@
+models/characters/EggPod_LRGcrps/EggPod_LRGcrps.obj
+{
+	diffusemap models/characters/EggPod_LRGcrps/EggPod_LRGcrps.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EggPod_LRGcrps/EggPod_LRGcrps_0
+{
+	diffusemap models/characters/EggPod_LRGcrps/EggPod_LRGcrps_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EggPod_LRGcrps/EggPod_LRGcrps_1
+{
+	diffusemap models/characters/EggPod_LRGcrps/EggPod_LRGcrps_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EggPod_LRGcrps/EggPod_LRGcrps_2
+{
+	diffusemap models/characters/EggPod_LRGcrps/EggPod_LRGcrps_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EggPod_LRGcrps/EggPod_LRGcrps_3
+{
+	diffusemap models/characters/EggPod_LRGcrps/EggPod_LRGcrps_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

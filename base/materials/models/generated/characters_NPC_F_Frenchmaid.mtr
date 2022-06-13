@@ -1,0 +1,35 @@
+models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_0
+{
+	diffusemap models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_1
+{
+	diffusemap models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_2
+{
+	diffusemap models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_3
+{
+	diffusemap models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_4
+{
+	diffusemap models/characters/NPC_F_Frenchmaid/NPC_F_Frenchmaid_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

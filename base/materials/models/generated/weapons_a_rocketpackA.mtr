@@ -1,0 +1,7 @@
+models/weapons/a_rocketpackA/a_rocketpackA_0
+{
+	diffusemap models/weapons/a_rocketpackA/a_rocketpackA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

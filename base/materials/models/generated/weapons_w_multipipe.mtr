@@ -1,0 +1,21 @@
+models/weapons/w_multipipe/w_multipipe_0
+{
+	diffusemap models/weapons/w_multipipe/w_multipipe_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/w_multipipe/w_multipipe_1
+{
+	diffusemap models/weapons/w_multipipe/w_multipipe_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/w_multipipe/w_multipipe_2
+{
+	diffusemap models/weapons/w_multipipe/w_multipipe_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

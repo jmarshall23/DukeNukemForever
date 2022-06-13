@@ -1,0 +1,14 @@
+models/characters/GenericTentacle/GenericTentacle.obj
+{
+	diffusemap models/characters/GenericTentacle/GenericTentacle.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/GenericTentacle/GenericTentacle_0
+{
+	diffusemap models/characters/GenericTentacle/GenericTentacle_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

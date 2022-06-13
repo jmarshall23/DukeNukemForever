@@ -1,0 +1,14 @@
+models/c_FX/SnatcherRubble_Rocks/SnatcherRubble_Rocks_0
+{
+	diffusemap models/c_FX/SnatcherRubble_Rocks/SnatcherRubble_Rocks_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/SnatcherRubble_Rocks/SnatcherRubble_Rocks_1
+{
+	diffusemap models/c_FX/SnatcherRubble_Rocks/SnatcherRubble_Rocks_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

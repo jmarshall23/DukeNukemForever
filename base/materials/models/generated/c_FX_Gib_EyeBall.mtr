@@ -1,0 +1,7 @@
+models/c_FX/Gib_EyeBall/Gib_EyeBall_0
+{
+	diffusemap models/c_FX/Gib_EyeBall/Gib_EyeBall_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

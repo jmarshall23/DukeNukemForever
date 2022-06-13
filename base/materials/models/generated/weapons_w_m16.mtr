@@ -1,0 +1,7 @@
+models/weapons/w_m16/w_m16_0
+{
+	diffusemap models/weapons/w_m16/w_m16_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

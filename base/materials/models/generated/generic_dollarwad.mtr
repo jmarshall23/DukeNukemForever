@@ -1,0 +1,14 @@
+models/generic/dollarwad/dollarwad_0
+{
+	diffusemap models/generic/dollarwad/dollarwad_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/dollarwad/dollarwad_1
+{
+	diffusemap models/generic/dollarwad/dollarwad_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

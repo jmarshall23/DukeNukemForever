@@ -1,0 +1,7 @@
+models/zone5_area51/radar_dish_big1/radar_dish_big1_0
+{
+	diffusemap models/zone5_area51/radar_dish_big1/radar_dish_big1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

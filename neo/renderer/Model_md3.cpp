@@ -76,9 +76,12 @@ void idRenderModelMD3::InitFromFile( const char *fileName ) {
 				 fileName, version, MD3_VERSION);
 		return;
 	}
+// jmarshall - didn't write this out right, but not needed so just set to size of file.
+	pinmodel->ofsEnd = size; 
+// jmarshall end
 
 	size = LittleLong(pinmodel->ofsEnd);
-	dataSize += size;
+	dataSize = size;
 	md3 = (md3Header_t *)Mem_Alloc( size );
 
 	memcpy (md3, buffer, LittleLong(pinmodel->ofsEnd) );

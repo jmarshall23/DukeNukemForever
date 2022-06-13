@@ -1,0 +1,7 @@
+models/generic/pipe1dhollow/pipe1dhollow_0
+{
+	diffusemap models/generic/pipe1dhollow/pipe1dhollow_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

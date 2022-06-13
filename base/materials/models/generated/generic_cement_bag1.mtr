@@ -1,0 +1,7 @@
+models/generic/cement_bag1/cement_bag1_0
+{
+	diffusemap models/generic/cement_bag1/cement_bag1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

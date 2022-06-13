@@ -1,0 +1,42 @@
+models/generic/Doorhandle_crdL/Doorhandle_crdL_0
+{
+	diffusemap models/generic/Doorhandle_crdL/Doorhandle_crdL_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL/Doorhandle_crdL_1
+{
+	diffusemap models/generic/Doorhandle_crdL/Doorhandle_crdL_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL/Doorhandle_crdL_2
+{
+	diffusemap models/generic/Doorhandle_crdL/Doorhandle_crdL_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL/Doorhandle_crdL_3
+{
+	diffusemap models/generic/Doorhandle_crdL/Doorhandle_crdL_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL/Doorhandle_crdL_4
+{
+	diffusemap models/generic/Doorhandle_crdL/Doorhandle_crdL_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL/Doorhandle_crdL_5
+{
+	diffusemap models/generic/Doorhandle_crdL/Doorhandle_crdL_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

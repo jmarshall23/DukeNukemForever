@@ -1,0 +1,14 @@
+models/generic/Door_handleD/Door_handleD_0
+{
+	diffusemap models/generic/Door_handleD/Door_handleD_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Door_handleD/Door_handleD_1
+{
+	diffusemap models/generic/Door_handleD/Door_handleD_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

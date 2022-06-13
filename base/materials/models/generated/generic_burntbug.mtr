@@ -1,0 +1,7 @@
+models/generic/burntbug/burntbug_0
+{
+	diffusemap models/generic/burntbug/burntbug_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

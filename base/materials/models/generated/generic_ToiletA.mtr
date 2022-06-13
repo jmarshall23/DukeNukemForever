@@ -1,0 +1,14 @@
+models/generic/ToiletA/ToiletA_0
+{
+	diffusemap models/generic/ToiletA/ToiletA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ToiletA/ToiletA_1
+{
+	diffusemap models/generic/ToiletA/ToiletA_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,35 @@
+models/weapons/Turret_Tripod/Turret_Tripod_0
+{
+	diffusemap models/weapons/Turret_Tripod/Turret_Tripod_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Tripod/Turret_Tripod_1
+{
+	diffusemap models/weapons/Turret_Tripod/Turret_Tripod_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Tripod/Turret_Tripod_2
+{
+	diffusemap models/weapons/Turret_Tripod/Turret_Tripod_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Tripod/Turret_Tripod_3
+{
+	diffusemap models/weapons/Turret_Tripod/Turret_Tripod_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Tripod/Turret_Tripod_4
+{
+	diffusemap models/weapons/Turret_Tripod/Turret_Tripod_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

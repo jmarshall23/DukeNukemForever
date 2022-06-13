@@ -1,0 +1,7 @@
+models/generic/switch_power1/switch_power1_0
+{
+	diffusemap models/generic/switch_power1/switch_power1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

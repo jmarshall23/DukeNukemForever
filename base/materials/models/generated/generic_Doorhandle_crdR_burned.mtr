@@ -1,0 +1,42 @@
+models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_0
+{
+	diffusemap models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_1
+{
+	diffusemap models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_2
+{
+	diffusemap models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_3
+{
+	diffusemap models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_4
+{
+	diffusemap models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_5
+{
+	diffusemap models/generic/Doorhandle_crdR_burned/Doorhandle_crdR_burned_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

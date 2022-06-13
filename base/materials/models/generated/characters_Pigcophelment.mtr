@@ -1,0 +1,42 @@
+models/characters/Pigcophelment/Pigcophelment_0
+{
+	diffusemap models/characters/Pigcophelment/Pigcophelment_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Pigcophelment/Pigcophelment_1
+{
+	diffusemap models/characters/Pigcophelment/Pigcophelment_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Pigcophelment/Pigcophelment_2
+{
+	diffusemap models/characters/Pigcophelment/Pigcophelment_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Pigcophelment/Pigcophelment_3
+{
+	diffusemap models/characters/Pigcophelment/Pigcophelment_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Pigcophelment/Pigcophelment_4
+{
+	diffusemap models/characters/Pigcophelment/Pigcophelment_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Pigcophelment/Pigcophelment_5
+{
+	diffusemap models/characters/Pigcophelment/Pigcophelment_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

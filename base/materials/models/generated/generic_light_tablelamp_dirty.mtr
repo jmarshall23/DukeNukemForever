@@ -1,0 +1,21 @@
+models/generic/light_tablelamp_dirty/light_tablelamp_dirty_0
+{
+	diffusemap models/generic/light_tablelamp_dirty/light_tablelamp_dirty_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/light_tablelamp_dirty/light_tablelamp_dirty_1
+{
+	diffusemap models/generic/light_tablelamp_dirty/light_tablelamp_dirty_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/light_tablelamp_dirty/light_tablelamp_dirty_2
+{
+	diffusemap models/generic/light_tablelamp_dirty/light_tablelamp_dirty_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

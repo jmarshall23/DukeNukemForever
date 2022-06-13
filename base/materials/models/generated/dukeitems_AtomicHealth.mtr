@@ -1,0 +1,14 @@
+models/dukeitems/AtomicHealth/AtomicHealth_0
+{
+	diffusemap models/dukeitems/AtomicHealth/AtomicHealth_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/dukeitems/AtomicHealth/AtomicHealth_1
+{
+	diffusemap models/dukeitems/AtomicHealth/AtomicHealth_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

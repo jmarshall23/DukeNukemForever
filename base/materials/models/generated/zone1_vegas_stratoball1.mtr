@@ -1,0 +1,14 @@
+models/zone1_vegas/stratoball1/stratoball1_0
+{
+	diffusemap models/zone1_vegas/stratoball1/stratoball1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/stratoball1/stratoball1_1
+{
+	diffusemap models/zone1_vegas/stratoball1/stratoball1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

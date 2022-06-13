@@ -1,0 +1,42 @@
+models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_0
+{
+	diffusemap models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_1
+{
+	diffusemap models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_2
+{
+	diffusemap models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_3
+{
+	diffusemap models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_4
+{
+	diffusemap models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_5
+{
+	diffusemap models/generic/Doorhandle_crdL_silver/Doorhandle_crdL_silver_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

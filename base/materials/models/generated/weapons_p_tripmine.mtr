@@ -1,0 +1,7 @@
+models/weapons/p_tripmine/p_tripmine_0
+{
+	diffusemap models/weapons/p_tripmine/p_tripmine_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

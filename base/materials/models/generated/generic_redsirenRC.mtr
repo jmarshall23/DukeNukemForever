@@ -1,0 +1,14 @@
+models/generic/redsirenRC/redsirenRC_0
+{
+	diffusemap models/generic/redsirenRC/redsirenRC_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/redsirenRC/redsirenRC_1
+{
+	diffusemap models/generic/redsirenRC/redsirenRC_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

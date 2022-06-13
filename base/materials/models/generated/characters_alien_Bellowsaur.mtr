@@ -1,0 +1,42 @@
+models/characters/alien_Bellowsaur/alien_Bellowsaur_0
+{
+	diffusemap models/characters/alien_Bellowsaur/alien_Bellowsaur_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Bellowsaur/alien_Bellowsaur_1
+{
+	diffusemap models/characters/alien_Bellowsaur/alien_Bellowsaur_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Bellowsaur/alien_Bellowsaur_2
+{
+	diffusemap models/characters/alien_Bellowsaur/alien_Bellowsaur_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Bellowsaur/alien_Bellowsaur_3
+{
+	diffusemap models/characters/alien_Bellowsaur/alien_Bellowsaur_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Bellowsaur/alien_Bellowsaur_4
+{
+	diffusemap models/characters/alien_Bellowsaur/alien_Bellowsaur_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Bellowsaur/alien_Bellowsaur_5
+{
+	diffusemap models/characters/alien_Bellowsaur/alien_Bellowsaur_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

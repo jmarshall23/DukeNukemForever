@@ -1,0 +1,42 @@
+models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_0
+{
+	diffusemap models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_1
+{
+	diffusemap models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_2
+{
+	diffusemap models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_3
+{
+	diffusemap models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_4
+{
+	diffusemap models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_5
+{
+	diffusemap models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

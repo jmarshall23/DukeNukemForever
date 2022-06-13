@@ -1,0 +1,7 @@
+models/weapons/SniperDot/SniperDot_0
+{
+	diffusemap models/weapons/SniperDot/SniperDot_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,21 @@
+models/generic/book2b/book2b_0
+{
+	diffusemap models/generic/book2b/book2b_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/book2b/book2b_1
+{
+	diffusemap models/generic/book2b/book2b_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/book2b/book2b_2
+{
+	diffusemap models/generic/book2b/book2b_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

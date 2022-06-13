@@ -1,0 +1,28 @@
+models/characters/Edf_pyro/EDF_pyro_0
+{
+	diffusemap models/characters/Edf_pyro/EDF_pyro_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_pyro/EDF_pyro_1
+{
+	diffusemap models/characters/Edf_pyro/EDF_pyro_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_pyro/EDF_pyro_2
+{
+	diffusemap models/characters/Edf_pyro/EDF_pyro_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_pyro/EDF_pyro_3
+{
+	diffusemap models/characters/Edf_pyro/EDF_pyro_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

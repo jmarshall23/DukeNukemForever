@@ -1,0 +1,28 @@
+models/zone2_dam/electcoil/electcoil_0
+{
+	diffusemap models/zone2_dam/electcoil/electcoil_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/electcoil/electcoil_1
+{
+	diffusemap models/zone2_dam/electcoil/electcoil_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/electcoil/electcoil_2
+{
+	diffusemap models/zone2_dam/electcoil/electcoil_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/electcoil/electcoil_3
+{
+	diffusemap models/zone2_dam/electcoil/electcoil_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

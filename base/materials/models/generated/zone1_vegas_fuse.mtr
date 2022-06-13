@@ -1,0 +1,28 @@
+models/zone1_vegas/fuse/fuse_0
+{
+	diffusemap models/zone1_vegas/fuse/fuse_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/fuse/fuse_1
+{
+	diffusemap models/zone1_vegas/fuse/fuse_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/fuse/fuse_2
+{
+	diffusemap models/zone1_vegas/fuse/fuse_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/fuse/fuse_3
+{
+	diffusemap models/zone1_vegas/fuse/fuse_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

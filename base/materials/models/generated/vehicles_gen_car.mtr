@@ -1,0 +1,14 @@
+models/vehicles/gen_car/gen_car_0
+{
+	diffusemap models/vehicles/gen_car/gen_car_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/gen_car/gen_car_1
+{
+	diffusemap models/vehicles/gen_car/gen_car_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

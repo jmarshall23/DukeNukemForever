@@ -1,0 +1,14 @@
+models/weapons/a_gascan/a_gascan_0
+{
+	diffusemap models/weapons/a_gascan/a_gascan_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/a_gascan/a_gascan_1
+{
+	diffusemap models/weapons/a_gascan/a_gascan_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

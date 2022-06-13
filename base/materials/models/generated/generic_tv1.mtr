@@ -1,0 +1,14 @@
+models/generic/tv1/tv1_0
+{
+	diffusemap models/generic/tv1/tv1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/tv1/tv1_1
+{
+	diffusemap models/generic/tv1/tv1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

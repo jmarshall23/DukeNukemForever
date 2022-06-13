@@ -1,0 +1,42 @@
+models/characters/General_Graves/General_Graves_0
+{
+	diffusemap models/characters/General_Graves/General_Graves_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/General_Graves/General_Graves_1
+{
+	diffusemap models/characters/General_Graves/General_Graves_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/General_Graves/General_Graves_2
+{
+	diffusemap models/characters/General_Graves/General_Graves_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/General_Graves/General_Graves_3
+{
+	diffusemap models/characters/General_Graves/General_Graves_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/General_Graves/General_Graves_4
+{
+	diffusemap models/characters/General_Graves/General_Graves_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/General_Graves/General_Graves_5
+{
+	diffusemap models/characters/General_Graves/General_Graves_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,35 @@
+models/weapons/ammocase1/ammocase1_0
+{
+	diffusemap models/weapons/ammocase1/ammocase1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/ammocase1/ammocase1_1
+{
+	diffusemap models/weapons/ammocase1/ammocase1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/ammocase1/ammocase1_2
+{
+	diffusemap models/weapons/ammocase1/ammocase1_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/ammocase1/ammocase1_3
+{
+	diffusemap models/weapons/ammocase1/ammocase1_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/ammocase1/ammocase1_4
+{
+	diffusemap models/weapons/ammocase1/ammocase1_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

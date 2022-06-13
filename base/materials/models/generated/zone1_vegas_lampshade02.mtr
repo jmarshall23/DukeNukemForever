@@ -1,0 +1,14 @@
+models/zone1_vegas/lampshade02/lampshade02_0
+{
+	diffusemap models/zone1_vegas/lampshade02/lampshade02_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/lampshade02/lampshade02_1
+{
+	diffusemap models/zone1_vegas/lampshade02/lampshade02_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

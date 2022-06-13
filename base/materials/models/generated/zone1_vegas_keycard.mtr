@@ -1,0 +1,14 @@
+models/zone1_vegas/keycard/Keycard_0
+{
+	diffusemap models/zone1_vegas/keycard/Keycard_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/keycard/Keycard_1
+{
+	diffusemap models/zone1_vegas/keycard/Keycard_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

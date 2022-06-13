@@ -1,0 +1,7 @@
+models/c_FX/Gib_MetalD/Gib_MetalD_0
+{
+	diffusemap models/c_FX/Gib_MetalD/Gib_MetalD_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,7 @@
+models/zone2_dam/statue1_dam/statue1_dam_0
+{
+	diffusemap models/zone2_dam/statue1_dam/statue1_dam_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

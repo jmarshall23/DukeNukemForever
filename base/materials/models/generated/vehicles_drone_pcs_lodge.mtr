@@ -1,0 +1,7 @@
+models/vehicles/drone_pcs_lodge/drone_pcs_lodge_0
+{
+	diffusemap models/vehicles/drone_pcs_lodge/drone_pcs_lodge_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

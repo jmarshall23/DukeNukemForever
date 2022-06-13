@@ -1,0 +1,28 @@
+models/characters/EDF2desert/EDF2desert_0
+{
+	diffusemap models/characters/EDF2desert/EDF2desert_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF2desert/EDF2desert_1
+{
+	diffusemap models/characters/EDF2desert/EDF2desert_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF2desert/EDF2desert_2
+{
+	diffusemap models/characters/EDF2desert/EDF2desert_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF2desert/EDF2desert_3
+{
+	diffusemap models/characters/EDF2desert/EDF2desert_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

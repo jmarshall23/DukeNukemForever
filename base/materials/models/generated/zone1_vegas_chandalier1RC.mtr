@@ -1,0 +1,35 @@
+models/zone1_vegas/chandalier1RC/chandalier1RC_0
+{
+	diffusemap models/zone1_vegas/chandalier1RC/chandalier1RC_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/chandalier1RC/chandalier1RC_1
+{
+	diffusemap models/zone1_vegas/chandalier1RC/chandalier1RC_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/chandalier1RC/chandalier1RC_2
+{
+	diffusemap models/zone1_vegas/chandalier1RC/chandalier1RC_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/chandalier1RC/chandalier1RC_3
+{
+	diffusemap models/zone1_vegas/chandalier1RC/chandalier1RC_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/chandalier1RC/chandalier1RC_4
+{
+	diffusemap models/zone1_vegas/chandalier1RC/chandalier1RC_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

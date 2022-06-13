@@ -1,0 +1,35 @@
+models/characters/NPC_M_ThinA/NPC_M_ThinA_0
+{
+	diffusemap models/characters/NPC_M_ThinA/NPC_M_ThinA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_ThinA/NPC_M_ThinA_1
+{
+	diffusemap models/characters/NPC_M_ThinA/NPC_M_ThinA_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_ThinA/NPC_M_ThinA_2
+{
+	diffusemap models/characters/NPC_M_ThinA/NPC_M_ThinA_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_ThinA/NPC_M_ThinA_3
+{
+	diffusemap models/characters/NPC_M_ThinA/NPC_M_ThinA_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_ThinA/NPC_M_ThinA_4
+{
+	diffusemap models/characters/NPC_M_ThinA/NPC_M_ThinA_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

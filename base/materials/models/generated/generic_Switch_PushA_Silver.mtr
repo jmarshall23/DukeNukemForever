@@ -1,0 +1,21 @@
+models/generic/Switch_PushA_Silver/Switch_PushA_Silver_0
+{
+	diffusemap models/generic/Switch_PushA_Silver/Switch_PushA_Silver_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Switch_PushA_Silver/Switch_PushA_Silver_1
+{
+	diffusemap models/generic/Switch_PushA_Silver/Switch_PushA_Silver_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Switch_PushA_Silver/Switch_PushA_Silver_2
+{
+	diffusemap models/generic/Switch_PushA_Silver/Switch_PushA_Silver_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

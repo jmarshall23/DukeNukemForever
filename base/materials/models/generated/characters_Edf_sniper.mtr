@@ -1,0 +1,28 @@
+models/characters/Edf_sniper/EDF_sniper_0
+{
+	diffusemap models/characters/Edf_sniper/EDF_sniper_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_sniper/EDF_sniper_1
+{
+	diffusemap models/characters/Edf_sniper/EDF_sniper_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_sniper/EDF_sniper_2
+{
+	diffusemap models/characters/Edf_sniper/EDF_sniper_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/Edf_sniper/EDF_sniper_3
+{
+	diffusemap models/characters/Edf_sniper/EDF_sniper_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

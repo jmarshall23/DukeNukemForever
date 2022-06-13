@@ -1,0 +1,7 @@
+models/generic/wallsconce5/wallsconce5_0
+{
+	diffusemap models/generic/wallsconce5/wallsconce5_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

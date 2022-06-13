@@ -1,0 +1,21 @@
+models/zone1_vegas/icebucket/icebucket_0
+{
+	diffusemap models/zone1_vegas/icebucket/icebucket_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/icebucket/icebucket_1
+{
+	diffusemap models/zone1_vegas/icebucket/icebucket_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/icebucket/icebucket_2
+{
+	diffusemap models/zone1_vegas/icebucket/icebucket_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

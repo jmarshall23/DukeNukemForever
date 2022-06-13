@@ -1,0 +1,21 @@
+models/generic/puzzlescreenDSK/puzzlescreenDSK_0
+{
+	diffusemap models/generic/puzzlescreenDSK/puzzlescreenDSK_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/puzzlescreenDSK/puzzlescreenDSK_1
+{
+	diffusemap models/generic/puzzlescreenDSK/puzzlescreenDSK_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/puzzlescreenDSK/puzzlescreenDSK_2
+{
+	diffusemap models/generic/puzzlescreenDSK/puzzlescreenDSK_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

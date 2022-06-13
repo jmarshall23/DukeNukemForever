@@ -1,0 +1,14 @@
+models/zone2_dam/Slides_sah/Slides_sah_0
+{
+	diffusemap models/zone2_dam/Slides_sah/Slides_sah_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone2_dam/Slides_sah/Slides_sah_1
+{
+	diffusemap models/zone2_dam/Slides_sah/Slides_sah_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,49 @@
+models/weapons/SniperGun/SniperGun_0
+{
+	diffusemap models/weapons/SniperGun/SniperGun_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/SniperGun/SniperGun_1
+{
+	diffusemap models/weapons/SniperGun/SniperGun_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/SniperGun/SniperGun_2
+{
+	diffusemap models/weapons/SniperGun/SniperGun_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/SniperGun/SniperGun_3
+{
+	diffusemap models/weapons/SniperGun/SniperGun_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/SniperGun/SniperGun_4
+{
+	diffusemap models/weapons/SniperGun/SniperGun_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/SniperGun/SniperGun_5
+{
+	diffusemap models/weapons/SniperGun/SniperGun_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/SniperGun/SniperGun_6
+{
+	diffusemap models/weapons/SniperGun/SniperGun_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

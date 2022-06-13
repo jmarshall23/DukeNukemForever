@@ -1,0 +1,7 @@
+models/characters/Proton_Monitor/Proton_Monitor_0
+{
+	diffusemap models/characters/Proton_Monitor/Proton_Monitor_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

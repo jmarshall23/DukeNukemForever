@@ -1,0 +1,14 @@
+models/generic/tire1/tire1_0
+{
+	diffusemap models/generic/tire1/tire1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/tire1/tire1_1
+{
+	diffusemap models/generic/tire1/tire1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

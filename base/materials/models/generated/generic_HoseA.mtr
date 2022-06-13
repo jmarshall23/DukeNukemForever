@@ -1,0 +1,7 @@
+models/generic/HoseA/HoseA_0
+{
+	diffusemap models/generic/HoseA/HoseA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

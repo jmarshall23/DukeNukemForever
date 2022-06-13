@@ -1,0 +1,49 @@
+models/weapons/Turret_Manned/Turret_Manned_0
+{
+	diffusemap models/weapons/Turret_Manned/Turret_Manned_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Manned/Turret_Manned_1
+{
+	diffusemap models/weapons/Turret_Manned/Turret_Manned_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Manned/Turret_Manned_2
+{
+	diffusemap models/weapons/Turret_Manned/Turret_Manned_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Manned/Turret_Manned_3
+{
+	diffusemap models/weapons/Turret_Manned/Turret_Manned_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Manned/Turret_Manned_4
+{
+	diffusemap models/weapons/Turret_Manned/Turret_Manned_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Manned/Turret_Manned_5
+{
+	diffusemap models/weapons/Turret_Manned/Turret_Manned_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/Turret_Manned/Turret_Manned_6
+{
+	diffusemap models/weapons/Turret_Manned/Turret_Manned_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

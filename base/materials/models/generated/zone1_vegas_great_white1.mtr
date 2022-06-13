@@ -1,0 +1,21 @@
+models/zone1_vegas/great_white1/great_white1_0
+{
+	diffusemap models/zone1_vegas/great_white1/great_white1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/great_white1/great_white1_1
+{
+	diffusemap models/zone1_vegas/great_white1/great_white1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/great_white1/great_white1_2
+{
+	diffusemap models/zone1_vegas/great_white1/great_white1_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

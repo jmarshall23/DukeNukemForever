@@ -1,0 +1,7 @@
+models/zone5_area51/PC_chipsocket/PC_chipsocket_0
+{
+	diffusemap models/zone5_area51/PC_chipsocket/PC_chipsocket_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

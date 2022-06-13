@@ -1,0 +1,7 @@
+models/weapons/a_m16clip/a_m16clip_0
+{
+	diffusemap models/weapons/a_m16clip/a_m16clip_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,21 @@
+models/generic/watercooler/WaterCooler_0
+{
+	diffusemap models/generic/watercooler/WaterCooler_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/watercooler/WaterCooler_1
+{
+	diffusemap models/generic/watercooler/WaterCooler_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/watercooler/WaterCooler_2
+{
+	diffusemap models/generic/watercooler/WaterCooler_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

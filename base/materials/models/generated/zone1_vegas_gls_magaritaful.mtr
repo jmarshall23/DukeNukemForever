@@ -1,0 +1,14 @@
+models/zone1_vegas/gls_magaritaful/gls_magaritaful_0
+{
+	diffusemap models/zone1_vegas/gls_magaritaful/gls_magaritaful_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/gls_magaritaful/gls_magaritaful_1
+{
+	diffusemap models/zone1_vegas/gls_magaritaful/gls_magaritaful_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

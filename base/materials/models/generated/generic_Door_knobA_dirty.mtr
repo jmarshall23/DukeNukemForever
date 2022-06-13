@@ -1,0 +1,7 @@
+models/generic/Door_knobA_dirty/Door_knobA_dirty_0
+{
+	diffusemap models/generic/Door_knobA_dirty/Door_knobA_dirty_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

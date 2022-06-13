@@ -1,0 +1,14 @@
+models/zone1_vegas/tuna_cut/tuna_cut_0
+{
+	diffusemap models/zone1_vegas/tuna_cut/tuna_cut_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/tuna_cut/tuna_cut_1
+{
+	diffusemap models/zone1_vegas/tuna_cut/tuna_cut_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

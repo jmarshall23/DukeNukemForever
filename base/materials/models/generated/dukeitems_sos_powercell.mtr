@@ -1,0 +1,21 @@
+models/dukeitems/sos_powercell/sos_powercell_0
+{
+	diffusemap models/dukeitems/sos_powercell/sos_powercell_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/dukeitems/sos_powercell/sos_powercell_1
+{
+	diffusemap models/dukeitems/sos_powercell/sos_powercell_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/dukeitems/sos_powercell/sos_powercell_2
+{
+	diffusemap models/dukeitems/sos_powercell/sos_powercell_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

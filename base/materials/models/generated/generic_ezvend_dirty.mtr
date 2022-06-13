@@ -1,0 +1,56 @@
+models/generic/ezvend_dirty/ezvend_dirty_0
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ezvend_dirty/ezvend_dirty_1
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ezvend_dirty/ezvend_dirty_2
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ezvend_dirty/ezvend_dirty_3
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ezvend_dirty/ezvend_dirty_4
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ezvend_dirty/ezvend_dirty_5
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ezvend_dirty/ezvend_dirty_6
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/ezvend_dirty/ezvend_dirty_7
+{
+	diffusemap models/generic/ezvend_dirty/ezvend_dirty_7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

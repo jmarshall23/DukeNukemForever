@@ -1,0 +1,28 @@
+models/weapons/w_shrinkray/w_shrinkray_0
+{
+	diffusemap models/weapons/w_shrinkray/w_shrinkray_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/w_shrinkray/w_shrinkray_1
+{
+	diffusemap models/weapons/w_shrinkray/w_shrinkray_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/w_shrinkray/w_shrinkray_2
+{
+	diffusemap models/weapons/w_shrinkray/w_shrinkray_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/w_shrinkray/w_shrinkray_3
+{
+	diffusemap models/weapons/w_shrinkray/w_shrinkray_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

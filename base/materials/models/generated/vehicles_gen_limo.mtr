@@ -1,0 +1,21 @@
+models/vehicles/gen_limo/gen_limo_0
+{
+	diffusemap models/vehicles/gen_limo/gen_limo_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/gen_limo/gen_limo_1
+{
+	diffusemap models/vehicles/gen_limo/gen_limo_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/gen_limo/gen_limo_2
+{
+	diffusemap models/vehicles/gen_limo/gen_limo_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,14 @@
+models/characters/hair_bob1/hair_bob1.obj
+{
+	diffusemap models/characters/hair_bob1/hair_bob1.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/hair_bob1/hair_bob1_0
+{
+	diffusemap models/characters/hair_bob1/hair_bob1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,21 @@
+models/hands/levers/levers_0
+{
+	diffusemap models/hands/levers/levers_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/levers/levers_1
+{
+	diffusemap models/hands/levers/levers_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/hands/levers/levers_2
+{
+	diffusemap models/hands/levers/levers_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

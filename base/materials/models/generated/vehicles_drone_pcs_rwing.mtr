@@ -1,0 +1,7 @@
+models/vehicles/drone_pcs_rwing/drone_pcs_rwing_0
+{
+	diffusemap models/vehicles/drone_pcs_rwing/drone_pcs_rwing_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

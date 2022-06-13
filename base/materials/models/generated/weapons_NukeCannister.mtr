@@ -1,0 +1,14 @@
+models/weapons/NukeCannister/NukeCannister_0
+{
+	diffusemap models/weapons/NukeCannister/NukeCannister_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/NukeCannister/NukeCannister_1
+{
+	diffusemap models/weapons/NukeCannister/NukeCannister_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

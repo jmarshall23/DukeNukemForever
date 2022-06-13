@@ -1,0 +1,35 @@
+models/characters/EDF_sappernogoggles/EDF_sappernogoggles_0
+{
+	diffusemap models/characters/EDF_sappernogoggles/EDF_sappernogoggles_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappernogoggles/EDF_sappernogoggles_1
+{
+	diffusemap models/characters/EDF_sappernogoggles/EDF_sappernogoggles_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappernogoggles/EDF_sappernogoggles_2
+{
+	diffusemap models/characters/EDF_sappernogoggles/EDF_sappernogoggles_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappernogoggles/EDF_sappernogoggles_3
+{
+	diffusemap models/characters/EDF_sappernogoggles/EDF_sappernogoggles_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappernogoggles/EDF_sappernogoggles_4
+{
+	diffusemap models/characters/EDF_sappernogoggles/EDF_sappernogoggles_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,35 @@
+models/characters/minigun_L/minigun_L_0
+{
+	diffusemap models/characters/minigun_L/minigun_L_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/minigun_L/minigun_L_1
+{
+	diffusemap models/characters/minigun_L/minigun_L_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/minigun_L/minigun_L_2
+{
+	diffusemap models/characters/minigun_L/minigun_L_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/minigun_L/minigun_L_3
+{
+	diffusemap models/characters/minigun_L/minigun_L_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/minigun_L/minigun_L_4
+{
+	diffusemap models/characters/minigun_L/minigun_L_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

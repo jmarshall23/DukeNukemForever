@@ -1,0 +1,7 @@
+models/zone4_afb/D3d_C9/D3d_C9_0
+{
+	diffusemap models/zone4_afb/D3d_C9/D3d_C9_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

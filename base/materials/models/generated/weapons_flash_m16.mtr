@@ -1,0 +1,14 @@
+models/weapons/flash_m16/flash_m16_0
+{
+	diffusemap models/weapons/flash_m16/flash_m16_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/flash_m16/flash_m16_1
+{
+	diffusemap models/weapons/flash_m16/flash_m16_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

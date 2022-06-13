@@ -1,0 +1,7 @@
+models/dukeitems/Sportdrink/Sportdrink_0
+{
+	diffusemap models/dukeitems/Sportdrink/Sportdrink_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

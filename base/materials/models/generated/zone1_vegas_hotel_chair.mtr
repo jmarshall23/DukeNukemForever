@@ -1,0 +1,14 @@
+models/zone1_vegas/hotel_chair/hotel_chair_0
+{
+	diffusemap models/zone1_vegas/hotel_chair/hotel_chair_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone1_vegas/hotel_chair/hotel_chair_1
+{
+	diffusemap models/zone1_vegas/hotel_chair/hotel_chair_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

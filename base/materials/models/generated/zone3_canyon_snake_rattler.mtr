@@ -1,0 +1,28 @@
+models/zone3_canyon/snake_rattler/snake_rattler_0
+{
+	diffusemap models/zone3_canyon/snake_rattler/snake_rattler_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone3_canyon/snake_rattler/snake_rattler_1
+{
+	diffusemap models/zone3_canyon/snake_rattler/snake_rattler_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone3_canyon/snake_rattler/snake_rattler_2
+{
+	diffusemap models/zone3_canyon/snake_rattler/snake_rattler_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone3_canyon/snake_rattler/snake_rattler_3
+{
+	diffusemap models/zone3_canyon/snake_rattler/snake_rattler_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

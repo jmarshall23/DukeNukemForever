@@ -1,0 +1,7 @@
+models/generic/lamp/lamp_0
+{
+	diffusemap models/generic/lamp/lamp_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

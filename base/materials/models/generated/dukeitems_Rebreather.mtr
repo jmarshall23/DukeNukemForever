@@ -1,0 +1,28 @@
+models/dukeitems/Rebreather/Rebreather_0
+{
+	diffusemap models/dukeitems/Rebreather/Rebreather_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/dukeitems/Rebreather/Rebreather_1
+{
+	diffusemap models/dukeitems/Rebreather/Rebreather_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/dukeitems/Rebreather/Rebreather_2
+{
+	diffusemap models/dukeitems/Rebreather/Rebreather_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/dukeitems/Rebreather/Rebreather_3
+{
+	diffusemap models/dukeitems/Rebreather/Rebreather_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

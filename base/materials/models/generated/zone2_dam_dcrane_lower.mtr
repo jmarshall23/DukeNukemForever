@@ -1,0 +1,7 @@
+models/zone2_dam/dcrane_lower/dcrane_lower_0
+{
+	diffusemap models/zone2_dam/dcrane_lower/dcrane_lower_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

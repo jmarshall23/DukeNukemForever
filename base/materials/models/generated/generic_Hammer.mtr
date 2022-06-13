@@ -1,0 +1,14 @@
+models/generic/Hammer/hammer_0
+{
+	diffusemap models/generic/Hammer/hammer_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Hammer/hammer_1
+{
+	diffusemap models/generic/Hammer/hammer_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

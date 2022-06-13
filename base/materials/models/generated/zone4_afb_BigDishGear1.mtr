@@ -1,0 +1,14 @@
+models/zone4_afb/BigDishGear1/BigDishGear1_0
+{
+	diffusemap models/zone4_afb/BigDishGear1/BigDishGear1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/zone4_afb/BigDishGear1/BigDishGear1_1
+{
+	diffusemap models/zone4_afb/BigDishGear1/BigDishGear1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

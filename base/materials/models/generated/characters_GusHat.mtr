@@ -1,0 +1,21 @@
+models/characters/GusHat/GusHat.obj
+{
+	diffusemap models/characters/GusHat/GusHat.obj.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/GusHat/GusHat_0
+{
+	diffusemap models/characters/GusHat/GusHat_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/GusHat/GusHat_1
+{
+	diffusemap models/characters/GusHat/GusHat_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

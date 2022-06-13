@@ -1,0 +1,42 @@
+models/characters/alien_Liztrooper/alien_liztrooper_0
+{
+	diffusemap models/characters/alien_Liztrooper/alien_liztrooper_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Liztrooper/alien_liztrooper_1
+{
+	diffusemap models/characters/alien_Liztrooper/alien_liztrooper_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Liztrooper/alien_liztrooper_2
+{
+	diffusemap models/characters/alien_Liztrooper/alien_liztrooper_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Liztrooper/alien_liztrooper_3
+{
+	diffusemap models/characters/alien_Liztrooper/alien_liztrooper_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Liztrooper/alien_liztrooper_4
+{
+	diffusemap models/characters/alien_Liztrooper/alien_liztrooper_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/alien_Liztrooper/alien_liztrooper_5
+{
+	diffusemap models/characters/alien_Liztrooper/alien_liztrooper_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

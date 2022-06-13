@@ -1,0 +1,35 @@
+models/characters/hadjicab/hadjicab_0
+{
+	diffusemap models/characters/hadjicab/hadjicab_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/hadjicab/hadjicab_1
+{
+	diffusemap models/characters/hadjicab/hadjicab_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/hadjicab/hadjicab_2
+{
+	diffusemap models/characters/hadjicab/hadjicab_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/hadjicab/hadjicab_3
+{
+	diffusemap models/characters/hadjicab/hadjicab_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/hadjicab/hadjicab_4
+{
+	diffusemap models/characters/hadjicab/hadjicab_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

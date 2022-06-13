@@ -1,0 +1,35 @@
+models/vehicles/semi1/semi1_0
+{
+	diffusemap models/vehicles/semi1/semi1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/semi1/semi1_1
+{
+	diffusemap models/vehicles/semi1/semi1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/semi1/semi1_2
+{
+	diffusemap models/vehicles/semi1/semi1_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/semi1/semi1_3
+{
+	diffusemap models/vehicles/semi1/semi1_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/semi1/semi1_4
+{
+	diffusemap models/vehicles/semi1/semi1_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

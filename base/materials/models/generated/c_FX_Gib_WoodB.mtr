@@ -1,0 +1,7 @@
+models/c_FX/Gib_WoodB/Gib_WoodB_0
+{
+	diffusemap models/c_FX/Gib_WoodB/Gib_WoodB_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

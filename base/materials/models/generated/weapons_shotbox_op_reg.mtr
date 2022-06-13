@@ -1,0 +1,28 @@
+models/weapons/shotbox_op_reg/shotbox_op_reg_0
+{
+	diffusemap models/weapons/shotbox_op_reg/shotbox_op_reg_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/shotbox_op_reg/shotbox_op_reg_1
+{
+	diffusemap models/weapons/shotbox_op_reg/shotbox_op_reg_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/shotbox_op_reg/shotbox_op_reg_2
+{
+	diffusemap models/weapons/shotbox_op_reg/shotbox_op_reg_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/shotbox_op_reg/shotbox_op_reg_3
+{
+	diffusemap models/weapons/shotbox_op_reg/shotbox_op_reg_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

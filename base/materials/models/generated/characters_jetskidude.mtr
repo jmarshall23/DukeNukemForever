@@ -1,0 +1,7 @@
+models/characters/jetskidude/jetskidude_0
+{
+	diffusemap models/characters/jetskidude/jetskidude_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

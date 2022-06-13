@@ -1,0 +1,14 @@
+models/generic/Door_knobA_silver/Door_knobA_silver_0
+{
+	diffusemap models/generic/Door_knobA_silver/Door_knobA_silver_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/Door_knobA_silver/Door_knobA_silver_1
+{
+	diffusemap models/generic/Door_knobA_silver/Door_knobA_silver_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

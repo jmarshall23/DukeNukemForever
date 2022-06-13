@@ -1,0 +1,7 @@
+models/c_FX/Gib_ConcreteA/Gib_ConcreteA_0
+{
+	diffusemap models/c_FX/Gib_ConcreteA/Gib_ConcreteA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

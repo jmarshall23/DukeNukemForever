@@ -1,0 +1,35 @@
+models/characters/NPC_M_OldA/NPC_M_OldA_0
+{
+	diffusemap models/characters/NPC_M_OldA/NPC_M_OldA_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_OldA/NPC_M_OldA_1
+{
+	diffusemap models/characters/NPC_M_OldA/NPC_M_OldA_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_OldA/NPC_M_OldA_2
+{
+	diffusemap models/characters/NPC_M_OldA/NPC_M_OldA_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_OldA/NPC_M_OldA_3
+{
+	diffusemap models/characters/NPC_M_OldA/NPC_M_OldA_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/NPC_M_OldA/NPC_M_OldA_4
+{
+	diffusemap models/characters/NPC_M_OldA/NPC_M_OldA_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

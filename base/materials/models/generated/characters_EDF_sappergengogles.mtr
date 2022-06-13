@@ -1,0 +1,42 @@
+models/characters/EDF_sappergengogles/EDF_sappergengogles_0
+{
+	diffusemap models/characters/EDF_sappergengogles/EDF_sappergengogles_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappergengogles/EDF_sappergengogles_1
+{
+	diffusemap models/characters/EDF_sappergengogles/EDF_sappergengogles_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappergengogles/EDF_sappergengogles_2
+{
+	diffusemap models/characters/EDF_sappergengogles/EDF_sappergengogles_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappergengogles/EDF_sappergengogles_3
+{
+	diffusemap models/characters/EDF_sappergengogles/EDF_sappergengogles_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappergengogles/EDF_sappergengogles_4
+{
+	diffusemap models/characters/EDF_sappergengogles/EDF_sappergengogles_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/characters/EDF_sappergengogles/EDF_sappergengogles_5
+{
+	diffusemap models/characters/EDF_sappergengogles/EDF_sappergengogles_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

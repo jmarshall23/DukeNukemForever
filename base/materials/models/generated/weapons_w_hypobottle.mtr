@@ -1,0 +1,21 @@
+models/weapons/w_hypobottle/w_hypobottle_0
+{
+	diffusemap models/weapons/w_hypobottle/w_hypobottle_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/w_hypobottle/w_hypobottle_1
+{
+	diffusemap models/weapons/w_hypobottle/w_hypobottle_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/w_hypobottle/w_hypobottle_2
+{
+	diffusemap models/weapons/w_hypobottle/w_hypobottle_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,14 @@
+models/weapons/rpg_rocket/rpg_rocket_0
+{
+	diffusemap models/weapons/rpg_rocket/rpg_rocket_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/weapons/rpg_rocket/rpg_rocket_1
+{
+	diffusemap models/weapons/rpg_rocket/rpg_rocket_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

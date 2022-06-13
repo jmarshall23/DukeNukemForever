@@ -1,0 +1,14 @@
+models/generic/traffic_cone1/traffic_cone1_0
+{
+	diffusemap models/generic/traffic_cone1/traffic_cone1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/generic/traffic_cone1/traffic_cone1_1
+{
+	diffusemap models/generic/traffic_cone1/traffic_cone1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
