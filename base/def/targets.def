@@ -1,0 +1,535 @@
+// recreated definitions of entities of Doom3, originally in target.def
+// (C) 2015 Daniel Gibson and Yamagi Burmeister, licensed under WTFPL v2
+
+// TODO: you can have multiple targets by naming them "target", "target1", "target2", ...
+// TODO: does this have to be explicitly documented in each entity?
+
+entityDef target_ai_followalternatepath1 {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"NOTE: TODO: currently not functional in OpenTech due to missing monster AI scripts!"
+	"editor_usage1"	"the targeted monsters/NPCs will follow the path entity referenced in the 'alt_path1' property of its entity"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"call"			"follow_alternate_path1"
+
+	// TODO: doesn't work yet!
+}
+
+entityDef target_ai_followalternatepath2 {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"NOTE: TODO: currently not functional in OpenTech due to missing monster AI scripts!"
+	"editor_usage1"	"the targeted monsters/NPCs will follow the path entity referenced in the 'alt_path2' property of its entity"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"call"			"follow_alternate_path2"
+
+	// TODO: doesn't work yet!
+}
+
+entityDef target_ai_followalternatepath3 {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"NOTE: TODO: currently not functional in OpenTech due to missing monster AI scripts!"
+	"editor_usage1"	"the targeted monsters/NPCs will follow the path entity referenced in the 'alt_path3' property of its entity"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"call"			"follow_alternate_path3"
+
+	// TODO: doesn't work yet!
+}
+
+entityDef target_callobjectfunction {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"Calls the given script function on the targeted entities"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var call"	"Scriptfunction to call"
+}
+
+entityDef target_enableStamina {
+	"spawnclass"	"idTarget_EnableStamina"
+
+	"editor_usage"	"Enables/disables stamina of all players (player's 'pm_stamina' is set to 0 or its default value)"
+
+	"editor_color"	"1 0 1"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_bool enable"	"if set (to 1), enable stamine, else disable it"
+}
+
+entityDef target_enableweapons {
+	"spawnclass"	"idTarget_EnableLevelWeapons"
+
+	"editor_usage"	"Enables/disables the players weapons for the current level"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_bool disable"	"if set (to 1), the weapons are disabled, otherwise enabled"
+	"editor_var weapon"		"which weapon to draw when enabling; must be in players inventory!"
+
+	"weapon"	"weapon_pistol" // TODO: do we even have this?
+}
+
+entityDef target_endLevel {
+	"spawnclass"	"idTarget_EndLevel"
+
+	"editor_usage"	"Ends the current level, shows statistics and switches to next map. entity orientation sets view orientation for viewing stats"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_bool endOfGame"	"if set (to 1), it's the end of the game and no other maps follow"
+	// "editor_gui guiName"	"UNUSED: name of the GUI to show at end of the level?" // TODO this is from unused d3xp/EndLevel.cpp code!
+	"editor_var nextMap"	"name of the next map (e.g. testmaps/portalsky)"
+
+	// "nextMap"	"guis/EndLevel.gui" // TODO: we don't have that .gui and passing this to "map" in the console in d3bfg fails anyway!
+}
+
+entityDef target_entity_fadein {
+	"spawnclass"	"idTarget_FadeEntity"
+
+	"editor_usage"	"the targeted entity is faded in when this is triggered"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_color _color"	"the color the entity should fade to"
+	"editor_float fadeTime"	"duration of fade-in in seconds"
+
+	"_color"	"1 1 1"
+	"fadeTime"	"1.0"
+}
+
+entityDef target_entity_fadeout {
+	"spawnclass"	"idTarget_FadeEntity"
+
+	"editor_usage"	"the targeted entity is faded out when this is triggered"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_color _color"	"the color the entity should fade to"
+	"editor_float fadeTime"	"duration of fade-out in seconds"
+
+	"_color"	"0 0 0"
+	"fadeTime"	"1.0"
+}
+
+entityDef target_entity_setcolor {
+	"spawnclass"	"idTarget_FadeEntity"
+
+	"editor_usage"	"the targeted entity is faded to the given color when this is triggered"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_color _color"	"the color the entity should fade to"
+	"editor_float fadeTime"	"duration of fading in seconds"
+
+	"fadeTime"	"0.0"
+}
+
+entityDef target_FadeSoundClass {
+	"spawnclass"	"idTarget_FadeSoundClass"
+
+	"editor_usage"	"Fades a whole sound-class in or out (eg to silence environment during cut scenes; sounds default to class 0)"
+
+	"editor_color"	"0.1 1.0 0.1"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_bool fadeIn"		"if set (to 1), fade in (fade to current vol + fadeDB decibels), else fade out"
+	"editor_int fadeClass"		"Sound-class to fade (valid values: 0,1,2,3), default is 0"
+	"editor_float fadeDB"		"how many decibels to fade in/out - must be positive"
+	"editor_float fadeTime"		"how long the fading (between current volume and cur. vol. +/- fadeDB) takes in seconds"
+	"editor_float fadeDuration"	"amount of seconds to stay faded in/out before going back to original volume"
+
+	"fadeClass"	"0"
+	"fadeDB"	"20"
+	"fadeTime"	"0.5"
+}
+
+entityDef target_give {
+	"spawnclass"	"idTarget_Give"
+
+	"editor_usage"	"adds items to the player's intentory"
+	"editor_usage1"	"use item2, item3, ... for more than one item"
+
+	"editor_color"	"0.2 0.7 0.5"
+	"editor_maxs"	"6.0 6.0 6.0"
+	"editor_mins"	"-6.0 -6.0 -6.0"
+
+	"editor_bool development"	"if set (to 1), only do give the items in development mode"
+	"editor_var item1"			"name of the item given to the player; use item2, item3, ... keys for more items"
+	"editor_bool onspawn"		"if set (to 1), the items are given to the player on spawn (otherwise when this is triggered)"
+
+	"developer"	"1"
+	"onspawn"	"1"
+}
+
+entityDef target_giveemail {
+	"spawnclass"	"idTarget_GiveEmail"
+
+	"editor_usage"	"Sends an E-Mail to the player's PDA when triggered"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var email"	"name of the E-Mail to send, refers to an email declaration, usually(?) in .pda files"
+}
+
+entityDef target_givesecurity {
+	"spawnclass"	"idTarget_GiveSecurity"
+
+	"editor_usage"	"Gives the player a new security clearance when triggered"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var text_security" "the security clearance"
+
+	"text_security"		"Unlimited Access"
+}
+
+entityDef target_levelTrigger {
+	"spawnclass"	"idTarget_LevelTrigger"
+
+	"editor_usage"	"If triggered, activates a trigger in another map when the player is next spawned there"
+	"editor_usage1"	"This allows you to do something in other maps (i.e. not the one you're currently played)"
+	"editor_usage2"	"Like unlocking a door in another map by pressing a button in this one"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var levelName"		"name of the map (without path) you wanna trigger something in"
+	"editor_var triggerName"	"name of the trigger to activate in the other map"
+}
+
+entityDef target_light_fadein {
+	"spawnclass"	"idTarget_LightFadeIn"
+
+	"editor_usage"	"fades in targeted lights when triggered"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_float fadetime"		"duration of fade-in in seconds"
+
+	"fadetime"	"1.0"
+}
+
+entityDef target_light_fadeout {
+	"spawnclass"	"idTarget_LightFadeOut"
+
+	"editor_usage"	"fades out targeted lights when triggered"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_float fadetime"		"duration of fade-out in seconds"
+
+	"fadetime"	"1.0"
+}
+
+entityDef target_lock {
+	"spawnclass"	"idTarget_LockDoor"
+
+	"editor_usage"	"(un)locks targeted doors. toggles that state each time it's triggered"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_int locked"	"toggle the doors 'locked' state between this value and 0"
+}
+
+entityDef target_npc_talk {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"when activated, the targeted NPC talks to the player"
+	"editor_usage1"	"NOTE: TODO: currently not functional in OpenTech due to missing NPC AI scripts!"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"call" "target_talk"
+
+	// TODO: doesn't work yet!
+}
+
+entityDef target_npc_talk_primary {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"when activated, the targeted NPC does its standard talk animation to the player"
+	"editor_usage1"	"NOTE: TODO: currently not functional in OpenTech due to missing NPC AI scripts!"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"call" "say_primary"
+
+	// TODO: doesn't work yet!
+}
+
+entityDef target_npc_talk_secondary {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"when activated, the targeted NPC does its alternative talk animation to the player"
+	"editor_usage1"	"NOTE: TODO: currently not functional in OpenTech due to missing NPC AI scripts!"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"call" "say_secondary"
+
+	// TODO: doesn't work yet!
+}
+
+entityDef target_npc_talk_triggered {
+	"spawnclass"	"idTarget_CallObjectFunction"
+
+	"editor_usage"	"when activated, the targeted NPC does its triggered talk animation to the player"
+	"editor_usage1"	"NOTE: TODO: currently not functional in OpenTech due to missing NPC AI scripts!"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"call" "say_triggered"
+
+	// TODO: doesn't work yet!
+}
+
+entityDef target_null {
+	"spawnclass"	"idTarget"
+
+	"editor_usage"	"generic target to orient cameras etc at"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"6 6 6"
+	"editor_mins"	"-6 -6 -6"
+}
+
+entityDef target_primaryobjective {
+	"spawnclass"	"idTarget_SetPrimaryObjective"
+
+	"editor_usage"	"changes the primary objective text when activated"
+
+	"editor_color"	"1 0 1"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var text"	"the new objective (string or string-id for string table)"
+}
+
+entityDef target_removeweapons {
+	"spawnclass"	"idTarget_RemoveWeapons"
+
+	"editor_usage"	"removes all but the 'essential' weapons of all players when activated"
+	"editor_usage1"	"'essential' are currently: fists, soulcube, pda, flashlight"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: the following is documented in the original .def, but not supported in the C++ code!
+	// "editor_var weapon"	"slot the weapons should be removed from, use weapon1, weapon2, .. for multiple slots"
+}
+
+entityDef target_sessionCommand {
+	"spawnclass"	"idTarget_SessionCommand"
+
+	"editor_usage"	"sends the given command to the engine when activated (eg 'map horstshome')"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var command"	"the command to execute"
+}
+
+entityDef target_setfov {
+	"spawnclass"	"idTarget_SetFov"
+
+	"editor_usage"	"fades the player's FOV (field of view) to given value when activated"
+
+	"editor_color"	"1 0 1"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_float fov"	"the new FOV"
+	"editor_float time"	"seconds until the new FOV is reached"
+}
+
+entityDef target_setglobalparmtime {
+	"spawnclass"	"idTarget_SetGlobalShaderTime"
+
+	"editor_usage"	"sets the negative (?!) current game time (as float in seconds) as a global shader parm when activated"
+	"editor_usage"	"it's -MS2SEC( gameLocal.time ), if that's any help..."
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_int globalParm"	"which global shader parm to set"
+}
+
+entityDef target_setinfluence {
+	"spawnclass"	"idTarget_SetInfluence"
+
+	"editor_usage"	"sets player and entities to demonic mode when triggered"
+	"editor_usage1"	"either influences all targeted entities or all entities within 'radius', depending on 'targetsOnly' setting"
+	"editor_usage2"	"you can also narrow down what kinds of entitiets are influenced with the effect_* settings"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_bool targetsOnly"		"only affect targeted entities, ignore radius"
+	"editor_float radius"			"affect all entities within this radius around the player, if 'targetsOnly' is not set"
+
+	"editor_float delay"			"delay (in seconds) until demonic mode starts after being triggered. if 'fadeWorldSounds' is set, sound fading starts immediately"
+	// "editor_bool effect_demonic"	"only influence entities that have 'demonic' set to 1" // commented out in C++ as well!
+	"editor_bool effect_guis"		"influence GUIs (=> 'gui_demonic' setting in GUI)?"
+	"editor_bool effect_lights"		"influence lights (=> 'color_demonic' setting in light)?"
+	// "editor_bool effect_models"	"influence models?" // seems unused in the C++ code?
+	"editor_bool effect_sounds"		"influence sounds (=> 'snd_demonic' setting in sound)?"
+	"editor_bool effect_vision"		"influence player's vision, with 'mtrVision', 'skinVision' and 'visionRadius'"
+	"editor_bool effect_all"		"setting this (to 1) is like setting all the effect_* settings to 1. Defaults to 1."
+	"editor_float fade_time"		"time it takes to fade between normal and demonic colors"
+	"editor_float fadeWorldSounds"	"fade down sounds (with the default soundclass 0) down over this many seconds when activated" // TODO: or something like that.
+	"editor_float flashIn"			"how long the effect is flashed in (in seconds)"
+	"editor_float flashOut"			"how long the effect is flashed out (in seconds)"
+	"editor_snd snd_flashIn"		"sound to play while flashing in"
+	"editor_snd snd_flashOut"		"sound to play while flashing out"
+	"editor_int fov"				"player's field of view during demonic mode"
+	"editor_float fovTime"			"how long (in seconds) it takes to fade from normal FOV to demonic mode FOV"
+	"editor_int influenceLevel"		"how the player is influenced: 0 = not at all, 1 = no weapon and no HUD, 2 = no weapon and no HUD and can't move, 3 = limited movement speed"
+	"editor_material mtrSkin"		"this skin is set to player during demonic mode"
+	"editor_material mtrWorld"		"material set globally in the world during demonic mode"
+	"editor_material mtrVision"		"material blended over player's view during demonic mode. if 'visionRadius' is set, the alpha value is changed within that radius"
+	"editor_int	visionRadius"		"if set, mtrVision is only used within this radius of this entity. directly at the entity the alpha value will be 1, at >= radius it'll be 0" // TODO: I hope this is right
+	"editor_int snapAngle"			"angle the players view is forced to while demonic mode is active"
+	"editor_snd snd_influence"		"sound to play during demonic mode"
+	"editor_var switchToView"		"name of a cameraview entity the player will look through during demonic mode"
+	"editor_float time"				"how long the demonic mode should last after activation, in seconds (if not triggerActiveate)"
+	"editor_bool triggerActivate"	"if set (to 1), the demonic mode is activated by being triggered and will last until triggered again"
+
+
+	"effect_all"	"1"
+	"fade_time"		"0.75"
+}
+
+entityDef target_setkeyval {
+	"spawnclass"	"idTarget_SetKeyVal"
+
+	"editor_usage"	"Set key/value pair in targeted entities"
+	"editor_usage2"	"use keyval2 and keyval3 and ... to set several"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var keyval"	"key;value pair separated by semicolon"
+}
+
+entityDef target_setmodel {
+	"spawnclass"	"idTarget_SetModel"
+
+	"editor_usage"	"changes the model of the targeted entities"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_model newmodel"	"the model you want to set"
+}
+
+entityDef target_setshaderparm {
+	"spawnclass"	"idTarget_SetShaderParm"
+
+	"editor_usage"	"sets shaderparameters of targeted entities"
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_color _color"		"color for the targeted entities"
+	"editor_bool toggle"		"if set (to 1), all shaderparms set to 0 or 1 will be toggled (0 to 1 and 1 to 0)"
+	
+	"editor_var shaderParm0"	"value for shaderParm0 of targeted entities"
+	"editor_var shaderParm1"	"value for shaderParm1 of targeted entities"
+	"editor_var shaderParm2"	"value for shaderParm2 of targeted entities"
+	"editor_var shaderParm3"	"value for shaderParm3 of targeted entities"
+	"editor_var shaderParm4"	"value for shaderParm4 of targeted entities"
+	"editor_var shaderParm5"	"value for shaderParm5 of targeted entities"
+	"editor_var shaderParm6"	"value for shaderParm6 of targeted entities"
+	"editor_var shaderParm7"	"value for shaderParm7 of targeted entities"
+}
+
+entityDef target_setshadertime {
+	"spawnclass"	"idTarget_SetShaderTime"
+
+	"editor_usage"	"sets the negative (?!) current game time (as float in seconds) as TIMEOFFSET shader parm (4) when activated on targeted entities"
+	"editor_usage"	"it's -MS2SEC( gameLocal.time ), if that's any help..."
+
+	"editor_color"	"1 1 0"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+}
+
+entityDef target_show {
+	"spawnclass"	"idTarget_Show"
+
+	"editor_usage"	"makes targeted (currently hidden) entities visible"
+
+	"editor_color"	"1 0 1"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+}
+
+entityDef target_tip {
+	"spawnclass"	"idTarget_Tip"
+
+	"editor_usage"	"shows a tip to the player when triggered"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	"editor_var text_tip"	"the text of the tip shown the player"
+	"editor_var text_title"	"The title of the tip shown to the player (default: localized 'Tip')"
+
+	"text_title"	"#str_02907"
+}
+

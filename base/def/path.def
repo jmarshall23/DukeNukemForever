@@ -1,0 +1,293 @@
+// recreated definitions of entities of Doom3, originally in path.def
+// (C) 2015 Daniel Gibson and Yamagi Burmeister, licensed under WTFPL v2
+
+entityDef ai_attackcone {
+	"spawnclass"	"idCombatNode"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef ai_attackcone_once {
+	"spawnclass"	"idCombatNode"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef ai_attackcone_turret {
+	"spawnclass"	"idCombatNode"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef ai_lostcombat {
+	"spawnclass"	"idSpawnableEntity"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+
+
+entityDef path_anim {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_attack {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_conversation {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_conversation_listen {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_corner {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_cycleanim {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_default {
+	"spawnclass"	"idPathCorner"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_hide {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_headanim {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_jump {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_lookat {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_show {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_talk {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_talk_primary {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_talk_secondary {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_talk_triggered {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_turn {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_wait {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_waitforheadanim {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+
+entityDef path_waitfortrigger {
+	"inherit"		"path_default"
+
+	"editor_usage"	"TODO: Meaningful description, this is a stub!"
+
+	"editor_color"	"0.0 0.5 0.8"
+	"editor_maxs"	"8 8 8"
+	"editor_mins"	"-8 -8 -8"
+
+	// TODO: This is just a stub - add proper entity definition and explanation!
+}
+

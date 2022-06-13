@@ -31,7 +31,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectName>Game-d3xp</ProjectName>
+    <ProjectName>Game</ProjectName>
     <ProjectGuid>{0BC6FCC9-C65E-4B1F-9A58-0B9399987C9F}</ProjectGuid>
     <RootNamespace>Game-d3xp</RootNamespace>
     <SccProjectName>

@@ -34,9 +34,9 @@ If you have questions concerning this license or the applicable additional terms
 ===============================================================================
 */
 
-#define GAME_NAME						"DOOM 3"		// appears on window titles and errors
+#define GAME_NAME						"Duke Nukem Forever"		// appears on window titles and errors
 
-#define ENGINE_VERSION					"DOOM 1.3.1"	// printed in console
+#define ENGINE_VERSION					"Duke Nukem Forever 0.01"	// printed in console
 
 // paths
 #define	CD_BASEDIR						"Doom"
@@ -48,7 +48,7 @@ If you have questions concerning this license or the applicable additional terms
 
 // filenames
 #define	CD_EXE							"doom.exe"
-#define CONFIG_FILE						"DoomConfig.cfg"
+#define CONFIG_FILE						"DNFConfig.cfg"
 
 // base folder where the source code lives
 #define SOURCE_CODE_BASE_FOLDER			"neo"
@@ -88,14 +88,14 @@ If you have questions concerning this license or the applicable additional terms
 #define RENDERDEMO_VERSION				2
 
 // editor info
-#define EDITOR_DEFAULT_PROJECT			"doom.qe4"
-#define EDITOR_REGISTRY_KEY				"DOOMRadiant"
-#define EDITOR_WINDOWTEXT				"DOOMEdit"
+#define EDITOR_DEFAULT_PROJECT			"duketool.qe4"
+#define EDITOR_REGISTRY_KEY				"DukeRadiant"
+#define EDITOR_WINDOWTEXT				"Duke's Tool"
 
 // win32 info
-#define WIN32_CONSOLE_CLASS				"DOOM 3 WinConsole"
-#define	WIN32_WINDOW_CLASS_NAME			"DOOM3"
-#define	WIN32_FAKE_WINDOW_CLASS_NAME	"DOOM3_WGL_FAKE"
+#define WIN32_CONSOLE_CLASS				"Duke Nukem Forever WinConsole"
+#define	WIN32_WINDOW_CLASS_NAME			"DNF"
+#define	WIN32_FAKE_WINDOW_CLASS_NAME	"DNF_WGL_FAKE"
 
 // Linux info
 #ifdef ID_DEMO_BUILD
@@ -107,9 +107,9 @@ If you have questions concerning this license or the applicable additional terms
 // CD Key file info
 // goes into BASE_GAMEDIR whatever the fs_game is set to
 // two distinct files for easier win32 installer job
-#define CDKEY_FILE						"doomkey"
+#define CDKEY_FILE						"dukekey"
 #define XPKEY_FILE						"xpkey"
 #define CDKEY_TEXT						"\n// Do not give this file to ANYONE.\n" \
-										"// id Software or Zenimax will NEVER ask you to send this file to them.\n"
+										"// 3drealms will NEVER ask you to send this file to them.\n"
 
 #define CONFIG_SPEC						"config.spec"

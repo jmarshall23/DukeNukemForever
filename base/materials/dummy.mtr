@@ -1,0 +1,16 @@
+textures/colors/black
+{
+   diffusemap textures/dummy_black.tga
+}
+
+textures/colors/white
+{
+   diffusemap textures/dummy_white.tga
+}
+
+lights/defaultPointLight {
+  lightFalloffImage makeintensity(textures/dummy_lighta.tga)
+  {
+    map textures/dummy_light.tga
+  }
+}
