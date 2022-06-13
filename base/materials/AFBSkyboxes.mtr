@@ -1,0 +1,7 @@
+textures/AFBSkyboxes/gulf1up
+{
+	diffusemap textures/AFBSkyboxes/gulf1up.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

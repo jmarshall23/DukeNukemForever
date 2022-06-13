@@ -1,0 +1,147 @@
+textures/arcadefx/backdrop1
+{
+	diffusemap textures/arcadefx/backdrop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/backdrop2
+{
+	diffusemap textures/arcadefx/backdrop2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/blackline
+{
+	diffusemap textures/arcadefx/blackline.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsA00RC
+{
+	diffusemap textures/arcadefx/bluecarsA00RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsA01RC
+{
+	diffusemap textures/arcadefx/bluecarsA01RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsB00RC
+{
+	diffusemap textures/arcadefx/bluecarsB00RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsB01RC
+{
+	diffusemap textures/arcadefx/bluecarsB01RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsC00RC
+{
+	diffusemap textures/arcadefx/bluecarsC00RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsC01RC
+{
+	diffusemap textures/arcadefx/bluecarsC01RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsD00RC
+{
+	diffusemap textures/arcadefx/bluecarsD00RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bluecarsD01RC
+{
+	diffusemap textures/arcadefx/bluecarsD01RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/bullet2
+{
+	diffusemap textures/arcadefx/bullet2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/lunarsurface1
+{
+	diffusemap textures/arcadefx/lunarsurface1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/particle1
+{
+	diffusemap textures/arcadefx/particle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/pcgroundRC
+{
+	diffusemap textures/arcadefx/pcgroundRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/pigcoppercanvas
+{
+	diffusemap textures/arcadefx/pigcoppercanvas.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/piggyRC
+{
+	diffusemap textures/arcadefx/piggyRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/Powerup
+{
+	diffusemap textures/arcadefx/Powerup.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/ship2
+{
+	diffusemap textures/arcadefx/ship2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/shooter1canvas
+{
+	diffusemap textures/arcadefx/shooter1canvas.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/arcadefx/snakbitey2
+{
+	diffusemap textures/arcadefx/snakbitey2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

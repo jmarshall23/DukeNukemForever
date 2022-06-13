@@ -1,0 +1,133 @@
+textures/DukeFonts/DukeJunk
+{
+	diffusemap textures/DukeFonts/DukeJunk.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture0
+{
+	diffusemap textures/DukeFonts/Texture0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture1
+{
+	diffusemap textures/DukeFonts/Texture1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture10
+{
+	diffusemap textures/DukeFonts/Texture10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture11
+{
+	diffusemap textures/DukeFonts/Texture11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture12
+{
+	diffusemap textures/DukeFonts/Texture12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture13
+{
+	diffusemap textures/DukeFonts/Texture13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture14
+{
+	diffusemap textures/DukeFonts/Texture14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture15
+{
+	diffusemap textures/DukeFonts/Texture15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture16
+{
+	diffusemap textures/DukeFonts/Texture16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture17
+{
+	diffusemap textures/DukeFonts/Texture17.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture2
+{
+	diffusemap textures/DukeFonts/Texture2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture3
+{
+	diffusemap textures/DukeFonts/Texture3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture4
+{
+	diffusemap textures/DukeFonts/Texture4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture5
+{
+	diffusemap textures/DukeFonts/Texture5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture6
+{
+	diffusemap textures/DukeFonts/Texture6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture7
+{
+	diffusemap textures/DukeFonts/Texture7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture8
+{
+	diffusemap textures/DukeFonts/Texture8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeFonts/Texture9
+{
+	diffusemap textures/DukeFonts/Texture9.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

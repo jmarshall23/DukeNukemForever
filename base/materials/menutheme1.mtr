@@ -1,0 +1,210 @@
+textures/menutheme1/iconbig_game
+{
+	diffusemap textures/menutheme1/iconbig_game.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/iconbig_game_glow
+{
+	diffusemap textures/menutheme1/iconbig_game_glow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/iconbig_multiplayer
+{
+	diffusemap textures/menutheme1/iconbig_multiplayer.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/iconbig_multiplayer_glow
+{
+	diffusemap textures/menutheme1/iconbig_multiplayer_glow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/iconbig_settings
+{
+	diffusemap textures/menutheme1/iconbig_settings.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/iconbig_settings_glow
+{
+	diffusemap textures/menutheme1/iconbig_settings_glow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/iconbig_support
+{
+	diffusemap textures/menutheme1/iconbig_support.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/iconbig_support_glow
+{
+	diffusemap textures/menutheme1/iconbig_support_glow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_audio
+{
+	diffusemap textures/menutheme1/icon_audio.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_controls
+{
+	diffusemap textures/menutheme1/icon_controls.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_findgame
+{
+	diffusemap textures/menutheme1/icon_findgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/ICON_Game
+{
+	diffusemap textures/menutheme1/ICON_Game.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_loadgame
+{
+	diffusemap textures/menutheme1/icon_loadgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_newgame
+{
+	diffusemap textures/menutheme1/icon_newgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_playersetup
+{
+	diffusemap textures/menutheme1/icon_playersetup.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_profiles
+{
+	diffusemap textures/menutheme1/icon_profiles.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_quit
+{
+	diffusemap textures/menutheme1/icon_quit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_savegame
+{
+	diffusemap textures/menutheme1/icon_savegame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_sos
+{
+	diffusemap textures/menutheme1/icon_sos.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/icon_video
+{
+	diffusemap textures/menutheme1/icon_video.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_window2BC
+{
+	diffusemap textures/menutheme1/menu_window2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_window3BC
+{
+	diffusemap textures/menutheme1/menu_window3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_windowBC
+{
+	diffusemap textures/menutheme1/menu_windowBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_windowgrey2BC
+{
+	diffusemap textures/menutheme1/menu_windowgrey2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_windowgrey3BC
+{
+	diffusemap textures/menutheme1/menu_windowgrey3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_windowgreyBC
+{
+	diffusemap textures/menutheme1/menu_windowgreyBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_windowgrey_glow3BC
+{
+	diffusemap textures/menutheme1/menu_windowgrey_glow3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_windowgrey_glowBC
+{
+	diffusemap textures/menutheme1/menu_windowgrey_glowBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_window_glow3BC
+{
+	diffusemap textures/menutheme1/menu_window_glow3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/menutheme1/menu_window_glowBC
+{
+	diffusemap textures/menutheme1/menu_window_glowBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

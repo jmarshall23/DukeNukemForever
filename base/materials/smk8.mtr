@@ -1,0 +1,35 @@
+textures/smk8/Applause1tw
+{
+	diffusemap textures/smk8/Applause1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk8/bannersmk1tw
+{
+	diffusemap textures/smk8/bannersmk1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk8/EmailSmack1KS
+{
+	diffusemap textures/smk8/EmailSmack1KS.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk8/lightingarc
+{
+	diffusemap textures/smk8/lightingarc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk8/lk_news
+{
+	diffusemap textures/smk8/lk_news.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

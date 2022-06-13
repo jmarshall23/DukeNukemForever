@@ -1,0 +1,2989 @@
+textures/hud_effects/am_antidote
+{
+	diffusemap textures/hud_effects/am_antidote.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_battery
+{
+	diffusemap textures/hud_effects/am_battery.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_burrito
+{
+	diffusemap textures/hud_effects/am_burrito.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_c02
+{
+	diffusemap textures/hud_effects/am_c02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cash
+{
+	diffusemap textures/hud_effects/am_cash.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cash_1
+{
+	diffusemap textures/hud_effects/am_cash_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cash_10
+{
+	diffusemap textures/hud_effects/am_cash_10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cash_100
+{
+	diffusemap textures/hud_effects/am_cash_100.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cash_25
+{
+	diffusemap textures/hud_effects/am_cash_25.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cash_3
+{
+	diffusemap textures/hud_effects/am_cash_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cash_5
+{
+	diffusemap textures/hud_effects/am_cash_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_chainsaw
+{
+	diffusemap textures/hud_effects/am_chainsaw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_chips
+{
+	diffusemap textures/hud_effects/am_chips.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_cowpie
+{
+	diffusemap textures/hud_effects/am_cowpie.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_deserteagle
+{
+	diffusemap textures/hud_effects/am_deserteagle.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_eaglehollow
+{
+	diffusemap textures/hud_effects/am_eaglehollow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_eaglenormal
+{
+	diffusemap textures/hud_effects/am_eaglenormal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_eaglepiercin
+{
+	diffusemap textures/hud_effects/am_eaglepiercin.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_flamethrow
+{
+	diffusemap textures/hud_effects/am_flamethrow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_freezecannon
+{
+	diffusemap textures/hud_effects/am_freezecannon.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_fuse
+{
+	diffusemap textures/hud_effects/am_fuse.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_gascan
+{
+	diffusemap textures/hud_effects/am_gascan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_genkeycard
+{
+	diffusemap textures/hud_effects/am_genkeycard.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_healing
+{
+	diffusemap textures/hud_effects/am_healing.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_hypogun
+{
+	diffusemap textures/hud_effects/am_hypogun.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_jetpack
+{
+	diffusemap textures/hud_effects/am_jetpack.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_lkkeycard
+{
+	diffusemap textures/hud_effects/am_lkkeycard.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_m16
+{
+	diffusemap textures/hud_effects/am_m16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_m16grenades
+{
+	diffusemap textures/hud_effects/am_m16grenades.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_m16nato
+{
+	diffusemap textures/hud_effects/am_m16nato.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_medkit
+{
+	diffusemap textures/hud_effects/am_medkit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_mrereg
+{
+	diffusemap textures/hud_effects/am_mrereg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_mreveg
+{
+	diffusemap textures/hud_effects/am_mreveg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_multibomb
+{
+	diffusemap textures/hud_effects/am_multibomb.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_powertrip
+{
+	diffusemap textures/hud_effects/am_powertrip.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_rebreath
+{
+	diffusemap textures/hud_effects/am_rebreath.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_rpg
+{
+	diffusemap textures/hud_effects/am_rpg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_rpgnuke
+{
+	diffusemap textures/hud_effects/am_rpgnuke.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_rpgrockets
+{
+	diffusemap textures/hud_effects/am_rpgrockets.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_sandwich
+{
+	diffusemap textures/hud_effects/am_sandwich.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_shield
+{
+	diffusemap textures/hud_effects/am_shield.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_shot12gauge
+{
+	diffusemap textures/hud_effects/am_shot12gauge.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_shotacidshel
+{
+	diffusemap textures/hud_effects/am_shotacidshel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_shotgun
+{
+	diffusemap textures/hud_effects/am_shotgun.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_shrinkray
+{
+	diffusemap textures/hud_effects/am_shrinkray.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_shrinkraybrain
+{
+	diffusemap textures/hud_effects/am_shrinkraybrain.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_sniper
+{
+	diffusemap textures/hud_effects/am_sniper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_sospcell
+{
+	diffusemap textures/hud_effects/am_sospcell.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_sportsbar
+{
+	diffusemap textures/hud_effects/am_sportsbar.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_sportsdrink
+{
+	diffusemap textures/hud_effects/am_sportsdrink.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_steroids
+{
+	diffusemap textures/hud_effects/am_steroids.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/am_tripmine
+{
+	diffusemap textures/hud_effects/am_tripmine.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bacteriadisp1
+{
+	diffusemap textures/hud_effects/bacteriadisp1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bartest
+{
+	diffusemap textures/hud_effects/bartest.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/belloslash1A_01
+{
+	diffusemap textures/hud_effects/belloslash1A_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/belloslash1A_02
+{
+	diffusemap textures/hud_effects/belloslash1A_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/belloslash1A_03
+{
+	diffusemap textures/hud_effects/belloslash1A_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/belloslash2A_01
+{
+	diffusemap textures/hud_effects/belloslash2A_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/belloslash2A_02
+{
+	diffusemap textures/hud_effects/belloslash2A_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/belloslash2A_03
+{
+	diffusemap textures/hud_effects/belloslash2A_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/blackcircle1BC
+{
+	diffusemap textures/hud_effects/blackcircle1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/blooddualslash1ABC
+{
+	diffusemap textures/hud_effects/blooddualslash1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/blooddualslash1A_01
+{
+	diffusemap textures/hud_effects/blooddualslash1A_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/blooddualslash1A_02
+{
+	diffusemap textures/hud_effects/blooddualslash1A_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/blooddualslash2A_01
+{
+	diffusemap textures/hud_effects/blooddualslash2A_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/blooddualslash2A_02
+{
+	diffusemap textures/hud_effects/blooddualslash2A_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/blooddualslash2A_03
+{
+	diffusemap textures/hud_effects/blooddualslash2A_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslash1ABC
+{
+	diffusemap textures/hud_effects/bloodslash1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslash1BBC
+{
+	diffusemap textures/hud_effects/bloodslash1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslashA_01
+{
+	diffusemap textures/hud_effects/bloodslashA_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslashA_02
+{
+	diffusemap textures/hud_effects/bloodslashA_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslashA_03
+{
+	diffusemap textures/hud_effects/bloodslashA_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslashB_01
+{
+	diffusemap textures/hud_effects/bloodslashB_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslashB_02
+{
+	diffusemap textures/hud_effects/bloodslashB_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bloodslashB_03s
+{
+	diffusemap textures/hud_effects/bloodslashB_03s.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bubbcircle1BC
+{
+	diffusemap textures/hud_effects/bubbcircle1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bubble1BC
+{
+	diffusemap textures/hud_effects/bubble1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/bubb_highlight1
+{
+	diffusemap textures/hud_effects/bubb_highlight1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/checkbox_offBC
+{
+	diffusemap textures/hud_effects/checkbox_offBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/checkbox_onBC
+{
+	diffusemap textures/hud_effects/checkbox_onBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair10BC
+{
+	diffusemap textures/hud_effects/crosshair10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair11BC
+{
+	diffusemap textures/hud_effects/crosshair11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair12BC
+{
+	diffusemap textures/hud_effects/crosshair12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair13BC
+{
+	diffusemap textures/hud_effects/crosshair13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair14BC
+{
+	diffusemap textures/hud_effects/crosshair14BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair1BC
+{
+	diffusemap textures/hud_effects/crosshair1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair2BC
+{
+	diffusemap textures/hud_effects/crosshair2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair3BC
+{
+	diffusemap textures/hud_effects/crosshair3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair4BC
+{
+	diffusemap textures/hud_effects/crosshair4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair5BC
+{
+	diffusemap textures/hud_effects/crosshair5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair6BC
+{
+	diffusemap textures/hud_effects/crosshair6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair7BC
+{
+	diffusemap textures/hud_effects/crosshair7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair8BC
+{
+	diffusemap textures/hud_effects/crosshair8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/crosshair9BC
+{
+	diffusemap textures/hud_effects/crosshair9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_electric
+{
+	diffusemap textures/hud_effects/dmg_electric.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_expand
+{
+	diffusemap textures/hud_effects/dmg_expand.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_fire
+{
+	diffusemap textures/hud_effects/dmg_fire.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_freeze
+{
+	diffusemap textures/hud_effects/dmg_freeze.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_poison
+{
+	diffusemap textures/hud_effects/dmg_poison.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_radiation
+{
+	diffusemap textures/hud_effects/dmg_radiation.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_safemode
+{
+	diffusemap textures/hud_effects/dmg_safemode.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_shrink
+{
+	diffusemap textures/hud_effects/dmg_shrink.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_steroids
+{
+	diffusemap textures/hud_effects/dmg_steroids.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_toxicchem
+{
+	diffusemap textures/hud_effects/dmg_toxicchem.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dmg_water
+{
+	diffusemap textures/hud_effects/dmg_water.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_biochemical
+{
+	diffusemap textures/hud_effects/dm_biochemical.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_biochemical_small
+{
+	diffusemap textures/hud_effects/dm_biochemical_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_chainsaw
+{
+	diffusemap textures/hud_effects/dm_chainsaw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_chainsaw_small
+{
+	diffusemap textures/hud_effects/dm_chainsaw_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_choking
+{
+	diffusemap textures/hud_effects/dm_choking.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_choking_small
+{
+	diffusemap textures/hud_effects/dm_choking_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_deserteagle
+{
+	diffusemap textures/hud_effects/dm_deserteagle.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_deserteagle_small
+{
+	diffusemap textures/hud_effects/dm_deserteagle_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_drown
+{
+	diffusemap textures/hud_effects/dm_drown.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_drown_small
+{
+	diffusemap textures/hud_effects/dm_drown_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_emp
+{
+	diffusemap textures/hud_effects/dm_emp.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_emp_small
+{
+	diffusemap textures/hud_effects/dm_emp_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_fall
+{
+	diffusemap textures/hud_effects/dm_fall.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_fall_small
+{
+	diffusemap textures/hud_effects/dm_fall_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_fire
+{
+	diffusemap textures/hud_effects/dm_fire.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_fire_small
+{
+	diffusemap textures/hud_effects/dm_fire_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_flamethrow
+{
+	diffusemap textures/hud_effects/dm_flamethrow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_flamethrow_small
+{
+	diffusemap textures/hud_effects/dm_flamethrow_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_freezecannon
+{
+	diffusemap textures/hud_effects/dm_freezecannon.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_freezecannon_small
+{
+	diffusemap textures/hud_effects/dm_freezecannon_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_hypogun
+{
+	diffusemap textures/hud_effects/dm_hypogun.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_hypogun_small
+{
+	diffusemap textures/hud_effects/dm_hypogun_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_m16
+{
+	diffusemap textures/hud_effects/dm_m16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_m16ico
+{
+	diffusemap textures/hud_effects/dm_m16ico.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_m16ico_small
+{
+	diffusemap textures/hud_effects/dm_m16ico_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_m16_small
+{
+	diffusemap textures/hud_effects/dm_m16_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_mightyfoot
+{
+	diffusemap textures/hud_effects/dm_mightyfoot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_mightyfoot_small
+{
+	diffusemap textures/hud_effects/dm_mightyfoot_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_nuke
+{
+	diffusemap textures/hud_effects/dm_nuke.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_nuke_small
+{
+	diffusemap textures/hud_effects/dm_nuke_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_pipebomb
+{
+	diffusemap textures/hud_effects/dm_pipebomb.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_pipebomb_small
+{
+	diffusemap textures/hud_effects/dm_pipebomb_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_radiation
+{
+	diffusemap textures/hud_effects/dm_radiation.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_radiation_small
+{
+	diffusemap textures/hud_effects/dm_radiation_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_rpg
+{
+	diffusemap textures/hud_effects/dm_rpg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_rpg_small
+{
+	diffusemap textures/hud_effects/dm_rpg_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_shotgun
+{
+	diffusemap textures/hud_effects/dm_shotgun.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_shotgun_small
+{
+	diffusemap textures/hud_effects/dm_shotgun_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_shrinkray
+{
+	diffusemap textures/hud_effects/dm_shrinkray.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_shrinkray_small
+{
+	diffusemap textures/hud_effects/dm_shrinkray_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_sniper
+{
+	diffusemap textures/hud_effects/dm_sniper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_sniper_small
+{
+	diffusemap textures/hud_effects/dm_sniper_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_steroidburnout
+{
+	diffusemap textures/hud_effects/dm_steroidburnout.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_steroidburnout_small
+{
+	diffusemap textures/hud_effects/dm_steroidburnout_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_suicide
+{
+	diffusemap textures/hud_effects/dm_suicide.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_suicide_small
+{
+	diffusemap textures/hud_effects/dm_suicide_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_tripmine
+{
+	diffusemap textures/hud_effects/dm_tripmine.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_tripmine_small
+{
+	diffusemap textures/hud_effects/dm_tripmine_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_turret
+{
+	diffusemap textures/hud_effects/dm_turret.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/dm_turret_small
+{
+	diffusemap textures/hud_effects/dm_turret_small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gameexpand_01A
+{
+	diffusemap textures/hud_effects/gameexpand_01A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gameexpand_01B
+{
+	diffusemap textures/hud_effects/gameexpand_01B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gameexpand_02A
+{
+	diffusemap textures/hud_effects/gameexpand_02A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gameexpand_02B
+{
+	diffusemap textures/hud_effects/gameexpand_02B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gameexpand_03A
+{
+	diffusemap textures/hud_effects/gameexpand_03A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gameexpand_03B
+{
+	diffusemap textures/hud_effects/gameexpand_03B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gpf_degauss
+{
+	diffusemap textures/hud_effects/gpf_degauss.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gpf_degaussing
+{
+	diffusemap textures/hud_effects/gpf_degaussing.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/gpf_overload
+{
+	diffusemap textures/hud_effects/gpf_overload.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/heatblack1BC
+{
+	diffusemap textures/hud_effects/heatblack1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/heatglow1BC
+{
+	diffusemap textures/hud_effects/heatglow1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/heightangle
+{
+	diffusemap textures/hud_effects/heightangle.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_answer
+{
+	diffusemap textures/hud_effects/hudcall_answer.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_baranim_000
+{
+	diffusemap textures/hud_effects/hudcall_baranim_000.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_baranim_001
+{
+	diffusemap textures/hud_effects/hudcall_baranim_001.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_baranim_002
+{
+	diffusemap textures/hud_effects/hudcall_baranim_002.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_baranim_003
+{
+	diffusemap textures/hud_effects/hudcall_baranim_003.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_baranim_004
+{
+	diffusemap textures/hud_effects/hudcall_baranim_004.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_baranim_005
+{
+	diffusemap textures/hud_effects/hudcall_baranim_005.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_disconnectBC
+{
+	diffusemap textures/hud_effects/hudcall_disconnectBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_transmission01BC
+{
+	diffusemap textures/hud_effects/hudcall_transmission01BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hudcall_transmission02BC
+{
+	diffusemap textures/hud_effects/hudcall_transmission02BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/hud_cursor1
+{
+	diffusemap textures/hud_effects/hud_cursor1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/humidlevels1BC
+{
+	diffusemap textures/hud_effects/humidlevels1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/infinityicon
+{
+	diffusemap textures/hud_effects/infinityicon.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_cursorBC
+{
+	diffusemap textures/hud_effects/ingame_cursorBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_example
+{
+	diffusemap textures/hud_effects/ingame_example.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_horzbar_ext
+{
+	diffusemap textures/hud_effects/ingame_horzbar_ext.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_itemslant1BC
+{
+	diffusemap textures/hud_effects/ingame_itemslant1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_itemslant_highlightBC
+{
+	diffusemap textures/hud_effects/ingame_itemslant_highlightBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_main1BC
+{
+	diffusemap textures/hud_effects/ingame_main1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_main2BC
+{
+	diffusemap textures/hud_effects/ingame_main2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_main_repeat1BC
+{
+	diffusemap textures/hud_effects/ingame_main_repeat1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_miscbar1BC
+{
+	diffusemap textures/hud_effects/ingame_miscbar1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_miscbar2BC
+{
+	diffusemap textures/hud_effects/ingame_miscbar2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_miscbar_alert1BC
+{
+	diffusemap textures/hud_effects/ingame_miscbar_alert1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_numbercircleBC
+{
+	diffusemap textures/hud_effects/ingame_numbercircleBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_rightslant1BC
+{
+	diffusemap textures/hud_effects/ingame_rightslant1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_solidfillBC
+{
+	diffusemap textures/hud_effects/ingame_solidfillBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox1BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox2BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox3BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox4BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox5BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox6BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox_fill1BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox_fill1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusbox_fill2BC
+{
+	diffusemap textures/hud_effects/ingame_statusbox_fill2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusgradient2BC
+{
+	diffusemap textures/hud_effects/ingame_statusgradient2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_statusgradientBC
+{
+	diffusemap textures/hud_effects/ingame_statusgradientBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_wepbar1BC
+{
+	diffusemap textures/hud_effects/ingame_wepbar1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_wepbar2BC
+{
+	diffusemap textures/hud_effects/ingame_wepbar2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_wepbar_botext
+{
+	diffusemap textures/hud_effects/ingame_wepbar_botext.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_wepbar_highlight1BC
+{
+	diffusemap textures/hud_effects/ingame_wepbar_highlight1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_wepbar_highlight2BC
+{
+	diffusemap textures/hud_effects/ingame_wepbar_highlight2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_wepbar_scan
+{
+	diffusemap textures/hud_effects/ingame_wepbar_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ingame_wepbar_topext
+{
+	diffusemap textures/hud_effects/ingame_wepbar_topext.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ing_gradient1BC
+{
+	diffusemap textures/hud_effects/ing_gradient1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ing_greenp1BC
+{
+	diffusemap textures/hud_effects/ing_greenp1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ing_scanlines1B
+{
+	diffusemap textures/hud_effects/ing_scanlines1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/itemslant_scan
+{
+	diffusemap textures/hud_effects/itemslant_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/lenswater1BC
+{
+	diffusemap textures/hud_effects/lenswater1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/lenswater2BC
+{
+	diffusemap textures/hud_effects/lenswater2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadbat1BC
+{
+	diffusemap textures/hud_effects/loadbat1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen1ABC
+{
+	diffusemap textures/hud_effects/loadscreen1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen1BBC
+{
+	diffusemap textures/hud_effects/loadscreen1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen1CBC
+{
+	diffusemap textures/hud_effects/loadscreen1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen1DBC
+{
+	diffusemap textures/hud_effects/loadscreen1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen2ABC
+{
+	diffusemap textures/hud_effects/loadscreen2ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen2BBC
+{
+	diffusemap textures/hud_effects/loadscreen2BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen2CBC
+{
+	diffusemap textures/hud_effects/loadscreen2CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen2DBC
+{
+	diffusemap textures/hud_effects/loadscreen2DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen3ABC
+{
+	diffusemap textures/hud_effects/loadscreen3ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen3BBC
+{
+	diffusemap textures/hud_effects/loadscreen3BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen3CBC
+{
+	diffusemap textures/hud_effects/loadscreen3CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/loadscreen3DBC
+{
+	diffusemap textures/hud_effects/loadscreen3DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mainpiece_scan
+{
+	diffusemap textures/hud_effects/mainpiece_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_antidote
+{
+	diffusemap textures/hud_effects/mitem_antidote.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_bigfuse
+{
+	diffusemap textures/hud_effects/mitem_bigfuse.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_chainsaw
+{
+	diffusemap textures/hud_effects/mitem_chainsaw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_deagle
+{
+	diffusemap textures/hud_effects/mitem_deagle.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_digizoom
+{
+	diffusemap textures/hud_effects/mitem_digizoom.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_emp
+{
+	diffusemap textures/hud_effects/mitem_emp.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_flamethro
+{
+	diffusemap textures/hud_effects/mitem_flamethro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_freezecannon
+{
+	diffusemap textures/hud_effects/mitem_freezecannon.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_fuse
+{
+	diffusemap textures/hud_effects/mitem_fuse.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_fuse100
+{
+	diffusemap textures/hud_effects/mitem_fuse100.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_fuse200
+{
+	diffusemap textures/hud_effects/mitem_fuse200.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_fuse50
+{
+	diffusemap textures/hud_effects/mitem_fuse50.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_gencard
+{
+	diffusemap textures/hud_effects/mitem_gencard.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_healing
+{
+	diffusemap textures/hud_effects/mitem_healing.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_hypogun
+{
+	diffusemap textures/hud_effects/mitem_hypogun.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_jetpack
+{
+	diffusemap textures/hud_effects/mitem_jetpack.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_lkcard
+{
+	diffusemap textures/hud_effects/mitem_lkcard.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_m16
+{
+	diffusemap textures/hud_effects/mitem_m16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_medkit
+{
+	diffusemap textures/hud_effects/mitem_medkit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_mightyboo
+{
+	diffusemap textures/hud_effects/mitem_mightyboo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_multibomb
+{
+	diffusemap textures/hud_effects/mitem_multibomb.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_nightvisi
+{
+	diffusemap textures/hud_effects/mitem_nightvisi.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_noair
+{
+	diffusemap textures/hud_effects/mitem_noair.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_noammo
+{
+	diffusemap textures/hud_effects/mitem_noammo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_rebreath
+{
+	diffusemap textures/hud_effects/mitem_rebreath.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_rpg
+{
+	diffusemap textures/hud_effects/mitem_rpg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_safemode
+{
+	diffusemap textures/hud_effects/mitem_safemode.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_shield
+{
+	diffusemap textures/hud_effects/mitem_shield.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_shotgun
+{
+	diffusemap textures/hud_effects/mitem_shotgun.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_shrinkray
+{
+	diffusemap textures/hud_effects/mitem_shrinkray.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_sniper
+{
+	diffusemap textures/hud_effects/mitem_sniper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_sniper2
+{
+	diffusemap textures/hud_effects/mitem_sniper2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_sospcell
+{
+	diffusemap textures/hud_effects/mitem_sospcell.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_steriods
+{
+	diffusemap textures/hud_effects/mitem_steriods.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_thermvisi
+{
+	diffusemap textures/hud_effects/mitem_thermvisi.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_todo
+{
+	diffusemap textures/hud_effects/mitem_todo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mitem_tripmines
+{
+	diffusemap textures/hud_effects/mitem_tripmines.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mnu_objectives
+{
+	diffusemap textures/hud_effects/mnu_objectives.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_bleft
+{
+	diffusemap textures/hud_effects/mover_bleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_bright
+{
+	diffusemap textures/hud_effects/mover_bright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_continue
+{
+	diffusemap textures/hud_effects/mover_continue.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_continueH
+{
+	diffusemap textures/hud_effects/mover_continueH.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_quit
+{
+	diffusemap textures/hud_effects/mover_quit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_quitHL
+{
+	diffusemap textures/hud_effects/mover_quitHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_tleft
+{
+	diffusemap textures/hud_effects/mover_tleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mover_tright
+{
+	diffusemap textures/hud_effects/mover_tright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mplayerexpand_01A
+{
+	diffusemap textures/hud_effects/mplayerexpand_01A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mplayerexpand_01B
+{
+	diffusemap textures/hud_effects/mplayerexpand_01B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mplayerexpand_02A
+{
+	diffusemap textures/hud_effects/mplayerexpand_02A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mplayerexpand_02B
+{
+	diffusemap textures/hud_effects/mplayerexpand_02B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mplayerexpand_03A
+{
+	diffusemap textures/hud_effects/mplayerexpand_03A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/mplayerexpand_03B
+{
+	diffusemap textures/hud_effects/mplayerexpand_03B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nightblack1BC
+{
+	diffusemap textures/hud_effects/nightblack1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nightglow1BC
+{
+	diffusemap textures/hud_effects/nightglow1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nightlines1BC
+{
+	diffusemap textures/hud_effects/nightlines1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nightlines2BC
+{
+	diffusemap textures/hud_effects/nightlines2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_00
+{
+	diffusemap textures/hud_effects/nukesymspin_00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_01
+{
+	diffusemap textures/hud_effects/nukesymspin_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_02
+{
+	diffusemap textures/hud_effects/nukesymspin_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_03
+{
+	diffusemap textures/hud_effects/nukesymspin_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_04
+{
+	diffusemap textures/hud_effects/nukesymspin_04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_05
+{
+	diffusemap textures/hud_effects/nukesymspin_05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_06
+{
+	diffusemap textures/hud_effects/nukesymspin_06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_07
+{
+	diffusemap textures/hud_effects/nukesymspin_07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_08
+{
+	diffusemap textures/hud_effects/nukesymspin_08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/nukesymspin_09
+{
+	diffusemap textures/hud_effects/nukesymspin_09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/objleft_loop
+{
+	diffusemap textures/hud_effects/objleft_loop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/objleft_start
+{
+	diffusemap textures/hud_effects/objleft_start.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/objright_loop
+{
+	diffusemap textures/hud_effects/objright_loop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/objright_start
+{
+	diffusemap textures/hud_effects/objright_start.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ob_select1bc
+{
+	diffusemap textures/hud_effects/ob_select1bc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ob_select2bc
+{
+	diffusemap textures/hud_effects/ob_select2bc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ob_select3bc
+{
+	diffusemap textures/hud_effects/ob_select3bc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ob_select4bc
+{
+	diffusemap textures/hud_effects/ob_select4bc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ob_select5bc
+{
+	diffusemap textures/hud_effects/ob_select5bc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/ob_select6bc
+{
+	diffusemap textures/hud_effects/ob_select6bc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/overloadboot_loop
+{
+	diffusemap textures/hud_effects/overloadboot_loop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/overloadboot_start
+{
+	diffusemap textures/hud_effects/overloadboot_start.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/overloadgpf_loop
+{
+	diffusemap textures/hud_effects/overloadgpf_loop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/overloadgpf_start
+{
+	diffusemap textures/hud_effects/overloadgpf_start.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/raindrop1
+{
+	diffusemap textures/hud_effects/raindrop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/rightslant_scan
+{
+	diffusemap textures/hud_effects/rightslant_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/settingsexpand_01A
+{
+	diffusemap textures/hud_effects/settingsexpand_01A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/settingsexpand_01B
+{
+	diffusemap textures/hud_effects/settingsexpand_01B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/settingsexpand_02A
+{
+	diffusemap textures/hud_effects/settingsexpand_02A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/settingsexpand_02B
+{
+	diffusemap textures/hud_effects/settingsexpand_02B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/settingsexpand_03A
+{
+	diffusemap textures/hud_effects/settingsexpand_03A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/settingsexpand_03B
+{
+	diffusemap textures/hud_effects/settingsexpand_03B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sniperarrow1BC
+{
+	diffusemap textures/hud_effects/sniperarrow1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sniperblack1BC
+{
+	diffusemap textures/hud_effects/sniperblack1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpbootup1BC
+{
+	diffusemap textures/hud_effects/snpbootup1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpbootup2BC
+{
+	diffusemap textures/hud_effects/snpbootup2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpriflelink1BC
+{
+	diffusemap textures/hud_effects/snpriflelink1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpriflelink2BC
+{
+	diffusemap textures/hud_effects/snpriflelink2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpstats1bc
+{
+	diffusemap textures/hud_effects/snpstats1bc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpstats2BC
+{
+	diffusemap textures/hud_effects/snpstats2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpzoom10BC
+{
+	diffusemap textures/hud_effects/snpzoom10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpzoom1BC
+{
+	diffusemap textures/hud_effects/snpzoom1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpzoom20BC
+{
+	diffusemap textures/hud_effects/snpzoom20BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpzoom40BC
+{
+	diffusemap textures/hud_effects/snpzoom40BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snpzoom5BC
+{
+	diffusemap textures/hud_effects/snpzoom5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snp_innercircle1BC
+{
+	diffusemap textures/hud_effects/snp_innercircle1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snp_innercircle2BC
+{
+	diffusemap textures/hud_effects/snp_innercircle2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/snp_innercircle3BC
+{
+	diffusemap textures/hud_effects/snp_innercircle3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_00
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_01
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_02
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_03
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_04
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_06
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_10
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_14
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_dwnlobj_18
+{
+	diffusemap textures/hud_effects/stat_dwnlobj_18.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_memobj_00
+{
+	diffusemap textures/hud_effects/stat_memobj_00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_memobj_01
+{
+	diffusemap textures/hud_effects/stat_memobj_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_memobj_02
+{
+	diffusemap textures/hud_effects/stat_memobj_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_memobj_03
+{
+	diffusemap textures/hud_effects/stat_memobj_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_memobj_05
+{
+	diffusemap textures/hud_effects/stat_memobj_05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/stat_memobj_10
+{
+	diffusemap textures/hud_effects/stat_memobj_10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesBL
+{
+	diffusemap textures/hud_effects/sunglassesBL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesBLglo
+{
+	diffusemap textures/hud_effects/sunglassesBLglo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesBR
+{
+	diffusemap textures/hud_effects/sunglassesBR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesBRglo
+{
+	diffusemap textures/hud_effects/sunglassesBRglo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesTL
+{
+	diffusemap textures/hud_effects/sunglassesTL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesTLglo
+{
+	diffusemap textures/hud_effects/sunglassesTLglo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesTR
+{
+	diffusemap textures/hud_effects/sunglassesTR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/sunglassesTRglo
+{
+	diffusemap textures/hud_effects/sunglassesTRglo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/template_itemslant_scan
+{
+	diffusemap textures/hud_effects/template_itemslant_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/template_mainpiece_scan
+{
+	diffusemap textures/hud_effects/template_mainpiece_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/template_rightslant_scan
+{
+	diffusemap textures/hud_effects/template_rightslant_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/template_toppiece_scan
+{
+	diffusemap textures/hud_effects/template_toppiece_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/template_wepbar_scan
+{
+	diffusemap textures/hud_effects/template_wepbar_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/testhud1BC
+{
+	diffusemap textures/hud_effects/testhud1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/testhud2BC
+{
+	diffusemap textures/hud_effects/testhud2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/toppiece_scan
+{
+	diffusemap textures/hud_effects/toppiece_scan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB0
+{
+	diffusemap textures/hud_effects/visionstaticB0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB1
+{
+	diffusemap textures/hud_effects/visionstaticB1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB10
+{
+	diffusemap textures/hud_effects/visionstaticB10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB11
+{
+	diffusemap textures/hud_effects/visionstaticB11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB12
+{
+	diffusemap textures/hud_effects/visionstaticB12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB13
+{
+	diffusemap textures/hud_effects/visionstaticB13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB14
+{
+	diffusemap textures/hud_effects/visionstaticB14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB15
+{
+	diffusemap textures/hud_effects/visionstaticB15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB16
+{
+	diffusemap textures/hud_effects/visionstaticB16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB17
+{
+	diffusemap textures/hud_effects/visionstaticB17.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB18
+{
+	diffusemap textures/hud_effects/visionstaticB18.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB19
+{
+	diffusemap textures/hud_effects/visionstaticB19.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB2
+{
+	diffusemap textures/hud_effects/visionstaticB2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB20
+{
+	diffusemap textures/hud_effects/visionstaticB20.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB21
+{
+	diffusemap textures/hud_effects/visionstaticB21.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB22
+{
+	diffusemap textures/hud_effects/visionstaticB22.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB23
+{
+	diffusemap textures/hud_effects/visionstaticB23.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB24
+{
+	diffusemap textures/hud_effects/visionstaticB24.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB25
+{
+	diffusemap textures/hud_effects/visionstaticB25.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB26
+{
+	diffusemap textures/hud_effects/visionstaticB26.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB27
+{
+	diffusemap textures/hud_effects/visionstaticB27.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB3
+{
+	diffusemap textures/hud_effects/visionstaticB3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB4
+{
+	diffusemap textures/hud_effects/visionstaticB4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB5
+{
+	diffusemap textures/hud_effects/visionstaticB5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB6
+{
+	diffusemap textures/hud_effects/visionstaticB6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB7
+{
+	diffusemap textures/hud_effects/visionstaticB7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB8
+{
+	diffusemap textures/hud_effects/visionstaticB8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticB9
+{
+	diffusemap textures/hud_effects/visionstaticB9.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticC0
+{
+	diffusemap textures/hud_effects/visionstaticC0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticC1
+{
+	diffusemap textures/hud_effects/visionstaticC1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticC2
+{
+	diffusemap textures/hud_effects/visionstaticC2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticC3
+{
+	diffusemap textures/hud_effects/visionstaticC3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticC4
+{
+	diffusemap textures/hud_effects/visionstaticC4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD00
+{
+	diffusemap textures/hud_effects/visionstaticD00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD01
+{
+	diffusemap textures/hud_effects/visionstaticD01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD02
+{
+	diffusemap textures/hud_effects/visionstaticD02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD03
+{
+	diffusemap textures/hud_effects/visionstaticD03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD04
+{
+	diffusemap textures/hud_effects/visionstaticD04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD05
+{
+	diffusemap textures/hud_effects/visionstaticD05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD06
+{
+	diffusemap textures/hud_effects/visionstaticD06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD07
+{
+	diffusemap textures/hud_effects/visionstaticD07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD08
+{
+	diffusemap textures/hud_effects/visionstaticD08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD09
+{
+	diffusemap textures/hud_effects/visionstaticD09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD10
+{
+	diffusemap textures/hud_effects/visionstaticD10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD11
+{
+	diffusemap textures/hud_effects/visionstaticD11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD12
+{
+	diffusemap textures/hud_effects/visionstaticD12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD13
+{
+	diffusemap textures/hud_effects/visionstaticD13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD14
+{
+	diffusemap textures/hud_effects/visionstaticD14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD15
+{
+	diffusemap textures/hud_effects/visionstaticD15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD16
+{
+	diffusemap textures/hud_effects/visionstaticD16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD17
+{
+	diffusemap textures/hud_effects/visionstaticD17.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD18
+{
+	diffusemap textures/hud_effects/visionstaticD18.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/visionstaticD19
+{
+	diffusemap textures/hud_effects/visionstaticD19.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/warningRC
+{
+	diffusemap textures/hud_effects/warningRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/weap_highlight1
+{
+	diffusemap textures/hud_effects/weap_highlight1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/xy_position1BC
+{
+	diffusemap textures/hud_effects/xy_position1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/xy_position2BC
+{
+	diffusemap textures/hud_effects/xy_position2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/zoomblack1BC
+{
+	diffusemap textures/hud_effects/zoomblack1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/zoomblack1TESTBC
+{
+	diffusemap textures/hud_effects/zoomblack1TESTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/zoomglow1BC
+{
+	diffusemap textures/hud_effects/zoomglow1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hud_effects/zoomglow2BC
+{
+	diffusemap textures/hud_effects/zoomglow2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

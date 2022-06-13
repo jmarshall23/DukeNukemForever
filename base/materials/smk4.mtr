@@ -1,0 +1,105 @@
+textures/smk4/s_mainfrmtube
+{
+	diffusemap textures/smk4/s_mainfrmtube.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_maxine
+{
+	diffusemap textures/smk4/s_maxine.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_mnfrmstatoff
+{
+	diffusemap textures/smk4/s_mnfrmstatoff.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_puzscrnsaver1
+{
+	diffusemap textures/smk4/s_puzscrnsaver1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_raysent
+{
+	diffusemap textures/smk4/s_raysent.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_redent
+{
+	diffusemap textures/smk4/s_redent.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_sniper_sghud
+{
+	diffusemap textures/smk4/s_sniper_sghud.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_starbar
+{
+	diffusemap textures/smk4/s_starbar.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_starbsrt
+{
+	diffusemap textures/smk4/s_starbsrt.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_stoolstatic
+{
+	diffusemap textures/smk4/s_stoolstatic.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_sunbrst
+{
+	diffusemap textures/smk4/s_sunbrst.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_sunbrst_macro
+{
+	diffusemap textures/smk4/s_sunbrst_macro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_trifld
+{
+	diffusemap textures/smk4/s_trifld.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_tripfirea
+{
+	diffusemap textures/smk4/s_tripfirea.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk4/s_tripfireb
+{
+	diffusemap textures/smk4/s_tripfireb.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,7 @@
+textures/slotscore/SlotScorePAL
+{
+	diffusemap textures/slotscore/SlotScorePAL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

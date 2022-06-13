@@ -1,0 +1,231 @@
+textures/t_abtest/ApertPal
+{
+	diffusemap textures/t_abtest/ApertPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/applepal
+{
+	diffusemap textures/t_abtest/applepal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/AuroraPal
+{
+	diffusemap textures/t_abtest/AuroraPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/BlubrstPal
+{
+	diffusemap textures/t_abtest/BlubrstPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/BurstPal
+{
+	diffusemap textures/t_abtest/BurstPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/CPTramNoDoubt
+{
+	diffusemap textures/t_abtest/CPTramNoDoubt.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/FireworksPal
+{
+	diffusemap textures/t_abtest/FireworksPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/Ladykiller1Pal
+{
+	diffusemap textures/t_abtest/Ladykiller1Pal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/Ladykiller2Pal
+{
+	diffusemap textures/t_abtest/Ladykiller2Pal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/Ladykiller3Pal
+{
+	diffusemap textures/t_abtest/Ladykiller3Pal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/mars1pal
+{
+	diffusemap textures/t_abtest/mars1pal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/MyTex1
+{
+	diffusemap textures/t_abtest/MyTex1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/MyTex2
+{
+	diffusemap textures/t_abtest/MyTex2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/NewsPal
+{
+	diffusemap textures/t_abtest/NewsPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/Nodoubtpal
+{
+	diffusemap textures/t_abtest/Nodoubtpal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/NovemberPal
+{
+	diffusemap textures/t_abtest/NovemberPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/RaysentPal
+{
+	diffusemap textures/t_abtest/RaysentPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/rbr-sunken
+{
+	diffusemap textures/t_abtest/rbr-sunken.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/RedentPal
+{
+	diffusemap textures/t_abtest/RedentPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/ShowGirl
+{
+	diffusemap textures/t_abtest/ShowGirl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/showgirlpal
+{
+	diffusemap textures/t_abtest/showgirlpal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/StarbarPal
+{
+	diffusemap textures/t_abtest/StarbarPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/StarbsrtPal
+{
+	diffusemap textures/t_abtest/StarbsrtPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/SunbrstPal
+{
+	diffusemap textures/t_abtest/SunbrstPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/TRAMCTEST1
+{
+	diffusemap textures/t_abtest/TRAMCTEST1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/tramtest1BC
+{
+	diffusemap textures/t_abtest/tramtest1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/TRAMTEST2
+{
+	diffusemap textures/t_abtest/TRAMTEST2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/tramtest2BC
+{
+	diffusemap textures/t_abtest/tramtest2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/tramtestbc
+{
+	diffusemap textures/t_abtest/tramtestbc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/tramtestbc1
+{
+	diffusemap textures/t_abtest/tramtestbc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/tramtestbc2
+{
+	diffusemap textures/t_abtest/tramtestbc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/TrifldPal
+{
+	diffusemap textures/t_abtest/TrifldPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_abtest/TvFlcAB
+{
+	diffusemap textures/t_abtest/TvFlcAB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

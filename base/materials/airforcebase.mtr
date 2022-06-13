@@ -1,0 +1,2611 @@
+textures/airforcebase/asphault1RC
+{
+	diffusemap textures/airforcebase/asphault1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bigdoor1BC
+{
+	diffusemap textures/airforcebase/bigdoor1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/blinds1BC
+{
+	diffusemap textures/airforcebase/blinds1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bluetile1sah
+{
+	diffusemap textures/airforcebase/bluetile1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/box1bRC
+{
+	diffusemap textures/airforcebase/box1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/box1cRC
+{
+	diffusemap textures/airforcebase/box1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/box2aRC
+{
+	diffusemap textures/airforcebase/box2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/box2bRC
+{
+	diffusemap textures/airforcebase/box2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/box3aRC
+{
+	diffusemap textures/airforcebase/box3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/box3bRC
+{
+	diffusemap textures/airforcebase/box3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/brick3RC
+{
+	diffusemap textures/airforcebase/brick3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/brick4RC
+{
+	diffusemap textures/airforcebase/brick4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bricks3ABC
+{
+	diffusemap textures/airforcebase/bricks3ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bricks4ABC
+{
+	diffusemap textures/airforcebase/bricks4ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bricks5BC
+{
+	diffusemap textures/airforcebase/bricks5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/broomstall1aBC
+{
+	diffusemap textures/airforcebase/broomstall1aBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/broomstall1bBC
+{
+	diffusemap textures/airforcebase/broomstall1bBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/broomtile1BC
+{
+	diffusemap textures/airforcebase/broomtile1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/buildingwall1BC
+{
+	diffusemap textures/airforcebase/buildingwall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/buildingwall1RC
+{
+	diffusemap textures/airforcebase/buildingwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAdoorRC
+{
+	diffusemap textures/airforcebase/bunkerAdoorRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAfenceRC
+{
+	diffusemap textures/airforcebase/bunkerAfenceRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAgrassRC
+{
+	diffusemap textures/airforcebase/bunkerAgrassRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAsignaRC
+{
+	diffusemap textures/airforcebase/bunkerAsignaRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAsigncRC
+{
+	diffusemap textures/airforcebase/bunkerAsigncRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAsigngRC
+{
+	diffusemap textures/airforcebase/bunkerAsigngRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAtarmackR
+{
+	diffusemap textures/airforcebase/bunkerAtarmackR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/bunkerAwallRC
+{
+	diffusemap textures/airforcebase/bunkerAwallRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cabfile1dRC
+{
+	diffusemap textures/airforcebase/cabfile1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cabfile1eRC
+{
+	diffusemap textures/airforcebase/cabfile1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cabflam1bRC
+{
+	diffusemap textures/airforcebase/cabflam1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cables1BC
+{
+	diffusemap textures/airforcebase/cables1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cablewheel1BC
+{
+	diffusemap textures/airforcebase/cablewheel1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/camouflage1RC
+{
+	diffusemap textures/airforcebase/camouflage1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/carpet1RC
+{
+	diffusemap textures/airforcebase/carpet1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/carpet2RC
+{
+	diffusemap textures/airforcebase/carpet2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/carpet3RC
+{
+	diffusemap textures/airforcebase/carpet3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/CDfront1BC
+{
+	diffusemap textures/airforcebase/CDfront1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/CDside1BC
+{
+	diffusemap textures/airforcebase/CDside1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/CDside1tw
+{
+	diffusemap textures/airforcebase/CDside1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling1aRC
+{
+	diffusemap textures/airforcebase/ceiling1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling1dRC
+{
+	diffusemap textures/airforcebase/ceiling1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling2ABC
+{
+	diffusemap textures/airforcebase/ceiling2ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling2Atw
+{
+	diffusemap textures/airforcebase/ceiling2Atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling2BBC
+{
+	diffusemap textures/airforcebase/ceiling2BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling2CBC
+{
+	diffusemap textures/airforcebase/ceiling2CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling2RC
+{
+	diffusemap textures/airforcebase/ceiling2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling3ABC
+{
+	diffusemap textures/airforcebase/ceiling3ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling3BBC
+{
+	diffusemap textures/airforcebase/ceiling3BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling3DBC
+{
+	diffusemap textures/airforcebase/ceiling3DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling3RC
+{
+	diffusemap textures/airforcebase/ceiling3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling4RC
+{
+	diffusemap textures/airforcebase/ceiling4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling5RC
+{
+	diffusemap textures/airforcebase/ceiling5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling6RC
+{
+	diffusemap textures/airforcebase/ceiling6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceiling7RC
+{
+	diffusemap textures/airforcebase/ceiling7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ceilingvent1RC
+{
+	diffusemap textures/airforcebase/ceilingvent1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAcolor
+{
+	diffusemap textures/airforcebase/cntrlentrAcolor.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAequip
+{
+	diffusemap textures/airforcebase/cntrlentrAequip.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAinden
+{
+	diffusemap textures/airforcebase/cntrlentrAinden.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAroof
+{
+	diffusemap textures/airforcebase/cntrlentrAroof.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAsign1
+{
+	diffusemap textures/airforcebase/cntrlentrAsign1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAsign2
+{
+	diffusemap textures/airforcebase/cntrlentrAsign2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAsign3
+{
+	diffusemap textures/airforcebase/cntrlentrAsign3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAsign4
+{
+	diffusemap textures/airforcebase/cntrlentrAsign4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAsign5
+{
+	diffusemap textures/airforcebase/cntrlentrAsign5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAtrim1
+{
+	diffusemap textures/airforcebase/cntrlentrAtrim1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAtrim2
+{
+	diffusemap textures/airforcebase/cntrlentrAtrim2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAtrn1
+{
+	diffusemap textures/airforcebase/cntrlentrAtrn1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cntrlentrAwall
+{
+	diffusemap textures/airforcebase/cntrlentrAwall.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/column1
+{
+	diffusemap textures/airforcebase/column1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/concrete1RC
+{
+	diffusemap textures/airforcebase/concrete1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/concretedecor1R
+{
+	diffusemap textures/airforcebase/concretedecor1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/concretefloor1R
+{
+	diffusemap textures/airforcebase/concretefloor1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/concretefloor2R
+{
+	diffusemap textures/airforcebase/concretefloor2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/concretemessy1R
+{
+	diffusemap textures/airforcebase/concretemessy1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/concreteridge2R
+{
+	diffusemap textures/airforcebase/concreteridge2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/concretewall1AB
+{
+	diffusemap textures/airforcebase/concretewall1AB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/console1BC
+{
+	diffusemap textures/airforcebase/console1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/console2BC
+{
+	diffusemap textures/airforcebase/console2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/console3BC
+{
+	diffusemap textures/airforcebase/console3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/controlpanel1RC
+{
+	diffusemap textures/airforcebase/controlpanel1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/controlpanel2RC
+{
+	diffusemap textures/airforcebase/controlpanel2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/contstation1RC
+{
+	diffusemap textures/airforcebase/contstation1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cracky1RC
+{
+	diffusemap textures/airforcebase/cracky1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate3aRC
+{
+	diffusemap textures/airforcebase/crate3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate3bRC
+{
+	diffusemap textures/airforcebase/crate3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate4aRC
+{
+	diffusemap textures/airforcebase/crate4aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate4bRC
+{
+	diffusemap textures/airforcebase/crate4bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate4cRC
+{
+	diffusemap textures/airforcebase/crate4cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate4dRC
+{
+	diffusemap textures/airforcebase/crate4dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate4eRC
+{
+	diffusemap textures/airforcebase/crate4eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate5aRC
+{
+	diffusemap textures/airforcebase/crate5aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crate5bRC
+{
+	diffusemap textures/airforcebase/crate5bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/cretewbarrier1B
+{
+	diffusemap textures/airforcebase/cretewbarrier1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/crossbar1RC
+{
+	diffusemap textures/airforcebase/crossbar1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dirtyconcrete1A
+{
+	diffusemap textures/airforcebase/dirtyconcrete1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dirtyconcrete1B
+{
+	diffusemap textures/airforcebase/dirtyconcrete1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dirtyfloor1RC
+{
+	diffusemap textures/airforcebase/dirtyfloor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dirtytile1BC
+{
+	diffusemap textures/airforcebase/dirtytile1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dockasphalt1BC
+{
+	diffusemap textures/airforcebase/dockasphalt1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dockconcrete1BC
+{
+	diffusemap textures/airforcebase/dockconcrete1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dockconcrete2AB
+{
+	diffusemap textures/airforcebase/dockconcrete2AB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/dockconcrete2BB
+{
+	diffusemap textures/airforcebase/dockconcrete2BB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/door10BC
+{
+	diffusemap textures/airforcebase/door10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/door11BC
+{
+	diffusemap textures/airforcebase/door11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/door12BC
+{
+	diffusemap textures/airforcebase/door12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/Door6BC
+{
+	diffusemap textures/airforcebase/Door6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/door7BC
+{
+	diffusemap textures/airforcebase/door7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/door9BC
+{
+	diffusemap textures/airforcebase/door9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/DsgnrMwall1ABC
+{
+	diffusemap textures/airforcebase/DsgnrMwall1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/DsgnrMwall1BBC
+{
+	diffusemap textures/airforcebase/DsgnrMwall1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/DsgnrMwall1CBC
+{
+	diffusemap textures/airforcebase/DsgnrMwall1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/EDF_crate_2tw
+{
+	diffusemap textures/airforcebase/EDF_crate_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/enforceddoor1BC
+{
+	diffusemap textures/airforcebase/enforceddoor1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/enforceddoor2BB
+{
+	diffusemap textures/airforcebase/enforceddoor2BB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldAsign5RC
+{
+	diffusemap textures/airforcebase/exbldAsign5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldAtrim1RC
+{
+	diffusemap textures/airforcebase/exbldAtrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldAunit1RC
+{
+	diffusemap textures/airforcebase/exbldAunit1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldAunit2RC
+{
+	diffusemap textures/airforcebase/exbldAunit2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldAwin5RC
+{
+	diffusemap textures/airforcebase/exbldAwin5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldAwood1RC
+{
+	diffusemap textures/airforcebase/exbldAwood1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldAwood2RC
+{
+	diffusemap textures/airforcebase/exbldAwood2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBac1aRC
+{
+	diffusemap textures/airforcebase/exbldBac1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBac1bRC
+{
+	diffusemap textures/airforcebase/exbldBac1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBac1cRC
+{
+	diffusemap textures/airforcebase/exbldBac1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBcblock1aR
+{
+	diffusemap textures/airforcebase/exbldBcblock1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBcblock1bR
+{
+	diffusemap textures/airforcebase/exbldBcblock1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBdoor1RC
+{
+	diffusemap textures/airforcebase/exbldBdoor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBhoseRC
+{
+	diffusemap textures/airforcebase/exbldBhoseRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBmtltrim1a
+{
+	diffusemap textures/airforcebase/exbldBmtltrim1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBmtltrim1b
+{
+	diffusemap textures/airforcebase/exbldBmtltrim1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBsign1RC
+{
+	diffusemap textures/airforcebase/exbldBsign1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exbldBwdfen1cRC
+{
+	diffusemap textures/airforcebase/exbldBwdfen1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngAconvent1R
+{
+	diffusemap textures/airforcebase/exhngAconvent1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngAconwall1R
+{
+	diffusemap textures/airforcebase/exhngAconwall1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngAdoor2bRC
+{
+	diffusemap textures/airforcebase/exhngAdoor2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngAhanger1aR
+{
+	diffusemap textures/airforcebase/exhngAhanger1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngApannel2aR
+{
+	diffusemap textures/airforcebase/exhngApannel2aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngApipes1RC
+{
+	diffusemap textures/airforcebase/exhngApipes1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngAsign1RC
+{
+	diffusemap textures/airforcebase/exhngAsign1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/exhngAstruts1RC
+{
+	diffusemap textures/airforcebase/exhngAstruts1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/fence1RC
+{
+	diffusemap textures/airforcebase/fence1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/fuseboxpanl3RC
+{
+	diffusemap textures/airforcebase/fuseboxpanl3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/GasTank1BC
+{
+	diffusemap textures/airforcebase/GasTank1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/Gdoorguide1BC
+{
+	diffusemap textures/airforcebase/Gdoorguide1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/Grate1BC
+{
+	diffusemap textures/airforcebase/Grate1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/grate1RC
+{
+	diffusemap textures/airforcebase/grate1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/grate2RC
+{
+	diffusemap textures/airforcebase/grate2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/grate3RC
+{
+	diffusemap textures/airforcebase/grate3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/Grate4JA
+{
+	diffusemap textures/airforcebase/Grate4JA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/GrateDetail
+{
+	diffusemap textures/airforcebase/GrateDetail.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/grbox_1tw
+{
+	diffusemap textures/airforcebase/grbox_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/grbox_2tw
+{
+	diffusemap textures/airforcebase/grbox_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/guardrail1RC
+{
+	diffusemap textures/airforcebase/guardrail1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarceiling1R
+{
+	diffusemap textures/airforcebase/hangarceiling1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarceiling2R
+{
+	diffusemap textures/airforcebase/hangarceiling2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarceiling3R
+{
+	diffusemap textures/airforcebase/hangarceiling3R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarceiling4R
+{
+	diffusemap textures/airforcebase/hangarceiling4R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarceiling5R
+{
+	diffusemap textures/airforcebase/hangarceiling5R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangardoor1
+{
+	diffusemap textures/airforcebase/hangardoor1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangardoor2
+{
+	diffusemap textures/airforcebase/hangardoor2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarmetal1RC
+{
+	diffusemap textures/airforcebase/hangarmetal1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall10RC
+{
+	diffusemap textures/airforcebase/hangarwall10RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall12RC
+{
+	diffusemap textures/airforcebase/hangarwall12RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall13RC
+{
+	diffusemap textures/airforcebase/hangarwall13RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall14RC
+{
+	diffusemap textures/airforcebase/hangarwall14RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall15RC
+{
+	diffusemap textures/airforcebase/hangarwall15RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall16RC
+{
+	diffusemap textures/airforcebase/hangarwall16RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall17aRC
+{
+	diffusemap textures/airforcebase/hangarwall17aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall17cRC
+{
+	diffusemap textures/airforcebase/hangarwall17cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall17eRC
+{
+	diffusemap textures/airforcebase/hangarwall17eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall18aRC
+{
+	diffusemap textures/airforcebase/hangarwall18aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall18cRC
+{
+	diffusemap textures/airforcebase/hangarwall18cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall1RC
+{
+	diffusemap textures/airforcebase/hangarwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall20RC
+{
+	diffusemap textures/airforcebase/hangarwall20RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall2RC
+{
+	diffusemap textures/airforcebase/hangarwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall7RC
+{
+	diffusemap textures/airforcebase/hangarwall7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall8RC
+{
+	diffusemap textures/airforcebase/hangarwall8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hangarwall9RC
+{
+	diffusemap textures/airforcebase/hangarwall9RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hdoor2BC
+{
+	diffusemap textures/airforcebase/hdoor2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hrooftiles1BC
+{
+	diffusemap textures/airforcebase/hrooftiles1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/htrim1BC
+{
+	diffusemap textures/airforcebase/htrim1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwall1BC
+{
+	diffusemap textures/airforcebase/hwall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwindow1BC
+{
+	diffusemap textures/airforcebase/hwindow1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwindow2BC
+{
+	diffusemap textures/airforcebase/hwindow2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwindow3BC
+{
+	diffusemap textures/airforcebase/hwindow3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwindowall1BC
+{
+	diffusemap textures/airforcebase/hwindowall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwindowall2BC
+{
+	diffusemap textures/airforcebase/hwindowall2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwindowall3BC
+{
+	diffusemap textures/airforcebase/hwindowall3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/hwood1BC
+{
+	diffusemap textures/airforcebase/hwood1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/insulation1RC
+{
+	diffusemap textures/airforcebase/insulation1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/interiorwall1aR
+{
+	diffusemap textures/airforcebase/interiorwall1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymbackRC
+{
+	diffusemap textures/airforcebase/intgymbackRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymbeamRC
+{
+	diffusemap textures/airforcebase/intgymbeamRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymbleachr1a
+{
+	diffusemap textures/airforcebase/intgymbleachr1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymbleachr1c
+{
+	diffusemap textures/airforcebase/intgymbleachr1c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymblueRC
+{
+	diffusemap textures/airforcebase/intgymblueRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymceiling1R
+{
+	diffusemap textures/airforcebase/intgymceiling1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymdoor1bRC
+{
+	diffusemap textures/airforcebase/intgymdoor1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymdoor2RC
+{
+	diffusemap textures/airforcebase/intgymdoor2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymflr1aRC
+{
+	diffusemap textures/airforcebase/intgymflr1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymflr1cRC
+{
+	diffusemap textures/airforcebase/intgymflr1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymflr1dRC
+{
+	diffusemap textures/airforcebase/intgymflr1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymflr1eRC
+{
+	diffusemap textures/airforcebase/intgymflr1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/IntGymFlr1JA
+{
+	diffusemap textures/airforcebase/IntGymFlr1JA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/IntGymFlr2JA
+{
+	diffusemap textures/airforcebase/IntGymFlr2JA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/IntGymFlr3JA
+{
+	diffusemap textures/airforcebase/IntGymFlr3JA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/IntGymHoop
+{
+	diffusemap textures/airforcebase/IntGymHoop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgympannelRC
+{
+	diffusemap textures/airforcebase/intgympannelRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymredRC
+{
+	diffusemap textures/airforcebase/intgymredRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymscoreRC
+{
+	diffusemap textures/airforcebase/intgymscoreRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymwall1aRC
+{
+	diffusemap textures/airforcebase/intgymwall1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intgymwall1bRC
+{
+	diffusemap textures/airforcebase/intgymwall1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall1BBC
+{
+	diffusemap textures/airforcebase/intwall1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall2ABC
+{
+	diffusemap textures/airforcebase/intwall2ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall2CBC
+{
+	diffusemap textures/airforcebase/intwall2CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall2DBC
+{
+	diffusemap textures/airforcebase/intwall2DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall3ABC
+{
+	diffusemap textures/airforcebase/intwall3ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall3CBC
+{
+	diffusemap textures/airforcebase/intwall3CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall3DBC
+{
+	diffusemap textures/airforcebase/intwall3DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/intwall3EBC
+{
+	diffusemap textures/airforcebase/intwall3EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/light1RC
+{
+	diffusemap textures/airforcebase/light1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/light3RC
+{
+	diffusemap textures/airforcebase/light3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lobyfloor1aRC
+{
+	diffusemap textures/airforcebase/lobyfloor1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers1aRC
+{
+	diffusemap textures/airforcebase/lockers1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers2aRC
+{
+	diffusemap textures/airforcebase/lockers2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers2bRC
+{
+	diffusemap textures/airforcebase/lockers2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers3bRC
+{
+	diffusemap textures/airforcebase/lockers3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers5aRC
+{
+	diffusemap textures/airforcebase/lockers5aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers5bRC
+{
+	diffusemap textures/airforcebase/lockers5bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers6aRC
+{
+	diffusemap textures/airforcebase/lockers6aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers6bRC
+{
+	diffusemap textures/airforcebase/lockers6bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers7aRC
+{
+	diffusemap textures/airforcebase/lockers7aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers7bRC
+{
+	diffusemap textures/airforcebase/lockers7bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers7cRC
+{
+	diffusemap textures/airforcebase/lockers7cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/lockers7dRC
+{
+	diffusemap textures/airforcebase/lockers7dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mailboxes1RC
+{
+	diffusemap textures/airforcebase/mailboxes1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/messageboard1RC
+{
+	diffusemap textures/airforcebase/messageboard1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/messageboard2RC
+{
+	diffusemap textures/airforcebase/messageboard2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/messytiles1ABC
+{
+	diffusemap textures/airforcebase/messytiles1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/messytiles1BBC
+{
+	diffusemap textures/airforcebase/messytiles1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/messytiles1CBC
+{
+	diffusemap textures/airforcebase/messytiles1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/messytiles1DBC
+{
+	diffusemap textures/airforcebase/messytiles1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalbarrier1RC
+{
+	diffusemap textures/airforcebase/metalbarrier1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalroof1RC
+{
+	diffusemap textures/airforcebase/metalroof1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metaltrim1RC
+{
+	diffusemap textures/airforcebase/metaltrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metaltrim3ABC
+{
+	diffusemap textures/airforcebase/metaltrim3ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalvents1BC
+{
+	diffusemap textures/airforcebase/metalvents1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalvents2BC
+{
+	diffusemap textures/airforcebase/metalvents2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalvents3BC
+{
+	diffusemap textures/airforcebase/metalvents3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalwall1ABC
+{
+	diffusemap textures/airforcebase/metalwall1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalwall2BC
+{
+	diffusemap textures/airforcebase/metalwall2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalwall7BC
+{
+	diffusemap textures/airforcebase/metalwall7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalwall8BC
+{
+	diffusemap textures/airforcebase/metalwall8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/metalwall9BC
+{
+	diffusemap textures/airforcebase/metalwall9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/meterdoor1RC
+{
+	diffusemap textures/airforcebase/meterdoor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mpipewall2BC
+{
+	diffusemap textures/airforcebase/mpipewall2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet1aRC
+{
+	diffusemap textures/airforcebase/mtlcabinet1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet2dRC
+{
+	diffusemap textures/airforcebase/mtlcabinet2dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet3aRC
+{
+	diffusemap textures/airforcebase/mtlcabinet3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet3bRC
+{
+	diffusemap textures/airforcebase/mtlcabinet3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet3cRC
+{
+	diffusemap textures/airforcebase/mtlcabinet3cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet3dRC
+{
+	diffusemap textures/airforcebase/mtlcabinet3dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet4aRC
+{
+	diffusemap textures/airforcebase/mtlcabinet4aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet4bRC
+{
+	diffusemap textures/airforcebase/mtlcabinet4bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/mtlcabinet4cRC
+{
+	diffusemap textures/airforcebase/mtlcabinet4cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outlet1RC
+{
+	diffusemap textures/airforcebase/outlet1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight1aR
+{
+	diffusemap textures/airforcebase/outsidelight1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight1bR
+{
+	diffusemap textures/airforcebase/outsidelight1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight1cR
+{
+	diffusemap textures/airforcebase/outsidelight1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight1dR
+{
+	diffusemap textures/airforcebase/outsidelight1dR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight1eRC
+{
+	diffusemap textures/airforcebase/outsidelight1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight2RC
+{
+	diffusemap textures/airforcebase/outsidelight2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight3aR
+{
+	diffusemap textures/airforcebase/outsidelight3aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight3bR
+{
+	diffusemap textures/airforcebase/outsidelight3bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/outsidelight3cRC
+{
+	diffusemap textures/airforcebase/outsidelight3cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/palete1aRC
+{
+	diffusemap textures/airforcebase/palete1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/palete1bRC
+{
+	diffusemap textures/airforcebase/palete1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/pannelbk1RC
+{
+	diffusemap textures/airforcebase/pannelbk1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/pannelbk2RC
+{
+	diffusemap textures/airforcebase/pannelbk2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/parklot1aBC
+{
+	diffusemap textures/airforcebase/parklot1aBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/parklot1bBC
+{
+	diffusemap textures/airforcebase/parklot1bBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/parklot1dBC
+{
+	diffusemap textures/airforcebase/parklot1dBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/peebullo9tw
+{
+	diffusemap textures/airforcebase/peebullo9tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/pipe1bRC
+{
+	diffusemap textures/airforcebase/pipe1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/pipecap1BC
+{
+	diffusemap textures/airforcebase/pipecap1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/plascrate_1tw
+{
+	diffusemap textures/airforcebase/plascrate_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/plascrate_2tw
+{
+	diffusemap textures/airforcebase/plascrate_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/plate1RC
+{
+	diffusemap textures/airforcebase/plate1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/plate2RC
+{
+	diffusemap textures/airforcebase/plate2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/plate3RC
+{
+	diffusemap textures/airforcebase/plate3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/rail1ABC
+{
+	diffusemap textures/airforcebase/rail1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/rail1BBC
+{
+	diffusemap textures/airforcebase/rail1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/rail2ABC
+{
+	diffusemap textures/airforcebase/rail2ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ramplight1ABC
+{
+	diffusemap textures/airforcebase/ramplight1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ramplight1CBC
+{
+	diffusemap textures/airforcebase/ramplight1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/ribbedmetal2RC
+{
+	diffusemap textures/airforcebase/ribbedmetal2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/rock1ABC
+{
+	diffusemap textures/airforcebase/rock1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/roof2RC
+{
+	diffusemap textures/airforcebase/roof2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/Rust1ABC
+{
+	diffusemap textures/airforcebase/Rust1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/rustwhtmetal1BC
+{
+	diffusemap textures/airforcebase/rustwhtmetal1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/rustytrim2BC
+{
+	diffusemap textures/airforcebase/rustytrim2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/shelf1RC
+{
+	diffusemap textures/airforcebase/shelf1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/shkchkredRC
+{
+	diffusemap textures/airforcebase/shkchkredRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/shkchkside1bRC
+{
+	diffusemap textures/airforcebase/shkchkside1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/smallfence1ABC
+{
+	diffusemap textures/airforcebase/smallfence1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/standard1RC
+{
+	diffusemap textures/airforcebase/standard1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/standard2RC
+{
+	diffusemap textures/airforcebase/standard2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate1BC
+{
+	diffusemap textures/airforcebase/storagecrate1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate1tw
+{
+	diffusemap textures/airforcebase/storagecrate1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate2BC
+{
+	diffusemap textures/airforcebase/storagecrate2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate2tw
+{
+	diffusemap textures/airforcebase/storagecrate2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate3BC
+{
+	diffusemap textures/airforcebase/storagecrate3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate3tw
+{
+	diffusemap textures/airforcebase/storagecrate3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate4stw
+{
+	diffusemap textures/airforcebase/storagecrate4stw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate4ttw
+{
+	diffusemap textures/airforcebase/storagecrate4ttw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/storagecrate4tw
+{
+	diffusemap textures/airforcebase/storagecrate4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/street1aRC
+{
+	diffusemap textures/airforcebase/street1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/street1bRC
+{
+	diffusemap textures/airforcebase/street1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/street2RC
+{
+	diffusemap textures/airforcebase/street2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/switch1RC
+{
+	diffusemap textures/airforcebase/switch1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/switch3RC
+{
+	diffusemap textures/airforcebase/switch3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/switch5RC
+{
+	diffusemap textures/airforcebase/switch5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tantile1BC
+{
+	diffusemap textures/airforcebase/tantile1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tarmack1RC
+{
+	diffusemap textures/airforcebase/tarmack1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tarmack2RC
+{
+	diffusemap textures/airforcebase/tarmack2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tarmack3aRC
+{
+	diffusemap textures/airforcebase/tarmack3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tile1RC
+{
+	diffusemap textures/airforcebase/tile1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tile2RC
+{
+	diffusemap textures/airforcebase/tile2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tile3RC
+{
+	diffusemap textures/airforcebase/tile3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tile4RC
+{
+	diffusemap textures/airforcebase/tile4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/tile5aRC
+{
+	diffusemap textures/airforcebase/tile5aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/towermetal1RC
+{
+	diffusemap textures/airforcebase/towermetal1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallbrick1RC
+{
+	diffusemap textures/airforcebase/wallbrick1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallbrick2aRC
+{
+	diffusemap textures/airforcebase/wallbrick2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallcabinet1aRC
+{
+	diffusemap textures/airforcebase/wallcabinet1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallcabinet1bRC
+{
+	diffusemap textures/airforcebase/wallcabinet1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallconcret1RC
+{
+	diffusemap textures/airforcebase/wallconcret1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallconcret2RC
+{
+	diffusemap textures/airforcebase/wallconcret2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallconcret3RC
+{
+	diffusemap textures/airforcebase/wallconcret3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallconcret4RC
+{
+	diffusemap textures/airforcebase/wallconcret4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallconcret5RC
+{
+	diffusemap textures/airforcebase/wallconcret5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallfence1RC
+{
+	diffusemap textures/airforcebase/wallfence1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallgrndsupprt1
+{
+	diffusemap textures/airforcebase/wallgrndsupprt1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallinsulation2
+{
+	diffusemap textures/airforcebase/wallinsulation2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallinsulatn3aB
+{
+	diffusemap textures/airforcebase/wallinsulatn3aB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wallmonitor1RC
+{
+	diffusemap textures/airforcebase/wallmonitor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/walltools1cRC
+{
+	diffusemap textures/airforcebase/walltools1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/warehousedoor1R
+{
+	diffusemap textures/airforcebase/warehousedoor1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/wheel2
+{
+	diffusemap textures/airforcebase/wheel2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/whiteboard1ABC
+{
+	diffusemap textures/airforcebase/whiteboard1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/whiteboard1BBC
+{
+	diffusemap textures/airforcebase/whiteboard1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/whiteboard1CBC
+{
+	diffusemap textures/airforcebase/whiteboard1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/whiteroof1BC
+{
+	diffusemap textures/airforcebase/whiteroof1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/whiteroof2BC
+{
+	diffusemap textures/airforcebase/whiteroof2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/whousecieling1a
+{
+	diffusemap textures/airforcebase/whousecieling1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window11RC
+{
+	diffusemap textures/airforcebase/window11RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window13RC
+{
+	diffusemap textures/airforcebase/window13RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window17RC
+{
+	diffusemap textures/airforcebase/window17RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window1ABC
+{
+	diffusemap textures/airforcebase/window1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window1BBC
+{
+	diffusemap textures/airforcebase/window1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window1RC
+{
+	diffusemap textures/airforcebase/window1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window22RC
+{
+	diffusemap textures/airforcebase/window22RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window6RC
+{
+	diffusemap textures/airforcebase/window6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/window8RC
+{
+	diffusemap textures/airforcebase/window8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/woodencrate1ABC
+{
+	diffusemap textures/airforcebase/woodencrate1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/woodencrate1BBC
+{
+	diffusemap textures/airforcebase/woodencrate1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/woodencrate1EBC
+{
+	diffusemap textures/airforcebase/woodencrate1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/woodencrate1tw
+{
+	diffusemap textures/airforcebase/woodencrate1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/woodencrate2tw
+{
+	diffusemap textures/airforcebase/woodencrate2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/woodfence1bRC
+{
+	diffusemap textures/airforcebase/woodfence1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/woodfence1RC
+{
+	diffusemap textures/airforcebase/woodfence1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/airforcebase/yllowmetalwall1
+{
+	diffusemap textures/airforcebase/yllowmetalwall1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

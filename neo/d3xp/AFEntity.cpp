@@ -3294,7 +3294,7 @@ void idHarvestable::Think() {
 		idPlayer *thePlayer = player.GetEntity();
 
 		thePlayer->Give(spawnArgs.GetString("give_item"), spawnArgs.GetString("give_value"));
-		thePlayer->harvest_lock = false;
+		//thePlayer->harvest_lock = false;
 		given = true;
 	}
 
@@ -3532,11 +3532,6 @@ void idHarvestable::Event_Touch( idEntity *other, trace_t *trace ) {
 	if(!startTime && other && other->IsType(idPlayer::Type)) {
 		idPlayer *thePlayer = static_cast<idPlayer *>(other);
 
-		if(thePlayer->harvest_lock) {
-			//Don't harvest if the player is in mid harvest
-			return;
-		}
-
 		player = thePlayer;
 
 		bool okToGive = true;
@@ -3555,7 +3550,7 @@ void idHarvestable::Event_Touch( idEntity *other, trace_t *trace ) {
 				startTime = gameLocal.slow.time;
 
 				//Lock the player from harvesting to prevent multiple harvests when only one is needed
-				thePlayer->harvest_lock = true;
+				//thePlayer->harvest_lock = true;
 
 				idWeapon* weap = (idWeapon*)thePlayer->weapon.GetEntity();
 				if(weap) {

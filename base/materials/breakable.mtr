@@ -1,0 +1,434 @@
+textures/breakable/avlight1atw
+{
+	diffusemap textures/breakable/avlight1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/avlight1btw
+{
+	diffusemap textures/breakable/avlight1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/avlight1ctw
+{
+	diffusemap textures/breakable/avlight1ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/blkcieling1BBC
+{
+	diffusemap textures/breakable/blkcieling1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/blkcieling1CBC
+{
+	diffusemap textures/breakable/blkcieling1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/blkcieling1DBC
+{
+	diffusemap textures/breakable/blkcieling1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/breakablemirror4RC
+{
+	diffusemap textures/breakable/breakablemirror4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/brokenmirror1TW
+{
+	diffusemap textures/breakable/brokenmirror1TW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ceiling2B1BC
+{
+	diffusemap textures/breakable/ceiling2B1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ceiling2B2BC
+{
+	diffusemap textures/breakable/ceiling2B2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ceiling2BBC
+{
+	diffusemap textures/breakable/ceiling2BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ceiling3DBC
+{
+	diffusemap textures/breakable/ceiling3DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ceiling3EBC
+{
+	diffusemap textures/breakable/ceiling3EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ceiling3FBC
+{
+	diffusemap textures/breakable/ceiling3FBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/chanklight1tw
+{
+	diffusemap textures/breakable/chanklight1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/chanklight2tw
+{
+	diffusemap textures/breakable/chanklight2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/chanklight3tw
+{
+	diffusemap textures/breakable/chanklight3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/cieling1E1BC
+{
+	diffusemap textures/breakable/cieling1E1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/cieling1E2BC
+{
+	diffusemap textures/breakable/cieling1E2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/cieling1E3BC
+{
+	diffusemap textures/breakable/cieling1E3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/cieling1E4BC
+{
+	diffusemap textures/breakable/cieling1E4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/cieling1E5BC
+{
+	diffusemap textures/breakable/cieling1E5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/cieling1EBC
+{
+	diffusemap textures/breakable/cieling1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/eexit1JA
+{
+	diffusemap textures/breakable/eexit1JA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/eexit2JA
+{
+	diffusemap textures/breakable/eexit2JA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/eventicle_1a
+{
+	diffusemap textures/breakable/eventicle_1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/eventicle_1b
+{
+	diffusemap textures/breakable/eventicle_1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/exit1tw
+{
+	diffusemap textures/breakable/exit1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/exit2tw
+{
+	diffusemap textures/breakable/exit2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight1atw
+{
+	diffusemap textures/breakable/inlight1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight1ctw
+{
+	diffusemap textures/breakable/inlight1ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight1tw
+{
+	diffusemap textures/breakable/inlight1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight2atw
+{
+	diffusemap textures/breakable/inlight2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight2ctw
+{
+	diffusemap textures/breakable/inlight2ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight2tw
+{
+	diffusemap textures/breakable/inlight2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight3atw
+{
+	diffusemap textures/breakable/inlight3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight3ctw
+{
+	diffusemap textures/breakable/inlight3ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight3tw
+{
+	diffusemap textures/breakable/inlight3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight5atw
+{
+	diffusemap textures/breakable/inlight5atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight5ctw
+{
+	diffusemap textures/breakable/inlight5ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight5tw
+{
+	diffusemap textures/breakable/inlight5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight6atw
+{
+	diffusemap textures/breakable/inlight6atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight6ctw
+{
+	diffusemap textures/breakable/inlight6ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/inlight6tw
+{
+	diffusemap textures/breakable/inlight6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/jap_2atw
+{
+	diffusemap textures/breakable/jap_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/jap_2btw
+{
+	diffusemap textures/breakable/jap_2btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/jap_2ctw
+{
+	diffusemap textures/breakable/jap_2ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/malltop_4atw
+{
+	diffusemap textures/breakable/malltop_4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/malltop_4btw
+{
+	diffusemap textures/breakable/malltop_4btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/malltop_4ctw
+{
+	diffusemap textures/breakable/malltop_4ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight1aRC
+{
+	diffusemap textures/breakable/outsidelight1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight1bRC
+{
+	diffusemap textures/breakable/outsidelight1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight1cRC
+{
+	diffusemap textures/breakable/outsidelight1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight1dRC
+{
+	diffusemap textures/breakable/outsidelight1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight1eRC
+{
+	diffusemap textures/breakable/outsidelight1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight3aRC
+{
+	diffusemap textures/breakable/outsidelight3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight3bRC
+{
+	diffusemap textures/breakable/outsidelight3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/outsidelight3cRC
+{
+	diffusemap textures/breakable/outsidelight3cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ramplight1ABC
+{
+	diffusemap textures/breakable/ramplight1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ramplight1BBC
+{
+	diffusemap textures/breakable/ramplight1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/ramplight1CBC
+{
+	diffusemap textures/breakable/ramplight1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/breakable/WhiteLightDetail
+{
+	diffusemap textures/breakable/WhiteLightDetail.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

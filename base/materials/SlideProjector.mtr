@@ -1,0 +1,14 @@
+textures/SlideProjector/AllBlack
+{
+	diffusemap textures/SlideProjector/AllBlack.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SlideProjector/TexCanSlidePro
+{
+	diffusemap textures/SlideProjector/TexCanSlidePro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

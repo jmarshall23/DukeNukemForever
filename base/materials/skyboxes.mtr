@@ -1,0 +1,616 @@
+textures/skyboxes/AladingroundRC
+{
+	diffusemap textures/skyboxes/AladingroundRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/AladinRC
+{
+	diffusemap textures/skyboxes/AladinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/BallysgroundRC
+{
+	diffusemap textures/skyboxes/BallysgroundRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/BallysRC
+{
+	diffusemap textures/skyboxes/BallysRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Belagio2RC
+{
+	diffusemap textures/skyboxes/Belagio2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Belagiolights3R
+{
+	diffusemap textures/skyboxes/Belagiolights3R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Belagiolights5R
+{
+	diffusemap textures/skyboxes/Belagiolights5R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/BelagiopartsRC
+{
+	diffusemap textures/skyboxes/BelagiopartsRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Belagiopond2RC
+{
+	diffusemap textures/skyboxes/Belagiopond2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/BelagiopondRC
+{
+	diffusemap textures/skyboxes/BelagiopondRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/BelagioRC
+{
+	diffusemap textures/skyboxes/BelagioRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Belagiowater1RC
+{
+	diffusemap textures/skyboxes/Belagiowater1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Belagiowater3RC
+{
+	diffusemap textures/skyboxes/Belagiowater3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Belagiowater5RC
+{
+	diffusemap textures/skyboxes/Belagiowater5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/BoardwalkcasRC
+{
+	diffusemap textures/skyboxes/BoardwalkcasRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Ceasarsground2R
+{
+	diffusemap textures/skyboxes/Ceasarsground2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/CeasarsgroundRC
+{
+	diffusemap textures/skyboxes/CeasarsgroundRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/CeasarsRC
+{
+	diffusemap textures/skyboxes/CeasarsRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/cloud2RC
+{
+	diffusemap textures/skyboxes/cloud2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/cloud3aRC
+{
+	diffusemap textures/skyboxes/cloud3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/cloud4RC
+{
+	diffusemap textures/skyboxes/cloud4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/cloud5RC
+{
+	diffusemap textures/skyboxes/cloud5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/cloudsmaskedMW
+{
+	diffusemap textures/skyboxes/cloudsmaskedMW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/earth1
+{
+	diffusemap textures/skyboxes/earth1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/edfroadblk1RC
+{
+	diffusemap textures/skyboxes/edfroadblk1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/FlamingoRC
+{
+	diffusemap textures/skyboxes/FlamingoRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/fullmoon1RC
+{
+	diffusemap textures/skyboxes/fullmoon1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/genclouds2RC
+{
+	diffusemap textures/skyboxes/genclouds2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/genclouds3RC
+{
+	diffusemap textures/skyboxes/genclouds3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gendes1RC
+{
+	diffusemap textures/skyboxes/gendes1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gendes2RC
+{
+	diffusemap textures/skyboxes/gendes2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gendes3RC
+{
+	diffusemap textures/skyboxes/gendes3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gendes4aRC
+{
+	diffusemap textures/skyboxes/gendes4aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gendes4bRC
+{
+	diffusemap textures/skyboxes/gendes4bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gendes7RC
+{
+	diffusemap textures/skyboxes/gendes7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gensunrays12RC
+{
+	diffusemap textures/skyboxes/gensunrays12RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gensunsetglow1b
+{
+	diffusemap textures/skyboxes/gensunsetglow1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gensunsetglow1c
+{
+	diffusemap textures/skyboxes/gensunsetglow1c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/gensunsetglow2c
+{
+	diffusemap textures/skyboxes/gensunsetglow2c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/haze1RC
+{
+	diffusemap textures/skyboxes/haze1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/haze2RC
+{
+	diffusemap textures/skyboxes/haze2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/haze5RC
+{
+	diffusemap textures/skyboxes/haze5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Imp_Har_VenRC
+{
+	diffusemap textures/skyboxes/Imp_Har_VenRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/landstrip1RC
+{
+	diffusemap textures/skyboxes/landstrip1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/landstrip3RC
+{
+	diffusemap textures/skyboxes/landstrip3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Luxorbeam2RC
+{
+	diffusemap textures/skyboxes/Luxorbeam2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/LuxorglowRC
+{
+	diffusemap textures/skyboxes/LuxorglowRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/MandaBayRC
+{
+	diffusemap textures/skyboxes/MandaBayRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Mgm_PoloRC
+{
+	diffusemap textures/skyboxes/Mgm_PoloRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Mirage2RC
+{
+	diffusemap textures/skyboxes/Mirage2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/MonteCarloRC
+{
+	diffusemap textures/skyboxes/MonteCarloRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/night1RC
+{
+	diffusemap textures/skyboxes/night1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/night3RC
+{
+	diffusemap textures/skyboxes/night3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/NY_Exlibur_LuxR
+{
+	diffusemap textures/skyboxes/NY_Exlibur_LuxR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/parkinglot2RC
+{
+	diffusemap textures/skyboxes/parkinglot2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/parkinglotRC
+{
+	diffusemap textures/skyboxes/parkinglotRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/quartermoon1RC
+{
+	diffusemap textures/skyboxes/quartermoon1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/roadblk1sirenaRC
+{
+	diffusemap textures/skyboxes/roadblk1sirenaRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/roadblk1sirenbRC
+{
+	diffusemap textures/skyboxes/roadblk1sirenbRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/skyboxsun1RC
+{
+	diffusemap textures/skyboxes/skyboxsun1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/skyboxsun8aRC
+{
+	diffusemap textures/skyboxes/skyboxsun8aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/skyboxsun8bRC
+{
+	diffusemap textures/skyboxes/skyboxsun8bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/skysunset3RC
+{
+	diffusemap textures/skyboxes/skysunset3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/skytest1
+{
+	diffusemap textures/skyboxes/skytest1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/StratosphereRC
+{
+	diffusemap textures/skyboxes/StratosphereRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/strcars2RC
+{
+	diffusemap textures/skyboxes/strcars2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/strcars4RC
+{
+	diffusemap textures/skyboxes/strcars4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/strcars5RC
+{
+	diffusemap textures/skyboxes/strcars5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/stripbridge5RC
+{
+	diffusemap textures/skyboxes/stripbridge5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/stripbridge6RC
+{
+	diffusemap textures/skyboxes/stripbridge6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/stripladykiller
+{
+	diffusemap textures/skyboxes/stripladykiller.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/striplights2RC
+{
+	diffusemap textures/skyboxes/striplights2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/striplights4RC
+{
+	diffusemap textures/skyboxes/striplights4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/striptreesRC
+{
+	diffusemap textures/skyboxes/striptreesRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/strstreet1aRC
+{
+	diffusemap textures/skyboxes/strstreet1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/sunset1bRC
+{
+	diffusemap textures/skyboxes/sunset1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/sunset1RC
+{
+	diffusemap textures/skyboxes/sunset1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/TresureIslandRC
+{
+	diffusemap textures/skyboxes/TresureIslandRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_BK1RC
+{
+	diffusemap textures/skyboxes/veg_BK1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_BK2RC
+{
+	diffusemap textures/skyboxes/veg_BK2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_FR1RC
+{
+	diffusemap textures/skyboxes/veg_FR1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_FR2RC
+{
+	diffusemap textures/skyboxes/veg_FR2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_LF1RC
+{
+	diffusemap textures/skyboxes/veg_LF1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_LF2RC
+{
+	diffusemap textures/skyboxes/veg_LF2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_RT1RC
+{
+	diffusemap textures/skyboxes/veg_RT1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/veg_RT2RC
+{
+	diffusemap textures/skyboxes/veg_RT2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/Volcano1aRC
+{
+	diffusemap textures/skyboxes/Volcano1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/skyboxes/VolcanofireRC
+{
+	diffusemap textures/skyboxes/VolcanofireRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

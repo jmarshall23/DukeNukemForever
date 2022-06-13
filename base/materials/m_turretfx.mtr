@@ -1,0 +1,112 @@
+textures/m_turretfx/cannontop_backgBC
+{
+	diffusemap textures/m_turretfx/cannontop_backgBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/canon_bot_barrel1
+{
+	diffusemap textures/m_turretfx/canon_bot_barrel1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/canon_bot_barrel2
+{
+	diffusemap textures/m_turretfx/canon_bot_barrel2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/canon_bot_intro
+{
+	diffusemap textures/m_turretfx/canon_bot_intro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/canon_top_intro
+{
+	diffusemap textures/m_turretfx/canon_top_intro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/cropmarks_loop
+{
+	diffusemap textures/m_turretfx/cropmarks_loop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/cropmarks_loop2
+{
+	diffusemap textures/m_turretfx/cropmarks_loop2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/gatlingtop_backgBC
+{
+	diffusemap textures/m_turretfx/gatlingtop_backgBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/gat_bot_barrel1
+{
+	diffusemap textures/m_turretfx/gat_bot_barrel1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/gat_bot_barrel2
+{
+	diffusemap textures/m_turretfx/gat_bot_barrel2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/gat_bot_intro
+{
+	diffusemap textures/m_turretfx/gat_bot_intro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/gat_bot_temp1
+{
+	diffusemap textures/m_turretfx/gat_bot_temp1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/gat_top_intro
+{
+	diffusemap textures/m_turretfx/gat_top_intro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/turret_bottom
+{
+	diffusemap textures/m_turretfx/turret_bottom.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/turret_top
+{
+	diffusemap textures/m_turretfx/turret_top.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_turretfx/turret_top_overheatBC
+{
+	diffusemap textures/m_turretfx/turret_top_overheatBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

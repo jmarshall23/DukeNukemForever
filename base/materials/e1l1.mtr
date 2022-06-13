@@ -1,0 +1,1099 @@
+textures/e1l1/balls21
+{
+	diffusemap textures/e1l1/balls21.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/balls4
+{
+	diffusemap textures/e1l1/balls4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/crotchytig1tw
+{
+	diffusemap textures/e1l1/crotchytig1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/legs_pintw
+{
+	diffusemap textures/e1l1/legs_pintw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/MovieScreenPal
+{
+	diffusemap textures/e1l1/MovieScreenPal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/pinsidetw
+{
+	diffusemap textures/e1l1/pinsidetw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/red_room_zigzag
+{
+	diffusemap textures/e1l1/red_room_zigzag.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/SINEMA1tw
+{
+	diffusemap textures/e1l1/SINEMA1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/SINEMA2atw
+{
+	diffusemap textures/e1l1/SINEMA2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/SINEMA2tw
+{
+	diffusemap textures/e1l1/SINEMA2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0000
+{
+	diffusemap textures/e1l1/Tile0000.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0001
+{
+	diffusemap textures/e1l1/Tile0001.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0002
+{
+	diffusemap textures/e1l1/Tile0002.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0003
+{
+	diffusemap textures/e1l1/Tile0003.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0004
+{
+	diffusemap textures/e1l1/Tile0004.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0005
+{
+	diffusemap textures/e1l1/Tile0005.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0006
+{
+	diffusemap textures/e1l1/Tile0006.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0007
+{
+	diffusemap textures/e1l1/Tile0007.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0008
+{
+	diffusemap textures/e1l1/Tile0008.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0009
+{
+	diffusemap textures/e1l1/Tile0009.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0021
+{
+	diffusemap textures/e1l1/Tile0021.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0022
+{
+	diffusemap textures/e1l1/Tile0022.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0060
+{
+	diffusemap textures/e1l1/Tile0060.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0070
+{
+	diffusemap textures/e1l1/Tile0070.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0089
+{
+	diffusemap textures/e1l1/Tile0089.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0090
+{
+	diffusemap textures/e1l1/Tile0090.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0091
+{
+	diffusemap textures/e1l1/Tile0091.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0092
+{
+	diffusemap textures/e1l1/Tile0092.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0093
+{
+	diffusemap textures/e1l1/Tile0093.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0130
+{
+	diffusemap textures/e1l1/Tile0130.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0131
+{
+	diffusemap textures/e1l1/Tile0131.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0132
+{
+	diffusemap textures/e1l1/Tile0132.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0133
+{
+	diffusemap textures/e1l1/Tile0133.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0142
+{
+	diffusemap textures/e1l1/Tile0142.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0151
+{
+	diffusemap textures/e1l1/Tile0151.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0162
+{
+	diffusemap textures/e1l1/Tile0162.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0163
+{
+	diffusemap textures/e1l1/Tile0163.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0164
+{
+	diffusemap textures/e1l1/Tile0164.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0165
+{
+	diffusemap textures/e1l1/Tile0165.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0191
+{
+	diffusemap textures/e1l1/Tile0191.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0191a
+{
+	diffusemap textures/e1l1/Tile0191a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0200
+{
+	diffusemap textures/e1l1/Tile0200.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0201
+{
+	diffusemap textures/e1l1/Tile0201.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0202
+{
+	diffusemap textures/e1l1/Tile0202.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0227
+{
+	diffusemap textures/e1l1/Tile0227.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0268
+{
+	diffusemap textures/e1l1/Tile0268.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0269
+{
+	diffusemap textures/e1l1/Tile0269.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0270
+{
+	diffusemap textures/e1l1/Tile0270.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0327
+{
+	diffusemap textures/e1l1/Tile0327.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0340
+{
+	diffusemap textures/e1l1/Tile0340.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0341
+{
+	diffusemap textures/e1l1/Tile0341.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0342
+{
+	diffusemap textures/e1l1/Tile0342.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0346
+{
+	diffusemap textures/e1l1/Tile0346.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0353
+{
+	diffusemap textures/e1l1/Tile0353.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0354
+{
+	diffusemap textures/e1l1/Tile0354.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0355
+{
+	diffusemap textures/e1l1/Tile0355.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0365
+{
+	diffusemap textures/e1l1/Tile0365.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0407
+{
+	diffusemap textures/e1l1/Tile0407.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0408
+{
+	diffusemap textures/e1l1/Tile0408.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0409
+{
+	diffusemap textures/e1l1/Tile0409.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0410
+{
+	diffusemap textures/e1l1/Tile0410.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0417
+{
+	diffusemap textures/e1l1/Tile0417.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0502
+{
+	diffusemap textures/e1l1/Tile0502.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0504
+{
+	diffusemap textures/e1l1/Tile0504.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0513
+{
+	diffusemap textures/e1l1/Tile0513.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0546
+{
+	diffusemap textures/e1l1/Tile0546.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0547
+{
+	diffusemap textures/e1l1/Tile0547.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0568
+{
+	diffusemap textures/e1l1/Tile0568.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0575
+{
+	diffusemap textures/e1l1/Tile0575.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0595
+{
+	diffusemap textures/e1l1/Tile0595.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0596
+{
+	diffusemap textures/e1l1/Tile0596.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0663
+{
+	diffusemap textures/e1l1/Tile0663.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0701
+{
+	diffusemap textures/e1l1/Tile0701.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0702
+{
+	diffusemap textures/e1l1/Tile0702.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0707
+{
+	diffusemap textures/e1l1/Tile0707.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0709
+{
+	diffusemap textures/e1l1/Tile0709.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0719
+{
+	diffusemap textures/e1l1/Tile0719.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0723
+{
+	diffusemap textures/e1l1/Tile0723.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0742
+{
+	diffusemap textures/e1l1/Tile0742.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0743
+{
+	diffusemap textures/e1l1/Tile0743.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0757
+{
+	diffusemap textures/e1l1/Tile0757.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0764
+{
+	diffusemap textures/e1l1/Tile0764.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0770
+{
+	diffusemap textures/e1l1/Tile0770.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0783
+{
+	diffusemap textures/e1l1/Tile0783.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0784
+{
+	diffusemap textures/e1l1/Tile0784.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0785
+{
+	diffusemap textures/e1l1/Tile0785.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0786
+{
+	diffusemap textures/e1l1/Tile0786.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0787
+{
+	diffusemap textures/e1l1/Tile0787.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0788
+{
+	diffusemap textures/e1l1/Tile0788.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0790
+{
+	diffusemap textures/e1l1/Tile0790.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0797
+{
+	diffusemap textures/e1l1/Tile0797.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0800
+{
+	diffusemap textures/e1l1/Tile0800.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0806
+{
+	diffusemap textures/e1l1/Tile0806.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0807
+{
+	diffusemap textures/e1l1/Tile0807.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0808
+{
+	diffusemap textures/e1l1/Tile0808.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0810
+{
+	diffusemap textures/e1l1/Tile0810.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0811
+{
+	diffusemap textures/e1l1/Tile0811.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0814
+{
+	diffusemap textures/e1l1/Tile0814.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0815
+{
+	diffusemap textures/e1l1/Tile0815.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0821
+{
+	diffusemap textures/e1l1/Tile0821.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0822
+{
+	diffusemap textures/e1l1/Tile0822.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0823
+{
+	diffusemap textures/e1l1/Tile0823.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0827
+{
+	diffusemap textures/e1l1/Tile0827.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0834
+{
+	diffusemap textures/e1l1/Tile0834.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0852
+{
+	diffusemap textures/e1l1/Tile0852.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0857
+{
+	diffusemap textures/e1l1/Tile0857.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0868
+{
+	diffusemap textures/e1l1/Tile0868.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0871
+{
+	diffusemap textures/e1l1/Tile0871.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0872
+{
+	diffusemap textures/e1l1/Tile0872.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0873
+{
+	diffusemap textures/e1l1/Tile0873.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0874
+{
+	diffusemap textures/e1l1/Tile0874.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0875
+{
+	diffusemap textures/e1l1/Tile0875.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0877
+{
+	diffusemap textures/e1l1/Tile0877.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0879
+{
+	diffusemap textures/e1l1/Tile0879.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0880
+{
+	diffusemap textures/e1l1/Tile0880.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0884
+{
+	diffusemap textures/e1l1/Tile0884.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0899
+{
+	diffusemap textures/e1l1/Tile0899.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0913
+{
+	diffusemap textures/e1l1/Tile0913.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0917
+{
+	diffusemap textures/e1l1/Tile0917.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0925
+{
+	diffusemap textures/e1l1/Tile0925.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0929
+{
+	diffusemap textures/e1l1/Tile0929.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0930
+{
+	diffusemap textures/e1l1/Tile0930.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0931
+{
+	diffusemap textures/e1l1/Tile0931.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0932
+{
+	diffusemap textures/e1l1/Tile0932.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0934
+{
+	diffusemap textures/e1l1/Tile0934.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0961
+{
+	diffusemap textures/e1l1/Tile0961.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0964
+{
+	diffusemap textures/e1l1/Tile0964.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0965
+{
+	diffusemap textures/e1l1/Tile0965.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0966
+{
+	diffusemap textures/e1l1/Tile0966.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile0983
+{
+	diffusemap textures/e1l1/Tile0983.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1046
+{
+	diffusemap textures/e1l1/Tile1046.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1051
+{
+	diffusemap textures/e1l1/Tile1051.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1052
+{
+	diffusemap textures/e1l1/Tile1052.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1054
+{
+	diffusemap textures/e1l1/Tile1054.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1055
+{
+	diffusemap textures/e1l1/Tile1055.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1060
+{
+	diffusemap textures/e1l1/Tile1060.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1067
+{
+	diffusemap textures/e1l1/Tile1067.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1069
+{
+	diffusemap textures/e1l1/Tile1069.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1076
+{
+	diffusemap textures/e1l1/Tile1076.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1192
+{
+	diffusemap textures/e1l1/Tile1192.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1197
+{
+	diffusemap textures/e1l1/Tile1197.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1204
+{
+	diffusemap textures/e1l1/Tile1204.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1211
+{
+	diffusemap textures/e1l1/Tile1211.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1247
+{
+	diffusemap textures/e1l1/Tile1247.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1280
+{
+	diffusemap textures/e1l1/Tile1280.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1281
+{
+	diffusemap textures/e1l1/Tile1281.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1282
+{
+	diffusemap textures/e1l1/Tile1282.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1283
+{
+	diffusemap textures/e1l1/Tile1283.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1284
+{
+	diffusemap textures/e1l1/Tile1284.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1285
+{
+	diffusemap textures/e1l1/Tile1285.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1286
+{
+	diffusemap textures/e1l1/Tile1286.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1287
+{
+	diffusemap textures/e1l1/Tile1287.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1288
+{
+	diffusemap textures/e1l1/Tile1288.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1289
+{
+	diffusemap textures/e1l1/Tile1289.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1290
+{
+	diffusemap textures/e1l1/Tile1290.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1291
+{
+	diffusemap textures/e1l1/Tile1291.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/e1l1/Tile1292
+{
+	diffusemap textures/e1l1/Tile1292.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

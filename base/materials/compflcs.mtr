@@ -1,0 +1,14 @@
+textures/compflcs/placeholder100
+{
+	diffusemap textures/compflcs/placeholder100.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/compflcs/placeholder300
+{
+	diffusemap textures/compflcs/placeholder300.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

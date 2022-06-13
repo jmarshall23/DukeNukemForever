@@ -1,0 +1,175 @@
+textures/mtheme_fullcolor/iconbig_game
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_game.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_game_HL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_game_HL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_game_SL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_game_SL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_multiplayer
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_multiplayer.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_multiplayer_HL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_multiplayer_HL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_multiplayer_SL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_multiplayer_SL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_settings
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_settings.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_settings_HL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_settings_HL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_settings_SL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_settings_SL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_support
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_support.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_support_HL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_support_HL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/iconbig_support_SL
+{
+	diffusemap textures/mtheme_fullcolor/iconbig_support_SL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_audio
+{
+	diffusemap textures/mtheme_fullcolor/icon_audio.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_controls
+{
+	diffusemap textures/mtheme_fullcolor/icon_controls.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_creategame
+{
+	diffusemap textures/mtheme_fullcolor/icon_creategame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_findgame
+{
+	diffusemap textures/mtheme_fullcolor/icon_findgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/ICON_Game
+{
+	diffusemap textures/mtheme_fullcolor/ICON_Game.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_loadgame
+{
+	diffusemap textures/mtheme_fullcolor/icon_loadgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_newgame
+{
+	diffusemap textures/mtheme_fullcolor/icon_newgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_playersetup
+{
+	diffusemap textures/mtheme_fullcolor/icon_playersetup.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_profiles
+{
+	diffusemap textures/mtheme_fullcolor/icon_profiles.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_quit
+{
+	diffusemap textures/mtheme_fullcolor/icon_quit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_savegame
+{
+	diffusemap textures/mtheme_fullcolor/icon_savegame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_sos
+{
+	diffusemap textures/mtheme_fullcolor/icon_sos.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mtheme_fullcolor/icon_video
+{
+	diffusemap textures/mtheme_fullcolor/icon_video.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

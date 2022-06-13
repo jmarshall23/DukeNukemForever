@@ -1,0 +1,7 @@
+textures/earthflic/Glow01
+{
+	diffusemap textures/earthflic/Glow01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

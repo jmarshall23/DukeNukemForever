@@ -1,0 +1,623 @@
+textures/SmokeGray/sp1_A00
+{
+	diffusemap textures/SmokeGray/sp1_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp1_A01
+{
+	diffusemap textures/SmokeGray/sp1_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp1_A02
+{
+	diffusemap textures/SmokeGray/sp1_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp1_A03
+{
+	diffusemap textures/SmokeGray/sp1_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp1_A04
+{
+	diffusemap textures/SmokeGray/sp1_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp1_A05
+{
+	diffusemap textures/SmokeGray/sp1_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp1_A06
+{
+	diffusemap textures/SmokeGray/sp1_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp1_A07
+{
+	diffusemap textures/SmokeGray/sp1_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A00
+{
+	diffusemap textures/SmokeGray/sp2_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A01
+{
+	diffusemap textures/SmokeGray/sp2_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A02
+{
+	diffusemap textures/SmokeGray/sp2_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A03
+{
+	diffusemap textures/SmokeGray/sp2_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A04
+{
+	diffusemap textures/SmokeGray/sp2_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A05
+{
+	diffusemap textures/SmokeGray/sp2_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A06
+{
+	diffusemap textures/SmokeGray/sp2_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A07
+{
+	diffusemap textures/SmokeGray/sp2_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A08
+{
+	diffusemap textures/SmokeGray/sp2_A08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp2_A09
+{
+	diffusemap textures/SmokeGray/sp2_A09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp3_A00
+{
+	diffusemap textures/SmokeGray/sp3_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp3_A01
+{
+	diffusemap textures/SmokeGray/sp3_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp3_A02
+{
+	diffusemap textures/SmokeGray/sp3_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp3_A03
+{
+	diffusemap textures/SmokeGray/sp3_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp3_A04
+{
+	diffusemap textures/SmokeGray/sp3_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp3_A05
+{
+	diffusemap textures/SmokeGray/sp3_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp3_A06
+{
+	diffusemap textures/SmokeGray/sp3_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A00
+{
+	diffusemap textures/SmokeGray/sp4_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A01
+{
+	diffusemap textures/SmokeGray/sp4_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A02
+{
+	diffusemap textures/SmokeGray/sp4_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A03
+{
+	diffusemap textures/SmokeGray/sp4_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A04
+{
+	diffusemap textures/SmokeGray/sp4_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A05
+{
+	diffusemap textures/SmokeGray/sp4_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A06
+{
+	diffusemap textures/SmokeGray/sp4_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A07
+{
+	diffusemap textures/SmokeGray/sp4_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A08
+{
+	diffusemap textures/SmokeGray/sp4_A08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A09
+{
+	diffusemap textures/SmokeGray/sp4_A09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp4_A10
+{
+	diffusemap textures/SmokeGray/sp4_A10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp5_A00
+{
+	diffusemap textures/SmokeGray/sp5_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp5_A01
+{
+	diffusemap textures/SmokeGray/sp5_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp5_A02
+{
+	diffusemap textures/SmokeGray/sp5_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp5_A03
+{
+	diffusemap textures/SmokeGray/sp5_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp5_A04
+{
+	diffusemap textures/SmokeGray/sp5_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A00
+{
+	diffusemap textures/SmokeGray/sp6_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A01
+{
+	diffusemap textures/SmokeGray/sp6_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A02
+{
+	diffusemap textures/SmokeGray/sp6_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A03
+{
+	diffusemap textures/SmokeGray/sp6_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A04
+{
+	diffusemap textures/SmokeGray/sp6_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A05
+{
+	diffusemap textures/SmokeGray/sp6_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A06
+{
+	diffusemap textures/SmokeGray/sp6_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A07
+{
+	diffusemap textures/SmokeGray/sp6_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp6_A08
+{
+	diffusemap textures/SmokeGray/sp6_A08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A00
+{
+	diffusemap textures/SmokeGray/sp7_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A01
+{
+	diffusemap textures/SmokeGray/sp7_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A02
+{
+	diffusemap textures/SmokeGray/sp7_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A03
+{
+	diffusemap textures/SmokeGray/sp7_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A04
+{
+	diffusemap textures/SmokeGray/sp7_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A05
+{
+	diffusemap textures/SmokeGray/sp7_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A06
+{
+	diffusemap textures/SmokeGray/sp7_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A07
+{
+	diffusemap textures/SmokeGray/sp7_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A08
+{
+	diffusemap textures/SmokeGray/sp7_A08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A09
+{
+	diffusemap textures/SmokeGray/sp7_A09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp7_A10
+{
+	diffusemap textures/SmokeGray/sp7_A10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A00
+{
+	diffusemap textures/SmokeGray/sp8_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A01
+{
+	diffusemap textures/SmokeGray/sp8_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A02
+{
+	diffusemap textures/SmokeGray/sp8_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A03
+{
+	diffusemap textures/SmokeGray/sp8_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A04
+{
+	diffusemap textures/SmokeGray/sp8_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A05
+{
+	diffusemap textures/SmokeGray/sp8_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A06
+{
+	diffusemap textures/SmokeGray/sp8_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A07
+{
+	diffusemap textures/SmokeGray/sp8_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A08
+{
+	diffusemap textures/SmokeGray/sp8_A08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A09
+{
+	diffusemap textures/SmokeGray/sp8_A09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp8_A10
+{
+	diffusemap textures/SmokeGray/sp8_A10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A00
+{
+	diffusemap textures/SmokeGray/sp9_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A01
+{
+	diffusemap textures/SmokeGray/sp9_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A02
+{
+	diffusemap textures/SmokeGray/sp9_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A03
+{
+	diffusemap textures/SmokeGray/sp9_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A04
+{
+	diffusemap textures/SmokeGray/sp9_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A05
+{
+	diffusemap textures/SmokeGray/sp9_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A06
+{
+	diffusemap textures/SmokeGray/sp9_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp9_A07
+{
+	diffusemap textures/SmokeGray/sp9_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A00
+{
+	diffusemap textures/SmokeGray/sp_A00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A01
+{
+	diffusemap textures/SmokeGray/sp_A01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A02
+{
+	diffusemap textures/SmokeGray/sp_A02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A03
+{
+	diffusemap textures/SmokeGray/sp_A03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A04
+{
+	diffusemap textures/SmokeGray/sp_A04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A05
+{
+	diffusemap textures/SmokeGray/sp_A05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A06
+{
+	diffusemap textures/SmokeGray/sp_A06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A07
+{
+	diffusemap textures/SmokeGray/sp_A07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SmokeGray/sp_A08
+{
+	diffusemap textures/SmokeGray/sp_A08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

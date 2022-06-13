@@ -1,0 +1,133 @@
+textures/Area51Smack01/BookCase01
+{
+	diffusemap textures/Area51Smack01/BookCase01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentAC
+{
+	diffusemap textures/Area51Smack01/CentAC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentAccessIn
+{
+	diffusemap textures/Area51Smack01/CentAccessIn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentAccessOut
+{
+	diffusemap textures/Area51Smack01/CentAccessOut.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentCount
+{
+	diffusemap textures/Area51Smack01/CentCount.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentDoorClose
+{
+	diffusemap textures/Area51Smack01/CentDoorClose.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentDoorOpen
+{
+	diffusemap textures/Area51Smack01/CentDoorOpen.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentGNeg
+{
+	diffusemap textures/Area51Smack01/CentGNeg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentGPlus
+{
+	diffusemap textures/Area51Smack01/CentGPlus.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentSelect
+{
+	diffusemap textures/Area51Smack01/CentSelect.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentSelectWord
+{
+	diffusemap textures/Area51Smack01/CentSelectWord.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentStop01
+{
+	diffusemap textures/Area51Smack01/CentStop01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentStop02
+{
+	diffusemap textures/Area51Smack01/CentStop02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/CentVitals
+{
+	diffusemap textures/Area51Smack01/CentVitals.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/LadderCtrl
+{
+	diffusemap textures/Area51Smack01/LadderCtrl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/PlantRoom
+{
+	diffusemap textures/Area51Smack01/PlantRoom.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/Section1
+{
+	diffusemap textures/Area51Smack01/Section1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/Section2
+{
+	diffusemap textures/Area51Smack01/Section2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Area51Smack01/Section3
+{
+	diffusemap textures/Area51Smack01/Section3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

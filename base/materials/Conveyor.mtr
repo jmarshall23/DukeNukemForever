@@ -1,0 +1,63 @@
+textures/Conveyor/ConveyorNegatiX
+{
+	diffusemap textures/Conveyor/ConveyorNegatiX.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/ConveyorNegatiY
+{
+	diffusemap textures/Conveyor/ConveyorNegatiY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/ConveyorPositiX
+{
+	diffusemap textures/Conveyor/ConveyorPositiX.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/ConveyorPositiY
+{
+	diffusemap textures/Conveyor/ConveyorPositiY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/tramNegX_tw
+{
+	diffusemap textures/Conveyor/tramNegX_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/tramNegY_tw
+{
+	diffusemap textures/Conveyor/tramNegY_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/tramPosY_tw
+{
+	diffusemap textures/Conveyor/tramPosY_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/truddybit-x1tw
+{
+	diffusemap textures/Conveyor/truddybit-x1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Conveyor/truddybit-y1tw
+{
+	diffusemap textures/Conveyor/truddybit-y1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

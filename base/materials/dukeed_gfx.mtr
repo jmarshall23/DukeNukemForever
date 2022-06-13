@@ -1,0 +1,70 @@
+textures/dukeed_gfx/AICombatController
+{
+	diffusemap textures/dukeed_gfx/AICombatController.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/CoverSpot
+{
+	diffusemap textures/dukeed_gfx/CoverSpot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/CreatureFactory
+{
+	diffusemap textures/dukeed_gfx/CreatureFactory.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/dancedanceduke
+{
+	diffusemap textures/dukeed_gfx/dancedanceduke.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/FocalPoint
+{
+	diffusemap textures/dukeed_gfx/FocalPoint.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/PatrolControl
+{
+	diffusemap textures/dukeed_gfx/PatrolControl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/shadow_light
+{
+	diffusemap textures/dukeed_gfx/shadow_light.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/Spawnpoint
+{
+	diffusemap textures/dukeed_gfx/Spawnpoint.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/TrigAssignPawn
+{
+	diffusemap textures/dukeed_gfx/TrigAssignPawn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukeed_gfx/TrigSOS
+{
+	diffusemap textures/dukeed_gfx/TrigSOS.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

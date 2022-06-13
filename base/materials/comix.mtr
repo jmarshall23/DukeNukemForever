@@ -1,0 +1,14 @@
+textures/comix/bw_hanger
+{
+	diffusemap textures/comix/bw_hanger.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/comix/bw_hanger_strip
+{
+	diffusemap textures/comix/bw_hanger_strip.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,7 @@
+textures/flictextures/terrain1
+{
+	diffusemap textures/flictextures/terrain1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

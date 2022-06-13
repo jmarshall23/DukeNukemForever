@@ -1,0 +1,1001 @@
+textures/computer/bluescreen1BC
+{
+	diffusemap textures/computer/bluescreen1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD1sah
+{
+	diffusemap textures/computer/CD1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD2sah
+{
+	diffusemap textures/computer/CD2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD3sah
+{
+	diffusemap textures/computer/CD3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD4sah
+{
+	diffusemap textures/computer/CD4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD_back1sah
+{
+	diffusemap textures/computer/CD_back1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD_bottm1sah
+{
+	diffusemap textures/computer/CD_bottm1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD_front1sah
+{
+	diffusemap textures/computer/CD_front1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/CD_side1sah
+{
+	diffusemap textures/computer/CD_side1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_side1sah
+{
+	diffusemap textures/computer/Chip_side1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_side2sah
+{
+	diffusemap textures/computer/Chip_side2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_top0
+{
+	diffusemap textures/computer/Chip_top0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_top1sah
+{
+	diffusemap textures/computer/Chip_top1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_top3sah
+{
+	diffusemap textures/computer/Chip_top3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_top4sah
+{
+	diffusemap textures/computer/Chip_top4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_top5sah
+{
+	diffusemap textures/computer/Chip_top5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Chip_top6sah
+{
+	diffusemap textures/computer/Chip_top6sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/circuitwall1BC
+{
+	diffusemap textures/computer/circuitwall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Cnctr25sah
+{
+	diffusemap textures/computer/Cnctr25sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/compwall1BC
+{
+	diffusemap textures/computer/compwall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/DoorA51Asah
+{
+	diffusemap textures/computer/DoorA51Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/DoorA51Bsah
+{
+	diffusemap textures/computer/DoorA51Bsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/doorpanel1aBC
+{
+	diffusemap textures/computer/doorpanel1aBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/doorpanel1BBC
+{
+	diffusemap textures/computer/doorpanel1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/doorpanel1CBC
+{
+	diffusemap textures/computer/doorpanel1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/doorpanel1DBC
+{
+	diffusemap textures/computer/doorpanel1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/doorpanel1EBC
+{
+	diffusemap textures/computer/doorpanel1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Dot1sah
+{
+	diffusemap textures/computer/Dot1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Dot2BLUsah
+{
+	diffusemap textures/computer/Dot2BLUsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Dot2GRNsah
+{
+	diffusemap textures/computer/Dot2GRNsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Dot2PURsah
+{
+	diffusemap textures/computer/Dot2PURsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Dot2REDsah
+{
+	diffusemap textures/computer/Dot2REDsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Dot2sah
+{
+	diffusemap textures/computer/Dot2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Dot2YELsah
+{
+	diffusemap textures/computer/Dot2YELsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/DotMgnta1sah
+{
+	diffusemap textures/computer/DotMgnta1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/DotRed1sah
+{
+	diffusemap textures/computer/DotRed1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/DotYel1sah
+{
+	diffusemap textures/computer/DotYel1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/EGA02sah
+{
+	diffusemap textures/computer/EGA02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Fan01sah
+{
+	diffusemap textures/computer/Fan01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Floor_PCB1sah
+{
+	diffusemap textures/computer/Floor_PCB1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Floor_PCB2sah
+{
+	diffusemap textures/computer/Floor_PCB2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/forcefieldblue
+{
+	diffusemap textures/computer/forcefieldblue.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/forcefieldred
+{
+	diffusemap textures/computer/forcefieldred.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/forcefieldyellow
+{
+	diffusemap textures/computer/forcefieldyellow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/genshadow1
+{
+	diffusemap textures/computer/genshadow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/genshadow3
+{
+	diffusemap textures/computer/genshadow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridBlue1sah
+{
+	diffusemap textures/computer/GridBlue1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridBlue2sah
+{
+	diffusemap textures/computer/GridBlue2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridGreen1sah
+{
+	diffusemap textures/computer/GridGreen1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridGreen2sah
+{
+	diffusemap textures/computer/GridGreen2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridRed1sah
+{
+	diffusemap textures/computer/GridRed1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridRed2sah
+{
+	diffusemap textures/computer/GridRed2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridSmallGrn
+{
+	diffusemap textures/computer/GridSmallGrn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/GridSmallRed
+{
+	diffusemap textures/computer/GridSmallRed.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Grommet1sah
+{
+	diffusemap textures/computer/Grommet1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall1BC
+{
+	diffusemap textures/computer/mainfrm_wall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall2BC
+{
+	diffusemap textures/computer/mainfrm_wall2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall3BC
+{
+	diffusemap textures/computer/mainfrm_wall3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall4BC
+{
+	diffusemap textures/computer/mainfrm_wall4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall51B
+{
+	diffusemap textures/computer/mainfrm_wall51B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall52B
+{
+	diffusemap textures/computer/mainfrm_wall52B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall53B
+{
+	diffusemap textures/computer/mainfrm_wall53B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall5BC
+{
+	diffusemap textures/computer/mainfrm_wall5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mainfrm_wall6BC
+{
+	diffusemap textures/computer/mainfrm_wall6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mem_side1sah
+{
+	diffusemap textures/computer/Mem_side1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mem_slot1sah
+{
+	diffusemap textures/computer/Mem_slot1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube1BC
+{
+	diffusemap textures/computer/mftube1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube2BC
+{
+	diffusemap textures/computer/mftube2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube3BC
+{
+	diffusemap textures/computer/mftube3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube4BC
+{
+	diffusemap textures/computer/mftube4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube5BC
+{
+	diffusemap textures/computer/mftube5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube6BC
+{
+	diffusemap textures/computer/mftube6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube7BC
+{
+	diffusemap textures/computer/mftube7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube8BC
+{
+	diffusemap textures/computer/mftube8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftubeciel1BC
+{
+	diffusemap textures/computer/mftubeciel1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftubeciel2BC
+{
+	diffusemap textures/computer/mftubeciel2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftubedoor1BC
+{
+	diffusemap textures/computer/mftubedoor1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftubegrate1BC
+{
+	diffusemap textures/computer/mftubegrate1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftubelight1BC
+{
+	diffusemap textures/computer/mftubelight1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mftube_tubes1BC
+{
+	diffusemap textures/computer/mftube_tubes1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mnfmwall51BBC
+{
+	diffusemap textures/computer/mnfmwall51BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mnfmwall52BBC
+{
+	diffusemap textures/computer/mnfmwall52BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mnfmwall53BBC
+{
+	diffusemap textures/computer/mnfmwall53BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mnfrmladder1BC
+{
+	diffusemap textures/computer/mnfrmladder1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mnfrmsign1BC
+{
+	diffusemap textures/computer/mnfrmsign1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mnfrmsign2BC
+{
+	diffusemap textures/computer/mnfrmsign2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mon_back1sah
+{
+	diffusemap textures/computer/Mon_back1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mon_back2sah
+{
+	diffusemap textures/computer/Mon_back2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mon_side1sah
+{
+	diffusemap textures/computer/Mon_side1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mon_side2sah
+{
+	diffusemap textures/computer/Mon_side2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mon_side3sah
+{
+	diffusemap textures/computer/Mon_side3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Mon_top1sah
+{
+	diffusemap textures/computer/Mon_top1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/mskwires1BC
+{
+	diffusemap textures/computer/mskwires1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Nut_sides1sah
+{
+	diffusemap textures/computer/Nut_sides1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PCB_botgrad1
+{
+	diffusemap textures/computer/PCB_botgrad1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PCB_botmask1
+{
+	diffusemap textures/computer/PCB_botmask1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PCB_floor1sah
+{
+	diffusemap textures/computer/PCB_floor1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_back1sah
+{
+	diffusemap textures/computer/PC_back1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_decor1sah
+{
+	diffusemap textures/computer/PC_decor1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_decor2sah
+{
+	diffusemap textures/computer/PC_decor2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_decor3sah
+{
+	diffusemap textures/computer/PC_decor3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_Hot1sah
+{
+	diffusemap textures/computer/PC_Hot1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_Hot2sah
+{
+	diffusemap textures/computer/PC_Hot2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_metalwall1
+{
+	diffusemap textures/computer/PC_metalwall1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_metalwall2
+{
+	diffusemap textures/computer/PC_metalwall2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_metalwall3
+{
+	diffusemap textures/computer/PC_metalwall3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_metalwall4
+{
+	diffusemap textures/computer/PC_metalwall4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_server1sah
+{
+	diffusemap textures/computer/PC_server1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_server2sah
+{
+	diffusemap textures/computer/PC_server2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_server3sah
+{
+	diffusemap textures/computer/PC_server3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PC_wall7sah
+{
+	diffusemap textures/computer/PC_wall7sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PowerSup1sah
+{
+	diffusemap textures/computer/PowerSup1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PowerSup2sah
+{
+	diffusemap textures/computer/PowerSup2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PowerSup3sah
+{
+	diffusemap textures/computer/PowerSup3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PowerSup4sah
+{
+	diffusemap textures/computer/PowerSup4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/PowerSup5sah
+{
+	diffusemap textures/computer/PowerSup5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Resis_side1sah
+{
+	diffusemap textures/computer/Resis_side1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Resis_side2sah
+{
+	diffusemap textures/computer/Resis_side2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Resis_tab1sah
+{
+	diffusemap textures/computer/Resis_tab1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Resis_top1sah
+{
+	diffusemap textures/computer/Resis_top1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/RibbCbl1sah
+{
+	diffusemap textures/computer/RibbCbl1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/RibbCbl2sah
+{
+	diffusemap textures/computer/RibbCbl2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Screw_threads1
+{
+	diffusemap textures/computer/Screw_threads1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/Server_vent2sah
+{
+	diffusemap textures/computer/Server_vent2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/serv_grat1sah
+{
+	diffusemap textures/computer/serv_grat1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SkyBox1sah
+{
+	diffusemap textures/computer/SkyBox1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SkyBox2sah
+{
+	diffusemap textures/computer/SkyBox2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/snowflake1BC
+{
+	diffusemap textures/computer/snowflake1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor1
+{
+	diffusemap textures/computer/SSdoor1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor2
+{
+	diffusemap textures/computer/SSdoor2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor3
+{
+	diffusemap textures/computer/SSdoor3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor4
+{
+	diffusemap textures/computer/SSdoor4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor5
+{
+	diffusemap textures/computer/SSdoor5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor6
+{
+	diffusemap textures/computer/SSdoor6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor7
+{
+	diffusemap textures/computer/SSdoor7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor8
+{
+	diffusemap textures/computer/SSdoor8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor9
+{
+	diffusemap textures/computer/SSdoor9.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor9a
+{
+	diffusemap textures/computer/SSdoor9a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor9b
+{
+	diffusemap textures/computer/SSdoor9b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/SSdoor9c
+{
+	diffusemap textures/computer/SSdoor9c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/TriCyan2sah
+{
+	diffusemap textures/computer/TriCyan2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/TriPat1sah
+{
+	diffusemap textures/computer/TriPat1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/computer/T_wall1sah
+{
+	diffusemap textures/computer/T_wall1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

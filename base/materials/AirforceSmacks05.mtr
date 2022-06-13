@@ -1,0 +1,252 @@
+textures/AirforceSmacks05/AVAntTrack
+{
+	diffusemap textures/AirforceSmacks05/AVAntTrack.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVMenu01
+{
+	diffusemap textures/AirforceSmacks05/AVMenu01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVMenu02
+{
+	diffusemap textures/AirforceSmacks05/AVMenu02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro01
+{
+	diffusemap textures/AirforceSmacks05/AVPro01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro02
+{
+	diffusemap textures/AirforceSmacks05/AVPro02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro03
+{
+	diffusemap textures/AirforceSmacks05/AVPro03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro04
+{
+	diffusemap textures/AirforceSmacks05/AVPro04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro05
+{
+	diffusemap textures/AirforceSmacks05/AVPro05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro06
+{
+	diffusemap textures/AirforceSmacks05/AVPro06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro07
+{
+	diffusemap textures/AirforceSmacks05/AVPro07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro08
+{
+	diffusemap textures/AirforceSmacks05/AVPro08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro09
+{
+	diffusemap textures/AirforceSmacks05/AVPro09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro10
+{
+	diffusemap textures/AirforceSmacks05/AVPro10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVPro11
+{
+	diffusemap textures/AirforceSmacks05/AVPro11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVProShipIn
+{
+	diffusemap textures/AirforceSmacks05/AVProShipIn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVRocketFly
+{
+	diffusemap textures/AirforceSmacks05/AVRocketFly.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVScreenOff
+{
+	diffusemap textures/AirforceSmacks05/AVScreenOff.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVScreenON
+{
+	diffusemap textures/AirforceSmacks05/AVScreenON.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVSilos
+{
+	diffusemap textures/AirforceSmacks05/AVSilos.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVTitles
+{
+	diffusemap textures/AirforceSmacks05/AVTitles.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/AVWMDHit
+{
+	diffusemap textures/AirforceSmacks05/AVWMDHit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/ClockWall12hrs
+{
+	diffusemap textures/AirforceSmacks05/ClockWall12hrs.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/MGateCam01
+{
+	diffusemap textures/AirforceSmacks05/MGateCam01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/MGateCam02
+{
+	diffusemap textures/AirforceSmacks05/MGateCam02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/MGateCam03
+{
+	diffusemap textures/AirforceSmacks05/MGateCam03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/MGateCam04
+{
+	diffusemap textures/AirforceSmacks05/MGateCam04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/MGateDisplay01
+{
+	diffusemap textures/AirforceSmacks05/MGateDisplay01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeMeterBad
+{
+	diffusemap textures/AirforceSmacks05/PipeMeterBad.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeMeterFlow
+{
+	diffusemap textures/AirforceSmacks05/PipeMeterFlow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeMeterPress
+{
+	diffusemap textures/AirforceSmacks05/PipeMeterPress.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeMeterRPM
+{
+	diffusemap textures/AirforceSmacks05/PipeMeterRPM.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeMeterWaste
+{
+	diffusemap textures/AirforceSmacks05/PipeMeterWaste.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipePumpCtrl
+{
+	diffusemap textures/AirforceSmacks05/PipePumpCtrl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeVCSbad
+{
+	diffusemap textures/AirforceSmacks05/PipeVCSbad.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeVCSuse
+{
+	diffusemap textures/AirforceSmacks05/PipeVCSuse.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks05/PipeWasteDisplay
+{
+	diffusemap textures/AirforceSmacks05/PipeWasteDisplay.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

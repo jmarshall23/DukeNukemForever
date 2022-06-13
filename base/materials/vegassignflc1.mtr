@@ -1,0 +1,7 @@
+textures/vegassignflc1/LK_DeadSign
+{
+	diffusemap textures/vegassignflc1/LK_DeadSign.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

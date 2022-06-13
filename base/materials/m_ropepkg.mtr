@@ -1,0 +1,7 @@
+textures/m_ropepkg/Rope
+{
+	diffusemap textures/m_ropepkg/Rope.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

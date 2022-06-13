@@ -1,0 +1,56 @@
+textures/shooter/backdrop1
+{
+	diffusemap textures/shooter/backdrop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/shooter/backdrop2
+{
+	diffusemap textures/shooter/backdrop2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/shooter/bullet2
+{
+	diffusemap textures/shooter/bullet2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/shooter/lunarsurface1
+{
+	diffusemap textures/shooter/lunarsurface1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/shooter/particle1
+{
+	diffusemap textures/shooter/particle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/shooter/Powerup
+{
+	diffusemap textures/shooter/Powerup.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/shooter/ship2
+{
+	diffusemap textures/shooter/ship2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/shooter/snakbitey2
+{
+	diffusemap textures/shooter/snakbitey2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

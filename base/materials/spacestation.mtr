@@ -1,0 +1,140 @@
+textures/spacestation/2panel_1
+{
+	diffusemap textures/spacestation/2panel_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/2panel_2
+{
+	diffusemap textures/spacestation/2panel_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/binkolg_1tw
+{
+	diffusemap textures/spacestation/binkolg_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/binkolg_2tw
+{
+	diffusemap textures/spacestation/binkolg_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/binkolg_3tw
+{
+	diffusemap textures/spacestation/binkolg_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/hampertime_1tw
+{
+	diffusemap textures/spacestation/hampertime_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/METAL_~7
+{
+	diffusemap textures/spacestation/METAL_~7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/METAL~22
+{
+	diffusemap textures/spacestation/METAL~22.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/METAL~29
+{
+	diffusemap textures/spacestation/METAL~29.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/metsp_plate1
+{
+	diffusemap textures/spacestation/metsp_plate1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/punkass_1tw
+{
+	diffusemap textures/spacestation/punkass_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/punkass_2atw
+{
+	diffusemap textures/spacestation/punkass_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/punkass_2tw
+{
+	diffusemap textures/spacestation/punkass_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/punkass_4atw
+{
+	diffusemap textures/spacestation/punkass_4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/punkass_5atw
+{
+	diffusemap textures/spacestation/punkass_5atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/punkass_5btw
+{
+	diffusemap textures/spacestation/punkass_5btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/spaceplate_1tw
+{
+	diffusemap textures/spacestation/spaceplate_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/WALL_H~2
+{
+	diffusemap textures/spacestation/WALL_H~2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/WALL_H~4
+{
+	diffusemap textures/spacestation/WALL_H~4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/spacestation/WALL_H~8
+{
+	diffusemap textures/spacestation/WALL_H~8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,7 @@
+textures/m_bombshell/bombshellskin2
+{
+	diffusemap textures/m_bombshell/bombshellskin2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

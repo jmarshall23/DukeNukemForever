@@ -1,0 +1,28 @@
+textures/pinballed/pinbot_tw
+{
+	diffusemap textures/pinballed/pinbot_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/pinballed/pintop_tw
+{
+	diffusemap textures/pinballed/pintop_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/pinballed/pin_table
+{
+	diffusemap textures/pinballed/pin_table.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/pinballed/pokerattract
+{
+	diffusemap textures/pinballed/pokerattract.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

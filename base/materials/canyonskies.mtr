@@ -1,0 +1,21 @@
+textures/canyonskies/can8_UP
+{
+	diffusemap textures/canyonskies/can8_UP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/canyonskies/cyn1up_1
+{
+	diffusemap textures/canyonskies/cyn1up_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/canyonskies/gigup
+{
+	diffusemap textures/canyonskies/gigup.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,266 @@
+textures/Streets/alld-park1tw
+{
+	diffusemap textures/Streets/alld-park1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/gen3lane1RC
+{
+	diffusemap textures/Streets/gen3lane1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_arrow1
+{
+	diffusemap textures/Streets/Sign_arrow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Back1
+{
+	diffusemap textures/Streets/Sign_Back1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Back3
+{
+	diffusemap textures/Streets/Sign_Back3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Back4
+{
+	diffusemap textures/Streets/Sign_Back4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Caution3
+{
+	diffusemap textures/Streets/Sign_Caution3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Caution5
+{
+	diffusemap textures/Streets/Sign_Caution5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Clearance2
+{
+	diffusemap textures/Streets/Sign_Clearance2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Hiway1
+{
+	diffusemap textures/Streets/Sign_Hiway1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Hiway5
+{
+	diffusemap textures/Streets/Sign_Hiway5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_Hndicap1
+{
+	diffusemap textures/Streets/Sign_Hndicap1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_int2
+{
+	diffusemap textures/Streets/Sign_int2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_lights1
+{
+	diffusemap textures/Streets/Sign_lights1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_lights2
+{
+	diffusemap textures/Streets/Sign_lights2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_lights3
+{
+	diffusemap textures/Streets/Sign_lights3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_NoEnter1
+{
+	diffusemap textures/Streets/Sign_NoEnter1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_NoUTurn1
+{
+	diffusemap textures/Streets/Sign_NoUTurn1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_SlowTraf1
+{
+	diffusemap textures/Streets/Sign_SlowTraf1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Sign_SpLim95
+{
+	diffusemap textures/Streets/Sign_SpLim95.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_$Collect1
+{
+	diffusemap textures/Streets/TB_$Collect1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_$Collect2
+{
+	diffusemap textures/Streets/TB_$Collect2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_$Collect3
+{
+	diffusemap textures/Streets/TB_$Collect3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_$Collect4
+{
+	diffusemap textures/Streets/TB_$Collect4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_AmberLit1
+{
+	diffusemap textures/Streets/TB_AmberLit1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_AmberLit2
+{
+	diffusemap textures/Streets/TB_AmberLit2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_Booth1
+{
+	diffusemap textures/Streets/TB_Booth1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_Booth3
+{
+	diffusemap textures/Streets/TB_Booth3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_Exact$1
+{
+	diffusemap textures/Streets/TB_Exact$1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_GardRail1
+{
+	diffusemap textures/Streets/TB_GardRail1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_GardRail2
+{
+	diffusemap textures/Streets/TB_GardRail2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_Light1
+{
+	diffusemap textures/Streets/TB_Light1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_Light2
+{
+	diffusemap textures/Streets/TB_Light2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_SidePosts1
+{
+	diffusemap textures/Streets/TB_SidePosts1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_Wall1
+{
+	diffusemap textures/Streets/TB_Wall1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TB_WallDecor1
+{
+	diffusemap textures/Streets/TB_WallDecor1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/Tollbooth01
+{
+	diffusemap textures/Streets/Tollbooth01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Streets/TollboothTop1
+{
+	diffusemap textures/Streets/TollboothTop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

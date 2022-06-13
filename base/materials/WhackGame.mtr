@@ -1,0 +1,77 @@
+textures/WhackGame/StartButtonOff
+{
+	diffusemap textures/WhackGame/StartButtonOff.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/StartButtonOn
+{
+	diffusemap textures/WhackGame/StartButtonOn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/TenCount
+{
+	diffusemap textures/WhackGame/TenCount.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WEarthGo
+{
+	diffusemap textures/WhackGame/WEarthGo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WEarthHold
+{
+	diffusemap textures/WhackGame/WEarthHold.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WhackFace
+{
+	diffusemap textures/WhackGame/WhackFace.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WhackHit
+{
+	diffusemap textures/WhackGame/WhackHit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WhackScore
+{
+	diffusemap textures/WhackGame/WhackScore.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WhackScreen
+{
+	diffusemap textures/WhackGame/WhackScreen.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WhackTableTop
+{
+	diffusemap textures/WhackGame/WhackTableTop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/WhackGame/WhackWave
+{
+	diffusemap textures/WhackGame/WhackWave.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

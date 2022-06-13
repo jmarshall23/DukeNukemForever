@@ -1,0 +1,7 @@
+textures/render/Default
+{
+	diffusemap textures/render/Default.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

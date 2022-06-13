@@ -1,0 +1,21 @@
+textures/explosionflics/D401
+{
+	diffusemap textures/explosionflics/D401.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/explosionflics/D402
+{
+	diffusemap textures/explosionflics/D402.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/explosionflics/D403
+{
+	diffusemap textures/explosionflics/D403.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

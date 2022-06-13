@@ -297,13 +297,6 @@ public:
 	int						weapon_soulcube;
 	int						weapon_pda;
 	int						weapon_fists;
-#ifdef _D3XP
-	int						weapon_bloodstone;
-	int						weapon_bloodstone_active1;
-	int						weapon_bloodstone_active2;
-	int						weapon_bloodstone_active3;
-	bool					harvest_lock;
-#endif
 
 	int						heartRate;
 	idInterpolate<float>	heartInfo;

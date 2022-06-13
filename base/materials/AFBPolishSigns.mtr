@@ -1,0 +1,14 @@
+textures/AFBPolishSigns/PolishSign01
+{
+	diffusemap textures/AFBPolishSigns/PolishSign01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBPolishSigns/PolishSign02
+{
+	diffusemap textures/AFBPolishSigns/PolishSign02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

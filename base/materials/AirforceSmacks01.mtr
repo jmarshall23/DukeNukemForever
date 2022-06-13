@@ -1,0 +1,112 @@
+textures/AirforceSmacks01/ACFlash
+{
+	diffusemap textures/AirforceSmacks01/ACFlash.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/ACSign
+{
+	diffusemap textures/AirforceSmacks01/ACSign.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/AlCon1
+{
+	diffusemap textures/AirforceSmacks01/AlCon1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/AlCon2
+{
+	diffusemap textures/AirforceSmacks01/AlCon2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/AlCon3
+{
+	diffusemap textures/AirforceSmacks01/AlCon3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/AlCon4
+{
+	diffusemap textures/AirforceSmacks01/AlCon4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/ALCon4Off1
+{
+	diffusemap textures/AirforceSmacks01/ALCon4Off1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/ALCon4Off2
+{
+	diffusemap textures/AirforceSmacks01/ALCon4Off2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/AlConDang
+{
+	diffusemap textures/AirforceSmacks01/AlConDang.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/AlConLost
+{
+	diffusemap textures/AirforceSmacks01/AlConLost.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/ALConShipBot
+{
+	diffusemap textures/AirforceSmacks01/ALConShipBot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/ALConShipTop
+{
+	diffusemap textures/AirforceSmacks01/ALConShipTop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/CountDown07
+{
+	diffusemap textures/AirforceSmacks01/CountDown07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/CountDown30
+{
+	diffusemap textures/AirforceSmacks01/CountDown30.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/CountDown60
+{
+	diffusemap textures/AirforceSmacks01/CountDown60.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks01/CountOffline
+{
+	diffusemap textures/AirforceSmacks01/CountOffline.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

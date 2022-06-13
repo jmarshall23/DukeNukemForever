@@ -1,0 +1,91 @@
+textures/alsmonsterfarmxxx/ArachnaTank1_Tank1
+{
+	diffusemap textures/alsmonsterfarmxxx/ArachnaTank1_Tank1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Cyber_Cat_Cyborg_cat1
+{
+	diffusemap textures/alsmonsterfarmxxx/Cyber_Cat_Cyborg_cat1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Cyborg1_Cyborg1
+{
+	diffusemap textures/alsmonsterfarmxxx/Cyborg1_Cyborg1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Freeze_Borg1_Freeze_Borg1
+{
+	diffusemap textures/alsmonsterfarmxxx/Freeze_Borg1_Freeze_Borg1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Keeper1_Keeper
+{
+	diffusemap textures/alsmonsterfarmxxx/Keeper1_Keeper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Keeper2_Keeper
+{
+	diffusemap textures/alsmonsterfarmxxx/Keeper2_Keeper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Snapper1b_Red
+{
+	diffusemap textures/alsmonsterfarmxxx/Snapper1b_Red.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Snapper1c_Red
+{
+	diffusemap textures/alsmonsterfarmxxx/Snapper1c_Red.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Snapper_Red
+{
+	diffusemap textures/alsmonsterfarmxxx/Snapper_Red.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Thing1_Cyborg_cat1
+{
+	diffusemap textures/alsmonsterfarmxxx/Thing1_Cyborg_cat1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Trans_Guard1_Keeper
+{
+	diffusemap textures/alsmonsterfarmxxx/Trans_Guard1_Keeper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Wall_Crawler1_Keeper
+{
+	diffusemap textures/alsmonsterfarmxxx/Wall_Crawler1_Keeper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/alsmonsterfarmxxx/Wal_Crawler1_Keeper
+{
+	diffusemap textures/alsmonsterfarmxxx/Wal_Crawler1_Keeper.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

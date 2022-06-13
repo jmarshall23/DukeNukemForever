@@ -1,0 +1,903 @@
+textures/m_vehicles/5thel
+{
+	diffusemap textures/m_vehicles/5thel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Alienship1aRC
+{
+	diffusemap textures/m_vehicles/Alienship1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Alienship1bRC
+{
+	diffusemap textures/m_vehicles/Alienship1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Alienship1cRC
+{
+	diffusemap textures/m_vehicles/Alienship1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Alienship1RC
+{
+	diffusemap textures/m_vehicles/Alienship1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Alienship2RC
+{
+	diffusemap textures/m_vehicles/Alienship2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Alienship3RC
+{
+	diffusemap textures/m_vehicles/Alienship3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Alienship4RC
+{
+	diffusemap textures/m_vehicles/Alienship4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/B2BomberSAH
+{
+	diffusemap textures/m_vehicles/B2BomberSAH.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper10sah
+{
+	diffusemap textures/m_vehicles/Bumper10sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper11sah
+{
+	diffusemap textures/m_vehicles/Bumper11sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper1sah
+{
+	diffusemap textures/m_vehicles/Bumper1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper2sah
+{
+	diffusemap textures/m_vehicles/Bumper2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper3sah
+{
+	diffusemap textures/m_vehicles/Bumper3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper4sah
+{
+	diffusemap textures/m_vehicles/Bumper4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper5sah
+{
+	diffusemap textures/m_vehicles/Bumper5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper6sah
+{
+	diffusemap textures/m_vehicles/Bumper6sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper7sah
+{
+	diffusemap textures/m_vehicles/Bumper7sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper8sah
+{
+	diffusemap textures/m_vehicles/Bumper8sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Bumper9sah
+{
+	diffusemap textures/m_vehicles/Bumper9sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/cyclebody1MW
+{
+	diffusemap textures/m_vehicles/cyclebody1MW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/cycleparts1MW
+{
+	diffusemap textures/m_vehicles/cycleparts1MW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/drone1sah
+{
+	diffusemap textures/m_vehicles/drone1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/dropship5_exf
+{
+	diffusemap textures/m_vehicles/dropship5_exf.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfcarskin1BC
+{
+	diffusemap textures/m_vehicles/edfcarskin1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfcarskin2BC
+{
+	diffusemap textures/m_vehicles/edfcarskin2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfcarskin3BC
+{
+	diffusemap textures/m_vehicles/edfcarskin3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfdrop1
+{
+	diffusemap textures/m_vehicles/edfdrop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfdrop2
+{
+	diffusemap textures/m_vehicles/edfdrop2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfdrop3
+{
+	diffusemap textures/m_vehicles/edfdrop3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfdrop4
+{
+	diffusemap textures/m_vehicles/edfdrop4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfhind1BC
+{
+	diffusemap textures/m_vehicles/edfhind1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfhind2BC
+{
+	diffusemap textures/m_vehicles/edfhind2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edfhind3BC
+{
+	diffusemap textures/m_vehicles/edfhind3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edftruck1BC
+{
+	diffusemap textures/m_vehicles/edftruck1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edftruck2BC
+{
+	diffusemap textures/m_vehicles/edftruck2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edftruck3BC
+{
+	diffusemap textures/m_vehicles/edftruck3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edftruck4BC
+{
+	diffusemap textures/m_vehicles/edftruck4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edftruck_repeat1BC
+{
+	diffusemap textures/m_vehicles/edftruck_repeat1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edftruck_repeat2BC
+{
+	diffusemap textures/m_vehicles/edftruck_repeat2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_01BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_01BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_02BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_02BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_03BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_03BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_04BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_04BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_05BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_05BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_06BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_06BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_07BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_07BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_08BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_08BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_09BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_09BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_10BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_11BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_12BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_13BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_14BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_14BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_15BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_15BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing2_16BC
+{
+	diffusemap textures/m_vehicles/edf_flashing2_16BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashingBC
+{
+	diffusemap textures/m_vehicles/edf_flashingBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing_01BC
+{
+	diffusemap textures/m_vehicles/edf_flashing_01BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_flashing_02BC
+{
+	diffusemap textures/m_vehicles/edf_flashing_02BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_refmap1BC
+{
+	diffusemap textures/m_vehicles/edf_refmap1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/edf_refmap2BC
+{
+	diffusemap textures/m_vehicles/edf_refmap2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/fighter1sah
+{
+	diffusemap textures/m_vehicles/fighter1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/gunship1sah
+{
+	diffusemap textures/m_vehicles/gunship1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/gunship2sah
+{
+	diffusemap textures/m_vehicles/gunship2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/heli1skin1
+{
+	diffusemap textures/m_vehicles/heli1skin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/heli2skin1
+{
+	diffusemap textures/m_vehicles/heli2skin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/helicopter2skin
+{
+	diffusemap textures/m_vehicles/helicopter2skin.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/hoverglow1sah
+{
+	diffusemap textures/m_vehicles/hoverglow1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/jeep
+{
+	diffusemap textures/m_vehicles/jeep.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/jetski1BC
+{
+	diffusemap textures/m_vehicles/jetski1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/limo
+{
+	diffusemap textures/m_vehicles/limo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/limo01sah
+{
+	diffusemap textures/m_vehicles/limo01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/limo02sah
+{
+	diffusemap textures/m_vehicles/limo02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/MislLanch1sah
+{
+	diffusemap textures/m_vehicles/MislLanch1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/MislLanch2sah
+{
+	diffusemap textures/m_vehicles/MislLanch2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/MislLanch3sah
+{
+	diffusemap textures/m_vehicles/MislLanch3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/pimpdice1RC
+{
+	diffusemap textures/m_vehicles/pimpdice1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/pimpdice2RC
+{
+	diffusemap textures/m_vehicles/pimpdice2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/pimpstrwhl1RC
+{
+	diffusemap textures/m_vehicles/pimpstrwhl1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/pimpstrwhl2RC
+{
+	diffusemap textures/m_vehicles/pimpstrwhl2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/pinto
+{
+	diffusemap textures/m_vehicles/pinto.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/rig
+{
+	diffusemap textures/m_vehicles/rig.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/semi1sah
+{
+	diffusemap textures/m_vehicles/semi1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Semi2Csah
+{
+	diffusemap textures/m_vehicles/Semi2Csah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/semi2sah
+{
+	diffusemap textures/m_vehicles/semi2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/semi3sah
+{
+	diffusemap textures/m_vehicles/semi3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/semi4sah
+{
+	diffusemap textures/m_vehicles/semi4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/SemiSide1sah
+{
+	diffusemap textures/m_vehicles/SemiSide1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/semisign1
+{
+	diffusemap textures/m_vehicles/semisign1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Semi_base1sah
+{
+	diffusemap textures/m_vehicles/Semi_base1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/SideBlu1sah
+{
+	diffusemap textures/m_vehicles/SideBlu1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/SideDBn1sah
+{
+	diffusemap textures/m_vehicles/SideDBn1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/SideGrn1sah
+{
+	diffusemap textures/m_vehicles/SideGrn1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/SideRed1sah
+{
+	diffusemap textures/m_vehicles/SideRed1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/SideTan1sah
+{
+	diffusemap textures/m_vehicles/SideTan1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/SideWht1sah
+{
+	diffusemap textures/m_vehicles/SideWht1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/speedboat1RC
+{
+	diffusemap textures/m_vehicles/speedboat1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/speedboat2RC
+{
+	diffusemap textures/m_vehicles/speedboat2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/speedboat3RC
+{
+	diffusemap textures/m_vehicles/speedboat3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/speedboat4RC
+{
+	diffusemap textures/m_vehicles/speedboat4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/sport
+{
+	diffusemap textures/m_vehicles/sport.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Sportbike1
+{
+	diffusemap textures/m_vehicles/Sportbike1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Sportbike1black
+{
+	diffusemap textures/m_vehicles/Sportbike1black.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Sportbike2
+{
+	diffusemap textures/m_vehicles/Sportbike2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Sportbike2black
+{
+	diffusemap textures/m_vehicles/Sportbike2black.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tank1sah
+{
+	diffusemap textures/m_vehicles/tank1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tank2sah
+{
+	diffusemap textures/m_vehicles/tank2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/trainside15
+{
+	diffusemap textures/m_vehicles/trainside15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/trainwheelMW
+{
+	diffusemap textures/m_vehicles/trainwheelMW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tramcarpet
+{
+	diffusemap textures/m_vehicles/tramcarpet.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tramfront1BC
+{
+	diffusemap textures/m_vehicles/tramfront1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tramglass1FBC
+{
+	diffusemap textures/m_vehicles/tramglass1FBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tramglass1GBC
+{
+	diffusemap textures/m_vehicles/tramglass1GBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/trammetal1BC
+{
+	diffusemap textures/m_vehicles/trammetal1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/trampanel1BC
+{
+	diffusemap textures/m_vehicles/trampanel1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/trampanel2BC
+{
+	diffusemap textures/m_vehicles/trampanel2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tramside1BC
+{
+	diffusemap textures/m_vehicles/tramside1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tramside2BC
+{
+	diffusemap textures/m_vehicles/tramside2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/tramside3BC
+{
+	diffusemap textures/m_vehicles/tramside3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/Truck
+{
+	diffusemap textures/m_vehicles/Truck.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/veh5thel
+{
+	diffusemap textures/m_vehicles/veh5thel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/vehjeep
+{
+	diffusemap textures/m_vehicles/vehjeep.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/vehlimo
+{
+	diffusemap textures/m_vehicles/vehlimo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/vehpinto
+{
+	diffusemap textures/m_vehicles/vehpinto.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/vehrig
+{
+	diffusemap textures/m_vehicles/vehrig.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/vehsport
+{
+	diffusemap textures/m_vehicles/vehsport.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/vehtruck
+{
+	diffusemap textures/m_vehicles/vehtruck.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_vehicles/woodplanks15
+{
+	diffusemap textures/m_vehicles/woodplanks15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,441 @@
+textures/sandworm/concrete1ABC
+{
+	diffusemap textures/sandworm/concrete1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1BBC
+{
+	diffusemap textures/sandworm/concrete1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1BdirtB
+{
+	diffusemap textures/sandworm/concrete1BdirtB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1CBC
+{
+	diffusemap textures/sandworm/concrete1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1CDTBC
+{
+	diffusemap textures/sandworm/concrete1CDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1DBC
+{
+	diffusemap textures/sandworm/concrete1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1DDTBC
+{
+	diffusemap textures/sandworm/concrete1DDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1EBC
+{
+	diffusemap textures/sandworm/concrete1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1EDTBC
+{
+	diffusemap textures/sandworm/concrete1EDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1FBC
+{
+	diffusemap textures/sandworm/concrete1FBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1FDTBC
+{
+	diffusemap textures/sandworm/concrete1FDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1GBC
+{
+	diffusemap textures/sandworm/concrete1GBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1GDTBC
+{
+	diffusemap textures/sandworm/concrete1GDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1HBC
+{
+	diffusemap textures/sandworm/concrete1HBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1HDTBC
+{
+	diffusemap textures/sandworm/concrete1HDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1iBC
+{
+	diffusemap textures/sandworm/concrete1iBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1iDTBC
+{
+	diffusemap textures/sandworm/concrete1iDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1JBC
+{
+	diffusemap textures/sandworm/concrete1JBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete1JDTBC
+{
+	diffusemap textures/sandworm/concrete1JDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2ABC
+{
+	diffusemap textures/sandworm/concrete2ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2ADTBC
+{
+	diffusemap textures/sandworm/concrete2ADTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2BBC
+{
+	diffusemap textures/sandworm/concrete2BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2BDTBC
+{
+	diffusemap textures/sandworm/concrete2BDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2CBC
+{
+	diffusemap textures/sandworm/concrete2CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2CDTBC
+{
+	diffusemap textures/sandworm/concrete2CDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2DBC
+{
+	diffusemap textures/sandworm/concrete2DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2DdtBC
+{
+	diffusemap textures/sandworm/concrete2DdtBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2EBC
+{
+	diffusemap textures/sandworm/concrete2EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete2EDTBC
+{
+	diffusemap textures/sandworm/concrete2EDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete3ABC
+{
+	diffusemap textures/sandworm/concrete3ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete3BBC
+{
+	diffusemap textures/sandworm/concrete3BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete3CBC
+{
+	diffusemap textures/sandworm/concrete3CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete3DBC
+{
+	diffusemap textures/sandworm/concrete3DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4ABC
+{
+	diffusemap textures/sandworm/concrete4ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4ADTBC
+{
+	diffusemap textures/sandworm/concrete4ADTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4BBC
+{
+	diffusemap textures/sandworm/concrete4BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4BDTBC
+{
+	diffusemap textures/sandworm/concrete4BDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4CBC
+{
+	diffusemap textures/sandworm/concrete4CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4CDTBC
+{
+	diffusemap textures/sandworm/concrete4CDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4DBC
+{
+	diffusemap textures/sandworm/concrete4DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4DDTBC
+{
+	diffusemap textures/sandworm/concrete4DDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4EBC
+{
+	diffusemap textures/sandworm/concrete4EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrete4EDTBC
+{
+	diffusemap textures/sandworm/concrete4EDTBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrt_lit1BC
+{
+	diffusemap textures/sandworm/concrt_lit1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/concrt_lit2BC
+{
+	diffusemap textures/sandworm/concrt_lit2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/floursc1BC
+{
+	diffusemap textures/sandworm/floursc1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/gratefloor4ABC
+{
+	diffusemap textures/sandworm/gratefloor4ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/greywall1BC
+{
+	diffusemap textures/sandworm/greywall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/grid_EFX2BC
+{
+	diffusemap textures/sandworm/grid_EFX2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/grid_EFX3BC
+{
+	diffusemap textures/sandworm/grid_EFX3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/machtest1BC
+{
+	diffusemap textures/sandworm/machtest1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/machtest2BC
+{
+	diffusemap textures/sandworm/machtest2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/manhole1BC
+{
+	diffusemap textures/sandworm/manhole1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/powrwires1BC
+{
+	diffusemap textures/sandworm/powrwires1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/reftestbc
+{
+	diffusemap textures/sandworm/reftestbc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/sandstreet1BC
+{
+	diffusemap textures/sandworm/sandstreet1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/sandstreet2BC
+{
+	diffusemap textures/sandworm/sandstreet2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/sandstreet3BC
+{
+	diffusemap textures/sandworm/sandstreet3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/sandstreet4BC
+{
+	diffusemap textures/sandworm/sandstreet4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/sunwarning1BC
+{
+	diffusemap textures/sandworm/sunwarning1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/swinerds1RC
+{
+	diffusemap textures/sandworm/swinerds1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/wormdoor1ABC
+{
+	diffusemap textures/sandworm/wormdoor1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/sandworm/wormdoor1BBC
+{
+	diffusemap textures/sandworm/wormdoor1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,112 @@
+textures/keypads/bkeyplockedBC
+{
+	diffusemap textures/keypads/bkeyplockedBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypmain1BC
+{
+	diffusemap textures/keypads/bkeypmain1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum0BC
+{
+	diffusemap textures/keypads/bkeypnum0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum1BC
+{
+	diffusemap textures/keypads/bkeypnum1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum2BC
+{
+	diffusemap textures/keypads/bkeypnum2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum3BC
+{
+	diffusemap textures/keypads/bkeypnum3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum4BC
+{
+	diffusemap textures/keypads/bkeypnum4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum5BC
+{
+	diffusemap textures/keypads/bkeypnum5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum6BC
+{
+	diffusemap textures/keypads/bkeypnum6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum7BC
+{
+	diffusemap textures/keypads/bkeypnum7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum8BC
+{
+	diffusemap textures/keypads/bkeypnum8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnum9BC
+{
+	diffusemap textures/keypads/bkeypnum9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnumpondBC
+{
+	diffusemap textures/keypads/bkeypnumpondBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypnumstarBC
+{
+	diffusemap textures/keypads/bkeypnumstarBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/bkeypunlockedBC
+{
+	diffusemap textures/keypads/bkeypunlockedBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/keypads/keypad_canv
+{
+	diffusemap textures/keypads/keypad_canv.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

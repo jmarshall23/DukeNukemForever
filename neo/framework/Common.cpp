@@ -2346,6 +2346,8 @@ void idCommonLocal::InitCommands( void ) {
 #endif
 
 #ifdef ID_ALLOW_TOOLS
+	cmdSystem->AddCommand("generatematerials", GenerateMaterials_f, CMD_FL_TOOL, "creates materials for imported textures");
+
 	// editors
 	cmdSystem->AddCommand( "editor", Com_Editor_f, CMD_FL_TOOL, "launches the level editor Radiant" );
 	cmdSystem->AddCommand( "editLights", Com_EditLights_f, CMD_FL_TOOL, "launches the in-game Light Editor" );

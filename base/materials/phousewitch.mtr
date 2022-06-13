@@ -1,0 +1,14 @@
+textures/phousewitch/Phouseswitch
+{
+	diffusemap textures/phousewitch/Phouseswitch.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/phousewitch/phouse_switch1A
+{
+	diffusemap textures/phousewitch/phouse_switch1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

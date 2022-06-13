@@ -1,0 +1,168 @@
+textures/m_fx/Ecar
+{
+	diffusemap textures/m_fx/Ecar.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/Ecarbig_pal
+{
+	diffusemap textures/m_fx/Ecarbig_pal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/empblastBC
+{
+	diffusemap textures/m_fx/empblastBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/empchargeRC
+{
+	diffusemap textures/m_fx/empchargeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/expl_glass
+{
+	diffusemap textures/m_fx/expl_glass.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/expl_stone1
+{
+	diffusemap textures/m_fx/expl_stone1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/expl_stone3
+{
+	diffusemap textures/m_fx/expl_stone3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/expl_stone4
+{
+	diffusemap textures/m_fx/expl_stone4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/expl_wood1
+{
+	diffusemap textures/m_fx/expl_wood1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/Fire23_t
+{
+	diffusemap textures/m_fx/Fire23_t.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/Fire23_t_pal
+{
+	diffusemap textures/m_fx/Fire23_t_pal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/firebot1aRC
+{
+	diffusemap textures/m_fx/firebot1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/firebot2RC
+{
+	diffusemap textures/m_fx/firebot2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/gib
+{
+	diffusemap textures/m_fx/gib.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/GIB2
+{
+	diffusemap textures/m_fx/GIB2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/Matt_Lightning
+{
+	diffusemap textures/m_fx/Matt_Lightning.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/Plasmawave
+{
+	diffusemap textures/m_fx/Plasmawave.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/ropeRC
+{
+	diffusemap textures/m_fx/ropeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/ropesteelRC
+{
+	diffusemap textures/m_fx/ropesteelRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/Shockwave1
+{
+	diffusemap textures/m_fx/Shockwave1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/snatcherspit1RC
+{
+	diffusemap textures/m_fx/snatcherspit1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/snatcherspit2RC
+{
+	diffusemap textures/m_fx/snatcherspit2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/snatcher_spitRC
+{
+	diffusemap textures/m_fx/snatcher_spitRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_fx/vatorcabsk_tw
+{
+	diffusemap textures/m_fx/vatorcabsk_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,469 @@
+textures/bikeride/BIKERIDE_0
+{
+	diffusemap textures/bikeride/BIKERIDE_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_1
+{
+	diffusemap textures/bikeride/BIKERIDE_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_10
+{
+	diffusemap textures/bikeride/BIKERIDE_10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_11
+{
+	diffusemap textures/bikeride/BIKERIDE_11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_12
+{
+	diffusemap textures/bikeride/BIKERIDE_12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_13
+{
+	diffusemap textures/bikeride/BIKERIDE_13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_14
+{
+	diffusemap textures/bikeride/BIKERIDE_14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_15
+{
+	diffusemap textures/bikeride/BIKERIDE_15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_16
+{
+	diffusemap textures/bikeride/BIKERIDE_16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_17
+{
+	diffusemap textures/bikeride/BIKERIDE_17.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_18
+{
+	diffusemap textures/bikeride/BIKERIDE_18.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_19
+{
+	diffusemap textures/bikeride/BIKERIDE_19.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_2
+{
+	diffusemap textures/bikeride/BIKERIDE_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_20
+{
+	diffusemap textures/bikeride/BIKERIDE_20.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_21
+{
+	diffusemap textures/bikeride/BIKERIDE_21.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_22
+{
+	diffusemap textures/bikeride/BIKERIDE_22.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_23
+{
+	diffusemap textures/bikeride/BIKERIDE_23.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_24
+{
+	diffusemap textures/bikeride/BIKERIDE_24.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_25
+{
+	diffusemap textures/bikeride/BIKERIDE_25.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_26
+{
+	diffusemap textures/bikeride/BIKERIDE_26.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_27
+{
+	diffusemap textures/bikeride/BIKERIDE_27.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_28
+{
+	diffusemap textures/bikeride/BIKERIDE_28.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_29
+{
+	diffusemap textures/bikeride/BIKERIDE_29.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_3
+{
+	diffusemap textures/bikeride/BIKERIDE_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_30
+{
+	diffusemap textures/bikeride/BIKERIDE_30.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_31
+{
+	diffusemap textures/bikeride/BIKERIDE_31.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_32
+{
+	diffusemap textures/bikeride/BIKERIDE_32.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_33
+{
+	diffusemap textures/bikeride/BIKERIDE_33.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_34
+{
+	diffusemap textures/bikeride/BIKERIDE_34.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_35
+{
+	diffusemap textures/bikeride/BIKERIDE_35.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_36
+{
+	diffusemap textures/bikeride/BIKERIDE_36.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_37
+{
+	diffusemap textures/bikeride/BIKERIDE_37.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_38
+{
+	diffusemap textures/bikeride/BIKERIDE_38.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_39
+{
+	diffusemap textures/bikeride/BIKERIDE_39.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_4
+{
+	diffusemap textures/bikeride/BIKERIDE_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_40
+{
+	diffusemap textures/bikeride/BIKERIDE_40.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_41
+{
+	diffusemap textures/bikeride/BIKERIDE_41.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_42
+{
+	diffusemap textures/bikeride/BIKERIDE_42.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_43
+{
+	diffusemap textures/bikeride/BIKERIDE_43.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_44
+{
+	diffusemap textures/bikeride/BIKERIDE_44.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_45
+{
+	diffusemap textures/bikeride/BIKERIDE_45.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_46
+{
+	diffusemap textures/bikeride/BIKERIDE_46.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_47
+{
+	diffusemap textures/bikeride/BIKERIDE_47.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_48
+{
+	diffusemap textures/bikeride/BIKERIDE_48.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_49
+{
+	diffusemap textures/bikeride/BIKERIDE_49.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_5
+{
+	diffusemap textures/bikeride/BIKERIDE_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_50
+{
+	diffusemap textures/bikeride/BIKERIDE_50.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_51
+{
+	diffusemap textures/bikeride/BIKERIDE_51.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_52
+{
+	diffusemap textures/bikeride/BIKERIDE_52.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_53
+{
+	diffusemap textures/bikeride/BIKERIDE_53.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_54
+{
+	diffusemap textures/bikeride/BIKERIDE_54.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_55
+{
+	diffusemap textures/bikeride/BIKERIDE_55.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_56
+{
+	diffusemap textures/bikeride/BIKERIDE_56.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_57
+{
+	diffusemap textures/bikeride/BIKERIDE_57.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_58
+{
+	diffusemap textures/bikeride/BIKERIDE_58.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_59
+{
+	diffusemap textures/bikeride/BIKERIDE_59.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_6
+{
+	diffusemap textures/bikeride/BIKERIDE_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_60
+{
+	diffusemap textures/bikeride/BIKERIDE_60.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_61
+{
+	diffusemap textures/bikeride/BIKERIDE_61.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_62
+{
+	diffusemap textures/bikeride/BIKERIDE_62.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_63
+{
+	diffusemap textures/bikeride/BIKERIDE_63.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_64
+{
+	diffusemap textures/bikeride/BIKERIDE_64.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_65
+{
+	diffusemap textures/bikeride/BIKERIDE_65.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_7
+{
+	diffusemap textures/bikeride/BIKERIDE_7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_8
+{
+	diffusemap textures/bikeride/BIKERIDE_8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/BIKERIDE_9
+{
+	diffusemap textures/bikeride/BIKERIDE_9.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/bikeride/Test
+{
+	diffusemap textures/bikeride/Test.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

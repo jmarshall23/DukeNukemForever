@@ -1,0 +1,665 @@
+textures/grandcanyon/cynfeed1aRC
+{
+	diffusemap textures/grandcanyon/cynfeed1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground1aRC
+{
+	diffusemap textures/grandcanyon/cynground1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground1bRC
+{
+	diffusemap textures/grandcanyon/cynground1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground1cRC
+{
+	diffusemap textures/grandcanyon/cynground1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground2aRC
+{
+	diffusemap textures/grandcanyon/cynground2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground2cRC
+{
+	diffusemap textures/grandcanyon/cynground2cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground2dRC
+{
+	diffusemap textures/grandcanyon/cynground2dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground3RC
+{
+	diffusemap textures/grandcanyon/cynground3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground4aRC
+{
+	diffusemap textures/grandcanyon/cynground4aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground4bRC
+{
+	diffusemap textures/grandcanyon/cynground4bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground4cRC
+{
+	diffusemap textures/grandcanyon/cynground4cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground4dRC
+{
+	diffusemap textures/grandcanyon/cynground4dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynground5RC
+{
+	diffusemap textures/grandcanyon/cynground5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynopenrange1bR
+{
+	diffusemap textures/grandcanyon/cynopenrange1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant10RC
+{
+	diffusemap textures/grandcanyon/cynplant10RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant11RC
+{
+	diffusemap textures/grandcanyon/cynplant11RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant1RC
+{
+	diffusemap textures/grandcanyon/cynplant1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant2RC
+{
+	diffusemap textures/grandcanyon/cynplant2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant3RC
+{
+	diffusemap textures/grandcanyon/cynplant3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant4RC
+{
+	diffusemap textures/grandcanyon/cynplant4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant5RC
+{
+	diffusemap textures/grandcanyon/cynplant5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant6RC
+{
+	diffusemap textures/grandcanyon/cynplant6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant7RC
+{
+	diffusemap textures/grandcanyon/cynplant7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynplant8RC
+{
+	diffusemap textures/grandcanyon/cynplant8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock10bRC
+{
+	diffusemap textures/grandcanyon/cynrock10bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock10cRC
+{
+	diffusemap textures/grandcanyon/cynrock10cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock10dRC
+{
+	diffusemap textures/grandcanyon/cynrock10dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock10eRC
+{
+	diffusemap textures/grandcanyon/cynrock10eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock11bRC
+{
+	diffusemap textures/grandcanyon/cynrock11bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock11cRC
+{
+	diffusemap textures/grandcanyon/cynrock11cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock11dRC
+{
+	diffusemap textures/grandcanyon/cynrock11dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock13bRC
+{
+	diffusemap textures/grandcanyon/cynrock13bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock14bRC
+{
+	diffusemap textures/grandcanyon/cynrock14bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock14RC
+{
+	diffusemap textures/grandcanyon/cynrock14RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock15RC
+{
+	diffusemap textures/grandcanyon/cynrock15RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock16RC
+{
+	diffusemap textures/grandcanyon/cynrock16RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock19RC
+{
+	diffusemap textures/grandcanyon/cynrock19RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock20bRC
+{
+	diffusemap textures/grandcanyon/cynrock20bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock20RC
+{
+	diffusemap textures/grandcanyon/cynrock20RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock21bRC
+{
+	diffusemap textures/grandcanyon/cynrock21bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock22RC
+{
+	diffusemap textures/grandcanyon/cynrock22RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock24RC
+{
+	diffusemap textures/grandcanyon/cynrock24RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock25bRC
+{
+	diffusemap textures/grandcanyon/cynrock25bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock25RC
+{
+	diffusemap textures/grandcanyon/cynrock25RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock26aRC
+{
+	diffusemap textures/grandcanyon/cynrock26aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock26bRC
+{
+	diffusemap textures/grandcanyon/cynrock26bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock26cRC
+{
+	diffusemap textures/grandcanyon/cynrock26cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock26dRC
+{
+	diffusemap textures/grandcanyon/cynrock26dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock3RC
+{
+	diffusemap textures/grandcanyon/cynrock3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock5RC
+{
+	diffusemap textures/grandcanyon/cynrock5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrock6RC
+{
+	diffusemap textures/grandcanyon/cynrock6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrocktop1aRC
+{
+	diffusemap textures/grandcanyon/cynrocktop1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrocktop1bRC
+{
+	diffusemap textures/grandcanyon/cynrocktop1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrocktop1cRC
+{
+	diffusemap textures/grandcanyon/cynrocktop1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrocktop1dRC
+{
+	diffusemap textures/grandcanyon/cynrocktop1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrocktop2aRC
+{
+	diffusemap textures/grandcanyon/cynrocktop2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrocktop2bRC
+{
+	diffusemap textures/grandcanyon/cynrocktop2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrockwall1aRC
+{
+	diffusemap textures/grandcanyon/cynrockwall1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrockwall1bRC
+{
+	diffusemap textures/grandcanyon/cynrockwall1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrockwall1cRC
+{
+	diffusemap textures/grandcanyon/cynrockwall1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrockwall2aRC
+{
+	diffusemap textures/grandcanyon/cynrockwall2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrockwall2bRC
+{
+	diffusemap textures/grandcanyon/cynrockwall2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynrockwall2cRC
+{
+	diffusemap textures/grandcanyon/cynrockwall2cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynsign2RC
+{
+	diffusemap textures/grandcanyon/cynsign2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynsign6RC
+{
+	diffusemap textures/grandcanyon/cynsign6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynsignback1RC
+{
+	diffusemap textures/grandcanyon/cynsignback1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/cynsignback2RC
+{
+	diffusemap textures/grandcanyon/cynsignback2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/DETAIL~4
+{
+	diffusemap textures/grandcanyon/DETAIL~4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/DETAIL~7
+{
+	diffusemap textures/grandcanyon/DETAIL~7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/DETAIL~8
+{
+	diffusemap textures/grandcanyon/DETAIL~8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/DETAI~16
+{
+	diffusemap textures/grandcanyon/DETAI~16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/DETAI~17
+{
+	diffusemap textures/grandcanyon/DETAI~17.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/DETAI~43
+{
+	diffusemap textures/grandcanyon/DETAI~43.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/DOOR_E~2
+{
+	diffusemap textures/grandcanyon/DOOR_E~2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/GROUND~1
+{
+	diffusemap textures/grandcanyon/GROUND~1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/GROUN~11
+{
+	diffusemap textures/grandcanyon/GROUN~11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/GROUN~13
+{
+	diffusemap textures/grandcanyon/GROUN~13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/PROP_SM
+{
+	diffusemap textures/grandcanyon/PROP_SM.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/PROP_~40
+{
+	diffusemap textures/grandcanyon/PROP_~40.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_A~2
+{
+	diffusemap textures/grandcanyon/SIGN_A~2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_B~1
+{
+	diffusemap textures/grandcanyon/SIGN_B~1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_C~3
+{
+	diffusemap textures/grandcanyon/SIGN_C~3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_D~2
+{
+	diffusemap textures/grandcanyon/SIGN_D~2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_G~1
+{
+	diffusemap textures/grandcanyon/SIGN_G~1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_N~1
+{
+	diffusemap textures/grandcanyon/SIGN_N~1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_SM
+{
+	diffusemap textures/grandcanyon/SIGN_SM.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/SIGN_S~2
+{
+	diffusemap textures/grandcanyon/SIGN_S~2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WALL_SM
+{
+	diffusemap textures/grandcanyon/WALL_SM.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WALL_~11
+{
+	diffusemap textures/grandcanyon/WALL_~11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WALL_~41
+{
+	diffusemap textures/grandcanyon/WALL_~41.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WALL_~43
+{
+	diffusemap textures/grandcanyon/WALL_~43.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WALL_~44
+{
+	diffusemap textures/grandcanyon/WALL_~44.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WALL_~49
+{
+	diffusemap textures/grandcanyon/WALL_~49.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WOOD_E~7
+{
+	diffusemap textures/grandcanyon/WOOD_E~7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/grandcanyon/WOOD_~15
+{
+	diffusemap textures/grandcanyon/WOOD_~15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

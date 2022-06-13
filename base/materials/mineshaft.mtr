@@ -1,0 +1,1687 @@
+textures/mineshaft/alignmentgrid
+{
+	diffusemap textures/mineshaft/alignmentgrid.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/alummine5btw
+{
+	diffusemap textures/mineshaft/alummine5btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/alummine5ctw
+{
+	diffusemap textures/mineshaft/alummine5ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/alummine5tw
+{
+	diffusemap textures/mineshaft/alummine5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/burntbr1tw
+{
+	diffusemap textures/mineshaft/burntbr1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/burntbr2tw
+{
+	diffusemap textures/mineshaft/burntbr2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/clampot1w
+{
+	diffusemap textures/mineshaft/clampot1w.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/clampot2aw
+{
+	diffusemap textures/mineshaft/clampot2aw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/clampot2w
+{
+	diffusemap textures/mineshaft/clampot2w.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/clampot3w
+{
+	diffusemap textures/mineshaft/clampot3w.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/clampot3zw
+{
+	diffusemap textures/mineshaft/clampot3zw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/clampotw
+{
+	diffusemap textures/mineshaft/clampotw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/cov_floor_1tw
+{
+	diffusemap textures/mineshaft/cov_floor_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/cov_floor_1ztw
+{
+	diffusemap textures/mineshaft/cov_floor_1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/cov_floor_2tw
+{
+	diffusemap textures/mineshaft/cov_floor_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/cov_floor_2ztw
+{
+	diffusemap textures/mineshaft/cov_floor_2ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/cov_floor_3tw
+{
+	diffusemap textures/mineshaft/cov_floor_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/cynrock17hrRC
+{
+	diffusemap textures/mineshaft/cynrock17hrRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/flatmetal_1atw
+{
+	diffusemap textures/mineshaft/flatmetal_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/flatmetal_1tw
+{
+	diffusemap textures/mineshaft/flatmetal_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/hotgassuptw
+{
+	diffusemap textures/mineshaft/hotgassuptw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/milf21tw
+{
+	diffusemap textures/mineshaft/milf21tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/milf22tw
+{
+	diffusemap textures/mineshaft/milf22tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/milf23tw
+{
+	diffusemap textures/mineshaft/milf23tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/milf23ztw
+{
+	diffusemap textures/mineshaft/milf23ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mindor1tw
+{
+	diffusemap textures/mineshaft/mindor1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minebarz5tw
+{
+	diffusemap textures/mineshaft/minebarz5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minede1tw
+{
+	diffusemap textures/mineshaft/minede1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minede2tw
+{
+	diffusemap textures/mineshaft/minede2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minedo2tw
+{
+	diffusemap textures/mineshaft/minedo2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minenge1tw
+{
+	diffusemap textures/mineshaft/minenge1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minenge2tw
+{
+	diffusemap textures/mineshaft/minenge2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minenge5tw
+{
+	diffusemap textures/mineshaft/minenge5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino10atw
+{
+	diffusemap textures/mineshaft/mino10atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino10tw
+{
+	diffusemap textures/mineshaft/mino10tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino15tw
+{
+	diffusemap textures/mineshaft/mino15tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino1tw
+{
+	diffusemap textures/mineshaft/mino1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino1ztw
+{
+	diffusemap textures/mineshaft/mino1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino2tw
+{
+	diffusemap textures/mineshaft/mino2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino3tw
+{
+	diffusemap textures/mineshaft/mino3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino42utw
+{
+	diffusemap textures/mineshaft/mino42utw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino45itw
+{
+	diffusemap textures/mineshaft/mino45itw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4btw
+{
+	diffusemap textures/mineshaft/mino4btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4ctw
+{
+	diffusemap textures/mineshaft/mino4ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4htw
+{
+	diffusemap textures/mineshaft/mino4htw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4stw
+{
+	diffusemap textures/mineshaft/mino4stw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4ttw
+{
+	diffusemap textures/mineshaft/mino4ttw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4tw
+{
+	diffusemap textures/mineshaft/mino4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4utw
+{
+	diffusemap textures/mineshaft/mino4utw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino4vtw
+{
+	diffusemap textures/mineshaft/mino4vtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino59tw
+{
+	diffusemap textures/mineshaft/mino59tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino5tw
+{
+	diffusemap textures/mineshaft/mino5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino6atw
+{
+	diffusemap textures/mineshaft/mino6atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino6tw
+{
+	diffusemap textures/mineshaft/mino6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino7mtw
+{
+	diffusemap textures/mineshaft/mino7mtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino7tw
+{
+	diffusemap textures/mineshaft/mino7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino8mtw
+{
+	diffusemap textures/mineshaft/mino8mtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino8tw
+{
+	diffusemap textures/mineshaft/mino8tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino9atw
+{
+	diffusemap textures/mineshaft/mino9atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino9bcw
+{
+	diffusemap textures/mineshaft/mino9bcw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino9btw
+{
+	diffusemap textures/mineshaft/mino9btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mino9vtw
+{
+	diffusemap textures/mineshaft/mino9vtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minoa4ctw
+{
+	diffusemap textures/mineshaft/minoa4ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minoa4dtw
+{
+	diffusemap textures/mineshaft/minoa4dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minoa4etw
+{
+	diffusemap textures/mineshaft/minoa4etw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintin6tw
+{
+	diffusemap textures/mineshaft/mintin6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw
+{
+	diffusemap textures/mineshaft/mintintw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw2
+{
+	diffusemap textures/mineshaft/mintintw2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw3
+{
+	diffusemap textures/mineshaft/mintintw3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw4
+{
+	diffusemap textures/mineshaft/mintintw4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw4a
+{
+	diffusemap textures/mineshaft/mintintw4a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw4t
+{
+	diffusemap textures/mineshaft/mintintw4t.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw5
+{
+	diffusemap textures/mineshaft/mintintw5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw5b
+{
+	diffusemap textures/mineshaft/mintintw5b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw7a
+{
+	diffusemap textures/mineshaft/mintintw7a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw7b
+{
+	diffusemap textures/mineshaft/mintintw7b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mintintw8a
+{
+	diffusemap textures/mineshaft/mintintw8a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/minwini1tw
+{
+	diffusemap textures/mineshaft/minwini1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mnmaskwin1aRC
+{
+	diffusemap textures/mineshaft/mnmaskwin1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mnmaskwin1bRC
+{
+	diffusemap textures/mineshaft/mnmaskwin1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntbeam1aRC
+{
+	diffusemap textures/mineshaft/mntbeam1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntbeam1bRC
+{
+	diffusemap textures/mineshaft/mntbeam1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntbeam2RC
+{
+	diffusemap textures/mineshaft/mntbeam2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntbeam3RC
+{
+	diffusemap textures/mineshaft/mntbeam3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntbridge1aRC
+{
+	diffusemap textures/mineshaft/mntbridge1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntbridge1bRC
+{
+	diffusemap textures/mineshaft/mntbridge1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntceiling1aRC
+{
+	diffusemap textures/mineshaft/mntceiling1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntceiling1bRC
+{
+	diffusemap textures/mineshaft/mntceiling1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntchurchwin2RC
+{
+	diffusemap textures/mineshaft/mntchurchwin2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntchurchwin3RC
+{
+	diffusemap textures/mineshaft/mntchurchwin3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntchurchwin4RC
+{
+	diffusemap textures/mineshaft/mntchurchwin4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntchurchwin5RC
+{
+	diffusemap textures/mineshaft/mntchurchwin5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntconcrete1RC
+{
+	diffusemap textures/mineshaft/mntconcrete1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntconcrete2aRC
+{
+	diffusemap textures/mineshaft/mntconcrete2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntconcrete2bRC
+{
+	diffusemap textures/mineshaft/mntconcrete2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntcrossbeam1RC
+{
+	diffusemap textures/mineshaft/mntcrossbeam1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntgear1RC
+{
+	diffusemap textures/mineshaft/mntgear1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntgravel1RC
+{
+	diffusemap textures/mineshaft/mntgravel1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntgraveltrk1RC
+{
+	diffusemap textures/mineshaft/mntgraveltrk1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1aRC
+{
+	diffusemap textures/mineshaft/mntground1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1bRC
+{
+	diffusemap textures/mineshaft/mntground1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1caaRC
+{
+	diffusemap textures/mineshaft/mntground1caaRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1caRC
+{
+	diffusemap textures/mineshaft/mntground1caRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1cbaRC
+{
+	diffusemap textures/mineshaft/mntground1cbaRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1cbRC
+{
+	diffusemap textures/mineshaft/mntground1cbRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1ccaRC
+{
+	diffusemap textures/mineshaft/mntground1ccaRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1ccbRC
+{
+	diffusemap textures/mineshaft/mntground1ccbRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1ccRC
+{
+	diffusemap textures/mineshaft/mntground1ccRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground1dRC
+{
+	diffusemap textures/mineshaft/mntground1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2aRC
+{
+	diffusemap textures/mineshaft/mntground2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2bRC
+{
+	diffusemap textures/mineshaft/mntground2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2cRC
+{
+	diffusemap textures/mineshaft/mntground2cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2dRC
+{
+	diffusemap textures/mineshaft/mntground2dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2eRC
+{
+	diffusemap textures/mineshaft/mntground2eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2fRC
+{
+	diffusemap textures/mineshaft/mntground2fRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2gRC
+{
+	diffusemap textures/mineshaft/mntground2gRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2hRC
+{
+	diffusemap textures/mineshaft/mntground2hRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground2iRC
+{
+	diffusemap textures/mineshaft/mntground2iRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground3aRC
+{
+	diffusemap textures/mineshaft/mntground3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntground3bRC
+{
+	diffusemap textures/mineshaft/mntground3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntjailwin1RC
+{
+	diffusemap textures/mineshaft/mntjailwin1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmach1aRC
+{
+	diffusemap textures/mineshaft/mntmach1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmach1bRC
+{
+	diffusemap textures/mineshaft/mntmach1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmach2aRC
+{
+	diffusemap textures/mineshaft/mntmach2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmach2bRC
+{
+	diffusemap textures/mineshaft/mntmach2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmach2cRC
+{
+	diffusemap textures/mineshaft/mntmach2cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmarkerRC
+{
+	diffusemap textures/mineshaft/mntmarkerRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmaskdecor1RC
+{
+	diffusemap textures/mineshaft/mntmaskdecor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmaskjailbarR
+{
+	diffusemap textures/mineshaft/mntmaskjailbarR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmasktrack1RC
+{
+	diffusemap textures/mineshaft/mntmasktrack1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart10R
+{
+	diffusemap textures/mineshaft/mntmetalpart10R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart12a
+{
+	diffusemap textures/mineshaft/mntmetalpart12a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart13R
+{
+	diffusemap textures/mineshaft/mntmetalpart13R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart14R
+{
+	diffusemap textures/mineshaft/mntmetalpart14R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart15R
+{
+	diffusemap textures/mineshaft/mntmetalpart15R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart16R
+{
+	diffusemap textures/mineshaft/mntmetalpart16R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart3RC
+{
+	diffusemap textures/mineshaft/mntmetalpart3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart5RC
+{
+	diffusemap textures/mineshaft/mntmetalpart5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart6RC
+{
+	diffusemap textures/mineshaft/mntmetalpart6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmetalpart7RC
+{
+	diffusemap textures/mineshaft/mntmetalpart7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntminecar1RC
+{
+	diffusemap textures/mineshaft/mntminecar1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock1aR
+{
+	diffusemap textures/mineshaft/mntmountrock1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock1bR
+{
+	diffusemap textures/mineshaft/mntmountrock1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock1cR
+{
+	diffusemap textures/mineshaft/mntmountrock1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock2aR
+{
+	diffusemap textures/mineshaft/mntmountrock2aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock2bR
+{
+	diffusemap textures/mineshaft/mntmountrock2bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock2cR
+{
+	diffusemap textures/mineshaft/mntmountrock2cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock3aR
+{
+	diffusemap textures/mineshaft/mntmountrock3aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrock3bR
+{
+	diffusemap textures/mineshaft/mntmountrock3bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrockt1R
+{
+	diffusemap textures/mineshaft/mntmountrockt1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrockt2R
+{
+	diffusemap textures/mineshaft/mntmountrockt2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrockt3R
+{
+	diffusemap textures/mineshaft/mntmountrockt3R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntmountrockt4R
+{
+	diffusemap textures/mineshaft/mntmountrockt4R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntracks1RC
+{
+	diffusemap textures/mineshaft/mntracks1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrackside1RC
+{
+	diffusemap textures/mineshaft/mntrackside1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar1aRC
+{
+	diffusemap textures/mineshaft/mntraincar1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar1bRC
+{
+	diffusemap textures/mineshaft/mntraincar1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar2aRC
+{
+	diffusemap textures/mineshaft/mntraincar2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar2bRC
+{
+	diffusemap textures/mineshaft/mntraincar2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar3aRC
+{
+	diffusemap textures/mineshaft/mntraincar3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar4aRC
+{
+	diffusemap textures/mineshaft/mntraincar4aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar4bRC
+{
+	diffusemap textures/mineshaft/mntraincar4bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraincar4cRC
+{
+	diffusemap textures/mineshaft/mntraincar4cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraininsideRC
+{
+	diffusemap textures/mineshaft/mntraininsideRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrainsidebotR
+{
+	diffusemap textures/mineshaft/mntrainsidebotR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraintruck2aR
+{
+	diffusemap textures/mineshaft/mntraintruck2aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntraintruck2bR
+{
+	diffusemap textures/mineshaft/mntraintruck2bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrocktips1aRC
+{
+	diffusemap textures/mineshaft/mntrocktips1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrocktips1bRC
+{
+	diffusemap textures/mineshaft/mntrocktips1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrocktips1dRC
+{
+	diffusemap textures/mineshaft/mntrocktips1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrocktips1eRC
+{
+	diffusemap textures/mineshaft/mntrocktips1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrocktips1fRC
+{
+	diffusemap textures/mineshaft/mntrocktips1fRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrockwall1aRC
+{
+	diffusemap textures/mineshaft/mntrockwall1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrockwall1bRC
+{
+	diffusemap textures/mineshaft/mntrockwall1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntrust1RC
+{
+	diffusemap textures/mineshaft/mntrust1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshack1aRC
+{
+	diffusemap textures/mineshaft/mntshack1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshack1bRC
+{
+	diffusemap textures/mineshaft/mntshack1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshack1RC
+{
+	diffusemap textures/mineshaft/mntshack1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshack2RC
+{
+	diffusemap textures/mineshaft/mntshack2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshack3RC
+{
+	diffusemap textures/mineshaft/mntshack3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshackroof1RC
+{
+	diffusemap textures/mineshaft/mntshackroof1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshacktop1RC
+{
+	diffusemap textures/mineshaft/mntshacktop1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntshacktrim1RC
+{
+	diffusemap textures/mineshaft/mntshacktrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntsign2RC
+{
+	diffusemap textures/mineshaft/mntsign2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntsign6aRC
+{
+	diffusemap textures/mineshaft/mntsign6aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntsign6bRC
+{
+	diffusemap textures/mineshaft/mntsign6bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntsludge1RC
+{
+	diffusemap textures/mineshaft/mntsludge1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntsludge2RC
+{
+	diffusemap textures/mineshaft/mntsludge2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntsludge3RC
+{
+	diffusemap textures/mineshaft/mntsludge3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntstairstep1RC
+{
+	diffusemap textures/mineshaft/mntstairstep1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mnttrailside2RC
+{
+	diffusemap textures/mineshaft/mnttrailside2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mnttrim1RC
+{
+	diffusemap textures/mineshaft/mnttrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwall1aRC
+{
+	diffusemap textures/mineshaft/mntwall1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwall1bRC
+{
+	diffusemap textures/mineshaft/mntwall1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwall1cRC
+{
+	diffusemap textures/mineshaft/mntwall1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwall1eRC
+{
+	diffusemap textures/mineshaft/mntwall1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwall1RC
+{
+	diffusemap textures/mineshaft/mntwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwall2RC
+{
+	diffusemap textures/mineshaft/mntwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwall3RC
+{
+	diffusemap textures/mineshaft/mntwall3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwinboarded1R
+{
+	diffusemap textures/mineshaft/mntwinboarded1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwinboarded2R
+{
+	diffusemap textures/mineshaft/mntwinboarded2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwindows1RC
+{
+	diffusemap textures/mineshaft/mntwindows1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwindows3aRC
+{
+	diffusemap textures/mineshaft/mntwindows3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwindows3bRC
+{
+	diffusemap textures/mineshaft/mntwindows3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwood1RC
+{
+	diffusemap textures/mineshaft/mntwood1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwood2RC
+{
+	diffusemap textures/mineshaft/mntwood2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwood3RC
+{
+	diffusemap textures/mineshaft/mntwood3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwood4RC
+{
+	diffusemap textures/mineshaft/mntwood4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwood5RC
+{
+	diffusemap textures/mineshaft/mntwood5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwood6RC
+{
+	diffusemap textures/mineshaft/mntwood6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwood7RC
+{
+	diffusemap textures/mineshaft/mntwood7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodbar1aRC
+{
+	diffusemap textures/mineshaft/mntwoodbar1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodbar1bRC
+{
+	diffusemap textures/mineshaft/mntwoodbar1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1a
+{
+	diffusemap textures/mineshaft/mntwoodrail1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1b
+{
+	diffusemap textures/mineshaft/mntwoodrail1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1c
+{
+	diffusemap textures/mineshaft/mntwoodrail1c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1d
+{
+	diffusemap textures/mineshaft/mntwoodrail1d.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1e
+{
+	diffusemap textures/mineshaft/mntwoodrail1e.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1f
+{
+	diffusemap textures/mineshaft/mntwoodrail1f.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1h
+{
+	diffusemap textures/mineshaft/mntwoodrail1h.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodrail1i
+{
+	diffusemap textures/mineshaft/mntwoodrail1i.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodwall1RC
+{
+	diffusemap textures/mineshaft/mntwoodwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodwall3RC
+{
+	diffusemap textures/mineshaft/mntwoodwall3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/mntwoodwall4RC
+{
+	diffusemap textures/mineshaft/mntwoodwall4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/rockful1atw
+{
+	diffusemap textures/mineshaft/rockful1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/rockful1btw
+{
+	diffusemap textures/mineshaft/rockful1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/rockful1tw
+{
+	diffusemap textures/mineshaft/rockful1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/rockful1ytw
+{
+	diffusemap textures/mineshaft/rockful1ytw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/rockful1ztw
+{
+	diffusemap textures/mineshaft/rockful1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/somestuff9tw
+{
+	diffusemap textures/mineshaft/somestuff9tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/trax_1atw
+{
+	diffusemap textures/mineshaft/trax_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/trax_1btw
+{
+	diffusemap textures/mineshaft/trax_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/trax_1tw
+{
+	diffusemap textures/mineshaft/trax_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson1atw
+{
+	diffusemap textures/mineshaft/turdfurgeson1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson1btw
+{
+	diffusemap textures/mineshaft/turdfurgeson1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson1ctw
+{
+	diffusemap textures/mineshaft/turdfurgeson1ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson1dtw
+{
+	diffusemap textures/mineshaft/turdfurgeson1dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson1ftw
+{
+	diffusemap textures/mineshaft/turdfurgeson1ftw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson1gtw
+{
+	diffusemap textures/mineshaft/turdfurgeson1gtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson1tw
+{
+	diffusemap textures/mineshaft/turdfurgeson1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mineshaft/turdfurgeson2ftw
+{
+	diffusemap textures/mineshaft/turdfurgeson2ftw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

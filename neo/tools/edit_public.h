@@ -114,4 +114,7 @@ void	MaterialEditorRun( void );
 void	MaterialEditorShutdown( void );
 void	MaterialEditorPrintConsole( const char *msg );
 
+// Generates Materials for textures.
+void GenerateMaterials_f(const idCmdArgs& args);
+
 #endif /* !__EDIT_PUBLIC_H__ */

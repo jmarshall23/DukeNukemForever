@@ -1,0 +1,399 @@
+textures/petalumahouse/BAR
+{
+	diffusemap textures/petalumahouse/BAR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Brick
+{
+	diffusemap textures/petalumahouse/Brick.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/bush
+{
+	diffusemap textures/petalumahouse/bush.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/CABFACE
+{
+	diffusemap textures/petalumahouse/CABFACE.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/CABFACE2
+{
+	diffusemap textures/petalumahouse/CABFACE2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/carpet01
+{
+	diffusemap textures/petalumahouse/carpet01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/ceiling
+{
+	diffusemap textures/petalumahouse/ceiling.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Cloud01
+{
+	diffusemap textures/petalumahouse/Cloud01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/CLOUD02
+{
+	diffusemap textures/petalumahouse/CLOUD02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/concrete
+{
+	diffusemap textures/petalumahouse/concrete.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/CounterTop01
+{
+	diffusemap textures/petalumahouse/CounterTop01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/CROME
+{
+	diffusemap textures/petalumahouse/CROME.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/cubstuff01
+{
+	diffusemap textures/petalumahouse/cubstuff01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/cubstuff02
+{
+	diffusemap textures/petalumahouse/cubstuff02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/DishWasher
+{
+	diffusemap textures/petalumahouse/DishWasher.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/ElecPlug
+{
+	diffusemap textures/petalumahouse/ElecPlug.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/floortile
+{
+	diffusemap textures/petalumahouse/floortile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Fridge
+{
+	diffusemap textures/petalumahouse/Fridge.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/GarDoor
+{
+	diffusemap textures/petalumahouse/GarDoor.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Garswitch
+{
+	diffusemap textures/petalumahouse/Garswitch.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Glass
+{
+	diffusemap textures/petalumahouse/Glass.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/GlassDoor01
+{
+	diffusemap textures/petalumahouse/GlassDoor01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/GlassDoor02
+{
+	diffusemap textures/petalumahouse/GlassDoor02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/GreenTrim
+{
+	diffusemap textures/petalumahouse/GreenTrim.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/LIGHTB
+{
+	diffusemap textures/petalumahouse/LIGHTB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/LightSwitch
+{
+	diffusemap textures/petalumahouse/LightSwitch.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Microwave
+{
+	diffusemap textures/petalumahouse/Microwave.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/mulch
+{
+	diffusemap textures/petalumahouse/mulch.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/mulchpatch
+{
+	diffusemap textures/petalumahouse/mulchpatch.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/OvenBurners
+{
+	diffusemap textures/petalumahouse/OvenBurners.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/OvenFront
+{
+	diffusemap textures/petalumahouse/OvenFront.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/OvenTop
+{
+	diffusemap textures/petalumahouse/OvenTop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/PIPETOP
+{
+	diffusemap textures/petalumahouse/PIPETOP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/RockWalk
+{
+	diffusemap textures/petalumahouse/RockWalk.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/shingle01
+{
+	diffusemap textures/petalumahouse/shingle01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/SKY01
+{
+	diffusemap textures/petalumahouse/SKY01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/SKY02
+{
+	diffusemap textures/petalumahouse/SKY02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/StuccoExt
+{
+	diffusemap textures/petalumahouse/StuccoExt.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Tree01
+{
+	diffusemap textures/petalumahouse/Tree01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Tree02
+{
+	diffusemap textures/petalumahouse/Tree02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/TreeBranch
+{
+	diffusemap textures/petalumahouse/TreeBranch.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/TreeFull02
+{
+	diffusemap textures/petalumahouse/TreeFull02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Vent
+{
+	diffusemap textures/petalumahouse/Vent.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Vent2
+{
+	diffusemap textures/petalumahouse/Vent2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WallInt
+{
+	diffusemap textures/petalumahouse/WallInt.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/wallint02
+{
+	diffusemap textures/petalumahouse/wallint02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WallInt03
+{
+	diffusemap textures/petalumahouse/WallInt03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/wallint04
+{
+	diffusemap textures/petalumahouse/wallint04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WallInt05
+{
+	diffusemap textures/petalumahouse/WallInt05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WallPaper01
+{
+	diffusemap textures/petalumahouse/WallPaper01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Wood01
+{
+	diffusemap textures/petalumahouse/Wood01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Wood03
+{
+	diffusemap textures/petalumahouse/Wood03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/Wood04
+{
+	diffusemap textures/petalumahouse/Wood04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WoodDoorInt
+{
+	diffusemap textures/petalumahouse/WoodDoorInt.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WoodExt
+{
+	diffusemap textures/petalumahouse/WoodExt.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WPaper01
+{
+	diffusemap textures/petalumahouse/WPaper01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/petalumahouse/WPaper02
+{
+	diffusemap textures/petalumahouse/WPaper02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,21 @@
+textures/AFBHousing/oven01sah
+{
+	diffusemap textures/AFBHousing/oven01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBHousing/oventop1sah
+{
+	diffusemap textures/AFBHousing/oventop1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBHousing/W&DSidw1sah
+{
+	diffusemap textures/AFBHousing/W&DSidw1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

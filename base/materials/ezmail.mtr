@@ -1,0 +1,252 @@
+textures/ezmail/badadd_close
+{
+	diffusemap textures/ezmail/badadd_close.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/badadd_open
+{
+	diffusemap textures/ezmail/badadd_open.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailbackground
+{
+	diffusemap textures/ezmail/emailbackground.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailbackground_rcv
+{
+	diffusemap textures/ezmail/emailbackground_rcv.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailexit
+{
+	diffusemap textures/ezmail/emailexit.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailexit_recv_hl
+{
+	diffusemap textures/ezmail/emailexit_recv_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailfrom_hl
+{
+	diffusemap textures/ezmail/emailfrom_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailmessage_hl
+{
+	diffusemap textures/ezmail/emailmessage_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailnext_recv_hl
+{
+	diffusemap textures/ezmail/emailnext_recv_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailprevious_recv_hl
+{
+	diffusemap textures/ezmail/emailprevious_recv_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailreply_recv_hl
+{
+	diffusemap textures/ezmail/emailreply_recv_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailresetmessage
+{
+	diffusemap textures/ezmail/emailresetmessage.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailsend
+{
+	diffusemap textures/ezmail/emailsend.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailsubject_hl
+{
+	diffusemap textures/ezmail/emailsubject_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/emailto_hl
+{
+	diffusemap textures/ezmail/emailto_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/email_cursor
+{
+	diffusemap textures/ezmail/email_cursor.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/email_incorrectlog
+{
+	diffusemap textures/ezmail/email_incorrectlog.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/email_login
+{
+	diffusemap textures/ezmail/email_login.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/ezmaillogclear_hl
+{
+	diffusemap textures/ezmail/ezmaillogclear_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/ezmaillogenter_hl
+{
+	diffusemap textures/ezmail/ezmaillogenter_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/ezmail_icon
+{
+	diffusemap textures/ezmail/ezmail_icon.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/ezmail_screensaver
+{
+	diffusemap textures/ezmail/ezmail_screensaver.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/login2sndmail
+{
+	diffusemap textures/ezmail/login2sndmail.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/login_pass_hl
+{
+	diffusemap textures/ezmail/login_pass_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/login_user_hl
+{
+	diffusemap textures/ezmail/login_user_hl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/msgsent_close
+{
+	diffusemap textures/ezmail/msgsent_close.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/msgsent_open
+{
+	diffusemap textures/ezmail/msgsent_open.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/nothingsend_close
+{
+	diffusemap textures/ezmail/nothingsend_close.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/nothingsend_open
+{
+	diffusemap textures/ezmail/nothingsend_open.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/rcvmail2sndmail
+{
+	diffusemap textures/ezmail/rcvmail2sndmail.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/saver2sndmail
+{
+	diffusemap textures/ezmail/saver2sndmail.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/sndmail2rcvmail
+{
+	diffusemap textures/ezmail/sndmail2rcvmail.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/youhave_close
+{
+	diffusemap textures/ezmail/youhave_close.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/youhave_open
+{
+	diffusemap textures/ezmail/youhave_open.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/youhave_recv_close
+{
+	diffusemap textures/ezmail/youhave_recv_close.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezmail/youhave_recv_open
+{
+	diffusemap textures/ezmail/youhave_recv_open.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

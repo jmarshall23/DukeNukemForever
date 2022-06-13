@@ -1,0 +1,84 @@
+textures/football/foot10aRC
+{
+	diffusemap textures/football/foot10aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/foot20aRC
+{
+	diffusemap textures/football/foot20aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/foot30aRC
+{
+	diffusemap textures/football/foot30aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/foot40aRC
+{
+	diffusemap textures/football/foot40aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/foot50aRC
+{
+	diffusemap textures/football/foot50aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/footbadassRC
+{
+	diffusemap textures/football/footbadassRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/footdukeRC
+{
+	diffusemap textures/football/footdukeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/footGaRC
+{
+	diffusemap textures/football/footGaRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/footlines1RC
+{
+	diffusemap textures/football/footlines1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/footlines2RC
+{
+	diffusemap textures/football/footlines2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/footnukeRC
+{
+	diffusemap textures/football/footnukeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/football/footstripRC
+{
+	diffusemap textures/football/footstripRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

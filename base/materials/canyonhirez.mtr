@@ -1,0 +1,7 @@
+textures/canyonhirez/cynrock12hrRC
+{
+	diffusemap textures/canyonhirez/cynrock12hrRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

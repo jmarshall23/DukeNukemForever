@@ -1,0 +1,3353 @@
+textures/stratosfear/99_1atw
+{
+	diffusemap textures/stratosfear/99_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/99_1tw
+{
+	diffusemap textures/stratosfear/99_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ahhh_1atw
+{
+	diffusemap textures/stratosfear/ahhh_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ahhh_1btw
+{
+	diffusemap textures/stratosfear/ahhh_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ahhh_1ctw
+{
+	diffusemap textures/stratosfear/ahhh_1ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ahhh_1dtw
+{
+	diffusemap textures/stratosfear/ahhh_1dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/anatsign4tw
+{
+	diffusemap textures/stratosfear/anatsign4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/anat_1tw
+{
+	diffusemap textures/stratosfear/anat_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/anat_2tw
+{
+	diffusemap textures/stratosfear/anat_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/asphalted1_tw
+{
+	diffusemap textures/stratosfear/asphalted1_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/astercarp2tw
+{
+	diffusemap textures/stratosfear/astercarp2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/astercarptw
+{
+	diffusemap textures/stratosfear/astercarptw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/asterpants1tw
+{
+	diffusemap textures/stratosfear/asterpants1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/atomicween_2tw
+{
+	diffusemap textures/stratosfear/atomicween_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaad_1tw
+{
+	diffusemap textures/stratosfear/avaad_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaad_2tw
+{
+	diffusemap textures/stratosfear/avaad_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaad_3tw
+{
+	diffusemap textures/stratosfear/avaad_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaan_1atw
+{
+	diffusemap textures/stratosfear/avaan_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaan_1btw
+{
+	diffusemap textures/stratosfear/avaan_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaan_1ctw
+{
+	diffusemap textures/stratosfear/avaan_1ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaan_1dtw
+{
+	diffusemap textures/stratosfear/avaan_1dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avaan_1etw
+{
+	diffusemap textures/stratosfear/avaan_1etw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avadisp_1atw
+{
+	diffusemap textures/stratosfear/avadisp_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avag1
+{
+	diffusemap textures/stratosfear/avag1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avam_1tw
+{
+	diffusemap textures/stratosfear/avam_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avam_2tw
+{
+	diffusemap textures/stratosfear/avam_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avam_3tw
+{
+	diffusemap textures/stratosfear/avam_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avam_4tw
+{
+	diffusemap textures/stratosfear/avam_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avasignx2tw
+{
+	diffusemap textures/stratosfear/avasignx2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ava_1tw
+{
+	diffusemap textures/stratosfear/ava_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ava_2tw
+{
+	diffusemap textures/stratosfear/ava_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avfloor2tw
+{
+	diffusemap textures/stratosfear/avfloor2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avfloortw
+{
+	diffusemap textures/stratosfear/avfloortw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/avlight1tw
+{
+	diffusemap textures/stratosfear/avlight1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/aweebieflo
+{
+	diffusemap textures/stratosfear/aweebieflo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/aweeniegr_1ftw
+{
+	diffusemap textures/stratosfear/aweeniegr_1ftw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/aweeniegr_2atw
+{
+	diffusemap textures/stratosfear/aweeniegr_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/basefabav_1tw
+{
+	diffusemap textures/stratosfear/basefabav_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/beersign1tw
+{
+	diffusemap textures/stratosfear/beersign1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/bilbobag_1tw
+{
+	diffusemap textures/stratosfear/bilbobag_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/bilbobag_2tw
+{
+	diffusemap textures/stratosfear/bilbobag_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/billwithstrat1tw
+{
+	diffusemap textures/stratosfear/billwithstrat1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/billwithstrat2tw
+{
+	diffusemap textures/stratosfear/billwithstrat2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/bodymans1tw
+{
+	diffusemap textures/stratosfear/bodymans1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobaddy_1tw
+{
+	diffusemap textures/stratosfear/boobaddy_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh4atw
+{
+	diffusemap textures/stratosfear/boobsh4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh4bctw
+{
+	diffusemap textures/stratosfear/boobsh4bctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh7tw
+{
+	diffusemap textures/stratosfear/boobsh7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh_2atw
+{
+	diffusemap textures/stratosfear/boobsh_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh_2btw
+{
+	diffusemap textures/stratosfear/boobsh_2btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh_2ctw
+{
+	diffusemap textures/stratosfear/boobsh_2ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh_2tw
+{
+	diffusemap textures/stratosfear/boobsh_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh_5tw
+{
+	diffusemap textures/stratosfear/boobsh_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsh_6tw
+{
+	diffusemap textures/stratosfear/boobsh_6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsrti_1tw
+{
+	diffusemap textures/stratosfear/boobsrti_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsrti_1vtw
+{
+	diffusemap textures/stratosfear/boobsrti_1vtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsrti_2tw
+{
+	diffusemap textures/stratosfear/boobsrti_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobsrti_3tw
+{
+	diffusemap textures/stratosfear/boobsrti_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/boobst4ntw
+{
+	diffusemap textures/stratosfear/boobst4ntw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/brslatted_1tw
+{
+	diffusemap textures/stratosfear/brslatted_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/bumpybase_1tw
+{
+	diffusemap textures/stratosfear/bumpybase_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/buychez_1tw
+{
+	diffusemap textures/stratosfear/buychez_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/casinowall16aTW
+{
+	diffusemap textures/stratosfear/casinowall16aTW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/casinowall19TW
+{
+	diffusemap textures/stratosfear/casinowall19TW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/casinowall1bTW
+{
+	diffusemap textures/stratosfear/casinowall1bTW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/casinowall1iTW
+{
+	diffusemap textures/stratosfear/casinowall1iTW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/casinowall1vTW
+{
+	diffusemap textures/stratosfear/casinowall1vTW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ceiling2Atw
+{
+	diffusemap textures/stratosfear/ceiling2Atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ceiling3Atw
+{
+	diffusemap textures/stratosfear/ceiling3Atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/checks_1tw
+{
+	diffusemap textures/stratosfear/checks_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/chi-post1tw
+{
+	diffusemap textures/stratosfear/chi-post1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/chi-post2tw
+{
+	diffusemap textures/stratosfear/chi-post2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/chi-post3tw
+{
+	diffusemap textures/stratosfear/chi-post3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/chi-post4tw
+{
+	diffusemap textures/stratosfear/chi-post4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/chi-post5tw
+{
+	diffusemap textures/stratosfear/chi-post5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/churchie1tw
+{
+	diffusemap textures/stratosfear/churchie1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/churchie2tw
+{
+	diffusemap textures/stratosfear/churchie2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/churchie3atw
+{
+	diffusemap textures/stratosfear/churchie3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/churchie4tw
+{
+	diffusemap textures/stratosfear/churchie4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/churchie4wtw
+{
+	diffusemap textures/stratosfear/churchie4wtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/churchie4xtw
+{
+	diffusemap textures/stratosfear/churchie4xtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/churchie5tw
+{
+	diffusemap textures/stratosfear/churchie5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/conk_pstir_3ctw
+{
+	diffusemap textures/stratosfear/conk_pstir_3ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/conk_pstir_4btw
+{
+	diffusemap textures/stratosfear/conk_pstir_4btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/conk_pstir_4ctw
+{
+	diffusemap textures/stratosfear/conk_pstir_4ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/conk_pstir_4tw
+{
+	diffusemap textures/stratosfear/conk_pstir_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/conk_pstir_5atw
+{
+	diffusemap textures/stratosfear/conk_pstir_5atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/conk_pstir_5ctw
+{
+	diffusemap textures/stratosfear/conk_pstir_5ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/conk_pstir_5tw
+{
+	diffusemap textures/stratosfear/conk_pstir_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/constructt_1tw
+{
+	diffusemap textures/stratosfear/constructt_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/constructt_2tw
+{
+	diffusemap textures/stratosfear/constructt_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/constructt_4tw
+{
+	diffusemap textures/stratosfear/constructt_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/constructt_7tw
+{
+	diffusemap textures/stratosfear/constructt_7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/con_woods_1tw
+{
+	diffusemap textures/stratosfear/con_woods_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/cramps_1tw
+{
+	diffusemap textures/stratosfear/cramps_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/crane1ABC
+{
+	diffusemap textures/stratosfear/crane1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/crane1DBC
+{
+	diffusemap textures/stratosfear/crane1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/crane1EBC
+{
+	diffusemap textures/stratosfear/crane1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/crane1FBC
+{
+	diffusemap textures/stratosfear/crane1FBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/crane1GBC
+{
+	diffusemap textures/stratosfear/crane1GBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/crane1HBC
+{
+	diffusemap textures/stratosfear/crane1HBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/cripesya_1tw
+{
+	diffusemap textures/stratosfear/cripesya_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/cross2tw
+{
+	diffusemap textures/stratosfear/cross2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/debris_laden5tw
+{
+	diffusemap textures/stratosfear/debris_laden5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/dinkotile1tw
+{
+	diffusemap textures/stratosfear/dinkotile1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/dirtymovie1tw
+{
+	diffusemap textures/stratosfear/dirtymovie1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/doorio_1tw
+{
+	diffusemap textures/stratosfear/doorio_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/farginsale_1tw
+{
+	diffusemap textures/stratosfear/farginsale_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/flintrock_1tw
+{
+	diffusemap textures/stratosfear/flintrock_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/flogrilly1tw
+{
+	diffusemap textures/stratosfear/flogrilly1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/gampcon2tw
+{
+	diffusemap textures/stratosfear/gampcon2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/gampcontw
+{
+	diffusemap textures/stratosfear/gampcontw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/gearflo1tw
+{
+	diffusemap textures/stratosfear/gearflo1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/gimmles_1atw
+{
+	diffusemap textures/stratosfear/gimmles_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/gimmles_1tw
+{
+	diffusemap textures/stratosfear/gimmles_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/girder_7tw
+{
+	diffusemap textures/stratosfear/girder_7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_1tw
+{
+	diffusemap textures/stratosfear/goldmap_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_2tw
+{
+	diffusemap textures/stratosfear/goldmap_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_3atw
+{
+	diffusemap textures/stratosfear/goldmap_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_3tw
+{
+	diffusemap textures/stratosfear/goldmap_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_4atw
+{
+	diffusemap textures/stratosfear/goldmap_4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_4tew
+{
+	diffusemap textures/stratosfear/goldmap_4tew.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_4ttw
+{
+	diffusemap textures/stratosfear/goldmap_4ttw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/goldmap_4tw
+{
+	diffusemap textures/stratosfear/goldmap_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/hempo_1tw
+{
+	diffusemap textures/stratosfear/hempo_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/hempo_3tw
+{
+	diffusemap textures/stratosfear/hempo_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/hempo_4tw
+{
+	diffusemap textures/stratosfear/hempo_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/jap_2tw
+{
+	diffusemap textures/stratosfear/jap_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/jubjube_2atw
+{
+	diffusemap textures/stratosfear/jubjube_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/jubjube_2tw
+{
+	diffusemap textures/stratosfear/jubjube_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/jubjube_3tw
+{
+	diffusemap textures/stratosfear/jubjube_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/kablammy_2tw
+{
+	diffusemap textures/stratosfear/kablammy_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/kablammy_3tw
+{
+	diffusemap textures/stratosfear/kablammy_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/kablammy_4tw
+{
+	diffusemap textures/stratosfear/kablammy_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mabtrimme_1tw
+{
+	diffusemap textures/stratosfear/mabtrimme_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mabtrimme_2tw
+{
+	diffusemap textures/stratosfear/mabtrimme_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mabtrimme_3tw
+{
+	diffusemap textures/stratosfear/mabtrimme_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mallciel_27tw
+{
+	diffusemap textures/stratosfear/mallciel_27tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mallciel_28tw
+{
+	diffusemap textures/stratosfear/mallciel_28tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mallclothes1tw
+{
+	diffusemap textures/stratosfear/mallclothes1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mallclothes2tw
+{
+	diffusemap textures/stratosfear/mallclothes2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mallclothes_4atw
+{
+	diffusemap textures/stratosfear/mallclothes_4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mallpicko_2tw
+{
+	diffusemap textures/stratosfear/mallpicko_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/malltopl_6atw
+{
+	diffusemap textures/stratosfear/malltopl_6atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/malltopl_6tw
+{
+	diffusemap textures/stratosfear/malltopl_6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/malltopwh_1tw
+{
+	diffusemap textures/stratosfear/malltopwh_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/malltopwh_1ytw
+{
+	diffusemap textures/stratosfear/malltopwh_1ytw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/malltop_4tw
+{
+	diffusemap textures/stratosfear/malltop_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/mall_wall2
+{
+	diffusemap textures/stratosfear/mall_wall2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/marbbrick99tw
+{
+	diffusemap textures/stratosfear/marbbrick99tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/marb_brick2nw
+{
+	diffusemap textures/stratosfear/marb_brick2nw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/marb_brick2tw
+{
+	diffusemap textures/stratosfear/marb_brick2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/maroonie_2tw
+{
+	diffusemap textures/stratosfear/maroonie_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/maroonie_3atw
+{
+	diffusemap textures/stratosfear/maroonie_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/moonb1tw
+{
+	diffusemap textures/stratosfear/moonb1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/moonb2btw
+{
+	diffusemap textures/stratosfear/moonb2btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/moonb2tw
+{
+	diffusemap textures/stratosfear/moonb2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/moonb3tw
+{
+	diffusemap textures/stratosfear/moonb3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/moonb4tw
+{
+	diffusemap textures/stratosfear/moonb4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/neonbackstratw
+{
+	diffusemap textures/stratosfear/neonbackstratw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_2tw
+{
+	diffusemap textures/stratosfear/oneon_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_4tw
+{
+	diffusemap textures/stratosfear/oneon_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_6tw
+{
+	diffusemap textures/stratosfear/oneon_6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_7atw
+{
+	diffusemap textures/stratosfear/oneon_7atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_7tw
+{
+	diffusemap textures/stratosfear/oneon_7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_8atw
+{
+	diffusemap textures/stratosfear/oneon_8atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_8tw
+{
+	diffusemap textures/stratosfear/oneon_8tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_9atw
+{
+	diffusemap textures/stratosfear/oneon_9atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/oneon_9tw
+{
+	diffusemap textures/stratosfear/oneon_9tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ore_carp_1tw
+{
+	diffusemap textures/stratosfear/ore_carp_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ore_carp_2tw
+{
+	diffusemap textures/stratosfear/ore_carp_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/ore_carp_3tw
+{
+	diffusemap textures/stratosfear/ore_carp_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/outtile_1tw
+{
+	diffusemap textures/stratosfear/outtile_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/parkey_1tw
+{
+	diffusemap textures/stratosfear/parkey_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_1tw
+{
+	diffusemap textures/stratosfear/plaswallchee_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_3tw
+{
+	diffusemap textures/stratosfear/plaswallchee_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_4tw
+{
+	diffusemap textures/stratosfear/plaswallchee_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_5tw
+{
+	diffusemap textures/stratosfear/plaswallchee_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_6atw
+{
+	diffusemap textures/stratosfear/plaswallchee_6atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_7tw
+{
+	diffusemap textures/stratosfear/plaswallchee_7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_8ttw
+{
+	diffusemap textures/stratosfear/plaswallchee_8ttw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_8tw
+{
+	diffusemap textures/stratosfear/plaswallchee_8tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_8utw
+{
+	diffusemap textures/stratosfear/plaswallchee_8utw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/plaswallchee_9tw
+{
+	diffusemap textures/stratosfear/plaswallchee_9tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/pockyfloor_1gtw
+{
+	diffusemap textures/stratosfear/pockyfloor_1gtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/pockyfloor_1htw
+{
+	diffusemap textures/stratosfear/pockyfloor_1htw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/pockyfloor_1tw
+{
+	diffusemap textures/stratosfear/pockyfloor_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/pockyfloor_2htw
+{
+	diffusemap textures/stratosfear/pockyfloor_2htw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/pockyfloor_3htw
+{
+	diffusemap textures/stratosfear/pockyfloor_3htw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/poppacap2tw
+{
+	diffusemap textures/stratosfear/poppacap2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole1bgtw
+{
+	diffusemap textures/stratosfear/prole1bgtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prolebig_1tw
+{
+	diffusemap textures/stratosfear/prolebig_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prolebig_2tw
+{
+	diffusemap textures/stratosfear/prolebig_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prolesale_2tw
+{
+	diffusemap textures/stratosfear/prolesale_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/proletflo1tw
+{
+	diffusemap textures/stratosfear/proletflo1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/proletflo2tw
+{
+	diffusemap textures/stratosfear/proletflo2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole_1tw
+{
+	diffusemap textures/stratosfear/prole_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole_2tw
+{
+	diffusemap textures/stratosfear/prole_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole_4aw
+{
+	diffusemap textures/stratosfear/prole_4aw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole_4bw
+{
+	diffusemap textures/stratosfear/prole_4bw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole_4dbw
+{
+	diffusemap textures/stratosfear/prole_4dbw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole_4w
+{
+	diffusemap textures/stratosfear/prole_4w.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/prole_5tw
+{
+	diffusemap textures/stratosfear/prole_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/purpcarp1tw
+{
+	diffusemap textures/stratosfear/purpcarp1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/purpura1tw
+{
+	diffusemap textures/stratosfear/purpura1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/rev99ad1tw
+{
+	diffusemap textures/stratosfear/rev99ad1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/rev99ad2tw
+{
+	diffusemap textures/stratosfear/rev99ad2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/runaway_1tw
+{
+	diffusemap textures/stratosfear/runaway_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sandyconk_1tw
+{
+	diffusemap textures/stratosfear/sandyconk_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/scabrous_1tw
+{
+	diffusemap textures/stratosfear/scabrous_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sidewalk1ABC
+{
+	diffusemap textures/stratosfear/sidewalk1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sidewalk1BBC
+{
+	diffusemap textures/stratosfear/sidewalk1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sidewalk1CBC
+{
+	diffusemap textures/stratosfear/sidewalk1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sidewalk1DBC
+{
+	diffusemap textures/stratosfear/sidewalk1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sidewalk1EBC
+{
+	diffusemap textures/stratosfear/sidewalk1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sigh_1tw
+{
+	diffusemap textures/stratosfear/sigh_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sigh_2tw
+{
+	diffusemap textures/stratosfear/sigh_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sigh_3tw
+{
+	diffusemap textures/stratosfear/sigh_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/sigh_3xtw
+{
+	diffusemap textures/stratosfear/sigh_3xtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/slimtopvent_1tw
+{
+	diffusemap textures/stratosfear/slimtopvent_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/specks_conk1tw
+{
+	diffusemap textures/stratosfear/specks_conk1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/specks_conk2tw
+{
+	diffusemap textures/stratosfear/specks_conk2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/specks_conk3tw
+{
+	diffusemap textures/stratosfear/specks_conk3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/specks_conk4tw
+{
+	diffusemap textures/stratosfear/specks_conk4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/specks_conk5tw
+{
+	diffusemap textures/stratosfear/specks_conk5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/specks_conk6tw
+{
+	diffusemap textures/stratosfear/specks_conk6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/squamstrim_1atw
+{
+	diffusemap textures/stratosfear/squamstrim_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/squamstrim_1btw
+{
+	diffusemap textures/stratosfear/squamstrim_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/squamstrim_1ctw
+{
+	diffusemap textures/stratosfear/squamstrim_1ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/starsbabs_1atw
+{
+	diffusemap textures/stratosfear/starsbabs_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/starsbabs_1tw
+{
+	diffusemap textures/stratosfear/starsbabs_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/steelsupport1AB
+{
+	diffusemap textures/stratosfear/steelsupport1AB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stfront_1tw
+{
+	diffusemap textures/stratosfear/stfront_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stfront_2tw
+{
+	diffusemap textures/stratosfear/stfront_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stfront_3tw
+{
+	diffusemap textures/stratosfear/stfront_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/storecom1tw
+{
+	diffusemap textures/stratosfear/storecom1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/storecom2tw
+{
+	diffusemap textures/stratosfear/storecom2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/storecom3tw
+{
+	diffusemap textures/stratosfear/storecom3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/storecom4tw
+{
+	diffusemap textures/stratosfear/storecom4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/storecom5tw
+{
+	diffusemap textures/stratosfear/storecom5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/storecom6tw
+{
+	diffusemap textures/stratosfear/storecom6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strairduct1RC
+{
+	diffusemap textures/stratosfear/strairduct1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strairduct2RC
+{
+	diffusemap textures/stratosfear/strairduct2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strataircond1aR
+{
+	diffusemap textures/stratosfear/strataircond1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strataircond1bR
+{
+	diffusemap textures/stratosfear/strataircond1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strataircond1cR
+{
+	diffusemap textures/stratosfear/strataircond1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratbdump1RC
+{
+	diffusemap textures/stratosfear/stratbdump1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratbdump2RC
+{
+	diffusemap textures/stratosfear/stratbdump2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcbox1aRC
+{
+	diffusemap textures/stratosfear/stratcbox1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcbox1bRC
+{
+	diffusemap textures/stratosfear/stratcbox1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcceiling1R
+{
+	diffusemap textures/stratosfear/stratcceiling1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcdirt1RC
+{
+	diffusemap textures/stratosfear/stratcdirt1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratceiling1aR
+{
+	diffusemap textures/stratosfear/stratceiling1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratceiling1bR
+{
+	diffusemap textures/stratosfear/stratceiling1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratceiling2aR
+{
+	diffusemap textures/stratosfear/stratceiling2aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratceiling2bR
+{
+	diffusemap textures/stratosfear/stratceiling2bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcon2RC
+{
+	diffusemap textures/stratosfear/stratcon2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratconbrick1a
+{
+	diffusemap textures/stratosfear/stratconbrick1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratconbrick1b
+{
+	diffusemap textures/stratosfear/stratconbrick1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratconbrick1c
+{
+	diffusemap textures/stratosfear/stratconbrick1c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcpower1aRC
+{
+	diffusemap textures/stratosfear/stratcpower1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcpower1bRC
+{
+	diffusemap textures/stratosfear/stratcpower1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcpower2RC
+{
+	diffusemap textures/stratosfear/stratcpower2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcpower3RC
+{
+	diffusemap textures/stratosfear/stratcpower3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcrebarRC
+{
+	diffusemap textures/stratosfear/stratcrebarRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcrebarsdwR
+{
+	diffusemap textures/stratosfear/stratcrebarsdwR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcsheetb1aR
+{
+	diffusemap textures/stratosfear/stratcsheetb1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcsheetb1bR
+{
+	diffusemap textures/stratosfear/stratcsheetb1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcsheetb1cR
+{
+	diffusemap textures/stratosfear/stratcsheetb1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcsheetb1tw
+{
+	diffusemap textures/stratosfear/stratcsheetb1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcwall1RC
+{
+	diffusemap textures/stratosfear/stratcwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratcwall2RC
+{
+	diffusemap textures/stratosfear/stratcwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratdirt1RC
+{
+	diffusemap textures/stratosfear/stratdirt1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratdrywall1RC
+{
+	diffusemap textures/stratosfear/stratdrywall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratfurbnch1aR
+{
+	diffusemap textures/stratosfear/stratfurbnch1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratfurbnch1bR
+{
+	diffusemap textures/stratosfear/stratfurbnch1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratfurbnch1cR
+{
+	diffusemap textures/stratosfear/stratfurbnch1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratfurbnch1dR
+{
+	diffusemap textures/stratosfear/stratfurbnch1dR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratfurbnch1eR
+{
+	diffusemap textures/stratosfear/stratfurbnch1eR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratladder1aRC
+{
+	diffusemap textures/stratosfear/stratladder1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratladder1bRC
+{
+	diffusemap textures/stratosfear/stratladder1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratmainflr1aR
+{
+	diffusemap textures/stratosfear/stratmainflr1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratmbeam1RC
+{
+	diffusemap textures/stratosfear/stratmbeam1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratmidtrim1RC
+{
+	diffusemap textures/stratosfear/stratmidtrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratmidtrim2RC
+{
+	diffusemap textures/stratosfear/stratmidtrim2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratmidwin1RC
+{
+	diffusemap textures/stratosfear/stratmidwin1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratneon1RC
+{
+	diffusemap textures/stratosfear/stratneon1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratneon2RC
+{
+	diffusemap textures/stratosfear/stratneon2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratneon3aRC
+{
+	diffusemap textures/stratosfear/stratneon3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratneon3bRC
+{
+	diffusemap textures/stratosfear/stratneon3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratoflag1B
+{
+	diffusemap textures/stratosfear/stratoflag1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratoflag1C
+{
+	diffusemap textures/stratosfear/stratoflag1C.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratoflr1bRC
+{
+	diffusemap textures/stratosfear/stratoflr1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratoflr2RC
+{
+	diffusemap textures/stratosfear/stratoflr2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratopcarpet1R
+{
+	diffusemap textures/stratosfear/stratopcarpet1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratopcarpet2R
+{
+	diffusemap textures/stratosfear/stratopcarpet2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratopneon1RC
+{
+	diffusemap textures/stratosfear/stratopneon1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratoptil1tw
+{
+	diffusemap textures/stratosfear/stratoptil1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratoptil2tw
+{
+	diffusemap textures/stratosfear/stratoptil2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratopwall1RC
+{
+	diffusemap textures/stratosfear/stratopwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratopwall2RC
+{
+	diffusemap textures/stratosfear/stratopwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratportpot1aR
+{
+	diffusemap textures/stratosfear/stratportpot1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratportpot1bR
+{
+	diffusemap textures/stratosfear/stratportpot1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratportpot1cR
+{
+	diffusemap textures/stratosfear/stratportpot1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratportpot1dR
+{
+	diffusemap textures/stratosfear/stratportpot1dR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratportpot1eR
+{
+	diffusemap textures/stratosfear/stratportpot1eR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratportpot1fR
+{
+	diffusemap textures/stratosfear/stratportpot1fR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratpowerbox1a
+{
+	diffusemap textures/stratosfear/stratpowerbox1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratpowerbox1b
+{
+	diffusemap textures/stratosfear/stratpowerbox1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratroofmac1bR
+{
+	diffusemap textures/stratosfear/stratroofmac1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratroofmac1cR
+{
+	diffusemap textures/stratosfear/stratroofmac1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratroofmac2RC
+{
+	diffusemap textures/stratosfear/stratroofmac2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratrubble1RC
+{
+	diffusemap textures/stratosfear/stratrubble1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratrubble2RC
+{
+	diffusemap textures/stratosfear/stratrubble2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratscafold1RC
+{
+	diffusemap textures/stratosfear/stratscafold1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratscafold2RC
+{
+	diffusemap textures/stratosfear/stratscafold2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratshops1RC
+{
+	diffusemap textures/stratosfear/stratshops1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strattop1RC
+{
+	diffusemap textures/stratosfear/strattop1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratwoodstk1aR
+{
+	diffusemap textures/stratosfear/stratwoodstk1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratwoodstk1bR
+{
+	diffusemap textures/stratosfear/stratwoodstk1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratwoodwall1R
+{
+	diffusemap textures/stratosfear/stratwoodwall1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stratwoodwall2R
+{
+	diffusemap textures/stratosfear/stratwoodwall2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strbanister1bRC
+{
+	diffusemap textures/stratosfear/strbanister1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strbanister3RC
+{
+	diffusemap textures/stratosfear/strbanister3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strbeige1RC
+{
+	diffusemap textures/stratosfear/strbeige1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strbrickroad1RC
+{
+	diffusemap textures/stratosfear/strbrickroad1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strcarpet1RC
+{
+	diffusemap textures/stratosfear/strcarpet1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strceiling4aRC
+{
+	diffusemap textures/stratosfear/strceiling4aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strceiling4bRC
+{
+	diffusemap textures/stratosfear/strceiling4bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strceiling5RC
+{
+	diffusemap textures/stratosfear/strceiling5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strconpallet1aR
+{
+	diffusemap textures/stratosfear/strconpallet1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strconpallet1bR
+{
+	diffusemap textures/stratosfear/strconpallet1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strconpallet1cR
+{
+	diffusemap textures/stratosfear/strconpallet1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strconpallet1dR
+{
+	diffusemap textures/stratosfear/strconpallet1dR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strconstruc1RC
+{
+	diffusemap textures/stratosfear/strconstruc1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strconstruc2RC
+{
+	diffusemap textures/stratosfear/strconstruc2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdecor1RC
+{
+	diffusemap textures/stratosfear/strdecor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdirectory1RC
+{
+	diffusemap textures/stratosfear/strdirectory1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoor2RC
+{
+	diffusemap textures/stratosfear/strdoor2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoor2tw
+{
+	diffusemap textures/stratosfear/strdoor2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoor3atw
+{
+	diffusemap textures/stratosfear/strdoor3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoor3RC
+{
+	diffusemap textures/stratosfear/strdoor3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoor3tw
+{
+	diffusemap textures/stratosfear/strdoor3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoor4RC
+{
+	diffusemap textures/stratosfear/strdoor4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoor4tw
+{
+	diffusemap textures/stratosfear/strdoor4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdoortrim1RC
+{
+	diffusemap textures/stratosfear/strdoortrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strdumpster1RC
+{
+	diffusemap textures/stratosfear/strdumpster1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stredwall2tw
+{
+	diffusemap textures/stratosfear/stredwall2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/street1ABC
+{
+	diffusemap textures/stratosfear/street1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/street1BBC
+{
+	diffusemap textures/stratosfear/street1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strgrate2RC
+{
+	diffusemap textures/stratosfear/strgrate2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strmaindoors1RC
+{
+	diffusemap textures/stratosfear/strmaindoors1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strmainsign1RC
+{
+	diffusemap textures/stratosfear/strmainsign1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strmap1RC
+{
+	diffusemap textures/stratosfear/strmap1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strmonycham1aRC
+{
+	diffusemap textures/stratosfear/strmonycham1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strmonycham1bRC
+{
+	diffusemap textures/stratosfear/strmonycham1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strmonycham1cRC
+{
+	diffusemap textures/stratosfear/strmonycham1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strpattern1RC
+{
+	diffusemap textures/stratosfear/strpattern1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1aR
+{
+	diffusemap textures/stratosfear/strshopBGirl1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1bR
+{
+	diffusemap textures/stratosfear/strshopBGirl1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1cR
+{
+	diffusemap textures/stratosfear/strshopBGirl1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1dR
+{
+	diffusemap textures/stratosfear/strshopBGirl1dR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1eR
+{
+	diffusemap textures/stratosfear/strshopBGirl1eR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1fR
+{
+	diffusemap textures/stratosfear/strshopBGirl1fR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1gR
+{
+	diffusemap textures/stratosfear/strshopBGirl1gR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1hR
+{
+	diffusemap textures/stratosfear/strshopBGirl1hR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopBGirl1iR
+{
+	diffusemap textures/stratosfear/strshopBGirl1iR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopliq1aRC
+{
+	diffusemap textures/stratosfear/strshopliq1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopliq1bRC
+{
+	diffusemap textures/stratosfear/strshopliq1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopliq1cRC
+{
+	diffusemap textures/stratosfear/strshopliq1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopliq1dRC
+{
+	diffusemap textures/stratosfear/strshopliq1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopliq1eRC
+{
+	diffusemap textures/stratosfear/strshopliq1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopliq1fRC
+{
+	diffusemap textures/stratosfear/strshopliq1fRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopliq1gRC
+{
+	diffusemap textures/stratosfear/strshopliq1gRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopvid1aRC
+{
+	diffusemap textures/stratosfear/strshopvid1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopvid1bRC
+{
+	diffusemap textures/stratosfear/strshopvid1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopvid1cRC
+{
+	diffusemap textures/stratosfear/strshopvid1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strshopvid1dRC
+{
+	diffusemap textures/stratosfear/strshopvid1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign11RC
+{
+	diffusemap textures/stratosfear/strsign11RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign12RC
+{
+	diffusemap textures/stratosfear/strsign12RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign20RC
+{
+	diffusemap textures/stratosfear/strsign20RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign21RC
+{
+	diffusemap textures/stratosfear/strsign21RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign25RC
+{
+	diffusemap textures/stratosfear/strsign25RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign27RC
+{
+	diffusemap textures/stratosfear/strsign27RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign28RC
+{
+	diffusemap textures/stratosfear/strsign28RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign29RC
+{
+	diffusemap textures/stratosfear/strsign29RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign30RC
+{
+	diffusemap textures/stratosfear/strsign30RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign4RC
+{
+	diffusemap textures/stratosfear/strsign4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign5RC
+{
+	diffusemap textures/stratosfear/strsign5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strsign6RC
+{
+	diffusemap textures/stratosfear/strsign6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strstairstep1bR
+{
+	diffusemap textures/stratosfear/strstairstep1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strstairstep1RC
+{
+	diffusemap textures/stratosfear/strstairstep1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strtrim1RC
+{
+	diffusemap textures/stratosfear/strtrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strtrim2RC
+{
+	diffusemap textures/stratosfear/strtrim2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strtrim6RC
+{
+	diffusemap textures/stratosfear/strtrim6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strtrim7RC
+{
+	diffusemap textures/stratosfear/strtrim7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwall2RC
+{
+	diffusemap textures/stratosfear/strwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwall3RC
+{
+	diffusemap textures/stratosfear/strwall3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwall4RC
+{
+	diffusemap textures/stratosfear/strwall4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwall5RC
+{
+	diffusemap textures/stratosfear/strwall5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwall6RC
+{
+	diffusemap textures/stratosfear/strwall6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwall7RC
+{
+	diffusemap textures/stratosfear/strwall7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwindow1RC
+{
+	diffusemap textures/stratosfear/strwindow1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwindow2RC
+{
+	diffusemap textures/stratosfear/strwindow2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/strwoodfloorRC
+{
+	diffusemap textures/stratosfear/strwoodfloorRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall1ABC
+{
+	diffusemap textures/stratosfear/stuccowall1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall1BBC
+{
+	diffusemap textures/stratosfear/stuccowall1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall1CBC
+{
+	diffusemap textures/stratosfear/stuccowall1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall1DBC
+{
+	diffusemap textures/stratosfear/stuccowall1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall1EBC
+{
+	diffusemap textures/stratosfear/stuccowall1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall1GBC
+{
+	diffusemap textures/stratosfear/stuccowall1GBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall2ABC
+{
+	diffusemap textures/stratosfear/stuccowall2ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall2BBC
+{
+	diffusemap textures/stratosfear/stuccowall2BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/stuccowall2CBC
+{
+	diffusemap textures/stratosfear/stuccowall2CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/supers_1atw
+{
+	diffusemap textures/stratosfear/supers_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/supers_1tw
+{
+	diffusemap textures/stratosfear/supers_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/supers_2tw
+{
+	diffusemap textures/stratosfear/supers_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/supers_2ztw
+{
+	diffusemap textures/stratosfear/supers_2ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/supers_3dtw
+{
+	diffusemap textures/stratosfear/supers_3dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/supers_3etw
+{
+	diffusemap textures/stratosfear/supers_3etw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/thinlizzie_1tw
+{
+	diffusemap textures/stratosfear/thinlizzie_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/topcem_1tw
+{
+	diffusemap textures/stratosfear/topcem_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/topcem_drops
+{
+	diffusemap textures/stratosfear/topcem_drops.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/topcim_drops
+{
+	diffusemap textures/stratosfear/topcim_drops.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/trashcanstrat_1tw
+{
+	diffusemap textures/stratosfear/trashcanstrat_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/trashcanstrat_2tw
+{
+	diffusemap textures/stratosfear/trashcanstrat_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/tshirt1tw
+{
+	diffusemap textures/stratosfear/tshirt1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/veggate1RC
+{
+	diffusemap textures/stratosfear/veggate1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpcolumn1RC
+{
+	diffusemap textures/stratosfear/vegshpcolumn1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdecor1RC
+{
+	diffusemap textures/stratosfear/vegshpdecor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply11R
+{
+	diffusemap textures/stratosfear/vegshpdisply11R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply12R
+{
+	diffusemap textures/stratosfear/vegshpdisply12R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply15R
+{
+	diffusemap textures/stratosfear/vegshpdisply15R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply16R
+{
+	diffusemap textures/stratosfear/vegshpdisply16R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply17b
+{
+	diffusemap textures/stratosfear/vegshpdisply17b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply19a
+{
+	diffusemap textures/stratosfear/vegshpdisply19a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply19b
+{
+	diffusemap textures/stratosfear/vegshpdisply19b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply19c
+{
+	diffusemap textures/stratosfear/vegshpdisply19c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply19d
+{
+	diffusemap textures/stratosfear/vegshpdisply19d.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply1RC
+{
+	diffusemap textures/stratosfear/vegshpdisply1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply25R
+{
+	diffusemap textures/stratosfear/vegshpdisply25R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply27R
+{
+	diffusemap textures/stratosfear/vegshpdisply27R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply28R
+{
+	diffusemap textures/stratosfear/vegshpdisply28R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply2RC
+{
+	diffusemap textures/stratosfear/vegshpdisply2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply33R
+{
+	diffusemap textures/stratosfear/vegshpdisply33R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply34R
+{
+	diffusemap textures/stratosfear/vegshpdisply34R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply35R
+{
+	diffusemap textures/stratosfear/vegshpdisply35R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply36R
+{
+	diffusemap textures/stratosfear/vegshpdisply36R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply40R
+{
+	diffusemap textures/stratosfear/vegshpdisply40R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply9aR
+{
+	diffusemap textures/stratosfear/vegshpdisply9aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpdisply9bR
+{
+	diffusemap textures/stratosfear/vegshpdisply9bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpglasblk1R
+{
+	diffusemap textures/stratosfear/vegshpglasblk1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshptrim2RC
+{
+	diffusemap textures/stratosfear/vegshptrim2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshptrim3bRC
+{
+	diffusemap textures/stratosfear/vegshptrim3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshptrim3cRC
+{
+	diffusemap textures/stratosfear/vegshptrim3cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshptrim5RC
+{
+	diffusemap textures/stratosfear/vegshptrim5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshptrim6RC
+{
+	diffusemap textures/stratosfear/vegshptrim6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshptrim7bRC
+{
+	diffusemap textures/stratosfear/vegshptrim7bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegshpwall4RC
+{
+	diffusemap textures/stratosfear/vegshpwall4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vegtramvend1tw
+{
+	diffusemap textures/stratosfear/vegtramvend1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/vinegarwo_1tw
+{
+	diffusemap textures/stratosfear/vinegarwo_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/wank24tw
+{
+	diffusemap textures/stratosfear/wank24tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/weddo_1tw
+{
+	diffusemap textures/stratosfear/weddo_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/weddo_2tw
+{
+	diffusemap textures/stratosfear/weddo_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/weeber7
+{
+	diffusemap textures/stratosfear/weeber7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/weenawn2tw
+{
+	diffusemap textures/stratosfear/weenawn2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/wentop
+{
+	diffusemap textures/stratosfear/wentop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/whitewee_1tw
+{
+	diffusemap textures/stratosfear/whitewee_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/whitewee_2tw
+{
+	diffusemap textures/stratosfear/whitewee_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/whitewee_2vtw
+{
+	diffusemap textures/stratosfear/whitewee_2vtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/whitewee_2wtw
+{
+	diffusemap textures/stratosfear/whitewee_2wtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/xspotte1tw
+{
+	diffusemap textures/stratosfear/xspotte1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/xxxvid1tw
+{
+	diffusemap textures/stratosfear/xxxvid1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/yahway_1tw
+{
+	diffusemap textures/stratosfear/yahway_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/yahway_2tw
+{
+	diffusemap textures/stratosfear/yahway_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/zwindow2tw
+{
+	diffusemap textures/stratosfear/zwindow2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/zwindow3tw
+{
+	diffusemap textures/stratosfear/zwindow3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/zwindow4atw
+{
+	diffusemap textures/stratosfear/zwindow4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/stratosfear/zwindowtw
+{
+	diffusemap textures/stratosfear/zwindowtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

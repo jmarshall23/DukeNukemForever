@@ -1,0 +1,63 @@
+textures/t_macro/canyon1ABC
+{
+	diffusemap textures/t_macro/canyon1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyon1BBC
+{
+	diffusemap textures/t_macro/canyon1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyon2ABC
+{
+	diffusemap textures/t_macro/canyon2ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyon2BBC
+{
+	diffusemap textures/t_macro/canyon2BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyon2CBC
+{
+	diffusemap textures/t_macro/canyon2CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyon2DBC
+{
+	diffusemap textures/t_macro/canyon2DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyon2EBC
+{
+	diffusemap textures/t_macro/canyon2EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyon3ABC
+{
+	diffusemap textures/t_macro/canyon3ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_macro/canyonmacro1
+{
+	diffusemap textures/t_macro/canyonmacro1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

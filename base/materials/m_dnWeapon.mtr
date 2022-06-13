@@ -1,0 +1,3199 @@
+textures/m_dnWeapon/ammocase1RC
+{
+	diffusemap textures/m_dnWeapon/ammocase1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ammocase2RC
+{
+	diffusemap textures/m_dnWeapon/ammocase2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ammocase3RC
+{
+	diffusemap textures/m_dnWeapon/ammocase3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ammocase4RC
+{
+	diffusemap textures/m_dnWeapon/ammocase4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ammocase5RC
+{
+	diffusemap textures/m_dnWeapon/ammocase5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/batteryammo1BC
+{
+	diffusemap textures/m_dnWeapon/batteryammo1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/Bgreenfire
+{
+	diffusemap textures/m_dnWeapon/Bgreenfire.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_acid1aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_acid1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_concrt1aR
+{
+	diffusemap textures/m_dnWeapon/bhole_concrt1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_concrt1bR
+{
+	diffusemap textures/m_dnWeapon/bhole_concrt1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_concrt1cR
+{
+	diffusemap textures/m_dnWeapon/bhole_concrt1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_fabric1aR
+{
+	diffusemap textures/m_dnWeapon/bhole_fabric1aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_fabric1bR
+{
+	diffusemap textures/m_dnWeapon/bhole_fabric1bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_fabric1cR
+{
+	diffusemap textures/m_dnWeapon/bhole_fabric1cR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_gen1aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_gen1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_gen1bRC
+{
+	diffusemap textures/m_dnWeapon/bhole_gen1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_glass1aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_glass1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_glass1bRC
+{
+	diffusemap textures/m_dnWeapon/bhole_glass1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_glass1cRC
+{
+	diffusemap textures/m_dnWeapon/bhole_glass1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_glass1dRC
+{
+	diffusemap textures/m_dnWeapon/bhole_glass1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_mtl1aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_mtl1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_mtl1bRC
+{
+	diffusemap textures/m_dnWeapon/bhole_mtl1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_mtl2aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_mtl2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_mtl2bRC
+{
+	diffusemap textures/m_dnWeapon/bhole_mtl2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_mtl3aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_mtl3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_mtl3bRC
+{
+	diffusemap textures/m_dnWeapon/bhole_mtl3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_wood1aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_wood1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_wood1bRC
+{
+	diffusemap textures/m_dnWeapon/bhole_wood1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_wood2aRC
+{
+	diffusemap textures/m_dnWeapon/bhole_wood2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/bhole_wood2bRC
+{
+	diffusemap textures/m_dnWeapon/bhole_wood2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/blackclip1BC
+{
+	diffusemap textures/m_dnWeapon/blackclip1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/blackclip_blue1
+{
+	diffusemap textures/m_dnWeapon/blackclip_blue1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/blackclip_green
+{
+	diffusemap textures/m_dnWeapon/blackclip_green.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/blackclip_red1B
+{
+	diffusemap textures/m_dnWeapon/blackclip_red1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/Borangefire
+{
+	diffusemap textures/m_dnWeapon/Borangefire.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/BrainBlast1
+{
+	diffusemap textures/m_dnWeapon/BrainBlast1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/BrainBlast2AnimMW
+{
+	diffusemap textures/m_dnWeapon/BrainBlast2AnimMW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/BrainBlast3AnimMW
+{
+	diffusemap textures/m_dnWeapon/BrainBlast3AnimMW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/BrainBlastAnimMW
+{
+	diffusemap textures/m_dnWeapon/BrainBlastAnimMW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/BrainBlastx2
+{
+	diffusemap textures/m_dnWeapon/BrainBlastx2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/BrainBlastx3
+{
+	diffusemap textures/m_dnWeapon/BrainBlastx3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/BrainBlastx4
+{
+	diffusemap textures/m_dnWeapon/BrainBlastx4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/carmskin1
+{
+	diffusemap textures/m_dnWeapon/carmskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/cbvarmskin1
+{
+	diffusemap textures/m_dnWeapon/cbvarmskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/chainblood1BC
+{
+	diffusemap textures/m_dnWeapon/chainblood1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/chainblood2BC
+{
+	diffusemap textures/m_dnWeapon/chainblood2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/chainblood3BC
+{
+	diffusemap textures/m_dnWeapon/chainblood3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/chainskin1BC
+{
+	diffusemap textures/m_dnWeapon/chainskin1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/chainskin2BC
+{
+	diffusemap textures/m_dnWeapon/chainskin2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/chandskin1
+{
+	diffusemap textures/m_dnWeapon/chandskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood10BC
+{
+	diffusemap textures/m_dnWeapon/char_blood10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood11BC
+{
+	diffusemap textures/m_dnWeapon/char_blood11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood1BC
+{
+	diffusemap textures/m_dnWeapon/char_blood1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood2BC
+{
+	diffusemap textures/m_dnWeapon/char_blood2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood3BC
+{
+	diffusemap textures/m_dnWeapon/char_blood3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood4BC
+{
+	diffusemap textures/m_dnWeapon/char_blood4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood5BC
+{
+	diffusemap textures/m_dnWeapon/char_blood5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood6BC
+{
+	diffusemap textures/m_dnWeapon/char_blood6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood7BC
+{
+	diffusemap textures/m_dnWeapon/char_blood7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood8BC
+{
+	diffusemap textures/m_dnWeapon/char_blood8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/char_blood9BC
+{
+	diffusemap textures/m_dnWeapon/char_blood9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/detonator1BC
+{
+	diffusemap textures/m_dnWeapon/detonator1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/detonator2BC
+{
+	diffusemap textures/m_dnWeapon/detonator2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ElectricalProj1_MW
+{
+	diffusemap textures/m_dnWeapon/ElectricalProj1_MW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ElectricalProj2_MW
+{
+	diffusemap textures/m_dnWeapon/ElectricalProj2_MW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/FlamePilotAnimMW_a1
+{
+	diffusemap textures/m_dnWeapon/FlamePilotAnimMW_a1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/FlamePilotAnimMW_b1
+{
+	diffusemap textures/m_dnWeapon/FlamePilotAnimMW_b1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/FlamePilotAnimMW_c1
+{
+	diffusemap textures/m_dnWeapon/FlamePilotAnimMW_c1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/FlamePilotAnimMW_d1
+{
+	diffusemap textures/m_dnWeapon/FlamePilotAnimMW_d1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/flamethrower1BC
+{
+	diffusemap textures/m_dnWeapon/flamethrower1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/flamethrower2BC
+{
+	diffusemap textures/m_dnWeapon/flamethrower2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/flamethrower3999
+{
+	diffusemap textures/m_dnWeapon/flamethrower3999.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/flamethrower3BC
+{
+	diffusemap textures/m_dnWeapon/flamethrower3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/flamethrower3BC222
+{
+	diffusemap textures/m_dnWeapon/flamethrower3BC222.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/flamethrower4_lighterBC
+{
+	diffusemap textures/m_dnWeapon/flamethrower4_lighterBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/FPrebreathmaskR
+{
+	diffusemap textures/m_dnWeapon/FPrebreathmaskR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/FPrebreathoseRC
+{
+	diffusemap textures/m_dnWeapon/FPrebreathoseRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/FPrebreathpartR
+{
+	diffusemap textures/m_dnWeapon/FPrebreathpartR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/gascan1aRC
+{
+	diffusemap textures/m_dnWeapon/gascan1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/gascan1bRC
+{
+	diffusemap textures/m_dnWeapon/gascan1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/gascan2aRC
+{
+	diffusemap textures/m_dnWeapon/gascan2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/gascan2bRC
+{
+	diffusemap textures/m_dnWeapon/gascan2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/Glass1
+{
+	diffusemap textures/m_dnWeapon/Glass1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/goldclip1BC
+{
+	diffusemap textures/m_dnWeapon/goldclip1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/goldclip_blue1B
+{
+	diffusemap textures/m_dnWeapon/goldclip_blue1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/goldclip_green1
+{
+	diffusemap textures/m_dnWeapon/goldclip_green1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/goldclip_red1BC
+{
+	diffusemap textures/m_dnWeapon/goldclip_red1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/hypogun1BC
+{
+	diffusemap textures/m_dnWeapon/hypogun1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/hypogun2BC
+{
+	diffusemap textures/m_dnWeapon/hypogun2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannon1BC
+{
+	diffusemap textures/m_dnWeapon/icecannon1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannon2BC
+{
+	diffusemap textures/m_dnWeapon/icecannon2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannon3anim
+{
+	diffusemap textures/m_dnWeapon/icecannon3anim.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannon3BC
+{
+	diffusemap textures/m_dnWeapon/icecannon3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannon4BC
+{
+	diffusemap textures/m_dnWeapon/icecannon4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannonglassanim
+{
+	diffusemap textures/m_dnWeapon/icecannonglassanim.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannontubeice1BC
+{
+	diffusemap textures/m_dnWeapon/icecannontubeice1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannon_n2
+{
+	diffusemap textures/m_dnWeapon/icecannon_n2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/icecannon_nitro2BC
+{
+	diffusemap textures/m_dnWeapon/icecannon_nitro2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerblast1RC
+{
+	diffusemap textures/m_dnWeapon/lazerblast1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerblast2RC
+{
+	diffusemap textures/m_dnWeapon/lazerblast2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerblast3RC
+{
+	diffusemap textures/m_dnWeapon/lazerblast3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerblast4RC
+{
+	diffusemap textures/m_dnWeapon/lazerblast4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerblast5RC
+{
+	diffusemap textures/m_dnWeapon/lazerblast5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerblast6RC
+{
+	diffusemap textures/m_dnWeapon/lazerblast6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerflare1RC
+{
+	diffusemap textures/m_dnWeapon/lazerflare1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lazerflare2RC
+{
+	diffusemap textures/m_dnWeapon/lazerflare2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lighter_anim1BC
+{
+	diffusemap textures/m_dnWeapon/lighter_anim1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lighter_anim2BC
+{
+	diffusemap textures/m_dnWeapon/lighter_anim2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/lighter_anim3BC
+{
+	diffusemap textures/m_dnWeapon/lighter_anim3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16clip1
+{
+	diffusemap textures/m_dnWeapon/m16clip1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16flash1aRC
+{
+	diffusemap textures/m_dnWeapon/m16flash1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16flash1bRC
+{
+	diffusemap textures/m_dnWeapon/m16flash1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16flash1cRC
+{
+	diffusemap textures/m_dnWeapon/m16flash1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16flash2aRC
+{
+	diffusemap textures/m_dnWeapon/m16flash2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16flash2bRC
+{
+	diffusemap textures/m_dnWeapon/m16flash2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16flash2cRC
+{
+	diffusemap textures/m_dnWeapon/m16flash2cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16grenade1BC
+{
+	diffusemap textures/m_dnWeapon/m16grenade1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16Gskin1
+{
+	diffusemap textures/m_dnWeapon/m16Gskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16hand1BC
+{
+	diffusemap textures/m_dnWeapon/M16hand1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16HAND3
+{
+	diffusemap textures/m_dnWeapon/M16HAND3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16shellskin1
+{
+	diffusemap textures/m_dnWeapon/m16shellskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16Skin1
+{
+	diffusemap textures/m_dnWeapon/m16Skin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16skin2
+{
+	diffusemap textures/m_dnWeapon/m16skin2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/m16starburst
+{
+	diffusemap textures/m_dnWeapon/m16starburst.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16starburst1
+{
+	diffusemap textures/m_dnWeapon/M16starburst1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16starburst2
+{
+	diffusemap textures/m_dnWeapon/M16starburst2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16starburst3
+{
+	diffusemap textures/m_dnWeapon/M16starburst3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16starburst4
+{
+	diffusemap textures/m_dnWeapon/M16starburst4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16starburst5
+{
+	diffusemap textures/m_dnWeapon/M16starburst5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/M16starburst6
+{
+	diffusemap textures/m_dnWeapon/M16starburst6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mbomb_explointro
+{
+	diffusemap textures/m_dnWeapon/mbomb_explointro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mbomb_explomode
+{
+	diffusemap textures/m_dnWeapon/mbomb_explomode.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mbomb_stickintro
+{
+	diffusemap textures/m_dnWeapon/mbomb_stickintro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mbomb_stickmode
+{
+	diffusemap textures/m_dnWeapon/mbomb_stickmode.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mfpantsRC
+{
+	diffusemap textures/m_dnWeapon/mfpantsRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mfshoesRC
+{
+	diffusemap textures/m_dnWeapon/mfshoesRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mhandskin1
+{
+	diffusemap textures/m_dnWeapon/mhandskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/mightfootskin1
+{
+	diffusemap textures/m_dnWeapon/mightfootskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/missile
+{
+	diffusemap textures/m_dnWeapon/missile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/missile01sah
+{
+	diffusemap textures/m_dnWeapon/missile01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/missile_g
+{
+	diffusemap textures/m_dnWeapon/missile_g.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/multibomb1BC
+{
+	diffusemap textures/m_dnWeapon/multibomb1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/multibomb2BC
+{
+	diffusemap textures/m_dnWeapon/multibomb2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash10aRC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash10aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash10bRC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash10bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash11aRC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash11aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash11bRC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash11bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash1RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash2RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash3RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash4RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash5RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash6RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash7RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash8RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/muzzleflash9RC
+{
+	diffusemap textures/m_dnWeapon/muzzleflash9RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukeammo1BC
+{
+	diffusemap textures/m_dnWeapon/nukeammo1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukeammo2BC
+{
+	diffusemap textures/m_dnWeapon/nukeammo2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_000
+{
+	diffusemap textures/m_dnWeapon/nukelighter_000.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_001
+{
+	diffusemap textures/m_dnWeapon/nukelighter_001.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_002
+{
+	diffusemap textures/m_dnWeapon/nukelighter_002.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_003
+{
+	diffusemap textures/m_dnWeapon/nukelighter_003.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_004
+{
+	diffusemap textures/m_dnWeapon/nukelighter_004.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_005
+{
+	diffusemap textures/m_dnWeapon/nukelighter_005.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_006
+{
+	diffusemap textures/m_dnWeapon/nukelighter_006.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_007
+{
+	diffusemap textures/m_dnWeapon/nukelighter_007.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_008
+{
+	diffusemap textures/m_dnWeapon/nukelighter_008.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_009
+{
+	diffusemap textures/m_dnWeapon/nukelighter_009.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_010
+{
+	diffusemap textures/m_dnWeapon/nukelighter_010.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_011
+{
+	diffusemap textures/m_dnWeapon/nukelighter_011.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_012
+{
+	diffusemap textures/m_dnWeapon/nukelighter_012.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_013
+{
+	diffusemap textures/m_dnWeapon/nukelighter_013.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_014
+{
+	diffusemap textures/m_dnWeapon/nukelighter_014.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_015
+{
+	diffusemap textures/m_dnWeapon/nukelighter_015.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_016
+{
+	diffusemap textures/m_dnWeapon/nukelighter_016.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_017
+{
+	diffusemap textures/m_dnWeapon/nukelighter_017.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_018
+{
+	diffusemap textures/m_dnWeapon/nukelighter_018.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_019
+{
+	diffusemap textures/m_dnWeapon/nukelighter_019.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nukelighter_020
+{
+	diffusemap textures/m_dnWeapon/nukelighter_020.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/nuketempBC
+{
+	diffusemap textures/m_dnWeapon/nuketempBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/parabomb3BC
+{
+	diffusemap textures/m_dnWeapon/parabomb3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/parmskin1
+{
+	diffusemap textures/m_dnWeapon/parmskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pclip5
+{
+	diffusemap textures/m_dnWeapon/pclip5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pclip5_blue
+{
+	diffusemap textures/m_dnWeapon/pclip5_blue.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pclip5_green
+{
+	diffusemap textures/m_dnWeapon/pclip5_green.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pclip5_red
+{
+	diffusemap textures/m_dnWeapon/pclip5_red.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pcrystalbase
+{
+	diffusemap textures/m_dnWeapon/pcrystalbase.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/phand1BC
+{
+	diffusemap textures/m_dnWeapon/phand1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/phand2BC
+{
+	diffusemap textures/m_dnWeapon/phand2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/phandskin1
+{
+	diffusemap textures/m_dnWeapon/phandskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pipebomb_armed1
+{
+	diffusemap textures/m_dnWeapon/pipebomb_armed1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pipebomb_armed2
+{
+	diffusemap textures/m_dnWeapon/pipebomb_armed2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolcigar
+{
+	diffusemap textures/m_dnWeapon/pistolcigar.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolclipskin1
+{
+	diffusemap textures/m_dnWeapon/pistolclipskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolflash1aRC
+{
+	diffusemap textures/m_dnWeapon/pistolflash1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolflash1bRC
+{
+	diffusemap textures/m_dnWeapon/pistolflash1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolflash1cRC
+{
+	diffusemap textures/m_dnWeapon/pistolflash1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolflash1dRC
+{
+	diffusemap textures/m_dnWeapon/pistolflash1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolflash1eRC
+{
+	diffusemap textures/m_dnWeapon/pistolflash1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolflash1fRC
+{
+	diffusemap textures/m_dnWeapon/pistolflash1fRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/pistolskin1
+{
+	diffusemap textures/m_dnWeapon/pistolskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/plasmaFX1aRC
+{
+	diffusemap textures/m_dnWeapon/plasmaFX1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/plasmaFX1bRC
+{
+	diffusemap textures/m_dnWeapon/plasmaFX1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/plasmaFX1RC
+{
+	diffusemap textures/m_dnWeapon/plasmaFX1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/plasmaFX2aRC
+{
+	diffusemap textures/m_dnWeapon/plasmaFX2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/plasmaFX2bRC
+{
+	diffusemap textures/m_dnWeapon/plasmaFX2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/plasmaFX2cRC
+{
+	diffusemap textures/m_dnWeapon/plasmaFX2cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/plasmaFX3RC
+{
+	diffusemap textures/m_dnWeapon/plasmaFX3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ring1
+{
+	diffusemap textures/m_dnWeapon/ring1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rocketskin1BC
+{
+	diffusemap textures/m_dnWeapon/rocketskin1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rocketskin2BC
+{
+	diffusemap textures/m_dnWeapon/rocketskin2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rocketskin3BC
+{
+	diffusemap textures/m_dnWeapon/rocketskin3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rockpack1BC
+{
+	diffusemap textures/m_dnWeapon/rockpack1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rpgdisplay1
+{
+	diffusemap textures/m_dnWeapon/rpgdisplay1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rpghand1BC
+{
+	diffusemap textures/m_dnWeapon/rpghand1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rpgskin1BC
+{
+	diffusemap textures/m_dnWeapon/rpgskin1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rpgskin2BC
+{
+	diffusemap textures/m_dnWeapon/rpgskin2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/rpgskin4BC
+{
+	diffusemap textures/m_dnWeapon/rpgskin4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shandskin1
+{
+	diffusemap textures/m_dnWeapon/shandskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotgunskin1
+{
+	diffusemap textures/m_dnWeapon/shotgunskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotgunskin2
+{
+	diffusemap textures/m_dnWeapon/shotgunskin2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shothand1BC
+{
+	diffusemap textures/m_dnWeapon/shothand1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotshell1BC
+{
+	diffusemap textures/m_dnWeapon/shotshell1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotshell2BC
+{
+	diffusemap textures/m_dnWeapon/shotshell2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotshellbox1BC
+{
+	diffusemap textures/m_dnWeapon/shotshellbox1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotshellbox2BC
+{
+	diffusemap textures/m_dnWeapon/shotshellbox2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotshellends1B
+{
+	diffusemap textures/m_dnWeapon/shotshellends1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotshellends2B
+{
+	diffusemap textures/m_dnWeapon/shotshellends2B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shotshellshdw1B
+{
+	diffusemap textures/m_dnWeapon/shotshellshdw1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit1
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit2
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit3
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit4
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit5
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit6
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit7
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkHit8
+{
+	diffusemap textures/m_dnWeapon/ShrinkHit8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrinkray1BC
+{
+	diffusemap textures/m_dnWeapon/shrinkray1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrinkray2BC
+{
+	diffusemap textures/m_dnWeapon/shrinkray2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrinkrayblood1BC
+{
+	diffusemap textures/m_dnWeapon/shrinkrayblood1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrinkrayskin1
+{
+	diffusemap textures/m_dnWeapon/shrinkrayskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrinkrayskin1_b
+{
+	diffusemap textures/m_dnWeapon/shrinkrayskin1_b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrinkrayskin2
+{
+	diffusemap textures/m_dnWeapon/shrinkrayskin2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrinkray_crystal
+{
+	diffusemap textures/m_dnWeapon/shrinkray_crystal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/ShrinkSparkMW
+{
+	diffusemap textures/m_dnWeapon/ShrinkSparkMW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnkglow1BC
+{
+	diffusemap textures/m_dnWeapon/shrnkglow1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnkglow2BC
+{
+	diffusemap textures/m_dnWeapon/shrnkglow2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight10BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight11BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight1BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight2BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight3BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight4BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight5BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight6BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight7BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight8BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnklight9BC
+{
+	diffusemap textures/m_dnWeapon/shrnklight9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnkry1BC
+{
+	diffusemap textures/m_dnWeapon/shrnkry1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnkry2BC
+{
+	diffusemap textures/m_dnWeapon/shrnkry2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnkskn1BC
+{
+	diffusemap textures/m_dnWeapon/shrnkskn1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnkskn2BC
+{
+	diffusemap textures/m_dnWeapon/shrnkskn2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shrnkskn3BC
+{
+	diffusemap textures/m_dnWeapon/shrnkskn3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shtgunflash1aRC
+{
+	diffusemap textures/m_dnWeapon/shtgunflash1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shtgunflash1bRC
+{
+	diffusemap textures/m_dnWeapon/shtgunflash1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shtgunflash1cRC
+{
+	diffusemap textures/m_dnWeapon/shtgunflash1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shtgunflash1dRC
+{
+	diffusemap textures/m_dnWeapon/shtgunflash1dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shtgunflash1eRC
+{
+	diffusemap textures/m_dnWeapon/shtgunflash1eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/shtgunflash1fRC
+{
+	diffusemap textures/m_dnWeapon/shtgunflash1fRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA0BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA10BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA11BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA12BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA13BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA14BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA14BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA15BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA15BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA16BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA16BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA17BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA17BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA18BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA18BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA19BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA19BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA1BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA20BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA20BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA21BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA21BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA22BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA22BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA23BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA23BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA2BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA3BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA4BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA5BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA6BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA7BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA8BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SMOKEA9BC
+{
+	diffusemap textures/m_dnWeapon/SMOKEA9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB0BC
+{
+	diffusemap textures/m_dnWeapon/smokeB0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB10BC
+{
+	diffusemap textures/m_dnWeapon/smokeB10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB11BC
+{
+	diffusemap textures/m_dnWeapon/smokeB11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB12BC
+{
+	diffusemap textures/m_dnWeapon/smokeB12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB13BC
+{
+	diffusemap textures/m_dnWeapon/smokeB13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB14BC
+{
+	diffusemap textures/m_dnWeapon/smokeB14BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB15BC
+{
+	diffusemap textures/m_dnWeapon/smokeB15BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB16BC
+{
+	diffusemap textures/m_dnWeapon/smokeB16BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB17BC
+{
+	diffusemap textures/m_dnWeapon/smokeB17BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB18BC
+{
+	diffusemap textures/m_dnWeapon/smokeB18BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB19BC
+{
+	diffusemap textures/m_dnWeapon/smokeB19BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB1BC
+{
+	diffusemap textures/m_dnWeapon/smokeB1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB20BC
+{
+	diffusemap textures/m_dnWeapon/smokeB20BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB21BC
+{
+	diffusemap textures/m_dnWeapon/smokeB21BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB22BC
+{
+	diffusemap textures/m_dnWeapon/smokeB22BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB2BC
+{
+	diffusemap textures/m_dnWeapon/smokeB2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB3BC
+{
+	diffusemap textures/m_dnWeapon/smokeB3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB4BC
+{
+	diffusemap textures/m_dnWeapon/smokeB4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB5BC
+{
+	diffusemap textures/m_dnWeapon/smokeB5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB6BC
+{
+	diffusemap textures/m_dnWeapon/smokeB6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB7BC
+{
+	diffusemap textures/m_dnWeapon/smokeB7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB8BC
+{
+	diffusemap textures/m_dnWeapon/smokeB8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeB9BC
+{
+	diffusemap textures/m_dnWeapon/smokeB9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC0BC
+{
+	diffusemap textures/m_dnWeapon/smokeC0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC10BC
+{
+	diffusemap textures/m_dnWeapon/smokeC10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC11BC
+{
+	diffusemap textures/m_dnWeapon/smokeC11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC12BC
+{
+	diffusemap textures/m_dnWeapon/smokeC12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC13BC
+{
+	diffusemap textures/m_dnWeapon/smokeC13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC14BC
+{
+	diffusemap textures/m_dnWeapon/smokeC14BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC15BC
+{
+	diffusemap textures/m_dnWeapon/smokeC15BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC16BC
+{
+	diffusemap textures/m_dnWeapon/smokeC16BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC17BC
+{
+	diffusemap textures/m_dnWeapon/smokeC17BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC18BC
+{
+	diffusemap textures/m_dnWeapon/smokeC18BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC19BC
+{
+	diffusemap textures/m_dnWeapon/smokeC19BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC1BC
+{
+	diffusemap textures/m_dnWeapon/smokeC1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC20BC
+{
+	diffusemap textures/m_dnWeapon/smokeC20BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC21BC
+{
+	diffusemap textures/m_dnWeapon/smokeC21BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC22BC
+{
+	diffusemap textures/m_dnWeapon/smokeC22BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC23BC
+{
+	diffusemap textures/m_dnWeapon/smokeC23BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC24BC
+{
+	diffusemap textures/m_dnWeapon/smokeC24BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC25BC
+{
+	diffusemap textures/m_dnWeapon/smokeC25BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC26BC
+{
+	diffusemap textures/m_dnWeapon/smokeC26BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC27BC
+{
+	diffusemap textures/m_dnWeapon/smokeC27BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC28BC
+{
+	diffusemap textures/m_dnWeapon/smokeC28BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC29BC
+{
+	diffusemap textures/m_dnWeapon/smokeC29BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC2BC
+{
+	diffusemap textures/m_dnWeapon/smokeC2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC30BC
+{
+	diffusemap textures/m_dnWeapon/smokeC30BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC31BC
+{
+	diffusemap textures/m_dnWeapon/smokeC31BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC32BC
+{
+	diffusemap textures/m_dnWeapon/smokeC32BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC33BC
+{
+	diffusemap textures/m_dnWeapon/smokeC33BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC34BC
+{
+	diffusemap textures/m_dnWeapon/smokeC34BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC35BC
+{
+	diffusemap textures/m_dnWeapon/smokeC35BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC36BC
+{
+	diffusemap textures/m_dnWeapon/smokeC36BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC37BC
+{
+	diffusemap textures/m_dnWeapon/smokeC37BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC38BC
+{
+	diffusemap textures/m_dnWeapon/smokeC38BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC39BC
+{
+	diffusemap textures/m_dnWeapon/smokeC39BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC3BC
+{
+	diffusemap textures/m_dnWeapon/smokeC3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC40BC
+{
+	diffusemap textures/m_dnWeapon/smokeC40BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC41BC
+{
+	diffusemap textures/m_dnWeapon/smokeC41BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC42BC
+{
+	diffusemap textures/m_dnWeapon/smokeC42BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC43BC
+{
+	diffusemap textures/m_dnWeapon/smokeC43BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC44BC
+{
+	diffusemap textures/m_dnWeapon/smokeC44BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC45BC
+{
+	diffusemap textures/m_dnWeapon/smokeC45BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC46BC
+{
+	diffusemap textures/m_dnWeapon/smokeC46BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC47BC
+{
+	diffusemap textures/m_dnWeapon/smokeC47BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC48BC
+{
+	diffusemap textures/m_dnWeapon/smokeC48BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC4BC
+{
+	diffusemap textures/m_dnWeapon/smokeC4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC5BC
+{
+	diffusemap textures/m_dnWeapon/smokeC5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC6BC
+{
+	diffusemap textures/m_dnWeapon/smokeC6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC7BC
+{
+	diffusemap textures/m_dnWeapon/smokeC7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC8BC
+{
+	diffusemap textures/m_dnWeapon/smokeC8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeC9BC
+{
+	diffusemap textures/m_dnWeapon/smokeC9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD0BC
+{
+	diffusemap textures/m_dnWeapon/smokeD0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD10BC
+{
+	diffusemap textures/m_dnWeapon/smokeD10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD11BC
+{
+	diffusemap textures/m_dnWeapon/smokeD11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD12BC
+{
+	diffusemap textures/m_dnWeapon/smokeD12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD13BC
+{
+	diffusemap textures/m_dnWeapon/smokeD13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD14BC
+{
+	diffusemap textures/m_dnWeapon/smokeD14BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD15BC
+{
+	diffusemap textures/m_dnWeapon/smokeD15BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD16BC
+{
+	diffusemap textures/m_dnWeapon/smokeD16BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD17BC
+{
+	diffusemap textures/m_dnWeapon/smokeD17BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD18BC
+{
+	diffusemap textures/m_dnWeapon/smokeD18BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD19BC
+{
+	diffusemap textures/m_dnWeapon/smokeD19BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD1BC
+{
+	diffusemap textures/m_dnWeapon/smokeD1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD2BC
+{
+	diffusemap textures/m_dnWeapon/smokeD2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD3BC
+{
+	diffusemap textures/m_dnWeapon/smokeD3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD4BC
+{
+	diffusemap textures/m_dnWeapon/smokeD4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD5BC
+{
+	diffusemap textures/m_dnWeapon/smokeD5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD6BC
+{
+	diffusemap textures/m_dnWeapon/smokeD6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD7BC
+{
+	diffusemap textures/m_dnWeapon/smokeD7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD8BC
+{
+	diffusemap textures/m_dnWeapon/smokeD8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/smokeD9BC
+{
+	diffusemap textures/m_dnWeapon/smokeD9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/SniperDot1
+{
+	diffusemap textures/m_dnWeapon/SniperDot1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle1BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle2BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights10BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights11BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights12BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights13BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights2BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights3BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights4BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights5BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights6BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights7BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights8BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lights9BC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lights9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_lightsBC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_lightsBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/sniperrifle_smokeBC
+{
+	diffusemap textures/m_dnWeapon/sniperrifle_smokeBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/stickybomb_armed1
+{
+	diffusemap textures/m_dnWeapon/stickybomb_armed1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/stickybomb_armed2
+{
+	diffusemap textures/m_dnWeapon/stickybomb_armed2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/triparm_A
+{
+	diffusemap textures/m_dnWeapon/triparm_A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/triparm_B
+{
+	diffusemap textures/m_dnWeapon/triparm_B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/TripFireA
+{
+	diffusemap textures/m_dnWeapon/TripFireA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/TripFireB
+{
+	diffusemap textures/m_dnWeapon/TripFireB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/TripFireC
+{
+	diffusemap textures/m_dnWeapon/TripFireC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/tripmine1BC
+{
+	diffusemap textures/m_dnWeapon/tripmine1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/tripm_blank
+{
+	diffusemap textures/m_dnWeapon/tripm_blank.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret1BC
+{
+	diffusemap textures/m_dnWeapon/turret1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret2_cannonBC
+{
+	diffusemap textures/m_dnWeapon/turret2_cannonBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret2_gatlingBC
+{
+	diffusemap textures/m_dnWeapon/turret2_gatlingBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret3_cannonBC
+{
+	diffusemap textures/m_dnWeapon/turret3_cannonBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret3_gatlingBC
+{
+	diffusemap textures/m_dnWeapon/turret3_gatlingBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret4BC
+{
+	diffusemap textures/m_dnWeapon/turret4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret5_cannonBC
+{
+	diffusemap textures/m_dnWeapon/turret5_cannonBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret5_gatlingBC
+{
+	diffusemap textures/m_dnWeapon/turret5_gatlingBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turret6BC
+{
+	diffusemap textures/m_dnWeapon/turret6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turretceiling1BC
+{
+	diffusemap textures/m_dnWeapon/turretceiling1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turretcieling2BC
+{
+	diffusemap textures/m_dnWeapon/turretcieling2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod1BC
+{
+	diffusemap textures/m_dnWeapon/turrettripod1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod1_corpseBC
+{
+	diffusemap textures/m_dnWeapon/turrettripod1_corpseBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod2BBC
+{
+	diffusemap textures/m_dnWeapon/turrettripod2BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod2BC
+{
+	diffusemap textures/m_dnWeapon/turrettripod2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod2B_corpseBC
+{
+	diffusemap textures/m_dnWeapon/turrettripod2B_corpseBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod2_corpseBC
+{
+	diffusemap textures/m_dnWeapon/turrettripod2_corpseBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod3BC
+{
+	diffusemap textures/m_dnWeapon/turrettripod3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/turrettripod3_corpseBC
+{
+	diffusemap textures/m_dnWeapon/turrettripod3_corpseBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/vial_efx_blue
+{
+	diffusemap textures/m_dnWeapon/vial_efx_blue.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/vial_efx_green
+{
+	diffusemap textures/m_dnWeapon/vial_efx_green.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/vial_efx_red
+{
+	diffusemap textures/m_dnWeapon/vial_efx_red.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/waterflare
+{
+	diffusemap textures/m_dnWeapon/waterflare.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/watermineRC
+{
+	diffusemap textures/m_dnWeapon/watermineRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/water_mine
+{
+	diffusemap textures/m_dnWeapon/water_mine.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/water_reflection2BC
+{
+	diffusemap textures/m_dnWeapon/water_reflection2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/wchainskin1
+{
+	diffusemap textures/m_dnWeapon/wchainskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/wm16skin1
+{
+	diffusemap textures/m_dnWeapon/wm16skin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/wpistolskin1
+{
+	diffusemap textures/m_dnWeapon/wpistolskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_blkpistolRC
+{
+	diffusemap textures/m_dnWeapon/w_blkpistolRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_co21BC
+{
+	diffusemap textures/m_dnWeapon/w_co21BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_flamethrower1BC
+{
+	diffusemap textures/m_dnWeapon/w_flamethrower1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_flamethrower1BCdel
+{
+	diffusemap textures/m_dnWeapon/w_flamethrower1BCdel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_flamethrower2BC
+{
+	diffusemap textures/m_dnWeapon/w_flamethrower2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_hypo1
+{
+	diffusemap textures/m_dnWeapon/w_hypo1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_hypo2
+{
+	diffusemap textures/m_dnWeapon/w_hypo2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_hypo_bottle1
+{
+	diffusemap textures/m_dnWeapon/w_hypo_bottle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_hypo_bottle2
+{
+	diffusemap textures/m_dnWeapon/w_hypo_bottle2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_rpg1
+{
+	diffusemap textures/m_dnWeapon/w_rpg1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_rpg2
+{
+	diffusemap textures/m_dnWeapon/w_rpg2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_shotgunskin1
+{
+	diffusemap textures/m_dnWeapon/w_shotgunskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_shrinkray1BC
+{
+	diffusemap textures/m_dnWeapon/w_shrinkray1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_shrinkray2BC
+{
+	diffusemap textures/m_dnWeapon/w_shrinkray2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_snipergun1BC
+{
+	diffusemap textures/m_dnWeapon/w_snipergun1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_snipergun2BC
+{
+	diffusemap textures/m_dnWeapon/w_snipergun2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dnWeapon/w_snipergun3BC
+{
+	diffusemap textures/m_dnWeapon/w_snipergun3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

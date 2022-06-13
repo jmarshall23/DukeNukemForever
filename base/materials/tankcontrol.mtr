@@ -1,0 +1,126 @@
+textures/tankcontrol/DTLscreen1aBC
+{
+	diffusemap textures/tankcontrol/DTLscreen1aBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/DTLscreen1bBC
+{
+	diffusemap textures/tankcontrol/DTLscreen1bBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl10BC
+{
+	diffusemap textures/tankcontrol/tankcntrl10BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl11BC
+{
+	diffusemap textures/tankcontrol/tankcntrl11BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl12BC
+{
+	diffusemap textures/tankcontrol/tankcntrl12BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl13BC
+{
+	diffusemap textures/tankcontrol/tankcntrl13BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl14BC
+{
+	diffusemap textures/tankcontrol/tankcntrl14BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl15BC
+{
+	diffusemap textures/tankcontrol/tankcntrl15BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl1BC
+{
+	diffusemap textures/tankcontrol/tankcntrl1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl2BC
+{
+	diffusemap textures/tankcontrol/tankcntrl2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl3BC
+{
+	diffusemap textures/tankcontrol/tankcntrl3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl4BC
+{
+	diffusemap textures/tankcontrol/tankcntrl4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl5BC
+{
+	diffusemap textures/tankcontrol/tankcntrl5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl6BC
+{
+	diffusemap textures/tankcontrol/tankcntrl6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl7BC
+{
+	diffusemap textures/tankcontrol/tankcntrl7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl8BC
+{
+	diffusemap textures/tankcontrol/tankcntrl8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcntrl9BC
+{
+	diffusemap textures/tankcontrol/tankcntrl9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/tankcontrol/tankcontrol
+{
+	diffusemap textures/tankcontrol/tankcontrol.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

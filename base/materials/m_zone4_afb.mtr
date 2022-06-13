@@ -1,0 +1,105 @@
+textures/m_zone4_afb/Dish1sah
+{
+	diffusemap textures/m_zone4_afb/Dish1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/DishMech1
+{
+	diffusemap textures/m_zone4_afb/DishMech1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/DishSkin
+{
+	diffusemap textures/m_zone4_afb/DishSkin.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/DishWgt1sah
+{
+	diffusemap textures/m_zone4_afb/DishWgt1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/f
+{
+	diffusemap textures/m_zone4_afb/f.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/humBACK
+{
+	diffusemap textures/m_zone4_afb/humBACK.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/RocketBody
+{
+	diffusemap textures/m_zone4_afb/RocketBody.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/slide1sah
+{
+	diffusemap textures/m_zone4_afb/slide1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/slide2sah
+{
+	diffusemap textures/m_zone4_afb/slide2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/slide3sah
+{
+	diffusemap textures/m_zone4_afb/slide3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/slide4sah
+{
+	diffusemap textures/m_zone4_afb/slide4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/swingset1sah
+{
+	diffusemap textures/m_zone4_afb/swingset1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/tire11sah
+{
+	diffusemap textures/m_zone4_afb/tire11sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/wheel_crank
+{
+	diffusemap textures/m_zone4_afb/wheel_crank.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone4_afb/wheel_crnk1sah
+{
+	diffusemap textures/m_zone4_afb/wheel_crnk1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

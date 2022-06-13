@@ -1,0 +1,98 @@
+textures/SMK6/buddeyes
+{
+	diffusemap textures/SMK6/buddeyes.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/co2_spn
+{
+	diffusemap textures/SMK6/co2_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/cowpie_spn
+{
+	diffusemap textures/SMK6/cowpie_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/powrtrp_spn
+{
+	diffusemap textures/SMK6/powrtrp_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/sandwch_spn
+{
+	diffusemap textures/SMK6/sandwch_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/sospowercell_spn
+{
+	diffusemap textures/SMK6/sospowercell_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/spdrink_spn
+{
+	diffusemap textures/SMK6/spdrink_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/sprtbar_spn
+{
+	diffusemap textures/SMK6/sprtbar_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/steroid_spn
+{
+	diffusemap textures/SMK6/steroid_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/s_ezvendsaver
+{
+	diffusemap textures/SMK6/s_ezvendsaver.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/s_hscan1
+{
+	diffusemap textures/SMK6/s_hscan1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/s_hscansaver
+{
+	diffusemap textures/SMK6/s_hscansaver.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/s_lk_elev_dis1
+{
+	diffusemap textures/SMK6/s_lk_elev_dis1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK6/s_rpgdisplay1
+{
+	diffusemap textures/SMK6/s_rpgdisplay1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

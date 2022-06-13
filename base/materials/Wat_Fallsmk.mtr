@@ -1,0 +1,7 @@
+textures/Wat_Fallsmk/Wat_Fallsmk_tw
+{
+	diffusemap textures/Wat_Fallsmk/Wat_Fallsmk_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

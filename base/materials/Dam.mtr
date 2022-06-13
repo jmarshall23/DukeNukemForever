@@ -1,0 +1,2380 @@
+textures/Dam/dam01sah
+{
+	diffusemap textures/Dam/dam01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dam02sah
+{
+	diffusemap textures/Dam/dam02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dam03sah
+{
+	diffusemap textures/Dam/dam03sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damac1RC
+{
+	diffusemap textures/Dam/damac1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damacstruts1RC
+{
+	diffusemap textures/Dam/damacstruts1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dambathdoor3bRC
+{
+	diffusemap textures/Dam/dambathdoor3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dambathdoor3cRC
+{
+	diffusemap textures/Dam/dambathdoor3cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dambldsideRC
+{
+	diffusemap textures/Dam/dambldsideRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damblkpipeRC
+{
+	diffusemap textures/Dam/damblkpipeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dambrdfemRC
+{
+	diffusemap textures/Dam/dambrdfemRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dambrdmaleRC
+{
+	diffusemap textures/Dam/dambrdmaleRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dambrdoor1RC
+{
+	diffusemap textures/Dam/dambrdoor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcabinet1RC
+{
+	diffusemap textures/Dam/damcabinet1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcabinet3RC
+{
+	diffusemap textures/Dam/damcabinet3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcabsideRC
+{
+	diffusemap textures/Dam/damcabsideRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling1RC
+{
+	diffusemap textures/Dam/damceiling1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling2RC
+{
+	diffusemap textures/Dam/damceiling2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling3RC
+{
+	diffusemap textures/Dam/damceiling3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling4RC
+{
+	diffusemap textures/Dam/damceiling4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling5RC
+{
+	diffusemap textures/Dam/damceiling5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling6RC
+{
+	diffusemap textures/Dam/damceiling6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling8aRC
+{
+	diffusemap textures/Dam/damceiling8aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damceiling8bRC
+{
+	diffusemap textures/Dam/damceiling8bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damclock1RC
+{
+	diffusemap textures/Dam/damclock1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damclock2RC
+{
+	diffusemap textures/Dam/damclock2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damconcreteflr1
+{
+	diffusemap textures/Dam/damconcreteflr1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcontrol1RC
+{
+	diffusemap textures/Dam/damcontrol1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcrete1RC
+{
+	diffusemap textures/Dam/damcrete1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcrete2RC
+{
+	diffusemap textures/Dam/damcrete2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcrete3RC
+{
+	diffusemap textures/Dam/damcrete3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcrete4RC
+{
+	diffusemap textures/Dam/damcrete4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcrete5aRC
+{
+	diffusemap textures/Dam/damcrete5aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcreteplantRC
+{
+	diffusemap textures/Dam/damcreteplantRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcretetrim1RC
+{
+	diffusemap textures/Dam/damcretetrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damcretewall1RC
+{
+	diffusemap textures/Dam/damcretewall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdecal3RC
+{
+	diffusemap textures/Dam/damdecal3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdecal4RC
+{
+	diffusemap textures/Dam/damdecal4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdecal5RC
+{
+	diffusemap textures/Dam/damdecal5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdecal6RC
+{
+	diffusemap textures/Dam/damdecal6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdecal7RC
+{
+	diffusemap textures/Dam/damdecal7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdecal8RC
+{
+	diffusemap textures/Dam/damdecal8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdecal9RC
+{
+	diffusemap textures/Dam/damdecal9RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdesk1RC
+{
+	diffusemap textures/Dam/damdesk1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdetrocks2RC
+{
+	diffusemap textures/Dam/damdetrocks2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdisplay1RC
+{
+	diffusemap textures/Dam/damdisplay1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdisplay2RC
+{
+	diffusemap textures/Dam/damdisplay2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdisplay3RC
+{
+	diffusemap textures/Dam/damdisplay3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdisplay4RC
+{
+	diffusemap textures/Dam/damdisplay4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdisplay6RC
+{
+	diffusemap textures/Dam/damdisplay6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdisplay7RC
+{
+	diffusemap textures/Dam/damdisplay7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdisplay8RC
+{
+	diffusemap textures/Dam/damdisplay8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damdoor1RC
+{
+	diffusemap textures/Dam/damdoor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelepan1aRC
+{
+	diffusemap textures/Dam/damelepan1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelepan1bRC
+{
+	diffusemap textures/Dam/damelepan1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelepan1RC
+{
+	diffusemap textures/Dam/damelepan1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelevtrim1RC
+{
+	diffusemap textures/Dam/damelevtrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelevtrim2RC
+{
+	diffusemap textures/Dam/damelevtrim2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelvfloorRC
+{
+	diffusemap textures/Dam/damelvfloorRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelvtrdoor1RC
+{
+	diffusemap textures/Dam/damelvtrdoor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damelvtrdoor2RC
+{
+	diffusemap textures/Dam/damelvtrdoor2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damepadwallRC
+{
+	diffusemap textures/Dam/damepadwallRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damescalator1RC
+{
+	diffusemap textures/Dam/damescalator1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damesclatorRC
+{
+	diffusemap textures/Dam/damesclatorRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfire1RC
+{
+	diffusemap textures/Dam/damfire1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfloorplaq1RC
+{
+	diffusemap textures/Dam/damfloorplaq1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfloortile1RC
+{
+	diffusemap textures/Dam/damfloortile1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfloortile2RC
+{
+	diffusemap textures/Dam/damfloortile2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfloortile4aR
+{
+	diffusemap textures/Dam/damfloortile4aR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfloortile4bR
+{
+	diffusemap textures/Dam/damfloortile4bR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfloortile5RC
+{
+	diffusemap textures/Dam/damfloortile5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damflrdecor4RC
+{
+	diffusemap textures/Dam/damflrdecor4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damflrvent1RC
+{
+	diffusemap textures/Dam/damflrvent1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfuesbox1RC
+{
+	diffusemap textures/Dam/damfuesbox1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damfuesbox2RC
+{
+	diffusemap textures/Dam/damfuesbox2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgarage1RC
+{
+	diffusemap textures/Dam/damgarage1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenceilingRC
+{
+	diffusemap textures/Dam/damgenceilingRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgencraneRC
+{
+	diffusemap textures/Dam/damgencraneRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenmachflrRC
+{
+	diffusemap textures/Dam/damgenmachflrRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenrailRC
+{
+	diffusemap textures/Dam/damgenrailRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenside1RC
+{
+	diffusemap textures/Dam/damgenside1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenside2RC
+{
+	diffusemap textures/Dam/damgenside2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenstrut1aRC
+{
+	diffusemap textures/Dam/damgenstrut1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenstrut1bRC
+{
+	diffusemap textures/Dam/damgenstrut1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenstrut2RC
+{
+	diffusemap textures/Dam/damgenstrut2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgentopflrRC
+{
+	diffusemap textures/Dam/damgentopflrRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgentopRC
+{
+	diffusemap textures/Dam/damgentopRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenwall1RC
+{
+	diffusemap textures/Dam/damgenwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenwall2RC
+{
+	diffusemap textures/Dam/damgenwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgenwall4RC
+{
+	diffusemap textures/Dam/damgenwall4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damglddoorRC
+{
+	diffusemap textures/Dam/damglddoorRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgreenwater1R
+{
+	diffusemap textures/Dam/damgreenwater1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgreenwater2R
+{
+	diffusemap textures/Dam/damgreenwater2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damgrtr1RC
+{
+	diffusemap textures/Dam/damgrtr1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damholeRC
+{
+	diffusemap textures/Dam/damholeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/daminfoplaq2RC
+{
+	diffusemap textures/Dam/daminfoplaq2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damladderRC
+{
+	diffusemap textures/Dam/damladderRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damlight2RC
+{
+	diffusemap textures/Dam/damlight2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dammanhole1RC
+{
+	diffusemap textures/Dam/dammanhole1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dammesage1RC
+{
+	diffusemap textures/Dam/dammesage1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkceiling2
+{
+	diffusemap textures/Dam/damparkceiling2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkstreet2R
+{
+	diffusemap textures/Dam/damparkstreet2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkstreet3R
+{
+	diffusemap textures/Dam/damparkstreet3R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkstreet4R
+{
+	diffusemap textures/Dam/damparkstreet4R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkstreet5R
+{
+	diffusemap textures/Dam/damparkstreet5R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkstreetRC
+{
+	diffusemap textures/Dam/damparkstreetRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkwall1RC
+{
+	diffusemap textures/Dam/damparkwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkwall2RC
+{
+	diffusemap textures/Dam/damparkwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damparkwall3RC
+{
+	diffusemap textures/Dam/damparkwall3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damplaque1RC
+{
+	diffusemap textures/Dam/damplaque1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damplaque2RC
+{
+	diffusemap textures/Dam/damplaque2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dampolicesgn1RC
+{
+	diffusemap textures/Dam/dampolicesgn1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dampower1aRC
+{
+	diffusemap textures/Dam/dampower1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dampower1bRC
+{
+	diffusemap textures/Dam/dampower1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dampower2aRC
+{
+	diffusemap textures/Dam/dampower2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrail1RC
+{
+	diffusemap textures/Dam/damrail1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrail2RC
+{
+	diffusemap textures/Dam/damrail2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrail3RC
+{
+	diffusemap textures/Dam/damrail3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrail5RC
+{
+	diffusemap textures/Dam/damrail5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damroad1aRC
+{
+	diffusemap textures/Dam/damroad1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damroad1bRC
+{
+	diffusemap textures/Dam/damroad1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrock1RC
+{
+	diffusemap textures/Dam/damrock1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrock2RC
+{
+	diffusemap textures/Dam/damrock2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrock3RC
+{
+	diffusemap textures/Dam/damrock3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrock4RC
+{
+	diffusemap textures/Dam/damrock4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrock5RC
+{
+	diffusemap textures/Dam/damrock5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrock6RC
+{
+	diffusemap textures/Dam/damrock6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrock7RC
+{
+	diffusemap textures/Dam/damrock7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damrocktip7aRC
+{
+	diffusemap textures/Dam/damrocktip7aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damroktunl1aRC
+{
+	diffusemap textures/Dam/damroktunl1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damroktunl1bRC
+{
+	diffusemap textures/Dam/damroktunl1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damroktunl2RC
+{
+	diffusemap textures/Dam/damroktunl2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damroktunl4RC
+{
+	diffusemap textures/Dam/damroktunl4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsandbag1aRC
+{
+	diffusemap textures/Dam/damsandbag1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsidewlk1RC
+{
+	diffusemap textures/Dam/damsidewlk1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign11RC
+{
+	diffusemap textures/Dam/damsign11RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign13RC
+{
+	diffusemap textures/Dam/damsign13RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign15RC
+{
+	diffusemap textures/Dam/damsign15RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign16RC
+{
+	diffusemap textures/Dam/damsign16RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign1RC
+{
+	diffusemap textures/Dam/damsign1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign21RC
+{
+	diffusemap textures/Dam/damsign21RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign22RC
+{
+	diffusemap textures/Dam/damsign22RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign24RC
+{
+	diffusemap textures/Dam/damsign24RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign25RC
+{
+	diffusemap textures/Dam/damsign25RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign26RC
+{
+	diffusemap textures/Dam/damsign26RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign29RC
+{
+	diffusemap textures/Dam/damsign29RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign2aRC
+{
+	diffusemap textures/Dam/damsign2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign2bRC
+{
+	diffusemap textures/Dam/damsign2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign30RC
+{
+	diffusemap textures/Dam/damsign30RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31aRC
+{
+	diffusemap textures/Dam/damsign31aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31bRC
+{
+	diffusemap textures/Dam/damsign31bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31cRC
+{
+	diffusemap textures/Dam/damsign31cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31dRC
+{
+	diffusemap textures/Dam/damsign31dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31eRC
+{
+	diffusemap textures/Dam/damsign31eRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31fRC
+{
+	diffusemap textures/Dam/damsign31fRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31hRC
+{
+	diffusemap textures/Dam/damsign31hRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31jRC
+{
+	diffusemap textures/Dam/damsign31jRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign31RC
+{
+	diffusemap textures/Dam/damsign31RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign32aRC
+{
+	diffusemap textures/Dam/damsign32aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign32bRC
+{
+	diffusemap textures/Dam/damsign32bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign32cRC
+{
+	diffusemap textures/Dam/damsign32cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign32dRC
+{
+	diffusemap textures/Dam/damsign32dRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign34RC
+{
+	diffusemap textures/Dam/damsign34RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign35RC
+{
+	diffusemap textures/Dam/damsign35RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign37aRC
+{
+	diffusemap textures/Dam/damsign37aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign37bRC
+{
+	diffusemap textures/Dam/damsign37bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign37cRC
+{
+	diffusemap textures/Dam/damsign37cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign4RC
+{
+	diffusemap textures/Dam/damsign4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign6RC
+{
+	diffusemap textures/Dam/damsign6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign7RC
+{
+	diffusemap textures/Dam/damsign7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsign9RC
+{
+	diffusemap textures/Dam/damsign9RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsnaksign2RC
+{
+	diffusemap textures/Dam/damsnaksign2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsnaksignRC
+{
+	diffusemap textures/Dam/damsnaksignRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsofa1aRC
+{
+	diffusemap textures/Dam/damsofa1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsofa1bRC
+{
+	diffusemap textures/Dam/damsofa1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstairstep1RC
+{
+	diffusemap textures/Dam/damstairstep1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstairstep2RC
+{
+	diffusemap textures/Dam/damstairstep2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstairstep3RC
+{
+	diffusemap textures/Dam/damstairstep3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstencil1RC
+{
+	diffusemap textures/Dam/damstencil1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstencil2RC
+{
+	diffusemap textures/Dam/damstencil2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damsteps1RC
+{
+	diffusemap textures/Dam/damsteps1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstldoor1RC
+{
+	diffusemap textures/Dam/damstldoor1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstldoor3RC
+{
+	diffusemap textures/Dam/damstldoor3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstldoor4RC
+{
+	diffusemap textures/Dam/damstldoor4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damstorageRC
+{
+	diffusemap textures/Dam/damstorageRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtopdecor2RC
+{
+	diffusemap textures/Dam/damtopdecor2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtoproof2RC
+{
+	diffusemap textures/Dam/damtoproof2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtoptrim1RC
+{
+	diffusemap textures/Dam/damtoptrim1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtower1aRC
+{
+	diffusemap textures/Dam/damtower1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtower1bRC
+{
+	diffusemap textures/Dam/damtower1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtower1RC
+{
+	diffusemap textures/Dam/damtower1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtower2RC
+{
+	diffusemap textures/Dam/damtower2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtowersideRC
+{
+	diffusemap textures/Dam/damtowersideRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtowertopRC
+{
+	diffusemap textures/Dam/damtowertopRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtransf1RC
+{
+	diffusemap textures/Dam/damtransf1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damtrim4RC
+{
+	diffusemap textures/Dam/damtrim4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damvalveRC
+{
+	diffusemap textures/Dam/damvalveRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damvent1RC
+{
+	diffusemap textures/Dam/damvent1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damvent2RC
+{
+	diffusemap textures/Dam/damvent2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damvisitorout1R
+{
+	diffusemap textures/Dam/damvisitorout1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damvisitorout2R
+{
+	diffusemap textures/Dam/damvisitorout2R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwalk1aRC
+{
+	diffusemap textures/Dam/damwalk1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwalk1RC
+{
+	diffusemap textures/Dam/damwalk1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwalk2RC
+{
+	diffusemap textures/Dam/damwalk2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwalk5aRC
+{
+	diffusemap textures/Dam/damwalk5aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwalk6RC
+{
+	diffusemap textures/Dam/damwalk6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall12RC
+{
+	diffusemap textures/Dam/damwall12RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall13RC
+{
+	diffusemap textures/Dam/damwall13RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall14RC
+{
+	diffusemap textures/Dam/damwall14RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall15RC
+{
+	diffusemap textures/Dam/damwall15RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall16RC
+{
+	diffusemap textures/Dam/damwall16RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall17RC
+{
+	diffusemap textures/Dam/damwall17RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall1aRC
+{
+	diffusemap textures/Dam/damwall1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall3aRC
+{
+	diffusemap textures/Dam/damwall3aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall3bRC
+{
+	diffusemap textures/Dam/damwall3bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall4aRC
+{
+	diffusemap textures/Dam/damwall4aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall4bRC
+{
+	diffusemap textures/Dam/damwall4bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall5aRC
+{
+	diffusemap textures/Dam/damwall5aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall6RC
+{
+	diffusemap textures/Dam/damwall6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall7RC
+{
+	diffusemap textures/Dam/damwall7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall8RC
+{
+	diffusemap textures/Dam/damwall8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwall9RC
+{
+	diffusemap textures/Dam/damwall9RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwallflag1RC
+{
+	diffusemap textures/Dam/damwallflag1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwalllite1RC
+{
+	diffusemap textures/Dam/damwalllite1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwallpaper1RC
+{
+	diffusemap textures/Dam/damwallpaper1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwalltile1
+{
+	diffusemap textures/Dam/damwalltile1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater1RC
+{
+	diffusemap textures/Dam/damwater1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater2RC
+{
+	diffusemap textures/Dam/damwater2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater3RC
+{
+	diffusemap textures/Dam/damwater3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater4RC
+{
+	diffusemap textures/Dam/damwater4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater5RC
+{
+	diffusemap textures/Dam/damwater5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater6RC
+{
+	diffusemap textures/Dam/damwater6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater7RC
+{
+	diffusemap textures/Dam/damwater7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater8RC
+{
+	diffusemap textures/Dam/damwater8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwater9RC
+{
+	diffusemap textures/Dam/damwater9RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwatercolor1R
+{
+	diffusemap textures/Dam/damwatercolor1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwaterhit1RC
+{
+	diffusemap textures/Dam/damwaterhit1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwhitestripRC
+{
+	diffusemap textures/Dam/damwhitestripRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwindow1RC
+{
+	diffusemap textures/Dam/damwindow1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwindow2RC
+{
+	diffusemap textures/Dam/damwindow2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwlkside1RC
+{
+	diffusemap textures/Dam/damwlkside1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/damwoodwall1RC
+{
+	diffusemap textures/Dam/damwoodwall1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_beam1sah
+{
+	diffusemap textures/Dam/Dam_beam1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_beam2sah
+{
+	diffusemap textures/Dam/Dam_beam2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_Ceiling1sah
+{
+	diffusemap textures/Dam/Dam_Ceiling1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_cmntwl7sah
+{
+	diffusemap textures/Dam/Dam_cmntwl7sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_Ctrl2sah
+{
+	diffusemap textures/Dam/Dam_Ctrl2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_Ctrl3sah
+{
+	diffusemap textures/Dam/Dam_Ctrl3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav1Asah
+{
+	diffusemap textures/Dam/Dam_engrav1Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav1sah
+{
+	diffusemap textures/Dam/Dam_engrav1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav2Asah
+{
+	diffusemap textures/Dam/Dam_engrav2Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav2sah
+{
+	diffusemap textures/Dam/Dam_engrav2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav3Asah
+{
+	diffusemap textures/Dam/Dam_engrav3Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav3sah
+{
+	diffusemap textures/Dam/Dam_engrav3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav4Asah
+{
+	diffusemap textures/Dam/Dam_engrav4Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav4sah
+{
+	diffusemap textures/Dam/Dam_engrav4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav5Asah
+{
+	diffusemap textures/Dam/Dam_engrav5Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav5sah
+{
+	diffusemap textures/Dam/Dam_engrav5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav6Asah
+{
+	diffusemap textures/Dam/Dam_engrav6Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_engrav6sah
+{
+	diffusemap textures/Dam/Dam_engrav6sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_grate1sah
+{
+	diffusemap textures/Dam/Dam_grate1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_plan1sah
+{
+	diffusemap textures/Dam/Dam_plan1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_plan2sah
+{
+	diffusemap textures/Dam/Dam_plan2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_plan3sah
+{
+	diffusemap textures/Dam/Dam_plan3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_plan4sah
+{
+	diffusemap textures/Dam/Dam_plan4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_plan5sah
+{
+	diffusemap textures/Dam/Dam_plan5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_plan6sah
+{
+	diffusemap textures/Dam/Dam_plan6sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dam_skybx4sah
+{
+	diffusemap textures/Dam/dam_skybx4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dam_skybx5sah
+{
+	diffusemap textures/Dam/dam_skybx5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_tank02sah
+{
+	diffusemap textures/Dam/Dam_tank02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Dam_tank03sah
+{
+	diffusemap textures/Dam/Dam_tank03sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dream1sah
+{
+	diffusemap textures/Dam/dream1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dream2sah
+{
+	diffusemap textures/Dam/dream2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dream3sah
+{
+	diffusemap textures/Dam/dream3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/dream4sah
+{
+	diffusemap textures/Dam/dream4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Flr_Concrt1sah
+{
+	diffusemap textures/Dam/Flr_Concrt1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/gear02
+{
+	diffusemap textures/Dam/gear02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/gear03
+{
+	diffusemap textures/Dam/gear03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/holobprint1BC
+{
+	diffusemap textures/Dam/holobprint1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Jewelry0sah
+{
+	diffusemap textures/Dam/Jewelry0sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/keybrd1sah
+{
+	diffusemap textures/Dam/keybrd1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/keybrd2sah
+{
+	diffusemap textures/Dam/keybrd2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/pavem1sah
+{
+	diffusemap textures/Dam/pavem1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/pavemX1sah
+{
+	diffusemap textures/Dam/pavemX1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/pipes02sah
+{
+	diffusemap textures/Dam/pipes02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/ProjCabnt1sah
+{
+	diffusemap textures/Dam/ProjCabnt1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/ProjCabnt2sah
+{
+	diffusemap textures/Dam/ProjCabnt2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/RAIL20sah
+{
+	diffusemap textures/Dam/RAIL20sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Snackmenu1sah
+{
+	diffusemap textures/Dam/Snackmenu1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Snackmenu2sah
+{
+	diffusemap textures/Dam/Snackmenu2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Snacktour1sah
+{
+	diffusemap textures/Dam/Snacktour1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Snacktour2sah
+{
+	diffusemap textures/Dam/Snacktour2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Snacktour3sah
+{
+	diffusemap textures/Dam/Snacktour3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/toolwall1BC
+{
+	diffusemap textures/Dam/toolwall1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/toolwall2BC
+{
+	diffusemap textures/Dam/toolwall2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/toolwall3BC
+{
+	diffusemap textures/Dam/toolwall3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/vcrscreen2BC
+{
+	diffusemap textures/Dam/vcrscreen2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Visoutside1sah
+{
+	diffusemap textures/Dam/Visoutside1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_boxart1
+{
+	diffusemap textures/Dam/Vis_boxart1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_boxart2
+{
+	diffusemap textures/Dam/Vis_boxart2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_carpet1sah
+{
+	diffusemap textures/Dam/Vis_carpet1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_divider1sah
+{
+	diffusemap textures/Dam/Vis_divider1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_Flag01sah
+{
+	diffusemap textures/Dam/Vis_Flag01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_Flag02sah
+{
+	diffusemap textures/Dam/Vis_Flag02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_Flag03sah
+{
+	diffusemap textures/Dam/Vis_Flag03sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_Floor1sah
+{
+	diffusemap textures/Dam/Vis_Floor1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit1sah
+{
+	diffusemap textures/Dam/Vis_monit1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit2sah
+{
+	diffusemap textures/Dam/Vis_monit2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit3sah
+{
+	diffusemap textures/Dam/Vis_monit3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit4sah
+{
+	diffusemap textures/Dam/Vis_monit4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit5sah
+{
+	diffusemap textures/Dam/Vis_monit5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit6sah
+{
+	diffusemap textures/Dam/Vis_monit6sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit7sah
+{
+	diffusemap textures/Dam/Vis_monit7sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit8sah
+{
+	diffusemap textures/Dam/Vis_monit8sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_monit9sah
+{
+	diffusemap textures/Dam/Vis_monit9sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_panel1sah
+{
+	diffusemap textures/Dam/Vis_panel1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign0Asah
+{
+	diffusemap textures/Dam/Vis_sign0Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign0Fsah
+{
+	diffusemap textures/Dam/Vis_sign0Fsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign10sah
+{
+	diffusemap textures/Dam/Vis_sign10sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign11sah
+{
+	diffusemap textures/Dam/Vis_sign11sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign12sah
+{
+	diffusemap textures/Dam/Vis_sign12sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign1sah
+{
+	diffusemap textures/Dam/Vis_sign1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign2sah
+{
+	diffusemap textures/Dam/Vis_sign2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign3sah
+{
+	diffusemap textures/Dam/Vis_sign3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign4sah
+{
+	diffusemap textures/Dam/Vis_sign4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign5Bsah
+{
+	diffusemap textures/Dam/Vis_sign5Bsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign5Csah
+{
+	diffusemap textures/Dam/Vis_sign5Csah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign5sah
+{
+	diffusemap textures/Dam/Vis_sign5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign6Bsah
+{
+	diffusemap textures/Dam/Vis_sign6Bsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign6Csah
+{
+	diffusemap textures/Dam/Vis_sign6Csah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign6Dsah
+{
+	diffusemap textures/Dam/Vis_sign6Dsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign7sah
+{
+	diffusemap textures/Dam/Vis_sign7sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign8sah
+{
+	diffusemap textures/Dam/Vis_sign8sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_sign9sah
+{
+	diffusemap textures/Dam/Vis_sign9sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_slot1sah
+{
+	diffusemap textures/Dam/Vis_slot1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_wall1sah
+{
+	diffusemap textures/Dam/Vis_wall1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_wall3sah
+{
+	diffusemap textures/Dam/Vis_wall3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/Vis_WallOsah
+{
+	diffusemap textures/Dam/Vis_WallOsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/waterwhite
+{
+	diffusemap textures/Dam/waterwhite.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/WelcomeW1sah
+{
+	diffusemap textures/Dam/WelcomeW1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Dam/WelcomeW2sah
+{
+	diffusemap textures/Dam/WelcomeW2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

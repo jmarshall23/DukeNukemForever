@@ -1,0 +1,1092 @@
+textures/powerpuzzle1/blankpiece1BC
+{
+	diffusemap textures/powerpuzzle1/blankpiece1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/blankpiece2BC
+{
+	diffusemap textures/powerpuzzle1/blankpiece2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/blankpiece3BC
+{
+	diffusemap textures/powerpuzzle1/blankpiece3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/blankpiece4BC
+{
+	diffusemap textures/powerpuzzle1/blankpiece4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA0BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA1BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA2BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA3BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA4BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA5BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA6BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA7BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA8BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftA9BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftA9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB0BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB1BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB2BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB3BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB4BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB5BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB6BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB7BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB8BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomleftB9BC
+{
+	diffusemap textures/powerpuzzle1/bottomleftB9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA0BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA1BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA2BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA3BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA4BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA5BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA6BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA7BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA8BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightA9BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightA9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB0BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB1BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB2BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB3BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB4BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB5BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB6BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB7BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB8BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/bottomrightB9BC
+{
+	diffusemap textures/powerpuzzle1/bottomrightB9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END0BC
+{
+	diffusemap textures/powerpuzzle1/END0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END1BC
+{
+	diffusemap textures/powerpuzzle1/END1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END2BC
+{
+	diffusemap textures/powerpuzzle1/END2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END3BC
+{
+	diffusemap textures/powerpuzzle1/END3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END4BC
+{
+	diffusemap textures/powerpuzzle1/END4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END5BC
+{
+	diffusemap textures/powerpuzzle1/END5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END6BC
+{
+	diffusemap textures/powerpuzzle1/END6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END7BC
+{
+	diffusemap textures/powerpuzzle1/END7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END8BC
+{
+	diffusemap textures/powerpuzzle1/END8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/END9BC
+{
+	diffusemap textures/powerpuzzle1/END9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/highlightglow1B
+{
+	diffusemap textures/powerpuzzle1/highlightglow1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/highlightglow2B
+{
+	diffusemap textures/powerpuzzle1/highlightglow2B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/highlightglow3B
+{
+	diffusemap textures/powerpuzzle1/highlightglow3B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/highlightglow4B
+{
+	diffusemap textures/powerpuzzle1/highlightglow4B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA0BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA1BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA2BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA3BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA4BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA5BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA6BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA7BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA8BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalA9BC
+{
+	diffusemap textures/powerpuzzle1/horizontalA9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB0BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB1BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB2BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB3BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB4BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB5BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB6BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB7BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB8BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/horizontalB9BC
+{
+	diffusemap textures/powerpuzzle1/horizontalB9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA0BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA1BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA2BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA3BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA4BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA5BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA6BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA7BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA8BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopA9BC
+{
+	diffusemap textures/powerpuzzle1/lefttopA9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB0BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB1BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB2BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB3BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB4BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB5BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB6BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB7BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB8BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/lefttopB9BC
+{
+	diffusemap textures/powerpuzzle1/lefttopB9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/obstacle1BC
+{
+	diffusemap textures/powerpuzzle1/obstacle1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/obstacle2BC
+{
+	diffusemap textures/powerpuzzle1/obstacle2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/obstacle3BC
+{
+	diffusemap textures/powerpuzzle1/obstacle3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/ppuzzle_screen
+{
+	diffusemap textures/powerpuzzle1/ppuzzle_screen.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/ppuzzle_screen2
+{
+	diffusemap textures/powerpuzzle1/ppuzzle_screen2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/ppuzzle_screen3
+{
+	diffusemap textures/powerpuzzle1/ppuzzle_screen3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/ppuzzle_screen4
+{
+	diffusemap textures/powerpuzzle1/ppuzzle_screen4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/puzbackground1B
+{
+	diffusemap textures/powerpuzzle1/puzbackground1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA0BC
+{
+	diffusemap textures/powerpuzzle1/righttopA0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA1BC
+{
+	diffusemap textures/powerpuzzle1/righttopA1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA2BC
+{
+	diffusemap textures/powerpuzzle1/righttopA2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA3BC
+{
+	diffusemap textures/powerpuzzle1/righttopA3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA4BC
+{
+	diffusemap textures/powerpuzzle1/righttopA4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA5BC
+{
+	diffusemap textures/powerpuzzle1/righttopA5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA6BC
+{
+	diffusemap textures/powerpuzzle1/righttopA6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA7BC
+{
+	diffusemap textures/powerpuzzle1/righttopA7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA8BC
+{
+	diffusemap textures/powerpuzzle1/righttopA8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopA9BC
+{
+	diffusemap textures/powerpuzzle1/righttopA9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB0BC
+{
+	diffusemap textures/powerpuzzle1/righttopB0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB1BC
+{
+	diffusemap textures/powerpuzzle1/righttopB1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB2BC
+{
+	diffusemap textures/powerpuzzle1/righttopB2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB3BC
+{
+	diffusemap textures/powerpuzzle1/righttopB3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB4BC
+{
+	diffusemap textures/powerpuzzle1/righttopB4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB5BC
+{
+	diffusemap textures/powerpuzzle1/righttopB5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB6BC
+{
+	diffusemap textures/powerpuzzle1/righttopB6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB7BC
+{
+	diffusemap textures/powerpuzzle1/righttopB7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB8BC
+{
+	diffusemap textures/powerpuzzle1/righttopB8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/righttopB9BC
+{
+	diffusemap textures/powerpuzzle1/righttopB9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start0BC
+{
+	diffusemap textures/powerpuzzle1/start0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start1BC
+{
+	diffusemap textures/powerpuzzle1/start1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start2BC
+{
+	diffusemap textures/powerpuzzle1/start2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start3BC
+{
+	diffusemap textures/powerpuzzle1/start3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start4BC
+{
+	diffusemap textures/powerpuzzle1/start4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start5BC
+{
+	diffusemap textures/powerpuzzle1/start5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start6BC
+{
+	diffusemap textures/powerpuzzle1/start6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start7BC
+{
+	diffusemap textures/powerpuzzle1/start7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start8BC
+{
+	diffusemap textures/powerpuzzle1/start8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/start9BC
+{
+	diffusemap textures/powerpuzzle1/start9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA0BC
+{
+	diffusemap textures/powerpuzzle1/verticalA0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA1BC
+{
+	diffusemap textures/powerpuzzle1/verticalA1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA2BC
+{
+	diffusemap textures/powerpuzzle1/verticalA2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA3BC
+{
+	diffusemap textures/powerpuzzle1/verticalA3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA4BC
+{
+	diffusemap textures/powerpuzzle1/verticalA4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA5BC
+{
+	diffusemap textures/powerpuzzle1/verticalA5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA6BC
+{
+	diffusemap textures/powerpuzzle1/verticalA6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA7BC
+{
+	diffusemap textures/powerpuzzle1/verticalA7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA8BC
+{
+	diffusemap textures/powerpuzzle1/verticalA8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalA9BC
+{
+	diffusemap textures/powerpuzzle1/verticalA9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB0BC
+{
+	diffusemap textures/powerpuzzle1/verticalB0BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB1BC
+{
+	diffusemap textures/powerpuzzle1/verticalB1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB2BC
+{
+	diffusemap textures/powerpuzzle1/verticalB2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB3BC
+{
+	diffusemap textures/powerpuzzle1/verticalB3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB4BC
+{
+	diffusemap textures/powerpuzzle1/verticalB4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB5BC
+{
+	diffusemap textures/powerpuzzle1/verticalB5BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB6BC
+{
+	diffusemap textures/powerpuzzle1/verticalB6BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB7BC
+{
+	diffusemap textures/powerpuzzle1/verticalB7BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB8BC
+{
+	diffusemap textures/powerpuzzle1/verticalB8BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/powerpuzzle1/verticalB9BC
+{
+	diffusemap textures/powerpuzzle1/verticalB9BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,70 @@
+textures/SMK7/3drlogo_botleft
+{
+	diffusemap textures/SMK7/3drlogo_botleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/3drlogo_botright
+{
+	diffusemap textures/SMK7/3drlogo_botright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/3drlogo_topleft
+{
+	diffusemap textures/SMK7/3drlogo_topleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/3drlogo_topright
+{
+	diffusemap textures/SMK7/3drlogo_topright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/nuke_botleft
+{
+	diffusemap textures/SMK7/nuke_botleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/nuke_botright
+{
+	diffusemap textures/SMK7/nuke_botright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/nuke_topleft
+{
+	diffusemap textures/SMK7/nuke_topleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/nuke_topright
+{
+	diffusemap textures/SMK7/nuke_topright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/pinballscore
+{
+	diffusemap textures/SMK7/pinballscore.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SMK7/pinballscore2
+{
+	diffusemap textures/SMK7/pinballscore2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

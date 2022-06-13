@@ -1,0 +1,7 @@
+textures/bc_tests/handpostestBC
+{
+	diffusemap textures/bc_tests/handpostestBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

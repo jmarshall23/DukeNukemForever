@@ -1,0 +1,28 @@
+textures/SolidColors/ColorSmk01
+{
+	diffusemap textures/SolidColors/ColorSmk01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SolidColors/ColorSmk02
+{
+	diffusemap textures/SolidColors/ColorSmk02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SolidColors/ColorSmk03
+{
+	diffusemap textures/SolidColors/ColorSmk03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/SolidColors/CountSmk
+{
+	diffusemap textures/SolidColors/CountSmk.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

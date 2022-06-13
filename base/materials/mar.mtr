@@ -1,0 +1,91 @@
+textures/mar/alum5_sah
+{
+	diffusemap textures/mar/alum5_sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/bunkergridSAH
+{
+	diffusemap textures/mar/bunkergridSAH.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/floor1
+{
+	diffusemap textures/mar/floor1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/floor2
+{
+	diffusemap textures/mar/floor2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/floor3
+{
+	diffusemap textures/mar/floor3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/MyTex3
+{
+	diffusemap textures/mar/MyTex3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/number_34
+{
+	diffusemap textures/mar/number_34.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/number_56
+{
+	diffusemap textures/mar/number_56.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/number_57
+{
+	diffusemap textures/mar/number_57.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/number_58
+{
+	diffusemap textures/mar/number_58.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/number_arrow
+{
+	diffusemap textures/mar/number_arrow.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/wall2
+{
+	diffusemap textures/mar/wall2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/mar/Wall3
+{
+	diffusemap textures/mar/Wall3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

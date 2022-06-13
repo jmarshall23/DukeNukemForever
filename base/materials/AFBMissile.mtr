@@ -1,0 +1,70 @@
+textures/AFBMissile/RockFire
+{
+	diffusemap textures/AFBMissile/RockFire.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/RockFirePAL
+{
+	diffusemap textures/AFBMissile/RockFirePAL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/RockFireTop
+{
+	diffusemap textures/AFBMissile/RockFireTop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/SmokeCloud01
+{
+	diffusemap textures/AFBMissile/SmokeCloud01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/SmokeCloud02
+{
+	diffusemap textures/AFBMissile/SmokeCloud02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/SmokeCloud03
+{
+	diffusemap textures/AFBMissile/SmokeCloud03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/SmokeJets
+{
+	diffusemap textures/AFBMissile/SmokeJets.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/SmokePAL
+{
+	diffusemap textures/AFBMissile/SmokePAL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/SmokeRaise
+{
+	diffusemap textures/AFBMissile/SmokeRaise.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBMissile/SmokeTemplate
+{
+	diffusemap textures/AFBMissile/SmokeTemplate.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,7 @@
+textures/m_nick/gamblingcupRC
+{
+	diffusemap textures/m_nick/gamblingcupRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

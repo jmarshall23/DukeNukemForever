@@ -1,0 +1,12 @@
+// entity 0
+{
+"classname" "light"
+"name" "light_1"
+"origin" "8 -24 64"
+}
+// entity 1
+{
+"classname" "info_player_start"
+"name" "info_player_start_1"
+"origin" "-200 -24 8"
+}

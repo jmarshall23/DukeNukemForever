@@ -1,0 +1,1239 @@
+textures/oldc_generic/ashtray1_ashtray1
+{
+	diffusemap textures/oldc_generic/ashtray1_ashtray1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/baricade1_baricade1A
+{
+	diffusemap textures/oldc_generic/baricade1_baricade1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/baricade2_baricade2
+{
+	diffusemap textures/oldc_generic/baricade2_baricade2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/barrel2_barrel02
+{
+	diffusemap textures/oldc_generic/barrel2_barrel02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/barrel2_barrel02a
+{
+	diffusemap textures/oldc_generic/barrel2_barrel02a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/barrel_barrel
+{
+	diffusemap textures/oldc_generic/barrel_barrel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/barrel_barrel01
+{
+	diffusemap textures/oldc_generic/barrel_barrel01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/barrel_barrel01a
+{
+	diffusemap textures/oldc_generic/barrel_barrel01a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/BasketBall2mdx_BasketBall2
+{
+	diffusemap textures/oldc_generic/BasketBall2mdx_BasketBall2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/BasketBallHoop_Net
+{
+	diffusemap textures/oldc_generic/BasketBallHoop_Net.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/BB_bball
+{
+	diffusemap textures/oldc_generic/BB_bball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/bedplant1_beachball2RC
+{
+	diffusemap textures/oldc_generic/bedplant1_beachball2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Big_Wheel_Bigwheel
+{
+	diffusemap textures/oldc_generic/Big_Wheel_Bigwheel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Bkwheel_bwheel
+{
+	diffusemap textures/oldc_generic/Bkwheel_bwheel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/blow1_housing01
+{
+	diffusemap textures/oldc_generic/blow1_housing01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/blow1_housing02
+{
+	diffusemap textures/oldc_generic/blow1_housing02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book1A_book1A
+{
+	diffusemap textures/oldc_generic/book1A_book1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book1B_book1B
+{
+	diffusemap textures/oldc_generic/book1B_book1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book1C_book1C
+{
+	diffusemap textures/oldc_generic/book1C_book1C.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book1D_book1D
+{
+	diffusemap textures/oldc_generic/book1D_book1D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book1D_book1D2
+{
+	diffusemap textures/oldc_generic/book1D_book1D2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book2A_book2A
+{
+	diffusemap textures/oldc_generic/book2A_book2A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book2B_book1D
+{
+	diffusemap textures/oldc_generic/book2B_book1D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book2B_book2B2
+{
+	diffusemap textures/oldc_generic/book2B_book2B2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/book2B_book2B3
+{
+	diffusemap textures/oldc_generic/book2B_book2B3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/bottle1_bottle1
+{
+	diffusemap textures/oldc_generic/bottle1_bottle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/bottle2_bottle2
+{
+	diffusemap textures/oldc_generic/bottle2_bottle2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/bottle3_bottle3
+{
+	diffusemap textures/oldc_generic/bottle3_bottle3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/bottle4_bottle4
+{
+	diffusemap textures/oldc_generic/bottle4_bottle4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Brain_Alien1_Temp1
+{
+	diffusemap textures/oldc_generic/Brain_Alien1_Temp1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/burntbug_burntbigskinRC
+{
+	diffusemap textures/oldc_generic/burntbug_burntbigskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/cambase_base
+{
+	diffusemap textures/oldc_generic/cambase_base.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/can1_can1
+{
+	diffusemap textures/oldc_generic/can1_can1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Cardboard_Box_Cardboard
+{
+	diffusemap textures/oldc_generic/Cardboard_Box_Cardboard.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Cardboard_Box_temp1
+{
+	diffusemap textures/oldc_generic/Cardboard_Box_temp1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Car_limo1_limoback01
+{
+	diffusemap textures/oldc_generic/Car_limo1_limoback01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Car_limo1_limofront01
+{
+	diffusemap textures/oldc_generic/Car_limo1_limofront01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Car_limo1_limoside01
+{
+	diffusemap textures/oldc_generic/Car_limo1_limoside01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Car_limo1_limotop01
+{
+	diffusemap textures/oldc_generic/Car_limo1_limotop01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/ceilfanbase_base01
+{
+	diffusemap textures/oldc_generic/ceilfanbase_base01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/ceilfanblade_blade01
+{
+	diffusemap textures/oldc_generic/ceilfanblade_blade01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/CementWheel_wheel1
+{
+	diffusemap textures/oldc_generic/CementWheel_wheel1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/CementWheel_wheel2
+{
+	diffusemap textures/oldc_generic/CementWheel_wheel2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Cement_Bag1_cementbags
+{
+	diffusemap textures/oldc_generic/Cement_Bag1_cementbags.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Cement_Mixer1_body
+{
+	diffusemap textures/oldc_generic/Cement_Mixer1_body.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Cement_Mixer1_cementmixskin
+{
+	diffusemap textures/oldc_generic/Cement_Mixer1_cementmixskin.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/chairoffice1
+{
+	diffusemap textures/oldc_generic/chairoffice1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/chairoffice2
+{
+	diffusemap textures/oldc_generic/chairoffice2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/chandalier1RC_candle1
+{
+	diffusemap textures/oldc_generic/chandalier1RC_candle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/chandalier1RC_candleholder
+{
+	diffusemap textures/oldc_generic/chandalier1RC_candleholder.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/chandalier1RC_crystal1
+{
+	diffusemap textures/oldc_generic/chandalier1RC_crystal1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/chandalier1RC_crystal2a
+{
+	diffusemap textures/oldc_generic/chandalier1RC_crystal2a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/chandalier1RC_goldstrip7
+{
+	diffusemap textures/oldc_generic/chandalier1RC_goldstrip7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/clipboard1_clipboard1
+{
+	diffusemap textures/oldc_generic/clipboard1_clipboard1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/coffeemug1_coffeemug1
+{
+	diffusemap textures/oldc_generic/coffeemug1_coffeemug1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/desklamp2_desklamp2aRC
+{
+	diffusemap textures/oldc_generic/desklamp2_desklamp2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/desklamp2_desklamp2armRC
+{
+	diffusemap textures/oldc_generic/desklamp2_desklamp2armRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/desklamp2_desklamp2bRC
+{
+	diffusemap textures/oldc_generic/desklamp2_desklamp2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Desktoy_ball01
+{
+	diffusemap textures/oldc_generic/Desktoy_ball01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Digital_Clock2_DClock
+{
+	diffusemap textures/oldc_generic/Digital_Clock2_DClock.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/dollarcoinRC_dollarcoinRC
+{
+	diffusemap textures/oldc_generic/dollarcoinRC_dollarcoinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/doorgeneric1_doorgeneric
+{
+	diffusemap textures/oldc_generic/doorgeneric1_doorgeneric.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/doorgenglass1_genglass1RC
+{
+	diffusemap textures/oldc_generic/doorgenglass1_genglass1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/emergencylight1_emergenclite1aRC
+{
+	diffusemap textures/oldc_generic/emergencylight1_emergenclite1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/emergencylight1_emergenclite1RC
+{
+	diffusemap textures/oldc_generic/emergencylight1_emergenclite1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/extinguisher1_extinguisher1
+{
+	diffusemap textures/oldc_generic/extinguisher1_extinguisher1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/eznet1_eznet1_a
+{
+	diffusemap textures/oldc_generic/eznet1_eznet1_a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/eznet1_eznet1_b
+{
+	diffusemap textures/oldc_generic/eznet1_eznet1_b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fan1_housing01
+{
+	diffusemap textures/oldc_generic/Fan1_housing01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fan1_housing02
+{
+	diffusemap textures/oldc_generic/Fan1_housing02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/fanstring_base01
+{
+	diffusemap textures/oldc_generic/fanstring_base01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fan_Base_housing02
+{
+	diffusemap textures/oldc_generic/Fan_Base_housing02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fan_Blades_fanblade
+{
+	diffusemap textures/oldc_generic/Fan_Blades_fanblade.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fireplace_Broom_broom
+{
+	diffusemap textures/oldc_generic/Fireplace_Broom_broom.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fireplace_Dustp_dustpan
+{
+	diffusemap textures/oldc_generic/Fireplace_Dustp_dustpan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fireplace_Log_log
+{
+	diffusemap textures/oldc_generic/Fireplace_Log_log.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Fireplace_Rack_Rack
+{
+	diffusemap textures/oldc_generic/Fireplace_Rack_Rack.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Gas_Can_gascan
+{
+	diffusemap textures/oldc_generic/Gas_Can_gascan.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Gas_Can_gaslable
+{
+	diffusemap textures/oldc_generic/Gas_Can_gaslable.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Grass1_grass1
+{
+	diffusemap textures/oldc_generic/Grass1_grass1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Gun_gun
+{
+	diffusemap textures/oldc_generic/Gun_gun.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Hammer_hammer1
+{
+	diffusemap textures/oldc_generic/Hammer_hammer1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Hammer_hammer2
+{
+	diffusemap textures/oldc_generic/Hammer_hammer2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Handle_toilet2
+{
+	diffusemap textures/oldc_generic/Handle_toilet2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/hangbulb1_base1
+{
+	diffusemap textures/oldc_generic/hangbulb1_base1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/hangbulb2_light01
+{
+	diffusemap textures/oldc_generic/hangbulb2_light01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/hardhat_hardhat
+{
+	diffusemap textures/oldc_generic/hardhat_hardhat.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/hydrant4_hydrant2
+{
+	diffusemap textures/oldc_generic/hydrant4_hydrant2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/hydrant4_hydrant2a
+{
+	diffusemap textures/oldc_generic/hydrant4_hydrant2a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/hydrant4_hydrant3
+{
+	diffusemap textures/oldc_generic/hydrant4_hydrant3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/hydrant4_hydrant3a
+{
+	diffusemap textures/oldc_generic/hydrant4_hydrant3a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/icebucket_bottle01
+{
+	diffusemap textures/oldc_generic/icebucket_bottle01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/icebucket_bucket01
+{
+	diffusemap textures/oldc_generic/icebucket_bucket01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Jackhammer1_jhammer
+{
+	diffusemap textures/oldc_generic/Jackhammer1_jhammer.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Lamp_Lamp
+{
+	diffusemap textures/oldc_generic/Lamp_Lamp.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/lightblind1RC_nullRC
+{
+	diffusemap textures/oldc_generic/lightblind1RC_nullRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/lightswitch1RC_lightswitch1RC
+{
+	diffusemap textures/oldc_generic/lightswitch1RC_lightswitch1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/lightswitch1RC_lightswitchswRC
+{
+	diffusemap textures/oldc_generic/lightswitch1RC_lightswitchswRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Light_Halogen_lghthalogn
+{
+	diffusemap textures/oldc_generic/Light_Halogen_lghthalogn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Light_Halogen_lghthalogn2
+{
+	diffusemap textures/oldc_generic/Light_Halogen_lghthalogn2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/LimoWheel1_wheel01
+{
+	diffusemap textures/oldc_generic/LimoWheel1_wheel01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/LimoWheel1_wheel02
+{
+	diffusemap textures/oldc_generic/LimoWheel1_wheel02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/livewire_wires
+{
+	diffusemap textures/oldc_generic/livewire_wires.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/longhand_wallclock
+{
+	diffusemap textures/oldc_generic/longhand_wallclock.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/metalsink1_metalsink1RC
+{
+	diffusemap textures/oldc_generic/metalsink1_metalsink1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/mopbucket_Mopbucket
+{
+	diffusemap textures/oldc_generic/mopbucket_Mopbucket.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/mop_mop
+{
+	diffusemap textures/oldc_generic/mop_mop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/mop_mop1
+{
+	diffusemap textures/oldc_generic/mop_mop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/outdoorlamp2_outdoorlit1
+{
+	diffusemap textures/oldc_generic/outdoorlamp2_outdoorlit1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/PaintCan2_paintcan01
+{
+	diffusemap textures/oldc_generic/PaintCan2_paintcan01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/PaintCan2_paintcan02
+{
+	diffusemap textures/oldc_generic/PaintCan2_paintcan02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/PaintCan2_paintcan03
+{
+	diffusemap textures/oldc_generic/PaintCan2_paintcan03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Paper_Bag_pbag
+{
+	diffusemap textures/oldc_generic/Paper_Bag_pbag.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/parkingmeter2_parkingmeter2A
+{
+	diffusemap textures/oldc_generic/parkingmeter2_parkingmeter2A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/parkingmeter2_parkingmeter2B
+{
+	diffusemap textures/oldc_generic/parkingmeter2_parkingmeter2B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/pipe1A_pipe1AA
+{
+	diffusemap textures/oldc_generic/pipe1A_pipe1AA.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/pipe1A_pipe1AB
+{
+	diffusemap textures/oldc_generic/pipe1A_pipe1AB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/plant01
+{
+	diffusemap textures/oldc_generic/plant01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/plant1RC_greenplant1RC
+{
+	diffusemap textures/oldc_generic/plant1RC_greenplant1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/plant1RC_potplant1RC
+{
+	diffusemap textures/oldc_generic/plant1RC_potplant1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/plant1RC_soilplant1RC
+{
+	diffusemap textures/oldc_generic/plant1RC_soilplant1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/pmeterknob_pmeterknob
+{
+	diffusemap textures/oldc_generic/pmeterknob_pmeterknob.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/pmeterneedle2_pmeterneedle
+{
+	diffusemap textures/oldc_generic/pmeterneedle2_pmeterneedle.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/pmeterneedle_pmeterneedle
+{
+	diffusemap textures/oldc_generic/pmeterneedle_pmeterneedle.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/pmeter_pmeter
+{
+	diffusemap textures/oldc_generic/pmeter_pmeter.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/pole_elecpole01
+{
+	diffusemap textures/oldc_generic/pole_elecpole01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/porchlight_porchlight
+{
+	diffusemap textures/oldc_generic/porchlight_porchlight.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/POT01
+{
+	diffusemap textures/oldc_generic/POT01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/powermeter1_powermeter1
+{
+	diffusemap textures/oldc_generic/powermeter1_powermeter1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/redsirenRC_rsirenbaseRC
+{
+	diffusemap textures/oldc_generic/redsirenRC_rsirenbaseRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/redsirenRC_rsirenskinRC
+{
+	diffusemap textures/oldc_generic/redsirenRC_rsirenskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/rig1_rig1
+{
+	diffusemap textures/oldc_generic/rig1_rig1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Robo_Tender1_robotender01
+{
+	diffusemap textures/oldc_generic/Robo_Tender1_robotender01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Robo_Tender1_robotender02
+{
+	diffusemap textures/oldc_generic/Robo_Tender1_robotender02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Sawhorses1_sawhorse01
+{
+	diffusemap textures/oldc_generic/Sawhorses1_sawhorse01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/scaffold1_scaffold1
+{
+	diffusemap textures/oldc_generic/scaffold1_scaffold1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/scaffold2_scaffold2
+{
+	diffusemap textures/oldc_generic/scaffold2_scaffold2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/scaffold3_scaffold3
+{
+	diffusemap textures/oldc_generic/scaffold3_scaffold3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/secrcam1A_SECRCAM1A
+{
+	diffusemap textures/oldc_generic/secrcam1A_SECRCAM1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/secrcam1B_SECRCAM1B
+{
+	diffusemap textures/oldc_generic/secrcam1B_SECRCAM1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/SecurityCam1_Cam
+{
+	diffusemap textures/oldc_generic/SecurityCam1_Cam.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Shovel1_shovel
+{
+	diffusemap textures/oldc_generic/Shovel1_shovel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/spotlight1_spotlightskinRC
+{
+	diffusemap textures/oldc_generic/spotlight1_spotlightskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/stool1_stool1
+{
+	diffusemap textures/oldc_generic/stool1_stool1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/stoplight_stoplightnightRC
+{
+	diffusemap textures/oldc_generic/stoplight_stoplightnightRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/streamers_high_streamers01
+{
+	diffusemap textures/oldc_generic/streamers_high_streamers01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/streamers_mediu_streamers01
+{
+	diffusemap textures/oldc_generic/streamers_mediu_streamers01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/table1_table01c
+{
+	diffusemap textures/oldc_generic/table1_table01c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/table_table01c
+{
+	diffusemap textures/oldc_generic/table_table01c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/taxicab1_taxicab1A
+{
+	diffusemap textures/oldc_generic/taxicab1_taxicab1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/taxicab1_taxicab1B
+{
+	diffusemap textures/oldc_generic/taxicab1_taxicab1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/telefonepole2_telefonepole2A
+{
+	diffusemap textures/oldc_generic/telefonepole2_telefonepole2A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Tire1_tiretopbmp
+{
+	diffusemap textures/oldc_generic/Tire1_tiretopbmp.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Tire1_tread
+{
+	diffusemap textures/oldc_generic/Tire1_tread.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Tonka_Truck_tonka
+{
+	diffusemap textures/oldc_generic/Tonka_Truck_tonka.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/tracklight_brac_tracklightskin1
+{
+	diffusemap textures/oldc_generic/tracklight_brac_tracklightskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/Traffic_Cone1_tcone
+{
+	diffusemap textures/oldc_generic/Traffic_Cone1_tcone.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/trashcan2_trashcan2
+{
+	diffusemap textures/oldc_generic/trashcan2_trashcan2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/tripod1_tripodskinRC
+{
+	diffusemap textures/oldc_generic/tripod1_tripodskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/tv1_tv
+{
+	diffusemap textures/oldc_generic/tv1_tv.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/TydBOTref_tydbot
+{
+	diffusemap textures/oldc_generic/TydBOTref_tydbot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/umbrella1_umbrella1a
+{
+	diffusemap textures/oldc_generic/umbrella1_umbrella1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/umbrella1_umbrella1b
+{
+	diffusemap textures/oldc_generic/umbrella1_umbrella1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/umbrella_umbrella1a
+{
+	diffusemap textures/oldc_generic/umbrella_umbrella1a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/umbrella_umbrella1b
+{
+	diffusemap textures/oldc_generic/umbrella_umbrella1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/urinal_urinal
+{
+	diffusemap textures/oldc_generic/urinal_urinal.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/VSign_VSign
+{
+	diffusemap textures/oldc_generic/VSign_VSign.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce1_lght13b
+{
+	diffusemap textures/oldc_generic/wallsconce1_lght13b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce1_lght14
+{
+	diffusemap textures/oldc_generic/wallsconce1_lght14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce2_lght12
+{
+	diffusemap textures/oldc_generic/wallsconce2_lght12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce3_lght13
+{
+	diffusemap textures/oldc_generic/wallsconce3_lght13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce3_lght13b
+{
+	diffusemap textures/oldc_generic/wallsconce3_lght13b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce3_lght13c
+{
+	diffusemap textures/oldc_generic/wallsconce3_lght13c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce4_lght11
+{
+	diffusemap textures/oldc_generic/wallsconce4_lght11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wallsconce5_lght12
+{
+	diffusemap textures/oldc_generic/wallsconce5_lght12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/waterfount1
+{
+	diffusemap textures/oldc_generic/waterfount1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/oldc_generic/wetfloorsign1_wetfloorsignRC
+{
+	diffusemap textures/oldc_generic/wetfloorsign1_wetfloorsignRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

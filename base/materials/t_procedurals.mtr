@@ -1,0 +1,63 @@
+textures/t_procedurals/gabboanim_1tw
+{
+	diffusemap textures/t_procedurals/gabboanim_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/gabboshow_1tw
+{
+	diffusemap textures/t_procedurals/gabboshow_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/gunship_thrust
+{
+	diffusemap textures/t_procedurals/gunship_thrust.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/proslug1RC
+{
+	diffusemap textures/t_procedurals/proslug1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/proslug2RC
+{
+	diffusemap textures/t_procedurals/proslug2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/sewerwater
+{
+	diffusemap textures/t_procedurals/sewerwater.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/sewerwater2tw
+{
+	diffusemap textures/t_procedurals/sewerwater2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/sewerwater3tw
+{
+	diffusemap textures/t_procedurals/sewerwater3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_procedurals/sewerwater4tw
+{
+	diffusemap textures/t_procedurals/sewerwater4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

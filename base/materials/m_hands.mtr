@@ -1,0 +1,161 @@
+textures/m_hands/cyclechromeRC
+{
+	diffusemap textures/m_hands/cyclechromeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/cyclemoto1RC
+{
+	diffusemap textures/m_hands/cyclemoto1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/cyclemoto2RC
+{
+	diffusemap textures/m_hands/cyclemoto2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield1BC
+{
+	diffusemap textures/m_hands/edfshield1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield2BC
+{
+	diffusemap textures/m_hands/edfshield2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield3BC
+{
+	diffusemap textures/m_hands/edfshield3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield4BC
+{
+	diffusemap textures/m_hands/edfshield4BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield_break1tile
+{
+	diffusemap textures/m_hands/edfshield_break1tile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield_break2tile
+{
+	diffusemap textures/m_hands/edfshield_break2tile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield_break3tile
+{
+	diffusemap textures/m_hands/edfshield_break3tile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield_break4tile
+{
+	diffusemap textures/m_hands/edfshield_break4tile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield_break5tile
+{
+	diffusemap textures/m_hands/edfshield_break5tile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/edfshield_break6tile
+{
+	diffusemap textures/m_hands/edfshield_break6tile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/Fsnatcher1aRC
+{
+	diffusemap textures/m_hands/Fsnatcher1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/Fsnatcher1bRC
+{
+	diffusemap textures/m_hands/Fsnatcher1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/Fsnatcher1cRC
+{
+	diffusemap textures/m_hands/Fsnatcher1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/hands1RC
+{
+	diffusemap textures/m_hands/hands1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/hands2RC
+{
+	diffusemap textures/m_hands/hands2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/kcontrol1BC
+{
+	diffusemap textures/m_hands/kcontrol1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/kcontrol2BC
+{
+	diffusemap textures/m_hands/kcontrol2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/kcontrol3BC
+{
+	diffusemap textures/m_hands/kcontrol3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/kecntrlhand1BC
+{
+	diffusemap textures/m_hands/kecntrlhand1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_hands/leverskin1BC
+{
+	diffusemap textures/m_hands/leverskin1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

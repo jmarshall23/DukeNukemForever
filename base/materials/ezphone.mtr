@@ -1,0 +1,756 @@
+textures/ezphone/ezphone_busy
+{
+	diffusemap textures/ezphone/ezphone_busy.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/ezphone_canvas
+{
+	diffusemap textures/ezphone/ezphone_canvas.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/ezphone_con
+{
+	diffusemap textures/ezphone/ezphone_con.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/ezphone_dis
+{
+	diffusemap textures/ezphone/ezphone_dis.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/ezphone_err
+{
+	diffusemap textures/ezphone/ezphone_err.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/ezphone_inc
+{
+	diffusemap textures/ezphone/ezphone_inc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/ezphone_main
+{
+	diffusemap textures/ezphone/ezphone_main.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/ezphone_saver
+{
+	diffusemap textures/ezphone/ezphone_saver.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/oldman
+{
+	diffusemap textures/ezphone/oldman.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerB
+{
+	diffusemap textures/ezphone/vd_answerB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerD
+{
+	diffusemap textures/ezphone/vd_answerD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerHB
+{
+	diffusemap textures/ezphone/vd_answerHB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerHD
+{
+	diffusemap textures/ezphone/vd_answerHD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerHO
+{
+	diffusemap textures/ezphone/vd_answerHO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerHP
+{
+	diffusemap textures/ezphone/vd_answerHP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerHY
+{
+	diffusemap textures/ezphone/vd_answerHY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerO
+{
+	diffusemap textures/ezphone/vd_answerO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerP
+{
+	diffusemap textures/ezphone/vd_answerP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_answerY
+{
+	diffusemap textures/ezphone/vd_answerY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgAB
+{
+	diffusemap textures/ezphone/vd_backgAB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgAD
+{
+	diffusemap textures/ezphone/vd_backgAD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgAO
+{
+	diffusemap textures/ezphone/vd_backgAO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgAP
+{
+	diffusemap textures/ezphone/vd_backgAP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgAY
+{
+	diffusemap textures/ezphone/vd_backgAY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgB
+{
+	diffusemap textures/ezphone/vd_backgB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgD
+{
+	diffusemap textures/ezphone/vd_backgD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgO
+{
+	diffusemap textures/ezphone/vd_backgO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgP
+{
+	diffusemap textures/ezphone/vd_backgP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_backgY
+{
+	diffusemap textures/ezphone/vd_backgY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_callHB
+{
+	diffusemap textures/ezphone/vd_callHB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_callHD
+{
+	diffusemap textures/ezphone/vd_callHD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_callHO
+{
+	diffusemap textures/ezphone/vd_callHO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_callHP
+{
+	diffusemap textures/ezphone/vd_callHP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_callHY
+{
+	diffusemap textures/ezphone/vd_callHY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupB
+{
+	diffusemap textures/ezphone/vd_hangupB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupD
+{
+	diffusemap textures/ezphone/vd_hangupD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupHB
+{
+	diffusemap textures/ezphone/vd_hangupHB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupHD
+{
+	diffusemap textures/ezphone/vd_hangupHD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupHO
+{
+	diffusemap textures/ezphone/vd_hangupHO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupHP
+{
+	diffusemap textures/ezphone/vd_hangupHP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupHY
+{
+	diffusemap textures/ezphone/vd_hangupHY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupO
+{
+	diffusemap textures/ezphone/vd_hangupO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupP
+{
+	diffusemap textures/ezphone/vd_hangupP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_hangupY
+{
+	diffusemap textures/ezphone/vd_hangupY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_keypB
+{
+	diffusemap textures/ezphone/vd_keypB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_keypO
+{
+	diffusemap textures/ezphone/vd_keypO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_keypP
+{
+	diffusemap textures/ezphone/vd_keypP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_keypY
+{
+	diffusemap textures/ezphone/vd_keypY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num0B
+{
+	diffusemap textures/ezphone/vd_num0B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num0D
+{
+	diffusemap textures/ezphone/vd_num0D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num0O
+{
+	diffusemap textures/ezphone/vd_num0O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num0P
+{
+	diffusemap textures/ezphone/vd_num0P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num0Y
+{
+	diffusemap textures/ezphone/vd_num0Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num1B
+{
+	diffusemap textures/ezphone/vd_num1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num1D
+{
+	diffusemap textures/ezphone/vd_num1D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num1O
+{
+	diffusemap textures/ezphone/vd_num1O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num1P
+{
+	diffusemap textures/ezphone/vd_num1P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num1Y
+{
+	diffusemap textures/ezphone/vd_num1Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num2B
+{
+	diffusemap textures/ezphone/vd_num2B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num2D
+{
+	diffusemap textures/ezphone/vd_num2D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num2O
+{
+	diffusemap textures/ezphone/vd_num2O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num2P
+{
+	diffusemap textures/ezphone/vd_num2P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num2Y
+{
+	diffusemap textures/ezphone/vd_num2Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num3B
+{
+	diffusemap textures/ezphone/vd_num3B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num3D
+{
+	diffusemap textures/ezphone/vd_num3D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num3O
+{
+	diffusemap textures/ezphone/vd_num3O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num3P
+{
+	diffusemap textures/ezphone/vd_num3P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num3Y
+{
+	diffusemap textures/ezphone/vd_num3Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num4B
+{
+	diffusemap textures/ezphone/vd_num4B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num4D
+{
+	diffusemap textures/ezphone/vd_num4D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num4O
+{
+	diffusemap textures/ezphone/vd_num4O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num4P
+{
+	diffusemap textures/ezphone/vd_num4P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num4Y
+{
+	diffusemap textures/ezphone/vd_num4Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num5B
+{
+	diffusemap textures/ezphone/vd_num5B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num5D
+{
+	diffusemap textures/ezphone/vd_num5D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num5O
+{
+	diffusemap textures/ezphone/vd_num5O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num5P
+{
+	diffusemap textures/ezphone/vd_num5P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num5Y
+{
+	diffusemap textures/ezphone/vd_num5Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num6B
+{
+	diffusemap textures/ezphone/vd_num6B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num6D
+{
+	diffusemap textures/ezphone/vd_num6D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num6O
+{
+	diffusemap textures/ezphone/vd_num6O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num6P
+{
+	diffusemap textures/ezphone/vd_num6P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num6Y
+{
+	diffusemap textures/ezphone/vd_num6Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num7B
+{
+	diffusemap textures/ezphone/vd_num7B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num7D
+{
+	diffusemap textures/ezphone/vd_num7D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num7O
+{
+	diffusemap textures/ezphone/vd_num7O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num7P
+{
+	diffusemap textures/ezphone/vd_num7P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num7Y
+{
+	diffusemap textures/ezphone/vd_num7Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num8B
+{
+	diffusemap textures/ezphone/vd_num8B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num8D
+{
+	diffusemap textures/ezphone/vd_num8D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num8O
+{
+	diffusemap textures/ezphone/vd_num8O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num8P
+{
+	diffusemap textures/ezphone/vd_num8P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num8Y
+{
+	diffusemap textures/ezphone/vd_num8Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num9B
+{
+	diffusemap textures/ezphone/vd_num9B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num9D
+{
+	diffusemap textures/ezphone/vd_num9D.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num9O
+{
+	diffusemap textures/ezphone/vd_num9O.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num9P
+{
+	diffusemap textures/ezphone/vd_num9P.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_num9Y
+{
+	diffusemap textures/ezphone/vd_num9Y.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numpndB
+{
+	diffusemap textures/ezphone/vd_numpndB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numpndD
+{
+	diffusemap textures/ezphone/vd_numpndD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numpndO
+{
+	diffusemap textures/ezphone/vd_numpndO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numpndP
+{
+	diffusemap textures/ezphone/vd_numpndP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numpndY
+{
+	diffusemap textures/ezphone/vd_numpndY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numstarB
+{
+	diffusemap textures/ezphone/vd_numstarB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numstarD
+{
+	diffusemap textures/ezphone/vd_numstarD.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numstarO
+{
+	diffusemap textures/ezphone/vd_numstarO.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numstarP
+{
+	diffusemap textures/ezphone/vd_numstarP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezphone/vd_numstarY
+{
+	diffusemap textures/ezphone/vd_numstarY.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

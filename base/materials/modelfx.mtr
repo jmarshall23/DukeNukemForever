@@ -1,0 +1,49 @@
+textures/modelfx/eznet1_screen
+{
+	diffusemap textures/modelfx/eznet1_screen.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/modelfx/girllampfxRC
+{
+	diffusemap textures/modelfx/girllampfxRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/modelfx/jetfire
+{
+	diffusemap textures/modelfx/jetfire.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/modelfx/keypadisply
+{
+	diffusemap textures/modelfx/keypadisply.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/modelfx/parkmeter2_screen
+{
+	diffusemap textures/modelfx/parkmeter2_screen.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/modelfx/tvstatic
+{
+	diffusemap textures/modelfx/tvstatic.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/modelfx/woodplacRC
+{
+	diffusemap textures/modelfx/woodplacRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

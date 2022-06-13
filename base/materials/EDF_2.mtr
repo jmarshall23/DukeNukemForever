@@ -1,0 +1,1785 @@
+textures/EDF_2/102_1tw
+{
+	diffusemap textures/EDF_2/102_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/102_2atw
+{
+	diffusemap textures/EDF_2/102_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/102_2rtw
+{
+	diffusemap textures/EDF_2/102_2rtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/102_2tw
+{
+	diffusemap textures/EDF_2/102_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/basemett_1tw
+{
+	diffusemap textures/EDF_2/basemett_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/basestripscem_2tw
+{
+	diffusemap textures/EDF_2/basestripscem_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/basestripscem_4tw
+{
+	diffusemap textures/EDF_2/basestripscem_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/basewall23tw
+{
+	diffusemap textures/EDF_2/basewall23tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/basewallog_2tw
+{
+	diffusemap textures/EDF_2/basewallog_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/betweener1tw
+{
+	diffusemap textures/EDF_2/betweener1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/bigwood1tw
+{
+	diffusemap textures/EDF_2/bigwood1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/bigwood3tw
+{
+	diffusemap textures/EDF_2/bigwood3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billface_1tw
+{
+	diffusemap textures/EDF_2/billface_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billface_2tw
+{
+	diffusemap textures/EDF_2/billface_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_3tw
+{
+	diffusemap textures/EDF_2/billtface_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_4tw
+{
+	diffusemap textures/EDF_2/billtface_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_5btw
+{
+	diffusemap textures/EDF_2/billtface_5btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_5tw
+{
+	diffusemap textures/EDF_2/billtface_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_7btw
+{
+	diffusemap textures/EDF_2/billtface_7btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_7tw
+{
+	diffusemap textures/EDF_2/billtface_7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_8tw
+{
+	diffusemap textures/EDF_2/billtface_8tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtface_9tw
+{
+	diffusemap textures/EDF_2/billtface_9tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtrank__1tw
+{
+	diffusemap textures/EDF_2/billtrank__1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtrim_1tw
+{
+	diffusemap textures/EDF_2/billtrim_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtrim_2tw
+{
+	diffusemap textures/EDF_2/billtrim_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtrim_3tw
+{
+	diffusemap textures/EDF_2/billtrim_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/billtrim_4tw
+{
+	diffusemap textures/EDF_2/billtrim_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/blackdur_1tw
+{
+	diffusemap textures/EDF_2/blackdur_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/bluedoor_1tw
+{
+	diffusemap textures/EDF_2/bluedoor_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/bra_door1atw
+{
+	diffusemap textures/EDF_2/bra_door1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/bra_door1tw
+{
+	diffusemap textures/EDF_2/bra_door1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/bricklestan_3atw
+{
+	diffusemap textures/EDF_2/bricklestan_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/bricksta_1tw
+{
+	diffusemap textures/EDF_2/bricksta_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/brongen_1tw
+{
+	diffusemap textures/EDF_2/brongen_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/br_bento_1tw
+{
+	diffusemap textures/EDF_2/br_bento_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/br_bento_2tw
+{
+	diffusemap textures/EDF_2/br_bento_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/carpetog1tw
+{
+	diffusemap textures/EDF_2/carpetog1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/carpetog2tw
+{
+	diffusemap textures/EDF_2/carpetog2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cemstripcrak_1tw
+{
+	diffusemap textures/EDF_2/cemstripcrak_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cem_chipp_1tw
+{
+	diffusemap textures/EDF_2/cem_chipp_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cem_chipp_2tw
+{
+	diffusemap textures/EDF_2/cem_chipp_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cem_chipp_3atw
+{
+	diffusemap textures/EDF_2/cem_chipp_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cem_chipp_3btw
+{
+	diffusemap textures/EDF_2/cem_chipp_3btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cem_chipp_3tw
+{
+	diffusemap textures/EDF_2/cem_chipp_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/checkflo_1tw
+{
+	diffusemap textures/EDF_2/checkflo_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/clubtile_14tw
+{
+	diffusemap textures/EDF_2/clubtile_14tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/clubtile_15atw
+{
+	diffusemap textures/EDF_2/clubtile_15atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/clubtile_16tw
+{
+	diffusemap textures/EDF_2/clubtile_16tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/clubtile_1tw
+{
+	diffusemap textures/EDF_2/clubtile_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/clubtile_2tw
+{
+	diffusemap textures/EDF_2/clubtile_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/clubtile_3atw
+{
+	diffusemap textures/EDF_2/clubtile_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/clubtile_3dtw
+{
+	diffusemap textures/EDF_2/clubtile_3dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/columny1tw
+{
+	diffusemap textures/EDF_2/columny1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/comcenter_1tw
+{
+	diffusemap textures/EDF_2/comcenter_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/comcenter_1ztw
+{
+	diffusemap textures/EDF_2/comcenter_1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/comcenter_2tw
+{
+	diffusemap textures/EDF_2/comcenter_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/conkurb_1abtw
+{
+	diffusemap textures/EDF_2/conkurb_1abtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/conkurb_1atw
+{
+	diffusemap textures/EDF_2/conkurb_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/conkurb_1btw
+{
+	diffusemap textures/EDF_2/conkurb_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/conkwarn_1tw
+{
+	diffusemap textures/EDF_2/conkwarn_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/construfen_1tw
+{
+	diffusemap textures/EDF_2/construfen_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crackroof_1tw
+{
+	diffusemap textures/EDF_2/crackroof_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crackroof_2tw
+{
+	diffusemap textures/EDF_2/crackroof_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cracksand_1atw
+{
+	diffusemap textures/EDF_2/cracksand_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/cracksand_1tw
+{
+	diffusemap textures/EDF_2/cracksand_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crakkyah_1tw
+{
+	diffusemap textures/EDF_2/crakkyah_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crakkyah_2tw
+{
+	diffusemap textures/EDF_2/crakkyah_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crakkyah_3atw
+{
+	diffusemap textures/EDF_2/crakkyah_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crakkyah_3tw
+{
+	diffusemap textures/EDF_2/crakkyah_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crateduct1tw
+{
+	diffusemap textures/EDF_2/crateduct1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/crateduct2tw
+{
+	diffusemap textures/EDF_2/crateduct2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dinkgib_1tw
+{
+	diffusemap textures/EDF_2/dinkgib_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dirtembank_tw
+{
+	diffusemap textures/EDF_2/dirtembank_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/doorjam_2tw
+{
+	diffusemap textures/EDF_2/doorjam_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dripster_1tw
+{
+	diffusemap textures/EDF_2/dripster_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dumpo_1tw
+{
+	diffusemap textures/EDF_2/dumpo_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dumpo_2atw
+{
+	diffusemap textures/EDF_2/dumpo_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dumpo_2btw
+{
+	diffusemap textures/EDF_2/dumpo_2btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dumpo_2ctw
+{
+	diffusemap textures/EDF_2/dumpo_2ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dumpo_2dtw
+{
+	diffusemap textures/EDF_2/dumpo_2dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/dumpo_2tw
+{
+	diffusemap textures/EDF_2/dumpo_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/eddiebrock_1tw
+{
+	diffusemap textures/EDF_2/eddiebrock_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/eddiebrock_2tw
+{
+	diffusemap textures/EDF_2/eddiebrock_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/edf2vent_2tw
+{
+	diffusemap textures/EDF_2/edf2vent_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/edfgads_1tw
+{
+	diffusemap textures/EDF_2/edfgads_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/fanklesdoor_1tw
+{
+	diffusemap textures/EDF_2/fanklesdoor_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/fanklesdoor_2tw
+{
+	diffusemap textures/EDF_2/fanklesdoor_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/flapdo_3atw
+{
+	diffusemap textures/EDF_2/flapdo_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/flapdo_3ctw
+{
+	diffusemap textures/EDF_2/flapdo_3ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/flo_con_3f
+{
+	diffusemap textures/EDF_2/flo_con_3f.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/flo_con_dstw
+{
+	diffusemap textures/EDF_2/flo_con_dstw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/flo_con_dtw
+{
+	diffusemap textures/EDF_2/flo_con_dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/fukyeah4tw
+{
+	diffusemap textures/EDF_2/fukyeah4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/fukyeah5tw
+{
+	diffusemap textures/EDF_2/fukyeah5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gambo_1tw
+{
+	diffusemap textures/EDF_2/gambo_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gardoorub_1tw
+{
+	diffusemap textures/EDF_2/gardoorub_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gardwin_1atw
+{
+	diffusemap textures/EDF_2/gardwin_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gardwin_1tw
+{
+	diffusemap textures/EDF_2/gardwin_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/garmillow_1atw
+{
+	diffusemap textures/EDF_2/garmillow_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/garmillow_1tw
+{
+	diffusemap textures/EDF_2/garmillow_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gencrackle_1tw
+{
+	diffusemap textures/EDF_2/gencrackle_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gencrackle_2tw
+{
+	diffusemap textures/EDF_2/gencrackle_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gencrackle_3tw
+{
+	diffusemap textures/EDF_2/gencrackle_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gencrackle_4tw
+{
+	diffusemap textures/EDF_2/gencrackle_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gillie1tw
+{
+	diffusemap textures/EDF_2/gillie1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gillie2tw
+{
+	diffusemap textures/EDF_2/gillie2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gimpo_2atw
+{
+	diffusemap textures/EDF_2/gimpo_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gimpo_2tw
+{
+	diffusemap textures/EDF_2/gimpo_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/girder_6atw
+{
+	diffusemap textures/EDF_2/girder_6atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/girder_6tw
+{
+	diffusemap textures/EDF_2/girder_6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_1tw
+{
+	diffusemap textures/EDF_2/gobble_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_2tw
+{
+	diffusemap textures/EDF_2/gobble_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_3atw
+{
+	diffusemap textures/EDF_2/gobble_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_3btw
+{
+	diffusemap textures/EDF_2/gobble_3btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_3ctw
+{
+	diffusemap textures/EDF_2/gobble_3ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_3rtw
+{
+	diffusemap textures/EDF_2/gobble_3rtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_3stw
+{
+	diffusemap textures/EDF_2/gobble_3stw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gobble_3ttw
+{
+	diffusemap textures/EDF_2/gobble_3ttw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/graybri_1tw
+{
+	diffusemap textures/EDF_2/graybri_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/grayspunk_1tw
+{
+	diffusemap textures/EDF_2/grayspunk_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/grayspunk_2tw
+{
+	diffusemap textures/EDF_2/grayspunk_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gredbri_1tw
+{
+	diffusemap textures/EDF_2/gredbri_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gredbri_2tw
+{
+	diffusemap textures/EDF_2/gredbri_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/greenthing_1tw
+{
+	diffusemap textures/EDF_2/greenthing_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gridceile_1atw
+{
+	diffusemap textures/EDF_2/gridceile_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gridceile_1tw
+{
+	diffusemap textures/EDF_2/gridceile_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/gridles_1tw
+{
+	diffusemap textures/EDF_2/gridles_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/holeygird_1tw
+{
+	diffusemap textures/EDF_2/holeygird_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/hoser_1tw
+{
+	diffusemap textures/EDF_2/hoser_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/hoser_2tw
+{
+	diffusemap textures/EDF_2/hoser_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/indeconk_1tw
+{
+	diffusemap textures/EDF_2/indeconk_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/jkspank1tw
+{
+	diffusemap textures/EDF_2/jkspank1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/lighto2tw
+{
+	diffusemap textures/EDF_2/lighto2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/lile_trim1tw
+{
+	diffusemap textures/EDF_2/lile_trim1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/louvre_12tw
+{
+	diffusemap textures/EDF_2/louvre_12tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/ltdoor_1tw
+{
+	diffusemap textures/EDF_2/ltdoor_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/ltdoor_2tw
+{
+	diffusemap textures/EDF_2/ltdoor_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/maggiemay1tw
+{
+	diffusemap textures/EDF_2/maggiemay1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/milbastage4atw
+{
+	diffusemap textures/EDF_2/milbastage4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/mil_tilegray_tw
+{
+	diffusemap textures/EDF_2/mil_tilegray_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/mudflap1ztw
+{
+	diffusemap textures/EDF_2/mudflap1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/oboko_1tw
+{
+	diffusemap textures/EDF_2/oboko_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/oddbado_1tw
+{
+	diffusemap textures/EDF_2/oddbado_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/oilboard_1tw
+{
+	diffusemap textures/EDF_2/oilboard_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/oilboard_2atw
+{
+	diffusemap textures/EDF_2/oilboard_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/oro_brick1ztw
+{
+	diffusemap textures/EDF_2/oro_brick1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/pantdoorztw
+{
+	diffusemap textures/EDF_2/pantdoorztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/pantdoorzty
+{
+	diffusemap textures/EDF_2/pantdoorzty.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/piiecemi_1
+{
+	diffusemap textures/EDF_2/piiecemi_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/piiecemi_2
+{
+	diffusemap textures/EDF_2/piiecemi_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/piiecemi_3
+{
+	diffusemap textures/EDF_2/piiecemi_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/planko_1tw
+{
+	diffusemap textures/EDF_2/planko_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/planko_1ztw
+{
+	diffusemap textures/EDF_2/planko_1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/planko_3tw
+{
+	diffusemap textures/EDF_2/planko_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/pockpock1tw
+{
+	diffusemap textures/EDF_2/pockpock1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/pockpock2tw
+{
+	diffusemap textures/EDF_2/pockpock2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/rappamap_1tw
+{
+	diffusemap textures/EDF_2/rappamap_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/rappamap_2tw
+{
+	diffusemap textures/EDF_2/rappamap_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/rappamap_4tw
+{
+	diffusemap textures/EDF_2/rappamap_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/reds_1tw
+{
+	diffusemap textures/EDF_2/reds_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/reds_2tw
+{
+	diffusemap textures/EDF_2/reds_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/ridgedbit1tw
+{
+	diffusemap textures/EDF_2/ridgedbit1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/riub_3tw
+{
+	diffusemap textures/EDF_2/riub_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/rivtrim_1tw
+{
+	diffusemap textures/EDF_2/rivtrim_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/runnywall_1tw
+{
+	diffusemap textures/EDF_2/runnywall_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/runnywall_2tw
+{
+	diffusemap textures/EDF_2/runnywall_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/rustbeam_1tw
+{
+	diffusemap textures/EDF_2/rustbeam_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/sandyconk_2atw
+{
+	diffusemap textures/EDF_2/sandyconk_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/sandyconk_2tw
+{
+	diffusemap textures/EDF_2/sandyconk_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1atw
+{
+	diffusemap textures/EDF_2/scabgib_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1btw
+{
+	diffusemap textures/EDF_2/scabgib_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1ctw
+{
+	diffusemap textures/EDF_2/scabgib_1ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1gtw
+{
+	diffusemap textures/EDF_2/scabgib_1gtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1htw
+{
+	diffusemap textures/EDF_2/scabgib_1htw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1itw
+{
+	diffusemap textures/EDF_2/scabgib_1itw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1jtw
+{
+	diffusemap textures/EDF_2/scabgib_1jtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_1tw
+{
+	diffusemap textures/EDF_2/scabgib_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabgib_2tw
+{
+	diffusemap textures/EDF_2/scabgib_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabrous_3tw
+{
+	diffusemap textures/EDF_2/scabrous_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scabtrim_1tw
+{
+	diffusemap textures/EDF_2/scabtrim_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scatta_1tw
+{
+	diffusemap textures/EDF_2/scatta_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo1tw
+{
+	diffusemap textures/EDF_2/scrappiedoo1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo2tw
+{
+	diffusemap textures/EDF_2/scrappiedoo2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo3tw
+{
+	diffusemap textures/EDF_2/scrappiedoo3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo4tw
+{
+	diffusemap textures/EDF_2/scrappiedoo4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo5tw
+{
+	diffusemap textures/EDF_2/scrappiedoo5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo6tw
+{
+	diffusemap textures/EDF_2/scrappiedoo6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo7tw
+{
+	diffusemap textures/EDF_2/scrappiedoo7tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8atw
+{
+	diffusemap textures/EDF_2/scrappiedoo8atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8btw
+{
+	diffusemap textures/EDF_2/scrappiedoo8btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8ctw
+{
+	diffusemap textures/EDF_2/scrappiedoo8ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8dtw
+{
+	diffusemap textures/EDF_2/scrappiedoo8dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8etw
+{
+	diffusemap textures/EDF_2/scrappiedoo8etw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8ftw
+{
+	diffusemap textures/EDF_2/scrappiedoo8ftw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8gtw
+{
+	diffusemap textures/EDF_2/scrappiedoo8gtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8htw
+{
+	diffusemap textures/EDF_2/scrappiedoo8htw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrappiedoo8tw
+{
+	diffusemap textures/EDF_2/scrappiedoo8tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrimtrim_1tw
+{
+	diffusemap textures/EDF_2/scrimtrim_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrudbrick_3tw
+{
+	diffusemap textures/EDF_2/scrudbrick_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrudbrick_4atw
+{
+	diffusemap textures/EDF_2/scrudbrick_4atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scrudbrick_4tw
+{
+	diffusemap textures/EDF_2/scrudbrick_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scuzz_1tw
+{
+	diffusemap textures/EDF_2/scuzz_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/scuzz_2tw
+{
+	diffusemap textures/EDF_2/scuzz_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/shatwalk1tw
+{
+	diffusemap textures/EDF_2/shatwalk1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/shoesto_1atw
+{
+	diffusemap textures/EDF_2/shoesto_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/shoesto_1btw
+{
+	diffusemap textures/EDF_2/shoesto_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/slagwall_1tw
+{
+	diffusemap textures/EDF_2/slagwall_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/slagwall_2tw
+{
+	diffusemap textures/EDF_2/slagwall_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/slagwall_3tw
+{
+	diffusemap textures/EDF_2/slagwall_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/slatt32brick_1tw
+{
+	diffusemap textures/EDF_2/slatt32brick_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/slugcrakke_1tw
+{
+	diffusemap textures/EDF_2/slugcrakke_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/slugcrakke_2tw
+{
+	diffusemap textures/EDF_2/slugcrakke_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/smutco_1tw
+{
+	diffusemap textures/EDF_2/smutco_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/smutco_2tw
+{
+	diffusemap textures/EDF_2/smutco_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/smutco_3tw
+{
+	diffusemap textures/EDF_2/smutco_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/smutco_4tw
+{
+	diffusemap textures/EDF_2/smutco_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/smutco_5tw
+{
+	diffusemap textures/EDF_2/smutco_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/smutco_6tw
+{
+	diffusemap textures/EDF_2/smutco_6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/snagtile_1tw
+{
+	diffusemap textures/EDF_2/snagtile_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/snagtile_2tw
+{
+	diffusemap textures/EDF_2/snagtile_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/spanko_web1tw
+{
+	diffusemap textures/EDF_2/spanko_web1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/spoka1tw
+{
+	diffusemap textures/EDF_2/spoka1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/spoka2tw
+{
+	diffusemap textures/EDF_2/spoka2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/sputz_1tw
+{
+	diffusemap textures/EDF_2/sputz_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/squatpan_1atw
+{
+	diffusemap textures/EDF_2/squatpan_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/squatpan_1btw
+{
+	diffusemap textures/EDF_2/squatpan_1btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/squatpan_1tw
+{
+	diffusemap textures/EDF_2/squatpan_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/srtipcilei_3tw
+{
+	diffusemap textures/EDF_2/srtipcilei_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/srtipcile_4tw
+{
+	diffusemap textures/EDF_2/srtipcile_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/srtipcile_5tw
+{
+	diffusemap textures/EDF_2/srtipcile_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/stairdiam_1tw
+{
+	diffusemap textures/EDF_2/stairdiam_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/theatdoor_1atw
+{
+	diffusemap textures/EDF_2/theatdoor_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/theatdoor_1tw
+{
+	diffusemap textures/EDF_2/theatdoor_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/theatdoor_2tw
+{
+	diffusemap textures/EDF_2/theatdoor_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/theatfloor2tw
+{
+	diffusemap textures/EDF_2/theatfloor2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/theatfloor3tw
+{
+	diffusemap textures/EDF_2/theatfloor3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/theatlight1ztw
+{
+	diffusemap textures/EDF_2/theatlight1ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/theatwin1tw
+{
+	diffusemap textures/EDF_2/theatwin1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/tilesfark_1tw
+{
+	diffusemap textures/EDF_2/tilesfark_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/tilesfark_2tw
+{
+	diffusemap textures/EDF_2/tilesfark_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/treadtile_1tw
+{
+	diffusemap textures/EDF_2/treadtile_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/umberto_1tw
+{
+	diffusemap textures/EDF_2/umberto_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/urb_mach1tw
+{
+	diffusemap textures/EDF_2/urb_mach1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/urb_mach2tw
+{
+	diffusemap textures/EDF_2/urb_mach2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/urb_mach3tw
+{
+	diffusemap textures/EDF_2/urb_mach3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/util_wall_1tw
+{
+	diffusemap textures/EDF_2/util_wall_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/vatorinnies1tw
+{
+	diffusemap textures/EDF_2/vatorinnies1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/vatorinnies2atw
+{
+	diffusemap textures/EDF_2/vatorinnies2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/vatorinnies2tw
+{
+	diffusemap textures/EDF_2/vatorinnies2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/vatorinnies3tw
+{
+	diffusemap textures/EDF_2/vatorinnies3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/ventbits_4tw
+{
+	diffusemap textures/EDF_2/ventbits_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/v_vent_1tw
+{
+	diffusemap textures/EDF_2/v_vent_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/weddo_3tw
+{
+	diffusemap textures/EDF_2/weddo_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/woobittrim_1tw
+{
+	diffusemap textures/EDF_2/woobittrim_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/EDF_2/woobittrim_2tw
+{
+	diffusemap textures/EDF_2/woobittrim_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

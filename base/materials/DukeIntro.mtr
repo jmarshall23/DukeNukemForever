@@ -1,0 +1,56 @@
+textures/DukeIntro/Intro_BL
+{
+	diffusemap textures/DukeIntro/Intro_BL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeIntro/Intro_BLP
+{
+	diffusemap textures/DukeIntro/Intro_BLP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeIntro/Intro_BR
+{
+	diffusemap textures/DukeIntro/Intro_BR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeIntro/Intro_BRP
+{
+	diffusemap textures/DukeIntro/Intro_BRP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeIntro/Intro_TL
+{
+	diffusemap textures/DukeIntro/Intro_TL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeIntro/Intro_TLP
+{
+	diffusemap textures/DukeIntro/Intro_TLP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeIntro/Intro_TR
+{
+	diffusemap textures/DukeIntro/Intro_TR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeIntro/Intro_TRP
+{
+	diffusemap textures/DukeIntro/Intro_TRP.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

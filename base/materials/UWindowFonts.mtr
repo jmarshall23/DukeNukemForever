@@ -1,0 +1,238 @@
+textures/UWindowFonts/Texture0
+{
+	diffusemap textures/UWindowFonts/Texture0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture1
+{
+	diffusemap textures/UWindowFonts/Texture1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture10
+{
+	diffusemap textures/UWindowFonts/Texture10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture11
+{
+	diffusemap textures/UWindowFonts/Texture11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture12
+{
+	diffusemap textures/UWindowFonts/Texture12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture13
+{
+	diffusemap textures/UWindowFonts/Texture13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture14
+{
+	diffusemap textures/UWindowFonts/Texture14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture15
+{
+	diffusemap textures/UWindowFonts/Texture15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture16
+{
+	diffusemap textures/UWindowFonts/Texture16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture17
+{
+	diffusemap textures/UWindowFonts/Texture17.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture18
+{
+	diffusemap textures/UWindowFonts/Texture18.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture19
+{
+	diffusemap textures/UWindowFonts/Texture19.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture2
+{
+	diffusemap textures/UWindowFonts/Texture2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture20
+{
+	diffusemap textures/UWindowFonts/Texture20.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture21
+{
+	diffusemap textures/UWindowFonts/Texture21.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture22
+{
+	diffusemap textures/UWindowFonts/Texture22.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture23
+{
+	diffusemap textures/UWindowFonts/Texture23.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture24
+{
+	diffusemap textures/UWindowFonts/Texture24.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture25
+{
+	diffusemap textures/UWindowFonts/Texture25.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture26
+{
+	diffusemap textures/UWindowFonts/Texture26.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture27
+{
+	diffusemap textures/UWindowFonts/Texture27.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture28
+{
+	diffusemap textures/UWindowFonts/Texture28.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture29
+{
+	diffusemap textures/UWindowFonts/Texture29.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture3
+{
+	diffusemap textures/UWindowFonts/Texture3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture30
+{
+	diffusemap textures/UWindowFonts/Texture30.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture31
+{
+	diffusemap textures/UWindowFonts/Texture31.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture32
+{
+	diffusemap textures/UWindowFonts/Texture32.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture4
+{
+	diffusemap textures/UWindowFonts/Texture4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture5
+{
+	diffusemap textures/UWindowFonts/Texture5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture6
+{
+	diffusemap textures/UWindowFonts/Texture6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture7
+{
+	diffusemap textures/UWindowFonts/Texture7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture8
+{
+	diffusemap textures/UWindowFonts/Texture8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/Texture9
+{
+	diffusemap textures/UWindowFonts/Texture9.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/UWindowFonts/UWindowFontsJunk
+{
+	diffusemap textures/UWindowFonts/UWindowFontsJunk.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

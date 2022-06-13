@@ -1,0 +1,84 @@
+textures/AFBGasStation/batteries1
+{
+	diffusemap textures/AFBGasStation/batteries1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/DrinkFront1
+{
+	diffusemap textures/AFBGasStation/DrinkFront1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/gascurb1sah
+{
+	diffusemap textures/AFBGasStation/gascurb1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/gaspump1sah
+{
+	diffusemap textures/AFBGasStation/gaspump1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/gaspumpside1sah
+{
+	diffusemap textures/AFBGasStation/gaspumpside1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/gassign1sah
+{
+	diffusemap textures/AFBGasStation/gassign1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/GassignSide1sah
+{
+	diffusemap textures/AFBGasStation/GassignSide1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/gastrash2sah
+{
+	diffusemap textures/AFBGasStation/gastrash2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/gastrashTOPsah
+{
+	diffusemap textures/AFBGasStation/gastrashTOPsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/icemachine2
+{
+	diffusemap textures/AFBGasStation/icemachine2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/icemachine3
+{
+	diffusemap textures/AFBGasStation/icemachine3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBGasStation/Sign1
+{
+	diffusemap textures/AFBGasStation/Sign1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

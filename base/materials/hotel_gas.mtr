@@ -1,0 +1,1246 @@
+textures/hotel_gas/1nightstand
+{
+	diffusemap textures/hotel_gas/1nightstand.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/1nightstand3
+{
+	diffusemap textures/hotel_gas/1nightstand3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/1nightstand4
+{
+	diffusemap textures/hotel_gas/1nightstand4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/1night_13tw
+{
+	diffusemap textures/hotel_gas/1night_13tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/1night_jam1tw
+{
+	diffusemap textures/hotel_gas/1night_jam1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/almost_1tw
+{
+	diffusemap textures/hotel_gas/almost_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/almost_2tw
+{
+	diffusemap textures/hotel_gas/almost_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/almost_3tw
+{
+	diffusemap textures/hotel_gas/almost_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/almost_6tw
+{
+	diffusemap textures/hotel_gas/almost_6tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/alum_garage_1tw
+{
+	diffusemap textures/hotel_gas/alum_garage_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/bathroom_tile2
+{
+	diffusemap textures/hotel_gas/bathroom_tile2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/bathroom_tile4
+{
+	diffusemap textures/hotel_gas/bathroom_tile4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/bathroom_tile4a
+{
+	diffusemap textures/hotel_gas/bathroom_tile4a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/bathroom_tile_s
+{
+	diffusemap textures/hotel_gas/bathroom_tile_s.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/battery1atw
+{
+	diffusemap textures/hotel_gas/battery1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/battery1tw
+{
+	diffusemap textures/hotel_gas/battery1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/bedhead_1tw
+{
+	diffusemap textures/hotel_gas/bedhead_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/bedhead_2tw
+{
+	diffusemap textures/hotel_gas/bedhead_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/benchmet_1tw
+{
+	diffusemap textures/hotel_gas/benchmet_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/benchmet_2tw
+{
+	diffusemap textures/hotel_gas/benchmet_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/benchmet_4tw
+{
+	diffusemap textures/hotel_gas/benchmet_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/benchmet_5tw
+{
+	diffusemap textures/hotel_gas/benchmet_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_blanktw
+{
+	diffusemap textures/hotel_gas/billb_blanktw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_shred1tw
+{
+	diffusemap textures/hotel_gas/billb_shred1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_shred2tw
+{
+	diffusemap textures/hotel_gas/billb_shred2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_shred3tw
+{
+	diffusemap textures/hotel_gas/billb_shred3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_shred4tw
+{
+	diffusemap textures/hotel_gas/billb_shred4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_silh1tw
+{
+	diffusemap textures/hotel_gas/billb_silh1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_silh2tw
+{
+	diffusemap textures/hotel_gas/billb_silh2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_skin1tw
+{
+	diffusemap textures/hotel_gas/billb_skin1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_skin2tw
+{
+	diffusemap textures/hotel_gas/billb_skin2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_tit1tw
+{
+	diffusemap textures/hotel_gas/billb_tit1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/billb_tit2tw
+{
+	diffusemap textures/hotel_gas/billb_tit2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/broth_tile_1tw
+{
+	diffusemap textures/hotel_gas/broth_tile_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/chasceil1tw
+{
+	diffusemap textures/hotel_gas/chasceil1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/chasceil2tw
+{
+	diffusemap textures/hotel_gas/chasceil2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/clampedfen1tw
+{
+	diffusemap textures/hotel_gas/clampedfen1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/concktile
+{
+	diffusemap textures/hotel_gas/concktile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/concktile2
+{
+	diffusemap textures/hotel_gas/concktile2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/concktile3
+{
+	diffusemap textures/hotel_gas/concktile3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/concktile3a
+{
+	diffusemap textures/hotel_gas/concktile3a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/cooterlip_1atw
+{
+	diffusemap textures/hotel_gas/cooterlip_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/cooterlip_1tw
+{
+	diffusemap textures/hotel_gas/cooterlip_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/cooterlip_2tw
+{
+	diffusemap textures/hotel_gas/cooterlip_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/crack_win_1
+{
+	diffusemap textures/hotel_gas/crack_win_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/crack_win_2
+{
+	diffusemap textures/hotel_gas/crack_win_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/crack_win_3
+{
+	diffusemap textures/hotel_gas/crack_win_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/crack_win_3tw4
+{
+	diffusemap textures/hotel_gas/crack_win_3tw4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/crankoil_1tw
+{
+	diffusemap textures/hotel_gas/crankoil_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/craz_door
+{
+	diffusemap textures/hotel_gas/craz_door.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/devilengine_1tw
+{
+	diffusemap textures/hotel_gas/devilengine_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/devilengine_2tw
+{
+	diffusemap textures/hotel_gas/devilengine_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/devilengine_2vtw
+{
+	diffusemap textures/hotel_gas/devilengine_2vtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/devilengine_3atw
+{
+	diffusemap textures/hotel_gas/devilengine_3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/devilengine_3tw
+{
+	diffusemap textures/hotel_gas/devilengine_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/devilengine_4tw
+{
+	diffusemap textures/hotel_gas/devilengine_4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/devilengine_5tw
+{
+	diffusemap textures/hotel_gas/devilengine_5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/diddleedoo_1
+{
+	diffusemap textures/hotel_gas/diddleedoo_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/diddleedoo_2
+{
+	diffusemap textures/hotel_gas/diddleedoo_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/diddleedoo_3
+{
+	diffusemap textures/hotel_gas/diddleedoo_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/diddleedoo_4
+{
+	diffusemap textures/hotel_gas/diddleedoo_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dirtcurt_1tw
+{
+	diffusemap textures/hotel_gas/dirtcurt_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dirtcurt_2tw
+{
+	diffusemap textures/hotel_gas/dirtcurt_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dirtplank
+{
+	diffusemap textures/hotel_gas/dirtplank.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dirtyglass_1tw
+{
+	diffusemap textures/hotel_gas/dirtyglass_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dirtyglazzies_1tw
+{
+	diffusemap textures/hotel_gas/dirtyglazzies_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/disturbed_1tw
+{
+	diffusemap textures/hotel_gas/disturbed_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/doorframe_hot
+{
+	diffusemap textures/hotel_gas/doorframe_hot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/doorframe_hot2tw
+{
+	diffusemap textures/hotel_gas/doorframe_hot2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/doorsetct2w
+{
+	diffusemap textures/hotel_gas/doorsetct2w.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/doorsetctw
+{
+	diffusemap textures/hotel_gas/doorsetctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/door_typetrimtw
+{
+	diffusemap textures/hotel_gas/door_typetrimtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dumpster1tw
+{
+	diffusemap textures/hotel_gas/dumpster1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dumpster2tw
+{
+	diffusemap textures/hotel_gas/dumpster2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/dumpster3tw
+{
+	diffusemap textures/hotel_gas/dumpster3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/evepic2tw
+{
+	diffusemap textures/hotel_gas/evepic2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/evepictw
+{
+	diffusemap textures/hotel_gas/evepictw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/fenced_1tw
+{
+	diffusemap textures/hotel_gas/fenced_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/fenced_2tw
+{
+	diffusemap textures/hotel_gas/fenced_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/flakwood_1
+{
+	diffusemap textures/hotel_gas/flakwood_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/floorboard
+{
+	diffusemap textures/hotel_gas/floorboard.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/floorboard2tw
+{
+	diffusemap textures/hotel_gas/floorboard2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/franknote1tw
+{
+	diffusemap textures/hotel_gas/franknote1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/franknote2tw
+{
+	diffusemap textures/hotel_gas/franknote2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/garagio_45tw
+{
+	diffusemap textures/hotel_gas/garagio_45tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/garagloo1tw
+{
+	diffusemap textures/hotel_gas/garagloo1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/garagloo2tw
+{
+	diffusemap textures/hotel_gas/garagloo2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/garfrontdoor
+{
+	diffusemap textures/hotel_gas/garfrontdoor.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_cement
+{
+	diffusemap textures/hotel_gas/gar_cement.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_cement2
+{
+	diffusemap textures/hotel_gas/gar_cement2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_door
+{
+	diffusemap textures/hotel_gas/gar_door.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_door2
+{
+	diffusemap textures/hotel_gas/gar_door2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_doora
+{
+	diffusemap textures/hotel_gas/gar_doora.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_roof2
+{
+	diffusemap textures/hotel_gas/gar_roof2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_trim2
+{
+	diffusemap textures/hotel_gas/gar_trim2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_wallinn
+{
+	diffusemap textures/hotel_gas/gar_wallinn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_wallinn2
+{
+	diffusemap textures/hotel_gas/gar_wallinn2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_wallinn3
+{
+	diffusemap textures/hotel_gas/gar_wallinn3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_wallinna
+{
+	diffusemap textures/hotel_gas/gar_wallinna.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gar_wallinnb
+{
+	diffusemap textures/hotel_gas/gar_wallinnb.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gazzystartw
+{
+	diffusemap textures/hotel_gas/gazzystartw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/gravel_dirt_1tw
+{
+	diffusemap textures/hotel_gas/gravel_dirt_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hotel_vent
+{
+	diffusemap textures/hotel_gas/hotel_vent.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hot_bed_1c
+{
+	diffusemap textures/hotel_gas/hot_bed_1c.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hot_bed_2
+{
+	diffusemap textures/hotel_gas/hot_bed_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hot_door
+{
+	diffusemap textures/hotel_gas/hot_door.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hot_inwa
+{
+	diffusemap textures/hotel_gas/hot_inwa.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hot_inwa2
+{
+	diffusemap textures/hotel_gas/hot_inwa2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hot_inwa2atw
+{
+	diffusemap textures/hotel_gas/hot_inwa2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/hot_inwa3tw
+{
+	diffusemap textures/hotel_gas/hot_inwa3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/icemach_1tw
+{
+	diffusemap textures/hotel_gas/icemach_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/icemach_2tw
+{
+	diffusemap textures/hotel_gas/icemach_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/joes_45tw
+{
+	diffusemap textures/hotel_gas/joes_45tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/korona
+{
+	diffusemap textures/hotel_gas/korona.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/metalplatey_2tw
+{
+	diffusemap textures/hotel_gas/metalplatey_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/met_door
+{
+	diffusemap textures/hotel_gas/met_door.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/met_door2
+{
+	diffusemap textures/hotel_gas/met_door2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/neo_arrow1tw
+{
+	diffusemap textures/hotel_gas/neo_arrow1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/neo_arrow2tw
+{
+	diffusemap textures/hotel_gas/neo_arrow2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/NoSmartie_1tw
+{
+	diffusemap textures/hotel_gas/NoSmartie_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/nutherbed1tw
+{
+	diffusemap textures/hotel_gas/nutherbed1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/nutherbed2tw
+{
+	diffusemap textures/hotel_gas/nutherbed2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/nutherbed3tw
+{
+	diffusemap textures/hotel_gas/nutherbed3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/officecrap_1tw
+{
+	diffusemap textures/hotel_gas/officecrap_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/officecrap_23tw
+{
+	diffusemap textures/hotel_gas/officecrap_23tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/office_note2tw
+{
+	diffusemap textures/hotel_gas/office_note2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/office_notetw
+{
+	diffusemap textures/hotel_gas/office_notetw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/opus1tw
+{
+	diffusemap textures/hotel_gas/opus1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/opus2tw
+{
+	diffusemap textures/hotel_gas/opus2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/outwall
+{
+	diffusemap textures/hotel_gas/outwall.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/outwall3
+{
+	diffusemap textures/hotel_gas/outwall3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/outwall_2tw
+{
+	diffusemap textures/hotel_gas/outwall_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/pamphlets_1tw
+{
+	diffusemap textures/hotel_gas/pamphlets_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/park_here1tw
+{
+	diffusemap textures/hotel_gas/park_here1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/peel_redbr1tw
+{
+	diffusemap textures/hotel_gas/peel_redbr1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/peel_redbr2tw
+{
+	diffusemap textures/hotel_gas/peel_redbr2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/peel_redbr3tw
+{
+	diffusemap textures/hotel_gas/peel_redbr3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/plas_tile
+{
+	diffusemap textures/hotel_gas/plas_tile.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/poolside3atw
+{
+	diffusemap textures/hotel_gas/poolside3atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/poolside3tw
+{
+	diffusemap textures/hotel_gas/poolside3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/poolside4tw
+{
+	diffusemap textures/hotel_gas/poolside4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/pump1tw
+{
+	diffusemap textures/hotel_gas/pump1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/pump1xtw
+{
+	diffusemap textures/hotel_gas/pump1xtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/redbone1tw
+{
+	diffusemap textures/hotel_gas/redbone1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/rooftile_1tw
+{
+	diffusemap textures/hotel_gas/rooftile_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/rooftile_2tw
+{
+	diffusemap textures/hotel_gas/rooftile_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/roomno_1tw
+{
+	diffusemap textures/hotel_gas/roomno_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/roughbedside_1tw
+{
+	diffusemap textures/hotel_gas/roughbedside_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/roughbed_1
+{
+	diffusemap textures/hotel_gas/roughbed_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/rubadub_2tw
+{
+	diffusemap textures/hotel_gas/rubadub_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/rubadub_3tw
+{
+	diffusemap textures/hotel_gas/rubadub_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/rubruck
+{
+	diffusemap textures/hotel_gas/rubruck.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/rubruck2
+{
+	diffusemap textures/hotel_gas/rubruck2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/scrap_door1tw
+{
+	diffusemap textures/hotel_gas/scrap_door1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/signageb_23tw
+{
+	diffusemap textures/hotel_gas/signageb_23tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/signs
+{
+	diffusemap textures/hotel_gas/signs.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/slaudge_12ztw
+{
+	diffusemap textures/hotel_gas/slaudge_12ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/slaudge_1tw
+{
+	diffusemap textures/hotel_gas/slaudge_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/slwmhcarpet2atw
+{
+	diffusemap textures/hotel_gas/slwmhcarpet2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/slwmhcarpet2tw
+{
+	diffusemap textures/hotel_gas/slwmhcarpet2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/slwmhcarpet3ztw
+{
+	diffusemap textures/hotel_gas/slwmhcarpet3ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/toolchest1atw
+{
+	diffusemap textures/hotel_gas/toolchest1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/toolchest1tw
+{
+	diffusemap textures/hotel_gas/toolchest1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/umpod_1tw
+{
+	diffusemap textures/hotel_gas/umpod_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/wallbang2
+{
+	diffusemap textures/hotel_gas/wallbang2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/wallbang2a
+{
+	diffusemap textures/hotel_gas/wallbang2a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/wallbanghg
+{
+	diffusemap textures/hotel_gas/wallbanghg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/waterpictw
+{
+	diffusemap textures/hotel_gas/waterpictw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/wh_trim
+{
+	diffusemap textures/hotel_gas/wh_trim.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/windowed_1
+{
+	diffusemap textures/hotel_gas/windowed_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/windowed_3
+{
+	diffusemap textures/hotel_gas/windowed_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/windowed_4
+{
+	diffusemap textures/hotel_gas/windowed_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/windowed_5
+{
+	diffusemap textures/hotel_gas/windowed_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/windowed_6
+{
+	diffusemap textures/hotel_gas/windowed_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/win_doh_95tw
+{
+	diffusemap textures/hotel_gas/win_doh_95tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/wood_mettrim_1t
+{
+	diffusemap textures/hotel_gas/wood_mettrim_1t.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/wood_sq_1atw
+{
+	diffusemap textures/hotel_gas/wood_sq_1atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/hotel_gas/wood_sq_1tw
+{
+	diffusemap textures/hotel_gas/wood_sq_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

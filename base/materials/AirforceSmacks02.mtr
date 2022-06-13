@@ -1,0 +1,133 @@
+textures/AirforceSmacks02/AntDrvAZCCW
+{
+	diffusemap textures/AirforceSmacks02/AntDrvAZCCW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntDrvAZCW
+{
+	diffusemap textures/AirforceSmacks02/AntDrvAZCW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntDrvELB
+{
+	diffusemap textures/AirforceSmacks02/AntDrvELB.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntDrvELF
+{
+	diffusemap textures/AirforceSmacks02/AntDrvELF.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntDrvSelect
+{
+	diffusemap textures/AirforceSmacks02/AntDrvSelect.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntSetupMov
+{
+	diffusemap textures/AirforceSmacks02/AntSetupMov.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntSetupOff
+{
+	diffusemap textures/AirforceSmacks02/AntSetupOff.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntSetupOn
+{
+	diffusemap textures/AirforceSmacks02/AntSetupOn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntSetupOn2
+{
+	diffusemap textures/AirforceSmacks02/AntSetupOn2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntSetupPre
+{
+	diffusemap textures/AirforceSmacks02/AntSetupPre.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/AntTrack01
+{
+	diffusemap textures/AirforceSmacks02/AntTrack01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SecCam01
+{
+	diffusemap textures/AirforceSmacks02/SecCam01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SecCam02
+{
+	diffusemap textures/AirforceSmacks02/SecCam02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SecCam03
+{
+	diffusemap textures/AirforceSmacks02/SecCam03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SecCam04
+{
+	diffusemap textures/AirforceSmacks02/SecCam04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SecCam05
+{
+	diffusemap textures/AirforceSmacks02/SecCam05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SiloDestroy01
+{
+	diffusemap textures/AirforceSmacks02/SiloDestroy01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SiloDestroy02
+{
+	diffusemap textures/AirforceSmacks02/SiloDestroy02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks02/SiloDestroy03
+{
+	diffusemap textures/AirforceSmacks02/SiloDestroy03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

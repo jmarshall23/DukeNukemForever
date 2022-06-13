@@ -1,0 +1,651 @@
+textures/DukeLookAndFeel/Ball
+{
+	diffusemap textures/DukeLookAndFeel/Ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/Credits
+{
+	diffusemap textures/DukeLookAndFeel/Credits.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/credits_Flipped
+{
+	diffusemap textures/DukeLookAndFeel/credits_Flipped.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNBanner
+{
+	diffusemap textures/DukeLookAndFeel/DNBanner.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNChannels
+{
+	diffusemap textures/DukeLookAndFeel/DNChannels.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNChannels_fl
+{
+	diffusemap textures/DukeLookAndFeel/DNChannels_fl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNCreate
+{
+	diffusemap textures/DukeLookAndFeel/DNCreate.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNCreate_fl
+{
+	diffusemap textures/DukeLookAndFeel/DNCreate_fl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNHeader
+{
+	diffusemap textures/DukeLookAndFeel/DNHeader.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNJoin
+{
+	diffusemap textures/DukeLookAndFeel/DNJoin.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNJoin_fl
+{
+	diffusemap textures/DukeLookAndFeel/DNJoin_fl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNNews
+{
+	diffusemap textures/DukeLookAndFeel/DNNews.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DNNews_fl
+{
+	diffusemap textures/DukeLookAndFeel/DNNews_fl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DukeActiveFrame
+{
+	diffusemap textures/DukeLookAndFeel/DukeActiveFrame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DukeActiveFrmSt
+{
+	diffusemap textures/DukeLookAndFeel/DukeActiveFrmSt.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DukeFrameTopLg
+{
+	diffusemap textures/DukeLookAndFeel/DukeFrameTopLg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DukeIcon
+{
+	diffusemap textures/DukeLookAndFeel/DukeIcon.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DukeInActiveFrm
+{
+	diffusemap textures/DukeLookAndFeel/DukeInActiveFrm.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/DukeInActiveFrS
+{
+	diffusemap textures/DukeLookAndFeel/DukeInActiveFrS.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/Game
+{
+	diffusemap textures/DukeLookAndFeel/Game.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/game_Flipped
+{
+	diffusemap textures/DukeLookAndFeel/game_Flipped.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/Generic
+{
+	diffusemap textures/DukeLookAndFeel/Generic.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/generic_Flipped
+{
+	diffusemap textures/DukeLookAndFeel/generic_Flipped.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_about
+{
+	diffusemap textures/DukeLookAndFeel/i_about.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_audio
+{
+	diffusemap textures/DukeLookAndFeel/i_audio.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_controls
+{
+	diffusemap textures/DukeLookAndFeel/i_controls.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_disconnectfro
+{
+	diffusemap textures/DukeLookAndFeel/i_disconnectfro.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_downloadlates
+{
+	diffusemap textures/DukeLookAndFeel/i_downloadlates.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_findinternetg
+{
+	diffusemap textures/DukeLookAndFeel/i_findinternetg.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_findlangame
+{
+	diffusemap textures/DukeLookAndFeel/i_findlangame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_hud
+{
+	diffusemap textures/DukeLookAndFeel/i_hud.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_loadgame
+{
+	diffusemap textures/DukeLookAndFeel/i_loadgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_openlocation
+{
+	diffusemap textures/DukeLookAndFeel/i_openlocation.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_playersetup
+{
+	diffusemap textures/DukeLookAndFeel/i_playersetup.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_quitgame
+{
+	diffusemap textures/DukeLookAndFeel/i_quitgame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_reconnecttose
+{
+	diffusemap textures/DukeLookAndFeel/i_reconnecttose.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_savegame
+{
+	diffusemap textures/DukeLookAndFeel/i_savegame.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_startinternet
+{
+	diffusemap textures/DukeLookAndFeel/i_startinternet.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_techsupport
+{
+	diffusemap textures/DukeLookAndFeel/i_techsupport.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/i_video
+{
+	diffusemap textures/DukeLookAndFeel/i_video.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_bottom1
+{
+	diffusemap textures/DukeLookAndFeel/menubk_bottom1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_bottom2
+{
+	diffusemap textures/DukeLookAndFeel/menubk_bottom2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_bottom3
+{
+	diffusemap textures/DukeLookAndFeel/menubk_bottom3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_bottom4
+{
+	diffusemap textures/DukeLookAndFeel/menubk_bottom4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_middle1
+{
+	diffusemap textures/DukeLookAndFeel/menubk_middle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_middle2
+{
+	diffusemap textures/DukeLookAndFeel/menubk_middle2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_middle3
+{
+	diffusemap textures/DukeLookAndFeel/menubk_middle3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_middle4
+{
+	diffusemap textures/DukeLookAndFeel/menubk_middle4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_top1
+{
+	diffusemap textures/DukeLookAndFeel/menubk_top1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_top2
+{
+	diffusemap textures/DukeLookAndFeel/menubk_top2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_top3
+{
+	diffusemap textures/DukeLookAndFeel/menubk_top3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/menubk_top4
+{
+	diffusemap textures/DukeLookAndFeel/menubk_top4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/Multiplayer
+{
+	diffusemap textures/DukeLookAndFeel/Multiplayer.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/multiplayer_Fli
+{
+	diffusemap textures/DukeLookAndFeel/multiplayer_Fli.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/Setup
+{
+	diffusemap textures/DukeLookAndFeel/Setup.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/setup_Flipped
+{
+	diffusemap textures/DukeLookAndFeel/setup_Flipped.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/SpaceInvaders
+{
+	diffusemap textures/DukeLookAndFeel/SpaceInvaders.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar00
+{
+	diffusemap textures/DukeLookAndFeel/submbar00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar01
+{
+	diffusemap textures/DukeLookAndFeel/submbar01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar02
+{
+	diffusemap textures/DukeLookAndFeel/submbar02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar03
+{
+	diffusemap textures/DukeLookAndFeel/submbar03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar04
+{
+	diffusemap textures/DukeLookAndFeel/submbar04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar05
+{
+	diffusemap textures/DukeLookAndFeel/submbar05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar06
+{
+	diffusemap textures/DukeLookAndFeel/submbar06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar07
+{
+	diffusemap textures/DukeLookAndFeel/submbar07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar08
+{
+	diffusemap textures/DukeLookAndFeel/submbar08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar09
+{
+	diffusemap textures/DukeLookAndFeel/submbar09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar10
+{
+	diffusemap textures/DukeLookAndFeel/submbar10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar11
+{
+	diffusemap textures/DukeLookAndFeel/submbar11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar12
+{
+	diffusemap textures/DukeLookAndFeel/submbar12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar13
+{
+	diffusemap textures/DukeLookAndFeel/submbar13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar14
+{
+	diffusemap textures/DukeLookAndFeel/submbar14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar15
+{
+	diffusemap textures/DukeLookAndFeel/submbar15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar16
+{
+	diffusemap textures/DukeLookAndFeel/submbar16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar17
+{
+	diffusemap textures/DukeLookAndFeel/submbar17.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar18
+{
+	diffusemap textures/DukeLookAndFeel/submbar18.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar19
+{
+	diffusemap textures/DukeLookAndFeel/submbar19.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar20
+{
+	diffusemap textures/DukeLookAndFeel/submbar20.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar21
+{
+	diffusemap textures/DukeLookAndFeel/submbar21.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar22
+{
+	diffusemap textures/DukeLookAndFeel/submbar22.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar23
+{
+	diffusemap textures/DukeLookAndFeel/submbar23.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar24
+{
+	diffusemap textures/DukeLookAndFeel/submbar24.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar25
+{
+	diffusemap textures/DukeLookAndFeel/submbar25.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar26
+{
+	diffusemap textures/DukeLookAndFeel/submbar26.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar27
+{
+	diffusemap textures/DukeLookAndFeel/submbar27.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar28
+{
+	diffusemap textures/DukeLookAndFeel/submbar28.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/submbar29
+{
+	diffusemap textures/DukeLookAndFeel/submbar29.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/sunglassesBL
+{
+	diffusemap textures/DukeLookAndFeel/sunglassesBL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/sunglassesBR
+{
+	diffusemap textures/DukeLookAndFeel/sunglassesBR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/sunglassesTL
+{
+	diffusemap textures/DukeLookAndFeel/sunglassesTL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/sunglassesTR
+{
+	diffusemap textures/DukeLookAndFeel/sunglassesTR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/support
+{
+	diffusemap textures/DukeLookAndFeel/support.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/DukeLookAndFeel/support_Flipped
+{
+	diffusemap textures/DukeLookAndFeel/support_Flipped.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

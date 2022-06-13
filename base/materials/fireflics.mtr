@@ -1,0 +1,14 @@
+textures/fireflics/GenBottomFire
+{
+	diffusemap textures/fireflics/GenBottomFire.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/fireflics/genfiretop1RC
+{
+	diffusemap textures/fireflics/genfiretop1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

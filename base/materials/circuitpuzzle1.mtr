@@ -1,0 +1,266 @@
+textures/circuitpuzzle1/botleftglow1
+{
+	diffusemap textures/circuitpuzzle1/botleftglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botleftglow2
+{
+	diffusemap textures/circuitpuzzle1/botleftglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botleftglow3
+{
+	diffusemap textures/circuitpuzzle1/botleftglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botleftHL
+{
+	diffusemap textures/circuitpuzzle1/botleftHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botmiddleglow1
+{
+	diffusemap textures/circuitpuzzle1/botmiddleglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botmiddleglow2
+{
+	diffusemap textures/circuitpuzzle1/botmiddleglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botmiddleglow3
+{
+	diffusemap textures/circuitpuzzle1/botmiddleglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botmiddleHL
+{
+	diffusemap textures/circuitpuzzle1/botmiddleHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botrightglow1
+{
+	diffusemap textures/circuitpuzzle1/botrightglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botrightglow2
+{
+	diffusemap textures/circuitpuzzle1/botrightglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botrightglow3
+{
+	diffusemap textures/circuitpuzzle1/botrightglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/botrightHL
+{
+	diffusemap textures/circuitpuzzle1/botrightHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/cell_highlight1
+{
+	diffusemap textures/circuitpuzzle1/cell_highlight1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/circuitpuz_back
+{
+	diffusemap textures/circuitpuzzle1/circuitpuz_back.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midleftglow1
+{
+	diffusemap textures/circuitpuzzle1/midleftglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midleftglow2
+{
+	diffusemap textures/circuitpuzzle1/midleftglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midleftglow3
+{
+	diffusemap textures/circuitpuzzle1/midleftglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midleftHL
+{
+	diffusemap textures/circuitpuzzle1/midleftHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midmiddleglow1
+{
+	diffusemap textures/circuitpuzzle1/midmiddleglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midmiddleglow2
+{
+	diffusemap textures/circuitpuzzle1/midmiddleglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midmiddleglow3
+{
+	diffusemap textures/circuitpuzzle1/midmiddleglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midmiddleHL
+{
+	diffusemap textures/circuitpuzzle1/midmiddleHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midrightglow1
+{
+	diffusemap textures/circuitpuzzle1/midrightglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midrightglow2
+{
+	diffusemap textures/circuitpuzzle1/midrightglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midrightglow3
+{
+	diffusemap textures/circuitpuzzle1/midrightglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/midrightHL
+{
+	diffusemap textures/circuitpuzzle1/midrightHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topleftglow1
+{
+	diffusemap textures/circuitpuzzle1/topleftglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topleftglow2
+{
+	diffusemap textures/circuitpuzzle1/topleftglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topleftglow3
+{
+	diffusemap textures/circuitpuzzle1/topleftglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topleftHL
+{
+	diffusemap textures/circuitpuzzle1/topleftHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topmiddleglow1
+{
+	diffusemap textures/circuitpuzzle1/topmiddleglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topmiddleglow2
+{
+	diffusemap textures/circuitpuzzle1/topmiddleglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topmiddleglow3
+{
+	diffusemap textures/circuitpuzzle1/topmiddleglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/topmiddleHL
+{
+	diffusemap textures/circuitpuzzle1/topmiddleHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/toprightglow1
+{
+	diffusemap textures/circuitpuzzle1/toprightglow1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/toprightglow2
+{
+	diffusemap textures/circuitpuzzle1/toprightglow2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/toprightglow3
+{
+	diffusemap textures/circuitpuzzle1/toprightglow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/circuitpuzzle1/toprightHL
+{
+	diffusemap textures/circuitpuzzle1/toprightHL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

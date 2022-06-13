@@ -1,0 +1,21 @@
+textures/a51tram/greytram1BC
+{
+	diffusemap textures/a51tram/greytram1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/a51tram/greytram3BC
+{
+	diffusemap textures/a51tram/greytram3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/a51tram/redtram2BC
+{
+	diffusemap textures/a51tram/redtram2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

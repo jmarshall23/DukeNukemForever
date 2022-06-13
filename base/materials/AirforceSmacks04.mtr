@@ -1,0 +1,161 @@
+textures/AirforceSmacks04/basesignf_tw
+{
+	diffusemap textures/AirforceSmacks04/basesignf_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/Computer01
+{
+	diffusemap textures/AirforceSmacks04/Computer01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/Computer02
+{
+	diffusemap textures/AirforceSmacks04/Computer02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/deletesmash_tw
+{
+	diffusemap textures/AirforceSmacks04/deletesmash_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/ELDisplay
+{
+	diffusemap textures/AirforceSmacks04/ELDisplay.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/ELLight
+{
+	diffusemap textures/AirforceSmacks04/ELLight.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/ELPlateBang
+{
+	diffusemap textures/AirforceSmacks04/ELPlateBang.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/ELWall
+{
+	diffusemap textures/AirforceSmacks04/ELWall.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/FanBad
+{
+	diffusemap textures/AirforceSmacks04/FanBad.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/FanGood
+{
+	diffusemap textures/AirforceSmacks04/FanGood.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/FloorCounter01
+{
+	diffusemap textures/AirforceSmacks04/FloorCounter01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/FloorCounter02
+{
+	diffusemap textures/AirforceSmacks04/FloorCounter02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/FloorCounter03
+{
+	diffusemap textures/AirforceSmacks04/FloorCounter03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/LightStrike01
+{
+	diffusemap textures/AirforceSmacks04/LightStrike01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/Mushroom01
+{
+	diffusemap textures/AirforceSmacks04/Mushroom01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/Mushroom02
+{
+	diffusemap textures/AirforceSmacks04/Mushroom02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/Mushroom03
+{
+	diffusemap textures/AirforceSmacks04/Mushroom03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/PanelBreaker01
+{
+	diffusemap textures/AirforceSmacks04/PanelBreaker01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/PanelBreaker02
+{
+	diffusemap textures/AirforceSmacks04/PanelBreaker02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/PanelBreaker03
+{
+	diffusemap textures/AirforceSmacks04/PanelBreaker03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/PanelInfoB2
+{
+	diffusemap textures/AirforceSmacks04/PanelInfoB2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/PanelLLights
+{
+	diffusemap textures/AirforceSmacks04/PanelLLights.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AirforceSmacks04/PanelRadarB2
+{
+	diffusemap textures/AirforceSmacks04/PanelRadarB2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

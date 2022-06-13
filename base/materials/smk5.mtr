@@ -1,0 +1,98 @@
+textures/smk5/chips_spn
+{
+	diffusemap textures/smk5/chips_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/healthb_spn
+{
+	diffusemap textures/smk5/healthb_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_burito_spn
+{
+	diffusemap textures/smk5/s_burito_spn.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_ezmainbak
+{
+	diffusemap textures/smk5/s_ezmainbak.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_ezvendsign1
+{
+	diffusemap textures/smk5/s_ezvendsign1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_genericsmk3
+{
+	diffusemap textures/smk5/s_genericsmk3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_genericsmk4
+{
+	diffusemap textures/smk5/s_genericsmk4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_tripfireC
+{
+	diffusemap textures/smk5/s_tripfireC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_tvflatscrnbk
+{
+	diffusemap textures/smk5/s_tvflatscrnbk.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_vcrcount1
+{
+	diffusemap textures/smk5/s_vcrcount1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_vcrscreen2
+{
+	diffusemap textures/smk5/s_vcrscreen2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_vidblk
+{
+	diffusemap textures/smk5/s_vidblk.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/s_visitor
+{
+	diffusemap textures/smk5/s_visitor.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk5/ZooControl
+{
+	diffusemap textures/smk5/ZooControl.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

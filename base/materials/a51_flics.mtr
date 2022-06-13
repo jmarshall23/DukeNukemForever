@@ -1,0 +1,14 @@
+textures/a51_flics/Genetic1
+{
+	diffusemap textures/a51_flics/Genetic1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/a51_flics/Genetic2
+{
+	diffusemap textures/a51_flics/Genetic2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

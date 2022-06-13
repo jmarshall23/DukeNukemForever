@@ -1,0 +1,21 @@
+textures/KeithTheme/keith1
+{
+	diffusemap textures/KeithTheme/keith1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/KeithTheme/keith2
+{
+	diffusemap textures/KeithTheme/keith2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/KeithTheme/templogo
+{
+	diffusemap textures/KeithTheme/templogo.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,1848 @@
+textures/m_zone1_vegas/10ball
+{
+	diffusemap textures/m_zone1_vegas/10ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/11ball
+{
+	diffusemap textures/m_zone1_vegas/11ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/12ball
+{
+	diffusemap textures/m_zone1_vegas/12ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/13ball
+{
+	diffusemap textures/m_zone1_vegas/13ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/14ball
+{
+	diffusemap textures/m_zone1_vegas/14ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/15ball
+{
+	diffusemap textures/m_zone1_vegas/15ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/1Ball
+{
+	diffusemap textures/m_zone1_vegas/1Ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/2ball
+{
+	diffusemap textures/m_zone1_vegas/2ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/2ball3
+{
+	diffusemap textures/m_zone1_vegas/2ball3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/3ball
+{
+	diffusemap textures/m_zone1_vegas/3ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/4Ball
+{
+	diffusemap textures/m_zone1_vegas/4Ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/5ball
+{
+	diffusemap textures/m_zone1_vegas/5ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/6ball
+{
+	diffusemap textures/m_zone1_vegas/6ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/7Ball
+{
+	diffusemap textures/m_zone1_vegas/7Ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/8ball
+{
+	diffusemap textures/m_zone1_vegas/8ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/8ball1
+{
+	diffusemap textures/m_zone1_vegas/8ball1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/8ball2
+{
+	diffusemap textures/m_zone1_vegas/8ball2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/9Ball
+{
+	diffusemap textures/m_zone1_vegas/9Ball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Anchor
+{
+	diffusemap textures/m_zone1_vegas/Anchor.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/anchor1sah
+{
+	diffusemap textures/m_zone1_vegas/anchor1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Ashtray1sah
+{
+	diffusemap textures/m_zone1_vegas/Ashtray1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/ashtray1sideRC
+{
+	diffusemap textures/m_zone1_vegas/ashtray1sideRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/ashtray1topRC
+{
+	diffusemap textures/m_zone1_vegas/ashtray1topRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Ashtray2sah
+{
+	diffusemap textures/m_zone1_vegas/Ashtray2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/base2a2
+{
+	diffusemap textures/m_zone1_vegas/base2a2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/base3a2
+{
+	diffusemap textures/m_zone1_vegas/base3a2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/beachballRC
+{
+	diffusemap textures/m_zone1_vegas/beachballRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/bed
+{
+	diffusemap textures/m_zone1_vegas/bed.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/beermug1sah
+{
+	diffusemap textures/m_zone1_vegas/beermug1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/beermug2sah
+{
+	diffusemap textures/m_zone1_vegas/beermug2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/birdcage1sah
+{
+	diffusemap textures/m_zone1_vegas/birdcage1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/boatback1BC
+{
+	diffusemap textures/m_zone1_vegas/boatback1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/body
+{
+	diffusemap textures/m_zone1_vegas/body.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Boss_Armour1
+{
+	diffusemap textures/m_zone1_vegas/Boss_Armour1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Boss_Head
+{
+	diffusemap textures/m_zone1_vegas/Boss_Head.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Boss_Skin
+{
+	diffusemap textures/m_zone1_vegas/Boss_Skin.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Boss_tooth
+{
+	diffusemap textures/m_zone1_vegas/Boss_tooth.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/bottle01
+{
+	diffusemap textures/m_zone1_vegas/bottle01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/bucket01
+{
+	diffusemap textures/m_zone1_vegas/bucket01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/bucket02
+{
+	diffusemap textures/m_zone1_vegas/bucket02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/bugzapper1sah
+{
+	diffusemap textures/m_zone1_vegas/bugzapper1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/bugzapper2sah
+{
+	diffusemap textures/m_zone1_vegas/bugzapper2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/buton_elv1RC
+{
+	diffusemap textures/m_zone1_vegas/buton_elv1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cabbot
+{
+	diffusemap textures/m_zone1_vegas/cabbot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cabbotskin1
+{
+	diffusemap textures/m_zone1_vegas/cabbotskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cabbotskin2
+{
+	diffusemap textures/m_zone1_vegas/cabbotskin2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cabbotskin3
+{
+	diffusemap textures/m_zone1_vegas/cabbotskin3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cabbotskin4
+{
+	diffusemap textures/m_zone1_vegas/cabbotskin4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/camera1sah
+{
+	diffusemap textures/m_zone1_vegas/camera1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/candle1
+{
+	diffusemap textures/m_zone1_vegas/candle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/candleholder
+{
+	diffusemap textures/m_zone1_vegas/candleholder.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Cannon
+{
+	diffusemap textures/m_zone1_vegas/Cannon.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cannonball
+{
+	diffusemap textures/m_zone1_vegas/cannonball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Cards1sah
+{
+	diffusemap textures/m_zone1_vegas/Cards1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/CE1RC
+{
+	diffusemap textures/m_zone1_vegas/CE1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/CE2RC
+{
+	diffusemap textures/m_zone1_vegas/CE2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/CE3RC
+{
+	diffusemap textures/m_zone1_vegas/CE3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/CE4RC
+{
+	diffusemap textures/m_zone1_vegas/CE4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cigs1sah
+{
+	diffusemap textures/m_zone1_vegas/cigs1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/clearcoffin1sah
+{
+	diffusemap textures/m_zone1_vegas/clearcoffin1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/clrcofpillow1sa
+{
+	diffusemap textures/m_zone1_vegas/clrcofpillow1sa.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/container1sah
+{
+	diffusemap textures/m_zone1_vegas/container1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/copcar
+{
+	diffusemap textures/m_zone1_vegas/copcar.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/copmisc
+{
+	diffusemap textures/m_zone1_vegas/copmisc.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Copper1
+{
+	diffusemap textures/m_zone1_vegas/Copper1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/copwheel
+{
+	diffusemap textures/m_zone1_vegas/copwheel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/courtesy1sah
+{
+	diffusemap textures/m_zone1_vegas/courtesy1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/crawlersignRC
+{
+	diffusemap textures/m_zone1_vegas/crawlersignRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/crawlerskinRC
+{
+	diffusemap textures/m_zone1_vegas/crawlerskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/crystal1
+{
+	diffusemap textures/m_zone1_vegas/crystal1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/crystal2a
+{
+	diffusemap textures/m_zone1_vegas/crystal2a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cuball
+{
+	diffusemap textures/m_zone1_vegas/cuball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/cuerack
+{
+	diffusemap textures/m_zone1_vegas/cuerack.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/dcavecomscrn1
+{
+	diffusemap textures/m_zone1_vegas/dcavecomscrn1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/dcomstat1
+{
+	diffusemap textures/m_zone1_vegas/dcomstat1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/dcomstat1b
+{
+	diffusemap textures/m_zone1_vegas/dcomstat1b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/dcomstat2
+{
+	diffusemap textures/m_zone1_vegas/dcomstat2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/deskbell1sah
+{
+	diffusemap textures/m_zone1_vegas/deskbell1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/deskpen1sah
+{
+	diffusemap textures/m_zone1_vegas/deskpen1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/dogdish1sah
+{
+	diffusemap textures/m_zone1_vegas/dogdish1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/duct1sah
+{
+	diffusemap textures/m_zone1_vegas/duct1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/DukeBoot
+{
+	diffusemap textures/m_zone1_vegas/DukeBoot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/DukeHat
+{
+	diffusemap textures/m_zone1_vegas/DukeHat.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/DukeHatRim
+{
+	diffusemap textures/m_zone1_vegas/DukeHatRim.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/elev_B1RC
+{
+	diffusemap textures/m_zone1_vegas/elev_B1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/elev_B2RC
+{
+	diffusemap textures/m_zone1_vegas/elev_B2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/elev_B3RC
+{
+	diffusemap textures/m_zone1_vegas/elev_B3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/elev_B4RC
+{
+	diffusemap textures/m_zone1_vegas/elev_B4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Face
+{
+	diffusemap textures/m_zone1_vegas/Face.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Fish2_64
+{
+	diffusemap textures/m_zone1_vegas/Fish2_64.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fishheadsignRC
+{
+	diffusemap textures/m_zone1_vegas/fishheadsignRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fishheadskinRC
+{
+	diffusemap textures/m_zone1_vegas/fishheadskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/FloorLmp
+{
+	diffusemap textures/m_zone1_vegas/FloorLmp.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fuse1A
+{
+	diffusemap textures/m_zone1_vegas/fuse1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fuse1B
+{
+	diffusemap textures/m_zone1_vegas/fuse1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fuse1C
+{
+	diffusemap textures/m_zone1_vegas/fuse1C.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fuse_amps
+{
+	diffusemap textures/m_zone1_vegas/fuse_amps.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fuse_amps2
+{
+	diffusemap textures/m_zone1_vegas/fuse_amps2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/fuse_amps3
+{
+	diffusemap textures/m_zone1_vegas/fuse_amps3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/gamblingcupRC
+{
+	diffusemap textures/m_zone1_vegas/gamblingcupRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Gfclock
+{
+	diffusemap textures/m_zone1_vegas/Gfclock.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/girllampskin1RC
+{
+	diffusemap textures/m_zone1_vegas/girllampskin1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/glass01asah
+{
+	diffusemap textures/m_zone1_vegas/glass01asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/glass02sah
+{
+	diffusemap textures/m_zone1_vegas/glass02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/glassestop1sah
+{
+	diffusemap textures/m_zone1_vegas/glassestop1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/glassestop2sah
+{
+	diffusemap textures/m_zone1_vegas/glassestop2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/glassFull1sah
+{
+	diffusemap textures/m_zone1_vegas/glassFull1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/glassfull2sah
+{
+	diffusemap textures/m_zone1_vegas/glassfull2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/glasslag1sah
+{
+	diffusemap textures/m_zone1_vegas/glasslag1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/gold01sah
+{
+	diffusemap textures/m_zone1_vegas/gold01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/gold02
+{
+	diffusemap textures/m_zone1_vegas/gold02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/goldstrip7
+{
+	diffusemap textures/m_zone1_vegas/goldstrip7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/griffon2
+{
+	diffusemap textures/m_zone1_vegas/griffon2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/GUMS
+{
+	diffusemap textures/m_zone1_vegas/GUMS.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hairspray1sah
+{
+	diffusemap textures/m_zone1_vegas/hairspray1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/ham2sah
+{
+	diffusemap textures/m_zone1_vegas/ham2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/handdryer1sah
+{
+	diffusemap textures/m_zone1_vegas/handdryer1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Handle
+{
+	diffusemap textures/m_zone1_vegas/Handle.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hanginglmp
+{
+	diffusemap textures/m_zone1_vegas/hanginglmp.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_chair01As
+{
+	diffusemap textures/m_zone1_vegas/hotel_chair01As.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_chair01Bs
+{
+	diffusemap textures/m_zone1_vegas/hotel_chair01Bs.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_chair01Cs
+{
+	diffusemap textures/m_zone1_vegas/hotel_chair01Cs.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_chairO2As
+{
+	diffusemap textures/m_zone1_vegas/hotel_chairO2As.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Hotel_rack1sah
+{
+	diffusemap textures/m_zone1_vegas/Hotel_rack1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_table1sah
+{
+	diffusemap textures/m_zone1_vegas/hotel_table1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_table2sah
+{
+	diffusemap textures/m_zone1_vegas/hotel_table2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_table3sah
+{
+	diffusemap textures/m_zone1_vegas/hotel_table3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hotel_table4sah
+{
+	diffusemap textures/m_zone1_vegas/hotel_table4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/hubcapsmall
+{
+	diffusemap textures/m_zone1_vegas/hubcapsmall.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/humameter
+{
+	diffusemap textures/m_zone1_vegas/humameter.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/insidemouth
+{
+	diffusemap textures/m_zone1_vegas/insidemouth.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/jello1sah
+{
+	diffusemap textures/m_zone1_vegas/jello1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/jhammer
+{
+	diffusemap textures/m_zone1_vegas/jhammer.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/KelpFL
+{
+	diffusemap textures/m_zone1_vegas/KelpFL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/keycard1A
+{
+	diffusemap textures/m_zone1_vegas/keycard1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/keycard1B
+{
+	diffusemap textures/m_zone1_vegas/keycard1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/labbtl1sah
+{
+	diffusemap textures/m_zone1_vegas/labbtl1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/ladel2sah
+{
+	diffusemap textures/m_zone1_vegas/ladel2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lampshade01sah
+{
+	diffusemap textures/m_zone1_vegas/lampshade01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lampshade02sah
+{
+	diffusemap textures/m_zone1_vegas/lampshade02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Laserprint1sah
+{
+	diffusemap textures/m_zone1_vegas/Laserprint1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lawncstrand1aRC
+{
+	diffusemap textures/m_zone1_vegas/lawncstrand1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lawncstrand1bRC
+{
+	diffusemap textures/m_zone1_vegas/lawncstrand1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lawncstrand1cRC
+{
+	diffusemap textures/m_zone1_vegas/lawncstrand1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lights
+{
+	diffusemap textures/m_zone1_vegas/lights.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lipstick1sah
+{
+	diffusemap textures/m_zone1_vegas/lipstick1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipblakmRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipblakmRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipblakRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipblakRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipblaksRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipblaksRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipbluemRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipbluemRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipblueRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipblueRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipbluesRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipbluesRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipredmRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipredmRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipredRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipredRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipredsRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipredsRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipyelomRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipyelomRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipyeloRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipyeloRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/LKpchipyelosRC
+{
+	diffusemap textures/m_zone1_vegas/LKpchipyelosRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/lock22sah
+{
+	diffusemap textures/m_zone1_vegas/lock22sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/magictable1sah
+{
+	diffusemap textures/m_zone1_vegas/magictable1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/mainbody35
+{
+	diffusemap textures/m_zone1_vegas/mainbody35.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/makup1sah
+{
+	diffusemap textures/m_zone1_vegas/makup1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/mastwood1BC
+{
+	diffusemap textures/m_zone1_vegas/mastwood1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/mermaid1sah
+{
+	diffusemap textures/m_zone1_vegas/mermaid1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/mermaid2sah
+{
+	diffusemap textures/m_zone1_vegas/mermaid2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/modcurtain1RC
+{
+	diffusemap textures/m_zone1_vegas/modcurtain1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/money01Asah
+{
+	diffusemap textures/m_zone1_vegas/money01Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/money02sah
+{
+	diffusemap textures/m_zone1_vegas/money02sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/money03sah
+{
+	diffusemap textures/m_zone1_vegas/money03sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/nanner
+{
+	diffusemap textures/m_zone1_vegas/nanner.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/nsmail6B_64
+{
+	diffusemap textures/m_zone1_vegas/nsmail6B_64.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/palmleaf
+{
+	diffusemap textures/m_zone1_vegas/palmleaf.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pattern1
+{
+	diffusemap textures/m_zone1_vegas/pattern1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/PBflipper1RC
+{
+	diffusemap textures/m_zone1_vegas/PBflipper1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/PBflipper2RC
+{
+	diffusemap textures/m_zone1_vegas/PBflipper2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/PBflipper3RC
+{
+	diffusemap textures/m_zone1_vegas/PBflipper3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/PBflipper4RC
+{
+	diffusemap textures/m_zone1_vegas/PBflipper4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pcue
+{
+	diffusemap textures/m_zone1_vegas/pcue.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/phouselamp1A
+{
+	diffusemap textures/m_zone1_vegas/phouselamp1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/phouselamp1B
+{
+	diffusemap textures/m_zone1_vegas/phouselamp1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pigmountsignRC
+{
+	diffusemap textures/m_zone1_vegas/pigmountsignRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pigmountskinRC
+{
+	diffusemap textures/m_zone1_vegas/pigmountskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pimprug3
+{
+	diffusemap textures/m_zone1_vegas/pimprug3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pimpwindow3
+{
+	diffusemap textures/m_zone1_vegas/pimpwindow3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pinball1
+{
+	diffusemap textures/m_zone1_vegas/pinball1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/pirFlag2
+{
+	diffusemap textures/m_zone1_vegas/pirFlag2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/plant01sah
+{
+	diffusemap textures/m_zone1_vegas/plant01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/plywood1sah
+{
+	diffusemap textures/m_zone1_vegas/plywood1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/poolchalk1sah
+{
+	diffusemap textures/m_zone1_vegas/poolchalk1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Pool_toy1sah
+{
+	diffusemap textures/m_zone1_vegas/Pool_toy1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/ptexwoodplacRC
+{
+	diffusemap textures/m_zone1_vegas/ptexwoodplacRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/racker
+{
+	diffusemap textures/m_zone1_vegas/racker.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/rackerthing
+{
+	diffusemap textures/m_zone1_vegas/rackerthing.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/rackerwood
+{
+	diffusemap textures/m_zone1_vegas/rackerwood.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/ramrod
+{
+	diffusemap textures/m_zone1_vegas/ramrod.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/rball
+{
+	diffusemap textures/m_zone1_vegas/rball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/robodealer1
+{
+	diffusemap textures/m_zone1_vegas/robodealer1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/robotender01
+{
+	diffusemap textures/m_zone1_vegas/robotender01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/robotender02
+{
+	diffusemap textures/m_zone1_vegas/robotender02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Rotating3asah
+{
+	diffusemap textures/m_zone1_vegas/Rotating3asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Rwheel2
+{
+	diffusemap textures/m_zone1_vegas/Rwheel2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Sail1sah
+{
+	diffusemap textures/m_zone1_vegas/Sail1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Sail2sah
+{
+	diffusemap textures/m_zone1_vegas/Sail2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/sandbag1sah
+{
+	diffusemap textures/m_zone1_vegas/sandbag1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/SawinHalf1sah
+{
+	diffusemap textures/m_zone1_vegas/SawinHalf1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/SawinHalf2sah
+{
+	diffusemap textures/m_zone1_vegas/SawinHalf2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/SawinHalf3sah
+{
+	diffusemap textures/m_zone1_vegas/SawinHalf3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/scaffold1
+{
+	diffusemap textures/m_zone1_vegas/scaffold1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/screentest300
+{
+	diffusemap textures/m_zone1_vegas/screentest300.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/sea
+{
+	diffusemap textures/m_zone1_vegas/sea.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Shark
+{
+	diffusemap textures/m_zone1_vegas/Shark.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Shock1sah
+{
+	diffusemap textures/m_zone1_vegas/Shock1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Shock2sah
+{
+	diffusemap textures/m_zone1_vegas/Shock2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/shower1sah
+{
+	diffusemap textures/m_zone1_vegas/shower1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/shower_soap1sah
+{
+	diffusemap textures/m_zone1_vegas/shower_soap1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Signinbook1sah
+{
+	diffusemap textures/m_zone1_vegas/Signinbook1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/sink1
+{
+	diffusemap textures/m_zone1_vegas/sink1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/slotarm1
+{
+	diffusemap textures/m_zone1_vegas/slotarm1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/slotarmball
+{
+	diffusemap textures/m_zone1_vegas/slotarmball.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/slotlightRC
+{
+	diffusemap textures/m_zone1_vegas/slotlightRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Slotstool1sah
+{
+	diffusemap textures/m_zone1_vegas/Slotstool1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Slotstool2BC
+{
+	diffusemap textures/m_zone1_vegas/Slotstool2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/slotwheelRC
+{
+	diffusemap textures/m_zone1_vegas/slotwheelRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/small
+{
+	diffusemap textures/m_zone1_vegas/small.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/soapdisp1sah
+{
+	diffusemap textures/m_zone1_vegas/soapdisp1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/standskin1RC
+{
+	diffusemap textures/m_zone1_vegas/standskin1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/stooth
+{
+	diffusemap textures/m_zone1_vegas/stooth.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/stratoball1A
+{
+	diffusemap textures/m_zone1_vegas/stratoball1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/stratoball1B
+{
+	diffusemap textures/m_zone1_vegas/stratoball1B.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/stratoflag1A
+{
+	diffusemap textures/m_zone1_vegas/stratoflag1A.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/SunGlassRackBas
+{
+	diffusemap textures/m_zone1_vegas/SunGlassRackBas.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/SunGlassRackGla
+{
+	diffusemap textures/m_zone1_vegas/SunGlassRackGla.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Sword1sah
+{
+	diffusemap textures/m_zone1_vegas/Sword1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/t-rexsignRC
+{
+	diffusemap textures/m_zone1_vegas/t-rexsignRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/t-rexskinRC
+{
+	diffusemap textures/m_zone1_vegas/t-rexskinRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/t-rexteethRC
+{
+	diffusemap textures/m_zone1_vegas/t-rexteethRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/tablelight1
+{
+	diffusemap textures/m_zone1_vegas/tablelight1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/TBall2
+{
+	diffusemap textures/m_zone1_vegas/TBall2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/tbase
+{
+	diffusemap textures/m_zone1_vegas/tbase.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Tennis1sah
+{
+	diffusemap textures/m_zone1_vegas/Tennis1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/teslathief1sah
+{
+	diffusemap textures/m_zone1_vegas/teslathief1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/thead2
+{
+	diffusemap textures/m_zone1_vegas/thead2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/thead2b
+{
+	diffusemap textures/m_zone1_vegas/thead2b.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/theater1sah
+{
+	diffusemap textures/m_zone1_vegas/theater1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/thronetex1RC
+{
+	diffusemap textures/m_zone1_vegas/thronetex1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/thronetex2RC
+{
+	diffusemap textures/m_zone1_vegas/thronetex2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/thronetex3RC
+{
+	diffusemap textures/m_zone1_vegas/thronetex3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/TLabel
+{
+	diffusemap textures/m_zone1_vegas/TLabel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/tooth
+{
+	diffusemap textures/m_zone1_vegas/tooth.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Tuna1RC
+{
+	diffusemap textures/m_zone1_vegas/Tuna1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Tuna2RC
+{
+	diffusemap textures/m_zone1_vegas/Tuna2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/turkey
+{
+	diffusemap textures/m_zone1_vegas/turkey.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Turnstile1
+{
+	diffusemap textures/m_zone1_vegas/Turnstile1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Turnstile2
+{
+	diffusemap textures/m_zone1_vegas/Turnstile2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Turnstile3
+{
+	diffusemap textures/m_zone1_vegas/Turnstile3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/turtle2
+{
+	diffusemap textures/m_zone1_vegas/turtle2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/vsign
+{
+	diffusemap textures/m_zone1_vegas/vsign.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/walllamp10
+{
+	diffusemap textures/m_zone1_vegas/walllamp10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/walllamp2
+{
+	diffusemap textures/m_zone1_vegas/walllamp2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/Wand1sah1
+{
+	diffusemap textures/m_zone1_vegas/Wand1sah1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/We
+{
+	diffusemap textures/m_zone1_vegas/We.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/wheel
+{
+	diffusemap textures/m_zone1_vegas/wheel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/wheelbase
+{
+	diffusemap textures/m_zone1_vegas/wheelbase.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone1_vegas/woodplaqueRC
+{
+	diffusemap textures/m_zone1_vegas/woodplaqueRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

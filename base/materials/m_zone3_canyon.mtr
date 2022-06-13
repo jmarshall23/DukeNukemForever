@@ -1,0 +1,448 @@
+textures/m_zone3_canyon/barrel_wood1RC
+{
+	diffusemap textures/m_zone3_canyon/barrel_wood1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/batbodyflatRC
+{
+	diffusemap textures/m_zone3_canyon/batbodyflatRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/batbodyRC
+{
+	diffusemap textures/m_zone3_canyon/batbodyRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/bateethRC
+{
+	diffusemap textures/m_zone3_canyon/bateethRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/batheadRC
+{
+	diffusemap textures/m_zone3_canyon/batheadRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/bloodymule
+{
+	diffusemap textures/m_zone3_canyon/bloodymule.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/butterfblackRC
+{
+	diffusemap textures/m_zone3_canyon/butterfblackRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/butterfblueRC
+{
+	diffusemap textures/m_zone3_canyon/butterfblueRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/butterfbrownRC
+{
+	diffusemap textures/m_zone3_canyon/butterfbrownRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/butterforangeRC
+{
+	diffusemap textures/m_zone3_canyon/butterforangeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/butterfyellowRC
+{
+	diffusemap textures/m_zone3_canyon/butterfyellowRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/cacti01sah
+{
+	diffusemap textures/m_zone3_canyon/cacti01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/Cactus1
+{
+	diffusemap textures/m_zone3_canyon/Cactus1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/Cactus12Asah
+{
+	diffusemap textures/m_zone3_canyon/Cactus12Asah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/Cactus12sah
+{
+	diffusemap textures/m_zone3_canyon/Cactus12sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/Cactus2
+{
+	diffusemap textures/m_zone3_canyon/Cactus2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/cactus3
+{
+	diffusemap textures/m_zone3_canyon/cactus3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/cowskullRC
+{
+	diffusemap textures/m_zone3_canyon/cowskullRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/cowskullteethRC
+{
+	diffusemap textures/m_zone3_canyon/cowskullteethRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/coyoteRC
+{
+	diffusemap textures/m_zone3_canyon/coyoteRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/coyotespitRC
+{
+	diffusemap textures/m_zone3_canyon/coyotespitRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/coyotetailRC
+{
+	diffusemap textures/m_zone3_canyon/coyotetailRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/coyoteteethRC
+{
+	diffusemap textures/m_zone3_canyon/coyoteteethRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/gilabodyRC
+{
+	diffusemap textures/m_zone3_canyon/gilabodyRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/gilaheadRC
+{
+	diffusemap textures/m_zone3_canyon/gilaheadRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/gilatailRC
+{
+	diffusemap textures/m_zone3_canyon/gilatailRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/gilateethRC
+{
+	diffusemap textures/m_zone3_canyon/gilateethRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/lantern1sah
+{
+	diffusemap textures/m_zone3_canyon/lantern1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/lantern2RC
+{
+	diffusemap textures/m_zone3_canyon/lantern2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/lanternflame2RC
+{
+	diffusemap textures/m_zone3_canyon/lanternflame2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/lantgrid1
+{
+	diffusemap textures/m_zone3_canyon/lantgrid1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/lantHandle1
+{
+	diffusemap textures/m_zone3_canyon/lantHandle1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/laternflameRC
+{
+	diffusemap textures/m_zone3_canyon/laternflameRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/minecarRC
+{
+	diffusemap textures/m_zone3_canyon/minecarRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/mulebody1RC
+{
+	diffusemap textures/m_zone3_canyon/mulebody1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/mulebody2RC
+{
+	diffusemap textures/m_zone3_canyon/mulebody2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/mulebody3RC
+{
+	diffusemap textures/m_zone3_canyon/mulebody3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/mulehair
+{
+	diffusemap textures/m_zone3_canyon/mulehair.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/mulehairRC
+{
+	diffusemap textures/m_zone3_canyon/mulehairRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/muleheadRC
+{
+	diffusemap textures/m_zone3_canyon/muleheadRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/muleRC
+{
+	diffusemap textures/m_zone3_canyon/muleRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/pickaxeRC
+{
+	diffusemap textures/m_zone3_canyon/pickaxeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/rattlerbodyRC
+{
+	diffusemap textures/m_zone3_canyon/rattlerbodyRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/rattlermouthRC
+{
+	diffusemap textures/m_zone3_canyon/rattlermouthRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/rattlertailRC
+{
+	diffusemap textures/m_zone3_canyon/rattlertailRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/rattlertongueRC
+{
+	diffusemap textures/m_zone3_canyon/rattlertongueRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/scorpbodyRC
+{
+	diffusemap textures/m_zone3_canyon/scorpbodyRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/scorpbotRC
+{
+	diffusemap textures/m_zone3_canyon/scorpbotRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/scorpionredRC
+{
+	diffusemap textures/m_zone3_canyon/scorpionredRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/scorptailRC
+{
+	diffusemap textures/m_zone3_canyon/scorptailRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/snakespecRC
+{
+	diffusemap textures/m_zone3_canyon/snakespecRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/solarpanel1aRC
+{
+	diffusemap textures/m_zone3_canyon/solarpanel1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/solarpanel1bRC
+{
+	diffusemap textures/m_zone3_canyon/solarpanel1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/trackswitch1RC
+{
+	diffusemap textures/m_zone3_canyon/trackswitch1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/trackswitch2RC
+{
+	diffusemap textures/m_zone3_canyon/trackswitch2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/trailmarker1RC
+{
+	diffusemap textures/m_zone3_canyon/trailmarker1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/trailmarkertop1
+{
+	diffusemap textures/m_zone3_canyon/trailmarkertop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/trainwheelRC
+{
+	diffusemap textures/m_zone3_canyon/trainwheelRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/tumblewd1sah
+{
+	diffusemap textures/m_zone3_canyon/tumblewd1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/vulturebodyRC
+{
+	diffusemap textures/m_zone3_canyon/vulturebodyRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/vulturegib1
+{
+	diffusemap textures/m_zone3_canyon/vulturegib1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/vultureheadRC
+{
+	diffusemap textures/m_zone3_canyon/vultureheadRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/wagonwhlRC
+{
+	diffusemap textures/m_zone3_canyon/wagonwhlRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone3_canyon/wagonwhlspokRC
+{
+	diffusemap textures/m_zone3_canyon/wagonwhlspokRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,35 @@
+textures/t_fonts/font_a51mask1sa
+{
+	diffusemap textures/t_fonts/font_a51mask1sa.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_fonts/font_a51sah
+{
+	diffusemap textures/t_fonts/font_a51sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_fonts/LEDFont1BC
+{
+	diffusemap textures/t_fonts/LEDFont1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_fonts/LEDFont2BC
+{
+	diffusemap textures/t_fonts/LEDFont2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_fonts/pnl_techfont1BC
+{
+	diffusemap textures/t_fonts/pnl_techfont1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

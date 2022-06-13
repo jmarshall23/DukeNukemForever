@@ -1,0 +1,35 @@
+textures/area51_canvas/a51shelfcanvas
+{
+	diffusemap textures/area51_canvas/a51shelfcanvas.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/area51_canvas/arrow_off1BC
+{
+	diffusemap textures/area51_canvas/arrow_off1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/area51_canvas/arrow_on1BC
+{
+	diffusemap textures/area51_canvas/arrow_on1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/area51_canvas/filecab1BC
+{
+	diffusemap textures/area51_canvas/filecab1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/area51_canvas/filecab_back1BC
+{
+	diffusemap textures/area51_canvas/filecab_back1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -945,7 +945,7 @@ bool idInventory::Give( idPlayer *owner, const idDict &spawnArgs, const char *st
 
 			if ( !gameLocal.world->spawnArgs.GetBool( "no_Weapons" ) || ( weaponName == "weapon_fists" ) || ( weaponName == "weapon_soulcube" ) ) {
 				if ( ( weapons & ( 1 << i ) ) == 0 || gameLocal.isMultiplayer ) {
-					if ( owner->GetUserInfo()->GetBool( "ui_autoSwitch" ) && idealWeapon && i != owner->weapon_bloodstone_active1 && i != owner->weapon_bloodstone_active2 && i != owner->weapon_bloodstone_active3) {
+					if ( owner->GetUserInfo()->GetBool( "ui_autoSwitch" ) && idealWeapon) {
 						assert( !gameLocal.isClient );
 						*idealWeapon = i;
 					} 
@@ -1298,12 +1298,6 @@ idPlayer::idPlayer() {
 	weapon_pda				= -1;
 	weapon_fists			= -1;
 #ifdef _D3XP
-	weapon_bloodstone		= -1;
-	weapon_bloodstone_active1 = -1;
-	weapon_bloodstone_active2 = -1;
-	weapon_bloodstone_active3 = -1;
-	harvest_lock			= false;
-
 	hudPowerup				= -1;
 	lastHudPowerup			= -1;
 	hudPowerupDuration		= 0;
@@ -1485,13 +1479,7 @@ void idPlayer::Init( void ) {
 	weapon_soulcube			= SlotForWeapon( "weapon_soulcube" );
 	weapon_pda				= SlotForWeapon( "weapon_pda" );
 	weapon_fists			= SlotForWeapon( "weapon_fists" );
-#ifdef _D3XP
-	weapon_bloodstone		= SlotForWeapon( "weapon_bloodstone_passive" );
-	weapon_bloodstone_active1 = SlotForWeapon( "weapon_bloodstone_active1" );
-	weapon_bloodstone_active2 = SlotForWeapon( "weapon_bloodstone_active2" );
-	weapon_bloodstone_active3 = SlotForWeapon( "weapon_bloodstone_active3" );
-	harvest_lock			= false;
-#endif
+
 	showWeaponViewModel		= GetUserInfo()->GetBool( "ui_showGun" );
 
 
@@ -1637,19 +1625,19 @@ void idPlayer::Init( void ) {
 	value = spawnArgs.GetString( "bone_hips", "" );
 	hipJoint = animator.GetJointHandle( value );
 	if ( hipJoint == INVALID_JOINT ) {
-		gameLocal.Error( "Joint '%s' not found for 'bone_hips' on '%s'", value, name.c_str() );
+		gameLocal.Warning( "Joint '%s' not found for 'bone_hips' on '%s'", value, name.c_str() );
 	}
 
 	value = spawnArgs.GetString( "bone_chest", "" );
 	chestJoint = animator.GetJointHandle( value );
 	if ( chestJoint == INVALID_JOINT ) {
-		gameLocal.Error( "Joint '%s' not found for 'bone_chest' on '%s'", value, name.c_str() );
+		gameLocal.Warning( "Joint '%s' not found for 'bone_chest' on '%s'", value, name.c_str() );
 	}
 
 	value = spawnArgs.GetString( "bone_head", "" );
 	headJoint = animator.GetJointHandle( value );
 	if ( headJoint == INVALID_JOINT ) {
-		gameLocal.Error( "Joint '%s' not found for 'bone_head' on '%s'", value, name.c_str() );
+		gameLocal.Warning( "Joint '%s' not found for 'bone_head' on '%s'", value, name.c_str() );
 	}
 
 	// initialize the script variables
@@ -1847,15 +1835,7 @@ void idPlayer::Spawn( void ) {
 			}
 		}
 #endif
-#ifdef _D3XP
-		//We can spawn with a full bloodstone, so make sure the hud knows
-		if ( weapon_bloodstone > 0 && ( inventory.weapons & ( 1 << weapon_bloodstone ) ) ) {
-			//int max_blood = inventory.MaxAmmoForAmmoClass( this, "ammo_bloodstone" );
-			//if ( inventory.ammo[ idWeapon::GetAmmoNumForName( "ammo_bloodstone" ) ] >= max_blood ) {
-				hud->HandleNamedEvent( "bloodstoneReady" );
-			//}
-		}
-#endif
+
 		hud->HandleNamedEvent( "itemPickup" );
 	}
 
@@ -1949,22 +1929,7 @@ void idPlayer::Spawn( void ) {
 	}
 #endif
 
-#ifdef _D3XP
-	if(g_skill.GetInteger() >= 3) {
-		if(!WeaponAvailable("weapon_bloodstone_passive")) {
-			GiveInventoryItem("weapon_bloodstone_passive");
-		}
-		if(!WeaponAvailable("weapon_bloodstone_active1")) {
-			GiveInventoryItem("weapon_bloodstone_active1");
-		}
-		if(!WeaponAvailable("weapon_bloodstone_active2")) {
-			GiveInventoryItem("weapon_bloodstone_active2");
-		}
-		if(!WeaponAvailable("weapon_bloodstone_active3")) {
-			GiveInventoryItem("weapon_bloodstone_active3");
-		}
-	}
-
+#ifdef _D3XP	
 	bloomEnabled			= false;
 	bloomSpeed				= 1;
 	bloomIntensity			= -0.01f;
@@ -2035,18 +2000,6 @@ void idPlayer::Save( idSaveGame *savefile ) const {
 	savefile->WriteInt( weapon_soulcube );
 	savefile->WriteInt( weapon_pda );
 	savefile->WriteInt( weapon_fists );
-#ifdef _D3XP
-	savefile->WriteInt( weapon_bloodstone );
-	savefile->WriteInt( weapon_bloodstone_active1 );
-	savefile->WriteInt( weapon_bloodstone_active2 );
-	savefile->WriteInt( weapon_bloodstone_active3 );
-	savefile->WriteBool( harvest_lock );
-	savefile->WriteInt( hudPowerup );
-	savefile->WriteInt( lastHudPowerup );
-	savefile->WriteInt( hudPowerupDuration );
-	
-	
-#endif
 
 	savefile->WriteInt( heartRate );
 
@@ -2294,19 +2247,6 @@ void idPlayer::Restore( idRestoreGame *savefile ) {
 	savefile->ReadInt( weapon_soulcube );
 	savefile->ReadInt( weapon_pda );
 	savefile->ReadInt( weapon_fists );
-#ifdef _D3XP
-	savefile->ReadInt( weapon_bloodstone );
-	savefile->ReadInt( weapon_bloodstone_active1 );
-	savefile->ReadInt( weapon_bloodstone_active2 );
-	savefile->ReadInt( weapon_bloodstone_active3 );
-
-	savefile->ReadBool( harvest_lock );
-	savefile->ReadInt( hudPowerup );
-	savefile->ReadInt( lastHudPowerup );
-	savefile->ReadInt( hudPowerupDuration );
-	
-	
-#endif
 
 	savefile->ReadInt( heartRate );
 
@@ -2984,12 +2924,7 @@ void idPlayer::UpdateHudAmmo( idUserInterface *_hud ) {
 	inclip		= weapon.GetEntity()->AmmoInClip();
 	ammoamount	= weapon.GetEntity()->AmmoAvailable();
 
-#ifdef _D3XP
-	//Hack to stop the bloodstone ammo to display when it is being activated
-	if ( ammoamount < 0 || !weapon.GetEntity()->IsReady() || currentWeapon == weapon_bloodstone) {
-#else
 	if ( ammoamount < 0 || !weapon.GetEntity()->IsReady() ) {
-#endif
 		// show infinite ammo
 		_hud->SetStateString( "player_ammo", "" );
 		_hud->SetStateString( "player_totalammo", "" );
@@ -3015,26 +2950,8 @@ void idPlayer::UpdateHudAmmo( idUserInterface *_hud ) {
 	_hud->SetStateBool( "player_clip_low", ( weapon.GetEntity()->ClipSize() ? inclip <= weapon.GetEntity()->LowAmmo() : false ) );
 
 #ifdef _D3XP
-	//Hack to stop the bloodstone ammo to display when it is being activated
-	if(currentWeapon == weapon_bloodstone) {
-		_hud->SetStateBool( "player_ammo_empty", false );
-		_hud->SetStateBool( "player_clip_empty", false );
-		_hud->SetStateBool( "player_clip_low", false );
-	}
-#endif
-
-#ifdef _D3XP
 	//Let the HUD know the total amount of ammo regardless of the ammo required value
 	_hud->SetStateString( "player_ammo_count", va("%i", weapon.GetEntity()->AmmoCount()));
-#endif
-
-#ifdef _D3XP
-	//Make sure the hud always knows how many bloodstone charges there are
-	int ammoRequired;
-	ammo_t ammo_i = inventory.AmmoIndexForWeaponClass( "weapon_bloodstone_passive", &ammoRequired );
-	int bloodstoneAmmo = inventory.HasAmmo( ammo_i, ammoRequired );
-	_hud->SetStateString("player_bloodstone_ammo", va("%i", bloodstoneAmmo));
-	_hud->HandleNamedEvent( "bloodstoneAmmoUpdate" );
 #endif
 
 	_hud->HandleNamedEvent( "updateAmmo" );
@@ -3505,24 +3422,7 @@ bool idPlayer::Give( const char *statname, const char *value ) {
 			GivePowerUp( ENVIROTIME, atoi(value)*1000 );
 		}
 	} else {
-		bool ret = inventory.Give( this, spawnArgs, statname, value, &idealWeapon, true );
-		if(!idStr::Icmp( statname, "ammo_bloodstone" ) ) {
-			//int i = inventory.AmmoIndexForAmmoClass( statname );		
-			//int max = inventory.MaxAmmoForAmmoClass( this, statname );
-			//if(hud && inventory.ammo[ i ] >= max) {
-			if(hud) {
-				
-				//Force an update of the bloodstone ammount
-				int ammoRequired;
-				ammo_t ammo_i = inventory.AmmoIndexForWeaponClass( "weapon_bloodstone_passive", &ammoRequired );
-				int bloodstoneAmmo = inventory.HasAmmo( ammo_i, ammoRequired );
-				hud->SetStateString("player_bloodstone_ammo", va("%i", bloodstoneAmmo));
-
-				hud->HandleNamedEvent("bloodstoneReady");
-				//Make sure we unlock the ability to harvest
-				harvest_lock = false;
-			}
-		}
+		bool ret = inventory.Give( this, spawnArgs, statname, value, &idealWeapon, true );		
 		return ret;
 #else
 		return inventory.Give( this, spawnArgs, statname, value, &idealWeapon, true );
@@ -4448,7 +4348,7 @@ void idPlayer::NextWeapon( void ) {
 		}
 
 #ifdef _D3XP
-		if ( inventory.HasAmmo( weap, true, this ) || w == weapon_bloodstone ) {
+		if ( inventory.HasAmmo( weap, true, this ) ) {
 #else
 		if ( inventory.HasAmmo( weap ) ) {
 #endif
@@ -4503,7 +4403,7 @@ void idPlayer::PrevWeapon( void ) {
 			continue;
 		}
 #ifdef _D3XP
-		if ( inventory.HasAmmo( weap, true, this ) || w == weapon_bloodstone ) {
+		if ( inventory.HasAmmo( weap, true, this ) ) {
 #else
 		if ( inventory.HasAmmo( weap ) ) {
 #endif
@@ -5265,14 +5165,14 @@ Searches nearby locations
 ================
 */
 void idPlayer::UpdateLocation( void ) {
-	if ( hud ) {
-		idLocationEntity *locationEntity = gameLocal.LocationForPoint( GetEyePosition() );
-		if ( locationEntity ) {
-			hud->SetStateString( "location", locationEntity->GetLocation() );
-		} else {
-			hud->SetStateString( "location", common->GetLanguageDict()->GetString( "#str_02911" ) );
-		}
-	}
+	//if ( hud ) {
+	//	idLocationEntity *locationEntity = gameLocal.LocationForPoint( GetEyePosition() );
+	//	if ( locationEntity ) {
+	//		hud->SetStateString( "location", locationEntity->GetLocation() );
+	//	} else {
+	//		hud->SetStateString( "location", common->GetLanguageDict()->GetString( "#str_02911" ) );
+	//	}
+	//}
 }
 
 /*

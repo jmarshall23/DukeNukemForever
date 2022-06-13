@@ -1,0 +1,91 @@
+textures/p_PortraitIcons/p_DamGuide1
+{
+	diffusemap textures/p_PortraitIcons/p_DamGuide1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_EDFFreezer1
+{
+	diffusemap textures/p_PortraitIcons/p_EDFFreezer1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_EDFGrunt1
+{
+	diffusemap textures/p_PortraitIcons/p_EDFGrunt1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_EDFHeavyWeps1
+{
+	diffusemap textures/p_PortraitIcons/p_EDFHeavyWeps1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_EDFSapper1
+{
+	diffusemap textures/p_PortraitIcons/p_EDFSapper1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_EDFSniper1
+{
+	diffusemap textures/p_PortraitIcons/p_EDFSniper1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_Gus1
+{
+	diffusemap textures/p_PortraitIcons/p_Gus1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_NPC_OldMan1
+{
+	diffusemap textures/p_PortraitIcons/p_NPC_OldMan1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_NukeSymbol1
+{
+	diffusemap textures/p_PortraitIcons/p_NukeSymbol1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_pGeorge1
+{
+	diffusemap textures/p_PortraitIcons/p_pGeorge1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_PigCop1
+{
+	diffusemap textures/p_PortraitIcons/p_PigCop1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_PigCop2
+{
+	diffusemap textures/p_PortraitIcons/p_PigCop2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/p_PortraitIcons/p_TheGeneral1
+{
+	diffusemap textures/p_PortraitIcons/p_TheGeneral1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

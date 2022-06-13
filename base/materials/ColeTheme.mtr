@@ -1,0 +1,35 @@
+textures/ColeTheme/funkyhead
+{
+	diffusemap textures/ColeTheme/funkyhead.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ColeTheme/ninjas
+{
+	diffusemap textures/ColeTheme/ninjas.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ColeTheme/pighead
+{
+	diffusemap textures/ColeTheme/pighead.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ColeTheme/rescue
+{
+	diffusemap textures/ColeTheme/rescue.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ColeTheme/testpattern
+{
+	diffusemap textures/ColeTheme/testpattern.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

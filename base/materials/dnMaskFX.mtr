@@ -1,0 +1,525 @@
+textures/dnMaskFX/assrag_1tw
+{
+	diffusemap textures/dnMaskFX/assrag_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/boardldeb_1tw
+{
+	diffusemap textures/dnMaskFX/boardldeb_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/bullboard1tw
+{
+	diffusemap textures/dnMaskFX/bullboard1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/buttstw_2tw
+{
+	diffusemap textures/dnMaskFX/buttstw_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/callnikki_1tw
+{
+	diffusemap textures/dnMaskFX/callnikki_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/cautffam_1tw
+{
+	diffusemap textures/dnMaskFX/cautffam_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/chainfence1tw
+{
+	diffusemap textures/dnMaskFX/chainfence1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/chineemask
+{
+	diffusemap textures/dnMaskFX/chineemask.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/code_1tw
+{
+	diffusemap textures/dnMaskFX/code_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/construfen_2tw
+{
+	diffusemap textures/dnMaskFX/construfen_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/debris4_tw
+{
+	diffusemap textures/dnMaskFX/debris4_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/deskcalendar_1tw
+{
+	diffusemap textures/dnMaskFX/deskcalendar_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/detrit_1tw
+{
+	diffusemap textures/dnMaskFX/detrit_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/detrit_2tw
+{
+	diffusemap textures/dnMaskFX/detrit_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/dirtmask_1tw
+{
+	diffusemap textures/dnMaskFX/dirtmask_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/dirtmask_2tw
+{
+	diffusemap textures/dnMaskFX/dirtmask_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/doobalk_1tw
+{
+	diffusemap textures/dnMaskFX/doobalk_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/edf2vent_2ztw
+{
+	diffusemap textures/dnMaskFX/edf2vent_2ztw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/emponly_1tw
+{
+	diffusemap textures/dnMaskFX/emponly_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/fatasse_3tw
+{
+	diffusemap textures/dnMaskFX/fatasse_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/fatass_1tw
+{
+	diffusemap textures/dnMaskFX/fatass_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/fenced_3tw
+{
+	diffusemap textures/dnMaskFX/fenced_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/fishpie1tw
+{
+	diffusemap textures/dnMaskFX/fishpie1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/fishpie2tw
+{
+	diffusemap textures/dnMaskFX/fishpie2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/flobo1tw
+{
+	diffusemap textures/dnMaskFX/flobo1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/floormatstw
+{
+	diffusemap textures/dnMaskFX/floormatstw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/flowerycrap_tw
+{
+	diffusemap textures/dnMaskFX/flowerycrap_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/girliecal_1
+{
+	diffusemap textures/dnMaskFX/girliecal_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/glazzies2tw
+{
+	diffusemap textures/dnMaskFX/glazzies2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/glazziestw
+{
+	diffusemap textures/dnMaskFX/glazziestw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/hangcablesc_1tw
+{
+	diffusemap textures/dnMaskFX/hangcablesc_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/hi-v_2tw
+{
+	diffusemap textures/dnMaskFX/hi-v_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/jesus1tw
+{
+	diffusemap textures/dnMaskFX/jesus1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/kojak_rocks_1tw
+{
+	diffusemap textures/dnMaskFX/kojak_rocks_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/minepipes3tw
+{
+	diffusemap textures/dnMaskFX/minepipes3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/momento_1tw
+{
+	diffusemap textures/dnMaskFX/momento_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/momento_2tw
+{
+	diffusemap textures/dnMaskFX/momento_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/momento_3tw
+{
+	diffusemap textures/dnMaskFX/momento_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/mopap_1tw
+{
+	diffusemap textures/dnMaskFX/mopap_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/newspap3tw
+{
+	diffusemap textures/dnMaskFX/newspap3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/nosmoke_1tw
+{
+	diffusemap textures/dnMaskFX/nosmoke_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/nosmoke_2tw
+{
+	diffusemap textures/dnMaskFX/nosmoke_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/painto_2tw
+{
+	diffusemap textures/dnMaskFX/painto_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/painto_3tw
+{
+	diffusemap textures/dnMaskFX/painto_3tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/papers1tw
+{
+	diffusemap textures/dnMaskFX/papers1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/pipers_2tw
+{
+	diffusemap textures/dnMaskFX/pipers_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/placard_1tw
+{
+	diffusemap textures/dnMaskFX/placard_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/raggho1tw
+{
+	diffusemap textures/dnMaskFX/raggho1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/rladdertw2
+{
+	diffusemap textures/dnMaskFX/rladdertw2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/rladdertw2a
+{
+	diffusemap textures/dnMaskFX/rladdertw2a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/ruglatw
+{
+	diffusemap textures/dnMaskFX/ruglatw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/ruglatw5
+{
+	diffusemap textures/dnMaskFX/ruglatw5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/shaftsi_1tw
+{
+	diffusemap textures/dnMaskFX/shaftsi_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/sisact_1tw
+{
+	diffusemap textures/dnMaskFX/sisact_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/sisact_2tw
+{
+	diffusemap textures/dnMaskFX/sisact_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/slwire1TW
+{
+	diffusemap textures/dnMaskFX/slwire1TW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/somekindofpipe_1tw
+{
+	diffusemap textures/dnMaskFX/somekindofpipe_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/somestuff1tw
+{
+	diffusemap textures/dnMaskFX/somestuff1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/somestuff5tw
+{
+	diffusemap textures/dnMaskFX/somestuff5tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/somestuff8tw
+{
+	diffusemap textures/dnMaskFX/somestuff8tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/spank1TW
+{
+	diffusemap textures/dnMaskFX/spank1TW.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/steelsupport1tw
+{
+	diffusemap textures/dnMaskFX/steelsupport1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/steelsupport2tw
+{
+	diffusemap textures/dnMaskFX/steelsupport2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/straps1tw
+{
+	diffusemap textures/dnMaskFX/straps1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/straps2tw
+{
+	diffusemap textures/dnMaskFX/straps2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/strat_girdx_tw
+{
+	diffusemap textures/dnMaskFX/strat_girdx_tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/tail1tw
+{
+	diffusemap textures/dnMaskFX/tail1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/tassleho2tw
+{
+	diffusemap textures/dnMaskFX/tassleho2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/tasslehotw
+{
+	diffusemap textures/dnMaskFX/tasslehotw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/ufo_pic2tw
+{
+	diffusemap textures/dnMaskFX/ufo_pic2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/ufo_pic4tw
+{
+	diffusemap textures/dnMaskFX/ufo_pic4tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/vatorcable_1tw
+{
+	diffusemap textures/dnMaskFX/vatorcable_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/voltage1tw
+{
+	diffusemap textures/dnMaskFX/voltage1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/welcome_1tw
+{
+	diffusemap textures/dnMaskFX/welcome_1tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dnMaskFX/wiredgtw
+{
+	diffusemap textures/dnMaskFX/wiredgtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

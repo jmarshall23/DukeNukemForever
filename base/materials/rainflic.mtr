@@ -1,0 +1,28 @@
+textures/rainflic/Rain01
+{
+	diffusemap textures/rainflic/Rain01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/rainflic/Rain02
+{
+	diffusemap textures/rainflic/Rain02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/rainflic/raindrops
+{
+	diffusemap textures/rainflic/raindrops.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/rainflic/RainPAL
+{
+	diffusemap textures/rainflic/RainPAL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

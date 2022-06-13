@@ -1,0 +1,651 @@
+textures/ezvend/burto_desc0
+{
+	diffusemap textures/ezvend/burto_desc0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/burto_desc1
+{
+	diffusemap textures/ezvend/burto_desc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/burto_desc2
+{
+	diffusemap textures/ezvend/burto_desc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/burto_desc3
+{
+	diffusemap textures/ezvend/burto_desc3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/chips_desc0
+{
+	diffusemap textures/ezvend/chips_desc0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/chips_desc1
+{
+	diffusemap textures/ezvend/chips_desc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/chips_desc2
+{
+	diffusemap textures/ezvend/chips_desc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/chips_desc3
+{
+	diffusemap textures/ezvend/chips_desc3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/co2_00
+{
+	diffusemap textures/ezvend/co2_00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/co2_01
+{
+	diffusemap textures/ezvend/co2_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/co2_02
+{
+	diffusemap textures/ezvend/co2_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/co2_03
+{
+	diffusemap textures/ezvend/co2_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/cowpie_desc00
+{
+	diffusemap textures/ezvend/cowpie_desc00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/cowpie_desc01
+{
+	diffusemap textures/ezvend/cowpie_desc01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/cowpie_desc02
+{
+	diffusemap textures/ezvend/cowpie_desc02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/cowpie_desc03
+{
+	diffusemap textures/ezvend/cowpie_desc03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/ezscreen_static
+{
+	diffusemap textures/ezvend/ezscreen_static.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/ezvend_screen
+{
+	diffusemap textures/ezvend/ezvend_screen.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/ez_soldout
+{
+	diffusemap textures/ezvend/ez_soldout.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/fatbust_desc0
+{
+	diffusemap textures/ezvend/fatbust_desc0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/fatbust_desc1
+{
+	diffusemap textures/ezvend/fatbust_desc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/fatbust_desc2
+{
+	diffusemap textures/ezvend/fatbust_desc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/fatbust_desc3
+{
+	diffusemap textures/ezvend/fatbust_desc3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/ham_desc_0
+{
+	diffusemap textures/ezvend/ham_desc_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/ham_desc_1
+{
+	diffusemap textures/ezvend/ham_desc_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/ham_desc_2
+{
+	diffusemap textures/ezvend/ham_desc_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/ham_desc_3
+{
+	diffusemap textures/ezvend/ham_desc_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/helth_desc0
+{
+	diffusemap textures/ezvend/helth_desc0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/helth_desc1
+{
+	diffusemap textures/ezvend/helth_desc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/helth_desc2
+{
+	diffusemap textures/ezvend/helth_desc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/helth_desc3
+{
+	diffusemap textures/ezvend/helth_desc3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/left_depress
+{
+	diffusemap textures/ezvend/left_depress.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money15_0
+{
+	diffusemap textures/ezvend/money15_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money15_1
+{
+	diffusemap textures/ezvend/money15_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money15_2
+{
+	diffusemap textures/ezvend/money15_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money15_3
+{
+	diffusemap textures/ezvend/money15_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money1_0
+{
+	diffusemap textures/ezvend/money1_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money1_1
+{
+	diffusemap textures/ezvend/money1_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money1_2
+{
+	diffusemap textures/ezvend/money1_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money1_3
+{
+	diffusemap textures/ezvend/money1_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money25_0
+{
+	diffusemap textures/ezvend/money25_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money25_1
+{
+	diffusemap textures/ezvend/money25_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money25_2
+{
+	diffusemap textures/ezvend/money25_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money25_3
+{
+	diffusemap textures/ezvend/money25_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money35_0
+{
+	diffusemap textures/ezvend/money35_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money35_1
+{
+	diffusemap textures/ezvend/money35_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money35_2
+{
+	diffusemap textures/ezvend/money35_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money35_3
+{
+	diffusemap textures/ezvend/money35_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money3_00
+{
+	diffusemap textures/ezvend/money3_00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money3_01
+{
+	diffusemap textures/ezvend/money3_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money3_02
+{
+	diffusemap textures/ezvend/money3_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money3_03
+{
+	diffusemap textures/ezvend/money3_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money4_0
+{
+	diffusemap textures/ezvend/money4_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money4_1
+{
+	diffusemap textures/ezvend/money4_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money4_2
+{
+	diffusemap textures/ezvend/money4_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money4_3
+{
+	diffusemap textures/ezvend/money4_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money50_0
+{
+	diffusemap textures/ezvend/money50_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money50_1
+{
+	diffusemap textures/ezvend/money50_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money50_2
+{
+	diffusemap textures/ezvend/money50_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money50_3
+{
+	diffusemap textures/ezvend/money50_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money5_0
+{
+	diffusemap textures/ezvend/money5_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money5_1
+{
+	diffusemap textures/ezvend/money5_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money5_2
+{
+	diffusemap textures/ezvend/money5_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money5_3
+{
+	diffusemap textures/ezvend/money5_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money_10
+{
+	diffusemap textures/ezvend/money_10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money_100
+{
+	diffusemap textures/ezvend/money_100.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money_150
+{
+	diffusemap textures/ezvend/money_150.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money_20
+{
+	diffusemap textures/ezvend/money_20.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money_200
+{
+	diffusemap textures/ezvend/money_200.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money_30
+{
+	diffusemap textures/ezvend/money_30.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/money_75
+{
+	diffusemap textures/ezvend/money_75.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/powercell_00
+{
+	diffusemap textures/ezvend/powercell_00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/powercell_01
+{
+	diffusemap textures/ezvend/powercell_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/powercell_02
+{
+	diffusemap textures/ezvend/powercell_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/powercell_03
+{
+	diffusemap textures/ezvend/powercell_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/pwtrip_desc0
+{
+	diffusemap textures/ezvend/pwtrip_desc0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/pwtrip_desc1
+{
+	diffusemap textures/ezvend/pwtrip_desc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/pwtrip_desc2
+{
+	diffusemap textures/ezvend/pwtrip_desc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/pwtrip_desc3
+{
+	diffusemap textures/ezvend/pwtrip_desc3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/quest_depress
+{
+	diffusemap textures/ezvend/quest_depress.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/right_depress
+{
+	diffusemap textures/ezvend/right_depress.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/soldout_00
+{
+	diffusemap textures/ezvend/soldout_00.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/soldout_01
+{
+	diffusemap textures/ezvend/soldout_01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/soldout_02
+{
+	diffusemap textures/ezvend/soldout_02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/soldout_03
+{
+	diffusemap textures/ezvend/soldout_03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/sportd_desc0
+{
+	diffusemap textures/ezvend/sportd_desc0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/sportd_desc1
+{
+	diffusemap textures/ezvend/sportd_desc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/sportd_desc2
+{
+	diffusemap textures/ezvend/sportd_desc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/sportd_desc3
+{
+	diffusemap textures/ezvend/sportd_desc3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/stroid_desc0
+{
+	diffusemap textures/ezvend/stroid_desc0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/stroid_desc1
+{
+	diffusemap textures/ezvend/stroid_desc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/stroid_desc2
+{
+	diffusemap textures/ezvend/stroid_desc2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/ezvend/stroid_desc3
+{
+	diffusemap textures/ezvend/stroid_desc3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

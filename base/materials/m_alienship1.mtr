@@ -1,0 +1,7 @@
+textures/m_alienship1/Dalienshipskin1
+{
+	diffusemap textures/m_alienship1/Dalienshipskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

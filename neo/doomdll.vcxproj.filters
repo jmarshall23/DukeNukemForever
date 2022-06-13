@@ -115,6 +115,9 @@
     <Filter Include="External\glew\GL">
       <UniqueIdentifier>{f5a7856c-45f7-4736-8d91-a3f3c052d1ce}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tools\ImportPipeline">
+      <UniqueIdentifier>{9fcff724-79a9-4436-85d0-c46cd42e23d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cm\CollisionModel.h">
@@ -1864,6 +1867,9 @@
     </ClCompile>
     <ClCompile Include="framework\DeclRenderParam.cpp">
       <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\importpipeline\MtrGenerate.cpp">
+      <Filter>Tools\ImportPipeline</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,7 @@
+textures/eqtheme/eqbackground
+{
+	diffusemap textures/eqtheme/eqbackground.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

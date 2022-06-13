@@ -1,0 +1,98 @@
+textures/smk1/s_a51tramdisp1
+{
+	diffusemap textures/smk1/s_a51tramdisp1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_apert
+{
+	diffusemap textures/smk1/s_apert.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_area51scan1
+{
+	diffusemap textures/smk1/s_area51scan1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_area51sign1
+{
+	diffusemap textures/smk1/s_area51sign1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_area51sign2
+{
+	diffusemap textures/smk1/s_area51sign2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_aurora
+{
+	diffusemap textures/smk1/s_aurora.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_blubrst
+{
+	diffusemap textures/smk1/s_blubrst.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_burst
+{
+	diffusemap textures/smk1/s_burst.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_d3dstrip
+{
+	diffusemap textures/smk1/s_d3dstrip.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_dambottom
+{
+	diffusemap textures/smk1/s_dambottom.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_damconst
+{
+	diffusemap textures/smk1/s_damconst.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_damhistory
+{
+	diffusemap textures/smk1/s_damhistory.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_damtop
+{
+	diffusemap textures/smk1/s_damtop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk1/s_dancelights1
+{
+	diffusemap textures/smk1/s_dancelights1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

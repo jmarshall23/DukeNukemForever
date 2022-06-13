@@ -1,0 +1,98 @@
+textures/smk3/s_igreenletters2
+{
+	diffusemap textures/smk3/s_igreenletters2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_indoscreen1
+{
+	diffusemap textures/smk3/s_indoscreen1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_indoscreen1off
+{
+	diffusemap textures/smk3/s_indoscreen1off.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_intro_bleft
+{
+	diffusemap textures/smk3/s_intro_bleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_intro_bright
+{
+	diffusemap textures/smk3/s_intro_bright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_intro_tleft
+{
+	diffusemap textures/smk3/s_intro_tleft.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_intro_tright
+{
+	diffusemap textures/smk3/s_intro_tright.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_kpadsaver1
+{
+	diffusemap textures/smk3/s_kpadsaver1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_ladykiller1
+{
+	diffusemap textures/smk3/s_ladykiller1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_ladykiller2
+{
+	diffusemap textures/smk3/s_ladykiller2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_ladykiller3
+{
+	diffusemap textures/smk3/s_ladykiller3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_lake
+{
+	diffusemap textures/smk3/s_lake.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_LK_signflc1
+{
+	diffusemap textures/smk3/s_LK_signflc1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/smk3/s_mainfrmstat
+{
+	diffusemap textures/smk3/s_mainfrmstat.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

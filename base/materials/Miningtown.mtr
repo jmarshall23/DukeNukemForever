@@ -1,0 +1,462 @@
+textures/Miningtown/clockhand1sah
+{
+	diffusemap textures/Miningtown/clockhand1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/clocktower1sah
+{
+	diffusemap textures/Miningtown/clocktower1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minbenchtop1RC
+{
+	diffusemap textures/Miningtown/minbenchtop1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minceiling1RC
+{
+	diffusemap textures/Miningtown/minceiling1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minceiling4RC
+{
+	diffusemap textures/Miningtown/minceiling4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindanger1RC
+{
+	diffusemap textures/Miningtown/mindanger1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindirt13RC
+{
+	diffusemap textures/Miningtown/mindirt13RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindirt3RC
+{
+	diffusemap textures/Miningtown/mindirt3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor11RC
+{
+	diffusemap textures/Miningtown/mindoor11RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor13RC
+{
+	diffusemap textures/Miningtown/mindoor13RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor14RC
+{
+	diffusemap textures/Miningtown/mindoor14RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor16RC
+{
+	diffusemap textures/Miningtown/mindoor16RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor20RC
+{
+	diffusemap textures/Miningtown/mindoor20RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor21RC
+{
+	diffusemap textures/Miningtown/mindoor21RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor4RC
+{
+	diffusemap textures/Miningtown/mindoor4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor6RC
+{
+	diffusemap textures/Miningtown/mindoor6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mindoor9RC
+{
+	diffusemap textures/Miningtown/mindoor9RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mingrass3RC
+{
+	diffusemap textures/Miningtown/mingrass3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minhay2RC
+{
+	diffusemap textures/Miningtown/minhay2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minjail1bRC
+{
+	diffusemap textures/Miningtown/minjail1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minjail1cRC
+{
+	diffusemap textures/Miningtown/minjail1cRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minminingcar2RC
+{
+	diffusemap textures/Miningtown/minminingcar2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minnickbRC
+{
+	diffusemap textures/Miningtown/minnickbRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minplaster1RC
+{
+	diffusemap textures/Miningtown/minplaster1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minplaster2RC
+{
+	diffusemap textures/Miningtown/minplaster2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minplaster3RC
+{
+	diffusemap textures/Miningtown/minplaster3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minplaster4RC
+{
+	diffusemap textures/Miningtown/minplaster4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minplaster5RC
+{
+	diffusemap textures/Miningtown/minplaster5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minrocks1aRC
+{
+	diffusemap textures/Miningtown/minrocks1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minrockwall4RC
+{
+	diffusemap textures/Miningtown/minrockwall4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minrockwall7RC
+{
+	diffusemap textures/Miningtown/minrockwall7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minrockwall8RC
+{
+	diffusemap textures/Miningtown/minrockwall8RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minshaft1RC
+{
+	diffusemap textures/Miningtown/minshaft1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minshaftflr1RC
+{
+	diffusemap textures/Miningtown/minshaftflr1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minshaftvent1RC
+{
+	diffusemap textures/Miningtown/minshaftvent1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minshingle1RC
+{
+	diffusemap textures/Miningtown/minshingle1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minshingle4RC
+{
+	diffusemap textures/Miningtown/minshingle4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minside1RC
+{
+	diffusemap textures/Miningtown/minside1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minsign14RC
+{
+	diffusemap textures/Miningtown/minsign14RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minsign18RC
+{
+	diffusemap textures/Miningtown/minsign18RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minsign19RC
+{
+	diffusemap textures/Miningtown/minsign19RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minsign1RC
+{
+	diffusemap textures/Miningtown/minsign1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minsign24RC
+{
+	diffusemap textures/Miningtown/minsign24RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minsign3RC
+{
+	diffusemap textures/Miningtown/minsign3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minsign7RC
+{
+	diffusemap textures/Miningtown/minsign7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mintrim16RC
+{
+	diffusemap textures/Miningtown/mintrim16RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mintrim21RC
+{
+	diffusemap textures/Miningtown/mintrim21RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mintrim22RC
+{
+	diffusemap textures/Miningtown/mintrim22RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mintrim2RC
+{
+	diffusemap textures/Miningtown/mintrim2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mintrim4RC
+{
+	diffusemap textures/Miningtown/mintrim4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/mintrim7RC
+{
+	diffusemap textures/Miningtown/mintrim7RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwall2RC
+{
+	diffusemap textures/Miningtown/minwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwindow4RC
+{
+	diffusemap textures/Miningtown/minwindow4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwood16RC
+{
+	diffusemap textures/Miningtown/minwood16RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwood1RC
+{
+	diffusemap textures/Miningtown/minwood1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwood6RC
+{
+	diffusemap textures/Miningtown/minwood6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwoodfence4RC
+{
+	diffusemap textures/Miningtown/minwoodfence4RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwoodflr1RC
+{
+	diffusemap textures/Miningtown/minwoodflr1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwoodflr2RC
+{
+	diffusemap textures/Miningtown/minwoodflr2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwoodflr5RC
+{
+	diffusemap textures/Miningtown/minwoodflr5RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwoodplk1RC
+{
+	diffusemap textures/Miningtown/minwoodplk1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwoodstrut1RC
+{
+	diffusemap textures/Miningtown/minwoodstrut1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/minwoodwall2RC
+{
+	diffusemap textures/Miningtown/minwoodwall2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/SignHotel1sah
+{
+	diffusemap textures/Miningtown/SignHotel1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/Windmill1sah
+{
+	diffusemap textures/Miningtown/Windmill1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/Miningtown/Windmill2sah
+{
+	diffusemap textures/Miningtown/Windmill2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

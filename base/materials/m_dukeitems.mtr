@@ -1,0 +1,357 @@
+textures/m_dukeitems/AminoAcid1aRC
+{
+	diffusemap textures/m_dukeitems/AminoAcid1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/AminoAcid1bRC
+{
+	diffusemap textures/m_dukeitems/AminoAcid1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/AtomicBeam1
+{
+	diffusemap textures/m_dukeitems/AtomicBeam1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/Atoms1
+{
+	diffusemap textures/m_dukeitems/Atoms1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/Burrito1RC
+{
+	diffusemap textures/m_dukeitems/Burrito1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/chips1RC
+{
+	diffusemap textures/m_dukeitems/chips1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/cowpieRC
+{
+	diffusemap textures/m_dukeitems/cowpieRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/FPrebreathglasR
+{
+	diffusemap textures/m_dukeitems/FPrebreathglasR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/FPrebreathmaskR
+{
+	diffusemap textures/m_dukeitems/FPrebreathmaskR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/FPrebreathoseRC
+{
+	diffusemap textures/m_dukeitems/FPrebreathoseRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/FPrebreathpartR
+{
+	diffusemap textures/m_dukeitems/FPrebreathpartR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_blackblueBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_blackblueBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_blueBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_blueBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_bluepurpleBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_bluepurpleBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_dukeBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_dukeBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_greenBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_greenBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_greenyellowBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_greenyellowBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_greyBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_greyBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_orangeBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_orangeBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_purpleBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_purpleBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_redBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_redBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_redorangeBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_redorangeBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_whiteBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_whiteBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack1_yellowBC
+{
+	diffusemap textures/m_dukeitems/jetpack1_yellowBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_blackblueBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_blackblueBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_blueBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_blueBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_bluepurpleBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_bluepurpleBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_dukeBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_dukeBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_greenBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_greenBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_greenyellowBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_greenyellowBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_greyBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_greyBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_orangeBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_orangeBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_purpleBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_purpleBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_redBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_redBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_redorangeBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_redorangeBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_whiteBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_whiteBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpack2_yellowBC
+{
+	diffusemap textures/m_dukeitems/jetpack2_yellowBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/jetpackskin1
+{
+	diffusemap textures/m_dukeitems/jetpackskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/medkitskin1
+{
+	diffusemap textures/m_dukeitems/medkitskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/mre1RC
+{
+	diffusemap textures/m_dukeitems/mre1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/mre2RC
+{
+	diffusemap textures/m_dukeitems/mre2RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/rebeathhoseRC
+{
+	diffusemap textures/m_dukeitems/rebeathhoseRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/rebeathmaskRC
+{
+	diffusemap textures/m_dukeitems/rebeathmaskRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/sandwich1RC
+{
+	diffusemap textures/m_dukeitems/sandwich1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/sospcell1BC
+{
+	diffusemap textures/m_dukeitems/sospcell1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/sospcell2BC
+{
+	diffusemap textures/m_dukeitems/sospcell2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/sospcellefx
+{
+	diffusemap textures/m_dukeitems/sospcellefx.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/sportbar1RC
+{
+	diffusemap textures/m_dukeitems/sportbar1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/sportdrink1RC
+{
+	diffusemap textures/m_dukeitems/sportdrink1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/steroidsskin1
+{
+	diffusemap textures/m_dukeitems/steroidsskin1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_dukeitems/steroidsskin2
+{
+	diffusemap textures/m_dukeitems/steroidsskin2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

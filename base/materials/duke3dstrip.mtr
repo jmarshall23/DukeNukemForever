@@ -1,0 +1,14 @@
+textures/duke3dstrip/D3DStrip
+{
+	diffusemap textures/duke3dstrip/D3DStrip.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/duke3dstrip/D3DstripPAL
+{
+	diffusemap textures/duke3dstrip/D3DstripPAL.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,322 @@
+textures/m_zone2_dam/bl_cable
+{
+	diffusemap textures/m_zone2_dam/bl_cable.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Crane001sah
+{
+	diffusemap textures/m_zone2_dam/Crane001sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/cranetext
+{
+	diffusemap textures/m_zone2_dam/cranetext.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/cranewheel
+{
+	diffusemap textures/m_zone2_dam/cranewheel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/dampillar5Dsah
+{
+	diffusemap textures/m_zone2_dam/dampillar5Dsah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/dampillar5sah
+{
+	diffusemap textures/m_zone2_dam/dampillar5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/DamsignBas
+{
+	diffusemap textures/m_zone2_dam/DamsignBas.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Dam_copcar1sah
+{
+	diffusemap textures/m_zone2_dam/Dam_copcar1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Dam_Lite1sah
+{
+	diffusemap textures/m_zone2_dam/Dam_Lite1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/divider1aRC
+{
+	diffusemap textures/m_zone2_dam/divider1aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/divider1bRC
+{
+	diffusemap textures/m_zone2_dam/divider1bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/divider2aRC
+{
+	diffusemap textures/m_zone2_dam/divider2aRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/divider2bRC
+{
+	diffusemap textures/m_zone2_dam/divider2bRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/electcapRC
+{
+	diffusemap textures/m_zone2_dam/electcapRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/electcoilRC
+{
+	diffusemap textures/m_zone2_dam/electcoilRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/electpipeRC
+{
+	diffusemap textures/m_zone2_dam/electpipeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/electwireRC
+{
+	diffusemap textures/m_zone2_dam/electwireRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/gencontrolburnR
+{
+	diffusemap textures/m_zone2_dam/gencontrolburnR.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/gencontrolRC
+{
+	diffusemap textures/m_zone2_dam/gencontrolRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/genelectburnRC
+{
+	diffusemap textures/m_zone2_dam/genelectburnRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/genelectRC
+{
+	diffusemap textures/m_zone2_dam/genelectRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/genlightburnRC
+{
+	diffusemap textures/m_zone2_dam/genlightburnRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/genlightRC
+{
+	diffusemap textures/m_zone2_dam/genlightRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/genshaftburnRC
+{
+	diffusemap textures/m_zone2_dam/genshaftburnRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/genshaftRC
+{
+	diffusemap textures/m_zone2_dam/genshaftRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/gensideburnRC
+{
+	diffusemap textures/m_zone2_dam/gensideburnRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/gensideRC
+{
+	diffusemap textures/m_zone2_dam/gensideRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/hardhat
+{
+	diffusemap textures/m_zone2_dam/hardhat.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/holoproject1BC
+{
+	diffusemap textures/m_zone2_dam/holoproject1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/holoproject2BC
+{
+	diffusemap textures/m_zone2_dam/holoproject2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Lamp_shine2sah
+{
+	diffusemap textures/m_zone2_dam/Lamp_shine2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/light1domeRC
+{
+	diffusemap textures/m_zone2_dam/light1domeRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/light1flareRC
+{
+	diffusemap textures/m_zone2_dam/light1flareRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/lightpole1RC
+{
+	diffusemap textures/m_zone2_dam/lightpole1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/lightpolebulb1R
+{
+	diffusemap textures/m_zone2_dam/lightpolebulb1R.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slides01sah
+{
+	diffusemap textures/m_zone2_dam/Slides01sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slide_labl1sah
+{
+	diffusemap textures/m_zone2_dam/Slide_labl1sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slide_labl2sah
+{
+	diffusemap textures/m_zone2_dam/Slide_labl2sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slide_labl3sah
+{
+	diffusemap textures/m_zone2_dam/Slide_labl3sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slide_labl4sah
+{
+	diffusemap textures/m_zone2_dam/Slide_labl4sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slide_labl5sah
+{
+	diffusemap textures/m_zone2_dam/Slide_labl5sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slide_labl6sah
+{
+	diffusemap textures/m_zone2_dam/Slide_labl6sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/Slide_labl7sah
+{
+	diffusemap textures/m_zone2_dam/Slide_labl7sah.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/spheredamRC
+{
+	diffusemap textures/m_zone2_dam/spheredamRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/statue1damRC
+{
+	diffusemap textures/m_zone2_dam/statue1damRC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/m_zone2_dam/yellowhook
+{
+	diffusemap textures/m_zone2_dam/yellowhook.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

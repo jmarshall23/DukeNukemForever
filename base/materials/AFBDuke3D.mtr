@@ -1,0 +1,147 @@
+textures/AFBDuke3D/Door01
+{
+	diffusemap textures/AFBDuke3D/Door01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch01
+{
+	diffusemap textures/AFBDuke3D/Switch01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch02
+{
+	diffusemap textures/AFBDuke3D/Switch02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch03
+{
+	diffusemap textures/AFBDuke3D/Switch03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch04
+{
+	diffusemap textures/AFBDuke3D/Switch04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch05
+{
+	diffusemap textures/AFBDuke3D/Switch05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch06
+{
+	diffusemap textures/AFBDuke3D/Switch06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch07
+{
+	diffusemap textures/AFBDuke3D/Switch07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch08
+{
+	diffusemap textures/AFBDuke3D/Switch08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch09
+{
+	diffusemap textures/AFBDuke3D/Switch09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch10
+{
+	diffusemap textures/AFBDuke3D/Switch10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch11
+{
+	diffusemap textures/AFBDuke3D/Switch11.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch12
+{
+	diffusemap textures/AFBDuke3D/Switch12.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch13
+{
+	diffusemap textures/AFBDuke3D/Switch13.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch14
+{
+	diffusemap textures/AFBDuke3D/Switch14.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch15
+{
+	diffusemap textures/AFBDuke3D/Switch15.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/Switch16
+{
+	diffusemap textures/AFBDuke3D/Switch16.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/SwitchMask01
+{
+	diffusemap textures/AFBDuke3D/SwitchMask01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/SwitchMask02
+{
+	diffusemap textures/AFBDuke3D/SwitchMask02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/SwitchMask03
+{
+	diffusemap textures/AFBDuke3D/SwitchMask03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/AFBDuke3D/SwitchMask04
+{
+	diffusemap textures/AFBDuke3D/SwitchMask04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

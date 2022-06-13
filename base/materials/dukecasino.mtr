@@ -1,0 +1,70 @@
+textures/dukecasino/dcasDoor1ABC
+{
+	diffusemap textures/dukecasino/dcasDoor1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcaslight1BC
+{
+	diffusemap textures/dukecasino/dcaslight1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcasneon1BC
+{
+	diffusemap textures/dukecasino/dcasneon1BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcasneon2BC
+{
+	diffusemap textures/dukecasino/dcasneon2BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcasneon3BC
+{
+	diffusemap textures/dukecasino/dcasneon3BC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcaswall1ABC
+{
+	diffusemap textures/dukecasino/dcaswall1ABC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcaswall1BBC
+{
+	diffusemap textures/dukecasino/dcaswall1BBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcaswall1CBC
+{
+	diffusemap textures/dukecasino/dcaswall1CBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcaswall1DBC
+{
+	diffusemap textures/dukecasino/dcaswall1DBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/dukecasino/dcaswall1EBC
+{
+	diffusemap textures/dukecasino/dcaswall1EBC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,161 @@
+textures/afbproship/attack_2atw
+{
+	diffusemap textures/afbproship/attack_2atw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/attack_2btw
+{
+	diffusemap textures/afbproship/attack_2btw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/attack_2ctw
+{
+	diffusemap textures/afbproship/attack_2ctw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/attack_2dtw
+{
+	diffusemap textures/afbproship/attack_2dtw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/attack_2tw
+{
+	diffusemap textures/afbproship/attack_2tw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/BuildUp03
+{
+	diffusemap textures/afbproship/BuildUp03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust01
+{
+	diffusemap textures/afbproship/ProExhaust01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust02
+{
+	diffusemap textures/afbproship/ProExhaust02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust03
+{
+	diffusemap textures/afbproship/ProExhaust03.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust04
+{
+	diffusemap textures/afbproship/ProExhaust04.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust05
+{
+	diffusemap textures/afbproship/ProExhaust05.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust06
+{
+	diffusemap textures/afbproship/ProExhaust06.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust07
+{
+	diffusemap textures/afbproship/ProExhaust07.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust08
+{
+	diffusemap textures/afbproship/ProExhaust08.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust09
+{
+	diffusemap textures/afbproship/ProExhaust09.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProExhaust10
+{
+	diffusemap textures/afbproship/ProExhaust10.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProShipBot
+{
+	diffusemap textures/afbproship/ProShipBot.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProShipFlash
+{
+	diffusemap textures/afbproship/ProShipFlash.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ProShipTop
+{
+	diffusemap textures/afbproship/ProShipTop.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/RocketFire01
+{
+	diffusemap textures/afbproship/RocketFire01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/RocketFire02
+{
+	diffusemap textures/afbproship/RocketFire02.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/ShipShot01
+{
+	diffusemap textures/afbproship/ShipShot01.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/afbproship/shockwavetw
+{
+	diffusemap textures/afbproship/shockwavetw.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

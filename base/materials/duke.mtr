@@ -1,0 +1,14 @@
+textures/duke/Duke_Duke
+{
+	diffusemap textures/duke/Duke_Duke.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/duke/Duke_duketest
+{
+	diffusemap textures/duke/Duke_duketest.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
