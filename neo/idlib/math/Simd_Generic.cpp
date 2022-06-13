@@ -2327,7 +2327,7 @@ void VPCALL idSIMD_Generic::TransformVerts( idDrawVert *verts, const int numVert
 		}
 		j++;
 
-		verts[i].xyz = v;
+		verts[i].xyz = v.ConvertToIdSpace();
 	}
 }
 

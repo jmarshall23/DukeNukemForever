@@ -404,6 +404,24 @@ public:
 	friend void		TransposeMultiply( const idMat3 &inv, const idMat3 &b, idMat3 &dst );
 	friend idMat3	SkewSymmetric( idVec3 const &src );
 
+	idMat3 ConvertToIdSpace() {
+		idMat3 idmat;
+
+		idmat[0][0] = mat[0][0];
+		idmat[0][1] = -mat[0][2];
+		idmat[0][2] = mat[0][1];
+
+		idmat[1][0] = mat[1][0];
+		idmat[1][1] = -mat[1][2];
+		idmat[1][2] = mat[1][1];
+
+		idmat[2][0] = mat[2][0];
+		idmat[2][1] = -mat[2][2];
+		idmat[2][2] = mat[2][1];
+
+		return idmat;
+	}
+
 private:
 	idVec3			mat[ 3 ];
 };

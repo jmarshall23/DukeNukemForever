@@ -384,6 +384,16 @@ public:
 
 	void			Lerp( const idVec3 &v1, const idVec3 &v2, const float l );
 	void			SLerp( const idVec3 &v1, const idVec3 &v2, const float l );
+
+	idVec3 ConvertToIdSpace() {
+		idVec3 idpos;
+
+		idpos.x = x;
+		idpos.y = -z;
+		idpos.z = y;
+
+		return idpos;
+	}
 };
 
 extern idVec3 vec3_origin;

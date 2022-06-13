@@ -31,15 +31,6 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "Simd_Generic.h"
 
-#ifndef ID_X64
-#include "Simd_MMX.h"
-#include "Simd_3DNow.h"
-#include "Simd_SSE.h"
-#include "Simd_SSE2.h"
-#include "Simd_SSE3.h"
-#include "Simd_AltiVec.h"
-#endif
-
 idSIMDProcessor	*	processor = NULL;			// pointer to SIMD processor
 idSIMDProcessor *	generic = NULL;				// pointer to generic SIMD implementation
 idSIMDProcessor *	SIMDProcessor = NULL;
@@ -67,37 +58,9 @@ void idSIMD::InitProcessor( const char *module, bool forceGeneric ) {
 	idSIMDProcessor *newProcessor;
 
 	cpuid = idLib::sys->GetProcessorId();
-#if ID_X64
+
 	newProcessor = generic;
-#else
-	if ( forceGeneric ) {
 
-		newProcessor = generic;
-
-	} else {
-
-		if ( !processor ) {
-			if ( ( cpuid & CPUID_ALTIVEC ) ) {
-				processor = new idSIMD_AltiVec;
-			} else if ( ( cpuid & CPUID_MMX ) && ( cpuid & CPUID_SSE ) && ( cpuid & CPUID_SSE2 ) && ( cpuid & CPUID_SSE3 ) ) {
-				processor = new idSIMD_SSE3;
-			} else if ( ( cpuid & CPUID_MMX ) && ( cpuid & CPUID_SSE ) && ( cpuid & CPUID_SSE2 ) ) {
-				processor = new idSIMD_SSE2;
-			} else if ( ( cpuid & CPUID_MMX ) && ( cpuid & CPUID_SSE ) ) {
-				processor = new idSIMD_SSE;
-			} else if ( ( cpuid & CPUID_MMX ) && ( cpuid & CPUID_3DNOW ) ) {
-				processor = new idSIMD_3DNow;
-			} else if ( ( cpuid & CPUID_MMX ) ) {
-				processor = new idSIMD_MMX;
-			} else {
-				processor = generic;
-			}
-			processor->cpuid = cpuid;
-		}
-
-		newProcessor = processor;
-	}
-#endif
 	if ( newProcessor != SIMDProcessor ) {
 		SIMDProcessor = newProcessor;
 		idLib::common->Printf( "%s using %s for SIMD processing\n", module, SIMDProcessor->GetName() );
@@ -4102,128 +4065,5 @@ idSIMD::Test_f
 ============
 */
 void idSIMD::Test_f( const idCmdArgs &args ) {
-#ifndef ID_X64
-#ifdef _WIN32
-	SetThreadPriority( GetCurrentThread(), THREAD_PRIORITY_TIME_CRITICAL );
-#endif /* _WIN32 */
 
-	p_simd = processor;
-	p_generic = generic;
-
-	if ( idStr::Length( args.Argv( 1 ) ) != 0 ) {
-		cpuid_t cpuid = idLib::sys->GetProcessorId();
-		idStr argString = args.Args();
-
-		argString.Replace( " ", "" );
-
-		if ( idStr::Icmp( argString, "MMX" ) == 0 ) {
-			if ( !( cpuid & CPUID_MMX ) ) {
-				common->Printf( "CPU does not support MMX\n" );
-				return;
-			}
-			p_simd = new idSIMD_MMX;
-		} else if ( idStr::Icmp( argString, "3DNow" ) == 0 ) {
-			if ( !( cpuid & CPUID_MMX ) || !( cpuid & CPUID_3DNOW ) ) {
-				common->Printf( "CPU does not support MMX & 3DNow\n" );
-				return;
-			}
-			p_simd = new idSIMD_3DNow;
-		} else if ( idStr::Icmp( argString, "SSE" ) == 0 ) {
-			if ( !( cpuid & CPUID_MMX ) || !( cpuid & CPUID_SSE ) ) {
-				common->Printf( "CPU does not support MMX & SSE\n" );
-				return;
-			}
-			p_simd = new idSIMD_SSE;
-		} else if ( idStr::Icmp( argString, "SSE2" ) == 0 ) {
-			if ( !( cpuid & CPUID_MMX ) || !( cpuid & CPUID_SSE ) || !( cpuid & CPUID_SSE2 ) ) {
-				common->Printf( "CPU does not support MMX & SSE & SSE2\n" );
-				return;
-			}
-			p_simd = new idSIMD_SSE2;
-		} else if ( idStr::Icmp( argString, "SSE3" ) == 0 ) {
-			if ( !( cpuid & CPUID_MMX ) || !( cpuid & CPUID_SSE ) || !( cpuid & CPUID_SSE2 ) || !( cpuid & CPUID_SSE3 ) ) {
-				common->Printf( "CPU does not support MMX & SSE & SSE2 & SSE3\n" );
-				return;
-			}
-			p_simd = new idSIMD_SSE3();
-		} else if ( idStr::Icmp( argString, "AltiVec" ) == 0 ) {
-			if ( !( cpuid & CPUID_ALTIVEC ) ) {
-				common->Printf( "CPU does not support AltiVec\n" );
-				return;
-			}
-			p_simd = new idSIMD_AltiVec();
-		} else {
-			common->Printf( "invalid argument, use: MMX, 3DNow, SSE, SSE2, SSE3, AltiVec\n" );
-			return;
-		}
-	}
-
-	idLib::common->SetRefreshOnPrint( true );
-
-	idLib::common->Printf( "using %s for SIMD processing\n", p_simd->GetName() );
-
-	GetBaseClocks();
-
-	TestMath();
-	TestAdd();
-	TestSub();
-	TestMul();
-	TestDiv();
-	TestMulAdd();
-	TestMulSub();
-	TestDot();
-	TestCompare();
-	TestMinMax();
-	TestClamp();
-	TestMemcpy();
-	TestMemset();
-	TestNegate();
-
-	TestMatXMultiplyVecX();
-	TestMatXMultiplyAddVecX();
-	TestMatXTransposeMultiplyVecX();
-	TestMatXTransposeMultiplyAddVecX();
-	TestMatXMultiplyMatX();
-	TestMatXTransposeMultiplyMatX();
-	TestMatXLowerTriangularSolve();
-	TestMatXLowerTriangularSolveTranspose();
-	TestMatXLDLTFactor();
-
-	idLib::common->Printf("====================================\n" );
-
-	TestBlendJoints();
-	TestConvertJointQuatsToJointMats();
-	TestConvertJointMatsToJointQuats();
-	TestTransformJoints();
-	TestUntransformJoints();
-	TestTransformVerts();
-	TestTracePointCull();
-	TestDecalPointCull();
-	TestOverlayPointCull();
-	TestDeriveTriPlanes();
-	TestDeriveTangents();
-	TestDeriveUnsmoothedTangents();
-	TestNormalizeTangents();
-	TestGetTextureSpaceLightVectors();
-	TestGetSpecularTextureCoords();
-	TestCreateShadowCache();
-
-	idLib::common->Printf("====================================\n" );
-
-	TestSoundUpSampling();
-	TestSoundMixing();
-
-	idLib::common->SetRefreshOnPrint( false );
-
-	if ( p_simd != processor ) {
-		delete p_simd;
-	}
-	p_simd = NULL;
-	p_generic = NULL;
-
-#ifdef _WIN32
-	SetThreadPriority( GetCurrentThread(), THREAD_PRIORITY_NORMAL );
-#endif /* _WIN32 */
-
-#endif
 }
