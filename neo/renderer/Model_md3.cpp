@@ -62,6 +62,9 @@ void idRenderModelMD3::InitFromFile( const char *fileName ) {
 
 	name = fileName;
 
+	idStr path = fileName;
+	path.StripFilename();
+
 	size = fileSystem->ReadFile( fileName, &buffer, NULL );
 	if (!size || size<0 ) {
 		return;
@@ -170,7 +173,14 @@ void idRenderModelMD3::InitFromFile( const char *fileName ) {
         for ( j = 0 ; j < surf->numShaders ; j++, shader++ ) {
             const idMaterial *sh;
 
-            sh = declManager->FindMaterial( shader->name );
+// jmarshall
+            sh = declManager->FindMaterial( shader->name, false );
+			if (sh == nullptr)
+			{
+				idStr newShaderPath = va("%s/%s", path.c_str(), shader->name);
+				sh = declManager->FindMaterial(newShaderPath);
+			}
+// jmarshall end
 			shader->shader = sh;
         }
 

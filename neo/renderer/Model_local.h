@@ -146,7 +146,7 @@ public:
 								idMD5Mesh();
 								~idMD5Mesh();
 
- 	void						ParseMesh( idLexer &parser, int numJoints, const idJointMat *joints );
+ 	void						ParseMesh( const idStr &name, idLexer &parser, int numJoints, const idJointMat *joints );
 	void						UpdateSurface( const struct renderEntity_s *ent, const idJointMat *joints, modelSurface_t *surf );
 	idBounds					CalcBounds( const idJointMat *joints );
 	int							NearestJoint( int a, int b, int c ) const;

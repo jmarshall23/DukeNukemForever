@@ -85,7 +85,7 @@ idMD5Mesh::~idMD5Mesh() {
 idMD5Mesh::ParseMesh
 ====================
 */
-void idMD5Mesh::ParseMesh( idLexer &parser, int numJoints, const idJointMat *joints ) {
+void idMD5Mesh::ParseMesh( const idStr & fileName, idLexer &parser, int numJoints, const idJointMat *joints ) {
 	idToken		token;
 	idToken		name;
 	int			num;
@@ -98,6 +98,9 @@ void idMD5Mesh::ParseMesh( idLexer &parser, int numJoints, const idJointMat *joi
 	idList<int>	numWeightsForVertex;
 	int			maxweight;
 	idList<vertexWeight_t> tempWeights;
+
+	idStr path = fileName;
+	path.StripFilename();
 
 	parser.ExpectTokenString( "{" );
 
@@ -115,8 +118,16 @@ void idMD5Mesh::ParseMesh( idLexer &parser, int numJoints, const idJointMat *joi
 
 	parser.ReadToken( &token );
 	shaderName = token;
+// jmarshall
+    //shader = declManager->FindMaterial( shaderName );
 
-    shader = declManager->FindMaterial( shaderName );
+	shader = declManager->FindMaterial(shaderName, false);
+	if (shader == nullptr)
+	{
+		idStr newShaderPath = va("%s/%s", path.c_str(), shaderName.c_str());
+		shader = declManager->FindMaterial(newShaderPath);
+	}
+// jmarshall end
 
 	//
 	// parse texture coordinates
@@ -561,7 +572,7 @@ void idRenderModelMD5::LoadModel() {
 
 	for( i = 0; i < meshes.Num(); i++ ) {
 		parser.ExpectTokenString( "mesh" );
-		meshes[ i ].ParseMesh( parser, defaultPose.Num(), poseMat3 );
+		meshes[ i ].ParseMesh( name, parser, defaultPose.Num(), poseMat3 );
 	}
 
 	//
