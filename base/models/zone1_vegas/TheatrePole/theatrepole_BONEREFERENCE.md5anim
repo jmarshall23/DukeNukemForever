@@ -1,0 +1,32 @@
+MD5Version 10
+commandline "This file has been generated from the DNF MD5 exporter by Justin Marshall"
+
+numFrames 2
+numJoints 2
+frameRate 24
+numAnimatedComponents 4
+
+hierarchy {
+	"END"	1 56 0
+	"ROOT"	-1 32 3
+}
+
+bounds {
+	( -200 -200 -200 ) ( 200 200 200 )
+	( -200 -200 -200 ) ( 200 200 200 )
+}
+
+baseframe {
+	( 2.933362 -0.600756 47.642693 ) ( 0.000000 0.000000 0.000000 )
+	( 0.000000 -0.000000 0.000000 ) ( 0.000000 0.000000 0.000000 )
+}
+
+frame 0 {
+	 0.000000 -0.000048 -0.000048
+	 -0.000048
+}
+
+frame 1 {
+	 0.000000 -0.000048 -0.000048
+	 -0.000048
+}

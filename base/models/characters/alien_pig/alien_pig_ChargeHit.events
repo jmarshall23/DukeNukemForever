@@ -1,0 +1,7 @@
+frame,eventName,paramString
+2,SEQEV_TRIGGER,FootStep
+2,SEQEV_TRIGGER,ChargeHit
+8,SEQEV_TRIGGER,FootStep
+10,SEQEV_TRIGGER,FootStep
+14,SEQEV_TRIGGER,Slide
+4,SEQEV_TRIGGER,NoseSmoke

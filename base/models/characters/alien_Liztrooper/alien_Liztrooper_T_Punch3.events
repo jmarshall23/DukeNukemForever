@@ -1,0 +1,4 @@
+frame,eventName,paramString
+3,SEQEV_TRIGGER,MeleePunchTarget
+11,SEQEV_TRIGGER,MeleePunchTarget
+17,SEQEV_TRIGGER,MeleePunchTarget

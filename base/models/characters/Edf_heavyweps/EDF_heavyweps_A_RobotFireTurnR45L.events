@@ -1,0 +1,3 @@
+frame,eventName,paramString
+3,SEQEV_TRIGGER,FootStepR
+7,SEQEV_TRIGGER,FootStepL

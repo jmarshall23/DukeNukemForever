@@ -1,0 +1,3 @@
+frame,eventName,paramString
+42,SEQEV_TRIGGER,PunchGround
+70,SEQEV_TRIGGER,SparkOff

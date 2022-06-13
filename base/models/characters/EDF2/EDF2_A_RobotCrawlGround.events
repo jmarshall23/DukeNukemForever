@@ -1,0 +1,5 @@
+frame,eventName,paramString
+0,SEQEV_TRIGGER,RobotStop
+4,SEQEV_TRIGGER,RobotStart
+18,SEQEV_TRIGGER,RobotStop
+22,SEQEV_TRIGGER,RobotStart

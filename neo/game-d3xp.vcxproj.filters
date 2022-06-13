@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AI">
+      <UniqueIdentifier>{cbe3b616-1879-4177-ab0b-ef9dd6e1c344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{f1a55916-cc4e-4c52-8097-90f53ec0e5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSys">
+      <UniqueIdentifier>{65cd4d56-59f1-4e72-af98-074176b18454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{1cd6b287-0c8b-4445-b5a0-4e3068f8b3fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{2024018a-67e2-4afd-8499-38ccbe8fc1aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Monsters">
+      <UniqueIdentifier>{b374f8bd-d3c0-4dd0-aa7e-1178e20a9c8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Weapons">
+      <UniqueIdentifier>{0c8b8d6a-183a-492f-9787-e6aa151d7a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{27183d79-50c9-4b46-af3e-33c1bff04e6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="d3xp\anim\Anim.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\anim\Anim_Blend.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\anim\Anim_Testmodel.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\Class.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\DebugGraph.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\Event.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\SaveGame.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\SysCmds.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\SysCvar.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\TypeInfo.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Clip.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Force.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Force_Constant.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Force_Drag.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Force_Field.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Force_Grab.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Force_Spring.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_Actor.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_AF.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_Base.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_Monster.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_Parametric.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_Player.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_RigidBody.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_Static.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Physics_StaticMulti.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\physics\Push.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\script\Script_Compiler.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\script\Script_Interpreter.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\script\Script_Program.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\script\Script_Thread.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\Actor.cpp" />
+    <ClCompile Include="d3xp\AF.cpp" />
+    <ClCompile Include="d3xp\AFEntity.cpp" />
+    <ClCompile Include="d3xp\BrittleFracture.cpp" />
+    <ClCompile Include="d3xp\Camera.cpp" />
+    <ClCompile Include="d3xp\Entity.cpp" />
+    <ClCompile Include="d3xp\Fx.cpp" />
+    <ClCompile Include="d3xp\Game_local.cpp" />
+    <ClCompile Include="d3xp\Game_network.cpp" />
+    <ClCompile Include="d3xp\GameEdit.cpp" />
+    <ClCompile Include="d3xp\Grabber.cpp" />
+    <ClCompile Include="d3xp\IK.cpp" />
+    <ClCompile Include="d3xp\Item.cpp" />
+    <ClCompile Include="d3xp\Light.cpp" />
+    <ClCompile Include="d3xp\Misc.cpp" />
+    <ClCompile Include="d3xp\Moveable.cpp" />
+    <ClCompile Include="d3xp\Mover.cpp" />
+    <ClCompile Include="d3xp\MultiplayerGame.cpp" />
+    <ClCompile Include="idlib\precompiled.cpp" />
+    <ClCompile Include="d3xp\Projectile.cpp" />
+    <ClCompile Include="d3xp\Pvs.cpp" />
+    <ClCompile Include="d3xp\SecurityCamera.cpp" />
+    <ClCompile Include="d3xp\SmokeParticles.cpp" />
+    <ClCompile Include="d3xp\Sound.cpp" />
+    <ClCompile Include="d3xp\Target.cpp" />
+    <ClCompile Include="d3xp\Trigger.cpp" />
+    <ClCompile Include="d3xp\Weapon.cpp" />
+    <ClCompile Include="d3xp\WorldSpawn.cpp" />
+    <ClCompile Include="d3xp\gamesys\State.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\gamesys\GameTypeInfo.cpp">
+      <Filter>GameSys</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AAS.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AAS_debug.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AAS_pathing.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AAS_routing.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AASCallback_AvoidLocation.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AASCallback_FindAreaOutOfRange.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AASCallback_FindCoverArea.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_events.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_follower.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_move.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_pathing.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_states.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_states_combat.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_states_util.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\ObstacleAvoidance.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_boss_vagary.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_demon_hellknight.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_demon_imp.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_flying_cacodemon.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_flying_lostsoul.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_zombie.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_zombie_commando_cgun.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_zombie_commando_tentacle.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_zombie_morgue.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_zombie_sawyer.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_zombie_security_pistol.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_bfg.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_chaingun.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_chainsaw.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_double_shotgun.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_fist.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_flashlight.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_grabber.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_handgrenade.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_machinegun.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_pda.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_pistol.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_plasmagun.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_rocketlauncher.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\weapons\Weapon_shotgun.cpp">
+      <Filter>Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\player\PlayerIcon.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\player\PlayerView.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\anim\Anim_State.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\player\Player_Anim.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\ai\AI_anim.cpp">
+      <Filter>AI</Filter>
+    </ClCompile>
+    <ClCompile Include="d3xp\monsters\Monster_zombie_bernie.cpp">
+      <Filter>Monsters</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="d3xp\anim\Anim.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\anim\Anim_Testmodel.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\Class.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\DebugGraph.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\Event.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\NoGameTypeInfo.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\SaveGame.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\SysCmds.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\SysCvar.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Clip.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Force.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Force_Constant.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Force_Drag.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Force_Field.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Force_Grab.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Force_Spring.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_Actor.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_AF.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_Base.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_Monster.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_Parametric.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_Player.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_RigidBody.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_Static.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Physics_StaticMulti.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\physics\Push.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\script\Script_Compiler.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\script\Script_Interpreter.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\script\Script_Program.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\script\Script_Thread.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\Actor.h" />
+    <ClInclude Include="d3xp\AF.h" />
+    <ClInclude Include="d3xp\AFEntity.h" />
+    <ClInclude Include="d3xp\BrittleFracture.h" />
+    <ClInclude Include="d3xp\Camera.h" />
+    <ClInclude Include="d3xp\Entity.h" />
+    <ClInclude Include="d3xp\Fx.h" />
+    <ClInclude Include="d3xp\Game.h" />
+    <ClInclude Include="d3xp\Game_local.h" />
+    <ClInclude Include="d3xp\GameEdit.h" />
+    <ClInclude Include="d3xp\Grabber.h" />
+    <ClInclude Include="d3xp\IK.h" />
+    <ClInclude Include="d3xp\Item.h" />
+    <ClInclude Include="d3xp\Light.h" />
+    <ClInclude Include="d3xp\Misc.h" />
+    <ClInclude Include="d3xp\Moveable.h" />
+    <ClInclude Include="d3xp\Mover.h" />
+    <ClInclude Include="d3xp\MultiplayerGame.h" />
+    <ClInclude Include="d3xp\Projectile.h" />
+    <ClInclude Include="d3xp\Pvs.h" />
+    <ClInclude Include="d3xp\SecurityCamera.h" />
+    <ClInclude Include="d3xp\SmokeParticles.h" />
+    <ClInclude Include="d3xp\Sound.h" />
+    <ClInclude Include="d3xp\Target.h" />
+    <ClInclude Include="d3xp\Trigger.h" />
+    <ClInclude Include="d3xp\Weapon.h" />
+    <ClInclude Include="d3xp\WorldSpawn.h" />
+    <ClInclude Include="d3xp\gamesys\State.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\TypeInfo.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\gamesys\GameTypeInfo.h">
+      <Filter>GameSys</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\ai\AAS.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\ai\AAS_local.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\ai\AASCallback_AvoidLocation.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\ai\AASCallback_FindAreaOutOfRange.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\ai\AASCallback_FindCoverArea.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\ai\AI.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\ai\ObstacleAvoidance.h">
+      <Filter>AI</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_boss_vagary.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_demon_hellknight.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_demon_imp.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_flying_cacodemon.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_flying_lostsoul.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_zombie.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_zombie_bernie.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\monster_zombie_commando_cgun.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_zombie_commando_tentacle.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_zombie_morgue.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_zombie_sawyer.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\monsters\Monster_zombie_security_pistol.h">
+      <Filter>Monsters</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_bfg.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_chaingun.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_chainsaw.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_double_shotgun.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_fist.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_flashlight.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_grabber.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_handgrenade.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_machinegun.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_pda.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_pistol.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_plasmagun.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_rocketlauncher.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\weapons\Weapon_shotgun.h">
+      <Filter>Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\PredictedValue.h" />
+    <ClInclude Include="d3xp\PredictedValue_impl.h" />
+    <ClInclude Include="d3xp\player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\player\PlayerIcon.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="d3xp\player\PlayerView.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="d3xp\Game.def" />
+  </ItemGroup>
+</Project>

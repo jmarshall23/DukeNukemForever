@@ -1,0 +1,3 @@
+frame,eventName,paramString
+6,SEQEV_TRIGGER,NSpawnDirtDN
+14,SEQEV_TRIGGER,NSnatchCollisionOFF

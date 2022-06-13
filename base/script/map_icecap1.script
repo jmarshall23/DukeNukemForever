@@ -1,0 +1,62 @@
+namespace map_icecap1 {
+
+	////////////////////////////////////////////////////
+	//
+	//	Setup Objects
+	//
+	////////////////////////////////////////////////////
+	void setup_objects()
+	{
+
+
+	}
+
+	////////////////////////////////////////////////////
+	//
+	//	Icecap1 v81 Rumble
+	//
+	////////////////////////////////////////////////////
+	void icecap1_v81_rumble()
+	{
+		$ic_v81.time (.1);
+		
+		while(1){
+			$ic_v81.rotateOnce ( '2 0 0' );
+			sys.waitFor ($ic_v81);
+			$ic_v81.rotateOnce ( '-2 0 0' );
+			sys.waitFor ($ic_v81);
+					
+		}
+	}
+
+	////////////////////////////////////////////////////
+	//
+	//	Icecap1 v82 Rumble
+	//
+	////////////////////////////////////////////////////
+	void icecap1_v82_rumble()
+	{
+		$ic_v82.time (.1);
+
+		while(1){
+			$ic_v82.rotateOnce ( '2 0 0' );
+			sys.waitFor ($ic_v82);
+			$ic_v82.rotateOnce ( '-2 0 0' );
+			sys.waitFor ($ic_v82);
+		
+		}
+	}
+
+	////////////////////////////////////////////////////
+	//
+	//	Icecap 1 Main
+	//
+	////////////////////////////////////////////////////
+	void main()
+	{
+		//thread setup_objects();
+		thread icecap1_v81_rumble();
+		thread icecap1_v82_rumble();
+	}
+
+}

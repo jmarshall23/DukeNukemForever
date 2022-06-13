@@ -1,0 +1,3 @@
+frame,eventName,paramString
+0,SEQEV_TRIGGER,TentacleSwipeRight
+1,SEQEV_TRIGGER,TentacleSwipeLeft

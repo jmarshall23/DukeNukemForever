@@ -1,0 +1,31 @@
+// renderparms.parms
+//
+
+renderParm albedotexture { texture }
+renderParm bumpmap { texture }
+renderParm specularmap { texture }
+renderParm lightfallofftex { texture }
+renderParm lightprogtex { texture }
+renderParm attenuationMapXY { texture }
+renderParm attenuationMapZ { texture }
+
+renderParm  rpbumpmatrixs { float4 }
+renderParm  rpbumpmatrixt { float4 }
+renderParm  rplightfalloffs { float4 }
+renderParm  rplightprojections { float4 }
+renderParm  rplightprojectiont { float4 }
+renderParm  rplightprojectionq { float4 }
+renderParm  rpdiffusematrixs { float4 }
+renderParm  rpdiffusematrixt { float4 }
+renderParm  rpspecularmatrixs { float4 }
+renderParm  rpspecularmatrixt { float4 }
+renderParm  rpdiffusemodifier { float4 }
+renderParm  rpspecularmodifier { float4 }
+
+renderParm vieworigin { float4 }
+renderParm lightorigin { float4 }
+renderParm lightcolor { float4 }
+renderParm lightscale { float4 }
+
+renderParm vertexcolormodulate { float4 }
+renderParm vertexcoloradd { float4 }

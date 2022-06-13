@@ -1,0 +1,14 @@
+renderProg guiTexture
+{
+	vertex
+	{
+		gl_FrontColor = gl_Color;
+		gl_TexCoord[0] = gl_TextureMatrix[0] * attr_TexCoord0;
+		gl_Position = ftransform();
+	}
+
+	pixel
+	{
+		gl_FragColor = texture2D($albedotexture,gl_TexCoord[0].st) * gl_Color;
+	}
+}
