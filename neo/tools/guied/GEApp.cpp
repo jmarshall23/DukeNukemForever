@@ -1155,8 +1155,8 @@ bool rvGEApp::NewFile ( void )
 								WS_CHILD|WS_VISIBLE|WS_CLIPCHILDREN|WS_HSCROLL|WS_VSCROLL|WS_MAXIMIZE,
 								CW_USEDEFAULT,
 								CW_USEDEFAULT,
-								640,
-								480,
+								SCREEN_WIDTH,
+								SCREEN_HEIGHT,
 								mMDIClient,
 								mInstance,
 								(LONG)workspace );

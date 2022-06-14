@@ -767,9 +767,9 @@ idPhysics_Base::IsOutsideWorld
 ================
 */
 bool idPhysics_Base::IsOutsideWorld( void ) const {
-	if ( !gameLocal.clip.GetWorldBounds().Expand( 128.0f ).IntersectsBounds( GetAbsBounds() ) ) {
-		return true;
-	}
+	//if ( !gameLocal.clip.GetWorldBounds().Expand( 128.0f ).IntersectsBounds( GetAbsBounds() ) ) {
+		//return true;
+	//}
 	return false;
 }
 
