@@ -140,9 +140,7 @@ void idGameEdit::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t 
 
 	// check for other attributes
 	args->GetVector( "_color", "1 1 1", color );
-	renderLight->shaderParms[ SHADERPARM_RED ]		= color[0];
-	renderLight->shaderParms[ SHADERPARM_GREEN ]	= color[1];
-	renderLight->shaderParms[ SHADERPARM_BLUE ]		= color[2];
+	renderLight->lightColor = color;	
 	args->GetFloat( "shaderParm3", "1", renderLight->shaderParms[ SHADERPARM_TIMESCALE ] );
 	if ( !args->GetFloat( "shaderParm4", "0", renderLight->shaderParms[ SHADERPARM_TIMEOFFSET ] ) ) {
 		// offset the start time of the shader to sync it to the game time

@@ -768,9 +768,9 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 
 		// backEnd.lightScale is calculated so that lightColor[] will never exceed
 		// tr.backEndRendererMaxLight
-		lightColor[0] = backEnd.lightScale * lightRegs[ lightStage->color.registers[0] ];
-		lightColor[1] = backEnd.lightScale * lightRegs[ lightStage->color.registers[1] ];
-		lightColor[2] = backEnd.lightScale * lightRegs[ lightStage->color.registers[2] ];
+		lightColor[0] = backEnd.lightScale * vLight->lightDef->parms.lightColor.x;
+		lightColor[1] = backEnd.lightScale * vLight->lightDef->parms.lightColor.y;
+		lightColor[2] = backEnd.lightScale * vLight->lightDef->parms.lightColor.z;
 		lightColor[3] = lightRegs[ lightStage->color.registers[3] ];
 
 		// go through the individual stages

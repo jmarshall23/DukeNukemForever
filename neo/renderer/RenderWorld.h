@@ -196,6 +196,10 @@ typedef struct renderLight_s {
 	// muzzle flash lights will not cast shadows from player and weapon world models
 	int						lightId;
 
+// jmarshall
+	idVec3					lightColor;
+// jmarshall end
+
 
 	const idMaterial *		shader;				// NULL = either lights/defaultPointLight or lights/defaultProjectedLight
 	float					shaderParms[MAX_ENTITY_SHADER_PARMS];		// can be used in any way by shader
