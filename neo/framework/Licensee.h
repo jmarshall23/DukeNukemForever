@@ -37,6 +37,7 @@ If you have questions concerning this license or the applicable additional terms
 #define GAME_NAME						"Duke Nukem Forever"		// appears on window titles and errors
 
 #define ENGINE_VERSION					"Duke Nukem Forever 0.01"	// printed in console
+#define BUILD_NUMBER					1
 
 // paths
 #define	CD_BASEDIR						"Doom"

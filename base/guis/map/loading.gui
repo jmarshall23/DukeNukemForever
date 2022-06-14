@@ -1,0 +1,20 @@
+windowDef Desktop
+{
+	menugui	1
+	nocursor	1
+	rect	0,0,1280,720
+	windowDef BackgroundImage
+	{
+		rect	0,0,1280,720
+		visible	1
+		background	"guis/splash/loading"
+		matcolor	1,1,1,1
+	}
+	
+	windowDef Text {
+		text	"gui::demo"
+		rect 5, 10, 200, 30
+		textScale 0.4
+		forecolor	0.0, 0.81, 0.94, 1.0
+	}
+}

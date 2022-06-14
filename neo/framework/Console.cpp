@@ -211,7 +211,7 @@ float SCR_DrawFPS( float y ) {
 		s = va( "%ifps", fps );
 		w = strlen( s ) * BIGCHAR_WIDTH;
 
-		renderSystem->DrawBigStringExt( 635 - w, idMath::FtoiFast( y ) + 2, s, colorWhite, true, localConsole.charSetShader);
+		renderSystem->DrawBigStringExt( (SCREEN_WIDTH - 5) - w, idMath::FtoiFast(y) + 2, s, colorWhite, true, localConsole.charSetShader);
 	}
 
 	return y + BIGCHAR_HEIGHT + 4;
@@ -1063,7 +1063,7 @@ void idConsoleLocal::DrawSolidConsole( float frac ) {
 
 	renderSystem->SetColor( idStr::ColorForIndex( C_COLOR_CYAN ) );
 
-	idStr version = va("%s.%i", ENGINE_VERSION, BUILD_NUMBER);
+	idStr version = va("%s", ENGINE_VERSION, BUILD_NUMBER);
 	i = version.Length();
 
 	for ( x = 0; x < i; x++ ) {

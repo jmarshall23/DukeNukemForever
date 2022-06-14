@@ -2419,7 +2419,7 @@ void idCommonLocal::PrintLoadingMessage( const char *msg ) {
 		return;
 	}
 	renderSystem->BeginFrame( renderSystem->GetScreenWidth(), renderSystem->GetScreenHeight() );
-	renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 1, 1, declManager->FindMaterial( "splashScreen" ) );
+	renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 1, 1, declManager->FindMaterial( "guis/splash/splash" ) );
 	int len = strlen( msg );
 	renderSystem->DrawSmallStringExt( ( SCREEN_WIDTH - len * SMALLCHAR_WIDTH ) / 2, SCREEN_HEIGHT - 80, msg, idVec4( 0.0f, 0.81f, 0.94f, 1.0f ), true, declManager->FindMaterial( "textures/bigchars" ) );
 	renderSystem->EndFrame( NULL, NULL );
