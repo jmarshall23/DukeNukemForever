@@ -34,7 +34,7 @@ void idRenderModelStatic::ParseOBJ(rvmListSTL<idDrawVert> &drawVerts, const char
 		else if (token == "vt") {
 			idVec2 st;
 			st.x = src.ParseFloat();
-			st.y = src.ParseFloat();
+			st.y = 1.0 - src.ParseFloat();
 			texCoords.Append(st);
 		}
 		else if (token == "#") {
