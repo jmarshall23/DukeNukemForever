@@ -633,6 +633,7 @@ void idRenderModelStatic::FinishSurfaces() {
 	// It is better to create completely separate surfaces, rather than
 	// add vertexes and indexes to the existing surface, because the
 	// tangent generation wouldn't like the acute shared edges
+#if 0
 	for ( i = 0 ; i < numOriginalSurfaces ; i++ ) {
 		const modelSurface_t	*surf = &surfaces[i];
 
@@ -673,7 +674,7 @@ void idRenderModelStatic::FinishSurfaces() {
 			const_cast<idMaterial *>(surf->shader)->AddToSurfaceArea( area );
 		}
 	}
-
+#endif
 	// calculate the bounds
 	if ( surfaces.Num() == 0 ) {
 		bounds.Zero();
@@ -681,28 +682,7 @@ void idRenderModelStatic::FinishSurfaces() {
 		bounds.Clear();
 		for ( i = 0 ; i < surfaces.Num() ; i++ ) {
 			modelSurface_t	*surf = &surfaces[i];
-
-			// if the surface has a deformation, increase the bounds
-			// the amount here is somewhat arbitrary, designed to handle
-			// autosprites and flares, but could be done better with exact
-			// deformation information.
-			// Note that this doesn't handle deformations that are skinned in
-			// at run time...
-			if ( surf->shader->Deform() != DFRM_NONE ) {
-				srfTriangles_t	*tri = surf->geometry;
-				idVec3	mid = ( tri->bounds[1] + tri->bounds[0] ) * 0.5f;
-				float	radius = ( tri->bounds[0] - mid ).Length();
-				radius += 20.0f;
-
-				tri->bounds[0][0] = mid[0] - radius;
-				tri->bounds[0][1] = mid[1] - radius;
-				tri->bounds[0][2] = mid[2] - radius;
-
-				tri->bounds[1][0] = mid[0] + radius;
-				tri->bounds[1][1] = mid[1] + radius;
-				tri->bounds[1][2] = mid[2] + radius;
-			}
-
+			
 			// add to the model bounds
 			bounds.AddBounds( surf->geometry->bounds );
 

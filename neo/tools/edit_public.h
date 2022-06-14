@@ -117,4 +117,5 @@ void	MaterialEditorPrintConsole( const char *msg );
 // Generates Materials for textures.
 void GenerateMaterials_f(const idCmdArgs& args);
 void GenerateModelMaterials_f(const idCmdArgs& args);
+void ImportPlane_f(const idCmdArgs& args);
 #endif /* !__EDIT_PUBLIC_H__ */

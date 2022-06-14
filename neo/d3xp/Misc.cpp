@@ -1459,8 +1459,11 @@ void idStaticEntity::Spawn( void ) {
 	bool hidden;
 
 	// an inline static model will not do anything at all
-	if ( spawnArgs.GetBool( "inline" ) || gameLocal.world->spawnArgs.GetBool( "inlineAllStatics" ) ) {
+	if (spawnArgs.GetBool("inline") || gameLocal.world->spawnArgs.GetBool("inlineAllStatics")) {
 		Hide();
+// jmarshall
+		GetPhysics()->SetContents(CONTENTS_SOLID);
+// jmarshall end
 		return;
 	}
 

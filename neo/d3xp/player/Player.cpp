@@ -6510,11 +6510,11 @@ void idPlayer::PerformImpulse( int impulse ) {
 			break;
 		}
 		case IMPULSE_14: {
-			NextWeapon();
+			//NextWeapon();
 			break;
 		}
 		case IMPULSE_15: {
-			PrevWeapon();
+			//PrevWeapon();
 			break;
 		}
 		case IMPULSE_17: {

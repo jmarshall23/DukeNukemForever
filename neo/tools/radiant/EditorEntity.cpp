@@ -572,6 +572,7 @@ entity_t *Entity_PostParse(entity_t *ent, brush_t *pList) {
 
 	bool needsOrigin = !GetVectorForKey(ent, "origin", ent->origin);
 	const char	*pModel = ValueForKey(ent, "model");
+	const char* forceShaderStr = ValueForKey(ent, "forceshader");
 
 	const char *cp = ValueForKey(ent, "classname");
 
@@ -656,6 +657,20 @@ entity_t *Entity_PostParse(entity_t *ent, brush_t *pList) {
 		if (hasModel) {
 			// model entity
 			idRenderModel *modelHandle = renderModelManager->FindModel( pModel );
+
+			if (forceShaderStr)
+			{
+				const idMaterial* mat = declManager->FindMaterial(forceShaderStr, false);
+				if (mat)
+				{
+					for (int u = 0; u < modelHandle->NumSurfaces(); u++)
+					{
+						modelSurface_s* surf = (modelSurface_s*)modelHandle->Surface(u);
+
+						surf->shader = mat;
+					}
+				}
+			}
 
 			if ( dynamic_cast<idRenderModelPrt*>( modelHandle ) || dynamic_cast<idRenderModelLiquid*>( modelHandle ) ) {
 				bo.Zero();

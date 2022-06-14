@@ -1871,6 +1871,9 @@
     <ClCompile Include="tools\importpipeline\MtrGenerate.cpp">
       <Filter>Tools\ImportPipeline</Filter>
     </ClCompile>
+    <ClCompile Include="tools\importpipeline\planeimport.cpp">
+      <Filter>Tools\ImportPipeline</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="openal\idal.py">

@@ -220,6 +220,7 @@ void Dmap( const idCmdArgs &args ) {
 //	dmapGlobals.shadowOptLevel = SO_CULL_OCCLUDED;
 
 	dmapGlobals.noLightCarve = true;
+	dmapGlobals.noFlood = true;
 
 	for ( i = 1 ; i < args.Argc() ; i++ ) {
 		const char *s;

@@ -41,7 +41,7 @@ If you have questions concerning this license or the applicable additional terms
 #define CM_MAX_POLYGON_EDGES				64
 #define CIRCLE_APPROXIMATION_LENGTH			64.0f
 
-#define	MAX_SUBMODELS						2048
+#define	MAX_SUBMODELS						12000
 #define	TRACE_MODEL_HANDLE					MAX_SUBMODELS
 
 #define VERTEX_HASH_BOXSIZE					(1<<6)	// must be power of 2

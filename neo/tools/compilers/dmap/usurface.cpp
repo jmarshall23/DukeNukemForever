@@ -626,10 +626,14 @@ void PutPrimitivesInAreas( uEntity_t *e ) {
 	// optionally inline some of the func_static models
 	if ( dmapGlobals.entityNum == 0 ) {
 		bool inlineAll = dmapGlobals.uEntities[0].mapEntity->epairs.GetBool( "inlineAllStatics" );
+		bool firstCM = true;
 
 		for ( int eNum = 1 ; eNum < dmapGlobals.num_entities ; eNum++ ) {
 			uEntity_t *entity = &dmapGlobals.uEntities[eNum];
 			const char *className = entity->mapEntity->epairs.GetString( "classname" );
+
+			const char* forceshader = entity->mapEntity->epairs.GetString("forceshader");
+
 			if ( idStr::Icmp( className, "func_static" ) ) {
 				continue;
 			}
@@ -664,6 +668,12 @@ void PutPrimitivesInAreas( uEntity_t *e ) {
 				mapTri_t	mapTri;
 				memset( &mapTri, 0, sizeof( mapTri ) );
 				mapTri.material = surface->shader;
+
+				if (forceshader)
+				{
+					mapTri.material = declManager->FindMaterial(forceshader, true);
+				}
+
 				// don't let discretes (autosprites, etc) merge together
 				if ( mapTri.material->IsDiscrete() ) {
 					mapTri.mergeGroup = (void *)surface;

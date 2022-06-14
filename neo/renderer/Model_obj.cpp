@@ -76,10 +76,8 @@ void idRenderModelStatic::ParseOBJ(rvmListSTL<idDrawVert> &drawVerts, const char
 
 			src.ReadRestOfLine(line);
 
-			int matches = sscanf(line.c_str(), "%d/%d/%d %d/%d/%d %d/%d/%d", &vertexIndex[0], &uvIndex[0], &normalIndex[0], &vertexIndex[1], &uvIndex[1], &normalIndex[1], &vertexIndex[2], &uvIndex[2], &normalIndex[2]);
-			if (matches != 9) {
-				common->FatalError("Failed to parse face line");
-			}
+			int matches = sscanf(line.c_str(), "%d/%d %d/%d %d/%d", &vertexIndex[0], &uvIndex[0], &vertexIndex[1], &uvIndex[1], &vertexIndex[2], &uvIndex[2]);
+
 
 			for (int i = 0; i < 3; i++)
 			{
@@ -87,11 +85,11 @@ void idRenderModelStatic::ParseOBJ(rvmListSTL<idDrawVert> &drawVerts, const char
 
 				int vertidx = vertexIndex[i] - 1;
 				int texidx = uvIndex[i] - 1;
-				int normalidx = normalIndex[i] - 1;
+				//int normalidx = normalIndex[i] - 1;
 
 				drawVert.xyz = vertexes[vertidx];
 				drawVert.st = texCoords[texidx];
-				drawVert.normal = normals[normalidx];
+				//drawVert.normal = normals[normalidx];
 
 				drawVerts.Append(drawVert);
 			}
@@ -124,7 +122,7 @@ bool idRenderModelStatic::LoadOBJ(const char *fileName) {
 	// Load the material for our obj mesh.
 	idStr materialName = fileName;
 	materialName.StripFileExtension();
-	const idMaterial *material = declManager->FindMaterial(materialName);
+	const idMaterial *material = declManager->FindMaterial("_default");
 
 	// Build the surfaces for these draw vertexes.
 	bounds.Clear();
