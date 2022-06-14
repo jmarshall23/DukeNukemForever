@@ -426,6 +426,39 @@ bspface_t	*MakeStructuralBspFaceList( primitive_t *list ) {
 
 	flist = NULL;
 	for ( ; list ; list = list->next ) {
+		// RB: support polygons instead of brushes
+		if (list->bsptris.Num() > 0)
+		{
+			for(int i = 0; i < list->bsptris.Num(); i++)
+			{
+				mapTri_t* tri = list->bsptris[i];
+				// FIXME: triangles as portals, should be merged back to quad
+				f = AllocBspFace();
+				if (tri->material->GetContentFlags() & CONTENTS_AREAPORTAL)
+				{
+					f->portal = true;
+				}
+
+				//w = new idWinding( 3 );
+				//w->SetNumPoints( 3 );
+				//( *w )[0] = idVec5( tri->v[0].xyz, tri->v[0].GetTexCoord() );
+				//( *w )[1] = idVec5( tri->v[1].xyz, tri->v[1].GetTexCoord() );
+				//( *w )[2] = idVec5( tri->v[2].xyz, tri->v[2].GetTexCoord() );
+
+				w = WindingForTri(tri);
+				//w->ReverseSelf();
+				f->w = w;
+
+				f->planenum = tri->planeNum & ~1;
+				//f->planenum = ( tri->planeNum ^ 1 ) & ~1;
+				f->next = flist;
+				flist = f;
+			}
+
+			continue;
+		}
+		// RB end
+
 		b = list->brush;
 		if ( !b ) {
 			continue;

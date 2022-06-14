@@ -579,7 +579,11 @@ bool idAASBuild::CheckForEntities( const idMapFile *mapFile, idStrList &entityCl
 			continue;
 		}
 
-		if ( aasSettings->ValidEntity( classname ) ) {
+		if (classname == "info_player_start")
+		{
+			entityClassNames.AddUnique(classname);
+		}
+		else if ( aasSettings->ValidEntity( classname ) ) {
 			entityClassNames.AddUnique( classname );
 		}
 	}

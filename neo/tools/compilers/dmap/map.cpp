@@ -562,6 +562,21 @@ bool LoadDMapFile( const char *filename ) {
 		} else if ( prim->tris ) {
 			triSurfs++;
 		}
+		// RB begin
+		else if (prim->bsptris.Num() > 0)
+		{
+			for (int i = 0; i < prim->bsptris.Num(); i++)
+			{
+				mapTri_t* tri = prim->bsptris[i];
+
+				mapBounds.AddPoint(tri->v[0].xyz);
+				mapBounds.AddPoint(tri->v[1].xyz);
+				mapBounds.AddPoint(tri->v[2].xyz);
+			}
+
+			triSurfs++;
+		}
+		// RB end
 	}
 
 	common->Printf( "%5i total world brushes\n", brushes );

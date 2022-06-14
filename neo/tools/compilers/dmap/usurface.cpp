@@ -604,6 +604,16 @@ void PutPrimitivesInAreas( uEntity_t *e ) {
 	for ( prim = e->primitives ; prim ; prim = prim->next ) {
 		b = prim->brush;
 
+		
+		if (prim->bsptris.Num() > 0)
+		{
+			for (int i = 0; i < prim->bsptris.Num(); i++)
+			{
+				AddMapTriToAreas(prim->bsptris[i], e);
+			}
+			continue;
+		}
+		
 		if ( !b ) {
 			// add curve triangles
 			for ( tri = prim->tris ; tri ; tri = tri->next ) {
@@ -620,78 +630,7 @@ void PutPrimitivesInAreas( uEntity_t *e ) {
 			}
 			PutWindingIntoAreas_r( e, side->visibleHull, side, e->tree->headnode );
 		}
-	}
-
-
-	// optionally inline some of the func_static models
-	if ( dmapGlobals.entityNum == 0 ) {
-		bool inlineAll = dmapGlobals.uEntities[0].mapEntity->epairs.GetBool( "inlineAllStatics" );
-		bool firstCM = true;
-
-		for ( int eNum = 1 ; eNum < dmapGlobals.num_entities ; eNum++ ) {
-			uEntity_t *entity = &dmapGlobals.uEntities[eNum];
-			const char *className = entity->mapEntity->epairs.GetString( "classname" );
-
-			const char* forceshader = entity->mapEntity->epairs.GetString("forceshader");
-
-			if ( idStr::Icmp( className, "func_static" ) ) {
-				continue;
-			}
-			if ( !entity->mapEntity->epairs.GetBool( "inline" ) && !inlineAll ) {
-				continue;
-			}
-			const char *modelName = entity->mapEntity->epairs.GetString( "model" );
-			if ( !modelName ) {
-				continue;
-			}
-			idRenderModel	*model = renderModelManager->FindModel( modelName );
-
-			common->Printf( "inlining %s.\n", entity->mapEntity->epairs.GetString( "name" ) );
-
-			idMat3	axis;
-			// get the rotation matrix in either full form, or single angle form
-			if ( !entity->mapEntity->epairs.GetMatrix( "rotation", "1 0 0 0 1 0 0 0 1", axis ) ) {
-				float angle = entity->mapEntity->epairs.GetFloat( "angle" );
-				if ( angle != 0.0f ) {
-					axis = idAngles( 0.0f, angle, 0.0f ).ToMat3();
-				} else {
-					axis.Identity();
-				}
-			}		
-
-			idVec3	origin = entity->mapEntity->epairs.GetVector( "origin" );
-
-			for ( i = 0 ; i < model->NumSurfaces() ; i++ ) {
-				const modelSurface_t *surface = model->Surface( i );
-				const srfTriangles_t *tri = surface->geometry;
-
-				mapTri_t	mapTri;
-				memset( &mapTri, 0, sizeof( mapTri ) );
-				mapTri.material = surface->shader;
-
-				if (forceshader)
-				{
-					mapTri.material = declManager->FindMaterial(forceshader, true);
-				}
-
-				// don't let discretes (autosprites, etc) merge together
-				if ( mapTri.material->IsDiscrete() ) {
-					mapTri.mergeGroup = (void *)surface;
-				}
-				for ( int j = 0 ; j < tri->numIndexes ; j += 3 ) {
-					for ( int k = 0 ; k < 3 ; k++ ) {
-						idVec3 v = tri->verts[tri->indexes[j+k]].xyz;
-
-						mapTri.v[k].xyz = v * axis + origin;
-
-						mapTri.v[k].normal = tri->verts[tri->indexes[j+k]].normal * axis;
-						mapTri.v[k].st = tri->verts[tri->indexes[j+k]].st;
-					}
-					AddMapTriToAreas( &mapTri, e );
-				}
-			}
-		}
-	}
+	}	
 }
 
 //============================================================================
@@ -1054,3 +993,77 @@ void Prelight( uEntity_t *e ) {
 
 
 
+// RB begin
+int FilterMeshesIntoTree_r(idWinding* w, mapTri_t* originalTri, node_t* node)
+{
+	idWinding* front, * back;
+	int				c;
+
+	if (!w)
+	{
+		return 0;
+	}
+
+	if (node->planenum == PLANENUM_LEAF)
+	{
+		//node->opaque = true;
+
+		delete w;
+		return 1;
+	}
+
+	// split it by the node plane
+	w->Split(dmapGlobals.mapPlanes[node->planenum], ON_EPSILON, &front, &back);
+	delete w;
+
+	c = 0;
+	c += FilterMeshesIntoTree_r(front, originalTri, node->children[0]);
+	c += FilterMeshesIntoTree_r(back, originalTri, node->children[1]);
+
+	return c;
+}
+
+
+/*
+=====================
+FilterMeshesIntoTree
+
+Mark the leafs as opaque and areaportals and put mesh
+fragments in each leaf so portal surfaces can be matched
+to materials
+=====================
+*/
+void FilterMeshesIntoTree(uEntity_t* e)
+{
+	primitive_t* prim;
+	mapTri_t* tri;
+	int				r;
+	int				c_unique, c_clusters;
+
+	common->Printf("----- FilterMeshesIntoTree -----\n");
+
+	c_unique = 0;
+	c_clusters = 0;
+	for (prim = e->primitives; prim; prim = prim->next)
+	{
+		if (prim->bsptris.Num() > 0)
+		{
+			// add BSP triangles
+			//for (tri = prim->bsptris; tri; tri = tri->next)
+			for(int i = 0; i < prim->bsptris.Num(); i++)
+			{
+				mapTri_t* tri = prim->bsptris[i];
+				idWinding* w = WindingForTri(tri);
+
+				c_unique++;
+				r = FilterMeshesIntoTree_r(w, tri, e->tree->headnode);
+				c_clusters += r;
+			}
+			continue;
+		}
+	}
+
+	common->Printf("%5i total BSP triangles\n", c_unique);
+	common->Printf("%5i cluster references\n", c_clusters);
+}
+// RB end

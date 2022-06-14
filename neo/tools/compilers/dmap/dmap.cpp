@@ -41,6 +41,77 @@ ProcessModel
 bool ProcessModel( uEntity_t *e, bool floodFill ) {
 	bspface_t	*faces;
 
+	// optionally inline some of the func_static models
+	if (dmapGlobals.entityNum == 0) {
+		bool inlineAll = dmapGlobals.uEntities[0].mapEntity->epairs.GetBool("inlineAllStatics");
+		bool firstCM = true;
+
+		for (int eNum = 1; eNum < dmapGlobals.num_entities; eNum++) {
+			uEntity_t* entity = &dmapGlobals.uEntities[eNum];
+			const char* className = entity->mapEntity->epairs.GetString("classname");
+
+			const char* forceshader = entity->mapEntity->epairs.GetString("forceshader");
+
+			if (idStr::Icmp(className, "func_static")) {
+				continue;
+			}
+			if (!entity->mapEntity->epairs.GetBool("inline") && !inlineAll) {
+				continue;
+			}
+			const char* modelName = entity->mapEntity->epairs.GetString("model");
+			if (!modelName) {
+				continue;
+			}
+			idRenderModel* model = renderModelManager->FindModel(modelName);
+
+			idMat3	axis;
+			// get the rotation matrix in either full form, or single angle form
+			if (!entity->mapEntity->epairs.GetMatrix("rotation", "1 0 0 0 1 0 0 0 1", axis)) {
+				float angle = entity->mapEntity->epairs.GetFloat("angle");
+				if (angle != 0.0f) {
+					axis = idAngles(0.0f, angle, 0.0f).ToMat3();
+				}
+				else {
+					axis.Identity();
+				}
+			}
+
+			idVec3	origin = entity->mapEntity->epairs.GetVector("origin");
+
+			for (int i = 0; i < model->NumSurfaces(); i++) {
+				const modelSurface_t* surface = model->Surface(i);
+				const srfTriangles_t* tri = surface->geometry;
+				
+				for (int j = 0; j < tri->numIndexes; j += 3) {
+					mapTri_t* mapTri = AllocTri();
+					memset(mapTri, 0, sizeof(mapTri));
+					mapTri->material = surface->shader;
+
+					if (forceshader)
+					{
+						mapTri->material = declManager->FindMaterial(forceshader, true);
+					}
+
+					// don't let discretes (autosprites, etc) merge together
+					if (mapTri->material->IsDiscrete()) {
+						mapTri->mergeGroup = (void*)surface;
+					}
+
+					for (int k = 0; k < 3; k++) {
+						idVec3 v = tri->verts[tri->indexes[j + k]].xyz;
+
+						mapTri->v[k].xyz = v * axis + origin;
+
+						mapTri->v[k].normal = tri->verts[tri->indexes[j + k]].normal * axis;
+						mapTri->v[k].st = tri->verts[tri->indexes[j + k]].st;
+					}
+
+					e->primitives->bsptris.Append(mapTri);
+				}
+			}
+		}
+	}
+
 	// build a bsp tree using all of the sides
 	// of all of the structural brushes
 	faces = MakeStructuralBspFaceList ( e->primitives );
@@ -52,6 +123,8 @@ bool ProcessModel( uEntity_t *e, bool floodFill ) {
 
 	// classify the leafs as opaque or areaportal
 	FilterBrushesIntoTree( e );
+
+	FilterMeshesIntoTree(e);
 
 	// see if the bsp is completely enclosed
 	if ( floodFill && !dmapGlobals.noFlood ) {

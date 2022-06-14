@@ -28,22 +28,36 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "../../../renderer/tr_local.h"
 
+struct mapTri_t;
 
 typedef struct primitive_s {
 	struct primitive_s *next;
 
 	// only one of these will be non-NULL
 	struct bspbrush_s *	brush;
-	struct mapTri_s *	tris;
+	struct mapTri_t*	tris;
+
+	idList<mapTri_t*>  bsptris;
 } primitive_t;
 
 
-typedef struct {
-	struct optimizeGroup_s	*groups;
-	// we might want to add other fields later
-} uArea_t;
+struct uArea_t {
+	uArea_t()
+	{
+		groups = nullptr;
+	}
 
-typedef struct {
+	struct optimizeGroup_s	*groups;
+	
+};
+
+struct uEntity_t {
+	uEntity_t()
+	{
+		areas = nullptr;
+		numAreas = 0;
+	}
+
 	idMapEntity *		mapEntity;		// points into mapFile_t data
 
 	idVec3				origin;
@@ -52,12 +66,11 @@ typedef struct {
 
 	int					numAreas;
 	uArea_t *			areas;
-} uEntity_t;
-
+};
 
 // chains of mapTri_t are the general unit of processing
-typedef struct mapTri_s {
-	struct mapTri_s *	next;
+struct mapTri_t {
+	struct mapTri_t*	next;
 
 	const idMaterial *	material;
 	void *				mergeGroup;		// we want to avoid merging triangles
@@ -67,7 +80,7 @@ typedef struct mapTri_s {
 	idDrawVert			v[3];
 	const struct hashVert_s *hashVert[3];
 	struct optVertex_s *optVert[3];
-} mapTri_t;
+};
 
 
 typedef struct {
@@ -300,6 +313,7 @@ float BrushVolume (uBrush_t *brush);
 void WriteBspBrushMap( const char *name, uBrush_t *list );
 
 void FilterBrushesIntoTree( uEntity_t *e );
+void FilterMeshesIntoTree(uEntity_t* e);
 
 void SplitBrush( uBrush_t *brush, int planenum, uBrush_t **front, uBrush_t **back);
 node_t *AllocNode( void );
