@@ -4018,6 +4018,13 @@ void Brush_DrawModel( brush_t *b, bool camera, bool bSelected ) {
 		if ( bSelected ) {
 			glColor3fv( g_qeglobals.d_savedinfo.colors[COLOR_SELBRUSHES].ToFloatPtr() );
 		}
+		else {
+// jmarshall - tired of static meshes being blue in the preview window.
+			if (model && camera) {
+				glColor3f(1, 1, 1);
+			}
+// jmarshall end
+		}
 
 		DrawRenderModel( model, b->owner->origin, axis, camera );
 

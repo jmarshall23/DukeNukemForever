@@ -1,0 +1,70 @@
+model pigcop
+{
+	mesh				models/characters/pigcop/pigcop.md5mesh
+	anim af_pose		models/characters/pigcop/pigcop_IdleA.md5anim
+	anim ik_pose		models/characters/pigcop/pigcop_IdleA.md5anim
+
+	anim initial		models/characters/pigcop/pigcop_IdleA.md5anim
+	anim idle			models/characters/pigcop/pigcop_IdleA.md5anim
+
+	anim walk 			models/characters/pigcop//pigcop_walk.md5anim
+}
+
+entityDef monster_pigcop
+{
+	"inherit"						"monster_zsec_pistol"
+	"spawnclass"					"rvmMonsterZombieSecurityPistol"
+	"scriptobject"					"monster_zombie_security_pistol"
+	"size"							"40 40 72"
+	"use_aas"						"aas48"
+	"team"							"1"
+	"rank"							"1"
+	"health"						"90"
+	"def_projectile"				"projectile_bullet_zsec_shotgun"
+	"projectile_spread"				"5"
+	"num_projectiles"				"7"
+	"attack_cone"					"70"
+	"attack_accuracy"				"2"
+	"smoke_weapon"					"cgsmoke.smoke"
+	"smoke_wound_metal"				"bulletricochet.prt"
+	"smoke_wound_ricochet"			"bulletricochet.prt"
+
+	"skin_dropGib"					"skins/monsters/zombies/securitygib.skin"
+	"def_dropGibItem1"				"moveable_item_head_pork"
+	"dropGibItem1Joint"				"headcontrol"
+
+	"def_dropGibItem2"				"moveable_item_torso_pork"
+	"dropGibItem2Joint"				"Chest"
+
+	"def_dropGibItem3"				"moveable_item_rup_arm_pork"
+	"dropGibItem3Joint"				"Ruparm"
+
+	"def_dropGibItem4"				"moveable_item_left_waist_pork"
+	"dropGibItem4Joint"				"Waist"
+
+	"def_dropGibItem5"				"moveable_item_lup_leg_pork"
+	"dropGibItem5Joint"				"Lupleg"
+
+	"def_dropGibItem6"				"moveable_item_rup_leg_pork"
+	"dropGibItem6Joint"				"Rupleg"
+
+	"def_dropGibItem7"				"moveable_item_rup2_leg_pork"
+	"dropGibItem7Joint"				"Rloleg"
+
+	"def_dropGibItem8"				"moveable_item_pelvis_pork"
+	"dropGibItem8Joint"				"Hips"
+
+	"def_dropDeathItem9"			"moveable_item_shotgun"
+	"dropDeathItem9Joint"			"shotgun"
+	"skin_dropDeath"				"skins/monsters/zombies/zsecurity.skin"
+
+	"ragdoll"						"pigcop"
+	"model"						 "pigcop"
+	"def_head"						"head_zombie5"
+	"head_joint"					"Shoulders"
+
+	"mtr_flashShader"				"muzzleflash"
+	"flashTime"						"0.15"
+	"flashColor"					"1 0.8 0.4"
+	"flashRadius"					"96"
+}

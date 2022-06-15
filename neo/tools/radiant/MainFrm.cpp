@@ -1181,6 +1181,10 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 	}
 
 	Sys_UpdateWindows ( W_ALL );
+
+	#define IDI_ICON1 4001
+	SetIcon(AfxGetApp()->LoadIcon(IDI_ICON1), false);
+
 	return 0;
 }
 
