@@ -434,6 +434,8 @@ public:
 							// Initializes all map variables common to both save games and spawned games
 	void					LoadMap( const char *mapName, int randseed );
 
+	rvmNavFile*				GetNavigation() { return navFile; }
+
 	void					LocalMapRestart( void );
 	void					MapRestart( void );
 	static void				MapRestart_f( const idCmdArgs &args );
@@ -557,6 +559,8 @@ public:
 
 private:
 	const static int		INITIAL_SPAWN_COUNT = 1;
+
+	rvmNavFile*				navFile;
 
 	idStr					mapFileName;			// name of the map, empty string if no map loaded
 	idMapFile *				mapFile;				// will be NULL during the game unless in-game editing is used

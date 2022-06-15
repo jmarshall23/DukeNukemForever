@@ -46,6 +46,7 @@ idUserInterfaceManager *	uiManager = NULL;
 idDeclManager *				declManager = NULL;
 idAASFileManager *			AASFileManager = NULL;
 idCollisionModelManager *	collisionModelManager = NULL;
+rvmNavigationManager*		navigationManager = NULL;
 idCVar *					idCVar::staticVars = NULL;
 
 idCVar com_forceGenericSIMD( "com_forceGenericSIMD", "0", CVAR_BOOL|CVAR_SYSTEM, "force generic platform independent SIMD" );
@@ -136,6 +137,7 @@ extern "C" gameExport_t *GetGameAPI( gameImport_t *import ) {
 		declManager					= import->declManager;
 		AASFileManager				= import->AASFileManager;
 		collisionModelManager		= import->collisionModelManager;
+		navigationManager			= import->navigationManager;
 	}
 
 	// set interface pointers used by idLib
@@ -267,6 +269,7 @@ void idGameLocal::Clear( void ) {
 	newInfo.Clear();
 	lastGUIEnt = NULL;
 	lastGUI = 0;
+	navFile = nullptr;
 
 	memset( clientEntityStates, 0, sizeof( clientEntityStates ) );
 	memset( clientPVS, 0, sizeof( clientPVS ) );
@@ -369,6 +372,8 @@ void idGameLocal::Init( void ) {
 		aasNames.Append( kv->GetValue() );
 		kv = dict->MatchPrefix( "type", kv );
 	}
+
+	navigationManager->Init();
 
 	gamestate = GAMESTATE_NOMAP;
 
@@ -928,6 +933,8 @@ void idGameLocal::LoadMap( const char *mapName, int randseed ) {
 
 	// load the collision map
 	collisionModelManager->LoadMap( mapFile );
+
+	navFile = navigationManager->LoadNavFile(mapName);
 
 	numClients = 0;
 
@@ -1620,6 +1627,12 @@ void idGameLocal::MapShutdown( void ) {
 	if ( inCinematic ) {
 		camera = NULL;
 		inCinematic = false;
+	}
+
+	if (navFile)
+	{
+		navigationManager->FreeNavFile(navFile);
+		navFile = nullptr;
 	}
 
 	MapClear( true );

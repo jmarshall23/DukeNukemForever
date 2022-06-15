@@ -2112,6 +2112,7 @@ static classVariableInfo_t idGameLocal_typeInfo[] = {
 	{ "slowmoState_t", "slowmoState", (intptr_t)(&((idGameLocal *)0)->slowmoState), sizeof( ((idGameLocal *)0)->slowmoState ) },
 	{ "float", "slowmoMsec", (intptr_t)(&((idGameLocal *)0)->slowmoMsec), sizeof( ((idGameLocal *)0)->slowmoMsec ) },
 	{ "bool", "quickSlowmoReset", (intptr_t)(&((idGameLocal *)0)->quickSlowmoReset), sizeof( ((idGameLocal *)0)->quickSlowmoReset ) },
+	{ "rvmNavFile *", "navFile", (intptr_t)(&((idGameLocal *)0)->navFile), sizeof( ((idGameLocal *)0)->navFile ) },
 	{ "idStr", "mapFileName", (intptr_t)(&((idGameLocal *)0)->mapFileName), sizeof( ((idGameLocal *)0)->mapFileName ) },
 	{ "idMapFile *", "mapFile", (intptr_t)(&((idGameLocal *)0)->mapFile), sizeof( ((idGameLocal *)0)->mapFile ) },
 	{ "bool", "mapCycleLoaded", (intptr_t)(&((idGameLocal *)0)->mapCycleLoaded), sizeof( ((idGameLocal *)0)->mapCycleLoaded ) },
