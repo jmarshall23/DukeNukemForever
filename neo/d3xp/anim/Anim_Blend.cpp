@@ -2442,15 +2442,9 @@ void idDeclModelDef::SetupJoints( int *numJoints, idJointMat **jointList, idBoun
 		list[ 0 ].SetTranslation( idVec3( offset.x, offset.y + pose[0].t.y, offset.z + pose[0].t.z ) );
 #else
 		list[ 0 ].SetTranslation( offset );
-// jmarshall
-		list[0].SetRotation(rotation.ToMat3());
-// jmarshall end
 #endif
 	} else {
 		list[ 0 ].SetTranslation( pose[0].t + offset );
-// jmarshall
-		list[ 0 ].SetRotation((list[0].ToMat3().ToAngles() + rotation.ToAngles()).ToMat3());
-// jmarshall end
 	}
 
 	// transform the joint hierarchy
@@ -2794,16 +2788,6 @@ bool idDeclModelDef::Parse( const char *text, const int textLength ) {
 				MakeDefault();
 				return false;
 			}
-// jmarshall
-		} else if ( token == "rotation" ) {
-			idAngles r;
-			if ( !src.Parse1DMatrix( 3, r.ToFloatPtr() ) ) {
-				src.Warning( "Expected vector following 'offset'" );
-				MakeDefault();
-				return false;
-			}
-			rotation = r.ToQuat();
-// jmarshall end
 		} else if ( token == "channel" ) {
 			if ( !modelHandle ) {
 				src.Warning( "Must specify mesh before defining channels" );
@@ -3090,14 +3074,6 @@ idDeclModelDef::GetVisualOffset
 */
 const idVec3 &idDeclModelDef::GetVisualOffset( void ) const {
 	return offset;
-}
-/*
-=====================
-idDeclModelDef::GetVisualRotation
-=====================
-*/
-const idMat3& idDeclModelDef::GetVisualRotation(void) const {
-	return rotation.ToMat3();
 }
 
 /***********************************************************************
@@ -4996,7 +4972,7 @@ int idGameEdit::ANIM_GetNumFrames( const idMD5Anim *anim ) {
 idGameEdit::ANIM_CreateAnimFrame
 =====================
 */
-void idGameEdit::ANIM_CreateAnimFrame( const idRenderModel *model, const idMD5Anim *anim, int numJoints, idJointMat *joints, int time, const idVec3 &offset, bool remove_origin_offset, const idMat3& rotation) {
+void idGameEdit::ANIM_CreateAnimFrame( const idRenderModel *model, const idMD5Anim *anim, int numJoints, idJointMat *joints, int time, const idVec3 &offset, bool remove_origin_offset ) {
 	int					i;
 	frameBlend_t		frame;
 	const idMD5Joint	*md5joints;
@@ -5022,7 +4998,7 @@ void idGameEdit::ANIM_CreateAnimFrame( const idRenderModel *model, const idMD5An
 	if ( numJoints != anim->NumJoints() ) {
 		gameLocal.Warning( "Model '%s' has different # of joints than anim '%s'", model->Name(), anim->Name() );
 		for( i = 0; i < numJoints; i++ ) {
-			joints[i].SetRotation(rotation);
+			joints[i].SetRotation( mat3_identity );
 			joints[i].SetTranslation( offset );
 		}
 		return;
@@ -5045,10 +5021,8 @@ void idGameEdit::ANIM_CreateAnimFrame( const idRenderModel *model, const idMD5An
 	// first joint is always root of entire hierarchy
 	if ( remove_origin_offset ) {
 		joints[0].SetTranslation( offset );
-		joints[0].SetRotation(rotation);
 	} else {
 		joints[0].SetTranslation( joints[0].ToVec3() + offset );
-		joints[0].SetRotation((joints[0].ToMat3().ToAngles() + rotation.ToAngles()).ToMat3());
 	}
 
 	// transform the children
@@ -5075,9 +5049,6 @@ idRenderModel *idGameEdit::ANIM_CreateMeshForAnim( idRenderModel *model, const c
 	int						animNum;
 	idVec3					offset;
 	const idDeclModelDef	*modelDef;
-// jmarshall
-	idMat3					rotation;
-// jmarshall end
 
 	if ( !model || model->IsDefaultModel() ) {
 		return NULL;
@@ -5106,7 +5077,6 @@ idRenderModel *idGameEdit::ANIM_CreateMeshForAnim( idRenderModel *model, const c
 		md5anim = anim->MD5Anim( 0 );
 		ent.customSkin = modelDef->GetDefaultSkin();
 		offset = modelDef->GetVisualOffset();
-		rotation = modelDef->GetVisualRotation();
 	} else {
 		filename = animname;
 		filename.ExtractFileExtension( extension );
@@ -5116,7 +5086,6 @@ idRenderModel *idGameEdit::ANIM_CreateMeshForAnim( idRenderModel *model, const c
 
 		md5anim = animationLib.GetAnim(animname, model);
 		offset.Zero();
-		rotation.Identity();
 	}
 
 	if ( !md5anim ) {
@@ -5131,7 +5100,7 @@ idRenderModel *idGameEdit::ANIM_CreateMeshForAnim( idRenderModel *model, const c
 	ent.numJoints = model->NumJoints();
 	ent.joints = ( idJointMat * )Mem_Alloc16( ent.numJoints * sizeof( *ent.joints ) );
 
-	ANIM_CreateAnimFrame( model, md5anim, ent.numJoints, ent.joints, FRAME2MS( frame ), offset, remove_origin_offset, rotation);
+	ANIM_CreateAnimFrame( model, md5anim, ent.numJoints, ent.joints, FRAME2MS( frame ), offset, remove_origin_offset );
 
 	newmodel = model->InstantiateDynamicModel( &ent, NULL, NULL );
 

@@ -4,7 +4,7 @@
 "classname" "monster_pigcop"
 "name" "monster_pigcop_2"
 "origin" "4232 528 -56"
-"angle" "270"
+"angle" "180"
 }
 // entity 1
 {

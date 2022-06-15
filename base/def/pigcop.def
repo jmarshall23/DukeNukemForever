@@ -1,8 +1,7 @@
 model pigcop
 {
 	mesh				models/characters/pigcop/pigcop.md5mesh
-	offset			( 0 56 0 )
-	rotation			( -90 0 0 )
+	offset			( 0 0 36 )
 
 	anim af_pose		models/characters/pigcop/pigcop_IdleA.md5anim
 	anim ik_pose		models/characters/pigcop/pigcop_IdleA.md5anim
