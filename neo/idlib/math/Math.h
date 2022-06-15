@@ -250,7 +250,11 @@ public:
 	static signed short			ClampShort( int i );
 	static int					ClampInt( int min, int max, int value );
 	static float				ClampFloat( float min, float max, float value );
-
+// jmarshall
+	static int					Rand() { return rand(); }
+	static float				FRand() { return Rand() / (float)RAND_MAX; }
+	static float				FRandRange(float min, float max) { return min + (max - min) * FRand(); }
+// jmarshall end
 	static float				AngleNormalize360( float angle );
 	static float				AngleNormalize180( float angle );
 	static float				AngleDelta( float angle1, float angle2 );

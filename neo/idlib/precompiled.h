@@ -126,6 +126,9 @@ If you have questions concerning this license or the applicable additional terms
 #include "../framework/FileSystem.h"
 #include "../framework/UsercmdGen.h"
 
+// Navigation
+#include "../navigation/Nav_public.h"
+
 // decls
 #include "../framework/DeclManager.h"
 #include "../framework/DeclTable.h"

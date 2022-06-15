@@ -118,6 +118,30 @@
     <Filter Include="Tools\ImportPipeline">
       <UniqueIdentifier>{9fcff724-79a9-4436-85d0-c46cd42e23d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="External\detour">
+      <UniqueIdentifier>{2286eb65-fbc2-467e-a855-93a4dac0610c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\detour\source">
+      <UniqueIdentifier>{7be9f9b7-b207-48e7-b0a7-69a2b43bc8b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\detour\include">
+      <UniqueIdentifier>{0d715bac-fc7f-4b5d-b1c8-22ae3e45a5c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\recast">
+      <UniqueIdentifier>{fd801df0-b7f0-426c-bca9-5ed441efd908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\recast\Source">
+      <UniqueIdentifier>{622afce6-a08d-4b06-a5e5-3addb6f2f7ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\recast\Include">
+      <UniqueIdentifier>{263fc066-7c63-43b1-aa5b-8945b11c8814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Navigation">
+      <UniqueIdentifier>{185be166-1c06-4eb1-af3f-181a7ca38dfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Compilers\navmesh">
+      <UniqueIdentifier>{91d0e0ad-bcad-48d4-bed4-bc1a3b2e061e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cm\CollisionModel.h">
@@ -650,6 +674,48 @@
     </ClInclude>
     <ClInclude Include="framework\DeclRenderParam.h">
       <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourAlloc.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourAssert.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourCommon.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourMath.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourNavMesh.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourNavMeshBuilder.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourNavMeshQuery.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourNode.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\detour\Include\DetourStatus.h">
+      <Filter>External\detour\include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\recast\Include\Recast.h">
+      <Filter>External\recast\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\recast\Include\RecastAlloc.h">
+      <Filter>External\recast\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="external\recast\Include\RecastAssert.h">
+      <Filter>External\recast\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation\Nav_local.h">
+      <Filter>Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="navigation\Nav_public.h">
+      <Filter>Navigation</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1873,6 +1939,69 @@
     </ClCompile>
     <ClCompile Include="tools\importpipeline\planeimport.cpp">
       <Filter>Tools\ImportPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="external\detour\Source\DetourAlloc.cpp">
+      <Filter>External\detour\source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\detour\Source\DetourAssert.cpp">
+      <Filter>External\detour\source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\detour\Source\DetourCommon.cpp">
+      <Filter>External\detour\source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\detour\Source\DetourNavMesh.cpp">
+      <Filter>External\detour\source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\detour\Source\DetourNavMeshBuilder.cpp">
+      <Filter>External\detour\source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\detour\Source\DetourNavMeshQuery.cpp">
+      <Filter>External\detour\source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\detour\Source\DetourNode.cpp">
+      <Filter>External\detour\source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\Recast.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastAlloc.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastArea.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastAssert.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastContour.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastFilter.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastLayers.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastMesh.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastMeshDetail.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastRasterization.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="external\recast\Source\RecastRegion.cpp">
+      <Filter>External\recast\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation\Nav_File.cpp">
+      <Filter>Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="navigation\Nav_Manager.cpp">
+      <Filter>Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\compilers\navmesh\NavMeshBuild.cpp">
+      <Filter>Tools\Compilers\navmesh</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
