@@ -3,8 +3,8 @@
 "anim" "idle"
 "classname" "monster_pigcop"
 "name" "monster_pigcop_2"
-"origin" "4224 528 8"
-"angle" "180"
+"origin" "4232 528 -56"
+"angle" "270"
 }
 // entity 1
 {

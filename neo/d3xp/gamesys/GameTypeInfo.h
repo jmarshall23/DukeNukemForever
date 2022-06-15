@@ -1748,6 +1748,7 @@ static classVariableInfo_t idAnim_typeInfo[] = {
 
 static classVariableInfo_t idDeclModelDef_typeInfo[] = {
 	{ ": idVec3", "offset", (intptr_t)(&((idDeclModelDef *)0)->offset), sizeof( ((idDeclModelDef *)0)->offset ) },
+	{ "idQuat", "rotation", (intptr_t)(&((idDeclModelDef *)0)->rotation), sizeof( ((idDeclModelDef *)0)->rotation ) },
 	{ "idList < jointInfo_t >", "joints", (intptr_t)(&((idDeclModelDef *)0)->joints), sizeof( ((idDeclModelDef *)0)->joints ) },
 	{ "idList < int >", "jointParents", (intptr_t)(&((idDeclModelDef *)0)->jointParents), sizeof( ((idDeclModelDef *)0)->jointParents ) },
 	{ "idList < int >[5]", "channelJoints", (intptr_t)(&((idDeclModelDef *)0)->channelJoints), sizeof( ((idDeclModelDef *)0)->channelJoints ) },

@@ -325,13 +325,18 @@ public:
 	const int *					GetChannelJoints( int channel ) const;
 
 	const idVec3 &				GetVisualOffset( void ) const;
-
+// jmarshall
+	const idMat3&				GetVisualRotation(void) const;
+// jmarshall end
 private:
 	void						CopyDecl( const idDeclModelDef *decl );
 	bool						ParseAnim( idLexer &src, int numDefaultAnims );
 
 private:
 	idVec3						offset;
+// jmarshall
+	idQuat						rotation;
+// jmarshall end
 	idList<jointInfo_t>			joints;
 	idList<int>					jointParents;
 	idList<int>					channelJoints[ ANIM_NumAnimChannels ];
