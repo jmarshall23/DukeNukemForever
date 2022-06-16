@@ -5600,6 +5600,8 @@ void idPlayer::BobCycle( const idVec3 &pushVelocity ) {
 	float		speed;
 	float		f;
 
+	return;
+
 	//
 	// calculate speed and cycle to be used for
 	// all cyclic walking effects
