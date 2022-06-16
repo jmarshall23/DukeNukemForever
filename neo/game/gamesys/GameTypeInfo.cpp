@@ -3983,6 +3983,9 @@ intptr_t idWeapon::Invoke(const char *functionName, void *param1) {
 	if(functionNameHash == 97537) { // IsFiring
 		return (intptr_t)IsFiring();
 	};
+	if(functionNameHash == 203140) { // IsVertexAnimDone
+		return (intptr_t)IsVertexAnimDone();
+	};
 	if(functionNameHash == 61762) { // Think
 		Think();
 		return 0;
@@ -4286,6 +4289,9 @@ bool idWeapon::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 97537) { // IsFiring
+		return true;
+	};
+	if(functionNameHash == 203140) { // IsVertexAnimDone
 		return true;
 	};
 	if(functionNameHash == 61762) { // Think

@@ -258,8 +258,8 @@ public:
 
 	// animation
 	virtual bool			UpdateAnimationControllers( void );
-	bool					UpdateRenderEntity( renderEntity_s *renderEntity, const renderView_t *renderView );
-	static bool				ModelCallback( renderEntity_s *renderEntity, const renderView_t *renderView );
+	bool					UpdateRenderEntity( renderEntity_t *renderEntity, const renderView_t *renderView );
+	static bool				ModelCallback( renderEntity_t *renderEntity, const renderView_t *renderView );
 	virtual idAnimator *	GetAnimator( void );	// returns animator object used by this entity
 
 	// sound

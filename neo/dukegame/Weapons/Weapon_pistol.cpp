@@ -8,6 +8,16 @@
 CLASS_DECLARATION( rvmWeaponObject, dnWeaponPistol )
 END_CLASS
 
+#define DNPISTOL_IDLE_STARTFRAME	124
+#define DNPISTOL_IDLE_NUMFRAMES		 40
+
+#define DNPISTOL_FIRE_STARTFRAME      1
+#define DNPISTOL_FIRE_NUMFRAMES      11
+
+#define DNPISTOL_RELOAD_STARTFRAME      17
+#define DNPISTOL_RELOAD_NUMFRAMES      48
+
+
 #define PISTOL_FIRERATE			0.4
 #define PISTOL_LOWAMMO			4
 #define PISTOL_NUMPROJECTILES	1
@@ -115,14 +125,7 @@ stateResult_t dnWeaponPistol::Idle( stateParms_t* parms )
 	{
 		case IDLE_NOTSET:
 			owner->Event_WeaponReady();
-			if( !owner->AmmoInClip() )
-			{
-				owner->Event_PlayCycle( ANIMCHANNEL_ALL, "idle_empty" );
-			}
-			else
-			{
-				owner->Event_PlayCycle( ANIMCHANNEL_ALL, "idle" );
-			}
+			owner->PlayVertexAnimation(DNPISTOL_IDLE_STARTFRAME, DNPISTOL_IDLE_NUMFRAMES, true);
 			parms->stage = IDLE_WAIT;
 			return SRESULT_WAIT;
 
@@ -169,12 +172,13 @@ stateResult_t dnWeaponPistol::Fire( stateParms_t* parms )
 
 			owner->Event_LaunchProjectiles( PISTOL_NUMPROJECTILES, spread, 0, 1, 1 );
 
-			owner->Event_PlayAnim( ANIMCHANNEL_ALL, "fire", false );
+			//owner->Event_PlayAnim( ANIMCHANNEL_ALL, "fire", false );
+			owner->PlayVertexAnimation(DNPISTOL_FIRE_STARTFRAME, DNPISTOL_FIRE_NUMFRAMES, false);
 			parms->stage = FIRE_WAIT;
 			return SRESULT_WAIT;
 
 		case FIRE_WAIT:
-			if( owner->Event_AnimDone( ANIMCHANNEL_ALL, PISTOL_FIRE_TO_IDLE ) )
+			if( owner->IsVertexAnimDone())
 			{
 				return SRESULT_DONE;
 			}
@@ -201,12 +205,12 @@ stateResult_t dnWeaponPistol::Reload( stateParms_t* parms )
 	switch( parms->stage )
 	{
 		case RELOAD_NOTSET:
-			owner->Event_PlayAnim( ANIMCHANNEL_ALL, "reload", false );
+			owner->PlayVertexAnimation(DNPISTOL_RELOAD_STARTFRAME, DNPISTOL_RELOAD_NUMFRAMES, false);
 			parms->stage = RELOAD_WAIT;
 			return SRESULT_WAIT;
 
 		case RELOAD_WAIT:
-			if( owner->Event_AnimDone( ANIMCHANNEL_ALL, 0 ) )
+			if (owner->IsVertexAnimDone())
 			{
 				owner->Event_AddToClip( owner->ClipSize() );
 				return SRESULT_DONE;

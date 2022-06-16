@@ -174,6 +174,12 @@ public:
 		return isFiring;
 	}
 
+	void					PlayVertexAnimation(int startFrame, int numFrames, bool repeat);
+	bool					IsVertexAnimDone()
+	{
+		return (renderEntity.frame >= (vertexAnimatedFrameStart + vertexAnimatedNumFrames) - 1) && !vertrexAnimatedRepeat;
+	}
+
 	// State control/player interface
 	void					Think();
 	void					Raise();
@@ -317,6 +323,10 @@ private:
 	int						animDoneTime;
 	bool					isPlayerFlashlight;
 	bool					isLinked;
+
+	int						vertexAnimatedFrameStart;
+	int						vertexAnimatedNumFrames;
+	bool					vertrexAnimatedRepeat;
 
 	// precreated projectile
 	idEntity*				projectileEnt;

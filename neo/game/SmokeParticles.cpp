@@ -302,7 +302,7 @@ bool idSmokeParticles::EmitSmoke( const idDeclParticle *smoke, const int systemS
 idSmokeParticles::UpdateRenderEntity
 ================
 */
-bool idSmokeParticles::UpdateRenderEntity( renderEntity_s *renderEntity, const renderView_t *renderView ) {
+bool idSmokeParticles::UpdateRenderEntity( renderEntity_t *renderEntity, const renderView_t *renderView ) {
 
 	// FIXME: re-use model surfaces
 	renderEntity->hModel->InitEmpty( smokeParticle_SnapshotName );
@@ -437,7 +437,7 @@ bool idSmokeParticles::UpdateRenderEntity( renderEntity_s *renderEntity, const r
 idSmokeParticles::ModelCallback
 ================
 */
-bool idSmokeParticles::ModelCallback( renderEntity_s *renderEntity, const renderView_t *renderView ) {
+bool idSmokeParticles::ModelCallback( renderEntity_t *renderEntity, const renderView_t *renderView ) {
 	// update the particles
 	if ( gameLocal.smokeParticles ) {
 		return gameLocal.smokeParticles->UpdateRenderEntity( renderEntity, renderView );

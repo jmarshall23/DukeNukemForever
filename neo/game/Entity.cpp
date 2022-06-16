@@ -1521,7 +1521,7 @@ int idEntity::GetModelDefHandle( void ) {
 idEntity::UpdateRenderEntity
 ================
 */
-bool idEntity::UpdateRenderEntity( renderEntity_s *renderEntity, const renderView_t *renderView ) {
+bool idEntity::UpdateRenderEntity( renderEntity_t *renderEntity, const renderView_t *renderView ) {
 	if ( gameLocal.inCinematic && gameLocal.skipCinematic ) {
 		return false;
 	}
@@ -1545,7 +1545,7 @@ idEntity::ModelCallback
 	NOTE: may not change the game state whatsoever!
 ================
 */
-bool idEntity::ModelCallback( renderEntity_s *renderEntity, const renderView_t *renderView ) {
+bool idEntity::ModelCallback( renderEntity_t *renderEntity, const renderView_t *renderView ) {
 	idEntity *ent;
 
 	ent = gameLocal.entities[ renderEntity->entityNum ];

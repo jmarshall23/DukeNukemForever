@@ -64,7 +64,7 @@ bool idRenderModelSprite::IsLoaded() const {
 idRenderModelSprite::InstantiateDynamicModel
 ===============
 */
-idRenderModel *	idRenderModelSprite::InstantiateDynamicModel( const struct renderEntity_s *renderEntity, const struct viewDef_s *viewDef, idRenderModel *cachedModel ) {
+idRenderModel *	idRenderModelSprite::InstantiateDynamicModel( const struct renderEntity_t *renderEntity, const struct viewDef_s *viewDef, idRenderModel *cachedModel ) {
 	idRenderModelStatic *staticModel;
 	srfTriangles_t *tri;
 	modelSurface_t surf;
@@ -185,7 +185,7 @@ idRenderModel *	idRenderModelSprite::InstantiateDynamicModel( const struct rende
 idRenderModelSprite::Bounds
 ===============
 */
-idBounds idRenderModelSprite::Bounds( const struct renderEntity_s *renderEntity ) const {
+idBounds idRenderModelSprite::Bounds( const struct renderEntity_t *renderEntity ) const {
 	idBounds b;
 
 	b.Zero();

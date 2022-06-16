@@ -56,10 +56,6 @@ const int SHADERPARM_TIME_OF_DEATH	= 7;	// for the monster skin-burn-away effect
 // model parms
 const int SHADERPARM_MD5_SKINSCALE	= 8;	// for scaling vertex offsets on md5 models (jack skellington effect)
 
-const int SHADERPARM_MD3_FRAME		= 8;
-const int SHADERPARM_MD3_LASTFRAME	= 9;
-const int SHADERPARM_MD3_BACKLERP	= 10;
-
 const int SHADERPARM_BEAM_END_X		= 8;	// for _beam models
 const int SHADERPARM_BEAM_END_Y		= 9;
 const int SHADERPARM_BEAM_END_Z		= 10;
@@ -74,10 +70,12 @@ const int SHADERPARM_PARTICLE_STOPTIME = 8;	// don't spawn any more particles af
 const int MAX_RENDERENTITY_GUI		= 3;
 
 
-typedef bool(*deferredEntityCallback_t)( renderEntity_s *, const renderView_s * );
+typedef bool(*deferredEntityCallback_t)( renderEntity_t *, const renderView_s * );
 
 
-typedef struct renderEntity_s {
+struct renderEntity_t {
+	renderEntity_t();
+
 	idRenderModel *			hModel;				// this can only be null if callback is set
 
 	int						entityNum;
@@ -151,7 +149,22 @@ typedef struct renderEntity_s {
 	int						forceUpdate;			// force an update (NOTE: not a bool to keep this struct a multiple of 4 bytes)
 	int						timeGroup;
 	int						xrayIndex;
-} renderEntity_t;
+
+// jmarshall
+	int						startTime;
+	float					frame;
+	int						lastFrame;
+	float					lerp;
+// jmarshall end
+
+};
+
+// jmarshall
+ID_INLINE renderEntity_t::renderEntity_t()
+{
+	memset(this, 0, sizeof(renderEntity_t));
+}
+// jmarshall end
 
 
 typedef struct renderLight_s {

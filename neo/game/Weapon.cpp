@@ -152,6 +152,10 @@ idWeapon::idWeapon()
 	worldModel				= NULL;
 	weaponDef				= NULL;
 
+	vertexAnimatedFrameStart = 0;
+	vertexAnimatedNumFrames = 0;
+	vertrexAnimatedRepeat = false;
+
 	isFiring = false;
 	isLinked = false;
 	currentWeaponObject = nullptr;
@@ -1738,6 +1742,27 @@ void idWeapon::SetPushVelocity( const idVec3& pushVelocity )
 
 /*
 ================
+idWeapon::PlayVertexAnimation
+================
+*/
+void idWeapon::PlayVertexAnimation(int startFrame, int numFrames, bool repeat)
+{
+	vertexAnimatedFrameStart = startFrame;
+	vertexAnimatedNumFrames = numFrames;
+	vertrexAnimatedRepeat = repeat;
+
+	renderEntity.frame = startFrame;
+	renderEntity.lastFrame = startFrame;
+	renderEntity.lerp = 1.0f;
+	renderEntity.startTime = gameLocal.time;
+
+	//frame = ent->shaderParms[SHADERPARM_MD3_FRAME];			// probably want to keep frames < 1000 or so
+	//oldframe = ent->shaderParms[SHADERPARM_MD3_LASTFRAME];
+	//backlerp = ent->shaderParms[SHADERPARM_MD3_BACKLERP];
+}
+
+/*
+================
 idWeapon::Think
 ================
 */
@@ -1751,6 +1776,32 @@ void idWeapon::Think()
 	if( currentWeaponObject )
 	{
 		currentWeaponObject->Execute();
+	}
+
+	renderEntity.lastFrame = renderEntity.frame;
+
+	int cycle = 1;
+	if (vertrexAnimatedRepeat)
+		cycle = 0;
+
+	renderEntity.frame += (gameLocal.time - renderEntity.startTime) * (1.0f / 50.0f);
+	renderEntity.startTime = gameLocal.time;
+
+	if (vertrexAnimatedRepeat)
+	{
+		if ((renderEntity.frame >= vertexAnimatedFrameStart + vertexAnimatedNumFrames))
+		{
+			renderEntity.frame = vertexAnimatedFrameStart;
+			renderEntity.lastFrame = vertexAnimatedFrameStart;
+		}
+	}
+	else
+	{
+		if ((renderEntity.frame >= vertexAnimatedFrameStart + vertexAnimatedNumFrames))
+		{
+			renderEntity.frame = (vertexAnimatedFrameStart + vertexAnimatedNumFrames) - 1;
+			renderEntity.lastFrame = (vertexAnimatedFrameStart + vertexAnimatedNumFrames) - 1;
+		}
 	}
 }
 

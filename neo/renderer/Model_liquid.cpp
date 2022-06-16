@@ -466,7 +466,7 @@ void idRenderModelLiquid::InitFromFile( const char *fileName ) {
 idRenderModelLiquid::InstantiateDynamicModel
 ====================
 */
-idRenderModel *idRenderModelLiquid::InstantiateDynamicModel( const struct renderEntity_s *ent, const struct viewDef_s *view, idRenderModel *cachedModel ) {
+idRenderModel *idRenderModelLiquid::InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_s *view, idRenderModel *cachedModel ) {
 	idRenderModelStatic	*staticModel;
 	int		frames;
 	int		t;
@@ -526,7 +526,7 @@ dynamicModel_t idRenderModelLiquid::IsDynamicModel() const {
 idRenderModelLiquid::Bounds
 ====================
 */
-idBounds idRenderModelLiquid::Bounds(const struct renderEntity_s *ent) const {
+idBounds idRenderModelLiquid::Bounds(const struct renderEntity_t *ent) const {
 	// FIXME: need to do this better
 	return bounds;
 }
