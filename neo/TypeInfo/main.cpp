@@ -271,8 +271,8 @@ int main( int argc, char** argv ) {
 
 	generator = new idTypeInfoGen;
 
-	sourcePath = "d3xp";
-	fileName = "../neo/d3xp/gamesys/GameTypeInfo";
+	sourcePath = "game";
+	fileName = "../neo/game/gamesys/GameTypeInfo";
 
 	if ( argc > 3 ) {
 		for ( int i = 3; i < argc; i++ ) {

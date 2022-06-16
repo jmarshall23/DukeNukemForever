@@ -31,7 +31,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "qe3.h"
 #include "Radiant.h"
-#include "../../d3xp/game.h"
+#include "../../game/game.h"
 #include "../comafx/DialogColorPicker.h"
 #include "LightDlg.h"
 

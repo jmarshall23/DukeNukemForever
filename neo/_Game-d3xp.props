@@ -11,7 +11,7 @@
     </ClCompile>
     <Link>
       <OutputFile>$(OutDir)gamex86.dll</OutputFile>
-      <ModuleDefinitionFile>.\d3xp\game.def</ModuleDefinitionFile>
+      <ModuleDefinitionFile>.\game\game.def</ModuleDefinitionFile>
     </Link>
     <PreBuildEvent>
       <Command>..\build\Win32\"$(Configuration)"\TypeInfo.exe</Command>
