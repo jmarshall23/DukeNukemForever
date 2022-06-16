@@ -41,7 +41,7 @@ entityDef weapon_pistol {
 	"inv_ammo_bullets"			"12"
 	"icon"						"guis/assets/hud/wpn_1"
 
-	"weapon_class"				"rvmWeaponPistol"
+	"weapon_class"				"dnWeaponPistol"
 	"def_projectile"			"projectile_bullet_pistol"
 	"ammoType"					"ammo_bullets"
 	"ammoRequired"				"1"

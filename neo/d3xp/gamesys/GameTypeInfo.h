@@ -4731,14 +4731,14 @@ static classVariableInfo_t idBrittleFracture_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static classVariableInfo_t rvmWeaponFist_typeInfo[] = {
-	{ "bool", "side", (intptr_t)(&((rvmWeaponFist *)0)->side), sizeof( ((rvmWeaponFist *)0)->side ) },
+static classVariableInfo_t dnWeaponPistol_typeInfo[] = {
+	{ ": float", "spread", (intptr_t)(&((dnWeaponPistol *)0)->spread), sizeof( ((dnWeaponPistol *)0)->spread ) },
+	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((dnWeaponPistol *)0)->snd_lowammo), sizeof( ((dnWeaponPistol *)0)->snd_lowammo ) },
 	{ NULL, 0 }
 };
 
-static classVariableInfo_t rvmWeaponPistol_typeInfo[] = {
-	{ ": float", "spread", (intptr_t)(&((rvmWeaponPistol *)0)->spread), sizeof( ((rvmWeaponPistol *)0)->spread ) },
-	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((rvmWeaponPistol *)0)->snd_lowammo), sizeof( ((rvmWeaponPistol *)0)->snd_lowammo ) },
+static classVariableInfo_t rvmWeaponFist_typeInfo[] = {
+	{ "bool", "side", (intptr_t)(&((rvmWeaponFist *)0)->side), sizeof( ((rvmWeaponFist *)0)->side ) },
 	{ NULL, 0 }
 };
 
@@ -5568,8 +5568,8 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "idSecurityCamera", "idEntity", sizeof(idSecurityCamera), idSecurityCamera_typeInfo },
 	{ "shard_t", "", sizeof(shard_t), shard_t_typeInfo },
 	{ "idBrittleFracture", "idEntity", sizeof(idBrittleFracture), idBrittleFracture_typeInfo },
+	{ "dnWeaponPistol", "rvmWeaponObject", sizeof(dnWeaponPistol), dnWeaponPistol_typeInfo },
 	{ "rvmWeaponFist", "rvmWeaponObject", sizeof(rvmWeaponFist), rvmWeaponFist_typeInfo },
-	{ "rvmWeaponPistol", "rvmWeaponObject", sizeof(rvmWeaponPistol), rvmWeaponPistol_typeInfo },
 	{ "rvmWeaponFlashlight", "rvmWeaponObject", sizeof(rvmWeaponFlashlight), rvmWeaponFlashlight_typeInfo },
 	{ "rvmWeaponPDA", "rvmWeaponObject", sizeof(rvmWeaponPDA), rvmWeaponPDA_typeInfo },
 	{ "rvmWeaponShotgun", "rvmWeaponObject", sizeof(rvmWeaponShotgun), rvmWeaponShotgun_typeInfo },

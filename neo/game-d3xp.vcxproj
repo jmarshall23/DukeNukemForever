@@ -373,10 +373,10 @@
     <ClCompile Include="d3xp\weapons\Weapon_handgrenade.cpp" />
     <ClCompile Include="d3xp\weapons\Weapon_machinegun.cpp" />
     <ClCompile Include="d3xp\weapons\Weapon_pda.cpp" />
-    <ClCompile Include="d3xp\weapons\Weapon_pistol.cpp" />
     <ClCompile Include="d3xp\weapons\Weapon_plasmagun.cpp" />
     <ClCompile Include="d3xp\weapons\Weapon_rocketlauncher.cpp" />
     <ClCompile Include="d3xp\weapons\Weapon_shotgun.cpp" />
+    <ClCompile Include="dukegame\Weapons\Weapon_pistol.cpp" />
     <ClCompile Include="idlib\precompiled.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug with inlines|Win32'">Create</PrecompiledHeader>
@@ -491,11 +491,11 @@
     <ClInclude Include="d3xp\weapons\Weapon_handgrenade.h" />
     <ClInclude Include="d3xp\weapons\Weapon_machinegun.h" />
     <ClInclude Include="d3xp\weapons\Weapon_pda.h" />
-    <ClInclude Include="d3xp\weapons\Weapon_pistol.h" />
     <ClInclude Include="d3xp\weapons\Weapon_plasmagun.h" />
     <ClInclude Include="d3xp\weapons\Weapon_rocketlauncher.h" />
     <ClInclude Include="d3xp\weapons\Weapon_shotgun.h" />
     <ClInclude Include="d3xp\WorldSpawn.h" />
+    <ClInclude Include="dukegame\Weapons\Weapon_pistol.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="d3xp\Game.def" />

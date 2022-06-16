@@ -3,9 +3,9 @@
 
 #pragma hdrstop
 #include "precompiled.h"
-#include "../Game_local.h"
+#include "../../d3xp/game_local.h"
 
-CLASS_DECLARATION( rvmWeaponObject, rvmWeaponPistol )
+CLASS_DECLARATION( rvmWeaponObject, dnWeaponPistol )
 END_CLASS
 
 #define PISTOL_FIRERATE			0.4
@@ -22,10 +22,10 @@ END_CLASS
 
 /*
 ===============
-rvmWeaponPistol::Init
+dnWeaponPistol::Init
 ===============
 */
-void rvmWeaponPistol::Init( idWeapon* weapon )
+void dnWeaponPistol::Init( idWeapon* weapon )
 {
 	rvmWeaponObject::Init( weapon );
 
@@ -36,10 +36,10 @@ void rvmWeaponPistol::Init( idWeapon* weapon )
 
 /*
 ===============
-rvmWeaponPistol::Raise
+dnWeaponPistol::Raise
 ===============
 */
-stateResult_t rvmWeaponPistol::Raise( stateParms_t* parms )
+stateResult_t dnWeaponPistol::Raise( stateParms_t* parms )
 {
 	enum RisingState
 	{
@@ -68,10 +68,10 @@ stateResult_t rvmWeaponPistol::Raise( stateParms_t* parms )
 
 /*
 ===============
-rvmWeaponPistol::Lower
+dnWeaponPistol::Lower
 ===============
 */
-stateResult_t rvmWeaponPistol::Lower( stateParms_t* parms )
+stateResult_t dnWeaponPistol::Lower( stateParms_t* parms )
 {
 	enum LoweringState
 	{
@@ -100,10 +100,10 @@ stateResult_t rvmWeaponPistol::Lower( stateParms_t* parms )
 
 /*
 ===============
-rvmWeaponPistol::Idle
+dnWeaponPistol::Idle
 ===============
 */
-stateResult_t rvmWeaponPistol::Idle( stateParms_t* parms )
+stateResult_t dnWeaponPistol::Idle( stateParms_t* parms )
 {
 	enum IdleState
 	{
@@ -136,10 +136,10 @@ stateResult_t rvmWeaponPistol::Idle( stateParms_t* parms )
 
 /*
 ===============
-rvmWeaponPistol::Fire
+dnWeaponPistol::Fire
 ===============
 */
-stateResult_t rvmWeaponPistol::Fire( stateParms_t* parms )
+stateResult_t dnWeaponPistol::Fire( stateParms_t* parms )
 {
 	int ammoClip = owner->AmmoInClip();
 
@@ -187,10 +187,10 @@ stateResult_t rvmWeaponPistol::Fire( stateParms_t* parms )
 
 /*
 ===============
-rvmWeaponPistol::Reload
+dnWeaponPistol::Reload
 ===============
 */
-stateResult_t rvmWeaponPistol::Reload( stateParms_t* parms )
+stateResult_t dnWeaponPistol::Reload( stateParms_t* parms )
 {
 	enum RELOAD_State
 	{
