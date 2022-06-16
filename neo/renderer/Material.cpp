@@ -1198,16 +1198,6 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 			continue;
 		}
 
-		if ( !token.Icmp( "soundmap" ) ) {
-			if ( !src.ReadToken( &token ) ) {
-				common->Warning( "missing parameter for 'soundmap' keyword in material '%s'", GetName() );
-				continue;
-			}
-			ts->cinematic = new idSndWindow();
-			ts->cinematic->InitFromFile( token.c_str(), true );
-			continue;
-		}
-
 		if ( !token.Icmp( "cubeMap" ) ) {
 			str = R_ParsePastImageProgram( src );
 			idStr::Copynz( imageName, str, sizeof( imageName ) );
@@ -2530,14 +2520,15 @@ int idMaterial::GetImageHeight( void ) const {
 
 /*
 =============
-idMaterial::CinematicLength
+idMaterial::HasCinematic
 =============
 */
-int	idMaterial::CinematicLength() const {
-	if ( !stages || !stages[0].texture.cinematic ) {
-		return 0;
+bool idMaterial::HasCinematic(void) const {
+	if (!stages || !stages[0].texture.cinematic || !backEnd.viewDef) {
+		return false;
 	}
-	return stages[0].texture.cinematic->AnimationLength();
+
+	return stages[0].texture.cinematic != nullptr;
 }
 
 /*

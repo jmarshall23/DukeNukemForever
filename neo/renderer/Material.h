@@ -547,9 +547,7 @@ public:
 
 	//------------------------------------------------------------------
 
-						// returns the length, in milliseconds, of the videoMap on this material,
-						// or zero if it doesn't have one
-	int					CinematicLength( void ) const;
+	bool				HasCinematic(void) const;
 
 	void				CloseCinematic( void ) const;
 

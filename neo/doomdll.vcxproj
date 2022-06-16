@@ -252,6 +252,9 @@
   <ItemGroup>
     <ClInclude Include="cm\CollisionModel.h" />
     <ClInclude Include="cm\CollisionModel_local.h" />
+    <ClInclude Include="external\bink\bink.h" />
+    <ClInclude Include="external\bink\rad3d.h" />
+    <ClInclude Include="external\bink\radbase.h" />
     <ClInclude Include="external\detour\Include\DetourAlloc.h" />
     <ClInclude Include="external\detour\Include\DetourAssert.h" />
     <ClInclude Include="external\detour\Include\DetourCommon.h" />
@@ -624,11 +627,6 @@
     <ClInclude Include="tools\compilers\aas\Brush.h" />
     <ClInclude Include="tools\compilers\aas\BrushBSP.h" />
     <ClInclude Include="tools\compilers\dmap\dmap.h" />
-    <ClInclude Include="tools\compilers\roqvq\codec.h" />
-    <ClInclude Include="tools\compilers\roqvq\gdefs.h" />
-    <ClInclude Include="tools\compilers\roqvq\quaddefs.h" />
-    <ClInclude Include="tools\compilers\roqvq\roq.h" />
-    <ClInclude Include="tools\compilers\roqvq\roqParam.h" />
     <CustomBuildStep Include="tools\debugger\DebuggerApp.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug with inlines and memory log|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug with inlines|Win32'">true</ExcludedFromBuild>
@@ -2450,11 +2448,6 @@
     <ClCompile Include="tools\compilers\dmap\ubrush.cpp" />
     <ClCompile Include="tools\compilers\dmap\usurface.cpp" />
     <ClCompile Include="tools\compilers\navmesh\NavMeshBuild.cpp" />
-    <ClCompile Include="tools\compilers\renderbump\renderbump.cpp" />
-    <ClCompile Include="tools\compilers\roqvq\codec.cpp" />
-    <ClCompile Include="tools\compilers\roqvq\NSBitmapImageRep.cpp" />
-    <ClCompile Include="tools\compilers\roqvq\roq.cpp" />
-    <ClCompile Include="tools\compilers\roqvq\roqParam.cpp" />
     <ClCompile Include="tools\debugger\debugger.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug with inlines and memory log|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug with inlines|Win32'">true</ExcludedFromBuild>
@@ -3334,6 +3327,9 @@
       <Project>{6ea6406f-3e65-47d9-8246-d6660a81606f}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="external\bink\binkw32.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

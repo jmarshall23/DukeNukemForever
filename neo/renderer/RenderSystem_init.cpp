@@ -733,9 +733,6 @@ void R_TestVideo_f( const idCmdArgs &args ) {
 
 	common->Printf( "%i x %i images\n", cin.imageWidth, cin.imageHeight );
 
-	int	len = tr.testVideo->AnimationLength();
-	common->Printf( "%5.1f seconds of video\n", len * 0.001 );
-
 	tr.testVideoStartTime = tr.primaryRenderView.time * 0.001;
 
 	// try to play the matching wav file

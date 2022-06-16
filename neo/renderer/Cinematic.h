@@ -70,45 +70,19 @@ public:
 	// This should be used instead of new
 	static idCinematic	*Alloc();
 
-	// frees all allocated memory
-	virtual				~idCinematic();
-
 	// returns false if it failed to load
-	virtual bool		InitFromFile( const char *qpath, bool looping );
+	virtual bool		InitFromFile( const char *qpath, bool looping ) = 0;
 
-	// returns the length of the animation in milliseconds
-	virtual int			AnimationLength();
+	virtual bool		IsDone() = 0;
 
 	// the pointers in cinData_t will remain valid until the next UpdateForTime() call
-	virtual cinData_t	ImageForTime( int milliseconds );
+	virtual cinData_t	ImageForTime( int milliseconds ) = 0;
 
 	// closes the file and frees all allocated memory
-	virtual void		Close();
+	virtual void		Close() = 0;
 
 	// closes the file and frees all allocated memory
-	virtual void		ResetTime(int time);
-};
-
-/*
-===============================================
-
-	Sound meter.
-
-===============================================
-*/
-
-class idSndWindow : public idCinematic {
-public:
-	
-						idSndWindow() { showWaveform = false; }
-						~idSndWindow() {}
-
-	bool				InitFromFile( const char *qpath, bool looping );
-	cinData_t			ImageForTime( int milliseconds );
-	int					AnimationLength();
-
-private:
-	bool				showWaveform;
+	virtual void		ResetTime(int time) = 0;
 };
 
 #endif /* !__CINEMATIC_H__ */

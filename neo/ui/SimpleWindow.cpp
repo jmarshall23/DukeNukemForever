@@ -122,7 +122,7 @@ idSimpleWindow::~idSimpleWindow() {
 }
 
 void idSimpleWindow::StateChanged( bool redraw ) {
-	if ( redraw && background && background->CinematicLength() ) { 
+	if ( redraw && background && background->HasCinematic() ) {
 		background->UpdateCinematic( gui->GetTime() );
 	}
 }

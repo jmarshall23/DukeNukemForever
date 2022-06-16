@@ -70,12 +70,6 @@
     <Filter Include="Tools\Compilers\DMap">
       <UniqueIdentifier>{6984ce76-c3bf-4003-97cf-64b50f951fe8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tools\Compilers\RenderBump">
-      <UniqueIdentifier>{4533a5c7-30f7-4306-9a19-f4a7d8e453b5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Tools\Compilers\RoqVQ">
-      <UniqueIdentifier>{c53bab3f-79ce-44fe-916e-04c51a7d93a9}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Tools\Debugger">
       <UniqueIdentifier>{bdc52484-8a48-4b82-b396-9228f0304808}</UniqueIdentifier>
     </Filter>
@@ -141,6 +135,9 @@
     </Filter>
     <Filter Include="Tools\Compilers\navmesh">
       <UniqueIdentifier>{91d0e0ad-bcad-48d4-bed4-bc1a3b2e061e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External\bink">
+      <UniqueIdentifier>{9dd5ff36-3abf-4cb0-9dd4-84032d09c27e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -576,21 +573,6 @@
     <ClInclude Include="tools\compilers\dmap\dmap.h">
       <Filter>Tools\Compilers\DMap</Filter>
     </ClInclude>
-    <ClInclude Include="tools\compilers\roqvq\codec.h">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\roqvq\gdefs.h">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\roqvq\quaddefs.h">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\roqvq\roq.h">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\roqvq\roqParam.h">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClInclude>
     <ClInclude Include="ui\BindWindow.h">
       <Filter>Ui</Filter>
     </ClInclude>
@@ -716,6 +698,15 @@
     </ClInclude>
     <ClInclude Include="navigation\Nav_public.h">
       <Filter>Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="external\bink\bink.h">
+      <Filter>External\bink</Filter>
+    </ClInclude>
+    <ClInclude Include="external\bink\rad3d.h">
+      <Filter>External\bink</Filter>
+    </ClInclude>
+    <ClInclude Include="external\bink\radbase.h">
+      <Filter>External\bink</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1468,21 +1459,6 @@
     </ClCompile>
     <ClCompile Include="tools\compilers\dmap\usurface.cpp">
       <Filter>Tools\Compilers\DMap</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\renderbump\renderbump.cpp">
-      <Filter>Tools\Compilers\RenderBump</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\roqvq\codec.cpp">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\roqvq\NSBitmapImageRep.cpp">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\roqvq\roq.cpp">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\roqvq\roqParam.cpp">
-      <Filter>Tools\Compilers\RoqVQ</Filter>
     </ClCompile>
     <ClCompile Include="tools\debugger\debugger.cpp">
       <Filter>Tools\Debugger</Filter>
@@ -2720,5 +2696,10 @@
     <CustomBuildStep Include="tools\script\DialogScriptEditor.h">
       <Filter>Tools\Script</Filter>
     </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="external\bink\binkw32.lib">
+      <Filter>External\bink</Filter>
+    </Library>
   </ItemGroup>
 </Project>

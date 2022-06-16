@@ -536,7 +536,7 @@ void idWindow::StateChanged( bool redraw ) {
 		if ( flags & WIN_DESKTOP ) {
 			Redraw( 0.0f, 0.0f );
 		}
-		if ( background && background->CinematicLength() ) {
+		if ( background && background->HasCinematic() ) {
 			background->UpdateCinematic( gui->GetTime() );
 		}
 	}

@@ -1041,18 +1041,6 @@ void idSoundWorldLocal::ForegroundUpdate( int current44kHzTime ) {
 
 	Sys_LeaveCriticalSection();
 
-	//
-	// the sound meter
-	//
-	if ( idSoundSystemLocal::s_showLevelMeter.GetInteger() ) {
-		const idMaterial *gui = declManager->FindMaterial( "guis/assets/soundmeter/audiobg", false );
-		if ( gui ) {
-			const shaderStage_t *foo = gui->GetStage(0);
-			if ( !foo->texture.cinematic ) {
-				((shaderStage_t *)foo)->texture.cinematic = new idSndWindow;
-			}
-		}
-	}
 
 	//
 	// optionally dump out the generated sound
