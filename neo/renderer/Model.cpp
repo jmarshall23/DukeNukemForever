@@ -633,7 +633,6 @@ void idRenderModelStatic::FinishSurfaces() {
 	// It is better to create completely separate surfaces, rather than
 	// add vertexes and indexes to the existing surface, because the
 	// tangent generation wouldn't like the acute shared edges
-#if 0
 	for ( i = 0 ; i < numOriginalSurfaces ; i++ ) {
 		const modelSurface_t	*surf = &surfaces[i];
 
@@ -674,7 +673,7 @@ void idRenderModelStatic::FinishSurfaces() {
 			const_cast<idMaterial *>(surf->shader)->AddToSurfaceArea( area );
 		}
 	}
-#endif
+
 	// calculate the bounds
 	if ( surfaces.Num() == 0 ) {
 		bounds.Zero();

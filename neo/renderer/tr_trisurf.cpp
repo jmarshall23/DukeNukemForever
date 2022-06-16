@@ -1904,7 +1904,7 @@ void R_RemoveDegenerateTriangles( srfTriangles_t *tri ) {
 	// this doesn't free the memory used by the unused verts
 
 	if ( c_removed ) {
-		common->Printf( "removed %i degenerate triangles\n", c_removed );
+		//common->Printf( "removed %i degenerate triangles\n", c_removed );
 	}
 }
 
