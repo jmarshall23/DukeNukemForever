@@ -7,3 +7,10 @@ _default {
 _tracemodel {
   collision
 }
+
+dnf_intro_video
+{
+	{
+		videomap videos/intro.bik
+	}
+}

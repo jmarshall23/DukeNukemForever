@@ -88,8 +88,10 @@ idCinematic::InitFromFile
 ====================
 */
 bool idCinematicLocal::InitFromFile(const char* qpath, bool looping) {
+	idStr osPath = fileSystem->RelativePathToOSPath(qpath);
+
 	// Open the movie file
-	Bink = BinkOpen(qpath, 0);
+	Bink = BinkOpen(osPath.c_str(), 0);
 	if (!Bink)
 	{
 		Bink = nullptr;
@@ -138,6 +140,8 @@ cinData_t idCinematicLocal::ImageForTime(int milliseconds) {
 			0, 0, Bink->Width, Bink->Height,
 			BINKSURFACE32 |
 			BINKCOPYALL);
+
+		BinkNextFrame(Bink);
 	}
 
 	return currentFrameData;
