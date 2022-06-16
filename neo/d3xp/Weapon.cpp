@@ -1665,19 +1665,21 @@ void idWeapon::SetModel( const char* modelname )
 		gameRenderWorld->RemoveDecals( modelDefHandle );
 	}
 
-	renderEntity.hModel = animator.SetModel( modelname );
-	if( renderEntity.hModel )
-	{
-		renderEntity.customSkin = animator.ModelDef()->GetDefaultSkin();
-		animator.GetJoints( &renderEntity.numJoints, &renderEntity.joints );
-	}
-	else
-	{
-		renderEntity.customSkin = NULL;
-		renderEntity.callback = NULL;
-		renderEntity.numJoints = 0;
-		renderEntity.joints = NULL;
-	}
+	//renderEntity.hModel = animator.SetModel( modelname );
+	//if( renderEntity.hModel )
+	//{
+	//	renderEntity.customSkin = animator.ModelDef()->GetDefaultSkin();
+	//	animator.GetJoints( &renderEntity.numJoints, &renderEntity.joints );
+	//}
+	//else
+	//{
+	//	renderEntity.customSkin = NULL;
+	//	renderEntity.callback = NULL;
+	//	renderEntity.numJoints = 0;
+	//	renderEntity.joints = NULL;
+	//}
+
+	renderEntity.hModel = renderModelManager->FindModel(modelname);
 
 	// hide the model until an animation is played
 	Hide();

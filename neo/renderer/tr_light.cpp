@@ -1137,11 +1137,11 @@ idRenderModel *R_EntityDefDynamicModel( idRenderEntityLocal *def ) {
 		if ( def->cachedDynamicModel ) {
 
 			// add any overlays to the snapshot of the dynamic model
-			if ( def->overlay && !r_skipOverlays.GetBool() ) {
-				def->overlay->AddOverlaySurfacesToModel( def->cachedDynamicModel );
-			} else {
-				idRenderModelOverlay::RemoveOverlaySurfacesFromModel( def->cachedDynamicModel );
-			}
+			//if ( def->overlay && !r_skipOverlays.GetBool() ) {
+			//	def->overlay->AddOverlaySurfacesToModel( def->cachedDynamicModel );
+			//} else {
+			//	idRenderModelOverlay::RemoveOverlaySurfacesFromModel( def->cachedDynamicModel );
+			//}
 
 			if ( r_checkBounds.GetBool() ) {
 				idBounds b = def->cachedDynamicModel->Bounds();

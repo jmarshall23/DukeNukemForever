@@ -17,35 +17,6 @@
 
 ***********************************************************************/
 
-export fred {
-	// view model pistol
-	options -prefix PISTOL_ -keep barrel eject flash -parent flash Bod -parent barrel Bar -parent Ext eject -parent Bar Bod -parent eject Bod -parent Bod Rhand1 -parent Luparm1 Rloarm1 -parent Cli Bod -parent Trig Bod -rename origin blah -sourcedir models/weapons/pistol/fred/cycles -destdir models/md5/weapons/pistol_view
-
-	mesh	idle.ma -dest viewpistol
-	anim	idle.ma
-	anim	idle_empty.ma
-	anim	fire1.ma
-	anim	fire2.ma
-	anim	fire3.ma
-	anim	fire4.ma
-	anim	put_away.ma
-	//anim	models/weapons/pistol/fred/cycles/raise3.ma -dest models/md5/weapons/pistol_view/raise3
-	anim	raise.ma
-	anim	reload_empty.ma
-	anim	reload_empty.ma -range 1 14 -dest empty_reload_start
-
-	// world model pistol
-	options -ignorescale -prefix PLAYER_PISTOL_ -keep pistolclip ATTACHER barrel flash eject -parent eject pbody -parent flash pbody -parent pistolclip pbody -rename pbarrel barrel -rename ATTACHER origin -clearorigin
-
-	addoptions -skipmesh PLAYER_pistolBarrel
-	addoptions -skipmesh PLAYER_pistolExtender
-	addoptions -skipmesh PLAYER_pistolTrigger
-	addoptions -skipmesh PLAYER_pistolBody
-	addoptions -skipmesh PLAYER_pistolClip1
-
-	mesh	models/characters/player/mocap/pistol_idle.mb -dest models/md5/weapons/pistol_world/worldpistol
-	anim	models/characters/player/mocap/pistol_idle.mb -dest models/md5/weapons/pistol_world/pistol_idle
-}
 
 entityDef weapon_pistol {
 	"editor_color"				".3 .3 1"
@@ -57,7 +28,7 @@ entityDef weapon_pistol {
 	"spawnclass"				"idItem"
 	"size"						"32 32 32"
 	"model"						"models/weapons/pistol/w_pistol.lwo"
-	"model_view" 				"viewmodel_pistol"
+	"model_view" 				"models/weapons/pistol/Pistol.md3"
 	"model_world" 				"worldmodel_pistol"
 	"joint_attach"				"PISTOL_ATTACHER"
 	"def_dropItem"				"moveable_item_pistol"
@@ -126,7 +97,7 @@ model worldmodel_pistol {
 }
 
 model viewmodel_pistol {
-	mesh						models/md5/weapons/pistol_view/viewpistol.md5mesh
+	mesh						models/weapons/pistol/Pistol.md3
 	
 	anim raise 					models/md5/weapons/pistol_view/raise.md5anim {
 		frame 7					sound_body player_pistol_raise_01

@@ -84,6 +84,9 @@ public:
 	virtual void				ReadFromDemoFile( class idDemoFile *f );
 	virtual void				WriteToDemoFile( class idDemoFile *f );
 	virtual float				DepthHack() const;
+// jmarshall
+	virtual bool				IsVertexAnimated() const override { return false; }
+// jmarshall end
 
 	void						MakeDefaultModel();
 	
@@ -217,7 +220,9 @@ public:
 	virtual dynamicModel_t		IsDynamicModel() const;
 	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_s *ent, const struct viewDef_s *view, idRenderModel *cachedModel );
 	virtual idBounds			Bounds( const struct renderEntity_s *ent ) const;
-
+// jmarshall
+	virtual bool				IsVertexAnimated() const override { return true; }
+// jmarshall end
 private:
 	int							index;			// model = tr.models[model->index]
 	int							dataSize;		// just for listing purposes

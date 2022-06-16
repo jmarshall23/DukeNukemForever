@@ -272,6 +272,10 @@ public:
 	// if the load failed for any reason, this will return true
 	virtual bool				IsDefaultModel() const = 0;
 
+// jmarshall - vertex animation support.
+	virtual bool				IsVertexAnimated() const = 0;
+// jmarshall end
+
 	// dynamic models should return a fast, conservative approximation
 	// static models should usually return the exact value
 	virtual idBounds			Bounds( const struct renderEntity_s *ent = NULL ) const = 0;

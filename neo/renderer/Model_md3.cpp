@@ -190,6 +190,15 @@ void idRenderModelMD3::InitFromFile( const char *fileName ) {
 			LL(tri->indexes[0]);
 			LL(tri->indexes[1]);
 			LL(tri->indexes[2]);
+
+			int indexes[3];
+			indexes[0] = tri->indexes[2];
+			indexes[1] = tri->indexes[1];
+			indexes[2] = tri->indexes[0];
+
+			tri->indexes[0] = indexes[0];
+			tri->indexes[1] = indexes[1];
+			tri->indexes[2] = indexes[2];
 		}
 
 		// swap all the ST
