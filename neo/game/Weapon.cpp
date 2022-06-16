@@ -1753,7 +1753,6 @@ void idWeapon::PlayVertexAnimation(int startFrame, int numFrames, bool repeat)
 
 	renderEntity.frame = startFrame;
 	renderEntity.lastFrame = startFrame;
-	renderEntity.lerp = 1.0f;
 	renderEntity.startTime = gameLocal.time;
 
 	//frame = ent->shaderParms[SHADERPARM_MD3_FRAME];			// probably want to keep frames < 1000 or so
@@ -1785,6 +1784,11 @@ void idWeapon::Think()
 		cycle = 0;
 
 	renderEntity.frame += (gameLocal.time - renderEntity.startTime) * (1.0f / 50.0f);
+
+
+	int frameTime = gameLocal.time * 25;
+	renderEntity.lerp = (frameTime % 1000) * 0.001f;
+
 	renderEntity.startTime = gameLocal.time;
 
 	if (vertrexAnimatedRepeat)
