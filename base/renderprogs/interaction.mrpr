@@ -57,8 +57,6 @@ renderProg interaction
 		gl_TexCoord[6].y = dot3( vBinormal, halfAngleVector );
 		gl_TexCoord[6].z = dot3( vNormal, halfAngleVector );
 		gl_TexCoord[6].w = 1.0f;
-		
-		gl_TexCoord[7].xyz = attr_Normal; //gl_Color * vertexcolormodulate + vertexcoloradd;
 	}
 
 	pixel
