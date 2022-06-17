@@ -51,7 +51,9 @@ const float PM_WATERFRICTION	= 1.0f;
 const float PM_FLYFRICTION		= 3.0f;
 const float PM_NOCLIPFRICTION	= 12.0f;
 
-const float MIN_WALK_NORMAL		= 0.7f;		// can't walk on very steep slopes
+// jmarshall - changed from 0.7 so duke can stay on slopes.
+const float MIN_WALK_NORMAL		= 0.5f;		// can't walk on very steep slopes
+// jmarshall end
 const float OVERCLIP			= 1.001f;
 
 // movementFlags
