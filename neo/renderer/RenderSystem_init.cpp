@@ -509,7 +509,6 @@ void R_InitOpenGL( void ) {
 
 	// input and sound systems need to be tied to the new window
 	Sys_InitInput();
-	soundSystem->InitHW();
 
 	// get our config strings
 	glConfig.vendor_string = (const char *)glGetString(GL_VENDOR);

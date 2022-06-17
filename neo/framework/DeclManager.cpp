@@ -826,7 +826,7 @@ void idDeclManagerLocal::Init( void ) {
 
 	RegisterDeclFolder( "materials",		".mtr",				DECL_MATERIAL );
 	RegisterDeclFolder( "skins",			".skin",			DECL_SKIN );
-	RegisterDeclFolder( "sound",			".sndshd",			DECL_SOUND );
+	RegisterDeclFolder( "sounds",			".sndshd",			DECL_SOUND );
 
 	// add console commands
 	cmdSystem->AddCommand( "listDecls", ListDecls_f, CMD_FL_SYSTEM, "lists all decls" );

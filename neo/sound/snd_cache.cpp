@@ -187,6 +187,9 @@ void idSoundCache::EndLevelLoad() {
 
 	insideLevelLoad = false;
 
+// jmarshall - just leave sounds loaded, were not that up against memory.
+// There is a bug somewhere were purging sounds destroys music on the mainmenu on causes a crash.
+#if 0
 	// purge the ones we don't need
 	useCount = 0;
 	purgeCount = 0;
@@ -209,8 +212,9 @@ void idSoundCache::EndLevelLoad() {
 
 	soundCacheAllocator.FreeEmptyBaseBlocks();
 
-	common->Printf( "%5ik referenced\n", useCount / 1024 );
-	common->Printf( "%5ik purged\n", purgeCount / 1024 );
+	common->Printf("%5ik referenced\n", useCount / 1024);
+	common->Printf("%5ik purged\n", purgeCount / 1024);
+#endif
 	common->Printf( "----------------------------------------\n" );
 }
 

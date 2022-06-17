@@ -498,7 +498,7 @@ void CDialogSound::AddSounds(bool rootItems) {
 	}
 
 	idFileList *files;
-	files = fileSystem->ListFilesTree( "sound", ".wav|.ogg", true );
+	files = fileSystem->ListFilesTree( "sounds", ".wav|.ogg", true );
     AddStrList( "Wave files", files->GetList(), WAVES );
 	fileSystem->FreeFileList( files );
 }
@@ -936,7 +936,7 @@ void CDialogSound::OnBtnRefreshwave()
 	HTREEITEM	item = treeSounds.GetSelectedItem();
 	if (item && treeSounds.GetItemData( item ) == WAVEDIR) {
 		idStr path = "sound/";
-		path += RebuildItemName("sound", item);
+		path += RebuildItemName("sounds", item);
 		idFileList *files;
 		files = fileSystem->ListFilesTree( path, ".wav" );
 		HTREEITEM child = treeSounds.GetChildItem(item);

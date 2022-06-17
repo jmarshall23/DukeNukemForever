@@ -203,7 +203,7 @@ void DialogDeclNew::OnBnClickedFile() {
 		case DECL_TABLE:		folder = "materials";	ext = "(*.mtr)|*.mtr|(*.*)|*.*||";					break;
 		case DECL_MATERIAL:		folder = "materials";	ext = "(*.mtr)|*.mtr|(*.*)|*.*||";					break;
 		case DECL_SKIN:			folder = "skins";		ext = "(*.skin)|*.skin|(*.*)|*.*||";				break;
-		case DECL_SOUND:		folder = "sound";		ext = "(*.sndshd|*.sndshd|(*.*)|*.*||";				break;
+		case DECL_SOUND:		folder = "sounds";		ext = "(*.sndshd|*.sndshd|(*.*)|*.*||";				break;
 		case DECL_ENTITYDEF:	folder = "def";			ext = "(*.def)|*.def|(*.decl)|*.decl|(*.*)|*.*||";	break;
 		case DECL_MODELDEF:		folder = "def";			ext = "(*.def)|*.def|(*.*)|*.*||";					break;
 		case DECL_FX:			folder = "fx";			ext = "(*.fx)|*.fx|(*.*)|*.*||";					break;
