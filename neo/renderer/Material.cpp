@@ -2533,6 +2533,20 @@ bool idMaterial::HasCinematic(void) const {
 
 /*
 =============
+idMaterial::IsCinematicPlaying
+=============
+*/
+bool idMaterial::IsCinematicPlaying(void) const {
+	if (!HasCinematic())
+	{
+		return false;
+	}
+
+	return !stages[0].texture.cinematic->IsDone();
+}
+
+/*
+=============
 idMaterial::UpdateCinematic
 =============
 */

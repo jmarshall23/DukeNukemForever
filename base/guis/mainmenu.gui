@@ -3,10 +3,16 @@ windowDef Desktop
    rect      0, 0, 1280,720
    backcolor 0, 0, 0, 1
    menugui      1
+   float introplaying	1
    
    onESC
    {
       set "cmd" "close" ;
+
+	if ("desktop::introplaying" == 1) { 
+		set "dnfIntroVideo::visible" "0" ;
+		set "desktop::introplaying" "0" ;
+	}
    }
 
      windowDef dnfIntroVideo {
@@ -17,5 +23,18 @@ windowDef Desktop
 		visible		1
 		noevents	1
 		
+		onVideoDone {
+			set "dnfIntroVideo::visible" "0" ;
+			set "desktop::introplaying" "0" ;			
+		}
 	}
+
+	onNamedEvent NoIntro {
+		set "dnfIntroVideo::visible" "0" ;
+		set "desktop::introplaying" "0" ;
+	}
+	
+	onNamedEvent PlayIntro {
+		showcursor "0" ;
+	}	
 }

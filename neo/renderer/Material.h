@@ -549,6 +549,8 @@ public:
 
 	bool				HasCinematic(void) const;
 
+	bool				IsCinematicPlaying(void) const;
+
 	void				CloseCinematic( void ) const;
 
 	void				ResetCinematicTime( int time ) const;

@@ -101,7 +101,8 @@ const char *idWindow::ScriptNames[] = {
 	"onTrigger",
 	"onActionRelease",
 	"onEnter",
-	"onEnterRelease"
+	"onEnterRelease",
+	"onVideoDone"
 };
 
 /*
@@ -1203,7 +1204,12 @@ void idWindow::Redraw(float x, float y) {
 	if ( flags & WIN_DESKTOP && r_skipGuiShaders.GetInteger() != 3 ) {
 		RunTimeEvents( time );
 	}
-
+// jmarshall
+	if (background && !background->IsCinematicPlaying())
+	{
+		RunScript(ON_VIDEODONE);
+	}
+// jmarshall end
 	if ( r_skipGuiShaders.GetInteger() == 2 ) {
 		return;
 	}
