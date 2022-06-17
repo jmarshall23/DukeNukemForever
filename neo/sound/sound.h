@@ -144,6 +144,12 @@ private:
 static const int SCHANNEL_ANY = 0;	// used in queries and commands to effect every channel at once, in
 									// startSound to have it not override any other channel
 static const int SCHANNEL_ONE = 1;	// any following integer can be used as a channel number
+
+// jmarshall
+static const int SCHANNEL_MUSIC = 7;
+static const int SCHANNEL_DUKETALK = 6;
+// jmarshall end
+
 typedef int s_channelType;	// the game uses its own series of enums, and we don't want to require casts
 
 

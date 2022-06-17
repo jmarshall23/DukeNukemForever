@@ -65,6 +65,14 @@ void idWorldspawn::Spawn( void ) {
 
 	g_gravity.SetFloat( spawnArgs.GetFloat( "gravity", va( "%f", DEFAULT_GRAVITY ) ) );
 
+// jmarshall - music support
+	idStr music = spawnArgs.GetString("music", "");
+	if (music != "")
+	{
+		gameSoundWorld->PlayShaderDirectly(music, SCHANNEL_MUSIC);
+	}
+// jmarshall end
+
 	// disable stamina on hell levels
 	if ( spawnArgs.GetBool( "no_stamina" ) ) {
 		pm_stamina.SetFloat( 0.0f );

@@ -39,7 +39,7 @@
 "noshadows" "1"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 1 1"
 "light_radius" "500 500 500"
 }
@@ -25783,7 +25783,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 1 1"
 "light_radius" "500 500 500"
 }
@@ -25843,7 +25843,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.31 0.31 0.31"
 "light_radius" "300 300 300"
 }
