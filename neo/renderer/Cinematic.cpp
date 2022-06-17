@@ -141,6 +141,15 @@ cinData_t idCinematicLocal::ImageForTime(int milliseconds) {
 			BINKSURFACE32 |
 			BINKCOPYALL);
 
+		// RGB to BGR
+		byte* image_data = (byte*)currentFrameData.image;
+		for (int i = 0; i < Bink->Width * Bink->Height * 4; i += 4)
+		{
+			byte r = image_data[i + 0];
+			image_data[i + 0] = image_data[i + 2];
+			image_data[i + 2] = r;
+		}
+
 		BinkNextFrame(Bink);
 	}
 
