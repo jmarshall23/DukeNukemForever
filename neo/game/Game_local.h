@@ -837,6 +837,8 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 #include "ai/AI.h"
 #include "anim/Anim_Testmodel.h"
 
+#include "../dukegame/DnAI/DnAI.h"
+
 #include "script/Script_Compiler.h"
 #include "script/Script_Interpreter.h"
 #include "script/Script_Thread.h"

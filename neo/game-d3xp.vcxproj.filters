@@ -327,6 +327,12 @@
     <ClCompile Include="dukegame\Weapons\Weapon_pistol.cpp">
       <Filter>DukeGame\Weapons</Filter>
     </ClCompile>
+    <ClCompile Include="dukegame\DnAI\DnAI.cpp">
+      <Filter>DukeGame\DnAI</Filter>
+    </ClCompile>
+    <ClCompile Include="dukegame\DnAI\Pigcop.cpp">
+      <Filter>DukeGame\DnAI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game\anim\Anim.h">
@@ -586,6 +592,12 @@
     </ClInclude>
     <ClInclude Include="dukegame\Weapons\Weapon_pistol.h">
       <Filter>DukeGame\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="dukegame\DnAI\DnAI.h">
+      <Filter>DukeGame\DnAI</Filter>
+    </ClInclude>
+    <ClInclude Include="dukegame\DnAI\Pigcop.h">
+      <Filter>DukeGame\DnAI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

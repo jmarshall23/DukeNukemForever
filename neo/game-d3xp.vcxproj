@@ -269,6 +269,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dukegame\DnAI\DnAI.cpp" />
+    <ClCompile Include="dukegame\DnAI\Pigcop.cpp" />
     <ClCompile Include="game\ai\AAS.cpp" />
     <ClCompile Include="game\ai\AASCallback_AvoidLocation.cpp" />
     <ClCompile Include="game\ai\AASCallback_FindAreaOutOfRange.cpp" />
@@ -384,6 +386,8 @@
     <ClCompile Include="game\WorldSpawn.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dukegame\DnAI\DnAI.h" />
+    <ClInclude Include="dukegame\DnAI\Pigcop.h" />
     <ClInclude Include="game\ai\AAS.h" />
     <ClInclude Include="game\ai\AASCallback_AvoidLocation.h" />
     <ClInclude Include="game\ai\AASCallback_FindAreaOutOfRange.h" />
