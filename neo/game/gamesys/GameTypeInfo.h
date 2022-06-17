@@ -9,7 +9,7 @@
 
 	599 constants
 	58 enums
-	343 classes/structs/unions
+	330 classes/structs/unions
 	3 templates
 	8 max inheritance level for 'rvmMonsterZombieSawyer'
 
@@ -4741,119 +4741,6 @@ static classVariableInfo_t dnWeaponPistol_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static classVariableInfo_t rvmWeaponFist_typeInfo[] = {
-	{ "bool", "side", (intptr_t)(&((rvmWeaponFist *)0)->side), sizeof( ((rvmWeaponFist *)0)->side ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponFlashlight_typeInfo[] = {
-	{ "bool", "on", (intptr_t)(&((rvmWeaponFlashlight *)0)->on), sizeof( ((rvmWeaponFlashlight *)0)->on ) },
-	{ "float", "intensity", (intptr_t)(&((rvmWeaponFlashlight *)0)->intensity), sizeof( ((rvmWeaponFlashlight *)0)->intensity ) },
-	{ "idStr", "skin_on", (intptr_t)(&((rvmWeaponFlashlight *)0)->skin_on), sizeof( ((rvmWeaponFlashlight *)0)->skin_on ) },
-	{ "idStr", "skin_on_invis", (intptr_t)(&((rvmWeaponFlashlight *)0)->skin_on_invis), sizeof( ((rvmWeaponFlashlight *)0)->skin_on_invis ) },
-	{ "idStr", "skin_off", (intptr_t)(&((rvmWeaponFlashlight *)0)->skin_off), sizeof( ((rvmWeaponFlashlight *)0)->skin_off ) },
-	{ "idStr", "skin_off_invis", (intptr_t)(&((rvmWeaponFlashlight *)0)->skin_off_invis), sizeof( ((rvmWeaponFlashlight *)0)->skin_off_invis ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponPDA_typeInfo[] = {
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponShotgun_typeInfo[] = {
-	{ ": float", "spread", (intptr_t)(&((rvmWeaponShotgun *)0)->spread), sizeof( ((rvmWeaponShotgun *)0)->spread ) },
-	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((rvmWeaponShotgun *)0)->snd_lowammo), sizeof( ((rvmWeaponShotgun *)0)->snd_lowammo ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponDoubleShotgun_typeInfo[] = {
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponMachineGun_typeInfo[] = {
-	{ ": float", "spread", (intptr_t)(&((rvmWeaponMachineGun *)0)->spread), sizeof( ((rvmWeaponMachineGun *)0)->spread ) },
-	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((rvmWeaponMachineGun *)0)->snd_lowammo), sizeof( ((rvmWeaponMachineGun *)0)->snd_lowammo ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponPlasmaGun_typeInfo[] = {
-	{ ": float", "spread", (intptr_t)(&((rvmWeaponPlasmaGun *)0)->spread), sizeof( ((rvmWeaponPlasmaGun *)0)->spread ) },
-	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((rvmWeaponPlasmaGun *)0)->snd_lowammo), sizeof( ((rvmWeaponPlasmaGun *)0)->snd_lowammo ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponChainGun_typeInfo[] = {
-	{ ": idAnimatedEntity *", "world_model", (intptr_t)(&((rvmWeaponChainGun *)0)->world_model), sizeof( ((rvmWeaponChainGun *)0)->world_model ) },
-	{ "jointHandle_t", "world_barrel_joint", (intptr_t)(&((rvmWeaponChainGun *)0)->world_barrel_joint), sizeof( ((rvmWeaponChainGun *)0)->world_barrel_joint ) },
-	{ "jointHandle_t", "barrel_joint", (intptr_t)(&((rvmWeaponChainGun *)0)->barrel_joint), sizeof( ((rvmWeaponChainGun *)0)->barrel_joint ) },
-	{ "float", "barrel_angle", (intptr_t)(&((rvmWeaponChainGun *)0)->barrel_angle), sizeof( ((rvmWeaponChainGun *)0)->barrel_angle ) },
-	{ "float", "current_rate", (intptr_t)(&((rvmWeaponChainGun *)0)->current_rate), sizeof( ((rvmWeaponChainGun *)0)->current_rate ) },
-	{ "float", "start_rate", (intptr_t)(&((rvmWeaponChainGun *)0)->start_rate), sizeof( ((rvmWeaponChainGun *)0)->start_rate ) },
-	{ "float", "end_rate", (intptr_t)(&((rvmWeaponChainGun *)0)->end_rate), sizeof( ((rvmWeaponChainGun *)0)->end_rate ) },
-	{ "float", "spin_start", (intptr_t)(&((rvmWeaponChainGun *)0)->spin_start), sizeof( ((rvmWeaponChainGun *)0)->spin_start ) },
-	{ "float", "spin_end", (intptr_t)(&((rvmWeaponChainGun *)0)->spin_end), sizeof( ((rvmWeaponChainGun *)0)->spin_end ) },
-	{ "float", "spread", (intptr_t)(&((rvmWeaponChainGun *)0)->spread), sizeof( ((rvmWeaponChainGun *)0)->spread ) },
-	{ "int", "numSkipFrames", (intptr_t)(&((rvmWeaponChainGun *)0)->numSkipFrames), sizeof( ((rvmWeaponChainGun *)0)->numSkipFrames ) },
-	{ "const idSoundShader *", "snd_windup", (intptr_t)(&((rvmWeaponChainGun *)0)->snd_windup), sizeof( ((rvmWeaponChainGun *)0)->snd_windup ) },
-	{ "const idSoundShader *", "snd_winddown", (intptr_t)(&((rvmWeaponChainGun *)0)->snd_winddown), sizeof( ((rvmWeaponChainGun *)0)->snd_winddown ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponRocketLauncher_typeInfo[] = {
-	{ "float", "spread", (intptr_t)(&((rvmWeaponRocketLauncher *)0)->spread), sizeof( ((rvmWeaponRocketLauncher *)0)->spread ) },
-	{ "idStr", "skin_invisible", (intptr_t)(&((rvmWeaponRocketLauncher *)0)->skin_invisible), sizeof( ((rvmWeaponRocketLauncher *)0)->skin_invisible ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponBFG_typeInfo[] = {
-	{ "float", "spread", (intptr_t)(&((rvmWeaponBFG *)0)->spread), sizeof( ((rvmWeaponBFG *)0)->spread ) },
-	{ "float", "fuse_start", (intptr_t)(&((rvmWeaponBFG *)0)->fuse_start), sizeof( ((rvmWeaponBFG *)0)->fuse_start ) },
-	{ "float", "fuse_end", (intptr_t)(&((rvmWeaponBFG *)0)->fuse_end), sizeof( ((rvmWeaponBFG *)0)->fuse_end ) },
-	{ "float", "powerLevel", (intptr_t)(&((rvmWeaponBFG *)0)->powerLevel), sizeof( ((rvmWeaponBFG *)0)->powerLevel ) },
-	{ "float", "fire_time", (intptr_t)(&((rvmWeaponBFG *)0)->fire_time), sizeof( ((rvmWeaponBFG *)0)->fire_time ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponHandgrenade_typeInfo[] = {
-	{ ": float", "spread", (intptr_t)(&((rvmWeaponHandgrenade *)0)->spread), sizeof( ((rvmWeaponHandgrenade *)0)->spread ) },
-	{ "float", "fuse_start", (intptr_t)(&((rvmWeaponHandgrenade *)0)->fuse_start), sizeof( ((rvmWeaponHandgrenade *)0)->fuse_start ) },
-	{ "idStr", "skin_nade", (intptr_t)(&((rvmWeaponHandgrenade *)0)->skin_nade), sizeof( ((rvmWeaponHandgrenade *)0)->skin_nade ) },
-	{ "idStr", "skin_nade_invis", (intptr_t)(&((rvmWeaponHandgrenade *)0)->skin_nade_invis), sizeof( ((rvmWeaponHandgrenade *)0)->skin_nade_invis ) },
-	{ "idStr", "skin_nonade", (intptr_t)(&((rvmWeaponHandgrenade *)0)->skin_nonade), sizeof( ((rvmWeaponHandgrenade *)0)->skin_nonade ) },
-	{ "idStr", "skin_nonade_invis", (intptr_t)(&((rvmWeaponHandgrenade *)0)->skin_nonade_invis), sizeof( ((rvmWeaponHandgrenade *)0)->skin_nonade_invis ) },
-	{ "idProjectile *", "projectile", (intptr_t)(&((rvmWeaponHandgrenade *)0)->projectile), sizeof( ((rvmWeaponHandgrenade *)0)->projectile ) },
-	{ "boolean", "show_grenade", (intptr_t)(&((rvmWeaponHandgrenade *)0)->show_grenade), sizeof( ((rvmWeaponHandgrenade *)0)->show_grenade ) },
-	{ ": float", "fuse_end", (intptr_t)(&((rvmWeaponHandgrenade *)0)->fuse_end), sizeof( ((rvmWeaponHandgrenade *)0)->fuse_end ) },
-	{ "float", "current_time", (intptr_t)(&((rvmWeaponHandgrenade *)0)->current_time), sizeof( ((rvmWeaponHandgrenade *)0)->current_time ) },
-	{ "float", "time_held", (intptr_t)(&((rvmWeaponHandgrenade *)0)->time_held), sizeof( ((rvmWeaponHandgrenade *)0)->time_held ) },
-	{ "float", "power", (intptr_t)(&((rvmWeaponHandgrenade *)0)->power), sizeof( ((rvmWeaponHandgrenade *)0)->power ) },
-	{ "boolean", "exploded", (intptr_t)(&((rvmWeaponHandgrenade *)0)->exploded), sizeof( ((rvmWeaponHandgrenade *)0)->exploded ) },
-	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((rvmWeaponHandgrenade *)0)->snd_lowammo), sizeof( ((rvmWeaponHandgrenade *)0)->snd_lowammo ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponChainsaw_typeInfo[] = {
-	{ ": bool", "side", (intptr_t)(&((rvmWeaponChainsaw *)0)->side), sizeof( ((rvmWeaponChainsaw *)0)->side ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t rvmWeaponGrabber_typeInfo[] = {
-	{ "const idSoundShader *", "snd_fireloop", (intptr_t)(&((rvmWeaponGrabber *)0)->snd_fireloop), sizeof( ((rvmWeaponGrabber *)0)->snd_fireloop ) },
-	{ "const idSoundShader *", "snd_electroloop", (intptr_t)(&((rvmWeaponGrabber *)0)->snd_electroloop), sizeof( ((rvmWeaponGrabber *)0)->snd_electroloop ) },
-	{ "const idSoundShader *", "snd_mainfire", (intptr_t)(&((rvmWeaponGrabber *)0)->snd_mainfire), sizeof( ((rvmWeaponGrabber *)0)->snd_mainfire ) },
-	{ "const idSoundShader *", "snd_cangrab", (intptr_t)(&((rvmWeaponGrabber *)0)->snd_cangrab), sizeof( ((rvmWeaponGrabber *)0)->snd_cangrab ) },
-	{ "const idSoundShader *", "snd_warning", (intptr_t)(&((rvmWeaponGrabber *)0)->snd_warning), sizeof( ((rvmWeaponGrabber *)0)->snd_warning ) },
-	{ "const idSoundShader *", "snd_stopfire", (intptr_t)(&((rvmWeaponGrabber *)0)->snd_stopfire), sizeof( ((rvmWeaponGrabber *)0)->snd_stopfire ) },
-	{ ": float", "next_attack", (intptr_t)(&((rvmWeaponGrabber *)0)->next_attack), sizeof( ((rvmWeaponGrabber *)0)->next_attack ) },
-	{ "float", "fireStartTime", (intptr_t)(&((rvmWeaponGrabber *)0)->fireStartTime), sizeof( ((rvmWeaponGrabber *)0)->fireStartTime ) },
-	{ "bool", "warningBeep1", (intptr_t)(&((rvmWeaponGrabber *)0)->warningBeep1), sizeof( ((rvmWeaponGrabber *)0)->warningBeep1 ) },
-	{ "bool", "warningBeep2", (intptr_t)(&((rvmWeaponGrabber *)0)->warningBeep2), sizeof( ((rvmWeaponGrabber *)0)->warningBeep2 ) },
-	{ "bool", "warningBeep3", (intptr_t)(&((rvmWeaponGrabber *)0)->warningBeep3), sizeof( ((rvmWeaponGrabber *)0)->warningBeep3 ) },
-	{ "bool", "warningBeep4", (intptr_t)(&((rvmWeaponGrabber *)0)->warningBeep4), sizeof( ((rvmWeaponGrabber *)0)->warningBeep4 ) },
-	{ "float", "grabberState", (intptr_t)(&((rvmWeaponGrabber *)0)->grabberState), sizeof( ((rvmWeaponGrabber *)0)->grabberState ) },
-	{ NULL, 0 }
-};
-
 static classVariableInfo_t ballistics_t_typeInfo[] = {
 	{ "float", "angle", (intptr_t)(&((ballistics_t *)0)->angle), sizeof( ((ballistics_t *)0)->angle ) },
 	{ "float", "time", (intptr_t)(&((ballistics_t *)0)->time), sizeof( ((ballistics_t *)0)->time ) },
@@ -5573,19 +5460,6 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "shard_t", "", sizeof(shard_t), shard_t_typeInfo },
 	{ "idBrittleFracture", "idEntity", sizeof(idBrittleFracture), idBrittleFracture_typeInfo },
 	{ "dnWeaponPistol", "rvmWeaponObject", sizeof(dnWeaponPistol), dnWeaponPistol_typeInfo },
-	{ "rvmWeaponFist", "rvmWeaponObject", sizeof(rvmWeaponFist), rvmWeaponFist_typeInfo },
-	{ "rvmWeaponFlashlight", "rvmWeaponObject", sizeof(rvmWeaponFlashlight), rvmWeaponFlashlight_typeInfo },
-	{ "rvmWeaponPDA", "rvmWeaponObject", sizeof(rvmWeaponPDA), rvmWeaponPDA_typeInfo },
-	{ "rvmWeaponShotgun", "rvmWeaponObject", sizeof(rvmWeaponShotgun), rvmWeaponShotgun_typeInfo },
-	{ "rvmWeaponDoubleShotgun", "rvmWeaponObject", sizeof(rvmWeaponDoubleShotgun), rvmWeaponDoubleShotgun_typeInfo },
-	{ "rvmWeaponMachineGun", "rvmWeaponObject", sizeof(rvmWeaponMachineGun), rvmWeaponMachineGun_typeInfo },
-	{ "rvmWeaponPlasmaGun", "rvmWeaponObject", sizeof(rvmWeaponPlasmaGun), rvmWeaponPlasmaGun_typeInfo },
-	{ "rvmWeaponChainGun", "rvmWeaponObject", sizeof(rvmWeaponChainGun), rvmWeaponChainGun_typeInfo },
-	{ "rvmWeaponRocketLauncher", "rvmWeaponObject", sizeof(rvmWeaponRocketLauncher), rvmWeaponRocketLauncher_typeInfo },
-	{ "rvmWeaponBFG", "rvmWeaponObject", sizeof(rvmWeaponBFG), rvmWeaponBFG_typeInfo },
-	{ "rvmWeaponHandgrenade", "rvmWeaponObject", sizeof(rvmWeaponHandgrenade), rvmWeaponHandgrenade_typeInfo },
-	{ "rvmWeaponChainsaw", "rvmWeaponObject", sizeof(rvmWeaponChainsaw), rvmWeaponChainsaw_typeInfo },
-	{ "rvmWeaponGrabber", "rvmWeaponObject", sizeof(rvmWeaponGrabber), rvmWeaponGrabber_typeInfo },
 	{ "ballistics_t", "", sizeof(ballistics_t), ballistics_t_typeInfo },
 	{ "obstaclePath_t", "", sizeof(obstaclePath_t), obstaclePath_t_typeInfo },
 	{ "predictedPath_t", "", sizeof(predictedPath_t), predictedPath_t_typeInfo },

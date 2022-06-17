@@ -13,9 +13,6 @@
     <Filter Include="GameBase\Script">
       <UniqueIdentifier>{2024018a-67e2-4afd-8499-38ccbe8fc1aa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameBase\Weapons">
-      <UniqueIdentifier>{0c8b8d6a-183a-492f-9787-e6aa151d7a02}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GameBase\Monsters">
       <UniqueIdentifier>{b374f8bd-d3c0-4dd0-aa7e-1178e20a9c8b}</UniqueIdentifier>
     </Filter>
@@ -33,6 +30,9 @@
     </Filter>
     <Filter Include="DukeGame\Weapons">
       <UniqueIdentifier>{7beb575c-4542-44af-bcac-ed365aee258a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DukeGame\DnAI">
+      <UniqueIdentifier>{e3d25711-00ae-4460-8523-c6ee8bcac1a1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -218,45 +218,6 @@
     </ClCompile>
     <ClCompile Include="game\monsters\Monster_zombie_security_pistol.cpp">
       <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_bfg.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_chaingun.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_chainsaw.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_double_shotgun.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_fist.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_flashlight.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_grabber.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_handgrenade.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_machinegun.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_pda.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_plasmagun.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_rocketlauncher.cpp">
-      <Filter>GameBase\Weapons</Filter>
-    </ClCompile>
-    <ClCompile Include="game\weapons\Weapon_shotgun.cpp">
-      <Filter>GameBase\Weapons</Filter>
     </ClCompile>
     <ClCompile Include="game\player\Player.cpp">
       <Filter>GameBase\Player</Filter>
@@ -526,45 +487,6 @@
     </ClInclude>
     <ClInclude Include="game\monsters\Monster_zombie_security_pistol.h">
       <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_bfg.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_chaingun.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_chainsaw.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_double_shotgun.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_fist.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_flashlight.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_grabber.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_handgrenade.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_machinegun.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_pda.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_plasmagun.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_rocketlauncher.h">
-      <Filter>GameBase\Weapons</Filter>
-    </ClInclude>
-    <ClInclude Include="game\weapons\Weapon_shotgun.h">
-      <Filter>GameBase\Weapons</Filter>
     </ClInclude>
     <ClInclude Include="game\player\Player.h">
       <Filter>GameBase\Player</Filter>
