@@ -42,6 +42,8 @@ void dnWeaponPistol::Init( idWeapon* weapon )
 	next_attack = 0;
 	spread = weapon->GetFloat( "spread" );
 	snd_lowammo = FindSound( "snd_lowammo" );
+
+	fireSound = declManager->FindSound("pistol_fire");
 }
 
 /*
@@ -173,6 +175,8 @@ stateResult_t dnWeaponPistol::Fire( stateParms_t* parms )
 			owner->Event_LaunchProjectiles( PISTOL_NUMPROJECTILES, spread, 0, 1, 1 );
 
 			//owner->Event_PlayAnim( ANIMCHANNEL_ALL, "fire", false );
+
+			owner->StartSoundShader(fireSound, SND_CHANNEL_ANY, 0, false, nullptr);
 			owner->PlayVertexAnimation(DNPISTOL_FIRE_STARTFRAME, DNPISTOL_FIRE_NUMFRAMES, false);
 			parms->stage = FIRE_WAIT;
 			return SRESULT_WAIT;

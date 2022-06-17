@@ -17,6 +17,7 @@ public:
 	stateResult_t			Reload( stateParms_t* parms );
 private:
 	float					spread;
+	const idSoundShader*	fireSound;
 
 	const idSoundShader*		snd_lowammo;
 };

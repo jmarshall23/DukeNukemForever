@@ -4736,6 +4736,7 @@ static classVariableInfo_t idBrittleFracture_typeInfo[] = {
 
 static classVariableInfo_t dnWeaponPistol_typeInfo[] = {
 	{ ": float", "spread", (intptr_t)(&((dnWeaponPistol *)0)->spread), sizeof( ((dnWeaponPistol *)0)->spread ) },
+	{ "const idSoundShader *", "fireSound", (intptr_t)(&((dnWeaponPistol *)0)->fireSound), sizeof( ((dnWeaponPistol *)0)->fireSound ) },
 	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((dnWeaponPistol *)0)->snd_lowammo), sizeof( ((dnWeaponPistol *)0)->snd_lowammo ) },
 	{ NULL, 0 }
 };

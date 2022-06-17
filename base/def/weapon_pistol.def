@@ -38,7 +38,7 @@ entityDef weapon_pistol {
 	"inv_name"					"Pistol"
 	"inv_weapon"				"weapon_pistol"
 	"inv_item"					"5"
-	"inv_ammo_bullets"			"12"
+	"inv_ammo_bullets"			"15"
 	"icon"						"guis/assets/hud/wpn_1"
 
 	"weapon_class"				"dnWeaponPistol"
