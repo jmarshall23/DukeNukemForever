@@ -82,51 +82,18 @@ bool LoadWorldFile(idStr mapName, WorldGeometry_t &geometry, int &crcMAP)
 
 	crcMAP = mapFile->GetGeometryCRC();
 
-	//for (int i = 0; i < world->GetNumWorldModels(); i++)
-	//{
-	//	idMat3	axis;
-	//	idVec3 origin;
-	//	idRenderModel *model;
-	//
-	//	axis.Identity();
-	//	origin.Zero();
-	//
-	//	model = world->GetWorldModel(i);
-	//
-	//	AddModelToMegaGeometry(geometry, origin, axis, model);
-	//}
-
-	for (int i = 0; i < mapFile->GetNumEntities(); i++)
+	for (int i = 0; i < world->GetNumWorldModels(); i++)
 	{
-		idMapEntity *entity = mapFile->GetEntity(i);
-		const char *className = entity->epairs.GetString("classname");
-
-		if (!idStr::Icmp(className, "func_static")) {
-			// Mesh's are opt in for the navmesh.
-			if (entity->epairs.GetBool("inline")) {
-				const char* modelName = entity->epairs.GetString("model");
-				if (!modelName) {
-					continue;
-				}
-				idRenderModel* model = renderModelManager->FindModel(modelName);
-
-				idMat3	axis;
-				// get the rotation matrix in either full form, or single angle form
-				if (!entity->epairs.GetMatrix("rotation", "1 0 0 0 1 0 0 0 1", axis)) {
-					float angle = entity->epairs.GetFloat("angle");
-					if (angle != 0.0f) {
-						axis = idAngles(0.0f, angle, 0.0f).ToMat3();
-					}
-					else {
-						axis.Identity();
-					}
-				}
-
-				idVec3 origin = entity->epairs.GetVec4("origin").ToVec3();
-				AddModelToMegaGeometry(geometry, origin, axis, model);
-				continue;
-			}
-		}
+		idMat3	axis;
+		idVec3 origin;
+		idRenderModel *model;
+	
+		axis.Identity();
+		origin.Zero();
+	
+		model = world->GetWorldModel(i);
+	
+		AddModelToMegaGeometry(geometry, origin, axis, model);
 	}
 
 	renderSystem->FreeRenderWorld(world);

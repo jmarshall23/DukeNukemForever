@@ -459,6 +459,37 @@ bool DnAI::MoveToPosition(const idVec3& pos)
 	return true;
 }
 
+void DnAI::UpdatePathToPosition(idVec3 pos)
+{
+	if (pathWaypoints.Num() > 0)
+	{
+		float len = (pos - pathWaypoints[pathWaypoints.Num() - 1]).Length();
+		if (len < 150)
+		{
+			len = (GetOrigin() - pathWaypoints[waypointId]).Length();
+			if (len < 150)
+			{
+				waypointId++;
+
+				if (waypointId >= pathWaypoints.Num())
+					waypointId = pathWaypoints.Num() - 1;
+			}
+
+			MoveToPosition(pathWaypoints[waypointId]);
+
+			return;
+		}
+	}
+
+	waypointId = 0;
+	pathWaypoints.Clear();
+	if (!gameLocal.GetNavigation()->GetPathBetweenPoints(GetOrigin(), pos, pathWaypoints))
+	{
+		return;
+	}
+
+	MoveToPosition(pathWaypoints[0]);
+}
 
 void DnAI::Think(void)
 {

@@ -151,6 +151,8 @@ bool idRenderModelStatic::LoadOBJ(const char *fileName) {
 
 	R_BoundTriSurf(tri);
 
+	R_CreateVertexNormals(tri);
+
 	{
 		modelSurface_t	surf;
 

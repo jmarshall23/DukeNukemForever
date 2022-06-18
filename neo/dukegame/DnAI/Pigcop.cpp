@@ -39,14 +39,7 @@ stateResult_t DnPigcop::state_ApproachingEnemy(stateParms_t* parms)
 
 	if (distToEnemy > 200)
 	{
-		idList<idVec3> waypoints;
-		if (!gameLocal.GetNavigation()->GetPathBetweenPoints(GetOrigin(), target->GetOrigin(), waypoints))
-		{
-			common->Warning("Failed to get path between self and target!");
-			return SRESULT_WAIT;
-		}
-
-		MoveToPosition(waypoints[1]);
+		UpdatePathToPosition(target->GetOrigin());
 
 		SetAnimation("walk", true);
 	}

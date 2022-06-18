@@ -54,6 +54,8 @@ public:
 protected:
 	void					SetAnimation(const char* anim, bool loop);
 
+	void					UpdatePathToPosition(idVec3 position);
+
 	idPlayer*				FindNewTarget();
 
 	void					StopMove(moveStatus_t status);
@@ -73,6 +75,8 @@ protected:
 
 	idMoveState				move;
 
+	idList<idVec3>			pathWaypoints;
+	int						waypointId;
 private:
 	void					Turn();
 	void					SetupPhysics(void);

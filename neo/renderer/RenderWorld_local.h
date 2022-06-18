@@ -102,6 +102,10 @@ public:
 
 	virtual void			SetRenderView( const renderView_t *renderView );
 	virtual	void			RenderScene( const renderView_t *renderView );
+// jmarshall
+	virtual int				GetNumWorldModels() const { return localModels.Num(); }
+	virtual idRenderModel* GetWorldModel(int idx) { return localModels[idx]; }
+// jmarshall end
 
 	virtual	int				NumAreas( void ) const;
 	virtual int				PointInArea( const idVec3 &point ) const;

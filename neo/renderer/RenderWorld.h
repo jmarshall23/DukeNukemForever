@@ -311,6 +311,10 @@ public:
 
 	// returns true if this area model needs portal sky to draw
 	virtual bool			CheckAreaForPortalSky( int areaNum ) = 0;
+// jmarshall
+	virtual int				GetNumWorldModels() const = 0;
+	virtual idRenderModel* GetWorldModel(int idx) = 0;
+// jmarshall end
 
 	//-------------- Decals and Overlays  -----------------
 
