@@ -513,5 +513,6 @@ void DnAI::Think(void)
 	{
 		current_yaw = ideal_yaw;
 		viewAxis = idAngles(0, ideal_yaw, 0).ToMat3();
+		SetAxis(viewAxis);
 	}
 }

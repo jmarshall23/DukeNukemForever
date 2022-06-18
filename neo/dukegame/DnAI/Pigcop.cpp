@@ -82,7 +82,7 @@ stateResult_t DnPigcop::state_ApproachingEnemy(stateParms_t* parms)
 
 	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
 
-	if (distToEnemy > PIGCOP_FIRE_DISTANCE)
+	if (distToEnemy > PIGCOP_FIRE_DISTANCE || !isTargetVisible)
 	{
 		UpdatePathToPosition(target->GetOrigin());
 		SetAnimation("walk", true);
