@@ -7,6 +7,8 @@
 CLASS_DECLARATION(idActor, DnAI)
 END_CLASS
 
+DnRand dnRand;
+
 /*
 ===============
 DnAI::Spawn
@@ -75,6 +77,14 @@ void DnAI::SetAnimation(const char* name, bool loop)
 		animator.PlayAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
 	}
 	animator.RemoveOriginOffset(true);
+}
+
+bool DnAI::CurrentlyPlayingSound()
+{
+	if (refSound.referenceSound == nullptr)
+		return false;
+
+	return refSound.referenceSound->CurrentlyPlaying();
 }
 
 void DnAI::Think(void)

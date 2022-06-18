@@ -10017,6 +10017,9 @@ intptr_t DnAI::Invoke(const char *functionName, void *param1) {
 		Think();
 		return 0;
 	};
+	if(functionNameHash == 285588) { // CurrentlyPlayingSound
+		return (intptr_t)CurrentlyPlayingSound();
+	};
 	if(functionNameHash == 162541) { // FindNewTarget
 		return (intptr_t)FindNewTarget();
 	};
@@ -10030,6 +10033,9 @@ bool DnAI::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	if(functionNameHash == 285588) { // CurrentlyPlayingSound
 		return true;
 	};
 	if(functionNameHash == 162541) { // FindNewTarget

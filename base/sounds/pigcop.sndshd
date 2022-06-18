@@ -1,0 +1,20 @@
+pig_roam1
+{
+	volume 2
+	maxdistance 50
+	sounds/monsters/pigcop/PIGRM.ogg
+}
+
+pig_roam2
+{
+	volume 2
+	maxdistance 50
+	sounds/monsters/pigcop/ROAM67.ogg
+}
+
+pig_roam3
+{
+	volume 2
+	maxdistance 50
+	sounds/monsters/pigcop/PIGRM.ogg
+}

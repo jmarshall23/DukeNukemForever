@@ -9,7 +9,7 @@
 
 	601 constants
 	59 enums
-	332 classes/structs/unions
+	333 classes/structs/unions
 	3 templates
 	8 max inheritance level for 'rvmMonsterZombieSawyer'
 
@@ -5093,12 +5093,20 @@ static classVariableInfo_t idTestModel_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t DnRand_typeInfo[] = {
+	{ ": int", "randomseed", (intptr_t)(&((DnRand *)0)->randomseed), sizeof( ((DnRand *)0)->randomseed ) },
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t DnAI_typeInfo[] = {
 	{ ": idActor *", "target", (intptr_t)(&((DnAI *)0)->target), sizeof( ((DnAI *)0)->target ) },
 	{ NULL, 0 }
 };
 
 static classVariableInfo_t DnPigcop_typeInfo[] = {
+	{ ": const idSoundShader *", "pig_roam1", (intptr_t)(&((DnPigcop *)0)->pig_roam1), sizeof( ((DnPigcop *)0)->pig_roam1 ) },
+	{ "const idSoundShader *", "pig_roam2", (intptr_t)(&((DnPigcop *)0)->pig_roam2), sizeof( ((DnPigcop *)0)->pig_roam2 ) },
+	{ "const idSoundShader *", "pig_roam3", (intptr_t)(&((DnPigcop *)0)->pig_roam3), sizeof( ((DnPigcop *)0)->pig_roam3 ) },
 	{ NULL, 0 }
 };
 
@@ -5500,6 +5508,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "rvmMonsterZombieCommandoTentacle", "rvmMonsterZombie", sizeof(rvmMonsterZombieCommandoTentacle), rvmMonsterZombieCommandoTentacle_typeInfo },
 	{ "rvmMonsterZombieCommandoChaingun", "idAI", sizeof(rvmMonsterZombieCommandoChaingun), rvmMonsterZombieCommandoChaingun_typeInfo },
 	{ "idTestModel", "idAnimatedEntity", sizeof(idTestModel), idTestModel_typeInfo },
+	{ "DnRand", "", sizeof(DnRand), DnRand_typeInfo },
 	{ "DnAI", "idActor", sizeof(DnAI), DnAI_typeInfo },
 	{ "DnPigcop", "DnAI", sizeof(DnPigcop), DnPigcop_typeInfo },
 	{ "opcode_t", "", sizeof(opcode_t), opcode_t_typeInfo },
