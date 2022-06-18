@@ -618,14 +618,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Dedicated Release|Win32'">true</ExcludedFromBuild>
     </CustomBuildStep>
     <ClInclude Include="tools\compilers\compiler_public.h" />
-    <ClInclude Include="tools\compilers\aas\AASBuild_local.h" />
-    <ClInclude Include="tools\compilers\aas\AASCluster.h" />
-    <ClInclude Include="tools\compilers\aas\AASFile.h" />
-    <ClInclude Include="tools\compilers\aas\AASFile_local.h" />
-    <ClInclude Include="tools\compilers\aas\AASFileManager.h" />
-    <ClInclude Include="tools\compilers\aas\AASReach.h" />
-    <ClInclude Include="tools\compilers\aas\Brush.h" />
-    <ClInclude Include="tools\compilers\aas\BrushBSP.h" />
     <ClInclude Include="tools\compilers\dmap\dmap.h" />
     <CustomBuildStep Include="tools\debugger\DebuggerApp.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug with inlines and memory log|Win32'">true</ExcludedFromBuild>
@@ -2419,19 +2411,6 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Dedicated Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Dedicated Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASBuild.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASBuild_file.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASBuild_gravity.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASBuild_ledge.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASBuild_merge.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASCluster.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASFile.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASFile_optimize.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASFile_sample.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASFileManager.cpp" />
-    <ClCompile Include="tools\compilers\aas\AASReach.cpp" />
-    <ClCompile Include="tools\compilers\aas\Brush.cpp" />
-    <ClCompile Include="tools\compilers\aas\BrushBSP.cpp" />
     <ClCompile Include="tools\compilers\dmap\dmap.cpp" />
     <ClCompile Include="tools\compilers\dmap\facebsp.cpp" />
     <ClCompile Include="tools\compilers\dmap\gldraw.cpp" />

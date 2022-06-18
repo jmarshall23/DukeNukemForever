@@ -479,9 +479,6 @@ private:
 	void					MuzzleRise( idVec3& origin, idMat3& axis );
 	void					UpdateNozzleFx();
 	void					UpdateFlashPosition();
-
-	idGrabber				grabber;
-	int						grabberState;
 public:
 	void					Event_Grabber( int enable );
 	int						Event_GrabberHasTarget();

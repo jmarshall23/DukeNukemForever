@@ -6,23 +6,10 @@ This is the main script that is loaded before any level scripts load.
 
 ***********************************************************************/
 
-//
-// talk states
-//
-#define TALK_NEVER						0
-#define TALK_DEAD						1
-#define TALK_OK							2
-#define TALK_BUSY						3
-
-// for dimming flashlight during plasma discharges in alphalabs2
-float global_flashlight_intensity = 1.0;
-
 // base defines and util functions
 #include "script/doom_defs.script"
 #include "script/doom_events.script"
 #include "script/doom_util.script"
-
-#include "script/d3xp_main.script"
 
 void doom_main() {
 	sys.print( "Entering doom_main()\n");

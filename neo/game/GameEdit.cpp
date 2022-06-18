@@ -564,9 +564,9 @@ void idEditEntities::DisplayEntities( void ) {
 			selectableEntityClasses.Append( sit );
 			break;
 		case 5:
-			sit.typeInfo = &idAI::Type;
-			sit.textKey = "name";
-			selectableEntityClasses.Append( sit );
+			//sit.typeInfo = &idAI::Type;
+			//sit.textKey = "name";
+			//selectableEntityClasses.Append( sit );
 			break;
 		case 6:
 			sit.typeInfo = &idEntity::Type;

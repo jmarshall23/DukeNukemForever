@@ -44,7 +44,6 @@ idSoundSystem *				soundSystem = NULL;
 idRenderModelManager *		renderModelManager = NULL;
 idUserInterfaceManager *	uiManager = NULL;
 idDeclManager *				declManager = NULL;
-idAASFileManager *			AASFileManager = NULL;
 idCollisionModelManager *	collisionModelManager = NULL;
 rvmNavigationManager*		navigationManager = NULL;
 idCVar *					idCVar::staticVars = NULL;
@@ -135,7 +134,6 @@ extern "C" gameExport_t *GetGameAPI( gameImport_t *import ) {
 		renderModelManager			= import->renderModelManager;
 		uiManager					= import->uiManager;
 		declManager					= import->declManager;
-		AASFileManager				= import->AASFileManager;
 		collisionModelManager		= import->collisionModelManager;
 		navigationManager			= import->navigationManager;
 	}
@@ -177,7 +175,6 @@ void TestGameAPI( void ) {
 	testImport.renderModelManager		= ::renderModelManager;
 	testImport.uiManager				= ::uiManager;
 	testImport.declManager				= ::declManager;
-	testImport.AASFileManager			= ::AASFileManager;
 	testImport.collisionModelManager	= ::collisionModelManager;
 
 	testExport = *GetGameAPI( &testImport );
@@ -243,8 +240,6 @@ void idGameLocal::Clear( void ) {
 	spawnCount = INITIAL_SPAWN_COUNT;
 	mapSpawnCount = 0;
 	camera = NULL;
-	aasList.Clear();
-	aasNames.Clear();
 	lastAIAlertEntity = NULL;
 	lastAIAlertTime = 0;
 	spawnArgs.Clear();
@@ -297,7 +292,6 @@ idGameLocal::Init
 */
 void idGameLocal::Init( void ) {
 	const idDict *dict;
-	idAAS *aas;
 
 #ifndef GAME_DLL
 
@@ -364,20 +358,10 @@ void idGameLocal::Init( void ) {
 		Error( "Unable to find entityDef for 'aas_types'" );
 	}
 
-	// allocate space for the aas
-	const idKeyValue *kv = dict->MatchPrefix( "type" );
-	while( kv != NULL ) {
-		aas = idAAS::Alloc();
-		aasList.Append( aas );
-		aasNames.Append( kv->GetValue() );
-		kv = dict->MatchPrefix( "type", kv );
-	}
-
 	navigationManager->Init();
 
 	gamestate = GAMESTATE_NOMAP;
 
-	Printf( "...%d aas types\n", aasList.Num() );
 	Printf( "game initialized.\n" );
 	Printf( "--------------------------------------\n" );
 }
@@ -400,11 +384,6 @@ void idGameLocal::Shutdown( void ) {
 	mpGame.Shutdown();
 
 	MapShutdown();
-
-	aasList.DeleteContents( true );
-	aasNames.Clear();
-
-	idAI::FreeObstacleAvoidanceNodes();
 
 	idEvent::Shutdown();
 
@@ -1006,11 +985,6 @@ void idGameLocal::LoadMap( const char *mapName, int randseed ) {
 	pvs.Init();
 	playerPVS.i = -1;
 	playerConnectedAreas.i = -1;
-
-	// load navigation system for all the different monster sizes
-	for( i = 0; i < aasNames.Num(); i++ ) {
-		aasList[ i ]->Init( idStr( mapFileName ).SetFileExtension( aasNames[ i ] ).c_str(), mapFile->GetGeometryCRC() );
-	}
 
 	// clear the smoke particle free list
 	smokeParticles->Init();
@@ -2978,10 +2952,6 @@ void idGameLocal::RunDebugInfo( void ) {
 		idTrigger::DrawDebugInfo();
 	}
 
-	if ( ai_showCombatNodes.GetBool() ) {
-		idCombatNode::DrawDebugInfo();
-	}
-
 	if ( ai_showPaths.GetBool() ) {
 		idPathCorner::DrawDebugInfo();
 	}
@@ -3006,140 +2976,8 @@ void idGameLocal::RunDebugInfo( void ) {
 		pvs.DrawPVS( origin, ( g_showPVS.GetInteger() == 2 ) ? PVS_ALL_PORTALS_OPEN : PVS_NORMAL );
 	}
 
-	if ( aas_test.GetInteger() >= 0 ) {
-		idAAS *aas = GetAAS( aas_test.GetInteger() );
-		if ( aas ) {
-			aas->Test( origin );
-			if ( ai_testPredictPath.GetBool() ) {
-				idVec3 velocity;
-				predictedPath_t path;
-
-				velocity.x = cos( DEG2RAD( player->viewAngles.yaw ) ) * 100.0f;
-				velocity.y = sin( DEG2RAD( player->viewAngles.yaw ) ) * 100.0f;
-				velocity.z = 0.0f;
-				idAI::PredictPath( player, aas, origin, velocity, 1000, 100, SE_ENTER_OBSTACLE | SE_BLOCKED | SE_ENTER_LEDGE_AREA, path );
-			}
-		}
-	}
-
-	if ( ai_showObstacleAvoidance.GetInteger() == 2 ) {
-		idAAS *aas = GetAAS( 0 );
-		if ( aas ) {
-			idVec3 seekPos;
-			obstaclePath_t path;
-
-			seekPos = player->GetPhysics()->GetOrigin() + player->viewAxis[0] * 200.0f;
-			idAI::FindPathAroundObstacles( player->GetPhysics(), aas, NULL, player->GetPhysics()->GetOrigin(), seekPos, path );
-		}
-	}
-
 	// collision map debug output
 	collisionModelManager->DebugOutput( player->GetEyePosition() );
-}
-
-/*
-==================
-idGameLocal::NumAAS
-==================
-*/
-int	idGameLocal::NumAAS( void ) const {
-	return aasList.Num();
-}
-
-/*
-==================
-idGameLocal::GetAAS
-==================
-*/
-idAAS *idGameLocal::GetAAS( int num ) const {
-	if ( ( num >= 0 ) && ( num < aasList.Num() ) ) {
-		if ( aasList[ num ] && aasList[ num ]->GetSettings() ) {
-			return aasList[ num ];
-		}
-	}
-	return NULL;
-}
-
-/*
-==================
-idGameLocal::GetAAS
-==================
-*/
-idAAS *idGameLocal::GetAAS( const char *name ) const {
-	int i;
-
-	for ( i = 0; i < aasNames.Num(); i++ ) {
-		if ( aasNames[ i ] == name ) {
-			if ( !aasList[ i ]->GetSettings() ) {
-				return NULL;
-			} else {
-				return aasList[ i ];
-			}
-		}
-	}
-	return NULL;
-}
-
-/*
-==================
-idGameLocal::SetAASAreaState
-==================
-*/
-void idGameLocal::SetAASAreaState( const idBounds &bounds, const int areaContents, bool closed ) {
-	int i;
-
-	for( i = 0; i < aasList.Num(); i++ ) {
-		aasList[ i ]->SetAreaState( bounds, areaContents, closed );
-	}
-}
-
-/*
-==================
-idGameLocal::AddAASObstacle
-==================
-*/
-aasHandle_t idGameLocal::AddAASObstacle( const idBounds &bounds ) {
-	int i;
-	aasHandle_t obstacle;
-	aasHandle_t check;
-
-	if ( !aasList.Num() ) {
-		return -1;
-	}
-
-	obstacle = aasList[ 0 ]->AddObstacle( bounds );
-	for( i = 1; i < aasList.Num(); i++ ) {
-		check = aasList[ i ]->AddObstacle( bounds );
-		assert( check == obstacle );
-	}
-
-	return obstacle;
-}
-
-/*
-==================
-idGameLocal::RemoveAASObstacle
-==================
-*/
-void idGameLocal::RemoveAASObstacle( const aasHandle_t handle ) {
-	int i;
-
-	for( i = 0; i < aasList.Num(); i++ ) {
-		aasList[ i ]->RemoveObstacle( handle );
-	}
-}
-
-/*
-==================
-idGameLocal::RemoveAllAASObstacles
-==================
-*/
-void idGameLocal::RemoveAllAASObstacles( void ) {
-	int i;
-
-	for( i = 0; i < aasList.Num(); i++ ) {
-		aasList[ i ]->RemoveAllObstacles();
-	}
 }
 
 /*
@@ -4151,7 +3989,7 @@ idGameLocal::SetCamera
 void idGameLocal::SetCamera( idCamera *cam ) {
 	int i;
 	idEntity *ent;
-	idAI *ai;
+	DnAI *ai;
 
 	// this should fix going into a cinematic when dead.. rare but happens
 	idPlayer *client = GetLocalPlayer();
@@ -4194,8 +4032,8 @@ void idGameLocal::SetCamera( idCamera *cam ) {
 					continue;
 				}
 				
-				if ( ent->IsType( idAI::Type ) ) {
-					ai = static_cast<idAI *>( ent );
+				if ( ent->IsType( DnAI::Type ) ) {
+					ai = static_cast<DnAI *>( ent );
 					if ( !ai->GetEnemy() || !ai->IsActive() ) {
 						// no enemy, or inactive, so probably safe to ignore
 						continue;

@@ -656,56 +656,6 @@ private:
 	void				Event_Activate( idEntity *activator );
 };
 
-/*
-===============================================================================
-
-  idFuncAASPortal
-
-===============================================================================
-*/
-
-class idFuncAASPortal : public idEntity {
-public:
-	CLASS_PROTOTYPE( idFuncAASPortal );
-			
-						idFuncAASPortal();
-
-	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
-private:
-	bool				state;
-
-	void				Event_Activate( idEntity *activator );
-};
-
-/*
-===============================================================================
-
-  idFuncAASObstacle
-
-===============================================================================
-*/
-
-class idFuncAASObstacle : public idEntity {
-public:
-	CLASS_PROTOTYPE( idFuncAASObstacle );
-			
-						idFuncAASObstacle();
-
-	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
-private:
-	bool				state;
-
-	void				Event_Activate( idEntity *activator );
-};
-
 
 /*
 ===============================================================================
@@ -732,44 +682,6 @@ private:
 	void				Event_ResetRadioHud( idEntity *activator );
 };
 
-
-/*
-===============================================================================
-
-  idPhantomObjects
-
-===============================================================================
-*/
-
-class idPhantomObjects : public idEntity {
-public:
-	CLASS_PROTOTYPE( idPhantomObjects );
-			
-						idPhantomObjects();
-
-	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
-	virtual void		Think( void );
-
-private:
-	void				Event_Activate( idEntity *activator );
-	//void				Event_Throw( void );
-	void				Event_ShakeObject( idEntity *object, int starttime );
-
-	int					end_time;
-	float				throw_time;
-	float				shake_time;
-	idVec3				shake_ang;
-	float				speed;
-	int					min_wait;
-	int					max_wait;
-	idEntityPtr<idActor>target;
-	idList<int>			targetTime;
-	idList<idVec3>		lastTargetPos;
-};
 
 #ifdef _D3XP
 /*

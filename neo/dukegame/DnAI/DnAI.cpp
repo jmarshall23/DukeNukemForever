@@ -438,7 +438,6 @@ bool DnAI::MoveToPosition(const idVec3& pos)
 {
 	idVec3		org;
 	int			areaNum;
-	aasPath_t	path;
 
 	if (ReachedPos(pos, move.moveCommand))
 	{

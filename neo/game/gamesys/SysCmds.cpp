@@ -236,7 +236,6 @@ Kills all the monsters in a level.
 ==================
 */
 void Cmd_KillMonsters_f( const idCmdArgs &args ) {
-	KillEntities( args, idAI::Type );
 
 	// kill any projectiles as well since they have pointers to the monster that created them
 	KillEntities( args, idProjectile::Type );
@@ -1451,19 +1450,7 @@ Cmd_AASStats_f
 ==================
 */
 static void Cmd_AASStats_f( const idCmdArgs &args ) {
-	int aasNum;
 
-	if ( !gameLocal.CheatsOk() ) {
-		return;
-	}
-
-	aasNum = aas_test.GetInteger();
-	idAAS *aas = gameLocal.GetAAS( aasNum );
-	if ( !aas ) {
-		gameLocal.Printf( "No aas #%d loaded\n", aasNum );
-	} else {
-		aas->Stats();
-	}
 }
 
 /*
@@ -2335,7 +2322,7 @@ void idGameLocal::InitConsoleCommands( void ) {
 	cmdSystem->AddCommand( "listThreads",			idThread::ListThreads_f,	CMD_FL_GAME|CMD_FL_CHEAT,	"lists script threads" );
 	cmdSystem->AddCommand( "listEntities",			Cmd_EntityList_f,			CMD_FL_GAME|CMD_FL_CHEAT,	"lists game entities" );
 	cmdSystem->AddCommand( "listActiveEntities",	Cmd_ActiveEntityList_f,		CMD_FL_GAME|CMD_FL_CHEAT,	"lists active game entities" );
-	cmdSystem->AddCommand( "listMonsters",			idAI::List_f,				CMD_FL_GAME|CMD_FL_CHEAT,	"lists monsters" );
+	//cmdSystem->AddCommand( "listMonsters",			idAI::List_f,				CMD_FL_GAME|CMD_FL_CHEAT,	"lists monsters" );
 	cmdSystem->AddCommand( "listSpawnArgs",			Cmd_ListSpawnArgs_f,		CMD_FL_GAME|CMD_FL_CHEAT,	"list the spawn args of an entity", idGameLocal::ArgCompletion_EntityName );
 	cmdSystem->AddCommand( "say",					Cmd_Say_f,					CMD_FL_GAME,				"text chat" );
 	cmdSystem->AddCommand( "sayTeam",				Cmd_SayTeam_f,				CMD_FL_GAME,				"team text chat" );

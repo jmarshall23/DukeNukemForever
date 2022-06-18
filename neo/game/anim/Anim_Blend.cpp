@@ -891,64 +891,7 @@ void idAnim::CallFrameCommands( idEntity *ent, int from, int to ) const {
 					}
 					break;
 				}
-				case FC_TRIGGER_SMOKE_PARTICLE: {
-					ent->ProcessEvent( &AI_TriggerParticles, command.string->c_str() );
-					break;
-				}
-				case FC_MELEE: {
-					ent->ProcessEvent( &AI_AttackMelee, command.string->c_str() );
-					break;
-				}
-				case FC_DIRECTDAMAGE: {
-					ent->ProcessEvent( &AI_DirectDamage, command.string->c_str() );
-					break;
-				}
-				case FC_BEGINATTACK: {
-					ent->ProcessEvent( &AI_BeginAttack, command.string->c_str() );
-					break;
-				}
-				case FC_ENDATTACK: {
-					ent->ProcessEvent( &AI_EndAttack );
-					break;
-				}
-				case FC_MUZZLEFLASH: {
-					ent->ProcessEvent( &AI_MuzzleFlash, command.string->c_str() );
-					break;
-				}
-				case FC_CREATEMISSILE: {
-					ent->ProcessEvent( &AI_CreateMissile, command.string->c_str() );
-					break;
-				}
-				case FC_LAUNCHMISSILE: {
-					ent->ProcessEvent( &AI_AttackMissile, command.string->c_str() );
-					break;
-				}
-				case FC_FIREMISSILEATTARGET: {
-					ent->ProcessEvent( &AI_FireMissileAtTarget, modelDef->GetJointName( command.index ), command.string->c_str() );
-					break;
-				}
-#ifdef _D3XP
-				case FC_LAUNCH_PROJECTILE: {
-					ent->ProcessEvent( &AI_LaunchProjectile, command.string->c_str() );
-					break;
-				}
-				case FC_TRIGGER_FX: {
-					ent->ProcessEvent( &AI_TriggerFX, modelDef->GetJointName( command.index ), command.string->c_str() );
-					break;
-				}
-				case FC_START_EMITTER: {
-					int index = command.string->Find(" ");
-					if(index >= 0) {
-						idStr name = command.string->Left(index);
-						idStr particle = command.string->Right(command.string->Length() - index - 1);
-						ent->ProcessEvent( &AI_StartEmitter, name.c_str(), modelDef->GetJointName( command.index ), particle.c_str() );
-					}
-				}
-
-				case FC_STOP_EMITTER: {
-					ent->ProcessEvent( &AI_StopEmitter, command.string->c_str() );
-				}
-#endif
+				
 				case FC_FOOTSTEP : {
 					ent->ProcessEvent( &EV_Footstep );
 					break;
@@ -967,26 +910,6 @@ void idAnim::CallFrameCommands( idEntity *ent, int from, int to ) const {
 				}
 				case FC_DISABLE_EYE_FOCUS: {
 					ent->ProcessEvent( &AI_DisableEyeFocus );
-					break;
-				}
-				case FC_DISABLE_GRAVITY: {
-					ent->ProcessEvent( &AI_DisableGravity );
-					break;
-				}
-				case FC_ENABLE_GRAVITY: {
-					ent->ProcessEvent( &AI_EnableGravity );
-					break;
-				}
-				case FC_JUMP: {
-					ent->ProcessEvent( &AI_JumpFrame );
-					break;
-				}
-				case FC_ENABLE_CLIP: {
-					ent->ProcessEvent( &AI_EnableClip );
-					break;
-				}
-				case FC_DISABLE_CLIP: {
-					ent->ProcessEvent( &AI_DisableClip );
 					break;
 				}
 				case FC_ENABLE_WALK_IK: {

@@ -19,62 +19,6 @@ void setShaderTime( entity self ) {
 
 /*
 ==================
-clearSmoke
-
-Clears smoke particles on monsters
-==================
-*/
-void clearSmoke( entity self ) {
-	self.setSmokeVisibility( ALL_PARTICLES, 0 );
-}
-
-/*
-==================
-headlook_on
-
-Turns on Bone modification for looking.
-==================
-*/
-void headlook_on( entity self ) {
-	self.setBoneMod( true );
-}
-
-/*
-==================
-headlook_off
-
-Turns off Bone modification for looking.
-
-==================
-*/
-void headlook_off( entity self ) {
-	self.setBoneMod( false );
-}
-
-/*
-==================
-overrideLegs
-
-Used to make monster attack anims use the full body
-==================
-*/
-void overrideLegs( entity self ) {
-	self.overrideAnim( ANIMCHANNEL_LEGS );
-}
-
-/*
-==================
-overrideTorso
-
-Used to make monster attack anims use the full body
-==================
-*/
-void overrideTorso( entity self ) {
-	self.overrideAnim( ANIMCHANNEL_TORSO );
-}
-
-/*
-==================
 waitForButtonPress
 
 Waits for the user to press a button

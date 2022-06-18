@@ -336,7 +336,6 @@ typedef struct {
 	idRenderModelManager *		renderModelManager;		// render model manager
 	idUserInterfaceManager *	uiManager;				// user interface manager
 	idDeclManager *				declManager;			// declaration manager
-	idAASFileManager *			AASFileManager;			// AAS file manager
 	idCollisionModelManager *	collisionModelManager;	// collision model manager
 	rvmNavigationManager*		navigationManager;
 } gameImport_t;

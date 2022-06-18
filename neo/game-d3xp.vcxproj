@@ -271,23 +271,6 @@
   <ItemGroup>
     <ClCompile Include="dukegame\DnAI\DnAI.cpp" />
     <ClCompile Include="dukegame\DnAI\Pigcop.cpp" />
-    <ClCompile Include="game\ai\AAS.cpp" />
-    <ClCompile Include="game\ai\AASCallback_AvoidLocation.cpp" />
-    <ClCompile Include="game\ai\AASCallback_FindAreaOutOfRange.cpp" />
-    <ClCompile Include="game\ai\AASCallback_FindCoverArea.cpp" />
-    <ClCompile Include="game\ai\AAS_debug.cpp" />
-    <ClCompile Include="game\ai\AAS_pathing.cpp" />
-    <ClCompile Include="game\ai\AAS_routing.cpp" />
-    <ClCompile Include="game\ai\AI.cpp" />
-    <ClCompile Include="game\ai\AI_anim.cpp" />
-    <ClCompile Include="game\ai\AI_events.cpp" />
-    <ClCompile Include="game\ai\AI_follower.cpp" />
-    <ClCompile Include="game\ai\AI_move.cpp" />
-    <ClCompile Include="game\ai\AI_pathing.cpp" />
-    <ClCompile Include="game\ai\AI_states.cpp" />
-    <ClCompile Include="game\ai\AI_states_combat.cpp" />
-    <ClCompile Include="game\ai\AI_states_util.cpp" />
-    <ClCompile Include="game\ai\ObstacleAvoidance.cpp" />
     <ClCompile Include="game\anim\Anim.cpp" />
     <ClCompile Include="game\anim\Anim_Blend.cpp" />
     <ClCompile Include="game\anim\Anim_State.cpp" />
@@ -309,18 +292,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Dedicated Debug with inlines|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="game\monsters\Monster_boss_vagary.cpp" />
-    <ClCompile Include="game\monsters\Monster_demon_hellknight.cpp" />
-    <ClCompile Include="game\monsters\Monster_demon_imp.cpp" />
-    <ClCompile Include="game\monsters\Monster_flying_cacodemon.cpp" />
-    <ClCompile Include="game\monsters\Monster_flying_lostsoul.cpp" />
-    <ClCompile Include="game\monsters\Monster_zombie.cpp" />
-    <ClCompile Include="game\monsters\Monster_zombie_bernie.cpp" />
-    <ClCompile Include="game\monsters\Monster_zombie_commando_cgun.cpp" />
-    <ClCompile Include="game\monsters\Monster_zombie_commando_tentacle.cpp" />
-    <ClCompile Include="game\monsters\Monster_zombie_morgue.cpp" />
-    <ClCompile Include="game\monsters\Monster_zombie_sawyer.cpp" />
-    <ClCompile Include="game\monsters\Monster_zombie_security_pistol.cpp" />
     <ClCompile Include="game\physics\Clip.cpp" />
     <ClCompile Include="game\physics\Force.cpp" />
     <ClCompile Include="game\physics\Force_Constant.cpp" />
@@ -357,7 +328,6 @@
     <ClCompile Include="game\Game_local.cpp" />
     <ClCompile Include="game\Game_network.cpp" />
     <ClCompile Include="game\GameEdit.cpp" />
-    <ClCompile Include="game\Grabber.cpp" />
     <ClCompile Include="game\IK.cpp" />
     <ClCompile Include="game\Item.cpp" />
     <ClCompile Include="game\Light.cpp" />
@@ -388,13 +358,6 @@
   <ItemGroup>
     <ClInclude Include="dukegame\DnAI\DnAI.h" />
     <ClInclude Include="dukegame\DnAI\Pigcop.h" />
-    <ClInclude Include="game\ai\AAS.h" />
-    <ClInclude Include="game\ai\AASCallback_AvoidLocation.h" />
-    <ClInclude Include="game\ai\AASCallback_FindAreaOutOfRange.h" />
-    <ClInclude Include="game\ai\AASCallback_FindCoverArea.h" />
-    <ClInclude Include="game\ai\AAS_local.h" />
-    <ClInclude Include="game\ai\AI.h" />
-    <ClInclude Include="game\ai\ObstacleAvoidance.h" />
     <ClInclude Include="game\anim\Anim.h" />
     <ClInclude Include="game\anim\Anim_Testmodel.h" />
     <ClInclude Include="game\gamesys\Class.h" />
@@ -407,18 +370,6 @@
     <ClInclude Include="game\gamesys\SysCmds.h" />
     <ClInclude Include="game\gamesys\SysCvar.h" />
     <ClInclude Include="game\gamesys\TypeInfo.h" />
-    <ClInclude Include="game\monsters\Monster_boss_vagary.h" />
-    <ClInclude Include="game\monsters\Monster_demon_hellknight.h" />
-    <ClInclude Include="game\monsters\Monster_demon_imp.h" />
-    <ClInclude Include="game\monsters\Monster_flying_cacodemon.h" />
-    <ClInclude Include="game\monsters\Monster_flying_lostsoul.h" />
-    <ClInclude Include="game\monsters\Monster_zombie.h" />
-    <ClInclude Include="game\monsters\Monster_zombie_bernie.h" />
-    <ClInclude Include="game\monsters\monster_zombie_commando_cgun.h" />
-    <ClInclude Include="game\monsters\Monster_zombie_commando_tentacle.h" />
-    <ClInclude Include="game\monsters\Monster_zombie_morgue.h" />
-    <ClInclude Include="game\monsters\Monster_zombie_sawyer.h" />
-    <ClInclude Include="game\monsters\Monster_zombie_security_pistol.h" />
     <ClInclude Include="game\physics\Clip.h" />
     <ClInclude Include="game\physics\Force.h" />
     <ClInclude Include="game\physics\Force_Constant.h" />
@@ -456,7 +407,6 @@
     <ClInclude Include="game\Game.h" />
     <ClInclude Include="game\Game_local.h" />
     <ClInclude Include="game\GameEdit.h" />
-    <ClInclude Include="game\Grabber.h" />
     <ClInclude Include="game\IK.h" />
     <ClInclude Include="game\Item.h" />
     <ClInclude Include="game\Light.h" />

@@ -2,7 +2,6 @@
 //
 
 #include "precompiled.h"
-#include "../compilers/aas/Brush.h"
 
 struct PlaneGeometry_t
 {

@@ -307,7 +307,7 @@ bool idMoveable::Collide( const trace_t &collision, const idVec3 &velocity ) {
 				f = v > maxDamageVelocity ? 1.0f : idMath::Sqrt( v - minDamageVelocity ) * ( 1.0f / idMath::Sqrt( maxDamageVelocity - minDamageVelocity ) );
 				dir = velocity;
 				dir.NormalizeFast();
-				if ( ent->IsType( idAI::Type ) && hasMonsterDamage ) {
+				if ( ent->IsType( DnAI::Type ) && hasMonsterDamage ) {
 #ifdef _D3XP
 					if ( attacker ) {
 						ent->Damage( this, attacker, dir, monsterDamage, f, INVALID_JOINT );

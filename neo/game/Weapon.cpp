@@ -174,8 +174,7 @@ idWeapon::idWeapon()
 	guiLightHandle			= -1;
 	nozzleGlowHandle		= -1;
 	modelDefHandle			= -1;
-	grabberState			= -1;
-
+	
 	berserk					= 2;
 	brassDelay				= 0;
 
@@ -218,7 +217,7 @@ void idWeapon::Spawn()
 
 	if( 1 /*!common->IsMultiplayer()*/ )
 	{
-		grabber.Initialize();
+		
 	}
 
 	//thread = new idThread();
@@ -452,9 +451,6 @@ void idWeapon::Save( idSaveGame* savefile ) const
 	savefile->WriteBool( allowDrop );
 	savefile->WriteObject( projectileEnt );
 
-	savefile->WriteStaticObject( grabber );
-	savefile->WriteInt( grabberState );
-
 	savefile->WriteJoint( smokeJointView );
 
 	savefile->WriteInt( weaponParticles.Num() );
@@ -661,9 +657,6 @@ void idWeapon::Restore( idRestoreGame* savefile )
 	savefile->ReadBool( allowDrop );
 	savefile->ReadObject( reinterpret_cast<idClass*&>( projectileEnt ) );
 
-	savefile->ReadStaticObject( grabber );
-	savefile->ReadInt( grabberState );
-
 	savefile->ReadJoint( smokeJointView );
 
 	int particleCount;
@@ -851,9 +844,6 @@ void idWeapon::Clear()
 	flashTime		= 250;
 	lightOn			= false;
 	silent_fire		= false;
-
-	grabberState	= -1;
-	grabber.Update( owner, true );
 
 	ammoType		= 0;
 	ammoRequired	= 0;
@@ -1502,7 +1492,7 @@ void idWeapon::UpdateGUI()
 	renderEntity.gui[ 0 ]->SetStateString( "player_ammo_count", va( "%i", AmmoCount() ) );
 
 	//Grabber Gui Info
-	renderEntity.gui[ 0 ]->SetStateString( "grabber_state", va( "%i", grabberState ) );
+	//renderEntity.gui[ 0 ]->SetStateString( "grabber_state", va( "%i", grabberState ) );
 }
 
 /***********************************************************************
@@ -2321,9 +2311,9 @@ void idWeapon::AlertMonsters()
 	if( tr.fraction < 1.0f )
 	{
 		ent = gameLocal.GetTraceEntity( tr );
-		if( ent->IsType( idAI::Type ) )
+		if( ent->IsType( DnAI::Type ) )
 		{
-			static_cast<idAI*>( ent )->TouchedByFlashlight( owner );
+			//static_cast<idAI*>( ent )->TouchedByFlashlight( owner );
 		}
 		else if( ent->IsType( idTrigger::Type ) )
 		{
@@ -2345,11 +2335,7 @@ void idWeapon::AlertMonsters()
 	if( tr.fraction < 1.0f )
 	{
 		ent = gameLocal.GetTraceEntity( tr );
-		if( ent->IsType( idAI::Type ) )
-		{
-			static_cast<idAI*>( ent )->TouchedByFlashlight( owner );
-		}
-		else if( ent->IsType( idTrigger::Type ) )
+		if( ent->IsType( idTrigger::Type ) )
 		{
 			ent->Signal( SIG_TOUCH );
 			ent->ProcessEvent( &EV_Touch, owner, &tr );
@@ -2669,12 +2655,6 @@ void idWeapon::PresentWeapon( bool showViewModel )
 				}
 			}
 		}
-	}
-
-	// Update the grabber effects
-	if( grabberState != -1 )
-	{
-		grabberState = grabber.Update( owner, hide );
 	}
 
 	// remove the muzzle flash light when it's done
@@ -3039,7 +3019,7 @@ Returns the current grabberState
 int idWeapon::GetGrabberState() const
 {
 
-	return grabberState;
+	return 0;
 }
 
 /*
@@ -3671,14 +3651,7 @@ idWeapon::Event_Grabber
 */
 void idWeapon::Event_Grabber( int enable )
 {
-	if( enable )
-	{
-		grabberState = 0;
-	}
-	else
-	{
-		grabberState = -1;
-	}
+	
 }
 
 /*
@@ -3688,7 +3661,7 @@ idWeapon::Event_GrabberHasTarget
 */
 int idWeapon::Event_GrabberHasTarget()
 {
-	return grabberState;
+	return 0;
 }
 
 /*
@@ -3699,7 +3672,6 @@ idWeapon::Event_GrabberSetGrabDistance
 void idWeapon::Event_GrabberSetGrabDistance( float dist )
 {
 
-	grabber.SetDragDistance( dist );
 }
 
 

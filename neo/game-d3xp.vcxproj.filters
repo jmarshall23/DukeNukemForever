@@ -13,17 +13,11 @@
     <Filter Include="GameBase\Script">
       <UniqueIdentifier>{2024018a-67e2-4afd-8499-38ccbe8fc1aa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GameBase\Monsters">
-      <UniqueIdentifier>{b374f8bd-d3c0-4dd0-aa7e-1178e20a9c8b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="GameBase\GameSys">
       <UniqueIdentifier>{65cd4d56-59f1-4e72-af98-074176b18454}</UniqueIdentifier>
     </Filter>
     <Filter Include="GameBase\Animation">
       <UniqueIdentifier>{f1a55916-cc4e-4c52-8097-90f53ec0e5ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="GameBase\AI">
-      <UniqueIdentifier>{cbe3b616-1879-4177-ab0b-ef9dd6e1c344}</UniqueIdentifier>
     </Filter>
     <Filter Include="DukeGame">
       <UniqueIdentifier>{f9236058-e05e-43f3-ad13-bf39ecd6fd1c}</UniqueIdentifier>
@@ -138,87 +132,6 @@
     <ClCompile Include="game\gamesys\GameTypeInfo.cpp">
       <Filter>GameBase\GameSys</Filter>
     </ClCompile>
-    <ClCompile Include="game\ai\AAS.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AAS_debug.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AAS_pathing.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AAS_routing.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AASCallback_AvoidLocation.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AASCallback_FindAreaOutOfRange.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AASCallback_FindCoverArea.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_events.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_follower.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_move.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_pathing.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_states.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_states_combat.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_states_util.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\ObstacleAvoidance.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_boss_vagary.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_demon_hellknight.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_demon_imp.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_flying_cacodemon.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_flying_lostsoul.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_zombie.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_zombie_commando_cgun.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_zombie_commando_tentacle.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_zombie_morgue.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_zombie_sawyer.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_zombie_security_pistol.cpp">
-      <Filter>GameBase\Monsters</Filter>
-    </ClCompile>
     <ClCompile Include="game\player\Player.cpp">
       <Filter>GameBase\Player</Filter>
     </ClCompile>
@@ -233,12 +146,6 @@
     </ClCompile>
     <ClCompile Include="game\player\Player_Anim.cpp">
       <Filter>GameBase\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="game\ai\AI_anim.cpp">
-      <Filter>GameBase\AI</Filter>
-    </ClCompile>
-    <ClCompile Include="game\monsters\Monster_zombie_bernie.cpp">
-      <Filter>GameBase\Monsters</Filter>
     </ClCompile>
     <ClCompile Include="game\Actor.cpp">
       <Filter>GameBase</Filter>
@@ -268,9 +175,6 @@
       <Filter>GameBase</Filter>
     </ClCompile>
     <ClCompile Include="game\GameEdit.cpp">
-      <Filter>GameBase</Filter>
-    </ClCompile>
-    <ClCompile Include="game\Grabber.cpp">
       <Filter>GameBase</Filter>
     </ClCompile>
     <ClCompile Include="game\IK.cpp">
@@ -437,63 +341,6 @@
     <ClInclude Include="game\gamesys\GameTypeInfo.h">
       <Filter>GameBase\GameSys</Filter>
     </ClInclude>
-    <ClInclude Include="game\ai\AAS.h">
-      <Filter>GameBase\AI</Filter>
-    </ClInclude>
-    <ClInclude Include="game\ai\AAS_local.h">
-      <Filter>GameBase\AI</Filter>
-    </ClInclude>
-    <ClInclude Include="game\ai\AASCallback_AvoidLocation.h">
-      <Filter>GameBase\AI</Filter>
-    </ClInclude>
-    <ClInclude Include="game\ai\AASCallback_FindAreaOutOfRange.h">
-      <Filter>GameBase\AI</Filter>
-    </ClInclude>
-    <ClInclude Include="game\ai\AASCallback_FindCoverArea.h">
-      <Filter>GameBase\AI</Filter>
-    </ClInclude>
-    <ClInclude Include="game\ai\AI.h">
-      <Filter>GameBase\AI</Filter>
-    </ClInclude>
-    <ClInclude Include="game\ai\ObstacleAvoidance.h">
-      <Filter>GameBase\AI</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_boss_vagary.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_demon_hellknight.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_demon_imp.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_flying_cacodemon.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_flying_lostsoul.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_zombie.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_zombie_bernie.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\monster_zombie_commando_cgun.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_zombie_commando_tentacle.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_zombie_morgue.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_zombie_sawyer.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
-    <ClInclude Include="game\monsters\Monster_zombie_security_pistol.h">
-      <Filter>GameBase\Monsters</Filter>
-    </ClInclude>
     <ClInclude Include="game\player\Player.h">
       <Filter>GameBase\Player</Filter>
     </ClInclude>
@@ -531,9 +378,6 @@
       <Filter>GameBase</Filter>
     </ClInclude>
     <ClInclude Include="game\GameEdit.h">
-      <Filter>GameBase</Filter>
-    </ClInclude>
-    <ClInclude Include="game\Grabber.h">
       <Filter>GameBase</Filter>
     </ClInclude>
     <ClInclude Include="game\IK.h">

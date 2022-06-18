@@ -1731,7 +1731,6 @@ void idPlayer::Spawn( void ) {
 	physicsObj.SetContents( CONTENTS_BODY );
 	physicsObj.SetClipMask( MASK_PLAYERSOLID );
 	SetPhysics( &physicsObj );
-	InitAASLocation();
 
 	skin = renderEntity.customSkin;
 
@@ -2134,7 +2133,7 @@ void idPlayer::Save( idSaveGame *savefile ) const {
 
 	savefile->WriteObject( focusGUIent );
 	// can't save focusUI
-	savefile->WriteObject( focusCharacter );
+	//savefile->WriteObject( focusCharacter );
 	savefile->WriteInt( talkCursor );
 	savefile->WriteInt( focusTime );
 	savefile->WriteObject( focusVehicle );
@@ -2398,7 +2397,7 @@ void idPlayer::Restore( idRestoreGame *savefile ) {
 	savefile->ReadObject( reinterpret_cast<idClass *&>( focusGUIent ) );
 	// can't save focusUI
 	focusUI = NULL;
-	savefile->ReadObject( reinterpret_cast<idClass *&>( focusCharacter ) );
+	//savefile->ReadObject( reinterpret_cast<idClass *&>( focusCharacter ) );
 	savefile->ReadInt( talkCursor );
 	savefile->ReadInt( focusTime );
 	savefile->ReadObject( reinterpret_cast<idClass *&>( focusVehicle ) );
@@ -4788,7 +4787,7 @@ void idPlayer::Weapon_NPC( void ) {
 
 	if ( ( usercmd.buttons & BUTTON_ATTACK ) && !( oldButtons & BUTTON_ATTACK ) ) {
 		buttonMask |= BUTTON_ATTACK;
-		focusCharacter->TalkTo( this );
+		//focusCharacter->TalkTo( this );
 	}
 }
 
@@ -4921,8 +4920,8 @@ void idPlayer::UpdateWeapon( void ) {
 	} else if ( ActiveGui() ) {
 		// gui handling overrides weapon use
 		Weapon_GUI();
-	} else 	if ( focusCharacter && ( focusCharacter->health > 0 ) ) {
-		Weapon_NPC();
+	//} else 	if ( focusCharacter && ( focusCharacter->health > 0 ) ) {
+	//	Weapon_NPC();
 	} else {
 		Weapon_Combat();
 	}
@@ -5279,47 +5278,47 @@ void idPlayer::UpdateFocus( void ) {
 			continue;
 		}
 
-		if ( allowFocus ) {
-			if ( ent->IsType( idAFAttachment::Type ) ) {
-				idEntity *body = static_cast<idAFAttachment *>( ent )->GetBody();
-				if ( body && body->IsType( idAI::Type ) && ( static_cast<idAI *>( body )->GetTalkState() >= TALK_OK ) ) {
-					gameLocal.clip.TracePoint( trace, start, end, MASK_SHOT_RENDERMODEL, this );
-					if ( ( trace.fraction < 1.0f ) && ( trace.c.entityNum == ent->entityNumber ) ) {
-						ClearFocus();
-						focusCharacter = static_cast<idAI *>( body );
-						talkCursor = 1;
-						focusTime = gameLocal.time + FOCUS_TIME;
-						break;
-					}
-				}
-				continue;
-			}
-
-			if ( ent->IsType( idAI::Type ) ) {
-				if ( static_cast<idAI *>( ent )->GetTalkState() >= TALK_OK ) {
-					gameLocal.clip.TracePoint( trace, start, end, MASK_SHOT_RENDERMODEL, this );
-					if ( ( trace.fraction < 1.0f ) && ( trace.c.entityNum == ent->entityNumber ) ) {
-						ClearFocus();
-						focusCharacter = static_cast<idAI *>( ent );
-						talkCursor = 1;
-						focusTime = gameLocal.time + FOCUS_TIME;
-						break;
-					}
-				}
-				continue;
-			}
-
-			if ( ent->IsType( idAFEntity_Vehicle::Type ) ) {
-				gameLocal.clip.TracePoint( trace, start, end, MASK_SHOT_RENDERMODEL, this );
-				if ( ( trace.fraction < 1.0f ) && ( trace.c.entityNum == ent->entityNumber ) ) {
-					ClearFocus();
-					focusVehicle = static_cast<idAFEntity_Vehicle *>( ent );
-					focusTime = gameLocal.time + FOCUS_TIME;
-					break;
-				}
-				continue;
-			}
-		}
+		//if ( allowFocus ) {
+		//	if ( ent->IsType( idAFAttachment::Type ) ) {
+		//		idEntity *body = static_cast<idAFAttachment *>( ent )->GetBody();
+		//		if ( body && body->IsType( DnAI::Type ) && ( static_cast<idAI *>( body )->GetTalkState() >= TALK_OK ) ) {
+		//			gameLocal.clip.TracePoint( trace, start, end, MASK_SHOT_RENDERMODEL, this );
+		//			if ( ( trace.fraction < 1.0f ) && ( trace.c.entityNum == ent->entityNumber ) ) {
+		//				ClearFocus();
+		//				focusCharacter = static_cast<idAI *>( body );
+		//				talkCursor = 1;
+		//				focusTime = gameLocal.time + FOCUS_TIME;
+		//				break;
+		//			}
+		//		}
+		//		continue;
+		//	}
+		//
+		//	if ( ent->IsType( idAI::Type ) ) {
+		//		if ( static_cast<idAI *>( ent )->GetTalkState() >= TALK_OK ) {
+		//			gameLocal.clip.TracePoint( trace, start, end, MASK_SHOT_RENDERMODEL, this );
+		//			if ( ( trace.fraction < 1.0f ) && ( trace.c.entityNum == ent->entityNumber ) ) {
+		//				ClearFocus();
+		//				focusCharacter = static_cast<idAI *>( ent );
+		//				talkCursor = 1;
+		//				focusTime = gameLocal.time + FOCUS_TIME;
+		//				break;
+		//			}
+		//		}
+		//		continue;
+		//	}
+		//
+		//	if ( ent->IsType( idAFEntity_Vehicle::Type ) ) {
+		//		gameLocal.clip.TracePoint( trace, start, end, MASK_SHOT_RENDERMODEL, this );
+		//		if ( ( trace.fraction < 1.0f ) && ( trace.c.entityNum == ent->entityNumber ) ) {
+		//			ClearFocus();
+		//			focusVehicle = static_cast<idAFEntity_Vehicle *>( ent );
+		//			focusTime = gameLocal.time + FOCUS_TIME;
+		//			break;
+		//		}
+		//		continue;
+		//	}
+		//}
 
 		if ( !ent->GetRenderEntity() || !ent->GetRenderEntity()->gui[ 0 ] || !ent->GetRenderEntity()->gui[ 0 ]->IsInteractive() ) {
 			continue;
@@ -5440,7 +5439,7 @@ void idPlayer::UpdateFocus( void ) {
 
 	if ( oldChar != focusCharacter && hud ) {
 		if ( focusCharacter ) {
-			hud->SetStateString( "npc", focusCharacter->spawnArgs.GetString( "npc_name", "Joe" ) );
+			//hud->SetStateString( "npc", focusCharacter->spawnArgs.GetString( "npc_name", "Joe" ) );
 #ifdef _D3XP
 			//Use to code to update the npc action string to fix bug 1159
 			hud->SetStateString( "npc_action", common->GetLanguageDict()->GetString( "#str_02036" ));
@@ -6820,96 +6819,6 @@ void idPlayer::AdjustBodyAngles( void ) {
 	animator.CurrentAnim( ANIMCHANNEL_LEGS )->SetSyncedAnimWeight( 2, upBlend );
 }
 
-/*
-==============
-idPlayer::InitAASLocation
-==============
-*/
-void idPlayer::InitAASLocation( void ) {
-	int		i;
-	int		num;
-	idVec3	size;
-	idBounds bounds;
-	idAAS	*aas;
-	idVec3	origin;
-
-	GetFloorPos( 64.0f, origin );
-
-	num = gameLocal.NumAAS();
-	aasLocation.SetGranularity( 1 );
-	aasLocation.SetNum( num );	
-	for( i = 0; i < aasLocation.Num(); i++ ) {
-		aasLocation[ i ].areaNum = 0;
-		aasLocation[ i ].pos = origin;
-		aas = gameLocal.GetAAS( i );
-		if ( aas && aas->GetSettings() ) {
-			size = aas->GetSettings()->boundingBoxes[0][1];
-			bounds[0] = -size;
-			size.z = 32.0f;
-			bounds[1] = size;
-
-			aasLocation[ i ].areaNum = aas->PointReachableAreaNum( origin, bounds, AREA_REACHABLE_WALK );
-		}
-	}
-}
-
-/*
-==============
-idPlayer::SetAASLocation
-==============
-*/
-void idPlayer::SetAASLocation( void ) {
-	int		i;
-	int		areaNum;
-	idVec3	size;
-	idBounds bounds;
-	idAAS	*aas;
-	idVec3	origin;
-
-	if ( !GetFloorPos( 64.0f, origin ) ) {
-		return;
-	}
-	
-	for( i = 0; i < aasLocation.Num(); i++ ) {
-		aas = gameLocal.GetAAS( i );
-		if ( !aas ) {
-			continue;
-		}
-
-		size = aas->GetSettings()->boundingBoxes[0][1];
-		bounds[0] = -size;
-		size.z = 32.0f;
-		bounds[1] = size;
-
-		areaNum = aas->PointReachableAreaNum( origin, bounds, AREA_REACHABLE_WALK );
-		if ( areaNum ) {
-			aasLocation[ i ].pos = origin;
-			aasLocation[ i ].areaNum = areaNum;
-		}
-	}
-}
-
-/*
-==============
-idPlayer::GetAASLocation
-==============
-*/
-void idPlayer::GetAASLocation( idAAS *aas, idVec3 &pos, int &areaNum ) const {
-	int i;
-
-	if ( aas != NULL ) {
-		for( i = 0; i < aasLocation.Num(); i++ ) {
-			if ( aas == gameLocal.GetAAS( i ) ) {
-				areaNum = aasLocation[ i ].areaNum;
-				pos = aasLocation[ i ].pos;
-				return;
-			}
-		}
-	}
-
-	areaNum = 0;
-	pos = physicsObj.GetOrigin();
-}
 
 /*
 ==============
@@ -6968,9 +6877,6 @@ void idPlayer::Move( void ) {
 	BecomeActive( TH_PHYSICS );
 	RunPhysics();
 
-	// update our last valid AAS location for the AI
-	SetAASLocation();
-
 	if ( spectating ) {
 		newEyeOffset = 0.0f;
 	} else if ( health <= 0 ) {
@@ -7005,7 +6911,7 @@ void idPlayer::Move( void ) {
 
 		// check if we're standing on top of a monster and give a push if we are
 		idEntity *groundEnt = physicsObj.GetGroundEntity();
-		if ( groundEnt && groundEnt->IsType( idAI::Type ) ) {
+		if ( groundEnt && groundEnt->IsType( DnAI::Type ) ) {
 			idVec3 vel = physicsObj.GetLinearVelocity();
 			if ( vel.ToVec2().LengthSqr() < 0.1f ) {
 				vel.ToVec2() = physicsObj.GetOrigin().ToVec2() - groundEnt->GetPhysics()->GetAbsBounds().GetCenter().ToVec2();
@@ -7966,7 +7872,7 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 		attacker = gameLocal.world;
 	}
 
-	if ( attacker->IsType( idAI::Type ) ) {
+	if ( attacker->IsType( DnAI::Type ) ) {
 #ifndef _D3XP
 		if ( PowerUpActive( BERSERK ) ) {
 			return;

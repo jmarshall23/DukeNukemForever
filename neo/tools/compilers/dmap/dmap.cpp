@@ -438,11 +438,6 @@ void Dmap( const idCmdArgs &args ) {
 			common->Printf( "-------------------------------------\n" );
 			common->Printf( "%5.0f seconds to create collision map\n", ( end - start ) * 0.001f );
 		}
-
-		if ( !noAAS && !region ) {
-			// create AAS files
-			RunAAS_f( args );
-		}
 	}
 
 	// free the common .map representation

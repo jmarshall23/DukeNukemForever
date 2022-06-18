@@ -64,9 +64,6 @@
     <Filter Include="Tools\Compilers">
       <UniqueIdentifier>{83ad091e-339c-4f64-ad0d-e0776c4fe142}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tools\Compilers\AAS">
-      <UniqueIdentifier>{07d88fa0-f779-44b7-87b1-2c0d8214aa3f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Tools\Compilers\DMap">
       <UniqueIdentifier>{6984ce76-c3bf-4003-97cf-64b50f951fe8}</UniqueIdentifier>
     </Filter>
@@ -545,30 +542,6 @@
     </ClInclude>
     <ClInclude Include="tools\compilers\compiler_public.h">
       <Filter>Tools\Compilers</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\AASBuild_local.h">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\AASCluster.h">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\AASFile.h">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\AASFile_local.h">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\AASFileManager.h">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\AASReach.h">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\Brush.h">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClInclude>
-    <ClInclude Include="tools\compilers\aas\BrushBSP.h">
-      <Filter>Tools\Compilers\AAS</Filter>
     </ClInclude>
     <ClInclude Include="tools\compilers\dmap\dmap.h">
       <Filter>Tools\Compilers\DMap</Filter>
@@ -1375,45 +1348,6 @@
     </ClCompile>
     <ClCompile Include="tools\common\PropTree\PropTreeView.cpp">
       <Filter>Tools\Common\PropTree</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASBuild.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASBuild_file.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASBuild_gravity.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASBuild_ledge.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASBuild_merge.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASCluster.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASFile.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASFile_optimize.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASFile_sample.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASFileManager.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\AASReach.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\Brush.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
-    </ClCompile>
-    <ClCompile Include="tools\compilers\aas\BrushBSP.cpp">
-      <Filter>Tools\Compilers\AAS</Filter>
     </ClCompile>
     <ClCompile Include="tools\compilers\dmap\dmap.cpp">
       <Filter>Tools\Compilers\DMap</Filter>

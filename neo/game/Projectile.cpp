@@ -1585,8 +1585,8 @@ idGuidedProjectile::Launch
 void idGuidedProjectile::Launch( const idVec3 &start, const idVec3 &dir, const idVec3 &pushVelocity, const float timeSinceFire, const float launchPower, float dmgPower ) {
 	idProjectile::Launch( start, dir, pushVelocity, timeSinceFire, launchPower, dmgPower );
 	if ( owner.GetEntity() ) {
-		if ( owner.GetEntity()->IsType( idAI::Type ) ) {
-			enemy = static_cast<idAI *>( owner.GetEntity() )->GetEnemy();
+		if ( owner.GetEntity()->IsType( DnAI::Type ) ) {
+			enemy = static_cast<DnAI*>( owner.GetEntity() )->GetEnemy();
 		} else if ( owner.GetEntity()->IsType( idPlayer::Type ) ) {
 			trace_t tr;
 			idPlayer *player = static_cast<idPlayer*>( owner.GetEntity() );
@@ -2835,9 +2835,9 @@ void idHomingProjectile::Launch(const idVec3& start, const idVec3& dir, const id
 	idProjectile::Launch(start, dir, pushVelocity, timeSinceFire, launchPower, dmgPower);
 	if (owner.GetEntity())
 	{
-		if (owner.GetEntity()->IsType(idAI::Type))
+		if (owner.GetEntity()->IsType(DnAI::Type))
 		{
-			enemy = static_cast<idAI*>(owner.GetEntity())->GetEnemy();
+			enemy = static_cast<DnAI*>(owner.GetEntity())->GetEnemy();
 		}
 		else if (owner.GetEntity()->IsType(idPlayer::Type))
 		{

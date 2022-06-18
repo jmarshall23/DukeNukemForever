@@ -69,7 +69,6 @@ class idPlayer;
 class idCamera;
 class idWorldspawn;
 class idTestModel;
-class idAAS;
 class idAI;
 class idSmokeParticles;
 class idEntityFx;
@@ -100,8 +99,6 @@ void gameError( const char *fmt, ... );
 #include "script/Script_Program.h"
 
 #include "anim/Anim.h"
-
-#include "ai/AAS.h"
 
 #include "physics/Clip.h"
 #include "physics/Push.h"
@@ -445,14 +442,6 @@ public:
 	idMapFile *				GetLevelMap( void );
 	const char *			GetMapName( void ) const;
 
-	int						NumAAS( void ) const;
-	idAAS *					GetAAS( int num ) const;
-	idAAS *					GetAAS( const char *name ) const;
-	void					SetAASAreaState( const idBounds &bounds, const int areaContents, bool closed );
-	aasHandle_t				AddAASObstacle( const idBounds &bounds );
-	void					RemoveAASObstacle( const aasHandle_t handle );
-	void					RemoveAllAASObstacles( void );
-
 	bool					CheatsOk( bool requirePlayer = true );
 	void					SetSkill( int value );
 	gameState_t				GameState( void ) const;
@@ -573,9 +562,6 @@ private:
 
 	idCamera *				camera;
 	const idMaterial *		globalMaterial;		// for overriding everything
-
-	idList<idAAS *>			aasList;				// area system
-	idStrList				aasNames;
 
 	idEntityPtr<idActor>	lastAIAlertEntity;
 	int						lastAIAlertTime;
@@ -806,9 +792,6 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 
 #include "Entity.h"
 #include "GameEdit.h"
-#ifdef _D3XP
-#include "Grabber.h"
-#endif
 #include "AF.h"
 #include "IK.h"
 #include "AFEntity.h"
@@ -834,99 +817,6 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 
 #include "../dukegame/Weapons/weapon_pistol.h"
 
-// jmarshall - moved this here while we kill off idAI
-
-// defined in script/ai_base.script.  please keep them up to date.
-typedef enum
-{
-	MOVETYPE_DEAD,
-	MOVETYPE_ANIM,
-	MOVETYPE_SLIDE,
-	MOVETYPE_FLY,
-	MOVETYPE_STATIC,
-	NUM_MOVETYPES
-} moveType_t;
-
-typedef enum
-{
-	MOVE_NONE,
-	MOVE_FACE_ENEMY,
-	MOVE_FACE_ENTITY,
-
-	// commands < NUM_NONMOVING_COMMANDS don't cause a change in position
-	NUM_NONMOVING_COMMANDS,
-
-	MOVE_TO_ENEMY = NUM_NONMOVING_COMMANDS,
-	MOVE_TO_ENEMYHEIGHT,
-	MOVE_TO_ENTITY,
-	MOVE_OUT_OF_RANGE,
-	MOVE_TO_COVER,
-	MOVE_TO_POSITION,
-	MOVE_TO_POSITION_DIRECT,
-	MOVE_SLIDE_TO_POSITION,
-	MOVE_WANDER,
-	NUM_MOVE_COMMANDS
-} moveCommand_t;
-
-typedef enum
-{
-	TALK_NEVER,
-	TALK_DEAD,
-	TALK_OK,
-	TALK_BUSY,
-	NUM_TALK_STATES
-} talkState_t;
-
-//
-// status results from move commands
-// make sure to change script/doom_defs.script if you add any, or change their order
-//
-typedef enum
-{
-	MOVE_STATUS_DONE,
-	MOVE_STATUS_MOVING,
-	MOVE_STATUS_WAITING,
-	MOVE_STATUS_DEST_NOT_FOUND,
-	MOVE_STATUS_DEST_UNREACHABLE,
-	MOVE_STATUS_BLOCKED_BY_WALL,
-	MOVE_STATUS_BLOCKED_BY_OBJECT,
-	MOVE_STATUS_BLOCKED_BY_ENEMY,
-	MOVE_STATUS_BLOCKED_BY_MONSTER
-} moveStatus_t;
-
-
-class idMoveState
-{
-public:
-	idMoveState();
-
-	void					Save(idSaveGame* savefile) const;
-	void					Restore(idRestoreGame* savefile);
-
-	moveType_t				moveType;
-	moveCommand_t			moveCommand;
-	moveStatus_t			moveStatus;
-	idVec3					moveDest;
-	idVec3					moveDir;			// used for wandering and slide moves
-	idEntityPtr<idEntity>	goalEntity;
-	idVec3					goalEntityOrigin;	// move to entity uses this to avoid checking the floor position every frame
-	int						toAreaNum;
-	int						startTime;
-	int						duration;
-	float					speed;				// only used by flying creatures
-	float					range;
-	float					wanderYaw;
-	int						nextWanderTime;
-	int						blockTime;
-	idEntityPtr<idEntity>	obstacle;
-	idVec3					lastMoveOrigin;
-	int						lastMoveTime;
-	int						anim;
-};
-
-// jmarshall end
-
-#include "ai/AI.h"
 #include "anim/Anim_Testmodel.h"
 
 #include "../dukegame/DnAI/DnAI.h"

@@ -2589,7 +2589,7 @@ void idMover_Binary::Event_OpenPortal( void ) {
 		}
 #ifdef _D3XP
 		if ( slave->playerOnly ) {
-			gameLocal.SetAASAreaState( slave->GetPhysics()->GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL, false );
+			//gameLocal.SetAASAreaState( slave->GetPhysics()->GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL, false );
 		}
 #endif
 	}
@@ -2612,7 +2612,7 @@ void idMover_Binary::Event_ClosePortal( void ) {
 			}
 #ifdef _D3XP
 			if ( slave->playerOnly ) {
-				gameLocal.SetAASAreaState( slave->GetPhysics()->GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL, true );
+				///gameLocal.SetAASAreaState( slave->GetPhysics()->GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL, true );
 			}
 #endif
 		}
@@ -3344,7 +3344,7 @@ void idDoor::Spawn( void ) {
 
 #ifdef _D3XP
 		if ( playerOnly ) {
-			gameLocal.SetAASAreaState( GetPhysics()->GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL, true );
+			//gameLocal.SetAASAreaState( GetPhysics()->GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL, true );
 		}
 #endif
 	}
@@ -3418,7 +3418,7 @@ idDoor::SetAASAreaState
 */
 void idDoor::SetAASAreaState( bool closed ) {
 	aas_area_closed = closed;
-	gameLocal.SetAASAreaState( physicsObj.GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL|AREACONTENTS_OBSTACLE, closed );
+	//gameLocal.SetAASAreaState( physicsObj.GetAbsBounds(), AREACONTENTS_CLUSTERPORTAL|AREACONTENTS_OBSTACLE, closed );
 }
 
 /*
