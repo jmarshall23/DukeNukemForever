@@ -10017,6 +10017,9 @@ intptr_t DnAI::Invoke(const char *functionName, void *param1) {
 		Think();
 		return 0;
 	};
+	if(functionNameHash == 162541) { // FindNewTarget
+		return (intptr_t)FindNewTarget();
+	};
 	return __super::Invoke(functionName, param1);
 
 };
@@ -10027,6 +10030,9 @@ bool DnAI::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	if(functionNameHash == 162541) { // FindNewTarget
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);

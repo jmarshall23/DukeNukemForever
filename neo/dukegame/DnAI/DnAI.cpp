@@ -14,6 +14,8 @@ DnAI::Spawn
 */
 void DnAI::Spawn(void)
 {
+	target = nullptr;
+
 	idActor::Spawn();
 
 	stateThread.SetOwner(this);
@@ -25,10 +27,28 @@ void DnAI::Spawn(void)
 
 /*
 ===============
+DnAI::FindNewTarget
+===============
+*/
+idPlayer* DnAI::FindNewTarget()
+{
+	idPlayer* localPlayer = gameLocal.GetLocalPlayer();
+
+	if (CanSee(localPlayer, true))
+	{
+		return localPlayer;
+	}
+
+	return nullptr;
+}
+
+
+/*
+===============
 DnAI::SetAnimation
 ===============
 */
-void DnAI::SetAnimation(const char* name)
+void DnAI::SetAnimation(const char* name, bool loop)
 {
 	int				animNum;
 	int anim;
@@ -46,7 +66,14 @@ void DnAI::SetAnimation(const char* name)
 	//animtime = animator.AnimLength(anim);
 	//headAnim = 0;
 
-	animator.CycleAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
+	if (loop)
+	{
+		animator.CycleAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
+	}
+	else
+	{
+		animator.PlayAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
+	}
 	animator.RemoveOriginOffset(true);
 }
 

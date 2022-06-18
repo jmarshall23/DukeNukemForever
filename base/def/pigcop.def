@@ -9,7 +9,9 @@ model pigcop
 	anim initial		models/characters/pigcop/pigcop_IdleA.md5anim
 	anim idle			models/characters/pigcop/pigcop_IdleA.md5anim
 
-	anim walk 			models/characters/pigcop//pigcop_walk.md5anim
+	anim walk 			models/characters/pigcop/pigcop_walk.md5anim
+
+	anim roar			models/characters/pigcop/pigcop_A_Roar.md5anim
 }
 
 entityDef monster_pigcop

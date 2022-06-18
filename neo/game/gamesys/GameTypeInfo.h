@@ -7,8 +7,8 @@
 
 	This file has been generated with the Type Info Generator v1.1 (c) 2004 id Software
 
-	599 constants
-	58 enums
+	601 constants
+	59 enums
 	332 classes/structs/unions
 	3 templates
 	8 max inheritance level for 'rvmMonsterZombieSawyer'
@@ -521,6 +521,8 @@ static constantInfo_t constantInfo[] = {
 	{ "int", "SE_ENTER_OBSTACLE", "0" },
 	{ "int", "SE_FALL", "0" },
 	{ "int", "SE_LAND", "0" },
+	{ "int", "PIGCOP_IDLE_WAITINGTPLAYER", "0" },
+	{ "int", "PIGCOP_IDLE_ROAR", "1" },
 	{ "const char * const", "RESULT_STRING", "<RESULT>" },
 	{ "int", "OP_RETURN", "0" },
 	{ "int", "OP_UINC_F", "1" },
@@ -1288,7 +1290,13 @@ static enumValueInfo_t stopEvent_t_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t enum_57_typeInfo[] = {
+static enumValueInfo_t PIGCOP_IDLE_STATE_typeInfo[] = {
+	{ "PIGCOP_IDLE_WAITINGTPLAYER", 0 },
+	{ "PIGCOP_IDLE_ROAR", 1 },
+	{ NULL, 0 }
+};
+
+static enumValueInfo_t enum_58_typeInfo[] = {
 	{ "OP_RETURN", 0 },
 	{ "OP_UINC_F", 1 },
 	{ "OP_UINCP_F", 2 },
@@ -1474,7 +1482,8 @@ static enumTypeInfo_t enumTypeInfo[] = {
 	{ "talkState_t", talkState_t_typeInfo },
 	{ "moveStatus_t", moveStatus_t_typeInfo },
 	{ "stopEvent_t", stopEvent_t_typeInfo },
-	{ "enum_57", enum_57_typeInfo },
+	{ "PIGCOP_IDLE_STATE", PIGCOP_IDLE_STATE_typeInfo },
+	{ "enum_58", enum_58_typeInfo },
 	{ NULL, NULL }
 };
 
@@ -5085,6 +5094,7 @@ static classVariableInfo_t idTestModel_typeInfo[] = {
 };
 
 static classVariableInfo_t DnAI_typeInfo[] = {
+	{ ": idActor *", "target", (intptr_t)(&((DnAI *)0)->target), sizeof( ((DnAI *)0)->target ) },
 	{ NULL, 0 }
 };
 

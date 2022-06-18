@@ -3,6 +3,8 @@
 
 #pragma once
 
+class idPlayer;
+
 //
 // DnAI
 //
@@ -13,7 +15,12 @@ public:
 	void					Spawn(void);
 	void					Think(void);
 protected:
-	void					SetAnimation(const char* anim);
+	void					SetAnimation(const char* anim, bool loop);
+
+	idPlayer*				FindNewTarget();
+
+protected:
+	idActor*				target;
 };
 
 #include "Pigcop.h"
