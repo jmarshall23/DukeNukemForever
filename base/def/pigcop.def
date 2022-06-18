@@ -19,6 +19,8 @@ entityDef monster_pigcop
 	"spawnclass"					"DnPigcop"
 	"model"							"pigcop"
 	"editor_usage"					"Pigcop Monster"
+
+	"model_offset"					"0 0 36"
 	
 	"editor_color"     "1 0 0"
 	"editor_maxs"      "16 16 64"

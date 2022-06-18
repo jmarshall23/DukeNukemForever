@@ -52,8 +52,10 @@ void DnAI::SetupPhysics(void)
 	idVec3 spawnOrigin = GetOrigin();
 	idClipModel* clipModel = new idClipModel();
 
+	idVec3 offset = spawnArgs.GetVector("model_offset", "0 0 0");
+
 	physicsObj.SetSelf(this);
-	idClipModel* newClip = new idClipModel(idTraceModel(renderEntity.hModel->Bounds()));
+	idClipModel* newClip = new idClipModel(idTraceModel(renderEntity.hModel->Bounds() + offset));
 	newClip->Translate(spawnOrigin);
 	physicsObj.SetClipModel(newClip, 1.0f);
 	physicsObj.SetMass(spawnArgs.GetFloat("mass", "100"));
