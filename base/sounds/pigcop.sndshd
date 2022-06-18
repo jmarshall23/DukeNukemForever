@@ -18,3 +18,10 @@ pig_roam3
 	maxdistance 50
 	sounds/monsters/pigcop/PIGRM.ogg
 }
+
+pig_awake
+{
+	volume 2
+	maxdistance 75
+	sounds/monsters/pigcop/PIGRG.ogg
+}

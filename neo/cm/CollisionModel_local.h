@@ -297,6 +297,12 @@ public:
 	// frees all the collision models
 	void			FreeMap( void );
 
+// jmarshall
+	int				GetNumInlinedProcClipModels(void) {
+		return numInlinedProcClipModels;
+	};
+// jmarshall end
+
 	// get clip handle for model
 	cmHandle_t		LoadModel( const char *modelName, const bool precache );
 	// sets up a trace model for collision with other trace models
@@ -426,6 +432,9 @@ private:			// CollisionMap_load.cpp
 					// loading of proc BSP tree
 	void			ParseProcNodes( idLexer *src );
 	void			LoadProcBSP( const char *name );
+// jmarshall
+	void			CheckProcModelSurfClip(idLexer* src);
+// jmarshall end
 					// removal of contained polygons
 	int				R_ChoppedAwayByProcBSP( int nodeNum, idFixedWinding *w, const idVec3 &normal, const idVec3 &origin, const float radius );
 	int				ChoppedAwayByProcBSP( const idFixedWinding &w, const idPlane &plane, int contents );
@@ -521,6 +530,8 @@ private:			// collision map data
 	contactInfo_t *	contacts;
 	int				maxContacts;
 	int				numContacts;
+
+	int				numInlinedProcClipModels;
 };
 
 // for debugging

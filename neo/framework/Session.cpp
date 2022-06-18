@@ -1659,13 +1659,14 @@ void idSessionLocal::ExecuteMapChange( bool noFadeWipe ) {
 		SetBytesNeededForMapLoad( mapString.c_str(), fileSystem->GetReadCount() );
 	}
 	uiManager->EndLevelLoad();
-
-	if ( !idAsyncNetwork::IsActive() && !loadingSaveGame ) {
-		// run a few frames to allow everything to settle
-		for ( i = 0; i < 10; i++ ) {
-			game->RunFrame( mapSpawnData.mapSpawnUsercmd );
-		}
-	}
+// jmarshall
+	//if ( !idAsyncNetwork::IsActive() && !loadingSaveGame ) {
+	//	// run a few frames to allow everything to settle
+	//	for ( i = 0; i < 10; i++ ) {
+	//		game->RunFrame( mapSpawnData.mapSpawnUsercmd );
+	//	}
+	//}
+// jmarshall end
 
 	common->Printf ("-----------------------------------\n");
 

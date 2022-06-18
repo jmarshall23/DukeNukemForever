@@ -10020,8 +10020,26 @@ intptr_t DnAI::Invoke(const char *functionName, void *param1) {
 	if(functionNameHash == 285588) { // CurrentlyPlayingSound
 		return (intptr_t)CurrentlyPlayingSound();
 	};
+	if(functionNameHash == 131961) { // FacingIdeal
+		return (intptr_t)FacingIdeal();
+	};
+	if(functionNameHash == 123722) { // IsOnGround
+		return (intptr_t)IsOnGround();
+	};
 	if(functionNameHash == 162541) { // FindNewTarget
 		return (intptr_t)FindNewTarget();
+	};
+	if(functionNameHash == 51250) { // Turn
+		Turn();
+		return 0;
+	};
+	if(functionNameHash == 158015) { // SetupPhysics
+		SetupPhysics();
+		return 0;
+	};
+	if(functionNameHash == 111283) { // SlideMove
+		SlideMove();
+		return 0;
 	};
 	return __super::Invoke(functionName, param1);
 
@@ -10038,7 +10056,22 @@ bool DnAI::HasNativeFunction(const char *functionName) {
 	if(functionNameHash == 285588) { // CurrentlyPlayingSound
 		return true;
 	};
+	if(functionNameHash == 131961) { // FacingIdeal
+		return true;
+	};
+	if(functionNameHash == 123722) { // IsOnGround
+		return true;
+	};
 	if(functionNameHash == 162541) { // FindNewTarget
+		return true;
+	};
+	if(functionNameHash == 51250) { // Turn
+		return true;
+	};
+	if(functionNameHash == 158015) { // SetupPhysics
+		return true;
+	};
+	if(functionNameHash == 111283) { // SlideMove
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);
@@ -10054,6 +10087,9 @@ intptr_t DnPigcop::Invoke(const char *functionName, void *param1) {
 	if(functionNameHash == 126066) { // state_Idle
 		return (intptr_t)state_Idle((stateParms_t *)param1);
 	};
+	if(functionNameHash == 295469) { // state_ApproachingEnemy
+		return (intptr_t)state_ApproachingEnemy((stateParms_t *)param1);
+	};
 	return __super::Invoke(functionName, param1);
 
 };
@@ -10064,6 +10100,9 @@ bool DnPigcop::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 126066) { // state_Idle
+		return true;
+	};
+	if(functionNameHash == 295469) { // state_ApproachingEnemy
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);

@@ -102,6 +102,158 @@ void idCollisionModelManagerLocal::ParseProcNodes( idLexer *src ) {
 	src->ExpectTokenString( "}" );
 }
 
+typedef struct basicSurf_s {
+	idDrawVert* verts;
+	int					numVerts;
+	glIndex_t* indices;
+	int					numIndices;
+	const idMaterial* mat;
+} basicSurf_t;
+/*
+================
+idCollisionModelManagerLocal::CheckProcModelSurfClip
+================
+*/
+// jmarshall
+void idCollisionModelManagerLocal::CheckProcModelSurfClip(idLexer* src) {
+	idToken				token;
+	int					i, j;
+	idList<basicSurf_t> basicSurfs;
+	bool				parseOver = false;
+
+	src->ExpectTokenString("{");
+
+	// parse the name
+	//unfortunately, this isn't designer-recognizable and tends to bunch things up, so can't be used instead of material name
+	//however, we can expect only _area* models to contain inlined geometry
+	src->ExpectAnyToken(&token);
+	if (token.Cmpn("_area", strlen("_area")) != 0) {
+		parseOver = true;
+	}
+
+	int numSurfaces = src->ParseInt();
+	if (numSurfaces < 0) {
+		src->Error("idCollisionModelManagerLocal::CheckProcModelSurfClip: bad numSurfaces");
+	}
+
+	cm_node_t* node;
+	cm_model_t* model = NULL;
+	idBounds totalBounds;
+
+	totalBounds.Zero();
+
+	for (i = 0; i < numSurfaces; i++) {
+		src->ExpectTokenString("{");
+
+		src->ExpectAnyToken(&token);
+
+		const idMaterial* mat = declManager->FindMaterial(token);
+
+		//we have a surface we want to use
+		if (!model) {
+			model = AllocModel();
+
+			model->name = va("%s%i", PROC_CLIPMODEL_STRING_PRFX, numInlinedProcClipModels);
+			node = AllocNode(model, NODE_BLOCK_SIZE_SMALL);
+			node->planeType = -1;
+			model->node = node;
+
+			model->maxVertices = 0;
+			model->numVertices = 0;
+			model->maxEdges = 0;
+			model->numEdges = 0;
+		}
+
+		int numVerts = src->ParseInt();
+		int numIndices = src->ParseInt();
+
+		model->maxVertices += numVerts;
+		model->maxEdges += numIndices;
+
+		idDrawVert* verts = (idDrawVert*)Mem_Alloc(numVerts * sizeof(idDrawVert));
+		glIndex_t* indices = (glIndex_t*)Mem_Alloc(numIndices * sizeof(glIndex_t));
+
+		//parse the actual verts and tris
+		for (j = 0; j < numVerts; j++) {
+			float	vec[8];
+
+			src->Parse1DMatrix(8, vec);
+
+			verts[j].xyz[0] = vec[0];
+			verts[j].xyz[1] = vec[1];
+			verts[j].xyz[2] = vec[2];
+			verts[j].st[0] = vec[3];
+			verts[j].st[1] = vec[4];
+			verts[j].normal[0] = vec[5];
+			verts[j].normal[1] = vec[6];
+			verts[j].normal[2] = vec[7];
+		}
+
+		for (j = 0; j < numIndices; j++) {
+			indices[j] = src->ParseInt();
+		}
+		src->ExpectTokenString("}");
+
+		//calculate a bounds for the surface
+		idBounds surfBounds;
+		surfBounds.Zero();
+		SIMDProcessor->MinMax(surfBounds[0], surfBounds[1], verts, numVerts);
+		totalBounds.AddBounds(surfBounds);
+
+		basicSurf_t bs;
+		bs.verts = verts;
+		bs.numVerts = numVerts;
+		bs.indices = indices;
+		bs.numIndices = numIndices;
+		bs.mat = mat;
+		basicSurfs.Append(bs);
+	}
+
+	src->ExpectTokenString("}");
+
+	if (model) { //we put together a model from the proc surfs
+		idFixedWinding w;
+		idPlane plane;
+
+		assert(basicSurfs.Num() > 0);
+
+		model->vertices = (cm_vertex_t*)Mem_ClearedAlloc(model->maxVertices * sizeof(cm_vertex_t));
+		model->edges = (cm_edge_t*)Mem_ClearedAlloc(model->maxEdges * sizeof(cm_edge_t));
+
+		assert(cm_vertexHash && cm_edgeHash); //after all, this should only be called while building models
+		cm_vertexHash->ResizeIndex(model->maxVertices);
+		cm_edgeHash->ResizeIndex(model->maxEdges);
+		ClearHash(totalBounds);
+
+		for (i = 0; i < basicSurfs.Num(); i++) {
+			for (j = 0; j < basicSurfs[i].numIndices; j += 3) {
+				w.Clear();
+				w += basicSurfs[i].verts[basicSurfs[i].indices[j + 2]].xyz;
+				w += basicSurfs[i].verts[basicSurfs[i].indices[j + 1]].xyz;
+				w += basicSurfs[i].verts[basicSurfs[i].indices[j + 0]].xyz;
+				w.GetPlane(plane);
+				plane = -plane;
+				PolygonFromWinding(model, &w, plane, basicSurfs[i].mat, 1);
+			}
+			//free up the temp proc surf memory now that we're done with it
+			Mem_Free(basicSurfs[i].verts);
+			Mem_Free(basicSurfs[i].indices);
+		}
+
+		// create a BSP tree for the model
+		model->node = CreateAxialBSPTree(model, model->node);
+
+		model->isConvex = false;
+
+		FinishModel(model);
+
+		//add our new clipmodel to the list
+		models[PROC_CLIPMODEL_INDEX_START + numInlinedProcClipModels] = model;
+		numInlinedProcClipModels++;
+	}
+}
+// jmarshall end
+
 /*
 ================
 idCollisionModelManagerLocal::LoadProcBSP
@@ -137,7 +289,7 @@ void idCollisionModelManagerLocal::LoadProcBSP( const char *name ) {
 		}
 
 		if ( token == "model" ) {
-			src->SkipBracedSection();
+			CheckProcModelSurfClip(src);
 			continue;
 		}
 
@@ -192,6 +344,7 @@ void idCollisionModelManagerLocal::Clear( void ) {
 	contacts = NULL;
 	maxContacts = 0;
 	numContacts = 0;
+	numInlinedProcClipModels = 0;
 }
 
 /*
@@ -3310,6 +3463,10 @@ void idCollisionModelManagerLocal::BuildModels( const idMapFile *mapFile ) {
 			models[numModels] = CollisionModelForMapEntity( mapEnt );
 			if ( models[ numModels] ) {
 				numModels++;
+			}
+
+			if (numInlinedProcClipModels && numModels == PROC_CLIPMODEL_INDEX_START) {
+				numModels += numInlinedProcClipModels;
 			}
 		}
 

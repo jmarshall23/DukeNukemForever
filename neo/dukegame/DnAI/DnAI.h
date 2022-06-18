@@ -44,13 +44,41 @@ public:
 	void					Think(void);
 
 	bool					CurrentlyPlayingSound();
+
+	bool					FacingIdeal();
+	bool					TurnToward(float yaw);
+	bool					TurnToward(const idVec3& pos);
+
+	bool					IsOnGround() { return AI_ONGROUND; }
+	bool					MoveToPosition(const idVec3& pos);
 protected:
 	void					SetAnimation(const char* anim, bool loop);
 
 	idPlayer*				FindNewTarget();
 
+	void					StopMove(moveStatus_t status);
+
 protected:
 	idActor*				target;
+	idVec3					targetLastSeenLocation;
+	bool					isTargetVisible;
+
+	idPhysics_Monster		physicsObj;
+
+	float					ideal_yaw;
+	float					current_yaw;
+	float					turnRate;
+	float					turnVel;
+private:
+	void					Turn();
+	void					SetupPhysics(void);
+	void					SlideMove();
+	bool					ReachedPos(const idVec3& pos, const moveCommand_t moveCommand) const;
+
+	idMoveState				move;
+
+	bool					AI_ONGROUND;
+	bool					AI_BLOCKED;
 };
 
 #include "Pigcop.h"

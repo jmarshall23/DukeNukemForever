@@ -1069,9 +1069,16 @@ bool idClip::Translation( trace_t &results, const idVec3 &start, const idVec3 &e
 	trm = TraceModelForClipModel( mdl );
 
 	if ( !passEntity || passEntity->entityNumber != ENTITYNUM_WORLD ) {
+		idClip::numTranslations++;
+		collisionModelManager->Translation(&results, start, end, trm, trmAxis, contentMask, 0, vec3_origin, mat3_default);
+		results.c.entityNum = results.fraction != 1.0f ? ENTITYNUM_WORLD : ENTITYNUM_NONE;
+		if (results.fraction == 0.0f) {
+			return true;		// blocked immediately by the world
+		}
+
 		// test world
 		idClip::numTranslations++;
-		collisionModelManager->Translation( &results, start, end, trm, trmAxis, contentMask, 0, vec3_origin, mat3_default );
+		collisionModelManager->Translation( &results, start, end, trm, trmAxis, contentMask, PROC_CLIPMODEL_INDEX_START, vec3_origin, mat3_default );
 		results.c.entityNum = results.fraction != 1.0f ? ENTITYNUM_WORLD : ENTITYNUM_NONE;
 		if ( results.fraction == 0.0f ) {
 			return true;		// blocked immediately by the world
@@ -1367,7 +1374,11 @@ int idClip::Contacts( contactInfo_t *contacts, const int maxContacts, const idVe
 	if ( !passEntity || passEntity->entityNumber != ENTITYNUM_WORLD ) {
 		// test world
 		idClip::numContacts++;
-		numContacts = collisionModelManager->Contacts( contacts, maxContacts, start, dir, depth, trm, trmAxis, contentMask, 0, vec3_origin, mat3_default );
+		numContacts = collisionModelManager->Contacts(contacts, maxContacts, start, dir, depth, trm, trmAxis, contentMask, 0, vec3_origin, mat3_default);
+
+		// test world
+		idClip::numContacts++;
+		numContacts += collisionModelManager->Contacts( contacts + numContacts, maxContacts, start, dir, depth, trm, trmAxis, contentMask, PROC_CLIPMODEL_INDEX_START, vec3_origin, mat3_default );
 	} else {
 		numContacts = 0;
 	}

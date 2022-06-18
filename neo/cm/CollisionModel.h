@@ -84,6 +84,11 @@ typedef int cmHandle_t;
 #define CM_BOX_EPSILON		1.0f			// should always be larger than clip epsilon
 #define CM_MAX_TRACE_DIST	4096.0f			// maximum distance a trace model may be traced, point traces are unlimited
 
+// jmarshall
+#define PROC_CLIPMODEL_INDEX_START		1
+#define PROC_CLIPMODEL_STRING_PRFX		"inlined_proc_clip_"
+// jmarshall end
+
 class idCollisionModelManager {
 public:
 	virtual					~idCollisionModelManager( void ) {}
@@ -141,6 +146,8 @@ public:
 	virtual void			ListModels( void ) = 0;
 	// Writes a collision model file for the given map entity.
 	virtual bool			WriteCollisionModelForMapEntity( const idMapEntity *mapEnt, const char *filename, const bool testTraceModel = true ) = 0;
+
+	virtual int				GetNumInlinedProcClipModels(void) = 0;
 };
 
 extern idCollisionModelManager *		collisionModelManager;

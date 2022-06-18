@@ -18,9 +18,11 @@ class DnPigcop : public DnAI
 public:
 	stateResult_t				state_Begin(stateParms_t* parms);
 	stateResult_t				state_Idle(stateParms_t* parms);
+	stateResult_t				state_ApproachingEnemy(stateParms_t* parms);
 
 private:
 	const idSoundShader* pig_roam1;
 	const idSoundShader* pig_roam2;
 	const idSoundShader* pig_roam3;
+	const idSoundShader* pig_awake;
 };
