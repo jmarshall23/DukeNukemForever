@@ -1243,7 +1243,9 @@ bool idActor::CanSee( idEntity *ent, bool useFov ) const {
 
 	eye = GetEyePosition();
 
-	gameLocal.clip.TracePoint( tr, eye, toPos, MASK_OPAQUE, this );
+// jmarshall - changed to MASK_SOLID, the bug was cansee was always passing in e1l1 with MASK_OPAQUE
+	gameLocal.clip.TracePoint( tr, eye, toPos, MASK_SOLID, this );
+// jmarshall end
 	if ( tr.fraction >= 1.0f || ( gameLocal.GetTraceEntity( tr ) == ent ) ) {
 		return true;
 	}
