@@ -25,3 +25,10 @@ pig_awake
 	maxdistance 75
 	sounds/monsters/pigcop/PIGRG.ogg
 }
+
+pig_fire_sound
+{
+	volume 2
+	maxdistance 75
+	sounds/weapons/shotgun/SHOTGUN7.ogg
+}

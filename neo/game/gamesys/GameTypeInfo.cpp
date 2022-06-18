@@ -7978,6 +7978,18 @@ intptr_t DnAI::Invoke(const char *functionName, void *param1) {
 	if(functionNameHash == 162541) { // FindNewTarget
 		return (intptr_t)FindNewTarget();
 	};
+	if(functionNameHash == 181357) { // ResetAnimation
+		ResetAnimation();
+		return 0;
+	};
+	if(functionNameHash == 101603) { // StopMove
+		StopMove();
+		return 0;
+	};
+	if(functionNameHash == 250714) { // GetCurrentAnimation
+		GetCurrentAnimation();
+		return 0;
+	};
 	if(functionNameHash == 51250) { // Turn
 		Turn();
 		return 0;
@@ -8017,6 +8029,15 @@ bool DnAI::HasNativeFunction(const char *functionName) {
 	if(functionNameHash == 162541) { // FindNewTarget
 		return true;
 	};
+	if(functionNameHash == 181357) { // ResetAnimation
+		return true;
+	};
+	if(functionNameHash == 101603) { // StopMove
+		return true;
+	};
+	if(functionNameHash == 250714) { // GetCurrentAnimation
+		return true;
+	};
 	if(functionNameHash == 51250) { // Turn
 		return true;
 	};
@@ -8042,6 +8063,9 @@ intptr_t DnPigcop::Invoke(const char *functionName, void *param1) {
 	if(functionNameHash == 295469) { // state_ApproachingEnemy
 		return (intptr_t)state_ApproachingEnemy((stateParms_t *)param1);
 	};
+	if(functionNameHash == 211868) { // state_ShootEnemy
+		return (intptr_t)state_ShootEnemy((stateParms_t *)param1);
+	};
 	return __super::Invoke(functionName, param1);
 
 };
@@ -8055,6 +8079,9 @@ bool DnPigcop::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 295469) { // state_ApproachingEnemy
+		return true;
+	};
+	if(functionNameHash == 211868) { // state_ShootEnemy
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);

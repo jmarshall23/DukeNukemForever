@@ -126,17 +126,12 @@ bool DnAI::TurnToward(const idVec3& pos)
 	idVec3 local_dir;
 	float lengthSqr;
 
-	dir = pos - physicsObj.GetOrigin();
+	dir = physicsObj.GetOrigin() - pos;
 	physicsObj.GetGravityAxis().ProjectVector(dir, local_dir);
 	local_dir.z = 0.0f;
-	lengthSqr = local_dir.LengthSqr();
-	if (lengthSqr > Square(2.0f) || (lengthSqr > Square(0.1f) && target == NULL))
-	{
-		ideal_yaw = idMath::AngleNormalize180(local_dir.ToYaw());
-	}
+	ideal_yaw = local_dir.ToYaw();
 
-	bool result = FacingIdeal();
-	return result;
+	return true;
 }
 
 /*
@@ -510,5 +505,13 @@ void DnAI::Think(void)
 
 	stateThread.Execute();
 
-	SlideMove();
+	if (move.moveCommand != MOVE_NONE)
+	{
+		SlideMove();
+	}
+	else
+	{
+		current_yaw = ideal_yaw;
+		viewAxis = idAngles(0, ideal_yaw, 0).ToMat3();
+	}
 }

@@ -175,8 +175,10 @@ protected:
 
 	idPlayer*				FindNewTarget();
 
-	void					StopMove(moveStatus_t status);
+	void					ResetAnimation() { currentAnimation = ""; }
+	void					StopMove() { StopMove(MOVE_STATUS_DONE); physicsObj.SetLinearVelocity(vec3_zero); }
 
+	idStr					GetCurrentAnimation() { return currentAnimation; }
 protected:
 	idActor*				target;
 	idVec3					targetLastSeenLocation;
@@ -189,12 +191,13 @@ protected:
 	float					turnRate;
 	float					turnVel;
 
-
-	idMoveState				move;
-
 	idList<idVec3>			pathWaypoints;
 	int						waypointId;
 private:
+	void					StopMove(moveStatus_t status);
+
+	idMoveState				move;
+
 	void					Turn();
 	void					SetupPhysics(void);
 	void					SlideMove();

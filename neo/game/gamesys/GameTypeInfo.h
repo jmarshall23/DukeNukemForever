@@ -4695,9 +4695,9 @@ static classVariableInfo_t DnAI_typeInfo[] = {
 	{ "float", "current_yaw", (intptr_t)(&((DnAI *)0)->current_yaw), sizeof( ((DnAI *)0)->current_yaw ) },
 	{ "float", "turnRate", (intptr_t)(&((DnAI *)0)->turnRate), sizeof( ((DnAI *)0)->turnRate ) },
 	{ "float", "turnVel", (intptr_t)(&((DnAI *)0)->turnVel), sizeof( ((DnAI *)0)->turnVel ) },
-	{ "idMoveState", "move", (intptr_t)(&((DnAI *)0)->move), sizeof( ((DnAI *)0)->move ) },
 	{ "idList < idVec3 >", "pathWaypoints", (intptr_t)(&((DnAI *)0)->pathWaypoints), sizeof( ((DnAI *)0)->pathWaypoints ) },
 	{ "int", "waypointId", (intptr_t)(&((DnAI *)0)->waypointId), sizeof( ((DnAI *)0)->waypointId ) },
+	{ "idMoveState", "move", (intptr_t)(&((DnAI *)0)->move), sizeof( ((DnAI *)0)->move ) },
 	{ "bool", "AI_ONGROUND", (intptr_t)(&((DnAI *)0)->AI_ONGROUND), sizeof( ((DnAI *)0)->AI_ONGROUND ) },
 	{ "bool", "AI_BLOCKED", (intptr_t)(&((DnAI *)0)->AI_BLOCKED), sizeof( ((DnAI *)0)->AI_BLOCKED ) },
 	{ "idStr", "currentAnimation", (intptr_t)(&((DnAI *)0)->currentAnimation), sizeof( ((DnAI *)0)->currentAnimation ) },
@@ -4709,6 +4709,7 @@ static classVariableInfo_t DnPigcop_typeInfo[] = {
 	{ "const idSoundShader *", "pig_roam2", (intptr_t)(&((DnPigcop *)0)->pig_roam2), sizeof( ((DnPigcop *)0)->pig_roam2 ) },
 	{ "const idSoundShader *", "pig_roam3", (intptr_t)(&((DnPigcop *)0)->pig_roam3), sizeof( ((DnPigcop *)0)->pig_roam3 ) },
 	{ "const idSoundShader *", "pig_awake", (intptr_t)(&((DnPigcop *)0)->pig_awake), sizeof( ((DnPigcop *)0)->pig_awake ) },
+	{ "const idSoundShader *", "fire_sound", (intptr_t)(&((DnPigcop *)0)->fire_sound), sizeof( ((DnPigcop *)0)->fire_sound ) },
 	{ NULL, 0 }
 };
 

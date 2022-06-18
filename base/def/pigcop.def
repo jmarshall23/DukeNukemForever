@@ -12,6 +12,8 @@ model pigcop
 	anim walk 			models/characters/pigcop/pigcop_walk.md5anim
 
 	anim roar			models/characters/pigcop/pigcop_A_Roar.md5anim
+
+	anim fire			models/characters/pigcop/pigcop_T_Gen2HandFire.md5anim
 }
 
 entityDef monster_pigcop

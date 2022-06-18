@@ -2,7 +2,9 @@
 //
 
 #include "precompiled.h"
-#include "../../game/Game_local.h""
+#include "../../game/Game_local.h"
+
+#define PIGCOP_FIRE_DISTANCE			400
 
 CLASS_DECLARATION(DnAI, DnPigcop)
 END_CLASS
@@ -22,8 +24,51 @@ stateResult_t DnPigcop::state_Begin(stateParms_t* parms)
 	pig_roam2 = declManager->FindSound("pig_roam2", false);
 	pig_roam3 = declManager->FindSound("pig_roam3", false);
 	pig_awake = declManager->FindSound("pig_awake", false);
+	fire_sound = declManager->FindSound("pig_fire_sound", false);
 
 	return SRESULT_DONE;
+}
+
+/*
+==============
+DnPigcop::state_ShootEnemy
+==============
+*/
+stateResult_t DnPigcop::state_ShootEnemy(stateParms_t* parms)
+{
+	// If we are firing, don't make any new decisions until its done.
+	if ((animator.IsAnimating(gameLocal.time) || CurrentlyPlayingSound()) && GetCurrentAnimation() == "fire")
+	{
+		TurnToward(target->GetOrigin());
+		animator.RemoveOriginOffset(true);
+		return SRESULT_WAIT;
+	}
+
+	float distToEnemy = 0.0f;
+	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
+
+	if (distToEnemy < PIGCOP_FIRE_DISTANCE + 25)
+	{
+		if (!isTargetVisible)
+		{
+			Event_SetState("state_ApproachingEnemy");
+			return SRESULT_DONE;
+		}
+
+		TurnToward(target->GetOrigin());
+		ResetAnimation();
+		SetAnimation("fire", false);
+		StartSoundShader(fire_sound, SND_CHANNEL_ANY, 0, false, nullptr);
+
+		return SRESULT_WAIT;
+	}
+	else
+	{
+		Event_SetState("state_ApproachingEnemy");
+		return SRESULT_DONE;
+	}
+
+	return SRESULT_WAIT;
 }
 
 /*
@@ -37,13 +82,17 @@ stateResult_t DnPigcop::state_ApproachingEnemy(stateParms_t* parms)
 
 	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
 
-	if (distToEnemy > 200)
+	if (distToEnemy > PIGCOP_FIRE_DISTANCE)
 	{
 		UpdatePathToPosition(target->GetOrigin());
-
 		SetAnimation("walk", true);
 	}
-	
+	else
+	{
+		StopMove();
+		Event_SetState("state_ShootEnemy");
+		return SRESULT_DONE;
+	}
 
 	return SRESULT_WAIT;
 }
