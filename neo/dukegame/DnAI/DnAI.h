@@ -69,16 +69,20 @@ protected:
 	float					current_yaw;
 	float					turnRate;
 	float					turnVel;
+
+
+	idMoveState				move;
+
 private:
 	void					Turn();
 	void					SetupPhysics(void);
 	void					SlideMove();
 	bool					ReachedPos(const idVec3& pos, const moveCommand_t moveCommand) const;
 
-	idMoveState				move;
-
 	bool					AI_ONGROUND;
 	bool					AI_BLOCKED;
+
+	idStr					currentAnimation;
 };
 
 #include "Pigcop.h"

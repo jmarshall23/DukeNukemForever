@@ -37,7 +37,7 @@ stateResult_t DnPigcop::state_ApproachingEnemy(stateParms_t* parms)
 
 	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
 
-	if (distToEnemy > 600)
+	if (distToEnemy > 200)
 	{
 		idList<idVec3> waypoints;
 		if (!gameLocal.GetNavigation()->GetPathBetweenPoints(GetOrigin(), target->GetOrigin(), waypoints))
@@ -46,7 +46,9 @@ stateResult_t DnPigcop::state_ApproachingEnemy(stateParms_t* parms)
 			return SRESULT_WAIT;
 		}
 
-	//	MoveToPosition(waypoints[0]);
+		MoveToPosition(waypoints[1]);
+
+		SetAnimation("walk", true);
 	}
 	
 

@@ -5110,6 +5110,7 @@ static classVariableInfo_t DnAI_typeInfo[] = {
 	{ "idMoveState", "move", (intptr_t)(&((DnAI *)0)->move), sizeof( ((DnAI *)0)->move ) },
 	{ "bool", "AI_ONGROUND", (intptr_t)(&((DnAI *)0)->AI_ONGROUND), sizeof( ((DnAI *)0)->AI_ONGROUND ) },
 	{ "bool", "AI_BLOCKED", (intptr_t)(&((DnAI *)0)->AI_BLOCKED), sizeof( ((DnAI *)0)->AI_BLOCKED ) },
+	{ "idStr", "currentAnimation", (intptr_t)(&((DnAI *)0)->currentAnimation), sizeof( ((DnAI *)0)->currentAnimation ) },
 	{ NULL, 0 }
 };
 

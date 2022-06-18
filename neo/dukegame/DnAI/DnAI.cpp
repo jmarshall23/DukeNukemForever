@@ -273,7 +273,7 @@ void DnAI::SlideMove()
 	idVec3  predictedPos = oldorigin + vel * AI_SEEK_PREDICTION;
 
 	// seek the goal position
-	goalDelta = goalPos - predictedPos;
+	//goalDelta = goalPos - predictedPos;
 	vel -= vel * AI_FLY_DAMPENING * MS2SEC(gameLocal.time - gameLocal.previousTime);
 	vel += goalDelta * MS2SEC(gameLocal.time - gameLocal.previousTime);
 
@@ -355,6 +355,9 @@ void DnAI::SetAnimation(const char* name, bool loop)
 
 	animNum = animator.GetAnim(name);
 
+	if (currentAnimation == name)
+		return;
+
 	if (!animNum) {
 		gameLocal.Printf("Animation '%s' not found.\n", name);
 		return;
@@ -364,6 +367,8 @@ void DnAI::SetAnimation(const char* name, bool loop)
 	//starttime = gameLocal.time;
 	//animtime = animator.AnimLength(anim);
 	//headAnim = 0;
+
+	currentAnimation = name;
 
 	if (loop)
 	{
