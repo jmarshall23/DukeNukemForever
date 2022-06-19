@@ -527,7 +527,7 @@ public:
 	idCamera *				GetPrivateCameraView( void ) const { return privateCameraView; }
 	void					StartFxFov( float duration  );
 	void					UpdateHudWeapon( bool flashWeapon = true );
-	void					UpdateHudStats( idUserInterface *hud );
+	virtual void			UpdateHudStats( idUserInterface *hud );
 	void					UpdateHudAmmo( idUserInterface *hud );
 	void					Event_StopAudioLog( void );
 	void					StartAudioLog( void );

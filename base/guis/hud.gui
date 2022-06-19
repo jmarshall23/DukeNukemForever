@@ -1,6 +1,30 @@
-windowDef Desktop {
-   rect      0, 0, 640, 480
-
-   backcolor 0, 0, 0, 0
-   nocursor  1
+windowDef Desktop
+{
+	rect	0, 0, 1280, 720
+	backcolor	0, 0, 0, 0
+	nocursor	1
+	windowDef unnamed
+	{
+		rect	34,620,53,33
+		visible	1
+		forecolor	1,1,1,1
+		text	"Ego"
+		textscale	0.5
+	}
+	windowDef unnamed1
+	{
+		rect	1169,627,106,33
+		visible	1
+		forecolor	1,1,1,1
+		text	"Ammo"
+		textscale	0.5
+	}
+	windowDef unnamed2
+	{
+		rect	90,622,68,33
+		visible	1
+		forecolor	1,1,1,1
+		text	"gui::player_ego"
+		textscale	0.5
+	}
 }

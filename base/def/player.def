@@ -2,8 +2,8 @@ model model_player {
       // mesh                    "models/joint.md5mesh" // TODO!
 }
 
-entityDef player_doommarine {
-   "spawnclass"   "idPlayer"
+entityDef player_dukenukem {
+   "spawnclass"   "DukePlayer"
    "scriptobject" "player"
 
    "hud"                "guis/hud.gui"
@@ -36,6 +36,6 @@ entityDef player_doommarine {
    //"snd_heartbeat_dying" "electrical_sparks"
 }
 
-entityDef player_doommarine_mp {
-  "inherit" "player_doommarine"
+entityDef player_dukenukem_mp {
+  "inherit" "player_dukenukem"
 }

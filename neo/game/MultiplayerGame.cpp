@@ -3673,7 +3673,7 @@ void idMultiplayerGame::Precache( void ) {
 	if ( !gameLocal.isMultiplayer ) {
 		return;
 	}
-	gameLocal.FindEntityDefDict( "player_doommarine", false );;
+	gameLocal.FindEntityDefDict( "player_dukenukem", false );;
 	
 	// skins
 	idStr str = cvarSystem->GetCVarString( "mod_validSkins" );
@@ -3868,7 +3868,7 @@ void idMultiplayerGame::VoiceChat( const idCmdArgs &args, bool team ) {
 	}
 
 	voc = args.Argv( 1 );
-	spawnArgs = gameLocal.FindEntityDefDict( "player_doommarine", false );
+	spawnArgs = gameLocal.FindEntityDefDict( "player_dukenukem", false );
 	keyval = spawnArgs->MatchPrefix( "snd_voc_", NULL );
 	index = 0;
 	while ( keyval ) {

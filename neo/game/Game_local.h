@@ -77,6 +77,7 @@ class idProgram;
 class idThread;
 class idEditEntities;
 class idLocationEntity;
+class DukePlayer;
 
 #define	MAX_CLIENTS				32
 #define	GENTITYNUM_BITS			12
@@ -819,6 +820,7 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 #include "anim/Anim_Testmodel.h"
 
 #include "../dukegame/DnAI/DnAI.h"
+#include "../dukegame/Player/DukePlayer.h"
 
 #include "script/Script_Compiler.h"
 #include "script/Script_Interpreter.h"

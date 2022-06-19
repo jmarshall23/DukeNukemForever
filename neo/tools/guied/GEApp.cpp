@@ -113,7 +113,7 @@ bool rvGEApp::Initialize ( void )
 	
 	// Create the main window
 	mMDIFrame = CreateWindow ( "QUAKE4_GUIEDITOR_CLASS", 
-							  "Quake IV GUI Editor", 
+							  "Duke Nukem GUI Editor", 
 							  WS_OVERLAPPEDWINDOW | WS_CLIPSIBLINGS, 
 							  CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, 
 							  NULL, NULL, mInstance, (LPVOID)this );

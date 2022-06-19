@@ -8088,6 +8088,18 @@ bool DnPigcop::HasNativeFunction(const char *functionName) {
 
 };
 
+intptr_t DukePlayer::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool DukePlayer::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	return __super::HasNativeFunction(functionName);
+
+};
+
 intptr_t idThread::Invoke(const char *functionName, void *param1) {
 	int functionNameHash = idStr::Hash(functionName);
 	if(functionNameHash == 149674) { // ManualDelete

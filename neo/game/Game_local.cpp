@@ -1334,7 +1334,7 @@ bool idGameLocal::InitFromSaveGame( const char *mapName, idRenderWorld *renderWo
 	g_skill.SetInteger( i );
 
 	// precache the player
-	FindEntityDef( "player_doommarine", false );
+	FindEntityDef( "player_dukenukem", false );
 
 	// precache any media specified in the map
 	for ( i = 0; i < mapFile->GetNumEntities(); i++ ) {
@@ -1981,13 +1981,13 @@ void idGameLocal::SpawnPlayer( int clientNum ) {
 	args.Set( "name", va( "player%d", clientNum + 1 ) );
 #ifdef CTF
 	if ( isMultiplayer && gameType != GAME_CTF )
-		args.Set( "classname", "player_doommarine_mp" );
+		args.Set( "classname", "player_dukenukem_mp" );
 	else if ( isMultiplayer && gameType == GAME_CTF )
-		args.Set( "classname", "player_doommarine_ctf" );
+		args.Set( "classname", "player_dukenukem_ctf" );
 	else
-		args.Set( "classname", "player_doommarine" );
+		args.Set( "classname", "player_dukenukem" );
 #else
-	args.Set( "classname", isMultiplayer ? "player_doommarine_mp" : "player_doommarine" );
+	args.Set( "classname", isMultiplayer ? "player_dukenukem_mp" : "player_dukenukem" );
 #endif
 	if ( !SpawnEntityDef( args, &ent ) || !entities[ clientNum ] ) {
 		Error( "Failed to spawn player as '%s'", args.GetString( "classname" ) );
