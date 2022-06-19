@@ -1,7 +1,7 @@
 // DeclRenderProg.cpp
 //
 
-#include "precompiled.h"
+
 #pragma hdrstop
 
 #include "tr_local.h"

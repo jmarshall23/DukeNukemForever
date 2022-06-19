@@ -1,7 +1,7 @@
 // Pigcop.cpp
 //
 
-#include "precompiled.h"
+
 #include "../../game/Game_local.h"
 
 #define PIGCOP_FIRE_DISTANCE			400

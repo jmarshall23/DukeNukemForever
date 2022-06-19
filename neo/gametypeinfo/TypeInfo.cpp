@@ -31,10 +31,10 @@ If you have questions concerning this license or the applicable additional terms
 #define protected	public
 #define _ALLOW_KEYWORD_MACROS
 
-#include "../../idlib/precompiled.h"
+#include "../idlib/precompiled.h"
 #pragma hdrstop
 
-#include "../Game_local.h"
+#include "../game/Game_local.h"
 
 #include "GameTypeInfo.h"				// Make sure this is up to date!
 

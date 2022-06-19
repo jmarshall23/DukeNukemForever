@@ -1,7 +1,7 @@
 // PlaneImport.cpp
 //
 
-#include "precompiled.h"
+
 
 struct PlaneGeometry_t
 {

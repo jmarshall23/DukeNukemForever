@@ -2,8 +2,8 @@
 
 #pragma warning(disable : 4189)
 #pragma warning(disable : 4505)
-#include "precompiled.h"
-#include "../Game_local.h"
+#include "../idlib/precompiled.h"
+#include "../game/Game_local.h"
 intptr_t idClass::Invoke(const char *functionName, void *param1) {
 	int functionNameHash = idStr::Hash(functionName);
 	if(functionNameHash == 153439) { // Event_Remove

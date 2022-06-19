@@ -26,7 +26,7 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-#include "precompiled.h"
+
 #include "../sys/sys_local.h"
 #pragma hdrstop
 
@@ -258,6 +258,9 @@ int main( int argc, char** argv ) {
 	idStr fileName, sourcePath;
 	idTypeInfoGen *generator;
 
+	// Disable this if working on typeinfogen!
+	chdir("../../../../");
+
 	idLib::common = common;
 	idLib::cvarSystem = cvarSystem;
 	idLib::fileSystem = fileSystem;
@@ -272,7 +275,7 @@ int main( int argc, char** argv ) {
 	generator = new idTypeInfoGen;
 
 	sourcePath = "game";
-	fileName = "../neo/game/gamesys/GameTypeInfo";
+	fileName = "../neo/gametypeinfo/GameTypeInfo";
 
 	if ( argc > 3 ) {
 		for ( int i = 3; i < argc; i++ ) {

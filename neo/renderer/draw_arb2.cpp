@@ -26,19 +26,10 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-#include "precompiled.h"
+
 #pragma hdrstop
 
 #include "tr_local.h"
-
-#include "cg_explicit.h"
-
-CGcontext cg_context;
-
-static void cg_error_callback( void ) {
-	CGerror i = cgGetError();
-	common->Printf( "Cg error (%d): %s\n", i, cgGetErrorString(i) );
-}
 
 /*
 =========================================================================================

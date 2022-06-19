@@ -1,7 +1,7 @@
 // Nav_Manager.cpp
 //
 
-#include "precompiled.h"
+
 #include "Nav_local.h"
 
 rvmNavigationManagerLocal navigationManagerLocal;

@@ -1,7 +1,7 @@
 // DnAI.cpp
 //
 
-#include "precompiled.h"
+
 #include "../../game/Game_local.h"
 
 CLASS_DECLARATION(idActor, DnAI)

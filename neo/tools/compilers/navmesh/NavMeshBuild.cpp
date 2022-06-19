@@ -1,7 +1,7 @@
 // NavMeshBuild.cpp
 //
 
-#include "precompiled.h"
+
 #include "../../../external/recast/include/Recast.h"
 #include "../../../navigation/Nav_local.h"
 

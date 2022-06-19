@@ -1,7 +1,7 @@
 // DeclRenderParm.cpp
 //
 
-#include "precompiled.h"
+
 
 /*
 ===================

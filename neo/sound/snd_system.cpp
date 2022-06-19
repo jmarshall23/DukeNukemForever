@@ -26,7 +26,7 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-#include "precompiled.h"
+
 #pragma hdrstop
 
 #include "snd_local.h"
@@ -1250,7 +1250,7 @@ void idSoundSystemLocal::FreeOpenALSource( ALuint handle ) {
 			// Reset source EAX ROOM level when freeing stereo source
 			if ( openalSources[i].stereo && alEAXSet ) {
 				long Room = EAXSOURCE_DEFAULTROOM;
-				alEAXSet( &EAXPROPERTYID_EAX_Source, EAXSOURCE_ROOM, openalSources[i].handle, &Room, sizeof(Room));
+			//	alEAXSet( &EAXPROPERTYID_EAX_Source, EAXSOURCE_ROOM, openalSources[i].handle, &Room, sizeof(Room));
 			}
 #endif
 			// Initialize structure

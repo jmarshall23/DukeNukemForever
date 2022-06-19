@@ -26,7 +26,7 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-#include "precompiled.h"
+
 #pragma hdrstop
 
 #include "../renderer/Image.h"
@@ -1250,7 +1250,7 @@ Com_EditDecls_f
 ==================
 */
 static void Com_EditDecls_f( const idCmdArgs &args ) {
-	DeclBrowserInit( NULL );
+	//DeclBrowserInit( NULL );
 }
 
 /*

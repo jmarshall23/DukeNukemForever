@@ -1,7 +1,7 @@
 // MtrGenerate.cpp
 //
 
-#include "precompiled.h"
+
 #pragma hdrstop
 
 void GenerateModelMaterials_f(const idCmdArgs& args)

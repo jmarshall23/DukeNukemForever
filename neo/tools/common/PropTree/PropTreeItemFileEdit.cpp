@@ -2,7 +2,7 @@
 
 
 //#include "stdafx.h"
-#include "precompiled.h"
+
 #pragma hdrstop
 
 #include "proptree.h"

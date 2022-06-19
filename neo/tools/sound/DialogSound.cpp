@@ -26,7 +26,7 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-#include "precompiled.h"
+
 #pragma hdrstop
 
 #include "../../game/game.h"
@@ -669,13 +669,13 @@ void CDialogSound::OnBtnEdit()
 	const idDecl *decl = declManager->FindDeclWithoutParsing( DECL_SOUND, strShader, false );
 
 	if ( decl ) {
-		DialogDeclEditor *declEditor;
-        
-		declEditor = new DialogDeclEditor;
-		declEditor->Create( IDD_DIALOG_DECLEDITOR, GetParent() );
-		declEditor->LoadDecl( const_cast<idDecl *>( decl ) );
-		declEditor->ShowWindow( SW_SHOW );
-		declEditor->SetFocus();
+	//	DialogDeclEditor *declEditor;
+    //    
+	//	declEditor = new DialogDeclEditor;
+	//	declEditor->Create( IDD_DIALOG_DECLEDITOR, GetParent() );
+	//	declEditor->LoadDecl( const_cast<idDecl *>( decl ) );
+	//	declEditor->ShowWindow( SW_SHOW );
+	//	declEditor->SetFocus();
 	}
 }
 

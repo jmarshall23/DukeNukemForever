@@ -2,7 +2,7 @@
 //
 
 #pragma hdrstop
-#include "precompiled.h"
+
 #include "../../game/game_local.h"
 
 CLASS_DECLARATION( rvmWeaponObject, dnWeaponPistol )

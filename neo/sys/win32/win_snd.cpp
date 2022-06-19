@@ -25,7 +25,7 @@ If you have questions concerning this license or the applicable additional terms
 
 ===========================================================================
 */
-#include "precompiled.h"
+
 #pragma hdrstop
 
 // DirectX SDK
@@ -38,7 +38,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "../../sound/snd_local.h"
 #include "win_local.h"
 
-#include "../../openal/idal.cpp"
+#include "../../openal/idal.hpp"
 
 #define SAFE_DELETE(p)       { if(p) { delete (p);     (p)=NULL; } }
 #define SAFE_DELETE_ARRAY(p) { if(p) { delete[] (p);   (p)=NULL; } }
