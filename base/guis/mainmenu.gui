@@ -1,45 +1,108 @@
 windowDef Desktop
-{ 
-   rect      0, 0, 1280,720
-   backcolor 0, 0, 0, 1
-   menugui      1
-   float introplaying	1
-   
-   onESC
-   {
-      set "cmd" "close" ;
+{
+	rect	0, 0, 1280,720
+	backcolor	0, 0, 0, 1
+	menugui	1
+	float	"introplaying"	1
 
-	if ("desktop::introplaying" == 1) { 
-		set "dnfIntroVideo::visible" "0" ;
-		set "desktop::introplaying" "0" ;
+	onESC {
+		set "cmd" "close" ;
+		
+		if ("desktop::introplaying" == 1) { 
+			set "dnfIntroVideo::visible" "0" ;
+			set "desktop::introplaying" "0" ;
+			set "dnfMainMenu::visible" "1";
+		}
 	}
-   }
-
 
 	onTime 0 {
 		set "cmd" "play DukeNukemTheme";
 	}
 
-     windowDef dnfIntroVideo {
-		rect		0,0,1280,720
-		notime		1
-		matcolor	1,1,1,1
-		background	"dnf_intro_video"
-		visible		1
-		noevents	1
-		
-		onVideoDone {
-			set "dnfIntroVideo::visible" "0" ;
-			set "desktop::introplaying" "0" ;			
-		}
-	}
-
 	onNamedEvent NoIntro {
 		set "dnfIntroVideo::visible" "0" ;
 		set "desktop::introplaying" "0" ;
+		set "dnfIntroVideo::visible" "1";
 	}
-	
+
 	onNamedEvent PlayIntro {
 		showcursor "0" ;
-	}	
+		set "dnfIntroVideo::visible" "1" ;
+	}
+
+	windowDef dnfIntroVideo
+	{
+		rect	0,0,1280,720
+		notime	1
+		matcolor	1,1,1,1
+		background	"dnf_intro_video"
+		visible	0
+		noevents	1
+
+		onVideoDone {
+			set "dnfIntroVideo::visible" "0" ;
+			set "desktop::introplaying" "0" ;	
+			set "dnfIntroVideo::visible" "1";
+			set "dnfMainMenu::visible" "1";
+		}
+
+	}
+	windowDef dnfMainMenu
+	{
+		rect	0,0,1280,720
+		visible	0
+		windowDef unnamed2
+		{
+			rect	366,42,581,181
+			visible	1
+			background	"guis/mainmenu/dnf_logo"
+			matcolor	1,1,1,1
+		}
+		windowDef unnamed
+		{
+			rect	10,224,1308,66
+			visible	1
+			forecolor	1,1,1,1
+			text	"New Game"
+			textscale	1
+			textalign	1
+		}
+		windowDef unnamed1
+		{
+			rect	10,280,1308,66
+			visible	1
+			forecolor	1,1,1,1
+			text	"Load Game"
+			textscale	1
+			textalign	1
+		}
+		windowDef unnamed11
+		{
+			rect	12,340,1308,66
+			visible	1
+			forecolor	1,1,1,1
+			text	"Options"
+			textscale	1
+			textalign	1
+		}
+		windowDef unnamed111
+		{
+			rect	10,404,1308,66
+			visible	1
+			forecolor	1,1,1,1
+			text	"Credits"
+			textscale	1
+			textalign	1
+		}
+		windowDef unnamed1111
+		{
+			rect	10,468,1308,66
+			visible	1
+			forecolor	1,1,1,1
+			text	"Exit Game"
+			textscale	1
+			textalign	1
+		}
+	}
+	
 }

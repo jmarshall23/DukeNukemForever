@@ -1,7 +1,7 @@
 model pigcop
 {
 	mesh				models/characters/pigcop/pigcop.md5mesh
-	offset			( 0 0 36 )
+	offset			( 0 0 45 )
 
 	anim af_pose		models/characters/pigcop/pigcop_IdleA.md5anim
 	anim ik_pose		models/characters/pigcop/pigcop_IdleA.md5anim
@@ -22,7 +22,7 @@ entityDef monster_pigcop
 	"model"							"pigcop"
 	"editor_usage"					"Pigcop Monster"
 
-	"model_offset"					"0 0 36"
+	"model_offset"					"0 0 45"
 	
 	"editor_color"     "1 0 0"
 	"editor_maxs"      "16 16 64"

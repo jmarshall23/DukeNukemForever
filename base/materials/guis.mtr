@@ -1,0 +1,6 @@
+guis/mainmenu/dnf_logo
+{
+	{
+		map guis/mainmenu/dnf_logo.tga
+	}
+}

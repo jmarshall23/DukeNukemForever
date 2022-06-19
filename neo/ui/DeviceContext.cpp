@@ -58,7 +58,8 @@ int idDeviceContext::FindFont( const char *name ) {
 
 	// If the font was not found, try to register it
 	idStr fileName = name;
-	fileName.Replace("fonts", va("fonts/%s", fontLang.c_str()) );
+	//fileName.Replace("fonts", va("fonts/%s", fontLang.c_str()) );
+	fileName.Replace("fonts", "fonts/arial");
 
 	fontInfoEx_t fontInfo;
 		int index = fonts.Append( fontInfo );
