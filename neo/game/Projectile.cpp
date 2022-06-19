@@ -1973,7 +1973,7 @@ void idBFGProjectile::FreeBeams() {
 
 	idPlayer *player = gameLocal.GetLocalPlayer();
 	if ( player ) {
-		player->playerView.EnableBFGVision( false );
+		//player->playerView.EnableBFGVision( false );
 	}
 }
 
@@ -2039,7 +2039,7 @@ void idBFGProjectile::Think( void ) {
 					bfgVision = false;
 				}
 				if ( player ) {
-					player->playerView.EnableBFGVision( bfgVision );
+					//player->playerView.EnableBFGVision( bfgVision );
 				}
 				nextDamageTime = gameLocal.time + BFG_DAMAGE_FREQUENCY;
 			}
@@ -2132,7 +2132,7 @@ void idBFGProjectile::Launch( const idVec3 &start, const idVec3 &dir, const idVe
 
 		if ( ent->IsType( idPlayer::Type ) ) {
 			idPlayer *player = static_cast<idPlayer*>( ent );
-			player->playerView.EnableBFGVision( true );
+			//player->playerView.EnableBFGVision( true );
 		}
 
 		beamTarget_t bt;

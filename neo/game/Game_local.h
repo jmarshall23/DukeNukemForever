@@ -395,7 +395,6 @@ public:
 	virtual void			CacheDictionaryMedia( const idDict *dict );
 	virtual void			SpawnPlayer( int clientNum );
 	virtual gameReturn_t	RunFrame( const usercmd_t *clientCmds );
-	virtual bool			Draw( int clientNum );
 	virtual escReply_t		HandleESC( idUserInterface **gui );
 	virtual idUserInterface	*StartMenu( void );
 	virtual const char *	HandleGuiCommands( const char *menuCommand );
@@ -651,9 +650,11 @@ private:
 	idList<rvmGameDelayRemoveEntry_t> delayRemoveEntities;
 };
 
+#include "../dukegame/Duke_game.h"
+
 //============================================================================
 
-extern idGameLocal			gameLocal;
+extern dnGameLocal			gameLocal;
 extern idAnimManager		animationLib;
 
 //============================================================================
@@ -802,8 +803,6 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 #include "Light.h"
 #include "WorldSpawn.h"
 #include "Item.h"
-#include "player/PlayerView.h"
-#include "player/PlayerIcon.h"
 #include "player/Player.h"
 #include "Mover.h"
 #include "Camera.h"
@@ -824,5 +823,12 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 #include "script/Script_Compiler.h"
 #include "script/Script_Interpreter.h"
 #include "script/Script_Thread.h"
+
+ID_INLINE int MakePowerOfTwo(int num) {
+	int		pot;
+	for (pot = 1; pot < num; pot <<= 1) {
+	}
+	return pot;
+}
 
 #endif	/* !__GAME_LOCAL_H__ */

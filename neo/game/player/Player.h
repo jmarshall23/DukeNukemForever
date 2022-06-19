@@ -248,8 +248,6 @@ public:
 
 	usercmd_t				usercmd;
 
-	class idPlayerView		playerView;			// handles damage kicks and effects
-
 	bool					noclip;
 	bool					godmode;
 
@@ -714,8 +712,6 @@ private:
 	int						MPAimFadeTime;			// for GUI fade
 	bool					MPAimHighlight;
 	bool					isTelefragged;			// proper obituaries
-
-	idPlayerIcon			playerIcon;
 
 	bool					selfSmooth;
 

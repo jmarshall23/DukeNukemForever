@@ -7,9 +7,9 @@
 
 	This file has been generated with the Type Info Generator v1.1 (c) 2004 id Software
 
-	592 constants
-	57 enums
-	304 classes/structs/unions
+	583 constants
+	55 enums
+	290 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -378,15 +378,6 @@ static constantInfo_t constantInfo[] = {
 	{ "int", "idItem::EVENT_FLAGRETURN", "7" },
 	{ "int", "idItem::EVENT_FLAGCAPTURE", "8" },
 	{ "int", "idItem::EVENT_MAXEVENTS", "9" },
-	{ "int", "FxFader::FX_STATE_OFF", "0" },
-	{ "int", "FxFader::FX_STATE_RAMPUP", "1" },
-	{ "int", "FxFader::FX_STATE_RAMPDOWN", "2" },
-	{ "int", "FxFader::FX_STATE_ON", "3" },
-	{ "int", "ICON_LAG", "0" },
-	{ "int", "ICON_CHAT", "1" },
-	{ "int", "ICON_TEAM_RED", "2" },
-	{ "int", "ICON_TEAM_BLUE", "3" },
-	{ "int", "ICON_NONE", "4" },
 	{ "const float", "THIRD_PERSON_FOCUS_DISTANCE", "512.0" },
 	{ "const int", "LAND_DEFLECT_TIME", "150" },
 	{ "const int", "LAND_RETURN_TIME", "300" },
@@ -1081,24 +1072,7 @@ static enumValueInfo_t idItem_enum_35_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t FxFader_enum_36_typeInfo[] = {
-	{ "FX_STATE_OFF", 0 },
-	{ "FX_STATE_RAMPUP", 1 },
-	{ "FX_STATE_RAMPDOWN", 2 },
-	{ "FX_STATE_ON", 3 },
-	{ NULL, 0 }
-};
-
-static enumValueInfo_t playerIconType_t_typeInfo[] = {
-	{ "ICON_LAG", 0 },
-	{ "ICON_CHAT", 1 },
-	{ "ICON_TEAM_RED", 2 },
-	{ "ICON_TEAM_BLUE", 3 },
-	{ "ICON_NONE", 4 },
-	{ NULL, 0 }
-};
-
-static enumValueInfo_t enum_38_typeInfo[] = {
+static enumValueInfo_t enum_36_typeInfo[] = {
 	{ "BERSERK", 0 },
 	{ "INVISIBILITY", 1 },
 	{ "MEGAHEALTH", 2 },
@@ -1111,7 +1085,7 @@ static enumValueInfo_t enum_38_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t enum_39_typeInfo[] = {
+static enumValueInfo_t enum_37_typeInfo[] = {
 	{ "SPEED", 0 },
 	{ "PROJECTILE_DAMAGE", 1 },
 	{ "MELEE_DAMAGE", 2 },
@@ -1119,7 +1093,7 @@ static enumValueInfo_t enum_39_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t enum_40_typeInfo[] = {
+static enumValueInfo_t enum_38_typeInfo[] = {
 	{ "INFLUENCE_NONE", 0 },
 	{ "INFLUENCE_LEVEL1", 1 },
 	{ "INFLUENCE_LEVEL2", 2 },
@@ -1127,7 +1101,7 @@ static enumValueInfo_t enum_40_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t idPlayer_enum_41_typeInfo[] = {
+static enumValueInfo_t idPlayer_enum_39_typeInfo[] = {
 	{ "EVENT_IMPULSE", 2 },
 	{ "EVENT_EXIT_TELEPORTER", 3 },
 	{ "EVENT_ABORT_TELEPORTER", 4 },
@@ -1185,7 +1159,7 @@ static enumValueInfo_t moverState_t_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t idExplodingBarrel_enum_47_typeInfo[] = {
+static enumValueInfo_t idExplodingBarrel_enum_45_typeInfo[] = {
 	{ "EVENT_EXPLODE", 2 },
 	{ "EVENT_MAXEVENTS", 3 },
 	{ NULL, 0 }
@@ -1199,7 +1173,7 @@ static enumValueInfo_t idExplodingBarrel_explode_state_t_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t idSecurityCamera_enum_49_typeInfo[] = {
+static enumValueInfo_t idSecurityCamera_enum_47_typeInfo[] = {
 	{ "SCANNING", 0 },
 	{ "LOSINGINTEREST", 1 },
 	{ "ALERT", 2 },
@@ -1207,7 +1181,7 @@ static enumValueInfo_t idSecurityCamera_enum_49_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t idBrittleFracture_enum_50_typeInfo[] = {
+static enumValueInfo_t idBrittleFracture_enum_48_typeInfo[] = {
 	{ "EVENT_PROJECT_DECAL", 2 },
 	{ "EVENT_SHATTER", 3 },
 	{ "EVENT_MAXEVENTS", 4 },
@@ -1270,7 +1244,7 @@ static enumValueInfo_t PIGCOP_IDLE_STATE_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t enum_56_typeInfo[] = {
+static enumValueInfo_t enum_54_typeInfo[] = {
 	{ "OP_RETURN", 0 },
 	{ "OP_UINC_F", 1 },
 	{ "OP_UINCP_F", 2 },
@@ -1435,27 +1409,25 @@ static enumTypeInfo_t enumTypeInfo[] = {
 	{ "idWeapon::enum_33", idWeapon_enum_33_typeInfo },
 	{ "idLight::enum_34", idLight_enum_34_typeInfo },
 	{ "idItem::enum_35", idItem_enum_35_typeInfo },
-	{ "FxFader::enum_36", FxFader_enum_36_typeInfo },
-	{ "playerIconType_t", playerIconType_t_typeInfo },
+	{ "enum_36", enum_36_typeInfo },
+	{ "enum_37", enum_37_typeInfo },
 	{ "enum_38", enum_38_typeInfo },
-	{ "enum_39", enum_39_typeInfo },
-	{ "enum_40", enum_40_typeInfo },
-	{ "idPlayer::enum_41", idPlayer_enum_41_typeInfo },
+	{ "idPlayer::enum_39", idPlayer_enum_39_typeInfo },
 	{ "idMover::moveStage_t", idMover_moveStage_t_typeInfo },
 	{ "idMover::moverCommand_t", idMover_moverCommand_t_typeInfo },
 	{ "idMover::moverDir_t", idMover_moverDir_t_typeInfo },
 	{ "idElevator::elevatorState_t", idElevator_elevatorState_t_typeInfo },
 	{ "moverState_t", moverState_t_typeInfo },
-	{ "idExplodingBarrel::enum_47", idExplodingBarrel_enum_47_typeInfo },
+	{ "idExplodingBarrel::enum_45", idExplodingBarrel_enum_45_typeInfo },
 	{ "idExplodingBarrel::explode_state_t", idExplodingBarrel_explode_state_t_typeInfo },
-	{ "idSecurityCamera::enum_49", idSecurityCamera_enum_49_typeInfo },
-	{ "idBrittleFracture::enum_50", idBrittleFracture_enum_50_typeInfo },
+	{ "idSecurityCamera::enum_47", idSecurityCamera_enum_47_typeInfo },
+	{ "idBrittleFracture::enum_48", idBrittleFracture_enum_48_typeInfo },
 	{ "moveType_t", moveType_t_typeInfo },
 	{ "moveCommand_t", moveCommand_t_typeInfo },
 	{ "talkState_t", talkState_t_typeInfo },
 	{ "moveStatus_t", moveStatus_t_typeInfo },
 	{ "PIGCOP_IDLE_STATE", PIGCOP_IDLE_STATE_typeInfo },
-	{ "enum_56", enum_56_typeInfo },
+	{ "enum_54", enum_54_typeInfo },
 	{ NULL, NULL }
 };
 
@@ -2100,6 +2072,10 @@ static classVariableInfo_t idGameLocal_typeInfo[] = {
 	{ "idStrList", "shakeSounds", (intptr_t)(&((idGameLocal *)0)->shakeSounds), sizeof( ((idGameLocal *)0)->shakeSounds ) },
 	{ "byte[16384]", "lagometer", (intptr_t)(&((idGameLocal *)0)->lagometer), sizeof( ((idGameLocal *)0)->lagometer ) },
 	{ "idList < rvmGameDelayRemoveEntry_t >", "delayRemoveEntities", (intptr_t)(&((idGameLocal *)0)->delayRemoveEntities), sizeof( ((idGameLocal *)0)->delayRemoveEntities ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t dnGameLocal_typeInfo[] = {
 	{ NULL, 0 }
 };
 
@@ -3687,149 +3663,6 @@ static classVariableInfo_t idObjectiveComplete_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static classVariableInfo_t screenBlob_t_typeInfo[] = {
-	{ "const idMaterial *", "material", (intptr_t)(&((screenBlob_t *)0)->material), sizeof( ((screenBlob_t *)0)->material ) },
-	{ "float", "x", (intptr_t)(&((screenBlob_t *)0)->x), sizeof( ((screenBlob_t *)0)->x ) },
-	{ "float", "y", (intptr_t)(&((screenBlob_t *)0)->y), sizeof( ((screenBlob_t *)0)->y ) },
-	{ "float", "w", (intptr_t)(&((screenBlob_t *)0)->w), sizeof( ((screenBlob_t *)0)->w ) },
-	{ "float", "h", (intptr_t)(&((screenBlob_t *)0)->h), sizeof( ((screenBlob_t *)0)->h ) },
-	{ "float", "s1", (intptr_t)(&((screenBlob_t *)0)->s1), sizeof( ((screenBlob_t *)0)->s1 ) },
-	{ "float", "t1", (intptr_t)(&((screenBlob_t *)0)->t1), sizeof( ((screenBlob_t *)0)->t1 ) },
-	{ "float", "s2", (intptr_t)(&((screenBlob_t *)0)->s2), sizeof( ((screenBlob_t *)0)->s2 ) },
-	{ "float", "t2", (intptr_t)(&((screenBlob_t *)0)->t2), sizeof( ((screenBlob_t *)0)->t2 ) },
-	{ "int", "finishTime", (intptr_t)(&((screenBlob_t *)0)->finishTime), sizeof( ((screenBlob_t *)0)->finishTime ) },
-	{ "int", "startFadeTime", (intptr_t)(&((screenBlob_t *)0)->startFadeTime), sizeof( ((screenBlob_t *)0)->startFadeTime ) },
-	{ "float", "driftAmount", (intptr_t)(&((screenBlob_t *)0)->driftAmount), sizeof( ((screenBlob_t *)0)->driftAmount ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t WarpPolygon_t_typeInfo[] = {
-	{ ": idVec4", "outer1", (intptr_t)(&((WarpPolygon_t *)0)->outer1), sizeof( ((WarpPolygon_t *)0)->outer1 ) },
-	{ "idVec4", "outer2", (intptr_t)(&((WarpPolygon_t *)0)->outer2), sizeof( ((WarpPolygon_t *)0)->outer2 ) },
-	{ "idVec4", "center", (intptr_t)(&((WarpPolygon_t *)0)->center), sizeof( ((WarpPolygon_t *)0)->center ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t Warp_t_typeInfo[] = {
-	{ ": int", "id", (intptr_t)(&((Warp_t *)0)->id), sizeof( ((Warp_t *)0)->id ) },
-	{ "bool", "active", (intptr_t)(&((Warp_t *)0)->active), sizeof( ((Warp_t *)0)->active ) },
-	{ "int", "startTime", (intptr_t)(&((Warp_t *)0)->startTime), sizeof( ((Warp_t *)0)->startTime ) },
-	{ "float", "initialRadius", (intptr_t)(&((Warp_t *)0)->initialRadius), sizeof( ((Warp_t *)0)->initialRadius ) },
-	{ "idVec3", "worldOrigin", (intptr_t)(&((Warp_t *)0)->worldOrigin), sizeof( ((Warp_t *)0)->worldOrigin ) },
-	{ "idVec2", "screenOrigin", (intptr_t)(&((Warp_t *)0)->screenOrigin), sizeof( ((Warp_t *)0)->screenOrigin ) },
-	{ "int", "durationMsec", (intptr_t)(&((Warp_t *)0)->durationMsec), sizeof( ((Warp_t *)0)->durationMsec ) },
-	{ "idList < WarpPolygon_t >", "polys", (intptr_t)(&((Warp_t *)0)->polys), sizeof( ((Warp_t *)0)->polys ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FxFader_typeInfo[] = {
-	{ "int", "time", (intptr_t)(&((FxFader *)0)->time), sizeof( ((FxFader *)0)->time ) },
-	{ "int", "state", (intptr_t)(&((FxFader *)0)->state), sizeof( ((FxFader *)0)->state ) },
-	{ "float", "alpha", (intptr_t)(&((FxFader *)0)->alpha), sizeof( ((FxFader *)0)->alpha ) },
-	{ "int", "msec", (intptr_t)(&((FxFader *)0)->msec), sizeof( ((FxFader *)0)->msec ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_typeInfo[] = {
-	{ ": idStr", "name", (intptr_t)(&((FullscreenFX *)0)->name), sizeof( ((FullscreenFX *)0)->name ) },
-	{ "FxFader", "fader", (intptr_t)(&((FullscreenFX *)0)->fader), sizeof( ((FullscreenFX *)0)->fader ) },
-	{ "FullscreenFXManager *", "fxman", (intptr_t)(&((FullscreenFX *)0)->fxman), sizeof( ((FullscreenFX *)0)->fxman ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_Helltime_typeInfo[] = {
-	{ ": const idMaterial *[3]", "acInitMaterials", (intptr_t)(&((FullscreenFX_Helltime *)0)->acInitMaterials), sizeof( ((FullscreenFX_Helltime *)0)->acInitMaterials ) },
-	{ "const idMaterial *[3]", "acCaptureMaterials", (intptr_t)(&((FullscreenFX_Helltime *)0)->acCaptureMaterials), sizeof( ((FullscreenFX_Helltime *)0)->acCaptureMaterials ) },
-	{ "const idMaterial *[3]", "acDrawMaterials", (intptr_t)(&((FullscreenFX_Helltime *)0)->acDrawMaterials), sizeof( ((FullscreenFX_Helltime *)0)->acDrawMaterials ) },
-	{ "const idMaterial *[3]", "crCaptureMaterials", (intptr_t)(&((FullscreenFX_Helltime *)0)->crCaptureMaterials), sizeof( ((FullscreenFX_Helltime *)0)->crCaptureMaterials ) },
-	{ "const idMaterial *[3]", "crDrawMaterials", (intptr_t)(&((FullscreenFX_Helltime *)0)->crDrawMaterials), sizeof( ((FullscreenFX_Helltime *)0)->crDrawMaterials ) },
-	{ "bool", "clearAccumBuffer", (intptr_t)(&((FullscreenFX_Helltime *)0)->clearAccumBuffer), sizeof( ((FullscreenFX_Helltime *)0)->clearAccumBuffer ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_Multiplayer_typeInfo[] = {
-	{ ": const idMaterial *", "acInitMaterials", (intptr_t)(&((FullscreenFX_Multiplayer *)0)->acInitMaterials), sizeof( ((FullscreenFX_Multiplayer *)0)->acInitMaterials ) },
-	{ "const idMaterial *", "acCaptureMaterials", (intptr_t)(&((FullscreenFX_Multiplayer *)0)->acCaptureMaterials), sizeof( ((FullscreenFX_Multiplayer *)0)->acCaptureMaterials ) },
-	{ "const idMaterial *", "acDrawMaterials", (intptr_t)(&((FullscreenFX_Multiplayer *)0)->acDrawMaterials), sizeof( ((FullscreenFX_Multiplayer *)0)->acDrawMaterials ) },
-	{ "const idMaterial *", "crCaptureMaterials", (intptr_t)(&((FullscreenFX_Multiplayer *)0)->crCaptureMaterials), sizeof( ((FullscreenFX_Multiplayer *)0)->crCaptureMaterials ) },
-	{ "const idMaterial *", "crDrawMaterials", (intptr_t)(&((FullscreenFX_Multiplayer *)0)->crDrawMaterials), sizeof( ((FullscreenFX_Multiplayer *)0)->crDrawMaterials ) },
-	{ "bool", "clearAccumBuffer", (intptr_t)(&((FullscreenFX_Multiplayer *)0)->clearAccumBuffer), sizeof( ((FullscreenFX_Multiplayer *)0)->clearAccumBuffer ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_Warp_typeInfo[] = {
-	{ ": const idMaterial *", "material", (intptr_t)(&((FullscreenFX_Warp *)0)->material), sizeof( ((FullscreenFX_Warp *)0)->material ) },
-	{ "bool", "grabberEnabled", (intptr_t)(&((FullscreenFX_Warp *)0)->grabberEnabled), sizeof( ((FullscreenFX_Warp *)0)->grabberEnabled ) },
-	{ "int", "startWarpTime", (intptr_t)(&((FullscreenFX_Warp *)0)->startWarpTime), sizeof( ((FullscreenFX_Warp *)0)->startWarpTime ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_EnviroSuit_typeInfo[] = {
-	{ ": const idMaterial *", "material", (intptr_t)(&((FullscreenFX_EnviroSuit *)0)->material), sizeof( ((FullscreenFX_EnviroSuit *)0)->material ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_DoubleVision_typeInfo[] = {
-	{ ": const idMaterial *", "material", (intptr_t)(&((FullscreenFX_DoubleVision *)0)->material), sizeof( ((FullscreenFX_DoubleVision *)0)->material ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_InfluenceVision_typeInfo[] = {
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFX_Bloom_typeInfo[] = {
-	{ ": const idMaterial *", "drawMaterial", (intptr_t)(&((FullscreenFX_Bloom *)0)->drawMaterial), sizeof( ((FullscreenFX_Bloom *)0)->drawMaterial ) },
-	{ "const idMaterial *", "initMaterial", (intptr_t)(&((FullscreenFX_Bloom *)0)->initMaterial), sizeof( ((FullscreenFX_Bloom *)0)->initMaterial ) },
-	{ "const idMaterial *", "currentMaterial", (intptr_t)(&((FullscreenFX_Bloom *)0)->currentMaterial), sizeof( ((FullscreenFX_Bloom *)0)->currentMaterial ) },
-	{ "float", "currentIntensity", (intptr_t)(&((FullscreenFX_Bloom *)0)->currentIntensity), sizeof( ((FullscreenFX_Bloom *)0)->currentIntensity ) },
-	{ "float", "targetIntensity", (intptr_t)(&((FullscreenFX_Bloom *)0)->targetIntensity), sizeof( ((FullscreenFX_Bloom *)0)->targetIntensity ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t FullscreenFXManager_typeInfo[] = {
-	{ ": idList < FullscreenFX * >", "fx", (intptr_t)(&((FullscreenFXManager *)0)->fx), sizeof( ((FullscreenFXManager *)0)->fx ) },
-	{ "bool", "highQualityMode", (intptr_t)(&((FullscreenFXManager *)0)->highQualityMode), sizeof( ((FullscreenFXManager *)0)->highQualityMode ) },
-	{ "idVec2", "shiftScale", (intptr_t)(&((FullscreenFXManager *)0)->shiftScale), sizeof( ((FullscreenFXManager *)0)->shiftScale ) },
-	{ "idPlayerView *", "playerView", (intptr_t)(&((FullscreenFXManager *)0)->playerView), sizeof( ((FullscreenFXManager *)0)->playerView ) },
-	{ "const idMaterial *", "blendBackMaterial", (intptr_t)(&((FullscreenFXManager *)0)->blendBackMaterial), sizeof( ((FullscreenFXManager *)0)->blendBackMaterial ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t idPlayerView_typeInfo[] = {
-	{ "screenBlob_t[8]", "screenBlobs", (intptr_t)(&((idPlayerView *)0)->screenBlobs), sizeof( ((idPlayerView *)0)->screenBlobs ) },
-	{ ": int", "dvFinishTime", (intptr_t)(&((idPlayerView *)0)->dvFinishTime), sizeof( ((idPlayerView *)0)->dvFinishTime ) },
-	{ "const idMaterial *", "dvMaterial", (intptr_t)(&((idPlayerView *)0)->dvMaterial), sizeof( ((idPlayerView *)0)->dvMaterial ) },
-	{ "int", "kickFinishTime", (intptr_t)(&((idPlayerView *)0)->kickFinishTime), sizeof( ((idPlayerView *)0)->kickFinishTime ) },
-	{ "idAngles", "kickAngles", (intptr_t)(&((idPlayerView *)0)->kickAngles), sizeof( ((idPlayerView *)0)->kickAngles ) },
-	{ "bool", "bfgVision", (intptr_t)(&((idPlayerView *)0)->bfgVision), sizeof( ((idPlayerView *)0)->bfgVision ) },
-	{ "const idMaterial *", "tunnelMaterial", (intptr_t)(&((idPlayerView *)0)->tunnelMaterial), sizeof( ((idPlayerView *)0)->tunnelMaterial ) },
-	{ "const idMaterial *", "armorMaterial", (intptr_t)(&((idPlayerView *)0)->armorMaterial), sizeof( ((idPlayerView *)0)->armorMaterial ) },
-	{ "const idMaterial *", "berserkMaterial", (intptr_t)(&((idPlayerView *)0)->berserkMaterial), sizeof( ((idPlayerView *)0)->berserkMaterial ) },
-	{ "const idMaterial *", "irGogglesMaterial", (intptr_t)(&((idPlayerView *)0)->irGogglesMaterial), sizeof( ((idPlayerView *)0)->irGogglesMaterial ) },
-	{ "const idMaterial *", "bloodSprayMaterial", (intptr_t)(&((idPlayerView *)0)->bloodSprayMaterial), sizeof( ((idPlayerView *)0)->bloodSprayMaterial ) },
-	{ "const idMaterial *", "bfgMaterial", (intptr_t)(&((idPlayerView *)0)->bfgMaterial), sizeof( ((idPlayerView *)0)->bfgMaterial ) },
-	{ "const idMaterial *", "lagoMaterial", (intptr_t)(&((idPlayerView *)0)->lagoMaterial), sizeof( ((idPlayerView *)0)->lagoMaterial ) },
-	{ "float", "lastDamageTime", (intptr_t)(&((idPlayerView *)0)->lastDamageTime), sizeof( ((idPlayerView *)0)->lastDamageTime ) },
-	{ "idVec4", "fadeColor", (intptr_t)(&((idPlayerView *)0)->fadeColor), sizeof( ((idPlayerView *)0)->fadeColor ) },
-	{ "idVec4", "fadeToColor", (intptr_t)(&((idPlayerView *)0)->fadeToColor), sizeof( ((idPlayerView *)0)->fadeToColor ) },
-	{ "idVec4", "fadeFromColor", (intptr_t)(&((idPlayerView *)0)->fadeFromColor), sizeof( ((idPlayerView *)0)->fadeFromColor ) },
-	{ "float", "fadeRate", (intptr_t)(&((idPlayerView *)0)->fadeRate), sizeof( ((idPlayerView *)0)->fadeRate ) },
-	{ "int", "fadeTime", (intptr_t)(&((idPlayerView *)0)->fadeTime), sizeof( ((idPlayerView *)0)->fadeTime ) },
-	{ "idAngles", "shakeAng", (intptr_t)(&((idPlayerView *)0)->shakeAng), sizeof( ((idPlayerView *)0)->shakeAng ) },
-	{ "idPlayer *", "player", (intptr_t)(&((idPlayerView *)0)->player), sizeof( ((idPlayerView *)0)->player ) },
-	{ "renderView_t", "view", (intptr_t)(&((idPlayerView *)0)->view), sizeof( ((idPlayerView *)0)->view ) },
-	{ "FullscreenFXManager *", "fxManager", (intptr_t)(&((idPlayerView *)0)->fxManager), sizeof( ((idPlayerView *)0)->fxManager ) },
-	{ NULL, 0 }
-};
-
-static classVariableInfo_t idPlayerIcon_typeInfo[] = {
-	{ ": playerIconType_t", "iconType", (intptr_t)(&((idPlayerIcon *)0)->iconType), sizeof( ((idPlayerIcon *)0)->iconType ) },
-	{ "renderEntity_t", "renderEnt", (intptr_t)(&((idPlayerIcon *)0)->renderEnt), sizeof( ((idPlayerIcon *)0)->renderEnt ) },
-	{ "qhandle_t", "iconHandle", (intptr_t)(&((idPlayerIcon *)0)->iconHandle), sizeof( ((idPlayerIcon *)0)->iconHandle ) },
-	{ NULL, 0 }
-};
-
 static classVariableInfo_t idItemInfo_typeInfo[] = {
 	{ "idStr", "name", (intptr_t)(&((idItemInfo *)0)->name), sizeof( ((idItemInfo *)0)->name ) },
 	{ "idStr", "icon", (intptr_t)(&((idItemInfo *)0)->icon), sizeof( ((idItemInfo *)0)->icon ) },
@@ -3916,7 +3749,6 @@ static classVariableInfo_t aasLocation_t_typeInfo[] = {
 
 static classVariableInfo_t idPlayer_typeInfo[] = {
 	{ "usercmd_t", "usercmd", (intptr_t)(&((idPlayer *)0)->usercmd), sizeof( ((idPlayer *)0)->usercmd ) },
-	{ "idPlayerView", "playerView", (intptr_t)(&((idPlayer *)0)->playerView), sizeof( ((idPlayer *)0)->playerView ) },
 	{ "bool", "noclip", (intptr_t)(&((idPlayer *)0)->noclip), sizeof( ((idPlayer *)0)->noclip ) },
 	{ "bool", "godmode", (intptr_t)(&((idPlayer *)0)->godmode), sizeof( ((idPlayer *)0)->godmode ) },
 	{ "bool", "spawnAnglesSet", (intptr_t)(&((idPlayer *)0)->spawnAnglesSet), sizeof( ((idPlayer *)0)->spawnAnglesSet ) },
@@ -4099,7 +3931,6 @@ static classVariableInfo_t idPlayer_typeInfo[] = {
 	{ "int", "MPAimFadeTime", (intptr_t)(&((idPlayer *)0)->MPAimFadeTime), sizeof( ((idPlayer *)0)->MPAimFadeTime ) },
 	{ "bool", "MPAimHighlight", (intptr_t)(&((idPlayer *)0)->MPAimHighlight), sizeof( ((idPlayer *)0)->MPAimHighlight ) },
 	{ "bool", "isTelefragged", (intptr_t)(&((idPlayer *)0)->isTelefragged), sizeof( ((idPlayer *)0)->isTelefragged ) },
-	{ "idPlayerIcon", "playerIcon", (intptr_t)(&((idPlayer *)0)->playerIcon), sizeof( ((idPlayer *)0)->playerIcon ) },
 	{ "bool", "selfSmooth", (intptr_t)(&((idPlayer *)0)->selfSmooth), sizeof( ((idPlayer *)0)->selfSmooth ) },
 	{ NULL, 0 }
 };
@@ -4841,6 +4672,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "timeState_t", "", sizeof(timeState_t), timeState_t_typeInfo },
 	{ "rvmGameDelayRemoveEntry_t", "", sizeof(rvmGameDelayRemoveEntry_t), rvmGameDelayRemoveEntry_t_typeInfo },
 	{ "idGameLocal", "idGame", sizeof(idGameLocal), idGameLocal_typeInfo },
+	{ "dnGameLocal", "idGameLocal", sizeof(dnGameLocal), dnGameLocal_typeInfo },
 	{ "idGameError", "idException", sizeof(idGameError), idGameError_typeInfo },
 	{ "stateParms_t", "", sizeof(stateParms_t), stateParms_t_typeInfo },
 	{ "stateCall_t", "", sizeof(stateCall_t), stateCall_t_typeInfo },
@@ -4988,21 +4820,6 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "idMoveablePDAItem", "idMoveableItem", sizeof(idMoveablePDAItem), idMoveablePDAItem_typeInfo },
 	{ "idItemRemover", "idEntity", sizeof(idItemRemover), idItemRemover_typeInfo },
 	{ "idObjectiveComplete", "idItemRemover", sizeof(idObjectiveComplete), idObjectiveComplete_typeInfo },
-	{ "screenBlob_t", "", sizeof(screenBlob_t), screenBlob_t_typeInfo },
-	{ "WarpPolygon_t", "", sizeof(WarpPolygon_t), WarpPolygon_t_typeInfo },
-	{ "Warp_t", "", sizeof(Warp_t), Warp_t_typeInfo },
-	{ "FxFader", "", sizeof(FxFader), FxFader_typeInfo },
-	{ "FullscreenFX", "", sizeof(FullscreenFX), FullscreenFX_typeInfo },
-	{ "FullscreenFX_Helltime", "FullscreenFX", sizeof(FullscreenFX_Helltime), FullscreenFX_Helltime_typeInfo },
-	{ "FullscreenFX_Multiplayer", "FullscreenFX", sizeof(FullscreenFX_Multiplayer), FullscreenFX_Multiplayer_typeInfo },
-	{ "FullscreenFX_Warp", "FullscreenFX", sizeof(FullscreenFX_Warp), FullscreenFX_Warp_typeInfo },
-	{ "FullscreenFX_EnviroSuit", "FullscreenFX", sizeof(FullscreenFX_EnviroSuit), FullscreenFX_EnviroSuit_typeInfo },
-	{ "FullscreenFX_DoubleVision", "FullscreenFX", sizeof(FullscreenFX_DoubleVision), FullscreenFX_DoubleVision_typeInfo },
-	{ "FullscreenFX_InfluenceVision", "FullscreenFX", sizeof(FullscreenFX_InfluenceVision), FullscreenFX_InfluenceVision_typeInfo },
-	{ "FullscreenFX_Bloom", "FullscreenFX", sizeof(FullscreenFX_Bloom), FullscreenFX_Bloom_typeInfo },
-	{ "FullscreenFXManager", "", sizeof(FullscreenFXManager), FullscreenFXManager_typeInfo },
-	{ "idPlayerView", "", sizeof(idPlayerView), idPlayerView_typeInfo },
-	{ "idPlayerIcon", "", sizeof(idPlayerIcon), idPlayerIcon_typeInfo },
 	{ "idItemInfo", "", sizeof(idItemInfo), idItemInfo_typeInfo },
 	{ "idObjectiveInfo", "", sizeof(idObjectiveInfo), idObjectiveInfo_typeInfo },
 	{ "idLevelTriggerInfo", "", sizeof(idLevelTriggerInfo), idLevelTriggerInfo_typeInfo },

@@ -61,8 +61,8 @@ static gameExport_t			gameExport;
 idAnimManager				animationLib;
 
 // the rest of the engine will only reference the "game" variable, while all local aspects stay hidden
-idGameLocal					gameLocal;
-idGame *					game = &gameLocal;	// statically pointed at an idGameLocal
+dnGameLocal					gameLocal;
+idGame *					game = &gameLocal;	// statically pointed at an dnGameLocal
 
 const char *idGameLocal::sufaceTypeNames[ MAX_SURFACE_TYPES ] = {
 	"none",	"metal", "stone", "flesh", "wood", "cardboard", "liquid", "glass", "plastic",
@@ -2667,30 +2667,6 @@ void idGameLocal::CalcFov( float base_fov, float &fov_x, float &fov_y ) const {
 		Printf( sys->FPU_GetState() );
 		Error( "idGameLocal::CalcFov: bad result" );
 	}
-}
-
-/*
-================
-idGameLocal::Draw
-
-makes rendering and sound system calls
-================
-*/
-bool idGameLocal::Draw( int clientNum ) {
-	if ( isMultiplayer ) {
-		return mpGame.Draw( clientNum );
-	}
-
-	idPlayer *player = static_cast<idPlayer *>(entities[ clientNum ]);
-
-	if ( !player ) {
-		return false;
-	}
-
-	// render the scene
-	player->playerView.RenderPlayerView( player->hud );
-
-	return true;
 }
 
 /*

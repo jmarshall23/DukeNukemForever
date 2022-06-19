@@ -147,9 +147,6 @@ public:
 	// checks rules and updates state of the mp game
 	void			Run( void );
 
-	// draws mp hud, scoredboard, etc.. 
-	bool			Draw( int clientNum );
-
 	// updates a player vote
 	void			PlayerVote( int clientNum, playerVote_t vote );
 

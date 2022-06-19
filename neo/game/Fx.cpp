@@ -471,7 +471,7 @@ void idEntityFx::Run( int time ) {
 						idPlayer *player = gameLocal.GetClientByNum( j );
 						if ( player && ( player->GetPhysics()->GetOrigin() - GetPhysics()->GetOrigin() ).LengthSqr() < Square( fxaction.shakeDistance ) ) {
 							if ( !gameLocal.isMultiplayer || !fxaction.shakeIgnoreMaster || GetBindMaster() != player ) {
-								player->playerView.DamageImpulse( fxaction.offset, &args );
+							//	player->playerView.DamageImpulse( fxaction.offset, &args );
 							}
 						}
 					}

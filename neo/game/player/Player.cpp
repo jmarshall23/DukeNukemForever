@@ -1532,9 +1532,6 @@ void idPlayer::Init( void ) {
 	talkCursor				= 0;
 	focusVehicle			= NULL;
 
-	// remove any damage effects
-	playerView.ClearEffects();
-
 	// damage values
 	fl.takedamage			= true;
 	ClearPain();
@@ -1784,9 +1781,6 @@ void idPlayer::Spawn( void ) {
 	// create combat collision hull for exact collision detection
 	SetCombatModel();
 
-	// init the damage effects
-	playerView.SetPlayerEntity( this );
-
 	// supress model in non-player views, but allow it in mirrors and remote views
 	renderEntity.suppressSurfaceInViewID = entityNumber+1;
 
@@ -1969,7 +1963,6 @@ void idPlayer::Save( idSaveGame *savefile ) const {
 	int i;
 
 	savefile->WriteUsercmd( usercmd );
-	playerView.Save( savefile );
 
 	savefile->WriteBool( noclip );
 	savefile->WriteBool( godmode );
@@ -2205,7 +2198,6 @@ void idPlayer::Restore( idRestoreGame *savefile ) {
 	float set;
 
 	savefile->ReadUsercmd( usercmd );
-	playerView.Restore( savefile );
 
 	savefile->ReadBool( noclip );
 	savefile->ReadBool( godmode );
@@ -3257,9 +3249,6 @@ void idPlayer::WeaponFireFeedback( const idDict *weaponDef ) {
 
 	// play the fire animation
 	AI_WEAPON_FIRED = true;
-
-	// update view feedback
-	playerView.WeaponFireFeedback( weaponDef );
 }
 
 /*
@@ -7335,8 +7324,6 @@ void idPlayer::Think( void ) {
 		UpdateDamageEffects();
 
 		LinkCombat();
-
-		playerView.CalculateShake();
 	}
 
 	if ( !( thinkFlags & TH_THINK ) ) {
@@ -7601,10 +7588,6 @@ void idPlayer::Killed( idEntity *inflictor, idEntity *attacker, int damage, cons
 
 	heartInfo.Init( 0, 0, 0, BASE_HEARTRATE );
 	AdjustHeartRate( DEAD_HEARTRATE, 10.0f, 0.0f, true );
-
-	if ( !g_testDeath.GetBool() ) {
-		playerView.Fade( colorBlack, 12000 );
-	}
 
 	AI_DEAD = true;
 	SetAnimState( ANIMCHANNEL_LEGS, "Legs_Death", 4 );
@@ -7958,13 +7941,6 @@ void idPlayer::Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &di
 	
 	viewAxis.ProjectVector( damage_from, localDamageVector );
 
-	// add to the damage inflicted on a player this frame
-	// the total will be turned into screen blends and view angle kicks
-	// at the end of the frame
-	if ( health > 0 ) {
-		playerView.DamageImpulse( localDamageVector, &damageDef->dict );
-	}
-
 	// do the damage
 	if ( damage > 0 ) {
 
@@ -8061,10 +8037,6 @@ void idPlayer::Teleport( const idVec3 &origin, const idAngles &angles, idEntity 
 	legsYaw = 0.0f;
 	idealLegsYaw = 0.0f;
 	oldViewYaw = viewAngles.yaw;
-
-	if ( gameLocal.isMultiplayer ) {
-		playerView.Flash( colorWhite, 140 );
-	}
 
 	UpdateVisuals();
 
@@ -8423,7 +8395,7 @@ void idPlayer::GetViewPos( idVec3 &origin, idMat3 &axis ) const {
 		origin = GetEyePosition();
 	} else {
 		origin = GetEyePosition() + viewBob;
-		angles = viewAngles + viewBobAngles + playerView.AngleOffset();
+		angles = viewAngles + viewBobAngles;
 
 		axis = angles.ToMat3() * physicsObj.GetGravityAxis();
 
@@ -8446,7 +8418,7 @@ void idPlayer::CalculateFirstPersonView( void ) {
 		idVec3 origin;
 		idAngles ang;
 
-		ang = viewBobAngles + playerView.AngleOffset();
+		ang = viewBobAngles;
 		ang.yaw += viewAxis[ 0 ].ToYaw();
 		
 		jointHandle_t joint = animator.GetJointHandle( "camera" );
@@ -8871,7 +8843,7 @@ idPlayer::Event_StartWarp
 ==================
 */
 void idPlayer::Event_StartWarp() {
-	playerView.AddWarp( idVec3( 0, 0, 0 ), SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 100, 1000 );
+
 }
 
 /*
@@ -9053,8 +9025,6 @@ void idPlayer::Event_ExitTeleporter( void ) {
 	SetViewAngles( exitEnt->GetPhysics()->GetAxis().ToAngles() );
 	physicsObj.SetLinearVelocity( exitEnt->GetPhysics()->GetAxis()[ 0 ] * pushVel );
 	physicsObj.ClearPushedVelocity();
-	// teleport fx
-	playerView.Flash( colorWhite, 120 );
 
 	// clear the ik heights so model doesn't appear in the wrong place
 	walkIK.EnableAll();
@@ -9246,10 +9216,6 @@ void idPlayer::ClientPredictionThink( void ) {
 
 	LinkCombat();
 
-	if ( gameLocal.isNewFrame && entityNumber == gameLocal.localClientNum ) {
-		playerView.CalculateShake();
-	}
-
 #ifdef _D3XP
 	// determine if portal sky is in pvs
 	pvsHandle_t	clientPVS = gameLocal.pvs.SetupCurrentPVS( GetPVSAreas(), GetNumPVSAreas() );
@@ -9436,9 +9402,7 @@ void idPlayer::ReadFromSnapshot( const idBitMsgDelta &msg ) {
 		SetAnimState( ANIMCHANNEL_TORSO, "Torso_Death", 4 );
 		SetWaitState( "" );
 		animator.ClearAllJoints();
-		if ( entityNumber == gameLocal.localClientNum ) {
-			playerView.Fade( colorBlack, 12000 );
-		}
+
 		StartRagdoll();
 		physicsObj.SetMovementType( PM_DEAD );
 		if ( !stateHitch ) {
@@ -9461,7 +9425,7 @@ void idPlayer::ReadFromSnapshot( const idBitMsgDelta &msg ) {
 			// damage feedback
 			const idDeclEntityDef *def = static_cast<const idDeclEntityDef *>( declManager->DeclByIndex( DECL_ENTITYDEF, lastDamageDef, false ) );
 			if ( def ) {
-				playerView.DamageImpulse( lastDamageDir * viewAxis.Transpose(), &def->dict );
+				//playerView.DamageImpulse( lastDamageDir * viewAxis.Transpose(), &def->dict );
 				AI_PAIN = Pain( NULL, NULL, oldHealth - health, lastDamageDir, lastDamageLocation );
 				lastDmgTime = gameLocal.time;
 			} else {
@@ -9848,7 +9812,7 @@ idPlayer::DrawPlayerIcons
 */
 void idPlayer::DrawPlayerIcons( void ) {
 	if ( !NeedsIcon() ) {
-		playerIcon.FreeIcon();
+	//	playerIcon.FreeIcon();
 		return;
 	}
 
@@ -9858,7 +9822,7 @@ void idPlayer::DrawPlayerIcons( void ) {
         return;
 #endif    
     
-	playerIcon.Draw( this, headJoint );
+	//playerIcon.Draw( this, headJoint );
 }
 
 /*
@@ -9867,7 +9831,7 @@ idPlayer::HidePlayerIcons
 ===============
 */
 void idPlayer::HidePlayerIcons( void ) {
-	playerIcon.FreeIcon();
+	//playerIcon.FreeIcon();
 }
 
 /*
@@ -9925,8 +9889,8 @@ void idPlayer::ReturnFlag() {
 
 void idPlayer::FreeModelDef( void ) {
 	idAFEntity_Base::FreeModelDef();
-	if ( gameLocal.isMultiplayer && gameLocal.mpGame.IsGametypeFlagBased() )
-		playerIcon.FreeIcon();
+	//if ( gameLocal.isMultiplayer && gameLocal.mpGame.IsGametypeFlagBased() )
+	//	playerIcon.FreeIcon();
 }
 
 #endif
