@@ -13,7 +13,7 @@ windowDef Desktop
 	}
 	windowDef unnamed1
 	{
-		rect	1169,627,106,33
+		rect	1111,621,86,33
 		visible	1
 		forecolor	1,1,1,1
 		text	"Ammo"
@@ -25,6 +25,30 @@ windowDef Desktop
 		visible	1
 		forecolor	1,1,1,1
 		text	"gui::player_ego"
+		textscale	0.5
+	}
+	windowDef unnamed11
+	{
+		rect	1191,621,80,33
+		visible	1
+		forecolor	1,1,1,1
+		text	"gui::player_ammo"
+		textscale	0.5
+	}
+	windowDef unnamed12
+	{
+		rect	1111,650,86,33
+		visible	1
+		forecolor	1,1,1,1
+		text	"Clips"
+		textscale	0.5
+	}
+	windowDef unnamed111
+	{
+		rect	1194,650,80,33
+		visible	1
+		forecolor	1,1,1,1
+		text	"gui::player_clips"
 		textscale	0.5
 	}
 }

@@ -9,4 +9,10 @@ END_CLASS
 void DukePlayer::UpdateHudStats(idUserInterface* hud)
 {
 	hud->SetStateInt("player_ego", health);
+	UpdateHudAmmo(hud);
+}
+
+void DukePlayer::SetStartingInventory(void)
+{
+	inventory.ammo[DN_WEAPON_PISTOL] = 48;
 }

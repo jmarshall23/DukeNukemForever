@@ -7,8 +7,8 @@
 
 	This file has been generated with the Type Info Generator v1.1 (c) 2004 id Software
 
-	583 constants
-	55 enums
+	586 constants
+	56 enums
 	291 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
@@ -505,6 +505,9 @@ static constantInfo_t constantInfo[] = {
 	{ "int", "MOVE_STATUS_BLOCKED_BY_MONSTER", "8" },
 	{ "int", "PIGCOP_IDLE_WAITINGTPLAYER", "0" },
 	{ "int", "PIGCOP_IDLE_ROAR", "1" },
+	{ "int", "DN_WEAPON_FEET", "0" },
+	{ "int", "DN_WEAPON_PISTOL", "1" },
+	{ "int", "DN_WEAPON_SHOTGUN", "2" },
 	{ "const char * const", "RESULT_STRING", "<RESULT>" },
 	{ "int", "OP_RETURN", "0" },
 	{ "int", "OP_UINC_F", "1" },
@@ -1244,7 +1247,14 @@ static enumValueInfo_t PIGCOP_IDLE_STATE_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static enumValueInfo_t enum_54_typeInfo[] = {
+static enumValueInfo_t dnWeapons_typeInfo[] = {
+	{ "DN_WEAPON_FEET", 0 },
+	{ "DN_WEAPON_PISTOL", 1 },
+	{ "DN_WEAPON_SHOTGUN", 2 },
+	{ NULL, 0 }
+};
+
+static enumValueInfo_t enum_55_typeInfo[] = {
 	{ "OP_RETURN", 0 },
 	{ "OP_UINC_F", 1 },
 	{ "OP_UINCP_F", 2 },
@@ -1427,7 +1437,8 @@ static enumTypeInfo_t enumTypeInfo[] = {
 	{ "talkState_t", talkState_t_typeInfo },
 	{ "moveStatus_t", moveStatus_t_typeInfo },
 	{ "PIGCOP_IDLE_STATE", PIGCOP_IDLE_STATE_typeInfo },
-	{ "enum_54", enum_54_typeInfo },
+	{ "dnWeapons", dnWeapons_typeInfo },
+	{ "enum_55", enum_55_typeInfo },
 	{ NULL, NULL }
 };
 

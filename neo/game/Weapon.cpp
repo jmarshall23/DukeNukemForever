@@ -1221,8 +1221,8 @@ void idWeapon::GetWeaponDef( const char* objectname, int ammoinclip )
 		gameLocal.Warning( "Unknown ammotype in object '%s'", objectname );
 	}
 
-	ammoClip = ammoinclip;
-	if( ( ammoClip.Get() < 0 ) || ( ammoClip.Get() > clipSize ) )
+	ammoClip = weaponDef->dict.GetInt("clipSize");
+	//if( ( ammoClip.Get() < 0 ) || ( ammoClip.Get() > clipSize ) )
 	{
 		// first time using this weapon so have it fully loaded to start
 		ammoClip = clipSize;

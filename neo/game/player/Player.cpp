@@ -1539,6 +1539,8 @@ void idPlayer::Init( void ) {
 	// restore persistent data
 	RestorePersistantInfo();
 
+	SetStartingInventory();
+
 	bobCycle		= 0;
 	stamina			= 0.0f;
 	healthPool		= 0.0f;
@@ -1792,6 +1794,8 @@ void idPlayer::Spawn( void ) {
 		headEnt->GetRenderEntity()->suppressSurfaceInViewID = entityNumber+1;
 		headEnt->GetRenderEntity()->noSelfShadow = true;
 	}
+
+	SetStartingInventory();
 
 	if ( gameLocal.isMultiplayer ) {
 		Init();

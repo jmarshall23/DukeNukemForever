@@ -1,7 +1,12 @@
 entityDef ammo_types {
 	"ammo_none"				"0"
+	"ammo_bullets"			"1"
 }
 
 entityDef ammo_names {
 	"ammo_none"				"No Ammo"
+}
+
+entityDef ammo_bullets {
+	"ammo_none"				"Bullets"
 }
