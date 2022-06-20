@@ -37,7 +37,7 @@ file(GLOB dnGameFiles
      "dukegame/components/*.cpp*"
      "dukegame/Player/*.cpp*"
      "dukegame/Weapons/*.cpp*"
-)
+) 
 
 file(GLOB gameBaseFiles
      "game/*.cpp*"

@@ -440,6 +440,8 @@ void Dmap( const idCmdArgs &args ) {
 		}
 	}
 
+	NavMesh_f(args);
+
 	// free the common .map representation
 	delete dmapGlobals.dmapFile;
 
