@@ -6,7 +6,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 1 1"
 "light_radius" "150 150 150"
 }
@@ -18,7 +18,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.28 0.58 0.26"
 "light_radius" "300 300 300"
 }
@@ -30,7 +30,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 0 0"
 "light_radius" "300 300 300"
 }
@@ -25717,4 +25717,13 @@
 "falloff" "0"
 "_color" "1 1 1"
 "light_radius" "500 500 700"
+}
+// entity 2851
+{
+"classname" "func_static"
+"model" "maps/e1l1/plane_1553.obj"
+"name" "func_static_1553"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/E1L1/E1L1_38"
 }
