@@ -90,6 +90,8 @@ class DukePlayer;
 
 void gameError( const char *fmt, ... );
 
+#include "../dukegame/Components/Component.h"
+
 #include "gamesys/Event.h"
 #include "gamesys/Class.h"
 #include "gamesys/SysCvar.h"

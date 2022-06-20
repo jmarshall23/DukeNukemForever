@@ -523,6 +523,12 @@ public:
 	void					Event_GetGuiParmFloat(int guiNum, const char *key);
 	void					Event_GuiNamedEvent(int guiNum, const char *event);
 #endif
+
+	idList<DnComponent*>	entityComponents;
+protected:
+	void					RegisterComponent(DnComponent* component) {
+		entityComponents.AddUnique(component);
+	}
 };
 
 

@@ -9,7 +9,7 @@
 
 	586 constants
 	56 enums
-	291 classes/structs/unions
+	293 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -1442,6 +1442,18 @@ static enumTypeInfo_t enumTypeInfo[] = {
 	{ NULL, NULL }
 };
 
+static classVariableInfo_t DnComponent_typeInfo[] = {
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t DnMeshComponent_typeInfo[] = {
+	{ ": qhandle_t", "renderEntityHandle", (intptr_t)(&((DnMeshComponent *)0)->renderEntityHandle), sizeof( ((DnMeshComponent *)0)->renderEntityHandle ) },
+	{ "renderEntity_t", "renderEntityParams", (intptr_t)(&((DnMeshComponent *)0)->renderEntityParams), sizeof( ((DnMeshComponent *)0)->renderEntityParams ) },
+	{ "idEntity *", "parentEntity", (intptr_t)(&((DnMeshComponent *)0)->parentEntity), sizeof( ((DnMeshComponent *)0)->parentEntity ) },
+	{ "jointHandle_t", "bindJoint", (intptr_t)(&((DnMeshComponent *)0)->bindJoint), sizeof( ((DnMeshComponent *)0)->bindJoint ) },
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t idEventDef_typeInfo[] = {
 	{ ": const char *", "name", (intptr_t)(&((idEventDef *)0)->name), sizeof( ((idEventDef *)0)->name ) },
 	{ "const char *", "formatspec", (intptr_t)(&((idEventDef *)0)->formatspec), sizeof( ((idEventDef *)0)->formatspec ) },
@@ -1664,6 +1676,14 @@ static classVariableInfo_t jointMod_t_typeInfo[] = {
 static classVariableInfo_t frameLookup_t_typeInfo[] = {
 	{ "int", "num", (intptr_t)(&((frameLookup_t *)0)->num), sizeof( ((frameLookup_t *)0)->num ) },
 	{ "int", "firstCommand", (intptr_t)(&((frameLookup_t *)0)->firstCommand), sizeof( ((frameLookup_t *)0)->firstCommand ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t class_27_class_27_typeInfo[] = {
+//	{ "const idSoundShader *", "soundShader", (intptr_t)(&((class_27::class_27 *)0)->soundShader), sizeof( ((class_27::class_27 *)0)->soundShader ) },
+//	{ "const function_t *", "function", (intptr_t)(&((class_27::class_27 *)0)->function), sizeof( ((class_27::class_27 *)0)->function ) },
+//	{ "const idDeclSkin *", "skin", (intptr_t)(&((class_27::class_27 *)0)->skin), sizeof( ((class_27::class_27 *)0)->skin ) },
+//	{ "int", "index", (intptr_t)(&((class_27::class_27 *)0)->index), sizeof( ((class_27::class_27 *)0)->index ) },
 	{ NULL, 0 }
 };
 
@@ -2801,6 +2821,7 @@ static classVariableInfo_t idEntity_typeInfo[] = {
 	{ "int[4]", "PVSAreas", (intptr_t)(&((idEntity *)0)->PVSAreas), sizeof( ((idEntity *)0)->PVSAreas ) },
 	{ "signalList_t *", "signals", (intptr_t)(&((idEntity *)0)->signals), sizeof( ((idEntity *)0)->signals ) },
 	{ "int", "mpGUIState", (intptr_t)(&((idEntity *)0)->mpGUIState), sizeof( ((idEntity *)0)->mpGUIState ) },
+	{ "idList < DnComponent * >", "entityComponents", (intptr_t)(&((idEntity *)0)->entityComponents), sizeof( ((idEntity *)0)->entityComponents ) },
 	{ NULL, 0 }
 };
 
@@ -4529,7 +4550,7 @@ static classVariableInfo_t DnRand_typeInfo[] = {
 };
 
 static classVariableInfo_t DnAI_typeInfo[] = {
-	{ ": idActor *", "target", (intptr_t)(&((DnAI *)0)->target), sizeof( ((DnAI *)0)->target ) },
+	{ "idActor *", "target", (intptr_t)(&((DnAI *)0)->target), sizeof( ((DnAI *)0)->target ) },
 	{ "idVec3", "targetLastSeenLocation", (intptr_t)(&((DnAI *)0)->targetLastSeenLocation), sizeof( ((DnAI *)0)->targetLastSeenLocation ) },
 	{ "bool", "isTargetVisible", (intptr_t)(&((DnAI *)0)->isTargetVisible), sizeof( ((DnAI *)0)->isTargetVisible ) },
 	{ "idPhysics_Monster", "physicsObj", (intptr_t)(&((DnAI *)0)->physicsObj), sizeof( ((DnAI *)0)->physicsObj ) },
@@ -4552,6 +4573,7 @@ static classVariableInfo_t DnPigcop_typeInfo[] = {
 	{ "const idSoundShader *", "pig_roam3", (intptr_t)(&((DnPigcop *)0)->pig_roam3), sizeof( ((DnPigcop *)0)->pig_roam3 ) },
 	{ "const idSoundShader *", "pig_awake", (intptr_t)(&((DnPigcop *)0)->pig_awake), sizeof( ((DnPigcop *)0)->pig_awake ) },
 	{ "const idSoundShader *", "fire_sound", (intptr_t)(&((DnPigcop *)0)->fire_sound), sizeof( ((DnPigcop *)0)->fire_sound ) },
+	{ "DnMeshComponent", "shotgunMeshComponent", (intptr_t)(&((DnPigcop *)0)->shotgunMeshComponent), sizeof( ((DnPigcop *)0)->shotgunMeshComponent ) },
 	{ NULL, 0 }
 };
 
@@ -4632,6 +4654,8 @@ static classVariableInfo_t idThread_typeInfo[] = {
 };
 
 static classTypeInfo_t classTypeInfo[] = {
+	{ "DnComponent", "", sizeof(DnComponent), DnComponent_typeInfo },
+	{ "DnMeshComponent", "DnComponent", sizeof(DnMeshComponent), DnMeshComponent_typeInfo },
 	{ "idEventDef", "", sizeof(idEventDef), idEventDef_typeInfo },
 	{ "idEvent", "", sizeof(idEvent), idEvent_typeInfo },
 	{ "idEventArg", "", sizeof(idEventArg), idEventArg_typeInfo },
@@ -4657,7 +4681,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "jointInfo_t", "", sizeof(jointInfo_t), jointInfo_t_typeInfo },
 	{ "jointMod_t", "", sizeof(jointMod_t), jointMod_t_typeInfo },
 	{ "frameLookup_t", "", sizeof(frameLookup_t), frameLookup_t_typeInfo },
-//	{ "class_25::class_25", "", sizeof(class_25::class_25), class_25_class_25_typeInfo },
+//	{ "class_27::class_27", "", sizeof(class_27::class_27), class_27_class_27_typeInfo },
 	{ "frameCommand_t", "", sizeof(frameCommand_t), frameCommand_t_typeInfo },
 	{ "animFlags_t", "", sizeof(animFlags_t), animFlags_t_typeInfo },
 	{ "idMD5Anim", "", sizeof(idMD5Anim), idMD5Anim_typeInfo },

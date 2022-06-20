@@ -20,6 +20,10 @@ stateResult_t DnPigcop::state_Begin(stateParms_t* parms)
 
 	Event_SetState("state_Idle");
 
+	shotgunMeshComponent.Init(this, renderModelManager->FindModel("models/weapons/w_shotgun/w_shotgun.md3"));
+	shotgunMeshComponent.BindToJoint("HAND_L");
+	RegisterComponent(&shotgunMeshComponent);
+
 	pig_roam1 = declManager->FindSound("pig_roam1", false);
 	pig_roam2 = declManager->FindSound("pig_roam2", false);
 	pig_roam3 = declManager->FindSound("pig_roam3", false);

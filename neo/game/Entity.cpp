@@ -1474,6 +1474,11 @@ void idEntity::Present( void ) {
 		return;
 	}
 
+	for (int i = 0; i < entityComponents.Num(); i++)
+	{
+		entityComponents[i]->Think();
+	}
+
 	// don't present to the renderer if the entity hasn't changed
 	if ( !( thinkFlags & TH_UPDATEVISUALS ) ) {
 		return;

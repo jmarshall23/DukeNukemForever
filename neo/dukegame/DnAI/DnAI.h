@@ -180,6 +180,8 @@ protected:
 
 	idStr					GetCurrentAnimation() { return currentAnimation; }
 protected:
+	void					Event_SetHandWeapon(const char* modelName);
+
 	idActor*				target;
 	idVec3					targetLastSeenLocation;
 	bool					isTargetVisible;
