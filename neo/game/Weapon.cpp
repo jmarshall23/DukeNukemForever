@@ -30,7 +30,6 @@ If you have questions concerning this license or the applicable additional terms
 #pragma hdrstop
 
 #include "../engine/framework/DeclSkin.h"
-#include "../engine/renderer/RenderWorld.h"
 #include "../engine/ui/ListGUI.h"
 #include "../engine/ui/UserInterface.h"
 #include "Game_local.h"

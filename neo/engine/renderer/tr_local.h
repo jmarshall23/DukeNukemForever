@@ -94,8 +94,8 @@ SURFACES
 ==============================================================================
 */
 
-#include "ModelDecal.h"
-#include "ModelOverlay.h"
+#include "../models/ModelDecal.h"
+#include "../models/ModelOverlay.h"
 #include "Interaction.h"
 
 
@@ -1712,7 +1712,7 @@ idScreenRect R_CalcIntersectionScissor( const idRenderLightLocal * lightDef,
 
 //=============================================
 
-#include "RenderWorld_local.h"
+#include "../models/RenderWorld_local.h"
 #include "GuiModel.h"
 #include "VertexCache.h"
 

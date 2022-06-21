@@ -104,12 +104,15 @@ file(GLOB engineSourceFiles
     "engine/external/recast/Source/*.cpp*"
     "engine/framework/*.cpp*"
     "engine/framework/async/*.cpp*"
+    "engine/models/*.cpp*"
+    "engine/models/skeletal/*.cpp*"
+    "engine/models/static/*.cpp*"
     "engine/navigation/*.cpp*"
     "engine/openal/*.cpp*"
     "engine/renderer/*.cpp*"
     "engine/sound/*.cpp*"
     "engine/sys/*.cpp*"
-    "engine/sys/win32/*.cpp*"
+    "engine/sys/win32/*.cpp*" 
     "engine/ui/*.cpp*"
 )
 

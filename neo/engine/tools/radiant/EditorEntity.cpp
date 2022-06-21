@@ -31,7 +31,8 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "qe3.h"
 #include "../../renderer/tr_local.h"
-#include "../../renderer/model_local.h"	// for idRenderModelMD5
+#include "../../models/model_local.h"	// for idRenderModelMD5
+
 int g_entityId = 1;
 
 #define CURVE_TAG "curve_"

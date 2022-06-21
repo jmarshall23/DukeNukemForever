@@ -151,10 +151,10 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 #include "../engine/renderer/qgl.h"
 #include "../engine/renderer/Cinematic.h"
 #include "../engine/renderer/Material.h"
-#include "../engine/renderer/Model.h"
-#include "../engine/renderer/ModelManager.h"
+#include "../engine/models/Model.h"
+#include "../engine/models/ModelManager.h"
 #include "../engine/renderer/RenderSystem.h"
-#include "../engine/renderer/RenderWorld.h"
+#include "../engine/models/RenderWorld.h"
 
 // sound engine
 #include "../engine/sound/sound.h"
