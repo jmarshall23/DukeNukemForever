@@ -114,8 +114,8 @@
 {
 "classname" "monster_pigcop"
 "name" "monster_pigcop_1"
-"origin" "4528 920 -32"
-"angle" "270"
+"origin" "5488 1088 -32"
+"angle" "180"
 }
 // entity 11
 {
@@ -148,8 +148,8 @@
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"origin" "4208 112 -48"
-"angle" "90"
+"origin" "4152 904 -48"
+"angle" "0"
 }
 // entity 15
 {
