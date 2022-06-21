@@ -536,6 +536,33 @@ bool idRenderWorldLocal::InitFromMap( const char *name ) {
 		return false;
 	}
 
+	src->ExpectTokenString("worldInfo");
+	src->ExpectTokenString("{");
+
+// jmarshall
+	// Read world info.
+	while (1) {
+		if (!src->ReadToken(&token)) {
+			break;
+		}
+
+		if (token == "}")
+		{
+			break;
+		}
+
+		if (token == "portalSkyCamera")
+		{
+			portalSkyCamera.x = src->ParseFloat();
+			portalSkyCamera.y = src->ParseFloat();
+			portalSkyCamera.z = src->ParseFloat();
+			continue;
+		}
+
+		src->Error("idRenderWorldLocal::InitFromMap: bad token in world info \"%s\"", token.c_str());
+	}
+// jmarshall end
+
 	// parse the file
 	while ( 1 ) {
 		if ( !src->ReadToken( &token ) ) {

@@ -282,6 +282,21 @@ void idCollisionModelManagerLocal::LoadProcBSP( const char *name ) {
 		return;
 	}
 
+// jmarshall - worldinfo
+	src->ExpectTokenString("worldInfo");
+	src->ExpectTokenString("{");
+	while (1) {
+		if (!src->ReadToken(&token)) {
+			break;
+		}
+
+		if (token == "}")
+		{
+			break;
+		}
+	}
+// jmarshall end
+// 
 	// parse the file
 	while ( 1 ) {
 		if ( !src->ReadToken( &token ) ) {

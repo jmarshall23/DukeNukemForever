@@ -585,16 +585,16 @@ void idGameLocal::ServerWriteSnapshot( int clientNum, int sequence, idBitMsg &ms
 
 #ifdef _D3XP
 	// Add portalSky areas to PVS
-	if ( portalSkyEnt.GetEntity() ) {
-		pvsHandle_t	otherPVS, newPVS;
-		idEntity *skyEnt = portalSkyEnt.GetEntity();
-
-		otherPVS = gameLocal.pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
-		newPVS = gameLocal.pvs.MergeCurrentPVS( pvsHandle, otherPVS );
-		pvs.FreeCurrentPVS( pvsHandle );
-		pvs.FreeCurrentPVS( otherPVS );
-		pvsHandle = newPVS;
-	}
+	//if ( portalSkyEnt.GetEntity() ) {
+	//	pvsHandle_t	otherPVS, newPVS;
+	//	idEntity *skyEnt = portalSkyEnt.GetEntity();
+	//
+	//	otherPVS = gameLocal.pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
+	//	newPVS = gameLocal.pvs.MergeCurrentPVS( pvsHandle, otherPVS );
+	//	pvs.FreeCurrentPVS( pvsHandle );
+	//	pvs.FreeCurrentPVS( otherPVS );
+	//	pvsHandle = newPVS;
+	//}
 #endif
 
 #if ASYNC_WRITE_TAGS
@@ -1130,16 +1130,16 @@ void idGameLocal::ClientReadSnapshot( int clientNum, int sequence, const int gam
 
 #ifdef _D3XP
 	// Add portalSky areas to PVS
-	if ( portalSkyEnt.GetEntity() ) {
-		pvsHandle_t	otherPVS, newPVS;
-		idEntity *skyEnt = portalSkyEnt.GetEntity();
-
-		otherPVS = gameLocal.pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
-		newPVS = gameLocal.pvs.MergeCurrentPVS( pvsHandle, otherPVS );
-		pvs.FreeCurrentPVS( pvsHandle );
-		pvs.FreeCurrentPVS( otherPVS );
-		pvsHandle = newPVS;
-	}
+	//if ( portalSkyEnt.GetEntity() ) {
+	//	pvsHandle_t	otherPVS, newPVS;
+	//	idEntity *skyEnt = portalSkyEnt.GetEntity();
+	//
+	//	otherPVS = gameLocal.pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
+	//	newPVS = gameLocal.pvs.MergeCurrentPVS( pvsHandle, otherPVS );
+	//	pvs.FreeCurrentPVS( pvsHandle );
+	//	pvs.FreeCurrentPVS( otherPVS );
+	//	pvsHandle = newPVS;
+	//}
 #endif
 
 	// read the PVS from the snapshot

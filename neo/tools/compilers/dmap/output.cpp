@@ -651,6 +651,14 @@ void WriteOutputFile( void ) {
 	}
 
 	procFile->WriteFloatString( "%s\n\n", PROC_FILE_ID );
+// jmarshall
+	procFile->WriteFloatString("worldInfo {\n");
+	if (dmapGlobals.portal_sky_location != vec3_zero)
+	{
+		procFile->WriteFloatString("\tportalSkyCamera %f %f %f\n", dmapGlobals.portal_sky_location.x, dmapGlobals.portal_sky_location.y, dmapGlobals.portal_sky_location.z);
+	}
+	procFile->WriteFloatString("}\n\n");
+// jmarshall end
 
 	// write the entity models and information, writing entities first
 	for ( i=dmapGlobals.num_entities - 1 ; i >= 0 ; i-- ) {

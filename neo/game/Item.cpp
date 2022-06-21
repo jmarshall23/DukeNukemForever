@@ -1423,9 +1423,9 @@ void idObjective::Event_CamShot( ) {
 
 #ifdef _D3XP
 			// HACK : always draw sky-portal view if there is one in the map, this isn't real-time
-			if ( gameLocal.portalSkyEnt.GetEntity() && g_enablePortalSky.GetBool() ) {
+			if (gamePortalSkyWorld && g_enablePortalSky.GetBool() ) {
 				renderView_t	portalView = fullView;
-				portalView.vieworg = gameLocal.portalSkyEnt.GetEntity()->GetPhysics()->GetOrigin();
+				portalView.vieworg = gamePortalSkyWorld->GetPortalSkyCameraPosition();
 
 				// setup global fixup projection vars
 				if ( 1 ) {
@@ -1453,7 +1453,7 @@ void idObjective::Event_CamShot( ) {
 					fullView.shaderParms[5] = shiftScale.y;
 				}
 
-				gameRenderWorld->RenderScene( &portalView );
+				gamePortalSkyWorld->RenderScene( &portalView );
 				renderSystem->CaptureRenderToImage( "_currentRender" );
 			}
 #endif

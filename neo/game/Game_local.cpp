@@ -53,6 +53,9 @@ idCVar com_forceGenericSIMD( "com_forceGenericSIMD", "0", CVAR_BOOL|CVAR_SYSTEM,
 #endif
 
 idRenderWorld *				gameRenderWorld = NULL;		// all drawing is done to this world
+// jmarshall
+idRenderWorld*				gamePortalSkyWorld = NULL;
+// jmarshall end
 idSoundWorld *				gameSoundWorld = NULL;		// all audio goes to this world
 
 static gameExport_t			gameExport;
@@ -276,9 +279,6 @@ void idGameLocal::Clear( void ) {
 	memset( lagometer, 0, sizeof( lagometer ) );
 
 #ifdef _D3XP
-	portalSkyEnt			= NULL;
-	portalSkyActive			= false;
-
 	ResetSlowTimeVars();
 #endif
 }
@@ -569,8 +569,8 @@ void idGameLocal::SaveGame( idFile *f ) {
 	savegame.WriteFloat( clientSmoothing );
 
 #ifdef _D3XP
-	portalSkyEnt.Save( &savegame );
-	savegame.WriteBool( portalSkyActive );
+	//portalSkyEnt.Save( &savegame );
+	//savegame.WriteBool( portalSkyActive );
 
 	fast.Save( &savegame );
 	slow.Save( &savegame );
@@ -959,9 +959,6 @@ void idGameLocal::LoadMap( const char *mapName, int randseed ) {
 	nextGibTime		= 0;
 
 #ifdef _D3XP
-	portalSkyEnt			= NULL;
-	portalSkyActive			= false;
-
 	ResetSlowTimeVars();
 #endif
 
@@ -1451,9 +1448,6 @@ bool idGameLocal::InitFromSaveGame( const char *mapName, idRenderWorld *renderWo
 	savegame.ReadFloat( clientSmoothing );
 
 #ifdef _D3XP
-	portalSkyEnt.Restore( &savegame );
-	savegame.ReadBool( portalSkyActive );
-
 	fast.Restore( &savegame );
 	slow.Restore( &savegame );
 
@@ -1556,7 +1550,13 @@ void idGameLocal::MapClear( bool clearClients ) {
 		assert( !entities[ i ] );
 		spawnIds[ i ] = -1;
 	}
-
+// jmarshall
+	if (gamePortalSkyWorld)
+	{
+		renderSystem->FreeRenderWorld(gamePortalSkyWorld);
+		gamePortalSkyWorld = nullptr;
+	}
+// jmarshall end
 	entityHash.Clear( 1024, MAX_GENTITIES );
 
 	if ( !clearClients ) {
@@ -2160,21 +2160,21 @@ void idGameLocal::SetupPlayerPVS( void ) {
 
 #ifdef _D3XP
 		// if portalSky is preset, then merge into pvs so we get rotating brushes, etc
-		if ( portalSkyEnt.GetEntity() ) {
-			idEntity *skyEnt = portalSkyEnt.GetEntity();
-
-			otherPVS = pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
-			newPVS = pvs.MergeCurrentPVS( playerPVS, otherPVS );
-			pvs.FreeCurrentPVS( playerPVS );
-			pvs.FreeCurrentPVS( otherPVS );
-			playerPVS = newPVS;
-
-			otherPVS = pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
-			newPVS = pvs.MergeCurrentPVS( playerConnectedAreas, otherPVS );
-			pvs.FreeCurrentPVS( playerConnectedAreas );
-			pvs.FreeCurrentPVS( otherPVS );
-			playerConnectedAreas = newPVS;
-		}
+		//if ( portalSkyEnt.GetEntity() ) {
+		//	idEntity *skyEnt = portalSkyEnt.GetEntity();
+		//
+		//	otherPVS = pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
+		//	newPVS = pvs.MergeCurrentPVS( playerPVS, otherPVS );
+		//	pvs.FreeCurrentPVS( playerPVS );
+		//	pvs.FreeCurrentPVS( otherPVS );
+		//	playerPVS = newPVS;
+		//
+		//	otherPVS = pvs.SetupCurrentPVS( skyEnt->GetPVSAreas(), skyEnt->GetNumPVSAreas() );
+		//	newPVS = pvs.MergeCurrentPVS( playerConnectedAreas, otherPVS );
+		//	pvs.FreeCurrentPVS( playerConnectedAreas );
+		//	pvs.FreeCurrentPVS( otherPVS );
+		//	playerConnectedAreas = newPVS;
+		//}
 #endif
 	}
 }
@@ -4550,24 +4550,6 @@ void idGameLocal::ThrottleUserInfo( void ) {
 }
 
 #ifdef _D3XP
-/*
-=================
-idPlayer::SetPortalSkyEnt
-=================
-*/
-void idGameLocal::SetPortalSkyEnt( idEntity *ent ) {
-	portalSkyEnt = ent;
-}
-
-/*
-=================
-idPlayer::IsPortalSkyAcive
-=================
-*/
-bool idGameLocal::IsPortalSkyAcive() {
-	return portalSkyActive;
-}
-
 /*
 ===========
 idGameLocal::SelectTimeGroup

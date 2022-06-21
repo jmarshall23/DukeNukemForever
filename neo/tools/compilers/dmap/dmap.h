@@ -256,6 +256,8 @@ typedef struct {
 
 	int			entityNum;
 
+	idVec3		portal_sky_location;
+
 	idList<mapLight_t*>	mapLights;
 
 	bool	verbose;

@@ -10,9 +10,9 @@ dnGameLocal::DrawPortalSky
 */
 void dnGameLocal::DrawPortalSky(renderView_t& hackedView)
 {
-	if (gameLocal.portalSkyEnt.GetEntity() && gameLocal.IsPortalSkyAcive() && g_enablePortalSky.GetBool()) {
+	if (gamePortalSkyWorld != nullptr && g_enablePortalSky.GetBool()) {
 		renderView_t	portalView = hackedView;
-		portalView.vieworg = gameLocal.portalSkyEnt.GetEntity()->GetPhysics()->GetOrigin();
+		portalView.vieworg = gamePortalSkyWorld->GetPortalSkyCameraPosition();
 
 		// setup global fixup projection vars
 		if (1) {
@@ -34,7 +34,7 @@ void dnGameLocal::DrawPortalSky(renderView_t& hackedView)
 			hackedView.shaderParms[5] = shiftScale.y;
 		}
 
-		gameRenderWorld->RenderScene(&portalView);
+		gamePortalSkyWorld->RenderScene(&portalView);
 		renderSystem->CaptureRenderToImage("_currentRender");
 
 		hackedView.forceUpdate = true;				// FIX: for smoke particles not drawing when portalSky present

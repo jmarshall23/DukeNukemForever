@@ -3362,7 +3362,7 @@ idPortalSky::Event_PostSpawn
 ================
 */
 void idPortalSky::Event_PostSpawn() {
-	gameLocal.SetPortalSkyEnt( this );
+	//gameLocal.SetPortalSkyEnt( this );
 }
 
 /*
@@ -3371,6 +3371,6 @@ idPortalSky::Event_Activate
 ================
 */
 void idPortalSky::Event_Activate( idEntity *activator ) {
-	gameLocal.SetPortalSkyEnt( this );
+//	gameLocal.SetPortalSkyEnt( this );
 }
 #endif /* _D3XP */

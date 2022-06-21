@@ -95,3 +95,15 @@ entityDef info_vacuumSeparator {
 	"editor_mins"	"-16 -16 -16"
 	"editor_maxs"	"16 16 16"
 }
+
+
+entityDef info_portal_sky {
+	"spawnclass"	"idPortalSky"
+
+	"editor_usage"	"portal sky viewer"
+
+	"editor_color"	"1 1 0"
+	"editor_mins"	"-16 -16 -16"
+	"editor_maxs"	"16 16 16"
+}
+

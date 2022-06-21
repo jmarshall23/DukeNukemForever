@@ -105,6 +105,8 @@ public:
 // jmarshall
 	virtual int				GetNumWorldModels() const { return localModels.Num(); }
 	virtual idRenderModel* GetWorldModel(int idx) { return localModels[idx]; }
+
+	virtual idVec3			GetPortalSkyCameraPosition(void) { return portalSkyCamera; }
 // jmarshall end
 
 	virtual	int				NumAreas( void ) const;
@@ -147,6 +149,10 @@ public:
 	portalArea_t *			portalAreas;
 	int						numPortalAreas;
 	int						connectedAreaNum;		// incremented every time a door portal state changes
+
+// jmarshall
+	idVec3					portalSkyCamera;
+// jmarshall end
 
 	idScreenRect *			areaScreenRect;
 

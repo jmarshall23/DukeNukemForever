@@ -52,6 +52,14 @@ bool ProcessModel( uEntity_t *e, bool floodFill ) {
 
 			const char* forceshader = entity->mapEntity->epairs.GetString("forceshader");
 
+			if (!idStr::Icmp(className, "info_portal_sky")) {
+				idVec3	origin = entity->mapEntity->epairs.GetVector("origin");
+				dmapGlobals.portal_sky_location = origin;
+				continue;
+			}
+
+			
+
 			if (idStr::Icmp(className, "func_static")) {
 				continue;
 			}
@@ -259,6 +267,7 @@ void ResetDmapGlobals( void ) {
 	dmapGlobals.shadowOptLevel = SO_NONE;
 	dmapGlobals.drawBounds.Clear();
 	dmapGlobals.drawflag = false;
+	dmapGlobals.portal_sky_location.Zero();
 	dmapGlobals.totalShadowTriangles = 0;
 	dmapGlobals.totalShadowVerts = 0;
 }
@@ -440,7 +449,7 @@ void Dmap( const idCmdArgs &args ) {
 		}
 	}
 
-	NavMesh_f(args);
+	//NavMesh_f(args);
 
 	// free the common .map representation
 	delete dmapGlobals.dmapFile;

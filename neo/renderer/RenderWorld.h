@@ -37,8 +37,8 @@ If you have questions concerning this license or the applicable additional terms
 ===============================================================================
 */
 
-#define PROC_FILE_EXT				"proc"
-#define	PROC_FILE_ID				"mapProcFile003"
+#define PROC_FILE_EXT				"world"
+#define	PROC_FILE_ID				"dnProcFile001"
 
 // shader parms
 const int MAX_GLOBAL_SHADER_PARMS	= 12;
@@ -314,6 +314,8 @@ public:
 // jmarshall
 	virtual int				GetNumWorldModels() const = 0;
 	virtual idRenderModel* GetWorldModel(int idx) = 0;
+
+	virtual idVec3			GetPortalSkyCameraPosition(void) = 0;
 // jmarshall end
 
 	//-------------- Decals and Overlays  -----------------

@@ -7358,7 +7358,7 @@ void idPlayer::Think( void ) {
 	}
 
 	// determine if portal sky is in pvs
-	gameLocal.portalSkyActive = gameLocal.pvs.CheckAreasForPortalSky( gameLocal.GetPlayerPVS(), GetPhysics()->GetOrigin() );
+	//gameLocal.portalSkyActive = gameLocal.pvs.CheckAreasForPortalSky( gameLocal.GetPlayerPVS(), GetPhysics()->GetOrigin() );
 #endif
 }
 
@@ -9222,9 +9222,9 @@ void idPlayer::ClientPredictionThink( void ) {
 
 #ifdef _D3XP
 	// determine if portal sky is in pvs
-	pvsHandle_t	clientPVS = gameLocal.pvs.SetupCurrentPVS( GetPVSAreas(), GetNumPVSAreas() );
-	gameLocal.portalSkyActive = gameLocal.pvs.CheckAreasForPortalSky( clientPVS, GetPhysics()->GetOrigin() );
-	gameLocal.pvs.FreeCurrentPVS( clientPVS );
+	//pvsHandle_t	clientPVS = gameLocal.pvs.SetupCurrentPVS( GetPVSAreas(), GetNumPVSAreas() );
+	//gameLocal.portalSkyActive = gameLocal.pvs.CheckAreasForPortalSky( clientPVS, GetPhysics()->GetOrigin() );
+	//gameLocal.pvs.FreeCurrentPVS( clientPVS );
 #endif
 }
 

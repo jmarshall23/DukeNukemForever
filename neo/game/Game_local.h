@@ -56,6 +56,7 @@ If you have questions concerning this license or the applicable additional terms
 #endif
 
 extern idRenderWorld *				gameRenderWorld;
+extern idRenderWorld*				gamePortalSkyWorld;
 extern idSoundWorld *				gameSoundWorld;
 
 // the "gameversion" client command will print this plus compile date
@@ -346,13 +347,7 @@ public:
 	idEntityPtr<idEntity>	lastGUIEnt;				// last entity with a GUI, used by Cmd_NextGUI_f
 	int						lastGUI;				// last GUI on the lastGUIEnt
 
-#ifdef _D3XP
-	idEntityPtr<idEntity>	portalSkyEnt;
-	bool					portalSkyActive;
-
-	void					SetPortalSkyEnt( idEntity *ent );
-	bool					IsPortalSkyAcive();
-
+#ifdef _D3XP	
 	timeState_t				fast;
 	timeState_t				slow;
 

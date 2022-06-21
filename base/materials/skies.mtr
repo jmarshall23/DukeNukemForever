@@ -1,0 +1,34 @@
+textures/skies/la1
+{
+	{
+		map textures/skies/la1
+	}
+}
+
+textures/skies/la2
+{
+	{
+		map textures/skies/la2
+	}
+}
+
+textures/skies/la3
+{
+	{
+		map textures/skies/la3
+	}
+}
+
+textures/skies/la4
+{
+	{
+		map textures/skies/la4
+	}
+}
+
+textures/skies/la5
+{
+	{
+		map textures/skies/la5
+	}
+}

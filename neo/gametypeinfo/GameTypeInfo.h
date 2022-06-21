@@ -2060,8 +2060,6 @@ static classVariableInfo_t idGameLocal_typeInfo[] = {
 	{ "int", "entityDefBits", (intptr_t)(&((idGameLocal *)0)->entityDefBits), sizeof( ((idGameLocal *)0)->entityDefBits ) },
 	{ "idEntityPtr < idEntity >", "lastGUIEnt", (intptr_t)(&((idGameLocal *)0)->lastGUIEnt), sizeof( ((idGameLocal *)0)->lastGUIEnt ) },
 	{ "int", "lastGUI", (intptr_t)(&((idGameLocal *)0)->lastGUI), sizeof( ((idGameLocal *)0)->lastGUI ) },
-	{ "idEntityPtr < idEntity >", "portalSkyEnt", (intptr_t)(&((idGameLocal *)0)->portalSkyEnt), sizeof( ((idGameLocal *)0)->portalSkyEnt ) },
-	{ "bool", "portalSkyActive", (intptr_t)(&((idGameLocal *)0)->portalSkyActive), sizeof( ((idGameLocal *)0)->portalSkyActive ) },
 	{ "timeState_t", "fast", (intptr_t)(&((idGameLocal *)0)->fast), sizeof( ((idGameLocal *)0)->fast ) },
 	{ "timeState_t", "slow", (intptr_t)(&((idGameLocal *)0)->slow), sizeof( ((idGameLocal *)0)->slow ) },
 	{ "slowmoState_t", "slowmoState", (intptr_t)(&((idGameLocal *)0)->slowmoState), sizeof( ((idGameLocal *)0)->slowmoState ) },

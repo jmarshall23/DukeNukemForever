@@ -71,6 +71,15 @@ void idWorldspawn::Spawn( void ) {
 	{
 		gameSoundWorld->PlayShaderDirectly(music, SCHANNEL_MUSIC);
 	}
+	
+	idStr skybox = spawnArgs.GetString("skybox", "");
+	if (skybox != "")
+	{
+		gamePortalSkyWorld = renderSystem->AllocRenderWorld();
+		gamePortalSkyWorld->InitFromMap(va("maps/%s", skybox.c_str()));
+	}
+
+	
 // jmarshall end
 
 	// disable stamina on hell levels
