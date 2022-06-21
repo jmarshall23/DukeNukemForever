@@ -49,7 +49,7 @@ file(GLOB gameBaseFiles
 ) 
 
 file(GLOB typeInfoGenFiles
-    "typeinfo/*.cpp*"
+    "engine/typeinfo/*.cpp*"
 )
 
 file(GLOB gameTypeInfoFiles
@@ -57,11 +57,11 @@ file(GLOB gameTypeInfoFiles
 )
 
 set (toolSupportSrc 
-    framework/CmdSystem.cpp
-    framework/CVarSystem.cpp
-    framework/File.cpp
-    framework/FileSystem.cpp
-    framework/Unzip.cpp
+    engine/framework/CmdSystem.cpp
+    engine/framework/CVarSystem.cpp
+    engine/framework/File.cpp
+    engine/framework/FileSystem.cpp
+    engine/framework/Unzip.cpp
 )
 
 # idLib project
@@ -94,59 +94,59 @@ add_custom_target(
     COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/../typeinfogen.exe
     OUTPUT  ${CMAKE_CURRENT_BINARY_DIR}/__header.h
 )
-
+ 
 add_dependencies(gameTypeInfo GameCustomTarget)
 
 # Engine Project
 file(GLOB engineSourceFiles 
-    "cm/*.cpp*"
-    "external/detour/Source/*.cpp*"
-    "external/recast/Source/*.cpp*"
-    "framework/*.cpp*"
-    "framework/async/*.cpp*"
-    "navigation/*.cpp*"
-    "openal/*.cpp*"
-    "renderer/*.cpp*"
-    "sound/*.cpp*"
-    "sys/*.cpp*"
-    "sys/win32/*.cpp*"
-    "ui/*.cpp*"
+    "engine/cm/*.cpp*"
+    "engine/external/detour/Source/*.cpp*"
+    "engine/external/recast/Source/*.cpp*"
+    "engine/framework/*.cpp*"
+    "engine/framework/async/*.cpp*"
+    "engine/navigation/*.cpp*"
+    "engine/openal/*.cpp*"
+    "engine/renderer/*.cpp*"
+    "engine/sound/*.cpp*"
+    "engine/sys/*.cpp*"
+    "engine/sys/win32/*.cpp*"
+    "engine/ui/*.cpp*"
 )
 
 file(GLOB toolSourceFiles
-    "tools/*.cpp*"
-    "tools/af/*.cpp*"
-    "tools/comafx/*.cpp*"
-    "tools/radiant/*.cpp*"
-    "tools/common/*.cpp*"
-    "tools/common/PropTree/*.cpp*"
-    "tools/compilers/dmap/*.cpp*"
-    "tools/compilers/navmesh/*.cpp*"
-    "tools/guied/*.cpp*"
-    "tools/importpipeline/*.cpp*"
-    "tools/materialeditor/*.cpp*"
-    "tools/particle/*.cpp*"
-    "tools/pda/*.cpp*"
-    "tools/script/*.cpp*"
-    "tools/sound/*.cpp*"
+    "engine/tools/*.cpp*"
+    "engine/tools/af/*.cpp*"
+    "engine/tools/comafx/*.cpp*"
+    "engine/tools/radiant/*.cpp*"
+    "engine/tools/common/*.cpp*"
+    "engine/tools/common/PropTree/*.cpp*"
+    "engine/tools/compilers/dmap/*.cpp*"
+    "engine/tools/compilers/navmesh/*.cpp*"
+    "engine/tools/guied/*.cpp*"
+    "engine/tools/importpipeline/*.cpp*"
+    "engine/tools/materialeditor/*.cpp*"
+    "engine/tools/particle/*.cpp*"
+    "engine/tools/pda/*.cpp*"
+    "engine/tools/script/*.cpp*"
+    "engine/tools/sound/*.cpp*"
 ) 
 
 file(GLOB engineDependFiles
-    "external/glew/*.c*"
-    "sound/vorbissrc/*.c*"
-    "sound/vorbis/*.c*"
-    "sound/OggVorbis/oggsrc/*.c*"
-    "sound/OggVorbis/vorbissrc/*.c*"
+    "engine/external/glew/*.c*"
+    "engine/sound/vorbissrc/*.c*"
+    "engine/sound/vorbis/*.c*"
+    "engine/sound/OggVorbis/oggsrc/*.c*"
+    "engine/sound/OggVorbis/vorbissrc/*.c*"
 ) 
 
 add_library(engineExternal STATIC ${engineDependFiles})
 set_target_properties(engineExternal PROPERTIES LINK_FLAGS "/PDB:\"engineExternal.pdb\"")
 
 # Engine Project
-add_executable(DukeNukemForever ${engineSourceFiles} ${toolSourceFiles} ./sys/win32/rc/doom.rc)
+add_executable(DukeNukemForever ${engineSourceFiles} ${toolSourceFiles} ./engine/sys/win32/rc/doom.rc)
 target_compile_definitions(DukeNukemForever PUBLIC -D__DOOM_DLL__)
 add_dependencies(DukeNukemForever game)
-link_directories(DukeNukemForever external/bink)
+target_link_directories(DukeNukemForever PUBLIC engine/external/bink/)
 target_link_libraries(DukeNukemForever idLib engineExternal opengl32.lib binkw32.lib dinput8.lib dxguid.lib winmm.lib wsock32.lib dsound.lib glu32.lib dbghelp.lib iphlpapi.lib)
 target_precompile_headers(DukeNukemForever PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/idlib/precompiled.h)
 set_target_properties(DukeNukemForever PROPERTIES OUTPUT_NAME "DukeNukemForever" LINK_FLAGS "/STACK:16777216,16777216 /SUBSYSTEM:WINDOWS /PDB:\"DukeNukemForever.pdb\"")

@@ -26,9 +26,6 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-#include "../idlib/precompiled.h"
-#pragma hdrstop
-
 void R_Exp_Init( void ) {
 	common->Printf( "---------- R_Exp_Init -----------\n" );
 	common->Printf( "Disabled at compile time.\n" );

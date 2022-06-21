@@ -62,7 +62,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #else
 
-#include "../tools/comafx/StdAfx.h"
+#include "../engine/tools/comafx/StdAfx.h"
 
 #endif
 
@@ -111,35 +111,35 @@ If you have questions concerning this license or the applicable additional terms
 //-----------------------------------------------------
 
 // non-portable system services
-#include "../sys/sys_public.h"
+#include "../engine/sys/sys_public.h"
 
 // id lib
 #include "../idlib/Lib.h"
 
 // framework
-#include "../framework/BuildDefines.h"
-#include "../framework/Licensee.h"
-#include "../framework/CmdSystem.h"
-#include "../framework/CVarSystem.h"
-#include "../framework/Common.h"
-#include "../framework/File.h"
-#include "../framework/FileSystem.h"
-#include "../framework/UsercmdGen.h"
+#include "../engine/framework/BuildDefines.h"
+#include "../engine/framework/Licensee.h"
+#include "../engine/framework/CmdSystem.h"
+#include "../engine/framework/CVarSystem.h"
+#include "../engine/framework/Common.h"
+#include "../engine/framework/File.h"
+#include "../engine/framework/FileSystem.h"
+#include "../engine/framework/UsercmdGen.h"
 
 // Navigation
-#include "../navigation/Nav_public.h"
+#include "../engine/navigation/Nav_public.h"
 
 // decls
-#include "../framework/DeclManager.h"
-#include "../framework/DeclTable.h"
-#include "../framework/DeclSkin.h"
-#include "../framework/DeclEntityDef.h"
-#include "../framework/DeclFX.h"
-#include "../framework/DeclParticle.h"
-#include "../framework/DeclAF.h"
-#include "../framework/DeclPDA.h"
+#include "../engine/framework/DeclManager.h"
+#include "../engine/framework/DeclTable.h"
+#include "../engine/framework/DeclSkin.h"
+#include "../engine/framework/DeclEntityDef.h"
+#include "../engine/framework/DeclFX.h"
+#include "../engine/framework/DeclParticle.h"
+#include "../engine/framework/DeclAF.h"
+#include "../engine/framework/DeclPDA.h"
 // jmarshall
-#include "../framework/DeclRenderParam.h"
+#include "../engine/framework/DeclRenderParam.h"
 // jmarshall end
 
 // We have expression parsing and evaluation code in multiple places:
@@ -148,26 +148,26 @@ const int MAX_EXPRESSION_OPS = 4096;
 const int MAX_EXPRESSION_REGISTERS = 4096;
 
 // renderer
-#include "../renderer/qgl.h"
-#include "../renderer/Cinematic.h"
-#include "../renderer/Material.h"
-#include "../renderer/Model.h"
-#include "../renderer/ModelManager.h"
-#include "../renderer/RenderSystem.h"
-#include "../renderer/RenderWorld.h"
+#include "../engine/renderer/qgl.h"
+#include "../engine/renderer/Cinematic.h"
+#include "../engine/renderer/Material.h"
+#include "../engine/renderer/Model.h"
+#include "../engine/renderer/ModelManager.h"
+#include "../engine/renderer/RenderSystem.h"
+#include "../engine/renderer/RenderWorld.h"
 
 // sound engine
-#include "../sound/sound.h"
+#include "../engine/sound/sound.h"
 
 // asynchronous networking
-#include "../framework/async/NetworkSystem.h"
+#include "../engine/framework/async/NetworkSystem.h"
 
 // user interfaces
-#include "../ui/ListGUI.h"
-#include "../ui/UserInterface.h"
+#include "../engine/ui/ListGUI.h"
+#include "../engine/ui/UserInterface.h"
 
 // collision detection system
-#include "../cm/CollisionModel.h"
+#include "../engine/cm/CollisionModel.h"
 
 // game
 #include "../game/Game.h"
@@ -182,26 +182,26 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 
 #else
 
-#include "../framework/DemoChecksum.h"
+#include "../engine/framework/DemoChecksum.h"
 
 // framework
-#include "../framework/Compressor.h"
-#include "../framework/EventLoop.h"
-#include "../framework/KeyInput.h"
-#include "../framework/EditField.h"
-#include "../framework/Console.h"
-#include "../framework/DemoFile.h"
-#include "../framework/Session.h"
+#include "../engine/framework/Compressor.h"
+#include "../engine/framework/EventLoop.h"
+#include "../engine/framework/KeyInput.h"
+#include "../engine/framework/EditField.h"
+#include "../engine/framework/Console.h"
+#include "../engine/framework/DemoFile.h"
+#include "../engine/framework/Session.h"
 
 // asynchronous networking
-#include "../framework/async/AsyncNetwork.h"
+#include "../engine/framework/async/AsyncNetwork.h"
 
 // The editor entry points are always declared, but may just be
 // stubbed out on non-windows platforms.
-#include "../tools/edit_public.h"
+#include "../engine/tools/edit_public.h"
 
 // Compilers for map, model, video etc. processing.
-#include "../tools/compilers/compiler_public.h"
+#include "../engine/tools/compilers/compiler_public.h"
 
 #endif /* !GAME_DLL */
 
