@@ -65,12 +65,18 @@ void GenerateMaterials_f(const idCmdArgs& args)
 		if (folder == "common" || folder == "layout" || folder == "triggers")
 			continue;
 
+		//if (folder != "e1l1")
+		//	continue;
+
+		if(strstr(file.c_str(), "_normal"))
+			continue;
+
 		idFile *f = fileSystem->OpenFileAppend(va("materials/generated_mtr/%s.mtr", folder.c_str()));
 
 		f->Printf("%s\n", file.c_str());
 		f->Printf("{\n");
 		f->Printf("\tdiffusemap %s.tga\n", file.c_str());
-		f->Printf("\tbumpmap textures/common/flatnormal.tga\n");
+		f->Printf("\tbumpmap %s_normal.tga\n", file.c_str());
 		f->Printf("\tspecularmap textures/common/nospec.tga\n");
 		f->Printf("}\n\n");
 		fileSystem->CloseFile(f);

@@ -1,469 +1,469 @@
 textures/e1l1/E1L1_0
 {
 	diffusemap textures/e1l1/E1L1_0.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_0_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_1
 {
 	diffusemap textures/e1l1/E1L1_1.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_1_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_10
 {
 	diffusemap textures/e1l1/E1L1_10.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_10_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_11
 {
 	diffusemap textures/e1l1/E1L1_11.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_11_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_12
 {
 	diffusemap textures/e1l1/E1L1_12.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_12_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_13
 {
 	diffusemap textures/e1l1/E1L1_13.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_13_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_14
 {
 	diffusemap textures/e1l1/E1L1_14.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_14_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_15
 {
 	diffusemap textures/e1l1/E1L1_15.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_15_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_16
 {
 	diffusemap textures/e1l1/E1L1_16.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_16_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_17
 {
 	diffusemap textures/e1l1/E1L1_17.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_17_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_18
 {
 	diffusemap textures/e1l1/E1L1_18.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_18_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_19
 {
 	diffusemap textures/e1l1/E1L1_19.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_19_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_2
 {
 	diffusemap textures/e1l1/E1L1_2.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_2_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_20
 {
 	diffusemap textures/e1l1/E1L1_20.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_20_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_21
 {
 	diffusemap textures/e1l1/E1L1_21.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_21_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_22
 {
 	diffusemap textures/e1l1/E1L1_22.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_22_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_23
 {
 	diffusemap textures/e1l1/E1L1_23.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_23_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_24
 {
 	diffusemap textures/e1l1/E1L1_24.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_24_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_25
 {
 	diffusemap textures/e1l1/E1L1_25.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_25_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_26
 {
 	diffusemap textures/e1l1/E1L1_26.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_26_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_27
 {
 	diffusemap textures/e1l1/E1L1_27.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_27_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_28
 {
 	diffusemap textures/e1l1/E1L1_28.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_28_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_29
 {
 	diffusemap textures/e1l1/E1L1_29.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_29_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_3
 {
 	diffusemap textures/e1l1/E1L1_3.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_3_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_30
 {
 	diffusemap textures/e1l1/E1L1_30.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_30_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_31
 {
 	diffusemap textures/e1l1/E1L1_31.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_31_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_32
 {
 	diffusemap textures/e1l1/E1L1_32.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_32_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_33
 {
 	diffusemap textures/e1l1/E1L1_33.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_33_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_34
 {
 	diffusemap textures/e1l1/E1L1_34.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_34_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_35
 {
 	diffusemap textures/e1l1/E1L1_35.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_35_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_37
 {
 	diffusemap textures/e1l1/E1L1_37.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_37_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_38
 {
 	diffusemap textures/e1l1/E1L1_38.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_38_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_39
 {
 	diffusemap textures/e1l1/E1L1_39.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_39_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_4
 {
 	diffusemap textures/e1l1/E1L1_4.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_4_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_40
 {
 	diffusemap textures/e1l1/E1L1_40.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_40_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_41
 {
 	diffusemap textures/e1l1/E1L1_41.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_41_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_42
 {
 	diffusemap textures/e1l1/E1L1_42.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_42_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_43
 {
 	diffusemap textures/e1l1/E1L1_43.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_43_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_44
 {
 	diffusemap textures/e1l1/E1L1_44.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_44_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_45
 {
 	diffusemap textures/e1l1/E1L1_45.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_45_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_46
 {
 	diffusemap textures/e1l1/E1L1_46.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_46_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_47
 {
 	diffusemap textures/e1l1/E1L1_47.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_47_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_48
 {
 	diffusemap textures/e1l1/E1L1_48.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_48_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_49
 {
 	diffusemap textures/e1l1/E1L1_49.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_49_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_5
 {
 	diffusemap textures/e1l1/E1L1_5.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_5_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_50
 {
 	diffusemap textures/e1l1/E1L1_50.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_50_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_51
 {
 	diffusemap textures/e1l1/E1L1_51.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_51_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_53
 {
 	diffusemap textures/e1l1/E1L1_53.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_53_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_54
 {
 	diffusemap textures/e1l1/E1L1_54.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_54_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_55
 {
 	diffusemap textures/e1l1/E1L1_55.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_55_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_56
 {
 	diffusemap textures/e1l1/E1L1_56.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_56_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_57
 {
 	diffusemap textures/e1l1/E1L1_57.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_57_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_6
 {
 	diffusemap textures/e1l1/E1L1_6.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_6_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_61
 {
 	diffusemap textures/e1l1/E1L1_61.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_61_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_62
 {
 	diffusemap textures/e1l1/E1L1_62.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_62_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_63
 {
 	diffusemap textures/e1l1/E1L1_63.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_63_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_64
 {
 	diffusemap textures/e1l1/E1L1_64.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_64_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_65
 {
 	diffusemap textures/e1l1/E1L1_65.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_65_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_67
 {
 	diffusemap textures/e1l1/E1L1_67.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_67_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_68
 {
 	diffusemap textures/e1l1/E1L1_68.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_68_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_69
 {
 	diffusemap textures/e1l1/E1L1_69.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_69_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_7
 {
 	diffusemap textures/e1l1/E1L1_7.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_7_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_71
 {
 	diffusemap textures/e1l1/E1L1_71.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_71_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_72
 {
 	diffusemap textures/e1l1/E1L1_72.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_72_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_73
 {
 	diffusemap textures/e1l1/E1L1_73.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_73_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_8
 {
 	diffusemap textures/e1l1/E1L1_8.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_8_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
 textures/e1l1/E1L1_9
 {
 	diffusemap textures/e1l1/E1L1_9.tga
-	bumpmap textures/common/flatnormal.tga
+	bumpmap textures/e1l1/E1L1_9_normal.tga
 	specularmap textures/common/nospec.tga
 }
 
