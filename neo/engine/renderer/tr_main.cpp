@@ -442,72 +442,6 @@ void R_FrameFree( void *data ) {
 
 //==========================================================================
 
-void R_AxisToModelMatrix( const idMat3 &axis, const idVec3 &origin, float modelMatrix[16] ) {
-	modelMatrix[0] = axis[0][0];
-	modelMatrix[4] = axis[1][0];
-	modelMatrix[8] = axis[2][0];
-	modelMatrix[12] = origin[0];
-
-	modelMatrix[1] = axis[0][1];
-	modelMatrix[5] = axis[1][1];
-	modelMatrix[9] = axis[2][1];
-	modelMatrix[13] = origin[1];
-
-	modelMatrix[2] = axis[0][2];
-	modelMatrix[6] = axis[1][2];
-	modelMatrix[10] = axis[2][2];
-	modelMatrix[14] = origin[2];
-
-	modelMatrix[3] = 0;
-	modelMatrix[7] = 0;
-	modelMatrix[11] = 0;
-	modelMatrix[15] = 1;
-}
-
-
-// FIXME: these assume no skewing or scaling transforms
-
-void R_LocalPointToGlobal( const float modelMatrix[16], const idVec3 &in, idVec3 &out ) {
-#if defined(MACOS_X) && defined(__i386__)
-	__m128 m0, m1, m2, m3;
-	__m128 in0, in1, in2;
-	float i0,i1,i2;
-	i0 = in[0];
-	i1 = in[1];
-	i2 = in[2];
-	
-	m0 = _mm_loadu_ps(&modelMatrix[0]);
-	m1 = _mm_loadu_ps(&modelMatrix[4]);
-	m2 = _mm_loadu_ps(&modelMatrix[8]);
-	m3 = _mm_loadu_ps(&modelMatrix[12]);
-	
-	in0 = _mm_load1_ps(&i0);
-	in1 = _mm_load1_ps(&i1);
-	in2 = _mm_load1_ps(&i2);
-	
-	m0 = _mm_mul_ps(m0, in0);
-	m1 = _mm_mul_ps(m1, in1);
-	m2 = _mm_mul_ps(m2, in2);
-
-	m0 = _mm_add_ps(m0, m1);
-	m0 = _mm_add_ps(m0, m2);
-	m0 = _mm_add_ps(m0, m3);
-	
-	_mm_store_ss(&out[0], m0);
-	m1 = (__m128) _mm_shuffle_epi32((__m128i)m0, 0x55);
-	_mm_store_ss(&out[1], m1);
-	m2 = _mm_movehl_ps(m2, m0);
-	_mm_store_ss(&out[2], m2);
-#else	
-	out[0] = in[0] * modelMatrix[0] + in[1] * modelMatrix[4]
-		+ in[2] * modelMatrix[8] + modelMatrix[12];
-	out[1] = in[0] * modelMatrix[1] + in[1] * modelMatrix[5]
-		+ in[2] * modelMatrix[9] + modelMatrix[13];
-	out[2] = in[0] * modelMatrix[2] + in[1] * modelMatrix[6]
-		+ in[2] * modelMatrix[10] + modelMatrix[14];
-#endif
-}
-
 void R_PointTimesMatrix( const float modelMatrix[16], const idVec4 &in, idVec4 &out ) {
 	out[0] = in[0] * modelMatrix[0] + in[1] * modelMatrix[4]
 		+ in[2] * modelMatrix[8] + modelMatrix[12];
@@ -517,47 +451,6 @@ void R_PointTimesMatrix( const float modelMatrix[16], const idVec4 &in, idVec4 &
 		+ in[2] * modelMatrix[10] + modelMatrix[14];
 	out[3] = in[0] * modelMatrix[3] + in[1] * modelMatrix[7]
 		+ in[2] * modelMatrix[11] + modelMatrix[15];
-}
-
-void R_GlobalPointToLocal( const float modelMatrix[16], const idVec3 &in, idVec3 &out ) {
-	idVec3	temp;
-
-	VectorSubtract( in, &modelMatrix[12], temp );
-
-	out[0] = DotProduct( temp, &modelMatrix[0] );
-	out[1] = DotProduct( temp, &modelMatrix[4] );
-	out[2] = DotProduct( temp, &modelMatrix[8] );
-}
-
-void R_LocalVectorToGlobal( const float modelMatrix[16], const idVec3 &in, idVec3 &out ) {
-	out[0] = in[0] * modelMatrix[0] + in[1] * modelMatrix[4]
-		+ in[2] * modelMatrix[8];
-	out[1] = in[0] * modelMatrix[1] + in[1] * modelMatrix[5]
-		+ in[2] * modelMatrix[9];
-	out[2] = in[0] * modelMatrix[2] + in[1] * modelMatrix[6]
-		+ in[2] * modelMatrix[10];
-}
-
-void R_GlobalVectorToLocal( const float modelMatrix[16], const idVec3 &in, idVec3 &out ) {
-	out[0] = DotProduct( in, &modelMatrix[0] );
-	out[1] = DotProduct( in, &modelMatrix[4] );
-	out[2] = DotProduct( in, &modelMatrix[8] );
-}
-
-void R_GlobalPlaneToLocal( const float modelMatrix[16], const idPlane &in, idPlane &out ) {
-	out[0] = DotProduct( in, &modelMatrix[0] );
-	out[1] = DotProduct( in, &modelMatrix[4] );
-	out[2] = DotProduct( in, &modelMatrix[8] );
-	out[3] = in[3] + modelMatrix[12] * in[0] + modelMatrix[13] * in[1] + modelMatrix[14] * in[2];
-}
-
-void R_LocalPlaneToGlobal( const float modelMatrix[16], const idPlane &in, idPlane &out ) {
-	float	offset;
-
-	R_LocalVectorToGlobal( modelMatrix, in.Normal(), out.Normal() );
-
-	offset = modelMatrix[12] * out[0] + modelMatrix[13] * out[1] + modelMatrix[14] * out[2];
-	out[3] = in[3] - offset;
 }
 
 // transform Z in eye coordinates to window coordinates
@@ -614,88 +507,6 @@ bool R_CullLocalBox( const idBounds &bounds, const float modelMatrix[16], int nu
 		return true;
 	}
 	return R_CornerCullLocalBox( bounds, modelMatrix, numPlanes, planes );
-}
-
-/*
-==========================
-R_TransformModelToClip
-==========================
-*/
-void R_TransformModelToClip( const idVec3 &src, const float *modelMatrix, const float *projectionMatrix, idPlane &eye, idPlane &dst ) {
-	int i;
-
-	for ( i = 0 ; i < 4 ; i++ ) {
-		eye[i] = 
-			src[0] * modelMatrix[ i + 0 * 4 ] +
-			src[1] * modelMatrix[ i + 1 * 4 ] +
-			src[2] * modelMatrix[ i + 2 * 4 ] +
-			1 * modelMatrix[ i + 3 * 4 ];
-	}
-
-	for ( i = 0 ; i < 4 ; i++ ) {
-		dst[i] = 
-			eye[0] * projectionMatrix[ i + 0 * 4 ] +
-			eye[1] * projectionMatrix[ i + 1 * 4 ] +
-			eye[2] * projectionMatrix[ i + 2 * 4 ] +
-			eye[3] * projectionMatrix[ i + 3 * 4 ];
-	}
-}
-
-/*
-==========================
-R_GlobalToNormalizedDeviceCoordinates
-
--1 to 1 range in x, y, and z
-==========================
-*/
-void R_GlobalToNormalizedDeviceCoordinates( const idVec3 &global, idVec3 &ndc ) {
-	int		i;
-	idPlane	view;
-	idPlane	clip;
-
-	// _D3XP added work on primaryView when no viewDef
-	if ( !tr.viewDef ) {
-
-		for ( i = 0 ; i < 4 ; i ++ ) {
-			view[i] = 
-				global[0] * tr.primaryView->worldSpace.modelViewMatrix[ i + 0 * 4 ] +
-				global[1] * tr.primaryView->worldSpace.modelViewMatrix[ i + 1 * 4 ] +
-				global[2] * tr.primaryView->worldSpace.modelViewMatrix[ i + 2 * 4 ] +
-					tr.primaryView->worldSpace.modelViewMatrix[ i + 3 * 4 ];
-		}
-
-		for ( i = 0 ; i < 4 ; i ++ ) {
-			clip[i] = 
-				view[0] * tr.primaryView->projectionMatrix[ i + 0 * 4 ] +
-				view[1] * tr.primaryView->projectionMatrix[ i + 1 * 4 ] +
-				view[2] * tr.primaryView->projectionMatrix[ i + 2 * 4 ] +
-				view[3] * tr.primaryView->projectionMatrix[ i + 3 * 4 ];
-		}
-
-	} else {
-
-		for ( i = 0 ; i < 4 ; i ++ ) {
-			view[i] = 
-				global[0] * tr.viewDef->worldSpace.modelViewMatrix[ i + 0 * 4 ] +
-				global[1] * tr.viewDef->worldSpace.modelViewMatrix[ i + 1 * 4 ] +
-				global[2] * tr.viewDef->worldSpace.modelViewMatrix[ i + 2 * 4 ] +
-				tr.viewDef->worldSpace.modelViewMatrix[ i + 3 * 4 ];
-		}
-
-
-		for ( i = 0 ; i < 4 ; i ++ ) {
-			clip[i] = 
-				view[0] * tr.viewDef->projectionMatrix[ i + 0 * 4 ] +
-				view[1] * tr.viewDef->projectionMatrix[ i + 1 * 4 ] +
-				view[2] * tr.viewDef->projectionMatrix[ i + 2 * 4 ] +
-				view[3] * tr.viewDef->projectionMatrix[ i + 3 * 4 ];
-		}
-
-	}
-
-	ndc[0] = clip[0] / clip[3];
-	ndc[1] = clip[1] / clip[3];
-	ndc[2] = ( clip[2] + clip[3] ) / ( 2 * clip[3] );
 }
 
 /*

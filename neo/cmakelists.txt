@@ -62,7 +62,7 @@ set (toolSupportSrc
     engine/framework/File.cpp
     engine/framework/FileSystem.cpp
     engine/framework/Unzip.cpp
-) 
+)
 
 # idLib project
 add_definitions(-D_AFXDLL -D_WINDOWS -D_CRT_SECURE_NO_DEPRECATE)
