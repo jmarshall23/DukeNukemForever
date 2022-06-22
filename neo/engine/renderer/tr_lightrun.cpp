@@ -205,9 +205,6 @@ void R_CreateEntityRefs( idRenderEntityLocal *def ) {
 	// bump the view count so we can tell if an
 	// area already has a reference
 	tr.viewCount++;
-
-	// push these points down the BSP tree into areas
-	def->world->PushVolumeIntoTree( def, NULL, 8, transformed );
 }
 
 
@@ -478,17 +475,6 @@ void R_CreateLightRefs( idRenderLightLocal *light ) {
 	// bump the view count so we can tell if an
 	// area already has a reference
 	tr.viewCount++;
-
-	// if we have a prelight model that includes all the shadows for the major world occluders,
-	// we can limit the area references to those visible through the portals from the light center.
-	// We can't do this in the normal case, because shadows are cast from back facing triangles, which
-	// may be in areas not directly visible to the light projection center.
-	if ( light->parms.prelightModel && r_useLightPortalFlow.GetBool() && light->lightShader->LightCastsShadows() ) {
-		light->world->FlowLightThroughPortals( light );
-	} else {
-		// push these points down the BSP tree into areas
-		light->world->PushVolumeIntoTree( NULL, light, tri->numVerts, points );
-	}
 }
 
 /*
@@ -601,11 +587,6 @@ void R_FreeLightDefDerivedData( idRenderLightLocal *ldef ) {
 		dp->fogLight = NULL;
 	}
 
-	// free all the interactions
-	while ( ldef->firstInteraction != NULL ) {
-		ldef->firstInteraction->UnlinkAndFree();
-	}
-
 	// free all the references to the light
 	for ( lref = ldef->references ; lref ; lref = nextRef ) {
 		nextRef = lref->ownerNext;
@@ -613,9 +594,6 @@ void R_FreeLightDefDerivedData( idRenderLightLocal *ldef ) {
 		// unlink from the area
 		lref->areaNext->areaPrev = lref->areaPrev;
 		lref->areaPrev->areaNext = lref->areaNext;
-
-		// put it back on the free list for reuse
-		ldef->world->areaReferenceAllocator.Free( lref );
 	}
 	ldef->references = NULL;
 
@@ -653,11 +631,6 @@ void R_FreeEntityDefDerivedData( idRenderEntityLocal *def, bool keepDecals, bool
 		}
 	}
 
-	// free all the interactions
-	while ( def->firstInteraction != NULL ) {
-		def->firstInteraction->UnlinkAndFree();
-	}
-
 	// clear the dynamic model if present
 	if ( def->dynamicModel ) {
 		def->dynamicModel = NULL;
@@ -680,9 +653,6 @@ void R_FreeEntityDefDerivedData( idRenderEntityLocal *def, bool keepDecals, bool
 		// unlink from the area
 		ref->areaNext->areaPrev = ref->areaPrev;
 		ref->areaPrev->areaNext = ref->areaNext;
-
-		// put it back on the free list for reuse
-		def->world->areaReferenceAllocator.Free( ref );
 	}	
 	def->entityRefs = NULL;
 }
@@ -697,11 +667,6 @@ R_FreeEntityDefDerivedData
 ==================
 */
 void R_ClearEntityDefDynamicModel( idRenderEntityLocal *def ) {
-	// free all the interaction surfaces
-	for( idInteraction *inter = def->firstInteraction; inter != NULL && !inter->IsEmpty(); inter = inter->entityNext ) {
-		inter->FreeSurfaces();
-	}
-
 	// clear the dynamic model if present
 	if ( def->dynamicModel ) {
 		def->dynamicModel = NULL;
@@ -832,11 +797,7 @@ void R_ReCreateWorldReferences( void ) {
 			}
 			// the world model entities are put specifically in a single
 			// area, instead of just pushing their bounds into the tree
-			if ( i < rw->numPortalAreas ) {
-				rw->AddEntityRefToArea( def, &rw->portalAreas[i] );
-			} else {
-				R_CreateEntityRefs( def );
-			}
+			R_CreateEntityRefs(def);
 		}
 
 		for ( i = 0 ; i < rw->lightDefs.Num() ; i++ ) {

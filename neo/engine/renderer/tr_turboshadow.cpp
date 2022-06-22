@@ -34,7 +34,6 @@ If you have questions concerning this license or the applicable additional terms
 int	c_turboUsedVerts;
 int c_turboUnusedVerts;
 
-
 /*
 =====================
 R_CreateVertexProgramTurboShadowVolume
@@ -43,51 +42,14 @@ are dangling edges that are outside the light frustum still making planes?
 =====================
 */
 srfTriangles_t *R_CreateVertexProgramTurboShadowVolume( const idRenderEntityLocal *ent, 
-														const srfTriangles_t *tri, const idRenderLightLocal *light,
-														srfCullInfo_t &cullInfo ) {
+														const srfTriangles_t *tri, const idRenderLightLocal *light ) {
 	int		i, j;
 	srfTriangles_t	*newTri;
 	silEdge_t	*sil;
 	const glIndex_t *indexes;
-	const byte *facing;
-
-	R_CalcInteractionFacing( ent, tri, light, cullInfo );
-	if ( r_useShadowProjectedCull.GetBool() ) {
-		R_CalcInteractionCullBits( ent, tri, light, cullInfo );
-	}
 
 	int numFaces = tri->numIndexes / 3;
-	int	numShadowingFaces = 0;
-	facing = cullInfo.facing;
-
-	// if all the triangles are inside the light frustum
-	if ( cullInfo.cullBits == LIGHT_CULL_ALL_FRONT || !r_useShadowProjectedCull.GetBool() ) {
-
-		// count the number of shadowing faces
-		for ( i = 0; i < numFaces; i++ ) {
-			numShadowingFaces += facing[i];
-		}
-		numShadowingFaces = numFaces - numShadowingFaces;
-
-	} else {
-
-		// make all triangles that are outside the light frustum "facing", so they won't cast shadows
-		indexes = tri->indexes;
-		byte *modifyFacing = cullInfo.facing;
-		const byte *cullBits = cullInfo.cullBits;
-		for ( j = i = 0; i < tri->numIndexes; i += 3, j++ ) {
-			if ( !modifyFacing[j] ) {
-				int	i1 = indexes[i+0];
-				int	i2 = indexes[i+1];
-				int	i3 = indexes[i+2];
-				if ( cullBits[i1] & cullBits[i2] & cullBits[i3] ) {
-					modifyFacing[j] = 1;
-				} else {
-					numShadowingFaces++;
-				}
-			}
-		}
-	}
+	int	numShadowingFaces = numFaces;
 
 	if ( !numShadowingFaces ) {
 		// no faces are inside the light frustum and still facing the right way
@@ -112,8 +74,8 @@ srfTriangles_t *R_CreateVertexProgramTurboShadowVolume( const idRenderEntityLoca
 	// create new triangles along sil planes
 	for ( sil = tri->silEdges, i = tri->numSilEdges; i > 0; i--, sil++ ) {
 
-		int f1 = facing[sil->p1];
-		int f2 = facing[sil->p2];
+		int f1 = tri->silIndexes[sil->p1];
+		int f2 = tri->silIndexes[sil->p2];
 
 		if ( !( f1 ^ f2 ) ) {
 			continue;
@@ -159,10 +121,6 @@ srfTriangles_t *R_CreateVertexProgramTurboShadowVolume( const idRenderEntityLoca
 	indexes = tri->indexes;
 	shadowIndexes = newTri->indexes + numShadowIndexes;
 	for ( i = 0, j = 0; i < tri->numIndexes; i += 3, j++ ) {
-		if ( facing[j] ) {
-			continue;
-		}
-
 		int i0 = indexes[i+0] << 1;
 		shadowIndexes[2] = i0;
 		shadowIndexes[3] = i0 ^ 1;
@@ -185,52 +143,15 @@ R_CreateTurboShadowVolume
 =====================
 */
 srfTriangles_t *R_CreateTurboShadowVolume( const idRenderEntityLocal *ent,
-											const srfTriangles_t *tri, const idRenderLightLocal *light,
-											srfCullInfo_t &cullInfo ) {
+											const srfTriangles_t *tri, const idRenderLightLocal *light ) {
 	int		i, j;
 	idVec3	localLightOrigin;
 	srfTriangles_t	*newTri;
 	silEdge_t	*sil;
 	const glIndex_t *indexes;
-	const byte *facing;
-
-	R_CalcInteractionFacing( ent, tri, light, cullInfo );
-	if ( r_useShadowProjectedCull.GetBool() ) {
-		R_CalcInteractionCullBits( ent, tri, light, cullInfo );
-	}
 
 	int numFaces = tri->numIndexes / 3;
-	int	numShadowingFaces = 0;
-	facing = cullInfo.facing;
-
-	// if all the triangles are inside the light frustum
-	if ( cullInfo.cullBits == LIGHT_CULL_ALL_FRONT || !r_useShadowProjectedCull.GetBool() ) {
-
-		// count the number of shadowing faces
-		for ( i = 0; i < numFaces; i++ ) {
-			numShadowingFaces += facing[i];
-		}
-		numShadowingFaces = numFaces - numShadowingFaces;
-
-	} else {
-
-		// make all triangles that are outside the light frustum "facing", so they won't cast shadows
-		indexes = tri->indexes;
-		byte *modifyFacing = cullInfo.facing;
-		const byte *cullBits = cullInfo.cullBits;
-		for ( j = i = 0; i < tri->numIndexes; i += 3, j++ ) {
-			if ( !modifyFacing[j] ) {
-				int	i1 = indexes[i+0];
-				int	i2 = indexes[i+1];
-				int	i3 = indexes[i+2];
-				if ( cullBits[i1] & cullBits[i2] & cullBits[i3] ) {
-					modifyFacing[j] = 1;
-				} else {
-					numShadowingFaces++;
-				}
-			}
-		}
-	}
+	int	numShadowingFaces = numFaces;
 
 	if ( !numShadowingFaces ) {
 		// no faces are inside the light frustum and still facing the right way
@@ -253,9 +174,6 @@ srfTriangles_t *R_CreateTurboShadowVolume( const idRenderEntityLocal *ent,
 	SIMDProcessor->Memset( vertRemap, -1, tri->numVerts * sizeof( vertRemap[0] ) );
 
 	for ( i = 0, j = 0; i < tri->numIndexes; i += 3, j++ ) {
-		if ( facing[j] ) {
-			continue;
-		}
 		// this may pull in some vertexes that are outside
 		// the frustum, because they connect to vertexes inside
 		vertRemap[tri->silIndexes[i+0]] = 0;
@@ -288,8 +206,8 @@ srfTriangles_t *R_CreateTurboShadowVolume( const idRenderEntityLocal *ent,
 	// create new triangles along sil planes
 	for ( sil = tri->silEdges, i = tri->numSilEdges; i > 0; i--, sil++ ) {
 
-		int f1 = facing[sil->p1];
-		int f2 = facing[sil->p2];
+		int f1 = tri->silIndexes[sil->p1];
+		int f2 = tri->silIndexes[sil->p2];
 
 		if ( !( f1 ^ f2 ) ) {
 			continue;
@@ -335,10 +253,6 @@ srfTriangles_t *R_CreateTurboShadowVolume( const idRenderEntityLocal *ent,
 	indexes = tri->silIndexes;
 	shadowIndexes = newTri->indexes + numShadowIndexes;
 	for ( i = 0, j = 0; i < tri->numIndexes; i += 3, j++ ) {
-		if ( facing[j] ) {
-			continue;
-		}
-
 		int i0 = vertRemap[indexes[i+0]];
 		shadowIndexes[2] = i0;
 		shadowIndexes[3] = i0 ^ 1;

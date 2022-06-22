@@ -202,7 +202,7 @@ void idMover::Save( idSaveGame *savefile ) const {
 
 	savefile->WriteInt( areaPortal );
 	if ( areaPortal > 0 ) {
-		savefile->WriteInt( gameRenderWorld->GetPortalState( areaPortal ) );
+//		savefile->WriteInt( gameRenderWorld->GetPortalState( areaPortal ) );
 	}
 
 	savefile->WriteInt( guiTargets.Num() );
@@ -363,7 +363,7 @@ void idMover::Spawn( void ) {
 	SetPhysics( &physicsObj );
 
 	// see if we are on an areaportal
-	areaPortal = gameRenderWorld->FindPortal( GetPhysics()->GetAbsBounds() );
+	areaPortal = 0; // gameRenderWorld->FindPortal(GetPhysics()->GetAbsBounds());
 
 	if ( spawnArgs.MatchPrefix( "guiTarget" ) ) {
 		if ( gameLocal.GameState() == GAMESTATE_STARTUP ) {
@@ -2208,7 +2208,7 @@ void idMover_Binary::Save( idSaveGame *savefile ) const {
 
 	savefile->WriteInt( areaPortal );
 	if ( areaPortal ) {
-		savefile->WriteInt( gameRenderWorld->GetPortalState( areaPortal ) );
+//		savefile->WriteInt( gameRenderWorld->GetPortalState( areaPortal ) );
 	}
 	savefile->WriteBool( blocked );
 #ifdef _D3XP
@@ -3337,7 +3337,7 @@ void idDoor::Spawn( void ) {
 	}
 
 	// see if we are on an areaportal
-	areaPortal = gameRenderWorld->FindPortal( GetPhysics()->GetAbsBounds() );
+	areaPortal = 0;// gameRenderWorld->FindPortal(GetPhysics()->GetAbsBounds());
 	if ( !start_open ) {
 		// start closed
 		ProcessEvent( &EV_Mover_ClosePortal );

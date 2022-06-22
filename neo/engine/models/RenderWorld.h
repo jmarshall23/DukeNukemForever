@@ -305,10 +305,6 @@ public:
 	virtual	void			FreeLightDef( qhandle_t lightHandle ) = 0;
 	virtual const renderLight_t *GetRenderLight( qhandle_t lightHandle ) const = 0;
 
-	// Force the generation of all light / surface interactions at the start of a level
-	// If this isn't called, they will all be dynamically generated
-	virtual	void			GenerateAllInteractions() = 0;
-
 	// returns true if this area model needs portal sky to draw
 	virtual bool			CheckAreaForPortalSky( int areaNum ) = 0;
 // jmarshall
@@ -347,44 +343,6 @@ public:
 	// It would also be acceptable to render a scene multiple times, for "rear view mirrors", etc
 	virtual void			RenderScene( const renderView_t *renderView ) = 0;
 
-	//-------------- Portal Area Information -----------------
-
-	// returns the number of portals
-	virtual int				NumPortals( void ) const = 0;
-
-	// returns 0 if no portal contacts the bounds
-	// This is used by the game to identify portals that are contained
-	// inside doors, so the connection between areas can be topologically
-	// terminated when the door shuts.
-	virtual	qhandle_t		FindPortal( const idBounds &b ) const = 0;
-
-	// doors explicitly close off portals when shut
-	// multiple bits can be set to block multiple things, ie: ( PS_VIEW | PS_LOCATION | PS_AIR )
-	virtual	void			SetPortalState( qhandle_t portal, int blockingBits ) = 0;
-	virtual int				GetPortalState( qhandle_t portal ) = 0;
-
-	// returns true only if a chain of portals without the given connection bits set
-	// exists between the two areas (a door doesn't separate them, etc)
-	virtual	bool			AreasAreConnected( int areaNum1, int areaNum2, portalConnection_t connection ) = 0;
-
-	// returns the number of portal areas in a map, so game code can build information
-	// tables for the different areas
-	virtual	int				NumAreas( void ) const = 0;
-
-	// Will return -1 if the point is not in an area, otherwise
-	// it will return 0 <= value < NumAreas()
-	virtual int				PointInArea( const idVec3 &point ) const = 0;
-
-	// fills the *areas array with the numbers of the areas the bounds cover
-	// returns the total number of areas the bounds cover
-	virtual int				BoundsInAreas( const idBounds &bounds, int *areas, int maxAreas ) const = 0;
-
-	// Used by the sound system to do area flowing
-	virtual	int				NumPortalsInArea( int areaNum ) = 0;
-
-	// returns one portal from an area
-	virtual exitPortal_t	GetPortal( int areaNum, int portalNum ) = 0;
-
 	//-------------- Tracing  -----------------
 
 	// Checks a ray trace against any gui surfaces in an entity, returning the
@@ -398,9 +356,6 @@ public:
 
 	// Traces vs the whole rendered world. FIXME: we need some kind of material flags.
 	virtual bool			Trace( modelTrace_t &trace, const idVec3 &start, const idVec3 &end, const float radius, bool skipDynamic = true, bool skipPlayer = false ) const = 0;
-
-	// Traces vs the world model bsp tree.
-	virtual bool			FastWorldTrace( modelTrace_t &trace, const idVec3 &start, const idVec3 &end ) const = 0;
 
 	//-------------- Demo Control  -----------------
 

@@ -92,7 +92,6 @@ public:
 
 	virtual bool			CheckAreaForPortalSky( int areaNum );
 
-	virtual	void			GenerateAllInteractions();
 	virtual void			RegenerateWorld();
 
 	virtual void			ProjectDecalOntoWorld( const idFixedWinding &winding, const idVec3 &projectionOrigin, const bool parallel, const float fadeDepth, const idMaterial *material, const int startTime );
@@ -111,14 +110,12 @@ public:
 
 	virtual	int				NumAreas( void ) const;
 	virtual int				PointInArea( const idVec3 &point ) const;
-	virtual int				BoundsInAreas( const idBounds &bounds, int *areas, int maxAreas ) const;
 	virtual	int				NumPortalsInArea( int areaNum );
 	virtual exitPortal_t	GetPortal( int areaNum, int portalNum );
 
 	virtual	guiPoint_t		GuiTrace( qhandle_t entityHandle, const idVec3 start, const idVec3 end ) const;
 	virtual bool			ModelTrace( modelTrace_t &trace, qhandle_t entityHandle, const idVec3 &start, const idVec3 &end, const float radius ) const;
 	virtual bool			Trace( modelTrace_t &trace, const idVec3 &start, const idVec3 &end, const float radius, bool skipDynamic = true, bool skipPlayer = false ) const;
-	virtual bool			FastWorldTrace( modelTrace_t &trace, const idVec3 &start, const idVec3 &end ) const;
 
 	virtual void			DebugClearLines( int time );
 	virtual void			DebugLine( const idVec4 &color, const idVec3 &start, const idVec3 &end, const int lifetime = 0, const bool depthTest = false );
@@ -164,21 +161,7 @@ public:
 	idList<idRenderEntityLocal*>	entityDefs;
 	idList<idRenderLightLocal*>		lightDefs;
 
-	idBlockAlloc<areaReference_t, 1024> areaReferenceAllocator;
-	idBlockAlloc<idInteraction, 256>	interactionAllocator;
-	idBlockAlloc<areaNumRef_t, 1024>	areaNumRefAllocator;
-
-	// all light / entity interactions are referenced here for fast lookup without
-	// having to crawl the doubly linked lists.  EnntityDefs are sequential for better
-	// cache access, because the table is accessed by light in idRenderWorldLocal::CreateLightDefInteractions()
-	// Growing this table is time consuming, so we add a pad value to the number
-	// of entityDefs and lightDefs
-	idInteraction **		interactionTable;
-	int						interactionTableWidth;		// entityDefs
-	int						interactionTableHeight;		// lightDefs
-
-
-	bool					generateAllInteractionsCalled;
+	void							AddModelAndLightRefs(void);
 
 	//-----------------------
 	// RenderWorld_load.cpp
@@ -197,34 +180,7 @@ public:
 	void					ClearPortalStates();
 	virtual	bool			InitFromMap( const char *mapName );
 
-	//--------------------------
-	// RenderWorld_portals.cpp
-
-	idScreenRect			ScreenRectFromWinding( const idWinding *w, viewEntity_t *space );
-	bool					PortalIsFoggedOut( const portal_t *p );
-	void					FloodViewThroughArea_r( const idVec3 origin, int areaNum, const struct portalStack_s *ps );
-	void					FlowViewThroughPortals( const idVec3 origin, int numPlanes, const idPlane *planes );
-	void					FloodLightThroughArea_r( idRenderLightLocal *light, int areaNum, const struct portalStack_s *ps );
-	void					FlowLightThroughPortals( idRenderLightLocal *light );
-	areaNumRef_t *			FloodFrustumAreas_r( const idFrustum &frustum, const int areaNum, const idBounds &bounds, areaNumRef_t *areas );
-	areaNumRef_t *			FloodFrustumAreas( const idFrustum &frustum, areaNumRef_t *areas );
-	bool					CullEntityByPortals( const idRenderEntityLocal *entity, const struct portalStack_s *ps );
-	void					AddAreaEntityRefs( int areaNum, const struct portalStack_s *ps );
-	bool					CullLightByPortals( const idRenderLightLocal *light, const struct portalStack_s *ps );
-	void					AddAreaLightRefs( int areaNum, const struct portalStack_s *ps );
-	void					AddAreaRefs( int areaNum, const struct portalStack_s *ps );
-	void					BuildConnectedAreas_r( int areaNum );
-	void					BuildConnectedAreas( void );
-	void					FindViewLightsAndEntities( void );
-
-	int						NumPortals( void ) const;
-	qhandle_t				FindPortal( const idBounds &b ) const;
-	void					SetPortalState( qhandle_t portal, int blockingBits );
-	int						GetPortalState( qhandle_t portal );
-	bool					AreasAreConnected( int areaNum1, int areaNum2, portalConnection_t connection );
-	void					FloodConnectedAreas( portalArea_t *area, int portalAttributeIndex );
-	idScreenRect &			GetAreaScreenRect( int areaNum ) const { return areaScreenRect[areaNum]; }
-	void					ShowPortals();
+	float					DrawTextLength(const char* text, float scale, int len);
 
 	//--------------------------
 	// RenderWorld_demo.cpp
@@ -242,31 +198,6 @@ public:
 	void					WriteRenderEntity( qhandle_t handle, const renderEntity_t *ent );
 	void					ReadRenderEntity();
 	void					ReadRenderLight();
-	
-
-	//--------------------------
-	// RenderWorld.cpp
-
-	void					ResizeInteractionTable();
-
-	void					AddEntityRefToArea( idRenderEntityLocal *def, portalArea_t *area );
-	void					AddLightRefToArea( idRenderLightLocal *light, portalArea_t *area );
-
-	void					RecurseProcBSP_r( modelTrace_t *results, int parentNodeNum, int nodeNum, float p1f, float p2f, const idVec3 &p1, const idVec3 &p2 ) const;
-
-	void					BoundsInAreas_r( int nodeNum, const idBounds &bounds, int *areas, int *numAreas, int maxAreas ) const;
-
-	float					DrawTextLength( const char *text, float scale, int len = 0 );
-
-	void					FreeInteractions();
-
-	void					PushVolumeIntoTree_r( idRenderEntityLocal *def, idRenderLightLocal *light, const idSphere *sphere, int numPoints, const idVec3 (*points), int nodeNum );
-
-	void					PushVolumeIntoTree( idRenderEntityLocal *def, idRenderLightLocal *light, int numPoints, const idVec3 (*points) );
-
-	//-------------------------------
-	// tr_light.c
-	void					CreateLightDefInteractions( idRenderLightLocal *ldef );
 };
 
 #endif /* !__RENDERWORLDLOCAL_H__ */

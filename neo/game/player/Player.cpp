@@ -5939,75 +5939,7 @@ idPlayer::UpdateAir
 ==============
 */
 void idPlayer::UpdateAir( void ) {	
-	if ( health <= 0 ) {
-		return;
-	}
-
-	// see if the player is connected to the info_vacuum
-	bool	newAirless = false;
-
-	if ( gameLocal.vacuumAreaNum != -1 ) {
-		int	num = GetNumPVSAreas();
-		if ( num > 0 ) {
-			int		areaNum;
-
-			// if the player box spans multiple areas, get the area from the origin point instead,
-			// otherwise a rotating player box may poke into an outside area
-			if ( num == 1 ) {
-				const int	*pvsAreas = GetPVSAreas();
-				areaNum = pvsAreas[0];
-			} else {
-				areaNum = gameRenderWorld->PointInArea( this->GetPhysics()->GetOrigin() );
-			}
-			newAirless = gameRenderWorld->AreasAreConnected( gameLocal.vacuumAreaNum, areaNum, PS_BLOCK_AIR );
-		}
-	}
-
-#ifdef _D3XP
-	if ( PowerUpActive( ENVIROTIME ) ) {
-		newAirless = false;
-	}
-#endif
-
-	if ( newAirless ) {
-		if ( !airless ) {
-			StartSound( "snd_decompress", SND_CHANNEL_ANY, SSF_GLOBAL, false, NULL );
-			StartSound( "snd_noAir", SND_CHANNEL_BODY2, 0, false, NULL );
-			if ( hud ) {
-				hud->HandleNamedEvent( "noAir" );
-			}
-		}
-		airTics--;
-		if ( airTics < 0 ) {
-			airTics = 0;
-			// check for damage
-			const idDict *damageDef = gameLocal.FindEntityDefDict( "damage_noair", false );
-			int dmgTiming = 1000 * ((damageDef) ? damageDef->GetFloat( "delay", "3.0" ) : 3.0f );
-			if ( gameLocal.time > lastAirDamage + dmgTiming ) {
-				Damage( NULL, NULL, vec3_origin, "damage_noair", 1.0f, 0 );
-				lastAirDamage = gameLocal.time;
-			}
-		}
-		
-	} else {
-		if ( airless ) {
-			StartSound( "snd_recompress", SND_CHANNEL_ANY, SSF_GLOBAL, false, NULL );
-			StopSound( SND_CHANNEL_BODY2, false );
-			if ( hud ) {
-				hud->HandleNamedEvent( "Air" );
-			}
-		}
-		airTics+=2;	// regain twice as fast as lose
-		if ( airTics > pm_airTics.GetInteger() ) {
-			airTics = pm_airTics.GetInteger();
-		}
-	}
-
-	airless = newAirless;
-
-	if ( hud ) {
-		hud->SetStateInt( "player_air", 100 * airTics / pm_airTics.GetInteger() );
-	}
+	
 }
 
 void idPlayer::UpdatePowerupHud() {

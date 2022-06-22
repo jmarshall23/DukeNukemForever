@@ -583,9 +583,6 @@ void idRenderSystemLocal::SetBackEndRenderer() {
 	// shadows will be different data
 	if ( oldVPstate != backEndRendererHasVertexPrograms ) {
 		vertexCache.PurgeAll();
-		if ( primaryWorld ) {
-			primaryWorld->FreeInteractions();
-		}
 	}
 
 	r_renderer.ClearModified();

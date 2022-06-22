@@ -173,6 +173,11 @@ void RadiantRun( void ) {
 			//glPushAttrib(GL_ALL_ATTRIB_BITS);
 			glDepthMask(true);
 			theApp.Run();
+
+// jmarshall
+			Sys_UpdateWindows(W_CAMERA);
+// jmarshall end
+
 			//glPopAttrib();
 			//qwglMakeCurrent(0, 0);
 			qwglMakeCurrent(win32.hDC, win32.hGLRC);

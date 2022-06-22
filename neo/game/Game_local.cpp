@@ -583,14 +583,7 @@ void idGameLocal::SaveGame( idFile *f ) {
 	savegame.WriteBool( mapCycleLoaded );
 	savegame.WriteInt( spawnCount );
 
-	if ( !locationEntities ) {
-		savegame.WriteInt( 0 );
-	} else {
-		savegame.WriteInt( gameRenderWorld->NumAreas() );
-		for( i = 0; i < gameRenderWorld->NumAreas(); i++ ) {
-			savegame.WriteObject( locationEntities[ i ] );
-		}
-	}
+	savegame.WriteInt(0);
 
 	savegame.WriteObject( camera );
 
@@ -1477,16 +1470,6 @@ bool idGameLocal::InitFromSaveGame( const char *mapName, idRenderWorld *renderWo
 	savegame.ReadInt( spawnCount );
 
 	savegame.ReadInt( num );
-	if ( num ) {
-		if ( num != gameRenderWorld->NumAreas() ) {
-			savegame.Error( "idGameLocal::InitFromSaveGame: number of areas in map differs from save game." );
-		}
-
-		locationEntities = new idLocationEntity *[ num ];
-		for( i = 0; i < num; i++ ) {
-			savegame.ReadObject( reinterpret_cast<idClass *&>( locationEntities[ i ] ) );
-		}
-	}
 
 	savegame.ReadObject( reinterpret_cast<idClass *&>( camera ) );
 
@@ -3804,11 +3787,11 @@ void idGameLocal::RadiusPush( const idVec3 &origin, const float radius, const fl
 		if ( ent == ignore || ( ent->IsType( idAFAttachment::Type ) && static_cast<idAFAttachment*>(ent)->GetBody() == ignore ) ) {
 			continue;
 		}
-
-		if ( gameRenderWorld->FastWorldTrace( result, origin, clipModel->GetOrigin() ) ) {
-			continue;
-		}
-
+// jmarshall - does this need a trace? was fast trace bfore
+		//if (gameRenderWorld->Trace(result, origin, clipModel->GetOrigin())) {
+		//	continue;
+		//}
+// jmarshall end
 		// scale the push for the inflictor
 		if ( ent == inflictor || ( ent->IsType( idAFAttachment::Type ) && static_cast<idAFAttachment*>(ent)->GetBody() == inflictor ) ) {
 			scale = inflictorScale;
@@ -4097,7 +4080,7 @@ void idGameLocal::SpreadLocations() {
 	idEntity *ent;
 
 	// allocate the area table
-	int	numAreas = gameRenderWorld->NumAreas();
+	int	numAreas = 1; // gameRenderWorld->NumAreas();
 	locationEntities = new idLocationEntity *[ numAreas ];
 	memset( locationEntities, 0, numAreas * sizeof( *locationEntities ) );
 
@@ -4107,7 +4090,7 @@ void idGameLocal::SpreadLocations() {
 			continue;
 		}
 		idVec3	point = ent->spawnArgs.GetVector( "origin" );
-		int areaNum = gameRenderWorld->PointInArea( point );
+		int areaNum = 0; // gameRenderWorld->PointInArea(point);
 		if ( areaNum < 0 ) {
 			Printf( "SpreadLocations: location '%s' is not in a valid area\n", ent->spawnArgs.GetString( "name" ) );
 			continue;
@@ -4123,14 +4106,14 @@ void idGameLocal::SpreadLocations() {
 		locationEntities[areaNum] = static_cast<idLocationEntity *>(ent);
 
 		// spread to all other connected areas
-		for ( int i = 0 ; i < numAreas ; i++ ) {
-			if ( i == areaNum ) {
-				continue;
-			}
-			if ( gameRenderWorld->AreasAreConnected( areaNum, i, PS_BLOCK_LOCATION ) ) {
-				locationEntities[i] = static_cast<idLocationEntity *>(ent);
-			}
-		}
+		//for ( int i = 0 ; i < numAreas ; i++ ) {
+		//	if ( i == areaNum ) {
+		//		continue;
+		//	}
+		//	if ( gameRenderWorld->AreasAreConnected( areaNum, i, PS_BLOCK_LOCATION ) ) {
+		//		locationEntities[i] = static_cast<idLocationEntity *>(ent);
+		//	}
+		//}
 	}
 }
 
@@ -4148,15 +4131,7 @@ idLocationEntity *idGameLocal::LocationForPoint( const idVec3 &point ) {
 		return NULL;
 	}
 
-	int areaNum = gameRenderWorld->PointInArea( point );
-	if ( areaNum < 0 ) {
-		return NULL;
-	}
-	if ( areaNum >= gameRenderWorld->NumAreas() ) {
-		Error( "idGameLocal::LocationForPoint: areaNum >= gameRenderWorld->NumAreas()" );
-	}
-
-	return locationEntities[ areaNum ];
+	return locationEntities[0];
 }
 
 /*
@@ -4165,17 +4140,7 @@ idGameLocal::SetPortalState
 ============
 */
 void idGameLocal::SetPortalState( qhandle_t portal, int blockingBits ) {
-	idBitMsg outMsg;
-	byte msgBuf[ MAX_GAME_MESSAGE_SIZE ];
-
-	if ( !gameLocal.isClient ) {
-		outMsg.Init( msgBuf, sizeof( msgBuf ) );
-		outMsg.WriteByte( GAME_RELIABLE_MESSAGE_PORTAL );
-		outMsg.WriteLong( portal );
-		outMsg.WriteBits( blockingBits, NUM_RENDER_PORTAL_BITS );
-		networkSystem->ServerSendReliableMessage( -1, outMsg );
-	}
-	gameRenderWorld->SetPortalState( portal, blockingBits );
+	
 }
 
 /*

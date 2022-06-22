@@ -34,6 +34,8 @@ If you have questions concerning this license or the applicable additional terms
 #include "DeclRenderProg.h"
 
 class idRenderWorldLocal;
+class idRenderEntityLocal;
+class idRenderLightLocal;
 
 // maximum texture units
 const int MAX_PROG_TEXTURE_PARMS = 16;
@@ -99,8 +101,6 @@ SURFACES
 
 #include "../models/ModelDecal.h"
 #include "../models/ModelOverlay.h"
-#include "Interaction.h"
-
 
 // drawSurf_t structures command the back end to render surfaces
 // a given srfTriangles_t may be used with multiple viewEntity_t,
@@ -231,8 +231,8 @@ public:
 	struct viewLight_s *	viewLight;
 
 	areaReference_t *		references;				// each area the light is present in will have a lightRef
-	idInteraction *			firstInteraction;		// doubly linked list
-	idInteraction *			lastInteraction;
+
+	//idList<class idRenderEntityLocal*>  litRenderModels;
 
 	struct doublePortal_s *	foggedPortals;
 };
@@ -287,8 +287,6 @@ public:
 	idRenderModelOverlay *	overlay;				// blood overlays on animated models
 
 	areaReference_t *		entityRefs;				// chain of all references
-	idInteraction *			firstInteraction;		// doubly linked list
-	idInteraction *			lastInteraction;
 
 	bool					needsPortalSky;
 };
@@ -357,6 +355,8 @@ typedef struct viewEntity_s {
 	// a viewEntity can have a non-empty scissorRect, meaning that an area
 	// that it is in is visible, and still not be visible.
 	idScreenRect		scissorRect;
+
+	idRenderModel*		renderModel;
 
 	bool				weaponDepthHack;
 	float				modelDepthHack;
@@ -1239,8 +1239,6 @@ void R_ModulateLights_f( const idCmdArgs &args );
 void R_SetLightProject( idPlane lightProject[4], const idVec3 origin, const idVec3 targetPoint,
 	   const idVec3 rightVector, const idVec3 upVector, const idVec3 start, const idVec3 stop );
 
-void R_AddLightSurfaces( void );
-void R_AddModelSurfaces( void );
 void R_RemoveUnecessaryViewLights( void );
 
 void R_FreeDerivedData( void );
@@ -1428,7 +1426,7 @@ typedef enum {
 
 srfTriangles_t *R_CreateShadowVolume( const idRenderEntityLocal *ent,
 									 const srfTriangles_t *tri, const idRenderLightLocal *light,
-									 shadowGen_t optimize, srfCullInfo_t &cullInfo );
+									 shadowGen_t optimize );
 
 /*
 ============================================================
@@ -1444,12 +1442,10 @@ calling this function may modify "facing" based on culling
 */
 
 srfTriangles_t *R_CreateVertexProgramTurboShadowVolume( const idRenderEntityLocal *ent,
-									 const srfTriangles_t *tri, const idRenderLightLocal *light,
-									 srfCullInfo_t &cullInfo );
+									 const srfTriangles_t *tri, const idRenderLightLocal *light );
 
 srfTriangles_t *R_CreateTurboShadowVolume( const idRenderEntityLocal *ent,
-									 const srfTriangles_t *tri, const idRenderLightLocal *light,
-									 srfCullInfo_t &cullInfo );
+									 const srfTriangles_t *tri, const idRenderLightLocal *light );
 
 /*
 ============================================================

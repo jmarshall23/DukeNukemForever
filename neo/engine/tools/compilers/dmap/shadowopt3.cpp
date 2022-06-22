@@ -1252,20 +1252,16 @@ srfTriangles_t *CreateLightShadow( optimizeGroup_t *shadowerGroups, const mapLig
 	space.modelMatrix[10] = 1;
 	space.modelMatrix[15] = 1;
 
-	srfCullInfo_t cullInfo;
-	memset( &cullInfo, 0, sizeof( cullInfo ) );
-
 	// call the normal shadow creation, but with the superOptimize flag set, which will
 	// call back to SuperOptimizeOccluders after clipping the triangles to each frustum
 	srfTriangles_t	*shadowTris;
 	if ( dmapGlobals.shadowOptLevel == SO_MERGE_SURFACES ) {
-		shadowTris = R_CreateShadowVolume( &space, occluders, &light->def, SG_STATIC, cullInfo );
+		shadowTris = R_CreateShadowVolume( &space, occluders, &light->def, SG_STATIC );
 	} else {
-		shadowTris = R_CreateShadowVolume( &space, occluders, &light->def, SG_OFFLINE, cullInfo );
+		shadowTris = R_CreateShadowVolume( &space, occluders, &light->def, SG_OFFLINE );
 	}
 	R_FreeStaticTriSurf( occluders );
 
-	R_FreeInteractionCullInfo( cullInfo );
 
 	if ( shadowTris ) {
 		dmapGlobals.totalShadowTriangles += shadowTris->numIndexes / 3;

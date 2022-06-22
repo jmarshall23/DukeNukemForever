@@ -55,7 +55,7 @@ void		idRenderWorldLocal::StartWritingDemo( idDemoFile *demo ) {
 	// write the door portal state
 	for ( i = 0 ; i < numInterAreaPortals ; i++ ) {
 		if ( doublePortals[i].blockingBits ) {
-			SetPortalState( i+1, doublePortals[i].blockingBits );
+			//SetPortalState( i+1, doublePortals[i].blockingBits );
 		}
 	}
 
@@ -231,7 +231,7 @@ bool		idRenderWorldLocal::ProcessDemoCommand( idDemoFile *readDemo, renderView_t
 			int		data[2];
 			readDemo->ReadInt( data[0] );
 			readDemo->ReadInt( data[1] );
-			SetPortalState( data[0], data[1] );
+			//SetPortalState( data[0], data[1] );
 			if ( r_showDemo.GetBool() ) {
 				common->Printf( "DC_SET_PORTAL_STATE: %i %i\n", data[0], data[1] );
 			}

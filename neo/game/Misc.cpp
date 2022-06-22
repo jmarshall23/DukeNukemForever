@@ -2006,7 +2006,7 @@ idVacuumSeparatorEntity::Save
 */
 void idVacuumSeparatorEntity::Save( idSaveGame *savefile ) const {
 	savefile->WriteInt( (int)portal );
-	savefile->WriteInt( gameRenderWorld->GetPortalState( portal ) );
+	savefile->WriteInt( 0 );
 }
 
 /*
@@ -2029,15 +2029,7 @@ idVacuumSeparatorEntity::Spawn
 ================
 */
 void idVacuumSeparatorEntity::Spawn() {
-	idBounds b;
-
-	b = idBounds( spawnArgs.GetVector( "origin" ) ).Expand( 16 );
-	portal = gameRenderWorld->FindPortal( b );
-	if ( !portal ) {
-		gameLocal.Warning( "VacuumSeparator '%s' didn't contact a portal", spawnArgs.GetString( "name" ) );
-		return;
-	}
-	gameLocal.SetPortalState( portal, PS_BLOCK_AIR | PS_BLOCK_LOCATION );
+	
 }
 
 /*
@@ -2070,14 +2062,7 @@ idLocationSeparatorEntity::Spawn
 ================
 */
 void idLocationSeparatorEntity::Spawn() {
-	idBounds b;
-
-	b = idBounds( spawnArgs.GetVector( "origin" ) ).Expand( 16 );
-	qhandle_t portal = gameRenderWorld->FindPortal( b );
-	if ( !portal ) {
-		gameLocal.Warning( "LocationSeparator '%s' didn't contact a portal", spawnArgs.GetString( "name" ) );
-	}
-	gameLocal.SetPortalState( portal, PS_BLOCK_LOCATION );
+	
 }
 
 
@@ -2100,14 +2085,7 @@ idVacuumEntity::Spawn
 ================
 */
 void idVacuumEntity::Spawn() {
-	if ( gameLocal.vacuumAreaNum != -1 ) {
-		gameLocal.Warning( "idVacuumEntity::Spawn: multiple idVacuumEntity in level" );
-		return;
-	}
-
-	idVec3 org = spawnArgs.GetVector( "origin" );
-
-	gameLocal.vacuumAreaNum = gameRenderWorld->PointInArea( org );
+	
 }
 
 
@@ -2716,11 +2694,7 @@ idFuncPortal::Spawn
 ===============
 */
 void idFuncPortal::Spawn( void ) {
-	portal = gameRenderWorld->FindPortal( GetPhysics()->GetAbsBounds().Expand( 32.0f ) );
-	if ( portal > 0 ) {
-		state = spawnArgs.GetBool( "start_on" );
-		gameLocal.SetPortalState( portal, state ? PS_BLOCK_ALL : PS_BLOCK_NONE );
-	}
+	
 }
 
 /*

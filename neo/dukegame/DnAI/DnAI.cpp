@@ -272,7 +272,7 @@ void DnAI::SlideMove()
 	vel -= vel * AI_FLY_DAMPENING * MS2SEC(gameLocal.time - gameLocal.previousTime);
 	vel += goalDelta * MS2SEC(gameLocal.time - gameLocal.previousTime);
 
-	float fly_speed = 100;
+	float fly_speed = 75;
 
 	// cap our speed
 	vel = vel.Truncate(fly_speed);

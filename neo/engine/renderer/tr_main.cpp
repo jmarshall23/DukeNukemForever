@@ -1058,19 +1058,10 @@ void R_RenderView( viewDef_t *parms ) {
 
 	// identify all the visible portalAreas, and the entityDefs and
 	// lightDefs that are in them and pass culling.
-	static_cast<idRenderWorldLocal *>(parms->renderWorld)->FindViewLightsAndEntities();
+	static_cast<idRenderWorldLocal *>(parms->renderWorld)->AddModelAndLightRefs();
 
 	// constrain the view frustum to the view lights and entities
 	R_ConstrainViewFrustum();
-
-	// make sure that interactions exist for all light / entity combinations
-	// that are visible
-	// add any pre-generated light shadows, and calculate the light shader values
-	R_AddLightSurfaces();
-
-	// adds ambient surfaces and create any necessary interaction surfaces to add to the light
-	// lists
-	R_AddModelSurfaces();
 
 	// any viewLight that didn't have visible surfaces can have it's shadows removed
 	R_RemoveUnecessaryViewLights();

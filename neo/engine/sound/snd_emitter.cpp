@@ -552,7 +552,7 @@ void idSoundEmitterLocal::Spatialize( idVec3 listenerPos, int listenerArea, idRe
 	}
 	if ( rw ) {
 		// we have a valid renderWorld
-		int soundInArea = rw->PointInArea( origin );
+		int soundInArea = 0; // rw->PointInArea(origin);
 		if ( soundInArea == -1 ) {
 			if ( lastValidPortalArea == -1 ) {		// sound is outside the world
 				distance = realDistance;

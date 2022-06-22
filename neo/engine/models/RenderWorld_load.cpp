@@ -90,10 +90,6 @@ void idRenderWorldLocal::FreeWorld() {
 	}
 	localModels.Clear();
 
-	areaReferenceAllocator.Shutdown();
-	interactionAllocator.Shutdown();
-	areaNumRefAllocator.Shutdown();
-
 	mapName = "<FREED>";
 }
 
@@ -438,13 +434,6 @@ dump all the interactions
 void idRenderWorldLocal::FreeDefs() {
 	int		i;
 
-	generateAllInteractionsCalled = false;
-
-	if ( interactionTable ) {
-		R_StaticFree( interactionTable );
-		interactionTable = NULL;
-	}
-
 	// free all lightDefs
 	for ( i = 0 ; i < lightDefs.Num() ; i++ ) {
 		idRenderLightLocal	*light;
@@ -627,20 +616,7 @@ idRenderWorldLocal::ClearPortalStates
 =====================
 */
 void idRenderWorldLocal::ClearPortalStates() {
-	int		i, j;
 
-	// all portals start off open
-	for ( i = 0 ; i < numInterAreaPortals ; i++ ) {
-		doublePortals[i].blockingBits = PS_BLOCK_NONE;
-	}
-
-	// flood fill all area connections
-	for ( i = 0 ; i < numPortalAreas ; i++ ) {
-		for ( j = 0 ; j < NUM_PORTAL_ATTRIBUTES ; j++ ) {
-			connectedAreaNum++;
-			FloodConnectedAreas( &portalAreas[i], j );
-		}
-	}
 }
 
 /*
@@ -701,7 +677,7 @@ void idRenderWorldLocal::AddWorldModelEntities() {
 		def->parms.shaderParms[2] =
 		def->parms.shaderParms[3] = 1;
 
-		AddEntityRefToArea( def, &portalAreas[i] );
+		//AddEntityRefToArea( def, &portalAreas[i] );
 	}
 }
 

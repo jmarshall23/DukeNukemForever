@@ -756,128 +756,92 @@ void idSoundWorldLocal::ResolveOrigin( const int stackDepth, const soundPortalTr
 	newStack.portalArea = soundArea;
 	newStack.prevStack = prevStack;
 
-	int numPortals = rw->NumPortalsInArea( soundArea );
-	for( int p = 0; p < numPortals; p++ ) {
-		exitPortal_t re = rw->GetPortal( soundArea, p );
-
-		float	occlusionDistance = 0;
-
-		// air blocking windows will block sound like closed doors
-		if ( (re.blockingBits & ( PS_BLOCK_VIEW | PS_BLOCK_AIR ) ) ) {
-			// we could just completely cut sound off, but reducing the volume works better
-			// continue;
-			occlusionDistance = idSoundSystemLocal::s_doorDistanceAdd.GetFloat();
-		}
-
-		// what area are we about to go look at
-		int otherArea = re.areas[0];
-		if ( re.areas[0] == soundArea ) {
-			otherArea = re.areas[1];
-		}
-
-		// if this area is already in our portal chain, don't bother looking into it
-		const soundPortalTrace_t *prev;
-		for ( prev = prevStack ; prev ; prev = prev->prevStack ) {
-			if ( prev->portalArea == otherArea ) {
-				break;
-			}
-		}
-		if ( prev ) {
-			continue;
-		}
-
-		// pick a point on the portal to serve as our virtual sound origin
-#if 1
-		idVec3	source;
-
-		idPlane	pl;
-		re.w->GetPlane( pl );
-
-		float	scale;
-		idVec3	dir = listenerQU - soundOrigin;
-		if ( !pl.RayIntersection( soundOrigin, dir, scale ) ) {
-			source = re.w->GetCenter();
-		} else {
-			source = soundOrigin + scale * dir;
-
-			// if this point isn't inside the portal edges, slide it in
-			for ( int i = 0 ; i < re.w->GetNumPoints() ; i++ ) {
-				int j = ( i + 1 ) % re.w->GetNumPoints();
-				idVec3	edgeDir = (*(re.w))[j].ToVec3() - (*(re.w))[i].ToVec3();
-				idVec3	edgeNormal;
-
-				edgeNormal.Cross( pl.Normal(), edgeDir );
-
-				idVec3	fromVert = source - (*(re.w))[j].ToVec3();
-
-				float	d = edgeNormal * fromVert;
-				if ( d > 0 ) {
-					// move it in
-					float div = edgeNormal.Normalize();
-					d /= div;
-
-					source -= d * edgeNormal;
-				}
-			}
-		}
-#else
-		// clip the ray from the listener to the center of the portal by
-		// all the portal edge planes, then project that point (or the original if not clipped)
-		// onto the portal plane to get the spatialized origin
-
-		idVec3	start = listenerQU;
-		idVec3	mid = re.w->GetCenter();
-		bool	wasClipped = false;
-
-		for ( int i = 0 ; i < re.w->GetNumPoints() ; i++ ) {
-			int j = ( i + 1 ) % re.w->GetNumPoints();
-			idVec3	v1 = (*(re.w))[j].ToVec3() - soundOrigin;
-			idVec3	v2 = (*(re.w))[i].ToVec3() - soundOrigin;
-
-			v1.Normalize();
-			v2.Normalize();
-
-			idVec3	edgeNormal;
-
-			edgeNormal.Cross( v1, v2 );
-
-			idVec3	fromVert = start - soundOrigin;
-			float	d1 = edgeNormal * fromVert;
-
-			if ( d1 > 0.0f ) {
-				fromVert = mid - (*(re.w))[j].ToVec3();
-				float d2 = edgeNormal * fromVert;
-
-				// move it in
-				float	f = d1 / ( d1 - d2 );
-
-				idVec3	clipped = start * ( 1.0f - f ) + mid * f;
-				start = clipped;
-				wasClipped = true;
-			}
-		}
-
-		idVec3	source;
-		if ( wasClipped ) {
-			// now project it onto the portal plane
-			idPlane	pl;
-			re.w->GetPlane( pl );
-
-			float	f1 = pl.Distance( start );
-			float	f2 = pl.Distance( soundOrigin );
-
-			float	f = f1 / ( f1 - f2 );
-			source = start * ( 1.0f - f ) + soundOrigin * f;
-		} else {
-			source = soundOrigin;
-		}
-#endif
-
-		idVec3 tlen = source - soundOrigin;
-		float tlenLength = tlen.LengthFast();
-
-		ResolveOrigin( stackDepth+1, &newStack, otherArea, dist+tlenLength+occlusionDistance, source, def );
-	}
+	int numPortals = 0; // rw->NumPortalsInArea(soundArea);
+	//for( int p = 0; p < numPortals; p++ ) {
+	//	exitPortal_t re = rw->GetPortal( soundArea, p );
+	//
+	//	float	occlusionDistance = 0;
+	//
+	//	// air blocking windows will block sound like closed doors
+	//	if ( (re.blockingBits & ( PS_BLOCK_VIEW | PS_BLOCK_AIR ) ) ) {
+	//		// we could just completely cut sound off, but reducing the volume works better
+	//		// continue;
+	//		occlusionDistance = idSoundSystemLocal::s_doorDistanceAdd.GetFloat();
+	//	}
+	//
+	//	// what area are we about to go look at
+	//	int otherArea = re.areas[0];
+	//	if ( re.areas[0] == soundArea ) {
+	//		otherArea = re.areas[1];
+	//	}
+	//
+	//	// if this area is already in our portal chain, don't bother looking into it
+	//	const soundPortalTrace_t *prev;
+	//	for ( prev = prevStack ; prev ; prev = prev->prevStack ) {
+	//		if ( prev->portalArea == otherArea ) {
+	//			break;
+	//		}
+	//	}
+	//	if ( prev ) {
+	//		continue;
+	//	}
+	//
+	//	// clip the ray from the listener to the center of the portal by
+	//	// all the portal edge planes, then project that point (or the original if not clipped)
+	//	// onto the portal plane to get the spatialized origin
+	//
+	//	idVec3	start = listenerQU;
+	//	idVec3	mid = re.w->GetCenter();
+	//	bool	wasClipped = false;
+	//
+	//	for ( int i = 0 ; i < re.w->GetNumPoints() ; i++ ) {
+	//		int j = ( i + 1 ) % re.w->GetNumPoints();
+	//		idVec3	v1 = (*(re.w))[j].ToVec3() - soundOrigin;
+	//		idVec3	v2 = (*(re.w))[i].ToVec3() - soundOrigin;
+	//
+	//		v1.Normalize();
+	//		v2.Normalize();
+	//
+	//		idVec3	edgeNormal;
+	//
+	//		edgeNormal.Cross( v1, v2 );
+	//
+	//		idVec3	fromVert = start - soundOrigin;
+	//		float	d1 = edgeNormal * fromVert;
+	//
+	//		if ( d1 > 0.0f ) {
+	//			fromVert = mid - (*(re.w))[j].ToVec3();
+	//			float d2 = edgeNormal * fromVert;
+	//
+	//			// move it in
+	//			float	f = d1 / ( d1 - d2 );
+	//
+	//			idVec3	clipped = start * ( 1.0f - f ) + mid * f;
+	//			start = clipped;
+	//			wasClipped = true;
+	//		}
+	//	}
+	//
+	//	idVec3	source;
+	//	if ( wasClipped ) {
+	//		// now project it onto the portal plane
+	//		idPlane	pl;
+	//		re.w->GetPlane( pl );
+	//
+	//		float	f1 = pl.Distance( start );
+	//		float	f2 = pl.Distance( soundOrigin );
+	//
+	//		float	f = f1 / ( f1 - f2 );
+	//		source = start * ( 1.0f - f ) + soundOrigin * f;
+	//	} else {
+	//		source = soundOrigin;
+	//	}
+	//
+	//	idVec3 tlen = source - soundOrigin;
+	//	float tlenLength = tlen.LengthFast();
+	//
+	//	ResolveOrigin( stackDepth+1, &newStack, otherArea, dist+tlenLength+occlusionDistance, source, def );
+	//}
 }
 
 
@@ -938,11 +902,7 @@ void idSoundWorldLocal::PlaceListener( const idVec3& origin, const idMat3& axis,
 	listenerAreaName = areaName;
 	listenerAreaName.ToLower();
 
-	if ( rw ) {
-		listenerArea = rw->PointInArea( listenerQU );	// where are we?
-	} else {
-		listenerArea = 0;
-	}
+	listenerArea = 0;
 
 	if ( listenerArea < 0 ) {
 		return;

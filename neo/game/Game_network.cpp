@@ -411,13 +411,13 @@ void idGameLocal::ServerWriteInitialReliableMessages( int clientNum ) {
 	}
 
 	// update portals for opened doors
-	int numPortals = gameRenderWorld->NumPortals();
+	int numPortals = 0; // gameRenderWorld->NumPortals();
 	outMsg.Init( msgBuf, sizeof( msgBuf ) );
 	outMsg.BeginWriting();
 	outMsg.WriteByte( GAME_RELIABLE_MESSAGE_PORTALSTATES );
 	outMsg.WriteLong( numPortals );
 	for ( i = 0; i < numPortals; i++ ) {
-		outMsg.WriteBits( gameRenderWorld->GetPortalState( (qhandle_t) (i+1) ) , NUM_RENDER_PORTAL_BITS );
+		outMsg.WriteBits( 0 , NUM_RENDER_PORTAL_BITS );
 	}
 	networkSystem->ServerSendReliableMessage( clientNum, outMsg );
 
@@ -580,7 +580,7 @@ void idGameLocal::ServerWriteSnapshot( int clientNum, int sequence, idBitMsg &ms
 
 	// get PVS for this player
 	// don't use PVSAreas for networking - PVSAreas depends on animations (and md5 bounds), which are not synchronized
-	numSourceAreas = gameRenderWorld->BoundsInAreas( spectated->GetPlayerPhysics()->GetAbsBounds(), sourceAreas, idEntity::MAX_PVS_AREAS );
+	numSourceAreas = 1; // gameRenderWorld->BoundsInAreas(spectated->GetPlayerPhysics()->GetAbsBounds(), sourceAreas, idEntity::MAX_PVS_AREAS);
 	pvsHandle = gameLocal.pvs.SetupCurrentPVS( sourceAreas, numSourceAreas, PVS_NORMAL );
 
 #ifdef _D3XP
@@ -1125,7 +1125,7 @@ void idGameLocal::ClientReadSnapshot( int clientNum, int sequence, const int gam
 
 	// get PVS for this player
 	// don't use PVSAreas for networking - PVSAreas depends on animations (and md5 bounds), which are not synchronized
-	numSourceAreas = gameRenderWorld->BoundsInAreas( spectated->GetPlayerPhysics()->GetAbsBounds(), sourceAreas, idEntity::MAX_PVS_AREAS );
+	numSourceAreas = 1; // gameRenderWorld->BoundsInAreas(spectated->GetPlayerPhysics()->GetAbsBounds(), sourceAreas, idEntity::MAX_PVS_AREAS);
 	pvsHandle = gameLocal.pvs.SetupCurrentPVS( sourceAreas, numSourceAreas, PVS_NORMAL );
 
 #ifdef _D3XP
@@ -1469,17 +1469,19 @@ void idGameLocal::ClientProcessReliableMessage( int clientNum, const idBitMsg &m
 		}
 		case GAME_RELIABLE_MESSAGE_PORTALSTATES: {
 			int numPortals = msg.ReadLong();
-			assert( numPortals == gameRenderWorld->NumPortals() );
+			//assert( numPortals == gameRenderWorld->NumPortals() );
 			for ( int i = 0; i < numPortals; i++ ) {
-				gameRenderWorld->SetPortalState( (qhandle_t) (i+1), msg.ReadBits( NUM_RENDER_PORTAL_BITS ) );
+				msg.ReadBits(NUM_RENDER_PORTAL_BITS);
+
+				//gameRenderWorld->SetPortalState( (qhandle_t) (i+1),  );
 			}
 			break;
 		}
 		case GAME_RELIABLE_MESSAGE_PORTAL: {
 			qhandle_t portal = msg.ReadLong();
 			int blockingBits = msg.ReadBits( NUM_RENDER_PORTAL_BITS );
-			assert( portal > 0 && portal <= gameRenderWorld->NumPortals() );
-			gameRenderWorld->SetPortalState( portal, blockingBits );
+			//assert( portal > 0 && portal <= gameRenderWorld->NumPortals() );
+			//gameRenderWorld->SetPortalState( portal, blockingBits );
 			break;
 		}
 		case GAME_RELIABLE_MESSAGE_STARTSTATE: {
