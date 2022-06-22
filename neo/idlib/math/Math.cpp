@@ -26,9 +26,10 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-
 #pragma hdrstop
 
+const int SMALLEST_NON_DENORMAL = 1 << IEEE_FLT_MANTISSA_BITS;
+const int NAN_VALUE = 0x7f800000;
 
 const float	idMath::PI				= 3.14159265358979323846f;
 const float	idMath::TWO_PI			= 2.0f * PI;
@@ -45,6 +46,7 @@ const float	idMath::M_SEC2MS		= 1000.0f;
 const float	idMath::M_MS2SEC		= 0.001f;
 const float	idMath::INFINITY		= 1e30f;
 const float idMath::FLT_EPSILON		= 1.192092896e-07f;
+const float idMath::FLT_SMALLEST_NON_DENORMAL = *reinterpret_cast<const float*>(&SMALLEST_NON_DENORMAL);	// 1.1754944e-038f
 
 bool		idMath::initialized		= false;
 dword		idMath::iSqrt[SQRT_TABLE_SIZE];		// inverse square root lookup table

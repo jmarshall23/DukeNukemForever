@@ -293,6 +293,48 @@ void idImage::AllocImage() {
 		dataFormat = GL_RGB;
 		dataType = GL_UNSIGNED_SHORT_5_6_5;
 		break;
+// jmarshall
+	case FMT_RGBA16:
+		internalFormat = GL_RGB16UI;
+		dataFormat = GL_RGBA_INTEGER;
+		dataType = GL_UNSIGNED_SHORT;
+		break;
+	case FMT_RGBAF16:
+		internalFormat = GL_RGBA16F;
+		dataFormat = GL_RGBA;
+		dataType = GL_HALF_FLOAT;
+		break;
+	case FMT_RG16:
+		internalFormat = GL_RG16UI;
+		dataFormat = GL_RG_INTEGER;
+		dataType = GL_UNSIGNED_SHORT;
+		break;
+	case FMT_RG32:
+		internalFormat = GL_RG32F;
+		dataFormat = GL_RG;
+		dataType = GL_FLOAT;
+		break;
+	case FMT_R32:
+		internalFormat = GL_R32F;
+		dataFormat = GL_RED;
+		dataType = GL_FLOAT;
+		break;
+	case FMT_DEPTH32:
+		internalFormat = GL_DEPTH_COMPONENT32F;
+		dataFormat = GL_DEPTH_COMPONENT;
+		dataType = GL_FLOAT;
+		break;
+	case FMT_DEPTH:
+		internalFormat = GL_DEPTH_COMPONENT;
+		dataFormat = GL_DEPTH_COMPONENT;
+		dataType = GL_UNSIGNED_BYTE;
+		break;
+	case FMT_DEPTH_STENCIL:
+		internalFormat = GL_DEPTH24_STENCIL8;
+		dataFormat = GL_DEPTH_STENCIL;
+		dataType = GL_UNSIGNED_INT_24_8;
+		break;
+// jmarshall end
 	case FMT_ALPHA:
 #if defined( USE_CORE_PROFILE )
 		internalFormat = GL_R8;
@@ -341,11 +383,6 @@ void idImage::AllocImage() {
 	case FMT_DXT5:
 		internalFormat = GL_COMPRESSED_RGBA_S3TC_DXT5_EXT;
 		dataFormat = GL_RGBA;
-		dataType = GL_UNSIGNED_BYTE;
-		break;
-	case FMT_DEPTH:
-		internalFormat = GL_DEPTH_COMPONENT;
-		dataFormat = GL_DEPTH_COMPONENT;
 		dataType = GL_UNSIGNED_BYTE;
 		break;
 	case FMT_X16:

@@ -68,7 +68,7 @@ void idRenderModelPrt::TouchData( void ) {
 idRenderModelPrt::InstantiateDynamicModel
 ====================
 */
-idRenderModel *idRenderModelPrt::InstantiateDynamicModel( const struct renderEntity_t *renderEntity, const struct viewDef_s *viewDef, idRenderModel *cachedModel ) {
+idRenderModel *idRenderModelPrt::InstantiateDynamicModel( const struct renderEntity_t *renderEntity, const struct viewDef_t *viewDef, idRenderModel *cachedModel ) {
 	idRenderModelStatic	*staticModel;
 
 	if ( cachedModel && !r_useCachedDynamicModels.GetBool() ) {

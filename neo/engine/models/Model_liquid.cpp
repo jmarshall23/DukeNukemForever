@@ -466,7 +466,7 @@ void idRenderModelLiquid::InitFromFile( const char *fileName ) {
 idRenderModelLiquid::InstantiateDynamicModel
 ====================
 */
-idRenderModel *idRenderModelLiquid::InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_s *view, idRenderModel *cachedModel ) {
+idRenderModel *idRenderModelLiquid::InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel ) {
 	idRenderModelStatic	*staticModel;
 	int		frames;
 	int		t;

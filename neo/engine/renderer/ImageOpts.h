@@ -87,6 +87,17 @@ enum textureFormat_t {
 	FMT_X16,			// 16 bpp
 	FMT_Y16_X16,		// 32 bpp
 	FMT_RGB565,			// 16 bpp
+
+// jmarshall
+	FMT_DEPTH_STENCIL,
+
+	FMT_RGBA16,		// 16 bit bpp
+	FMT_RGBAF16,
+	FMT_RG16,
+	FMT_RG32,
+	FMT_R32,
+	FMT_DEPTH32
+// jmarshall end
 };
 
 int BitsForFormat( textureFormat_t format );
@@ -126,6 +137,7 @@ public:
 	int					numLevels;		// if 0, will be 1 for NEAREST / LINEAR filters, otherwise based on size
 	bool				gammaMips;		// if true, mips will be generated with gamma correction
 	bool				readback;		// 360 specific - cpu reads back from this texture, so allocate with cached memory
+	int					numMSAASamples; // number of msaa samples.
 };
 
 /*

@@ -683,7 +683,7 @@ idBounds idRenderModelMD5::Bounds( const renderEntity_t *ent ) const {
 idRenderModelMD5::DrawJoints
 ====================
 */
-void idRenderModelMD5::DrawJoints( const renderEntity_t *ent, const struct viewDef_s *view ) const {
+void idRenderModelMD5::DrawJoints( const renderEntity_t *ent, const struct viewDef_t *view ) const {
 	int					i;
 	int					num;
 	idVec3				pos;
@@ -730,7 +730,7 @@ void idRenderModelMD5::DrawJoints( const renderEntity_t *ent, const struct viewD
 idRenderModelMD5::InstantiateDynamicModel
 ====================
 */
-idRenderModel *idRenderModelMD5::InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_s *view, idRenderModel *cachedModel ) {
+idRenderModel *idRenderModelMD5::InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel ) {
 	int					i, surfaceNum;
 	idMD5Mesh			*mesh;
 	idRenderModelStatic	*staticModel;

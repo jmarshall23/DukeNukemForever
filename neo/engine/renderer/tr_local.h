@@ -29,9 +29,12 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __TR_LOCAL_H__
 #define __TR_LOCAL_H__
 
+#include "GLMatrix.h"
+#include "RenderMatrix.h"
 #include "ImageOpts.h"
 #include "Image.h"
 #include "DeclRenderProg.h"
+#include "RenderTexture.h"
 
 class idRenderWorldLocal;
 class idRenderEntityLocal;
@@ -369,7 +372,7 @@ typedef struct viewEntity_s {
 const int	MAX_CLIP_PLANES	= 1;				// we may expand this to six for some subview issues
 
 // viewDefs are allocated on the frame temporary stack memory
-typedef struct viewDef_s {
+struct viewDef_t {
 	// specified in the call to DrawScene()
 	renderView_t		renderView;
 
@@ -407,7 +410,7 @@ typedef struct viewDef_s {
 	// these are real physical pixel values, possibly scaled and offset from the
 	// renderView x/y/width/height
 
-	struct viewDef_s *	superView;				// never go into an infinite subview loop 
+	struct viewDef_t *	superView;				// never go into an infinite subview loop 
 	struct drawSurf_s *	subviewSurface;
 
 	// drawSurfs are the visible surfaces of the viewEntities, sorted
@@ -432,7 +435,7 @@ typedef struct viewDef_s {
 	// crossing a closed door.  This is used to avoid drawing interactions
 	// when the light is behind a closed door.
 
-} viewDef_t;
+};
 
 
 // complex light / surface interactions are broken up into multiple passes of a

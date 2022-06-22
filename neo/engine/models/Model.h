@@ -290,7 +290,7 @@ public:
 	// The renderer will delete the returned dynamic model the next view
 	// This isn't const, because it may need to reload a purged model if it
 	// wasn't precached correctly.
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_s *view, idRenderModel *cachedModel ) = 0;
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel ) = 0;
 
 	// Returns the number of joints or 0 if the model is not an MD5
 	virtual int					NumJoints( void ) const = 0;
