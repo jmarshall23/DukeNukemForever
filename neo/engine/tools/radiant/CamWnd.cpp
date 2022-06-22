@@ -843,6 +843,9 @@ void setGLMode(int mode) {
 			glDisable(GL_BLEND);
 			glEnable(GL_DEPTH_TEST);
 			glDepthFunc(GL_LEQUAL);
+// jmarshall
+			glEnable(GL_TEXTURE_2D);
+// jmarshall end
 			break;
 
 		case cd_blend:
@@ -1134,6 +1137,9 @@ void CCamWnd::Cam_Draw() {
 	// using/modifying texture maps between contexts
 	//
 	globalImages->BindNull();
+// jmarshall
+	glDisable(GL_TEXTURE_2D);
+// jmarshall end
 
 	glFinish();
 	QE_CheckOpenGLForErrors();
