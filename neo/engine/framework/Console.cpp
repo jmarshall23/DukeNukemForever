@@ -397,7 +397,7 @@ the renderSystem is initialized
 void idConsoleLocal::LoadGraphics() {
 	charSetShader = declManager->FindMaterial( "textures/bigchars" );
 	whiteShader = declManager->FindMaterial( "_white" );
-	consoleShader = declManager->FindMaterial( "console" );
+	consoleShader = declManager->FindMaterial( "textures/colors/black" );
 }
 
 /*
@@ -1052,7 +1052,8 @@ void idConsoleLocal::DrawSolidConsole( float frac ) {
 	if ( y < 1.0f ) {
 		y = 0.0f;
 	} else {
-		renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, y, 0, 1.0f - displayFrac, 1, 1, consoleShader );
+		renderSystem->SetColor(colorBlack);
+		renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, y, 0, 1.0f - displayFrac, 1, 1, whiteShader);
 	}
 
 	renderSystem->SetColor( colorCyan );
