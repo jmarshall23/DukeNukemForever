@@ -138,6 +138,7 @@ public:
 	bool				gammaMips;		// if true, mips will be generated with gamma correction
 	bool				readback;		// 360 specific - cpu reads back from this texture, so allocate with cached memory
 	int					numMSAASamples; // number of msaa samples.
+	bool				isPersistant;
 };
 
 /*
@@ -154,7 +155,8 @@ ID_INLINE idImageOpts::idImageOpts() {
 	textureType		= TT_2D;
 	gammaMips		= false;
 	readback		= false;
-
+	numMSAASamples  = 0;
+	isPersistant = false;
 };
 
 /*

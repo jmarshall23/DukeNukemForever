@@ -703,6 +703,11 @@ void idImageManager::BeginLevelLoad() {
 			continue;
 		}
 
+		// persistant images are always kept around.
+		if (image->GetOpts().isPersistant) {
+			continue;
+		}
+
 		if ( !image->referencedOutsideLevelLoad && image->IsLoaded() ) {
 			image->PurgeImage();
 			//common->Printf( "purging %s\n", image->GetName() );

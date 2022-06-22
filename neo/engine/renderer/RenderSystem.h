@@ -155,6 +155,7 @@ const int SCREEN_HEIGHT			= 720.0f;
 
 class idRenderWorld;
 
+#include "ImageOpts.h"
 
 class idRenderSystem {
 public:
@@ -256,6 +257,9 @@ public:
 	// texture filter / mipmapping / repeat won't be modified by the upload
 	// returns false if the image wasn't found
 	virtual bool			UploadImage( const char *imageName, const byte *data, int width, int height ) = 0;
+
+	// Creates a image. 
+	virtual idImage*		CreateImage(const char* name, idImageOpts* opts, textureFilter_t textureFilter) = 0;
 };
 
 extern idRenderSystem *			renderSystem;

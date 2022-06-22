@@ -81,12 +81,24 @@ void idGameEdit::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t 
 	bool	gotTarget, gotUp, gotRight;
 	const char	*texture;
 	idVec3	color;
+// jmarshall
+	static int uniqueLightId = 1000;
+// jmarshall end
 
 	memset( renderLight, 0, sizeof( *renderLight ) );
 
 	if (!args->GetVector("light_origin", "", renderLight->origin)) {
 		args->GetVector( "origin", "", renderLight->origin );
 	}
+
+// jmarshall
+	renderLight->uniqueLightId = uniqueLightId;
+	if (uniqueLightId >= INT_MAX)
+	{
+		uniqueLightId = 1000;
+	}
+	uniqueLightId++;
+// jmarshall end
 
 	gotTarget = args->GetVector( "light_target", "", renderLight->target );
 	gotUp = args->GetVector( "light_up", "", renderLight->up );

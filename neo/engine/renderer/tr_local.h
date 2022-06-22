@@ -31,10 +31,10 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "GLMatrix.h"
 #include "RenderMatrix.h"
-#include "ImageOpts.h"
 #include "Image.h"
 #include "DeclRenderProg.h"
 #include "RenderTexture.h"
+#include "RenderShadows.h"
 
 class idRenderWorldLocal;
 class idRenderEntityLocal;
@@ -231,7 +231,7 @@ public:
 	shadowFrustum_t			shadowFrustums[6];
 
 	int						viewCount;				// if == tr.viewCount, the light is on the viewDef->viewLights list
-	struct viewLight_s *	viewLight;
+	struct viewLight_t *	viewLight;
 
 	areaReference_t *		references;				// each area the light is present in will have a lightRef
 
@@ -300,8 +300,8 @@ public:
 // which the front end may be modifying simultaniously if running in SMP mode.
 // a viewLight may exist even without any surfaces, and may be relevent for fogging,
 // but should never exist if its volume does not intersect the view frustum
-typedef struct viewLight_s {
-	struct viewLight_s *	next;
+struct viewLight_t {
+	struct viewLight_t*	next;
 
 	// back end should NOT reference the lightDef, because it can change when running SMP
 	idRenderLightLocal *	lightDef;
@@ -337,7 +337,7 @@ typedef struct viewLight_s {
 	const struct drawSurf_s	*localShadows;				// don't shadow local Surfaces
 	const struct drawSurf_s	*globalInteractions;		// get shadows from everything
 	const struct drawSurf_s	*translucentInteractions;	// get shadows from everything
-} viewLight_t;
+};
 
 
 // a viewEntity is created whenever a idRenderEntityLocal is considered for inclusion
@@ -426,7 +426,7 @@ struct viewDef_t {
 	int					numDrawSurfs;			// it is allocated in frame temporary memory
 	int					maxDrawSurfs;			// may be resized
 
-	struct viewLight_s	*viewLights;			// chain of all viewLights effecting view
+	struct viewLight_t	*viewLights;			// chain of all viewLights effecting view
 	struct viewEntity_s	*viewEntitys;			// chain of all viewEntities effecting view, including off screen ones casting shadows
 	// we use viewEntities as a check to see if a given view consists solely
 	// of 2D rendering, which we can optimize in certain ways.  A 2D view will
@@ -745,7 +745,7 @@ public:
 	virtual void			UnCrop();
 	virtual void			GetCardCaps( bool &oldCard, bool &nv10or20 );
 	virtual bool			UploadImage( const char *imageName, const byte *data, int width, int height );
-
+	virtual idImage*		CreateImage(const char* name, idImageOpts* opts, textureFilter_t textureFilter);
 	rvmDeclRenderProg*		FindRenderProgram(const char* name) { return (rvmDeclRenderProg*)declManager->FindType(DECL_RENDERPROGS, name); }
 
 public:

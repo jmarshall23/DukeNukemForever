@@ -211,6 +211,7 @@ typedef struct renderLight_s {
 
 // jmarshall
 	idVec3					lightColor;
+	int						uniqueLightId;
 // jmarshall end
 
 

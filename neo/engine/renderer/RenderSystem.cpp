@@ -1008,3 +1008,19 @@ bool idRenderSystemLocal::UploadImage( const char *imageName, const byte *data, 
 //	image->SetImageFilterAndRepeat();
 	return true;
 }
+
+/*
+===============
+idRenderSystemLocal::CreateImage
+===============
+*/
+idImage* idRenderSystemLocal::CreateImage(const char* name, idImageOpts* opts, textureFilter_t textureFilter) {
+	// Check to see if the image already exists.
+	idImage* image = globalImages->GetImage(name);
+	if (image != nullptr) {
+		common->FatalError("idRenderSystemLocal::CreateImage: Image already allocated!");
+		return nullptr;
+	}
+
+	return globalImages->ScratchImage(name, opts, textureFilter, TR_CLAMP, TD_DEFAULT);
+}
