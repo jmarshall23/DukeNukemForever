@@ -152,6 +152,14 @@ If you have questions concerning this license or the applicable additional terms
 #define assert_128_byte_aligned( ptr )		assert( ( ((UINT_PTR)(ptr)) & 127 ) == 0 )
 #define assert_aligned_to_type_size( ptr )	assert( ( ((UINT_PTR)(ptr)) & ( sizeof( (ptr)[0] ) - 1 ) ) == 0 )
 
+// A macro to disallow the copy constructor and operator= functions
+// NOTE: The macro contains "private:" so all members defined after it will be private until
+// public: or protected: is specified.
+#define DISALLOW_COPY_AND_ASSIGN(TypeName)	\
+private:									\
+  TypeName(const TypeName&);				\
+  void operator=(const TypeName&);
+
 typedef enum {
 	CPUID_NONE							= 0x00000,
 	CPUID_UNSUPPORTED					= 0x00001,	// unsupported (386/486)

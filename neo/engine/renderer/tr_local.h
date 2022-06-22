@@ -29,6 +29,7 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __TR_LOCAL_H__
 #define __TR_LOCAL_H__
 
+#include "BufferObject.h"
 #include "GLMatrix.h"
 #include "RenderMatrix.h"
 #include "Image.h"
