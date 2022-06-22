@@ -1738,6 +1738,7 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 		}
 
 		vLight = R_SetLightDefViewLight(lightDefs[i]);
+		vLight->litRenderEntities.Clear();
 
 		vLight->scissorRect = R_CalcLightScissorRectangle(vLight);
 
@@ -1786,82 +1787,8 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 			if (R_CullLocalBox(entityDef->referenceBounds, m, 6, lightDefs[i]->frustum)) {
 				continue;
 			}
-
-			for (int s = 0; s < vEntity->renderModel->NumSurfaces(); s++)
-			{
-				srfTriangles_t* ambientTris = vEntity->renderModel->Surface(s)->geometry;
-				const idMaterial* shader = vEntity->renderModel->Surface(s)->shader;
-				srfTriangles_t* lightTris = ambientTris;
-
-				if(ambientTris->numVerts == 0)
-					continue;
-
-				idScreenRect	shadowScissor;
-				idScreenRect	lightScissor;
-
-				lightScissor = vLight->scissorRect;
-				lightScissor.Intersect(vEntity->scissorRect);
-
-				if(lightScissor.IsEmpty())
-					continue;
-
-				if (lightTris) {
-
-					// make sure the original surface has its ambient cache created
-					srfTriangles_t* tri = ambientTris;
-					if (!tri->ambientCache) {
-						if (!R_CreateAmbientCache(tri, shader->ReceivesLighting())) {
-							// skip if we were out of vertex memory
-							continue;
-						}
-					}					
-
-
-					// reference the original surface's ambient cache
-					lightTris->ambientCache = tri->ambientCache;
-
-					// touch the ambient surface so it won't get purged
-					vertexCache.Touch(lightTris->ambientCache);
-
-					// regenerate the lighting cache (for non-vertex program cards) if it has been purged
-					if (!lightTris->lightingCache) {
-						if (!R_CreateLightingCache(entityDef, lightDef, lightTris)) {
-							// skip if we are out of vertex memory
-							continue;
-						}
-					}
-					// touch the light surface so it won't get purged
-					// (vertex program cards won't have a light cache at all)
-					if (lightTris->lightingCache) {
-						vertexCache.Touch(lightTris->lightingCache);
-					}
-
-					if (!lightTris->indexCache && r_useIndexBuffers.GetBool()) {
-						vertexCache.Alloc(lightTris->indexes, lightTris->numIndexes * sizeof(lightTris->indexes[0]), &lightTris->indexCache, true);
-					}
-					if (lightTris->indexCache) {
-						vertexCache.Touch(lightTris->indexCache);
-					}
-
-					// add the surface to the light list
-					R_GlobalShaderOverride(&shader);
-
-					// there will only be localSurfaces if the light casts shadows and
-					// there are surfaces with NOSELFSHADOW
-					if (shader->Coverage() == MC_TRANSLUCENT) {
-						R_LinkLightSurf(&vLight->translucentInteractions, lightTris,
-							vEntity, lightDefs[i], shader, lightScissor, false);
-					}
-					else if (!lightDefs[i]->parms.noShadows && shader->TestMaterialFlag(MF_NOSELFSHADOW)) {
-						R_LinkLightSurf(&vLight->localInteractions, lightTris,
-							vEntity, lightDefs[i], shader, lightScissor, false);
-					}
-					else {
-						R_LinkLightSurf(&vLight->globalInteractions, lightTris,
-							vEntity, lightDefs[i], shader, lightScissor, false);
-					}
-				}
-			}
+			
+			vLight->litRenderEntities.AddUnique(entityDef);
 		}
 	}
 }

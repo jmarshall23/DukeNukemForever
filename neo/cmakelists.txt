@@ -113,6 +113,7 @@ file(GLOB engineSourceFiles
     "engine/renderer/imagetools/*.cpp*"
     "engine/renderer/imagetools/color/*.cpp*"
     "engine/renderer/jobs/transcode/image/*.cpp*"
+    "engine/renderer/jobs/render/*.cpp*"
     "engine/sound/*.cpp*"
     "engine/sys/*.cpp*"
     "engine/sys/win32/*.cpp*" 

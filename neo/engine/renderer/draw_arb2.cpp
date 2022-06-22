@@ -224,58 +224,47 @@ void RB_ARB2_DrawInteractions( void ) {
 			continue;
 		}
 
-		if ( !vLight->localInteractions && !vLight->globalInteractions
-			&& !vLight->translucentInteractions ) {
-			continue;
-		}
-
 		lightShader = vLight->lightShader;
 
-		// clear the stencil buffer if needed
-		if ( vLight->globalShadows || vLight->localShadows ) {
-			backEnd.currentScissor = vLight->scissorRect;
-			if ( r_useScissor.GetBool() ) {
-				glScissor( backEnd.viewDef->viewport.x1 + backEnd.currentScissor.x1, 
-					backEnd.viewDef->viewport.y1 + backEnd.currentScissor.y1,
-					backEnd.currentScissor.x2 + 1 - backEnd.currentScissor.x1,
-					backEnd.currentScissor.y2 + 1 - backEnd.currentScissor.y1 );
+		for (int i = 0; i < vLight->litRenderEntities.Num(); i++)
+		{
+			idRenderModel* renderModel = vLight->litRenderEntities[i]->viewEntity->renderModel;
+
+			for (int s = 0; s < renderModel->NumSurfaces(); s++)
+			{
+				drawSurf_t fakeDrawSurf = { };
+				const modelSurface_t* surface = renderModel->Surface(s);
+
+				idScreenRect	shadowScissor;
+				idScreenRect	lightScissor;
+
+				lightScissor = vLight->scissorRect;
+				lightScissor.Intersect(vLight->litRenderEntities[i]->viewEntity->scissorRect);
+
+				if (lightScissor.IsEmpty())
+					continue;
+
+				fakeDrawSurf.geo = surface->geometry;
+				fakeDrawSurf.material = surface->shader;
+				fakeDrawSurf.space = vLight->litRenderEntities[i]->viewEntity;
+				fakeDrawSurf.scissorRect = vLight->scissorRect;
+
+				const float* constRegs = surface->shader->ConstantRegisters();
+				if (constRegs) {
+					// this shader has only constants for parameters
+					fakeDrawSurf.shaderRegisters = constRegs;
+				}
+				else
+				{
+					float* regs = (float*)R_FrameAlloc(fakeDrawSurf.material->GetNumRegisters() * sizeof(float));
+					fakeDrawSurf.shaderRegisters = regs;
+					fakeDrawSurf.material->EvaluateRegisters(regs, fakeDrawSurf.shaderRegisters, backEnd.viewDef, nullptr);
+				}
+				
+
+				RB_ARB2_CreateDrawInteractions(&fakeDrawSurf);
 			}
-			glClear( GL_STENCIL_BUFFER_BIT );
-		} else {
-			// no shadows, so no need to read or write the stencil buffer
-			// we might in theory want to use GL_ALWAYS instead of disabling
-			// completely, to satisfy the invarience rules
-			glStencilFunc( GL_ALWAYS, 128, 255 );
-		}
-
-		if ( r_useShadowVertexProgram.GetBool() ) {
-			glEnable( GL_VERTEX_PROGRAM_ARB );
-			glBindProgramARB( GL_VERTEX_PROGRAM_ARB, VPROG_STENCIL_SHADOW );
-			RB_StencilShadowPass( vLight->globalShadows );
-			RB_ARB2_CreateDrawInteractions( vLight->localInteractions );
-			glEnable( GL_VERTEX_PROGRAM_ARB );
-			glBindProgramARB( GL_VERTEX_PROGRAM_ARB, VPROG_STENCIL_SHADOW );
-			RB_StencilShadowPass( vLight->localShadows );
-			RB_ARB2_CreateDrawInteractions( vLight->globalInteractions );
-			glDisable( GL_VERTEX_PROGRAM_ARB );	// if there weren't any globalInteractions, it would have stayed on
-		} else {
-			RB_StencilShadowPass( vLight->globalShadows );
-			RB_ARB2_CreateDrawInteractions( vLight->localInteractions );
-			RB_StencilShadowPass( vLight->localShadows );
-			RB_ARB2_CreateDrawInteractions( vLight->globalInteractions );
-		}
-
-		// translucent surfaces never get stencil shadowed
-		if ( r_skipTranslucent.GetBool() ) {
-			continue;
-		}
-
-		glStencilFunc( GL_ALWAYS, 128, 255 );
-
-		backEnd.depthFunc = GLS_DEPTHFUNC_LESS;
-		RB_ARB2_CreateDrawInteractions( vLight->translucentInteractions );
-
-		backEnd.depthFunc = GLS_DEPTHFUNC_EQUAL;
+		}		
 	}
 
 	// disable stencil shadow test

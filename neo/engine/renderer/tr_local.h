@@ -332,11 +332,7 @@ struct viewLight_t {
 	const float	*			shaderRegisters;			// shader registers used by backend
 	idImage *				falloffImage;				// falloff image used by backend
 
-	const struct drawSurf_s	*globalShadows;				// shadow everything
-	const struct drawSurf_s	*localInteractions;			// don't get local shadows
-	const struct drawSurf_s	*localShadows;				// don't shadow local Surfaces
-	const struct drawSurf_s	*globalInteractions;		// get shadows from everything
-	const struct drawSurf_s	*translucentInteractions;	// get shadows from everything
+	idList<idRenderEntityLocal*> litRenderEntities;
 };
 
 
@@ -839,6 +835,11 @@ public:
 	rvmDeclRenderParam*		lightColorParam;
 	rvmDeclRenderParam*		lightScaleParam;
 
+	rvmDeclRenderParam*		modelMatrixX;
+	rvmDeclRenderParam*		modelMatrixY;
+	rvmDeclRenderParam*		modelMatrixZ;
+	rvmDeclRenderParam*		modelMatrixW;
+
 	rvmDeclRenderParam* vertexScaleAddParam;
 	rvmDeclRenderParam* vertexScaleModulateParam;
 
@@ -846,6 +847,7 @@ public:
 
 	rvmDeclRenderProg*		guiTextureProgram;
 	rvmDeclRenderProg*		interactionProgram;
+	rvmDeclRenderProg*		shadowMapProgram;
 
 	unsigned short			gammaTable[256];	// brightness / gamma modify this
 };
@@ -1713,5 +1715,8 @@ idScreenRect R_CalcIntersectionScissor( const idRenderLightLocal * lightDef,
 #include "../models/RenderWorld_local.h"
 #include "GuiModel.h"
 #include "VertexCache.h"
+
+void RB_SetModelMatrix(const float* modelMatrix);
+void RB_SetMVP(const idRenderMatrix& mvp);
 
 #endif /* !__TR_LOCAL_H__ */

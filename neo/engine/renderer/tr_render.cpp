@@ -498,49 +498,9 @@ overbright past 1.0
 =================
 */
 void RB_DetermineLightScale( void ) {
-	viewLight_t			*vLight;
-	const idMaterial	*shader;
-	float				max;
-	int					i, j, numStages;
-	const shaderStage_t	*stage;
-
-	// the light scale will be based on the largest color component of any surface
-	// that will be drawn.
-	// should we consider separating rgb scales?
-
-	// if there are no lights, this will remain at 1.0, so GUI-only
-	// rendering will not lose any bits of precision
-	max = 1.0;
-
-	for ( vLight = backEnd.viewDef->viewLights ; vLight ; vLight = vLight->next ) {
-		// lights with no surfaces or shaderparms may still be present
-		// for debug display
-		if ( !vLight->localInteractions && !vLight->globalInteractions
-			&& !vLight->translucentInteractions ) {
-			continue;
-		}
-
-		shader = vLight->lightShader;
-		numStages = shader->GetNumStages();
-		for ( i = 0 ; i < numStages ; i++ ) {
-			stage = shader->GetStage( i );
-			for ( j = 0 ; j < 3 ; j++ ) {
-				float	v = r_lightScale.GetFloat() * vLight->shaderRegisters[ stage->color.registers[j] ];
-				if ( v > max ) {
-					max = v;
-				}
-			}
-		}
-	}
-
-	backEnd.pc.maxLightValue = max;
-	if ( max <= tr.backEndRendererMaxLight ) {
-		backEnd.lightScale = r_lightScale.GetFloat();
-		backEnd.overBright = 1.0;
-	} else {
-		backEnd.lightScale = r_lightScale.GetFloat() * tr.backEndRendererMaxLight / max;
-		backEnd.overBright = max / tr.backEndRendererMaxLight;
-	}
+	backEnd.pc.maxLightValue = 1.0f;
+	backEnd.lightScale = r_lightScale.GetFloat();
+	backEnd.overBright = 1.0;
 }
 
 

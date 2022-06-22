@@ -1566,11 +1566,11 @@ void RB_STD_FogAllLights( void ) {
 		}
 #endif
 
-		if ( vLight->lightShader->IsFogLight() ) {
-			RB_FogPass( vLight->globalInteractions, vLight->localInteractions );
-		} else if ( vLight->lightShader->IsBlendLight() ) {
-			RB_BlendLight( vLight->globalInteractions, vLight->localInteractions );
-		}
+		//if ( vLight->lightShader->IsFogLight() ) {
+		//	RB_FogPass( vLight->globalInteractions, vLight->localInteractions );
+		//} else if ( vLight->lightShader->IsBlendLight() ) {
+		//	RB_BlendLight( vLight->globalInteractions, vLight->localInteractions );
+		//}
 		glDisable( GL_STENCIL_TEST );
 	}
 

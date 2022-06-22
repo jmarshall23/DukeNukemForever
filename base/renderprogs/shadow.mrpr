@@ -1,0 +1,17 @@
+renderProg shadowmap
+{
+	vertex
+	{
+		gl_Position = ftransform();
+		gl_TexCoord[0].x = dot4( gl_Vertex, $modelMatrixX );
+		gl_TexCoord[0].y = dot4( gl_Vertex, $modelMatrixY );
+		gl_TexCoord[0].z = dot4( gl_Vertex, $modelMatrixZ );
+		gl_TexCoord[0].w = dot4( gl_Vertex, $modelMatrixW );
+	}
+
+	pixel
+	{
+		gl_FragDepth = distance(gl_TexCoord[0].xyz, $lightorigin.xyz) / 1000.0;
+		gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+	}
+}

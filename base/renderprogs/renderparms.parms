@@ -27,5 +27,10 @@ renderParm lightorigin { float4 }
 renderParm lightcolor { float4 }
 renderParm lightscale { float4 }
 
+renderParm modelMatrixX { float4 }
+renderParm modelMatrixY { float4 }
+renderParm modelMatrixZ { float4 }
+renderParm modelMatrixW { float4 }
+
 renderParm vertexcolormodulate { float4 }
 renderParm vertexcoloradd { float4 }

@@ -1941,6 +1941,11 @@ void idRenderSystemLocal::Init( void ) {
 	lightColorParam = declManager->FindRenderParam("rpdiffusemodifier");
 	lightScaleParam = declManager->FindRenderParam("lightscale");
 
+	modelMatrixX = declManager->FindRenderParam("modelMatrixX");
+	modelMatrixY = declManager->FindRenderParam("modelMatrixY");
+	modelMatrixZ = declManager->FindRenderParam("modelMatrixZ");
+	modelMatrixW = declManager->FindRenderParam("modelMatrixW");
+
 	vertexScaleModulateParam = declManager->FindRenderParam("vertexcolormodulate");
 	vertexScaleAddParam = declManager->FindRenderParam("vertexcoloradd");
 
@@ -1953,6 +1958,7 @@ void idRenderSystemLocal::Init( void ) {
 
 	guiTextureProgram = FindRenderProgram("guiTexture");
 	interactionProgram = FindRenderProgram("interaction");
+	shadowMapProgram = FindRenderProgram("shadowmap");
 // jmarshall end
 
 	R_InitMaterials();
