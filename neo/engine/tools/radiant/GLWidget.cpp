@@ -380,8 +380,8 @@ void idGLDrawableMaterial::draw(int x, int y, int w, int h) {
 				return;
 			}
 
-			int width = img->uploadWidth;
-			int height = img->uploadHeight;
+			int width = img->GetOpts().width;
+			int height = img->GetOpts().height;
 
 			width *= scale;
 			height *= scale;
@@ -492,7 +492,7 @@ void idGLDrawableMaterial::setMedia(const char *name) {
 
 	if (material && img) {
 
-		float size = (img->uploadWidth > img->uploadHeight) ? img->uploadWidth : img->uploadHeight;
+		float size = (img->GetOpts().width > img->GetOpts().height) ? img->GetOpts().width : img->GetOpts().height;
 		// use 128 as base scale of 1.0
 		scale = 128.0 / size;
 	} else {

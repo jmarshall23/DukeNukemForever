@@ -208,6 +208,8 @@ public:
 
 								// Directly sample a keystate.
 	virtual int					KeyState( int key ) = 0;
+
+	virtual bool				InProductionMode() { return true; }
 };
 
 extern idCommon *		common;

@@ -29,11 +29,14 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __TR_LOCAL_H__
 #define __TR_LOCAL_H__
 
+#include "ImageOpts.h"
 #include "Image.h"
-#include "MegaTexture.h"
 #include "DeclRenderProg.h"
 
 class idRenderWorldLocal;
+
+// maximum texture units
+const int MAX_PROG_TEXTURE_PARMS = 16;
 
 // everything that is needed by the backend needs
 // to be double buffered to allow it to run in
@@ -1326,17 +1329,6 @@ DRAW_*
 
 ============================================================
 */
-
-void	RB_ARB_DrawInteractions( void );
-
-void	R_R200_Init( void );
-void	RB_R200_DrawInteractions( void );
-
-void	R_NV10_Init( void );
-void	RB_NV10_DrawInteractions( void );
-
-void	R_NV20_Init( void );
-void	RB_NV20_DrawInteractions( void );
 
 void	R_ARB2_Init( void );
 void	RB_ARB2_DrawInteractions( void );

@@ -112,6 +112,7 @@ If you have questions concerning this license or the applicable additional terms
 
 // non-portable system services
 #include "../engine/sys/sys_public.h"
+#include "sys/sys_types.h"
 
 // id lib
 #include "../idlib/Lib.h"

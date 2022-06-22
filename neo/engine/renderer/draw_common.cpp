@@ -588,7 +588,7 @@ void RB_SetProgramEnvironment( void ) {
 	// screen power of two correction factor, one pixel in so we don't get a bilerp
 	// of an uncopied pixel
 	int	 w = backEnd.viewDef->viewport.x2 - backEnd.viewDef->viewport.x1 + 1;
-	pot = globalImages->currentRenderImage->uploadWidth;
+	pot = globalImages->currentRenderImage->GetOpts().width;
 	if ( w == pot ) {
 		parm[0] = 1.0;
 	} else {
@@ -596,7 +596,7 @@ void RB_SetProgramEnvironment( void ) {
 	}
 
 	int	 h = backEnd.viewDef->viewport.y2 - backEnd.viewDef->viewport.y1 + 1;
-	pot = globalImages->currentRenderImage->uploadHeight;
+	pot = globalImages->currentRenderImage->GetOpts().height;
 	if ( h == pot ) {
 		parm[1] = 1.0;
 	} else {
@@ -610,11 +610,11 @@ void RB_SetProgramEnvironment( void ) {
 	// screen power of two correction factor, assuming the copy to _currentRender
 	// also copied an extra row and column for the bilerp
 	int	 w = backEnd.viewDef->viewport.x2 - backEnd.viewDef->viewport.x1 + 1;
-	pot = globalImages->currentRenderImage->uploadWidth;
+	pot = globalImages->currentRenderImage->GetOpts().width;
 	parm[0] = (float)w / pot;
 
 	int	 h = backEnd.viewDef->viewport.y2 - backEnd.viewDef->viewport.y1 + 1;
-	pot = globalImages->currentRenderImage->uploadHeight;
+	pot = globalImages->currentRenderImage->GetOpts().height;
 	parm[1] = (float)h / pot;
 
 	parm[2] = 0;
@@ -807,14 +807,6 @@ void RB_STD_T_RenderShaderPasses( const drawSurf_t *surf ) {
 			glBindProgramARB( GL_VERTEX_PROGRAM_ARB, newStage->vertexProgram );
 			glEnable( GL_VERTEX_PROGRAM_ARB );
 
-			// megaTextures bind a lot of images and set a lot of parameters
-			if ( newStage->megaTexture ) {
-				newStage->megaTexture->SetMappingForSurface( tri );
-				idVec3	localViewer;
-				R_GlobalPointToLocal( surf->space->modelMatrix, backEnd.viewDef->renderView.vieworg, localViewer );
-				newStage->megaTexture->BindForViewOrigin( localViewer );
-			}
-
 			for ( int i = 0 ; i < newStage->numVertexParms ; i++ ) {
 				float	parm[4];
 				parm[0] = regs[ newStage->vertexParms[i][0] ];
@@ -841,9 +833,6 @@ void RB_STD_T_RenderShaderPasses( const drawSurf_t *surf ) {
 					GL_SelectTexture( i );
 					globalImages->BindNull();
 				}
-			}
-			if ( newStage->megaTexture ) {
-				newStage->megaTexture->Unbind();
 			}
 
 			GL_SelectTexture( 0 );
@@ -993,7 +982,7 @@ int RB_STD_DrawShaderPasses( drawSurf_t **drawSurfs, int numDrawSurfs ) {
 		if ( backEnd.viewDef->viewEntitys && tr.backEndRenderer == BE_ARB2 ) {
 			globalImages->currentRenderImage->CopyFramebuffer( backEnd.viewDef->viewport.x1,
 				backEnd.viewDef->viewport.y1,  backEnd.viewDef->viewport.x2 -  backEnd.viewDef->viewport.x1 + 1,
-				backEnd.viewDef->viewport.y2 -  backEnd.viewDef->viewport.y1 + 1, true );
+				backEnd.viewDef->viewport.y2 -  backEnd.viewDef->viewport.y1 + 1 );
 		}
 		backEnd.currentRenderCopied = true;
 	}
@@ -1688,23 +1677,7 @@ void	RB_STD_DrawView( void ) {
 	RB_STD_FillDepthBuffer( drawSurfs, numDrawSurfs );
 
 	// main light renderer
-	switch( tr.backEndRenderer ) {
-	case BE_ARB:
-		RB_ARB_DrawInteractions();
-		break;
-	case BE_ARB2:
-		RB_ARB2_DrawInteractions();
-		break;
-	case BE_NV20:
-		RB_NV20_DrawInteractions();
-		break;
-	case BE_NV10:
-		RB_NV10_DrawInteractions();
-		break;
-	case BE_R200:
-		RB_R200_DrawInteractions();
-		break;
-	}
+	RB_ARB2_DrawInteractions();
 
 	// disable stencil shadow test
 	glStencilFunc( GL_ALWAYS, 128, 255 );

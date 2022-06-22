@@ -488,55 +488,7 @@ was there.  This is used to test for texture thrashing.
 ===============
 */
 void RB_ShowImages( void ) {
-	int		i;
-	idImage	*image;
-	float	x, y, w, h;
-	int		start, end;
-
-	RB_SetGL2D();
-
-	//glClearColor( 0.2, 0.2, 0.2, 1 );
-	//glClear( GL_COLOR_BUFFER_BIT );
-
-	glFinish();
-
-	start = Sys_Milliseconds();
-
-	for ( i = 0 ; i < globalImages->images.Num() ; i++ ) {
-		image = globalImages->images[i];
-
-		if ( image->texnum == idImage::TEXTURE_NOT_LOADED && image->partialImage == NULL ) {
-			continue;
-		}
-
-		w = glConfig.vidWidth / 20;
-		h = glConfig.vidHeight / 15;
-		x = i % 20 * w;
-		y = i / 20 * h;
-
-		// show in proportional size in mode 2
-		if ( r_showImages.GetInteger() == 2 ) {
-			w *= image->uploadWidth / 512.0f;
-			h *= image->uploadHeight / 512.0f;
-		}
-
-		image->Bind();
-		glBegin (GL_QUADS);
-		glTexCoord2f( 0, 0 );
-		glVertex2f( x, y );
-		glTexCoord2f( 1, 0 );
-		glVertex2f( x + w, y );
-		glTexCoord2f( 1, 1 );
-		glVertex2f( x + w, y + h );
-		glTexCoord2f( 0, 1 );
-		glVertex2f( x, y + h );
-		glEnd();
-	}
-
-	glFinish();
-
-	end = Sys_Milliseconds();
-	common->Printf( "%i msec to draw all images\n", end - start );
+	
 }
 
 
@@ -584,7 +536,7 @@ const void	RB_CopyRender( const void *data ) {
     RB_LogComment( "***************** RB_CopyRender *****************\n" );
 
 	if (cmd->image) {
-		cmd->image->CopyFramebuffer( cmd->x, cmd->y, cmd->imageWidth, cmd->imageHeight, false );
+		cmd->image->CopyFramebuffer( cmd->x, cmd->y, cmd->imageWidth, cmd->imageHeight );
 	}
 }
 
@@ -609,9 +561,6 @@ void RB_ExecuteBackEndCommands( const emptyCommand_t *cmds ) {
 
 	// needed for editor rendering
 	RB_SetDefaultGLState();
-
-	// upload any image loads that have completed
-	globalImages->CompleteBackgroundImageLoads();
 
 	for ( ; cmds ; cmds = (const emptyCommand_t *)cmds->next ) {
 		switch ( cmds->commandId ) {

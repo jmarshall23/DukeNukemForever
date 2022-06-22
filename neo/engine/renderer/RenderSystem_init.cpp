@@ -532,9 +532,6 @@ void R_InitOpenGL( void ) {
 
 	// parse our vertex and fragment programs, possibly disably support for
 	// one of the paths if there was an error
-	R_NV10_Init();
-	R_NV20_Init();
-	R_R200_Init();
 	R_ARB2_Init();
 
 	cmdSystem->AddCommand( "reloadARBprograms", R_ReloadARBPrograms_f, CMD_FL_RENDERER, "reloads ARB programs" );
@@ -696,7 +693,7 @@ void R_TestImage_f( const idCmdArgs &args ) {
 			tr.testImage = globalImages->images[imageNum];
 		}
 	} else {
-		tr.testImage = globalImages->ImageFromFile( args.Argv( 1 ), TF_DEFAULT, false, TR_REPEAT, TD_DEFAULT );
+		tr.testImage = globalImages->ImageFromFile( args.Argv( 1 ), TF_DEFAULT, TR_REPEAT, TD_DEFAULT );
 	}
 }
 
@@ -718,7 +715,7 @@ void R_TestVideo_f( const idCmdArgs &args ) {
 		return;
 	}
 
-	tr.testImage = globalImages->ImageFromFile( "_scratch", TF_DEFAULT, false, TR_REPEAT, TD_DEFAULT );
+	tr.testImage = globalImages->ImageFromFile( "_scratch", TF_DEFAULT, TR_REPEAT, TD_DEFAULT );
 	tr.testVideo = idCinematic::Alloc();
 	tr.testVideo->InitFromFile( args.Argv( 1 ), true );
 
@@ -812,88 +809,7 @@ Checks for images with the same hash value and does a better comparison
 ===================
 */
 void R_ReportImageDuplication_f( const idCmdArgs &args ) {
-	int		i, j;
-
-	common->Printf( "Images with duplicated contents:\n" );
-
-	int	count = 0;
-
-	for ( i = 0 ; i < globalImages->images.Num() ; i++ ) {
-		idImage	*image1 = globalImages->images[i];
-
-		if ( image1->isPartialImage ) {
-			// ignore background loading stubs
-			continue;
-		}
-		if ( image1->generatorFunction ) {
-			// ignore procedural images
-			continue;
-		}
-		if ( image1->cubeFiles != CF_2D ) {
-			// ignore cube maps
-			continue;
-		}
-		if ( image1->defaulted ) {
-			continue;
-		}
-		byte	*data1;
-		int		w1, h1;
-
-		R_LoadImageProgram( image1->imgName, &data1, &w1, &h1, NULL );
-
-		for ( j = 0 ; j < i ; j++ ) {
-			idImage	*image2 = globalImages->images[j];
-
-			if ( image2->isPartialImage ) {
-				continue;
-			}
-			if ( image2->generatorFunction ) {
-				continue;
-			}
-			if ( image2->cubeFiles != CF_2D ) {
-				continue;
-			}
-			if ( image2->defaulted ) {
-				continue;
-			}
-			if ( image1->imageHash != image2->imageHash ) {
-				continue;
-			}
-			if ( image2->uploadWidth != image1->uploadWidth
-				|| image2->uploadHeight != image1->uploadHeight ) {
-				continue;
-			}
-			if ( !idStr::Icmp( image1->imgName, image2->imgName ) ) {
-				// ignore same image-with-different-parms
-				continue;
-			}
-
-			byte	*data2;
-			int		w2, h2;
-
-			R_LoadImageProgram( image2->imgName, &data2, &w2, &h2, NULL );
-
-			if ( w2 != w1 || h2 != h1 ) {
-				R_StaticFree( data2 );
-				continue;
-			}
-
-			if ( memcmp( data1, data2, w1*h1*4 ) ) {
-				R_StaticFree( data2 );
-				continue;
-			}
-
-			R_StaticFree( data2 );
-
-			common->Printf( "%s == %s\n", image1->imgName.c_str(), image2->imgName.c_str() );
-			session->UpdateScreen( true );
-			count++;
-			break;
-		}
-
-		R_StaticFree( data1 );
-	}
-	common->Printf( "%i / %i collisions\n", count, globalImages->images.Num() );
+	
 }
 
 /* 
@@ -1771,7 +1687,7 @@ void R_VidRestart_f( const idCmdArgs &args ) {
 		cvarSystem->SetCVarBool( "r_fullscreen", latch );
 
 		// regenerate all images
-		globalImages->ReloadAllImages();
+		//globalImages->ReloadAllImages();
 	} else {
 		glimpParms_t	parms;
 		parms.width = glConfig.vidWidth;
@@ -1888,7 +1804,7 @@ R_InitCommands
 =================
 */
 void R_InitCommands( void ) {
-	cmdSystem->AddCommand( "MakeMegaTexture", idMegaTexture::MakeMegaTexture_f, CMD_FL_RENDERER|CMD_FL_CHEAT, "processes giant images" );
+	//cmdSystem->AddCommand( "MakeMegaTexture", idMegaTexture::MakeMegaTexture_f, CMD_FL_RENDERER|CMD_FL_CHEAT, "processes giant images" );
 	cmdSystem->AddCommand( "sizeUp", R_SizeUp_f, CMD_FL_RENDERER, "makes the rendered view larger" );
 	cmdSystem->AddCommand( "sizeDown", R_SizeDown_f, CMD_FL_RENDERER, "makes the rendered view smaller" );
 	cmdSystem->AddCommand( "reloadGuis", R_ReloadGuis_f, CMD_FL_RENDERER, "reloads guis" );
@@ -2133,7 +2049,7 @@ void idRenderSystemLocal::InitOpenGL( void ) {
 
 		R_InitOpenGL();
 
-		globalImages->ReloadAllImages();
+		//globalImages->ReloadAllImages();
 
 		err = glGetError();
 		if ( err != GL_NO_ERROR ) {

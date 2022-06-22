@@ -430,8 +430,8 @@ void FakeTexCoordsToTexMat(float shift[2], float rot, float scale[2], float texM
 //
 void ConvertTexMatWithQTexture(float texMat1[2][3], const idMaterial *qtex1, float texMat2[2][3], const idMaterial *qtex2, float sScale = 1.0, float tScale = 1.0) {
 	float	s1, s2;
-	s1 = (qtex1 ? static_cast<float>(qtex1->GetEditorImage()->uploadWidth) : 2.0f) / (qtex2 ? static_cast<float>(qtex2->GetEditorImage()->uploadWidth) : 2.0f);
-	s2 = (qtex1 ? static_cast<float>(qtex1->GetEditorImage()->uploadHeight) : 2.0f) / (qtex2 ? static_cast<float>(qtex2->GetEditorImage()->uploadHeight) : 2.0f);
+	s1 = (qtex1 ? static_cast<float>(qtex1->GetEditorImage()->GetOpts().width) : 2.0f) / (qtex2 ? static_cast<float>(qtex2->GetEditorImage()->GetOpts().width) : 2.0f);
+	s2 = (qtex1 ? static_cast<float>(qtex1->GetEditorImage()->GetOpts().height) : 2.0f) / (qtex2 ? static_cast<float>(qtex2->GetEditorImage()->GetOpts().height) : 2.0f);
 	s1 *= sScale;
 	s2 *= tScale;
 	texMat2[0][0] = s1 * texMat1[0][0];
@@ -514,8 +514,8 @@ void Select_ShiftTexture_BrushPrimit(face_t *f, float x, float y, bool autoAdjus
 	Face_MoveTexture_BrushPrimit(f, delta);
 #else
 	if (autoAdjust) {
-		x /= f->d_texture->GetEditorImage()->uploadWidth;
-		y /= f->d_texture->GetEditorImage()->uploadHeight;
+		x /= f->d_texture->GetEditorImage()->GetOpts().width;
+		y /= f->d_texture->GetEditorImage()->GetOpts().height;
 	}
 	f->brushprimit_texdef.coords[0][2] += x;
 	f->brushprimit_texdef.coords[1][2] += y;
@@ -1119,11 +1119,11 @@ void Face_FlipTexture_BrushPrimit(face_t *f, bool y) {
 
 	Ot = abs(Ot);
 	Ot *= t;
-	Ot /= f->d_texture->GetEditorImage()->uploadHeight;
+	Ot /= f->d_texture->GetEditorImage()->GetOpts().height;
 
 	Os = abs(Os);
 	Os *= s;
-	Os /= f->d_texture->GetEditorImage()->uploadWidth;
+	Os /= f->d_texture->GetEditorImage()->GetOpts().width;
 
 	
 	if (y) {
@@ -1195,13 +1195,13 @@ void Face_SetAxialScale_BrushPrimit(face_t *face, bool y) {
 
 
 	if (dist != 0.0) {
-		if (dist > face->d_texture->GetEditorImage()->uploadHeight) {
-			height = 1.0 / (dist / face->d_texture->GetEditorImage()->uploadHeight);
+		if (dist > face->d_texture->GetEditorImage()->GetOpts().height) {
+			height = 1.0 / (dist / face->d_texture->GetEditorImage()->GetOpts().height);
 		} else {
 			height /= dist;
 		}
-		if (dist > face->d_texture->GetEditorImage()->uploadWidth) {
-			width = 1.0 / (dist / face->d_texture->GetEditorImage()->uploadWidth);
+		if (dist > face->d_texture->GetEditorImage()->GetOpts().width) {
+			width = 1.0 / (dist / face->d_texture->GetEditorImage()->GetOpts().width);
 		} else {
 			width /= dist;
 		}
@@ -1216,7 +1216,7 @@ void Face_SetAxialScale_BrushPrimit(face_t *face, bool y) {
 	}
 /*
 	common->Printf("Face x: %f  y: %f  xr: %f  yr: %f\n", x, y, xRatio, yRatio);
-	common->Printf("Texture x: %i  y: %i  \n",face->d_texture->GetEditorImage()->uploadWidth, face->d_texture->GetEditorImage()->uploadHeight);
+	common->Printf("Texture x: %i  y: %i  \n",face->d_texture->GetEditorImage()->GetOpts().width, face->d_texture->GetEditorImage()->GetOpts().height);
 
 	idVec3D texS, texT;
 	ComputeAxisBase(face->plane.normal, texS, texT);

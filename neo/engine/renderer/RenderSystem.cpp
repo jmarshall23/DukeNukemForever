@@ -43,33 +43,6 @@ only be called when the back end thread is idle.
 =====================
 */
 static void R_PerformanceCounters( void ) {
-	if ( r_showPrimitives.GetInteger() != 0 ) {
-		
-		float megaBytes = globalImages->SumOfUsedImages() / ( 1024*1024.0 );
-
-		if ( r_showPrimitives.GetInteger() > 1 ) {
-			common->Printf( "v:%i ds:%i t:%i/%i v:%i/%i st:%i sv:%i image:%5.1f MB\n",
-				tr.pc.c_numViews,
-				backEnd.pc.c_drawElements + backEnd.pc.c_shadowElements,
-				backEnd.pc.c_drawIndexes / 3,
-				( backEnd.pc.c_drawIndexes - backEnd.pc.c_drawRefIndexes ) / 3,
-				backEnd.pc.c_drawVertexes,
-				( backEnd.pc.c_drawVertexes - backEnd.pc.c_drawRefVertexes ),
-				backEnd.pc.c_shadowIndexes / 3,
-				backEnd.pc.c_shadowVertexes,
-				megaBytes
-				);
-		} else {
-			common->Printf( "views:%i draws:%i tris:%i (shdw:%i) (vbo:%i) image:%5.1f MB\n",
-				tr.pc.c_numViews,
-				backEnd.pc.c_drawElements + backEnd.pc.c_shadowElements,
-				( backEnd.pc.c_drawIndexes + backEnd.pc.c_shadowIndexes ) / 3,
-				backEnd.pc.c_shadowIndexes / 3,
-				backEnd.pc.c_vboIndexes / 3,
-				megaBytes
-				);
-		}
-	}
 
 	if ( r_showDynamic.GetBool() ) {
 		common->Printf( "callback:%i md5:%i dfrmVerts:%i dfrmTris:%i tangTris:%i guis:%i\n",
@@ -272,7 +245,6 @@ See if some cvars that we watch have changed
 =============
 */
 static void R_CheckCvars( void ) {
-	globalImages->CheckCvars();
 
 	// gamma stuff
 	if ( r_gamma.IsModified() || r_brightness.IsModified() ) {
@@ -928,7 +900,7 @@ void idRenderSystemLocal::CaptureRenderToImage( const char *imageName ) {
 
 	// look up the image before we create the render command, because it
 	// may need to sync to create the image
-	idImage	*image = globalImages->ImageFromFile(imageName, TF_DEFAULT, true, TR_REPEAT, TD_DEFAULT);
+	idImage	*image = globalImages->ImageFromFile(imageName, TF_DEFAULT, TR_REPEAT, TD_DEFAULT);
 
 	renderCrop_t *rc = &renderCrops[currentRenderCrop];
 
@@ -1036,6 +1008,6 @@ bool idRenderSystemLocal::UploadImage( const char *imageName, const byte *data, 
 		return false;
 	}
 	image->UploadScratch( data, width, height );
-	image->SetImageFilterAndRepeat();
+//	image->SetImageFilterAndRepeat();
 	return true;
 }

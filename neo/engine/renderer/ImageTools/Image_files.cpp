@@ -1,35 +1,32 @@
 /*
 ===========================================================================
 
-Doom 3 GPL Source Code
-Copyright (C) 1999-2011 id Software LLC, a ZeniMax Media company. 
+Doom 3 BFG Edition GPL Source Code
+Copyright (C) 1993-2012 id Software LLC, a ZeniMax Media company. 
 
-This file is part of the Doom 3 GPL Source Code (?Doom 3 Source Code?).  
+This file is part of the Doom 3 BFG Edition GPL Source Code ("Doom 3 BFG Edition Source Code").  
 
-Doom 3 Source Code is free software: you can redistribute it and/or modify
+Doom 3 BFG Edition Source Code is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Doom 3 Source Code is distributed in the hope that it will be useful,
+Doom 3 BFG Edition Source Code is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Doom 3 Source Code.  If not, see <http://www.gnu.org/licenses/>.
+along with Doom 3 BFG Edition Source Code.  If not, see <http://www.gnu.org/licenses/>.
 
-In addition, the Doom 3 Source Code is also subject to certain additional terms. You should have received a copy of these additional terms immediately following the terms and conditions of the GNU General Public License which accompanied the Doom 3 Source Code.  If not, please request a copy in writing from id Software at the address below.
+In addition, the Doom 3 BFG Edition Source Code is also subject to certain additional terms. You should have received a copy of these additional terms immediately following the terms and conditions of the GNU General Public License which accompanied the Doom 3 BFG Edition Source Code.  If not, please request a copy in writing from id Software at the address below.
 
 If you have questions concerning this license or the applicable additional terms, you may contact in writing id Software LLC, c/o ZeniMax Media Inc., Suite 120, Rockville, Maryland 20850 USA.
 
 ===========================================================================
 */
 
-
-#pragma hdrstop
-
-#include "tr_local.h"
+#include "../tr_local.h"
 
 /*
 
@@ -44,13 +41,14 @@ void R_LoadImage( const char *name, byte **pic, int *width, int *height, bool ma
 R_WriteTGA
 ================
 */
-void R_WriteTGA( const char *filename, const byte *data, int width, int height, bool flipVertical ) {
+void R_WriteTGA( const char *filename, const byte *data, int width, int height, bool flipVertical, const char * basePath ) {
 	byte	*buffer;
 	int		i;
 	int		bufferSize = width*height*4 + 18;
 	int     imgStart = 18;
 
-	buffer = (byte *)Mem_Alloc( bufferSize );
+	idTempArray<byte> buf( bufferSize );
+	buffer = (byte *)buf.Ptr();
 	memset( buffer, 0, 18 );
 	buffer[2] = 2;		// uncompressed type
 	buffer[12] = width&255;
@@ -70,85 +68,11 @@ void R_WriteTGA( const char *filename, const byte *data, int width, int height, 
 		buffer[i+3] = data[i-imgStart+3];		// alpha
 	}
 
-	fileSystem->WriteFile( filename, buffer, bufferSize );
-
-	Mem_Free (buffer);
+	fileSystem->WriteFile( filename, buffer, bufferSize, basePath );
 }
 
-
-/*
-================
-R_WritePalTGA
-================
-*/
-void R_WritePalTGA( const char *filename, const byte *data, const byte *palette, int width, int height, bool flipVertical ) {
-	byte	*buffer;
-	int		i;
-	int		bufferSize = (width * height) + (256 * 3) + 18;
-	int     palStart = 18;
-	int     imgStart = 18 + (256 * 3);
-
-	buffer = (byte *)Mem_Alloc( bufferSize );
-	memset( buffer, 0, 18 );
-	buffer[1] = 1;		// color map type
-	buffer[2] = 1;		// uncompressed color mapped image
-	buffer[5] = 0;		// number of palette entries (lo)
-	buffer[6] = 1;		// number of palette entries (hi)
-	buffer[7] = 24;		// color map bpp
-	buffer[12] = width&255;
-	buffer[13] = width>>8;
-	buffer[14] = height&255;
-	buffer[15] = height>>8;
-	buffer[16] = 8;	// pixel size
-	if ( !flipVertical ) {
-		buffer[17] = (1<<5);	// flip bit, for normal top to bottom raster order
-	}
-
-	// store palette, swapping rgb to bgr
-	for ( i=palStart ; i<imgStart ; i+=3 ) {
-		buffer[i] = palette[i-palStart+2];		// blue
-		buffer[i+1] = palette[i-palStart+1];		// green
-		buffer[i+2] = palette[i-palStart+0];		// red
-	}
-
-	// store the image data
-	for ( i=imgStart ; i<bufferSize ; i++ ) {
-		buffer[i] = data[i-imgStart];
-	}
-
-	fileSystem->WriteFile( filename, buffer, bufferSize );
-
-	Mem_Free (buffer);
-}
-
-
-static void LoadBMP( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp );
 static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp );
-
-/*
-========================================================================
-
-PCX files are used for 8 bit images
-
-========================================================================
-*/
-
-typedef struct {
-    char	manufacturer;
-    char	version;
-    char	encoding;
-    char	bits_per_pixel;
-    unsigned short	xmin,ymin,xmax,ymax;
-    unsigned short	hres,vres;
-    unsigned char	palette[48];
-    char	reserved;
-    char	color_planes;
-    unsigned short	bytes_per_line;
-    unsigned short	palette_type;
-    char	filler[58];
-    unsigned char	data;			// unbounded
-} pcx_t;
-
+static void LoadJPG( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp );
 
 /*
 ========================================================================
@@ -165,6 +89,7 @@ typedef struct _TargaHeader {
 	unsigned short	x_origin, y_origin, width, height;
 	unsigned char	pixel_size, attributes;
 } TargaHeader;
+
 
 /*
 =========================================================
@@ -405,7 +330,9 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 	}
 
 	if ( (targa_header.attributes & (1<<5)) ) {			// image flp bit
-		R_VerticalFlip( *pic, *width, *height );
+		if ( width != NULL && height != NULL ) {
+			R_VerticalFlip( *pic, *width, *height );
+		}
 	}
 
 	fileSystem->FreeFile( buffer );
@@ -444,7 +371,7 @@ void R_LoadImage( const char *cname, byte **pic, int *width, int *height, ID_TIM
 		*pic = NULL;
 	}
 	if ( timestamp ) {
-		*timestamp = 0xFFFFFFFF;
+		*timestamp = FILE_NOT_FOUND_TIMESTAMP;
 	}
 	if ( width ) {
 		*width = 0;
@@ -475,6 +402,7 @@ void R_LoadImage( const char *cname, byte **pic, int *width, int *height, ID_TIM
 	//
 	// convert to exact power of 2 sizes
 	//
+	/*
 	if ( pic && *pic && makePowerOf2 ) {
 		int		w, h;
 		int		scaled_width, scaled_height;
@@ -489,13 +417,6 @@ void R_LoadImage( const char *cname, byte **pic, int *width, int *height, ID_TIM
 			;
 
 		if ( scaled_width != w || scaled_height != h ) {
-			if ( globalImages->image_roundDown.GetBool() && scaled_width > w ) {
-				scaled_width >>= 1;
-			}
-			if ( globalImages->image_roundDown.GetBool() && scaled_height > h ) {
-				scaled_height >>= 1;
-			}
-
 			resampledBuffer = R_ResampleTexture( *pic, w, h, scaled_width, scaled_height );
 			R_StaticFree( *pic );
 			*pic = resampledBuffer;
@@ -503,6 +424,7 @@ void R_LoadImage( const char *cname, byte **pic, int *width, int *height, ID_TIM
 			*height = scaled_height;
 		}
 	}
+	*/
 }
 
 

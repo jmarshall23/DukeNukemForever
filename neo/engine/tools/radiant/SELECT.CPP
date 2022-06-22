@@ -1173,8 +1173,8 @@ void AbsoluteToLocal( const idPlane &normal2, face_t *f, idVec3 &p1, idVec3 &p2,
 	// stored rot is good considering local axis base change it if necessary
 	f->texdef.rotate = -f->texdef.rotate;
 
-	Clamp(f->texdef.shift[0], f->d_texture->GetEditorImage()->uploadWidth);
-	Clamp(f->texdef.shift[1], f->d_texture->GetEditorImage()->uploadHeight);
+	Clamp(f->texdef.shift[0], f->d_texture->GetEditorImage()->GetOpts().width);
+	Clamp(f->texdef.shift[1], f->d_texture->GetEditorImage()->GetOpts().height);
 	Clamp(f->texdef.rotate, 360);
 }
 
@@ -2043,8 +2043,8 @@ void Select_SetDefaultTexture(const idMaterial *mat, bool fitScale, bool setText
 			"%s (%s) W: %i H: %i",
 			mat->GetName(),
 			mat->GetDescription(),
-			mat->GetEditorImage()->uploadWidth,
-			mat->GetEditorImage()->uploadHeight
+			mat->GetEditorImage()->GetOpts().width,
+			mat->GetEditorImage()->GetOpts().height
 		);
 	g_pParentWnd->SetStatusText(3, strTex);
 }

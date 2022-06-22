@@ -1046,8 +1046,8 @@ dist( this control point to first control point ) / dist ( last control pt to fi
 void Patch_Naturalize( patchMesh_t *p,bool horz,bool vert,bool alt ) {
 	int		i, j;
 
-	int		nWidth		= p->d_texture->GetEditorImage()->uploadWidth * 0.5;
-	int		nHeight		= p->d_texture->GetEditorImage()->uploadHeight * 0.5;
+	int		nWidth		= p->d_texture->GetEditorImage()->GetOpts().width * 0.5;
+	int		nHeight		= p->d_texture->GetEditorImage()->GetOpts().height * 0.5;
 	float	fPWidth		= Patch_Width(p);
 	float	fPHeight	= Patch_Height(p);
 	float	xAccum		= 0;
@@ -1174,8 +1174,8 @@ void Patch_CapTexture( patchMesh_t *p,bool bFaceCycle = false,bool alt = false )
 	float	fScale[2];
 	fScale[0] = f->texdef.scale[0];
 	fScale[1] = f->texdef.scale[1];
-	f->texdef.scale[0] = (float) p->d_texture->GetEditorImage()->uploadWidth / 32.0f;
-	f->texdef.scale[1] = (float) p->d_texture->GetEditorImage()->uploadHeight / 32.0f;
+	f->texdef.scale[0] = (float) p->d_texture->GetEditorImage()->GetOpts().width / 32.0f;
+	f->texdef.scale[1] = (float) p->d_texture->GetEditorImage()->GetOpts().height / 32.0f;
 	float	fShift[2];
 	fShift[0] = f->texdef.shift[0];
 	fShift[1] = f->texdef.shift[1];
@@ -3414,8 +3414,8 @@ void Patch_ShiftTexture( patchMesh_t *p,float fx,float fy,bool autoAdjust ) {
 	//  fy = (fy > 0) ? 0.1 : -0.1;
 
 	if ( autoAdjust ) {
-		fx /= p->d_texture->GetEditorImage()->uploadWidth;
-		fy /= p->d_texture->GetEditorImage()->uploadHeight;
+		fx /= p->d_texture->GetEditorImage()->GetOpts().width;
+		fy /= p->d_texture->GetEditorImage()->GetOpts().height;
 	}
 
 	for ( int w = 0; w < p->width; w++ ) {

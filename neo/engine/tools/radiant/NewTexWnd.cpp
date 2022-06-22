@@ -219,8 +219,8 @@ const idMaterial *CNewTexWnd::NextPos() {
 	// ensure it is uploaded
 	declManager->FindMaterial(mat->GetName());
 
-	int width = mat->GetEditorImage()->uploadWidth * ((float)g_PrefsDlg.m_nTextureScale / 100);
-	int height = mat->GetEditorImage()->uploadHeight * ((float)g_PrefsDlg.m_nTextureScale / 100);
+	int width = mat->GetEditorImage()->GetOpts().width * ((float)g_PrefsDlg.m_nTextureScale / 100);
+	int height = mat->GetEditorImage()->GetOpts().height * ((float)g_PrefsDlg.m_nTextureScale / 100);
 
 	if (current.x + width > rectClient.Width() - 8 && currentRow) {
 		// go to the next row unless the texture is the first on the row
@@ -286,8 +286,8 @@ void CNewTexWnd::OnPaint() {
 				break;
 			}
 
-			int width = mat->GetEditorImage()->uploadWidth * ((float)g_PrefsDlg.m_nTextureScale / 100);
-			int height = mat->GetEditorImage()->uploadHeight * ((float)g_PrefsDlg.m_nTextureScale / 100);
+			int width = mat->GetEditorImage()->GetOpts().width * ((float)g_PrefsDlg.m_nTextureScale / 100);
+			int height = mat->GetEditorImage()->GetOpts().height * ((float)g_PrefsDlg.m_nTextureScale / 100);
 
 			// Is this texture visible?
 			if ((draw.y - height - FONT_HEIGHT < origin.y) && (draw.y > origin.y - rectClient.Height())) {
@@ -467,8 +467,8 @@ const idMaterial *CNewTexWnd::getMaterialAtPoint(CPoint point) {
 			return NULL;
 		}
 
-		int width = mat->GetEditorImage()->uploadWidth * ((float)g_PrefsDlg.m_nTextureScale / 100);
-		int height = mat->GetEditorImage()->uploadHeight * ((float)g_PrefsDlg.m_nTextureScale / 100);
+		int width = mat->GetEditorImage()->GetOpts().width * ((float)g_PrefsDlg.m_nTextureScale / 100);
+		int height = mat->GetEditorImage()->GetOpts().height * ((float)g_PrefsDlg.m_nTextureScale / 100);
 		//if (point.x > draw.x && point.x - draw.x < width && my < draw.y && my + draw.y < height + FONT_HEIGHT) {
 		if (point.x > draw.x && point.x - draw.x < width && my < draw.y &&  draw.y - my < height + FONT_HEIGHT) {
 			return mat;
@@ -839,8 +839,8 @@ void CNewTexWnd::EnsureTextureIsVisible(const char *name) {
 			break;
 		}
 
-		int width = mat->GetEditorImage()->uploadWidth * ((float)g_PrefsDlg.m_nTextureScale / 100);
-		int height = mat->GetEditorImage()->uploadHeight * ((float)g_PrefsDlg.m_nTextureScale / 100);
+		int width = mat->GetEditorImage()->GetOpts().width * ((float)g_PrefsDlg.m_nTextureScale / 100);
+		int height = mat->GetEditorImage()->GetOpts().height * ((float)g_PrefsDlg.m_nTextureScale / 100);
 
 		if ( !idStr::Icmp(name, mat->GetName()) ) {
 			if (current.y > origin.y) {

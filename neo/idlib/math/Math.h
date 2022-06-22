@@ -75,6 +75,8 @@ If you have questions concerning this license or the applicable additional terms
 #define	FLOAT_IS_DENORMAL(x)	(((*(const unsigned long *)&x) & 0x7f800000) == 0x00000000 && \
 								 ((*(const unsigned long *)&x) & 0x007fffff) != 0x00000000 )
 
+#define C_FLOAT_TO_INT( x )		(int)(x)
+
 #define IEEE_FLT_MANTISSA_BITS	23
 #define IEEE_FLT_EXPONENT_BITS	8
 #define IEEE_FLT_EXPONENT_BIAS	127
@@ -263,6 +265,8 @@ public:
 	static float				BitsToFloat( int i, int exponentBits, int mantissaBits );
 
 	static int					FloatHash( const float *array, const int numFloats );
+
+	static byte					Ftob(float f);
 
 	static const float			PI;							// pi
 	static const float			TWO_PI;						// pi * 2
@@ -957,5 +961,26 @@ public:
 
 // RAVEN END
 
+
+/*
+========================
+idMath::Ftob
+========================
+*/
+ID_INLINE byte idMath::Ftob(float f) {
+	// The converted result is clamped to the range [0,255].
+	int i = C_FLOAT_TO_INT(f);
+	if (i < 0) {
+		return 0;
+	}
+	else if (i > 255) {
+		return 255;
+	}
+	return static_cast<byte>(i);
+}
+
+ID_INLINE byte CLAMP_BYTE(int x) {
+	return ((x) < 0 ? (0) : ((x) > 255 ? 255 : (byte)(x)));
+}
 
 #endif /* !__MATH_MATH_H__ */

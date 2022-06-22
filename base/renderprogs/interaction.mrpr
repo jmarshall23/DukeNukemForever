@@ -69,7 +69,6 @@ renderProg interaction
 
 		vec3 lightVector = normalize( gl_TexCoord[0].xyz );
 
-		bumpMap.x = bumpMap.w;
 		vec3 localNormal = vec3(bumpMap.r, bumpMap.g, bumpMap.b);
 		localNormal = localNormal * 2.0 - 1.0;
 

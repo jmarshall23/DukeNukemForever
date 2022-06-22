@@ -2283,10 +2283,10 @@ void RB_TestImage( void ) {
 		w = 0.25;
 		h = 0.25;
 	} else {
-		max = image->uploadWidth > image->uploadHeight ? image->uploadWidth : image->uploadHeight;
+		max = image->GetOpts().width > image->GetOpts().height ? image->GetOpts().width : image->GetOpts().height;
 
-		w = 0.25 * image->uploadWidth / max;
-		h = 0.25 * image->uploadHeight / max;
+		w = 0.25 * image->GetOpts().width / max;
+		h = 0.25 * image->GetOpts().height / max;
 
 		w *= (float)glConfig.vidHeight / glConfig.vidWidth;
 	}

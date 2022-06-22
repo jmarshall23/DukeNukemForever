@@ -3188,7 +3188,7 @@ void idWeapon::Event_WeaponReady()
 	//status = WP_READY;
 	currentWeaponObject->SetState( "Rising" );
 	currentWeaponObject->AppendState( "Idle" );
-	// idLib::PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_READY \n" );
+	// common->PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_READY \n" );
 	//if ( isLinked ) {
 	//	WEAPON_RAISEWEAPON = false;
 	//}
@@ -3208,7 +3208,7 @@ void idWeapon::Event_WeaponOutOfAmmo()
 {
 	//status = WP_OUTOFAMMO;
 	OutOfAmmo = true;
-	// idLib::PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_OUTOFAMMO \n" );
+	// common->PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_OUTOFAMMO \n" );
 }
 
 /*
@@ -3219,7 +3219,7 @@ idWeapon::Event_WeaponReloading
 void idWeapon::Event_WeaponReloading()
 {
 	Reload();
-	// idLib::PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_RELOAD \n" );
+	// common->PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_RELOAD \n" );
 }
 
 /*
@@ -3230,7 +3230,7 @@ idWeapon::Event_WeaponHolstered
 void idWeapon::Event_WeaponHolstered()
 {
 	//status = WP_HOLSTERED;
-	// idLib::PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_HOLSTERED \n" );
+	// common->PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_HOLSTERED \n" );
 }
 
 /*
@@ -3241,7 +3241,7 @@ idWeapon::Event_WeaponRising
 void idWeapon::Event_WeaponRising()
 {
 	Raise();
-	// idLib::PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_RISING \n" );
+	// common->PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_RISING \n" );
 	owner->WeaponRisingCallback();
 }
 
@@ -3253,7 +3253,7 @@ idWeapon::Event_WeaponLowering
 void idWeapon::Event_WeaponLowering()
 {
 	LowerWeapon();
-	// idLib::PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_LOWERING \n" );
+	// common->PrintfIf( g_debugWeapon.GetBool(), "Weapon Status WP_LOWERING \n" );
 	owner->WeaponLoweringCallback();
 }
 

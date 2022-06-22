@@ -155,7 +155,7 @@ int rvmDeclRenderProg::LoadGLSLShader(GLenum target, idStr& programGLSL) {
 			// catch the strings the ATI and Intel drivers output on success
 			if (strstr(infoLog.Ptr(), "successfully compiled to run on hardware") != NULL ||
 				strstr(infoLog.Ptr(), "No errors.") != NULL) {
-				//idLib::Printf( "%s program %s from %s compiled to run on hardware\n", typeName, GetName(), GetFileName() );
+				//common->Printf( "%s program %s from %s compiled to run on hardware\n", typeName, GetName(), GetFileName() );
 			}
 			else {
 				common->Printf("While compiling %s program %s\n", (target == GL_FRAGMENT_SHADER) ? "fragment" : "vertex", GetName());
@@ -221,7 +221,7 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 
 			// catch the strings the ATI and Intel drivers output on success
 			if (strstr(infoLog, "Vertex shader(s) linked, fragment shader(s) linked.") != NULL || strstr(infoLog, "No errors.") != NULL) {
-				//idLib::Printf( "render prog %s from %s linked\n", GetName(), GetFileName() );
+				//common->Printf( "render prog %s from %s linked\n", GetName(), GetFileName() );
 			}
 			else {
 				common->FatalError("WHILE LINKING %s\n", infoLog);

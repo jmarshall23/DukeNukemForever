@@ -211,7 +211,7 @@ idImage *idMaterial::GetEditorImage( void ) const {
 		}
 	} else {
 		// look for an explicit one
-		editorImage = globalImages->ImageFromFile( editorImageName, TF_DEFAULT, true, TR_REPEAT, TD_DEFAULT );
+		editorImage = globalImages->ImageFromFile( editorImageName, TF_DEFAULT, TR_REPEAT, TD_DEFAULT );
 	}
 
 	if ( !editorImage ) {
@@ -925,7 +925,7 @@ void idMaterial::ParseFragmentMap( idLexer &src, newShaderStage_t *newStage ) {
 	const char			*str;
 	textureFilter_t		tf;
 	textureRepeat_t		trp;
-	textureDepth_t		td;
+	textureUsage_t		td;
 	cubeFiles_t			cubeMap;
 	bool				allowPicmip;
 	idToken				token;
@@ -988,17 +988,7 @@ void idMaterial::ParseFragmentMap( idLexer &src, newShaderStage_t *newStage ) {
 			trp = TR_CLAMP_TO_ZERO_ALPHA;
 			continue;
 		}
-		if ( !token.Icmp( "forceHighQuality" ) ) {
-			td = TD_HIGH_QUALITY;
-			continue;
-		}
 
-		if ( !token.Icmp( "uncompressed" ) || !token.Icmp( "highquality" ) ) {
-			if ( !globalImages->image_ignoreHighQuality.GetInteger() ) {
-				td = TD_HIGH_QUALITY;
-			}
-			continue;
-		}
 		if ( !token.Icmp( "nopicmip" ) ) {
 			allowPicmip = false;
 			continue;
@@ -1011,7 +1001,7 @@ void idMaterial::ParseFragmentMap( idLexer &src, newShaderStage_t *newStage ) {
 	str = R_ParsePastImageProgram( src );
 
 	newStage->fragmentProgramImages[unit] = 
-		globalImages->ImageFromFile( str, tf, allowPicmip, trp, td, cubeMap );
+		globalImages->ImageFromFile( str, tf,  trp, td, cubeMap );
 	if ( !newStage->fragmentProgramImages[unit] ) {
 		newStage->fragmentProgramImages[unit] = globalImages->defaultImage;
 	}
@@ -1083,7 +1073,7 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 	textureStage_t		*ts;
 	textureFilter_t		tf;
 	textureRepeat_t		trp;
-	textureDepth_t		td;
+	textureUsage_t		td;
 	cubeFiles_t			cubeMap;
 	bool				allowPicmip;
 	char				imageName[MAX_IMAGE_NAME];
@@ -1240,16 +1230,7 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 			trp = TR_CLAMP_TO_ZERO_ALPHA;
 			continue;
 		}
-		if ( !token.Icmp( "uncompressed" ) || !token.Icmp( "highquality" ) ) {
-			if ( !globalImages->image_ignoreHighQuality.GetInteger() ) {
-				td = TD_HIGH_QUALITY;
-			}
-			continue;
-		}
-		if ( !token.Icmp( "forceHighQuality" ) ) {
-			td = TD_HIGH_QUALITY;
-			continue;
-		}
+
 		if ( !token.Icmp( "nopicmip" ) ) {
 			allowPicmip = false;
 			continue;
@@ -1496,20 +1477,6 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 			}
 			continue;
 		}
-		if ( !token.Icmp( "megaTexture" ) ) {
-			if ( src.ReadTokenOnLine( &token ) ) {
-				newStage.megaTexture = new idMegaTexture;
-				if ( !newStage.megaTexture->InitFromMegaFile( token.c_str() ) ) {
-					delete newStage.megaTexture;
-					SetMaterialFlag( MF_DEFAULTED );
-					continue;
-				}
-				newStage.vertexProgram = R_FindARBProgram( GL_VERTEX_PROGRAM_ARB, "megaTexture.vfp" );
-				newStage.fragmentProgram = R_FindARBProgram( GL_FRAGMENT_PROGRAM_ARB, "megaTexture.vfp" );
-				continue;
-			}
-		}
-
 
 		if ( !token.Icmp( "vertexParm" ) ) {
 			ParseVertexParm( src, &newStage );
@@ -1556,7 +1523,7 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 
 	// now load the image with all the parms we parsed
 	if ( imageName[0] ) {
-		ts->image = globalImages->ImageFromFile( imageName, tf, allowPicmip, trp, td, cubeMap );
+		ts->image = globalImages->ImageFromFile( imageName, tf, trp, td, cubeMap );
 		if ( !ts->image ) {
 			ts->image = globalImages->defaultImage;
 		}
@@ -1950,7 +1917,7 @@ void idMaterial::ParseMaterial( idLexer &src ) {
 			idStr	copy;
 
 			copy = str;	// so other things don't step on it
-			lightFalloffImage = globalImages->ImageFromFile( copy, TF_DEFAULT, false, TR_CLAMP /* TR_CLAMP_TO_ZERO */, TD_DEFAULT );
+			lightFalloffImage = globalImages->ImageFromFile( copy, TF_DEFAULT, TR_CLAMP /* TR_CLAMP_TO_ZERO */, TD_DEFAULT );
 			continue;
 		}
 		// guisurf <guifile> | guisurf entity
@@ -2505,7 +2472,7 @@ idMaterial::GetImageWidth
 */
 int idMaterial::GetImageWidth( void ) const {
 	assert( GetStage(0) && GetStage(0)->texture.image );
-	return GetStage(0)->texture.image->uploadWidth;
+	return GetStage(0)->texture.image->GetOpts().width;
 }
 
 /*
@@ -2515,7 +2482,7 @@ idMaterial::GetImageHeight
 */
 int idMaterial::GetImageHeight( void ) const {
 	assert( GetStage(0) && GetStage(0)->texture.image );
-	return GetStage(0)->texture.image->uploadHeight;
+	return GetStage(0)->texture.image->GetOpts().height;
 }
 
 /*
@@ -2634,7 +2601,7 @@ const char *idMaterial::ImageName( void ) const {
 	}
 	idImage	*image = stages[0].texture.image;
 	if ( image ) {
-		return image->imgName;
+		return image->GetName();
 	}
 	return "_scratch";
 }
@@ -2647,12 +2614,7 @@ Just for image resource tracking.
 ===================
 */
 void idMaterial::SetImageClassifications( int tag ) const {
-	for ( int i = 0 ; i < numStages ; i++ ) {
-		idImage	*image = stages[i].texture.image;
-		if ( image ) {
-			image->SetClassification( tag );
-		}
-	}
+
 }
 
 /*
@@ -2731,11 +2693,11 @@ void idMaterial::ReloadImages( bool force ) const
 		if ( stages[i].newStage ) {
 			for ( int j = 0 ; j < stages[i].newStage->numFragmentProgramImages ; j++ ) {
 				if ( stages[i].newStage->fragmentProgramImages[j] ) {
-					stages[i].newStage->fragmentProgramImages[j]->Reload( false, force );
+					stages[i].newStage->fragmentProgramImages[j]->Reload( force );
 				}
 			}
 		} else if ( stages[i].texture.image ) {
-			stages[i].texture.image->Reload( false, force );
+			stages[i].texture.image->Reload( force );
 		}
 	}
 }
