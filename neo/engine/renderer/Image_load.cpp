@@ -375,7 +375,9 @@ void idImage::ActuallyLoadImage( bool fromBackEnd ) {
 
 			Mem_Free( pic );
 		}
-		binaryFileTime = im.WriteGeneratedFile( sourceFileTime );
+// jmarshall - disable binary file gen, we are focing everything to just be rgba anyway, generated is kind of annoying for modders.
+	//	binaryFileTime = im.WriteGeneratedFile( sourceFileTime );
+// jmarshall end
 	}
 
 	AllocImage();
