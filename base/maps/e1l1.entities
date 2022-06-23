@@ -25757,10 +25757,10 @@
 "classname" "light"
 "name" "light_34"
 "origin" "6072 1272 56"
-"noshadows" "1"
+"noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0"
+"falloff" "0.000000"
 "_color" "1 0.2 0.17"
 "light_radius" "500 500 500"
 }
