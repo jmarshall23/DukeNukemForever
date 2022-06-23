@@ -35,7 +35,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "Image.h"
 #include "DeclRenderProg.h"
 #include "RenderTexture.h"
-#include "RenderShadows.h"
+#include "RenderShadowSystem.h"
 
 class idRenderWorldLocal;
 class idRenderEntityLocal;
