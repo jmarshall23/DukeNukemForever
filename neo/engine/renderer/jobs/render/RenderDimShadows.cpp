@@ -13,7 +13,7 @@ static const int CULL_OCCLUDER_AND_RECEIVER = 2;	// the surface doesn't effect t
 
 idCVar r_shadow_polyOfsFactor("r_shadow_polyOfsFactor", "2", CVAR_RENDERER | CVAR_FLOAT, "polygonOffset factor for drawing shadow buffer");
 idCVar r_shadow_polyOfsUnits("r_shadow_polyOfsUnits", "3000", CVAR_RENDERER | CVAR_FLOAT, "polygonOffset units for drawing shadow buffer");
-idCVar r_shadowOccluderFacing("r_shadowOccluderFacing", "0", CVAR_INTEGER, "0 = front side, 1 = back side culling for shadows");
+idCVar r_shadowOccluderFacing("r_shadowOccluderFacing", "1", CVAR_INTEGER, "0 = front side, 1 = back side culling for shadows");
 idCVar r_shadowEnableCache("r_shadowEnableCache", "1", CVAR_RENDERER | CVAR_BOOL, "enable shadow map caching");
 
 /*
@@ -559,10 +559,10 @@ void RB_DrawSpotlightShadow(viewLight_t* vLight) {
 
 /*
 ======================
-RB_Draw_ShadowMaps
+idRender::RenderShadowMaps
 ======================
 */
-void RB_Draw_ShadowMaps(void) {
+void idRender::RenderShadowMaps(void) {
 	viewLight_t		*vLight;
 	//rvmDeviceDebugMarker deviceDebugMarker("ShadowMaps");
 

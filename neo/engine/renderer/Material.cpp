@@ -1458,26 +1458,7 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 			ss->conditionRegister = ParseExpression( src );
 			continue;
 		}
-		if ( !token.Icmp( "program" ) ) {
-			if ( src.ReadTokenOnLine( &token ) ) {
-				newStage.vertexProgram = R_FindARBProgram( GL_VERTEX_PROGRAM_ARB, token.c_str() );
-				newStage.fragmentProgram = R_FindARBProgram( GL_FRAGMENT_PROGRAM_ARB, token.c_str() );
-			}
-			continue;
-		}
-		if ( !token.Icmp( "fragmentProgram" ) ) {
-			if ( src.ReadTokenOnLine( &token ) ) {
-				newStage.fragmentProgram = R_FindARBProgram( GL_FRAGMENT_PROGRAM_ARB, token.c_str() );
-			}
-			continue;
-		}
-		if ( !token.Icmp( "vertexProgram" ) ) {
-			if ( src.ReadTokenOnLine( &token ) ) {
-				newStage.vertexProgram = R_FindARBProgram( GL_VERTEX_PROGRAM_ARB, token.c_str() );
-			}
-			continue;
-		}
-
+		
 		if ( !token.Icmp( "vertexParm" ) ) {
 			ParseVertexParm( src, &newStage );
 			continue;

@@ -567,7 +567,7 @@ void RB_ExecuteBackEndCommands( const emptyCommand_t *cmds ) {
 		case RC_NOP:
 			break;
 		case RC_DRAW_VIEW:
-			RB_DrawView( cmds );
+			render.RenderSingleView( cmds );
 			if ( ((const drawSurfsCommand_t *)cmds)->viewDef->viewEntitys ) {
 				c_draw3d++;
 			}

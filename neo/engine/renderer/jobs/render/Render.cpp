@@ -28,12 +28,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "../../RenderSystem_local.h"
 
-/*
-
-  back end scene + lights rendering functions
-
-*/
-
+idRender render;
 
 /*
 =================
@@ -712,7 +707,7 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 		// now multiply the texgen by the light texture matrix
 		if ( lightStage->texture.hasMatrix ) {
 			RB_GetShaderTextureMatrix( lightRegs, &lightStage->texture, backEnd.lightTextureMatrix );
-			RB_BakeTextureMatrixIntoTexgen( reinterpret_cast<class idPlane *>(inter.lightProjection), backEnd.lightTextureMatrix );
+			//RB_BakeTextureMatrixIntoTexgen( reinterpret_cast<class idPlane *>(inter.lightProjection), backEnd.lightTextureMatrix );
 		}
 
 		inter.bumpImage = NULL;
@@ -798,13 +793,185 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 	}
 }
 
+
+/*
+================
+idRender::PrepareStageTexturing
+================
+*/
+void idRender::PrepareStageTexturing(const shaderStage_t* pStage, const drawSurf_t* surf, idDrawVert* ac) {
+	// set privatePolygonOffset if necessary
+	if (pStage->privatePolygonOffset) {
+		glEnable(GL_POLYGON_OFFSET_FILL);
+		glPolygonOffset(r_offsetFactor.GetFloat(), r_offsetUnits.GetFloat() * pStage->privatePolygonOffset);
+	}
+
+	// set the texture matrix if needed
+	if (pStage->texture.hasMatrix) {
+		RB_LoadShaderTextureMatrix(surf->shaderRegisters, &pStage->texture);
+	}
+
+	// texgens
+	if (pStage->texture.texgen == TG_DIFFUSE_CUBE) {
+		glTexCoordPointer(3, GL_FLOAT, sizeof(idDrawVert), ac->normal.ToFloatPtr());
+	}
+	if (pStage->texture.texgen == TG_SKYBOX_CUBE || pStage->texture.texgen == TG_WOBBLESKY_CUBE) {
+		glTexCoordPointer(3, GL_FLOAT, 0, vertexCache.Position(surf->dynamicTexCoords));
+	}
+	if (pStage->texture.texgen == TG_SCREEN) {
+		glEnable(GL_TEXTURE_GEN_S);
+		glEnable(GL_TEXTURE_GEN_T);
+		glEnable(GL_TEXTURE_GEN_Q);
+
+		float	mat[16], plane[4];
+		myGlMultMatrix(surf->space->modelViewMatrix, backEnd.viewDef->projectionMatrix, mat);
+
+		plane[0] = mat[0];
+		plane[1] = mat[4];
+		plane[2] = mat[8];
+		plane[3] = mat[12];
+		glTexGenfv(GL_S, GL_OBJECT_PLANE, plane);
+
+		plane[0] = mat[1];
+		plane[1] = mat[5];
+		plane[2] = mat[9];
+		plane[3] = mat[13];
+		glTexGenfv(GL_T, GL_OBJECT_PLANE, plane);
+
+		plane[0] = mat[3];
+		plane[1] = mat[7];
+		plane[2] = mat[11];
+		plane[3] = mat[15];
+		glTexGenfv(GL_Q, GL_OBJECT_PLANE, plane);
+	}
+
+	if (pStage->texture.texgen == TG_SCREEN2) {
+		glEnable(GL_TEXTURE_GEN_S);
+		glEnable(GL_TEXTURE_GEN_T);
+		glEnable(GL_TEXTURE_GEN_Q);
+
+		float	mat[16], plane[4];
+		myGlMultMatrix(surf->space->modelViewMatrix, backEnd.viewDef->projectionMatrix, mat);
+
+		plane[0] = mat[0];
+		plane[1] = mat[4];
+		plane[2] = mat[8];
+		plane[3] = mat[12];
+		glTexGenfv(GL_S, GL_OBJECT_PLANE, plane);
+
+		plane[0] = mat[1];
+		plane[1] = mat[5];
+		plane[2] = mat[9];
+		plane[3] = mat[13];
+		glTexGenfv(GL_T, GL_OBJECT_PLANE, plane);
+
+		plane[0] = mat[3];
+		plane[1] = mat[7];
+		plane[2] = mat[11];
+		plane[3] = mat[15];
+		glTexGenfv(GL_Q, GL_OBJECT_PLANE, plane);
+	}
+}
+
+/*
+================
+idRender::FinishStageTexturing
+================
+*/
+void idRender::FinishStageTexturing(const shaderStage_t* pStage, const drawSurf_t* surf, idDrawVert* ac) {
+	// unset privatePolygonOffset if necessary
+	if (pStage->privatePolygonOffset && !surf->material->TestMaterialFlag(MF_POLYGONOFFSET)) {
+		glDisable(GL_POLYGON_OFFSET_FILL);
+	}
+
+	if (pStage->texture.texgen == TG_DIFFUSE_CUBE || pStage->texture.texgen == TG_SKYBOX_CUBE
+		|| pStage->texture.texgen == TG_WOBBLESKY_CUBE) {
+		glTexCoordPointer(2, GL_FLOAT, sizeof(idDrawVert), (void*)&ac->st);
+	}
+
+	if (pStage->texture.texgen == TG_SCREEN) {
+		glDisable(GL_TEXTURE_GEN_S);
+		glDisable(GL_TEXTURE_GEN_T);
+		glDisable(GL_TEXTURE_GEN_Q);
+	}
+	if (pStage->texture.texgen == TG_SCREEN2) {
+		glDisable(GL_TEXTURE_GEN_S);
+		glDisable(GL_TEXTURE_GEN_T);
+		glDisable(GL_TEXTURE_GEN_Q);
+	}
+
+	if (pStage->texture.texgen == TG_GLASSWARP) {
+		if (tr.backEndRenderer == BE_ARB2 /*|| tr.backEndRenderer == BE_NV30*/) {
+			GL_SelectTexture(2);
+			globalImages->BindNull();
+
+			GL_SelectTexture(1);
+			if (pStage->texture.hasMatrix) {
+				RB_LoadShaderTextureMatrix(surf->shaderRegisters, &pStage->texture);
+			}
+			glDisable(GL_TEXTURE_GEN_S);
+			glDisable(GL_TEXTURE_GEN_T);
+			glDisable(GL_TEXTURE_GEN_Q);
+			glDisable(GL_FRAGMENT_PROGRAM_ARB);
+			globalImages->BindNull();
+			GL_SelectTexture(0);
+		}
+	}
+
+	if (pStage->texture.texgen == TG_REFLECT_CUBE) {
+		if (tr.backEndRenderer == BE_ARB2) {
+			// see if there is also a bump map specified
+			const shaderStage_t* bumpStage = surf->material->GetBumpStage();
+			if (bumpStage) {
+				// per-pixel reflection mapping with bump mapping
+				GL_SelectTexture(1);
+				globalImages->BindNull();
+				GL_SelectTexture(0);
+
+				glDisableVertexAttribArrayARB(9);
+				glDisableVertexAttribArrayARB(10);
+			}
+			else {
+				// per-pixel reflection mapping without bump mapping
+			}
+
+			glDisableClientState(GL_NORMAL_ARRAY);
+			glDisable(GL_FRAGMENT_PROGRAM_ARB);
+			glDisable(GL_VERTEX_PROGRAM_ARB);
+			// Fixme: Hack to get around an apparent bug in ATI drivers.  Should remove as soon as it gets fixed.
+			glBindProgramARB(GL_VERTEX_PROGRAM_ARB, 0);
+		}
+		else {
+			glDisable(GL_TEXTURE_GEN_S);
+			glDisable(GL_TEXTURE_GEN_T);
+			glDisable(GL_TEXTURE_GEN_R);
+			glTexGenf(GL_S, GL_TEXTURE_GEN_MODE, GL_OBJECT_LINEAR);
+			glTexGenf(GL_T, GL_TEXTURE_GEN_MODE, GL_OBJECT_LINEAR);
+			glTexGenf(GL_R, GL_TEXTURE_GEN_MODE, GL_OBJECT_LINEAR);
+			glDisableClientState(GL_NORMAL_ARRAY);
+
+			glMatrixMode(GL_TEXTURE);
+			glLoadIdentity();
+			glMatrixMode(GL_MODELVIEW);
+		}
+	}
+
+	if (pStage->texture.hasMatrix) {
+		glMatrixMode(GL_TEXTURE);
+		glLoadIdentity();
+		glMatrixMode(GL_MODELVIEW);
+	}
+}
+
 /*
 =============
 RB_DrawView
 =============
 */
-void RB_DrawView( const void *data ) {
+void idRender::RenderSingleView( const void *data ) {
 	const drawSurfsCommand_t	*cmd;
+	drawSurf_t** drawSurfs;
+	int			numDrawSurfs;
 
 	cmd = (const drawSurfsCommand_t *)data;
 
@@ -836,8 +1003,40 @@ void RB_DrawView( const void *data ) {
 
 	RB_ShowOverdraw();
 
-	// render the scene, jumping to the hardware specific interaction renderers
-	RB_STD_DrawView();
+	RB_LogComment("---------- RB_STD_DrawView ----------\n");
+
+	backEnd.depthFunc = GLS_DEPTHFUNC_EQUAL;
+
+	drawSurfs = (drawSurf_t**)&backEnd.viewDef->drawSurfs[0];
+	numDrawSurfs = backEnd.viewDef->numDrawSurfs;
+
+	RenderShadowMaps();
+
+	// clear the z buffer, set the projection matrix, etc
+	RB_BeginDrawingView();
+
+	// decide how much overbrighting we are going to do
+	RB_DetermineLightScale();
+
+	// fill the depth buffer and clear color buffer to black except on
+	// subviews
+	FillDepthBuffer(drawSurfs, numDrawSurfs);
+
+	// main light renderer
+	DrawForwardLit();
+
+	// disable stencil shadow test
+	glStencilFunc(GL_ALWAYS, 128, 255);
+
+	// now draw any non-light dependent shading passes
+	int	processed = DrawShaderPasses(drawSurfs, numDrawSurfs);
+
+	// now draw any post-processing effects using _currentRender
+	if (processed < numDrawSurfs) {
+		DrawShaderPasses(drawSurfs + processed, numDrawSurfs - processed);
+	}
+
+	RB_RenderDebugTools(drawSurfs, numDrawSurfs);
 
 	// restore the context for 2D drawing if we were stubbing it out
 	if ( r_skipRenderContext.GetBool() && backEnd.viewDef->viewEntitys ) {
