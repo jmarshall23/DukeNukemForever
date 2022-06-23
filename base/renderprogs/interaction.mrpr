@@ -39,10 +39,12 @@ renderProg interaction
 		gl_TexCoord[4].y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
 
 		//# textures 5 takes the base coordinates by the texture matrix
-		gl_TexCoord[5] = defaultTexCoord;
-		gl_TexCoord[5].x = dot4( attr_TexCoord0.xy, $rpspecularmatrixs );
-		gl_TexCoord[5].y = dot4( attr_TexCoord0.xy, $rpspecularmatrixt );
-				
+		gl_TexCoord[5].x = dot4( gl_Vertex, $modelMatrixX );
+		gl_TexCoord[5].y = dot4( gl_Vertex, $modelMatrixY );
+		gl_TexCoord[5].z = dot4( gl_Vertex, $modelMatrixZ );
+		gl_TexCoord[5].w = dot4( gl_Vertex, $modelMatrixW );
+	
+	
 		//# calculate normalized vector to light in R0
 		toLight = normalize( toLight );
 
@@ -65,7 +67,7 @@ renderProg interaction
 		vec4 lightFalloff =	idtex2Dproj( $lightfallofftex, gl_TexCoord[2] );
 		vec4 lightProj	=		idtex2Dproj( $lightprogtex, gl_TexCoord[3] );
 		vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
-		vec4 specMap =			tex2D( $specularmap, gl_TexCoord[5].xy );
+		vec4 specMap =			tex2D( $specularmap, gl_TexCoord[4].xy );
 
 		vec3 lightVector = normalize( gl_TexCoord[0].xyz );
 
@@ -80,7 +82,10 @@ renderProg interaction
 		vec3 specularColor = specMap.xyz * specularContribution;
 		vec3 lightColor = dot3( localNormal, lightVector ) * lightProj.xyz * lightFalloff.xyz;
 
-		gl_FragColor.xyz = ( diffuseColor.xyz + specularColor ) * lightColor;
+		// float CalculateShadows(texture2D atlasLookup, texture2D shadowMapAtlas, float3 vertexPos, float3 lightPos, float4 ShadowMapInfo)
+		float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, $lightorigin.xyz, $shadowMapInfo);
+
+		gl_FragColor.xyz = ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
 		gl_FragColor.w = 1.0;
 	}
 }

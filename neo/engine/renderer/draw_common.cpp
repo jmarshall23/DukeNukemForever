@@ -1666,6 +1666,8 @@ void	RB_STD_DrawView( void ) {
 	drawSurfs = (drawSurf_t **)&backEnd.viewDef->drawSurfs[0];
 	numDrawSurfs = backEnd.viewDef->numDrawSurfs;
 
+	RB_Draw_ShadowMaps();
+
 	// clear the z buffer, set the projection matrix, etc
 	RB_BeginDrawingView();
 

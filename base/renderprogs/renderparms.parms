@@ -9,6 +9,11 @@ renderParm lightprogtex { texture }
 renderParm attenuationMapXY { texture }
 renderParm attenuationMapZ { texture }
 
+renderParm atlasLookup { texture }
+renderParm shadowMapAtlas { texture }
+
+renderParm shadowMapInfo { float4 }
+
 renderParm  rpbumpmatrixs { float4 }
 renderParm  rpbumpmatrixt { float4 }
 renderParm  rplightfalloffs { float4 }
@@ -21,6 +26,11 @@ renderParm  rpspecularmatrixs { float4 }
 renderParm  rpspecularmatrixt { float4 }
 renderParm  rpdiffusemodifier { float4 }
 renderParm  rpspecularmodifier { float4 }
+
+renderParm mvpMatrixX { float4 }
+renderParm mvpMatrixY { float4 }
+renderParm mvpMatrixZ { float4 }
+renderParm mvpMatrixW { float4 }
 
 renderParm vieworigin { float4 }
 renderParm lightorigin { float4 }

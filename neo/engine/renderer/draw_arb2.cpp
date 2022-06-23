@@ -224,11 +224,20 @@ void RB_ARB2_DrawInteractions( void ) {
 			continue;
 		}
 
+		// set the shadow map info.
+		idVec4 shadowMapInfo(backEnd.vLight->shadowMapSlice, renderShadowSystem.GetAtlasSampleScale(), renderShadowSystem.GetShadowMapAtlasSize(), 0);
+		tr.shadowMapInfoParm->SetVectorValue(shadowMapInfo);
+
 		lightShader = vLight->lightShader;
+
+		idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, 1.0);
+		tr.lightOriginParam->SetVectorValue(lightOrigin);
 
 		for (int i = 0; i < vLight->litRenderEntities.Num(); i++)
 		{
 			idRenderModel* renderModel = vLight->litRenderEntities[i]->viewEntity->renderModel;
+
+			RB_SetModelMatrix(vLight->litRenderEntities[i]->modelMatrix);
 
 			for (int s = 0; s < renderModel->NumSurfaces(); s++)
 			{

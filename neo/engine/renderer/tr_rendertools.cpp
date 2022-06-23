@@ -2035,7 +2035,9 @@ void RB_TestImage( void ) {
 	glLoadIdentity(); 
     glOrtho( 0, 1, 0, 1, -1, 1 );
 
-	tr.testImage->Bind();
+	tr.albedoTextureParam->SetImage(tr.testImage);
+	tr.guiTextureProgram->Bind();
+	//tr.testImage->Bind();
 	glBegin( GL_QUADS );
 	
 	glTexCoord2f( 0, 1 );
@@ -2054,6 +2056,8 @@ void RB_TestImage( void ) {
 
 	glPopMatrix();
 	glMatrixMode( GL_MODELVIEW );
+
+	tr.guiTextureProgram->BindNull();
 }
 
 /*

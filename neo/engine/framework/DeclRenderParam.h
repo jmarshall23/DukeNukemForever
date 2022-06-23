@@ -33,6 +33,7 @@ public:
 
 	idVec4					GetVectorValue(void) { return vectorValue; }
 	void					SetVectorValue(idVec4 value) { vectorValue = value; }
+	void					SetVectorValue(const float *value) { vectorValue = idVec4(value[0], value[1], value[2], value[3]); }
 
 	float					GetFloatValue(void) { return floatValue; }
 	void					SetFloatValue(float value) { floatValue = value; }

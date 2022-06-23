@@ -41,8 +41,7 @@ rvmDeclRenderProg::ParseRenderParms
 ===================
 */
 idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
-	idStr uniforms = tr.globalRenderInclude;
-	uniforms += "\n";
+	idStr uniforms = "#version 130\n";
 
 	idLexer src;
 	idToken	token, token2;
@@ -62,13 +61,20 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
 
 		if (token == "$")
 		{
-			src.ReadToken(&token);
-			rvmDeclRenderParam* parm = declManager->FindRenderParam(token.c_str());
+			idToken tokenCase;
+			src.ReadToken(&tokenCase);
+
+			token = tokenCase;
+			token.ToLower();
+			rvmDeclRenderParam* parm = declManager->FindRenderParam(tokenCase.c_str());
 			if (!parm)
 			{
 				src.Error("Failed to find render parm %s", token.c_str());
 				return "";
 			}
+
+			// Make all params lower case.
+			bracketText.Replace(tokenCase, token);
 
 			idStr name = token;
 			char* buffer = (char *)name.c_str(); // still not the worst thing I've ever done, muaahahaha!
@@ -99,6 +105,10 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
 	}
 
 	bracketText.Replace("$", "");
+
+	uniforms += "\n";
+	uniforms += tr.globalRenderInclude;
+	uniforms += "\n";
 
 	return uniforms;
 }
@@ -224,7 +234,10 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 				//common->Printf( "render prog %s from %s linked\n", GetName(), GetFileName() );
 			}
 			else {
-				common->FatalError("WHILE LINKING %s\n", infoLog);
+				if(strstr(infoLog, "error") || strstr(infoLog, "Error"))
+					common->FatalError("WHILE LINKING %s\n", infoLog);
+				else
+					common->Warning("WHILE LINKING %s\n", infoLog);
 			}
 
 			free(infoLog);

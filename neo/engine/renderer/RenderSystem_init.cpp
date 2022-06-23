@@ -1940,11 +1940,20 @@ void idRenderSystemLocal::Init( void ) {
 	lightOriginParam = declManager->FindRenderParam("lightorigin");
 	lightColorParam = declManager->FindRenderParam("rpdiffusemodifier");
 	lightScaleParam = declManager->FindRenderParam("lightscale");
+	shadowMapInfoParm = declManager->FindRenderParam("shadowMapInfo");
+
+	atlasLookupParam = declManager->FindRenderParam("atlasLookup");
+	shadowMapAtlasParam = declManager->FindRenderParam("shadowMapAtlas");
 
 	modelMatrixX = declManager->FindRenderParam("modelMatrixX");
 	modelMatrixY = declManager->FindRenderParam("modelMatrixY");
 	modelMatrixZ = declManager->FindRenderParam("modelMatrixZ");
 	modelMatrixW = declManager->FindRenderParam("modelMatrixW");
+
+	mvpMatrixX = declManager->FindRenderParam("mvpMatrixX");
+	mvpMatrixY = declManager->FindRenderParam("mvpMatrixY");
+	mvpMatrixZ = declManager->FindRenderParam("mvpMatrixZ");
+	mvpMatrixW = declManager->FindRenderParam("mvpMatrixW");
 
 	vertexScaleModulateParam = declManager->FindRenderParam("vertexcolormodulate");
 	vertexScaleAddParam = declManager->FindRenderParam("vertexcoloradd");

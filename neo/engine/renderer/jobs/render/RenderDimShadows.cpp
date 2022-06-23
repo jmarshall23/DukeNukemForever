@@ -3,8 +3,6 @@
 
 #include "../../tr_local.h"
 
-#if 0
-
 static idRenderMatrix	lightProjectionMatrix;
 static float	unflippedLightMatrix[16];
 static float	lightMatrix[16];
@@ -15,7 +13,7 @@ static const int CULL_OCCLUDER_AND_RECEIVER = 2;	// the surface doesn't effect t
 
 idCVar r_shadow_polyOfsFactor("r_shadow_polyOfsFactor", "2", CVAR_RENDERER | CVAR_FLOAT, "polygonOffset factor for drawing shadow buffer");
 idCVar r_shadow_polyOfsUnits("r_shadow_polyOfsUnits", "3000", CVAR_RENDERER | CVAR_FLOAT, "polygonOffset units for drawing shadow buffer");
-idCVar r_shadowOccluderFacing("r_shadowOccluderFacing", "1", CVAR_INTEGER, "0 = front side, 1 = back side culling for shadows");
+idCVar r_shadowOccluderFacing("r_shadowOccluderFacing", "0", CVAR_INTEGER, "0 = front side, 1 = back side culling for shadows");
 idCVar r_shadowEnableCache("r_shadowEnableCache", "1", CVAR_RENDERER | CVAR_BOOL, "enable shadow map caching");
 
 /*
@@ -47,163 +45,86 @@ float	R_Shadow_CalcLightAxialSize(viewLight_t* vLight) {
 
 /*
 ==================
-RB_Shadow_CullInteractions
-
-Sets surfaceInteraction_t->cullBits
-==================
-*/
-void RB_Shadow_CullInteractions(viewLight_t* vLight, idPlane frustumPlanes[6]) {
-	for (idInteraction* inter = vLight->lightDef->firstInteraction; inter; inter = inter->lightNext) {
-		const idRenderEntityLocal* entityDef = inter->entityDef;
-		if (!entityDef) {
-			continue;
-		}
-		if (inter->numSurfaces < 1) {
-			continue;
-		}
-
-		int	culled = 0;
-
-		// transform light frustum into object space, positive side points outside the light
-		idPlane	localPlanes[6];
-		int		plane;
-		for (plane = 0; plane < 6; plane++) {
-			R_GlobalPlaneToLocal(entityDef->modelMatrix, frustumPlanes[plane], localPlanes[plane]);
-		}
-
-		// cull the entire entity bounding box
-		// has referenceBounds been tightened to the actual model bounds?
-		idVec3	corners[8];
-		for (int i = 0; i < 8; i++) {
-			corners[i][0] = entityDef->referenceBounds[i & 1][0];
-			corners[i][1] = entityDef->referenceBounds[(i >> 1) & 1][1];
-			corners[i][2] = entityDef->referenceBounds[(i >> 2) & 1][2];
-		}
-
-		for (plane = 0; plane < 6; plane++) {
-			int		j;
-			for (j = 0; j < 8; j++) {
-				// if a corner is on the negative side (inside) of the frustum, the surface is not culled
-				// by this plane
-				if (corners[j] * localPlanes[plane].ToVec4().ToVec3() + localPlanes[plane][3] < 0) {
-					break;
-				}
-			}
-			if (j == 8) {
-				break;			// all points outside the light
-			}
-		}
-		if (plane < 6) {
-			culled = CULL_OCCLUDER_AND_RECEIVER;
-		}
-
-		// If this entity requires dynamic shadows, and this is a static light, then don't render the realtime entity.
-		if(entityDef->parms.hasDynamicShadows && vLight->lightDef->GetLightRenderType() != LIGHT_RENDER_DYNAMIC) {
-			culled = CULL_OCCLUDER_AND_RECEIVER;
-		}
-
-		for (int i = 0; i < inter->numSurfaces; i++) {
-			surfaceInteraction_t* surfInt = &inter->surfaces[i];
-
-			if (!surfInt->ambientTris) {
-				continue;
-			}
-			surfInt->expCulled = culled;
-		}
-
-	}
-}
-
-/*
-==================
 RB_Shadow_RenderOccluders
 ==================
 */
 void RB_Shadow_RenderOccluders(viewLight_t* vLight) {
-	for (idInteraction* inter = vLight->lightDef->firstInteraction; inter; inter = inter->lightNext) {
-		const idRenderEntityLocal* entityDef = inter->entityDef;
+	for (int i = 0; i < vLight->litRenderEntities.Num(); i++) {
+		const idRenderEntityLocal* entityDef = vLight->litRenderEntities[i];
+		idRenderModel* inter = entityDef->viewEntity->renderModel;
+
 		if (!entityDef) {
 			continue;
 		}
-		if (inter->numSurfaces < 1) {
+		if (inter->NumSurfaces() < 1) {
 			continue;
 		}
 
-		if(inter->hasSkinning && vLight->lightDef->GetLightRenderType() == LIGHT_RENDER_STATIC)
-			continue;
+		//if(inter->NumJoints() > 0 && vLight->lightDef->GetLightRenderType() == LIGHT_RENDER_STATIC)
+		//	continue;
 
 		// no need to check for current on this, because each interaction is always
 		// a different space
 		idRenderMatrix	matrix, transposeMatrix, mvp;
-		myGlMultMatrix(inter->entityDef->modelMatrix, lightMatrix, matrix.GetFloatPtr());
+		myGlMultMatrix(entityDef->modelMatrix, lightMatrix, matrix.GetFloatPtr());
 		
 		idRenderMatrix::Transpose(matrix, transposeMatrix);
 		idRenderMatrix::Multiply(lightProjectionMatrix, transposeMatrix, mvp);
 
 		RB_SetMVP(mvp);
-		RB_SetModelMatrix(inter->entityDef->modelMatrix);
-
-		glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_ST);
-		glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_TANGENT);
-		glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_VERTEX);
-		glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_NORMAL);
+		RB_SetModelMatrix(entityDef->modelMatrix);
 
 		// draw each surface
-		for (int i = 0; i < inter->numSurfaces; i++) {
-			surfaceInteraction_t* surfInt = &inter->surfaces[i];
+		for (int i = 0; i < inter->NumSurfaces(); i++) {
+			const modelSurface_t* surfInt = inter->Surface(i);
 
-			if (!surfInt->ambientTris) {
-				continue;
-			}
+			//if (!surfInt->geometry->ambientSurface) {
+			//	continue;
+			//}
+
 			if (surfInt->shader && !surfInt->shader->SurfaceCastsShadow()) {
 				continue;
 			}
 
 			// cull it
-			if (surfInt->expCulled == CULL_OCCLUDER_AND_RECEIVER) {
-				continue;
-			}
+			//if (surfInt->expCulled == CULL_OCCLUDER_AND_RECEIVER) {
+			//	continue;
+			//}
 
-			if(surfInt->skinning.HasSkinning()) {
-				renderProgManager.BindShader_ShadowSkinned();
-			}
-			else {
-				renderProgManager.BindShader_Shadow();
-			}
+			//if(surfInt->skinning.HasSkinning()) {
+			//	renderProgManager.BindShader_ShadowSkinned();
+			//}
+			//else {
+			//	renderProgManager.BindShader_Shadow();
+			//}
+
+			tr.shadowMapProgram->Bind();
 
 			// render it
-			const srfTriangles_t* tri = surfInt->ambientTris;
+			const srfTriangles_t* tri = surfInt->geometry;
 			if (!tri->ambientCache) {
 				R_CreateAmbientCache(const_cast<srfTriangles_t*>(tri), false);
 			}
+
+			// set the vertex pointers
 			idDrawVert* ac = (idDrawVert*)vertexCache.Position(tri->ambientCache);
-	
-			glVertexAttribPointerARB(PC_ATTRIB_INDEX_NORMAL, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->normal.ToFloatPtr());
-			glVertexAttribPointerARB(PC_ATTRIB_INDEX_TANGENT, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->tangents[0].ToFloatPtr());
-			glVertexAttribPointerARB(PC_ATTRIB_INDEX_ST, 2, GL_FLOAT, false, sizeof(idDrawVert), ac->st.ToFloatPtr());
-			glVertexAttribPointerARB(PC_ATTRIB_INDEX_VERTEX, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->xyz.ToFloatPtr());
+			glVertexPointer(3, GL_FLOAT, sizeof(idDrawVert), ac->xyz.ToFloatPtr());
 			
-			if (surfInt->skinning.HasSkinning()) {
-				const rvmSkeletalSurf_t* skinning = &surfInt->skinning;
-				RB_BindJointBuffer(skinning->jointBuffer, skinning->jointsInverted->ToFloatPtr(), skinning->numInvertedJoints, (void*)&ac->color, (void*)&ac->color2);
-			}
+			//if (surfInt->skinning.HasSkinning()) {
+			//	const rvmSkeletalSurf_t* skinning = &surfInt->skinning;
+			//	RB_BindJointBuffer(skinning->jointBuffer, skinning->jointsInverted->ToFloatPtr(), skinning->numInvertedJoints, (void*)&ac->color, (void*)&ac->color2);
+			//}
 
 			//if (surfInt->shader) {
 			//	surfInt->shader->GetEditorImage()->Bind();
 			//}
+			
 			RB_DrawElementsWithCounters(tri);
 
-			if (surfInt->skinning.HasSkinning()) {
-				RB_UnBindJointBuffer();
-			}
+			//if (surfInt->skinning.HasSkinning()) {
+				//RB_UnBindJointBuffer();
+			//}
 		}
-
-		glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_COLOR);
-		glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_ST);
-		glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_TANGENT);
-		glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_VERTEX);
-		glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_NORMAL);
-		glDisableClientState(GL_COLOR_ARRAY);
 	}
 }
 
@@ -500,7 +421,7 @@ Down
 		globalFrustum[i][3] = -(origin * globalFrustum[i].ToVec4().ToVec3());
 	}
 
-	RB_Shadow_CullInteractions(vLight, globalFrustum);
+	//RB_Shadow_CullInteractions(vLight, globalFrustum);
 
 
 	// FIXME: we want to skip the sampling as well as the generation when not casting shadows
@@ -525,7 +446,7 @@ Down
 			GL_Cull(CT_FRONT_SIDED);
 			glDisable(GL_POLYGON_OFFSET_FILL);
 			break;
-		
+
 		}
 	}
 
@@ -543,7 +464,7 @@ void RB_DrawPointlightShadow(viewLight_t *vLight) {
 	
 	// Check to see if this shadow has been cached.
 	int cachedShadowMapId = renderShadowSystem.CheckShadowCache(vLight);
-	if (cachedShadowMapId != -1 && vLight->lightDef->GetLightRenderType() == LIGHT_RENDER_STATIC) {
+	if (cachedShadowMapId != -1) {
 		vLight->shadowMapSlice = cachedShadowMapId;
 		return;
 	}
@@ -583,7 +504,7 @@ void RB_DrawPointlightShadow(viewLight_t *vLight) {
 
 		RB_RenderShadowBuffer(vLight, i);
 
-		backEnd.c_numShadowMapSlices++;
+		//backEnd.c_numShadowMapSlices++;
 	}
 }
 
@@ -597,7 +518,7 @@ void RB_DrawSpotlightShadow(viewLight_t* vLight) {
 
 	// Check to see if this shadow has been cached.
 	int cachedShadowMapId = renderShadowSystem.CheckShadowCache(vLight);
-	if (cachedShadowMapId != -1 && vLight->lightDef->GetLightRenderType() == LIGHT_RENDER_STATIC) {
+	if (cachedShadowMapId != -1 /* && vLight->lightDef->GetLightRenderType() == LIGHT_RENDER_STATIC*/) {
 		vLight->shadowMapSlice = cachedShadowMapId;
 		return;
 	}
@@ -633,7 +554,7 @@ void RB_DrawSpotlightShadow(viewLight_t* vLight) {
 
 	RB_RenderShadowBuffer(vLight, -1);
 
-	backEnd.c_numShadowMapSlices++;
+	//backEnd.c_numShadowMapSlices++;
 }
 
 /*
@@ -643,7 +564,7 @@ RB_Draw_ShadowMaps
 */
 void RB_Draw_ShadowMaps(void) {
 	viewLight_t		*vLight;
-	rvmDeviceDebugMarker deviceDebugMarker("ShadowMaps");
+	//rvmDeviceDebugMarker deviceDebugMarker("ShadowMaps");
 
 	glDisable(GL_VERTEX_PROGRAM_ARB);
 	glDisable(GL_FRAGMENT_PROGRAM_ARB);
@@ -658,7 +579,7 @@ void RB_Draw_ShadowMaps(void) {
 	// ensures that depth writes are enabled for the depth clear
 	GL_State(GLS_DEFAULT);
 
-	backEnd.c_numShadowMapSlices = 0;
+	//backEnd.c_numShadowMapSlices = 0;
 
 	for (vLight = backEnd.viewDef->viewLights; vLight; vLight = vLight->next) {
 		// If this light isn't casting shadows, skip it.
@@ -666,19 +587,19 @@ void RB_Draw_ShadowMaps(void) {
 			continue;
 
 		// Ambient light doesn't cast shadows.
-		if (vLight->lightDef->parms.ambientLight)
-			continue;
-
-		if (vLight->lightDef->visibleFrame + r_occlusionQueryDelay.GetInteger() < tr.frameCount) {
-			continue;
-		}
+		//if (vLight->lightDef->parms.ambientLight)
+		//	continue;
+		//
+		//if (vLight->lightDef->visibleFrame + r_occlusionQueryDelay.GetInteger() < tr.frameCount) {
+		//	continue;
+		//}
 
 		// all light side projections must currently match, so non-centered
 		// and non-cubic lights must take the largest length
 		viewLightAxialSize = R_Shadow_CalcLightAxialSize(vLight);
 
 		idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, 1.0);
-		RB_SetVertexParm(RENDERPARM_LOCALLIGHTORIGIN, lightOrigin.ToFloatPtr());
+		tr.lightOriginParam->SetVectorValue(lightOrigin);
 
 		// Render the pointlight shadows
 		if(vLight->lightDef->parms.pointLight) {
@@ -705,6 +626,8 @@ void RB_Draw_ShadowMaps(void) {
 	idRenderTexture::BindNull();
 
 	// Reset the bound shader.
-	renderProgManager.Unbind();
+	tr.shadowMapProgram->BindNull();
+
+	tr.atlasLookupParam->SetImage(renderShadowSystem.GetAtlasLookupImage());
+	tr.shadowMapAtlasParam->SetImage(renderShadowSystem.GetShadowMapDepthAtlas());
 }
-#endif

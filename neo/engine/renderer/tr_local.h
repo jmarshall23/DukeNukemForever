@@ -236,7 +236,8 @@ public:
 
 	areaReference_t *		references;				// each area the light is present in will have a lightRef
 
-	//idList<class idRenderEntityLocal*>  litRenderModels;
+	// Shadow Matrixes 
+	idRenderMatrix			shadowMatrix[6];
 
 	struct doublePortal_s *	foggedPortals;
 };
@@ -332,6 +333,8 @@ struct viewLight_t {
 	const idMaterial *		lightShader;				// light shader used by backend
 	const float	*			shaderRegisters;			// shader registers used by backend
 	idImage *				falloffImage;				// falloff image used by backend
+
+	int						shadowMapSlice;
 
 	idList<idRenderEntityLocal*> litRenderEntities;
 };
@@ -610,7 +613,7 @@ typedef struct {
 	textureType_t	textureType;
 } tmu_t;
 
-const int MAX_MULTITEXTURE_UNITS =	8;
+const int MAX_MULTITEXTURE_UNITS =	16;
 typedef struct {
 	tmu_t		tmu[MAX_MULTITEXTURE_UNITS];
 	int			currenttmu;
@@ -669,6 +672,8 @@ typedef struct {
 											// A high dynamic range card will have this set to 1.0.
 
 	bool				currentRenderCopied;	// true if any material has already referenced _currentRender
+
+	int					currentShadowMapSlice;
 
 	// our OpenGL state deltas
 	glstate_t			glState;
@@ -841,8 +846,18 @@ public:
 	rvmDeclRenderParam*		modelMatrixZ;
 	rvmDeclRenderParam*		modelMatrixW;
 
+	rvmDeclRenderParam* mvpMatrixX;
+	rvmDeclRenderParam* mvpMatrixY;
+	rvmDeclRenderParam* mvpMatrixZ;
+	rvmDeclRenderParam* mvpMatrixW;
+
 	rvmDeclRenderParam* vertexScaleAddParam;
 	rvmDeclRenderParam* vertexScaleModulateParam;
+
+	rvmDeclRenderParam* shadowMapInfoParm;
+
+	rvmDeclRenderParam* shadowMapAtlasParam;
+	rvmDeclRenderParam* atlasLookupParam;
 
 	idStr					globalRenderInclude;
 
@@ -1719,5 +1734,6 @@ idScreenRect R_CalcIntersectionScissor( const idRenderLightLocal * lightDef,
 
 void RB_SetModelMatrix(const float* modelMatrix);
 void RB_SetMVP(const idRenderMatrix& mvp);
+void RB_Draw_ShadowMaps(void);
 
 #endif /* !__TR_LOCAL_H__ */
