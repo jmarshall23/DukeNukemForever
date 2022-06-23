@@ -144,7 +144,7 @@ file(GLOB engineDependFiles
     "engine/sound/vorbis/*.c*"
     "engine/sound/OggVorbis/oggsrc/*.c*"
     "engine/sound/OggVorbis/vorbissrc/*.c*"
-)  
+) 
 
 add_library(engineExternal STATIC ${engineDependFiles})
 set_target_properties(engineExternal PROPERTIES LINK_FLAGS "/PDB:\"engineExternal.pdb\"")

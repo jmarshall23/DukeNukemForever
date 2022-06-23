@@ -26,11 +26,8 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
-
-#pragma hdrstop
-
-#include "RenderSystem_local.h"
-#include "simplex.h"	// line font definition
+#include "../../RenderSystem_local.h"
+#include "../../simplex.h"	// line font definition
 
 #define MAX_DEBUG_LINES			16384
 
