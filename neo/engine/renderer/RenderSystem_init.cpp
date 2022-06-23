@@ -1214,7 +1214,7 @@ void R_EnvShot_f( const idCmdArgs &args ) {
 	int			i;
 	idMat3		axis[6];
 	renderView_t	ref;
-	viewDef_t	primary;
+	idRenderWorldCommitted	primary;
 	int			blends;
 	char	*extensions[6] =  { "_px.tga", "_nx.tga", "_py.tga", "_ny.tga", 
 		"_pz.tga", "_nz.tga" };
@@ -1354,7 +1354,7 @@ void R_MakeAmbientMap_f( const idCmdArgs &args ) {
 	const char	*baseName;
 	int			i;
 	renderView_t	ref;
-	viewDef_t	primary;
+	idRenderWorldCommitted	primary;
 	int			downSample;
 	char	*extensions[6] =  { "_px.tga", "_nx.tga", "_py.tga", "_ny.tga", 
 		"_pz.tga", "_nz.tga" };

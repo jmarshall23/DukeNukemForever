@@ -201,7 +201,7 @@ idRender::DrawForwardLit
 ==================
 */
 void idRender::DrawForwardLit( void ) {
-	viewLight_t		*vLight;
+	idRenderLightCommitted		*vLight;
 	const idMaterial	*lightShader;
 
 	GL_SelectTexture( 0 );

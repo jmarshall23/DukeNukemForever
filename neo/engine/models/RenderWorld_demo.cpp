@@ -286,7 +286,7 @@ WriteVisibleDefs
 
 ================
 */
-void	idRenderWorldLocal::WriteVisibleDefs( const viewDef_t *viewDef ) {
+void	idRenderWorldLocal::WriteVisibleDefs( const idRenderWorldCommitted *viewDef ) {
 	// only the main renderWorld writes stuff to demos, not the wipes or
 	// menu renders
 	if ( this != session->rw ) {
@@ -294,7 +294,7 @@ void	idRenderWorldLocal::WriteVisibleDefs( const viewDef_t *viewDef ) {
 	}
 
 	// make sure all necessary entities and lights are updated
-	for ( viewEntity_t *viewEnt = viewDef->viewEntitys ; viewEnt ; viewEnt = viewEnt->next ) {
+	for ( idRenderModelCommitted *viewEnt = viewDef->viewEntitys ; viewEnt ; viewEnt = viewEnt->next ) {
 		idRenderEntityLocal *ent = viewEnt->entityDef;
 
 		if ( ent->archived ) {
@@ -307,7 +307,7 @@ void	idRenderWorldLocal::WriteVisibleDefs( const viewDef_t *viewDef ) {
 		ent->archived = true;
 	}
 
-	for ( viewLight_t *viewLight = viewDef->viewLights ; viewLight ; viewLight = viewLight->next ) {
+	for ( idRenderLightCommitted *viewLight = viewDef->viewLights ; viewLight ; viewLight = viewLight->next ) {
 		idRenderLightLocal *light = viewLight->lightDef;
 
 		if ( light->archived ) {

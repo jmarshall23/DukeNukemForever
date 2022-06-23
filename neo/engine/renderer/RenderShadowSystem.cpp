@@ -152,7 +152,7 @@ void rvmRenderShadowSystem::Init(void) {
 rvmRenderShadowSystem::FindNextAvailableShadowMap
 ======================
 */
-int rvmRenderShadowSystem::FindNextAvailableShadowMap(viewLight_t* vLight, int numSlices) {
+int rvmRenderShadowSystem::FindNextAvailableShadowMap(idRenderLightCommitted* vLight, int numSlices) {
 	int numEntriesPerAxis = r_shadowMapAtlasSize.GetInteger() / r_shadowMapAtlasSliceSize.GetInteger();
 
 	for (int i = 0; i < numEntriesPerAxis * numEntriesPerAxis; i++) {
@@ -176,7 +176,7 @@ int rvmRenderShadowSystem::FindNextAvailableShadowMap(viewLight_t* vLight, int n
 rvmRenderShadowSystem::CheckShadowCache
 ======================
 */
-int rvmRenderShadowSystem::CheckShadowCache(viewLight_t* vLight) {
+int rvmRenderShadowSystem::CheckShadowCache(idRenderLightCommitted* vLight) {
 	if (vLight->lightDef->parms.uniqueLightId == -1)
 		return -1;
 

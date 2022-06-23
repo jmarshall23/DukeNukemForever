@@ -584,7 +584,7 @@ RB_ShowViewEntitys
 Debugging tool
 =====================
 */
-static void RB_ShowViewEntitys( viewEntity_t *vModels ) {
+static void RB_ShowViewEntitys( idRenderModelCommitted *vModels ) {
 	if ( !r_showViewEntitys.GetBool() ) {
 		return;
 	}
@@ -1309,7 +1309,7 @@ void RB_ShowLights( void ) {
 	const idRenderLightLocal	*light;
 	int					count;
 	srfTriangles_t		*tri;
-	viewLight_t			*vLight;
+	idRenderLightCommitted			*vLight;
 
 	if ( !r_showLights.GetInteger() ) {
 		return;

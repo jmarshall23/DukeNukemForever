@@ -42,6 +42,8 @@ class idCinematic;
 class idUserInterface;
 class idMegaTexture;
 
+class idRenderWorldCommitted;
+
 // moved from image.h for default parm
 typedef enum {
 	TF_LINEAR,
@@ -576,7 +578,7 @@ public:
 
 						// regs should point to a float array large enough to hold GetNumRegisters() floats
 	void				EvaluateRegisters( float *regs, const float entityParms[MAX_ENTITY_SHADER_PARMS], 
-											const struct viewDef_t *view, idSoundEmitter *soundEmitter = NULL ) const;
+											const idRenderWorldCommitted *view, idSoundEmitter *soundEmitter = NULL ) const;
 
 						// if a material only uses constants (no entityParm or globalparm references), this
 						// will return a pointer to an internal table, and EvaluateRegisters will not need

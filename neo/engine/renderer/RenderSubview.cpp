@@ -214,13 +214,13 @@ bool R_PreciseCullSurface( const drawSurf_t *drawSurf, idBounds &ndcBounds ) {
 R_MirrorViewBySurface
 ========================
 */
-static viewDef_t *R_MirrorViewBySurface( drawSurf_t *drawSurf ) {
-	viewDef_t		*parms;
+static idRenderWorldCommitted *R_MirrorViewBySurface( drawSurf_t *drawSurf ) {
+	idRenderWorldCommitted		*parms;
 	orientation_t	surface, camera;
 	idPlane			originalPlane, plane;
 
 	// copy the viewport size from the original
-	parms = (viewDef_t *)R_FrameAlloc( sizeof( *parms ) );
+	parms = (idRenderWorldCommitted *)R_FrameAlloc( sizeof( *parms ) );
 	*parms = *tr.viewDef;
 	parms->renderView.viewID = 0;	// clear to allow player bodies to show up, and suppress view weapons
 
@@ -268,13 +268,13 @@ static viewDef_t *R_MirrorViewBySurface( drawSurf_t *drawSurf ) {
 R_XrayViewBySurface
 ========================
 */
-static viewDef_t *R_XrayViewBySurface( drawSurf_t *drawSurf ) {
-	viewDef_t		*parms;
+static idRenderWorldCommitted *R_XrayViewBySurface( drawSurf_t *drawSurf ) {
+	idRenderWorldCommitted		*parms;
 	orientation_t	surface, camera;
 	idPlane			originalPlane, plane;
 
 	// copy the viewport size from the original
-	parms = (viewDef_t *)R_FrameAlloc( sizeof( *parms ) );
+	parms = (idRenderWorldCommitted *)R_FrameAlloc( sizeof( *parms ) );
 	*parms = *tr.viewDef;
 	parms->renderView.viewID = 0;	// clear to allow player bodies to show up, and suppress view weapons
 
@@ -290,7 +290,7 @@ R_RemoteRender
 ===============
 */
 static void R_RemoteRender( drawSurf_t *surf, textureStage_t *stage ) {
-	viewDef_t		*parms;
+	idRenderWorldCommitted		*parms;
 
 	// remote views can be reused in a single frame
 	if ( stage->dynamicFrameCount == tr.frameCount ) {
@@ -303,7 +303,7 @@ static void R_RemoteRender( drawSurf_t *surf, textureStage_t *stage ) {
 	}
 
 	// copy the viewport size from the original
-	parms = (viewDef_t *)R_FrameAlloc( sizeof( *parms ) );
+	parms = (idRenderWorldCommitted *)R_FrameAlloc( sizeof( *parms ) );
 	*parms = *tr.viewDef;
 
 	parms->isSubview = true;
@@ -349,7 +349,7 @@ R_MirrorRender
 =================
 */
 void R_MirrorRender( drawSurf_t *surf, textureStage_t *stage, idScreenRect scissor ) {
-	viewDef_t		*parms;
+	idRenderWorldCommitted		*parms;
 
 	// remote views can be reused in a single frame
 	if ( stage->dynamicFrameCount == tr.frameCount ) {
@@ -399,7 +399,7 @@ R_XrayRender
 =================
 */
 void R_XrayRender( drawSurf_t *surf, textureStage_t *stage, idScreenRect scissor ) {
-	viewDef_t		*parms;
+	idRenderWorldCommitted		*parms;
 
 	// remote views can be reused in a single frame
 	if ( stage->dynamicFrameCount == tr.frameCount ) {
@@ -450,7 +450,7 @@ R_GenerateSurfaceSubview
 */
 bool	R_GenerateSurfaceSubview( drawSurf_t *drawSurf ) {
 	idBounds		ndcBounds;
-	viewDef_t		*parms;
+	idRenderWorldCommitted		*parms;
 	const idMaterial		*shader;
 
 	// for testing the performance hit

@@ -191,7 +191,7 @@ void idGuiModel::EmitSurface( guiModelSurface_t *surf, float modelMatrix[16], fl
 	memset( &renderEntity, 0, sizeof( renderEntity ) );
 	memcpy( renderEntity.shaderParms, surf->color, sizeof( surf->color ) );
 
-	viewEntity_t *guiSpace = (viewEntity_t *)R_ClearedFrameAlloc( sizeof( *guiSpace ) );
+	idRenderModelCommitted *guiSpace = (idRenderModelCommitted *)R_ClearedFrameAlloc( sizeof( *guiSpace ) );
 	memcpy( guiSpace->modelMatrix, modelMatrix, sizeof( guiSpace->modelMatrix ) );
 	memcpy( guiSpace->modelViewMatrix, modelViewMatrix, sizeof( guiSpace->modelViewMatrix ) );
 	guiSpace->weaponDepthHack = depthHack;
@@ -224,13 +224,13 @@ Creates a view that covers the screen and emit the surfaces
 ================
 */
 void idGuiModel::EmitFullScreen( void ) {
-	viewDef_t	*viewDef;
+	idRenderWorldCommitted	*viewDef;
 
 	if ( surfaces[0].numVerts == 0 ) {
 		return;
 	}
 
-	viewDef = (viewDef_t *)R_ClearedFrameAlloc( sizeof( *viewDef ) );
+	viewDef = (idRenderWorldCommitted *)R_ClearedFrameAlloc( sizeof( *viewDef ) );
 
 	// for gui editor
 	if ( !tr.viewDef || !tr.viewDef->isEditor ) {
@@ -282,7 +282,7 @@ void idGuiModel::EmitFullScreen( void ) {
 	viewDef->drawSurfs = (drawSurf_t **)R_FrameAlloc( viewDef->maxDrawSurfs * sizeof( viewDef->drawSurfs[0] ) );
 	viewDef->numDrawSurfs = 0;
 
-	viewDef_t	*oldViewDef = tr.viewDef;
+	idRenderWorldCommitted	*oldViewDef = tr.viewDef;
 	tr.viewDef = viewDef;
 
 	// add the surfaces to this view

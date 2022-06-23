@@ -513,7 +513,7 @@ void rvGEViewer::Render	( HDC dc )
 
 	if ( mInterface )
 	{
-		viewDef_t viewDef;
+		idRenderWorldCommitted viewDef;
 		memset ( &viewDef, 0, sizeof(viewDef) );
 		tr.viewDef = &viewDef;
 		viewDef.renderView.x = 0;

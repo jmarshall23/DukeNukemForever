@@ -665,7 +665,7 @@ void idRenderWorldLocal::RenderScene( const renderView_t *renderView ) {
 
 	// setup view parms for the initial view
 	//
-	viewDef_t		*parms = (viewDef_t *)R_ClearedFrameAlloc( sizeof( *parms ) );
+	idRenderWorldCommitted		*parms = (idRenderWorldCommitted *)R_ClearedFrameAlloc( sizeof( *parms ) );
 	parms->renderView = *renderView;
 
 	if ( tr.takingScreenshot ) {
@@ -1494,7 +1494,7 @@ void idRenderWorldLocal::DebugPolygon( const idVec4 &color, const idWinding &win
 idRenderWorldLocal::DebugScreenRect
 ================
 */
-void idRenderWorldLocal::DebugScreenRect( const idVec4 &color, const idScreenRect &rect, const viewDef_t *viewDef, const int lifetime ) {
+void idRenderWorldLocal::DebugScreenRect( const idVec4 &color, const idScreenRect &rect, const idRenderWorldCommitted *viewDef, const int lifetime ) {
 	int i;
 	float centerx, centery, dScale, hScale, vScale;
 	idBounds bounds;
@@ -1693,13 +1693,13 @@ static bool R_PotentiallyInsideInfiniteShadow(const srfTriangles_t* occluder,
 AddModelAndLightRefs
 ===================
 */
-void R_AddAmbientDrawsurfs(viewEntity_t* vEntity);
-idScreenRect	R_CalcLightScissorRectangle(viewLight_t* vLight);
-idScreenRect R_CalcEntityScissorRectangle(viewEntity_t* vEntity);
+void R_AddAmbientDrawsurfs(idRenderModelCommitted* vEntity);
+idScreenRect	R_CalcLightScissorRectangle(idRenderLightCommitted* vLight);
+idScreenRect R_CalcEntityScissorRectangle(idRenderModelCommitted* vEntity);
 
 void idRenderWorldLocal::AddModelAndLightRefs(void) {
-	viewLight_t* vLight;
-	viewEntity_t* vEnt;
+	idRenderLightCommitted* vLight;
+	idRenderModelCommitted* vEnt;
 
 	for (int i = 0; i < entityDefs.Num(); i++)
 	{
@@ -1714,7 +1714,7 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 		// remove decals that are completely faded away
 		R_FreeEntityDefFadedDecals(entityDefs[i], tr.viewDef->renderView.time);
 
-		vEnt = R_SetEntityDefViewEntity(entityDefs[i]);
+		vEnt = tr.viewDef->CommitRenderModel(entityDefs[i]);
 		vEnt->scissorRect = R_CalcEntityScissorRectangle(vEnt);
 
 		vEnt->renderModel = R_EntityDefDynamicModel(vEnt->entityDef);
@@ -1737,7 +1737,7 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 			continue;
 		}
 
-		vLight = R_SetLightDefViewLight(lightDefs[i]);
+		vLight = tr.viewDef->CommitRenderLight(lightDefs[i]);
 		vLight->litRenderEntities.Clear();
 
 		vLight->scissorRect = R_CalcLightScissorRectangle(vLight);
@@ -1756,8 +1756,8 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 
 		for (int d = 0; d < entityDefs.Num(); d++)
 		{
-			viewLight_t* vLight;
-			viewEntity_t* vEntity;
+			idRenderLightCommitted* vLight;
+			idRenderModelCommitted* vEntity;
 
 			idVec3			localLightOrigin;
 			idVec3			localViewOrigin;

@@ -40,6 +40,7 @@ If you have questions concerning this license or the applicable additional terms
 class idRenderWorldLocal;
 class idRenderEntityLocal;
 class idRenderLightLocal;
+class idRenderModelCommitted;
 
 // maximum texture units
 const int MAX_PROG_TEXTURE_PARMS = 16;
@@ -107,7 +108,7 @@ SURFACES
 #include "../models/ModelOverlay.h"
 
 // drawSurf_t structures command the back end to render surfaces
-// a given srfTriangles_t may be used with multiple viewEntity_t,
+// a given srfTriangles_t may be used with multiple idRenderModelCommitted,
 // as when viewed in a subview or multiple viewport render, or
 // with multiple shaders when skinned, or, possibly with multiple
 // lights, although currently each lighting interaction creates
@@ -118,7 +119,7 @@ static const int	DSF_VIEW_INSIDE_SHADOW	= 1;
 
 typedef struct drawSurf_s {
 	const srfTriangles_t	*geo;
-	const struct viewEntity_s *space;
+	const idRenderModelCommitted *space;
 	const idMaterial		*material;	// may be NULL for shadow volumes
 	float					sort;		// material->sort, modified by gui / entity sort offsets
 	const float				*shaderRegisters;	// evaluated and adjusted for referenceShaders
@@ -232,7 +233,7 @@ public:
 	shadowFrustum_t			shadowFrustums[6];
 
 	int						viewCount;				// if == tr.viewCount, the light is on the viewDef->viewLights list
-	struct viewLight_t *	viewLight;
+	struct idRenderLightCommitted *	viewLight;
 
 	areaReference_t *		references;				// each area the light is present in will have a lightRef
 
@@ -276,11 +277,11 @@ public:
 
 	idBounds				referenceBounds;		// the local bounds used to place entityRefs, either from parms or a model
 
-	// a viewEntity_t is created whenever a idRenderEntityLocal is considered for inclusion
+	// a idRenderModelCommitted is created whenever a idRenderEntityLocal is considered for inclusion
 	// in a given view, even if it turns out to not be visible
 	int						viewCount;				// if tr.viewCount == viewCount, viewEntity is valid,
 													// but the entity may still be off screen
-	struct viewEntity_s *	viewEntity;				// in frame temporary memory
+	idRenderModelCommitted *	viewEntity;				// in frame temporary memory
 
 	int						visibleCount;
 	// if tr.viewCount == visibleCount, at least one ambient
@@ -296,154 +297,9 @@ public:
 	bool					needsPortalSky;
 };
 
-
-// viewLights are allocated on the frame temporary stack memory
-// a viewLight contains everything that the back end needs out of an idRenderLightLocal,
-// which the front end may be modifying simultaniously if running in SMP mode.
-// a viewLight may exist even without any surfaces, and may be relevent for fogging,
-// but should never exist if its volume does not intersect the view frustum
-struct viewLight_t {
-	struct viewLight_t*	next;
-
-	// back end should NOT reference the lightDef, because it can change when running SMP
-	idRenderLightLocal *	lightDef;
-
-	// for scissor clipping, local inside renderView viewport
-	// scissorRect.Empty() is true if the viewEntity_t was never actually
-	// seen through any portals
-	idScreenRect			scissorRect;
-
-	// if the view isn't inside the light, we can use the non-reversed
-	// shadow drawing, avoiding the draws of the front and rear caps
-	bool					viewInsideLight;
-
-	// true if globalLightOrigin is inside the view frustum, even if it may
-	// be obscured by geometry.  This allows us to skip shadows from non-visible objects
-	bool					viewSeesGlobalLightOrigin;	
-
-	// if !viewInsideLight, the corresponding bit for each of the shadowFrustum
-	// projection planes that the view is on the negative side of will be set,
-	// allowing us to skip drawing the projected caps of shadows if we can't see the face
-	int						viewSeesShadowPlaneBits;
-
-	idVec3					globalLightOrigin;			// global light origin used by backend
-	idPlane					lightProject[4];			// light project used by backend
-	idPlane					fogPlane;					// fog plane for backend fog volume rendering
-	const srfTriangles_t *	frustumTris;				// light frustum for backend fog volume rendering
-	const idMaterial *		lightShader;				// light shader used by backend
-	const float	*			shaderRegisters;			// shader registers used by backend
-	idImage *				falloffImage;				// falloff image used by backend
-
-	int						shadowMapSlice;
-
-	idList<idRenderEntityLocal*> litRenderEntities;
-};
-
-
-// a viewEntity is created whenever a idRenderEntityLocal is considered for inclusion
-// in the current view, but it may still turn out to be culled.
-// viewEntity are allocated on the frame temporary stack memory
-// a viewEntity contains everything that the back end needs out of a idRenderEntityLocal,
-// which the front end may be modifying simultaniously if running in SMP mode.
-// A single entityDef can generate multiple viewEntity_t in a single frame, as when seen in a mirror
-typedef struct viewEntity_s {
-	struct viewEntity_s	*next;
-
-	// back end should NOT reference the entityDef, because it can change when running SMP
-	idRenderEntityLocal	*entityDef;
-
-	// for scissor clipping, local inside renderView viewport
-	// scissorRect.Empty() is true if the viewEntity_t was never actually
-	// seen through any portals, but was created for shadow casting.
-	// a viewEntity can have a non-empty scissorRect, meaning that an area
-	// that it is in is visible, and still not be visible.
-	idScreenRect		scissorRect;
-
-	idRenderModel*		renderModel;
-
-	bool				weaponDepthHack;
-	float				modelDepthHack;
-
-	float				modelMatrix[16];		// local coords to global coords
-	float				modelViewMatrix[16];	// local coords to eye coords
-} viewEntity_t;
-
+#include "RenderModelCommitted.h"
 
 const int	MAX_CLIP_PLANES	= 1;				// we may expand this to six for some subview issues
-
-// viewDefs are allocated on the frame temporary stack memory
-struct viewDef_t {
-	// specified in the call to DrawScene()
-	renderView_t		renderView;
-
-	float				unprojectionToCameraMatrix[16];
-	idRenderMatrix		unprojectionToCameraRenderMatrix;
-
-	float				unprojectionToWorldMatrix[16];
-	idRenderMatrix		unprojectionToWorldRenderMatrix;
-
-	float				projectionMatrix[16];
-	idRenderMatrix		projectionRenderMatrix;	// tech5 version of projectionMatrix
-	viewEntity_t		worldSpace;
-
-	idRenderWorldLocal *renderWorld;
-
-	float				floatTime;
-
-	idVec3				initialViewAreaOrigin;
-	// Used to find the portalArea that view flooding will take place from.
-	// for a normal view, the initialViewOrigin will be renderView.viewOrg,
-	// but a mirror may put the projection origin outside
-	// of any valid area, or in an unconnected area of the map, so the view
-	// area must be based on a point just off the surface of the mirror / subview.
-	// It may be possible to get a failed portal pass if the plane of the
-	// mirror intersects a portal, and the initialViewAreaOrigin is on
-	// a different side than the renderView.viewOrg is.
-
-	bool				isSubview;				// true if this view is not the main view
-	bool				isMirror;				// the portal is a mirror, invert the face culling
-	bool				isXraySubview;
-
-	bool				isEditor;
-
-	int					numClipPlanes;			// mirrors will often use a single clip plane
-	idPlane				clipPlanes[MAX_CLIP_PLANES];		// in world space, the positive side
-												// of the plane is the visible side
-	idScreenRect		viewport;				// in real pixels and proper Y flip
-
-	idScreenRect		scissor;
-	// for scissor clipping, local inside renderView viewport
-	// subviews may only be rendering part of the main view
-	// these are real physical pixel values, possibly scaled and offset from the
-	// renderView x/y/width/height
-
-	struct viewDef_t *	superView;				// never go into an infinite subview loop 
-	struct drawSurf_s *	subviewSurface;
-
-	// drawSurfs are the visible surfaces of the viewEntities, sorted
-	// by the material sort parameter
-	drawSurf_t **		drawSurfs;				// we don't use an idList for this, because
-	int					numDrawSurfs;			// it is allocated in frame temporary memory
-	int					maxDrawSurfs;			// may be resized
-
-	struct viewLight_t	*viewLights;			// chain of all viewLights effecting view
-	struct viewEntity_s	*viewEntitys;			// chain of all viewEntities effecting view, including off screen ones casting shadows
-	// we use viewEntities as a check to see if a given view consists solely
-	// of 2D rendering, which we can optimize in certain ways.  A 2D view will
-	// not have any viewEntities
-
-	idPlane				frustum[5];				// positive sides face outward, [4] is the front clip plane
-	idFrustum			viewFrustum;
-
-	int					areaNum;				// -1 = not in a valid area
-
-	bool *				connectedAreas;
-	// An array in frame temporary memory that lists if an area can be reached without
-	// crossing a closed door.  This is used to avoid drawing interactions
-	// when the light is behind a closed door.
-
-};
-
 
 // complex light / surface interactions are broken up into multiple passes of a
 // simple interaction shader
@@ -504,7 +360,7 @@ typedef struct {
 
 typedef struct {
 	renderCommand_t		commandId, *next;
-	viewDef_t	*viewDef;
+	idRenderWorldCommitted	*viewDef;
 } drawSurfsCommand_t;
 
 typedef struct {
@@ -560,9 +416,9 @@ extern	frameData_t	*frameData;
 
 //=======================================================================
 
-void R_LockSurfaceScene( viewDef_t *parms );
+void R_LockSurfaceScene( idRenderWorldCommitted *parms );
 void R_ClearCommandChain( void );
-void R_AddDrawViewCmd( viewDef_t *parms );
+void R_AddDrawViewCmd( idRenderWorldCommitted *parms );
 
 void R_ReloadGuis_f( const idCmdArgs &args );
 void R_ListGuis_f( const idCmdArgs &args );
@@ -648,18 +504,21 @@ typedef struct {
 	int		msec;			// total msec for backend run
 } backEndCounters_t;
 
+#include "RenderLightCommitted.h"
+#include "RenderWorldCommitted.h"
+
 // all state modified by the back end is separated
 // from the front end state
 typedef struct {
 	int					frameCount;		// used to track all images used in a frame
-	const viewDef_t	*	viewDef;
+	const idRenderWorldCommitted	*	viewDef;
 	backEndCounters_t	pc;
 
-	const viewEntity_t *currentSpace;		// for detecting when a matrix must change
+	const idRenderModelCommitted *currentSpace;		// for detecting when a matrix must change
 	idScreenRect		currentScissor;
 	// for scissor clipping, local inside renderView viewport
 
-	viewLight_t *		vLight;
+	idRenderLightCommitted *		vLight;
 	int					depthFunc;			// GLS_DEPTHFUNC_EQUAL, or GLS_DEPTHFUNC_LESS for translucent
 	float				lightTextureMatrix[16];	// only if lightStage->texture.hasMatrix
 	float				lightColor[4];		// evaluation of current light's color stage
@@ -791,7 +650,7 @@ public:
 
 	idRenderWorldLocal *	primaryWorld;
 	renderView_t			primaryRenderView;
-	viewDef_t *				primaryView;
+	idRenderWorldCommitted *				primaryView;
 	// many console commands need to know which world they should operate on
 
 	const idMaterial *		defaultMaterial;
@@ -801,13 +660,13 @@ public:
 
 	idImage *				ambientCubeImage;	// hack for testing dependent ambient lighting
 
-	viewDef_t *				viewDef;
+	idRenderWorldCommitted *				viewDef;
 
 	performanceCounters_t	pc;					// performance counters
 
 	drawSurfsCommand_t		lockSurfacesCmd;	// use this when r_lockSurfaces = 1
 
-	viewEntity_t			identitySpace;		// can use if we don't know viewDef->worldSpace is valid
+	idRenderModelCommitted			identitySpace;		// can use if we don't know viewDef->worldSpace is valid
 	FILE *					logFile;			// for logging GL calls and frame breaks
 
 	int						stencilIncr, stencilDecr;	// GL_INCR / INCR_WRAP_EXT, GL_DECR / GL_DECR_EXT
@@ -1194,7 +1053,7 @@ MAIN
 ====================================================================
 */
 
-void R_RenderView( viewDef_t *parms );
+void R_RenderView( idRenderWorldCommitted *parms );
 
 // performs radius cull first, then corner cull
 bool R_CullLocalBox( const idBounds &bounds, const float modelMatrix[16], int numPlanes, const idPlane *planes );
@@ -1217,11 +1076,11 @@ void R_GlobalToNormalizedDeviceCoordinates( const idVec3 &global, idVec3 &ndc );
 
 void R_TransformModelToClip( const idVec3 &src, const float *modelMatrix, const float *projectionMatrix, idPlane &eye, idPlane &dst );
 
-void R_TransformClipToDevice( const idPlane &clip, const viewDef_t *view, idVec3 &normalized );
+void R_TransformClipToDevice( const idPlane &clip, const idRenderWorldCommitted *view, idVec3 &normalized );
 
 void R_TransposeGLMatrix( const float in[16], float out[16] );
 
-void R_SetViewMatrix( viewDef_t *viewDef );
+void R_SetViewMatrix( idRenderWorldCommitted *viewDef );
 
 void myGlMultMatrix( const float *a, const float *b, float *out );
 
@@ -1239,14 +1098,9 @@ void R_ListRenderEntityDefs_f( const idCmdArgs &args );
 bool R_IssueEntityDefCallback( idRenderEntityLocal *def );
 idRenderModel *R_EntityDefDynamicModel( idRenderEntityLocal *def );
 
-viewEntity_t *R_SetEntityDefViewEntity( idRenderEntityLocal *def );
-viewLight_t *R_SetLightDefViewLight( idRenderLightLocal *def );
-
-void R_AddDrawSurf( const srfTriangles_t *tri, const viewEntity_t *space, const renderEntity_t *renderEntity,
+void R_AddDrawSurf( const srfTriangles_t *tri, const idRenderModelCommitted *space, const renderEntity_t *renderEntity,
 					const idMaterial *shader, const idScreenRect &scissor );
 
-void R_LinkLightSurf( const drawSurf_t **link, const srfTriangles_t *tri, const viewEntity_t *space, 
-				   const idRenderLightLocal *light, const idMaterial *shader, const idScreenRect &scissor, bool viewInsideShadow );
 
 bool R_CreateAmbientCache( srfTriangles_t *tri, bool needsLighting );
 bool R_CreateLightingCache( const idRenderEntityLocal *ent, const idRenderLightLocal *light, srfTriangles_t *tri );
@@ -1561,7 +1415,7 @@ TR_SHADOWBOUNDS
 */
 idScreenRect R_CalcIntersectionScissor( const idRenderLightLocal * lightDef,
 									    const idRenderEntityLocal * entityDef,
-									    const viewDef_t * viewDef );
+									    const idRenderWorldCommitted * viewDef );
 
 //=============================================
 

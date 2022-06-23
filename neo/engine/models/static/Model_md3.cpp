@@ -241,7 +241,7 @@ dynamicModel_t idRenderModelMD3::IsDynamicModel() const {
 idRenderModelMD3::LerpMeshVertexes
 =================
 */
-void idRenderModelMD3::LerpMeshVertexes ( srfTriangles_t *tri, const struct md3Surface_s *surf, const float backlerp, const int frame, const int oldframe ) const {
+void idRenderModelMD3::LerpMeshVertexes ( srfTriangles_t *tri, const md3Surface_s *surf, const float backlerp, const int frame, const int oldframe ) const {
 	short	*oldXyz, *newXyz;
 	float	oldXyzScale, newXyzScale;
 	int		vertNum;
@@ -294,7 +294,7 @@ void idRenderModelMD3::LerpMeshVertexes ( srfTriangles_t *tri, const struct md3S
 idRenderModelMD3::InstantiateDynamicModel
 =============
 */
-idRenderModel *idRenderModelMD3::InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel ) {
+idRenderModel *idRenderModelMD3::InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel ) {
 	int				i, j;
 	float			backlerp;
 	int *			triangles;

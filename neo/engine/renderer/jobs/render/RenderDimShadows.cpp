@@ -24,7 +24,7 @@ all light side projections must currently match, so non-centered
 and non-cubic lights must take the largest length
 ==================
 */
-float	R_Shadow_CalcLightAxialSize(viewLight_t* vLight) {
+float	R_Shadow_CalcLightAxialSize(idRenderLightCommitted* vLight) {
 	float	max = 0;
 
 	if (!vLight->lightDef->parms.pointLight) {
@@ -48,7 +48,7 @@ float	R_Shadow_CalcLightAxialSize(viewLight_t* vLight) {
 RB_Shadow_RenderOccluders
 ==================
 */
-void RB_Shadow_RenderOccluders(viewLight_t* vLight) {
+void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 	for (int i = 0; i < vLight->litRenderEntities.Num(); i++) {
 		const idRenderEntityLocal* entityDef = vLight->litRenderEntities[i];
 		idRenderModel* inter = entityDef->viewEntity->renderModel;
@@ -133,7 +133,7 @@ void RB_Shadow_RenderOccluders(viewLight_t* vLight) {
 RB_RenderShadowBuffer
 ==================
 */
-void  RB_RenderShadowBuffer(viewLight_t* vLight, int side) {
+void  RB_RenderShadowBuffer(idRenderLightCommitted* vLight, int side) {
 	float	xmin, xmax, ymin, ymax;
 	float	width, height;
 	float	zNear;
@@ -459,7 +459,7 @@ Down
 RB_DrawPointlightShadow
 ===================
 */
-void RB_DrawPointlightShadow(viewLight_t *vLight) {
+void RB_DrawPointlightShadow(idRenderLightCommitted *vLight) {
 	int shadowMapId = -1;
 	
 	// Check to see if this shadow has been cached.
@@ -513,7 +513,7 @@ void RB_DrawPointlightShadow(viewLight_t *vLight) {
 RB_DrawSpotlightShadow
 ===================
 */
-void RB_DrawSpotlightShadow(viewLight_t* vLight) {
+void RB_DrawSpotlightShadow(idRenderLightCommitted* vLight) {
 	int shadowMapId = -1;
 
 	// Check to see if this shadow has been cached.
@@ -563,7 +563,7 @@ idRender::RenderShadowMaps
 ======================
 */
 void idRender::RenderShadowMaps(void) {
-	viewLight_t		*vLight;
+	idRenderLightCommitted		*vLight;
 	//rvmDeviceDebugMarker deviceDebugMarker("ShadowMaps");
 
 	glDisable(GL_VERTEX_PROGRAM_ARB);

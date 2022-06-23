@@ -461,7 +461,7 @@ idRenderModelDecal *idRenderModelDecal::RemoveFadedDecals( idRenderModelDecal *d
 idRenderModelDecal::AddDecalDrawSurf
 =====================
 */
-void idRenderModelDecal::AddDecalDrawSurf( viewEntity_t *space ) {
+void idRenderModelDecal::AddDecalDrawSurf( idRenderModelCommitted *space ) {
 	int i, j, maxTime;
 	float f;
 	decalInfo_t	decalInfo;

@@ -641,7 +641,7 @@ interaction into primitive interactions
 void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInteraction)(const drawInteraction_t *) ) {
 	const idMaterial	*surfaceShader = surf->material;
 	const float			*surfaceRegs = surf->shaderRegisters;
-	const viewLight_t	*vLight = backEnd.vLight;
+	const idRenderLightCommitted	*vLight = backEnd.vLight;
 	const idMaterial	*lightShader = vLight->lightShader;
 	const float			*lightRegs = vLight->shaderRegisters;
 	drawInteraction_t	inter;

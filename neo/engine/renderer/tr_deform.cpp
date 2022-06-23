@@ -1017,7 +1017,7 @@ Emit particles from the surface instead of drawing it
 */
 static void R_ParticleDeform( drawSurf_t *surf, bool useArea ) {
 	const struct renderEntity_t *renderEntity = &surf->space->entityDef->parms;
-	const struct viewDef_t *viewDef = tr.viewDef;
+	const idRenderWorldCommitted *viewDef = tr.viewDef;
 	const idDeclParticle *particleSystem = (idDeclParticle *)surf->material->GetDeformDecl();
 
 	if ( r_skipParticles.GetBool() ) {

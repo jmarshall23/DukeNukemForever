@@ -162,7 +162,7 @@ void R_ClearCommandChain( void ) {
 R_ViewStatistics
 =================
 */
-static void R_ViewStatistics( viewDef_t *parms ) {
+static void R_ViewStatistics( idRenderWorldCommitted *parms ) {
 	// report statistics about this view
 	if ( !r_showSurfaces.GetBool() ) {
 		return;
@@ -178,7 +178,7 @@ This is the main 3D rendering command.  A single scene may
 have multiple views if a mirror, portal, or dynamic texture is present.
 =============
 */
-void	R_AddDrawViewCmd( viewDef_t *parms ) {
+void	R_AddDrawViewCmd( idRenderWorldCommitted *parms ) {
 	drawSurfsCommand_t	*cmd;
 
 	cmd = (drawSurfsCommand_t *)R_GetCommandBuffer( sizeof( *cmd ) );
@@ -216,9 +216,9 @@ matricies have been changed.  This allow the culling tightness to be
 evaluated interactively.
 ======================
 */
-void R_LockSurfaceScene( viewDef_t *parms ) {
+void R_LockSurfaceScene( idRenderWorldCommitted *parms ) {
 	drawSurfsCommand_t	*cmd;
-	viewEntity_t			*vModel;
+	idRenderModelCommitted			*vModel;
 
 	// set the matrix for world space to eye space
 	R_SetViewMatrix( parms );

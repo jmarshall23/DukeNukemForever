@@ -304,7 +304,7 @@ void rvGEWorkspace::Render ( HDC hdc )
 	glEnd ( );
 
 	// Prepare the renderSystem view to draw the GUI in
-	viewDef_t viewDef;
+	idRenderWorldCommitted viewDef;
 	memset ( &viewDef, 0, sizeof(viewDef) );
 	tr.viewDef = &viewDef;
 	tr.viewDef->renderView.x = mRect.x;

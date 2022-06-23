@@ -127,7 +127,7 @@ public:
 	virtual void			DebugBox( const idVec4 &color, const idBox &box, const int lifetime = 0 );
 	virtual void			DebugFrustum( const idVec4 &color, const idFrustum &frustum, const bool showFromOrigin = false, const int lifetime = 0 );
 	virtual void			DebugCone( const idVec4 &color, const idVec3 &apex, const idVec3 &dir, float radius1, float radius2, const int lifetime = 0 );
-	virtual void			DebugScreenRect( const idVec4 &color, const idScreenRect &rect, const viewDef_t *viewDef, const int lifetime = 0 );
+	virtual void			DebugScreenRect( const idVec4 &color, const idScreenRect &rect, const idRenderWorldCommitted *viewDef, const int lifetime = 0 );
 	virtual void			DebugAxis( const idVec3 &origin, const idMat3 &axis );
 
 	virtual void			DebugClearPolygons( int time );
@@ -191,7 +191,7 @@ public:
 
 	void					WriteLoadMap();
 	void					WriteRenderView( const renderView_t *renderView );
-	void					WriteVisibleDefs( const viewDef_t *viewDef );
+	void					WriteVisibleDefs( const idRenderWorldCommitted *viewDef );
 	void					WriteFreeLight( qhandle_t handle );
 	void					WriteFreeEntity( qhandle_t handle );
 	void					WriteRenderLight( qhandle_t handle, const renderLight_t *light );

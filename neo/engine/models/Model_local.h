@@ -29,6 +29,8 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __MODEL_LOCAL_H__
 #define __MODEL_LOCAL_H__
 
+class idRenderWorldCommitted;
+
 /*
 ===============================================================================
 
@@ -73,7 +75,7 @@ public:
 	virtual dynamicModel_t		IsDynamicModel() const;
 	virtual bool				IsDefaultModel() const;
 	virtual bool				IsReloadable() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual int					NumJoints( void ) const;
 	virtual const idMD5Joint *	GetJoints( void ) const;
 	virtual jointHandle_t		GetJointHandle( const char *name ) const;
@@ -184,7 +186,7 @@ public:
 	virtual void				PurgeModel();
 	virtual void				LoadModel();
 	virtual int					Memory() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual int					NumJoints( void ) const;
 	virtual const idMD5Joint *	GetJoints( void ) const;
 	virtual jointHandle_t		GetJointHandle( const char *name ) const;
@@ -199,7 +201,7 @@ private:
 
 	void						CalculateBounds( const idJointMat *joints );
 	void						GetFrameBounds( const renderEntity_t *ent, idBounds &bounds ) const;
-	void						DrawJoints( const renderEntity_t *ent, const struct viewDef_t *view ) const;
+	void						DrawJoints( const renderEntity_t *ent, const idRenderWorldCommitted *view ) const;
 	void						ParseJoint( idLexer &parser, idMD5Joint *joint, idJointQuat *defaultPose );
 };
 
@@ -218,7 +220,7 @@ class idRenderModelMD3 : public idRenderModelStatic {
 public:
 	virtual void				InitFromFile( const char *fileName );
 	virtual dynamicModel_t		IsDynamicModel() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
 // jmarshall
 	virtual bool				IsVertexAnimated() const override { return true; }
@@ -246,7 +248,7 @@ public:
 
 	virtual void				InitFromFile( const char *fileName );
 	virtual dynamicModel_t		IsDynamicModel() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
 
 	virtual void				Reset();
@@ -302,7 +304,7 @@ public:
 	virtual void				InitFromFile( const char *fileName );
 	virtual void				TouchData();
 	virtual dynamicModel_t		IsDynamicModel() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
 	virtual float				DepthHack() const;
 	virtual int					Memory() const;
@@ -323,7 +325,7 @@ class idRenderModelBeam : public idRenderModelStatic {
 public:
 	virtual dynamicModel_t		IsDynamicModel() const;
 	virtual bool				IsLoaded() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
 };
 
@@ -354,7 +356,7 @@ public:
 
 	virtual dynamicModel_t		IsDynamicModel() const;
 	virtual bool				IsLoaded() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
 
 	int							NewTrail( idVec3 pt, int duration );
@@ -374,7 +376,7 @@ class idRenderModelLightning : public idRenderModelStatic {
 public:
 	virtual dynamicModel_t		IsDynamicModel() const;
 	virtual bool				IsLoaded() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
 };
 
@@ -389,7 +391,7 @@ class idRenderModelSprite : public idRenderModelStatic {
 public:
 	virtual	dynamicModel_t	IsDynamicModel() const;
 	virtual	bool			IsLoaded() const;
-	virtual	idRenderModel *	InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel );
+	virtual	idRenderModel *	InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
 	virtual	idBounds		Bounds( const struct renderEntity_t *ent ) const;
 };
 

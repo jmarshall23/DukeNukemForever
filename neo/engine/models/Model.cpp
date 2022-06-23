@@ -488,7 +488,7 @@ float idRenderModelStatic::DepthHack() const {
 idRenderModelStatic::InstantiateDynamicModel
 ================
 */
-idRenderModel *idRenderModelStatic::InstantiateDynamicModel( const struct renderEntity_t *ent, const struct viewDef_t *view, idRenderModel *cachedModel ) {
+idRenderModel *idRenderModelStatic::InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel ) {
 	if ( cachedModel ) {
 		delete cachedModel;
 		cachedModel = NULL;

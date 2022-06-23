@@ -2333,7 +2333,7 @@ set to their apropriate values.
 ===============
 */
 void idMaterial::EvaluateRegisters( float *registers, const float shaderParms[MAX_ENTITY_SHADER_PARMS],
-									const viewDef_t *view, idSoundEmitter *soundEmitter ) const {
+									const idRenderWorldCommitted *view, idSoundEmitter *soundEmitter ) const {
 	int		i, b;
 	expOp_t	*op;
 
@@ -2565,7 +2565,7 @@ void idMaterial::CheckForConstantRegisters() {
 
 	float shaderParms[MAX_ENTITY_SHADER_PARMS];
 	memset( shaderParms, 0, sizeof( shaderParms ) );
-	viewDef_t	viewDef;
+	idRenderWorldCommitted	viewDef;
 	memset( &viewDef, 0, sizeof( viewDef ) );
 
 	EvaluateRegisters( constantRegisters, shaderParms, &viewDef, 0 );

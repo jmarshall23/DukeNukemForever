@@ -203,7 +203,7 @@ void R_GlobalToNormalizedDeviceCoordinates( const idVec3 &global, idVec3 &ndc ) 
 	idPlane	clip;
 
 	// _D3XP use tr.primaryView when there is no tr.viewDef
-	const viewDef_t * viewDef = ( tr.viewDef != NULL ) ? tr.viewDef : tr.primaryView;
+	const idRenderWorldCommitted * viewDef = ( tr.viewDef != NULL ) ? tr.viewDef : tr.primaryView;
 
 	for ( int i = 0; i < 4; i ++ ) {
 		view[i] = 	viewDef->worldSpace.modelViewMatrix[i + 0 * 4] * global[0] +
@@ -326,7 +326,7 @@ R_SetupViewMatrix
 Sets up the world to view matrix for a given viewParm
 ======================
 */
-void R_SetupViewMatrix( viewDef_t *viewDef ) {
+void R_SetupViewMatrix( idRenderWorldCommitted *viewDef ) {
 	static float s_flipMatrix[16] = {
 		// convert from our coordinate system (looking down X)
 		// to OpenGL's coordinate system (looking down -Z)
@@ -336,7 +336,7 @@ void R_SetupViewMatrix( viewDef_t *viewDef ) {
 		 0, 0,  0, 1
 	};
 
-	viewEntity_t *world = &viewDef->worldSpace;
+	idRenderModelCommitted *world = &viewDef->worldSpace;
 	memset( world, 0, sizeof( *world ) );
 
 	// the model matrix is an identity
@@ -384,7 +384,7 @@ This uses the "infinite far z" trick
 idCVar r_centerX( "r_centerX", "0", CVAR_FLOAT, "projection matrix center adjust" );
 idCVar r_centerY( "r_centerY", "0", CVAR_FLOAT, "projection matrix center adjust" );
 
-void R_SetupProjectionMatrix( viewDef_t *viewDef ) {
+void R_SetupProjectionMatrix( idRenderWorldCommitted *viewDef ) {
 	// random jittering is usefull when multiple
 	// frames are going to be blended together
 	// for motion blurred anti-aliasing
@@ -462,7 +462,7 @@ R_SetupUnprojection
 create a matrix with similar functionality like gluUnproject, project from window space to world space
 =================
 */
-void R_SetupUnprojection(viewDef_t* viewDef)
+void R_SetupUnprojection(idRenderWorldCommitted* viewDef)
 {
 	R_MatrixFullInverse(viewDef->projectionMatrix, viewDef->unprojectionToCameraMatrix);
 	idRenderMatrix::Transpose(*(idRenderMatrix*)viewDef->unprojectionToCameraMatrix, viewDef->unprojectionToCameraRenderMatrix);

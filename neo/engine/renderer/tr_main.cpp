@@ -516,7 +516,7 @@ R_TransformClipToDevice
 Clip to normalized device coordinates
 ==========================
 */
-void R_TransformClipToDevice( const idPlane &clip, const viewDef_t *view, idVec3 &normalized ) {
+void R_TransformClipToDevice( const idPlane &clip, const idRenderWorldCommitted *view, idVec3 &normalized ) {
 	normalized[0] = clip[0] / clip[3];
 	normalized[1] = clip[1] / clip[3];
 	normalized[2] = clip[2] / clip[3];
@@ -583,9 +583,9 @@ R_SetViewMatrix
 Sets up the world to view matrix for a given viewParm
 =================
 */
-void R_SetViewMatrix( viewDef_t *viewDef ) {
+void R_SetViewMatrix( idRenderWorldCommitted *viewDef ) {
 	idVec3	origin;
-	viewEntity_t *world;
+	idRenderModelCommitted *world;
 	float	viewerMatrix[16];
 	static float	s_flipMatrix[16] = {
 		// convert from our coordinate system (looking down X)
@@ -766,10 +766,10 @@ static void R_ConstrainViewFrustum( void ) {
 
 	// constrain the view frustum to the total bounds of all visible lights and visible entities
 	bounds.Clear();
-	for ( viewLight_t *vLight = tr.viewDef->viewLights; vLight; vLight = vLight->next ) {
+	for ( idRenderLightCommitted *vLight = tr.viewDef->viewLights; vLight; vLight = vLight->next ) {
 		bounds.AddBounds( vLight->lightDef->frustumTris->bounds );
 	}
-	for ( viewEntity_t *vEntity = tr.viewDef->viewEntitys; vEntity; vEntity = vEntity->next ) {
+	for ( idRenderModelCommitted *vEntity = tr.viewDef->viewEntitys; vEntity; vEntity = vEntity->next ) {
 		bounds.AddBounds( vEntity->entityDef->referenceBounds );
 	}
 	tr.viewDef->viewFrustum.ConstrainToBounds( bounds );
@@ -840,8 +840,8 @@ a mirror / remote location, or a 3D view on a gui surface.
 Parms will typically be allocated with R_FrameAlloc
 ================
 */
-void R_RenderView( viewDef_t *parms ) {
-	viewDef_t		*oldView;
+void R_RenderView( idRenderWorldCommitted *parms ) {
+	idRenderWorldCommitted		*oldView;
 
 	if ( parms->renderView.width <= 0 || parms->renderView.height <= 0 ) {
 		return;

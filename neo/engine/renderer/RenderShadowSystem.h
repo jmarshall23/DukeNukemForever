@@ -1,7 +1,7 @@
 // RenderShadows.h
 //
 
-struct viewLight_t;
+struct idRenderLightCommitted;
 
 //
 // rvmRenderShadowAtlasEntry_t
@@ -58,10 +58,10 @@ public:
 	rvmRenderShadowAtlasEntry_t* GetShadowAtlasEntry(int idx) { return &shadowAtlasEntries[idx]; }
 
 	// Checks to see if the light is cached.
-	int					CheckShadowCache(viewLight_t *vLight);
+	int					CheckShadowCache(idRenderLightCommitted *vLight);
 
 	// Finds the next available shadow map.
-	int					FindNextAvailableShadowMap(viewLight_t* vLight, int numSlices);
+	int					FindNextAvailableShadowMap(idRenderLightCommitted* vLight, int numSlices);
 
 	// Nukes the shadow map cache.
 	void				NukeShadowMapCache(void);
