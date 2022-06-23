@@ -20,7 +20,6 @@ idScreenRect idRenderModelCommitted::CalcEntityScissorRectangle(void) {
 	return R_ScreenRectFromViewFrustumBounds(bounds);
 }
 
-
 /*
 ===================
 R_EntityDefDynamicModel
@@ -57,7 +56,7 @@ idRenderModel* idRenderModelCommitted::CreateDynamicModel(void) {
 
 	// continously animating models (particle systems, etc) will have their snapshot updated every single view
 	if (callbackUpdate || (model->IsDynamicModel() == DM_CONTINUOUS && def->dynamicModelFrameCount != tr.frameCount)) {
-		R_ClearEntityDefDynamicModel(def);
+		def->ClearEntityDefDynamicModel();
 	}
 
 	// if we don't have a snapshot of the dynamic model, generate it now

@@ -283,6 +283,34 @@ typedef enum {
 } portalConnection_t;
 
 
+// idRenderLight should become the new public interface replacing the qhandle_t to light defs in the idRenderWorld interface
+class idRenderLight {
+public:
+	virtual					~idRenderLight() {}
+
+	virtual void			FreeRenderLight() = 0;
+	virtual void			UpdateRenderLight(const renderLight_t* re, bool forceUpdate = false) = 0;
+	virtual void			GetRenderLight(renderLight_t* re) = 0;
+	virtual void			ForceUpdate() = 0;
+	virtual int				GetIndex() = 0;
+};
+
+// idRenderEntity should become the new public interface replacing the qhandle_t to entity defs in the idRenderWorld interface
+class idRenderEntity {
+public:
+	virtual					~idRenderEntity() {}
+
+	virtual void			FreeRenderEntity() = 0;
+	virtual void			UpdateRenderEntity(const renderEntity_t* re, bool forceUpdate = false) = 0;
+	virtual void			GetRenderEntity(renderEntity_t* re) = 0;
+	virtual void			ForceUpdate() = 0;
+	virtual int				GetIndex() = 0;
+
+	// overlays are extra polygons that deform with animating models for blood and damage marks
+	virtual void			ProjectOverlay(const idPlane localTextureAxis[2], const idMaterial* material) = 0;
+	virtual void			RemoveDecals() = 0;
+};
+
 class idRenderWorld {
 public:
 	virtual					~idRenderWorld() {};
@@ -372,10 +400,6 @@ public:
 	// demoTimeOffset will be set if a new map load command was processed before
 	// the next renderScene
 	virtual bool			ProcessDemoCommand( idDemoFile *readDemo, renderView_t *demoRenderView, int *demoTimeOffset ) = 0;
-
-	// this is used to regenerate all interactions ( which is currently only done during influences ), there may be a less 
-	// expensive way to do it
-	virtual void			RegenerateWorld() = 0;
 
 	//-------------- Debug Visualization  -----------------
 

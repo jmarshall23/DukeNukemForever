@@ -460,7 +460,7 @@ static void CreateMapLight( const idMapEntity *mapEnt ) {
 	// we can use the same renderLight generation
 	gameEdit->ParseSpawnArgsToRenderLight( &mapEnt->epairs, &light->def.parms );
 
-	R_DeriveLightData( &light->def );
+	light->def.DeriveLightData();
 
 	// get the name for naming the shadow surfaces
 	const char	*name;
@@ -657,7 +657,7 @@ void FreeDMapFile( void ) {
 
 	// free the map lights
 	for ( i = 0; i < dmapGlobals.mapLights.Num(); i++ ) {
-		R_FreeLightDefDerivedData( &dmapGlobals.mapLights[i]->def );
+		dmapGlobals.mapLights[i]->def.FreeLightDefDerivedData();
 	}
 	dmapGlobals.mapLights.DeleteContents( true );
 }

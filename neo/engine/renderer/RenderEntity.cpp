@@ -52,6 +52,171 @@ idRenderEntityLocal::idRenderEntityLocal() {
 	needsPortalSky			= false;
 }
 
+
+/*
+===============
+R_CreateEntityRefs
+
+Creates all needed model references in portal areas,
+chaining them to both the area and the entityDef.
+
+Bumps tr.viewCount.
+===============
+*/
+void idRenderEntityLocal::CreateEntityRefs(void) {
+	int			i;
+	idVec3		transformed[8];
+	idVec3		v;
+
+	if (!parms.hModel) {
+		parms.hModel = renderModelManager->DefaultModel();
+	}
+
+	// if the entity hasn't been fully specified due to expensive animation calcs
+	// for md5 and particles, use the provided conservative bounds.
+	if (parms.callback) {
+		referenceBounds = parms.bounds;
+	}
+	else {
+		referenceBounds = parms.hModel->Bounds(&parms);
+	}
+
+	// some models, like empty particles, may not need to be added at all
+	if (referenceBounds.IsCleared()) {
+		return;
+	}
+
+	if (r_showUpdates.GetBool() &&
+		(referenceBounds[1][0] - referenceBounds[0][0] > 1024 ||
+			referenceBounds[1][1] - referenceBounds[0][1] > 1024)) {
+		common->Printf("big entityRef: %f,%f\n", referenceBounds[1][0] - referenceBounds[0][0],
+			referenceBounds[1][1] - referenceBounds[0][1]);
+	}
+
+	for (i = 0; i < 8; i++) {
+		v[0] = referenceBounds[i & 1][0];
+		v[1] = referenceBounds[(i >> 1) & 1][1];
+		v[2] = referenceBounds[(i >> 2) & 1][2];
+
+		R_LocalPointToGlobal(modelMatrix, v, transformed[i]);
+	}
+
+	// bump the view count so we can tell if an
+	// area already has a reference
+	tr.viewCount++;
+}
+
+
+
+/*
+===================
+R_FreeEntityDefDerivedData
+
+Used by both RE_FreeEntityDef and RE_UpdateEntityDef
+Does not actually free the entityDef.
+===================
+*/
+void idRenderEntityLocal::FreeEntityDefDerivedData(bool keepDecals, bool keepCachedDynamicModel) {
+	int i;
+	areaReference_t* ref, * next;
+
+	// demo playback needs to free the joints, while normal play
+	// leaves them in the control of the game
+	if (session->readDemo) {
+		if (parms.joints) {
+			Mem_Free16(parms.joints);
+			parms.joints = NULL;
+		}
+		if (parms.callbackData) {
+			Mem_Free(parms.callbackData);
+			parms.callbackData = NULL;
+		}
+		for (i = 0; i < MAX_RENDERENTITY_GUI; i++) {
+			if (parms.gui[i]) {
+				delete parms.gui[i];
+				parms.gui[i] = NULL;
+			}
+		}
+	}
+
+	// clear the dynamic model if present
+	if (dynamicModel) {
+		dynamicModel = NULL;
+	}
+
+	if (!keepDecals) {
+		FreeEntityDefDecals();
+		FreeEntityDefOverlay();
+	}
+
+	if (!keepCachedDynamicModel) {
+		delete cachedDynamicModel;
+		cachedDynamicModel = NULL;
+	}
+
+	// free the entityRefs from the areas
+	for (ref = entityRefs; ref; ref = next) {
+		next = ref->ownerNext;
+
+		// unlink from the area
+		ref->areaNext->areaPrev = ref->areaPrev;
+		ref->areaPrev->areaNext = ref->areaNext;
+	}
+	entityRefs = NULL;
+}
+
+
+
+/*
+==================
+R_ClearEntityDefDynamicModel
+
+If we know the reference bounds stays the same, we
+only need to do this on entity update, not the full
+R_FreeEntityDefDerivedData
+==================
+*/
+void idRenderEntityLocal::ClearEntityDefDynamicModel(void) {
+	// clear the dynamic model if present
+	if (dynamicModel) {
+		dynamicModel = NULL;
+	}
+}
+
+/*
+===================
+idRenderEntityLocal::FreeEntityDefDecals
+===================
+*/
+void idRenderEntityLocal::FreeEntityDefDecals(void) {
+	while (decals) {
+		idRenderModelDecal* next = decals->Next();
+		idRenderModelDecal::Free(decals);
+		decals = next;
+	}
+}
+
+/*
+===================
+idRenderEntityLocal::FreeEntityDefFadedDecals
+===================
+*/
+void idRenderEntityLocal::FreeEntityDefFadedDecals(int time) {
+	decals = idRenderModelDecal::RemoveFadedDecals(decals, time);
+}
+
+/*
+===================
+idRenderEntityLocal::FreeEntityDefOverlay
+===================
+*/
+void idRenderEntityLocal::FreeEntityDefOverlay(void) {
+	if (overlay) {
+		idRenderModelOverlay::Free(overlay);
+		overlay = NULL;
+	}
+}
+
 void idRenderEntityLocal::FreeRenderEntity() {
 }
 
@@ -74,40 +239,3 @@ void idRenderEntityLocal::RemoveDecals() {
 }
 
 //======================================================================
-
-idRenderLightLocal::idRenderLightLocal() {
-	memset( &parms, 0, sizeof( parms ) );
-	memset( modelMatrix, 0, sizeof( modelMatrix ) );
-	memset( shadowFrustums, 0, sizeof( shadowFrustums ) );
-	memset( lightProject, 0, sizeof( lightProject ) );
-	memset( frustum, 0, sizeof( frustum ) );
-	memset( frustumWindings, 0, sizeof( frustumWindings ) );
-
-	lightHasMoved			= false;
-	world					= NULL;
-	index					= 0;
-	areaNum					= 0;
-	lastModifiedFrameNum	= 0;
-	archived				= false;
-	lightShader				= NULL;
-	falloffImage			= NULL;
-	globalLightOrigin		= vec3_zero;
-	frustumTris				= NULL;
-	numShadowFrustums		= 0;
-	viewCount				= 0;
-	viewLight				= NULL;
-	references				= NULL;
-	foggedPortals			= NULL;
-}
-
-void idRenderLightLocal::FreeRenderLight() {
-}
-void idRenderLightLocal::UpdateRenderLight( const renderLight_t *re, bool forceUpdate ) {
-}
-void idRenderLightLocal::GetRenderLight( renderLight_t *re ) {
-}
-void idRenderLightLocal::ForceUpdate() {
-}
-int idRenderLightLocal::GetIndex() {
-	return index;
-}

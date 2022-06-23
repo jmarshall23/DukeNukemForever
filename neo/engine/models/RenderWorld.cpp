@@ -220,7 +220,7 @@ void idRenderWorldLocal::UpdateEntityDef( qhandle_t entityHandle, const renderEn
 				if ( boundsMatch && originMatch && axisMatch && modelMatch ) {
 					// only clear the dynamic model and interaction surfaces if they exist
 					c_callbackUpdate++;
-					R_ClearEntityDefDynamicModel( def );
+					def->ClearEntityDefDynamicModel();
 					def->parms = *re;
 					return;
 				}
@@ -229,9 +229,9 @@ void idRenderWorldLocal::UpdateEntityDef( qhandle_t entityHandle, const renderEn
 
 		// save any decals if the model is the same, allowing marks to move with entities
 		if ( def->parms.hModel == re->hModel ) {
-			R_FreeEntityDefDerivedData( def, true, true );
+			def->FreeEntityDefDerivedData(true, true );
 		} else {
-			R_FreeEntityDefDerivedData( def, false, false );
+			def->FreeEntityDefDerivedData(false, false );
 		}
 	} else {
 		// creating a new one
@@ -259,7 +259,7 @@ void idRenderWorldLocal::UpdateEntityDef( qhandle_t entityHandle, const renderEn
 
 	// based on the model bounds, add references in each area
 	// that may contain the updated surface
-	R_CreateEntityRefs( def );
+	def->CreateEntityRefs();
 }
 
 /*
@@ -284,7 +284,7 @@ void idRenderWorldLocal::FreeEntityDef( qhandle_t entityHandle ) {
 		return;
 	}
 
-	R_FreeEntityDefDerivedData( def, false, false );
+	def->FreeEntityDefDerivedData( false, false );
 
 	if ( session->writeDemo && def->archived ) {
 		WriteFreeEntity( entityHandle );
@@ -382,7 +382,7 @@ void idRenderWorldLocal::UpdateLightDef( qhandle_t lightHandle, const renderLigh
 		} else {
 			// if we are updating shadows, the prelight model is no longer valid
 			light->lightHasMoved = true;
-			R_FreeLightDefDerivedData( light );
+			light->FreeLightDefDerivedData();
 		}
 	} else {
 		// create a new one
@@ -405,9 +405,8 @@ void idRenderWorldLocal::UpdateLightDef( qhandle_t lightHandle, const renderLigh
 	}
 
 	if (!justUpdate) {
-		R_DeriveLightData( light );
-		R_CreateLightRefs( light );
-		R_CreateLightDefFogPortals( light );
+		light->DeriveLightData();
+		light->CreateLightRefs();
 	}
 }
 
@@ -433,7 +432,7 @@ void idRenderWorldLocal::FreeLightDef( qhandle_t lightHandle ) {
 		return;
 	}
 
-	R_FreeLightDefDerivedData( light );
+	light->FreeLightDefDerivedData();
 
 	if ( session->writeDemo && light->archived ) {
 		WriteFreeLight( lightHandle );
@@ -611,8 +610,8 @@ void idRenderWorldLocal::RemoveDecals( qhandle_t entityHandle ) {
 		return;
 	}
 
-	R_FreeEntityDefDecals( def );
-	R_FreeEntityDefOverlay( def );
+	def->FreeEntityDefDecals();
+	def->FreeEntityDefOverlay();
 }
 
 /*
@@ -1549,15 +1548,6 @@ void idRenderWorldLocal::DrawText( const char *text, const idVec3 &origin, float
 
 /*
 ===============
-idRenderWorldLocal::RegenerateWorld
-===============
-*/
-void idRenderWorldLocal::RegenerateWorld() {
-	R_RegenerateWorld_f( idCmdArgs() );
-}
-
-/*
-===============
 R_GlobalShaderOverride
 ===============
 */
@@ -1710,7 +1700,7 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 			continue;
 
 		// remove decals that are completely faded away
-		R_FreeEntityDefFadedDecals(entityDefs[i], tr.viewDef->renderView.time);
+		entityDefs[i]->FreeEntityDefFadedDecals(tr.viewDef->renderView.time);
 
 		vEnt = tr.viewDef->CommitRenderModel(entityDefs[i]);
 		vEnt->scissorRect = vEnt->CalcEntityScissorRectangle();

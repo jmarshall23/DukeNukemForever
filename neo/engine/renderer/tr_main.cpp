@@ -897,3 +897,112 @@ void R_RenderView( idRenderWorldCommitted *parms ) {
 	// restore view in case we are a subview
 	tr.viewDef = oldView;
 }
+
+
+/*
+===================
+R_FreeDerivedData
+
+ReloadModels and RegenerateWorld call this
+// FIXME: need to do this for all worlds
+===================
+*/
+void R_FreeDerivedData(void) {
+	int i, j;
+	idRenderWorldLocal* rw;
+	idRenderEntityLocal* def;
+	idRenderLightLocal* light;
+
+	for (j = 0; j < tr.worlds.Num(); j++) {
+		rw = tr.worlds[j];
+
+		for (i = 0; i < rw->entityDefs.Num(); i++) {
+			def = rw->entityDefs[i];
+			if (!def) {
+				continue;
+			}
+			def->FreeEntityDefDerivedData(false, false);
+		}
+
+		for (i = 0; i < rw->lightDefs.Num(); i++) {
+			light = rw->lightDefs[i];
+			if (!light) {
+				continue;
+			}
+			light->FreeLightDefDerivedData();
+		}
+	}
+}
+
+
+/*
+===================
+R_ReCreateWorldReferences
+
+ReloadModels and RegenerateWorld call this
+// FIXME: need to do this for all worlds
+===================
+*/
+void R_ReCreateWorldReferences(void) {
+	int i, j;
+	idRenderWorldLocal* rw;
+	idRenderEntityLocal* def;
+	idRenderLightLocal* light;
+
+	// let the interaction generation code know this shouldn't be optimized for
+	// a particular view
+	tr.viewDef = NULL;
+
+	for (j = 0; j < tr.worlds.Num(); j++) {
+		rw = tr.worlds[j];
+
+		for (i = 0; i < rw->entityDefs.Num(); i++) {
+			def = rw->entityDefs[i];
+			if (!def) {
+				continue;
+			}
+			// the world model entities are put specifically in a single
+			// area, instead of just pushing their bounds into the tree
+			def->CreateEntityRefs();
+		}
+
+		for (i = 0; i < rw->lightDefs.Num(); i++) {
+			light = rw->lightDefs[i];
+			if (!light) {
+				continue;
+			}
+			renderLight_t parms = light->parms;
+
+			light->world->FreeLightDef(i);
+			rw->UpdateLightDef(i, &parms);
+		}
+	}
+}
+
+
+/*
+===================
+R_CheckForEntityDefsUsingModel
+===================
+*/
+void R_CheckForEntityDefsUsingModel(idRenderModel* model) {
+	int i, j;
+	idRenderWorldLocal* rw;
+	idRenderEntityLocal* def;
+
+	for (j = 0; j < tr.worlds.Num(); j++) {
+		rw = tr.worlds[j];
+
+		for (i = 0; i < rw->entityDefs.Num(); i++) {
+			def = rw->entityDefs[i];
+			if (!def) {
+				continue;
+			}
+			if (def->parms.hModel == model) {
+				//assert( 0 );
+				// this should never happen but Radiant messes it up all the time so just free the derived data
+				def->FreeEntityDefDerivedData(false, false);
+			}
+		}
+	}
+}

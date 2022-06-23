@@ -156,147 +156,8 @@ typedef struct areaReference_s {
 	struct portalArea_s	*	area;					// so owners can find all the areas they are in
 } areaReference_t;
 
-
-// idRenderLight should become the new public interface replacing the qhandle_t to light defs in the idRenderWorld interface
-class idRenderLight {
-public:
-	virtual					~idRenderLight() {}
-
-	virtual void			FreeRenderLight() = 0;
-	virtual void			UpdateRenderLight( const renderLight_t *re, bool forceUpdate = false ) = 0;
-	virtual void			GetRenderLight( renderLight_t *re ) = 0;
-	virtual void			ForceUpdate() = 0;
-	virtual int				GetIndex() = 0;
-};
-
-
-// idRenderEntity should become the new public interface replacing the qhandle_t to entity defs in the idRenderWorld interface
-class idRenderEntity {
-public:
-	virtual					~idRenderEntity() {}
-
-	virtual void			FreeRenderEntity() = 0;
-	virtual void			UpdateRenderEntity( const renderEntity_t *re, bool forceUpdate = false ) = 0;
-	virtual void			GetRenderEntity( renderEntity_t *re ) = 0;
-	virtual void			ForceUpdate() = 0;
-	virtual int				GetIndex() = 0;
-
-	// overlays are extra polygons that deform with animating models for blood and damage marks
-	virtual void			ProjectOverlay( const idPlane localTextureAxis[2], const idMaterial *material ) = 0;
-	virtual void			RemoveDecals() = 0;
-};
-
-
-class idRenderLightLocal : public idRenderLight {
-public:
-							idRenderLightLocal();
-
-	virtual void			FreeRenderLight();
-	virtual void			UpdateRenderLight( const renderLight_t *re, bool forceUpdate = false );
-	virtual void			GetRenderLight( renderLight_t *re );
-	virtual void			ForceUpdate();
-	virtual int				GetIndex();
-
-	renderLight_t			parms;					// specification
-
-	bool					lightHasMoved;			// the light has changed its position since it was
-													// first added, so the prelight model is not valid
-
-	float					modelMatrix[16];		// this is just a rearrangement of parms.axis and parms.origin
-
-	idRenderWorldLocal *	world;
-	int						index;					// in world lightdefs
-
-	int						areaNum;				// if not -1, we may be able to cull all the light's
-													// interactions if !viewDef->connectedAreas[areaNum]
-
-	int						lastModifiedFrameNum;	// to determine if it is constantly changing,
-													// and should go in the dynamic frame memory, or kept
-													// in the cached memory
-	bool					archived;				// for demo writing
-
-
-	// derived information
-	idPlane					lightProject[4];
-
-	const idMaterial *		lightShader;			// guaranteed to be valid, even if parms.shader isn't
-	idImage *				falloffImage;
-
-	idVec3					globalLightOrigin;		// accounting for lightCenter and parallel
-
-
-	idPlane					frustum[6];				// in global space, positive side facing out, last two are front/back
-	idWinding *				frustumWindings[6];		// used for culling
-	srfTriangles_t *		frustumTris;			// triangulated frustumWindings[]
-
-	int						numShadowFrustums;		// one for projected lights, usually six for point lights
-	shadowFrustum_t			shadowFrustums[6];
-
-	int						viewCount;				// if == tr.viewCount, the light is on the viewDef->viewLights list
-	struct idRenderLightCommitted *	viewLight;
-
-	areaReference_t *		references;				// each area the light is present in will have a lightRef
-
-	// Shadow Matrixes 
-	idRenderMatrix			shadowMatrix[6];
-
-	struct doublePortal_s *	foggedPortals;
-};
-
-
-class idRenderEntityLocal : public idRenderEntity {
-public:
-							idRenderEntityLocal();
-
-	virtual void			FreeRenderEntity();
-	virtual void			UpdateRenderEntity( const renderEntity_t *re, bool forceUpdate = false );
-	virtual void			GetRenderEntity( renderEntity_t *re );
-	virtual void			ForceUpdate();
-	virtual int				GetIndex();
-
-	// overlays are extra polygons that deform with animating models for blood and damage marks
-	virtual void			ProjectOverlay( const idPlane localTextureAxis[2], const idMaterial *material );
-	virtual void			RemoveDecals();
-
-	renderEntity_t			parms;
-
-	float					modelMatrix[16];		// this is just a rearrangement of parms.axis and parms.origin
-
-	idRenderWorldLocal *	world;
-	int						index;					// in world entityDefs
-
-	int						lastModifiedFrameNum;	// to determine if it is constantly changing,
-													// and should go in the dynamic frame memory, or kept
-													// in the cached memory
-	bool					archived;				// for demo writing
-
-	idRenderModel *			dynamicModel;			// if parms.model->IsDynamicModel(), this is the generated data
-	int						dynamicModelFrameCount;	// continuously animating dynamic models will recreate
-													// dynamicModel if this doesn't == tr.viewCount
-	idRenderModel *			cachedDynamicModel;
-
-	idBounds				referenceBounds;		// the local bounds used to place entityRefs, either from parms or a model
-
-	// a idRenderModelCommitted is created whenever a idRenderEntityLocal is considered for inclusion
-	// in a given view, even if it turns out to not be visible
-	int						viewCount;				// if tr.viewCount == viewCount, viewEntity is valid,
-													// but the entity may still be off screen
-	idRenderModelCommitted *	viewEntity;				// in frame temporary memory
-
-	int						visibleCount;
-	// if tr.viewCount == visibleCount, at least one ambient
-	// surface has actually been added by R_AddAmbientDrawsurfs
-	// note that an entity could still be in the view frustum and not be visible due
-	// to portal passing
-
-	idRenderModelDecal *	decals;					// chain of decals that have been projected on this model
-	idRenderModelOverlay *	overlay;				// blood overlays on animated models
-
-	areaReference_t *		entityRefs;				// chain of all references
-
-	bool					needsPortalSky;
-};
-
+#include "RenderLight.h"
+#include "RenderEntity.h"
 #include "RenderModelCommitted.h"
 
 const int	MAX_CLIP_PLANES	= 1;				// we may expand this to six for some subview issues
@@ -1115,33 +976,10 @@ LIGHTRUN
 ============================================================
 */
 
-void R_RegenerateWorld_f( const idCmdArgs &args );
-
-void R_ModulateLights_f( const idCmdArgs &args );
-
-void R_SetLightProject( idPlane lightProject[4], const idVec3 origin, const idVec3 targetPoint,
-	   const idVec3 rightVector, const idVec3 upVector, const idVec3 start, const idVec3 stop );
-
-void R_RemoveUnecessaryViewLights( void );
 
 void R_FreeDerivedData( void );
 void R_ReCreateWorldReferences( void );
-
-void R_CreateEntityRefs( idRenderEntityLocal *def );
-void R_CreateLightRefs( idRenderLightLocal *light );
-
-void R_DeriveLightData( idRenderLightLocal *light );
-void R_FreeLightDefDerivedData( idRenderLightLocal *light );
-void R_CheckForEntityDefsUsingModel( idRenderModel *model );
-
-void R_ClearEntityDefDynamicModel( idRenderEntityLocal *def );
-void R_FreeEntityDefDerivedData( idRenderEntityLocal *def, bool keepDecals, bool keepCachedDynamicModel );
-void R_FreeEntityDefCachedDynamicModel( idRenderEntityLocal *def );
-void R_FreeEntityDefDecals( idRenderEntityLocal *def );
-void R_FreeEntityDefOverlay( idRenderEntityLocal *def );
-void R_FreeEntityDefFadedDecals( idRenderEntityLocal *def, int time );
-
-void R_CreateLightDefFogPortals( idRenderLightLocal *ldef );
+void R_CheckForEntityDefsUsingModel(idRenderModel* model);
 
 /*
 ============================================================

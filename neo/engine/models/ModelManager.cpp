@@ -373,7 +373,7 @@ void idRenderModelManagerLocal::FreeModel( idRenderModel *model ) {
 		return;
 	}
 
-	R_CheckForEntityDefsUsingModel( model );
+	R_CheckForEntityDefsUsingModel(model);
 
 	delete model;
 }
