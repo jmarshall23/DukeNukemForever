@@ -257,6 +257,9 @@ void RB_ARB2_DrawInteractions( void ) {
 				fakeDrawSurf.space = vLight->litRenderEntities[i]->viewEntity;
 				fakeDrawSurf.scissorRect = vLight->scissorRect;
 
+				if(fakeDrawSurf.geo->numVerts == 0)
+					continue;
+
 				RB_SetModelMatrix(fakeDrawSurf.space->modelMatrix);
 
 				const float* constRegs = surface->shader->ConstantRegisters();
