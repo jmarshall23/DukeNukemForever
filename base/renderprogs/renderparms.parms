@@ -27,6 +27,8 @@ renderParm  rpspecularmatrixt { float4 }
 renderParm  rpdiffusemodifier { float4 }
 renderParm  rpspecularmodifier { float4 }
 
+renderParm globalLightOrigin { float4 }
+
 renderParm mvpMatrixX { float4 }
 renderParm mvpMatrixY { float4 }
 renderParm mvpMatrixZ { float4 }

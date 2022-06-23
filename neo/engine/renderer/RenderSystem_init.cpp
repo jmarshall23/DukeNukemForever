@@ -1941,6 +1941,7 @@ void idRenderSystemLocal::Init( void ) {
 	lightColorParam = declManager->FindRenderParam("rpdiffusemodifier");
 	lightScaleParam = declManager->FindRenderParam("lightscale");
 	shadowMapInfoParm = declManager->FindRenderParam("shadowMapInfo");
+	globalLightOriginParam = declManager->FindRenderParam("globalLightOrigin");
 
 	atlasLookupParam = declManager->FindRenderParam("atlasLookup");
 	shadowMapAtlasParam = declManager->FindRenderParam("shadowMapAtlas");

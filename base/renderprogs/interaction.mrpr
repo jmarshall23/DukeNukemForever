@@ -83,7 +83,7 @@ renderProg interaction
 		vec3 lightColor = dot3( localNormal, lightVector ) * lightProj.xyz * lightFalloff.xyz;
 
 		// float CalculateShadows(texture2D atlasLookup, texture2D shadowMapAtlas, float3 vertexPos, float3 lightPos, float4 ShadowMapInfo)
-		float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, $lightorigin.xyz, $shadowMapInfo);
+		float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, $globalLightOrigin.xyz, $shadowMapInfo);
 
 		gl_FragColor.xyz = ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
 		gl_FragColor.w = 1.0;
