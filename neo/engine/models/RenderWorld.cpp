@@ -587,7 +587,7 @@ void idRenderWorldLocal::ProjectOverlay( qhandle_t entityHandle, const idPlane l
 	if ( model->IsDynamicModel() != DM_CACHED ) {	// FIXME: probably should be MD5 only
 		return;
 	}
-	model = R_EntityDefDynamicModel( def );
+	model = def->viewEntity->CreateDynamicModel();
 
 	if ( def->overlay == NULL ) {
 		def->overlay = idRenderModelOverlay::Alloc();
@@ -969,7 +969,7 @@ bool idRenderWorldLocal::ModelTrace( modelTrace_t &trace, qhandle_t entityHandle
 
 	renderEntity_t *refEnt = &def->parms;
 
-	model = R_EntityDefDynamicModel( def );
+	model = def->viewEntity->CreateDynamicModel();
 	if ( !model ) {
 		return false;
 	}
@@ -1108,7 +1108,7 @@ bool idRenderWorldLocal::Trace( modelTrace_t &trace, const idVec3 &start, const 
 				}
 #endif
 
-				model = R_EntityDefDynamicModel( def );
+				model = def->viewEntity->CreateDynamicModel();
 				if ( !model ) {
 					continue;	// can happen with particle systems, which don't instantiate without a valid view
 				}
@@ -1694,8 +1694,6 @@ AddModelAndLightRefs
 ===================
 */
 void R_AddAmbientDrawsurfs(idRenderModelCommitted* vEntity);
-idScreenRect	R_CalcLightScissorRectangle(idRenderLightCommitted* vLight);
-idScreenRect R_CalcEntityScissorRectangle(idRenderModelCommitted* vEntity);
 
 void idRenderWorldLocal::AddModelAndLightRefs(void) {
 	idRenderLightCommitted* vLight;
@@ -1715,9 +1713,9 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 		R_FreeEntityDefFadedDecals(entityDefs[i], tr.viewDef->renderView.time);
 
 		vEnt = tr.viewDef->CommitRenderModel(entityDefs[i]);
-		vEnt->scissorRect = R_CalcEntityScissorRectangle(vEnt);
+		vEnt->scissorRect = vEnt->CalcEntityScissorRectangle();
 
-		vEnt->renderModel = R_EntityDefDynamicModel(vEnt->entityDef);
+		vEnt->renderModel = vEnt->CreateDynamicModel();
 		if (vEnt->renderModel == NULL || vEnt->renderModel->NumSurfaces() <= 0) {
 			continue;
 		}
@@ -1740,7 +1738,7 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 		vLight = tr.viewDef->CommitRenderLight(lightDefs[i]);
 		vLight->litRenderEntities.Clear();
 
-		vLight->scissorRect = R_CalcLightScissorRectangle(vLight);
+		vLight->scissorRect = vLight->CalcLightScissorRectangle();
 
 		const idMaterial* lightShader = lightDef->lightShader;
 		if (!lightShader) {

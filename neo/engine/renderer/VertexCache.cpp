@@ -561,3 +561,155 @@ bool idVertexCache::IsFast() {
 	}
 	return true;
 }
+
+
+/*
+===========================================================================================
+
+VERTEX CACHE GENERATORS
+
+===========================================================================================
+*/
+
+/*
+==================
+R_CreateAmbientCache
+
+Create it if needed
+==================
+*/
+bool R_CreateAmbientCache(srfTriangles_t* tri, bool needsLighting) {
+	if (tri->ambientCache) {
+		return true;
+	}
+	// we are going to use it for drawing, so make sure we have the tangents and normals
+	if (needsLighting && !tri->tangentsCalculated) {
+		R_DeriveTangents(tri);
+	}
+
+	vertexCache.Alloc(tri->verts, tri->numVerts * sizeof(tri->verts[0]), &tri->ambientCache);
+	if (!tri->ambientCache) {
+		return false;
+	}
+	return true;
+}
+
+/*
+==================
+R_CreateLightingCache
+
+Returns false if the cache couldn't be allocated, in which case the surface should be skipped.
+==================
+*/
+bool R_CreateLightingCache(const idRenderEntityLocal* ent, const idRenderLightLocal* light, srfTriangles_t* tri) {
+	idVec3		localLightOrigin;
+
+	// fogs and blends don't need light vectors
+	if (light->lightShader->IsFogLight() || light->lightShader->IsBlendLight()) {
+		return true;
+	}
+
+	// not needed if we have vertex programs
+	if (tr.backEndRendererHasVertexPrograms) {
+		return true;
+	}
+
+	R_GlobalPointToLocal(ent->modelMatrix, light->globalLightOrigin, localLightOrigin);
+
+	int	size = tri->ambientSurface->numVerts * sizeof(lightingCache_t);
+	lightingCache_t* cache = (lightingCache_t*)_alloca16(size);
+
+#if 1
+
+	SIMDProcessor->CreateTextureSpaceLightVectors(&cache[0].localLightVector, localLightOrigin,
+		tri->ambientSurface->verts, tri->ambientSurface->numVerts, tri->indexes, tri->numIndexes);
+
+#else
+
+	bool* used = (bool*)_alloca16(tri->ambientSurface->numVerts * sizeof(used[0]));
+	memset(used, 0, tri->ambientSurface->numVerts * sizeof(used[0]));
+
+	// because the interaction may be a very small subset of the full surface,
+	// it makes sense to only deal with the verts used
+	for (int j = 0; j < tri->numIndexes; j++) {
+		int i = tri->indexes[j];
+		if (used[i]) {
+			continue;
+		}
+		used[i] = true;
+
+		idVec3 lightDir;
+		const idDrawVert* v;
+
+		v = &tri->ambientSurface->verts[i];
+
+		lightDir = localLightOrigin - v->xyz;
+
+		cache[i].localLightVector[0] = lightDir * v->tangents[0];
+		cache[i].localLightVector[1] = lightDir * v->tangents[1];
+		cache[i].localLightVector[2] = lightDir * v->normal;
+	}
+
+#endif
+
+	vertexCache.Alloc(cache, size, &tri->lightingCache);
+	if (!tri->lightingCache) {
+		return false;
+	}
+	return true;
+}
+
+/*
+==================
+R_CreatePrivateShadowCache
+
+This is used only for a specific light
+==================
+*/
+void R_CreatePrivateShadowCache(srfTriangles_t* tri) {
+	if (!tri->shadowVertexes) {
+		return;
+	}
+
+	vertexCache.Alloc(tri->shadowVertexes, tri->numVerts * sizeof(*tri->shadowVertexes), &tri->shadowCache);
+}
+
+/*
+==================
+R_CreateVertexProgramShadowCache
+
+This is constant for any number of lights, the vertex program
+takes care of projecting the verts to infinity.
+==================
+*/
+void R_CreateVertexProgramShadowCache(srfTriangles_t* tri) {
+	if (tri->verts == NULL) {
+		return;
+	}
+
+	shadowCache_t* temp = (shadowCache_t*)_alloca16(tri->numVerts * 2 * sizeof(shadowCache_t));
+
+#if 1
+
+	SIMDProcessor->CreateVertexProgramShadowCache(&temp->xyz, tri->verts, tri->numVerts);
+
+#else
+
+	int numVerts = tri->numVerts;
+	const idDrawVert* verts = tri->verts;
+	for (int i = 0; i < numVerts; i++) {
+		const float* v = verts[i].xyz.ToFloatPtr();
+		temp[i * 2 + 0].xyz[0] = v[0];
+		temp[i * 2 + 1].xyz[0] = v[0];
+		temp[i * 2 + 0].xyz[1] = v[1];
+		temp[i * 2 + 1].xyz[1] = v[1];
+		temp[i * 2 + 0].xyz[2] = v[2];
+		temp[i * 2 + 1].xyz[2] = v[2];
+		temp[i * 2 + 0].xyz[3] = 1.0f;		// on the model surface
+		temp[i * 2 + 1].xyz[3] = 0.0f;		// will be projected to infinity
+	}
+
+#endif
+
+	vertexCache.Alloc(temp, tri->numVerts * 2 * sizeof(shadowCache_t), &tri->shadowCache);
+}

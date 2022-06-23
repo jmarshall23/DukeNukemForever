@@ -874,9 +874,6 @@ void R_RenderView( idRenderWorldCommitted *parms ) {
 	// constrain the view frustum to the view lights and entities
 	R_ConstrainViewFrustum();
 
-	// any viewLight that didn't have visible surfaces can have it's shadows removed
-	R_RemoveUnecessaryViewLights();
-
 	// sort all the ambient surfaces for translucency ordering
 	R_SortDrawSurfs();
 

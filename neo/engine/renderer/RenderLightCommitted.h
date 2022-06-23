@@ -17,6 +17,8 @@ static const float INSIDE_LIGHT_FRUSTUM_SLOP = 32;
 class idRenderLightCommitted {
 public:
 	bool TestPointInViewLight(const idVec3& org, const idRenderLightLocal* light);
+	idScreenRect ClippedLightScissorRectangle(void);
+	idScreenRect CalcLightScissorRectangle(void);
 
 	struct idRenderLightCommitted* next;
 

@@ -13,6 +13,9 @@
 //
 class idRenderModelCommitted {
 public:
+	idScreenRect					CalcEntityScissorRectangle(void);
+	idRenderModel*					CreateDynamicModel(void);
+
 	idRenderModelCommitted* next;
 
 	// back end should NOT reference the entityDef, because it can change when running SMP

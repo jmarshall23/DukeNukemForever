@@ -628,7 +628,7 @@ static void RB_ShowViewEntitys( idRenderModelCommitted *vModels ) {
 		// draw the model bounds in white
 		glColor3f( 1, 1, 1 );
 
-		idRenderModel *model = R_EntityDefDynamicModel( vModels->entityDef );
+		idRenderModel* model = vModels->entityDef->viewEntity->CreateDynamicModel();// R_EntityDefDynamicModel(vModels->entityDef);
 		if ( !model ) {
 			continue;	// particles won't instantiate without a current view
 		}
