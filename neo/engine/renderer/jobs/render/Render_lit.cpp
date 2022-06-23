@@ -254,6 +254,9 @@ void idRender::DrawForwardLit( void ) {
 				fakeDrawSurf.space = vLight->litRenderEntities[i]->viewEntity;
 				fakeDrawSurf.scissorRect = vLight->scissorRect;
 
+				if(fakeDrawSurf.geo->numVerts == 0)
+					continue;
+
 				R_CreateAmbientCache((srfTriangles_t *)fakeDrawSurf.geo, true);;
 
 				if(fakeDrawSurf.geo->numVerts == 0)
