@@ -144,11 +144,11 @@ file(GLOB engineDependFiles
     "engine/sound/vorbis/*.c*"
     "engine/sound/OggVorbis/oggsrc/*.c*"
     "engine/sound/OggVorbis/vorbissrc/*.c*"
-) 
+)  
 
 add_library(engineExternal STATIC ${engineDependFiles})
 set_target_properties(engineExternal PROPERTIES LINK_FLAGS "/PDB:\"engineExternal.pdb\"")
-
+ 
 # Engine Project
 add_executable(DukeNukemForever ${engineSourceFiles} ${toolSourceFiles} ./engine/sys/win32/rc/doom.rc)
 target_compile_definitions(DukeNukemForever PUBLIC -D__DOOM_DLL__)
