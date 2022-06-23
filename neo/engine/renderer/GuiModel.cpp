@@ -293,7 +293,7 @@ void idGuiModel::EmitFullScreen( void ) {
 	tr.viewDef = oldViewDef;
 
 	// add the command to draw this view
-	R_AddDrawViewCmd( viewDef );
+	viewDef->AddDrawViewCmd();
 }
 
 /*

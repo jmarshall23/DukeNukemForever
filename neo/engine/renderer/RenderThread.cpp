@@ -606,3 +606,34 @@ void RB_ExecuteBackEndCommands( const emptyCommand_t *cmds ) {
 		backEnd.c_copyFrameBuffer = 0;
 	}
 }
+
+/*
+====================
+R_ToggleSmpFrame
+====================
+*/
+void R_ToggleSmpFrame(void) {
+	if (r_lockSurfaces.GetBool()) {
+		return;
+	}
+	R_FreeDeferredTriSurfs(frameData);
+
+	// clear frame-temporary data
+	frameData_t* frame;
+	frameMemoryBlock_t* block;
+
+	// update the highwater mark
+	R_CountFrameData();
+
+	frame = frameData;
+
+	// reset the memory allocation to the first block
+	frame->alloc = frame->memory;
+
+	// clear all the blocks
+	for (block = frame->memory; block; block = block->next) {
+		block->used = 0;
+	}
+
+	R_ClearCommandChain();
+}

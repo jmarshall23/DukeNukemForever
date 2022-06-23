@@ -76,7 +76,6 @@ public:
 };
 
 idScreenRect R_ScreenRectFromViewFrustumBounds( const idBounds &bounds );
-void R_ShowColoredScreenRect( const idScreenRect &rect, int colorIndex );
 
 typedef enum {
 	DC_BAD,
@@ -279,7 +278,6 @@ extern	frameData_t	*frameData;
 
 void R_LockSurfaceScene( idRenderWorldCommitted *parms );
 void R_ClearCommandChain( void );
-void R_AddDrawViewCmd( idRenderWorldCommitted *parms );
 
 void R_ReloadGuis_f( const idCmdArgs &args );
 void R_ListGuis_f( const idCmdArgs &args );
@@ -914,8 +912,6 @@ MAIN
 ====================================================================
 */
 
-void R_RenderView( idRenderWorldCommitted *parms );
-
 // performs radius cull first, then corner cull
 bool R_CullLocalBox( const idBounds &bounds, const float modelMatrix[16], int numPlanes, const idPlane *planes );
 bool R_RadiusCullLocalBox( const idBounds &bounds, const float modelMatrix[16], int numPlanes, const idPlane *planes );
@@ -1143,7 +1139,6 @@ int R_CountFrameData( void );
 void R_ToggleSmpFrame( void );
 void *R_FrameAlloc( int bytes );
 void *R_ClearedFrameAlloc( int bytes );
-void R_FrameFree( void *data );
 
 void *R_StaticAlloc( int bytes );		// just malloc with error checking
 void *R_ClearedStaticAlloc( int bytes );	// with memset
@@ -1265,5 +1260,55 @@ idScreenRect R_CalcIntersectionScissor( const idRenderLightLocal * lightDef,
 void RB_SetModelMatrix(const float* modelMatrix);
 void RB_SetMVP(const idRenderMatrix& mvp);
 
+// transform Z in eye coordinates to window coordinates
+ID_INLINE void R_TransformEyeZToWin(float src_z, const float* projectionMatrix, float& dst_z) {
+	float clip_z, clip_w;
+
+	// projection
+	clip_z = src_z * projectionMatrix[2 + 2 * 4] + projectionMatrix[2 + 3 * 4];
+	clip_w = src_z * projectionMatrix[3 + 2 * 4] + projectionMatrix[3 + 3 * 4];
+
+	if (clip_w <= 0.0f) {
+		dst_z = 0.0f;					// clamp to near plane
+	}
+	else {
+		dst_z = clip_z / clip_w;
+		dst_z = dst_z * 0.5f + 0.5f;	// convert to window coords
+	}
+}
+
+/*
+======================
+R_ScreenRectFromViewFrustumBounds
+======================
+*/
+ID_INLINE idScreenRect R_ScreenRectFromViewFrustumBounds(const idBounds& bounds) {
+	idScreenRect screenRect;
+
+	screenRect.x1 = idMath::FtoiFast(0.5f * (1.0f - bounds[1].y) * (tr.viewDef->viewport.x2 - tr.viewDef->viewport.x1));
+	screenRect.x2 = idMath::FtoiFast(0.5f * (1.0f - bounds[0].y) * (tr.viewDef->viewport.x2 - tr.viewDef->viewport.x1));
+	screenRect.y1 = idMath::FtoiFast(0.5f * (1.0f + bounds[0].z) * (tr.viewDef->viewport.y2 - tr.viewDef->viewport.y1));
+	screenRect.y2 = idMath::FtoiFast(0.5f * (1.0f + bounds[1].z) * (tr.viewDef->viewport.y2 - tr.viewDef->viewport.y1));
+
+	if (r_useDepthBoundsTest.GetInteger()) {
+		R_TransformEyeZToWin(-bounds[0].x, tr.viewDef->projectionMatrix, screenRect.zmin);
+		R_TransformEyeZToWin(-bounds[1].x, tr.viewDef->projectionMatrix, screenRect.zmax);
+	}
+
+	return screenRect;
+}
+
+/*
+==========================
+R_TransformClipToDevice
+
+Clip to normalized device coordinates
+==========================
+*/
+ID_INLINE void R_TransformClipToDevice(const idPlane& clip, const idRenderWorldCommitted* view, idVec3& normalized) {
+	normalized[0] = clip[0] / clip[3];
+	normalized[1] = clip[1] / clip[3];
+	normalized[2] = clip[2] / clip[3];
+}
 
 #endif /* !__TR_LOCAL_H__ */

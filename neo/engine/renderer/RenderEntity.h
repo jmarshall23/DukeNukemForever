@@ -23,7 +23,6 @@ public:
 	void					FreeEntityDefFadedDecals(int time);
 	void					FreeEntityDefOverlay(void);
 public:
-
 	renderEntity_t			parms;
 
 	float					modelMatrix[16];		// this is just a rearrangement of parms.axis and parms.origin

@@ -716,7 +716,7 @@ void idRenderWorldLocal::RenderScene( const renderView_t *renderView ) {
 	// for mirrors / portals / shadows / environment maps
 	// this will also cause any necessary entities and lights to be
 	// updated to the demo file
-	R_RenderView( parms );
+	parms->RenderView();
 
 	// now write delete commands for any modified-but-not-visible entities, and
 	// add the renderView command to the demo
@@ -1726,7 +1726,7 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 		}
 
 		vLight = tr.viewDef->CommitRenderLight(lightDefs[i]);
-		vLight->litRenderEntities.Clear();
+		vLight->numLitRenderEntities = 0;
 
 		vLight->scissorRect = vLight->CalcLightScissorRectangle();
 
@@ -1739,8 +1739,8 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 		float* lightRegs = (float*)R_FrameAlloc(lightShader->GetNumRegisters() * sizeof(float));
 		vLight->shaderRegisters = lightRegs;
 		lightShader->EvaluateRegisters(lightRegs, lightDef->parms.shaderParms, tr.viewDef, lightDef->parms.referenceSound);
-
-		//lightDefs[i]->litRenderModels.Clear();
+		
+		vLight->litRenderEntities = (idRenderEntityLocal**)R_FrameAlloc(entityDefs.Num() * sizeof(idRenderEntityLocal*));	
 
 		for (int d = 0; d < entityDefs.Num(); d++)
 		{
@@ -1753,7 +1753,9 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 			idRenderEntityLocal *entityDef = entityDefs[d];
 
 			if (entityDef == nullptr)
+			{
 				continue;
+			}
 
 			vLight = lightDefs[i]->viewLight;
 			vEntity = entityDef->viewEntity;
@@ -1776,7 +1778,7 @@ void idRenderWorldLocal::AddModelAndLightRefs(void) {
 				continue;
 			}
 			
-			vLight->litRenderEntities.AddUnique(entityDef);
+			vLight->litRenderEntities[vLight->numLitRenderEntities++] = entityDef;
 		}
 	}
 }

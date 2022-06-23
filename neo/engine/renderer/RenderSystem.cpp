@@ -157,45 +157,6 @@ void R_ClearCommandChain( void ) {
 	frameData->cmdHead->next = NULL;
 }
 
-/*
-=================
-R_ViewStatistics
-=================
-*/
-static void R_ViewStatistics( idRenderWorldCommitted *parms ) {
-	// report statistics about this view
-	if ( !r_showSurfaces.GetBool() ) {
-		return;
-	}
-	common->Printf( "view:%p surfs:%i\n", parms, parms->numDrawSurfs );
-}
-
-/*
-=============
-R_AddDrawViewCmd
-
-This is the main 3D rendering command.  A single scene may
-have multiple views if a mirror, portal, or dynamic texture is present.
-=============
-*/
-void	R_AddDrawViewCmd( idRenderWorldCommitted *parms ) {
-	drawSurfsCommand_t	*cmd;
-
-	cmd = (drawSurfsCommand_t *)R_GetCommandBuffer( sizeof( *cmd ) );
-	cmd->commandId = RC_DRAW_VIEW;
-
-	cmd->viewDef = parms;
-
-	if ( parms->viewEntitys ) {
-		// save the command for r_lockSurfaces debugging
-		tr.lockSurfacesCmd = *cmd;
-	}
-
-	tr.pc.c_numViews++;
-
-	R_ViewStatistics( parms );
-}
-
 
 //=================================================================================
 
@@ -221,7 +182,7 @@ void R_LockSurfaceScene( idRenderWorldCommitted *parms ) {
 	idRenderModelCommitted			*vModel;
 
 	// set the matrix for world space to eye space
-	R_SetViewMatrix( parms );
+	parms->SetViewMatrix();
 	tr.lockSurfacesCmd.viewDef->worldSpace = parms->worldSpace;
 	
 	// update the view origin and axis, and all

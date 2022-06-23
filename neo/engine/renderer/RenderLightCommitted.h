@@ -53,5 +53,7 @@ public:
 
 	int						shadowMapSlice;
 
-	idList<idRenderEntityLocal*> litRenderEntities;
+
+	int numLitRenderEntities;
+	idRenderEntityLocal		**litRenderEntities;
 };

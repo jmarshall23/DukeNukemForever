@@ -22,6 +22,67 @@ static bool R_PointInFrustum(idVec3& p, idPlane* planes, int numPlanes) {
 
 
 /*
+=======================
+R_QsortSurfaces
+
+=======================
+*/
+static int R_QsortSurfaces(const void* a, const void* b) {
+	const drawSurf_t* ea, * eb;
+
+	ea = *(drawSurf_t**)a;
+	eb = *(drawSurf_t**)b;
+
+	if (ea->sort < eb->sort) {
+		return -1;
+	}
+	if (ea->sort > eb->sort) {
+		return 1;
+	}
+	return 0;
+}
+
+
+/*
+=================
+R_SortDrawSurfs
+=================
+*/
+static void R_SortDrawSurfs(void) {
+	// sort the drawsurfs by sort type, then orientation, then shader
+	qsort(tr.viewDef->drawSurfs, tr.viewDef->numDrawSurfs, sizeof(tr.viewDef->drawSurfs[0]),
+		R_QsortSurfaces);
+}
+
+
+/*
+===================
+R_CheckForEntityDefsUsingModel
+===================
+*/
+void R_CheckForEntityDefsUsingModel(idRenderModel* model) {
+	int i, j;
+	idRenderWorldLocal* rw;
+	idRenderEntityLocal* def;
+
+	for (j = 0; j < tr.worlds.Num(); j++) {
+		rw = tr.worlds[j];
+
+		for (i = 0; i < rw->entityDefs.Num(); i++) {
+			def = rw->entityDefs[i];
+			if (!def) {
+				continue;
+			}
+			if (def->parms.hModel == model) {
+				//assert( 0 );
+				// this should never happen but Radiant messes it up all the time so just free the derived data
+				def->FreeEntityDefDerivedData(false, false);
+			}
+		}
+	}
+}
+
+/*
 =========================
 idRenderWorldCommitted::CommitRenderLight
 =========================
@@ -124,4 +185,314 @@ idRenderModelCommitted* idRenderWorldCommitted::CommitRenderModel(idRenderEntity
 	def->viewEntity = vModel;
 
 	return vModel;
+}
+
+/*
+================
+R_RenderView
+
+A view may be either the actual camera view,
+a mirror / remote location, or a 3D view on a gui surface.
+
+Parms will typically be allocated with R_FrameAlloc
+================
+*/
+void idRenderWorldCommitted::RenderView(void) {
+	idRenderWorldCommitted* oldView;
+
+	if (renderView.width <= 0 || renderView.height <= 0) {
+		return;
+	}
+
+	tr.viewCount++;
+
+	// save view in case we are a subview
+	oldView = tr.viewDef;
+
+	tr.viewDef = this;
+
+	tr.sortOffset = 0;
+
+	// set the matrix for world space to eye space
+	SetViewMatrix();
+
+	// the four sides of the view frustum are needed
+	// for culling and portal visibility
+	SetupViewFrustum();
+
+	// we need to set the projection matrix before doing
+	// portal-to-screen scissor box calculations
+	R_SetupProjectionMatrix(this);
+
+	// identify all the visible portalAreas, and the entityDefs and
+	// lightDefs that are in them and pass culling.
+	static_cast<idRenderWorldLocal*>(renderWorld)->AddModelAndLightRefs();
+
+	// constrain the view frustum to the view lights and entities
+	ConstrainViewFrustum();
+
+	// sort all the ambient surfaces for translucency ordering
+	R_SortDrawSurfs();
+
+	// generate any subviews (mirrors, cameras, etc) before adding this view
+	if (R_GenerateSubViews()) {
+		// if we are debugging subviews, allow the skipping of the
+		// main view draw
+		if (r_subviewOnly.GetBool()) {
+			return;
+		}
+	}
+
+	// write everything needed to the demo file
+	if (session->writeDemo) {
+		static_cast<idRenderWorldLocal*>(renderWorld)->WriteVisibleDefs(tr.viewDef);
+	}
+
+	// add the rendering commands for this viewDef
+	AddDrawViewCmd();
+
+	// restore view in case we are a subview
+	tr.viewDef = oldView;
+}
+
+
+/*
+=================
+R_SetupViewFrustum
+
+Setup that culling frustum planes for the current view
+FIXME: derive from modelview matrix times projection matrix
+=================
+*/
+void idRenderWorldCommitted::SetupViewFrustum(void) {
+	int		i;
+	float	xs, xc;
+	float	ang;
+
+	ang = DEG2RAD(tr.viewDef->renderView.fov_x) * 0.5f;
+	idMath::SinCos(ang, xs, xc);
+
+	tr.viewDef->frustum[0] = xs * tr.viewDef->renderView.viewaxis[0] + xc * tr.viewDef->renderView.viewaxis[1];
+	tr.viewDef->frustum[1] = xs * tr.viewDef->renderView.viewaxis[0] - xc * tr.viewDef->renderView.viewaxis[1];
+
+	ang = DEG2RAD(tr.viewDef->renderView.fov_y) * 0.5f;
+	idMath::SinCos(ang, xs, xc);
+
+	tr.viewDef->frustum[2] = xs * tr.viewDef->renderView.viewaxis[0] + xc * tr.viewDef->renderView.viewaxis[2];
+	tr.viewDef->frustum[3] = xs * tr.viewDef->renderView.viewaxis[0] - xc * tr.viewDef->renderView.viewaxis[2];
+
+	// plane four is the front clipping plane
+	tr.viewDef->frustum[4] = /* vec3_origin - */ tr.viewDef->renderView.viewaxis[0];
+
+	for (i = 0; i < 5; i++) {
+		// flip direction so positive side faces out (FIXME: globally unify this)
+		tr.viewDef->frustum[i] = -tr.viewDef->frustum[i].Normal();
+		tr.viewDef->frustum[i][3] = -(tr.viewDef->renderView.vieworg * tr.viewDef->frustum[i].Normal());
+	}
+
+	// eventually, plane five will be the rear clipping plane for fog
+
+	float dNear, dFar, dLeft, dUp;
+
+	dNear = r_znear.GetFloat();
+	if (tr.viewDef->renderView.cramZNear) {
+		dNear *= 0.25f;
+	}
+
+	dFar = MAX_WORLD_SIZE;
+	dLeft = dFar * tan(DEG2RAD(tr.viewDef->renderView.fov_x * 0.5f));
+	dUp = dFar * tan(DEG2RAD(tr.viewDef->renderView.fov_y * 0.5f));
+	tr.viewDef->viewFrustum.SetOrigin(tr.viewDef->renderView.vieworg);
+	tr.viewDef->viewFrustum.SetAxis(tr.viewDef->renderView.viewaxis);
+	tr.viewDef->viewFrustum.SetSize(dNear, dFar, dLeft, dUp);
+}
+
+/*
+=================
+idRenderWorldCommitted::ConstrainViewFrustum
+
+Setup that culling frustum planes for the current view
+FIXME: derive from modelview matrix times projection matrix
+=================
+*/
+void idRenderWorldCommitted::ConstrainViewFrustum(void) {
+	idBounds bounds;
+
+	// constrain the view frustum to the total bounds of all visible lights and visible entities
+	bounds.Clear();
+	for (idRenderLightCommitted* vLight = tr.viewDef->viewLights; vLight; vLight = vLight->next) {
+		bounds.AddBounds(vLight->lightDef->frustumTris->bounds);
+	}
+	for (idRenderModelCommitted* vEntity = tr.viewDef->viewEntitys; vEntity; vEntity = vEntity->next) {
+		bounds.AddBounds(vEntity->entityDef->referenceBounds);
+	}
+	tr.viewDef->viewFrustum.ConstrainToBounds(bounds);
+
+	if (r_useFrustumFarDistance.GetFloat() > 0.0f) {
+		tr.viewDef->viewFrustum.MoveFarDistance(r_useFrustumFarDistance.GetFloat());
+	}
+}
+
+
+/*
+=============
+R_AddDrawViewCmd
+
+This is the main 3D rendering command.  A single scene may
+have multiple views if a mirror, portal, or dynamic texture is present.
+=============
+*/
+void idRenderWorldCommitted::AddDrawViewCmd(void) {
+	drawSurfsCommand_t* cmd;
+
+	cmd = (drawSurfsCommand_t*)R_GetCommandBuffer(sizeof(*cmd));
+	cmd->commandId = RC_DRAW_VIEW;
+
+	cmd->viewDef = this;
+
+	if (viewEntitys) {
+		// save the command for r_lockSurfaces debugging
+		tr.lockSurfacesCmd = *cmd;
+	}
+
+	tr.pc.c_numViews++;
+}
+
+
+/*
+=================
+R_SetViewMatrix
+
+Sets up the world to view matrix for a given viewParm
+=================
+*/
+void idRenderWorldCommitted::SetViewMatrix(void) {
+	idVec3	origin;
+	idRenderModelCommitted* world;
+	float	viewerMatrix[16];
+	static float	s_flipMatrix[16] = {
+		// convert from our coordinate system (looking down X)
+		// to OpenGL's coordinate system (looking down -Z)
+		0, 0, -1, 0,
+		-1, 0, 0, 0,
+		0, 1, 0, 0,
+		0, 0, 0, 1
+	};
+
+	world = &worldSpace;
+
+	memset(world, 0, sizeof(*world));
+
+	// the model matrix is an identity
+	world->modelMatrix[0 * 4 + 0] = 1;
+	world->modelMatrix[1 * 4 + 1] = 1;
+	world->modelMatrix[2 * 4 + 2] = 1;
+
+	// transform by the camera placement
+	origin = renderView.vieworg;
+
+	viewerMatrix[0] = renderView.viewaxis[0][0];
+	viewerMatrix[4] = renderView.viewaxis[0][1];
+	viewerMatrix[8] = renderView.viewaxis[0][2];
+	viewerMatrix[12] = -origin[0] * viewerMatrix[0] + -origin[1] * viewerMatrix[4] + -origin[2] * viewerMatrix[8];
+
+	viewerMatrix[1] = renderView.viewaxis[1][0];
+	viewerMatrix[5] = renderView.viewaxis[1][1];
+	viewerMatrix[9] = renderView.viewaxis[1][2];
+	viewerMatrix[13] = -origin[0] * viewerMatrix[1] + -origin[1] * viewerMatrix[5] + -origin[2] * viewerMatrix[9];
+
+	viewerMatrix[2] = renderView.viewaxis[2][0];
+	viewerMatrix[6] = renderView.viewaxis[2][1];
+	viewerMatrix[10] = renderView.viewaxis[2][2];
+	viewerMatrix[14] = -origin[0] * viewerMatrix[2] + -origin[1] * viewerMatrix[6] + -origin[2] * viewerMatrix[10];
+
+	viewerMatrix[3] = 0;
+	viewerMatrix[7] = 0;
+	viewerMatrix[11] = 0;
+	viewerMatrix[15] = 1;
+
+	// convert from our coordinate system (looking down X)
+	// to OpenGL's coordinate system (looking down -Z)
+	myGlMultMatrix(viewerMatrix, s_flipMatrix, world->modelViewMatrix);
+}
+
+
+/*
+===================
+R_FreeDerivedData
+
+ReloadModels and RegenerateWorld call this
+// FIXME: need to do this for all worlds
+===================
+*/
+void R_FreeDerivedData(void) {
+	int i, j;
+	idRenderWorldLocal* rw;
+	idRenderEntityLocal* def;
+	idRenderLightLocal* light;
+
+	for (j = 0; j < tr.worlds.Num(); j++) {
+		rw = tr.worlds[j];
+
+		for (i = 0; i < rw->entityDefs.Num(); i++) {
+			def = rw->entityDefs[i];
+			if (!def) {
+				continue;
+			}
+			def->FreeEntityDefDerivedData(false, false);
+		}
+
+		for (i = 0; i < rw->lightDefs.Num(); i++) {
+			light = rw->lightDefs[i];
+			if (!light) {
+				continue;
+			}
+			light->FreeLightDefDerivedData();
+		}
+	}
+}
+
+
+/*
+===================
+R_ReCreateWorldReferences
+
+ReloadModels and RegenerateWorld call this
+// FIXME: need to do this for all worlds
+===================
+*/
+void R_ReCreateWorldReferences(void) {
+	int i, j;
+	idRenderWorldLocal* rw;
+	idRenderEntityLocal* def;
+	idRenderLightLocal* light;
+
+	// let the interaction generation code know this shouldn't be optimized for
+	// a particular view
+	tr.viewDef = NULL;
+
+	for (j = 0; j < tr.worlds.Num(); j++) {
+		rw = tr.worlds[j];
+
+		for (i = 0; i < rw->entityDefs.Num(); i++) {
+			def = rw->entityDefs[i];
+			if (!def) {
+				continue;
+			}
+			// the world model entities are put specifically in a single
+			// area, instead of just pushing their bounds into the tree
+			def->CreateEntityRefs();
+		}
+
+		for (i = 0; i < rw->lightDefs.Num(); i++) {
+			light = rw->lightDefs[i];
+			if (!light) {
+				continue;
+			}
+			renderLight_t parms = light->parms;
+
+			light->world->FreeLightDef(i);
+			rw->UpdateLightDef(i, &parms);
+		}
+	}
 }

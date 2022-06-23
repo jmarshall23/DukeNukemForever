@@ -1763,9 +1763,7 @@ BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext *pContext) {
 		m_pYZWnd->ShowWindow(SW_HIDE);
 	}
 
-	if (!g_PrefsDlg.m_bZVis) {
-		m_pZWnd->ShowWindow(SW_HIDE);
-	}
+	m_pZWnd->ShowWindow(SW_HIDE);
 
 	CreateQEChildren();
 

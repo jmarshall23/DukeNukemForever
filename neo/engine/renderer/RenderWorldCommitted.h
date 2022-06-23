@@ -8,6 +8,12 @@ class idRenderWorldCommitted {
 public:
 	idRenderLightCommitted*				CommitRenderLight(idRenderLightLocal* light);
 	idRenderModelCommitted*				CommitRenderModel(idRenderEntityLocal* def);
+	void								RenderView(void);
+	void								AddDrawViewCmd(void);
+	void								SetViewMatrix(void);
+private:
+	void								SetupViewFrustum(void);
+	void								ConstrainViewFrustum(void);
 public:
 	// specified in the call to DrawScene()
 	renderView_t		renderView;

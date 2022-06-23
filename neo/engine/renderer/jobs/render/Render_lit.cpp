@@ -230,7 +230,7 @@ void idRender::DrawForwardLit( void ) {
 		idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, 1.0);
 		tr.globalLightOriginParam->SetVectorValue(lightOrigin);
 
-		for (int i = 0; i < vLight->litRenderEntities.Num(); i++)
+		for (int i = 0; i < vLight->numLitRenderEntities; i++)
 		{
 			idRenderModel* renderModel = vLight->litRenderEntities[i]->viewEntity->renderModel;
 
@@ -253,6 +253,8 @@ void idRender::DrawForwardLit( void ) {
 				fakeDrawSurf.material = surface->shader;
 				fakeDrawSurf.space = vLight->litRenderEntities[i]->viewEntity;
 				fakeDrawSurf.scissorRect = vLight->scissorRect;
+
+				R_CreateAmbientCache((srfTriangles_t *)fakeDrawSurf.geo, true);;
 
 				if(fakeDrawSurf.geo->numVerts == 0)
 					continue;

@@ -331,7 +331,7 @@ static void R_RemoteRender( drawSurf_t *surf, textureStage_t *stage ) {
 	parms->subviewSurface = surf;
 
 	// generate render commands for it
-	R_RenderView(parms);
+	parms->RenderView();
 
 	// copy this rendering to the image
 	stage->dynamicFrameCount = tr.frameCount;
@@ -383,7 +383,7 @@ void R_MirrorRender( drawSurf_t *surf, textureStage_t *stage, idScreenRect sciss
 	parms->isMirror = ( ( (int)parms->isMirror ^ (int)tr.viewDef->isMirror ) != 0 );
 
 	// generate render commands for it
-	R_RenderView( parms );
+	parms->RenderView();
 
 	// copy this rendering to the image
 	stage->dynamicFrameCount = tr.frameCount;
@@ -433,7 +433,7 @@ void R_XrayRender( drawSurf_t *surf, textureStage_t *stage, idScreenRect scissor
 	parms->isMirror = ( ( (int)parms->isMirror ^ (int)tr.viewDef->isMirror ) != 0 );
 
 	// generate render commands for it
-	R_RenderView( parms );
+	parms->RenderView();
 
 	// copy this rendering to the image
 	stage->dynamicFrameCount = tr.frameCount;
@@ -529,7 +529,7 @@ bool	R_GenerateSurfaceSubview( drawSurf_t *drawSurf ) {
 	parms->isMirror = ( ( (int)parms->isMirror ^ (int)tr.viewDef->isMirror ) != 0 );
 
 	// generate render commands for it
-	R_RenderView( parms );
+	parms->RenderView();
 
 	return true;
 }

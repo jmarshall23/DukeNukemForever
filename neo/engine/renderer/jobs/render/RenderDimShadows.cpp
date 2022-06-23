@@ -49,7 +49,7 @@ RB_Shadow_RenderOccluders
 ==================
 */
 void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
-	for (int i = 0; i < vLight->litRenderEntities.Num(); i++) {
+	for (int i = 0; i < vLight->numLitRenderEntities; i++) {
 		const idRenderEntityLocal* entityDef = vLight->litRenderEntities[i];
 		idRenderModel* inter = entityDef->viewEntity->renderModel;
 
