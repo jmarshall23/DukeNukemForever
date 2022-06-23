@@ -2,7 +2,7 @@
 // stub gl/glX APIs
 
 #include "idlib/precompiled.h"
-#include "renderer/tr_local.h"
+#include "renderer/RenderSystem_local.h"
 #pragma hdrstop
 
 dnl =====================================================

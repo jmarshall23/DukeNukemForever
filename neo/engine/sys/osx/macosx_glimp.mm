@@ -29,7 +29,7 @@ If you have questions concerning this license or the applicable additional terms
 // -*- mode: objc -*-
 #import "../../idlib/precompiled.h"
 
-#import "../../renderer/tr_local.h"
+#import "../../renderer/RenderSystem_local.h"
 
 #import "macosx_glimp.h"
 

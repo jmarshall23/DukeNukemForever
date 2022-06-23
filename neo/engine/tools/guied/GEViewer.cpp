@@ -30,7 +30,7 @@ If you have questions concerning this license or the applicable additional terms
 #pragma hdrstop
 
 #include "../../sys/win32/rc/guied_resource.h"
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 
 #include "GEApp.h"
 #include "GEViewer.h"

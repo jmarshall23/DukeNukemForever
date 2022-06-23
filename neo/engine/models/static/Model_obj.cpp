@@ -2,7 +2,7 @@
 //
 
 
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 #include "../Model_local.h"
 
 /*

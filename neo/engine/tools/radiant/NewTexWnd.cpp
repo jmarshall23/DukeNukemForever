@@ -34,7 +34,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "NewTexWnd.h"
 #include "io.h"
 
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 
 #ifdef _DEBUG
 	#define new DEBUG_NEW

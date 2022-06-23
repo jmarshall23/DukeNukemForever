@@ -32,7 +32,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "qe3.h"
 #include <GL/glu.h>
 
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 #include "../../models/model_local.h"	// for idRenderModelMD5
 
 void	Brush_UpdateLightPoints(brush_t *b, const idVec3 &offset);

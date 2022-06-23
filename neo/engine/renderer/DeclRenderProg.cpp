@@ -4,7 +4,7 @@
 
 #pragma hdrstop
 
-#include "tr_local.h"
+#include "RenderSystem_local.h"
 
 void GL_SelectTextureNoClient(int unit);
 

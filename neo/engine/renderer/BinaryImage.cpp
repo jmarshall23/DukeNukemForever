@@ -34,7 +34,7 @@ If you have questions concerning this license or the applicable additional terms
 ================================================================================================
 */
 
-#include "tr_local.h"
+#include "RenderSystem_local.h"
 #include "jobs/transcode/image/DXTCodec.h"
 #include "imagetools/color/ColorSpace.h"
 

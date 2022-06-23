@@ -1,4 +1,4 @@
-#include "../../tr_local.h"
+#include "../../RenderSystem_local.h"
 
 /*
 ================

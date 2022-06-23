@@ -46,7 +46,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "../sys_local.h"
 #include "win_local.h"
 #include "rc/CreateResourceIDs.h"
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 
 idCVar Win32Vars_t::sys_arch( "sys_arch", "", CVAR_SYSTEM | CVAR_INIT, "" );
 idCVar Win32Vars_t::sys_cpustring( "sys_cpustring", "detect", CVAR_SYSTEM | CVAR_INIT, "" );

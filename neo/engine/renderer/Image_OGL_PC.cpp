@@ -32,7 +32,7 @@ Contains the Image implementation for OpenGL.
 ================================================================================================
 */
 
-#include "tr_local.h"
+#include "RenderSystem_local.h"
 
 /*
 ========================

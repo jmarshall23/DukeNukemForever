@@ -37,7 +37,7 @@ If you have questions concerning this license or the applicable additional terms
 ===============================================================================
 */
 
-// map processing (also see SuperOptimizeOccluders in tr_local.h)
+// map processing (also see SuperOptimizeOccluders in RenderSystem_local.h)
 void Dmap_f( const idCmdArgs &args );
 
 void NavMesh_f(const idCmdArgs& args);

@@ -40,7 +40,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #include <float.h>
 #include "win_local.h"
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 
 
 int   ( WINAPI * qwglChoosePixelFormat )(HDC, CONST PIXELFORMATDESCRIPTOR *);

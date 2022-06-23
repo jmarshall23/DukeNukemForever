@@ -33,7 +33,7 @@ If you have questions concerning this license or the applicable additional terms
 #endif // _MSC_VER >= 1000
 // TexWnd.h : header file
 //
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 //#include "texwnd.h"
 
 /////////////////////////////////////////////////////////////////////////////

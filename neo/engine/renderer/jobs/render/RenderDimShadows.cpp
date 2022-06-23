@@ -1,7 +1,7 @@
 // draw_shadow.cpp
 //
 
-#include "../../tr_local.h"
+#include "../../RenderSystem_local.h"
 
 static idRenderMatrix	lightProjectionMatrix;
 static float	unflippedLightMatrix[16];

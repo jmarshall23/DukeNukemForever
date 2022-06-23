@@ -30,7 +30,7 @@ If you have questions concerning this license or the applicable additional terms
 #pragma hdrstop
 
 #include "Model_local.h"
-#include "../renderer/tr_local.h"	// just for R_FreeWorldInteractions and R_CreateWorldInteractions
+#include "../renderer/RenderSystem_local.h"	// just for R_FreeWorldInteractions and R_CreateWorldInteractions
 
 
 class idRenderModelManagerLocal : public idRenderModelManager {

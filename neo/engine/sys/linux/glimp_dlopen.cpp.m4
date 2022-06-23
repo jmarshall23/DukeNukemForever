@@ -1,5 +1,5 @@
 #include "idlib/precompiled.h"
-#include "renderer/tr_local.h"
+#include "renderer/RenderSystem_local.h"
 #include "sys/linux/local.h"
 #include "glimp_local.h"
 

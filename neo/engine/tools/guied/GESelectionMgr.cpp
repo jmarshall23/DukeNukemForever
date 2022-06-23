@@ -29,7 +29,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #pragma hdrstop
 
-#include "../../renderer/tr_local.h"
+#include "../../renderer/RenderSystem_local.h"
 #include "../../sys/win32/win_local.h"
 
 #include "GEApp.h"

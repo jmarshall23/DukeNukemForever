@@ -529,7 +529,7 @@
 		812257860912BC79005D34B9 /* tr_guisurf.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tr_guisurf.cpp; sourceTree = "<group>"; };
 		812257870912BC79005D34B9 /* tr_light.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tr_light.cpp; sourceTree = "<group>"; };
 		812257880912BC79005D34B9 /* tr_lightrun.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tr_lightrun.cpp; sourceTree = "<group>"; };
-		812257890912BC79005D34B9 /* tr_local.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = tr_local.h; sourceTree = "<group>"; };
+		812257890912BC79005D34B9 /* RenderSystem_local.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = RenderSystem_local.h; sourceTree = "<group>"; };
 		8122578A0912BC79005D34B9 /* tr_main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tr_main.cpp; sourceTree = "<group>"; };
 		8122578B0912BC79005D34B9 /* tr_orderIndexes.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tr_orderIndexes.cpp; sourceTree = "<group>"; };
 		8122578C0912BC79005D34B9 /* tr_polytope.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = tr_polytope.cpp; sourceTree = "<group>"; };
@@ -1048,7 +1048,7 @@
 				812257860912BC79005D34B9 /* tr_guisurf.cpp */,
 				812257870912BC79005D34B9 /* tr_light.cpp */,
 				812257880912BC79005D34B9 /* tr_lightrun.cpp */,
-				812257890912BC79005D34B9 /* tr_local.h */,
+				812257890912BC79005D34B9 /* RenderSystem_local.h */,
 				8122578A0912BC79005D34B9 /* tr_main.cpp */,
 				8122578B0912BC79005D34B9 /* tr_orderIndexes.cpp */,
 				8122578C0912BC79005D34B9 /* tr_polytope.cpp */,
