@@ -237,6 +237,8 @@ public:
 	void			Warning( const char *str, ... ) id_attribute((format(printf,2,3)));
 					// returns true if Error() was called with LEXFL_NOFATALERRORS or LEXFL_NOERRORS set
 	bool			HadError( void ) const;
+					// pulls the entire line, including the \n at the end
+	const char*		ParseCompleteLine(idStr& out);
 
 					// set the base folder to load files from
 	static void		SetBaseFolder( const char *path );

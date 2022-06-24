@@ -39,6 +39,8 @@ If you have questions concerning this license or the applicable additional terms
 #define ENGINE_VERSION					"Duke Nukem Forever 0.01"	// printed in console
 #define BUILD_NUMBER					1
 
+#define BUILD_TIME						__DATE__ " " __TIME__
+
 // paths
 #define	CD_BASEDIR						"Doom"
 #ifdef ID_DEMO_BUILD
