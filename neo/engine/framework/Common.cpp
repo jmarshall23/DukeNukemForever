@@ -28,6 +28,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "../renderer/Image.h"
 #include "ConsoleHistory.h"
+#include "../sys/win32/win_local.h"
 
 #define	MAX_PRINT_MSG_SIZE	4096
 #define MAX_WARNING_LIST	256
@@ -159,6 +160,7 @@ public:
 private:
 	void						InitCommands( void );
 	void						InitRenderSystem( void );
+	void						InitImGui(void);
 	void						InitSIMD( void );
 	bool						AddStartupCommands( void );
 	void						ParseCommandLine( int argc, const char **argv );
@@ -2389,6 +2391,34 @@ void idCommonLocal::InitCommands( void ) {
 #endif
 }
 
+
+// jmarshall
+#ifdef ID_ALLOW_TOOLS
+/*
+====================
+idCommonLocal::InitImGui
+====================
+*/
+void idCommonLocal::InitImGui(void) {
+	IMGUI_CHECKVERSION();
+	ImGui::CreateContext();
+	ImGuiIO& io = ImGui::GetIO(); (void)io;
+	//io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+	//io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      // Enable Gamepad Controls
+
+	// Setup Dear ImGui style
+	ImGui::StyleColorsDark();
+	//ImGui::StyleColorsClassic();
+
+	// Setup Platform/Renderer bindings
+	ImGui_ImplWin32_Init(win32.hWnd);
+	ImGui_ImplOpenGL3_Init();
+
+	io.Fonts->AddFontFromFileTTF("editor/Roboto-Medium.ttf", 16.0f);
+}
+#endif
+// jmarshall end
+
 /*
 =================
 idCommonLocal::InitRenderSystem
@@ -2400,6 +2430,10 @@ void idCommonLocal::InitRenderSystem( void ) {
 	}
 
 	renderSystem->InitOpenGL();
+
+#ifdef ID_ALLOW_TOOLS
+	InitImGui();
+#endif
 }
 
 /*

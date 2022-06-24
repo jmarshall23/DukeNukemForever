@@ -173,6 +173,13 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 // game
 #include "../game/Game.h"
 
+// Externals that need to be available across all the engine.
+#ifndef _D3SDK
+#include "../engine/external/imgui/imgui.h"
+#include "../engine/external/imgui/examples/imgui_impl_opengl3.h"
+#include "../engine/external/imgui/examples/imgui_impl_win32.h"
+#endif
+
 //-----------------------------------------------------
 
 #ifndef _D3SDK
@@ -200,6 +207,9 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 // The editor entry points are always declared, but may just be
 // stubbed out on non-windows platforms.
 #include "../engine/tools/edit_public.h"
+// jmarshall
+#include "../engine/tools/edit_guis.h"
+// jmarshall end
 
 // Compilers for map, model, video etc. processing.
 #include "../engine/tools/compilers/compiler_public.h"

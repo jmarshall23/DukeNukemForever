@@ -126,6 +126,7 @@ file(GLOB toolSourceFiles
     "engine/tools/comafx/*.cpp*"
     "engine/tools/radiant/*.cpp*"
     "engine/tools/common/*.cpp*"
+    "engine/tools/guis/*.cpp*"
     "engine/tools/common/PropTree/*.cpp*"
     "engine/tools/compilers/dmap/*.cpp*"
     "engine/tools/compilers/navmesh/*.cpp*"
@@ -146,7 +147,23 @@ file(GLOB engineDependFiles
     "engine/sound/OggVorbis/vorbissrc/*.c*"
 ) 
 
-add_library(engineExternal STATIC ${engineDependFiles})
+set(src_imgui
+    "./engine/external/imgui/imconfig.h"
+	"./engine/external/imgui/imgui.cpp"
+	"./engine/external/imgui/imgui.h"
+	"./engine/external/imgui/imgui_draw.cpp"
+	"./engine/external/imgui/imgui_internal.h"
+	"./engine/external/imgui/imgui_widgets.cpp"
+	"./engine/external/imgui/imstb_rectpack.h"
+	"./engine/external/imgui/imstb_textedit.h"
+	"./engine/external/imgui/imstb_truetype.h"
+	"./engine/external/imgui/examples/imgui_impl_opengl3.cpp"
+	"./engine/external/imgui/examples/imgui_impl_opengl3.h"
+	"./engine/external/imgui/examples/imgui_impl_win32.cpp"
+	"./engine/external/imgui/examples/imgui_impl_win32.h"
+)
+
+add_library(engineExternal STATIC ${engineDependFiles} ${src_imgui})
 set_target_properties(engineExternal PROPERTIES LINK_FLAGS "/PDB:\"engineExternal.pdb\"")
  
 # Engine Project

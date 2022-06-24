@@ -29,6 +29,8 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __RENDERER_H__
 #define __RENDERER_H__
 
+class rvmToolGui;
+
 /*
 ===============================================================================
 
@@ -266,6 +268,9 @@ public:
 
 	// Force invalidates a specific shadow map in the cache. 
 	virtual void			InvalidateShadowMap(int uniqueLightID) = 0;
+
+	// Renders a tool gui to the screen.
+	virtual void			RenderToolGui(rvmToolGui* toolGui) = 0;
 };
 
 extern idRenderSystem *			renderSystem;

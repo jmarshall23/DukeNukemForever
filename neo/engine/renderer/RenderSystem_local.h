@@ -204,6 +204,7 @@ typedef enum {
 	RC_DRAW_VIEW,
 	RC_SET_BUFFER,
 	RC_COPY_RENDER,
+	RC_RENDER_TOOLGUI,
 	RC_SWAP_BUFFERS		// can't just assume swap at end of list because
 						// of forced list submission before syncs
 } renderCommand_t;
@@ -222,6 +223,11 @@ typedef struct {
 	renderCommand_t		commandId, *next;
 	idRenderWorldCommitted	*viewDef;
 } drawSurfsCommand_t;
+
+typedef struct {
+	renderCommand_t		commandId, * next;
+	rvmToolGui* toolGui;
+} drawToolGuiCommand_t;
 
 typedef struct {
 	renderCommand_t		commandId, *next;
@@ -469,6 +475,7 @@ public:
 	rvmDeclRenderProg*		FindRenderProgram(const char* name) { return (rvmDeclRenderProg*)declManager->FindType(DECL_RENDERPROGS, name); }	
 	virtual void			NukeShadowMapCache(void);
 	virtual void			InvalidateShadowMap(int uniqueLightID);
+	virtual void			RenderToolGui(rvmToolGui* toolGui);
 public:
 	// internal functions
 							idRenderSystemLocal( void );

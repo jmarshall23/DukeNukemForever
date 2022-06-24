@@ -1080,7 +1080,7 @@ void	idConsoleLocal::Draw(bool forceFullScreen) {
 
 	if (com_showFPS.GetInteger() > 0) {
 #ifdef ID_ALLOW_TOOLS
-		//renderSystem->RenderToolGui(&displayFrameRateTool);
+		renderSystem->RenderToolGui(&displayFrameRateTool);
 #endif
 	}
 
