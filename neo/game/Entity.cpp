@@ -4303,6 +4303,16 @@ idVec3 idEntity::GetOrigin(void)
 
 /*
 ================
+idEntity::GetAxis
+================
+*/
+idMat3 idEntity::GetAxis(void) 
+{
+	return GetPhysics()->GetAxis();
+}
+
+/*
+================
 idEntity::Event_GetLinearVelocity
 ================
 */

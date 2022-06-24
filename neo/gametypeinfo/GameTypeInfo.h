@@ -9,7 +9,7 @@
 
 	586 constants
 	56 enums
-	293 classes/structs/unions
+	294 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -1454,6 +1454,14 @@ static classVariableInfo_t DnMeshComponent_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t DnLightComponent_typeInfo[] = {
+	{ "renderLight_t", "renderLightParams", (intptr_t)(&((DnLightComponent *)0)->renderLightParams), sizeof( ((DnLightComponent *)0)->renderLightParams ) },
+	{ ": qhandle_t", "renderLightHandle", (intptr_t)(&((DnLightComponent *)0)->renderLightHandle), sizeof( ((DnLightComponent *)0)->renderLightHandle ) },
+	{ "idEntity *", "parentEntity", (intptr_t)(&((DnLightComponent *)0)->parentEntity), sizeof( ((DnLightComponent *)0)->parentEntity ) },
+	{ "jointHandle_t", "bindJoint", (intptr_t)(&((DnLightComponent *)0)->bindJoint), sizeof( ((DnLightComponent *)0)->bindJoint ) },
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t idEventDef_typeInfo[] = {
 	{ ": const char *", "name", (intptr_t)(&((idEventDef *)0)->name), sizeof( ((idEventDef *)0)->name ) },
 	{ "const char *", "formatspec", (intptr_t)(&((idEventDef *)0)->formatspec), sizeof( ((idEventDef *)0)->formatspec ) },
@@ -1679,11 +1687,11 @@ static classVariableInfo_t frameLookup_t_typeInfo[] = {
 	{ NULL, 0 }
 };
 
-static classVariableInfo_t class_27_class_27_typeInfo[] = {
-//	{ "const idSoundShader *", "soundShader", (intptr_t)(&((class_27::class_27 *)0)->soundShader), sizeof( ((class_27::class_27 *)0)->soundShader ) },
-//	{ "const function_t *", "function", (intptr_t)(&((class_27::class_27 *)0)->function), sizeof( ((class_27::class_27 *)0)->function ) },
-//	{ "const idDeclSkin *", "skin", (intptr_t)(&((class_27::class_27 *)0)->skin), sizeof( ((class_27::class_27 *)0)->skin ) },
-//	{ "int", "index", (intptr_t)(&((class_27::class_27 *)0)->index), sizeof( ((class_27::class_27 *)0)->index ) },
+static classVariableInfo_t class_28_class_28_typeInfo[] = {
+//	{ "const idSoundShader *", "soundShader", (intptr_t)(&((class_28::class_28 *)0)->soundShader), sizeof( ((class_28::class_28 *)0)->soundShader ) },
+//	{ "const function_t *", "function", (intptr_t)(&((class_28::class_28 *)0)->function), sizeof( ((class_28::class_28 *)0)->function ) },
+//	{ "const idDeclSkin *", "skin", (intptr_t)(&((class_28::class_28 *)0)->skin), sizeof( ((class_28::class_28 *)0)->skin ) },
+//	{ "int", "index", (intptr_t)(&((class_28::class_28 *)0)->index), sizeof( ((class_28::class_28 *)0)->index ) },
 	{ NULL, 0 }
 };
 
@@ -4562,6 +4570,7 @@ static classVariableInfo_t DnAI_typeInfo[] = {
 	{ "bool", "AI_ONGROUND", (intptr_t)(&((DnAI *)0)->AI_ONGROUND), sizeof( ((DnAI *)0)->AI_ONGROUND ) },
 	{ "bool", "AI_BLOCKED", (intptr_t)(&((DnAI *)0)->AI_BLOCKED), sizeof( ((DnAI *)0)->AI_BLOCKED ) },
 	{ "idStr", "currentAnimation", (intptr_t)(&((DnAI *)0)->currentAnimation), sizeof( ((DnAI *)0)->currentAnimation ) },
+	{ "DnLightComponent", "lightRigComponent", (intptr_t)(&((DnAI *)0)->lightRigComponent), sizeof( ((DnAI *)0)->lightRigComponent ) },
 	{ NULL, 0 }
 };
 
@@ -4654,6 +4663,7 @@ static classVariableInfo_t idThread_typeInfo[] = {
 static classTypeInfo_t classTypeInfo[] = {
 	{ "DnComponent", "", sizeof(DnComponent), DnComponent_typeInfo },
 	{ "DnMeshComponent", "DnComponent", sizeof(DnMeshComponent), DnMeshComponent_typeInfo },
+	{ "DnLightComponent", "DnComponent", sizeof(DnLightComponent), DnLightComponent_typeInfo },
 	{ "idEventDef", "", sizeof(idEventDef), idEventDef_typeInfo },
 	{ "idEvent", "", sizeof(idEvent), idEvent_typeInfo },
 	{ "idEventArg", "", sizeof(idEventArg), idEventArg_typeInfo },
@@ -4679,7 +4689,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "jointInfo_t", "", sizeof(jointInfo_t), jointInfo_t_typeInfo },
 	{ "jointMod_t", "", sizeof(jointMod_t), jointMod_t_typeInfo },
 	{ "frameLookup_t", "", sizeof(frameLookup_t), frameLookup_t_typeInfo },
-//	{ "class_27::class_27", "", sizeof(class_27::class_27), class_27_class_27_typeInfo },
+//	{ "class_28::class_28", "", sizeof(class_28::class_28), class_28_class_28_typeInfo },
 	{ "frameCommand_t", "", sizeof(frameCommand_t), frameCommand_t_typeInfo },
 	{ "animFlags_t", "", sizeof(animFlags_t), animFlags_t_typeInfo },
 	{ "idMD5Anim", "", sizeof(idMD5Anim), idMD5Anim_typeInfo },

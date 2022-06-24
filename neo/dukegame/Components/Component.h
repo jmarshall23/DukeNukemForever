@@ -8,3 +8,4 @@ public:
 };
 
 #include "MeshComponent.h"
+#include "LightComponent.h"

@@ -209,6 +209,8 @@ private:
 	bool					AI_BLOCKED;
 
 	idStr					currentAnimation;
+
+	DnLightComponent		lightRigComponent;
 };
 
 #include "Pigcop.h"

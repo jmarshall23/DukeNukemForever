@@ -55,6 +55,11 @@ void DnMeshComponent::Think()
 
 		animatedEntity->GetJointWorldTransform(bindJoint, gameLocal.time, renderEntityParams.origin, renderEntityParams.axis);
 	}
+	else
+	{
+		renderEntityParams.origin = parentEntity->GetOrigin();
+		renderEntityParams.axis = parentEntity->GetAxis();
+	}
 
 	gameRenderWorld->UpdateEntityDef(renderEntityHandle, &renderEntityParams);
 }

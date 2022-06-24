@@ -36,6 +36,11 @@ void DnAI::Spawn(void)
 	BecomeActive(TH_THINK);
 
 	SetState("state_Begin");
+
+	// Add our light rig.
+	lightRigComponent.Init(this, idVec3(200, 200, 300), idVec3(1, 1, 1), true);
+	lightRigComponent.BindToJoint("ROOT");
+	RegisterComponent(&lightRigComponent);
 }
 
 /*

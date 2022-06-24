@@ -448,6 +448,7 @@ private:
 	void					UpdatePVSAreas( void );
 public:
 	idVec3					GetOrigin(void);
+	idMat3					GetAxis(void);
 
 	// events
 	void					Event_GetName( void );
