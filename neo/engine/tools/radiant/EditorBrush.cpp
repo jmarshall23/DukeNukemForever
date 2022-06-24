@@ -4411,6 +4411,9 @@ void Brush_Draw(brush_t *b, bool bSelected) {
 	if ( b->hiddenBrush ) {
 		return;
 	}
+// jmarshall - proper fix for editor texture bug #openglisstupid
+	glDisable(GL_TEXTURE_2D);
+// jmarshall end
 
 	Brush_DrawCurve( b, bSelected, true );
 
@@ -4455,11 +4458,17 @@ void Brush_Draw(brush_t *b, bool bSelected) {
 
 	if ( b->owner->eclass->entityModel ) {
 		glColor3fv( b->owner->eclass->color.ToFloatPtr() );
+// jmarshall - proper fix for editor texture bug #openglisstupid
+		glEnable(GL_TEXTURE_2D);
+// jmarshall end
 		Brush_DrawModel( b, true, bSelected );
 		return;
 	}
 
 	Brush_DrawEmitter( b, bSelected, true );
+// jmarshall - proper fix for editor texture bug #openglisstupid
+	glEnable(GL_TEXTURE_2D);
+// jmarshall end
 
 	if ( b->modelHandle > 0 && !model ) {
 		Brush_DrawModelInfo( b, bSelected );
