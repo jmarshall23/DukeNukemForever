@@ -4,7 +4,7 @@
 
 #include "../../game/Game_local.h"
 
-#define PIGCOP_FIRE_DISTANCE			400
+#define PIGCOP_FIRE_DISTANCE			500
 
 CLASS_DECLARATION(DnAI, DnPigcop)
 END_CLASS
