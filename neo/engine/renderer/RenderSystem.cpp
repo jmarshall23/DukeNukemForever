@@ -985,3 +985,23 @@ idImage* idRenderSystemLocal::CreateImage(const char* name, idImageOpts* opts, t
 
 	return globalImages->ScratchImage(name, opts, textureFilter, TR_CLAMP, TD_DEFAULT);
 }
+
+/*
+===============
+idRenderSystemLocal::NukeShadowMapCache
+===============
+*/
+void idRenderSystemLocal::NukeShadowMapCache(void)
+{
+	renderShadowSystem.NukeShadowMapCache();
+}
+
+/*
+===============
+idRenderSystemLocal::InvalidateShadowMap
+===============
+*/
+void idRenderSystemLocal::InvalidateShadowMap(int uniqueLightID)
+{
+
+}

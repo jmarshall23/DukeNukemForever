@@ -65,6 +65,9 @@ public:
 
 	// Nukes the shadow map cache.
 	void				NukeShadowMapCache(void);
+
+	// Invalidates a specific shadow map in the cache.
+	void				InvalidateShadowMapForLight(int uniqueLightId);
 private:
 	static idCVar		r_shadowMapAtlasSize;
 	static idCVar		r_shadowMapAtlasSliceSize;

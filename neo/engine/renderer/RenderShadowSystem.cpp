@@ -220,3 +220,21 @@ void rvmRenderShadowSystem::NukeShadowMapCache(void) {
 		shadowAtlasEntries[i].lastTouchedTime = -1;
 	}
 }
+
+/*
+==========================
+rvmRenderShadowSystem::InvalidateShadowMapForLight
+==========================
+*/
+void rvmRenderShadowSystem::InvalidateShadowMapForLight(int uniqueLightId) {
+	int numEntriesPerAxis = r_shadowMapAtlasSize.GetInteger() / r_shadowMapAtlasSliceSize.GetInteger();
+	for (int i = 0; i < numEntriesPerAxis * numEntriesPerAxis; i++) {
+		if (shadowAtlasEntries[i].uniqueLightId == uniqueLightId) {
+			shadowAtlasEntries[i].uniqueLightId = -1;
+			shadowAtlasEntries[i].lastTouchedTime = -1;
+			return;
+		}
+	}
+
+	common->Warning("InvalidateShadowMapForLight: %d is not present in the cache!", uniqueLightId);
+}

@@ -1900,6 +1900,13 @@ CCamWnd::ToggleRenderMode
 void CCamWnd::ToggleRenderMode() {
 	renderMode ^= 1;
 	UpdateCaption();
+
+// jmarshall - if swapping back on to real time preview, nuke the shadow map cache.
+	if (renderMode)
+	{
+		renderSystem->NukeShadowMapCache();
+	}
+// jmarshall end
 }
 
 /*
