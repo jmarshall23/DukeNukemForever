@@ -118,6 +118,10 @@ public:
 
 	int				GetDimension( void ) const;
 
+// jmarshall
+	idVec3			RayIntersection2(const idVec3& start, const idVec3& dir);
+// jmarshall end
+
 	const idVec4 &	ToVec4( void ) const;
 	idVec4 &		ToVec4( void );
 	const float *	ToFloatPtr( void ) const;
@@ -387,5 +391,20 @@ ID_INLINE const float *idPlane::ToFloatPtr( void ) const {
 ID_INLINE float *idPlane::ToFloatPtr( void ) {
 	return reinterpret_cast<float *>(&a);
 }
+
+// jmarshall
+ID_INLINE idVec3 idPlane::RayIntersection2(const idVec3& start, const idVec3& dir) {
+	float denom = DotProduct(Normal(), dir);
+
+	if (abs(denom) <= 1e-4f)
+		return vec3_zero;
+
+	float t = -(DotProduct(Normal(), start) + d) / DotProduct(Normal(), dir);
+	if (t <= 1e-4)
+		return vec3_zero;
+
+	return start + t * dir;
+}
+// marshall end
 
 #endif /* !__MATH_PLANE_H__ */

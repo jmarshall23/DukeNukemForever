@@ -320,6 +320,7 @@ public:
 	float			z;
 
 					idVec3( void );
+					explicit idVec3(const float xyz) { Set(xyz, xyz, xyz); }
 					explicit idVec3( const float x, const float y, const float z );
 
 	void 			Set( const float x, const float y, const float z );

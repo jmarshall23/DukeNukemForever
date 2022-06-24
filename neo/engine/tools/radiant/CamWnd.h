@@ -141,6 +141,13 @@ protected:
 	bool CullBrush (brush_t *b, bool cubicOnly);
 	void Cam_Draw();
 	void Cam_Render();
+// jmarshall
+	void HandleDrop();
+	void OnEntityCreate(unsigned int nID);
+
+	CMenu m_mnuDrop;
+	CPoint m_ptDown;
+// jmarshall end
 
 	// game renderer interaction
 	qhandle_t	worldModelDef;

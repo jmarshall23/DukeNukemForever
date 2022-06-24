@@ -46,6 +46,11 @@ static char THIS_FILE[] = __FILE__;
 #endif
 extern void DrawPathLines();
 
+// jmarshall
+extern CPtrArray	g_ptrMenus;
+extern bool MergeMenu(CMenu* pMenuDestination, const CMenu* pMenuAdd, bool bTopLevel /*=false*/);
+// jmarshall end
+
 int g_axialAnchor = -1;
 int g_axialDest = -1;
 bool g_bAxialMode = false;
@@ -117,6 +122,7 @@ BEGIN_MESSAGE_MAP(CCamWnd, CWnd)
 	ON_WM_KILLFOCUS()
 	ON_WM_SETFOCUS()
 	ON_WM_TIMER()
+	ON_COMMAND_RANGE(ID_ENTITY_START, ID_ENTITY_END, OnEntityCreate)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 /*
@@ -306,7 +312,8 @@ void CCamWnd::OnMButtonUp(UINT nFlags, CPoint point) {
  =======================================================================================================================
  */
 void CCamWnd::OnRButtonDown(UINT nFlags, CPoint point) {
-	OriginalMouseDown(nFlags, point);
+	//OriginalMouseDown(nFlags, point);
+	m_ptDown = point;
 }
 
 /*
@@ -314,7 +321,8 @@ void CCamWnd::OnRButtonDown(UINT nFlags, CPoint point) {
  =======================================================================================================================
  */
 void CCamWnd::OnRButtonUp(UINT nFlags, CPoint point) {
-	OriginalMouseUp(nFlags, point);
+	//OriginalMouseUp(nFlags, point);
+	HandleDrop();
 }
 
 /*
@@ -2179,3 +2187,210 @@ void CCamWnd::UpdateCameraView() {
 	}
 }
 
+// jmarshall
+void CCamWnd::HandleDrop() {
+	if (g_PrefsDlg.m_bRightClick == false) {
+		return;
+	}
+
+	if (!m_mnuDrop.GetSafeHmenu()) {		// first time, load it up
+		m_mnuDrop.CreatePopupMenu();
+
+		CMenu* drop = new CMenu;
+		drop->LoadMenu(IDR_MENU_DROP);
+
+		MergeMenu(&m_mnuDrop, drop, false);
+
+		int		nID = ID_ENTITY_START;
+
+		CMenu* pMakeEntityPop = &m_mnuDrop;
+
+		// Todo: Make this a config option maybe?
+		const int entitiesOnSubMenu = false;
+		if (entitiesOnSubMenu) {
+			pMakeEntityPop = new CMenu;
+			pMakeEntityPop->CreateMenu();
+		}
+
+		CMenu* pChild = NULL;
+
+		eclass_t* e;
+		CString		strActive;
+		CString		strLast;
+		CString		strName;
+		for (e = eclass; e; e = e->next) {
+			strLast = strName;
+			strName = e->name;
+
+			int n_ = strName.Find("_");
+			if (n_ > 0) {
+				CString strLeft = strName.Left(n_);
+				CString strRight = strName.Right(strName.GetLength() - n_ - 1);
+				if (strLeft == strActive) { // this is a child
+					ASSERT(pChild);
+					pChild->AppendMenu(MF_STRING, nID++, strName);
+				}
+				else {
+					if (pChild) {
+						pMakeEntityPop->AppendMenu(
+							MF_POPUP,
+							reinterpret_cast <unsigned int> (pChild->GetSafeHmenu()),
+							strActive
+						);
+						g_ptrMenus.Add(pChild);
+
+						// pChild->DestroyMenu(); delete pChild;
+						pChild = NULL;
+					}
+
+					strActive = strLeft;
+					pChild = new CMenu;
+					pChild->CreateMenu();
+					pChild->AppendMenu(MF_STRING, nID++, strName);
+				}
+			}
+			else {
+				if (pChild) {
+					pMakeEntityPop->AppendMenu(
+						MF_POPUP,
+						reinterpret_cast <unsigned int> (pChild->GetSafeHmenu()),
+						strActive
+					);
+					g_ptrMenus.Add(pChild);
+
+					// pChild->DestroyMenu(); delete pChild;
+					pChild = NULL;
+				}
+
+				strActive = "";
+				pMakeEntityPop->AppendMenu(MF_STRING, nID++, strName);
+			}
+		}
+		if (pMakeEntityPop != &m_mnuDrop) {
+			m_mnuDrop.AppendMenu(
+				MF_POPUP,
+				reinterpret_cast <unsigned int> (pMakeEntityPop->GetSafeHmenu()),
+				"Make Entity"
+			);
+		}
+	}
+
+	CPoint	ptMouse;
+	GetCursorPos(&ptMouse);
+	m_mnuDrop.TrackPopupMenu(TPM_LEFTALIGN | TPM_LEFTBUTTON | TPM_RIGHTBUTTON, ptMouse.x, ptMouse.y, this);
+}
+
+void CreateEntityFromName(char* pName, brush_t* pBrush, bool forceFixed, idVec3 min, idVec3 max, idVec3 org);
+
+brush_t* CreateEntityBrush3D(int x, int y, int z) {
+	int		i;
+	float	temp;
+	brush_t* n;
+	idBounds brushBounds = idBounds(idVec3(-g_qeglobals.d_gridsize), idVec3(g_qeglobals.d_gridsize));
+
+	brushBounds.TranslateSelf(idVec3(x, y, z));
+
+	n = Brush_Create(brushBounds[0], brushBounds[1], &g_qeglobals.d_texturewin.texdef);
+	if (!n) {
+		return NULL;
+	}
+
+	Brush_AddToList(n, &selected_brushes);
+	Entity_LinkBrush(world_entity, n);
+	Brush_Build(n);
+	return n;
+}
+
+
+void CreateCameraRightClickEntity(int x, int y, int z, char* pName) {
+	idVec3	min, max, org;
+	Select_GetBounds(min, max);
+	Select_GetMid(org);
+
+	brush_t* pBrush;
+	pBrush = CreateEntityBrush3D(x, y, z);
+	min.Zero();
+	max.Zero();
+	CreateEntityFromName(pName, pBrush, true, min, max, org);
+}
+
+//
+// =======================================================================================================================
+//    gets called for drop down menu messages TIP: it's not always about EntityCreate
+// =======================================================================================================================
+//
+void CCamWnd::OnEntityCreate(unsigned int nID) {
+	if (m_mnuDrop.GetSafeHmenu()) {
+		CString strItem;
+		m_mnuDrop.GetMenuString(nID, strItem, MF_BYCOMMAND);
+
+		if (strItem.CompareNoCase("Add to...") == 0) {
+			//
+			// ++timo TODO: fill the menu with current groups? this one is for adding to
+			// existing groups only
+			//
+			common->Printf("TODO: Add to... in CXYWnd::OnEntityCreate\n");
+		}
+		else if (strItem.CompareNoCase("Remove") == 0) {
+			// remove selected brushes from their current group
+			brush_t* b;
+			for (b = selected_brushes.next; b != &selected_brushes; b = b->next) {
+			}
+		}
+
+		// ++timo FIXME: remove when all hooks are in
+		if
+			(
+				strItem.CompareNoCase("Add to...") == 0 ||
+				strItem.CompareNoCase("Remove") == 0 ||
+				strItem.CompareNoCase("Name...") == 0 ||
+				strItem.CompareNoCase("New group...") == 0
+				) {
+			common->Printf("TODO: hook drop down group menu\n");
+			return;
+		}
+
+		// m_ptDown.x, m_ptDown.y
+
+		idVec3	dir;
+		float	f, r, u;
+		int		i;
+
+		CRect	r2;
+		GetClientRect(r2);
+
+		float cursor_invert_y = r2.bottom - 1 - m_ptDown.y;
+
+		// calc ray direction
+		u = (float)(cursor_invert_y - m_Camera.height / 2) / (m_Camera.width / 2);
+		r = (float)(m_ptDown.x - m_Camera.width / 2) / (m_Camera.width / 2);
+		f = 1;
+
+		for (i = 0; i < 3; i++) {
+			dir[i] = m_Camera.vpn[i] * f + m_Camera.vright[i] * r + m_Camera.vup[i] * u;
+		}
+
+		dir.Normalize();
+
+		idVec3 origin = m_Camera.origin;
+
+		qertrace_t	t;
+
+		t = Test_Ray(origin, dir, 0);
+
+		if (!t.brush) {
+			return;
+		}
+
+		idVec3 hit = t.face->plane.RayIntersection2(origin, dir);
+
+		Select_Deselect();
+
+		CreateCameraRightClickEntity(hit.x, hit.y, hit.z, strItem.GetBuffer(0));
+
+		Sys_UpdateWindows(W_ALL);
+
+		// OnLButtonDown((MK_LBUTTON | MK_SHIFT), CPoint(m_ptDown.x+2, m_ptDown.y+2));
+	}
+}
+// jmarshall end
