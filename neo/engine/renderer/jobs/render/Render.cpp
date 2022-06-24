@@ -679,7 +679,7 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 	}
 
 	inter.surf = surf;
-	inter.lightFalloffImage = vLight->falloffImage;
+//	inter.lightFalloffImage = vLight->falloffImage;
 
 	R_GlobalPointToLocal( surf->space->modelMatrix, vLight->globalLightOrigin, inter.localLightOrigin.ToVec3() );
 	R_GlobalPointToLocal( surf->space->modelMatrix, backEnd.viewDef->renderView.vieworg, inter.localViewOrigin.ToVec3() );
@@ -701,9 +701,9 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 			continue;
 		}
 
-		inter.lightImage = lightStage->texture.image;
+	//	inter.lightImage = lightStage->texture.image;
 
-		memcpy( inter.lightProjection, lightProject, sizeof( inter.lightProjection ) );
+//		memcpy( inter.lightProjection, lightProject, sizeof( inter.lightProjection ) );
 		// now multiply the texgen by the light texture matrix
 		if ( lightStage->texture.hasMatrix ) {
 			RB_GetShaderTextureMatrix( lightRegs, &lightStage->texture, backEnd.lightTextureMatrix );

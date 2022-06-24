@@ -166,8 +166,6 @@ const int	MAX_CLIP_PLANES	= 1;				// we may expand this to six for some subview 
 typedef struct {
 	const drawSurf_t *	surf;
 
-	idImage *			lightImage;
-	idImage *			lightFalloffImage;
 	idImage *			bumpImage;
 	idImage *			diffuseImage;
 	idImage *			specularImage;
@@ -182,7 +180,6 @@ typedef struct {
 	// these are loaded into the vertex program
 	idVec4				localLightOrigin;
 	idVec4				localViewOrigin;
-	idVec4				lightProjection[4];	// in local coordinates, possibly with a texture matrix baked in
 	idVec4				bumpMatrix[2];
 	idVec4				diffuseMatrix[2];
 	idVec4				specularMatrix[2];
@@ -553,10 +550,6 @@ public:
 	rvmDeclRenderParam*		lightProgTextureParam;
 	rvmDeclRenderParam*		bumpmatrixSParam;
 	rvmDeclRenderParam*		bumpmatrixTParam;
-	rvmDeclRenderParam*		lightfalloffSParam;
-	rvmDeclRenderParam*		lightProjectionSParam;
-	rvmDeclRenderParam*		lightProjectionTParam;
-	rvmDeclRenderParam*		lightProjectionQParam;
 	rvmDeclRenderParam*		diffuseMatrixSParam;
 	rvmDeclRenderParam*		diffuseMatrixTParam;
 	rvmDeclRenderParam*		specularMatrixSParam;
@@ -577,6 +570,8 @@ public:
 	rvmDeclRenderParam* mvpMatrixY;
 	rvmDeclRenderParam* mvpMatrixZ;
 	rvmDeclRenderParam* mvpMatrixW;
+
+	rvmDeclRenderParam* globalLightExtentsParam;
 
 	rvmDeclRenderParam* vertexScaleAddParam;
 	rvmDeclRenderParam* vertexScaleModulateParam;

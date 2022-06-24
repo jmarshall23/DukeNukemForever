@@ -117,7 +117,7 @@ idCVar r_ignore2( "r_ignore2", "0", CVAR_RENDERER, "used for random debugging wi
 idCVar r_usePreciseTriangleInteractions( "r_usePreciseTriangleInteractions", "0", CVAR_RENDERER | CVAR_BOOL, "1 = do winding clipping to determine if each ambiguous tri should be lit" );
 idCVar r_useCulling( "r_useCulling", "2", CVAR_RENDERER | CVAR_INTEGER, "0 = none, 1 = sphere, 2 = sphere + box", 0, 2, idCmdSystem::ArgCompletion_Integer<0,2> );
 idCVar r_useLightCulling( "r_useLightCulling", "0", CVAR_RENDERER | CVAR_INTEGER, "0 = none, 1 = box, 2 = exact clip of polyhedron faces, 3 = also areas", 0, 3, idCmdSystem::ArgCompletion_Integer<0,3> );
-idCVar r_useLightScissors( "r_useLightScissors", "0", CVAR_RENDERER | CVAR_BOOL, "1 = use custom scissor rectangle for each light" );
+idCVar r_useLightScissors( "r_useLightScissors", "1", CVAR_RENDERER | CVAR_BOOL, "1 = use custom scissor rectangle for each light" );
 idCVar r_useClippedLightScissors( "r_useClippedLightScissors", "1", CVAR_RENDERER | CVAR_INTEGER, "0 = full screen when near clipped, 1 = exact when near clipped, 2 = exact always", 0, 2, idCmdSystem::ArgCompletion_Integer<0,2> );
 idCVar r_useEntityCulling( "r_useEntityCulling", "1", CVAR_RENDERER | CVAR_BOOL, "0 = none, 1 = box" );
 idCVar r_useEntityScissors( "r_useEntityScissors", "0", CVAR_RENDERER | CVAR_BOOL, "1 = use custom scissor rectangle for each entity" );
@@ -147,7 +147,7 @@ idCVar r_flareSize( "r_flareSize", "1", CVAR_RENDERER | CVAR_FLOAT, "scale the f
 
 idCVar r_useExternalShadows( "r_useExternalShadows", "1", CVAR_RENDERER | CVAR_INTEGER, "1 = skip drawing caps when outside the light volume, 2 = force to no caps for testing", 0, 2, idCmdSystem::ArgCompletion_Integer<0,2> );
 idCVar r_useOptimizedShadows( "r_useOptimizedShadows", "1", CVAR_RENDERER | CVAR_BOOL, "use the dmap generated static shadow volumes" );
-idCVar r_useScissor( "r_useScissor2", "0", CVAR_RENDERER | CVAR_BOOL, "scissor clip as portals and lights are processed" );
+idCVar r_useScissor( "r_useScissor", "0", CVAR_RENDERER | CVAR_BOOL, "scissor clip as portals and lights are processed" );
 idCVar r_useCombinerDisplayLists( "r_useCombinerDisplayLists", "1", CVAR_RENDERER | CVAR_BOOL | CVAR_NOCHEAT, "put all nvidia register combiner programming in display lists" );
 idCVar r_useDepthBoundsTest( "r_useDepthBoundsTest", "1", CVAR_RENDERER | CVAR_BOOL, "use depth bounds test to reduce shadow fill" );
 
@@ -1921,10 +1921,6 @@ void idRenderSystemLocal::Init( void ) {
 	lightProgTextureParam = declManager->FindRenderParam("lightprogtex");
 	bumpmatrixSParam = declManager->FindRenderParam("rpbumpmatrixs");
 	bumpmatrixTParam = declManager->FindRenderParam("rpbumpmatrixt");
-	lightfalloffSParam = declManager->FindRenderParam("rplightfalloffs");
-	lightProjectionSParam = declManager->FindRenderParam("rplightprojections");
-	lightProjectionTParam = declManager->FindRenderParam("rplightprojectiont");
-	lightProjectionQParam = declManager->FindRenderParam("rplightprojectionq");
 	diffuseMatrixSParam = declManager->FindRenderParam("rpdiffusematrixs");
 	diffuseMatrixTParam = declManager->FindRenderParam("rpdiffusematrixt");
 	specularMatrixSParam = declManager->FindRenderParam("rpspecularmatrixs");
@@ -1935,6 +1931,7 @@ void idRenderSystemLocal::Init( void ) {
 	lightScaleParam = declManager->FindRenderParam("lightscale");
 	shadowMapInfoParm = declManager->FindRenderParam("shadowMapInfo");
 	globalLightOriginParam = declManager->FindRenderParam("globalLightOrigin");
+	globalLightExtentsParam = declManager->FindRenderParam("globalLightExtents");
 
 	atlasLookupParam = declManager->FindRenderParam("atlasLookup");
 	shadowMapAtlasParam = declManager->FindRenderParam("shadowMapAtlas");

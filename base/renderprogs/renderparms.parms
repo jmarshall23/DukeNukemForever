@@ -16,10 +16,6 @@ renderParm shadowMapInfo { float4 }
 
 renderParm  rpbumpmatrixs { float4 }
 renderParm  rpbumpmatrixt { float4 }
-renderParm  rplightfalloffs { float4 }
-renderParm  rplightprojections { float4 }
-renderParm  rplightprojectiont { float4 }
-renderParm  rplightprojectionq { float4 }
 renderParm  rpdiffusematrixs { float4 }
 renderParm  rpdiffusematrixt { float4 }
 renderParm  rpspecularmatrixs { float4 }
@@ -33,6 +29,8 @@ renderParm mvpMatrixX { float4 }
 renderParm mvpMatrixY { float4 }
 renderParm mvpMatrixZ { float4 }
 renderParm mvpMatrixW { float4 }
+
+renderParm globalLightExtents { float4 }
 
 renderParm vieworigin { float4 }
 renderParm lightorigin { float4 }

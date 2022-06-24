@@ -9,6 +9,11 @@ float dot4( vec2 a, vec4 b ) { return dot( vec4( a, 0, 1 ), b ); }
 vec4 tex2D( sampler2D samp, vec2 texCoords ) { return texture2D(samp, texCoords); }
 vec4 idtex2Dproj( sampler2D samp, vec4 texCoords ) { return texture2DProj( samp, texCoords.xyw ); }
 
+float saturate( float v ) { return clamp( v, 0.0, 1.0 ); }
+vec2 saturate( vec2 v ) { return clamp( v, 0.0, 1.0 ); }
+vec3 saturate( vec3 v ) { return clamp( v, 0.0, 1.0 ); }
+vec4 saturate( vec4 v ) { return clamp( v, 0.0, 1.0 ); }
+
 // https://www.gamedev.net/forums/topic/687535-implementing-a-cube-map-lookup-function/
 vec3 ComputeSampleCube( const vec3 v)
 {
@@ -99,4 +104,18 @@ float CalculateShadows(sampler2D atlasLookup, sampler2D shadowMapAtlas, vec3 ver
 	
 	float scenedepth = distance(vertexPos, lightPos);
 	return SampleShadowMapPCF(shadowMapAtlas, uv, scenedepth, ShadowMapInfo);
+}
+
+float AttenuationSpotLight( float lightDist, float maxLightDist, float falloffPower ) {
+	float attenuation = 1.0f - saturate( lightDist / maxLightDist );
+	falloffPower = max( falloffPower, 0.0f );
+	return pow( attenuation, falloffPower );
+}
+
+float AttenuationPointLight( vec3 fragmentInWorldSpace, vec4 curLightPosInWorldSpace, vec4 curLightExtents ) {
+	float falloffPower = curLightPosInWorldSpace.w;
+	vec3 perAxis = 1.0f - saturate( abs( fragmentInWorldSpace - curLightPosInWorldSpace.xyz ) / curLightExtents.xyz );			
+	float attenuation = pow( perAxis.x * perAxis.y * perAxis.z, falloffPower );
+	
+	return attenuation;
 }

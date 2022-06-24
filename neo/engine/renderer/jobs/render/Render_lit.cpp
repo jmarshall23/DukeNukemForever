@@ -57,10 +57,6 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	// load all the vertex program parameters
 	tr.lightOriginParam->SetVectorValue(din->localLightOrigin);
 	tr.viewOriginParam->SetVectorValue(din->localViewOrigin);
-	tr.lightProjectionSParam->SetVectorValue(din->lightProjection[0]);
-	tr.lightProjectionTParam->SetVectorValue(din->lightProjection[1]);
-	tr.lightProjectionQParam->SetVectorValue(din->lightProjection[2]);
-	tr.lightfalloffSParam->SetVectorValue(din->lightProjection[3]);
 	tr.bumpmatrixSParam->SetVectorValue(din->bumpMatrix[0]);
 	tr.bumpmatrixTParam->SetVectorValue(din->bumpMatrix[1]);
 	tr.diffuseMatrixSParam->SetVectorValue(din->diffuseMatrix[0]);
@@ -117,8 +113,6 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	// set the textures
 
 	tr.bumpmapTextureParam->SetImage(din->bumpImage);
-	tr.lightfalloffTextureParam->SetImage(din->lightFalloffImage);
-	tr.lightProgTextureParam->SetImage(din->lightImage);
 	tr.albedoTextureParam->SetImage(din->diffuseImage);
 	tr.specularTextureParam->SetImage(din->specularImage);
 
@@ -220,6 +214,8 @@ void idRender::DrawForwardLit( void ) {
 		if ( vLight->lightShader->IsBlendLight() ) {
 			continue;
 		}
+
+		tr.globalLightExtentsParam->SetVectorValue(idVec4(vLight->lightDef->parms.lightRadius.x, vLight->lightDef->parms.lightRadius.y, vLight->lightDef->parms.lightRadius.z, 1.0f));
 
 		// set the shadow map info.
 		idVec4 shadowMapInfo(backEnd.vLight->shadowMapSlice, renderShadowSystem.GetAtlasSampleScale(), renderShadowSystem.GetShadowMapAtlasSize(), 0);

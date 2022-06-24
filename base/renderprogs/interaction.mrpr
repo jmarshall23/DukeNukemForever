@@ -24,14 +24,14 @@ renderProg interaction
 		gl_TexCoord[1].y = dot4( attr_TexCoord0.xy, $rpbumpmatrixt );
 		
 		//# texture 2 has one texgen
-		gl_TexCoord[2] = defaultTexCoord;
-		gl_TexCoord[2].x = dot4( gl_Vertex, $rplightfalloffs );
+		//gl_TexCoord[2] = defaultTexCoord;
+		//gl_TexCoord[2].x = dot4( gl_Vertex, $rplightfalloffs );
 
 		//# texture 3 has three texgens
-		gl_TexCoord[3].x = dot4( gl_Vertex, $rplightprojections );
-		gl_TexCoord[3].y = dot4( gl_Vertex, $rplightprojectiont );
-		gl_TexCoord[3].z = 0.0f;
-		gl_TexCoord[3].w = dot4( gl_Vertex, $rplightprojectionq );
+		//gl_TexCoord[3].x = dot4( gl_Vertex, $rplightprojections );
+		//gl_TexCoord[3].y = dot4( gl_Vertex, $rplightprojectiont );
+		//gl_TexCoord[3].z = 0.0f;
+		//gl_TexCoord[3].w = dot4( gl_Vertex, $rplightprojectionq );
 
 		//# textures 4 takes the base coordinates by the texture matrix
 		gl_TexCoord[4] = defaultTexCoord;
@@ -64,10 +64,10 @@ renderProg interaction
 	pixel
 	{
 		vec4 bumpMap =			tex2D( $bumpmap, gl_TexCoord[1].xy );
-		vec4 lightFalloff =	idtex2Dproj( $lightfallofftex, gl_TexCoord[2] );
-		vec4 lightProj	=		idtex2Dproj( $lightprogtex, gl_TexCoord[3] );
 		vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
 		vec4 specMap =			tex2D( $specularmap, gl_TexCoord[4].xy );
+
+		vec3 realLightOrigin = $globalLightOrigin.xyz;
 
 		vec3 lightVector = normalize( gl_TexCoord[0].xyz );
 
@@ -80,10 +80,12 @@ renderProg interaction
 
 		vec3 diffuseColor = diffuseMap.xyz * $rpdiffusemodifier.xyz;
 		vec3 specularColor = specMap.xyz * specularContribution;
-		vec3 lightColor = dot3( localNormal, lightVector ) * lightProj.xyz * lightFalloff.xyz;
+
+		float attenuation = AttenuationPointLight(gl_TexCoord[5].xyz, vec4(realLightOrigin, 1.0), $globalLightExtents);
+		float lightColor = dot3( localNormal, lightVector ) * attenuation;
 
 		// float CalculateShadows(texture2D atlasLookup, texture2D shadowMapAtlas, float3 vertexPos, float3 lightPos, float4 ShadowMapInfo)
-		float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, $globalLightOrigin.xyz, $shadowMapInfo);
+		float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, realLightOrigin, $shadowMapInfo);
 
 		gl_FragColor.xyz = ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
 		gl_FragColor.w = 1.0;
