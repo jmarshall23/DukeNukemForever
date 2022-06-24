@@ -421,7 +421,7 @@ void R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitted* spac
 	}
 
 	// check for deformations
-	R_DeformDrawSurf(drawSurf);
+	space->DeformDrawSurf(drawSurf);
 
 	// skybox surfaces need a dynamic texgen
 	switch (shader->Texgen()) {

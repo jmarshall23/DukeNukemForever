@@ -1222,10 +1222,10 @@ static void R_ParticleDeform( drawSurf_t *surf, bool useArea ) {
 
 /*
 =================
-R_DeformDrawSurf
+idRenderModelCommitted::DeformDrawSurf
 =================
 */
-void R_DeformDrawSurf( drawSurf_t *drawSurf ) {
+void idRenderModelCommitted::DeformDrawSurf( drawSurf_t *drawSurf ) const {
 	if ( !drawSurf->material ) {
 		return;
 	}

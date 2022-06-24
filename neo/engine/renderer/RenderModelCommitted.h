@@ -15,6 +15,8 @@ class idRenderModelCommitted {
 public:
 	idScreenRect					CalcEntityScissorRectangle(void);
 	idRenderModel*					CreateDynamicModel(void);
+	void							DeformDrawSurf(drawSurf_t* drawSurf) const;
+public:
 
 	idRenderModelCommitted* next;
 
