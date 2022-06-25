@@ -87,8 +87,10 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
 				}
 			}
 
-			switch (parm->GetType())
+			if (parm->GetArraySize() == 1)
 			{
+				switch (parm->GetType())
+				{
 				case RENDERPARM_TYPE_IMAGE:
 					uniforms += va("uniform sampler2D %s;\n", name.c_str());
 					break;
@@ -98,7 +100,30 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
 				case RENDERPARM_TYPE_FLOAT:
 					uniforms += va("uniform float %s;\n", name.c_str());
 					break;
+				case RENDERPARM_TYPE_INT:
+					uniforms += va("uniform int %s;\n", name.c_str());
+					break;
+				}
 			}
+			else
+			{
+				switch (parm->GetType())
+				{
+				case RENDERPARM_TYPE_IMAGE:
+					uniforms += va("uniform sampler2D %s[%d];\n", name.c_str(), parm->GetArraySize());
+					break;
+				case RENDERPARM_TYPE_VEC4:
+					uniforms += va("uniform vec4 %s[%d];\n", name.c_str(), parm->GetArraySize());
+					break;
+				case RENDERPARM_TYPE_FLOAT:
+					uniforms += va("uniform float %s[%d];\n", name.c_str(), parm->GetArraySize());
+					break;
+				case RENDERPARM_TYPE_INT:
+					uniforms += va("uniform int %s[%d];\n", name.c_str(), parm->GetArraySize());
+					break;
+				}
+			}
+			
 
 			renderParams.AddUnique(parm);
 		}
@@ -310,6 +335,10 @@ void rvmDeclRenderProg::Bind(void) {
 
 			case RENDERPARM_TYPE_FLOAT:
 				glUniform1f(uniformLocation.uniformIndex, parm->GetFloatValue());
+				break;
+
+			case RENDERPARM_TYPE_INT:
+				glUniform1i(uniformLocation.uniformIndex, parm->GetIntValue());
 				break;
 		}
 		

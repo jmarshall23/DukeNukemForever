@@ -1927,11 +1927,13 @@ void idRenderSystemLocal::Init( void ) {
 	specularMatrixTParam = declManager->FindRenderParam("rpspecularmatrixt");
 	viewOriginParam = declManager->FindRenderParam("vieworigin");
 	lightOriginParam = declManager->FindRenderParam("lightorigin");
-	lightColorParam = declManager->FindRenderParam("rpdiffusemodifier");
+	lightColorParam = declManager->FindRenderParam("lightcolor");
 	lightScaleParam = declManager->FindRenderParam("lightscale");
 	shadowMapInfoParm = declManager->FindRenderParam("shadowMapInfo");
 	globalLightOriginParam = declManager->FindRenderParam("globalLightOrigin");
 	globalLightExtentsParam = declManager->FindRenderParam("globalLightExtents");
+
+	numLightsParam = declManager->FindRenderParam("numLights");
 
 	atlasLookupParam = declManager->FindRenderParam("atlasLookup");
 	shadowMapAtlasParam = declManager->FindRenderParam("shadowMapAtlas");

@@ -61,8 +61,8 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	tr.bumpmatrixTParam->SetVectorValue(din->bumpMatrix[1]);
 	tr.diffuseMatrixSParam->SetVectorValue(din->diffuseMatrix[0]);
 	tr.diffuseMatrixTParam->SetVectorValue(din->diffuseMatrix[1]);
-	tr.specularMatrixSParam->SetVectorValue(din->specularMatrix[0]);
-	tr.specularMatrixTParam->SetVectorValue(din->specularMatrix[1]);
+//	tr.specularMatrixSParam->SetVectorValue(din->specularMatrix[0]);
+//	tr.specularMatrixTParam->SetVectorValue(din->specularMatrix[1]);
 
 	// load all the vertex program parameters
 	//glProgramEnvParameter4fvARB( GL_VERTEX_PROGRAM_ARB, PP_LIGHT_ORIGIN, din->localLightOrigin.ToFloatPtr() );
@@ -200,6 +200,8 @@ void idRender::DrawForwardLit( void ) {
 
 	GL_SelectTexture( 0 );
 	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
+
+	tr.numLightsParam->SetIntValue(1);
 
 	//
 	// for each light, perform adding and shadowing

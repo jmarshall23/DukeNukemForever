@@ -12,7 +12,8 @@ enum rvmDeclRenderParmType_t {
 	RENDERPARM_TYPE_INVALID = 0,
 	RENDERPARM_TYPE_IMAGE,
 	RENDERPARM_TYPE_VEC4,
-	RENDERPARM_TYPE_FLOAT
+	RENDERPARM_TYPE_FLOAT,
+	RENDERPARM_TYPE_INT
 };
 
 //
@@ -37,10 +38,17 @@ public:
 
 	float					GetFloatValue(void) { return floatValue; }
 	void					SetFloatValue(float value) { floatValue = value; }
+
+	int						GetArraySize(void) { return array_size; }
+
+	int						GetIntValue(void) { return intValue; }
+	void					SetIntValue(int value) { intValue = value; }
 private:
 	rvmDeclRenderParmType_t type;
 
 	idImage*				imageValue;
 	idVec4					vectorValue;
 	float					floatValue;
+	int						array_size;
+	int						intValue;
 };

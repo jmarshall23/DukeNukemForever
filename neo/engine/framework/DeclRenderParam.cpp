@@ -43,6 +43,8 @@ bool rvmDeclRenderParam::Parse(const char* text, const int textLength) {
 	src.SetFlags(DECL_LEXER_FLAGS);
 	src.SkipUntilString("{");
 
+	array_size = 1;
+
 	while (1) {
 		if (!src.ReadToken(&token)) {
 			break;
@@ -60,9 +62,19 @@ bool rvmDeclRenderParam::Parse(const char* text, const int textLength) {
 		{
 			type = RENDERPARM_TYPE_VEC4;
 		}
+		else if (token == "float4_array")
+		{
+			type = RENDERPARM_TYPE_VEC4;
+
+			array_size = src.ParseInt();
+		}
 		else if (token == "float")
 		{
 			type = RENDERPARM_TYPE_FLOAT;
+		}
+		else if (token == "int")
+		{
+			type = RENDERPARM_TYPE_INT;
 		}
 		else
 		{

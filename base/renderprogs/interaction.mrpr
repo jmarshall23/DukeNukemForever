@@ -45,55 +45,58 @@ renderProg interaction
 		vec3 vNormal = gl_TexCoord[3].xyz;
 
 		vec4 vertex = gl_TexCoord[2];
-		vec4 toLight = $lightorigin - vertex;
 
-		//# calculate normalized vector to light in R0
-		toLight = normalize( toLight );
+		for(int i = 0; i < $numLights; i++)
+		{
+			vec4 toLight = $lightorigin[i] - vertex;
 
-		//# calculate normalized vector to viewer in R1
-		vec4 toView = normalize( $vieworigin - vertex );
+			//# calculate normalized vector to light in R0
+			toLight = normalize( toLight );
+
+			//# calculate normalized vector to viewer in R1
+			vec4 toView = normalize( $vieworigin - vertex );
 		
-		//# add together to become the half angle vector in object space (non-normalized)
-		vec4 halfAngleVector = toLight + toView;
+			//# add together to become the half angle vector in object space (non-normalized)
+			vec4 halfAngleVector = toLight + toView;
 
-		vec2 st = vec2(gl_TexCoord[0].w, gl_TexCoord[3].w);
+			vec2 st = vec2(gl_TexCoord[0].w, gl_TexCoord[3].w);
 
-		vec3 lightTangentVector;
-		vec3 halfAngleTangentVector;
+			vec3 lightTangentVector;
+			vec3 halfAngleTangentVector;
 
-		lightTangentVector.x = dot3( vTangent, toLight );
-		lightTangentVector.y = dot3( vBinormal, toLight );
-		lightTangentVector.z = dot3( vNormal, toLight );
+			lightTangentVector.x = dot3( vTangent, toLight );
+			lightTangentVector.y = dot3( vBinormal, toLight );
+			lightTangentVector.z = dot3( vNormal, toLight );
 		
-		halfAngleTangentVector.x = dot3( vTangent.xyz, halfAngleVector );
-		halfAngleTangentVector.y = dot3( vBinormal, halfAngleVector );
-		halfAngleTangentVector.z = dot3( vNormal, halfAngleVector );
+			halfAngleTangentVector.x = dot3( vTangent.xyz, halfAngleVector );
+			halfAngleTangentVector.y = dot3( vBinormal, halfAngleVector );
+			halfAngleTangentVector.z = dot3( vNormal, halfAngleVector );
 
-		vec4 bumpMap =			tex2D( $bumpmap, st );
-		vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
-		vec4 specMap =			tex2D( $specularmap, gl_TexCoord[4].xy );
+			vec4 bumpMap =			tex2D( $bumpmap, st );
+			vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
+			vec4 specMap =			tex2D( $specularmap, gl_TexCoord[4].xy );
 
-		vec3 realLightOrigin = $globalLightOrigin.xyz;
+			vec3 realLightOrigin = $globalLightOrigin[i].xyz;
 
-		vec3 lightVector = normalize( lightTangentVector.xyz );
+			vec3 lightVector = normalize( lightTangentVector.xyz );
 
-		vec3 localNormal = vec3(bumpMap.r, bumpMap.g, bumpMap.b);
-		localNormal = localNormal * 2.0 - 1.0;
+			vec3 localNormal = vec3(bumpMap.r, bumpMap.g, bumpMap.b);
+			localNormal = localNormal * 2.0 - 1.0;
 
-		const float specularPower = 10.0f;
-		float hDotN = dot3( normalize( halfAngleTangentVector ), localNormal );
-		vec3 specularContribution = vec3( pow(hDotN, specularPower) );
+			const float specularPower = 10.0f;
+			float hDotN = dot3( normalize( halfAngleTangentVector ), localNormal );
+			vec3 specularContribution = vec3( pow(hDotN, specularPower) );
 
-		vec3 diffuseColor = diffuseMap.xyz * $rpdiffusemodifier.xyz;
-		vec3 specularColor = specMap.xyz * specularContribution;
+			vec3 diffuseColor = diffuseMap.xyz * $lightcolor[i].xyz;
+			vec3 specularColor = specMap.xyz * specularContribution;
 
-		float attenuation = AttenuationPointLight(gl_TexCoord[5].xyz, vec4(realLightOrigin, 1.0), $globalLightExtents);
-		float lightColor = dot3( localNormal, lightVector ) * attenuation;
+			float attenuation = AttenuationPointLight(gl_TexCoord[5].xyz, vec4(realLightOrigin, 1.0), $globalLightExtents[i]);
+			float lightColor = dot3( localNormal, lightVector ) * attenuation;
 
-		// float CalculateShadows(texture2D atlasLookup, texture2D shadowMapAtlas, float3 vertexPos, float3 lightPos, float4 ShadowMapInfo)
-		float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, realLightOrigin, $shadowMapInfo);
+			float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, realLightOrigin, $shadowMapInfo[i]);
 
-		gl_FragColor.xyz = ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
-		gl_FragColor.w = 1.0;
+			gl_FragColor.xyz = ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
+			gl_FragColor.w = 1.0;
+		}
 	}
 }

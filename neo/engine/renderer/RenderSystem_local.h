@@ -578,6 +578,8 @@ public:
 	rvmDeclRenderParam* mvpMatrixZ;
 	rvmDeclRenderParam* mvpMatrixW;
 
+	rvmDeclRenderParam* numLightsParam;
+
 	rvmDeclRenderParam* globalLightExtentsParam;
 
 	rvmDeclRenderParam* vertexScaleAddParam;

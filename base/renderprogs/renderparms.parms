@@ -12,30 +12,25 @@ renderParm attenuationMapZ { texture }
 renderParm atlasLookup { texture }
 renderParm shadowMapAtlas { texture }
 
-renderParm shadowMapInfo { float4 }
-
 renderParm  rpbumpmatrixs { float4 }
 renderParm  rpbumpmatrixt { float4 }
 renderParm  rpdiffusematrixs { float4 }
 renderParm  rpdiffusematrixt { float4 }
-renderParm  rpspecularmatrixs { float4 }
-renderParm  rpspecularmatrixt { float4 }
-renderParm  rpdiffusemodifier { float4 }
-renderParm  rpspecularmodifier { float4 }
-
-renderParm globalLightOrigin { float4 }
 
 renderParm mvpMatrixX { float4 }
 renderParm mvpMatrixY { float4 }
 renderParm mvpMatrixZ { float4 }
 renderParm mvpMatrixW { float4 }
 
-renderParm globalLightExtents { float4 }
-
 renderParm vieworigin { float4 }
-renderParm lightorigin { float4 }
-renderParm lightcolor { float4 }
-renderParm lightscale { float4 }
+
+renderParm lightorigin { float4_array 25 }
+renderParm lightcolor { float4_array 25 }
+renderParm globalLightExtents { float4_array 25 }
+renderParm globalLightOrigin { float4_array 25 }
+renderParm shadowMapInfo { float4_array 25 }
+
+renderParm numLights { int }
 
 renderParm modelMatrixX { float4 }
 renderParm modelMatrixY { float4 }
