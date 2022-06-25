@@ -330,7 +330,7 @@ void rvmDeclRenderProg::Bind(void) {
 				break;
 
 			case RENDERPARM_TYPE_VEC4:
-				glUniform4fv(uniformLocation.uniformIndex, 1, parm->GetVectorValue().ToFloatPtr());
+				glUniform4fv(uniformLocation.uniformIndex, parm->GetArraySize(), parm->GetVectorValuePtr());
 				break;
 
 			case RENDERPARM_TYPE_FLOAT:

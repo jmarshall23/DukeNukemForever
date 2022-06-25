@@ -55,7 +55,7 @@ RB_ARB2_DrawInteraction
 void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 // jmarshall
 	// load all the vertex program parameters
-	tr.lightOriginParam->SetVectorValue(din->localLightOrigin);
+	//tr.lightOriginParam->SetVectorValue(din->localLightOrigin);
 	tr.viewOriginParam->SetVectorValue(din->localViewOrigin);
 	tr.bumpmatrixSParam->SetVectorValue(din->bumpMatrix[0]);
 	tr.bumpmatrixTParam->SetVectorValue(din->bumpMatrix[1]);
@@ -108,7 +108,7 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	// set the constant colors
 	//glProgramEnvParameter4fvARB( GL_FRAGMENT_PROGRAM_ARB, 0, din->diffuseColor.ToFloatPtr() );
 	//glProgramEnvParameter4fvARB( GL_FRAGMENT_PROGRAM_ARB, 1, din->specularColor.ToFloatPtr() );
-	tr.lightColorParam->SetVectorValue(din->diffuseColor);
+	//tr.lightColorParam->SetVectorValue(din->diffuseColor);
 
 	// set the textures
 
@@ -155,7 +155,7 @@ void RB_ARB2_CreateDrawInteractions( const drawSurf_t *surf ) {
 	glEnableVertexAttribArrayARB( 11 );
 	glEnableClientState( GL_COLOR_ARRAY );
 
-	for ( ; surf ; surf=surf->nextOnLight ) {
+	{
 		// perform setup here that will not change over multiple interaction passes
 
 		// set the vertex pointers
@@ -195,93 +195,64 @@ idRender::DrawForwardLit
 ==================
 */
 void idRender::DrawForwardLit( void ) {
-	idRenderLightCommitted		*vLight;
 	const idMaterial	*lightShader;
+
+	drawSurf_t** drawSurfs;
+	int			numDrawSurfs;
+
+	drawSurfs = (drawSurf_t**)&backEnd.viewDef->drawSurfs[0];
+	numDrawSurfs = backEnd.viewDef->numDrawSurfs;
 
 	GL_SelectTexture( 0 );
 	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
 
-	tr.numLightsParam->SetIntValue(1);
+	for (int i = 0; i < numDrawSurfs; i++)
+	{
+		const drawSurf_t* drawSurf = drawSurfs[i];
 
-	//
-	// for each light, perform adding and shadowing
-	//
-	for ( vLight = backEnd.viewDef->viewLights ; vLight ; vLight = vLight->next ) {
-		backEnd.vLight = vLight;
-
-		// do fogging later
-		if ( vLight->lightShader->IsFogLight() ) {
+		if (drawSurf->numSurfRenderLights == 0)
 			continue;
-		}
-		if ( vLight->lightShader->IsBlendLight() ) {
+
+		if (drawSurf->geo->numVerts == 0)
 			continue;
-		}
 
-		tr.globalLightExtentsParam->SetVectorValue(idVec4(vLight->lightDef->parms.lightRadius.x, vLight->lightDef->parms.lightRadius.y, vLight->lightDef->parms.lightRadius.z, 1.0f));
+		R_CreateAmbientCache((srfTriangles_t*)drawSurf->geo, true);;
 
-		// set the shadow map info.
-		idVec4 shadowMapInfo(backEnd.vLight->shadowMapSlice, renderShadowSystem.GetAtlasSampleScale(), renderShadowSystem.GetShadowMapAtlasSize(), 0);
-		tr.shadowMapInfoParm->SetVectorValue(shadowMapInfo);
+		if (drawSurf->geo->numVerts == 0)
+			continue;
 
-		lightShader = vLight->lightShader;
+		RB_SetModelMatrix(drawSurf->space->modelMatrix);
 
-		idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, 1.0);
-		tr.globalLightOriginParam->SetVectorValue(lightOrigin);
-
-		for (int i = 0; i < vLight->litRenderEntityTableSize; i++)
+		tr.numLightsParam->SetIntValue(drawSurf->numSurfRenderLights);
+		
+		// Build up the forward+ lighting path info for this draw surface.
+		for (int d = 0; d < drawSurf->numSurfRenderLights; d++)
 		{
-			if (vLight->litRenderEntities[i] == nullptr)
-				continue;
+			const idRenderLightCommitted* vLight = drawSurf->surfRenderLights[d];
 
-			idRenderModel* renderModel = vLight->litRenderEntities[i]->viewEntity->renderModel;
+			// globalLightExtents.
+			tr.globalLightExtentsParam->SetVectorValue(idVec4(vLight->lightDef->parms.lightRadius.x, vLight->lightDef->parms.lightRadius.y, vLight->lightDef->parms.lightRadius.z, 1.0f), d);
+			
+			// shadowmap info
+			idVec4 shadowMapInfo(vLight->shadowMapSlice, renderShadowSystem.GetAtlasSampleScale(), renderShadowSystem.GetShadowMapAtlasSize(), 0);
+			tr.shadowMapInfoParm->SetVectorValue(shadowMapInfo, d);
 
+			// globalLightOrigin
+			idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, 1.0);
+			tr.globalLightOriginParam->SetVectorValue(lightOrigin, d);
 
-			for (int s = 0; s < renderModel->NumSurfaces(); s++)
-			{
-				drawSurf_t fakeDrawSurf = { };
-				const modelSurface_t* surface = renderModel->Surface(s);
+			// light color.
+			idVec4 lightColor(vLight->lightDef->parms.lightColor.x, vLight->lightDef->parms.lightColor.y, vLight->lightDef->parms.lightColor.z, 1.0);
+			lightColor = lightColor * backEnd.lightScale;
+			tr.lightColorParam->SetVectorValue(lightColor, d);
 
-				idScreenRect	shadowScissor;
-				idScreenRect	lightScissor;
+			// local lightorigin
+			idVec4 localLightOrigin;
+			R_GlobalPointToLocal(drawSurf->space->modelMatrix, vLight->globalLightOrigin, localLightOrigin.ToVec3());
+			tr.lightOriginParam->SetVectorValue(localLightOrigin, d);
+		}
 
-				lightScissor = vLight->scissorRect;
-				lightScissor.Intersect(vLight->litRenderEntities[i]->viewEntity->scissorRect);
-
-				if (lightScissor.IsEmpty())
-					continue;
-
-				fakeDrawSurf.geo = surface->geometry;
-				fakeDrawSurf.material = surface->shader;
-				fakeDrawSurf.space = vLight->litRenderEntities[i]->viewEntity;
-				fakeDrawSurf.scissorRect = vLight->scissorRect;
-				fakeDrawSurf.forceTwoSided = vLight->litRenderEntities[i]->parms.forceTwoSided;
-
-				if(fakeDrawSurf.geo->numVerts == 0)
-					continue;
-
-				R_CreateAmbientCache((srfTriangles_t *)fakeDrawSurf.geo, true);;
-
-				if(fakeDrawSurf.geo->numVerts == 0)
-					continue;
-
-				RB_SetModelMatrix(fakeDrawSurf.space->modelMatrix);
-
-				const float* constRegs = surface->shader->ConstantRegisters();
-				if (constRegs) {
-					// this shader has only constants for parameters
-					fakeDrawSurf.shaderRegisters = constRegs;
-				}
-				else
-				{
-					float* regs = (float*)R_FrameAlloc(fakeDrawSurf.material->GetNumRegisters() * sizeof(float));
-					fakeDrawSurf.shaderRegisters = regs;
-					fakeDrawSurf.material->EvaluateRegisters(regs, fakeDrawSurf.shaderRegisters, backEnd.viewDef, nullptr);
-				}
-				
-
-				RB_ARB2_CreateDrawInteractions(&fakeDrawSurf);
-			}
-		}		
+		RB_ARB2_CreateDrawInteractions(drawSurf);
 	}
 
 	// disable stencil shadow test

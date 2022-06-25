@@ -641,9 +641,6 @@ interaction into primitive interactions
 void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInteraction)(const drawInteraction_t *) ) {
 	const idMaterial	*surfaceShader = surf->material;
 	const float			*surfaceRegs = surf->shaderRegisters;
-	const idRenderLightCommitted	*vLight = backEnd.vLight;
-	const idMaterial	*lightShader = vLight->lightShader;
-	const float			*lightRegs = vLight->shaderRegisters;
 	drawInteraction_t	inter;
 
 	if ( r_skipInteractions.GetBool() || !surf->geo || !surf->geo->ambientCache ) {
@@ -651,7 +648,7 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 	}
 
 	if ( tr.logFile ) {
-		RB_LogComment( "---------- RB_CreateSingleDrawInteractions %s on %s ----------\n", lightShader->GetName(), surfaceShader->GetName() );
+		//RB_LogComment( "---------- RB_CreateSingleDrawInteractions %s on %s ----------\n", lightShader->GetName(), surfaceShader->GetName() );
 	}
 
 	if (surf->forceTwoSided)
@@ -690,34 +687,20 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 	inter.surf = surf;
 //	inter.lightFalloffImage = vLight->falloffImage;
 
-	R_GlobalPointToLocal( surf->space->modelMatrix, vLight->globalLightOrigin, inter.localLightOrigin.ToVec3() );
+	//R_GlobalPointToLocal( surf->space->modelMatrix, vLight->globalLightOrigin, inter.localLightOrigin.ToVec3() );
 	R_GlobalPointToLocal( surf->space->modelMatrix, backEnd.viewDef->renderView.vieworg, inter.localViewOrigin.ToVec3() );
 	inter.localLightOrigin[3] = 0;
 	inter.localViewOrigin[3] = 1;
-	inter.ambientLight = lightShader->IsAmbientLight();
+	//inter.ambientLight = lightShader->IsAmbientLight();
 
 	// the base projections may be modified by texture matrix on light stages
-	idPlane lightProject[4];
-	for ( int i = 0 ; i < 4 ; i++ ) {
-		R_GlobalPlaneToLocal( surf->space->modelMatrix, backEnd.vLight->lightProject[i], lightProject[i] );
-	}
+	//idPlane lightProject[4];
+	//for ( int i = 0 ; i < 4 ; i++ ) {
+	//	R_GlobalPlaneToLocal( surf->space->modelMatrix, backEnd.vLight->lightProject[i], lightProject[i] );
+	//}
 
-	for ( int lightStageNum = 0 ; lightStageNum < lightShader->GetNumStages() ; lightStageNum++ ) {
-		const shaderStage_t	*lightStage = lightShader->GetStage( lightStageNum );
+	for ( int lightStageNum = 0 ; lightStageNum < 1; lightStageNum++ ) {
 
-		// ignore stages that fail the condition
-		if ( !lightRegs[ lightStage->conditionRegister ] ) {
-			continue;
-		}
-
-	//	inter.lightImage = lightStage->texture.image;
-
-//		memcpy( inter.lightProjection, lightProject, sizeof( inter.lightProjection ) );
-		// now multiply the texgen by the light texture matrix
-		if ( lightStage->texture.hasMatrix ) {
-			RB_GetShaderTextureMatrix( lightRegs, &lightStage->texture, backEnd.lightTextureMatrix );
-			//RB_BakeTextureMatrixIntoTexgen( reinterpret_cast<class idPlane *>(inter.lightProjection), backEnd.lightTextureMatrix );
-		}
 
 		inter.bumpImage = NULL;
 		inter.specularImage = NULL;
@@ -725,14 +708,14 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 		inter.diffuseColor[0] = inter.diffuseColor[1] = inter.diffuseColor[2] = inter.diffuseColor[3] = 0;
 		inter.specularColor[0] = inter.specularColor[1] = inter.specularColor[2] = inter.specularColor[3] = 0;
 
-		float lightColor[4];
-
-		// backEnd.lightScale is calculated so that lightColor[] will never exceed
-		// tr.backEndRendererMaxLight
-		lightColor[0] = backEnd.lightScale * vLight->lightDef->parms.lightColor.x;
-		lightColor[1] = backEnd.lightScale * vLight->lightDef->parms.lightColor.y;
-		lightColor[2] = backEnd.lightScale * vLight->lightDef->parms.lightColor.z;
-		lightColor[3] = lightRegs[ lightStage->color.registers[3] ];
+		//float lightColor[4];
+		//
+		//// backEnd.lightScale is calculated so that lightColor[] will never exceed
+		//// tr.backEndRendererMaxLight
+		//lightColor[0] = backEnd.lightScale * vLight->lightDef->parms.lightColor.x;
+		//lightColor[1] = backEnd.lightScale * vLight->lightDef->parms.lightColor.y;
+		//lightColor[2] = backEnd.lightScale * vLight->lightDef->parms.lightColor.z;
+		//lightColor[3] = lightRegs[ lightStage->color.registers[3] ];
 
 		// go through the individual stages
 		for ( int surfaceStageNum = 0 ; surfaceStageNum < surfaceShader->GetNumStages() ; surfaceStageNum++ ) {
@@ -765,10 +748,10 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 					}
 					R_SetDrawInteraction( surfaceStage, surfaceRegs, &inter.diffuseImage,
 											inter.diffuseMatrix, inter.diffuseColor.ToFloatPtr() );
-					inter.diffuseColor[0] *= lightColor[0];
-					inter.diffuseColor[1] *= lightColor[1];
-					inter.diffuseColor[2] *= lightColor[2];
-					inter.diffuseColor[3] *= lightColor[3];
+					//inter.diffuseColor[0] *= lightColor[0];
+					//inter.diffuseColor[1] *= lightColor[1];
+					//inter.diffuseColor[2] *= lightColor[2];
+					//inter.diffuseColor[3] *= lightColor[3];
 					inter.vertexColor = surfaceStage->vertexColor;
 					break;
 				}
@@ -782,10 +765,10 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 					}
 					R_SetDrawInteraction( surfaceStage, surfaceRegs, &inter.specularImage,
 											inter.specularMatrix, inter.specularColor.ToFloatPtr() );
-					inter.specularColor[0] *= lightColor[0];
-					inter.specularColor[1] *= lightColor[1];
-					inter.specularColor[2] *= lightColor[2];
-					inter.specularColor[3] *= lightColor[3];
+					//inter.specularColor[0] *= lightColor[0];
+					//inter.specularColor[1] *= lightColor[1];
+					//inter.specularColor[2] *= lightColor[2];
+					//inter.specularColor[3] *= lightColor[3];
 					inter.vertexColor = surfaceStage->vertexColor;
 					break;
 				}

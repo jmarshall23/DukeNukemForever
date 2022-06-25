@@ -16,6 +16,8 @@ enum rvmDeclRenderParmType_t {
 	RENDERPARM_TYPE_INT
 };
 
+#define MAX_RENDERPARM_ARRAY_SIZE		128
+
 //
 // rvmDeclRenderProg
 //
@@ -32,9 +34,10 @@ public:
 	idImage*				GetImage(void) { return imageValue; }
 	void					SetImage(idImage* image) { imageValue = image; }
 
-	idVec4					GetVectorValue(void) { return vectorValue; }
-	void					SetVectorValue(idVec4 value) { vectorValue = value; }
-	void					SetVectorValue(const float *value) { vectorValue = idVec4(value[0], value[1], value[2], value[3]); }
+	float*					GetVectorValuePtr(void) { return &vectorValue[0].x; }
+	idVec4					GetVectorValue(int idx = 0) { return vectorValue[idx]; }
+	void					SetVectorValue(idVec4 value, int idx = 0) { vectorValue[idx] = value; }
+	void					SetVectorValue(const float *value, int idx = 0) { vectorValue[idx] = idVec4(value[0], value[1], value[2], value[3]); }
 
 	float					GetFloatValue(void) { return floatValue; }
 	void					SetFloatValue(float value) { floatValue = value; }
@@ -47,7 +50,7 @@ private:
 	rvmDeclRenderParmType_t type;
 
 	idImage*				imageValue;
-	idVec4					vectorValue;
+	idVec4					vectorValue[MAX_RENDERPARM_ARRAY_SIZE];
 	float					floatValue;
 	int						array_size;
 	int						intValue;

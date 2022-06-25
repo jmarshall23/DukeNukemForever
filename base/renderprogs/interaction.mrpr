@@ -46,6 +46,8 @@ renderProg interaction
 
 		vec4 vertex = gl_TexCoord[2];
 
+		vec3 finalColor = vec3(0, 0, 0);
+
 		for(int i = 0; i < $numLights; i++)
 		{
 			vec4 toLight = $lightorigin[i] - vertex;
@@ -95,8 +97,10 @@ renderProg interaction
 
 			float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, realLightOrigin, $shadowMapInfo[i]);
 
-			gl_FragColor.xyz = ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
-			gl_FragColor.w = 1.0;
+			finalColor += ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
 		}
+
+		gl_FragColor.xyz = finalColor;
+		gl_FragColor.w = 1.0;
 	}
 }
