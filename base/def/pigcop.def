@@ -14,6 +14,8 @@ model pigcop
 	anim roar			models/characters/pigcop/pigcop_A_Roar.md5anim
 
 	anim fire			models/characters/pigcop/pigcop_T_Gen2HandFire.md5anim
+
+	anim death			models/characters/pigcop/pigcop_DeathA.md5anim
 }
 
 entityDef monster_pigcop
@@ -21,6 +23,9 @@ entityDef monster_pigcop
 	"spawnclass"					"DnPigcop"
 	"model"							"pigcop"
 	"editor_usage"					"Pigcop Monster"
+
+	"EgoKillValue"					"8"
+	"Health"						"50"
 
 	"model_offset"					"0 0 45"
 	

@@ -351,6 +351,9 @@ public:
 	// write a collision model file for the map entity
 	bool			WriteCollisionModelForMapEntity( const idMapEntity *mapEnt, const char *filename, const bool testTraceModel = true );
 
+	cm_model_t*		LoadRenderModel(const char* fileName);					// ASE/LWO models
+	void			WriteCollisionModel(idFile* fp, cm_model_t* model);
+
 private:			// CollisionMap_translate.cpp
 	int				TranslateEdgeThroughEdge( idVec3 &cross, idPluecker &l1, idPluecker &l2, float *fraction );
 	void			TranslateTrmEdgeThroughPolygon( cm_traceWork_t *tw, cm_polygon_t *poly, cm_trmEdge_t *trmEdge );
@@ -477,7 +480,6 @@ private:			// CollisionMap_load.cpp
 	void			BuildModels( const idMapFile *mapFile );
 	cmHandle_t		FindModel( const char *name );
 	cm_model_t *	CollisionModelForMapEntity( const idMapEntity *mapEnt );	// brush/patch model from .map
-	cm_model_t *	LoadRenderModel( const char *fileName );					// ASE/LWO models
 	bool			TrmFromModel_r( idTraceModel &trm, cm_node_t *node );
 	bool			TrmFromModel( const cm_model_t *model, idTraceModel &trm );
 
@@ -488,7 +490,6 @@ private:			// CollisionMap_files.cpp
 	void			WritePolygons( idFile *fp, cm_node_t *node );
 	int				CountBrushMemory( cm_node_t *node ) const;
 	void			WriteBrushes( idFile *fp, cm_node_t *node );
-	void			WriteCollisionModel( idFile *fp, cm_model_t *model );
 	void			WriteCollisionModelsToFile( const char *filename, int firstModel, int lastModel, unsigned int mapFileCRC );
 					// loading
 	cm_node_t *		ParseNodes( idLexer *src, cm_model_t *model, cm_node_t *parent );

@@ -1008,7 +1008,7 @@ void idProjectile::Explode( const trace_t &collision, idEntity *ignore ) {
 
 				idDebris *debris = static_cast<idDebris *>(ent);
 				debris->Create( owner.GetEntity(), physicsObj.GetOrigin(), dir.ToMat3() );
-				debris->Launch();
+				debris->Launch(nullptr);
 			}
 		}
 		debris = gameLocal.FindEntityDefDict( "projectile_shrapnel", false );
@@ -1029,7 +1029,7 @@ void idProjectile::Explode( const trace_t &collision, idEntity *ignore ) {
 
 				idDebris *debris = static_cast<idDebris *>(ent);
 				debris->Create( owner.GetEntity(), physicsObj.GetOrigin(), dir.ToMat3() );
-				debris->Launch();
+				debris->Launch(nullptr);
 			}
 		}
 	}
@@ -2352,6 +2352,7 @@ idDebris::idDebris( void ) {
 	smokeFly = NULL;
 	smokeFlyTime = 0;
 	sndBounce = NULL;
+	dynamicModel = NULL;
 }
 
 /*
@@ -2360,6 +2361,11 @@ idDebris::~idDebris
 =================
 */
 idDebris::~idDebris( void ) {
+	if (dynamicModel)
+	{
+		delete dynamicModel;
+		dynamicModel = nullptr;
+	}
 }
 
 /*
@@ -2398,7 +2404,7 @@ void idDebris::Restore( idRestoreGame *savefile ) {
 idDebris::Launch
 =================
 */
-void idDebris::Launch( void ) {
+void idDebris::Launch( const idMaterial *material ) {
 	float		fuse;
 	idVec3		velocity;
 	idAngles	angular_velocity;
@@ -2452,17 +2458,38 @@ void idDebris::Launch( void ) {
 	const char *clipModelName;
 	idTraceModel trm;
 	spawnArgs.GetString( "clipmodel", "", &clipModelName );
-	if ( !clipModelName[0] ) {
+// jmarshall
+	if ( clipModelName[0] ) {
 		clipModelName = spawnArgs.GetString( "model" );		// use the visual model
+		// load the trace model
+		if (collisionModelManager->TrmFromModel(clipModelName, trm)) {
+			// default to a box
+			physicsObj.SetClipModel(new idClipModel(trm), 1.0f);
+		}
+		else
+		{
+			// default to a box
+			physicsObj.SetClipBox(renderEntity.bounds, 1.0f);
+		}
+	}
+	else
+	{
+		// default to a box
+		physicsObj.SetClipBox(renderEntity.bounds, 1.0f);
 	}
 
-	// load the trace model
-	if ( !collisionModelManager->TrmFromModel( clipModelName, trm ) ) {
-		// default to a box
-		physicsObj.SetClipBox( renderEntity.bounds, 1.0f );
-	} else {
-		physicsObj.SetClipModel( new idClipModel( trm ), 1.0f );
+	renderEntity.hModel = renderEntity.hModel->InstantiateDynamicModel(nullptr, nullptr, nullptr);
+	renderEntity.forceTwoSided = true;
+
+	if (material)
+	{
+		for (int i = 0; i < renderEntity.hModel->NumSurfaces(); i++)
+		{
+			modelSurface_t* surface = (modelSurface_t*)renderEntity.hModel->Surface(i);
+			surface->shader = material;
+		}
 	}
+// jmarshall end
 
 	physicsObj.GetClipModel()->SetOwner( owner.GetEntity() );
 	physicsObj.SetMass( mass );

@@ -155,6 +155,8 @@ struct renderEntity_t {
 	float					frame;
 	int						lastFrame;
 	float					lerp;
+
+	bool					forceTwoSided;
 // jmarshall end
 
 };

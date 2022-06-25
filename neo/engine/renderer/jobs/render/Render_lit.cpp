@@ -249,6 +249,7 @@ void idRender::DrawForwardLit( void ) {
 				fakeDrawSurf.material = surface->shader;
 				fakeDrawSurf.space = vLight->litRenderEntities[i]->viewEntity;
 				fakeDrawSurf.scissorRect = vLight->scissorRect;
+				fakeDrawSurf.forceTwoSided = vLight->litRenderEntities[i]->parms.forceTwoSided;
 
 				if(fakeDrawSurf.geo->numVerts == 0)
 					continue;

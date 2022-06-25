@@ -4471,7 +4471,7 @@ void idWeapon::Event_EjectBrass()
 	}
 	idDebris* debris = static_cast<idDebris*>( ent );
 	debris->Create( owner, origin, axis );
-	debris->Launch();
+	debris->Launch(nullptr);
 
 	linear_velocity = 40 * ( playerViewAxis[0] + playerViewAxis[1] + playerViewAxis[2] );
 	angular_velocity.Set( 10 * gameLocal.random.CRandomFloat(), 10 * gameLocal.random.CRandomFloat(), 10 * gameLocal.random.CRandomFloat() );
@@ -4519,3 +4519,100 @@ void idWeapon::ForceAmmoInClip()
 {
 	ammoClip = clipSize;
 }
+
+// jmarshall
+/*
+================
+idWeapon::Hitscan
+================
+*/
+void idWeapon::Hitscan(const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int num_hitscans, float spread, float power) {
+	//idVec3  fxOrigin;
+	//idMat3  fxAxis;
+	int		i;
+	float	ang;
+	float	spin;
+	idVec3	dir;
+	int		areas[2];
+
+	idBitMsg	msg;
+	byte		msgBuf[MAX_GAME_MESSAGE_SIZE];
+
+	// Let the AI know about the new attack
+	//if (!gameLocal.isMultiplayer) {
+	//	aiManager.ReactToPlayerAttack(owner, muzzleOrigin, muzzleAxis[0]);
+	//}
+
+	//GetGlobalJointTransform(true, flashJointView, fxOrigin, fxAxis, dict.GetVector("fxOriginOffset"));
+
+	//if (gameLocal.isServer) {
+	//
+	//	assert(hitscanAttackDef >= 0);
+	//	assert(owner && owner->entityNumber < MAX_CLIENTS);
+	//	int ownerId = owner ? owner->entityNumber : 0;
+	//
+	//	msg.Init(msgBuf, sizeof(msgBuf));
+	//	msg.BeginWriting();
+	//	msg.WriteByte(GAME_UNRELIABLE_MESSAGE_HITSCAN);
+	//	msg.WriteLong(hitscanAttackDef);
+	//	msg.WriteBits(ownerId, idMath::BitsForInteger(MAX_CLIENTS));
+	//	msg.WriteFloat(muzzleOrigin[0]);
+	//	msg.WriteFloat(muzzleOrigin[1]);
+	//	msg.WriteFloat(muzzleOrigin[2]);
+	//	msg.WriteFloat(fxOrigin[0]);
+	//	msg.WriteFloat(fxOrigin[1]);
+	//	msg.WriteFloat(fxOrigin[2]);
+	//}
+
+	float spreadRad = DEG2RAD(spread);
+	idVec3 end;
+	for (i = 0; i < num_hitscans; i++) {
+		{
+			ang = idMath::Sin(spreadRad * gameLocal.random.RandomFloat());
+			spin = (float)DEG2RAD(360.0f) * gameLocal.random.RandomFloat();
+			//RAVEN BEGIN
+			//asalmon: xbox must use the muzzleAxis so the aim can be adjusted for aim assistance
+#ifdef _XBOX
+			dir = muzzleAxis[0] + muzzleAxis[2] * (ang * idMath::Sin(spin)) - muzzleAxis[1] * (ang * idMath::Cos(spin));
+#else
+			dir = playerViewAxis[0] + playerViewAxis[2] * (ang * idMath::Sin(spin)) - playerViewAxis[1] * (ang * idMath::Cos(spin));
+#endif
+			//RAVEN END
+		}
+		dir.Normalize();
+
+		gameLocal.HitScan(muzzleOrigin, dir,muzzleOrigin, owner, false, 1.0f, NULL, areas);
+
+		//if (gameLocal.isServer) {
+		//	msg.WriteDir(dir, 24);
+		//	if (i == num_hitscans - 1) {
+		//		// NOTE: we emit to the areas of the last hitscan
+		//		// there is a remote possibility that multiple hitscans for shotgun would cover more than 2 areas,
+		//		// so in some rare case a client might miss it
+		//		gameLocal.SendUnreliableMessagePVS(msg, owner, areas[0], areas[1]);
+		//	}
+		//}
+	}
+}
+
+
+void idWeapon::Event_Attack(bool hitScan, int num_projectiles, float spread, float fuseOffset, float launchPower, float dmgPower)
+{
+	idVec3 muzzleOrigin;
+	idMat3 muzzleAxis;
+
+	// go straight out of the view
+	muzzleOrigin = playerViewOrigin;
+	muzzleAxis = playerViewAxis;
+	//muzzleOrigin += playerViewAxis[0] * muzzleOffset;
+
+	if (hitScan)
+	{
+		Hitscan(muzzleOrigin, muzzleAxis, num_projectiles, spread, dmgPower);
+	}
+	else
+	{
+		Event_LaunchProjectiles(num_projectiles, spread, fuseOffset, launchPower, dmgPower);
+	}
+}
+// jmarshall end

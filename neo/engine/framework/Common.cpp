@@ -2344,7 +2344,7 @@ void idCommonLocal::InitCommands( void ) {
 	cmdSystem->AddCommand("generatematerials", GenerateMaterials_f, CMD_FL_TOOL, "creates materials for imported textures");
 	cmdSystem->AddCommand("generatemodelmaterials", GenerateModelMaterials_f, CMD_FL_TOOL, "creates materials for imported textures");
 	cmdSystem->AddCommand("importplanes", ImportPlane_f, CMD_FL_TOOL, "");
-
+	cmdSystem->AddCommand("makecm", MakeCollisionModelForMesh_f, CMD_FL_TOOL, "");
 
 	// editors
 	cmdSystem->AddCommand( "editor", Com_Editor_f, CMD_FL_TOOL, "launches the level editor Radiant" );

@@ -3463,6 +3463,7 @@ static classVariableInfo_t idDebris_typeInfo[] = {
 	{ "const idDeclParticle *", "smokeFly", (intptr_t)(&((idDebris *)0)->smokeFly), sizeof( ((idDebris *)0)->smokeFly ) },
 	{ "int", "smokeFlyTime", (intptr_t)(&((idDebris *)0)->smokeFlyTime), sizeof( ((idDebris *)0)->smokeFlyTime ) },
 	{ "const idSoundShader *", "sndBounce", (intptr_t)(&((idDebris *)0)->sndBounce), sizeof( ((idDebris *)0)->sndBounce ) },
+	{ "idRenderModel *", "dynamicModel", (intptr_t)(&((idDebris *)0)->dynamicModel), sizeof( ((idDebris *)0)->dynamicModel ) },
 	{ NULL, 0 }
 };
 
@@ -4571,6 +4572,8 @@ static classVariableInfo_t DnAI_typeInfo[] = {
 	{ "bool", "AI_BLOCKED", (intptr_t)(&((DnAI *)0)->AI_BLOCKED), sizeof( ((DnAI *)0)->AI_BLOCKED ) },
 	{ "idStr", "currentAnimation", (intptr_t)(&((DnAI *)0)->currentAnimation), sizeof( ((DnAI *)0)->currentAnimation ) },
 	{ "DnLightComponent", "lightRigComponent", (intptr_t)(&((DnAI *)0)->lightRigComponent), sizeof( ((DnAI *)0)->lightRigComponent ) },
+	{ ": int", "EgoKillValue", (intptr_t)(&((DnAI *)0)->EgoKillValue), sizeof( ((DnAI *)0)->EgoKillValue ) },
+	{ "bool", "startedDeath", (intptr_t)(&((DnAI *)0)->startedDeath), sizeof( ((DnAI *)0)->startedDeath ) },
 	{ NULL, 0 }
 };
 

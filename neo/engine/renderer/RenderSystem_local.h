@@ -120,6 +120,7 @@ typedef struct drawSurf_s {
 	const srfTriangles_t	*geo;
 	const idRenderModelCommitted *space;
 	const idMaterial		*material;	// may be NULL for shadow volumes
+	bool					forceTwoSided;
 	float					sort;		// material->sort, modified by gui / entity sort offsets
 	const float				*shaderRegisters;	// evaluated and adjusted for referenceShaders
 	const struct drawSurf_s	*nextOnLight;	// viewLight chains

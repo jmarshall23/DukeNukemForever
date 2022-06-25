@@ -88,6 +88,7 @@ public:
 	virtual float				DepthHack() const;
 // jmarshall
 	virtual bool				IsVertexAnimated() const override { return false; }
+	virtual bool				CollisionRequiresInstantiate() { return false; }
 // jmarshall end
 
 	void						MakeDefaultModel();
@@ -224,6 +225,7 @@ public:
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
 // jmarshall
 	virtual bool				IsVertexAnimated() const override { return true; }
+	virtual bool				CollisionRequiresInstantiate() { return true; }
 // jmarshall end
 private:
 	int							index;			// model = tr.models[model->index]

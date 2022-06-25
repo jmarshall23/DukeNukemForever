@@ -3729,10 +3729,6 @@ intptr_t idDebris::Invoke(const char *functionName, void *param1) {
 		Spawn();
 		return 0;
 	};
-	if(functionNameHash == 73334) { // Launch
-		Launch();
-		return 0;
-	};
 	if(functionNameHash == 61762) { // Think
 		Think();
 		return 0;
@@ -3760,9 +3756,6 @@ intptr_t idDebris::Invoke(const char *functionName, void *param1) {
 bool idDebris::HasNativeFunction(const char *functionName) {
 	int functionNameHash = idStr::Hash(functionName);
 	if(functionNameHash == 63102) { // Spawn
-		return true;
-	};
-	if(functionNameHash == 73334) { // Launch
 		return true;
 	};
 	if(functionNameHash == 61762) { // Think
@@ -8073,6 +8066,12 @@ intptr_t DnPigcop::Invoke(const char *functionName, void *param1) {
 	if(functionNameHash == 211868) { // state_ShootEnemy
 		return (intptr_t)state_ShootEnemy((stateParms_t *)param1);
 	};
+	if(functionNameHash == 203623) { // state_BeginDeath
+		return (intptr_t)state_BeginDeath((stateParms_t *)param1);
+	};
+	if(functionNameHash == 153871) { // state_Killed
+		return (intptr_t)state_Killed((stateParms_t *)param1);
+	};
 	return __super::Invoke(functionName, param1);
 
 };
@@ -8089,6 +8088,12 @@ bool DnPigcop::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 211868) { // state_ShootEnemy
+		return true;
+	};
+	if(functionNameHash == 203623) { // state_BeginDeath
+		return true;
+	};
+	if(functionNameHash == 153871) { // state_Killed
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);

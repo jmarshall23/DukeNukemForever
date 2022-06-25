@@ -310,6 +310,11 @@ public:
 	bool					Event_IsInvisible();
 	void					Event_NetEndReload();
 
+// jmarshall
+	void					Event_Attack(bool useHitscan, int num_projectiles, float spread, float fuseOffset, float launchPower, float dmgPower);
+	void					Hitscan(const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int num_hitscans, float spread, float power);
+// jmarshall end
+
 	void					EnterCinematic();
 	void					ExitCinematic();
 	void					NetCatchup();

@@ -35,6 +35,32 @@ stateResult_t DnPigcop::state_Begin(stateParms_t* parms)
 
 /*
 ==============
+DnPigcop::state_BeginDeath
+==============
+*/
+stateResult_t DnPigcop::state_BeginDeath(stateParms_t* parms)
+{
+	Event_SetState("state_Killed");
+
+	StopMove();
+
+	SetAnimation("death", false);
+
+	return SRESULT_DONE;
+}
+
+/*
+==============
+DnPigcop::state_Killed
+==============
+*/
+stateResult_t DnPigcop::state_Killed(stateParms_t* parms)
+{
+	return SRESULT_WAIT; // Were dead so do nothing.
+}
+
+/*
+==============
 DnPigcop::state_ShootEnemy
 ==============
 */

@@ -19,6 +19,15 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 	tri = surf->geo;
 	shader = surf->material;
 
+	if (surf->forceTwoSided)
+	{
+		GL_Cull(CT_TWO_SIDED);
+	}
+	else
+	{
+		GL_Cull(CT_FRONT_SIDED);
+	}
+
 	// update the clip plane if needed
 	if (backEnd.viewDef->numClipPlanes && surf->space != backEnd.currentSpace) {
 		GL_SelectTexture(1);

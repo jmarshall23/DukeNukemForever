@@ -654,6 +654,15 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 		RB_LogComment( "---------- RB_CreateSingleDrawInteractions %s on %s ----------\n", lightShader->GetName(), surfaceShader->GetName() );
 	}
 
+	if (surf->forceTwoSided)
+	{
+		GL_Cull(CT_TWO_SIDED);
+	}
+	else
+	{
+		GL_Cull(CT_FRONT_SIDED);
+	}
+
 	// change the matrix and light projection vectors if needed
 	if ( surf->space != backEnd.currentSpace ) {
 		backEnd.currentSpace = surf->space;

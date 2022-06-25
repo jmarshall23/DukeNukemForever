@@ -344,6 +344,7 @@ void R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitted* spac
 	drawSurf->scissorRect = scissor;
 	drawSurf->sort = shader->GetSort() + tr.sortOffset;
 	drawSurf->dsFlags = 0;
+	drawSurf->forceTwoSided = renderEntity->forceTwoSided;
 
 	// bumping this offset each time causes surfaces with equal sort orders to still
 	// deterministically draw in the order they are added

@@ -158,6 +158,10 @@ public:
 	void					Spawn(void);
 	void					Think(void);
 
+	// damage
+	virtual bool			Pain(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location) override;
+	virtual void			Killed(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location) override;
+
 	bool					CurrentlyPlayingSound();
 
 	bool					FacingIdeal();
@@ -211,6 +215,9 @@ private:
 	idStr					currentAnimation;
 
 	DnLightComponent		lightRigComponent;
+protected:
+	int						EgoKillValue;
+	bool					startedDeath;
 };
 
 #include "Pigcop.h"

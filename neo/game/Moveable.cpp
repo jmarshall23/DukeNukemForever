@@ -1195,7 +1195,7 @@ void idExplodingBarrel::Killed( idEntity *inflictor, idEntity *attacker, int dam
 
 			debris = static_cast<idDebris *>(ent);
 			debris->Create( this, physicsObj.GetOrigin(), dir.ToMat3() );
-			debris->Launch();
+			debris->Launch(nullptr);
 			debris->GetRenderEntity()->shaderParms[ SHADERPARM_TIME_OF_DEATH ] = ( gameLocal.time + 1500 ) * 0.001f;
 			debris->UpdateVisuals();
 			

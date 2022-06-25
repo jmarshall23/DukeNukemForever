@@ -39,11 +39,6 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "CollisionModel_local.h"
 
-#define CM_FILE_EXT			"cm"
-#define CM_FILEID			"CM"
-#define CM_FILEVERSION		"1.00"
-
-
 /*
 ===============================================================================
 

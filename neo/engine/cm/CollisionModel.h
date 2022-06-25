@@ -89,6 +89,10 @@ typedef int cmHandle_t;
 #define PROC_CLIPMODEL_STRING_PRFX		"inlined_proc_clip_"
 // jmarshall end
 
+#define CM_FILE_EXT			"cm"
+#define CM_FILEID			"CM"
+#define CM_FILEVERSION		"1.00"
+
 class idCollisionModelManager {
 public:
 	virtual					~idCollisionModelManager( void ) {}
@@ -151,5 +155,9 @@ public:
 };
 
 extern idCollisionModelManager *		collisionModelManager;
+
+// jmarshall
+void MakeCollisionModelForMesh_f(const idCmdArgs& args);
+// jmarshall end
 
 #endif /* !__COLLISIONMODELMANAGER_H__ */

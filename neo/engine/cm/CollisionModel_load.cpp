@@ -3146,7 +3146,7 @@ cm_model_t *idCollisionModelManagerLocal::LoadRenderModel( const char *fileName 
 
 	// only load ASE and LWO models
 	idStr( fileName ).ExtractFileExtension( extension );
-	if ( ( extension.Icmp( "ase" ) != 0 ) && ( extension.Icmp( "lwo" ) != 0 ) && ( extension.Icmp( "ma" ) != 0 ) && (extension.Icmp("obj") != 0)) {
+	if ( ( extension.Icmp( "ase" ) != 0 ) && ( extension.Icmp( "md3" ) != 0 ) && ( extension.Icmp( "ma" ) != 0 ) && (extension.Icmp("obj") != 0)) {
 		return NULL;
 	}
 
@@ -3155,6 +3155,14 @@ cm_model_t *idCollisionModelManagerLocal::LoadRenderModel( const char *fileName 
 	}
 
 	renderModel = renderModelManager->FindModel( fileName );
+	
+// jmarshall
+	bool renderModelRequiresInit = renderModel->CollisionRequiresInstantiate();
+	if (renderModelRequiresInit)
+	{
+		renderModel = renderModel->InstantiateDynamicModel(nullptr, nullptr, nullptr);
+	}
+// jmarshall end
 
 	model = AllocModel();
 	model->name = fileName;
@@ -3234,6 +3242,13 @@ cm_model_t *idCollisionModelManagerLocal::LoadRenderModel( const char *fileName 
 
 	// shutdown the hash
 	ShutdownHash();
+
+// jmarshall
+	if (renderModelRequiresInit)
+	{
+		delete renderModel;
+	}
+// jmarshall end
 
 	//common->Printf( "loaded collision model %s\n", model->name.c_str() );
 
@@ -3862,4 +3877,30 @@ bool idCollisionModelManagerLocal::TrmFromModel( const char *modelName, idTraceM
 	}
 
 	return TrmFromModel( models[ handle ], trm );
+}
+
+
+void MakeCollisionModelForMesh_f(const idCmdArgs& args)
+{
+	if (args.Argc() != 2)
+	{
+		common->Warning("usage: makecollisionmodelformesh <model>\n");
+		return;
+	}
+
+	cm_model_t* model = collisionModelManagerLocal.LoadRenderModel(args.Argv(1));
+	if (model == nullptr)
+	{
+		common->Warning("Failed to load rendermodel %s\n", args.Argv(1));
+		return;
+	}
+
+	idStr fileName = args.Argv(1);
+	fileName.SetFileExtension(CM_FILE_EXT);
+	
+	idFile* file = fileSystem->OpenFileWrite(fileName.c_str());
+	collisionModelManagerLocal.WriteCollisionModel(file, model);
+	fileSystem->CloseFile(file);
+
+	delete model;
 }

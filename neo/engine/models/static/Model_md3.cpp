@@ -81,6 +81,7 @@ void idRenderModelMD3::InitFromFile( const char *fileName ) {
 	}
 // jmarshall - didn't write this out right, but not needed so just set to size of file.
 	pinmodel->ofsEnd = size; 
+	bounds.Clear();
 // jmarshall end
 
 	size = LittleLong(pinmodel->ofsEnd);
@@ -215,7 +216,9 @@ void idRenderModelMD3::InitFromFile( const char *fileName ) {
             xyz->xyz[0] = LittleShort( xyz->xyz[0] );
             xyz->xyz[1] = LittleShort( xyz->xyz[1] );
             xyz->xyz[2] = LittleShort( xyz->xyz[2] );
-
+// jmarshall
+			bounds.AddPoint(idVec3(xyz->xyz[0], xyz->xyz[1], xyz->xyz[2]));
+// jmarshall end
             xyz->normal = LittleShort( xyz->normal );
         }
 
@@ -316,9 +319,20 @@ idRenderModel *idRenderModelMD3::InstantiateDynamicModel( const struct renderEnt
 	surface = (md3Surface_t *) ((byte *)md3 + md3->ofsSurfaces);
 
 	// TODO: these need set by an entity
-	frame = ent->frame;			// probably want to keep frames < 1000 or so
-	oldframe = ent->lastFrame;
-	backlerp = ent->lerp;
+// jmarshall
+	if (ent != nullptr)
+	{
+		frame = ent->frame;			// probably want to keep frames < 1000 or so
+		oldframe = ent->lastFrame;
+		backlerp = ent->lerp;
+	}
+	else
+	{
+		frame = 0;
+		oldframe = 0;
+		backlerp = 1.0f;
+	}
+// jmarshall end
 
 	for( i = 0; i < md3->numSurfaces; i++ ) {
 
@@ -358,6 +372,8 @@ idRenderModel *idRenderModelMD3::InstantiateDynamicModel( const struct renderEnt
 		staticModel->bounds.AddPoint( surf.geometry->bounds[0] );
 		staticModel->bounds.AddPoint( surf.geometry->bounds[1] );
 
+		R_CleanupTriangles(surf.geometry, true, true, false);
+
 		// find the next surface
 		surface = (md3Surface_t *)( (byte *)surface + surface->ofsEnd );
 	}
@@ -377,10 +393,7 @@ idBounds idRenderModelMD3::Bounds(const struct renderEntity_t *ent) const {
 	ret.Clear();
 
 	if (!ent || !md3) {
-		// just give it the editor bounds
-		ret.AddPoint(idVec3(-10,-10,-10));
-		ret.AddPoint(idVec3( 10, 10, 10));
-		return ret;
+		return bounds;
 	}
 
 	md3Frame_t	*frame = (md3Frame_t *)( (byte *)md3 + md3->ofsFrames );

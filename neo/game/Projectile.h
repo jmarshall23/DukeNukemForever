@@ -297,7 +297,7 @@ public :
 	void					Spawn( void );
 
 	void					Create( idEntity *owner, const idVec3 &start, const idMat3 &axis );
-	void					Launch( void );
+	void					Launch(const idMaterial* material);
 	void					Think( void );
 	void					Killed( idEntity *inflictor, idEntity *attacker, int damage, const idVec3 &dir, int location );
 	void					Explode( void );
@@ -311,6 +311,7 @@ private:
 	const idDeclParticle *	smokeFly;
 	int						smokeFlyTime;
 	const idSoundShader *	sndBounce;
+	idRenderModel*			dynamicModel;
 
 
 	void					Event_Explode( void );

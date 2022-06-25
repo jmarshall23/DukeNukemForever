@@ -313,6 +313,9 @@ public:
 	// Writing to and reading from a demo file.
 	virtual void				ReadFromDemoFile( class idDemoFile *f ) = 0;
 	virtual void				WriteToDemoFile( class idDemoFile *f ) = 0;
+
+	// MD3 loader requires Instantiate.
+	virtual bool				CollisionRequiresInstantiate() = 0;
 };
 
 #endif /* !__MODEL_H__ */

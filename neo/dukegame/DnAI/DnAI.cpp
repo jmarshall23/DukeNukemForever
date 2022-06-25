@@ -24,8 +24,14 @@ void DnAI::Spawn(void)
 	turnVel = 0;
 	AI_ONGROUND = false;
 	AI_BLOCKED = false;
+	startedDeath = false;
+
+	fl.takedamage = true;
 
 	spawnArgs.GetFloat("turn_rate", "360", turnRate);
+
+	EgoKillValue = spawnArgs.GetInt("EgoKillValue", "0");
+	health = spawnArgs.GetInt("Health", "10");
 
 	idActor::Spawn();
 
@@ -490,6 +496,28 @@ void DnAI::UpdatePathToPosition(idVec3 pos)
 	MoveToPosition(pathWaypoints[0]);
 }
 
+bool DnAI::Pain(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location)
+{
+	if (startedDeath)
+	{
+		return true;
+	}
+
+	health -= damage;
+	if (health <= 0)
+	{
+		startedDeath = true;
+		SetState("state_BeginDeath");
+	}
+
+	return true;
+}
+
+void DnAI::Killed(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location)
+{
+	//SetState("state_Killed");
+}
+
 void DnAI::Think(void)
 {
 	idActor::Think();
@@ -510,14 +538,17 @@ void DnAI::Think(void)
 
 	stateThread.Execute();
 
-	if (move.moveCommand != MOVE_NONE)
+	if (health > 0)
 	{
-		SlideMove();
-	}
-	else
-	{
-		current_yaw = ideal_yaw;
-		viewAxis = idAngles(0, ideal_yaw, 0).ToMat3();
-		SetAxis(viewAxis);
+		if (move.moveCommand != MOVE_NONE)
+		{
+			SlideMove();
+		}
+		else
+		{
+			current_yaw = ideal_yaw;
+			viewAxis = idAngles(0, ideal_yaw, 0).ToMat3();
+			SetAxis(viewAxis);
+		}
 	}
 }
