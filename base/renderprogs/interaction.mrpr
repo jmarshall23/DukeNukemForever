@@ -48,6 +48,8 @@ renderProg interaction
 
 		vec3 finalColor = vec3(0, 0, 0);
 
+		vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
+
 		for(int i = 0; i < $numLights; i++)
 		{
 			vec4 toLight = $lightorigin[i] - vertex;
@@ -74,8 +76,7 @@ renderProg interaction
 			halfAngleTangentVector.y = dot3( vBinormal, halfAngleVector );
 			halfAngleTangentVector.z = dot3( vNormal, halfAngleVector );
 
-			vec4 bumpMap =			tex2D( $bumpmap, st );
-			vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
+			vec4 bumpMap =			tex2D( $bumpmap, st );			
 			vec4 specMap =			tex2D( $specularmap, gl_TexCoord[4].xy );
 
 			vec3 realLightOrigin = $globalLightOrigin[i].xyz;
@@ -89,7 +90,7 @@ renderProg interaction
 			float hDotN = dot3( normalize( halfAngleTangentVector ), localNormal );
 			vec3 specularContribution = vec3( pow(hDotN, specularPower) );
 
-			vec3 diffuseColor = diffuseMap.xyz * $lightcolor[i].xyz;
+			vec3 diffuseColor = $lightcolor[i].xyz;
 			vec3 specularColor = specMap.xyz * specularContribution;
 
 			float attenuation = AttenuationPointLight(gl_TexCoord[5].xyz, vec4(realLightOrigin, 1.0), $globalLightExtents[i]);
@@ -100,7 +101,7 @@ renderProg interaction
 			finalColor += ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
 		}
 
-		gl_FragColor.xyz = finalColor;
+		gl_FragColor.xyz = diffuseMap.xyz * finalColor;
 		gl_FragColor.w = 1.0;
 	}
 }
