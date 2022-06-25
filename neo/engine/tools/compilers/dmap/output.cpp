@@ -33,6 +33,7 @@ If you have questions concerning this license or the applicable additional terms
 
 //=================================================================================
 
+idBounds Map_CalcOptimizeGroup(const optimizeGroup_t* group);
 
 #if 0
 
@@ -130,6 +131,18 @@ static int CountUniqueShaders( optimizeGroup_t *groups ) {
 			if ( a->mergeGroup != b->mergeGroup ) {
 				continue;
 			}
+
+// jmarshall - don't merge if this group is too far away, with forward+ it makes it so we have to deal with lights that are
+// very far.
+			idBounds a_bound = Map_CalcOptimizeGroup(a);
+			idBounds b_bound = Map_CalcOptimizeGroup(b);
+
+			float dist = (a_bound.GetCenter() - b_bound.GetCenter()).LengthFast();
+			if (dist > 1000)
+			{
+				continue;
+			}
+// jmarshall end
 			break;
 		}
 		if ( a == b ) {
@@ -356,6 +369,25 @@ static void WriteShadowTriangles( const srfTriangles_t *tri ) {
 }
 
 
+// jmarshall
+/*
+=================
+BoundOptimizeGroup
+=================
+*/
+idBounds Map_CalcOptimizeGroup(const optimizeGroup_t* group) {
+	idBounds bounds;
+	bounds.Clear();
+	for (mapTri_t* tri = group->triList; tri; tri = tri->next) {
+		bounds.AddPoint(tri->v[0].xyz);
+		bounds.AddPoint(tri->v[1].xyz);
+		bounds.AddPoint(tri->v[2].xyz);
+	}
+
+	return bounds;
+}
+// jmarshall
+
 /*
 =======================
 GroupsAreSurfaceCompatible
@@ -371,57 +403,46 @@ static bool GroupsAreSurfaceCompatible( const optimizeGroup_t *a, const optimize
 	if ( a->mergeGroup != b->mergeGroup ) {
 		return false;
 	}
+// jmarshall - don't merge if this group is too far away, with forward+ it makes it so we have to deal with lights that are
+// very far.
+	idBounds a_bound = Map_CalcOptimizeGroup(a);
+	idBounds b_bound = Map_CalcOptimizeGroup(b);
+
+	float dist = (a_bound.GetCenter() - b_bound.GetCenter()).LengthFast();
+	if (dist > 1000)
+	{
+		return false;
+	}
+// jmarshall end
+
 	return true;
 }
 
-/*
-====================
-WriteOutputSurfaces
-====================
-*/
-static void WriteOutputSurfaces( int entityNum, int areaNum ) {
-	mapTri_t	*ambient, *copy;
-	int			surfaceNum;
-	int			numSurfaces;
-	idMapEntity	*entity;
-	uArea_t		*area;
-	optimizeGroup_t	*group, *groupStep;
-	int			i; // , j;
-//	int			col;
-	srfTriangles_t	*uTri;
-//	mapTri_t	*tri;
-typedef struct interactionTris_s {
-	struct interactionTris_s	*next;
-	mapTri_t	*triList;
-	mapLight_t	*light;
-} interactionTris_t;
+// jmarshall - cleaned this up.
+struct dmapSurface_t {
+	srfTriangles_t* uTri;
+	idStr materialName;
+};
 
-	interactionTris_t	*interactions, *checkInter; //, *nextInter;
+static void CreateSrfTriangleList(int entityNum, int areaNum, idList<dmapSurface_t> &srfTriangles)
+{
+	mapTri_t* ambient, * copy;
+	srfTriangles_t* uTri;
+	uArea_t* area;
+	optimizeGroup_t* group, * groupStep;
+	typedef struct interactionTris_s {
+		struct interactionTris_s* next;
+		mapTri_t* triList;
+		mapLight_t* light;
+	} interactionTris_t;
 
+	interactionTris_t* interactions, * checkInter; //, *nextInter;
 
 	area = &dmapGlobals.uEntities[entityNum].areas[areaNum];
-	entity = dmapGlobals.uEntities[entityNum].mapEntity;
+	
 
-	numSurfaces = CountUniqueShaders( area->groups );
-
-
-	if ( entityNum == 0 ) {
-		procFile->WriteFloatString( "model { /* name = */ \"_area%i\" /* numSurfaces = */ %i\n\n", 
-			areaNum, numSurfaces );
-	} else {
-		const char *name;
-
-		entity->epairs.GetString( "name", "", &name );
-		if ( !name[0] ) {
-			common->Error( "Entity %i has surfaces, but no name key", entityNum );
-		}
-		procFile->WriteFloatString( "model { /* name = */ \"%s\" /* numSurfaces = */ %i\n\n", 
-			name, numSurfaces );
-	}
-
-	surfaceNum = 0;
-	for ( group = area->groups ; group ; group = group->nextGroup ) {
-		if ( group->surfaceEmited ) {
+	for (group = area->groups; group; group = group->nextGroup) {
+		if (group->surfaceEmited) {
 			continue;
 		}
 
@@ -436,62 +457,96 @@ typedef struct interactionTris_s {
 		// get its own list of indexes out of the original surface
 		interactions = NULL;
 
-		for ( groupStep = group ; groupStep ; groupStep = groupStep->nextGroup ) {
-			if ( groupStep->surfaceEmited ) {
+		for (groupStep = group; groupStep; groupStep = groupStep->nextGroup) {
+			if (groupStep->surfaceEmited) {
 				continue;
 			}
-			if ( !GroupsAreSurfaceCompatible( group, groupStep ) ) {
+			if (!GroupsAreSurfaceCompatible(group, groupStep)) {
 				continue;
 			}
 
 			// copy it out to the ambient list
-			copy = CopyTriList( groupStep->triList );
-			ambient = MergeTriLists( ambient, copy );
+			copy = CopyTriList(groupStep->triList);
+			ambient = MergeTriLists(ambient, copy);
 			groupStep->surfaceEmited = true;
 
 			// duplicate it into an interaction for each groupLight
-			for ( i = 0 ; i < groupStep->numGroupLights ; i++ ) {
-				for ( checkInter = interactions ; checkInter ; checkInter = checkInter->next ) {
-					if ( checkInter->light == groupStep->groupLights[i] ) {
+			for (int i = 0; i < groupStep->numGroupLights; i++) {
+				for (checkInter = interactions; checkInter; checkInter = checkInter->next) {
+					if (checkInter->light == groupStep->groupLights[i]) {
 						break;
 					}
 				}
-				if ( !checkInter ) {
+				if (!checkInter) {
 					// create a new interaction
-					checkInter = (interactionTris_t *)Mem_ClearedAlloc( sizeof( *checkInter ) );
+					checkInter = (interactionTris_t*)Mem_ClearedAlloc(sizeof(*checkInter));
 					checkInter->light = groupStep->groupLights[i];
 					checkInter->next = interactions;
 					interactions = checkInter;
 				}
-				copy = CopyTriList( groupStep->triList );
-				checkInter->triList = MergeTriLists( checkInter->triList, copy );
+				copy = CopyTriList(groupStep->triList);
+				checkInter->triList = MergeTriLists(checkInter->triList, copy);
 			}
 		}
 
-		if ( !ambient ) {
+		if (!ambient) {
 			continue;
 		}
 
-		if ( surfaceNum >= numSurfaces ) {
-			common->Error( "WriteOutputSurfaces: surfaceNum >= numSurfaces" );
+		uTri = ShareMapTriVerts(ambient);
+
+		dmapSurface_t newSurf;
+		newSurf.uTri = uTri;
+		newSurf.materialName = ambient->material->GetName();
+
+		FreeTriList(ambient);
+
+		srfTriangles.Append(newSurf);
+	}
+}
+
+/*
+====================
+WriteOutputSurfaces
+====================
+*/
+static void WriteOutputSurfaces( int entityNum, int areaNum ) {
+	idList<dmapSurface_t> srfTriangles;
+	idMapEntity* entity;
+
+	entity = dmapGlobals.uEntities[entityNum].mapEntity;
+
+	CreateSrfTriangleList(entityNum, areaNum, srfTriangles);
+
+	if ( entityNum == 0 ) {
+		procFile->WriteFloatString( "model { /* name = */ \"_area%i\" /* numSurfaces = */ %i\n\n", 
+			areaNum, srfTriangles.Num() );
+	} else {
+		const char *name;
+
+		entity->epairs.GetString( "name", "", &name );
+		if ( !name[0] ) {
+			common->Error( "Entity %i has surfaces, but no name key", entityNum );
 		}
+		procFile->WriteFloatString( "model { /* name = */ \"%s\" /* numSurfaces = */ %i\n\n", 
+			name, srfTriangles.Num());
+	}
 
-		procFile->WriteFloatString( "/* surface %i */ { ", surfaceNum );
-		surfaceNum++;
-		procFile->WriteFloatString( "\"%s\" ", ambient->material->GetName() );
+	for (int i = 0; i < srfTriangles.Num(); i++)
+	{
+		procFile->WriteFloatString("/* surface %i */ { ", i);
+		procFile->WriteFloatString("\"%s\" ", srfTriangles[i].materialName.c_str());
 
-		uTri = ShareMapTriVerts( ambient );
-		FreeTriList( ambient );
+		CleanupUTriangles(srfTriangles[i].uTri);
+		WriteUTriangles(srfTriangles[i].uTri);
+		R_FreeStaticTriSurf(srfTriangles[i].uTri);
 
-		CleanupUTriangles( uTri );
-		WriteUTriangles( uTri );
-		R_FreeStaticTriSurf( uTri );
-
-		procFile->WriteFloatString( "}\n\n" );
+		procFile->WriteFloatString("}\n\n");
 	}
 
 	procFile->WriteFloatString( "}\n\n" );
 }
+// jmarshall end
 
 /*
 ===============
@@ -669,21 +724,6 @@ void WriteOutputFile( void ) {
 		}
 
 		WriteOutputEntity( i );
-	}
-
-	// write the shadow volumes
-	for ( i = 0 ; i < dmapGlobals.mapLights.Num() ; i++ ) {
-		mapLight_t	*light = dmapGlobals.mapLights[i];
-		if ( !light->shadowTris ) {
-			continue;
-		}
-
-		procFile->WriteFloatString( "shadowModel { /* name = */ \"_prelight_%s\"\n\n", light->name );
-		WriteShadowTriangles( light->shadowTris );
-		procFile->WriteFloatString( "}\n\n" );
-
-		R_FreeStaticTriSurf( light->shadowTris );
-		light->shadowTris = NULL;
 	}
 
 	fileSystem->CloseFile( procFile );

@@ -187,6 +187,75 @@ idRenderModelCommitted* idRenderWorldCommitted::CommitRenderModel(idRenderEntity
 	return vModel;
 }
 
+
+/*
+===================
+idRenderWorldCommitted::AddModelAndLightRefs
+===================
+*/
+void idRenderWorldCommitted::AddModelAndLightRefs(void) {
+	idRenderLightCommitted* vLight;
+	idRenderModelCommitted* vEnt;
+	idRenderWorldLocal* renderWorldFrontEnd = static_cast<idRenderWorldLocal*>(renderWorld);
+
+	for (int i = 0; i < renderWorldFrontEnd->lightDefs.Num(); i++)
+	{
+		idRenderLightLocal* lightDef = renderWorldFrontEnd->lightDefs[i];
+
+		if (lightDef == nullptr)
+			continue;
+
+		// debug tool to allow viewing of only one light at a time
+		if (r_singleLight.GetInteger() >= 0 && r_singleLight.GetInteger() != renderWorldFrontEnd->lightDefs[i]->index) {
+			continue;
+		}
+
+		vLight = tr.viewDef->CommitRenderLight(renderWorldFrontEnd->lightDefs[i]);
+		vLight->scissorRect = vLight->CalcLightScissorRectangle();
+
+		const idMaterial* lightShader = lightDef->lightShader;
+		if (!lightShader) {
+			common->Error("NULL lightShader");
+		}
+
+		// evaluate the light shader registers
+		float* lightRegs = (float*)R_FrameAlloc(lightShader->GetNumRegisters() * sizeof(float));
+		vLight->shaderRegisters = lightRegs;
+		lightShader->EvaluateRegisters(lightRegs, lightDef->parms.shaderParms, tr.viewDef, lightDef->parms.referenceSound);
+
+		int litRenderTableSize = renderWorldFrontEnd->entityDefs.Num() * sizeof(idRenderEntityLocal*);
+
+		vLight->litRenderEntityTableSize = renderWorldFrontEnd->entityDefs.Num();
+		vLight->litRenderEntities = (idRenderEntityLocal**)R_FrameAlloc(litRenderTableSize);
+		memset(vLight->litRenderEntities, 0, litRenderTableSize);	
+	}
+
+	for (int i = 0; i < renderWorldFrontEnd->entityDefs.Num(); i++)
+	{
+		// debug tool to allow viewing of only one entity at a time
+		if (r_singleEntity.GetInteger() >= 0 && r_singleEntity.GetInteger() != renderWorldFrontEnd->entityDefs[i]->index) {
+			continue;
+		}
+
+		if (renderWorldFrontEnd->entityDefs[i] == nullptr)
+			continue;
+
+		// remove decals that are completely faded away
+		renderWorldFrontEnd->entityDefs[i]->FreeEntityDefFadedDecals(tr.viewDef->renderView.time);
+
+		vEnt = tr.viewDef->CommitRenderModel(renderWorldFrontEnd->entityDefs[i]);
+		vEnt->scissorRect = vEnt->CalcEntityScissorRectangle();
+
+		vEnt->renderModel = vEnt->CreateDynamicModel();
+		if (vEnt->renderModel == NULL || vEnt->renderModel->NumSurfaces() <= 0) {
+			continue;
+		}
+
+		vEnt->AddDrawsurfs(i, tr.viewDef->viewLights);
+	}
+
+}
+
 /*
 ================
 R_RenderView
@@ -226,7 +295,7 @@ void idRenderWorldCommitted::RenderView(void) {
 
 	// identify all the visible portalAreas, and the entityDefs and
 	// lightDefs that are in them and pass culling.
-	static_cast<idRenderWorldLocal*>(renderWorld)->AddModelAndLightRefs();
+	AddModelAndLightRefs();
 
 	// constrain the view frustum to the view lights and entities
 	ConstrainViewFrustum();

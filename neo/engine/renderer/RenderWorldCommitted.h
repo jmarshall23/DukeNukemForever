@@ -14,6 +14,7 @@ public:
 private:
 	void								SetupViewFrustum(void);
 	void								ConstrainViewFrustum(void);
+	void								AddModelAndLightRefs(void);
 public:
 	// specified in the call to DrawScene()
 	renderView_t		renderView;

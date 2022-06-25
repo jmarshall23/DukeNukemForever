@@ -330,7 +330,7 @@ bool R_IssueEntityDefCallback(idRenderEntityLocal* def) {
 R_AddDrawSurf
 =================
 */
-void R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitted* space, const renderEntity_t* renderEntity,
+drawSurf_t* R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitted* space, const renderEntity_t* renderEntity,
 	const idMaterial* shader, const idScreenRect& scissor) {
 	drawSurf_t* drawSurf;
 	const float* shaderParms;
@@ -345,6 +345,7 @@ void R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitted* spac
 	drawSurf->sort = shader->GetSort() + tr.sortOffset;
 	drawSurf->dsFlags = 0;
 	drawSurf->forceTwoSided = renderEntity->forceTwoSided;
+	drawSurf->numSurfRenderLights = 0;
 
 	// bumping this offset each time causes surfaces with equal sort orders to still
 	// deterministically draw in the order they are added
@@ -476,6 +477,53 @@ void R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitted* spac
 	// we can't add subviews at this point, because that would
 	// increment tr.viewCount, messing up the rest of the surface
 	// adds for this view
+
+	return drawSurf;
+}
+
+/*
+===============
+idRenderModelCommitted::GenerateSurfaceLights
+===============
+*/
+void idRenderModelCommitted::GenerateSurfaceLights(int committedRenderModelId, drawSurf_t* newDrawSurf, const idRenderLightCommitted* lightDefs)
+{
+	const idRenderLightCommitted* vLight = lightDefs;
+
+	while (vLight != nullptr)
+	{
+		idBounds drawSurfBounds = newDrawSurf->geo->bounds;
+		drawSurfBounds.TranslateSelf(entityDef->parms.origin);
+		
+		idRenderLightLocal* renderLight = vLight->lightDef;
+
+		idBounds lightBounds = idBounds(-renderLight->parms.lightRadius, renderLight->parms.lightRadius);
+		lightBounds.TranslateSelf(renderLight->parms.origin);
+
+		if (drawSurfBounds.IntersectsBounds(lightBounds))
+		{
+			if (newDrawSurf->numSurfRenderLights >= MAX_RENDERLIGHTS_PER_SURFACE)
+			{
+				common->Error("Too many realtime shadow casting lights hitting surface.");
+			}
+
+			newDrawSurf->surfRenderLights[newDrawSurf->numSurfRenderLights++] = vLight;
+
+#ifdef _DEBUG
+			if (vLight->litRenderEntities[committedRenderModelId] != nullptr)
+			{
+				if (vLight->litRenderEntities[committedRenderModelId] != this->entityDef)
+				{
+					common->FatalError("idRenderModelCommitted::GenerateSurfaceLights: Broken light table!");
+				}
+			}
+#endif
+
+			vLight->litRenderEntities[committedRenderModelId] = this->entityDef;
+		}
+
+		vLight = vLight->next;
+	}
 }
 
 /*
@@ -487,14 +535,14 @@ Walks through the viewEntitys list and creates drawSurf_t for each surface of
 each viewEntity that has a non-empty scissorRect
 ===============
 */
-void R_AddAmbientDrawsurfs(idRenderModelCommitted* vEntity) {
+void idRenderModelCommitted::AddDrawsurfs(int committedRenderModelId, const idRenderLightCommitted* lightDefs) {
 	int					i, total;
 	idRenderEntityLocal* def;
 	srfTriangles_t* tri;
 	idRenderModel* model;
 	const idMaterial* shader;
 
-	def = vEntity->entityDef;
+	def = entityDef;
 
 	if (def->dynamicModel) {
 		model = def->dynamicModel;
@@ -554,7 +602,7 @@ void R_AddAmbientDrawsurfs(idRenderModelCommitted* vEntity) {
 			}
 		}
 
-		if (!R_CullLocalBox(tri->bounds, vEntity->modelMatrix, 5, tr.viewDef->frustum)) {
+		if (!R_CullLocalBox(tri->bounds, modelMatrix, 5, tr.viewDef->frustum)) {
 
 			def->visibleCount = tr.viewCount;
 
@@ -574,7 +622,10 @@ void R_AddAmbientDrawsurfs(idRenderModelCommitted* vEntity) {
 			}
 
 			// add the surface for drawing
-			R_AddDrawSurf(tri, vEntity, &vEntity->entityDef->parms, shader, vEntity->scissorRect);
+			drawSurf_t *newDrawSurf = R_AddDrawSurf(tri, this, &entityDef->parms, shader, scissorRect);
+
+			// Generate lighting for this surface.
+			GenerateSurfaceLights(committedRenderModelId, newDrawSurf, lightDefs);
 
 			// ambientViewCount is used to allow light interactions to be rejected
 			// if the ambient surface isn't visible at all
@@ -584,7 +635,7 @@ void R_AddAmbientDrawsurfs(idRenderModelCommitted* vEntity) {
 
 	// add the lightweight decal surfaces
 	for (idRenderModelDecal* decal = def->decals; decal; decal = decal->Next()) {
-		decal->AddDecalDrawSurf(vEntity);
+		decal->AddDecalDrawSurf(this);
 	}
 }
 

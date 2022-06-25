@@ -16,6 +16,9 @@ public:
 	idScreenRect					CalcEntityScissorRectangle(void);
 	idRenderModel*					CreateDynamicModel(void);
 	void							DeformDrawSurf(drawSurf_t* drawSurf) const;
+	void							AddDrawsurfs(int committedRenderModelId, const idRenderLightCommitted *lightDefs);
+private:
+	void							GenerateSurfaceLights(int committedRenderModelId, drawSurf_t* newDrawSurf, const idRenderLightCommitted* lightDefs);
 public:
 
 	idRenderModelCommitted* next;

@@ -159,8 +159,6 @@ public:
 	idList<idRenderEntityLocal*>	entityDefs;
 	idList<idRenderLightLocal*>		lightDefs;
 
-	void							AddModelAndLightRefs(void);
-
 	//-----------------------
 	// RenderWorld_load.cpp
 

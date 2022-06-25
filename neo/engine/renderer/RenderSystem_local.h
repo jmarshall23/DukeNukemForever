@@ -116,6 +116,8 @@ SURFACES
 // drawSurf_t are always allocated and freed every frame, they are never cached
 static const int	DSF_VIEW_INSIDE_SHADOW	= 1;
 
+#define MAX_RENDERLIGHTS_PER_SURFACE		25
+
 typedef struct drawSurf_s {
 	const srfTriangles_t	*geo;
 	const idRenderModelCommitted *space;
@@ -127,7 +129,11 @@ typedef struct drawSurf_s {
 	idScreenRect			scissorRect;	// for scissor clipping, local inside renderView viewport
 	int						dsFlags;			// DSF_VIEW_INSIDE_SHADOW, etc
 	struct vertCache_s		*dynamicTexCoords;	// float * in vertex cache memory
-	// specular directions for non vertex program cards, skybox texcoords, etc
+
+// jmarshall
+	int numSurfRenderLights;
+	const idRenderLightCommitted* surfRenderLights[MAX_RENDERLIGHTS_PER_SURFACE];
+// jmarshall end
 } drawSurf_t;
 
 
@@ -959,7 +965,7 @@ void R_ListRenderEntityDefs_f( const idCmdArgs &args );
 bool R_IssueEntityDefCallback( idRenderEntityLocal *def );
 idRenderModel *R_EntityDefDynamicModel( idRenderEntityLocal *def );
 
-void R_AddDrawSurf( const srfTriangles_t *tri, const idRenderModelCommitted *space, const renderEntity_t *renderEntity,
+drawSurf_t *R_AddDrawSurf( const srfTriangles_t *tri, const idRenderModelCommitted *space, const renderEntity_t *renderEntity,
 					const idMaterial *shader, const idScreenRect &scissor );
 
 
