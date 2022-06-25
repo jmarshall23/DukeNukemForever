@@ -7,7 +7,7 @@ entityDef player_dukenukem {
    "scriptobject" "player"
 
    "hud"                "guis/hud.gui"
-   "def_weapon0"		"weapon_pistol"
+   "def_weapon0"		"weapon_mightyfoot"
    "def_weapon1"		"weapon_pistol"
    "def_weapon2"						""
    "def_weapon3"						""

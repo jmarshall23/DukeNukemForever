@@ -1009,6 +1009,8 @@ void idWeapon::GetWeaponDef( const char* objectname, int ammoinclip )
 
 	weaponDef			= gameLocal.FindEntityDef( objectname );
 
+	gun_decl_offset		= weaponDef->dict.GetVector("view_model_offset");
+
 	ammoType			= GetAmmoNumForName( weaponDef->dict.GetString( "ammoType" ) );
 	ammoRequired		= weaponDef->dict.GetInt( "ammoRequired" );
 	clipSize			= weaponDef->dict.GetInt( "clipSize" );

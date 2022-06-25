@@ -322,8 +322,14 @@ public:
 	bool					IsLinked()
 	{
 		return currentWeaponObject != NULL;
+	}	
+
+	idVec3					GetGunDeclOffset() const {
+		return gun_decl_offset;
 	}
 private:
+	idVec3					gun_decl_offset;
+
 	int						animBlendFrames;
 	int						animDoneTime;
 	bool					isPlayerFlashlight;

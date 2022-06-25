@@ -9,7 +9,7 @@
 
 	586 constants
 	56 enums
-	294 classes/structs/unions
+	295 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -3497,7 +3497,8 @@ static classVariableInfo_t rvmWeaponObject_typeInfo[] = {
 };
 
 static classVariableInfo_t idWeapon_typeInfo[] = {
-	{ ": int", "animBlendFrames", (intptr_t)(&((idWeapon *)0)->animBlendFrames), sizeof( ((idWeapon *)0)->animBlendFrames ) },
+	{ ": idVec3", "gun_decl_offset", (intptr_t)(&((idWeapon *)0)->gun_decl_offset), sizeof( ((idWeapon *)0)->gun_decl_offset ) },
+	{ "int", "animBlendFrames", (intptr_t)(&((idWeapon *)0)->animBlendFrames), sizeof( ((idWeapon *)0)->animBlendFrames ) },
 	{ "int", "animDoneTime", (intptr_t)(&((idWeapon *)0)->animDoneTime), sizeof( ((idWeapon *)0)->animDoneTime ) },
 	{ "bool", "isPlayerFlashlight", (intptr_t)(&((idWeapon *)0)->isPlayerFlashlight), sizeof( ((idWeapon *)0)->isPlayerFlashlight ) },
 	{ "bool", "isLinked", (intptr_t)(&((idWeapon *)0)->isLinked), sizeof( ((idWeapon *)0)->isLinked ) },
@@ -4505,6 +4506,10 @@ static classVariableInfo_t idBrittleFracture_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t dnWeaponMightyFoot_typeInfo[] = {
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t dnWeaponPistol_typeInfo[] = {
 	{ ": float", "spread", (intptr_t)(&((dnWeaponPistol *)0)->spread), sizeof( ((dnWeaponPistol *)0)->spread ) },
 	{ "const idSoundShader *", "fireSound", (intptr_t)(&((dnWeaponPistol *)0)->fireSound), sizeof( ((dnWeaponPistol *)0)->fireSound ) },
@@ -4946,6 +4951,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "idSecurityCamera", "idEntity", sizeof(idSecurityCamera), idSecurityCamera_typeInfo },
 	{ "shard_t", "", sizeof(shard_t), shard_t_typeInfo },
 	{ "idBrittleFracture", "idEntity", sizeof(idBrittleFracture), idBrittleFracture_typeInfo },
+	{ "dnWeaponMightyFoot", "rvmWeaponObject", sizeof(dnWeaponMightyFoot), dnWeaponMightyFoot_typeInfo },
 	{ "dnWeaponPistol", "rvmWeaponObject", sizeof(dnWeaponPistol), dnWeaponPistol_typeInfo },
 	{ "idTestModel", "idAnimatedEntity", sizeof(idTestModel), idTestModel_typeInfo },
 	{ "idMoveState", "", sizeof(idMoveState), idMoveState_typeInfo },

@@ -311,7 +311,6 @@ public:
 	bool					healthTake;
 	int						nextHealthTake;
 
-
 	bool					hiddenWeapon;		// if the weapon is hidden ( in noWeapons maps )
 	idEntityPtr<idProjectile> soulCubeProjectile;
 

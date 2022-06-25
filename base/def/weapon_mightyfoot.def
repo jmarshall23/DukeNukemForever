@@ -1,0 +1,70 @@
+/***********************************************************************
+
+	weapon_mightyfoot.def
+
+***********************************************************************/
+
+entityDef weapon_mightyfoot {
+	"model_view" 				"models/weapons/mightyfoot/MightyFoot.md3"
+
+	"inv_name"					"mightyfoot"
+	"inv_weapon"				"weapon_mightyfoot"
+	"icon"						"guis/assets/hud/wpn_12"
+	"view_model_offset"			"10 -10 -30"
+	"weapon_class"				"dnWeaponMightyFoot"
+	"def_melee"					"damage_mightyfoot"
+	"melee_distance"			"48"
+	"ammoType"					""
+	"ammoRequired"				"0"
+	"clipSize"					"0"
+	"mtr_flashShader"			""
+	"flashColor"				""
+	"flashRadius"				"0"
+	"silent_fire"				"1"
+
+	"hide_time"					"0.3"								// time to hide weapon when talking to npcs or looking at guis
+	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
+
+	"impact_damage_effect"		"1"
+
+	"snd_acquire"				"guisounds_weapon"
+	"skin_invisible"			"skins/mightyfoot_invis"
+	
+	"stealing"					"1"					// this weapon steals other player weapon
+}
+
+entityDef damage_mightyfoot {
+	"damage"			"20"
+	"kickDir"			"-1 0 0"
+
+	"mtr_blob"			"genericDamage"
+	"blob_time"			"300"
+	"blob_size"			"400"
+	"blob_offset_x"		"400"
+
+	"knockback"			"20"
+	"push"				"20000"
+
+	"gib"				"1"
+	"smoke_wound_flesh"	"burstysquirt.prt"
+	"mtr_wound_flesh"	"textures/decals/hurt02"
+
+	"kick_time"			"400"
+	"kick_amplitude"	"1"
+
+	"dv_time"			"100"
+
+	"snd_metal"			"fist_impact"
+	"snd_ricochet"		"fist_impact"
+	"snd_flesh"			"fist_impact_flesh"
+	"snd_stone"			"fist_impact"
+	"snd_wood"			"fist_impact"
+	"snd_cardboard"		"fist_impact"
+	"snd_glass"			"fist_impact"
+	"snd_liquid"		"fist_impact"
+	"snd_plastic"		"fist_impact"
+
+	"snd_hit"			"fist_impact"
+	"snd_miss"			"fist_whoosh"		
+	"snd_hit_berserk"	"fist_gorepunch"
+}

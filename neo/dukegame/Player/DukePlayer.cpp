@@ -15,4 +15,7 @@ void DukePlayer::UpdateHudStats(idUserInterface* hud)
 void DukePlayer::SetStartingInventory(void)
 {
 	inventory.ammo[DN_WEAPON_PISTOL] = 48;
+
+	Give("weapon", "weapon_mightyfoot");
+	Give("weapon", "weapon_pistol");
 }
