@@ -98,7 +98,7 @@ renderProg interaction
 
 			float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, realLightOrigin, $shadowMapInfo[i]);
 
-			finalColor += ( diffuseColor.xyz + specularColor ) * lightColor * shadow;
+			finalColor += ( diffuseColor.xyz ) * lightColor * shadow;
 		}
 
 		gl_FragColor.xyz = diffuseMap.xyz * finalColor;
