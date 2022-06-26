@@ -867,74 +867,6 @@ void Sys_In_Restart_f( const idCmdArgs &args ) {
 	Sys_InitInput();
 }
 
-
-/*
-==================
-Sys_AsyncThread
-==================
-*/
-static void Sys_AsyncThread( void *parm ) {
-	int		wakeNumber;
-	int		startTime;
-
-	startTime = Sys_Milliseconds();
-	wakeNumber = 0;
-
-	while ( 1 ) {
-#ifdef WIN32	
-		// this will trigger 60 times a second
-		int r = WaitForSingleObject( hTimer, 100 );
-		if ( r != WAIT_OBJECT_0 ) {
-			OutputDebugString( "idPacketServer::PacketServerInterrupt: bad wait return" );
-		}
-#endif
-
-#if 0
-		wakeNumber++;
-		int		msec = Sys_Milliseconds();
-		int		deltaTime = msec - startTime;
-		startTime = msec;
-
-		char	str[1024];
-		sprintf( str, "%i ", deltaTime );
-		OutputDebugString( str );
-#endif
-
-
-		common->Async();
-	}
-}
-
-/*
-==============
-Sys_StartAsyncThread
-
-Start the thread that will call idCommon::Async()
-==============
-*/
-void Sys_StartAsyncThread( void ) {
-	// create an auto-reset event that happens 60 times a second
-	hTimer = CreateWaitableTimer( NULL, false, NULL );
-	if ( !hTimer ) {
-		common->Error( "idPacketServer::Spawn: CreateWaitableTimer failed" );
-	}
-
-	LARGE_INTEGER	t;
-	t.HighPart = t.LowPart = 0;
-	SetWaitableTimer( hTimer, &t, USERCMD_MSEC, NULL, NULL, TRUE );
-
-	Sys_CreateThread( (xthread_t)Sys_AsyncThread, NULL, THREAD_ABOVE_NORMAL, threadInfo, "Async", g_threads,  &g_thread_count );
-
-#ifdef SET_THREAD_AFFINITY 
-	// give the async thread an affinity for the second cpu
-	SetThreadAffinityMask( (HANDLE)threadInfo.threadHandle, 2 );
-#endif
-
-	if ( !threadInfo.threadHandle ) {
-		common->Error( "Sys_StartAsyncThread: failed" );
-	}
-}
-
 /*
 ================
 Sys_AlreadyRunning
@@ -1418,8 +1350,6 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 		DisableTaskKeys( TRUE, FALSE, /*( win32.win_notaskkeys.GetInteger() == 2 )*/ FALSE );
 	}
 #endif
-
-	Sys_StartAsyncThread();
 
 	// hide or show the early console as necessary
 	if ( win32.win_viewlog.GetInteger() || com_skipRenderer.GetBool() || idAsyncNetwork::serverDedicated.GetInteger() ) {

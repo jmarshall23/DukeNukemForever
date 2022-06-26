@@ -120,7 +120,6 @@ public:
 	virtual bool				IsInitialized( void ) const;
 	virtual void				Frame( void );
 	virtual void				GUIFrame( bool execCmd, bool network );
-	virtual void				Async( void );
 	virtual void				StartupVariable( const char *match, bool once );
 	virtual void				InitTool( const toolFlag_t tool, const idDict *dict );
 	virtual void				ActivateTool( bool active );
@@ -156,6 +155,10 @@ public:
 	void						LocalizeSpecificMapData( const char *fileName, idLangDict &langDict, const idLangDict &replaceArgs );
 
 	void						SetMachineSpec( void );
+
+	virtual float				Get_com_engineHz_latched(void);
+	virtual int64_t				Get_com_engineHz_numerator(void);
+	virtual int64_t				Get_com_engineHz_denominator(void);
 
 private:
 	void						InitCommands( void );
@@ -197,14 +200,23 @@ private:
 
 	idLangDict					languageDict;
 
+	int							gameFrame;			// Frame number of the local game
+	double						gameTimeResidual;	// left over msec from the last game frame
+
 #ifdef ID_WRITE_VERSION
 	idCompressor *				config_compressor;
 #endif
 };
 
+idCVar com_engineHz("com_engineHz", "90", CVAR_FLOAT | CVAR_ARCHIVE, "Frames per second the engine runs at", 10.0f, 1024.0f);
+idCVar com_deltaTimeClamp("com_deltaTimeClamp", "50", CVAR_INTEGER, "don't process more than this time in a single frame");
+
 idCommonLocal	commonLocal;
 idCommon *		common = &commonLocal;
 
+float com_engineHz_latched = 90.0f; // Latched version of cvar, updated between map loads
+int64_t com_engineHz_numerator = 100LL * 1000LL;
+int64_t com_engineHz_denominator = 100LL * 60LL;
 
 /*
 ==================
@@ -224,6 +236,9 @@ idCommonLocal::idCommonLocal( void ) {
 	rd_buffer = NULL;
 	rd_buffersize = 0;
 	rd_flush = NULL;
+
+	gameFrame = 0;
+	gameTimeResidual = 0;
 
 	gameDLL = 0;
 
@@ -2431,6 +2446,10 @@ void idCommonLocal::InitRenderSystem( void ) {
 
 	renderSystem->InitOpenGL();
 
+	// Support up to 2 digits after the decimal point
+	com_engineHz_denominator = 100LL * com_engineHz.GetFloat();
+	com_engineHz_latched = com_engineHz.GetFloat();
+
 #ifdef ID_ALLOW_TOOLS
 	InitImGui();
 #endif
@@ -2484,6 +2503,105 @@ void idCommonLocal::Frame( void ) {
 		eventLoop->RunEventLoop();
 
 		com_frameTime = com_ticNumber * USERCMD_MSEC;
+
+		//--------------------------------------------
+		// Determine how many game tics we are going to run,
+		// now that the previous frame is completely finished.
+		//
+		// It is important that any waiting on the GPU be done
+		// before this, or there will be a bad stuttering when
+		// dropping frames for performance management.
+		//--------------------------------------------
+
+		// input:
+		// thisFrameTime
+		// com_noSleep
+		// com_engineHz
+		// com_fixedTic
+		// com_deltaTimeClamp
+		// IsMultiplayer
+		//
+		// in/out state:
+		// gameFrame
+		// gameTimeResidual
+		// lastFrameTime
+		// syncNextFrame
+		//
+		// Output:
+		// numGameFrames
+
+		// How many game frames to run
+		int numGameFrames = 0;
+
+		for (;;) {
+			const int thisFrameTime = Sys_Milliseconds();
+			static int lastFrameTime = thisFrameTime;	// initialized only the first time
+			const int deltaMilliseconds = thisFrameTime - lastFrameTime;
+			lastFrameTime = thisFrameTime;
+
+			// if there was a large gap in time since the last frame, or the frame
+			// rate is very very low, limit the number of frames we will run
+			const int clampedDeltaMilliseconds = min(deltaMilliseconds, com_deltaTimeClamp.GetInteger());
+
+			gameTimeResidual += clampedDeltaMilliseconds * com_timescale.GetFloat();
+
+			// don't run any frames when paused
+			//if (pauseGame) {
+			//	gameFrame++;
+			//	gameTimeResidual = 0;
+			//	break;
+			//}
+
+			// debug cvar to force multiple game tics
+			//if (com_fixedTic.GetInteger() > 0) {
+			//	numGameFrames = com_fixedTic.GetInteger();
+			//	gameFrame += numGameFrames;
+			//	gameTimeResidual = 0;
+			//	break;
+			//}
+
+			//if (syncNextGameFrame) {
+			//	// don't sleep at all
+			//	syncNextGameFrame = false;
+			//	gameFrame++;
+			//	numGameFrames++;
+			//	gameTimeResidual = 0;
+			//	break;
+			//}
+
+			for (;; ) {
+				// How much time to wait before running the next frame,
+				// based on com_engineHz
+				const int frameDelay = FRAME_TO_MSEC(gameFrame + 1) - FRAME_TO_MSEC(gameFrame);
+				if (gameTimeResidual < frameDelay) {
+					break;
+				}
+				gameTimeResidual -= frameDelay;
+				gameFrame++;
+				numGameFrames++;
+				// if there is enough residual left, we may run additional frames
+			}
+
+			if (numGameFrames > 0) {
+				// ready to actually run them
+				break;
+			}
+
+			// if we are vsyncing, we always want to run at least one game
+			// frame and never sleep, which might happen due to scheduling issues
+			// if we were just looking at real time.
+			//if (com_noSleep.GetBool()) {
+			//	numGameFrames = 1;
+			//	gameFrame += numGameFrames;
+			//	gameTimeResidual = 0;
+			//	break;
+			//}
+
+			// not enough time has passed to run a frame, as might happen if
+			// we don't have vsync on, or the monitor is running at 120hz while
+			// com_engineHz is 60, so sleep a bit and check again
+			Sys_Sleep(0);
+		}
 
 		idAsyncNetwork::RunFrame();
 
@@ -2607,50 +2725,6 @@ void idCommonLocal::SingleAsyncTic( void ) {
 	Sys_LeaveCriticalSection();
 }
 
-/*
-=================
-idCommonLocal::Async
-=================
-*/
-void idCommonLocal::Async( void ) {
-	if ( com_shuttingDown ) {
-		return;
-	}
-
-	int	msec = Sys_Milliseconds();
-	if ( !lastTicMsec ) {
-		lastTicMsec = msec - USERCMD_MSEC;
-	}
-
-	if ( !com_preciseTic.GetBool() ) {
-		// just run a single tic, even if the exact msec isn't precise
-		SingleAsyncTic();
-		return;
-	}
-
-	int ticMsec = USERCMD_MSEC;
-
-	// the number of msec per tic can be varies with the timescale cvar
-	float timescale = com_timescale.GetFloat();
-	if ( timescale != 1.0f ) {
-		ticMsec /= timescale;
-		if ( ticMsec < 1 ) {
-			ticMsec = 1;
-		}
-	}
-
-	// don't skip too many
-	if ( timescale == 1.0f ) {
-		if ( lastTicMsec + 10 * USERCMD_MSEC < msec ) {
-			lastTicMsec = msec - 10*USERCMD_MSEC;
-		}
-	}
-
-	while ( lastTicMsec + ticMsec <= msec ) {
-		SingleAsyncTic();
-		lastTicMsec += ticMsec;
-	}
-}
 
 /*
 =================
@@ -3133,4 +3207,16 @@ void idCommonLocal::ShutdownGame( bool reloading ) {
 
 	// shut down the file system
 	fileSystem->Shutdown( reloading );
+}
+
+float	idCommonLocal::Get_com_engineHz_latched(void) {
+	return com_engineHz_latched;
+}
+
+int64_t	idCommonLocal::Get_com_engineHz_numerator(void) {
+	return com_engineHz_numerator;
+}
+
+int64_t	idCommonLocal::Get_com_engineHz_denominator(void) {
+	return com_engineHz_denominator;
 }

@@ -269,6 +269,8 @@ public:
 	void				DrawCmdGraph();
 	void				Draw();
 
+	void				RunSessionTic(void);
+
 	void				WriteCmdDemo( const char *name, bool save = false);
 	void				StartPlayingCmdDemo( const char *demoName);
 	void				TimeCmdDemo( const char *demoName);
@@ -354,6 +356,8 @@ private:
 	cdKeyState_t		xpkey_state;
 	int					authEmitTimeout;
 	bool				authWaitBox;
+
+	int					lastTicMsec;
 
 	idStr				authMsg;
 };
