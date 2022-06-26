@@ -3115,7 +3115,6 @@ bool idGameLocal::SpawnEntityDef( const idDict &args, idEntity **ent, bool setDe
 	// check if we should spawn a class object
 	spawnArgs.GetString( "spawnclass", NULL, &spawn );
 	if ( spawn ) {
-
 		cls = idClass::GetClass( spawn );
 		if ( !cls ) {
 			Warning( "Could not spawn '%s'.  Class '%s' not found %s.", classname, spawn, error.c_str() );

@@ -8168,6 +8168,32 @@ bool DukePlayer::HasNativeFunction(const char *functionName) {
 
 };
 
+intptr_t dnDecoration::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
+	if(functionNameHash == 61762) { // Think
+		Think();
+		return 0;
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool dnDecoration::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
 intptr_t idThread::Invoke(const char *functionName, void *param1) {
 	int functionNameHash = idStr::Hash(functionName);
 	if(functionNameHash == 149674) { // ManualDelete

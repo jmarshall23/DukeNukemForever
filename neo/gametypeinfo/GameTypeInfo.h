@@ -9,7 +9,7 @@
 
 	586 constants
 	56 enums
-	295 classes/structs/unions
+	296 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -4596,6 +4596,10 @@ static classVariableInfo_t DukePlayer_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t dnDecoration_typeInfo[] = {
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t opcode_t_typeInfo[] = {
 	{ "char *", "name", (intptr_t)(&((opcode_t *)0)->name), sizeof( ((opcode_t *)0)->name ) },
 	{ "char *", "opname", (intptr_t)(&((opcode_t *)0)->opname), sizeof( ((opcode_t *)0)->opname ) },
@@ -4959,6 +4963,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "DnAI", "idActor", sizeof(DnAI), DnAI_typeInfo },
 	{ "DnPigcop", "DnAI", sizeof(DnPigcop), DnPigcop_typeInfo },
 	{ "DukePlayer", "idPlayer", sizeof(DukePlayer), DukePlayer_typeInfo },
+	{ "dnDecoration", "idEntity", sizeof(dnDecoration), dnDecoration_typeInfo },
 	{ "opcode_t", "", sizeof(opcode_t), opcode_t_typeInfo },
 	{ "idCompiler", "", sizeof(idCompiler), idCompiler_typeInfo },
 	{ "prstack_t", "", sizeof(prstack_t), prstack_t_typeInfo },

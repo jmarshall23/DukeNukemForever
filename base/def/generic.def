@@ -1,0 +1,17 @@
+// generic.def
+//
+
+generic_c9
+{
+	"spawnclass" 		"dnDecoration"
+
+	"editor_usage" 		"explosive canister"
+	"editor_maxs"		"?"
+	"editor_mins"		"?"
+	"editor_color"		"0.0 1.0 0.0"
+
+	"model"				"models/zone4_afb/d3d_c9/d3d_c9.md3"
+	"health"			"25"
+
+	"DestroyedSound"	"ImpactMtl07"
+}

@@ -819,6 +819,7 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 
 #include "../dukegame/DnAI/DnAI.h"
 #include "../dukegame/Player/DukePlayer.h"
+#include "../dukegame/Decoration.h"
 
 #include "script/Script_Compiler.h"
 #include "script/Script_Interpreter.h"
