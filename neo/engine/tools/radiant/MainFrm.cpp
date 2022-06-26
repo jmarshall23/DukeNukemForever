@@ -6584,6 +6584,10 @@ void CMainFrame::OnShowDoom()
 		g_Inspectors->SetMode(W_TEXTURE);
 	}
 	::ShowWindow(win32.hWnd, show);
+
+// jmarshall
+	renderSystem->NukeShadowMapCache();
+// jmarshall end
 }
 
 void CMainFrame::OnViewRendermode() 

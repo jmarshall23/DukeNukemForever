@@ -41,17 +41,10 @@ If you have questions concerning this license or the applicable additional terms
 
 // if enabled, the console won't toggle upon ~, unless you start the binary with +set com_allowConsole 1
 // Ctrl+Alt+~ will always toggle the console no matter what
-#ifndef ID_CONSOLE_LOCK
-	#if defined(_WIN32) || defined(MACOS_X)
-		#ifdef _DEBUG
-			#define ID_CONSOLE_LOCK 0
-		#else
-			#define ID_CONSOLE_LOCK 1
-		#endif
-	#else
-		#define ID_CONSOLE_LOCK 0
-	#endif
-#endif
+
+// jmarshall - disabled console lock.
+#define ID_CONSOLE_LOCK 0
+// jmarshall end
 
 // useful for network debugging, turns off 'LAN' checks, all IPs are classified 'internet'
 #ifndef ID_NOLANADDRESS

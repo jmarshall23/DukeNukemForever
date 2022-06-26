@@ -791,6 +791,8 @@ void idCommonLocal::Quit( void ) {
 
 #ifdef ID_ALLOW_TOOLS
 	if ( com_editors & EDITOR_RADIANT ) {
+		renderSystem->NukeShadowMapCache();
+
 		RadiantInit();
 		return;
 	}
