@@ -52,7 +52,13 @@ renderProg interaction
 
 		for(int i = 0; i < $numLights; i++)
 		{
-			vec4 toLight = $lightorigin[i] - vertex;
+			vec4 localLightOrigin;
+			localLightOrigin.x = dot4( $globalLightOrigin[i], $modelMatrixX );
+			localLightOrigin.y = dot4( $globalLightOrigin[i], $modelMatrixY );
+			localLightOrigin.z = dot4( $globalLightOrigin[i], $modelMatrixZ );
+			localLightOrigin.w = dot4( $globalLightOrigin[i], $modelMatrixW );
+
+			vec4 toLight = localLightOrigin - vertex;
 
 			//# calculate normalized vector to light in R0
 			toLight = normalize( toLight );

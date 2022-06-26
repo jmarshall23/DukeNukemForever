@@ -50,6 +50,8 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
 	src.SetFlags(DECL_LEXER_FLAGS);
 	src.SkipUntilString("{");
 
+	idList< rvmDeclRenderParam*> attachedRenderParms;
+
 	while (1) {
 		if (!src.ReadToken(&token)) {
 			break;
@@ -72,6 +74,12 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
 				src.Error("Failed to find render parm %s", token.c_str());
 				return "";
 			}
+
+			if (attachedRenderParms.Find(parm) != nullptr) {
+				continue;
+			}
+				
+			attachedRenderParms.AddUnique(parm);
 
 			// Make all params lower case.
 			bracketText.Replace(tokenCase, token);

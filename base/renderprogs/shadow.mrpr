@@ -14,7 +14,7 @@ renderProg shadowmap
 
 	pixel
 	{
-		gl_FragDepth = distance(gl_TexCoord[0].xyz, $lightorigin[0].xyz) / 1000.0;
+		gl_FragDepth = distance(gl_TexCoord[0].xyz, $globalLightOrigin[0].xyz) / 1000.0;
 		gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
 	}
 }

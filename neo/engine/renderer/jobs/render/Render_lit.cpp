@@ -184,11 +184,6 @@ void idRender::DrawForwardLit( void ) {
 			idVec4 lightColor(vLight->lightDef->parms.lightColor.x, vLight->lightDef->parms.lightColor.y, vLight->lightDef->parms.lightColor.z, 1.0);
 			lightColor = lightColor * backEnd.lightScale;
 			tr.lightColorParam->SetVectorValue(lightColor, d);
-
-			// local lightorigin
-			idVec4 localLightOrigin;
-			R_GlobalPointToLocal(drawSurf->space->modelMatrix, vLight->globalLightOrigin, localLightOrigin.ToVec3());
-			tr.lightOriginParam->SetVectorValue(localLightOrigin, d);
 		}
 
 		// perform setup here that will be constant for all interactions

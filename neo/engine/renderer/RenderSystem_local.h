@@ -564,7 +564,6 @@ public:
 
 	rvmDeclRenderParam*		viewOriginParam;
 	rvmDeclRenderParam*		globalLightOriginParam;
-	rvmDeclRenderParam*		lightOriginParam;
 	rvmDeclRenderParam*		lightColorParam;
 	rvmDeclRenderParam*		lightScaleParam;
 

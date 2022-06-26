@@ -603,7 +603,7 @@ void idRender::RenderShadowMaps(void) {
 		viewLightAxialSize = R_Shadow_CalcLightAxialSize(vLight);
 
 		idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, 1.0);
-		tr.lightOriginParam->SetVectorValue(lightOrigin);
+		tr.globalLightOriginParam->SetVectorValue(lightOrigin);
 
 		// Render the pointlight shadows
 		if(vLight->lightDef->parms.pointLight) {
