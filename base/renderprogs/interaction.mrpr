@@ -107,7 +107,7 @@ renderProg interaction
 			finalColor += ( diffuseColor.xyz ) * lightColor * shadow;
 		}
 
-		gl_FragColor.xyz = diffuseMap.xyz * finalColor;
+		gl_FragColor.xyz = diffuseMap.xyz * (finalColor + 0.1f);
 		gl_FragColor.w = 1.0;
 	}
 }
