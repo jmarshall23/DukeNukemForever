@@ -121,74 +121,6 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	RB_DrawElementsWithCounters( din->surf->geo );
 }
 
-
-/*
-=============
-RB_ARB2_CreateDrawInteractions
-
-=============
-*/
-void RB_ARB2_CreateDrawInteractions( const drawSurf_t *surf ) {
-	if ( !surf ) {
-		return;
-	}
-
-	// perform setup here that will be constant for all interactions
-	GL_State( GLS_SRCBLEND_ONE | GLS_DSTBLEND_ONE | GLS_DEPTHMASK | backEnd.depthFunc );
-
-	// bind the vertex program
-	//if ( r_testARBProgram.GetBool() ) {
-	//	glBindProgramARB( GL_VERTEX_PROGRAM_ARB, VPROG_TEST );
-	//	glBindProgramARB( GL_FRAGMENT_PROGRAM_ARB, FPROG_TEST );
-	//} else {
-	//	glBindProgramARB( GL_VERTEX_PROGRAM_ARB, VPROG_INTERACTION );
-	//	glBindProgramARB( GL_FRAGMENT_PROGRAM_ARB, FPROG_INTERACTION );
-	//}
-
-	//glEnable(GL_VERTEX_PROGRAM_ARB);
-	//glEnable(GL_FRAGMENT_PROGRAM_ARB);
-
-	// enable the vertex arrays
-	glEnableVertexAttribArrayARB( 8 );
-	glEnableVertexAttribArrayARB( 9 );
-	glEnableVertexAttribArrayARB( 10 );
-	glEnableVertexAttribArrayARB( 11 );
-	glEnableClientState( GL_COLOR_ARRAY );
-
-	{
-		// perform setup here that will not change over multiple interaction passes
-
-		// set the vertex pointers
-		idDrawVert	*ac = (idDrawVert *)vertexCache.Position( surf->geo->ambientCache );
-		glColorPointer( 4, GL_UNSIGNED_BYTE, sizeof( idDrawVert ), ac->color );
-		glVertexAttribPointerARB( 11, 3, GL_FLOAT, false, sizeof( idDrawVert ), ac->normal.ToFloatPtr() );
-		glVertexAttribPointerARB( 10, 3, GL_FLOAT, false, sizeof( idDrawVert ), ac->tangents[1].ToFloatPtr() );
-		glVertexAttribPointerARB( 9, 3, GL_FLOAT, false, sizeof( idDrawVert ), ac->tangents[0].ToFloatPtr() );
-		glVertexAttribPointerARB( 8, 2, GL_FLOAT, false, sizeof( idDrawVert ), ac->st.ToFloatPtr() );
-		glVertexPointer( 3, GL_FLOAT, sizeof( idDrawVert ), ac->xyz.ToFloatPtr() );
-
-		// this may cause RB_ARB2_DrawInteraction to be exacuted multiple
-		// times with different colors and images if the surface or light have multiple layers
-		RB_CreateSingleDrawInteractions( surf, RB_ARB2_DrawInteraction );
-	}
-
-	glDisableVertexAttribArrayARB( 8 );
-	glDisableVertexAttribArrayARB( 9 );
-	glDisableVertexAttribArrayARB( 10 );
-	glDisableVertexAttribArrayARB( 11 );
-	glDisableClientState( GL_COLOR_ARRAY );
-
-	// disable features
-	tr.interactionProgram->BindNull();
-
-	backEnd.glState.currenttmu = -1;
-	GL_SelectTexture( 0 );
-
-	//glDisable(GL_VERTEX_PROGRAM_ARB);
-	//glDisable(GL_FRAGMENT_PROGRAM_ARB);
-}
-
-
 /*
 ==================
 idRender::DrawForwardLit
@@ -205,6 +137,13 @@ void idRender::DrawForwardLit( void ) {
 
 	GL_SelectTexture( 0 );
 	glDisableClientState( GL_TEXTURE_COORD_ARRAY );
+
+	// enable the vertex arrays
+	glEnableVertexAttribArrayARB(8);
+	glEnableVertexAttribArrayARB(9);
+	glEnableVertexAttribArrayARB(10);
+	glEnableVertexAttribArrayARB(11);
+	glEnableClientState(GL_COLOR_ARRAY);
 
 	for (int i = 0; i < numDrawSurfs; i++)
 	{
@@ -252,8 +191,34 @@ void idRender::DrawForwardLit( void ) {
 			tr.lightOriginParam->SetVectorValue(localLightOrigin, d);
 		}
 
-		RB_ARB2_CreateDrawInteractions(drawSurf);
+		// perform setup here that will be constant for all interactions
+		GL_State(GLS_SRCBLEND_ONE | GLS_DSTBLEND_ONE | GLS_DEPTHMASK | backEnd.depthFunc);
+
+		// set the vertex pointers
+		idDrawVert* ac = (idDrawVert*)vertexCache.Position(drawSurf->geo->ambientCache);
+		glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), ac->color);
+		glVertexAttribPointerARB(11, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->normal.ToFloatPtr());
+		glVertexAttribPointerARB(10, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->tangents[1].ToFloatPtr());
+		glVertexAttribPointerARB(9, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->tangents[0].ToFloatPtr());
+		glVertexAttribPointerARB(8, 2, GL_FLOAT, false, sizeof(idDrawVert), ac->st.ToFloatPtr());
+		glVertexPointer(3, GL_FLOAT, sizeof(idDrawVert), ac->xyz.ToFloatPtr());
+
+		// this may cause RB_ARB2_DrawInteraction to be exacuted multiple
+		// times with different colors and images if the surface or light have multiple layers
+		RB_CreateSingleDrawInteractions(drawSurf, RB_ARB2_DrawInteraction);
+
+		// disable features
+		tr.interactionProgram->BindNull();
+
+		backEnd.glState.currenttmu = -1;
+		GL_SelectTexture(0);
 	}
+
+	glDisableVertexAttribArrayARB(8);
+	glDisableVertexAttribArrayARB(9);
+	glDisableVertexAttribArrayARB(10);
+	glDisableVertexAttribArrayARB(11);
+	glDisableClientState(GL_COLOR_ARRAY);
 
 	// disable stencil shadow test
 	glStencilFunc( GL_ALWAYS, 128, 255 );
