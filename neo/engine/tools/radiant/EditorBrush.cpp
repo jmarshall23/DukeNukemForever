@@ -3965,7 +3965,13 @@ void Brush_DrawModel( brush_t *b, bool camera, bool bSelected ) {
 		bool fixedBounds = false;
 
 		if ( model->IsDynamicModel() != DM_STATIC ) {
-			if ( dynamic_cast<idRenderModelMD5 *>( model ) ) {
+// jmarshall
+			if (model->IsVertexAnimated())
+			{
+				model2 = model->InstantiateDynamicModel(nullptr, nullptr, nullptr);
+			}
+// jmarshall end
+			else if ( dynamic_cast<idRenderModelMD5 *>( model ) ) {
 				const char *classname = ValueForKey( b->owner, "classname" );
 				if (stricmp(classname, "func_static") == 0) {
 					classname = ValueForKey(b->owner, "animclass");
