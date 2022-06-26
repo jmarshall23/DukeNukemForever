@@ -49,7 +49,7 @@ float SampleShadowMapPCF(sampler2D shadowMapAtlas, vec2 uv, float scenedepth, ve
 	float numSamples = 0;
     for (int y = -1 ; y <= 1 ; y++) {
         for (int x = -1 ; x <= 1 ; x++) {
-			float shadowdepth = tex2D(shadowMapAtlas, uv + vec2(x * shadowMapSliceSize, y * shadowMapSliceSize)).r * 1000;
+			float shadowdepth = tex2D(shadowMapAtlas, uv + vec2(x * shadowMapSliceSize, y * shadowMapSliceSize)).r * 3000;
 			if(scenedepth <= shadowdepth)
 				factor += 1.0;
 			
