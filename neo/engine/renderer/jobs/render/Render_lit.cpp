@@ -234,7 +234,7 @@ void idRender::DrawForwardLit( void ) {
 			tr.globalLightExtentsParam->SetVectorValue(idVec4(vLight->lightDef->parms.lightRadius.x, vLight->lightDef->parms.lightRadius.y, vLight->lightDef->parms.lightRadius.z, 1.0f), d);
 			
 			// shadowmap info
-			idVec4 shadowMapInfo(vLight->shadowMapSlice, renderShadowSystem.GetAtlasSampleScale(), renderShadowSystem.GetShadowMapAtlasSize(), 0);
+			idVec4 shadowMapInfo(vLight->shadowMapSlice, renderShadowSystem.GetAtlasSampleScale(), renderShadowSystem.GetShadowMapAtlasSize(), !vLight->lightDef->parms.noShadows);
 			tr.shadowMapInfoParm->SetVectorValue(shadowMapInfo, d);
 
 			// globalLightOrigin

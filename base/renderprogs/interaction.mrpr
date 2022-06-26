@@ -96,7 +96,13 @@ renderProg interaction
 			float attenuation = AttenuationPointLight(gl_TexCoord[5].xyz, vec4(realLightOrigin, 1.0), $globalLightExtents[i]);
 			float lightColor = dot3( localNormal, lightVector ) * attenuation;
 
-			float shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, realLightOrigin, $shadowMapInfo[i]);
+			float shadow = 1.0f; 
+			vec4 _shadowMapInfo = $shadowMapInfo[i];
+
+			if(_shadowMapInfo.w == 1)
+			{
+				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, realLightOrigin, _shadowMapInfo);
+			}
 
 			finalColor += ( diffuseColor.xyz ) * lightColor * shadow;
 		}
