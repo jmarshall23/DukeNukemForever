@@ -213,20 +213,41 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 					blue = *buf_p++;
 					green = *buf_p++;
 					red = *buf_p++;
-					*pixbuf++ = red;
-					*pixbuf++ = green;
-					*pixbuf++ = blue;
-					*pixbuf++ = 255;
+					if (red == 255 && blue == 255 && green == 0)
+					{
+						*pixbuf++ = 0;
+						*pixbuf++ = 0;
+						*pixbuf++ = 0;
+						*pixbuf++ = 0;
+					}
+					else
+					{
+						*pixbuf++ = red;
+						*pixbuf++ = green;
+						*pixbuf++ = blue;
+						*pixbuf++ = 255;
+					}
 					break;
 				case 32:
 					blue = *buf_p++;
 					green = *buf_p++;
 					red = *buf_p++;
 					alphabyte = *buf_p++;
-					*pixbuf++ = red;
-					*pixbuf++ = green;
-					*pixbuf++ = blue;
-					*pixbuf++ = alphabyte;
+
+					if (red == 255 && blue == 255 && green == 0)
+					{
+						*pixbuf++ = 0;
+						*pixbuf++ = 0;
+						*pixbuf++ = 0;
+						*pixbuf++ = 0;
+					}
+					else
+					{
+						*pixbuf++ = red;
+						*pixbuf++ = green;
+						*pixbuf++ = blue;
+						*pixbuf++ = alphabyte;
+					}
 					break;
 				default:
 					common->Error( "LoadTGA( %s ): illegal pixel_size '%d'\n", name, targa_header.pixel_size );
@@ -268,10 +289,19 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 					}
 	
 					for( j = 0; j < packetSize; j++ ) {
-						*pixbuf++=red;
-						*pixbuf++=green;
-						*pixbuf++=blue;
-						*pixbuf++=alphabyte;
+						if (red == 255 && blue == 255 && green == 0)
+						{
+							red = 0;
+							green = 0;
+							blue = 0;
+							alphabyte = 0;
+						}
+							
+
+						*pixbuf++ = red;
+						*pixbuf++ = green;
+						*pixbuf++ = blue;
+						*pixbuf++ = alphabyte;
 						column++;
 						if ( column == columns ) { // run spans across rows
 							column = 0;
@@ -292,20 +322,42 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 									blue = *buf_p++;
 									green = *buf_p++;
 									red = *buf_p++;
-									*pixbuf++ = red;
-									*pixbuf++ = green;
-									*pixbuf++ = blue;
-									*pixbuf++ = 255;
+
+									if (red == 255 && blue == 255 && green == 0)
+									{
+										*pixbuf++ = 0;
+										*pixbuf++ = 0;
+										*pixbuf++ = 0;
+										*pixbuf++ = 0;
+									}
+									else
+									{
+										*pixbuf++ = red;
+										*pixbuf++ = green;
+										*pixbuf++ = blue;
+										*pixbuf++ = 255;
+									}	
 									break;
 							case 32:
 									blue = *buf_p++;
 									green = *buf_p++;
 									red = *buf_p++;
 									alphabyte = *buf_p++;
-									*pixbuf++ = red;
-									*pixbuf++ = green;
-									*pixbuf++ = blue;
-									*pixbuf++ = alphabyte;
+
+									if (red == 255 && blue == 255 && green == 0)
+									{
+										*pixbuf++ = 0;
+										*pixbuf++ = 0;
+										*pixbuf++ = 0;
+										*pixbuf++ = 0;
+									}
+									else
+									{
+										*pixbuf++ = red;
+										*pixbuf++ = green;
+										*pixbuf++ = blue;
+										*pixbuf++ = alphabyte;
+									}
 									break;
 							default:
 								common->Error( "LoadTGA( %s ): illegal pixel_size '%d'\n", name, targa_header.pixel_size );

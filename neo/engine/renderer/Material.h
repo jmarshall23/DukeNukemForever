@@ -369,6 +369,10 @@ public:
 						// get a specific stage
 	const shaderStage_t *GetStage( const int index ) const { assert(index >= 0 && index < numStages); return &stages[index]; }
 
+// jmarshall
+	const shaderStage_t* GetAlbedoStage(void) const;
+// jmarshall end
+
 						// get the first bump map stage, or NULL if not present.
 						// used for bumpy-specular
 	const shaderStage_t *GetBumpStage( void ) const;

@@ -1,0 +1,21 @@
+renderProg occluder
+{
+	vertex
+	{
+		gl_Position = ftransform();
+		gl_TexCoord[0].x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
+		gl_TexCoord[0].y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
+
+		//gl_TexCoord[0].xy = attr_TexCoord0.xy;
+	}
+
+	pixel
+	{
+		vec4 diffuseMap =	tex2D( $albedotexture, gl_TexCoord[0].xy );
+
+		if(diffuseMap.w < 0.5f)
+			discard;
+		
+		gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+	}
+}

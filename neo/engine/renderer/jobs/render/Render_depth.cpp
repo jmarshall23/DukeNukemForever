@@ -101,73 +101,23 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 	glVertexPointer(3, GL_FLOAT, sizeof(idDrawVert), ac->xyz.ToFloatPtr());
 	glTexCoordPointer(2, GL_FLOAT, sizeof(idDrawVert), reinterpret_cast<void*>(&ac->st));
 
-	bool drawSolid = false;
+	pStage = shader->GetAlbedoStage();
 
-	if (shader->Coverage() == MC_OPAQUE) {
-		drawSolid = true;
+	if (pStage)
+	{
+		tr.albedoTextureParam->SetImage(shader->GetEditorImage());
+		PrepareStageTexturing(pStage, surf, ac);
+		tr.occluderProgram->Bind();
 	}
 
-	// we may have multiple alpha tested stages
-	if (shader->Coverage() == MC_PERFORATED) {
-		// if the only alpha tested stages are condition register omitted,
-		// draw a normal opaque surface
-		bool	didDraw = false;
+	// draw it
+	RB_DrawElementsWithCounters(tri);
 
-		glEnable(GL_ALPHA_TEST);
-		// perforated surfaces may have multiple alpha tested stages
-		for (stage = 0; stage < shader->GetNumStages(); stage++) {
-			pStage = shader->GetStage(stage);
-
-			if (!pStage->hasAlphaTest) {
-				continue;
-			}
-
-			// check the stage enable condition
-			if (regs[pStage->conditionRegister] == 0) {
-				continue;
-			}
-
-			// if we at least tried to draw an alpha tested stage,
-			// we won't draw the opaque surface
-			didDraw = true;
-
-			// set the alpha modulate
-			color[3] = regs[pStage->color.registers[3]];
-
-			// skip the entire stage if alpha would be black
-			if (color[3] <= 0) {
-				continue;
-			}
-			glColor4fv(color);
-
-			glAlphaFunc(GL_GREATER, regs[pStage->alphaTestRegister]);
-
-			// bind the texture
-			pStage->texture.image->Bind();
-
-			// set texture matrix and texGens
-			PrepareStageTexturing(pStage, surf, ac);
-
-			// draw it
-			RB_DrawElementsWithCounters(tri);
-
-			FinishStageTexturing(pStage, surf, ac);
-		}
-		glDisable(GL_ALPHA_TEST);
-		if (!didDraw) {
-			drawSolid = true;
-		}
+	if (pStage)
+	{
+		tr.occluderProgram->BindNull();
+		FinishStageTexturing(pStage, surf, ac);
 	}
-
-	// draw the entire surface solid
-	if (drawSolid) {
-		glColor4fv(color);
-		globalImages->whiteImage->Bind();
-
-		// draw it
-		RB_DrawElementsWithCounters(tri);
-	}
-
 
 	// reset polygon offset
 	if (shader->TestMaterialFlag(MF_POLYGONOFFSET)) {

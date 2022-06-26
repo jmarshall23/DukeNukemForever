@@ -593,6 +593,7 @@ public:
 
 	rvmDeclRenderProg*		guiTextureProgram;
 	rvmDeclRenderProg*		interactionProgram;
+	rvmDeclRenderProg*		occluderProgram;
 	rvmDeclRenderProg*		shadowMapProgram;
 
 	unsigned short			gammaTable[256];	// brightness / gamma modify this

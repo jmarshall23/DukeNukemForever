@@ -50,6 +50,9 @@ renderProg interaction
 
 		vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
 
+		if(diffuseMap.w == 0)
+			discard;
+
 		for(int i = 0; i < $numLights; i++)
 		{
 			vec4 localLightOrigin;
@@ -114,6 +117,6 @@ renderProg interaction
 		}
 
 		gl_FragColor.xyz = diffuseMap.xyz * (finalColor + 0.1f);
-		gl_FragColor.w = 1.0;
+		gl_FragColor.w = diffuseMap.w;
 	}
 }

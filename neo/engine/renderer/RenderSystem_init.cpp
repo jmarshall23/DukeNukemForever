@@ -1960,6 +1960,7 @@ void idRenderSystemLocal::Init( void ) {
 	guiTextureProgram = FindRenderProgram("guiTexture");
 	interactionProgram = FindRenderProgram("interaction");
 	shadowMapProgram = FindRenderProgram("shadowmap");
+	occluderProgram = FindRenderProgram("occluder");
 // jmarshall end
 
 	R_InitMaterials();

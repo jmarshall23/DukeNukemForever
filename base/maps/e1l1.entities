@@ -23877,22 +23877,13 @@
 // entity 2651
 {
 "classname" "func_static"
-"model" "maps/e1l1/plane_2675.obj"
-"name" "func_static_2675"
-"inline" "1"
-"origin" "-184 -296 0"
-"forceshader" "textures/E1L1/E1L1_65"
-}
-// entity 2652
-{
-"classname" "func_static"
 "model" "maps/e1l1/plane_2676.obj"
 "name" "func_static_2676"
 "inline" "1"
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2653
+// entity 2652
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2677.obj"
@@ -23901,7 +23892,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2654
+// entity 2653
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2678.obj"
@@ -23910,7 +23901,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2655
+// entity 2654
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2679.obj"
@@ -23919,7 +23910,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2656
+// entity 2655
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2680.obj"
@@ -23928,7 +23919,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2657
+// entity 2656
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2681.obj"
@@ -23937,7 +23928,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2658
+// entity 2657
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2682.obj"
@@ -23946,7 +23937,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_65"
 }
-// entity 2659
+// entity 2658
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2683.obj"
@@ -23955,7 +23946,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_0"
 }
-// entity 2660
+// entity 2659
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2684.obj"
@@ -23964,7 +23955,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2661
+// entity 2660
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2685.obj"
@@ -23973,7 +23964,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2662
+// entity 2661
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2686.obj"
@@ -23982,7 +23973,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2663
+// entity 2662
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2687.obj"
@@ -23991,7 +23982,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2664
+// entity 2663
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2688.obj"
@@ -24000,7 +23991,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_44"
 }
-// entity 2665
+// entity 2664
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2689.obj"
@@ -24009,7 +24000,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_44"
 }
-// entity 2666
+// entity 2665
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2690.obj"
@@ -24018,7 +24009,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_44"
 }
-// entity 2667
+// entity 2666
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2691.obj"
@@ -24027,7 +24018,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_44"
 }
-// entity 2668
+// entity 2667
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2692.obj"
@@ -24036,7 +24027,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_44"
 }
-// entity 2669
+// entity 2668
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2693.obj"
@@ -24045,7 +24036,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_44"
 }
-// entity 2670
+// entity 2669
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2694.obj"
@@ -24054,7 +24045,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2671
+// entity 2670
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2695.obj"
@@ -24063,7 +24054,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2672
+// entity 2671
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2696.obj"
@@ -24072,7 +24063,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2673
+// entity 2672
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2697.obj"
@@ -24081,7 +24072,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2674
+// entity 2673
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2698.obj"
@@ -24090,7 +24081,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2675
+// entity 2674
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2699.obj"
@@ -24099,7 +24090,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2676
+// entity 2675
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2700.obj"
@@ -24108,7 +24099,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2677
+// entity 2676
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2701.obj"
@@ -24117,7 +24108,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2678
+// entity 2677
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2702.obj"
@@ -24126,7 +24117,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_65"
 }
-// entity 2679
+// entity 2678
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2703.obj"
@@ -24135,7 +24126,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_65"
 }
-// entity 2680
+// entity 2679
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2704.obj"
@@ -24144,7 +24135,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_65"
 }
-// entity 2681
+// entity 2680
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2705.obj"
@@ -24153,7 +24144,7 @@
 "origin" "2688 3504 1952"
 "forceshader" "textures/E1L1/E1L1_65"
 }
-// entity 2682
+// entity 2681
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2706.obj"
@@ -24162,7 +24153,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2683
+// entity 2682
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2707.obj"
@@ -24171,7 +24162,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2684
+// entity 2683
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2708.obj"
@@ -24180,7 +24171,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_23"
 }
-// entity 2685
+// entity 2684
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2709.obj"
@@ -24189,7 +24180,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_65"
 }
-// entity 2686
+// entity 2685
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2710.obj"
@@ -24198,7 +24189,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2687
+// entity 2686
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2711.obj"
@@ -24207,7 +24198,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2688
+// entity 2687
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2712.obj"
@@ -24216,7 +24207,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2689
+// entity 2688
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2713.obj"
@@ -24225,7 +24216,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2690
+// entity 2689
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2714.obj"
@@ -24234,7 +24225,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2691
+// entity 2690
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2715.obj"
@@ -24243,7 +24234,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2692
+// entity 2691
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2716.obj"
@@ -24252,7 +24243,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2693
+// entity 2692
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2717.obj"
@@ -24261,7 +24252,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2694
+// entity 2693
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2718.obj"
@@ -24270,7 +24261,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2695
+// entity 2694
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2719.obj"
@@ -24279,7 +24270,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2696
+// entity 2695
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2720.obj"
@@ -24288,7 +24279,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2697
+// entity 2696
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2721.obj"
@@ -24297,7 +24288,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2698
+// entity 2697
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2722.obj"
@@ -24306,7 +24297,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2699
+// entity 2698
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2723.obj"
@@ -24315,7 +24306,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2700
+// entity 2699
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2724.obj"
@@ -24324,7 +24315,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2701
+// entity 2700
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2725.obj"
@@ -24333,7 +24324,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2702
+// entity 2701
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2726.obj"
@@ -24342,7 +24333,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2703
+// entity 2702
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2727.obj"
@@ -24351,7 +24342,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2704
+// entity 2703
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2728.obj"
@@ -24360,7 +24351,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2705
+// entity 2704
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2729.obj"
@@ -24369,7 +24360,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2706
+// entity 2705
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2730.obj"
@@ -24378,7 +24369,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2707
+// entity 2706
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2731.obj"
@@ -24387,7 +24378,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2708
+// entity 2707
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2732.obj"
@@ -24396,7 +24387,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2709
+// entity 2708
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2733.obj"
@@ -24405,7 +24396,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2710
+// entity 2709
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2734.obj"
@@ -24414,7 +24405,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_45"
 }
-// entity 2711
+// entity 2710
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2735.obj"
@@ -24423,7 +24414,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_64"
 }
-// entity 2712
+// entity 2711
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2736.obj"
@@ -24432,7 +24423,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_8"
 }
-// entity 2713
+// entity 2712
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2737.obj"
@@ -24441,7 +24432,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2714
+// entity 2713
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2738.obj"
@@ -24450,7 +24441,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_4"
 }
-// entity 2715
+// entity 2714
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2739.obj"
@@ -24459,7 +24450,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_4"
 }
-// entity 2716
+// entity 2715
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2740.obj"
@@ -24468,7 +24459,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2717
+// entity 2716
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2741.obj"
@@ -24477,7 +24468,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2718
+// entity 2717
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2742.obj"
@@ -24486,7 +24477,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2719
+// entity 2718
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2743.obj"
@@ -24495,7 +24486,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2720
+// entity 2719
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2744.obj"
@@ -24504,7 +24495,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2721
+// entity 2720
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2745.obj"
@@ -24513,7 +24504,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_17"
 }
-// entity 2722
+// entity 2721
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2746.obj"
@@ -24522,7 +24513,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2723
+// entity 2722
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2747.obj"
@@ -24531,7 +24522,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2724
+// entity 2723
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2748.obj"
@@ -24540,7 +24531,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2725
+// entity 2724
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2749.obj"
@@ -24549,7 +24540,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2726
+// entity 2725
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2750.obj"
@@ -24558,7 +24549,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2727
+// entity 2726
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2751.obj"
@@ -24567,7 +24558,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2728
+// entity 2727
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2752.obj"
@@ -24576,7 +24567,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2729
+// entity 2728
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2753.obj"
@@ -24585,7 +24576,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_10"
 }
-// entity 2730
+// entity 2729
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2754.obj"
@@ -24594,7 +24585,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2731
+// entity 2730
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2755.obj"
@@ -24603,7 +24594,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2732
+// entity 2731
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2756.obj"
@@ -24612,7 +24603,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2733
+// entity 2732
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2757.obj"
@@ -24621,7 +24612,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2734
+// entity 2733
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2758.obj"
@@ -24630,7 +24621,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2735
+// entity 2734
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2759.obj"
@@ -24639,7 +24630,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2736
+// entity 2735
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2760.obj"
@@ -24648,7 +24639,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2737
+// entity 2736
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2761.obj"
@@ -24657,7 +24648,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2738
+// entity 2737
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2762.obj"
@@ -24666,7 +24657,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2739
+// entity 2738
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2763.obj"
@@ -24675,7 +24666,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2740
+// entity 2739
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2764.obj"
@@ -24684,7 +24675,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2741
+// entity 2740
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2765.obj"
@@ -24693,7 +24684,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2742
+// entity 2741
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2766.obj"
@@ -24702,7 +24693,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2743
+// entity 2742
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2767.obj"
@@ -24711,7 +24702,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2744
+// entity 2743
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2768.obj"
@@ -24720,7 +24711,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2745
+// entity 2744
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2769.obj"
@@ -24729,7 +24720,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2746
+// entity 2745
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2770.obj"
@@ -24738,7 +24729,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2747
+// entity 2746
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2771.obj"
@@ -24747,7 +24738,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2748
+// entity 2747
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2772.obj"
@@ -24756,7 +24747,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2749
+// entity 2748
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2773.obj"
@@ -24765,7 +24756,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2750
+// entity 2749
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2774.obj"
@@ -24774,7 +24765,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2751
+// entity 2750
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2775.obj"
@@ -24783,7 +24774,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2752
+// entity 2751
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2776.obj"
@@ -24792,7 +24783,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2753
+// entity 2752
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2777.obj"
@@ -24801,7 +24792,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2754
+// entity 2753
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2778.obj"
@@ -24810,7 +24801,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2755
+// entity 2754
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2779.obj"
@@ -24819,7 +24810,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_46"
 }
-// entity 2756
+// entity 2755
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2780.obj"
@@ -24828,7 +24819,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_34"
 }
-// entity 2757
+// entity 2756
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2781.obj"
@@ -24837,7 +24828,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2758
+// entity 2757
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2782.obj"
@@ -24846,7 +24837,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2759
+// entity 2758
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2783.obj"
@@ -24855,7 +24846,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2760
+// entity 2759
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2784.obj"
@@ -24864,7 +24855,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2761
+// entity 2760
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2785.obj"
@@ -24873,7 +24864,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2762
+// entity 2761
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2786.obj"
@@ -24882,7 +24873,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2763
+// entity 2762
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2787.obj"
@@ -24891,7 +24882,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2764
+// entity 2763
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2788.obj"
@@ -24900,7 +24891,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2765
+// entity 2764
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2789.obj"
@@ -24909,7 +24900,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2766
+// entity 2765
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2790.obj"
@@ -24918,7 +24909,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2767
+// entity 2766
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2791.obj"
@@ -24927,7 +24918,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2768
+// entity 2767
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2792.obj"
@@ -24936,7 +24927,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2769
+// entity 2768
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2793.obj"
@@ -24945,7 +24936,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2770
+// entity 2769
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2794.obj"
@@ -24954,7 +24945,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2771
+// entity 2770
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2796.obj"
@@ -24963,7 +24954,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_34"
 }
-// entity 2772
+// entity 2771
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2800.obj"
@@ -24972,7 +24963,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_34"
 }
-// entity 2773
+// entity 2772
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2802.obj"
@@ -24981,7 +24972,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_34"
 }
-// entity 2774
+// entity 2773
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2803.obj"
@@ -24990,7 +24981,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2775
+// entity 2774
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2804.obj"
@@ -24999,7 +24990,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2776
+// entity 2775
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2805.obj"
@@ -25008,7 +24999,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2777
+// entity 2776
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2806.obj"
@@ -25017,7 +25008,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2778
+// entity 2777
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2807.obj"
@@ -25026,7 +25017,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2779
+// entity 2778
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2808.obj"
@@ -25035,7 +25026,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2780
+// entity 2779
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2809.obj"
@@ -25044,7 +25035,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2781
+// entity 2780
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2810.obj"
@@ -25053,7 +25044,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2782
+// entity 2781
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2811.obj"
@@ -25062,7 +25053,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2783
+// entity 2782
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2812.obj"
@@ -25071,7 +25062,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2784
+// entity 2783
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2813.obj"
@@ -25080,7 +25071,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2785
+// entity 2784
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2814.obj"
@@ -25089,7 +25080,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2786
+// entity 2785
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2815.obj"
@@ -25098,7 +25089,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2787
+// entity 2786
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2816.obj"
@@ -25107,7 +25098,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2788
+// entity 2787
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2817.obj"
@@ -25116,7 +25107,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2789
+// entity 2788
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2818.obj"
@@ -25125,7 +25116,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2790
+// entity 2789
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2819.obj"
@@ -25134,7 +25125,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2791
+// entity 2790
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2820.obj"
@@ -25143,7 +25134,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2792
+// entity 2791
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2821.obj"
@@ -25152,7 +25143,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2793
+// entity 2792
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2822.obj"
@@ -25161,7 +25152,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2794
+// entity 2793
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2823.obj"
@@ -25170,7 +25161,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2795
+// entity 2794
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2824.obj"
@@ -25179,7 +25170,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2796
+// entity 2795
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2825.obj"
@@ -25188,7 +25179,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2797
+// entity 2796
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2826.obj"
@@ -25197,7 +25188,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2798
+// entity 2797
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2827.obj"
@@ -25206,7 +25197,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_0"
 }
-// entity 2799
+// entity 2798
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2828.obj"
@@ -25215,7 +25206,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2800
+// entity 2799
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2829.obj"
@@ -25224,7 +25215,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2801
+// entity 2800
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2830.obj"
@@ -25233,7 +25224,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2802
+// entity 2801
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2831.obj"
@@ -25242,7 +25233,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2803
+// entity 2802
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2832.obj"
@@ -25251,7 +25242,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_27"
 }
-// entity 2804
+// entity 2803
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2836.obj"
@@ -25260,7 +25251,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2805
+// entity 2804
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2837.obj"
@@ -25269,7 +25260,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2806
+// entity 2805
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2838.obj"
@@ -25278,7 +25269,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2807
+// entity 2806
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2842.obj"
@@ -25287,7 +25278,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_27"
 }
-// entity 2808
+// entity 2807
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2843.obj"
@@ -25296,7 +25287,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2809
+// entity 2808
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2844.obj"
@@ -25305,7 +25296,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2810
+// entity 2809
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2845.obj"
@@ -25314,7 +25305,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2811
+// entity 2810
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2846.obj"
@@ -25323,7 +25314,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2812
+// entity 2811
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2847.obj"
@@ -25332,7 +25323,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2813
+// entity 2812
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2848.obj"
@@ -25341,7 +25332,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_24"
 }
-// entity 2814
+// entity 2813
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2849.obj"
@@ -25350,7 +25341,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2815
+// entity 2814
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2850.obj"
@@ -25359,7 +25350,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2816
+// entity 2815
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2851.obj"
@@ -25368,7 +25359,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2817
+// entity 2816
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2852.obj"
@@ -25377,7 +25368,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2818
+// entity 2817
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2853.obj"
@@ -25386,7 +25377,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_3"
 }
-// entity 2819
+// entity 2818
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2854.obj"
@@ -25395,7 +25386,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2820
+// entity 2819
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2855.obj"
@@ -25404,7 +25395,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2821
+// entity 2820
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2856.obj"
@@ -25413,7 +25404,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2822
+// entity 2821
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2857.obj"
@@ -25422,7 +25413,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2823
+// entity 2822
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2858.obj"
@@ -25431,7 +25422,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2824
+// entity 2823
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2859.obj"
@@ -25440,7 +25431,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2825
+// entity 2824
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2860.obj"
@@ -25449,7 +25440,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2826
+// entity 2825
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2861.obj"
@@ -25458,7 +25449,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2827
+// entity 2826
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2862.obj"
@@ -25467,7 +25458,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2828
+// entity 2827
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2863.obj"
@@ -25476,7 +25467,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2829
+// entity 2828
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2864.obj"
@@ -25485,7 +25476,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2830
+// entity 2829
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2865.obj"
@@ -25494,7 +25485,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2831
+// entity 2830
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2866.obj"
@@ -25503,7 +25494,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2832
+// entity 2831
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2867.obj"
@@ -25512,7 +25503,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2833
+// entity 2832
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2868.obj"
@@ -25521,7 +25512,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2834
+// entity 2833
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2869.obj"
@@ -25530,7 +25521,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_7"
 }
-// entity 2835
+// entity 2834
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_2870.obj"
@@ -25539,7 +25530,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_49"
 }
-// entity 2836
+// entity 2835
 {
 "classname" "light"
 "name" "light_10"
@@ -25551,7 +25542,7 @@
 "_color" "1 0.88 0.39"
 "light_radius" "500 500 500"
 }
-// entity 2837
+// entity 2836
 {
 "classname" "light"
 "name" "light_12"
@@ -25563,7 +25554,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2838
+// entity 2837
 {
 "classname" "light"
 "name" "light_13"
@@ -25575,7 +25566,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2839
+// entity 2838
 {
 "classname" "light"
 "name" "light_14"
@@ -25587,7 +25578,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2840
+// entity 2839
 {
 "classname" "light"
 "name" "light_15"
@@ -25599,7 +25590,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2841
+// entity 2840
 {
 "classname" "light"
 "name" "light_16"
@@ -25611,7 +25602,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 400"
 }
-// entity 2842
+// entity 2841
 {
 "classname" "light"
 "name" "light_17"
@@ -25623,7 +25614,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 400"
 }
-// entity 2843
+// entity 2842
 {
 "classname" "light"
 "name" "light_18"
@@ -25635,7 +25626,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2844
+// entity 2843
 {
 "classname" "light"
 "name" "light_19"
@@ -25647,7 +25638,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2845
+// entity 2844
 {
 "classname" "light"
 "name" "light_20"
@@ -25659,7 +25650,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2846
+// entity 2845
 {
 "classname" "light"
 "name" "light_21"
@@ -25671,7 +25662,7 @@
 "_color" "1 1 1"
 "light_radius" "500 500 700"
 }
-// entity 2847
+// entity 2846
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_1553.obj"
@@ -25680,7 +25671,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_38"
 }
-// entity 2848
+// entity 2847
 {
 "classname" "light"
 "name" "light_32"
@@ -25692,7 +25683,7 @@
 "_color" "0.34 0.4 1"
 "light_radius" "300 300 300"
 }
-// entity 2849
+// entity 2848
 {
 "classname" "light"
 "name" "light_33"
@@ -25704,7 +25695,7 @@
 "_color" "1 0.87 0.64"
 "light_radius" "300 300 300"
 }
-// entity 2850
+// entity 2849
 {
 "classname" "light"
 "name" "light_34"
@@ -25716,7 +25707,7 @@
 "_color" "1 0.2 0.17"
 "light_radius" "500 500 500"
 }
-// entity 2851
+// entity 2850
 {
 "classname" "light"
 "name" "light_35"
@@ -25728,7 +25719,7 @@
 "_color" "0.55 0.82 0.91"
 "light_radius" "800 800 300"
 }
-// entity 2852
+// entity 2851
 {
 "classname" "light"
 "name" "light_36"
@@ -25740,7 +25731,7 @@
 "_color" "0.55 0.82 0.91"
 "light_radius" "800 800 300"
 }
-// entity 2853
+// entity 2852
 {
 "classname" "light"
 "name" "light_37"
