@@ -274,6 +274,9 @@ void CNewTexWnd::OnPaint() {
 		glDisable(GL_BLEND);
 		glOrtho(0, rectClient.Width(), origin.y - rectClient.Height(), origin.y, -100, 100);
 		glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+// jmarshall
+		glEnable(GL_TEXTURE_2D);
+// jmarshall end
 
 		// init stuff
 		current.x = 8;
