@@ -26,7 +26,9 @@ namespace map_e1l1 {
 
 		// Move the dukecar to the location.
 		$duke_car.moveTo($edfcar_loc);
-		$duke_car.rotateUpTo(2, 420);
+
+		// I like the rotation but its a bit too distracting.
+		// $duke_car.rotateUpTo(2, 1720);
 
 		thread(edf_ship_think());
 	}

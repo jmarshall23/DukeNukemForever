@@ -1,0 +1,21 @@
+models/vehicles/edfcar1/edfcar1_0
+{
+	{
+		map models/vehicles/edfcar1/edfcar1_0.tga
+	}
+}
+
+models/vehicles/edfcar1/edfcar1_1
+{
+	{
+		map models/vehicles/edfcar1/edfcar1_1.tga
+	}
+}
+
+models/vehicles/edfcar1/edfcar1_2
+{
+	{
+		map models/vehicles/edfcar1/edfcar1_2.tga
+	}
+}
+

@@ -2,7 +2,7 @@
 {
 "classname" "info_location"
 "name" "edfcar_loc"
-"origin" "3968 2208 3016"
+"origin" "5448 5112 3016"
 }
 // entity 1
 {
@@ -49,7 +49,7 @@
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"origin" "3408 368 3040"
+"origin" "3408 360 3232"
 "angle" "45"
 }
 // entity 6
