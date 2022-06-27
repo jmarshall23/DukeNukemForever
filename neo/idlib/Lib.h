@@ -143,18 +143,11 @@ bool	Swap_IsBigEndian( void );
 void	SixtetsForInt( byte *out, int src);
 int		IntForSixtets( byte *in );
 
-
-#ifdef _DEBUG
-void AssertFailed( const char *file, int line, const char *expression );
-#undef assert
-#define assert( X )		if ( X ) { } else AssertFailed( __FILE__, __LINE__, #X )
-#endif
-
 class idException {
 public:
 	char error[MAX_STRING_CHARS];
 
-	idException( const char *text = "" ) { strcpy( error, text ); }
+	idException(const char* text = "") { strcpy(error, text); }
 };
 
 /*

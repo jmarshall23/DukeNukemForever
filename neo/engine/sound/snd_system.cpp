@@ -72,7 +72,7 @@ idCVar idSoundSystemLocal::s_skipHelltimeFX( "s_skipHelltimeFX", "0", CVAR_SOUND
 #if ID_OPENAL
 // off by default. OpenAL DLL gets loaded on-demand
 idCVar idSoundSystemLocal::s_libOpenAL( "s_libOpenAL", "openal32.dll", CVAR_SOUND | CVAR_ARCHIVE, "OpenAL DLL name/path" );
-idCVar idSoundSystemLocal::s_useOpenAL( "s_useOpenAL", "0", CVAR_SOUND | CVAR_BOOL | CVAR_ARCHIVE, "use OpenAL" );
+idCVar idSoundSystemLocal::s_useOpenAL( "s_useOpenAL", "1", CVAR_SOUND | CVAR_BOOL | CVAR_ARCHIVE, "use OpenAL" );
 idCVar idSoundSystemLocal::s_useEAXReverb( "s_useEAXReverb", "0", CVAR_SOUND | CVAR_BOOL | CVAR_ARCHIVE, "use EAX reverb" );
 idCVar idSoundSystemLocal::s_muteEAXReverb( "s_muteEAXReverb", "0", CVAR_SOUND | CVAR_BOOL, "mute eax reverb" );
 idCVar idSoundSystemLocal::s_decompressionLimit( "s_decompressionLimit", "6", CVAR_SOUND | CVAR_INTEGER | CVAR_ARCHIVE, "specifies maximum uncompressed sample length in seconds" );
@@ -90,6 +90,12 @@ int idSoundSystemLocal::EAXAvailable = -1;
 
 idSoundSystemLocal	soundSystemLocal;
 idSoundSystem	*soundSystem  = &soundSystemLocal;
+
+// jmarshall - idTech 5 threading
+idSysMutex soundEngineMutex;
+// jmarshall end
+
+void SoundSystemAsyncJob(void* params);
 
 /*
 ===============
@@ -419,6 +425,12 @@ void idSoundSystemLocal::Init() {
 	useEAXReverb = idSoundSystemLocal::s_useEAXReverb.GetBool();
 
 	InitHW();
+
+// jmarshall
+	soundSystemJobList = parallelJobManager->AllocJobList(JOBLIST_RENDERER_FRONTEND, JOBLIST_PRIORITY_MEDIUM, 2, 0, NULL);
+	soundSystemJobList->AddJob(SoundSystemAsyncJob, nullptr);
+	soundSystemJobList->Submit();
+// jmarshall end
 
 	cmdSystem->AddCommand( "listSounds", ListSounds_f, CMD_FL_SOUND, "lists all sounds" );
 	cmdSystem->AddCommand( "listSoundDecoders", ListSoundDecoders_f, CMD_FL_SOUND, "list active sound decoders" );
@@ -1461,3 +1473,16 @@ int idSoundSystemLocal::IsEAXAvailable( void ) {
 	return 0;
 #endif
 }
+
+// jmarshall
+void SoundSystemAsyncJob(void *params)
+{
+	while (true)
+	{
+		soundSystem->AsyncUpdate(Sys_Milliseconds());
+		Sys_Sleep(0);
+	}
+}
+
+REGISTER_PARALLEL_JOB(SoundSystemAsyncJob, "SoundSystemJob");
+// jmarshall end

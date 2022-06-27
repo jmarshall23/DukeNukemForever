@@ -37,6 +37,8 @@ If you have questions concerning this license or the applicable additional terms
 ===============================================================================
 */
 
+#define ASSERT_ENUM_STRING( string, index )		( 1 / (int)!( string - index ) ) ? #string : ""
+
 // these library functions should not be used for cross platform compatibility
 #ifndef ID_MAYAIMPORT
 //#define strcmp			idStr::Cmp		// use_idStr_Cmp

@@ -287,6 +287,8 @@ void			Sys_Sleep( int msec );
 // any game related timing information should come from event timestamps
 int				Sys_Milliseconds( void );
 
+uint64_t		Sys_Microseconds();
+
 // for accurate performance testing
 double			Sys_GetClockTicks( void );
 double			Sys_ClockTicksPerSecond( void );
@@ -488,64 +490,6 @@ bool			Sys_CompareNetAdrBase( const netadr_t a, const netadr_t b );
 
 void			Sys_InitNetworking( void );
 void			Sys_ShutdownNetworking( void );
-
-
-/*
-==============================================================
-
-	Multi-threading
-
-==============================================================
-*/
-
-typedef unsigned int (*xthread_t)( void * );
-
-typedef enum {
-	THREAD_NORMAL,
-	THREAD_ABOVE_NORMAL,
-	THREAD_HIGHEST
-} xthreadPriority;
-
-typedef struct {
-	const char *	name;
-	int				threadHandle;
-	unsigned long	threadId;
-} xthreadInfo;
-
-const int MAX_THREADS				= 10;
-extern xthreadInfo *g_threads[MAX_THREADS];
-extern int			g_thread_count;
-
-void				Sys_CreateThread( xthread_t function, void *parms, xthreadPriority priority, xthreadInfo &info, const char *name, xthreadInfo *threads[MAX_THREADS], int *thread_count );
-void				Sys_DestroyThread( xthreadInfo& info ); // sets threadHandle back to 0
-
-// find the name of the calling thread
-// if index != NULL, set the index in g_threads array (use -1 for "main" thread)
-const char *		Sys_GetThreadName( int *index = 0 );
- 
-const int MAX_CRITICAL_SECTIONS		= 4;
-
-enum {
-	CRITICAL_SECTION_ZERO = 0,
-	CRITICAL_SECTION_ONE,
-	CRITICAL_SECTION_TWO,
-	CRITICAL_SECTION_THREE
-};
-
-void				Sys_EnterCriticalSection( int index = CRITICAL_SECTION_ZERO );
-void				Sys_LeaveCriticalSection( int index = CRITICAL_SECTION_ZERO );
-
-const int MAX_TRIGGER_EVENTS		= 4;
-
-enum {
-	TRIGGER_EVENT_ZERO = 0,
-	TRIGGER_EVENT_ONE,
-	TRIGGER_EVENT_TWO,
-	TRIGGER_EVENT_THREE
-};
-
-void				Sys_WaitForEvent( int index = TRIGGER_EVENT_ZERO );
-void				Sys_TriggerEvent( int index = TRIGGER_EVENT_ZERO );
 
 /*
 ==============================================================

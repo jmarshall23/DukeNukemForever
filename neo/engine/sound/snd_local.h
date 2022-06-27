@@ -77,6 +77,12 @@ class idSoundSample;
 class idSampleDecoder;
 class idSoundWorldLocal;
 
+// jmarshall - idTech 5 threading.
+extern idSysMutex soundEngineMutex;
+
+#define Sys_EnterCriticalSection() soundEngineMutex.Lock();
+#define Sys_LeaveCriticalSection() soundEngineMutex.Unlock();
+// jmarshall end
 
 /*
 ===================================================================================
@@ -820,6 +826,8 @@ public:
 	static idCVar			s_reverbFeedback;
 	static idCVar			s_enviroSuitVolumeScale;
 	static idCVar			s_skipHelltimeFX;
+
+	idParallelJobList*		soundSystemJobList;
 };
 
 extern	idSoundSystemLocal	soundSystemLocal;

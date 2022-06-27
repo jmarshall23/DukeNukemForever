@@ -112,10 +112,16 @@ If you have questions concerning this license or the applicable additional terms
 
 // non-portable system services
 #include "../engine/sys/sys_public.h"
-#include "sys/sys_types.h"
+#include "../engine/sys/sys_types.h"
+#include "../engine/sys/sys_assert.h"
 
 // id lib
 #include "../idlib/Lib.h"
+
+// Threads
+#include "../engine/sys/sys_threading.h"
+#include "../engine/threads/Thread.h"
+#include "../engine/threads/ParallelJobList.h"
 
 // framework
 #include "../engine/framework/BuildDefines.h"

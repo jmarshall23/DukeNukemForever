@@ -576,8 +576,63 @@ bool Swap_IsBigEndian( void ) {
 ===============================================================================
 */
 
-void AssertFailed( const char *file, int line, const char *expression ) {
-	idLib::sys->DebugPrintf( "\n\nASSERTION FAILED!\n%s(%d): '%s'\n", file, line, expression );
+/*
+================================================================================================
+Contains the AssertMacro implementation.
+================================================================================================
+*/
 
-	DebugBreak();
+idCVar com_assertOutOfDebugger("com_assertOutOfDebugger", "0", CVAR_BOOL, "by default, do not assert while not running under the debugger");
+
+struct skippedAssertion_t {
+	skippedAssertion_t() :
+		file(NULL),
+		line(-1) {
+	}
+	const char* file;
+	int				line;
+};
+static idStaticList< skippedAssertion_t, 20 > skippedAssertions;
+
+/*
+========================
+AssertFailed
+========================
+*/
+bool AssertFailed(const char* file, int line, const char* expression) {
+	// Set this to true to skip ALL assertions, including ones YOU CAUSE!
+	static volatile bool skipAllAssertions = false;
+	if (skipAllAssertions) {
+		return false;
+	}
+
+	// Set this to true to skip ONLY this assertion
+	static volatile bool skipThisAssertion = false;
+	skipThisAssertion = false;
+
+	for (int i = 0; i < skippedAssertions.Num(); i++) {
+		if (skippedAssertions[i].file == file && skippedAssertions[i].line == line) {
+			skipThisAssertion = true;
+			// Set breakpoint here to re-enable
+			if (!skipThisAssertion) {
+				skippedAssertions.RemoveIndexFast(i);
+			}
+			return false;
+		}
+	}
+
+	idLib::Warning("ASSERTION FAILED! %s(%d): '%s'", file, line, expression);
+
+	if (IsDebuggerPresent() || com_assertOutOfDebugger.GetBool()) {
+		__debugbreak();
+	}
+
+	if (skipThisAssertion) {
+		skippedAssertion_t* skipped = skippedAssertions.Alloc();
+		skipped->file = file;
+		skipped->line = line;
+	}
+
+	return true;
 }
+

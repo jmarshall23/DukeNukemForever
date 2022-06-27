@@ -71,6 +71,7 @@ public:
 	int					IndexOf( const type *obj ) const;					// returns the index for the pointer to an element in the list
 	bool				RemoveIndex( int index );							// remove the element at the given index
 	bool				Remove( const type & obj );							// remove the element
+	bool				RemoveIndexFast(int index);							// remove the element at the given index
 	void				Swap( idStaticList<type,size> &other );				// swap the contents of the lists
 	void				DeleteContents( bool clear );						// delete the contents of the list
 
@@ -543,6 +544,36 @@ ID_INLINE void idStaticList<type,size>::Swap( idStaticList<type,size> &other ) {
 	idStaticList<type,size> temp = *this;
 	*this = other;
 	other = temp;
+}
+
+
+/*
+========================
+idList<_type_,_tag_>::RemoveIndexFast
+
+Removes the element at the specified index and moves the last element into its spot, rather
+than moving the whole array down by one. Of course, this doesn't maintain the order of
+elements! The number of elements in the list is reduced by one.
+
+return:	bool	- false if the data is not found in the list.
+
+NOTE:	The element is not destroyed, so any memory used by it may not be freed until the
+		destruction of the list.
+========================
+*/
+template< typename _type_, int size >
+ID_INLINE bool idStaticList<_type_, size>::RemoveIndexFast(int index) {
+
+	if ((index < 0) || (index >= num)) {
+		return false;
+	}
+
+	num--;
+	if (index != num) {
+		list[index] = list[num];
+	}
+
+	return true;
 }
 
 #endif /* !__STATICLIST_H__ */

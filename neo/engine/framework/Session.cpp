@@ -1837,22 +1837,7 @@ Session_Hitch_f
 ===============
 */
 void Session_Hitch_f( const idCmdArgs &args ) {
-	idSoundWorld *sw = soundSystem->GetPlayingSoundWorld();
-	if ( sw ) {
-		soundSystem->SetMute(true);
-		sw->Pause();
-		Sys_EnterCriticalSection();
-	}
-	if ( args.Argc() == 2 ) {
-		Sys_Sleep( atoi(args.Argv(1)) );
-	} else {
-		Sys_Sleep( 100 );
-	}
-	if ( sw ) {
-		Sys_LeaveCriticalSection();
-		sw->UnPause();
-		soundSystem->SetMute(false);
-	}
+	
 }
 
 /*

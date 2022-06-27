@@ -67,6 +67,22 @@ int Sys_Milliseconds( void ) {
 }
 
 /*
+========================
+Sys_Microseconds
+========================
+*/
+uint64 Sys_Microseconds() {
+	static uint64 ticksPerMicrosecondTimes1024 = 0;
+
+	if (ticksPerMicrosecondTimes1024 == 0) {
+		ticksPerMicrosecondTimes1024 = ((uint64)Sys_ClockTicksPerSecond() << 10) / 1000000;
+		assert(ticksPerMicrosecondTimes1024 > 0);
+	}
+
+	return ((uint64)((int64)Sys_GetClockTicks() << 10)) / ticksPerMicrosecondTimes1024;
+}
+
+/*
 ================
 Sys_GetSystemRam
 

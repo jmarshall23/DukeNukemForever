@@ -173,7 +173,6 @@ private:
 	void						CloseLogFile( void );
 	void						WriteConfiguration( void );
 	void						DumpWarnings( void );
-	void						SingleAsyncTic( void );
 	void						LoadGameDLL( void );
 	void						UnloadGameDLL( void );
 	void						PrintLoadingMessage( const char *msg );
@@ -2489,8 +2488,7 @@ idCommonLocal::Frame
 =================
 */
 void idCommonLocal::Frame( void ) {
-	try {
-
+	try {		
 		// pump all the events
 		Sys_GenerateEvents();
 
@@ -2619,6 +2617,8 @@ void idCommonLocal::Frame( void ) {
 			session->UpdateScreen( false );
 		}
 
+		soundSystem->AsyncUpdate(Sys_Milliseconds());
+
 		// report timing information
 		if ( com_speeds.GetBool() ) {
 			static int	lastTime;
@@ -2662,71 +2662,6 @@ void idCommonLocal::GUIFrame( bool execCmd, bool network ) {
 	session->Frame();
 	session->UpdateScreen( false );	
 }
-
-/*
-=================
-idCommonLocal::SingleAsyncTic
-
-The system will asyncronously call this function 60 times a second to
-handle the time-critical functions that we don't want limited to
-the frame rate:
-
-sound mixing
-user input generation (conditioned by com_asyncInput)
-packet server operation
-packet client operation
-
-We are not using thread safe libraries, so any functionality put here must
-be VERY VERY careful about what it calls.
-=================
-*/
-
-typedef struct {
-	int				milliseconds;			// should always be incremeting by 60hz
-	int				deltaMsec;				// should always be 16
-	int				timeConsumed;			// msec spent in Com_AsyncThread()
-	int				clientPacketsReceived;
-	int				serverPacketsReceived;
-	int				mostRecentServerPacketSequence;
-} asyncStats_t;
-
-static const int MAX_ASYNC_STATS = 1024;
-asyncStats_t	com_asyncStats[MAX_ASYNC_STATS];		// indexed by com_ticNumber
-int prevAsyncMsec;
-int	lastTicMsec;
-
-void idCommonLocal::SingleAsyncTic( void ) {
-	// main thread code can prevent this from happening while modifying
-	// critical data structures
-	Sys_EnterCriticalSection();
-
-	asyncStats_t *stat = &com_asyncStats[com_ticNumber & (MAX_ASYNC_STATS-1)];
-	memset( stat, 0, sizeof( *stat ) );
-	stat->milliseconds = Sys_Milliseconds();
-	stat->deltaMsec = stat->milliseconds - com_asyncStats[(com_ticNumber - 1) & (MAX_ASYNC_STATS-1)].milliseconds;
-
-	if ( usercmdGen && com_asyncInput.GetBool() ) {
-		usercmdGen->UsercmdInterrupt();
-	}
-
-	switch ( com_asyncSound.GetInteger() ) {
-		case 1:
-			soundSystem->AsyncUpdate( stat->milliseconds );
-			break;
-		case 3:
-			soundSystem->AsyncUpdateWrite( stat->milliseconds );
-			break;
-	}
-
-	// we update com_ticNumber after all the background tasks
-	// have completed their work for this tic
-	com_ticNumber++;
-
-	stat->timeConsumed = Sys_Milliseconds() - stat->milliseconds;
-
-	Sys_LeaveCriticalSection();
-}
-
 
 /*
 =================
@@ -3083,6 +3018,9 @@ void idCommonLocal::InitGame( void ) {
 
 	// init journalling, etc
 	eventLoop->Init();
+
+	// init the parallel job manager
+	parallelJobManager->Init();
 
 	PrintLoadingMessage( common->GetLanguageDict()->GetString( "#str_04345" ) );
 
