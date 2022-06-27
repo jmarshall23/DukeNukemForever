@@ -4968,7 +4968,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "DnPigcop", "DnAI", sizeof(DnPigcop), DnPigcop_typeInfo },
 	{ "DnSchoolGirl", "DnAI", sizeof(DnSchoolGirl), DnSchoolGirl_typeInfo },
 	{ "DukePlayer", "idPlayer", sizeof(DukePlayer), DukePlayer_typeInfo },
-	{ "dnDecoration", "idEntity", sizeof(dnDecoration), dnDecoration_typeInfo },
+	{ "dnDecoration", "idMover", sizeof(dnDecoration), dnDecoration_typeInfo },
 	{ "opcode_t", "", sizeof(opcode_t), opcode_t_typeInfo },
 	{ "idCompiler", "", sizeof(idCompiler), idCompiler_typeInfo },
 	{ "prstack_t", "", sizeof(prstack_t), prstack_t_typeInfo },

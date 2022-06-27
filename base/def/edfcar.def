@@ -1,0 +1,8 @@
+entityDef decoration_edfcar
+{
+	"spawnclass"					"dnDecoration"
+	"model"							"models/vehicles/edfcar1/edfcar1.md3"
+	"editor_usage"					"E1L1 edf car"
+
+	"move_time"						"3"
+}

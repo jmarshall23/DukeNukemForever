@@ -3,7 +3,7 @@
 
 #include "../game/Game_local.h"
 
-CLASS_DECLARATION(idEntity, dnDecoration)
+CLASS_DECLARATION(idMover, dnDecoration)
 END_CLASS
 
 /*

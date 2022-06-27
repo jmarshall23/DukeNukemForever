@@ -4,7 +4,7 @@
 //
 // dnDecoration
 //
-class dnDecoration : public idEntity {
+class dnDecoration : public idMover {
 public:
 	CLASS_PROTOTYPE(dnDecoration);
 

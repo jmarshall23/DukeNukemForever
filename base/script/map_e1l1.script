@@ -1,4 +1,19 @@
 namespace map_e1l1 {
+	void edf_ship_think()
+	{
+		while( 1 )
+		{
+			if(!$duke_car.isMoving())
+			{
+				break;
+			}
+
+			sys.wait (0.3);
+		}
+
+		$duke_car.remove();
+	}
+
 	void main()
 	{
 		entity dukePlayer;
@@ -8,5 +23,11 @@ namespace map_e1l1 {
 
 		// Damn those alien bastards shot down my ride!
 		dukePlayer.startDukeTalk("duke_pay02");
+
+		// Move the dukecar to the location.
+		$duke_car.moveTo($edfcar_loc);
+		$duke_car.rotateUpTo(2, 420);
+
+		thread(edf_ship_think());
 	}
 }
