@@ -4,5 +4,5 @@ entityDef decoration_edfcar
 	"model"							"models/vehicles/edfcar1/edfcar1.md3"
 	"editor_usage"					"E1L1 edf car"
 
-	"move_time"						"8.5"
+	"move_time"						"8"
 }

@@ -1,0 +1,6 @@
+edf_duke_explosion2
+{
+	volume 2
+	maxdistance 50000
+	sounds/explosions/BOMBEXPL.OGG
+}

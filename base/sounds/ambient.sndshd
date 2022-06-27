@@ -1,0 +1,6 @@
+ambient_warjet
+{
+	volume 2
+	maxdistance 600
+	sounds/ambient/WARAMB21.ogg
+}

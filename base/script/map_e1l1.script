@@ -13,6 +13,11 @@ namespace map_e1l1 {
 			sys.wait (0.3);
 		}
 
+		$edfcar_loc.startFx("fx/edf_shipfire");
+		$edfcar_loc.startSoundShader( "edf_duke_explosion2", -1 );
+
+		sys.wait (1.0);
+
 		$duke_car.remove();
 	}
 
@@ -28,6 +33,7 @@ namespace map_e1l1 {
 
 		// Move the dukecar to the location.
 		$duke_car.moveTo($edfcar_loc);
+		$duke_car.startSoundShader( "ambient_warjet", -1 );
 
 		// I like the rotation but its a bit too distracting.
 		// $duke_car.rotateUpTo(2, 620);
