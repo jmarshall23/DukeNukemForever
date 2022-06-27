@@ -5,6 +5,16 @@
 
 /*
 ===================
+idGameLocal::IsParentalLockEnabled
+===================
+*/
+bool dnGameLocal::IsParentalLockEnabled(void)
+{
+	return g_ParentalLock.GetBool();
+}
+
+/*
+===================
 idGameLocal::TracePoint
 ===================
 */
