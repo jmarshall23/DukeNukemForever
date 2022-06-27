@@ -1,0 +1,12 @@
+namespace map_e1l1 {
+	void main()
+	{
+		entity dukePlayer;
+
+		// Get the local playing player.
+		dukePlayer = sys.getLocalPlayer();
+
+		// Damn those alien bastards shot down my ride!
+		dukePlayer.startDukeTalk("duke_pay02");
+	}
+}
