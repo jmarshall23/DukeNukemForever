@@ -213,8 +213,6 @@ private:
 	bool					AI_BLOCKED;
 
 	idStr					currentAnimation;
-
-	DnLightComponent		lightRigComponent;
 protected:
 	int						EgoKillValue;
 	bool					startedDeath;

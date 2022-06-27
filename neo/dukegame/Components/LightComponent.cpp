@@ -7,6 +7,7 @@ DnLightComponent::DnLightComponent()
 {
 	parentEntity = nullptr;
 	renderLightHandle = -1;
+	forwardOffset = 0;
 	bindJoint = (jointHandle_t)-1;
 	memset(&renderLightParams, 0, sizeof(renderLightParams));
 }
@@ -59,6 +60,14 @@ void DnLightComponent::Think()
 
 
 		animatedEntity->GetJointWorldTransform(bindJoint, gameLocal.time, renderLightParams.origin, renderLightParams.axis);
+
+		idVec3 angle_forward = -parentEntity->GetAxis().ToAngles().ToForward();
+
+		idVec3 originOffset;		
+		originOffset.x = (forwardOffset * angle_forward.x);
+		originOffset.y = (forwardOffset * angle_forward.y);
+		originOffset.z = (forwardOffset * angle_forward.z);
+		renderLightParams.origin += originOffset;
 	}
 	else
 	{

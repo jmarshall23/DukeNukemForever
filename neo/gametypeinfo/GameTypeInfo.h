@@ -1459,6 +1459,7 @@ static classVariableInfo_t DnLightComponent_typeInfo[] = {
 	{ ": qhandle_t", "renderLightHandle", (intptr_t)(&((DnLightComponent *)0)->renderLightHandle), sizeof( ((DnLightComponent *)0)->renderLightHandle ) },
 	{ "idEntity *", "parentEntity", (intptr_t)(&((DnLightComponent *)0)->parentEntity), sizeof( ((DnLightComponent *)0)->parentEntity ) },
 	{ "jointHandle_t", "bindJoint", (intptr_t)(&((DnLightComponent *)0)->bindJoint), sizeof( ((DnLightComponent *)0)->bindJoint ) },
+	{ "float", "forwardOffset", (intptr_t)(&((DnLightComponent *)0)->forwardOffset), sizeof( ((DnLightComponent *)0)->forwardOffset ) },
 	{ NULL, 0 }
 };
 
@@ -4576,7 +4577,6 @@ static classVariableInfo_t DnAI_typeInfo[] = {
 	{ "bool", "AI_ONGROUND", (intptr_t)(&((DnAI *)0)->AI_ONGROUND), sizeof( ((DnAI *)0)->AI_ONGROUND ) },
 	{ "bool", "AI_BLOCKED", (intptr_t)(&((DnAI *)0)->AI_BLOCKED), sizeof( ((DnAI *)0)->AI_BLOCKED ) },
 	{ "idStr", "currentAnimation", (intptr_t)(&((DnAI *)0)->currentAnimation), sizeof( ((DnAI *)0)->currentAnimation ) },
-	{ "DnLightComponent", "lightRigComponent", (intptr_t)(&((DnAI *)0)->lightRigComponent), sizeof( ((DnAI *)0)->lightRigComponent ) },
 	{ ": int", "EgoKillValue", (intptr_t)(&((DnAI *)0)->EgoKillValue), sizeof( ((DnAI *)0)->EgoKillValue ) },
 	{ "bool", "startedDeath", (intptr_t)(&((DnAI *)0)->startedDeath), sizeof( ((DnAI *)0)->startedDeath ) },
 	{ NULL, 0 }

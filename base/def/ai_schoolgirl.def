@@ -1,7 +1,7 @@
 model schoolgirl
 {
 	mesh			models/characters/NPC_F_Schlgirl/NPC_F_Schlgirl.md5mesh
-	offset			( -40 0 45 )
+	offset			( 40 0 45 )
 
 	anim af_pose		models/characters/animations/SchoolGirl/A_IdleScaredA.md5anim
 	anim ik_pose		models/characters/animations/SchoolGirl/A_IdleScaredA.md5anim
