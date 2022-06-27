@@ -8,7 +8,7 @@
 {
 "classname" "decoration_edfcar"
 "name" "duke_car"
-"origin" "3776 168 3468"
+"origin" "3776 -108 3308"
 "angle" "90"
 }
 // entity 2

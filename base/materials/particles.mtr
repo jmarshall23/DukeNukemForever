@@ -1,0 +1,21 @@
+textures/particles/explosion1
+{
+    noselfShadow
+    noshadows	
+	translucent
+	discrete
+	nonsolid
+	noimpact
+
+
+	{ 
+      
+      	blend add
+	      map textures/particles/explosion1.tga
+		vertexcolor
+
+
+						
+	}
+
+}

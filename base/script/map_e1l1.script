@@ -8,6 +8,8 @@ namespace map_e1l1 {
 				break;
 			}
 
+			$duke_car.startFx("fx/edf_shipfire");
+
 			sys.wait (0.3);
 		}
 
@@ -28,7 +30,7 @@ namespace map_e1l1 {
 		$duke_car.moveTo($edfcar_loc);
 
 		// I like the rotation but its a bit too distracting.
-		// $duke_car.rotateUpTo(2, 1720);
+		// $duke_car.rotateUpTo(2, 620);
 
 		thread(edf_ship_think());
 	}
