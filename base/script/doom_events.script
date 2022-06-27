@@ -294,6 +294,11 @@ scriptEvent	entity	getEntity( string name );
 // Creates an entity of the specified classname and returns a reference to the entity.
 scriptEvent	entity	spawn( string classname );
 
+// jmarshall
+// Returns the local player entity
+scriptEvent  entity getLocalPlayer();
+// jmarshall end
+
 // Respawn
 scriptEvent void	respawn( );
 
@@ -898,4 +903,6 @@ scriptEvent void	openPDA();
 // Returns true if the player has the PDA open.
 scriptEvent float	inPDA();
 
-
+// jmarshall
+scriptEvent	void	startDukeTalk( string shaderName );
+// jmarshall end

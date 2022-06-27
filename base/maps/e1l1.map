@@ -3,6 +3,7 @@ Version 2
 {
 "classname" "worldspawn"
 "music" "E1L1"
+"call" "map_e1l1::main"
 "skybox" "la_sky"
 // primitive 0
 {

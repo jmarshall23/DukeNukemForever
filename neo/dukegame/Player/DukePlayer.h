@@ -16,4 +16,6 @@ public:
 
 	virtual void			UpdateHudStats(idUserInterface* hud);
 	virtual void			SetStartingInventory(void);
+
+	void					Event_DukeTalk(const char* soundName);
 };

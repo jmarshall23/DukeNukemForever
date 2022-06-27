@@ -128,6 +128,9 @@ public:
 	void						Event_GetTime( void );
 	void						Event_KillThread( const char *name );
 	void						Event_GetEntity( const char *name );
+// jmarshall
+	void						Event_GetLocalPlayer(void);
+// jmarshall end
 	void						Event_Spawn( const char *classname );
 	void						Event_CopySpawnArgs( idEntity *ent );
 	void						Event_SetSpawnArg( const char *key, const char *value );

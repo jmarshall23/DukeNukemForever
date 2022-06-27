@@ -36,8 +36,8 @@
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"origin" "3408 352 2896"
-"angle" "0"
+"origin" "3408 368 3040"
+"angle" "45"
 }
 // entity 4
 {

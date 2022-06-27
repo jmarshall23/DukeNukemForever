@@ -56,6 +56,9 @@ const idEventDef EV_Thread_GetTime( "getTime", NULL, 'f' );
 const idEventDef EV_Thread_KillThread( "killthread", "s" );
 const idEventDef EV_Thread_SetThreadName( "threadname", "s" );
 const idEventDef EV_Thread_GetEntity( "getEntity", "s", 'e' );
+// jmarshall
+const idEventDef EV_Thread_GetLocalPlayer("getLocalPlayer", NULL, 'e');
+// jmarshall end
 const idEventDef EV_Thread_Spawn( "spawn", "s", 'e' );
 const idEventDef EV_Thread_CopySpawnArgs( "copySpawnArgs", "e" );
 const idEventDef EV_Thread_SetSpawnArg( "setSpawnArg", "ss" );
@@ -145,6 +148,9 @@ CLASS_DECLARATION( idClass, idThread )
 	EVENT( EV_Thread_KillThread,			idThread::Event_KillThread )
 	EVENT( EV_Thread_SetThreadName,			idThread::Event_SetThreadName )
 	EVENT( EV_Thread_GetEntity,				idThread::Event_GetEntity )
+// jmarshall
+	EVENT(EV_Thread_GetLocalPlayer,			idThread::Event_GetLocalPlayer )
+// jmarshall end
 	EVENT( EV_Thread_Spawn,					idThread::Event_Spawn )
 	EVENT( EV_Thread_CopySpawnArgs,			idThread::Event_CopySpawnArgs )
 	EVENT( EV_Thread_SetSpawnArg,			idThread::Event_SetSpawnArg )
@@ -1119,6 +1125,18 @@ idThread::Event_KillThread
 void idThread::Event_KillThread( const char *name ) {
 	KillThread( name );
 }
+
+// jmarshall
+/*
+================
+idThread::Event_GetLocalPlayer
+================
+*/
+void idThread::Event_GetLocalPlayer(void)
+{
+	ReturnEntity(gameLocal.GetLocalDukePlayer());
+}
+// jmarshall end
 
 /*
 ================
