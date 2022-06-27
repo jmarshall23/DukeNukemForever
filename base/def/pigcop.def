@@ -3,19 +3,19 @@ model pigcop
 	mesh				models/characters/pigcop/pigcop.md5mesh
 	offset			( -40 0 45 )
 
-	anim af_pose		models/characters/pigcop/pigcop_IdleA.md5anim
-	anim ik_pose		models/characters/pigcop/pigcop_IdleA.md5anim
+	anim af_pose		models/characters/animations/IdleA.md5anim
+	anim ik_pose		models/characters/animations/IdleA.md5anim
 
-	anim initial		models/characters/pigcop/pigcop_IdleA.md5anim
-	anim idle			models/characters/pigcop/pigcop_IdleA.md5anim
+	anim initial		models/characters/animations/IdleA.md5anim
+	anim idle			models/characters/animations/IdleA.md5anim
 
-	anim walk 			models/characters/pigcop/pigcop_Charge.md5anim
+	anim walk 			models/characters/animations/Charge.md5anim
 
-	anim roar			models/characters/pigcop/pigcop_A_Roar.md5anim
+	anim roar			models/characters/animations/A_Roar.md5anim
 
-	anim fire			models/characters/pigcop/pigcop_T_Gen2HandFire.md5anim
+	anim fire			models/characters/animations/T_Gen2HandFire.md5anim
 
-	anim death			models/characters/pigcop/pigcop_DeathA.md5anim
+	anim death			models/characters/animations/DeathA.md5anim
 }
 
 entityDef monster_pigcop
