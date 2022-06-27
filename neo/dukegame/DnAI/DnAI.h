@@ -220,4 +220,5 @@ protected:
 	bool					startedDeath;
 };
 
-#include "Pigcop.h"
+#include "DnAI_Pigcop.h"
+#include "DnAI_SchoolGirl.h"
