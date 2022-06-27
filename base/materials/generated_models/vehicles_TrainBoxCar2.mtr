@@ -1,0 +1,21 @@
+models/vehicles/TrainBoxCar2/TrainBoxCar2_0
+{
+	diffusemap models/vehicles/TrainBoxCar2/TrainBoxCar2_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/TrainBoxCar2/TrainBoxCar2_1
+{
+	diffusemap models/vehicles/TrainBoxCar2/TrainBoxCar2_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/TrainBoxCar2/TrainBoxCar2_2
+{
+	diffusemap models/vehicles/TrainBoxCar2/TrainBoxCar2_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

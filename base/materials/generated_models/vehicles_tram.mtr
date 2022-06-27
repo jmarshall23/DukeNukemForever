@@ -1,0 +1,70 @@
+models/vehicles/tram/tram_0
+{
+	diffusemap models/vehicles/tram/tram_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_1
+{
+	diffusemap models/vehicles/tram/tram_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_2
+{
+	diffusemap models/vehicles/tram/tram_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_3
+{
+	diffusemap models/vehicles/tram/tram_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_4
+{
+	diffusemap models/vehicles/tram/tram_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_5
+{
+	diffusemap models/vehicles/tram/tram_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_6
+{
+	diffusemap models/vehicles/tram/tram_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_7
+{
+	diffusemap models/vehicles/tram/tram_7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_8
+{
+	diffusemap models/vehicles/tram/tram_8.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/tram/tram_9
+{
+	diffusemap models/vehicles/tram/tram_9.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

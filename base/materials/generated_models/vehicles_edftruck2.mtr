@@ -1,0 +1,56 @@
+models/vehicles/edftruck2/edftruck2_0
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edftruck2/edftruck2_1
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edftruck2/edftruck2_2
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edftruck2/edftruck2_3
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edftruck2/edftruck2_4
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_4.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edftruck2/edftruck2_5
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_5.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edftruck2/edftruck2_6
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_6.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/vehicles/edftruck2/edftruck2_7
+{
+	diffusemap models/vehicles/edftruck2/edftruck2_7.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

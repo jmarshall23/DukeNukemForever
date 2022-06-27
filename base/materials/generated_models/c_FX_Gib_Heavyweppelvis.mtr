@@ -1,0 +1,21 @@
+models/c_FX/Gib_Heavyweppelvis/Gib_Heavyweppelvis_0
+{
+	diffusemap models/c_FX/Gib_Heavyweppelvis/Gib_Heavyweppelvis_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/Gib_Heavyweppelvis/Gib_Heavyweppelvis_1
+{
+	diffusemap models/c_FX/Gib_Heavyweppelvis/Gib_Heavyweppelvis_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/Gib_Heavyweppelvis/Gib_Heavyweppelvis_2
+{
+	diffusemap models/c_FX/Gib_Heavyweppelvis/Gib_Heavyweppelvis_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,7 @@
+models/vehicles/edftrk_hoverlef/edftrk_hoverlef_0
+{
+	diffusemap models/vehicles/edftrk_hoverlef/edftrk_hoverlef_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

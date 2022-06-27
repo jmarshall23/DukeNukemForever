@@ -1,0 +1,7 @@
+models/vehicles/edftrk_stroberg/edftrk_stroberg_0
+{
+	diffusemap models/vehicles/edftrk_stroberg/edftrk_stroberg_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,14 @@
+models/c_FX/SnatcherRubble_Wood/SnatcherRubble_Wood_0
+{
+	diffusemap models/c_FX/SnatcherRubble_Wood/SnatcherRubble_Wood_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/SnatcherRubble_Wood/SnatcherRubble_Wood_1
+{
+	diffusemap models/c_FX/SnatcherRubble_Wood/SnatcherRubble_Wood_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

@@ -1,0 +1,7 @@
+models/vehicles/edftrk_floodlit/edftrk_floodlit_0
+{
+	diffusemap models/vehicles/edftrk_floodlit/edftrk_floodlit_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

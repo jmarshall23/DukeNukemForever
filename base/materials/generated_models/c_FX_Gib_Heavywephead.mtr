@@ -1,0 +1,28 @@
+models/c_FX/Gib_Heavywephead/Gib_Heavywephead_0
+{
+	diffusemap models/c_FX/Gib_Heavywephead/Gib_Heavywephead_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/Gib_Heavywephead/Gib_Heavywephead_1
+{
+	diffusemap models/c_FX/Gib_Heavywephead/Gib_Heavywephead_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/Gib_Heavywephead/Gib_Heavywephead_2
+{
+	diffusemap models/c_FX/Gib_Heavywephead/Gib_Heavywephead_2.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/Gib_Heavywephead/Gib_Heavywephead_3
+{
+	diffusemap models/c_FX/Gib_Heavywephead/Gib_Heavywephead_3.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

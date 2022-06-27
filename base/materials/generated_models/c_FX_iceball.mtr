@@ -1,0 +1,14 @@
+models/c_FX/iceball/iceball_0
+{
+	diffusemap models/c_FX/iceball/iceball_0.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/c_FX/iceball/iceball_1
+{
+	diffusemap models/c_FX/iceball/iceball_1.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+

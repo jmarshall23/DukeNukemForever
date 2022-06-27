@@ -1,0 +1,14 @@
+models/particles/shrapnel/shrapnel
+{
+	diffusemap models/particles/shrapnel/shrapnel.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+models/particles/shrapnel/shrapnel_fx
+{
+	diffusemap models/particles/shrapnel/shrapnel_fx.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
