@@ -137,16 +137,16 @@ If you have questions concerning this license or the applicable additional terms
 #include "../engine/navigation/Nav_public.h"
 
 // decls
-#include "../engine/framework/DeclManager.h"
-#include "../engine/framework/DeclTable.h"
-#include "../engine/framework/DeclSkin.h"
-#include "../engine/framework/DeclEntityDef.h"
-#include "../engine/framework/DeclFX.h"
-#include "../engine/framework/DeclParticle.h"
-#include "../engine/framework/DeclAF.h"
-#include "../engine/framework/DeclPDA.h"
+#include "../engine/decls/DeclManager.h"
+#include "../engine/decls/DeclTable.h"
+#include "../engine/decls/DeclSkin.h"
+#include "../engine/decls/DeclEntityDef.h"
+#include "../engine/decls/DeclFX.h"
+#include "../engine/decls/DeclParticle.h"
+#include "../engine/decls/DeclAF.h"
+#include "../engine/decls/DeclPDA.h"
 // jmarshall
-#include "../engine/framework/DeclRenderParam.h"
+#include "../engine/decls/DeclRenderParam.h"
 // jmarshall end
 
 // We have expression parsing and evaluation code in multiple places:

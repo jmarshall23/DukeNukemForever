@@ -47,6 +47,7 @@ file(GLOB gameBaseFiles
      "game/player/*.cpp"
      "game/physics/*.cpp"
      "game/script/*.cpp"
+     "gamedecls/*.cpp*"
 ) 
 
 file(GLOB typeInfoGenFiles
@@ -103,6 +104,7 @@ file(GLOB engineSourceFiles
     "engine/cm/*.cpp*"
     "engine/external/detour/Source/*.cpp*"
     "engine/external/recast/Source/*.cpp*"
+    "engine/decls/*.cpp*"
     "engine/framework/*.cpp*"
     "engine/framework/async/*.cpp*"
     "engine/models/*.cpp*"
