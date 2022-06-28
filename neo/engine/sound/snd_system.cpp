@@ -93,6 +93,7 @@ idSoundSystem	*soundSystem  = &soundSystemLocal;
 
 // jmarshall - idTech 5 threading
 idSysMutex soundEngineMutex;
+dnAtomicBool soundEngineShouldRun(true);
 // jmarshall end
 
 void SoundSystemAsyncJob(void* params);
@@ -448,6 +449,9 @@ idSoundSystemLocal::Shutdown
 ===============
 */
 void idSoundSystemLocal::Shutdown() {
+	// Tell the sound engine thread to shutdown, this is a atomic variable so it should be safe.
+	soundEngineShouldRun = false;
+
 	ShutdownHW();
 
 	// EAX or not, the list needs to be cleared
@@ -1477,7 +1481,7 @@ int idSoundSystemLocal::IsEAXAvailable( void ) {
 // jmarshall
 void SoundSystemAsyncJob(void *params)
 {
-	while (true)
+	while (soundEngineShouldRun)
 	{
 		soundSystem->AsyncUpdate(Sys_Milliseconds());
 		Sys_Sleep(0);
