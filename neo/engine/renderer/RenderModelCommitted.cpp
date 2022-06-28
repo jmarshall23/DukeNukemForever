@@ -554,7 +554,7 @@ void idRenderModelCommitted::AddDrawsurfs(int committedRenderModelId, const idRe
 	// add all the surfaces
 	total = model->NumSurfaces();
 	for (i = 0; i < total; i++) {
-		const modelSurface_t* surf = model->Surface(i);
+		const idModelSurface* surf = model->Surface(i);
 
 		// for debugging, only show a single surface at a time
 		if (r_singleSurface.GetInteger() >= 0 && i != r_singleSurface.GetInteger()) {

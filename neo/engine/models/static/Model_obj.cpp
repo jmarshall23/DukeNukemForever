@@ -154,7 +154,7 @@ bool idRenderModelStatic::LoadOBJ(const char *fileName) {
 	R_CreateVertexNormals(tri);
 
 	{
-		modelSurface_t	surf;
+		idModelSurface	surf;
 
 		surf.id = 0;
 		surf.geometry = tri;

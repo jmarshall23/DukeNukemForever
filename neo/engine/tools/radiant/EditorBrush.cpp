@@ -54,7 +54,7 @@ DrawRenderModel
 */
 void DrawRenderModel( idRenderModel *model, idVec3 &origin, idMat3 &axis, bool cameraView ) {
 	for ( int i = 0; i < model->NumSurfaces(); i++ ) {
-		const modelSurface_t *surf = model->Surface( i );
+		const idModelSurface *surf = model->Surface( i );
 		const idMaterial *material = surf->shader;
 
 		int nDrawMode = g_pParentWnd->GetCamera()->Camera().draw_mode;
@@ -2552,7 +2552,7 @@ bool Brush_ModelIntersect(brush_t *b, idVec3 origin, idVec3 dir,float &scale) {
 		}
 
 		for (int i = 0; i < model->NumSurfaces() ; i++) {
-			const modelSurface_t	*surf = model->Surface( i );
+			const idModelSurface	*surf = model->Surface( i );
 			srfTriangles_t	*tri = surf->geometry;
 			for (int j = 0; j < tri->numIndexes; j += 3) {
 				idVec3	v1, v2, v3;

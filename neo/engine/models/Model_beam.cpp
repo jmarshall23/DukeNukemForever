@@ -67,7 +67,7 @@ idRenderModelBeam::InstantiateDynamicModel
 idRenderModel *idRenderModelBeam::InstantiateDynamicModel( const struct renderEntity_t *renderEntity, const idRenderWorldCommitted *viewDef, idRenderModel *cachedModel ) {
 	idRenderModelStatic *staticModel;
 	srfTriangles_t *tri;
-	modelSurface_t surf;
+	idModelSurface surf;
 
 	if ( cachedModel ) {
 		delete cachedModel;

@@ -58,7 +58,7 @@ bool ProcessModel( uEntity_t *e, bool floodFill ) {
 				continue;
 			}
 
-			
+			bool noShadow = entity->mapEntity->epairs.GetBool("noshadow");
 
 			if (idStr::Icmp(className, "func_static")) {
 				continue;
@@ -87,13 +87,15 @@ bool ProcessModel( uEntity_t *e, bool floodFill ) {
 			idVec3	origin = entity->mapEntity->epairs.GetVector("origin");
 
 			for (int i = 0; i < model->NumSurfaces(); i++) {
-				const modelSurface_t* surface = model->Surface(i);
+				const idModelSurface* surface = model->Surface(i);
 				const srfTriangles_t* tri = surface->geometry;
 				
 				for (int j = 0; j < tri->numIndexes; j += 3) {
 					mapTri_t* mapTri = AllocTri();
 					memset(mapTri, 0, sizeof(mapTri));
 					mapTri->material = surface->shader;
+
+					mapTri->noShadow = noShadow;
 
 					if (forceshader)
 					{

@@ -159,6 +159,10 @@ void idGameEdit::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t 
 		renderLight->shaderParms[ SHADERPARM_TIMEOFFSET ] = -MS2SEC( gameLocal.time );
 	}
 
+// jmarshall
+	renderLight->lightColor = renderLight->lightColor * args->GetFloat("_brightness", "1");
+// jmarshall end
+
 	args->GetFloat( "shaderParm5", "0", renderLight->shaderParms[5] );
 	args->GetFloat( "shaderParm6", "0", renderLight->shaderParms[6] );
 	args->GetFloat( "shaderParm7", "0", renderLight->shaderParms[ SHADERPARM_MODE ] );

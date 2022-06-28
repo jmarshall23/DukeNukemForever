@@ -142,7 +142,7 @@ idRenderModel *idRenderModelPrt::InstantiateDynamicModel( const struct renderEnt
 		int	count = stage->totalParticles * stage->NumQuadsPerParticle();
 
 		int surfaceNum;
-		modelSurface_t *surf;
+		idModelSurface *surf;
 
 		if ( staticModel->FindSurfaceWithId( stageNum, surfaceNum ) ) {
 			surf = &staticModel->surfaces[surfaceNum];

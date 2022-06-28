@@ -57,6 +57,9 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 		const idRenderEntityLocal* entityDef = vLight->litRenderEntities[i];
 		idRenderModel* inter = entityDef->viewEntity->renderModel;
 
+		if (entityDef->parms.noShadow)
+			continue;
+
 		if (!entityDef) {
 			continue;
 		}
@@ -80,7 +83,7 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 
 		// draw each surface
 		for (int i = 0; i < inter->NumSurfaces(); i++) {
-			const modelSurface_t* surfInt = inter->Surface(i);
+			const idModelSurface* surfInt = inter->Surface(i);
 
 			//if (!surfInt->geometry->ambientSurface) {
 			//	continue;
@@ -89,6 +92,9 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			if (surfInt->shader && !surfInt->shader->SurfaceCastsShadow()) {
 				continue;
 			}
+
+			if(surfInt->noShadow)
+				continue;
 
 			// cull it
 			//if (surfInt->expCulled == CULL_OCCLUDER_AND_RECEIVER) {

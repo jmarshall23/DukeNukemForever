@@ -57,7 +57,7 @@ public:
 	virtual bool				IsLevelLoadReferenced();
 	virtual void				TouchData();
 	virtual void				InitEmpty( const char *name );
-	virtual void				AddSurface( modelSurface_t surface );
+	virtual void				AddSurface( idModelSurface surface );
 	virtual void				FinishSurfaces();
 	virtual void				FreeVertexCache();
 	virtual const char *		Name() const;
@@ -67,7 +67,7 @@ public:
 	virtual ID_TIME_T				Timestamp() const;
 	virtual int					NumSurfaces() const;
 	virtual int					NumBaseSurfaces() const;
-	virtual const modelSurface_t *Surface( int surfaceNum ) const;
+	virtual const idModelSurface *Surface( int surfaceNum ) const;
 	virtual srfTriangles_t *	AllocSurfaceTriangles( int numVerts, int numIndexes ) const;
 	virtual void				FreeSurfaceTriangles( srfTriangles_t *tris ) const;
 	virtual srfTriangles_t *	ShadowHull() const;
@@ -115,7 +115,7 @@ public:
 	bool						FindSurfaceWithId( int id, int &surfaceNum );
 
 public:
-	idList<modelSurface_t>		surfaces;
+	idList<idModelSurface>		surfaces;
 	idBounds					bounds;
 	int							overlaysAdded;
 
@@ -155,7 +155,7 @@ public:
 								~idMD5Mesh();
 
  	void						ParseMesh( const idStr &name, idLexer &parser, int numJoints, const idJointMat *joints );
-	void						UpdateSurface( const struct renderEntity_t *ent, const idJointMat *joints, modelSurface_t *surf );
+	void						UpdateSurface( const struct renderEntity_t *ent, const idJointMat *joints, idModelSurface *surf );
 	idBounds					CalcBounds( const idJointMat *joints );
 	int							NearestJoint( int a, int b, int c ) const;
 	int							NumVerts( void ) const;
@@ -257,7 +257,7 @@ public:
 	void						IntersectBounds( const idBounds &bounds, float displacement );
 
 private:
-	modelSurface_t				GenerateSurface( float lerp );
+	idModelSurface				GenerateSurface( float lerp );
 	void						WaterDrop( int x, int y, float *page );
 	void						Update( void );
 						

@@ -34,7 +34,7 @@ typedef struct {
 	int					numVerts;
 	int					firstIndex;
 	int					numIndexes;
-} guiModelSurface_t;
+} guiidModelSurface;
 
 class idGuiModel {
 public:
@@ -59,11 +59,11 @@ public:
 	//---------------------------
 private:
 	void	AdvanceSurf();
-	void	EmitSurface( guiModelSurface_t *surf, float modelMatrix[16], float modelViewMatrix[16], bool depthHack );
+	void	EmitSurface( guiidModelSurface *surf, float modelMatrix[16], float modelViewMatrix[16], bool depthHack );
 
-	guiModelSurface_t		*surf;
+	guiidModelSurface		*surf;
 
-	idList<guiModelSurface_t>	surfaces;
+	idList<guiidModelSurface>	surfaces;
 	idList<glIndex_t>		indexes;
 	idList<idDrawVert>	verts;
 };

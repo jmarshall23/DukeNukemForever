@@ -2100,17 +2100,17 @@ helper function for Cmd_NextGUI_f.  Checks the passed entity to determine if it
 has any valid gui surfaces.
 =================
 */
-bool FindEntityGUIs( idEntity *ent, const modelSurface_t ** surfaces,  int maxSurfs, int &guiSurfaces ) {
+bool FindEntityGUIs( idEntity *ent, const idModelSurface ** surfaces,  int maxSurfs, int &guiSurfaces ) {
 	renderEntity_t			*renderEnt;
 	idRenderModel			*renderModel;
-	const modelSurface_t	*surf;
+	const idModelSurface	*surf;
 	const idMaterial		*shader;
 	int						i;
 
 	assert( surfaces != NULL );
 	assert( ent != NULL );
 
-	memset( surfaces, 0x00, sizeof( modelSurface_t *) * maxSurfs );
+	memset( surfaces, 0x00, sizeof( idModelSurface *) * maxSurfs );
 	guiSurfaces = 0;
 
 	renderEnt  = ent->GetRenderEntity();
@@ -2154,7 +2154,7 @@ void Cmd_NextGUI_f( const idCmdArgs &args ) {
 	idMat4					modelMatrix;
 	idVec3					normal;
 	idVec3					center;
-	const modelSurface_t	*surfaces[ MAX_RENDERENTITY_GUI ];
+	const idModelSurface	*surfaces[ MAX_RENDERENTITY_GUI ];
 
 	player = gameLocal.GetLocalPlayer();
 	if ( !player || !gameLocal.CheatsOk() ) {

@@ -298,7 +298,7 @@ void idGameEdit::ParseSpawnArgsToRenderEntity( const idDict *args, renderEntity_
 	renderEntity->noDynamicInteractions = args->GetBool( "noDynamicInteractions" );
 
 	// check noshadows flag
-	renderEntity->noShadow = args->GetBool( "noshadows" );
+	renderEntity->noShadow = args->GetBool( "noshadow" );
 
 	// check noselfshadows flag
 	renderEntity->noSelfShadow = args->GetBool( "noselfshadows" );

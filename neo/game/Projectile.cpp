@@ -2485,7 +2485,7 @@ void idDebris::Launch( const idMaterial *material ) {
 	{
 		for (int i = 0; i < renderEntity.hModel->NumSurfaces(); i++)
 		{
-			modelSurface_t* surface = (modelSurface_t*)renderEntity.hModel->Surface(i);
+			idModelSurface* surface = (idModelSurface*)renderEntity.hModel->Surface(i);
 			surface->shader = material;
 		}
 	}

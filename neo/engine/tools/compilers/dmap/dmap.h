@@ -77,6 +77,8 @@ struct mapTri_t {
 											// from different fixed groups, like guiSurfs and mirrors
 	int					planeNum;			// not set universally, just in some areas
 
+	bool				noShadow;
+
 	idDrawVert			v[3];
 	const struct hashVert_s *hashVert[3];
 	struct optVertex_s *optVert[3];
@@ -216,6 +218,7 @@ typedef struct optimizeGroup_s {
 	textureVectors_t	texVec;
 
 	bool				surfaceEmited;
+	bool				noShadow;
 
 	mapTri_t *			triList;
 	mapTri_t *			regeneratedTris;	// after each island optimization

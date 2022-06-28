@@ -296,7 +296,7 @@ void idRenderModelDecal::CreateDecal( const idRenderModel *model, const decalPro
 
 	// check all model surfaces
 	for ( int surfNum = 0; surfNum < model->NumSurfaces(); surfNum++ ) {
-		const modelSurface_t *surf = model->Surface( surfNum );
+		const idModelSurface *surf = model->Surface( surfNum );
 
 		// if no geometry or no shader
 		if ( !surf->geometry || !surf->shader ) {

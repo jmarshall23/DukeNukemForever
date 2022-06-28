@@ -84,7 +84,7 @@ void idRenderModelStatic::Print() const {
 
 	common->Printf( "    verts  tris material\n" );
 	for ( int i = 0 ; i < NumSurfaces() ; i++ ) {
-		const modelSurface_t	*surf = Surface( i );
+		const idModelSurface	*surf = Surface( i );
 
 		srfTriangles_t *tri = surf->geometry;
 		const idMaterial *material = surf->shader;
@@ -120,7 +120,7 @@ int idRenderModelStatic::Memory() const {
 	}
 
 	for ( int j = 0 ; j < NumSurfaces() ; j++ ) {
-		const modelSurface_t	*surf = Surface( j );
+		const idModelSurface	*surf = Surface( j );
 		if ( !surf->geometry ) {
 			continue;
 		}
@@ -144,7 +144,7 @@ void idRenderModelStatic::List() const {
 
 	char	closed = 'C';
 	for ( int j = 0 ; j < NumSurfaces() ; j++ ) {
-		const modelSurface_t	*surf = Surface( j );
+		const idModelSurface	*surf = Surface( j );
 		if ( !surf->geometry ) {
 			continue;
 		}
@@ -234,7 +234,7 @@ void idRenderModelStatic::MakeDefaultModel() {
 	PurgeModel();
 
 	// create one new surface
-	modelSurface_t	surf;
+	idModelSurface	surf;
 
 	srfTriangles_t *tri = R_AllocStaticTriSurf();
 
@@ -355,7 +355,7 @@ void idRenderModelStatic::InitEmpty( const char *fileName ) {
 idRenderModelStatic::AddSurface
 ================
 */
-void idRenderModelStatic::AddSurface( modelSurface_t surface ) {
+void idRenderModelStatic::AddSurface( idModelSurface surface ) {
 	surfaces.Append( surface );
 	if ( surface.geometry ) {
 		bounds += surface.geometry->bounds;
@@ -403,7 +403,7 @@ int idRenderModelStatic::NumBaseSurfaces() const {
 idRenderModelStatic::Surface
 ================
 */
-const modelSurface_t *idRenderModelStatic::Surface( int surfaceNum ) const {
+const idModelSurface *idRenderModelStatic::Surface( int surfaceNum ) const {
 	return &surfaces[surfaceNum];
 }
 
@@ -597,7 +597,7 @@ void idRenderModelStatic::FinishSurfaces() {
 	if ( fastLoad ) {
 		bounds.Zero();
 		for ( i = 0 ; i < surfaces.Num() ; i++ ) {
-			const modelSurface_t	*surf = &surfaces[i];
+			const idModelSurface	*surf = &surfaces[i];
 
 			R_BoundTriSurf( surf->geometry );
 			bounds.AddBounds( surf->geometry->bounds );
@@ -615,7 +615,7 @@ void idRenderModelStatic::FinishSurfaces() {
 
 	// make sure there aren't any NULL shaders or geometry
 	for ( i = 0 ; i < numOriginalSurfaces ; i++ ) {
-		const modelSurface_t	*surf = &surfaces[i];
+		const idModelSurface	*surf = &surfaces[i];
 
 		if ( surf->geometry == NULL || surf->shader == NULL ) {
 			MakeDefaultModel();
@@ -634,7 +634,7 @@ void idRenderModelStatic::FinishSurfaces() {
 	// add vertexes and indexes to the existing surface, because the
 	// tangent generation wouldn't like the acute shared edges
 	for ( i = 0 ; i < numOriginalSurfaces ; i++ ) {
-		const modelSurface_t	*surf = &surfaces[i];
+		const idModelSurface	*surf = &surfaces[i];
 
 		if ( surf->shader->ShouldCreateBackSides() ) {
 			srfTriangles_t *newTri;
@@ -642,7 +642,7 @@ void idRenderModelStatic::FinishSurfaces() {
 			newTri = R_CopyStaticTriSurf( surf->geometry );
 			R_ReverseTriangles( newTri );
 
-			modelSurface_t	newSurf;
+			idModelSurface	newSurf;
 
 			newSurf.shader = surf->shader;
 			newSurf.geometry = newTri;
@@ -653,7 +653,7 @@ void idRenderModelStatic::FinishSurfaces() {
 
 	// clean the surfaces
 	for ( i = 0 ; i < surfaces.Num() ; i++ ) {
-		const modelSurface_t	*surf = &surfaces[i];
+		const idModelSurface	*surf = &surfaces[i];
 
 		R_CleanupTriangles( surf->geometry, surf->geometry->generateNormals, true, surf->shader->UseUnsmoothedTangents() );
 		if ( surf->shader->SurfaceCastsShadow() ) {
@@ -664,7 +664,7 @@ void idRenderModelStatic::FinishSurfaces() {
 
 	// add up the total surface area for development information
 	for ( i = 0 ; i < surfaces.Num() ; i++ ) {
-		const modelSurface_t	*surf = &surfaces[i];
+		const idModelSurface	*surf = &surfaces[i];
 		srfTriangles_t	*tri = surf->geometry;
 
 		for ( int j = 0 ; j < tri->numIndexes ; j += 3 ) {
@@ -680,7 +680,7 @@ void idRenderModelStatic::FinishSurfaces() {
 	} else {
 		bounds.Clear();
 		for ( i = 0 ; i < surfaces.Num() ; i++ ) {
-			modelSurface_t	*surf = &surfaces[i];
+			idModelSurface	*surf = &surfaces[i];
 			
 			// add to the model bounds
 			bounds.AddBounds( surf->geometry->bounds );
@@ -722,7 +722,7 @@ bool idRenderModelStatic::ConvertASEToModelSurfaces( const struct aseModel_s *as
 	int *			mergeTo;
 	byte *			color;
 	static byte	identityColor[4] = { 255, 255, 255, 255 };
-	modelSurface_t	surf, *modelSurf;
+	idModelSurface	surf, *modelSurf;
 
 	if ( !ase ) {
 		return false;
@@ -1029,7 +1029,7 @@ bool idRenderModelStatic::ConvertLWOToModelSurfaces( const struct st_lwObject *l
 	idVec3			normal;
 	int *			mergeTo;
 	byte			color[4];
-	modelSurface_t	surf, *modelSurf;
+	idModelSurface	surf, *modelSurf;
 
 	if ( !lwo ) {
 		return false;
@@ -1554,7 +1554,7 @@ bool idRenderModelStatic::ConvertMAToModelSurfaces (const struct maModel_s *ma )
 	int *			mergeTo;
 	byte *			color;
 	static byte	identityColor[4] = { 255, 255, 255, 255 };
-	modelSurface_t	surf, *modelSurf;
+	idModelSurface	surf, *modelSurf;
 
 	if ( !ma ) {
 		return false;
@@ -2067,7 +2067,7 @@ bool idRenderModelStatic::LoadFLT( const char *fileName ) {
 
 	fileSystem->FreeFile( data );
 
-	modelSurface_t	surface;
+	idModelSurface	surface;
 
 	surface.geometry = tri;
 	surface.id = 0;
@@ -2088,7 +2088,7 @@ idRenderModelStatic::PurgeModel
 */
 void idRenderModelStatic::PurgeModel() {
 	int		i;
-	modelSurface_t	*surf;
+	idModelSurface	*surf;
 
 	for ( i = 0 ; i < surfaces.Num() ; i++ ) {
 		surf = &surfaces[i];
@@ -2141,7 +2141,7 @@ void idRenderModelStatic::ReadFromDemoFile( class idDemoFile *f ) {
 	f->ReadInt( numSurfaces );
 	
 	for ( i = 0 ; i < numSurfaces ; i++ ) {
-		modelSurface_t	surf;
+		idModelSurface	surf;
 		
 		surf.shader = declManager->FindMaterial( f->ReadHashString() );
 		
@@ -2192,7 +2192,7 @@ void idRenderModelStatic::WriteToDemoFile( class idDemoFile *f ) {
 	f->WriteInt( iData );
 
 	for ( i = 0 ; i < surfaces.Num() ; i++ ) {
-		const modelSurface_t	*surf = &surfaces[i];
+		const idModelSurface	*surf = &surfaces[i];
 		
 		f->WriteHashString( surf->shader->GetName() );
 		
@@ -2249,7 +2249,7 @@ idRenderModelStatic::TouchData
 */
 void idRenderModelStatic::TouchData( void ) {
 	for ( int i = 0 ; i < surfaces.Num() ; i++ ) {
-		const modelSurface_t	*surf = &surfaces[i];
+		const idModelSurface	*surf = &surfaces[i];
 
 		// re-find the material to make sure it gets added to the
 		// level keep list

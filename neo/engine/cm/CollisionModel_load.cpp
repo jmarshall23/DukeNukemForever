@@ -149,6 +149,8 @@ void idCollisionModelManagerLocal::CheckProcModelSurfClip(idLexer* src) {
 
 		const idMaterial* mat = declManager->FindMaterial(token);
 
+		src->ParseInt(); // noShadow.
+
 		//we have a surface we want to use
 		if (!model) {
 			model = AllocModel();
@@ -3135,7 +3137,7 @@ idCollisionModelManagerLocal::LoadRenderModel
 cm_model_t *idCollisionModelManagerLocal::LoadRenderModel( const char *fileName ) {
 	int i, j;
 	idRenderModel *renderModel;
-	const modelSurface_t *surf;
+	const idModelSurface *surf;
 	idFixedWinding w;
 	cm_node_t *node;
 	cm_model_t *model;

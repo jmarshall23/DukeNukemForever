@@ -88,7 +88,7 @@ void idGuiModel::WriteToDemo( idDemoFile *demo ) {
 	i = surfaces.Num();
 	demo->WriteInt( i );
 	for ( j = 0 ; j < i ; j++ ) {
-		guiModelSurface_t	*surf = &surfaces[j];
+		guiidModelSurface	*surf = &surfaces[j];
 		
 		demo->WriteInt( (int&)surf->material );
 		demo->WriteFloat( surf->color[0] );
@@ -138,7 +138,7 @@ void idGuiModel::ReadFromDemo( idDemoFile *demo ) {
 	demo->ReadInt( i );
 	surfaces.SetNum( i, false );
 	for ( j = 0 ; j < i ; j++ ) {
-		guiModelSurface_t	*surf = &surfaces[j];
+		guiidModelSurface	*surf = &surfaces[j];
 		
 		demo->ReadInt( (int&)surf->material );
 		demo->ReadFloat( surf->color[0] );
@@ -158,7 +158,7 @@ void idGuiModel::ReadFromDemo( idDemoFile *demo ) {
 EmitSurface
 ================
 */
-void idGuiModel::EmitSurface( guiModelSurface_t *surf, float modelMatrix[16], float modelViewMatrix[16], bool depthHack ) {
+void idGuiModel::EmitSurface( guiidModelSurface *surf, float modelMatrix[16], float modelViewMatrix[16], bool depthHack ) {
 	srfTriangles_t	*tri;
 
 	if ( surf->numVerts == 0 ) {
@@ -302,7 +302,7 @@ AdvanceSurf
 =============
 */
 void idGuiModel::AdvanceSurf() {
-	guiModelSurface_t	s;
+	guiidModelSurface	s;
 
 	if ( surfaces.Num() ) {
 		s.color[0] = surf->color[0];

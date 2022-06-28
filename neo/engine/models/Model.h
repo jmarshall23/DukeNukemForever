@@ -141,11 +141,22 @@ typedef struct srfTriangles_s {
 
 typedef idList<srfTriangles_t *> idTriList;
 
-typedef struct modelSurface_s {
+struct idModelSurface {
+	idModelSurface();
+
 	int							id;
 	const idMaterial *			shader;
 	srfTriangles_t *			geometry;
-} modelSurface_t;
+	bool						noShadow;
+};
+
+ID_INLINE idModelSurface::idModelSurface()
+{
+	id = 0;
+	shader = nullptr;
+	geometry = nullptr;
+	noShadow = false;
+}
 
 typedef enum {
 	DM_STATIC,		// never creates a dynamic model
@@ -186,7 +197,7 @@ public:
 	// dynamic model instantiations will be created with this
 	// the geometry data will be owned by the model, and freed when it is freed
 	// the geoemtry should be raw triangles, with no extra processing
-	virtual void				AddSurface( modelSurface_t surface ) = 0;
+	virtual void				AddSurface( idModelSurface surface ) = 0;
 
 	// cleans all the geometry and performs cross-surface processing
 	// like shadow hulls
@@ -242,7 +253,7 @@ public:
 	virtual int					NumBaseSurfaces() const = 0;
 
 	// get a pointer to a surface
-	virtual const modelSurface_t *Surface( int surfaceNum ) const = 0;
+	virtual const idModelSurface *Surface( int surfaceNum ) const = 0;
 
 	// Allocates surface triangles.
 	// Allocates memory for srfTriangles_t::verts and srfTriangles_t::indexes

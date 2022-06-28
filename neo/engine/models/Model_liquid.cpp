@@ -63,11 +63,11 @@ idRenderModelLiquid::idRenderModelLiquid() {
 idRenderModelLiquid::GenerateSurface
 ====================
 */
-modelSurface_t idRenderModelLiquid::GenerateSurface( float lerp ) {
+idModelSurface idRenderModelLiquid::GenerateSurface( float lerp ) {
 	srfTriangles_t	*tri;
 	int				i, base;
 	idDrawVert		*vert;
-	modelSurface_t	surf;
+	idModelSurface	surf;
 	float			inv_lerp;
 
 	inv_lerp = 1.0f - lerp;
@@ -503,7 +503,7 @@ idRenderModel *idRenderModelLiquid::InstantiateDynamicModel( const struct render
 
 	// create the surface
 	lerp = ( float )( t - time ) / ( float )update_tics;
-	modelSurface_t surf = GenerateSurface( lerp );
+	idModelSurface surf = GenerateSurface( lerp );
 
 	staticModel = new idRenderModelStatic;
 	staticModel->AddSurface( surf );

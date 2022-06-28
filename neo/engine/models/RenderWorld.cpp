@@ -897,10 +897,10 @@ guiPoint_t	idRenderWorldLocal::GuiTrace( qhandle_t entityHandle, const idVec3 st
 
 
 	float best = 99999.0;
-	const modelSurface_t *bestSurf = NULL;
+	const idModelSurface *bestSurf = NULL;
 
 	for ( j = 0 ; j < model->NumSurfaces() ; j++ ) {
-		const modelSurface_t *surf = model->Surface( j );
+		const idModelSurface *surf = model->Surface( j );
 
 		tri = surf->geometry;
 		if ( !tri ) {
@@ -947,7 +947,7 @@ idRenderWorldLocal::ModelTrace
 bool idRenderWorldLocal::ModelTrace( modelTrace_t &trace, qhandle_t entityHandle, const idVec3 &start, const idVec3 &end, const float radius ) const {
 	int i;
 	bool collisionSurface;
-	const modelSurface_t *surf;
+	const idModelSurface *surf;
 	localTrace_t localTrace;
 	idRenderModel *model;
 	float modelMatrix[16];
@@ -1122,7 +1122,7 @@ bool idRenderWorldLocal::Trace( modelTrace_t &trace, const idVec3 &start, const 
 
 			// check all model surfaces
 			for ( j = 0; j < model->NumSurfaces(); j++ ) {
-				const modelSurface_t *surf = model->Surface( j );
+				const idModelSurface *surf = model->Surface( j );
 
 				shader = R_RemapShaderBySkin( surf->shader, def->parms.customSkin, def->parms.customShader );
 

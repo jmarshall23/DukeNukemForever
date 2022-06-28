@@ -619,7 +619,7 @@ void	FixGlobalTjunctions( uEntity_t *e ) {
 			idVec3	origin = entity->mapEntity->epairs.GetVector( "origin" );
 
 			for ( i = 0 ; i < model->NumSurfaces() ; i++ ) {
-				const modelSurface_t *surface = model->Surface( i );
+				const idModelSurface *surface = model->Surface( i );
 				const srfTriangles_t *tri = surface->geometry;
 
 				mapTri_t	mapTri;

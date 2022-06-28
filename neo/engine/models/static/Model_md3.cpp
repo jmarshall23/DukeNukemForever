@@ -341,7 +341,7 @@ idRenderModel *idRenderModelMD3::InstantiateDynamicModel( const struct renderEnt
 		R_AllocStaticTriSurfIndexes( tri, surface->numTriangles * 3 );
 		tri->bounds.Clear();
 
-		modelSurface_t	surf;
+		idModelSurface	surf;
 
 		surf.geometry = tri;
 

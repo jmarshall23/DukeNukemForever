@@ -405,6 +405,10 @@ static bool GroupsAreSurfaceCompatible( const optimizeGroup_t *a, const optimize
 	}
 // jmarshall - don't merge if this group is too far away, with forward+ it makes it so we have to deal with lights that are
 // very far.
+	if (a->noShadow != b->noShadow) {
+		return false;
+	}
+
 	idBounds a_bound = Map_CalcOptimizeGroup(a);
 	idBounds b_bound = Map_CalcOptimizeGroup(b);
 
@@ -421,6 +425,7 @@ static bool GroupsAreSurfaceCompatible( const optimizeGroup_t *a, const optimize
 // jmarshall - cleaned this up.
 struct dmapSurface_t {
 	srfTriangles_t* uTri;
+	bool noShadow;
 	idStr materialName;
 };
 
@@ -465,9 +470,14 @@ static void CreateSrfTriangleList(int entityNum, int areaNum, idList<dmapSurface
 				continue;
 			}
 
+			if (groupStep->triList == nullptr)
+				continue;
+
 			// copy it out to the ambient list
 			copy = CopyTriList(groupStep->triList);
 			ambient = MergeTriLists(ambient, copy);
+
+			ambient->noShadow = groupStep->noShadow;
 			groupStep->surfaceEmited = true;
 
 			// duplicate it into an interaction for each groupLight
@@ -497,6 +507,7 @@ static void CreateSrfTriangleList(int entityNum, int areaNum, idList<dmapSurface
 
 		dmapSurface_t newSurf;
 		newSurf.uTri = uTri;
+		newSurf.noShadow = ambient->noShadow;
 		newSurf.materialName = ambient->material->GetName();
 
 		FreeTriList(ambient);
@@ -535,7 +546,7 @@ static void WriteOutputSurfaces( int entityNum, int areaNum ) {
 	for (int i = 0; i < srfTriangles.Num(); i++)
 	{
 		procFile->WriteFloatString("/* surface %i */ { ", i);
-		procFile->WriteFloatString("\"%s\" ", srfTriangles[i].materialName.c_str());
+		procFile->WriteFloatString("\"%s\" /* noShadow */ %d ", srfTriangles[i].materialName.c_str(), srfTriangles[i].noShadow);
 
 		CleanupUTriangles(srfTriangles[i].uTri);
 		WriteUTriangles(srfTriangles[i].uTri);
@@ -716,15 +727,18 @@ void WriteOutputFile( void ) {
 // jmarshall end
 
 	// write the entity models and information, writing entities first
-	for ( i=dmapGlobals.num_entities - 1 ; i >= 0 ; i-- ) {
-		entity = &dmapGlobals.uEntities[i];
-	
-		if ( !entity->primitives ) {
-			continue;
-		}
+	//for ( i=dmapGlobals.num_entities - 1 ; i >= 0 ; i-- ) {
+	//	entity = &dmapGlobals.uEntities[i];
+	//
+	//	if ( !entity->primitives ) {
+	//		continue;
+	//	}
+	//
+	//	
+	//}
 
-		WriteOutputEntity( i );
-	}
+	// Write out the world only
+	WriteOutputEntity(0);
 
 	fileSystem->CloseFile( procFile );
 }

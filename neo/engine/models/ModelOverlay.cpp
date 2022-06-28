@@ -109,7 +109,7 @@ void idRenderModelOverlay::CreateOverlay( const idRenderModel *model, const idPl
 	maxVerts = 0;
 	maxIndexes = 0;
 	for ( surfNum = 0; surfNum < model->NumSurfaces(); surfNum++ ) {
-		const modelSurface_t *surf = model->Surface( surfNum );
+		const idModelSurface *surf = model->Surface( surfNum );
 		if ( surf->geometry->numVerts > maxVerts ) {
 			maxVerts = surf->geometry->numVerts;
 		}
@@ -124,7 +124,7 @@ void idRenderModelOverlay::CreateOverlay( const idRenderModel *model, const idPl
 
 	// pull out the triangles we need from the base surfaces
 	for ( surfNum = 0; surfNum < model->NumBaseSurfaces(); surfNum++ ) {
-		const modelSurface_t *surf = model->Surface( surfNum );
+		const idModelSurface *surf = model->Surface( surfNum );
 		float d;
 
 		if ( !surf->geometry || !surf->shader ) {
@@ -235,11 +235,11 @@ idRenderModelOverlay::AddOverlaySurfacesToModel
 */
 void idRenderModelOverlay::AddOverlaySurfacesToModel( idRenderModel *baseModel ) {
 	int i, j, k, numVerts, numIndexes, surfaceNum;
-	const modelSurface_t *baseSurf;
+	const idModelSurface *baseSurf;
 	idRenderModelStatic *staticModel;
 	overlaySurface_t *surf;
 	srfTriangles_t *newTri;
-	modelSurface_t *newSurf;
+	idModelSurface *newSurf;
 
 	if ( baseModel == NULL || baseModel->IsDefaultModel() ) {
 		return;

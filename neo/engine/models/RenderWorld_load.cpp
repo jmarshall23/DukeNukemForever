@@ -116,7 +116,7 @@ idRenderModel *idRenderWorldLocal::ParseModel( idLexer *src ) {
 	idToken			token;
 	int				i, j;
 	srfTriangles_t	*tri;
-	modelSurface_t	surf;
+	idModelSurface	surf;
 
 	src->ExpectTokenString( "{" );
 
@@ -137,6 +137,8 @@ idRenderModel *idRenderWorldLocal::ParseModel( idLexer *src ) {
 		src->ExpectAnyToken( &token );
 
 		surf.shader = declManager->FindMaterial( token );
+
+		surf.noShadow = src->ParseInt();
 
 		((idMaterial*)surf.shader)->AddReference();
 
@@ -189,7 +191,7 @@ idRenderModel *idRenderWorldLocal::ParseShadowModel( idLexer *src ) {
 	idToken			token;
 	int				j;
 	srfTriangles_t	*tri;
-	modelSurface_t	surf;
+	idModelSurface	surf;
 
 	src->ExpectTokenString( "{" );
 
@@ -655,7 +657,7 @@ void idRenderWorldLocal::AddWorldModelEntities() {
 		idRenderModel *hModel = def->parms.hModel;
 
 		for ( int j = 0; j < hModel->NumSurfaces(); j++ ) {
-			const modelSurface_t *surf = hModel->Surface( j );
+			const idModelSurface *surf = hModel->Surface( j );
 
 			if ( surf->shader->GetName() == idStr( "textures/smf/portal_sky" ) ) {
 				def->needsPortalSky = true;

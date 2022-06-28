@@ -53,10 +53,25 @@ static void AddTriListToArea( uEntity_t *e, mapTri_t *triList, int planeNum, int
 		return;
 	}
 
+	bool noShadow = false;
+
+	mapTri_t* testTri = triList;
+	while (testTri != nullptr)
+	{
+		if (testTri->noShadow)
+		{
+			noShadow = true;
+			break;
+		}
+
+		testTri = testTri->next;
+	}
+
 	area = &e->areas[areaNum];
 	for ( group = area->groups ; group ; group = group->nextGroup ) {
 		if ( group->material == triList->material
 			&& group->planeNum == planeNum
+			&& group->noShadow == noShadow
 			&& group->mergeGroup == triList->mergeGroup ) {
 			// check the texture vectors
 			for ( i = 0 ; i < 2 ; i++ ) {
@@ -89,6 +104,7 @@ static void AddTriListToArea( uEntity_t *e, mapTri_t *triList, int planeNum, int
 		group->material = triList->material;
 		group->nextGroup = area->groups;
 		group->texVec = *texVec;
+		group->noShadow = noShadow;
 		area->groups = group;
 	}
 

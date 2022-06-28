@@ -296,7 +296,7 @@ void idBrittleFracture::Spawn( void ) {
 		isXraySurface = false;
 
 		for ( int i = 0; i < model->NumSurfaces(); i++ ) {
-			const modelSurface_t *surf = model->Surface( i );
+			const idModelSurface *surf = model->Surface( i );
 
 			if ( idStr( surf->shader->GetName() ) == "textures/smf/window_scratch" ) {
 				isXraySurface = true;
@@ -362,7 +362,7 @@ bool idBrittleFracture::UpdateRenderEntity( renderEntity_t *renderEntity, const 
 	float fade;
 	dword packedColor;
 	srfTriangles_t *tris, *decalTris;
-	modelSurface_t surface;
+	idModelSurface surface;
 	idDrawVert *v;
 	idPlane plane;
 	idMat3 tangents;
@@ -1121,7 +1121,7 @@ idBrittleFracture::CreateFractures
 */
 void idBrittleFracture::CreateFractures( const idRenderModel *renderModel ) {
 	int i, j, k;
-	const modelSurface_t *surf;
+	const idModelSurface *surf;
 	const idDrawVert *v;
 	idFixedWinding w;
 

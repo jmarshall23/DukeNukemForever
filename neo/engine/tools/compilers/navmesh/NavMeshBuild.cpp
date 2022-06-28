@@ -24,7 +24,7 @@ void AddModelToMegaGeometry(WorldGeometry_t &geometry, idVec3 origin, idMat3 axi
 {
 	for (int i = 0; i < renderModel->NumSurfaces(); i++)
 	{
-		const modelSurface_t *surface = renderModel->Surface(i);
+		const idModelSurface *surface = renderModel->Surface(i);
 
 		// Don't add shadow geometry.
 		if (surface->geometry->numShadowIndexesNoCaps > 0 || surface->geometry->numShadowIndexesNoFrontCaps)

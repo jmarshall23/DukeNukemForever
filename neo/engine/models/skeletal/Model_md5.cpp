@@ -283,7 +283,7 @@ void idMD5Mesh::TransformScaledVerts( idDrawVert *verts, const idJointMat *entJo
 idMD5Mesh::UpdateSurface
 ====================
 */
-void idMD5Mesh::UpdateSurface( const struct renderEntity_t *ent, const idJointMat *entJoints, modelSurface_t *surf ) {
+void idMD5Mesh::UpdateSurface( const struct renderEntity_t *ent, const idJointMat *entJoints, idModelSurface *surf ) {
 	int i, base;
 	srfTriangles_t *tri;
 
@@ -795,7 +795,7 @@ idRenderModel *idRenderModelMD5::InstantiateDynamicModel( const struct renderEnt
 			continue;
 		}
 
-		modelSurface_t *surf;
+		idModelSurface *surf;
 
 		if ( staticModel->FindSurfaceWithId( i, surfaceNum ) ) {
 			mesh->surfaceNum = surfaceNum;

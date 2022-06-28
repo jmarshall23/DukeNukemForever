@@ -666,7 +666,7 @@ entity_t *Entity_PostParse(entity_t *ent, brush_t *pList) {
 				{
 					for (int u = 0; u < modelHandle->NumSurfaces(); u++)
 					{
-						modelSurface_s* surf = (modelSurface_s*)modelHandle->Surface(u);
+						idModelSurface* surf = (idModelSurface*)modelHandle->Surface(u);
 
 						surf->shader = mat;
 					}

@@ -1317,7 +1317,7 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 			bmodel->InitEmpty( name );
 
 			// add the surfaces to the renderModel
-			modelSurface_t	surf;
+			idModelSurface	surf;
 			for ( int i = 0 ; i < tris.Num() ; i++ ) {
 				surf.geometry = tris[i];
 				surf.shader = mats[i];
@@ -1480,7 +1480,7 @@ int Brush_TransformModel(brush_t *brush, idTriList *tris, idMatList *mats) {
 
 
 			for (int i = 0; i < model->NumSurfaces() ; i++) {
-				const modelSurface_t	*surf = model->Surface( i );
+				const idModelSurface	*surf = model->Surface( i );
 				srfTriangles_t	*tri = surf->geometry;
 				srfTriangles_t *tri2 = R_CopyStaticTriSurf(tri);
 				for (int j = 0; j < tri2->numVerts; j++) {
@@ -1761,7 +1761,7 @@ void CCamWnd::BuildRendererState() {
 			}
 
 			// add the surfaces to the renderModel
-			modelSurface_t	surf;
+			idModelSurface	surf;
 			for ( int i = 0 ; i < tris.Num() ; i++ ) {
 				surf.geometry = tris[i];
 				surf.shader = mats[i];

@@ -38,7 +38,7 @@ If you have questions concerning this license or the applicable additional terms
 */
 
 #define PROC_FILE_EXT				"world"
-#define	PROC_FILE_ID				"dnProcFile001"
+#define	PROC_FILE_ID				"dnProcFile002"
 
 // shader parms
 const int MAX_GLOBAL_SHADER_PARMS	= 12;

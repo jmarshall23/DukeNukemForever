@@ -421,7 +421,7 @@ bool idSmokeParticles::UpdateRenderEntity( renderEntity_t *renderEntity, const r
 			}
 			tri->numIndexes = indexes;
 
-			modelSurface_t	surf;
+			idModelSurface	surf;
 			surf.geometry = tri;
 			surf.shader = stage->material;
 			surf.id = 0;
