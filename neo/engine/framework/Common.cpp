@@ -3022,10 +3022,22 @@ void idCommonLocal::InitGame( void ) {
 	// init the parallel job manager
 	parallelJobManager->Init();
 
+// jmarshall
+#ifdef ID_ALLOW_TOOLS
+	if (!fileSystem->FileExists(EDITOR_CFG_FILE))
+	{
+		idStr defaultEditPath = fileSystem->RelativePathToOSPath("default_editor.cfg");
+		idStr dukeEditPath = fileSystem->RelativePathToOSPath(EDITOR_CFG_FILE);
+		fileSystem->CopyFileA(defaultEditPath, dukeEditPath);
+	}
+#endif
+// jmarshall end
+
 	PrintLoadingMessage( common->GetLanguageDict()->GetString( "#str_04345" ) );
 
 	// exec the startup scripts
-	cmdSystem->BufferCommandText( CMD_EXEC_APPEND, "exec editor.cfg\n" );
+	idStr dukeexec = va("exec %s\n", EDITOR_CFG_FILE);
+	cmdSystem->BufferCommandText( CMD_EXEC_APPEND, dukeexec);
 	cmdSystem->BufferCommandText( CMD_EXEC_APPEND, "exec default.cfg\n" );
 
 	// skip the config file if "safe" is on the command line

@@ -393,6 +393,9 @@ public:
 	virtual const idDict *	GetMapDecl( int i );
 	virtual void			FindMapScreenshot( const char *path, char *buf, int len );
 	virtual bool			FilenameCompare( const char *s1, const char *s2 ) const;
+// jmarshall
+	virtual bool			FileExists(const char* path);
+// jmarshall end
 
 	static void				Dir_f( const idCmdArgs &args );
 	static void				DirTree_f( const idCmdArgs &args );
@@ -4054,3 +4057,21 @@ void idFileSystemLocal::FindMapScreenshot( const char *path, char *buf, int len 
 		}
 	}
 }
+
+// jmarshall
+/*
+====================
+idFileSystemLocal::FileExists
+====================
+*/
+bool idFileSystemLocal::FileExists(const char* path) {
+	idFile* f = OpenFileRead(path);
+
+	if (f == nullptr)
+		return false;
+
+	CloseFile(f);
+
+	return true;
+}
+// jmarshall end

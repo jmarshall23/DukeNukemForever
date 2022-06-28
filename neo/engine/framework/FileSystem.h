@@ -282,6 +282,11 @@ public:
 
 							// ignore case and seperator char distinctions
 	virtual bool			FilenameCompare( const char *s1, const char *s2 ) const = 0;
+
+// jmarshall
+							// returns true if a file exists or not.
+	virtual bool			FileExists(const char* path) = 0;
+// jmarshall end
 };
 
 extern idFileSystem *		fileSystem;

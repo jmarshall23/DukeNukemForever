@@ -94,6 +94,7 @@ If you have questions concerning this license or the applicable additional terms
 #define EDITOR_DEFAULT_PROJECT			"duketool.qe4"
 #define EDITOR_REGISTRY_KEY				"DukeRadiant"
 #define EDITOR_WINDOWTEXT				"Duke's Tool"
+#define EDITOR_CFG_FILE					"duketool.cfg"
 
 // win32 info
 #define WIN32_CONSOLE_CLASS				"Duke Nukem Forever WinConsole"
