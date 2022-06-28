@@ -91,6 +91,10 @@ public:
 	virtual const char *	BindingFromKey( const char *key ) { return NULL; }
 	virtual int				ButtonState( int key ) { return 0; }
 	virtual int				KeyState( int key ) { return 0; }
+
+	virtual float				Get_com_engineHz_latched(void) { return 0; }
+	virtual int64_t				Get_com_engineHz_numerator(void) { return 0; }
+	virtual int64_t				Get_com_engineHz_denominator(void) { return 0; }
 };
 
 idCVar com_developer( "developer", "0", CVAR_BOOL|CVAR_SYSTEM, "developer mode" );
@@ -192,11 +196,11 @@ int				Sys_ListFiles( const char *directory, const char *extension, idStrList &l
 
 #endif
 
-xthreadInfo *	g_threads[MAX_THREADS];
+//xthreadInfo *	g_threads[MAX_THREADS];
 int				g_thread_count;
 
-void			Sys_CreateThread( xthread_t function, void *parms, xthreadPriority priority, xthreadInfo &info, const char *name, xthreadInfo *threads[MAX_THREADS], int *thread_count ) {}
-void			Sys_DestroyThread( xthreadInfo& info ) {}
+//void			Sys_CreateThread( xthread_t function, void *parms, xthreadPriority priority, xthreadInfo &info, const char *name, xthreadInfo *threads[MAX_THREADS], int *thread_count ) {}
+//void			Sys_DestroyThread( xthreadInfo& info ) {}
 
 void			Sys_EnterCriticalSection( int index ) {}
 void			Sys_LeaveCriticalSection( int index ) {}
