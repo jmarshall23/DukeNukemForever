@@ -86,7 +86,7 @@ renderProg interaction
 			float hDotN = dot3( normalize( halfAngleTangentVector ), localNormal );
 			vec3 specularContribution = vec3( pow(hDotN, specularPower) );
 
-			vec3 specularColor = specMap.xyz * specularContribution;
+			vec3 specularColor = localNormal.x * specularContribution;
 
 			float attenuation = AttenuationPointLight(gl_TexCoord[5].xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
 			float lit = dot3( localNormal, lightVector ) * attenuation;
@@ -102,7 +102,7 @@ renderProg interaction
 				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, $globalLightOrigin[i].xyz, _shadowMapInfo);
 			}
 
-			finalColor += (lc * lit)  * shadow;
+			finalColor += ((lc * lit) + (lc * specularColor))  * shadow;
 		}
 
 		gl_FragColor.xyz = diffuseMap.xyz * (finalColor + 0.1);
