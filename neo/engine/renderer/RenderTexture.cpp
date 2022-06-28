@@ -118,9 +118,9 @@ void idRenderTexture::InitRenderTexture(void) {
 		}
 	}
 
-
-	if (glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE) {
-		common->FatalError("idRenderTexture::InitRenderTexture: Failed to create rendertexture!");
+	GLenum r = glCheckFramebufferStatus(GL_FRAMEBUFFER);
+	if (r != GL_FRAMEBUFFER_COMPLETE) {
+		common->FatalError("idRenderTexture::InitRenderTexture: Failed to create rendertexture error code %d!", r);
 	}
 
 	glBindFramebuffer(GL_FRAMEBUFFER, 0);
