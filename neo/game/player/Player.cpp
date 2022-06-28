@@ -57,9 +57,6 @@ const int SPECTATE_RAISE = 25;
 
 const int HEALTHPULSE_TIME = 333;
 
-// minimum speed to bob and play run/walk animations at
-const float MIN_BOB_SPEED = 5.0f;
-
 const idEventDef EV_Player_GetButtons( "getButtons", NULL, 'd' );
 const idEventDef EV_Player_GetMove( "getMove", NULL, 'v' );
 const idEventDef EV_Player_GetViewAngles( "getViewAngles", NULL, 'v' );
@@ -5591,8 +5588,6 @@ void idPlayer::BobCycle( const idVec3 &pushVelocity ) {
 	float		delta;
 	float		speed;
 	float		f;
-
-	return;
 
 	//
 	// calculate speed and cycle to be used for

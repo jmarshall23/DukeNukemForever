@@ -7,7 +7,7 @@
 
 	This file has been generated with the Type Info Generator v1.1 (c) 2004 id Software
 
-	586 constants
+	587 constants
 	56 enums
 	297 classes/structs/unions
 	3 templates
@@ -383,6 +383,7 @@ static constantInfo_t constantInfo[] = {
 	{ "const int", "LAND_RETURN_TIME", "300" },
 	{ "const int", "FOCUS_TIME", "300" },
 	{ "const int", "FOCUS_GUI_TIME", "500" },
+	{ "const float", "MIN_BOB_SPEED", "5.0" },
 	{ "const int", "MAX_WEAPONS", "32" },
 	{ "const int", "DEAD_HEARTRATE", "0" },
 	{ "const int", "LOWHEALTH_HEARTRATE_ADJ", "20" },
@@ -4597,6 +4598,8 @@ static classVariableInfo_t DnSchoolGirl_typeInfo[] = {
 };
 
 static classVariableInfo_t DukePlayer_typeInfo[] = {
+	{ "float", "bob", (intptr_t)(&((DukePlayer *)0)->bob), sizeof( ((DukePlayer *)0)->bob ) },
+	{ "float", "lastAppliedBobCycle", (intptr_t)(&((DukePlayer *)0)->lastAppliedBobCycle), sizeof( ((DukePlayer *)0)->lastAppliedBobCycle ) },
 	{ NULL, 0 }
 };
 

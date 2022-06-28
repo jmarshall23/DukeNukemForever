@@ -52,6 +52,9 @@ const int	LAND_RETURN_TIME = 300;
 const int	FOCUS_TIME = 300;
 const int	FOCUS_GUI_TIME = 500;
 
+// minimum speed to bob and play run/walk animations at
+const float MIN_BOB_SPEED = 5.0f;
+
 #ifdef _D3XP
 const int MAX_WEAPONS = 32;
 #else
@@ -597,7 +600,7 @@ public:
 	bool					SelfSmooth( void );
 	void					SetSelfSmooth( bool b );
 
-private:
+protected:
 	jointHandle_t			hipJoint;
 	jointHandle_t			chestJoint;
 	jointHandle_t			headJoint;
@@ -732,7 +735,7 @@ private:
 
 	//void					UseObjects( void );
 	void					CrashLand( const idVec3 &oldOrigin, const idVec3 &oldVelocity );
-	void					BobCycle( const idVec3 &pushVelocity );
+	virtual void			BobCycle( const idVec3 &pushVelocity );
 	void					UpdateViewAngles( void );
 	void					EvaluateControls( void );
 	void					AdjustSpeed( void );
