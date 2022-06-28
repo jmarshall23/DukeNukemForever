@@ -1,0 +1,58 @@
+entityDef weapon_shotgun {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_usage"				"Pistol"
+	"editor_rotatable"		"1"
+
+	"view_model_offset"			"0 5 -10"
+
+	"spawnclass"				"idItem"
+	"size"						"32 32 32"
+	"model"						"models/weapons/pistol/w_pistol.lwo"
+	"model_view" 				"models/weapons/shotgun/shotgun.md3"
+	"model_world" 				"worldmodel_pistol"
+	"joint_attach"				"PISTOL_ATTACHER"
+	"def_dropItem"				"moveable_item_pistol"
+	
+	"modelindex"				"MODELINDEX_SHOTGUN"
+
+	"inv_name"					"Shotgun"
+	"inv_weapon"				"weapon_shotgun"
+	"inv_item"					"5"
+	"inv_ammo_bullets"			"15"
+	"icon"						"guis/assets/hud/wpn_1"
+
+	"weapon_class"				"dnWeaponShotgun"
+	"def_projectile"			"projectile_bullet_pistol"
+	"ammoType"					"ammo_bullets"
+	"ammoRequired"				"1"
+	"clipSize"					"15"
+	"lowAmmo"					"4"
+	"mtr_flashShader"			"muzzleflash"
+	"flashColor"				"1 0.8 0.4"
+	"flashRadius"				"120"
+	"silent_fire"				"0"
+	"recoilTime"				"125"
+	"recoilAngles"				"-1 0 0"
+
+	"weaponAngleOffsetAverages" "10"
+	"weaponAngleOffsetScale" 	".25"
+	"weaponAngleOffsetMax"		"10"
+	"weaponOffsetTime"			"400"
+	"weaponOffsetScale"			"0.005"
+
+	"hide_time"					"0.3"								// time to hide weapon when talking to npcs or looking at guis
+	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
+
+	"smoke_muzzle"				"muzzlesmoke.prt"
+	"def_ejectBrass"			"debris_brass"
+	"ejectBrassDelay"			"10"
+	
+	"snd_acquire"				"sound_weapon_acquire"
+	"snd_respawn"				"sound_weapon_respawn"
+	
+	"skin_invisible"			"skins/pistol_invis"
+	
+	"spread"					"0"
+}

@@ -48,7 +48,7 @@ file(GLOB gameBaseFiles
      "game/physics/*.cpp"
      "game/script/*.cpp"
      "gamedecls/*.cpp*"
-) 
+)
 
 file(GLOB typeInfoGenFiles
     "engine/typeinfo/*.cpp*"

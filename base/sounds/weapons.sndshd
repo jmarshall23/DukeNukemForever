@@ -1,0 +1,9 @@
+pistol_fire
+{
+	sounds/weapons/pistol/GunFire055.ogg
+}
+
+shotgun_fire
+{
+	sounds/weapons/shotgun/ShotGFire28.ogg
+}

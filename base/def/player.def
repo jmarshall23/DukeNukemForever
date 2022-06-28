@@ -9,7 +9,7 @@ entityDef player_dukenukem {
    "hud"                "guis/hud.gui"
    "def_weapon0"		"weapon_mightyfoot"
    "def_weapon1"		"weapon_pistol"
-   "def_weapon2"						""
+   "def_weapon2"		"weapon_shotgun"
    "def_weapon3"						""
    "def_weapon4"						""
    "def_weapon5"						""

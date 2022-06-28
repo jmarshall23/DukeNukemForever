@@ -9,7 +9,7 @@
 
 	587 constants
 	56 enums
-	297 classes/structs/unions
+	298 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -4519,6 +4519,13 @@ static classVariableInfo_t dnWeaponPistol_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t dnWeaponShotgun_typeInfo[] = {
+	{ ": float", "spread", (intptr_t)(&((dnWeaponShotgun *)0)->spread), sizeof( ((dnWeaponShotgun *)0)->spread ) },
+	{ "const idSoundShader *", "fireSound", (intptr_t)(&((dnWeaponShotgun *)0)->fireSound), sizeof( ((dnWeaponShotgun *)0)->fireSound ) },
+	{ "const idSoundShader *", "snd_lowammo", (intptr_t)(&((dnWeaponShotgun *)0)->snd_lowammo), sizeof( ((dnWeaponShotgun *)0)->snd_lowammo ) },
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t idTestModel_typeInfo[] = {
 	{ ": idEntityPtr < idEntity >", "head", (intptr_t)(&((idTestModel *)0)->head), sizeof( ((idTestModel *)0)->head ) },
 	{ "idAnimator *", "headAnimator", (intptr_t)(&((idTestModel *)0)->headAnimator), sizeof( ((idTestModel *)0)->headAnimator ) },
@@ -4964,6 +4971,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "idBrittleFracture", "idEntity", sizeof(idBrittleFracture), idBrittleFracture_typeInfo },
 	{ "dnWeaponMightyFoot", "rvmWeaponObject", sizeof(dnWeaponMightyFoot), dnWeaponMightyFoot_typeInfo },
 	{ "dnWeaponPistol", "rvmWeaponObject", sizeof(dnWeaponPistol), dnWeaponPistol_typeInfo },
+	{ "dnWeaponShotgun", "rvmWeaponObject", sizeof(dnWeaponShotgun), dnWeaponShotgun_typeInfo },
 	{ "idTestModel", "idAnimatedEntity", sizeof(idTestModel), idTestModel_typeInfo },
 	{ "idMoveState", "", sizeof(idMoveState), idMoveState_typeInfo },
 	{ "DnRand", "", sizeof(DnRand), DnRand_typeInfo },
