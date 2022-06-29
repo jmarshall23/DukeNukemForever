@@ -41,6 +41,8 @@ void DnAI::Spawn(void)
 
 	BecomeActive(TH_THINK);
 
+	eyeOffset.z = 50.0f;
+
 	SetState("state_Begin");
 }
 
@@ -493,24 +495,18 @@ void DnAI::UpdatePathToPosition(idVec3 pos)
 
 bool DnAI::Pain(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location)
 {
-	if (startedDeath)
-	{
-		return true;
-	}
-
-	health -= damage;
-	if (health <= 0)
-	{
-		startedDeath = true;
-		SetState("state_BeginDeath");
-	}
-
 	return true;
 }
 
 void DnAI::Killed(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location)
 {
-	//SetState("state_Killed");
+	if (startedDeath)
+	{
+		return;
+	}
+
+	startedDeath = true;
+	SetState("state_BeginDeath");
 }
 
 void DnAI::Think(void)

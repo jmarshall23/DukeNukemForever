@@ -138,8 +138,8 @@
 {
 "classname" "monster_pigcop"
 "name" "monster_pigcop_1"
-"origin" "5488 1088 -32"
-"angle" "180"
+"origin" "5984 1640 -48"
+"angle" "0"
 }
 // entity 14
 {
@@ -25792,4 +25792,25 @@
 "falloff" "0"
 "_color" "0.79 0.89 1"
 "light_radius" "500 500 500"
+}
+// entity 2854
+{
+"classname" "monster_pigcop"
+"name" "monster_pigcop_2"
+"origin" "6328 1608 -48"
+"angle" "270"
+}
+// entity 2855
+{
+"classname" "monster_pigcop"
+"name" "monster_pigcop_3"
+"origin" "4600 2408 -48"
+"angle" "270"
+}
+// entity 2856
+{
+"classname" "monster_pigcop"
+"name" "monster_pigcop_4"
+"origin" "4120 2272 -48"
+"angle" "0"
 }
