@@ -25,4 +25,5 @@ public:
 private:
 	const idSoundShader* troop_awake;
 	const idSoundShader* fire_sound;
+	const idSoundShader* death_sound;
 };

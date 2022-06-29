@@ -29,6 +29,7 @@ stateResult_t DnPigcop::state_Begin(stateParms_t* parms)
 	pig_roam3 = declManager->FindSound("pig_roam3", false);
 	pig_awake = declManager->FindSound("pig_awake", false);
 	fire_sound = declManager->FindSound("pig_fire_sound", false);
+	death_sound = declManager->FindSound("pig_death", false);
 
 	return SRESULT_DONE;
 }
@@ -45,6 +46,8 @@ stateResult_t DnPigcop::state_BeginDeath(stateParms_t* parms)
 	StopMove();
 
 	SetAnimation("death", false);
+
+	StartSoundShader(death_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
 	return SRESULT_DONE;
 }

@@ -28,6 +28,7 @@ private:
 	const idSoundShader* pig_roam3;
 	const idSoundShader* pig_awake;
 	const idSoundShader* fire_sound;
+	const idSoundShader* death_sound;
 
 	DnMeshComponent shotgunMeshComponent;
 };

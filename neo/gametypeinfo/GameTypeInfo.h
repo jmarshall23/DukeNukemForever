@@ -4605,6 +4605,7 @@ static classVariableInfo_t DnPigcop_typeInfo[] = {
 	{ "const idSoundShader *", "pig_roam3", (intptr_t)(&((DnPigcop *)0)->pig_roam3), sizeof( ((DnPigcop *)0)->pig_roam3 ) },
 	{ "const idSoundShader *", "pig_awake", (intptr_t)(&((DnPigcop *)0)->pig_awake), sizeof( ((DnPigcop *)0)->pig_awake ) },
 	{ "const idSoundShader *", "fire_sound", (intptr_t)(&((DnPigcop *)0)->fire_sound), sizeof( ((DnPigcop *)0)->fire_sound ) },
+	{ "const idSoundShader *", "death_sound", (intptr_t)(&((DnPigcop *)0)->death_sound), sizeof( ((DnPigcop *)0)->death_sound ) },
 	{ "DnMeshComponent", "shotgunMeshComponent", (intptr_t)(&((DnPigcop *)0)->shotgunMeshComponent), sizeof( ((DnPigcop *)0)->shotgunMeshComponent ) },
 	{ NULL, 0 }
 };
@@ -4612,6 +4613,7 @@ static classVariableInfo_t DnPigcop_typeInfo[] = {
 static classVariableInfo_t DnLiztroop_typeInfo[] = {
 	{ ": const idSoundShader *", "troop_awake", (intptr_t)(&((DnLiztroop *)0)->troop_awake), sizeof( ((DnLiztroop *)0)->troop_awake ) },
 	{ "const idSoundShader *", "fire_sound", (intptr_t)(&((DnLiztroop *)0)->fire_sound), sizeof( ((DnLiztroop *)0)->fire_sound ) },
+	{ "const idSoundShader *", "death_sound", (intptr_t)(&((DnLiztroop *)0)->death_sound), sizeof( ((DnLiztroop *)0)->death_sound ) },
 	{ NULL, 0 }
 };
 

@@ -32,3 +32,10 @@ pig_fire_sound
 	maxdistance 75
 	sounds/weapons/shotgun/SHOTGUN7.ogg
 }
+
+pig_death
+{
+	volume 2
+	maxdistance 75
+	sounds/monsters/pigcop/PIGDY.ogg
+}

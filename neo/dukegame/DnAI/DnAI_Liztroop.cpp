@@ -22,6 +22,7 @@ stateResult_t DnLiztroop::state_Begin(stateParms_t* parms)
 
 	troop_awake = declManager->FindSound("liztroop_awake", false);
 	fire_sound = declManager->FindSound("liztroop_fire", false);
+	death_sound = declManager->FindSound("liztroop_die", false);
 
 	return SRESULT_DONE;
 }
@@ -38,6 +39,8 @@ stateResult_t DnLiztroop::state_BeginDeath(stateParms_t* parms)
 	StopMove();
 
 	SetAnimation("death", false);
+
+	StartSoundShader(death_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
 	return SRESULT_DONE;
 }

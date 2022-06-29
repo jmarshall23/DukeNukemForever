@@ -11,3 +11,10 @@ liztroop_fire
 	maxdistance 75
 	sounds/weapons/pistol/GunFire055.ogg
 }
+
+liztroop_die
+{
+	volume 2
+	maxdistance 75
+	sounds/monsters/liztroop/PREDDY.ogg
+}
