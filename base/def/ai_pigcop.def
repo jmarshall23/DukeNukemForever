@@ -27,7 +27,7 @@ entityDef monster_pigcop
 	"EgoKillValue"					"8"
 	"Health"						"50"
 
-	"model_offset"					"0 0 45"
+	"model_offset"					"40 0 45"
 	
 	"editor_color"     "1 0 0"
 	"editor_maxs"      "16 16 64"

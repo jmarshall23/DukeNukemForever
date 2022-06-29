@@ -7,6 +7,8 @@
 CLASS_DECLARATION(idActor, DnAI)
 END_CLASS
 
+idCVar ai_drawBounds("ai_drawbounds", "0", CVAR_GAME | CVAR_CHEAT, "draws a bounding box around the ai");
+
 DnRand dnRand;
 
 /*
@@ -505,6 +507,9 @@ void DnAI::Killed(idEntity* inflictor, idEntity* attacker, int damage, const idV
 		return;
 	}
 
+	physicsObj.SetContents(0);
+	physicsObj.GetClipModel()->Unlink();
+
 	startedDeath = true;
 	SetState("state_BeginDeath");
 }
@@ -512,6 +517,13 @@ void DnAI::Killed(idEntity* inflictor, idEntity* attacker, int damage, const idV
 void DnAI::Think(void)
 {
 	idActor::Think();
+
+	if (ai_drawBounds.GetBool())
+	{
+		idBounds bounds = GetPhysics()->GetBounds();
+		bounds.TranslateSelf(GetOrigin());
+		gameRenderWorld->DebugBox(colorGreen, idBox(bounds));
+	}
 
 	// Update the last time we have seen our target.
 	if (target)
