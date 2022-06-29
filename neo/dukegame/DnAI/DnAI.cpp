@@ -522,7 +522,15 @@ void DnAI::Think(void)
 	{
 		idBounds bounds = GetPhysics()->GetBounds();
 		bounds.TranslateSelf(GetOrigin());
-		gameRenderWorld->DebugBox(colorGreen, idBox(bounds));
+
+		if (health > 0)
+		{
+			gameRenderWorld->DebugBox(colorGreen, idBox(bounds));
+		}
+		else
+		{
+			gameRenderWorld->DebugBox(colorRed, idBox(bounds));
+		}
 	}
 
 	// Update the last time we have seen our target.
