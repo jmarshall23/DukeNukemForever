@@ -21,7 +21,7 @@ stateResult_t DnLiztroop::state_Begin(stateParms_t* parms)
 	Event_SetState("state_Idle");
 
 	troop_awake = declManager->FindSound("liztroop_awake", false);
-	fire_sound = declManager->FindSound("pistol_fire", false);
+	fire_sound = declManager->FindSound("liztroop_fire", false);
 
 	return SRESULT_DONE;
 }

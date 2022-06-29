@@ -4,3 +4,10 @@ liztroop_awake
 	maxdistance 75
 	sounds/monsters/liztroop/PREDRG.ogg
 }
+
+liztroop_fire
+{
+	volume 2
+	maxdistance 75
+	sounds/weapons/pistol/GunFire055.ogg
+}
