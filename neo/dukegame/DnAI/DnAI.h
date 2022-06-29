@@ -219,4 +219,5 @@ protected:
 };
 
 #include "DnAI_Pigcop.h"
+#include "DnAI_Liztroop.h"
 #include "DnAI_SchoolGirl.h"

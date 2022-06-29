@@ -8191,6 +8191,55 @@ bool DnPigcop::HasNativeFunction(const char *functionName) {
 
 };
 
+intptr_t DnLiztroop::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 139384) { // state_Begin
+		state_Begin((stateParms_t *)param1);
+		return 0;
+	};
+	if(functionNameHash == 126066) { // state_Idle
+		return (intptr_t)state_Idle((stateParms_t *)param1);
+	};
+	if(functionNameHash == 295469) { // state_ApproachingEnemy
+		return (intptr_t)state_ApproachingEnemy((stateParms_t *)param1);
+	};
+	if(functionNameHash == 211868) { // state_ShootEnemy
+		return (intptr_t)state_ShootEnemy((stateParms_t *)param1);
+	};
+	if(functionNameHash == 203623) { // state_BeginDeath
+		return (intptr_t)state_BeginDeath((stateParms_t *)param1);
+	};
+	if(functionNameHash == 153871) { // state_Killed
+		return (intptr_t)state_Killed((stateParms_t *)param1);
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool DnLiztroop::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 139384) { // state_Begin
+		return true;
+	};
+	if(functionNameHash == 126066) { // state_Idle
+		return true;
+	};
+	if(functionNameHash == 295469) { // state_ApproachingEnemy
+		return true;
+	};
+	if(functionNameHash == 211868) { // state_ShootEnemy
+		return true;
+	};
+	if(functionNameHash == 203623) { // state_BeginDeath
+		return true;
+	};
+	if(functionNameHash == 153871) { // state_Killed
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
 intptr_t DnSchoolGirl::Invoke(const char *functionName, void *param1) {
 	int functionNameHash = idStr::Hash(functionName);
 	if(functionNameHash == 139384) { // state_Begin

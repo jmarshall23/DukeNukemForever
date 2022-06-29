@@ -1,0 +1,35 @@
+model liztroop
+{
+	mesh				models/characters/alien_Liztrooper/alien_liztrooper.md5mesh
+	offset			( -40 0 45 )
+
+	anim af_pose		models/characters/animations/Liztroop/idle.md5anim
+	anim ik_pose		models/characters/animations/Liztroop/idle.md5anim
+
+	anim initial		models/characters/animations/Liztroop/idle.md5anim
+	anim idle			models/characters/animations/Liztroop/idle.md5anim
+
+	anim walk 			models/characters/animations/Liztroop/run.md5anim
+
+	anim fire			models/characters/animations/Liztroop/fire.md5anim
+
+	anim death			models/characters/animations/Liztroop/death.md5anim
+}
+
+entityDef monster_liztroop
+{
+	"spawnclass"					"DnLiztroop"
+	"model"							"liztroop"
+	"editor_usage"					"Liztroop Monster"
+
+	"EgoKillValue"					"4"
+	"Health"						"25"
+
+	"model_offset"					"40 0 45"
+	
+	"editor_color"     "1 0 0"
+	"editor_maxs"      "16 16 64"
+	"editor_mins"      "-16 -16 0"
+	"editor_showangle" "1"
+
+}
