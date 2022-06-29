@@ -1,0 +1,6 @@
+liztroop_awake
+{
+	volume 2
+	maxdistance 75
+	sounds/monsters/liztroop/PREDRG.ogg
+}
