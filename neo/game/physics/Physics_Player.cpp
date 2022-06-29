@@ -1198,6 +1198,14 @@ bool idPhysics_Player::CheckJump( void ) {
 		return false;
 	}
 
+// jmarshall
+	DukePlayer* player = self->Cast<DukePlayer>();
+	if (player)
+	{
+		player->Event_PlayDukeJumpSound();
+	}
+// jmarshall end
+
 	groundPlane = false;		// jumping away
 	walking = false;
 	current.movementFlags |= PMF_JUMP_HELD | PMF_JUMPED;

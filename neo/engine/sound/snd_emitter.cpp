@@ -367,6 +367,8 @@ void idSoundEmitterLocal::Clear( void ) {
 		channels[i].Clear();
 	}
 
+	memset(activeSounds, 0, sizeof(activeSounds));
+
 	removeStatus = REMOVE_STATUS_SAMPLEFINISHED;
 	distance = 0.0f;
 
@@ -439,7 +441,9 @@ void idSoundEmitterLocal::CheckForCompletion( int current44kHzTime ) {
 	if ( playing ) {
 		for ( i = 0; i < SOUND_MAX_CHANNELS; i++ ) {
 			idSoundChannel	*chan = &channels[i];
-
+// jmarshall
+			activeSounds[i] = nullptr;
+// jmarshall end
 			if ( !chan->triggerState ) {
 				continue;
 			}
@@ -486,7 +490,9 @@ void idSoundEmitterLocal::CheckForCompletion( int current44kHzTime ) {
 			}
 
 			hasActive = true;
-
+// jmarshall 
+			activeSounds[i] = chan->soundShader;
+// jmarshall end
 			if ( chan->parms.shakes > 0.0f ) {
 				hasShakes = true;
 			}

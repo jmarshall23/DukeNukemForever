@@ -4622,6 +4622,7 @@ static classVariableInfo_t DnSchoolGirl_typeInfo[] = {
 };
 
 static classVariableInfo_t DukePlayer_typeInfo[] = {
+	{ "idList < const idSoundShader * >", "dukeJumpSounds", (intptr_t)(&((DukePlayer *)0)->dukeJumpSounds), sizeof( ((DukePlayer *)0)->dukeJumpSounds ) },
 	{ "float", "bob", (intptr_t)(&((DukePlayer *)0)->bob), sizeof( ((DukePlayer *)0)->bob ) },
 	{ "float", "lastAppliedBobCycle", (intptr_t)(&((DukePlayer *)0)->lastAppliedBobCycle), sizeof( ((DukePlayer *)0)->lastAppliedBobCycle ) },
 	{ NULL, 0 }

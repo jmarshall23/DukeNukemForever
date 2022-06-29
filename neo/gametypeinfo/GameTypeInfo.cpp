@@ -8267,8 +8267,16 @@ bool DnSchoolGirl::HasNativeFunction(const char *functionName) {
 
 intptr_t DukePlayer::Invoke(const char *functionName, void *param1) {
 	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
 	if(functionNameHash == 272744) { // SetStartingInventory
 		SetStartingInventory();
+		return 0;
+	};
+	if(functionNameHash == 304725) { // Event_PlayDukeJumpSound
+		Event_PlayDukeJumpSound();
 		return 0;
 	};
 	return __super::Invoke(functionName, param1);
@@ -8277,7 +8285,13 @@ intptr_t DukePlayer::Invoke(const char *functionName, void *param1) {
 
 bool DukePlayer::HasNativeFunction(const char *functionName) {
 	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
 	if(functionNameHash == 272744) { // SetStartingInventory
+		return true;
+	};
+	if(functionNameHash == 304725) { // Event_PlayDukeJumpSound
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);

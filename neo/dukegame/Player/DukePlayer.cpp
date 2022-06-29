@@ -22,6 +22,53 @@ DukePlayer::DukePlayer()
 
 /*
 ==================
+DukePlayer::Spawn
+==================
+*/
+void DukePlayer::Spawn(void)
+{
+	// Load in all the duke jump sounds.
+	int num_duke_jumpsounds = spawnArgs.GetInt("num_duke_jumpsounds");
+	for (int i = 0; i < num_duke_jumpsounds; i++)
+	{
+		idStr sndpath = spawnArgs.GetString(va("snd_duke_jump%d", i + 1));
+
+		if (sndpath.Length() <= 0)
+		{
+			gameLocal.Warning("DukePlayer::Spawn: Invalid duke jump sound!\n");
+			continue;
+		}
+
+		const idSoundShader *snd = declManager->FindSound(sndpath, false);
+		if (snd == nullptr)
+		{
+			gameLocal.Warning("DukePlayer::Spawn: Failed to load jump sound %s\n", sndpath.c_str());
+			continue;
+		}
+
+		dukeJumpSounds.AddUnique(snd);
+	}
+}
+
+/*
+==================
+DukePlayer::Event_PlayDukeJumpSound
+==================
+*/
+void DukePlayer::Event_PlayDukeJumpSound(void)
+{
+	// If we are already playing a duke sound, don't play another.
+	if (gameSoundWorld->IsDukeSoundPlaying())
+	{
+		return;
+	}
+
+	int jumpSnd = idMath::FRandRange(0, dukeJumpSounds.Num());
+	gameSoundWorld->PlayShaderDirectly(dukeJumpSounds[jumpSnd], SCHANNEL_DUKETALK);
+}
+
+/*
+==================
 DukePlayer::UpdateHudStats
 ==================
 */

@@ -471,6 +471,12 @@ public:
 	// used for save games
 	virtual	int			Index( void ) const;
 
+// jmarshall
+// Returns the list of active sound shaders.
+	virtual const idSoundShader** GetActiveSoundShaders(void) { return &activeSounds[0]; }
+	virtual int GetMaxNumActiveSoundShaders(void) { return SOUND_MAX_CHANNELS; }
+// jmarshall end
+
 	//----------------------------------------------
 
 	void				Clear( void );
@@ -516,6 +522,8 @@ public:
 	// last generated value
 	int					ampTime;
 	float				amplitude;
+
+	const idSoundShader* activeSounds[SOUND_MAX_CHANNELS];
 };
 
 
@@ -584,6 +592,9 @@ public:
 
 	// background music
 	virtual void			PlayShaderDirectly( const char *name, int channel = -1 );
+// jmarshall
+	virtual void			PlayShaderDirectly(const idSoundShader *shader, int channel = -1);
+// jmarshall end
 
 	// pause and unpause the sound world
 	virtual void			Pause( void );
@@ -606,6 +617,10 @@ public:
 	virtual void			SetSlowmo( bool active );
 	virtual void			SetSlowmoSpeed( float speed );
 	virtual void			SetEnviroSuit( bool active );
+
+// jmarshall
+	virtual bool			IsDukeSoundPlaying(void);
+// jmarshall end
 
 	//=======================================
 

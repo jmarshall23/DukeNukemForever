@@ -45,6 +45,9 @@ void idSoundShader::Init( void ) {
 	numLeadins = 0;
 	leadinVolume = 0;
 	altSound = NULL;
+// jmarshall
+	isDukeVoice = false;
+// jmarshall end
 }
 
 /*
@@ -193,6 +196,11 @@ bool idSoundShader::ParseShader( idLexer &src ) {
 			src.ReadTokenOnLine( &token );
 			desc = token.c_str();
 		}
+// jmarshall
+		else if (!token.Icmp("dukevoice")) {
+			isDukeVoice = true;
+		}
+// jmarshall end
 		// mindistance
 		else if ( !token.Icmp( "mindistance" ) ) {
 			parms.minDistance = src.ParseFloat();

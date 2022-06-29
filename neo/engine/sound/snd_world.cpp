@@ -1404,6 +1404,66 @@ bool idSoundWorldLocal::IsPaused( void ) {
 
 /*
 ===============
+idSoundWorldLocal::IsDukeSoundPlaying
+===============
+*/
+
+// jmarshall
+bool idSoundWorldLocal::IsDukeSoundPlaying(void) {
+	if (localSound == nullptr)
+	{
+		return false;
+	}
+
+	if (!localSound->CurrentlyPlaying())
+	{
+		return false;
+	}
+
+	const idSoundShader** soundShaders = localSound->GetActiveSoundShaders();
+	for (int i = 0; i < localSound->GetMaxNumActiveSoundShaders(); i++)
+	{
+		if(soundShaders[i] == nullptr)
+			continue;
+
+		if (soundShaders[i]->IsDukeVoice()) {
+			return true;
+		}
+	}
+
+	return false;
+}
+
+/*
+===============
+idSoundWorldLocal::PlayShaderDirectly
+===============
+*/
+void idSoundWorldLocal::PlayShaderDirectly(const idSoundShader* shader, int channel) {
+	if (localSound && channel == -1) {
+		localSound->StopSound(SCHANNEL_ANY);
+	}
+	else if (localSound) {
+		localSound->StopSound(channel);
+	}
+
+	if (!localSound) {
+		localSound = AllocLocalSoundEmitter();
+	}
+
+	static idRandom	rnd;
+	float	diversity = rnd.RandomFloat();
+
+	localSound->StartSound(shader, (channel == -1) ? SCHANNEL_ONE : channel, diversity, SSF_GLOBAL);
+
+	// in case we are at the console without a game doing updates, force an update
+	ForegroundUpdate(soundSystemLocal.GetCurrent44kHzTime());
+}
+
+// jmarshall end
+
+/*
+===============
 idSoundWorldLocal::PlayShaderDirectly
 
 start a music track

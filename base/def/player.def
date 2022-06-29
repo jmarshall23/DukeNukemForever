@@ -25,6 +25,12 @@ entityDef player_dukenukem {
    "def_weapon15"						""
 
 
+   "num_duke_jumpsounds"                "5"
+   "snd_duke_jump1"                     "duke_jump1"
+   "snd_duke_jump2"                     "duke_jump2"
+   "snd_duke_jump3"                     "duke_jump3"
+   "snd_duke_jump4"                     "duke_jump4"
+   "snd_duke_jump5"                     "duke_jump5"
 
    "bone_hips"	  "Legs"
    "bone_chest"	  "Torso"

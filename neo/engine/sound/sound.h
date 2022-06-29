@@ -106,6 +106,9 @@ public:
 
 	virtual bool			CheckShakesAndOgg( void ) const;
 
+// jmarshall
+	bool					IsDukeVoice(void) const { return isDukeVoice; }
+// jmarshall end
 private:
 	friend class idSoundWorldLocal;
 	friend class idSoundEmitterLocal;
@@ -127,6 +130,9 @@ private:
 	idSoundSample *	entries[SOUND_MAX_LIST_WAVS];
 	int						numEntries;
 
+// jmarshall
+	bool					isDukeVoice;
+// jmarshall end
 private:
 	void					Init( void );
 	bool					ParseShader( idLexer &src );
@@ -187,6 +193,12 @@ public:
 
 	// for save games.  Index will always be > 0
 	virtual	int				Index( void ) const = 0;
+
+// jmarshall
+	// Returns the list of active sound shaders.
+	virtual const idSoundShader** GetActiveSoundShaders(void) = 0;
+	virtual int GetMaxNumActiveSoundShaders(void) = 0;
+// jmarshall end
 };
 
 /*
@@ -229,6 +241,9 @@ public:
 
 	// background music
 	virtual	void			PlayShaderDirectly( const char *name, int channel = -1 ) = 0;
+// jmarshall
+	virtual void			PlayShaderDirectly(const idSoundShader* shader, int channel = -1) = 0;
+// jmarshall end
 
 	// dumps the current state and begins archiving commands
 	virtual void			StartWritingDemo( idDemoFile *demo ) = 0;
@@ -261,6 +276,11 @@ public:
 	virtual void			SetSlowmo( bool active ) = 0;
 	virtual void			SetSlowmoSpeed( float speed ) = 0;
 	virtual void			SetEnviroSuit( bool active ) = 0;
+
+// jmarshall
+	// Checks to see if a local duke sound is playing in this world. 
+	virtual bool			IsDukeSoundPlaying(void) = 0;
+// jmarshall end
 };
 
 
