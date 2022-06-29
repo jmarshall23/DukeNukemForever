@@ -1,3 +1,15 @@
+duke_killtaunt
+{
+	dukevoice
+
+	sounds/duketalk2/taunt/du_kill_femech3.ogg	
+	sounds/duketalk/DForTheLord.ogg
+	sounds/duketalk2/taunt/du_kill_monster1.ogg
+	sounds/duketalk2/taunt/du_kill_monster2.ogg
+	sounds/duketalk2/taunt/du_nowyouseeme.ogg
+	sounds/duketalk/DThatABitch.ogg
+}
+
 duke_pay02
 {
 	dukevoice

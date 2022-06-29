@@ -140,7 +140,9 @@ public:
 
 	bool ifrnd(int val1)
 	{
-		return (((GetRand() >> 8) >= (255 - (val1))));
+		unsigned int r = ((GetRand() >> 8));
+
+		return (r >= 255 - val1);
 	}
 private:
 	int randomseed;

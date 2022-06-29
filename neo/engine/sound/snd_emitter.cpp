@@ -713,10 +713,13 @@ int idSoundEmitterLocal::StartSound( const idSoundShader *shader, const s_channe
 	int choice;
 
 	// pick a sound from the list based on the passed diversity
-	choice = (int)(diversity * shader->numEntries);
-	if ( choice < 0 || choice >= shader->numEntries ) {
-		choice = 0;
-	}
+// jmarshall - lets make this better!
+	//choice = (int)(diversity * shader->numEntries);
+	//if ( choice < 0 || choice >= shader->numEntries ) {
+	//	choice = 0;
+	//}
+	choice = idMath::FRandRange(0, shader->numEntries);
+// jmarshall end
 
 	// bump the choice if the exact sound was just played and we are NO_DUPS
 	if ( chanParms.soundShaderFlags & SSF_NO_DUPS ) {

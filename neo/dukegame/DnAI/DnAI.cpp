@@ -507,6 +507,15 @@ void DnAI::Killed(idEntity* inflictor, idEntity* attacker, int damage, const idV
 		return;
 	}
 
+	if (attacker != nullptr)
+	{
+		DukePlayer* player = attacker->Cast<DukePlayer>();
+		if (player)
+		{
+			player->Event_PlayRandomDukeTaunt();
+		}
+	}
+
 	physicsObj.SetContents(0);
 	physicsObj.GetClipModel()->Unlink();
 

@@ -24,12 +24,17 @@ public:
 	void					Event_DukeTalk(const char* soundName);
 
 	void					Event_PlayDukeJumpSound(void);
+	void					Event_PlayRandomDukeTaunt(void);
 
 	virtual void			BobCycle(const idVec3& pushVelocity) override;
 private:
 	idVec3					ApplyLandDeflect(const idVec3& pos, float scale);
 
+	const idSoundShader*	dukeTauntShader;
+
 	idList<const idSoundShader*> dukeJumpSounds;
+
+	bool					firstSwearTaunt;
 
 	float					bob;
 	float					lastAppliedBobCycle;

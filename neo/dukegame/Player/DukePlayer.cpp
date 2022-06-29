@@ -17,6 +17,7 @@ DukePlayer::DukePlayer
 DukePlayer::DukePlayer()
 {
 	bob = 0.0f;
+	firstSwearTaunt = true;
 	lastAppliedBobCycle = 0.0f;
 }
 
@@ -47,6 +48,34 @@ void DukePlayer::Spawn(void)
 		}
 
 		dukeJumpSounds.AddUnique(snd);
+	}
+
+	dukeTauntShader = declManager->FindSound("duke_killtaunt");
+}
+
+/*
+==================
+DukePlayer::Event_PlayRandomDukeTaunt
+==================
+*/
+void DukePlayer::Event_PlayRandomDukeTaunt(void)
+{
+	// If we are already playing a duke sound, don't play another.
+	if (gameSoundWorld->IsDukeSoundPlaying())
+	{
+		return;
+	}
+
+	if (gameLocal.IsParentalLockEnabled())
+	{
+		return;
+	}
+
+	int swearFrequency = g_SwearFrequency.GetInteger();
+	if (dnRand.ifrnd(swearFrequency) || firstSwearTaunt)
+	{
+		gameSoundWorld->PlayShaderDirectly(dukeTauntShader, SCHANNEL_DUKETALK);
+		firstSwearTaunt = false;
 	}
 }
 

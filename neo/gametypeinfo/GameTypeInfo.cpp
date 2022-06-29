@@ -8279,6 +8279,10 @@ intptr_t DukePlayer::Invoke(const char *functionName, void *param1) {
 		Event_PlayDukeJumpSound();
 		return 0;
 	};
+	if(functionNameHash == 333292) { // Event_PlayRandomDukeTaunt
+		Event_PlayRandomDukeTaunt();
+		return 0;
+	};
 	return __super::Invoke(functionName, param1);
 
 };
@@ -8292,6 +8296,9 @@ bool DukePlayer::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 304725) { // Event_PlayDukeJumpSound
+		return true;
+	};
+	if(functionNameHash == 333292) { // Event_PlayRandomDukeTaunt
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);
