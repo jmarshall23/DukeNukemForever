@@ -28,7 +28,7 @@ namespace map_e1l1 {
 		// Get the local playing player.
 		dukePlayer = sys.getLocalPlayer();
 
-		// Damn those alien bastards shot down my ride!
+		// Son of a bitch!
 		dukePlayer.startDukeTalk("duke_pay02");
 
 		// Move the dukecar to the location.
@@ -39,5 +39,10 @@ namespace map_e1l1 {
 		// $duke_car.rotateUpTo(2, 620);
 
 		thread(edf_ship_think());
+
+		sys.wait(5.0);
+
+		// Where is nukem!
+		dukePlayer.startDukeTalk("morphix_whereisduke");
 	}
 }

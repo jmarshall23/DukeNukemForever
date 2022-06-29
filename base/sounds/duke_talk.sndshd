@@ -2,40 +2,40 @@ duke_pay02
 {
 	dukevoice
 
-	sounds/duketalk/old/damn_pay02.ogg
+	sounds/duketalk2/du_goddamn.ogg
 }
 
 duke_jump1
 {
 	dukevoice
-	volume 2
+	volume 3
 	sounds/duketalk/jump/vs_jump1.ogg
 }
 
 duke_jump2
 {
 	dukevoice
-	volume 2
+	volume 3
 	sounds/duketalk/jump/vs_jump2.ogg
 }
 
 duke_jump3
 {
 	dukevoice
-	volume 2
+	volume 3
 	sounds/duketalk/jump/vs_jump3.ogg
 }
 
 duke_jump4
 {
 	dukevoice
-	volume 2
+	volume 3
 	sounds/duketalk/jump/vs_jump4.ogg
 }
 
 duke_jump5
 {
 	dukevoice
-	volume 2
+	volume 3
 	sounds/duketalk/jump/vs_jump5.ogg
 }

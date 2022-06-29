@@ -9,7 +9,9 @@ liztroop_fire
 {
 	volume 2
 	maxdistance 75
-	sounds/weapons/pistol/GunFire055.ogg
+	sounds/weapons/pistol/ge_attack1.ogg
+	sounds/weapons/pistol/ge_attack2.ogg
+	sounds/weapons/pistol/ge_attack3.ogg
 }
 
 liztroop_die

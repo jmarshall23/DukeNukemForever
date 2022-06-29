@@ -341,6 +341,8 @@ void idSoundSystemLocal::Init() {
 	common->StartupVariable( "s_useOpenAL", true );
 	common->StartupVariable( "s_useEAXReverb", true );
 
+	idSoundSystemLocal::s_useOpenAL.SetBool(false);
+
 	if ( idSoundSystemLocal::s_useOpenAL.GetBool() || idSoundSystemLocal::s_useEAXReverb.GetBool() ) {
 		if ( !Sys_LoadOpenAL() ) {
 			idSoundSystemLocal::s_useOpenAL.SetBool( false );

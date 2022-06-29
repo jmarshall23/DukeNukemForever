@@ -1,9 +1,11 @@
 pistol_fire
 {
-	sounds/weapons/pistol/GunFire055.ogg
+	sounds/weapons/pistol/ge_attack1.ogg
+	sounds/weapons/pistol/ge_attack2.ogg
+	sounds/weapons/pistol/ge_attack3.ogg
 }
 
 shotgun_fire
 {
-	sounds/weapons/shotgun/ShotGFire28.ogg
+	sounds/weapons/shotgun/sg_attack.ogg
 }
