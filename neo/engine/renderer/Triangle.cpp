@@ -129,7 +129,6 @@ static idBlockAlloc<srfTriangles_t, 1<<8>				srfTrianglesAllocator;
 #ifdef USE_TRI_DATA_ALLOCATOR
 static idDynamicBlockAlloc<idDrawVert, 1<<20, 1<<10>	triVertexAllocator;
 static idDynamicBlockAlloc<glIndex_t, 1<<18, 1<<10>		triIndexAllocator;
-static idDynamicBlockAlloc<shadowCache_t, 1<<18, 1<<10>	triShadowVertexAllocator;
 static idDynamicBlockAlloc<idPlane, 1<<17, 1<<10>		triPlaneAllocator;
 static idDynamicBlockAlloc<glIndex_t, 1<<17, 1<<10>		triSilIndexAllocator;
 static idDynamicBlockAlloc<silEdge_t, 1<<17, 1<<10>		triSilEdgeAllocator;
@@ -160,7 +159,6 @@ void R_InitTriSurfData( void ) {
 	// initialize allocators for triangle surfaces
 	triVertexAllocator.Init();
 	triIndexAllocator.Init();
-	triShadowVertexAllocator.Init();
 	triPlaneAllocator.Init();
 	triSilIndexAllocator.Init();
 	triSilEdgeAllocator.Init();
@@ -170,8 +168,7 @@ void R_InitTriSurfData( void ) {
 
 	// never swap out triangle surfaces
 	triVertexAllocator.SetLockMemory( true );
-	triIndexAllocator.SetLockMemory( true );
-	triShadowVertexAllocator.SetLockMemory( true );
+	triIndexAllocator.SetLockMemory( true );	
 	triPlaneAllocator.SetLockMemory( true );
 	triSilIndexAllocator.SetLockMemory( true );
 	triSilEdgeAllocator.SetLockMemory( true );
@@ -191,7 +188,6 @@ void R_ShutdownTriSurfData( void ) {
 	srfTrianglesAllocator.Shutdown();
 	triVertexAllocator.Shutdown();
 	triIndexAllocator.Shutdown();
-	triShadowVertexAllocator.Shutdown();
 	triPlaneAllocator.Shutdown();
 	triSilIndexAllocator.Shutdown();
 	triSilEdgeAllocator.Shutdown();
@@ -212,7 +208,6 @@ void R_PurgeTriSurfData( frameData_t *frame ) {
 	// free empty base blocks
 	triVertexAllocator.FreeEmptyBaseBlocks();
 	triIndexAllocator.FreeEmptyBaseBlocks();
-	triShadowVertexAllocator.FreeEmptyBaseBlocks();
 	triPlaneAllocator.FreeEmptyBaseBlocks();
 	triSilIndexAllocator.FreeEmptyBaseBlocks();
 	triSilEdgeAllocator.FreeEmptyBaseBlocks();
@@ -238,10 +233,6 @@ void R_ShowTriSurfMemory_f( const idCmdArgs &args ) {
 	common->Printf( "%6d kB index memory (%d kB free in %d blocks, %d empty base blocks)\n",
 		triIndexAllocator.GetBaseBlockMemory() >> 10, triIndexAllocator.GetFreeBlockMemory() >> 10,
 			triIndexAllocator.GetNumFreeBlocks(), triIndexAllocator.GetNumEmptyBaseBlocks() );
-
-	common->Printf( "%6d kB shadow vert memory (%d kB free in %d blocks, %d empty base blocks)\n",
-		triShadowVertexAllocator.GetBaseBlockMemory() >> 10, triShadowVertexAllocator.GetFreeBlockMemory() >> 10,
-			triShadowVertexAllocator.GetNumFreeBlocks(), triShadowVertexAllocator.GetNumEmptyBaseBlocks() );
 
 	common->Printf( "%6d kB tri plane memory (%d kB free in %d blocks, %d empty base blocks)\n",
 		triPlaneAllocator.GetBaseBlockMemory() >> 10, triPlaneAllocator.GetFreeBlockMemory() >> 10,
@@ -271,7 +262,6 @@ void R_ShowTriSurfMemory_f( const idCmdArgs &args ) {
 		( srfTrianglesAllocator.GetAllocCount() * sizeof( srfTriangles_t ) +
 			triVertexAllocator.GetBaseBlockMemory() +
 			triIndexAllocator.GetBaseBlockMemory() +
-			triShadowVertexAllocator.GetBaseBlockMemory() +
 			triPlaneAllocator.GetBaseBlockMemory() +
 			triSilIndexAllocator.GetBaseBlockMemory() +
 			triSilEdgeAllocator.GetBaseBlockMemory() +
@@ -294,9 +284,7 @@ int R_TriSurfMemory( const srfTriangles_t *tri ) {
 		return total;
 	}
 
-	if ( tri->shadowVertexes != NULL ) {
-		total += tri->numVerts * sizeof( tri->shadowVertexes[0] );
-	} else if ( tri->verts != NULL ) {
+	if ( tri->verts != NULL ) {
 		if ( tri->ambientSurface == NULL || tri->verts != tri->ambientSurface->verts ) {
 			total += tri->numVerts * sizeof( tri->verts[0] );
 		}
@@ -350,13 +338,6 @@ void R_FreeStaticTriSurfVertexCaches( srfTriangles_t *tri ) {
 		vertexCache.Free( tri->indexCache );
 		tri->indexCache = NULL;
 	}
-	if ( tri->shadowCache && ( tri->shadowVertexes != NULL || tri->verts != NULL ) ) {
-		// if we don't have tri->shadowVertexes, these are a reference to a
-		// shadowCache on the original surface, which a vertex program
-		// will take care of making unique for each light
-		vertexCache.Free( tri->shadowCache );
-		tri->shadowCache = NULL;
-	}
 }
 
 /*
@@ -408,10 +389,6 @@ void R_ReallyFreeStaticTriSurf( srfTriangles_t *tri ) {
 		triPlaneAllocator.Free( tri->facePlanes );
 	}
 
-	if ( tri->shadowVertexes != NULL ) {
-		triShadowVertexAllocator.Free( tri->shadowVertexes );
-	}
-
 #ifdef _DEBUG
 	memset( tri, 0, sizeof( srfTriangles_t ) );
 #endif
@@ -445,11 +422,6 @@ void R_CheckStaticTriSurfMemory( const srfTriangles_t *tri ) {
 				assert( error == NULL );
 			}
 		}
-	}
-
-	if ( tri->shadowVertexes != NULL ) {
-		const char *error = triShadowVertexAllocator.CheckMemory( tri->shadowVertexes );
-		assert( error == NULL );
 	}
 }
 
@@ -564,16 +536,6 @@ void R_AllocStaticTriSurfIndexes( srfTriangles_t *tri, int numIndexes ) {
 
 /*
 =================
-R_AllocStaticTriSurfShadowVerts
-=================
-*/
-void R_AllocStaticTriSurfShadowVerts( srfTriangles_t *tri, int numVerts ) {
-	assert( tri->shadowVertexes == NULL );
-	tri->shadowVertexes = triShadowVertexAllocator.Alloc( numVerts );
-}
-
-/*
-=================
 R_AllocStaticTriSurfPlanes
 =================
 */
@@ -605,19 +567,6 @@ R_ResizeStaticTriSurfIndexes
 void R_ResizeStaticTriSurfIndexes( srfTriangles_t *tri, int numIndexes ) {
 #ifdef USE_TRI_DATA_ALLOCATOR
 	tri->indexes = triIndexAllocator.Resize( tri->indexes, numIndexes );
-#else
-	assert( false );
-#endif
-}
-
-/*
-=================
-R_ResizeStaticTriSurfShadowVerts
-=================
-*/
-void R_ResizeStaticTriSurfShadowVerts( srfTriangles_t *tri, int numVerts ) {
-#ifdef USE_TRI_DATA_ALLOCATOR
-	tri->shadowVertexes = triShadowVertexAllocator.Resize( tri->shadowVertexes, numVerts );
 #else
 	assert( false );
 #endif

@@ -183,67 +183,6 @@ idRenderModel *idRenderWorldLocal::ParseModel( idLexer *src ) {
 
 /*
 ================
-idRenderWorldLocal::ParseShadowModel
-================
-*/
-idRenderModel *idRenderWorldLocal::ParseShadowModel( idLexer *src ) {
-	idRenderModel	*model;
-	idToken			token;
-	int				j;
-	srfTriangles_t	*tri;
-	idModelSurface	surf;
-
-	src->ExpectTokenString( "{" );
-
-	// parse the name
-	src->ExpectAnyToken( &token );
-
-	model = renderModelManager->AllocModel();
-	model->InitEmpty( token );
-
-	surf.shader = tr.defaultMaterial;
-
-	tri = R_AllocStaticTriSurf();
-	surf.geometry = tri;
-
-	tri->numVerts = src->ParseInt();
-	tri->numShadowIndexesNoCaps = src->ParseInt();
-	tri->numShadowIndexesNoFrontCaps = src->ParseInt();
-	tri->numIndexes = src->ParseInt();
-	tri->shadowCapPlaneBits = src->ParseInt();
-
-	R_AllocStaticTriSurfShadowVerts( tri, tri->numVerts );
-	tri->bounds.Clear();
-	for ( j = 0 ; j < tri->numVerts ; j++ ) {
-		float	vec[8];
-
-		src->Parse1DMatrix( 3, vec );
-		tri->shadowVertexes[j].xyz[0] = vec[0];
-		tri->shadowVertexes[j].xyz[1] = vec[1];
-		tri->shadowVertexes[j].xyz[2] = vec[2];
-		tri->shadowVertexes[j].xyz[3] = 1;		// no homogenous value
-
-		tri->bounds.AddPoint( tri->shadowVertexes[j].xyz.ToVec3() );
-	}
-
-	R_AllocStaticTriSurfIndexes( tri, tri->numIndexes );
-	for ( j = 0 ; j < tri->numIndexes ; j++ ) {
-		tri->indexes[j] = src->ParseInt();
-	}
-
-	// add the completed surface to the model
-	model->AddSurface( surf );
-
-	src->ExpectTokenString( "}" );
-
-	// we do NOT do a model->FinishSurfaceces, because we don't need sil edges, planes, tangents, etc.
-//	model->FinishSurfaces();
-
-	return model;
-}
-
-/*
-================
 idRenderWorldLocal::SetupAreaRefs
 ================
 */
@@ -562,17 +501,6 @@ bool idRenderWorldLocal::InitFromMap( const char *name ) {
 
 		if ( token == "model" ) {
 			lastModel = ParseModel( src );
-
-			// add it to the model manager list
-			renderModelManager->AddModel( lastModel );
-
-			// save it in the list to free when clearing this map
-			localModels.Append( lastModel );
-			continue;
-		}
-
-		if ( token == "shadowModel" ) {
-			lastModel = ParseShadowModel( src );
 
 			// add it to the model manager list
 			renderModelManager->AddModel( lastModel );

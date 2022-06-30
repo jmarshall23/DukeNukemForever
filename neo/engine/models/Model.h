@@ -76,10 +76,6 @@ typedef struct lightingCache_s {
 														// in texture space for cards without vertex programs
 } lightingCache_t;
 
-typedef struct shadowCache_s {
-	idVec4						xyz;					// we use homogenous coordinate tricks
-} shadowCache_t;
-
 const int SHADOW_CAP_INFINITE	= 64;
 
 // our only drawing geometry type
@@ -123,9 +119,6 @@ typedef struct srfTriangles_s {
 														// projected on it, which means that if the view is on the outside of that
 														// plane, we need to draw the rear caps of the shadow volume
 														// turboShadows will have SHADOW_CAP_INFINITE
-
-	shadowCache_t *				shadowVertexes;			// these will be copied to shadowCache when it is going to be drawn.
-														// these are NULL when vertex programs are available
 
 	struct srfTriangles_s *		ambientSurface;			// for light interactions, point back at the original surface that generated
 														// the interaction, which we will get the ambientCache from

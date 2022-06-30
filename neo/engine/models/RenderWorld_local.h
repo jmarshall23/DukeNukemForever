@@ -163,7 +163,6 @@ public:
 	// RenderWorld_load.cpp
 
 	idRenderModel *			ParseModel( idLexer *src );
-	idRenderModel *			ParseShadowModel( idLexer *src );
 	void					SetupAreaRefs();
 	void					ParseInterAreaPortals( idLexer *src );
 	void					ParseNodes( idLexer *src );

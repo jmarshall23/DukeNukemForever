@@ -323,52 +323,6 @@ static void WriteUTriangles( const srfTriangles_t *uTris ) {
 	}
 }
 
-
-/*
-====================
-WriteShadowTriangles
-
-Writes text verts and indexes to procfile
-====================
-*/
-static void WriteShadowTriangles( const srfTriangles_t *tri ) {
-	int			col;
-	int			i;
-
-	// emit this chain
-	procFile->WriteFloatString( "/* numVerts = */ %i /* noCaps = */ %i /* noFrontCaps = */ %i /* numIndexes = */ %i /* planeBits = */ %i\n", 
-		tri->numVerts, tri->numShadowIndexesNoCaps, tri->numShadowIndexesNoFrontCaps, tri->numIndexes, tri->shadowCapPlaneBits );
-
-	// verts
-	col = 0;
-	for ( i = 0 ; i < tri->numVerts ; i++ ) {
-		Write1DMatrix( procFile, 3, &tri->shadowVertexes[i].xyz[0] );
-
-		if ( ++col == 5 ) {
-			col = 0;
-			procFile->WriteFloatString( "\n" );
-		}
-	}
-	if ( col != 0 ) {
-		procFile->WriteFloatString( "\n" );
-	}
-
-	// indexes
-	col = 0;
-	for ( i = 0 ; i < tri->numIndexes ; i++ ) {
-		procFile->WriteFloatString( "%i ", tri->indexes[i] );
-
-		if ( ++col == 18 ) {
-			col = 0;
-			procFile->WriteFloatString( "\n" );
-		}
-	}
-	if ( col != 0 ) {
-		procFile->WriteFloatString( "\n" );
-	}
-}
-
-
 // jmarshall
 /*
 =================
