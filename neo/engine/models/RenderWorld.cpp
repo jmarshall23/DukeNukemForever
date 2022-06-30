@@ -444,6 +444,29 @@ void idRenderWorldLocal::FreeLightDef( qhandle_t lightHandle ) {
 
 /*
 ==================
+idRenderWorldLocal::IsRenderLightVisible
+==================
+*/
+bool idRenderWorldLocal::IsRenderLightVisible(qhandle_t lightHandle) const
+{
+	idRenderLightLocal* def;
+
+	if (lightHandle < 0 || lightHandle >= lightDefs.Num()) {
+		common->Printf("idRenderWorld::IsRenderLightVisible: handle %i > %i\n", lightHandle, lightDefs.Num());
+		return false;
+	}
+
+	def = lightDefs[lightHandle];
+	if (!def) {
+		common->Printf("idRenderWorld::IsRenderLightVisible: handle %i is NULL\n", lightHandle);
+		return false;
+	}
+
+	return def->lightRendered;
+}
+
+/*
+==================
 GetRenderLight
 ==================
 */

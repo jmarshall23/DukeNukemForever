@@ -3,6 +3,8 @@
 
 #include "../game/Game_local.h"
 
+idCVar g_drawVisibleLights("g_drawVisibleLights", "0", CVAR_GAME | CVAR_CHEAT, "");
+
 /*
 ===================
 idGameLocal::IsParentalLockEnabled
@@ -167,6 +169,23 @@ bool dnGameLocal::Draw(int clientNum) {
 
 	// Draw the portal sky.
 	DrawPortalSky(hackedView);
+
+	// Debug command to draw visible lights
+	if (g_drawVisibleLights.GetBool())
+	{
+		for (int i = 0; i < gameRenderWorld->GetNumRenderLights(); i++)
+		{
+			const renderLight_t* light = gameRenderWorld->GetRenderLight(i);
+
+			if (!gameRenderWorld->IsRenderLightVisible(i))
+			{
+				continue;
+			}
+
+			idBox box = idBox(light->origin, idVec3(30, 30, 30), light->axis);
+			gameRenderWorld->DebugBox(colorGreen, box);
+		}
+	}
 
 	// do the first render
 	gameRenderWorld->RenderScene(&hackedView);

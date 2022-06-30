@@ -129,7 +129,13 @@ void *idVertexCache::Position( vertCache_t *buffer ) {
 		if ( buffer->indexBuffer ) {
 			glBindBufferARB( GL_ELEMENT_ARRAY_BUFFER_ARB, buffer->vbo );
 		} else {
-			glBindBufferARB( GL_ARRAY_BUFFER_ARB, buffer->vbo );
+			static int currentVBO = -1;
+
+			if (currentVBO != buffer->vbo) {
+				glBindBufferARB(GL_ARRAY_BUFFER_ARB, buffer->vbo);
+			}
+
+			currentVBO = buffer->vbo;			
 		}
 		return (void *)buffer->offset;
 	}

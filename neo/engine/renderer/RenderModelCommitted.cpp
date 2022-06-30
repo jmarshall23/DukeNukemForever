@@ -497,10 +497,13 @@ void idRenderModelCommitted::GenerateSurfaceLights(int committedRenderModelId, d
 		
 		idRenderLightLocal* renderLight = vLight->lightDef;
 
-		idBounds lightBounds = idBounds(-renderLight->parms.lightRadius, renderLight->parms.lightRadius);
-		lightBounds.TranslateSelf(renderLight->parms.origin);
-
-		if (drawSurfBounds.IntersectsBounds(lightBounds))
+		if (!renderLight->lightRendered)
+		{
+			vLight = vLight->next;
+			continue;
+		}
+		
+		if (drawSurfBounds.IntersectsBounds(renderLight->globalLightBounds))
 		{
 			if (newDrawSurf->numSurfRenderLights >= MAX_RENDERLIGHTS_PER_SURFACE)
 			{

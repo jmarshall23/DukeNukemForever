@@ -109,7 +109,10 @@ private:
 	idVec3			b[2];
 };
 
-extern idBounds	bounds_zero;
+extern idBounds bounds_zero;
+extern idBounds bounds_zeroOneCube;
+extern idBounds bounds_unitCube;
+
 
 ID_INLINE idBounds::idBounds( void ) {
 }

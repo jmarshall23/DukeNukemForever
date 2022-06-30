@@ -29,7 +29,9 @@ If you have questions concerning this license or the applicable additional terms
 
 #pragma hdrstop
 
-idBounds bounds_zero( vec3_zero, vec3_zero );
+idBounds bounds_zero(vec3_zero, vec3_zero);
+idBounds bounds_zeroOneCube(idVec3(0.0f), idVec3(1.0f));
+idBounds bounds_unitCube(idVec3(-1.0f), idVec3(1.0f));
 
 /*
 ============

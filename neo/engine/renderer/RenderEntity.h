@@ -25,6 +25,8 @@ public:
 public:
 	renderEntity_t			parms;
 
+	idVertexBuffer*			cpuMeshVertexBuffer;	// Each renderEntity_t can have a cpu cloned vertex buffer for writing custom mesh data into.
+
 	float					modelMatrix[16];		// this is just a rearrangement of parms.axis and parms.origin
 
 	idRenderWorldLocal* world;

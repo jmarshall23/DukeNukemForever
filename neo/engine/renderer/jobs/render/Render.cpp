@@ -509,6 +509,7 @@ void RB_BeginDrawingView (void) {
 	glMatrixMode(GL_PROJECTION);
 	glLoadMatrixf( backEnd.viewDef->projectionMatrix );
 	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 
 	// set the window clipping
 	glViewport( tr.viewportOffset[0] + backEnd.viewDef->viewport.x1, 
@@ -1013,6 +1014,9 @@ void idRender::RenderSingleView( const void *data ) {
 	// fill the depth buffer and clear color buffer to black except on
 	// subviews
 	FillDepthBuffer(drawSurfs, numDrawSurfs);
+
+	// Run Occlusion Queries.
+	DrawTestOcclusion();
 
 	// main light renderer
 	DrawForwardLit();

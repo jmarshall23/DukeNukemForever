@@ -336,6 +336,9 @@ public:
 	virtual	void			FreeLightDef( qhandle_t lightHandle ) = 0;
 	virtual const renderLight_t *GetRenderLight( qhandle_t lightHandle ) const = 0;
 
+	virtual int				GetNumRenderLights() const = 0;
+	virtual bool			IsRenderLightVisible(qhandle_t lightHandle) const = 0;
+
 	// returns true if this area model needs portal sky to draw
 	virtual bool			CheckAreaForPortalSky( int areaNum ) = 0;
 // jmarshall

@@ -11,6 +11,8 @@ public:
 	virtual void			ForceUpdate();
 	virtual int				GetIndex();
 
+	bool					IsVisible();
+
 public:
 	void					CreateLightRefs(void);
 	void					DeriveLightData(void);
@@ -20,7 +22,7 @@ private:
 	void					FreeLightDefFrustum(void);
 	void					SetLightFrustum(const idPlane lightProject[4], idPlane frustum[6]);
 	void					SetLightProject(idPlane lightProject[4], const idVec3 origin, const idVec3 target, const idVec3 rightVector, const idVec3 upVector, const idVec3 start, const idVec3 stop);
-public:
+public:	
 
 	renderLight_t			parms;					// specification
 
@@ -40,9 +42,13 @@ public:
 													// in the cached memory
 	bool					archived;				// for demo writing
 
+	idBounds				globalLightBounds;
+
 
 	// derived information
 	idPlane					lightProject[4];
+	idRenderMatrix			baseLightProject;		// global xyz1 to projected light strq
+	idRenderMatrix			inverseBaseLightProject;// transforms the zero-to-one cube to exactly cover the light in world space
 
 	const idMaterial* lightShader;			// guaranteed to be valid, even if parms.shader isn't
 	idImage* falloffImage;
@@ -64,6 +70,11 @@ public:
 
 	// Shadow Matrixes 
 	idRenderMatrix			shadowMatrix[6];
+
+	bool					lightRendered;
+
+	int						visibleFrame;
+	class rvmOcclusionQuery* currentOcclusionQuery;
 
 	struct doublePortal_s* foggedPortals;
 };

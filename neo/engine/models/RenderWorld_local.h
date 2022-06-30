@@ -88,7 +88,10 @@ public:
 	virtual	qhandle_t		AddLightDef( const renderLight_t *rlight );
 	virtual	void			UpdateLightDef( qhandle_t lightHandle, const renderLight_t *rlight );
 	virtual	void			FreeLightDef( qhandle_t lightHandle );
+// jmarshall
 	virtual const renderLight_t *GetRenderLight( qhandle_t lightHandle ) const;
+	virtual int				GetNumRenderLights() const { return lightDefs.Num(); }
+// jmarshall end
 
 	virtual bool			CheckAreaForPortalSky( int areaNum );
 
@@ -105,6 +108,8 @@ public:
 
 	virtual idVec3			GetPortalSkyCameraPosition(void) { return portalSkyCamera; }
 // jmarshall end
+
+	virtual bool			IsRenderLightVisible(qhandle_t lightHandle) const;
 
 	virtual	int				NumAreas( void ) const;
 	virtual int				PointInArea( const idVec3 &point ) const;

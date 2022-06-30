@@ -211,7 +211,7 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 		}
 
 		vLight = tr.viewDef->CommitRenderLight(renderWorldFrontEnd->lightDefs[i]);
-		vLight->scissorRect = vLight->CalcLightScissorRectangle();
+		vLight->scissorRect = vLight->CalcLightScissorRectangle();		
 
 		const idMaterial* lightShader = lightDef->lightShader;
 		if (!lightShader) {
@@ -254,6 +254,14 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 		vEnt->AddDrawsurfs(i, tr.viewDef->viewLights);
 	}
 
+	// We have already consumed the lightRendered states, so mark them as not rendered. 
+	// This has to be done at the end so CommitRenderModel can determine what lights are visible.
+	vLight = tr.viewDef->viewLights;
+	while (vLight != nullptr)
+	{
+		vLight->lightDef->lightRendered = false;
+		vLight = vLight->next;
+	}
 }
 
 /*
