@@ -153,7 +153,7 @@ idPlayer* DnAI::FindNewTarget()
 {
 	idPlayer* localPlayer = gameLocal.GetLocalPlayer();
 
-	if (CanSee(localPlayer, true))
+	if (CanSee(localPlayer, false))
 	{
 		return localPlayer;
 	}

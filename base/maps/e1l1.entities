@@ -15,27 +15,27 @@
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_5"
-"origin" "4280 2336 -56"
+"origin" "4280 2336 -40"
 }
 // entity 3
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_4"
-"origin" "4392 1968 -56"
+"origin" "4392 1968 -40"
 "angle" "90"
 }
 // entity 4
 {
 "classname" "monster_pigcop"
 "name" "monster_pigcop_5"
-"origin" "4784 1704 -56"
+"origin" "4784 1704 -32"
 "angle" "180"
 }
 // entity 5
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_3"
-"origin" "4496 1480 -56"
+"origin" "4432 1488 -40"
 }
 // entity 6
 {
