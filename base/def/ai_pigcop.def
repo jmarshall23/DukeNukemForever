@@ -1,7 +1,6 @@
 model pigcop
 {
 	mesh				models/characters/pigcop/pigcop.md5mesh
-	offset			( -40 0 45 )
 
 	anim af_pose		models/characters/animations/pigcop/IdleA.md5anim
 	anim ik_pose		models/characters/animations/pigcop/IdleA.md5anim
@@ -27,8 +26,6 @@ entityDef monster_pigcop
 	"EgoKillValue"					"8"
 	"Health"						"50"
 
-	"model_offset"					"40 0 45"
-	
 	"editor_color"     "1 0 0"
 	"editor_maxs"      "16 16 64"
 	"editor_mins"      "-16 -16 0"

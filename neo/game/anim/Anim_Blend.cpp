@@ -2418,7 +2418,9 @@ idAnimator::RemoveOriginOffset
 =====================
 */
 void idAnimator::RemoveOriginOffset( bool remove ) {
-	removeOriginOffset = remove;
+// jmarshall - removed.
+	//removeOriginOffset = remove;
+// jmarshall end
 }
 
 /*

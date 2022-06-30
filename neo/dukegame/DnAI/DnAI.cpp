@@ -45,6 +45,8 @@ void DnAI::Spawn(void)
 
 	eyeOffset.z = 50.0f;
 
+	animator.SetJointPos((jointHandle_t)0, jointModTransform_t::JOINTMOD_LOCAL, eyeOffset);
+
 	SetState("state_Begin");
 }
 
@@ -62,10 +64,8 @@ void DnAI::SetupPhysics(void)
 	idVec3 spawnOrigin = GetOrigin();
 	idClipModel* clipModel = new idClipModel();
 
-	idVec3 offset = spawnArgs.GetVector("model_offset", "0 0 0");
-
 	physicsObj.SetSelf(this);
-	idClipModel* newClip = new idClipModel(idTraceModel(renderEntity.hModel->Bounds() + offset));
+	idClipModel* newClip = new idClipModel(idTraceModel(renderEntity.hModel->Bounds()));
 	newClip->Translate(spawnOrigin);
 	physicsObj.SetClipModel(newClip, 1.0f);
 	physicsObj.SetMass(spawnArgs.GetFloat("mass", "100"));
