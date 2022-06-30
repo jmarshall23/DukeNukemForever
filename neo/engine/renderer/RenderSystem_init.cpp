@@ -1951,7 +1951,7 @@ void idRenderSystemLocal::Init( void ) {
 	vertexScaleAddParam = declManager->FindRenderParam("vertexcoloradd");
 
 	char* globalIncludeBuffer = NULL;
-	if (fileSystem->ReadFile("renderProgs/global.inc", (void **)&globalIncludeBuffer) <= 0)
+	if (fileSystem->ReadFile("decls/renderProgs/global.inc", (void **)&globalIncludeBuffer) <= 0)
 	{
 		common->FatalError("Failed to include global render include!\n");
 	}

@@ -807,7 +807,7 @@ void idDeclManagerLocal::Init( void ) {
 	RegisterDeclType( "table",				DECL_TABLE,			idDeclAllocator<idDeclTable> );
 	RegisterDeclType( "material",			DECL_MATERIAL,		idDeclAllocator<idMaterial> );
 	RegisterDeclType( "skin",				DECL_SKIN,			idDeclAllocator<idDeclSkin> );
-	RegisterDeclType( "sound",				DECL_SOUND,			idDeclAllocator<idSoundShader> );
+	RegisterDeclType( "sndshader",			DECL_SOUND,			idDeclAllocator<idSoundShader> );
 
 	RegisterDeclType( "entityDef",			DECL_ENTITYDEF,		idDeclAllocator<idDeclEntityDef> );
 	RegisterDeclType( "mapDef",				DECL_MAPDEF,		idDeclAllocator<idDeclEntityDef> );
@@ -826,7 +826,7 @@ void idDeclManagerLocal::Init( void ) {
 
 	RegisterDeclFolder( "materials",		".mtr",				DECL_MATERIAL );
 	RegisterDeclFolder( "skins",			".skin",			DECL_SKIN );
-	RegisterDeclFolder( "sounds",			".sndshd",			DECL_SOUND );
+	RegisterDeclFolder( "sndshader",		".sndshd",			DECL_SOUND );
 
 	// add console commands
 	cmdSystem->AddCommand( "listDecls", ListDecls_f, CMD_FL_SYSTEM, "lists all decls" );
@@ -1003,7 +1003,7 @@ void idDeclManagerLocal::RegisterDeclFolder( const char *folder, const char *ext
 	}
 
 	// scan for decl files
-	fileList = fileSystem->ListFilesTree( declFolder->folder, declFolder->extension, true );
+	fileList = fileSystem->ListFilesTree( va("decls/%s",declFolder->folder.c_str()), declFolder->extension, true);
 
 	// load and parse decl files
 	for ( i = 0; i < fileList->GetNumFiles(); i++ ) {

@@ -27,7 +27,7 @@ void GenerateModelMaterials_f(const idCmdArgs& args)
 
 		folder[folder.Length() - 1] = 0;
 
-		idFile* f = fileSystem->OpenFileAppend(va("materials/models/generated/%s.mtr", folder.c_str()));
+		idFile* f = fileSystem->OpenFileAppend(va("decls/materials/models/generated/%s.mtr", folder.c_str()));
 
 		f->Printf("%s\n", file.c_str());
 		f->Printf("{\n");
@@ -71,7 +71,7 @@ void GenerateMaterials_f(const idCmdArgs& args)
 		if(strstr(file.c_str(), "_normal"))
 			continue;
 
-		idFile *f = fileSystem->OpenFileAppend(va("materials/generated_mtr/%s.mtr", folder.c_str()));
+		idFile *f = fileSystem->OpenFileAppend(va("decls/materials/generated_mtr/%s.mtr", folder.c_str()));
 
 		f->Printf("%s\n", file.c_str());
 		f->Printf("{\n");
