@@ -57,7 +57,7 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 			ent->Damage(owner, owner, dir, "damage_generic", damageScale, CLIPMODEL_ID_TO_JOINT_HANDLE(tr.c.id));
 		}
 	}
-
+#if 0
 	if (!ent->fl.takedamage)
 	{
 		// spawn debris entities
@@ -107,7 +107,7 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 			}
 		}
 	}
-
+#endif
 	return ent;
 }
 
