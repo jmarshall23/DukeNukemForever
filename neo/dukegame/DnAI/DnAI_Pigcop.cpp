@@ -49,6 +49,16 @@ stateResult_t DnPigcop::state_BeginDeath(stateParms_t* parms)
 
 	StartSoundShader(death_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
+	shotgunMeshComponent.Destroy();
+
+	idEntity* ent = gameLocal.Spawn("item_shotgun");
+	DnItemShotgun*weap = ent->Cast<DnItemShotgun>();
+
+	idVec3 itemStartOrigin = GetOrigin() + idVec3(0, 0, 35);
+
+	weap->orgOrigin = itemStartOrigin;
+	weap->SetOrigin(itemStartOrigin);
+
 	return SRESULT_DONE;
 }
 

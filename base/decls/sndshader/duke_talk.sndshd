@@ -1,3 +1,10 @@
+duke_useshotgun
+{
+	dukevoice
+
+	sounds/duketalk2/du_use_shotgun1.ogg
+}
+
 duke_killtaunt
 {
 	dukevoice

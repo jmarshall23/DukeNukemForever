@@ -755,12 +755,13 @@ protected:
 	void					ExtractEmailInfo( const idStr &email, const char *scan, idStr &out );
 	void					UpdateObjectiveInfo( void );
 
-#ifdef _D3XP
-	bool					WeaponAvailable( const char* name );
-#endif
-
 	void					UseVehicle( void );
 public:
+
+#ifdef _D3XP
+	bool					WeaponAvailable(const char* name);
+#endif
+
 	void					Event_GetButtons( void );
 	void					Event_GetMove( void );
 	void					Event_GetViewAngles( void );

@@ -15,6 +15,7 @@ public:
 
 	virtual void					Think();
 
+	void							Destroy(void);
 private:
 	qhandle_t	renderEntityHandle;
 	renderEntity_t renderEntityParams;

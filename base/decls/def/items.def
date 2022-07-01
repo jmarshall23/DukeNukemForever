@@ -1,0 +1,7 @@
+entityDef item_shotgun {
+	"spawnclass"	"DnItemShotgun"
+	
+	"editor_usage"	"Shotgun weapon"
+	
+	"model"			"models/weapons/w_shotgun/w_shotgun.md3"
+}

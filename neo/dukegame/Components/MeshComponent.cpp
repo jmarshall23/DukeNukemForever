@@ -13,6 +13,11 @@ DnMeshComponent::DnMeshComponent()
 
 DnMeshComponent::~DnMeshComponent()
 {
+	Destroy();
+}
+
+void DnMeshComponent::Destroy(void)
+{
 	if (renderEntityHandle != -1)
 	{
 		gameRenderWorld->FreeEntityDef(renderEntityHandle);
@@ -44,6 +49,11 @@ void DnMeshComponent::BindToJoint(const char* jointName)
 
 void DnMeshComponent::Think()
 {
+	if (renderEntityHandle == -1)
+	{
+		return;
+	}
+
 	if (bindJoint != -1)
 	{
 		idAnimatedEntity* animatedEntity = parentEntity->Cast<idAnimatedEntity>();

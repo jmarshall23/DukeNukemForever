@@ -38,6 +38,7 @@ file(GLOB dnGameFiles
      "dukegame/GameSys/*.cpp*"
      "dukegame/Player/*.cpp*"
      "dukegame/Weapons/*.cpp*"
+     "dukegame/items/*.cpp*"
 ) 
 
 file(GLOB gameBaseFiles
@@ -48,7 +49,7 @@ file(GLOB gameBaseFiles
      "game/physics/*.cpp"
      "game/script/*.cpp"
      "gamedecls/*.cpp*"
-) 
+)
 
 file(GLOB typeInfoGenFiles
     "engine/typeinfo/*.cpp*"

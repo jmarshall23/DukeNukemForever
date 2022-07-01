@@ -616,7 +616,7 @@ int idParallelJobList_Threads::RunJobsInternal( unsigned int threadNum, threadJo
 					longJobData = jobList[state.nextJobIndex].data;
 					const char * jobName = GetJobName( jobList[state.nextJobIndex].function );
 					const char * jobListName = GetJobListName( GetId() );
-					idLib::Printf( "%1.1f milliseconds for a single '%s' job from job list %s on thread %d\n", longJobTime, jobName, jobListName, threadNum );
+					common->Printf( "%1.1f milliseconds for a single '%s' job from job list %s on thread %d\n", longJobTime, jobName, jobListName, threadNum );
 				}
 			}
 #endif

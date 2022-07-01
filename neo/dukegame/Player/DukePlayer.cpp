@@ -133,7 +133,7 @@ void DukePlayer::SetStartingInventory(void)
 
 	Give("weapon", "weapon_mightyfoot");
 	Give("weapon", "weapon_pistol");
-	Give("weapon", "weapon_shotgun");
+	//Give("weapon", "weapon_shotgun");
 }
 
 /*
