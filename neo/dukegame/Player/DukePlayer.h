@@ -21,7 +21,7 @@ public:
 	virtual void			UpdateHudStats(idUserInterface* hud);
 	virtual void			SetStartingInventory(void);
 
-	void					Event_DukeTalk(const char* soundName);
+	void					Event_DukeTalk(const char* soundName, bool force = false);
 
 	void					Event_PlayDukeJumpSound(void);
 	void					Event_PlayRandomDukeTaunt(void);

@@ -29,7 +29,7 @@ namespace map_e1l1 {
 		dukePlayer = sys.getLocalPlayer();
 
 		// Son of a bitch!
-		dukePlayer.startDukeTalk("duke_pay02");
+		dukePlayer.startDukeTalk("duke_pay02", 1);
 
 		// Move the dukecar to the location.
 		$duke_car.moveTo($edfcar_loc);
@@ -43,6 +43,6 @@ namespace map_e1l1 {
 		sys.wait(5.0);
 
 		// Where is nukem!
-		dukePlayer.startDukeTalk("morphix_whereisduke");
+		dukePlayer.startDukeTalk("morphix_whereisduke", 1);
 	}
 }

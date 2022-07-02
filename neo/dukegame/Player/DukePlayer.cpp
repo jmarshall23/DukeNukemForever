@@ -3,7 +3,7 @@
 
 #include "../../game/game_local.h"
 
-const idEventDef EV_Player_DukeTalk("startDukeTalk", "s");
+const idEventDef EV_Player_DukeTalk("startDukeTalk", "sd");
 
 CLASS_DECLARATION(idPlayer, DukePlayer)
 	EVENT(EV_Player_DukeTalk, DukePlayer::Event_DukeTalk)
@@ -112,11 +112,19 @@ void DukePlayer::UpdateHudStats(idUserInterface* hud)
 DukePlayer::Event_DukeTalk
 ==================
 */
-void DukePlayer::Event_DukeTalk(const char* soundName)
+void DukePlayer::Event_DukeTalk(const char* soundName, bool force)
 {
 	if (gameLocal.IsParentalLockEnabled())
 	{
 		return;
+	}
+
+	if (!force)
+	{
+		if (gameSoundWorld->IsDukeSoundPlaying())
+		{
+			return;
+		}
 	}
 
 	gameSoundWorld->PlayShaderDirectly(soundName, SCHANNEL_DUKETALK);
