@@ -30,6 +30,8 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 		return;
 	}
 
+	RB_SetMVP(surf->space->mvp);
+
 	// change the matrix if needed
 	if (surf->space != backEnd.currentSpace) {
 		glLoadMatrixf(surf->space->modelViewMatrix);

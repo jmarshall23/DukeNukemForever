@@ -196,6 +196,16 @@ void idGuiModel::EmitSurface( guiidModelSurface *surf, float modelMatrix[16], fl
 	memcpy( guiSpace->modelViewMatrix, modelViewMatrix, sizeof( guiSpace->modelViewMatrix ) );
 	guiSpace->weaponDepthHack = depthHack;
 
+	//---------------------------
+	// make a tech5 renderMatrix
+	//---------------------------
+	idRenderMatrix viewMat;
+	idRenderMatrix projectionRenderMatrix;
+
+	idRenderMatrix::Transpose(*(idRenderMatrix*)tr.viewDef->projectionMatrix, projectionRenderMatrix);
+	idRenderMatrix::Transpose(*(idRenderMatrix*)modelViewMatrix, viewMat);
+	idRenderMatrix::Multiply(projectionRenderMatrix, viewMat, guiSpace->mvp);
+
 	// add the surface, which might recursively create another gui
 	R_AddDrawSurf( tri, guiSpace, &renderEntity, surf->material, tr.viewDef->scissor );
 }

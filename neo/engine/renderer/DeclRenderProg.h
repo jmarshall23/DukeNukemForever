@@ -3,6 +3,7 @@
 
 #pragma once
 
+static const int PC_ATTRIB_INDEX_VERTEX = 0;
 static const int PC_ATTRIB_INDEX_ST = 8;
 static const int PC_ATTRIB_INDEX_TANGENT = 9;
 static const int PC_ATTRIB_INDEX_BINORMAL = 10;
@@ -32,7 +33,7 @@ private:
 	void					CreateVertexShader(idStr &bracketText);
 	void					CreatePixelShader(idStr& bracketText);
 
-	idStr					ParseRenderParms(idStr& bracketText);
+	idStr					ParseRenderParms(idStr& bracketText, const char *programMacro);
 private:
 	int						LoadGLSLShader(GLenum target, idStr& programGLSL);
 	void					LoadGLSLProgram(void);

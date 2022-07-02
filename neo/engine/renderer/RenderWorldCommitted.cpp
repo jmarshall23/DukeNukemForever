@@ -251,6 +251,16 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 			continue;
 		}
 
+		//---------------------------
+		// make a tech5 renderMatrix
+		//---------------------------
+		R_MatrixMultiply(vEnt->modelMatrix, tr.viewDef->worldSpace.modelViewMatrix, vEnt->modelViewMatrix);
+
+		idRenderMatrix viewMat;
+
+		idRenderMatrix::Transpose(*(idRenderMatrix*)vEnt->modelViewMatrix, viewMat);
+		idRenderMatrix::Multiply(tr.viewDef->projectionRenderMatrix, viewMat, vEnt->mvp);
+
 		vEnt->AddDrawsurfs(i, tr.viewDef->viewLights);
 	}
 
@@ -300,6 +310,11 @@ void idRenderWorldCommitted::RenderView(void) {
 	// we need to set the projection matrix before doing
 	// portal-to-screen scissor box calculations
 	R_SetupProjectionMatrix(this);
+
+	// setup render matrices for faster culling
+	idRenderMatrix::Transpose(*(idRenderMatrix*)tr.viewDef->projectionMatrix, tr.viewDef->projectionRenderMatrix);
+	idRenderMatrix::Transpose(*(idRenderMatrix*)tr.viewDef->worldSpace.modelViewMatrix, *(idRenderMatrix*)tr.viewDef->worldSpace.transposedModelViewMatrix);
+	idRenderMatrix::Multiply(tr.viewDef->projectionRenderMatrix, *(idRenderMatrix*)tr.viewDef->worldSpace.transposedModelViewMatrix, tr.viewDef->worldSpace.mvp);
 
 	// identify all the visible portalAreas, and the entityDefs and
 	// lightDefs that are in them and pass culling.

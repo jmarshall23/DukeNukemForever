@@ -40,8 +40,9 @@ const char* rvmDeclRenderProg::DefaultDefinition(void) const {
 rvmDeclRenderProg::ParseRenderParms
 ===================
 */
-idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText) {
+idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText, const char* programMacro) {
 	idStr uniforms = "#version 130\n";
+	uniforms += va("#define %s\n", programMacro);
 
 	idLexer src;
 	idToken	token, token2;
@@ -152,17 +153,10 @@ rvmDeclRenderProg::CreateVertexShader
 ===================
 */
 void rvmDeclRenderProg::CreateVertexShader(idStr& bracketText) {
-	vertexShader = ParseRenderParms(bracketText);
-
-	vertexShader += "attribute vec4		attr_TexCoord0;\n";
-	vertexShader += "attribute vec3		attr_Tangent;\n";
-	vertexShader += "attribute vec3		attr_Bitangent;\n";
-	vertexShader += "attribute vec3      attr_Normal;\n";
+	vertexShader = ParseRenderParms(bracketText, "ID_VERTEX_SHADER");
 
 	vertexShader += "void main(void)\n";
-	vertexShader += "{\n";
 	vertexShader += bracketText;
-	vertexShader += "}\n";
 }
 
 /*
@@ -171,7 +165,7 @@ rvmDeclRenderProg::CreatePixelShader
 ===================
 */
 void rvmDeclRenderProg::CreatePixelShader(idStr& bracketText) {
-	pixelShader = ParseRenderParms(bracketText);
+	pixelShader = ParseRenderParms(bracketText, "ID_PIXEL_SHADER");
 	pixelShader += "void main(void)\n";
 	pixelShader += bracketText;
 }
@@ -246,8 +240,9 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 	program = glCreateProgram();
 	if (program) {
 		glAttachShader(program, vertexProgID);
-		glAttachShader(program, fragmentProgID);
+		glAttachShader(program, fragmentProgID);		
 
+		glBindAttribLocation(program, PC_ATTRIB_INDEX_VERTEX, "attr_Position");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_ST, "attr_TexCoord0");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_TANGENT, "attr_Tangent");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_BINORMAL, "attr_Bitangent");
@@ -267,10 +262,7 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 				//common->Printf( "render prog %s from %s linked\n", GetName(), GetFileName() );
 			}
 			else {
-				if(strstr(infoLog, "error") || strstr(infoLog, "Error"))
-					common->FatalError("WHILE LINKING %s\n", infoLog);
-				else
-					common->Warning("WHILE LINKING %s\n", infoLog);
+				common->Warning("WHILE LINKING %s\n", infoLog);
 			}
 
 			free(infoLog);

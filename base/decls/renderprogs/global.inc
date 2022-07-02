@@ -1,3 +1,12 @@
+// When idDrawVert changes you need to update this and the bind attribute bits in DeclRenderProg.cpp
+#ifdef ID_VERTEX_SHADER
+in vec4		attr_Position;
+in vec4		attr_TexCoord0;
+in vec3		attr_Tangent;
+in vec3		attr_Bitangent;
+in vec3     attr_Normal;
+#endif
+
 float dot2( vec2 a, vec2 b ) { return dot( a, b ); }
 float dot3( vec3 a, vec3 b ) { return dot( a, b ); }
 float dot3( vec3 a, vec4 b ) { return dot( a, b.xyz ); }
@@ -119,3 +128,17 @@ float AttenuationPointLight( vec3 fragmentInWorldSpace, vec4 curLightPosInWorldS
 	
 	return attenuation;
 }
+
+#ifdef ID_VERTEX_SHADER
+vec4 TransformVertex(vec4 mvpX, vec4 mvpY, vec4 mvpZ, vec4 mvpW)
+{
+	vec4 position;
+
+	position.x = dot4( attr_Position, mvpX );
+	position.y = dot4( attr_Position, mvpY );
+	position.z = dot4( attr_Position, mvpZ );
+	position.w = dot4( attr_Position, mvpW );
+
+	return position;
+}
+#endif

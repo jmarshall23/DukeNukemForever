@@ -2,14 +2,12 @@ renderProg shadowmap
 {
 	vertex
 	{
-		gl_Position.x = dot4( gl_Vertex, $mvpMatrixX );
-		gl_Position.y = dot4( gl_Vertex, $mvpMatrixY );
-		gl_Position.z = dot4( gl_Vertex, $mvpMatrixZ );
-		gl_Position.w = dot4( gl_Vertex, $mvpMatrixW );
-		gl_TexCoord[0].x = dot4( gl_Vertex, $modelMatrixX );
-		gl_TexCoord[0].y = dot4( gl_Vertex, $modelMatrixY );
-		gl_TexCoord[0].z = dot4( gl_Vertex, $modelMatrixZ );
-		gl_TexCoord[0].w = dot4( gl_Vertex, $modelMatrixW );
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+
+		gl_TexCoord[0].x = dot4( attr_Position, $modelMatrixX );
+		gl_TexCoord[0].y = dot4( attr_Position, $modelMatrixY );
+		gl_TexCoord[0].z = dot4( attr_Position, $modelMatrixZ );
+		gl_TexCoord[0].w = dot4( attr_Position, $modelMatrixW );
 	}
 
 	pixel

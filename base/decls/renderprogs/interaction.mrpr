@@ -6,7 +6,7 @@ renderProg interaction
 		vec3 vTangent = attr_Tangent.xyz;
 		vec3 vBinormal = attr_Bitangent.xyz;
 		
-		gl_Position = ftransform();
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
 			
 		vec4 defaultTexCoord = vec4( 0.0f, 0.5f, 0.0f, 1.0f );
 
@@ -16,10 +16,10 @@ renderProg interaction
 		gl_TexCoord[4].y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
 
 		//# textures 5 takes the base coordinates by the texture matrix
-		gl_TexCoord[5].x = dot4( gl_Vertex, $modelMatrixX );
-		gl_TexCoord[5].y = dot4( gl_Vertex, $modelMatrixY );
-		gl_TexCoord[5].z = dot4( gl_Vertex, $modelMatrixZ );
-		gl_TexCoord[5].w = dot4( gl_Vertex, $modelMatrixW );		
+		gl_TexCoord[5].x = dot4( attr_Position, $modelMatrixX );
+		gl_TexCoord[5].y = dot4( attr_Position, $modelMatrixY );
+		gl_TexCoord[5].z = dot4( attr_Position, $modelMatrixZ );
+		gl_TexCoord[5].w = dot4( attr_Position, $modelMatrixW );		
 
 		gl_TexCoord[0].xyz = vTangent.xyz;
 		gl_TexCoord[0].w = 0;

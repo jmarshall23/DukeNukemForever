@@ -4,7 +4,7 @@ renderProg guiTexture
 	{
 		gl_FrontColor = gl_Color;
 		gl_TexCoord[0] = gl_TextureMatrix[0] * attr_TexCoord0;
-		gl_Position = ftransform();
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
 	}
 
 	pixel

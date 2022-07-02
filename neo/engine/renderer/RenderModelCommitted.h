@@ -35,9 +35,12 @@ public:
 
 	idRenderModel* renderModel;
 
+	float		transposedModelViewMatrix[16];
+
 	bool				weaponDepthHack;
 	float				modelDepthHack;
 
 	float				modelMatrix[16];		// local coords to global coords
 	float				modelViewMatrix[16];	// local coords to eye coords
+	idRenderMatrix		mvp;
 };

@@ -2,11 +2,10 @@ renderProg occluder
 {
 	vertex
 	{
-		gl_Position = ftransform();
 		gl_TexCoord[0].x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
 		gl_TexCoord[0].y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
 
-		//gl_TexCoord[0].xy = attr_TexCoord0.xy;
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
 	}
 
 	pixel
