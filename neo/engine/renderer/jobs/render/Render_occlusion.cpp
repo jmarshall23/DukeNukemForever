@@ -110,6 +110,8 @@ void idRender::DrawTestOcclusion(void) {
 	if (backEnd.viewDef->viewLights == NULL)
 		return;
 
+	RB_SetMVP(backEnd.viewDef->worldSpace.mvp);
+
 	tr.occluderProgram->Bind();	
 
 	glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE);
