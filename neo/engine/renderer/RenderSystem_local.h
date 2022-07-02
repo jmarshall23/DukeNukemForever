@@ -588,13 +588,14 @@ public:
 
 	rvmDeclRenderParam* shadowMapAtlasParam;
 	rvmDeclRenderParam* atlasLookupParam;
+	rvmDeclRenderParam* vertexColorParm;
 
 	idStr					globalRenderInclude;
 
 	rvmDeclRenderProg*		guiTextureProgram;
 	rvmDeclRenderProg*		interactionProgram;
 	rvmDeclRenderProg*		occluderProgram;
-	rvmDeclRenderProg*		shadowMapProgram;
+	rvmDeclRenderProg*		shadowMapProgram;	
 
 	unsigned short			gammaTable[256];	// brightness / gamma modify this
 };

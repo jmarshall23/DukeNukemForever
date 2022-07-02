@@ -11,38 +11,38 @@ renderProg interaction
 		vec4 defaultTexCoord = vec4( 0.0f, 0.5f, 0.0f, 1.0f );
 
 		//# textures 4 takes the base coordinates by the texture matrix
-		gl_TexCoord[4] = defaultTexCoord;
-		gl_TexCoord[4].x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
-		gl_TexCoord[4].y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
+		vertex_texcoord4 = defaultTexCoord;
+		vertex_texcoord4.x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
+		vertex_texcoord4.y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
 
 		//# textures 5 takes the base coordinates by the texture matrix
-		gl_TexCoord[5].x = dot4( attr_Position, $modelMatrixX );
-		gl_TexCoord[5].y = dot4( attr_Position, $modelMatrixY );
-		gl_TexCoord[5].z = dot4( attr_Position, $modelMatrixZ );
-		gl_TexCoord[5].w = dot4( attr_Position, $modelMatrixW );		
+		vertex_texcoord5.x = dot4( attr_Position, $modelMatrixX );
+		vertex_texcoord5.y = dot4( attr_Position, $modelMatrixY );
+		vertex_texcoord5.z = dot4( attr_Position, $modelMatrixZ );
+		vertex_texcoord5.w = dot4( attr_Position, $modelMatrixW );		
 
-		gl_TexCoord[0].xyz = vTangent.xyz;
-		gl_TexCoord[0].w = 0;
+		vertex_texcoord0.xyz = vTangent.xyz;
+		vertex_texcoord0.w = 0;
 
-		gl_TexCoord[1].xyz = vBinormal.xyz;
-		gl_TexCoord[1].w = 0;
+		vertex_texcoord1.xyz = vBinormal.xyz;
+		vertex_texcoord1.w = 0;
 
-		gl_TexCoord[3].xyz = vNormal.xyz;
-		gl_TexCoord[3].w = 0;
+		vertex_texcoord3.xyz = vNormal.xyz;
+		vertex_texcoord3.w = 0;
 
 	}
 
 	pixel
 	{
-		vec3 vTangent = gl_TexCoord[0].xyz;
-		vec3 vBinormal = gl_TexCoord[1].xyz;
-		vec3 vNormal = gl_TexCoord[3].xyz;
+		vec3 vTangent = vertex_texcoord0.xyz;
+		vec3 vBinormal = vertex_texcoord1.xyz;
+		vec3 vNormal = vertex_texcoord3.xyz;
 
-		vec4 vertex = gl_TexCoord[5];
+		vec4 vertex = vertex_texcoord5;
 
 		vec3 finalColor = vec3(0, 0, 0);
 
-		vec4 diffuseMap =			tex2D( $albedotexture, gl_TexCoord[4].xy );
+		vec4 diffuseMap =			tex2D( $albedotexture, vertex_texcoord4.xy );
 
 		if(diffuseMap.w == 0)
 			discard;
@@ -59,7 +59,7 @@ renderProg interaction
 			//# add together to become the half angle vector in object space (non-normalized)
 			vec4 halfAngleVector = toLight + toView;
 
-			vec2 st = gl_TexCoord[4].xy;
+			vec2 st = vertex_texcoord4.xy;
 
 			vec3 lightTangentVector;
 			vec3 halfAngleTangentVector;
@@ -88,7 +88,7 @@ renderProg interaction
 
 			vec3 specularColor = localNormal.x * specularContribution;
 
-			float attenuation = AttenuationPointLight(gl_TexCoord[5].xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
+			float attenuation = AttenuationPointLight(vertex_texcoord5.xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
 			float lit = dot3( localNormal, lightVector ) * attenuation;
 
 			if(lit <= 0)
@@ -99,13 +99,13 @@ renderProg interaction
 
 			if(_shadowMapInfo.w == 1)
 			{
-				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, gl_TexCoord[5].xyz, $globalLightOrigin[i].xyz, _shadowMapInfo);
+				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, vertex_texcoord5.xyz, $globalLightOrigin[i].xyz, _shadowMapInfo);
 			}
 
 			finalColor += ((lc * lit) + (lc * specularColor))  * shadow;
 		}
 
-		gl_FragColor.xyz = diffuseMap.xyz * ((finalColor * 2.0) + 0.1);
-		gl_FragColor.w = diffuseMap.w;
+		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * 2.0) + 0.1);
+		finalpixel_color.w = diffuseMap.w;
 	}
 }

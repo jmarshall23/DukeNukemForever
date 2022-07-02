@@ -262,7 +262,7 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 				//common->Printf( "render prog %s from %s linked\n", GetName(), GetFileName() );
 			}
 			else {
-				common->Warning("WHILE LINKING %s\n", infoLog);
+				common->FatalError("WHILE LINKING %s\n", infoLog);
 			}
 
 			free(infoLog);

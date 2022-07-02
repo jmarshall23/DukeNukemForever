@@ -2,19 +2,19 @@ renderProg occluder
 {
 	vertex
 	{
-		gl_TexCoord[0].x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
-		gl_TexCoord[0].y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
+		vertex_texcoord0.x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
+		vertex_texcoord0.y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
 
 		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
 	}
 
 	pixel
 	{
-		vec4 diffuseMap =	tex2D( $albedotexture, gl_TexCoord[0].xy );
+		vec4 diffuseMap =	tex2D( $albedotexture, vertex_texcoord0.xy );
 
 		if(diffuseMap.w < 0.5f)
 			discard;
 		
-		gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+		finalpixel_color = vec4(0.0, 0.0, 0.0, 1.0);
 	}
 }

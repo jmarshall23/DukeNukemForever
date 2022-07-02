@@ -39,3 +39,5 @@ renderParm modelMatrixW { float4 }
 
 renderParm vertexcolormodulate { float4 }
 renderParm vertexcoloradd { float4 }
+
+renderParm vertexcolor { float4 }

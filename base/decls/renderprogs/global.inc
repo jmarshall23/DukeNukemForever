@@ -7,6 +7,30 @@ in vec3		attr_Bitangent;
 in vec3     attr_Normal;
 #endif
 
+#ifdef ID_VERTEX_SHADER
+out vec4	vertex_texcoord0;
+out vec4	vertex_texcoord1;
+out vec4	vertex_texcoord2;
+out vec4	vertex_texcoord3;
+out vec4	vertex_texcoord4;
+out vec4	vertex_texcoord5;
+out vec4	vertex_texcoord6;
+out vec4	vertex_texcoord7;
+#endif
+
+#ifdef ID_PIXEL_SHADER
+in vec4		vertex_texcoord0;
+in vec4		vertex_texcoord1;
+in vec4		vertex_texcoord2;
+in vec4		vertex_texcoord3;
+in vec4		vertex_texcoord4;
+in vec4		vertex_texcoord5;
+in vec4		vertex_texcoord6;
+in vec4		vertex_texcoord7;
+
+out vec4	finalpixel_color;
+#endif
+
 float dot2( vec2 a, vec2 b ) { return dot( a, b ); }
 float dot3( vec3 a, vec3 b ) { return dot( a, b ); }
 float dot3( vec3 a, vec4 b ) { return dot( a, b.xyz ); }

@@ -1947,6 +1947,8 @@ void idRenderSystemLocal::Init( void ) {
 	mvpMatrixZ = declManager->FindRenderParam("mvpMatrixZ");
 	mvpMatrixW = declManager->FindRenderParam("mvpMatrixW");
 
+	vertexColorParm = declManager->FindRenderParam("vertexcolor");
+
 	vertexScaleModulateParam = declManager->FindRenderParam("vertexcolormodulate");
 	vertexScaleAddParam = declManager->FindRenderParam("vertexcoloradd");
 

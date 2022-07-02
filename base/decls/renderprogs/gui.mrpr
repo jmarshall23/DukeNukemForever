@@ -2,13 +2,13 @@ renderProg guiTexture
 {
 	vertex
 	{
-		gl_FrontColor = gl_Color;
-		gl_TexCoord[0] = gl_TextureMatrix[0] * attr_TexCoord0;
+		vertex_texcoord1 = $vertexcolor;
+		vertex_texcoord0 = attr_TexCoord0;
 		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
 	}
 
 	pixel
 	{
-		gl_FragColor = texture2D($albedotexture,gl_TexCoord[0].st) * gl_Color;
+		finalpixel_color = texture2D($albedotexture,vertex_texcoord0.st) * vertex_texcoord1;
 	}
 }

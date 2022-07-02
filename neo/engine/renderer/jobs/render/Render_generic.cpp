@@ -198,8 +198,8 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 		}
 
 		// select the vertex color source
-		if (pStage->vertexColor == SVC_IGNORE) {
-			glColor4fv(color);
+		if (pStage->vertexColor == SVC_IGNORE) {			
+			tr.vertexColorParm->SetVectorValue(color);
 		}
 		else {
 			glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), (void*)&ac->color);
@@ -344,7 +344,7 @@ int idRender::DrawShaderPasses(drawSurf_t** drawSurfs, int numDrawSurfs) {
 	}
 
 	GL_Cull(CT_FRONT_SIDED);
-	glColor3f(1, 1, 1);
+	tr.vertexColorParm->SetVectorValue(idVec4(1, 1, 1, 1));
 
 	return i;
 }
