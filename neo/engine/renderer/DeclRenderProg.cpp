@@ -247,6 +247,7 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_TANGENT, "attr_Tangent");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_BINORMAL, "attr_Bitangent");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_NORMAL, "attr_Normal");
+		glBindAttribLocation(program, PC_ATTRIB_INDEX_COLOR, "attr_Color");
 
 		glLinkProgram(program);
 

@@ -5,6 +5,7 @@ in vec4		attr_TexCoord0;
 in vec3		attr_Tangent;
 in vec3		attr_Bitangent;
 in vec3     attr_Normal;
+in vec4     attr_Color;
 #endif
 
 #ifdef ID_VERTEX_SHADER

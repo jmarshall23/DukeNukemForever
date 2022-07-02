@@ -198,10 +198,13 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 		}
 
 		// select the vertex color source
-		if (pStage->vertexColor == SVC_IGNORE) {			
+		if (pStage->vertexColor == SVC_IGNORE) {		
+			color[3] = 2.0f;
 			tr.vertexColorParm->SetVectorValue(color);
 		}
 		else {
+			tr.vertexColorParm->SetVectorValue(color);
+
 			glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), (void*)&ac->color);
 			glEnableClientState(GL_COLOR_ARRAY);
 
@@ -251,10 +254,15 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 
 		//RB_PrepareStageTexturing(pStage, surf, ac);
 
+		glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_COLOR);
+		glVertexAttribPointerARB(PC_ATTRIB_INDEX_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(idDrawVert), (void*)&ac->color);
+
 		// draw it
 		tr.guiTextureProgram->Bind();
 		RB_DrawElementsWithCounters(tri);
 		tr.guiTextureProgram->BindNull();
+
+		glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_COLOR);
 
 		//RB_FinishStageTexturing(pStage, surf, ac);
 

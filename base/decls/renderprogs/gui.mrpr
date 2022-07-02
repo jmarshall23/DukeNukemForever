@@ -2,9 +2,17 @@ renderProg guiTexture
 {
 	vertex
 	{
-		vertex_texcoord1 = $vertexcolor;
-		vertex_texcoord0 = attr_TexCoord0;
 		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+		if($vertexcolor.w == 2.0)
+		{
+			vertex_texcoord1 = $vertexcolor;
+			vertex_texcoord1.w = 1.0;
+		}
+		else
+		{
+			vertex_texcoord1 = $vertexcolor * attr_Color;
+		}
+		vertex_texcoord0 = attr_TexCoord0;
 	}
 
 	pixel

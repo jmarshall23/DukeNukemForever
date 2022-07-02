@@ -4,6 +4,7 @@
 #pragma once
 
 static const int PC_ATTRIB_INDEX_VERTEX = 0;
+static const int PC_ATTRIB_INDEX_COLOR = 3;
 static const int PC_ATTRIB_INDEX_ST = 8;
 static const int PC_ATTRIB_INDEX_TANGENT = 9;
 static const int PC_ATTRIB_INDEX_BINORMAL = 10;
@@ -51,3 +52,31 @@ private:
 	idList<rvmDeclRenderParam*> renderParams;
 	idList<glslUniformLocation_t> uniformLocations;
 };
+
+// OpenGL is stupid reason #40004000 and too many.
+ID_INLINE void R_SetupDrawVertBindings(void) {
+	// enable the vertex arrays
+	glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_ST);
+	glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_COLOR);
+	glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_TANGENT);
+	glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_VERTEX);
+	glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_NORMAL);
+	glEnableClientState(GL_COLOR_ARRAY);
+
+	idDrawVert* ac = nullptr;
+	glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), ac->color);
+	glVertexAttribPointerARB(PC_ATTRIB_INDEX_NORMAL, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->normal.ToFloatPtr());
+	glVertexAttribPointerARB(PC_ATTRIB_INDEX_TANGENT, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->tangents[0].ToFloatPtr());
+	glVertexAttribPointerARB(PC_ATTRIB_INDEX_ST, 2, GL_FLOAT, false, sizeof(idDrawVert), ac->st.ToFloatPtr());
+	glVertexAttribPointerARB(PC_ATTRIB_INDEX_VERTEX, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->xyz.ToFloatPtr());
+	glVertexAttribPointerARB(PC_ATTRIB_INDEX_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(idDrawVert), (void*)&ac->color);
+}
+
+ID_INLINE void R_UnbindDrawVertBindings(void) {
+	glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_COLOR);
+	glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_ST);
+	glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_TANGENT);
+	glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_VERTEX);
+	glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_NORMAL);
+	glDisableClientState(GL_COLOR_ARRAY);
+}
