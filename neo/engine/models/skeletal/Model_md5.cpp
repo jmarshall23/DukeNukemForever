@@ -332,8 +332,9 @@ void idMD5Mesh::UpdateSurface( const struct renderEntity_t *ent, const idJointMa
 			tri->verts[i].st = texCoords[i];
 		}
 	}
-
-	if ( ent->shaderParms[ SHADERPARM_MD5_SKINSCALE ] != 0.0f ) {
+// jmarshall - null ent support
+	if ( ent != nullptr && ent->shaderParms[ SHADERPARM_MD5_SKINSCALE ] != 0.0f ) {
+// jmarshall end
 		TransformScaledVerts( tri->verts, entJoints, ent->shaderParms[ SHADERPARM_MD5_SKINSCALE ] );
 	} else {
 		TransformVerts( tri->verts, entJoints );
@@ -445,6 +446,33 @@ int	idMD5Mesh::NumWeights( void ) const {
 
 ***********************************************************************/
 
+
+// jmarshall
+/*
+=====================
+idRenderModelMD5::idRenderModelMD5
+=====================
+*/
+idRenderModelMD5::idRenderModelMD5()
+{
+	poseMat3 = nullptr;
+}
+
+/*
+=====================
+idRenderModelMD5::~idRenderModelMD5
+=====================
+*/
+idRenderModelMD5::~idRenderModelMD5()
+{
+	if (poseMat3)
+	{
+		delete poseMat3;
+		poseMat3 = nullptr;
+	}	
+}
+
+// jmarshall end
 /*
 ====================
 idRenderModelMD5::ParseJoint
@@ -507,8 +535,7 @@ void idRenderModelMD5::LoadModel() {
 	idToken		token;
 	idLexer		parser( LEXFL_ALLOWPATHNAMES | LEXFL_NOSTRINGESCAPECHARS );
 	idJointQuat	*pose;
-	idMD5Joint	*joint;
-	idJointMat *poseMat3;
+	idMD5Joint	*joint;	
 
 	if ( !purged ) {
 		PurgeModel();
@@ -540,7 +567,7 @@ void idRenderModelMD5::LoadModel() {
 	joints.SetNum( num );
 	defaultPose.SetGranularity( 1 );
 	defaultPose.SetNum( num );
-	poseMat3 = ( idJointMat * )_alloca16( num * sizeof( *poseMat3 ) );
+	poseMat3 = new idJointMat[num];
 
 	// parse num meshes
 	parser.ExpectTokenString( "numMeshes" );
@@ -744,16 +771,19 @@ idRenderModel *idRenderModelMD5::InstantiateDynamicModel( const struct renderEnt
 		common->DWarning( "model %s instantiated while purged", Name() );
 		LoadModel();
 	}
-
-	if ( !ent->joints ) {
-		common->Printf( "idRenderModelMD5::InstantiateDynamicModel: NULL joints on renderEntity for '%s'\n", Name() );
-		delete cachedModel;
-		return NULL;
-	} else if ( ent->numJoints != joints.Num() ) {
-		common->Printf( "idRenderModelMD5::InstantiateDynamicModel: renderEntity has different number of joints than model for '%s'\n", Name() );
-		delete cachedModel;
-		return NULL;
+// jmarshall - null ent support
+	if (ent != nullptr)
+	{
+		if (!ent->joints) {
+			ent = nullptr;
+		}
+		else if (ent->numJoints != joints.Num()) {
+			common->Printf("idRenderModelMD5::InstantiateDynamicModel: renderEntity has different number of joints than model for '%s'\n", Name());
+			delete cachedModel;
+			return NULL;
+		}
 	}
+// jmarshall end
 
 	tr.pc.c_generateMd5++;
 
@@ -768,18 +798,23 @@ idRenderModel *idRenderModelMD5::InstantiateDynamicModel( const struct renderEnt
 
 	staticModel->bounds.Clear();
 
-	if ( r_showSkel.GetInteger() ) {
-		if ( ( view != NULL ) && ( !r_skipSuppress.GetBool() || !ent->suppressSurfaceInViewID || ( ent->suppressSurfaceInViewID != view->renderView.viewID ) ) ) {
-			// only draw the skeleton
-			DrawJoints( ent, view );
-		}
+// jmarshall - null ent support
+	if (ent != nullptr)
+	{
+		if (r_showSkel.GetInteger()) {
+			if ((view != NULL) && (!r_skipSuppress.GetBool() || !ent->suppressSurfaceInViewID || (ent->suppressSurfaceInViewID != view->renderView.viewID))) {
+				// only draw the skeleton
+				DrawJoints(ent, view);
+			}
 
-		if ( r_showSkel.GetInteger() > 1 ) {
-			// turn off the model when showing the skeleton
-			staticModel->InitEmpty( MD5_SnapshotName );
-			return staticModel;
+			if (r_showSkel.GetInteger() > 1) {
+				// turn off the model when showing the skeleton
+				staticModel->InitEmpty(MD5_SnapshotName);
+				return staticModel;
+			}
 		}
 	}
+// jmarshall end
 
 	// create all the surfaces
 	for( mesh = meshes.Ptr(), i = 0; i < meshes.Num(); i++, mesh++ ) {
@@ -787,8 +822,13 @@ idRenderModel *idRenderModelMD5::InstantiateDynamicModel( const struct renderEnt
 		// FIXME: may have to still deform clipping hulls
 		const idMaterial *shader = mesh->shader;
 		
-		shader = R_RemapShaderBySkin( shader, ent->customSkin, ent->customShader );
-		
+// jmarshall - null ent support
+		if (ent != nullptr)
+		{
+			shader = R_RemapShaderBySkin(shader, ent->customSkin, ent->customShader);
+		}
+// jmarshall end
+
 		if ( !shader || ( !shader->IsDrawn() && !shader->SurfaceCastsShadow() ) ) {
 			staticModel->DeleteSurfaceWithId( i );
 			mesh->surfaceNum = -1;
@@ -811,8 +851,16 @@ idRenderModel *idRenderModelMD5::InstantiateDynamicModel( const struct renderEnt
 			surf->shader = NULL;
 			surf->id = i;
 		}
-
-		mesh->UpdateSurface( ent, ent->joints, surf );
+// jmarshall - null ent support
+		if (ent != nullptr)
+		{
+			mesh->UpdateSurface(ent, ent->joints, surf);
+		}
+		else
+		{
+			mesh->UpdateSurface(nullptr, poseMat3, surf);
+		}
+// jmarshall end
 
 		staticModel->bounds.AddPoint( surf->geometry->bounds[0] );
 		staticModel->bounds.AddPoint( surf->geometry->bounds[1] );

@@ -178,6 +178,11 @@ private:
 
 class idRenderModelMD5 : public idRenderModelStatic {
 public:
+// jmarshall
+	idRenderModelMD5();
+	~idRenderModelMD5();
+// jmarshall end
+
 	virtual void				InitFromFile( const char *fileName );
 	virtual dynamicModel_t		IsDynamicModel() const;
 	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
@@ -199,6 +204,9 @@ private:
 	idList<idMD5Joint>			joints;
 	idList<idJointQuat>			defaultPose;
 	idList<idMD5Mesh>			meshes;
+// jmarshall
+	idJointMat*					poseMat3;
+// jmarshall end
 
 	void						CalculateBounds( const idJointMat *joints );
 	void						GetFrameBounds( const renderEntity_t *ent, idBounds &bounds ) const;

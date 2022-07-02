@@ -1337,23 +1337,7 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 			// use the game's epair parsing code so
 			// we can use the same renderEntity generation
 			gameEdit->ParseSpawnArgsToRenderEntity( &spawnArgs, &refent );
-			idRenderModelMD5 *md5 = dynamic_cast<idRenderModelMD5 *>( refent.hModel );
-			if (md5) {
-				idStr str;
-				spawnArgs.GetString("anim", "idle", str);
-				refent.numJoints = md5->NumJoints();
-				if ( update && refent.joints ) {
-					Mem_Free16( refent.joints );
-				}
-				refent.joints = ( idJointMat * )Mem_Alloc16( refent.numJoints * sizeof( *refent.joints ) );
-				const idMD5Anim *anim = gameEdit->ANIM_GetAnimFromEntityDef(spawnArgs.GetString("classname"), str);
-				int frame = spawnArgs.GetInt("frame") + 1;
-				if ( frame < 1 ) {
-					frame = 1;
-				}
-				const idVec3 &offset = gameEdit->ANIM_GetModelOffsetFromEntityDef( spawnArgs.GetString("classname") );
-				gameEdit->ANIM_CreateAnimFrame( md5, anim, refent.numJoints, refent.joints, ( frame * 1000 ) / 24, offset, false );
-			}
+						
 			if (ent->modelDef >= 0) {
 				g_qeglobals.rw->FreeEntityDef( ent->modelDef );
 			}

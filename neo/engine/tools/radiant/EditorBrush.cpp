@@ -3965,29 +3965,9 @@ void Brush_DrawModel( brush_t *b, bool camera, bool bSelected ) {
 		bool fixedBounds = false;
 
 		if ( model->IsDynamicModel() != DM_STATIC ) {
-// jmarshall
-			if (model->IsVertexAnimated())
-			{
-				model2 = model->InstantiateDynamicModel(nullptr, nullptr, nullptr);
-			}
+// jmarshall - here we just simplified this, just grab the static md5mesh pose for the editor.
+			model2 = model->InstantiateDynamicModel(nullptr, nullptr, nullptr);
 // jmarshall end
-			else if ( dynamic_cast<idRenderModelMD5 *>( model ) ) {
-				const char *classname = ValueForKey( b->owner, "classname" );
-				if (stricmp(classname, "func_static") == 0) {
-					classname = ValueForKey(b->owner, "animclass");
-				}
-				const char *anim = ValueForKey( b->owner, "anim" );
-				int frame = IntForKey( b->owner, "frame" ) + 1;
-				if ( frame < 1 ) {
-					frame = 1;
-				}
-				if ( !anim || !anim[ 0 ] ) {
-					anim = "idle";
-				}
-				model2 = gameEdit->ANIM_CreateMeshForAnim( model, classname, anim, frame, false );
-			} else if ( dynamic_cast<idRenderModelPrt*>( model ) || dynamic_cast<idRenderModelLiquid*>( model ) ) {
-				fixedBounds = true;
-			}
 
 			if ( !model2 ) {
 				idBounds bounds;
