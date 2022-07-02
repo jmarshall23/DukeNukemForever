@@ -112,6 +112,7 @@ void idRender::DrawTestOcclusion(void) {
 
 	RB_SetMVP(backEnd.viewDef->worldSpace.mvp);
 
+	tr.albedoTextureParam->SetImage(globalImages->whiteImage);
 	tr.occluderProgram->Bind();	
 
 	glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE);
