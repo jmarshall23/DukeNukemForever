@@ -23,6 +23,8 @@ enum rvmDeclRenderParmType_t {
 //
 class rvmDeclRenderParam : public idDecl {
 public:
+	rvmDeclRenderParam();
+
 	virtual size_t			Size(void) const;
 	virtual bool			SetDefaultText(void);
 	virtual const char* DefaultDefinition(void) const;
@@ -32,20 +34,28 @@ public:
 	rvmDeclRenderParmType_t GetType() { return type; }
 
 	idImage*				GetImage(void) { return imageValue; }
-	void					SetImage(idImage* image) { imageValue = image; }
+	void					SetImage(idImage* image) {
+		if (imageValue == image)
+			return;
+
+		updateId++; 
+		imageValue = image; 
+	}
 
 	float*					GetVectorValuePtr(void) { return &vectorValue[0].x; }
 	idVec4					GetVectorValue(int idx = 0) { return vectorValue[idx]; }
-	void					SetVectorValue(idVec4 value, int idx = 0) { vectorValue[idx] = value; }
-	void					SetVectorValue(const float *value, int idx = 0) { vectorValue[idx] = idVec4(value[0], value[1], value[2], value[3]); }
+	void					SetVectorValue(idVec4 value, int idx = 0) { updateId++; vectorValue[idx] = value; }
+	void					SetVectorValue(const float *value, int idx = 0) { updateId++; vectorValue[idx] = idVec4(value[0], value[1], value[2], value[3]); }
 
 	float					GetFloatValue(void) { return floatValue; }
-	void					SetFloatValue(float value) { floatValue = value; }
+	void					SetFloatValue(float value) { updateId++; floatValue = value; }
 
 	int						GetArraySize(void) { return array_size; }
 
 	int						GetIntValue(void) { return intValue; }
-	void					SetIntValue(int value) { intValue = value; }
+	void					SetIntValue(int value) { updateId++; intValue = value; }
+
+	int						GetUpdateID() { return updateId; }
 private:
 	rvmDeclRenderParmType_t type;
 
@@ -54,4 +64,6 @@ private:
 	float					floatValue;
 	int						array_size;
 	int						intValue;
+
+	int						updateId;
 };

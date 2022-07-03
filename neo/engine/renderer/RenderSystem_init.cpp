@@ -1400,12 +1400,14 @@ void R_MakeAmbientMap_f( const idCmdArgs &args ) {
 	cubeAxis[5][1][0] = 1;
 	cubeAxis[5][2][1] = 1;
 
+	bool isTransparent = false;
+
 	// read all of the images
 	for ( i = 0 ; i < 6 ; i++ ) {
 		sprintf( fullname, "env/%s%s", baseName, extensions[i] );
 		common->Printf( "loading %s\n", fullname.c_str() );
 		session->UpdateScreen();
-		R_LoadImage( fullname, &buffers[i], &width, &height, NULL, true );
+		R_LoadImage( fullname, &buffers[i], &width, &height, NULL, true, &isTransparent );
 		if ( !buffers[i] ) {
 			common->Printf( "failed.\n" );
 			for ( i-- ; i >= 0 ; i-- ) {
@@ -1963,6 +1965,8 @@ void idRenderSystemLocal::Init( void ) {
 	interactionProgram = FindRenderProgram("interaction");
 	shadowMapProgram = FindRenderProgram("shadowmap");
 	occluderProgram = FindRenderProgram("occluder");
+
+	shadowMapAlbedoProgram = FindRenderProgram("shadowMapAlbedoSample");
 // jmarshall end
 
 	R_InitMaterials();

@@ -372,7 +372,7 @@ used to parse an image program from a text stream.
 ===================
 */
 static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *height,
-								  ID_TIME_T *timestamps, textureUsage_t * usage ) {
+								  ID_TIME_T *timestamps, textureUsage_t * usage, bool *isTransparent ) {
 	idToken		token;
 	float		scale;
 	ID_TIME_T		timestamp;
@@ -384,7 +384,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 	if ( !token.Icmp( "heightmap" ) ) {
 		MatchAndAppendToken( src, "(" );
 
-		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage ) ) {
+		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent ) ) {
 			return false;
 		}
 
@@ -412,13 +412,13 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 
 		MatchAndAppendToken( src, "(" );
 
-		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage ) ) {
+		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent) ) {
 			return false;
 		}
 
 		MatchAndAppendToken( src, "," );
 
-		if ( !R_ParseImageProgram_r( src, pic ? &pic2 : NULL, &width2, &height2, timestamps, usage ) ) {
+		if ( !R_ParseImageProgram_r( src, pic ? &pic2 : NULL, &width2, &height2, timestamps, usage, isTransparent ) ) {
 			if ( pic ) {
 				R_StaticFree( *pic );
 				*pic = NULL;
@@ -442,7 +442,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 	if ( !token.Icmp( "smoothnormals" ) ) {
 		MatchAndAppendToken( src, "(" );
 
-		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage ) ) {
+		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent) ) {
 			return false;
 		}
 
@@ -463,13 +463,13 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 
 		MatchAndAppendToken( src, "(" );
 
-		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage ) ) {
+		if ( !R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent) ) {
 			return false;
 		}
 
 		MatchAndAppendToken( src, "," );
 
-		if ( !R_ParseImageProgram_r( src, pic ? &pic2 : NULL, &width2, &height2, timestamps, usage ) ) {
+		if ( !R_ParseImageProgram_r( src, pic ? &pic2 : NULL, &width2, &height2, timestamps, usage, isTransparent) ) {
 			if ( pic ) {
 				R_StaticFree( *pic );
 				*pic = NULL;
@@ -493,7 +493,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 
 		MatchAndAppendToken( src, "(" );
 
-		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage );
+		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent);
 
 		for ( i = 0 ; i < 4 ; i++ ) {
 			MatchAndAppendToken( src, "," );
@@ -514,7 +514,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 	if ( !token.Icmp( "invertAlpha" ) ) {
 		MatchAndAppendToken( src, "(" );
 
-		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage );
+		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent);
 
 		// process it
 		if ( pic ) {
@@ -528,7 +528,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 	if ( !token.Icmp( "invertColor" ) ) {
 		MatchAndAppendToken( src, "(" );
 
-		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage );
+		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent);
 
 		// process it
 		if ( pic ) {
@@ -544,7 +544,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 
 		MatchAndAppendToken( src, "(" );
 
-		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage );
+		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent);
 
 		// copy red to green, blue, and alpha
 		if ( pic ) {
@@ -566,7 +566,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 
 		MatchAndAppendToken( src, "(" );
 
-		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage );
+		R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent);
 
 		// average RGB into alpha, then set RGB to white
 		if ( pic ) {
@@ -591,7 +591,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 	}
 
 	// load it as an image
-	R_LoadImage( token.c_str(), pic, width, height, &timestamp, true );
+	R_LoadImage( token.c_str(), pic, width, height, &timestamp, true, isTransparent);
 
 	if ( timestamp == -1 ) {
 		return false;
@@ -613,7 +613,7 @@ static bool R_ParseImageProgram_r( idLexer &src, byte **pic, int *width, int *he
 R_LoadImageProgram
 ===================
 */
-void R_LoadImageProgram( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamps, textureUsage_t * usage ) {
+void R_LoadImageProgram( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamps, textureUsage_t * usage, bool *isTransparent ) {
 	idLexer src;
 
 	src.LoadMemory( name, strlen(name), name );
@@ -624,7 +624,7 @@ void R_LoadImageProgram( const char *name, byte **pic, int *width, int *height, 
 		*timestamps = 0;
 	}
 
-	R_ParseImageProgram_r( src, pic, width, height, timestamps, usage );
+	R_ParseImageProgram_r( src, pic, width, height, timestamps, usage, isTransparent);
 
 	src.FreeSource();
 }
@@ -636,7 +636,8 @@ R_ParsePastImageProgram
 */
 const char *R_ParsePastImageProgram( idLexer &src ) {
 	parseBuffer[0] = 0;
-	R_ParseImageProgram_r( src, NULL, NULL, NULL, NULL, NULL );
+	bool isTransparent = false;
+	R_ParseImageProgram_r( src, NULL, NULL, NULL, NULL, NULL, &isTransparent );
 	return parseBuffer;
 }
 

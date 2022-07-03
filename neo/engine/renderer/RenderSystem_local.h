@@ -596,6 +596,7 @@ public:
 	rvmDeclRenderProg*		interactionProgram;
 	rvmDeclRenderProg*		occluderProgram;
 	rvmDeclRenderProg*		shadowMapProgram;	
+	rvmDeclRenderProg*		shadowMapAlbedoProgram;
 
 	unsigned short			gammaTable[256];	// brightness / gamma modify this
 };

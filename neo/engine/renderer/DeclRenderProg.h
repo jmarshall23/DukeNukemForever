@@ -49,8 +49,14 @@ private:
 
 	int						tmu;
 
+	static int				currentRenderProgram;
+
 	idList<rvmDeclRenderParam*> renderParams;
 	idList<glslUniformLocation_t> uniformLocations;
+	idList<int> uniformLocationUpdateId;
+
+	idStr					declText;
+	idStr					globalText;
 };
 
 // OpenGL is stupid reason #40004000 and too many.

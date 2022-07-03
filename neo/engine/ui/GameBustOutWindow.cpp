@@ -893,7 +893,9 @@ void idGameBustOutWindow::LoadBoardFiles( void ) {
 		name += (i+1);
 		name += ".tga";
 
-		R_LoadImage( name, &pic, &w, &h, &time, false );
+		bool isTransparent;
+
+		R_LoadImage( name, &pic, &w, &h, &time, false, &isTransparent );
 
 		if ( pic != NULL ) {
 			if ( w != 9 || h != 12 ) {

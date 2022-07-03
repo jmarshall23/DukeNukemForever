@@ -71,7 +71,7 @@ void R_WriteTGA( const char *filename, const byte *data, int width, int height, 
 	fileSystem->WriteFile( filename, buffer, bufferSize, basePath );
 }
 
-static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp );
+static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp, bool *isTransparent );
 static void LoadJPG( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp );
 
 /*
@@ -104,7 +104,7 @@ TARGA LOADING
 LoadTGA
 =============
 */
-static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp ) {
+static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp, bool *isTransparent ) {
 	int		columns, rows, numPixels, fileSize, numBytes;
 	byte	*pixbuf;
 	int		row, column;
@@ -117,6 +117,8 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 		fileSystem->ReadFile( name, NULL, timestamp );
 		return;	// just getting timestamp
 	}
+
+	*isTransparent = false;
 
 	*pic = NULL;
 
@@ -219,6 +221,7 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 						*pixbuf++ = 0;
 						*pixbuf++ = 0;
 						*pixbuf++ = 0;
+						*isTransparent = true;
 					}
 					else
 					{
@@ -233,6 +236,9 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 					green = *buf_p++;
 					red = *buf_p++;
 					alphabyte = *buf_p++;
+
+					if(alphabyte != 255)
+						*isTransparent = true;
 
 					if (red == 255 && blue == 255 && green == 0)
 					{
@@ -282,6 +288,8 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 								green = *buf_p++;
 								red = *buf_p++;
 								alphabyte = *buf_p++;
+								if (alphabyte != 255)
+									*isTransparent = true;
 								break;
 						default:
 							common->Error( "LoadTGA( %s ): illegal pixel_size '%d'\n", name, targa_header.pixel_size );
@@ -295,6 +303,7 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 							green = 0;
 							blue = 0;
 							alphabyte = 0;
+							*isTransparent = true;
 						}
 							
 
@@ -329,6 +338,7 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 										*pixbuf++ = 0;
 										*pixbuf++ = 0;
 										*pixbuf++ = 0;
+										*isTransparent = true;
 									}
 									else
 									{
@@ -343,6 +353,9 @@ static void LoadTGA( const char *name, byte **pic, int *width, int *height, ID_T
 									green = *buf_p++;
 									red = *buf_p++;
 									alphabyte = *buf_p++;
+
+									if (alphabyte != 255)
+										*isTransparent = true;
 
 									if (red == 255 && blue == 255 && green == 0)
 									{
@@ -416,7 +429,7 @@ If pic is NULL, the image won't actually be loaded, it will just find the
 timestamp.
 =================
 */
-void R_LoadImage( const char *cname, byte **pic, int *width, int *height, ID_TIME_T *timestamp, bool makePowerOf2 ) {
+void R_LoadImage( const char *cname, byte **pic, int *width, int *height, ID_TIME_T *timestamp, bool makePowerOf2, bool *isTransparent ) {
 	idStr name = cname;
 
 	if ( pic ) {
@@ -442,7 +455,7 @@ void R_LoadImage( const char *cname, byte **pic, int *width, int *height, ID_TIM
 	idStr ext;
 	name.ExtractFileExtension( ext );
 
-	LoadTGA(name.c_str(), pic, width, height, timestamp);
+	LoadTGA(name.c_str(), pic, width, height, timestamp, isTransparent);
 
 	if ( ( width && *width < 1 ) || ( height && *height < 1 ) ) {
 		if ( pic && *pic ) {
@@ -511,15 +524,17 @@ bool R_LoadCubeImages( const char *imgName, cubeFiles_t extensions, byte *pics[6
 		*timestamp = 0;
 	}
 
+	bool isTransparent;
+
 	for ( i = 0 ; i < 6 ; i++ ) {
 		idStr::snPrintf( fullName, sizeof( fullName ), "%s%s", imgName, sides[i] );
 
 		ID_TIME_T thisTime;
 		if ( !pics ) {
 			// just checking timestamps
-			R_LoadImageProgram( fullName, NULL, &width, &height, &thisTime );
+			R_LoadImageProgram( fullName, NULL, &width, &height, &thisTime, nullptr, &isTransparent);
 		} else {
-			R_LoadImageProgram( fullName, &pics[i], &width, &height, &thisTime );
+			R_LoadImageProgram( fullName, &pics[i], &width, &height, &thisTime, nullptr, &isTransparent);
 		}
 		if ( thisTime == FILE_NOT_FOUND_TIMESTAMP ) {
 			break;

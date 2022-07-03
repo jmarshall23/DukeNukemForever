@@ -128,6 +128,22 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			//if (surfInt->shader) {
 			//	surfInt->shader->GetEditorImage()->Bind();
 			//}
+
+			const shaderStage_t* pStage = surfInt->shader->GetAlbedoStage();
+			if(pStage == nullptr)
+				continue;
+
+			tr.albedoTextureParam->SetImage(pStage->texture.image);							
+
+			if (pStage->texture.image->IsTransparent())
+			{
+				tr.shadowMapAlbedoProgram->Bind();
+			}
+			else
+			{
+				tr.shadowMapProgram->Bind();
+			}
+			
 			
 			RB_DrawElementsWithCounters(tri);
 

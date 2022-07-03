@@ -290,7 +290,7 @@ void idImage::ActuallyLoadImage( bool fromBackEnd ) {
 		}
 		else {
 			opts.textureType = TT_2D;
-			R_LoadImageProgram(GetName(), NULL, NULL, NULL, &sourceFileTime, &usage);
+			R_LoadImageProgram(GetName(), NULL, NULL, NULL, &sourceFileTime, &usage, &isTransparent);
 		}
 	}
 
@@ -349,7 +349,7 @@ void idImage::ActuallyLoadImage( bool fromBackEnd ) {
 			byte * pic;
 
 			// load the full specification, and perform any image program calculations
-			R_LoadImageProgram( GetName(), &pic, &width, &height, &sourceFileTime, &usage );
+			R_LoadImageProgram( GetName(), &pic, &width, &height, &sourceFileTime, &usage, &isTransparent);
 
 			if ( pic == NULL ) {
 				idLib::Warning( "Couldn't load image: %s : %s", GetName(), generatedName.c_str() );
@@ -651,7 +651,7 @@ void idImage::Reload( bool force ) {
 			R_LoadCubeImages( imgName, cubeFiles, NULL, NULL, &current );
 		} else {
 			// get the current values
-			R_LoadImageProgram( imgName, NULL, NULL, NULL, &current );
+			R_LoadImageProgram( imgName, NULL, NULL, NULL, &current, nullptr, &isTransparent );
 		}
 		if ( current <= sourceFileTime ) {
 			return;

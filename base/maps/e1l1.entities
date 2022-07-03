@@ -6,7 +6,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.78 0.76 0.28"
 "light_radius" "300 300 300"
 }
@@ -25474,7 +25474,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 "_brightness" "0.4"
@@ -25487,36 +25487,24 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 1 1"
 "light_radius" "300 300 400"
 }
 // entity 2830
 {
 "classname" "light"
-"name" "light_18"
-"origin" "4624 2424 104"
+"name" "light_19"
+"origin" "4544 2208 32"
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
 "falloff" "0"
 "_color" "1 1 1"
 "light_radius" "300 300 700"
+"_brightness" "1"
 }
 // entity 2831
-{
-"classname" "light"
-"name" "light_19"
-"origin" "4640 2184 32"
-"noshadows" "0"
-"nospecular" "0"
-"nodiffuse" "0"
-"falloff" "0"
-"_color" "1 1 1"
-"light_radius" "300 300 700"
-"_brightness" "0.2"
-}
-// entity 2832
 {
 "classname" "light"
 "name" "light_20"
@@ -25528,7 +25516,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 700"
 }
-// entity 2833
+// entity 2832
 {
 "classname" "light"
 "name" "light_21"
@@ -25540,7 +25528,7 @@
 "_color" "1 1 1"
 "light_radius" "500 500 700"
 }
-// entity 2834
+// entity 2833
 {
 "classname" "func_static"
 "model" "maps/e1l1/plane_1553.obj"
@@ -25549,7 +25537,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/E1L1/E1L1_38"
 }
-// entity 2835
+// entity 2834
 {
 "classname" "light"
 "name" "light_33"
@@ -25561,7 +25549,7 @@
 "_color" "1 0.87 0.64"
 "light_radius" "300 300 300"
 }
-// entity 2836
+// entity 2835
 {
 "classname" "light"
 "name" "light_34"
@@ -25573,43 +25561,20 @@
 "_color" "1 0.2 0.17"
 "light_radius" "500 500 500"
 }
-// entity 2837
-{
-"classname" "light"
-"name" "light_35"
-"origin" "3576 376 3096"
-"noshadows" "0"
-"nospecular" "0"
-"nodiffuse" "0"
-"falloff" "0"
-"_color" "0.55 0.82 0.91"
-"light_radius" "800 800 300"
-}
-// entity 2838
-{
-"classname" "light"
-"name" "light_36"
-"origin" "3736 896 3096"
-"noshadows" "0"
-"nospecular" "0"
-"nodiffuse" "0"
-"falloff" "0"
-"_color" "0.55 0.82 0.91"
-"light_radius" "800 800 300"
-}
-// entity 2839
+// entity 2836
 {
 "classname" "light"
 "name" "light_37"
-"origin" "3888 744 3240"
+"origin" "4056 568 3472"
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
 "falloff" "0"
-"_color" "1 0.8 0.62"
-"light_radius" "900 900 900"
+"_color" "1 0.96 0.99"
+"light_radius" "1400 900 900"
+"_brightness" "2"
 }
-// entity 2840
+// entity 2837
 {
 "classname" "generic_c9"
 "name" "generic_c9_3"
@@ -25627,7 +25592,7 @@
  }
 }
 }
-// entity 2841
+// entity 2838
 {
 "classname" "generic_c9"
 "name" "generic_c9_4"
@@ -25645,7 +25610,7 @@
  }
 }
 }
-// entity 2842
+// entity 2839
 {
 "classname" "light"
 "name" "light_38"
@@ -25657,7 +25622,7 @@
 "_color" "1 0.87 0.64"
 "light_radius" "300 300 300"
 }
-// entity 2843
+// entity 2840
 {
 "classname" "light"
 "name" "light_39"
@@ -25669,7 +25634,7 @@
 "_color" "1 0.87 0.64"
 "light_radius" "300 300 300"
 }
-// entity 2844
+// entity 2841
 {
 "classname" "light"
 "name" "light_40"
@@ -25681,7 +25646,7 @@
 "_color" "1 0.87 0.64"
 "light_radius" "300 300 300"
 }
-// entity 2845
+// entity 2842
 {
 "classname" "light"
 "name" "light_41"
@@ -25693,7 +25658,7 @@
 "_color" "1 0.87 0.64"
 "light_radius" "300 300 300"
 }
-// entity 2846
+// entity 2843
 {
 "classname" "light"
 "name" "light_42"
@@ -25705,7 +25670,7 @@
 "_color" "1 0.87 0.64"
 "light_radius" "300 300 300"
 }
-// entity 2847
+// entity 2844
 {
 "classname" "light"
 "name" "light_43"
@@ -25717,69 +25682,69 @@
 "_color" "0.79 0.89 1"
 "light_radius" "500 500 500"
 }
-// entity 2848
+// entity 2845
 {
 "classname" "monster_pigcop"
 "name" "monster_pigcop_2"
 "origin" "6328 1608 -48"
 "angle" "270"
 }
-// entity 2849
+// entity 2846
 {
 "classname" "monster_pigcop"
 "name" "monster_pigcop_3"
 "origin" "4600 2408 -48"
 "angle" "270"
 }
-// entity 2850
+// entity 2847
 {
 "classname" "monster_pigcop"
 "name" "monster_pigcop_4"
 "origin" "4120 2272 -48"
 "angle" "0"
 }
-// entity 2851
+// entity 2848
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_8"
 "origin" "4288 2928 -40"
 "angle" "180"
 }
-// entity 2852
+// entity 2849
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_9"
 "origin" "4016 2840 -40"
 "angle" "270"
 }
-// entity 2853
+// entity 2850
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_10"
 "origin" "4864 2696 -40"
 "angle" "180"
 }
-// entity 2854
+// entity 2851
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_11"
 "origin" "4824 2272 272"
 "angle" "90"
 }
-// entity 2855
+// entity 2852
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_13"
 "origin" "5024 2192 272"
 "angle" "0"
 }
-// entity 2856
+// entity 2853
 {
 "classname" "light"
 "name" "light_45"
 "origin" "4896 2512 408"
 }
-// entity 2857
+// entity 2854
 {
 "classname" "light"
 "name" "light_47"
@@ -25787,8 +25752,21 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.78 0.76 0.28"
 "light_radius" "300 300 300"
 "_brightness" "0.2"
+}
+// entity 2855
+{
+"classname" "light"
+"name" "light_48"
+"origin" "4592 2208 32"
+"noshadows" "0"
+"nospecular" "0"
+"nodiffuse" "0"
+"falloff" "0"
+"_color" "1 1 1"
+"light_radius" "300 300 700"
+"_brightness" "0.4"
 }

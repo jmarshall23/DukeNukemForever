@@ -8,6 +8,8 @@
 
 void GL_SelectTextureNoClient(int unit);
 
+int rvmDeclRenderProg::currentRenderProgram = -1;
+
 /*
 ===================
 rvmDeclRenderProg::Size
@@ -43,6 +45,8 @@ rvmDeclRenderProg::ParseRenderParms
 idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText, const char* programMacro) {
 	idStr uniforms = "#version 130\n";
 	uniforms += va("#define %s\n", programMacro);
+	uniforms += globalText;
+	uniforms += "\n";
 
 	idLexer src;
 	idToken	token, token2;
@@ -51,15 +55,24 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText, const char* progra
 	src.SetFlags(DECL_LEXER_FLAGS);
 	src.SkipUntilString("{");
 
-	idList< rvmDeclRenderParam*> attachedRenderParms;
+	int backetId = 1;
 
 	while (1) {
 		if (!src.ReadToken(&token)) {
 			break;
 		}
 
+		if (!token.Icmp("{")) {
+			backetId++;
+		}
+
 		if (!token.Icmp("}")) {
-			break;
+			backetId--;
+
+			if (backetId == 0)
+			{
+				break;
+			}
 		}
 
 		if (token == "$")
@@ -76,17 +89,16 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText, const char* progra
 				return "";
 			}
 
-			if (attachedRenderParms.Find(parm) != nullptr) {
+			if (renderParams.Find(parm) != nullptr) {
 				continue;
 			}
-				
-			attachedRenderParms.AddUnique(parm);
 
 			// Make all params lower case.
 			bracketText.Replace(tokenCase, token);
 
 			idStr name = token;
-			char* buffer = (char *)name.c_str(); // still not the worst thing I've ever done, muaahahaha!
+			char buffer[2048];			
+			strcpy(buffer, (char*)name.c_str());
 			for (int i = 0; i < name.Length(); i++)
 			{
 				if (buffer[i] == '.')
@@ -101,16 +113,19 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText, const char* progra
 				switch (parm->GetType())
 				{
 				case RENDERPARM_TYPE_IMAGE:
-					uniforms += va("uniform sampler2D %s;\n", name.c_str());
+					uniforms += va("uniform sampler2D %s;\n", buffer);
 					break;
 				case RENDERPARM_TYPE_VEC4:
-					uniforms += va("uniform vec4 %s;\n", name.c_str());
+					uniforms += va("uniform vec4 %s;\n", buffer);
 					break;
 				case RENDERPARM_TYPE_FLOAT:
-					uniforms += va("uniform float %s;\n", name.c_str());
+					uniforms += va("uniform float %s;\n", buffer);
 					break;
 				case RENDERPARM_TYPE_INT:
-					uniforms += va("uniform int %s;\n", name.c_str());
+					uniforms += va("uniform int %s;\n", buffer);
+					break;
+				default:
+					common->FatalError("Unknown renderparm type!");
 					break;
 				}
 			}
@@ -119,16 +134,19 @@ idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText, const char* progra
 				switch (parm->GetType())
 				{
 				case RENDERPARM_TYPE_IMAGE:
-					uniforms += va("uniform sampler2D %s[%d];\n", name.c_str(), parm->GetArraySize());
+					uniforms += va("uniform sampler2D %s[%d];\n", buffer, parm->GetArraySize());
 					break;
 				case RENDERPARM_TYPE_VEC4:
-					uniforms += va("uniform vec4 %s[%d];\n", name.c_str(), parm->GetArraySize());
+					uniforms += va("uniform vec4 %s[%d];\n", buffer, parm->GetArraySize());
 					break;
 				case RENDERPARM_TYPE_FLOAT:
-					uniforms += va("uniform float %s[%d];\n", name.c_str(), parm->GetArraySize());
+					uniforms += va("uniform float %s[%d];\n", buffer, parm->GetArraySize());
 					break;
 				case RENDERPARM_TYPE_INT:
-					uniforms += va("uniform int %s[%d];\n", name.c_str(), parm->GetArraySize());
+					uniforms += va("uniform int %s[%d];\n", buffer, parm->GetArraySize());
+					break;
+				default:
+					common->FatalError("Unknown renderparm type!");
 					break;
 				}
 			}
@@ -283,6 +301,7 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 
 	// store the uniform locations after we have linked the GLSL program
 	uniformLocations.Clear();
+	uniformLocationUpdateId.Clear();
 	for (int i = 0; i < renderParams.Num(); i++) {
 		const char* parmName = renderParams[i]->GetName();
 		GLint loc = glGetUniformLocation(program, parmName);
@@ -299,6 +318,7 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 			}
 
 			uniformLocations.Append(uniformLocation);
+			uniformLocationUpdateId.Append(0);
 		}
 	}
 
@@ -310,14 +330,27 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 rvmDeclRenderProg::Bind
 ===================
 */
-void rvmDeclRenderProg::Bind(void) {
+void rvmDeclRenderProg::Bind(void) {	
 	tmu = 0;
 
-	glUseProgram(program);
+	if (currentRenderProgram != program)
+	{
+		glUseProgram(program);
+		currentRenderProgram = program;
+	}
 
 	for (int i = 0; i < uniformLocations.Num(); i++) {
 		const glslUniformLocation_t& uniformLocation = uniformLocations[i];
 		rvmDeclRenderParam* parm = renderParams[uniformLocations[i].parmIndex];
+
+		if (uniformLocationUpdateId[i] == parm->GetUpdateID())
+		{
+			if (parm->GetType() == RENDERPARM_TYPE_IMAGE)
+			{
+				tmu++;
+			}	
+			continue;
+		}
 
 		switch (parm->GetType())
 		{
@@ -343,6 +376,7 @@ void rvmDeclRenderProg::Bind(void) {
 				break;
 		}
 		
+		uniformLocationUpdateId[i] = parm->GetUpdateID();
 	}
 }
 /*
@@ -351,7 +385,21 @@ rvmDeclRenderProg::BindNull
 ===================
 */
 void rvmDeclRenderProg::BindNull(void) {
-	glUseProgram(0);
+	if (currentRenderProgram != 0)
+	{
+		glUseProgram(0);
+		currentRenderProgram = 0;
+	}
+
+	for (int i = 0; i < uniformLocations.Num(); i++) {
+		const glslUniformLocation_t& uniformLocation = uniformLocations[i];
+		rvmDeclRenderParam* parm = renderParams[uniformLocations[i].parmIndex];
+
+		if (parm->GetType() == RENDERPARM_TYPE_IMAGE) {
+			uniformLocationUpdateId[i] = 0;
+		}
+	}
+
 	if (tmu > 1) {
 		while (tmu > 1)
 		{
@@ -373,9 +421,51 @@ bool rvmDeclRenderProg::Parse(const char* text, const int textLength) {
 
 	tmu = 0;
 
+	declText = text;
+
 	src.LoadMemory(text, textLength, GetFileName(), GetLineNum());
 	src.SetFlags(DECL_LEXER_FLAGS);
 	src.SkipUntilString("{");
+
+	// Check to see if we are inheritting from another shader.
+	src.ReadToken(&token);
+	if (token == "inherit")
+	{
+		src.ReadToken(&token);
+
+		rvmDeclRenderProg* parent = tr.FindRenderProgram(token);
+		
+		while (1) {
+			if (!src.ReadToken(&token)) {
+				break;
+			}
+
+			if (!token.Icmp("}")) {
+				break;
+			}
+			
+			if (token == "define")
+			{
+				src.ReadToken(&token);
+				globalText += va("#define %s\n", token.c_str());
+			}
+			else
+			{
+				common->FatalError("Invalid token in inheritted shader!");
+			}
+		}
+
+		src.FreeSource();
+
+		// Now we load the inheritted shader with our new variables.
+		src.LoadMemory(parent->declText, parent->declText.Length(), GetFileName(), GetLineNum());
+		src.SetFlags(DECL_LEXER_FLAGS);
+		src.SkipUntilString("{");
+	}
+	else
+	{
+		src.UnreadToken(&token);
+	}
 
 	while (1) {
 		if (!src.ReadToken(&token)) {

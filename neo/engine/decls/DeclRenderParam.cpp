@@ -1,7 +1,15 @@
 // DeclRenderParm.cpp
 //
 
-
+/*
+===================
+rvmDeclRenderParam::rvmDeclRenderParam
+===================
+*/
+rvmDeclRenderParam::rvmDeclRenderParam()
+{
+	updateId = 1; // Always force update the first time.
+}
 
 /*
 ===================

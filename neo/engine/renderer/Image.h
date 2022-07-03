@@ -155,6 +155,8 @@ public:
 	static void			GetGeneratedName( idStr &_name, const textureUsage_t &_usage, const cubeFiles_t &_cube );
 
 	GLuint		GetTexNum() { return texnum; }
+
+	bool		IsTransparent() const { return isTransparent; }
 private:
 	friend class idImageManager;
 
@@ -189,7 +191,7 @@ private:
 	GLuint				dataFormat;
 	GLuint				dataType;
 
-
+	bool				isTransparent;
 };
 
 ID_INLINE idImage::idImage( const char * name ) : imgName( name ) {
@@ -202,6 +204,7 @@ ID_INLINE idImage::idImage( const char * name ) : imgName( name ) {
 	repeat = TR_REPEAT;
 	usage = TD_DEFAULT;
 	cubeFiles = CF_2D;
+	isTransparent = false;
 
 	referencedOutsideLevelLoad = false;
 	levelLoadReferenced = false;
@@ -348,7 +351,7 @@ IMAGEFILES
 ====================================================================
 */
 
-void R_LoadImage( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp, bool makePowerOf2 );
+void R_LoadImage( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp, bool makePowerOf2, bool* isTransparent);
 // pic is in top to bottom raster format
 bool R_LoadCubeImages( const char *cname, cubeFiles_t extensions, byte *pic[6], int *size, ID_TIME_T *timestamp );
 
@@ -360,6 +363,6 @@ IMAGEPROGRAM
 ====================================================================
 */
 
-void R_LoadImageProgram( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp, textureUsage_t * usage = NULL );
+void R_LoadImageProgram( const char *name, byte **pic, int *width, int *height, ID_TIME_T *timestamp, textureUsage_t * usage, bool *isTransparent );
 const char *R_ParsePastImageProgram( idLexer &src );
 

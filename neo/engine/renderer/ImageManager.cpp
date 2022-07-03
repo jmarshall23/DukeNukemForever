@@ -569,6 +569,7 @@ void R_CombineCubeImages_f( const idCmdArgs &args ) {
 	idStr	baseName = args.Argv( 1 );
 	common->SetRefreshOnPrint( true );
 
+	bool isTransparent = false;
 	for ( int frameNum = 1 ; frameNum < 10000 ; frameNum++ ) {
 		char	filename[MAX_IMAGE_NAME];
 		byte	*pics[6];
@@ -579,7 +580,7 @@ void R_CombineCubeImages_f( const idCmdArgs &args ) {
 			sprintf( filename, "%s%i%04i.tga", baseName.c_str(), orderRemap[side], frameNum );
 
 			common->Printf( "reading %s\n", filename );
-			R_LoadImage( filename, &pics[side], &width, &height, NULL, true );
+			R_LoadImage( filename, &pics[side], &width, &height, NULL, true, &isTransparent );
 
 			if ( !pics[side] ) {
 				common->Printf( "not found.\n" );
