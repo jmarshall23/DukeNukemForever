@@ -102,10 +102,10 @@ renderProg interaction
 				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, vertex_texcoord5.xyz, $globalLightOrigin[i].xyz, _shadowMapInfo);
 			}
 
-			finalColor += ((lc * lit) + (lc * specularColor))  * shadow;
+			finalColor += (lit + specularColor)  * shadow;
 		}
 
-		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * 2.0) + 0.1);
+		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * 3.0) + 0.3);
 		finalpixel_color.w = diffuseMap.w;
 	}
 }
