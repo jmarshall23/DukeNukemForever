@@ -1,0 +1,6 @@
+postprocess/upScaleFrontEndResolve
+{
+	{
+		map _frontEndRenderPassResolvedAlbedo
+	}
+}

@@ -536,11 +536,12 @@ void RB_BeginDrawingView (void) {
 
 	// we don't have to clear the depth / stencil buffer for 2D rendering
 	if ( backEnd.viewDef->viewEntitys ) {
-		glStencilMask( 0xff );
+		glStencilMask(0xff);
 		// some cards may have 7 bit stencil buffers, so don't assume this
 		// should be 128
-		glClearStencil( 1<<(glConfig.stencilBits-1) );
-		glClear( GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT );
+		glClearStencil(1 << (glConfig.stencilBits - 1));
+
+		glClear(GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 		glEnable( GL_DEPTH_TEST );
 	} else {
 		glDisable( GL_DEPTH_TEST );
@@ -1015,6 +1016,19 @@ void idRender::RenderSingleView( const void *data ) {
 	numDrawSurfs = backEnd.viewDef->numDrawSurfs;
 
 	RenderShadowMaps();
+
+	// If we have a backend rendertexture, assign it here.
+	if (backEnd.renderTexture)
+	{
+		backEnd.renderTexture->MakeCurrent();
+
+		idVec4 value;
+		value.Zero();
+		value.x = backEnd.renderTexture->GetWidth();
+		value.y = backEnd.renderTexture->GetHeight();
+
+		tr.screenInfoParam->SetVectorValue(value);
+	}
 
 	// clear the z buffer, set the projection matrix, etc
 	RB_BeginDrawingView();

@@ -419,7 +419,12 @@ void idImage::AllocImage() {
 	int target;
 	int uploadTarget;
 	if ( opts.textureType == TT_2D ) {
-		target = uploadTarget = GL_TEXTURE_2D;
+		if (opts.numMSAASamples == 0) {
+			target = uploadTarget = GL_TEXTURE_2D;
+		}
+		else {
+			target = uploadTarget = GL_TEXTURE_2D_MULTISAMPLE;
+		}
 		numSides = 1;
 	} else if ( opts.textureType == TT_CUBIC ) {
 		target = GL_TEXTURE_CUBE_MAP_EXT;
@@ -461,7 +466,19 @@ void idImage::AllocImage() {
 					HeapFree( GetProcessHeap(), 0, data );
 				}
 			} else {
-				glTexImage2D( uploadTarget + side, level, internalFormat, w, h, 0, dataFormat, dataType, NULL );
+				if (opts.numMSAASamples == 0)
+				{
+					glTexImage2D(uploadTarget + side, level, internalFormat, w, h, 0, dataFormat, dataType, NULL);
+				}
+				else
+				{
+					if (opts.textureType == TT_2D) {
+						glTexImage2DMultisample(GL_TEXTURE_2D_MULTISAMPLE, opts.numMSAASamples, internalFormat, w, h, false);
+					}
+					else {
+						common->FatalError("Unsupported MSAA texture type!\n");
+					}
+				}
 			}
 
 			GL_CheckErrors();

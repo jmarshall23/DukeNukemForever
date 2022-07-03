@@ -60,24 +60,27 @@ void idRenderTexture::InitRenderTexture(void) {
 	if (!isTexture3D)
 	{
 		for (int i = 0; i < colorImages.Num(); i++) {
+			GLuint colorTexNum = colorImages[i]->GetTexNum();
+
 			if (colorImages[i]->GetOpts().numMSAASamples == 0)
 			{
-				glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, colorImages[i]->GetTexNum(), 0);
+				glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D, colorTexNum, 0);
 			}
 			else
 			{
-				glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D_MULTISAMPLE, colorImages[i]->GetTexNum(), 0);
+				glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0 + i, GL_TEXTURE_2D_MULTISAMPLE, colorTexNum, 0);
 			}
 		}
 
 		if (depthImage != nullptr) {
+			GLuint depthImageTexNum = depthImage->GetTexNum();
 			if (depthImage->GetOpts().numMSAASamples == 0)
 			{
 				if (depthImage->GetOpts().format == FMT_DEPTH || depthImage->GetOpts().format == FMT_DEPTH32) {
-					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depthImage->GetTexNum(), 0);
+					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D, depthImageTexNum, 0);
 				}
 				else if (depthImage->GetOpts().format == FMT_DEPTH_STENCIL) {
-					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_TEXTURE_2D, depthImage->GetTexNum(), 0);
+					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_TEXTURE_2D, depthImageTexNum, 0);
 				}
 				else {
 					common->FatalError("idRenderTexture::InitRenderTexture: Unknown depth buffer format!");
@@ -86,10 +89,10 @@ void idRenderTexture::InitRenderTexture(void) {
 			else
 			{
 				if (depthImage->GetOpts().format == FMT_DEPTH) {
-					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D_MULTISAMPLE, depthImage->GetTexNum(), 0);
+					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_TEXTURE_2D_MULTISAMPLE, depthImageTexNum, 0);
 				}
 				else if (depthImage->GetOpts().format == FMT_DEPTH_STENCIL) {
-					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_TEXTURE_2D_MULTISAMPLE, depthImage->GetTexNum(), 0);
+					glFramebufferTexture2D(GL_FRAMEBUFFER, GL_DEPTH_STENCIL_ATTACHMENT, GL_TEXTURE_2D_MULTISAMPLE, depthImageTexNum, 0);
 				}
 				else {
 					common->FatalError("idRenderTexture::InitRenderTexture: Unknown depth buffer format!");

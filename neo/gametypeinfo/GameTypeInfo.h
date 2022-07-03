@@ -9,7 +9,7 @@
 
 	589 constants
 	57 enums
-	301 classes/structs/unions
+	303 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -2123,7 +2123,23 @@ static classVariableInfo_t idGameLocal_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t DnFullscreenRenderTarget_typeInfo[] = {
+	{ ": idImage *", "albedoImage", (intptr_t)(&((DnFullscreenRenderTarget *)0)->albedoImage), sizeof( ((DnFullscreenRenderTarget *)0)->albedoImage ) },
+	{ "idImage *", "depthImage", (intptr_t)(&((DnFullscreenRenderTarget *)0)->depthImage), sizeof( ((DnFullscreenRenderTarget *)0)->depthImage ) },
+	{ "idRenderTexture *", "renderTexture", (intptr_t)(&((DnFullscreenRenderTarget *)0)->renderTexture), sizeof( ((DnFullscreenRenderTarget *)0)->renderTexture ) },
+	{ "int", "numMultiSamples", (intptr_t)(&((DnFullscreenRenderTarget *)0)->numMultiSamples), sizeof( ((DnFullscreenRenderTarget *)0)->numMultiSamples ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t DnRenderPlatform_typeInfo[] = {
+	{ "DnFullscreenRenderTarget *", "frontEndPassRenderTarget", (intptr_t)(&((DnRenderPlatform *)0)->frontEndPassRenderTarget), sizeof( ((DnRenderPlatform *)0)->frontEndPassRenderTarget ) },
+	{ "DnFullscreenRenderTarget *", "frontEndPassRenderTargetResolved", (intptr_t)(&((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved), sizeof( ((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved ) },
+	{ "const idMaterial *", "upscaleFrontEndResolveMaterial", (intptr_t)(&((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial), sizeof( ((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial ) },
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t dnGameLocal_typeInfo[] = {
+	{ "DnRenderPlatform", "renderPlatform", (intptr_t)(&((dnGameLocal *)0)->renderPlatform), sizeof( ((dnGameLocal *)0)->renderPlatform ) },
 	{ NULL, 0 }
 };
 
@@ -4774,6 +4790,8 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "timeState_t", "", sizeof(timeState_t), timeState_t_typeInfo },
 	{ "rvmGameDelayRemoveEntry_t", "", sizeof(rvmGameDelayRemoveEntry_t), rvmGameDelayRemoveEntry_t_typeInfo },
 	{ "idGameLocal", "idGame", sizeof(idGameLocal), idGameLocal_typeInfo },
+	{ "DnFullscreenRenderTarget", "", sizeof(DnFullscreenRenderTarget), DnFullscreenRenderTarget_typeInfo },
+	{ "DnRenderPlatform", "", sizeof(DnRenderPlatform), DnRenderPlatform_typeInfo },
 	{ "dnGameLocal", "idGameLocal", sizeof(dnGameLocal), dnGameLocal_typeInfo },
 	{ "idGameError", "idException", sizeof(idGameError), idGameError_typeInfo },
 	{ "stateParms_t", "", sizeof(stateParms_t), stateParms_t_typeInfo },

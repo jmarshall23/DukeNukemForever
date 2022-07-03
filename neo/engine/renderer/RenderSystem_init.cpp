@@ -47,7 +47,7 @@ const char *r_rendererArgs[] = { "best", "arb", "arb2", "Cg", "exp", "nv10", "nv
 idCVar r_inhibitFragmentProgram( "r_inhibitFragmentProgram", "0", CVAR_RENDERER | CVAR_BOOL, "ignore the fragment program extension" );
 idCVar r_glDriver( "r_glDriver", "", CVAR_RENDERER, "\"opengl32\", etc." );
 idCVar r_useLightPortalFlow( "r_useLightPortalFlow", "1", CVAR_RENDERER | CVAR_BOOL, "use a more precise area reference determination" );
-idCVar r_multiSamples( "r_multiSamples", "0", CVAR_RENDERER | CVAR_ARCHIVE | CVAR_INTEGER, "number of antialiasing samples" );
+idCVar r_multiSamples( "r_multiSamples", "4", CVAR_RENDERER | CVAR_ARCHIVE | CVAR_INTEGER, "number of antialiasing samples" );
 idCVar r_mode( "r_mode", "3", CVAR_ARCHIVE | CVAR_RENDERER | CVAR_INTEGER, "video mode number" );
 idCVar r_displayRefresh( "r_displayRefresh", "0", CVAR_RENDERER | CVAR_INTEGER | CVAR_NOCHEAT, "optional display refresh rate option for vid mode", 0.0f, 200.0f );
 idCVar r_fullscreen( "r_fullscreen", "0", CVAR_RENDERER | CVAR_ARCHIVE | CVAR_BOOL, "0 = windowed, 1 = full screen" );
@@ -487,7 +487,7 @@ void R_InitOpenGL( void ) {
 		parms.height = glConfig.vidHeight;
 		parms.fullScreen = r_fullscreen.GetBool();
 		parms.displayHz = r_displayRefresh.GetInteger();
-		parms.multiSamples = r_multiSamples.GetInteger();
+		parms.multiSamples = 0; 
 		parms.stereo = false;
 
 		if ( GLimp_Init( parms ) ) {
@@ -504,7 +504,6 @@ void R_InitOpenGL( void ) {
 		r_mode.SetInteger( 3 );
 		r_fullscreen.SetInteger( 1 );
 		r_displayRefresh.SetInteger( 0 );
-		r_multiSamples.SetInteger( 0 );
 	}
 
 	// input and sound systems need to be tied to the new window
@@ -1692,7 +1691,7 @@ void R_VidRestart_f( const idCmdArgs &args ) {
 		parms.height = glConfig.vidHeight;
 		parms.fullScreen = ( forceWindow ) ? false : r_fullscreen.GetBool();
 		parms.displayHz = r_displayRefresh.GetInteger();
-		parms.multiSamples = r_multiSamples.GetInteger();
+		parms.multiSamples = 0;
 		parms.stereo = false;
 		GLimp_SetScreenParms( parms );
 	}
@@ -1916,43 +1915,7 @@ void idRenderSystemLocal::Init( void ) {
 	declManager->RegisterDeclType("renderProg", DECL_RENDERPROGS, idDeclAllocator<rvmDeclRenderProg>);
 	declManager->RegisterDeclFolder("renderprogs", ".mrpr", DECL_RENDERPROGS);
 
-	albedoTextureParam = declManager->FindRenderParam("albedoTexture");		
-	bumpmapTextureParam = declManager->FindRenderParam("bumpmap");
-	specularTextureParam = declManager->FindRenderParam("specularmap");
-	lightfalloffTextureParam = declManager->FindRenderParam("lightfallofftex");
-	lightProgTextureParam = declManager->FindRenderParam("lightprogtex");
-	bumpmatrixSParam = declManager->FindRenderParam("rpbumpmatrixs");
-	bumpmatrixTParam = declManager->FindRenderParam("rpbumpmatrixt");
-	diffuseMatrixSParam = declManager->FindRenderParam("rpdiffusematrixs");
-	diffuseMatrixTParam = declManager->FindRenderParam("rpdiffusematrixt");
-	specularMatrixSParam = declManager->FindRenderParam("rpspecularmatrixs");
-	specularMatrixTParam = declManager->FindRenderParam("rpspecularmatrixt");
-	viewOriginParam = declManager->FindRenderParam("vieworigin");
-	lightColorParam = declManager->FindRenderParam("lightcolor");
-	lightScaleParam = declManager->FindRenderParam("lightscale");
-	shadowMapInfoParm = declManager->FindRenderParam("shadowMapInfo");
-	globalLightOriginParam = declManager->FindRenderParam("globalLightOrigin");
-	globalLightExtentsParam = declManager->FindRenderParam("globalLightExtents");
-
-	numLightsParam = declManager->FindRenderParam("numLights");
-
-	atlasLookupParam = declManager->FindRenderParam("atlasLookup");
-	shadowMapAtlasParam = declManager->FindRenderParam("shadowMapAtlas");
-
-	modelMatrixX = declManager->FindRenderParam("modelMatrixX");
-	modelMatrixY = declManager->FindRenderParam("modelMatrixY");
-	modelMatrixZ = declManager->FindRenderParam("modelMatrixZ");
-	modelMatrixW = declManager->FindRenderParam("modelMatrixW");
-
-	mvpMatrixX = declManager->FindRenderParam("mvpMatrixX");
-	mvpMatrixY = declManager->FindRenderParam("mvpMatrixY");
-	mvpMatrixZ = declManager->FindRenderParam("mvpMatrixZ");
-	mvpMatrixW = declManager->FindRenderParam("mvpMatrixW");
-
-	vertexColorParm = declManager->FindRenderParam("vertexcolor");
-
-	vertexScaleModulateParam = declManager->FindRenderParam("vertexcolormodulate");
-	vertexScaleAddParam = declManager->FindRenderParam("vertexcoloradd");
+	InitRenderParms();
 
 	char* globalIncludeBuffer = NULL;
 	if (fileSystem->ReadFile("decls/renderProgs/global.inc", (void **)&globalIncludeBuffer) <= 0)

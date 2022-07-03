@@ -30,6 +30,7 @@ If you have questions concerning this license or the applicable additional terms
 #define __RENDERER_H__
 
 class rvmToolGui;
+class idRenderTexture;
 
 /*
 ===============================================================================
@@ -263,6 +264,9 @@ public:
 	// Creates a image. 
 	virtual idImage*		CreateImage(const char* name, idImageOpts* opts, textureFilter_t textureFilter) = 0;
 
+	// Allocates a render texture.
+	virtual idRenderTexture* AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture) = 0;
+
 	// Nukes the entire shadow map cache(warning this is slow!).
 	virtual void			NukeShadowMapCache(void) = 0;
 
@@ -271,6 +275,27 @@ public:
 
 	// Renders a tool gui to the screen.
 	virtual void			RenderToolGui(rvmToolGui* toolGui) = 0;
+
+	// Returns the number of requested MSAA samples.
+	virtual int				GetNumMSAASamples() = 0;
+
+	// Resizes a image to the specified width and height.
+	virtual void			ResizeImage(idImage* image, int width, int height) = 0;
+
+	// Resizes a render texture to the specified width and height.
+	virtual void			ResizeRenderTexture(idRenderTexture* renderTexture, int width, int height) = 0;
+
+	// Binds the specified render texture, set as nullptr to draw directly to the back buffer.
+	virtual void			BindRenderTexture(idRenderTexture* renderTexture) = 0;
+
+	// Resolves a msaa render texture to the blit render texture.
+	virtual void			ResolveMSAA(idRenderTexture* msaaRenderTexture, idRenderTexture* destRenderTexture) = 0;
+
+	// Fills in the image dinem for the given image.
+	virtual void			GetImageSize(idImage* image, int& imageWidth, int& imageHeight) = 0;
+
+	// Clears a render target.
+	virtual void			ClearRenderTarget(bool clearColor, bool clearDepth, float depthValue, float red, float green, float blue) = 0;
 };
 
 extern idRenderSystem *			renderSystem;

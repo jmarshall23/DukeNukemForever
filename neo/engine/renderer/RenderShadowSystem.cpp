@@ -88,8 +88,7 @@ void rvmRenderShadowSystem::Init(void) {
 
 		idImage* depthImage = renderSystem->CreateImage("_shadowMapAtlas", &opts, TF_LINEAR);
 
-		shadowMapAtlasRT = new idRenderTexture(NULL, depthImage);
-		shadowMapAtlasRT->InitRenderTexture();
+		shadowMapAtlasRT = renderSystem->AllocRenderTexture("shadowRT", nullptr, depthImage);			
 	}
 
 #ifdef ID_ALLOW_TOOLS

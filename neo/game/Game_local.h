@@ -417,6 +417,8 @@ public:
 
 	virtual void				GetMapLoadingGUI( char gui[ MAX_STRING_CHARS ] );
 
+	virtual void			InitGameRender() = 0;
+
 	// ---------------------- Public idGameLocal Interface -------------------
 
 	void					Printf( const char *fmt, ... ) const id_attribute((format(printf,2,3)));

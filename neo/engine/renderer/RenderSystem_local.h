@@ -209,6 +209,9 @@ typedef enum {
 	RC_SET_BUFFER,
 	RC_COPY_RENDER,
 	RC_RENDER_TOOLGUI,
+	RC_SET_RENDERTEXTURE,
+	RC_RESOLVE_MSAA,
+	RC_CLEAR_RENDERTARGET,
 	RC_SWAP_BUFFERS		// can't just assume swap at end of list because
 						// of forced list submission before syncs
 } renderCommand_t;
@@ -239,6 +242,26 @@ typedef struct {
 	idImage	*image;
 	int		cubeFace;					// when copying to a cubeMap
 } copyRenderCommand_t;
+
+typedef struct {
+	renderCommand_t		commandId, * next;
+	idRenderTexture* renderTexture;
+} setRenderTargetCommand_t;
+
+typedef struct {
+	renderCommand_t		commandId, * next;
+	bool clearColor;
+	bool clearDepth;
+
+	float clearDepthValue;
+	idVec4 clearColorValue;
+} renderClearBufferCommand_t;
+
+typedef struct {
+	renderCommand_t		commandId, * next;
+	idRenderTexture* msaaRenderTexture;
+	idRenderTexture* destRenderTexture;
+} resolveRenderTargetCommand_t;
 
 
 //=======================================================================
@@ -407,6 +430,8 @@ typedef struct {
 	glstate_t			glState;
 
 	int					c_copyFrameBuffer;
+
+	idRenderTexture	*	renderTexture;
 } backEndState_t;
 
 
@@ -475,11 +500,19 @@ public:
 	virtual void			UnCrop();
 	virtual void			GetCardCaps( bool &oldCard, bool &nv10or20 );
 	virtual bool			UploadImage( const char *imageName, const byte *data, int width, int height );
+	virtual idRenderTexture* AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture);
 	virtual idImage*		CreateImage(const char* name, idImageOpts* opts, textureFilter_t textureFilter);
 	rvmDeclRenderProg*		FindRenderProgram(const char* name) { return (rvmDeclRenderProg*)declManager->FindType(DECL_RENDERPROGS, name); }	
 	virtual void			NukeShadowMapCache(void);
 	virtual void			InvalidateShadowMap(int uniqueLightID);
 	virtual void			RenderToolGui(rvmToolGui* toolGui);
+	virtual int				GetNumMSAASamples();	
+	virtual void			ResizeImage(idImage* image, int width, int height);
+	virtual void			ResizeRenderTexture(idRenderTexture* renderTexture, int width, int height);
+	virtual void			BindRenderTexture(idRenderTexture* renderTexture);
+	virtual void			ResolveMSAA(idRenderTexture* msaaRenderTexture, idRenderTexture* destRenderTexture);
+	virtual void			GetImageSize(idImage* image, int& imageWidth, int& imageHeight);
+	virtual void			ClearRenderTarget(bool clearColor, bool clearDepth, float depthValue, float red, float green, float blue);
 public:
 	// internal functions
 							idRenderSystemLocal( void );
@@ -489,6 +522,7 @@ public:
 	void					SetBackEndRenderer();			// sets tr.backEndRenderer based on cvars
 	void					RenderViewToViewport( const renderView_t *renderView, idScreenRect *viewport );
 
+	void					InitRenderParms(void);
 public:
 	// renderer globals
 	bool					registered;		// cleared at shutdown, set at InitOpenGL
@@ -589,6 +623,7 @@ public:
 	rvmDeclRenderParam* shadowMapAtlasParam;
 	rvmDeclRenderParam* atlasLookupParam;
 	rvmDeclRenderParam* vertexColorParm;
+	rvmDeclRenderParam* screenInfoParam;
 
 	idStr					globalRenderInclude;
 

@@ -360,6 +360,8 @@ void idGameLocal::Init( void ) {
 
 	navigationManager->Init();
 
+	InitGameRender();
+
 	gamestate = GAMESTATE_NOMAP;
 
 	Printf( "game initialized.\n" );

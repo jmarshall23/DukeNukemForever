@@ -988,6 +988,32 @@ idImage* idRenderSystemLocal::CreateImage(const char* name, idImageOpts* opts, t
 
 /*
 ===============
+idRenderSystemLocal::AllocRenderTexture
+===============
+*/
+idRenderTexture* idRenderSystemLocal::AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture) {
+	idRenderTexture* renderTexture = new idRenderTexture(albedoTexture, depthTexture);
+	renderTexture->InitRenderTexture();
+	return renderTexture;
+}
+
+/*
+===============
+idRenderSystemLocal::GetNumMSAASamples
+===============
+*/
+int	idRenderSystemLocal::GetNumMSAASamples() {
+	if (r_multiSamples.GetInteger() < 0)
+		return 0;
+
+	if (r_multiSamples.GetInteger() > 8)
+		return 8;
+
+	return r_multiSamples.GetInteger();
+}
+
+/*
+===============
 idRenderSystemLocal::NukeShadowMapCache
 ===============
 */
@@ -1015,4 +1041,79 @@ void idRenderSystemLocal::RenderToolGui(rvmToolGui* toolGui) {
 	drawToolGuiCommand_t* cmd = (drawToolGuiCommand_t*)R_GetCommandBuffer(sizeof(*cmd));
 	cmd->commandId = RC_RENDER_TOOLGUI;
 	cmd->toolGui = toolGui;
+}
+
+/*
+================
+idRenderSystemLocal::ResizeImage
+================
+*/
+void idRenderSystemLocal::ResizeImage(idImage* image, int width, int height) {
+	image->Resize(width, height);
+}
+
+/*
+================
+idRenderSystemLocal::GetImageSize
+================
+*/
+void idRenderSystemLocal::GetImageSize(idImage* image, int& imageWidth, int& imageHeight) {
+	imageWidth = image->GetOpts().width;
+	imageHeight = image->GetOpts().height;
+}
+
+/*
+================
+idRenderSystemLocal::ResizeRenderTexture
+================
+*/
+void idRenderSystemLocal::ResizeRenderTexture(idRenderTexture* renderTexture, int width, int height) {
+	renderTexture->Resize(width, height);
+}
+
+/*
+================
+idRenderSystemLocal::BindRenderTexture
+================
+*/
+void idRenderSystemLocal::BindRenderTexture(idRenderTexture* renderTexture) {
+	setRenderTargetCommand_t* cmd;
+
+	cmd = (setRenderTargetCommand_t*)R_GetCommandBuffer(sizeof(*cmd));
+	cmd->commandId = RC_SET_RENDERTEXTURE;
+
+	cmd->renderTexture = renderTexture;
+}
+
+/*
+================
+idRenderSystemLocal::ResolveMSAA
+================
+*/
+void idRenderSystemLocal::ResolveMSAA(idRenderTexture* msaaRenderTexture, idRenderTexture* destRenderTexture) {
+	resolveRenderTargetCommand_t* cmd;
+
+	cmd = (resolveRenderTargetCommand_t*)R_GetCommandBuffer(sizeof(*cmd));
+	cmd->commandId = RC_RESOLVE_MSAA;
+
+	cmd->msaaRenderTexture = msaaRenderTexture;
+	cmd->destRenderTexture = destRenderTexture;
+}
+
+/*
+===============
+idRenderSystemLocal::ClearRenderTarget
+===============
+*/
+void idRenderSystemLocal::ClearRenderTarget(bool clearColor, bool clearDepth, float depthValue, float red, float green, float blue) {
+	renderClearBufferCommand_t* cmd;
+
+	cmd = (renderClearBufferCommand_t*)R_GetCommandBuffer(sizeof(*cmd));
+	cmd->commandId = RC_CLEAR_RENDERTARGET;
+
+	cmd->clearColor = clearColor;
+	cmd->clearDepth = clearDepth;
+
+	cmd->clearDepthValue = depthValue;
+	cmd->clearColorValue = idVec4(red, green, blue, 1.0);
 }

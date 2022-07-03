@@ -2,12 +2,26 @@
 //
 
 #include "GameSys/DukeCvar.h"
+#include "Renderer/DnFullscreenRenderTarget.h"
+
+//
+// DnRenderPlatform
+//
+struct DnRenderPlatform
+{
+	DnFullscreenRenderTarget* frontEndPassRenderTarget;
+	DnFullscreenRenderTarget* frontEndPassRenderTargetResolved;
+
+	const idMaterial* upscaleFrontEndResolveMaterial;
+};
 
 //
 // dnGameLocal
 //
 class dnGameLocal : public idGameLocal {
 public:
+	virtual void			InitGameRender();
+
 	virtual bool			Draw(int clientNum);
 
 	virtual DukePlayer* GetLocalDukePlayer() { return (DukePlayer*)GetLocalPlayer(); }
@@ -18,4 +32,6 @@ public:
 	bool					IsParentalLockEnabled(void);
 private:
 	void					DrawPortalSky(renderView_t &hackedView);
+
+	DnRenderPlatform		renderPlatform;
 };
