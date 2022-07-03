@@ -187,6 +187,10 @@ idRenderModelCommitted* idRenderWorldCommitted::CommitRenderModel(idRenderEntity
 	return vModel;
 }
 
+int sortLightEntities(idRenderLightAttachedEntity* a, idRenderLightAttachedEntity* b)
+{
+	return a->distance - b->distance;
+}
 
 /*
 ===================
@@ -223,10 +227,10 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 		vLight->shaderRegisters = lightRegs;
 		lightShader->EvaluateRegisters(lightRegs, lightDef->parms.shaderParms, tr.viewDef, lightDef->parms.referenceSound);
 
-		int litRenderTableSize = renderWorldFrontEnd->entityDefs.Num() * sizeof(idRenderEntityLocal*);
+		int litRenderTableSize = renderWorldFrontEnd->entityDefs.Num() * sizeof(idRenderEntityLocal);
 
 		vLight->litRenderEntityTableSize = renderWorldFrontEnd->entityDefs.Num();
-		vLight->litRenderEntities = (idRenderEntityLocal**)R_FrameAlloc(litRenderTableSize);
+		vLight->litRenderEntities = (idRenderLightAttachedEntity*)R_FrameAlloc(litRenderTableSize);
 		memset(vLight->litRenderEntities, 0, litRenderTableSize);	
 	}
 
@@ -264,11 +268,14 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 		vEnt->AddDrawsurfs(i, tr.viewDef->viewLights);
 	}
 
+
 	// We have already consumed the lightRendered states, so mark them as not rendered. 
 	// This has to be done at the end so CommitRenderModel can determine what lights are visible.
 	vLight = tr.viewDef->viewLights;
 	while (vLight != nullptr)
 	{
+		qsort(vLight->litRenderEntities, vLight->litRenderEntityTableSize, sizeof(idRenderLightAttachedEntity), (_CoreCrtNonSecureSearchSortCompareFunction)sortLightEntities);
+
 		vLight->lightDef->lightRendered = false;
 		vLight = vLight->next;
 	}

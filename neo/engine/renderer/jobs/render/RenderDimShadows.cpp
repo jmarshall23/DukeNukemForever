@@ -51,10 +51,10 @@ RB_Shadow_RenderOccluders
 void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 	for (int i = 0; i < vLight->litRenderEntityTableSize; i++)
 	{
-		if (vLight->litRenderEntities[i] == nullptr)
+		if (vLight->litRenderEntities[i].entity == nullptr)
 			continue;
 
-		const idRenderEntityLocal* entityDef = vLight->litRenderEntities[i];
+		const idRenderEntityLocal* entityDef = vLight->litRenderEntities[i].entity;
 		idRenderModel* inter = entityDef->viewEntity->renderModel;
 
 		if (entityDef->parms.noShadow)

@@ -3,6 +3,15 @@
 
 class idRenderLightLocal;
 
+//
+// idRenderLightAttachedEntity
+//
+struct idRenderLightAttachedEntity
+{
+	idRenderEntityLocal* entity;
+	float distance;
+};
+
 static const float INSIDE_LIGHT_FRUSTUM_SLOP = 32;
 
 // idRenderLightCommitted are allocated on the frame temporary stack memory
@@ -54,5 +63,5 @@ public:
 	int						shadowMapSlice;
 
 	int litRenderEntityTableSize;
-	idRenderEntityLocal		**litRenderEntities;
+	idRenderLightAttachedEntity*	litRenderEntities;
 };
