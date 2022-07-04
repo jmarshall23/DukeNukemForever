@@ -1,0 +1,13 @@
+postprocess_upscale
+{
+	vertex
+	{
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+		vertex_texcoord0 = attr_TexCoord0;
+	}
+
+	pixel
+	{
+		finalpixel_color = texture2D($albedotexture,vertex_texcoord0.st);
+	}
+}

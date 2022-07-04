@@ -100,157 +100,93 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 		}
 
 		// see if we are a new-style stage
-		newShaderStage_t* newStage = pStage->newStage;
-		if (newStage) {
+		newShaderStage_t* newStage = pStage->newStage;	
+
+		if (!newStage) {
 			//--------------------------
 			//
-			// new style stages
+			// old style stages
 			//
 			//--------------------------
 
-			// completely skip the stage if we don't have the capability
-			if (tr.backEndRenderer != BE_ARB2) {
+			// set the color
+			color[0] = regs[pStage->color.registers[0]];
+			color[1] = regs[pStage->color.registers[1]];
+			color[2] = regs[pStage->color.registers[2]];
+			color[3] = regs[pStage->color.registers[3]];
+
+			// skip the entire stage if an add would be black
+			if ((pStage->drawStateBits & (GLS_SRCBLEND_BITS | GLS_DSTBLEND_BITS)) == (GLS_SRCBLEND_ONE | GLS_DSTBLEND_ONE)
+				&& color[0] <= 0 && color[1] <= 0 && color[2] <= 0) {
 				continue;
 			}
-			if (r_skipNewAmbient.GetBool()) {
+
+			// skip the entire stage if a blend would be completely transparent
+			if ((pStage->drawStateBits & (GLS_SRCBLEND_BITS | GLS_DSTBLEND_BITS)) == (GLS_SRCBLEND_SRC_ALPHA | GLS_DSTBLEND_ONE_MINUS_SRC_ALPHA)
+				&& color[3] <= 0) {
 				continue;
 			}
-			glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), (void*)&ac->color);
-			glVertexAttribPointerARB(9, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->tangents[0].ToFloatPtr());
-			glVertexAttribPointerARB(10, 3, GL_FLOAT, false, sizeof(idDrawVert), ac->tangents[1].ToFloatPtr());
-			glNormalPointer(GL_FLOAT, sizeof(idDrawVert), ac->normal.ToFloatPtr());
 
-			glEnableClientState(GL_COLOR_ARRAY);
-			glEnableVertexAttribArrayARB(9);
-			glEnableVertexAttribArrayARB(10);
-			glEnableClientState(GL_NORMAL_ARRAY);
+			// select the vertex color source
+			if (pStage->vertexColor == SVC_IGNORE) {
+				color[3] = 2.0f;
+				tr.vertexColorParm->SetVectorValue(color);
+			}
+			else {
+				tr.vertexColorParm->SetVectorValue(color);
 
+				glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), (void*)&ac->color);
+				glEnableClientState(GL_COLOR_ARRAY);
+
+				if (pStage->vertexColor == SVC_INVERSE_MODULATE) {
+					GL_TexEnv(GL_COMBINE_ARB);
+					glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_ARB, GL_MODULATE);
+					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_ARB, GL_TEXTURE);
+					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_PRIMARY_COLOR_ARB);
+					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_RGB_ARB, GL_SRC_COLOR);
+					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_RGB_ARB, GL_ONE_MINUS_SRC_COLOR);
+					glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
+				}
+
+				// for vertex color and modulated color, we need to enable a second
+				// texture stage
+				if (color[0] != 1 || color[1] != 1 || color[2] != 1 || color[3] != 1) {
+					GL_SelectTexture(1);
+
+					globalImages->whiteImage->Bind();
+					GL_TexEnv(GL_COMBINE_ARB);
+
+					glTexEnvfv(GL_TEXTURE_ENV, GL_TEXTURE_ENV_COLOR, color);
+
+					glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_ARB, GL_MODULATE);
+					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_ARB, GL_PREVIOUS_ARB);
+					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_CONSTANT_ARB);
+					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_RGB_ARB, GL_SRC_COLOR);
+					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_RGB_ARB, GL_SRC_COLOR);
+					glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
+
+					glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_ALPHA_ARB, GL_MODULATE);
+					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_ALPHA_ARB, GL_PREVIOUS_ARB);
+					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_ALPHA_ARB, GL_CONSTANT_ARB);
+					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_ALPHA_ARB, GL_SRC_ALPHA);
+					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_ALPHA_ARB, GL_SRC_ALPHA);
+					glTexEnvi(GL_TEXTURE_ENV, GL_ALPHA_SCALE, 1);
+
+					GL_SelectTexture(0);
+				}
+			}
+		}
+
+		if (!newStage) {
+			// bind the texture
+			RB_BindVariableStageImage(&pStage->texture, regs);
+
+			// set the state
 			GL_State(pStage->drawStateBits);
-
-			glBindProgramARB(GL_VERTEX_PROGRAM_ARB, newStage->vertexProgram);
-			glEnable(GL_VERTEX_PROGRAM_ARB);
-
-			for (int i = 0; i < newStage->numVertexParms; i++) {
-				float	parm[4];
-				parm[0] = regs[newStage->vertexParms[i][0]];
-				parm[1] = regs[newStage->vertexParms[i][1]];
-				parm[2] = regs[newStage->vertexParms[i][2]];
-				parm[3] = regs[newStage->vertexParms[i][3]];
-				glProgramLocalParameter4fvARB(GL_VERTEX_PROGRAM_ARB, i, parm);
-			}
-
-			for (int i = 0; i < newStage->numFragmentProgramImages; i++) {
-				if (newStage->fragmentProgramImages[i]) {
-					GL_SelectTexture(i);
-					newStage->fragmentProgramImages[i]->Bind();
-				}
-			}
-			glBindProgramARB(GL_FRAGMENT_PROGRAM_ARB, newStage->fragmentProgram);
-			glEnable(GL_FRAGMENT_PROGRAM_ARB);
-
-			// draw it
-			RB_DrawElementsWithCounters(tri);
-
-			for (int i = 1; i < newStage->numFragmentProgramImages; i++) {
-				if (newStage->fragmentProgramImages[i]) {
-					GL_SelectTexture(i);
-					globalImages->BindNull();
-				}
-			}
-
-			GL_SelectTexture(0);
-
-			glDisable(GL_VERTEX_PROGRAM_ARB);
-			glDisable(GL_FRAGMENT_PROGRAM_ARB);
-			// Fixme: Hack to get around an apparent bug in ATI drivers.  Should remove as soon as it gets fixed.
-			glBindProgramARB(GL_VERTEX_PROGRAM_ARB, 0);
-
-			glDisableClientState(GL_COLOR_ARRAY);
-			glDisableVertexAttribArrayARB(9);
-			glDisableVertexAttribArrayARB(10);
-			glDisableClientState(GL_NORMAL_ARRAY);
-			continue;
-		}
-
-
-		//--------------------------
-		//
-		// old style stages
-		//
-		//--------------------------
-
-		// set the color
-		color[0] = regs[pStage->color.registers[0]];
-		color[1] = regs[pStage->color.registers[1]];
-		color[2] = regs[pStage->color.registers[2]];
-		color[3] = regs[pStage->color.registers[3]];
-
-		// skip the entire stage if an add would be black
-		if ((pStage->drawStateBits & (GLS_SRCBLEND_BITS | GLS_DSTBLEND_BITS)) == (GLS_SRCBLEND_ONE | GLS_DSTBLEND_ONE)
-			&& color[0] <= 0 && color[1] <= 0 && color[2] <= 0) {
-			continue;
-		}
-
-		// skip the entire stage if a blend would be completely transparent
-		if ((pStage->drawStateBits & (GLS_SRCBLEND_BITS | GLS_DSTBLEND_BITS)) == (GLS_SRCBLEND_SRC_ALPHA | GLS_DSTBLEND_ONE_MINUS_SRC_ALPHA)
-			&& color[3] <= 0) {
-			continue;
-		}
-
-		// select the vertex color source
-		if (pStage->vertexColor == SVC_IGNORE) {		
-			color[3] = 2.0f;
-			tr.vertexColorParm->SetVectorValue(color);
 		}
 		else {
-			tr.vertexColorParm->SetVectorValue(color);
-
-			glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), (void*)&ac->color);
-			glEnableClientState(GL_COLOR_ARRAY);
-
-			if (pStage->vertexColor == SVC_INVERSE_MODULATE) {
-				GL_TexEnv(GL_COMBINE_ARB);
-				glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_ARB, GL_MODULATE);
-				glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_ARB, GL_TEXTURE);
-				glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_PRIMARY_COLOR_ARB);
-				glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_RGB_ARB, GL_SRC_COLOR);
-				glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_RGB_ARB, GL_ONE_MINUS_SRC_COLOR);
-				glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
-			}
-
-			// for vertex color and modulated color, we need to enable a second
-			// texture stage
-			if (color[0] != 1 || color[1] != 1 || color[2] != 1 || color[3] != 1) {
-				GL_SelectTexture(1);
-
-				globalImages->whiteImage->Bind();
-				GL_TexEnv(GL_COMBINE_ARB);
-
-				glTexEnvfv(GL_TEXTURE_ENV, GL_TEXTURE_ENV_COLOR, color);
-
-				glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_ARB, GL_MODULATE);
-				glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_ARB, GL_PREVIOUS_ARB);
-				glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_CONSTANT_ARB);
-				glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_RGB_ARB, GL_SRC_COLOR);
-				glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_RGB_ARB, GL_SRC_COLOR);
-				glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
-
-				glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_ALPHA_ARB, GL_MODULATE);
-				glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_ALPHA_ARB, GL_PREVIOUS_ARB);
-				glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_ALPHA_ARB, GL_CONSTANT_ARB);
-				glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_ALPHA_ARB, GL_SRC_ALPHA);
-				glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_ALPHA_ARB, GL_SRC_ALPHA);
-				glTexEnvi(GL_TEXTURE_ENV, GL_ALPHA_SCALE, 1);
-
-				GL_SelectTexture(0);
-			}
+			GL_State(GLS_DEFAULT);
 		}
-
-		// bind the texture
-		RB_BindVariableStageImage(&pStage->texture, regs);
-
-		// set the state
-		GL_State(pStage->drawStateBits);
 
 		//RB_PrepareStageTexturing(pStage, surf, ac);
 
@@ -258,9 +194,29 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 		glVertexAttribPointerARB(PC_ATTRIB_INDEX_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(idDrawVert), (void*)&ac->color);
 
 		// draw it
-		tr.guiTextureProgram->Bind();
+		if (newStage) {
+			for (int i = 0; i < newStage->numStageParms; i++) {
+				switch (newStage->stageParms[i].param->GetType())
+				{
+					case RENDERPARM_TYPE_IMAGE:
+						newStage->stageParms[i].param->SetImage(newStage->stageParms[i].imageValue);
+						break;
+				}
+			}
+
+			newStage->renderProgram->Bind();
+		}
+		else {
+			tr.guiTextureProgram->Bind();
+		}
 		RB_DrawElementsWithCounters(tri);
-		tr.guiTextureProgram->BindNull();
+
+		if (newStage) {
+			newStage->renderProgram->BindNull();
+		}
+		else {
+			tr.guiTextureProgram->BindNull();
+		}
 
 		glDisableVertexAttribArrayARB(PC_ATTRIB_INDEX_COLOR);
 

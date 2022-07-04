@@ -41,7 +41,7 @@ class idImage;
 class idCinematic;
 class idUserInterface;
 class idMegaTexture;
-
+class rvmDeclRenderProg;
 class idRenderWorldCommitted;
 
 // moved from image.h for default parm
@@ -187,19 +187,22 @@ typedef enum {
 	SVC_INVERSE_MODULATE
 } stageVertexColor_t;
 
-static const int	MAX_FRAGMENT_IMAGES = 8;
-static const int	MAX_VERTEX_PARMS = 4;
+#define MAX_NEWSTAGE_RENDERPARMS			10
 
 typedef struct {
-	int					vertexProgram;
-	int					numVertexParms;
-	int					vertexParms[MAX_VERTEX_PARMS][4];	// evaluated register indexes
+	rvmDeclRenderParam* param;
+	idImage* imageValue;
+	idVec4					vectorValue;
+	float					floatValue;
+	int						array_size;
+	int						intValue;
+} newShaderStageRenderParam_t;
 
-	int					fragmentProgram;
-	int					numFragmentProgramImages;
-	idImage *			fragmentProgramImages[MAX_FRAGMENT_IMAGES];
+typedef struct {
+	rvmDeclRenderProg*			renderProgram;
 
-	idMegaTexture		*megaTexture;		// handles all the binding and parameter setting 
+	int numStageParms;
+	newShaderStageRenderParam_t stageParms[MAX_NEWSTAGE_RENDERPARMS];
 } newShaderStage_t;
 
 typedef struct {
@@ -600,8 +603,6 @@ private:
 	bool				MatchToken( idLexer &src, const char *match );
 	void				ParseSort( idLexer &src );
 	void				ParseBlend( idLexer &src, shaderStage_t *stage );
-	void				ParseVertexParm( idLexer &src, newShaderStage_t *newStage );
-	void				ParseFragmentMap( idLexer &src, newShaderStage_t *newStage );
 	void				ParseStage( idLexer &src, const textureRepeat_t trpDefault = TR_REPEAT );
 	void				ParseDeform( idLexer &src );
 	void				ParseDecalInfo( idLexer &src );

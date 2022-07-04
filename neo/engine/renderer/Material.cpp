@@ -863,151 +863,6 @@ void idMaterial::ParseBlend( idLexer &src, shaderStage_t *stage ) {
 }
 
 /*
-================
-idMaterial::ParseVertexParm
-
-If there is a single value, it will be repeated across all elements
-If there are two values, 3 = 0.0, 4 = 1.0
-if there are three values, 4 = 1.0
-================
-*/
-void idMaterial::ParseVertexParm( idLexer &src, newShaderStage_t *newStage ) {
-	idToken				token;
-
-	src.ReadTokenOnLine( &token );
-	int	parm = token.GetIntValue();
-	if ( !token.IsNumeric() || parm < 0 || parm >= MAX_VERTEX_PARMS ) {
-		common->Warning( "bad vertexParm number\n" );
-		SetMaterialFlag( MF_DEFAULTED );
-		return;
-	}
-	if ( parm >= newStage->numVertexParms ) {
-		newStage->numVertexParms = parm+1;
-	}
-
-	newStage->vertexParms[parm][0] = ParseExpression( src );
-
-	src.ReadTokenOnLine( &token );
-	if ( !token[0] || token.Icmp( "," ) ) {
-		newStage->vertexParms[parm][1] =
-		newStage->vertexParms[parm][2] =
-		newStage->vertexParms[parm][3] = newStage->vertexParms[parm][0];
-		return;
-	}
-
-	newStage->vertexParms[parm][1] = ParseExpression( src );
-
-	src.ReadTokenOnLine( &token );
-	if ( !token[0] || token.Icmp( "," ) ) {
-		newStage->vertexParms[parm][2] = GetExpressionConstant( 0 );
-		newStage->vertexParms[parm][3] = GetExpressionConstant( 1 );
-		return;
-	}
-
-	newStage->vertexParms[parm][2] = ParseExpression( src );
-
-	src.ReadTokenOnLine( &token );
-	if ( !token[0] || token.Icmp( "," ) ) {
-		newStage->vertexParms[parm][3] = GetExpressionConstant( 1 );
-		return;
-	}
-
-	newStage->vertexParms[parm][3] = ParseExpression( src );
-}
-
-
-/*
-================
-idMaterial::ParseFragmentMap
-================
-*/
-void idMaterial::ParseFragmentMap( idLexer &src, newShaderStage_t *newStage ) {
-	const char			*str;
-	textureFilter_t		tf;
-	textureRepeat_t		trp;
-	textureUsage_t		td;
-	cubeFiles_t			cubeMap;
-	bool				allowPicmip;
-	idToken				token;
-
-	tf = TF_DEFAULT;
-	trp = TR_REPEAT;
-	td = TD_DEFAULT;
-	allowPicmip = true;
-	cubeMap = CF_2D;
-
-	src.ReadTokenOnLine( &token );
-	int	unit = token.GetIntValue();
-	if ( !token.IsNumeric() || unit < 0 || unit >= MAX_FRAGMENT_IMAGES ) {
-		common->Warning( "bad fragmentMap number\n" );
-		SetMaterialFlag( MF_DEFAULTED );
-		return;
-	}
-
-	// unit 1 is the normal map.. make sure it gets flagged as the proper depth
-	if ( unit == 1 ) {
-		td = TD_BUMP;
-	}
-
-	if ( unit >= newStage->numFragmentProgramImages ) {
-		newStage->numFragmentProgramImages = unit+1;
-	}
-
-	while( 1 ) {
-		src.ReadTokenOnLine( &token );
-
-		if ( !token.Icmp( "cubeMap" ) ) {
-			cubeMap = CF_NATIVE;
-			continue;
-		}
-		if ( !token.Icmp( "cameraCubeMap" ) ) {
-			cubeMap = CF_CAMERA;
-			continue;
-		}
-		if ( !token.Icmp( "nearest" ) ) {
-			tf = TF_NEAREST;
-			continue;
-		}
-		if ( !token.Icmp( "linear" ) ) {
-			tf = TF_LINEAR;
-			continue;
-		}
-		if ( !token.Icmp( "clamp" ) ) {
-			trp = TR_CLAMP;
-			continue;
-		}
-		if ( !token.Icmp( "noclamp" ) ) {
-			trp = TR_REPEAT;
-			continue;
-		}
-		if ( !token.Icmp( "zeroclamp" ) ) {
-			trp = TR_CLAMP_TO_ZERO;
-			continue;
-		}
-		if ( !token.Icmp( "alphazeroclamp" ) ) {
-			trp = TR_CLAMP_TO_ZERO_ALPHA;
-			continue;
-		}
-
-		if ( !token.Icmp( "nopicmip" ) ) {
-			allowPicmip = false;
-			continue;
-		}
-
-		// assume anything else is the image name
-		src.UnreadToken( &token );
-		break;
-	}
-	str = R_ParsePastImageProgram( src );
-
-	newStage->fragmentProgramImages[unit] = 
-		globalImages->ImageFromFile( str, tf,  trp, td, cubeMap );
-	if ( !newStage->fragmentProgramImages[unit] ) {
-		newStage->fragmentProgramImages[unit] = globalImages->defaultImage;
-	}
-}
-
-/*
 ===============
 idMaterial::MultiplyTextureMatrix
 ===============
@@ -1458,14 +1313,31 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 			ss->conditionRegister = ParseExpression( src );
 			continue;
 		}
-		
-		if ( !token.Icmp( "vertexParm" ) ) {
-			ParseVertexParm( src, &newStage );
+
+		if (!token.Icmp("renderprog")) {
+			src.ReadToken(&token);
+			newStage.renderProgram = tr.FindRenderProgram(token);
 			continue;
 		}
+		
+		rvmDeclRenderParam* param = declManager->FindRenderParam(token, false);
+		if (param != nullptr && newStage.renderProgram != nullptr)
+		{
+			newStage.stageParms[newStage.numStageParms].param = param;
 
-		if (  !token.Icmp( "fragmentMap" ) ) {	
-			ParseFragmentMap( src, &newStage );
+			switch (param->GetType())
+			{
+				case RENDERPARM_TYPE_IMAGE:
+					{
+						src.ReadToken(&token);
+						idImage* image = globalImages->GetImage(token);
+						newStage.stageParms[newStage.numStageParms++].imageValue = image;						
+					}
+					break;
+				default:
+					common->FatalError("Unsupported renderparam type in material!");
+					break;
+			}
 			continue;
 		}
 
@@ -1477,10 +1349,10 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 
 
 	// if we are using newStage, allocate a copy of it
-	if ( newStage.fragmentProgram || newStage.vertexProgram ) {
+	if ( newStage.renderProgram ) {
 		ss->newStage = (newShaderStage_t *)Mem_Alloc( sizeof( newStage ) );
 		*(ss->newStage) = newStage;
-	}
+	} 
 
 	// successfully parsed a stage
 	numStages++;
@@ -2164,19 +2036,7 @@ bool idMaterial::Parse( const char *text, const int textLength ) {
 				coverage = MC_TRANSLUCENT;
 			}
 			break;
-		}
-		if ( pStage->newStage ) {
-			for ( int j = 0 ; j < pStage->newStage->numFragmentProgramImages ; j++ ) {
-				if ( pStage->newStage->fragmentProgramImages[j] == globalImages->currentRenderImage ) {
-					if ( sort != SS_PORTAL_SKY ) {
-						sort = SS_POST_PROCESS;
-						coverage = MC_TRANSLUCENT;
-					}
-					i = numStages;
-					break;
-				}
-			}
-		}
+		}		
 	}
 
 	// set the drawStateBits depth flags
@@ -2683,15 +2543,5 @@ idMaterial::ReloadImages
 */
 void idMaterial::ReloadImages( bool force ) const
 {
-	for ( int i = 0 ; i < numStages ; i++ ) {
-		if ( stages[i].newStage ) {
-			for ( int j = 0 ; j < stages[i].newStage->numFragmentProgramImages ; j++ ) {
-				if ( stages[i].newStage->fragmentProgramImages[j] ) {
-					stages[i].newStage->fragmentProgramImages[j]->Reload( force );
-				}
-			}
-		} else if ( stages[i].texture.image ) {
-			stages[i].texture.image->Reload( force );
-		}
-	}
+	
 }

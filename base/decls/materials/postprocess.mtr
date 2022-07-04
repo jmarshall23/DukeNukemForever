@@ -1,6 +1,7 @@
 postprocess/upScaleFrontEndResolve
 {
 	{
-		map _frontEndRenderPassResolvedAlbedo
+		renderprog postprocess_upscale
+		albedotexture _frontEndRenderPassResolvedAlbedo
 	}
 }
