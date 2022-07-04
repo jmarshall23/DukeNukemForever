@@ -167,3 +167,19 @@ vec4 TransformVertex(vec4 mvpX, vec4 mvpY, vec4 mvpZ, vec4 mvpW)
 	return position;
 }
 #endif
+
+float Min3(float x, float y, float z)
+{
+    return min(x, min(y, z));
+}
+
+float Max3(float x, float y, float z)
+{
+    return max(x, max(y, z));
+}
+
+
+float rcp(float v)
+{
+	return 1.0 / v;
+}

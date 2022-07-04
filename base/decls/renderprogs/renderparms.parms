@@ -42,4 +42,4 @@ renderParm vertexcoloradd { float4 }
 
 renderParm vertexcolor { float4 }
 
-renderParm screenInfo { float4 }
+renderParm screeninfo { float4 }
