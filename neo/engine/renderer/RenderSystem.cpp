@@ -991,8 +991,23 @@ idImage* idRenderSystemLocal::CreateImage(const char* name, idImageOpts* opts, t
 idRenderSystemLocal::AllocRenderTexture
 ===============
 */
-idRenderTexture* idRenderSystemLocal::AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture) {
+idRenderTexture* idRenderSystemLocal::AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture, idImage* colorImage2, idImage* colorImage3, idImage* colorImage4) {
 	idRenderTexture* renderTexture = new idRenderTexture(albedoTexture, depthTexture);
+	if (colorImage2 != nullptr)
+	{
+		renderTexture->AddRenderImage(colorImage2);
+	}
+
+	if (colorImage3 != nullptr)
+	{
+		renderTexture->AddRenderImage(colorImage3);
+	}
+
+	if (colorImage4 != nullptr)
+	{
+		renderTexture->AddRenderImage(colorImage4);
+	}
+
 	renderTexture->InitRenderTexture();
 	return renderTexture;
 }

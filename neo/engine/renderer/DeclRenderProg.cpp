@@ -267,6 +267,13 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_NORMAL, "attr_Normal");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_COLOR, "attr_Color");
 
+		glBindFragDataLocation(program, 0, "finalpixel_color");
+		glBindFragDataLocation(program, 1, "finalpixel_color2");
+		glBindFragDataLocation(program, 2, "finalpixel_color3");
+		glBindFragDataLocation(program, 3, "finalpixel_color4");
+		glBindFragDataLocation(program, 4, "finalpixel_color5");
+		glBindFragDataLocation(program, 5, "finalpixel_color6");
+
 		glLinkProgram(program);
 
 		int infologLength = 0;

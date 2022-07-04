@@ -13,6 +13,7 @@ struct DnRenderPlatform
 	DnFullscreenRenderTarget* frontEndPassRenderTargetResolved;
 
 	const idMaterial* upscaleFrontEndResolveMaterial;
+	const idMaterial* ssaoMaterial;
 };
 
 //

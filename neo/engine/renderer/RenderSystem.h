@@ -265,7 +265,7 @@ public:
 	virtual idImage*		CreateImage(const char* name, idImageOpts* opts, textureFilter_t textureFilter) = 0;
 
 	// Allocates a render texture.
-	virtual idRenderTexture* AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture) = 0;
+	virtual idRenderTexture* AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture, idImage *colorImage2, idImage *colorImage3, idImage *colorImage4) = 0;
 
 	// Nukes the entire shadow map cache(warning this is slow!).
 	virtual void			NukeShadowMapCache(void) = 0;

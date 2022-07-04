@@ -8,7 +8,7 @@
 DnFullscreenRenderTarget::DnFullscreenRenderTarget
 =========================
 */
-DnFullscreenRenderTarget::DnFullscreenRenderTarget(const char* name, bool hasAlbedo, bool hasDepth, bool hasMSAA)
+DnFullscreenRenderTarget::DnFullscreenRenderTarget(const char* name, bool hasAlbedo, bool hasDepth, bool hasMSAA, textureFormat_t albedoFormat2, textureFormat_t albedoFormat3, textureFormat_t albedoFormat4)
 {
 	if (!hasAlbedo && !hasDepth)
 	{
@@ -34,11 +34,44 @@ DnFullscreenRenderTarget::DnFullscreenRenderTarget(const char* name, bool hasAlb
 		opts.height = renderSystem->GetScreenHeight();
 		opts.numMSAASamples = numMultiSamples;
 
-		albedoImage = renderSystem->CreateImage(va("_%sAlbedo", name), &opts, TF_LINEAR);
+		for (int i = 0; i < 4; i++)
+		{
+			switch (i)
+			{
+				case 1:
+					opts.format = albedoFormat2;
+					break;
+				case 2:
+					opts.format = albedoFormat3;
+					break;
+				case 3:
+					opts.format = albedoFormat3;
+					break;
+
+			}
+
+			if (opts.format == FMT_NONE)
+			{
+				albedoImage[i] = nullptr;
+				continue;
+			}
+
+			if (i == 0)
+			{
+				albedoImage[i] = renderSystem->CreateImage(va("_%sAlbedo", name), &opts, TF_LINEAR);
+			}
+			else
+			{
+				albedoImage[i] = renderSystem->CreateImage(va("_%sColor%d", name, i), &opts, TF_LINEAR);
+			}
+		}
 	}
 	else
 	{
-		albedoImage = nullptr;
+		for (int i = 0; i < 4; i++)
+		{
+			albedoImage[i] = nullptr;
+		}
 	}
 
 	if (hasDepth)
@@ -61,7 +94,7 @@ DnFullscreenRenderTarget::DnFullscreenRenderTarget(const char* name, bool hasAlb
 		depthImage = nullptr;
 	}
 
-	renderTexture = renderSystem->AllocRenderTexture(name, albedoImage, depthImage);
+	renderTexture = renderSystem->AllocRenderTexture(name, albedoImage[0], depthImage, albedoImage[1], albedoImage[2], albedoImage[3]);
 }
 
 /*
@@ -128,9 +161,9 @@ void DnFullscreenRenderTarget::Resize(int width, int height)
 {
 	int targetWidth, targetHeight;
 
-	if (albedoImage)
+	if (albedoImage[0])
 	{
-		renderSystem->GetImageSize(albedoImage, targetWidth, targetHeight);
+		renderSystem->GetImageSize(albedoImage[0], targetWidth, targetHeight);
 	}
 	else if (depthImage)
 	{

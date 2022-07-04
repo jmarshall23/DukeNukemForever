@@ -2124,7 +2124,7 @@ static classVariableInfo_t idGameLocal_typeInfo[] = {
 };
 
 static classVariableInfo_t DnFullscreenRenderTarget_typeInfo[] = {
-	{ ": idImage *", "albedoImage", (intptr_t)(&((DnFullscreenRenderTarget *)0)->albedoImage), sizeof( ((DnFullscreenRenderTarget *)0)->albedoImage ) },
+	{ ": idImage *[4]", "albedoImage", (intptr_t)(&((DnFullscreenRenderTarget *)0)->albedoImage), sizeof( ((DnFullscreenRenderTarget *)0)->albedoImage ) },
 	{ "idImage *", "depthImage", (intptr_t)(&((DnFullscreenRenderTarget *)0)->depthImage), sizeof( ((DnFullscreenRenderTarget *)0)->depthImage ) },
 	{ "idRenderTexture *", "renderTexture", (intptr_t)(&((DnFullscreenRenderTarget *)0)->renderTexture), sizeof( ((DnFullscreenRenderTarget *)0)->renderTexture ) },
 	{ "int", "numMultiSamples", (intptr_t)(&((DnFullscreenRenderTarget *)0)->numMultiSamples), sizeof( ((DnFullscreenRenderTarget *)0)->numMultiSamples ) },
@@ -2135,6 +2135,7 @@ static classVariableInfo_t DnRenderPlatform_typeInfo[] = {
 	{ "DnFullscreenRenderTarget *", "frontEndPassRenderTarget", (intptr_t)(&((DnRenderPlatform *)0)->frontEndPassRenderTarget), sizeof( ((DnRenderPlatform *)0)->frontEndPassRenderTarget ) },
 	{ "DnFullscreenRenderTarget *", "frontEndPassRenderTargetResolved", (intptr_t)(&((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved), sizeof( ((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved ) },
 	{ "const idMaterial *", "upscaleFrontEndResolveMaterial", (intptr_t)(&((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial), sizeof( ((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial ) },
+	{ "const idMaterial *", "ssaoMaterial", (intptr_t)(&((DnRenderPlatform *)0)->ssaoMaterial), sizeof( ((DnRenderPlatform *)0)->ssaoMaterial ) },
 	{ NULL, 0 }
 };
 

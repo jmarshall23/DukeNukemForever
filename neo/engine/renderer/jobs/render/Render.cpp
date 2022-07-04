@@ -1026,6 +1026,7 @@ void idRender::RenderSingleView( const void *data ) {
 		value.Zero();
 		value.x = backEnd.renderTexture->GetWidth();
 		value.y = backEnd.renderTexture->GetHeight();
+		value.z = tr.frameCount;
 
 		tr.screenInfoParam->SetVectorValue(value);
 	}

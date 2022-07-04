@@ -5,3 +5,15 @@ postprocess/upScaleFrontEndResolve
 		albedotexture _frontEndRenderPassResolvedAlbedo
 	}
 }
+
+postprocess/ssao
+{
+	{
+		blend		modulate
+
+		renderprog postprocess_ssao
+		screennormaltexture _frontEndRenderPassResolvedColor1
+		screenxyztexture _frontEndRenderPassResolvedColor2
+		screendepthtexture _frontEndRenderPassResolvedDepth
+	}
+}

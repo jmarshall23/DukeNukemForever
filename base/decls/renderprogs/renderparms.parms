@@ -43,3 +43,7 @@ renderParm vertexcoloradd { float4 }
 renderParm vertexcolor { float4 }
 
 renderParm screeninfo { float4 }
+
+renderParm screennormaltexture { texture }
+renderParm screenxyztexture { texture }
+renderParm screendepthtexture { texture }

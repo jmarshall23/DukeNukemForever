@@ -179,14 +179,11 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 
 		if (!newStage) {
 			// bind the texture
-			RB_BindVariableStageImage(&pStage->texture, regs);
+			RB_BindVariableStageImage(&pStage->texture, regs);			
+		}
 
-			// set the state
-			GL_State(pStage->drawStateBits);
-		}
-		else {
-			GL_State(GLS_DEFAULT);
-		}
+		// set the state
+		GL_State(pStage->drawStateBits);
 
 		//RB_PrepareStageTexturing(pStage, surf, ac);
 

@@ -107,5 +107,11 @@ renderProg interaction
 
 		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * 3.0) + 0.3);
 		finalpixel_color.w = diffuseMap.w;
+
+		finalpixel_color2.xyz = vertex_texcoord3.xyz;
+		finalpixel_color2.w = diffuseMap.w;
+
+		finalpixel_color3.xyz = vertex.xyz;
+		finalpixel_color3.w = diffuseMap.w;
 	}
 }

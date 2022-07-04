@@ -500,7 +500,7 @@ public:
 	virtual void			UnCrop();
 	virtual void			GetCardCaps( bool &oldCard, bool &nv10or20 );
 	virtual bool			UploadImage( const char *imageName, const byte *data, int width, int height );
-	virtual idRenderTexture* AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture);
+	virtual idRenderTexture* AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture, idImage* colorImage2, idImage* colorImage3, idImage* colorImage4);
 	virtual idImage*		CreateImage(const char* name, idImageOpts* opts, textureFilter_t textureFilter);
 	rvmDeclRenderProg*		FindRenderProgram(const char* name) { return (rvmDeclRenderProg*)declManager->FindType(DECL_RENDERPROGS, name); }	
 	virtual void			NukeShadowMapCache(void);

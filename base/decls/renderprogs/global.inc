@@ -13,8 +13,10 @@ out vec4	vertex_texcoord0;
 out vec4	vertex_texcoord1;
 out vec4	vertex_texcoord2;
 out vec4	vertex_texcoord3;
+flat out vec4 vertex_texcoord3_flat;
 out vec4	vertex_texcoord4;
 out vec4	vertex_texcoord5;
+flat out vec4 vertex_texcoord5_flat;
 out vec4	vertex_texcoord6;
 out vec4	vertex_texcoord7;
 #endif
@@ -23,13 +25,20 @@ out vec4	vertex_texcoord7;
 in vec4		vertex_texcoord0;
 in vec4		vertex_texcoord1;
 in vec4		vertex_texcoord2;
+flat in vec4     vertex_texcoord3_flat;
 in vec4		vertex_texcoord3;
 in vec4		vertex_texcoord4;
 in vec4		vertex_texcoord5;
+flat in vec4 vertex_texcoord5_flat;
 in vec4		vertex_texcoord6;
 in vec4		vertex_texcoord7;
 
 out vec4	finalpixel_color;
+out vec4	finalpixel_color2;
+out vec4	finalpixel_color3;
+out vec4	finalpixel_color4;
+out vec4	finalpixel_color5;
+out vec4	finalpixel_color6;
 #endif
 
 float dot2( vec2 a, vec2 b ) { return dot( a, b ); }
@@ -182,4 +191,8 @@ float Max3(float x, float y, float z)
 float rcp(float v)
 {
 	return 1.0 / v;
+}
+
+float rand(float co) { 
+	return fract(sin(co*(91.3458)) * 47453.5453); 
 }
