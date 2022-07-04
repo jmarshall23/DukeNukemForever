@@ -44,9 +44,6 @@ class idForce_Grab : public idForce {
 public:
 	CLASS_PROTOTYPE( idForce_Grab );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 						idForce_Grab( void );
 	virtual				~idForce_Grab( void );
 						// initialize the drag force

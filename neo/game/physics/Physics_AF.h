@@ -817,9 +817,6 @@ public:
 							idPhysics_AF( void );
 							~idPhysics_AF( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 							// initialisation
 	int						AddBody( idAFBody *body );	// returns body id
 	void					AddConstraint( idAFConstraint *constraint );

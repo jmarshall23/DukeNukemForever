@@ -47,9 +47,6 @@ public:
 							idPhysics_Base( void );
 							~idPhysics_Base( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 public:	// common physics interface
 
 	void					SetSelf( idEntity *e );

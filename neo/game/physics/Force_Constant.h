@@ -45,10 +45,6 @@ public:
 						idForce_Constant( void );
 	virtual				~idForce_Constant( void );
 
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 						// constant force
 	void				SetForce( const idVec3 &force );
 						// set force position

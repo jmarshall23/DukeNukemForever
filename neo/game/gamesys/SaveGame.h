@@ -92,8 +92,6 @@ private:
 	idFile *				file;
 
 	idList<const idClass *>	objects;
-
-	void					CallSave_r( const idTypeInfo *cls, const idClass *obj );
 };
 
 class idRestoreGame {
@@ -157,8 +155,6 @@ private:
 	idFile *				file;
 
 	idList<idClass *>		objects;
-
-	void					CallRestore_r( const idTypeInfo *cls, idClass *obj );
 };
 
 #endif /* !__SAVEGAME_H__*/

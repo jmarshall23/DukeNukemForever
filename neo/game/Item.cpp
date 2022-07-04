@@ -88,48 +88,6 @@ idItem::~idItem() {
 
 /*
 ================
-idItem::Save
-================
-*/
-void idItem::Save( idSaveGame *savefile ) const {
-
-	savefile->WriteVec3( orgOrigin );
-	savefile->WriteBool( spin );
-	savefile->WriteBool( pulse );
-	savefile->WriteBool( canPickUp );
-
-	savefile->WriteMaterial( shellMaterial );
-
-	savefile->WriteBool( inView );
-	savefile->WriteInt( inViewTime );
-	savefile->WriteInt( lastCycle );
-	savefile->WriteInt( lastRenderViewTime );
-}
-
-/*
-================
-idItem::Restore
-================
-*/
-void idItem::Restore( idRestoreGame *savefile ) {
-
-	savefile->ReadVec3( orgOrigin );
-	savefile->ReadBool( spin );
-	savefile->ReadBool( pulse );
-	savefile->ReadBool( canPickUp );
-
-	savefile->ReadMaterial( shellMaterial );
-
-	savefile->ReadBool( inView );
-	savefile->ReadInt( inViewTime );
-	savefile->ReadInt( lastCycle );
-	savefile->ReadInt( lastRenderViewTime );
-
-	itemShellHandle = -1;
-}
-
-/*
-================
 idItem::UpdateRenderEntity
 ================
 */
@@ -599,26 +557,6 @@ idItemPowerup::idItemPowerup
 idItemPowerup::idItemPowerup() {
 	time = 0;
 	type = 0;
-}
-
-/*
-================
-idItemPowerup::Save
-================
-*/
-void idItemPowerup::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( time );
-	savefile->WriteInt( type );
-}
-
-/*
-================
-idItemPowerup::Restore
-================
-*/
-void idItemPowerup::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( time );
-	savefile->ReadInt( type );
 }
 
 /*
@@ -1373,24 +1311,6 @@ idObjective::idObjective() {
 
 /*
 ================
-idObjective::Save
-================
-*/
-void idObjective::Save( idSaveGame *savefile ) const {
-	savefile->WriteVec3( playerPos );
-}
-
-/*
-================
-idObjective::Restore
-================
-*/
-void idObjective::Restore( idRestoreGame *savefile ) {
-	savefile->ReadVec3( playerPos );
-}
-
-/*
-================
 idObjective::Spawn
 ================
 */
@@ -1633,41 +1553,6 @@ idMoveableItem::~idMoveableItem() {
 	if ( trigger ) {
 		delete trigger;
 	}
-}
-
-/*
-================
-idMoveableItem::Save
-================
-*/
-void idMoveableItem::Save( idSaveGame *savefile ) const {
-   	savefile->WriteStaticObject( physicsObj );
-
-	savefile->WriteClipModel( trigger );
-
-	savefile->WriteParticle( smoke );
-	savefile->WriteInt( smokeTime );
-#ifdef _D3XP
-	savefile->WriteInt( nextSoundTime );
-#endif
-}
-
-/*
-================
-idMoveableItem::Restore
-================
-*/
-void idMoveableItem::Restore( idRestoreGame *savefile ) {
-	savefile->ReadStaticObject( physicsObj );
-	RestorePhysics( &physicsObj );
-
-	savefile->ReadClipModel( trigger );
-
-	savefile->ReadParticle( smoke );
-	savefile->ReadInt( smokeTime );
-#ifdef _D3XP
-	savefile->ReadInt( nextSoundTime );
-#endif
 }
 
 /*
@@ -2071,24 +1956,6 @@ idObjectiveComplete::idObjectiveComplete
 */
 idObjectiveComplete::idObjectiveComplete() {
 	playerPos.Zero();
-}
-
-/*
-================
-idObjectiveComplete::Save
-================
-*/
-void idObjectiveComplete::Save( idSaveGame *savefile ) const {
-	savefile->WriteVec3( playerPos );
-}
-
-/*
-================
-idObjectiveComplete::Restore
-================
-*/
-void idObjectiveComplete::Restore( idRestoreGame *savefile ) {
-	savefile->ReadVec3( playerPos );
 }
 
 /*

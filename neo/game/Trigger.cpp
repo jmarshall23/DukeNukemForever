@@ -159,37 +159,6 @@ const function_t *idTrigger::GetScriptFunction( void ) const {
 
 /*
 ================
-idTrigger::Save
-================
-*/
-void idTrigger::Save( idSaveGame *savefile ) const {
-	if ( scriptFunction ) {
-		savefile->WriteString( scriptFunction->Name() );
-	} else {
-		savefile->WriteString( "" );
-	}
-}
-
-/*
-================
-idTrigger::Restore
-================
-*/
-void idTrigger::Restore( idRestoreGame *savefile ) {
-	idStr funcname;
-	savefile->ReadString( funcname );
-	if ( funcname.Length() ) {
-		scriptFunction = gameLocal.program.FindFunction( funcname );
-		if ( scriptFunction == NULL ) {
-			gameLocal.Warning( "idTrigger_Multi '%s' at (%s) calls unknown function '%s'", name.c_str(), GetPhysics()->GetOrigin().ToString(0), funcname.c_str() );
-		}
-	} else {
-		scriptFunction = NULL;
-	}
-}
-
-/*
-================
 idTrigger::Event_Enable
 ================
 */
@@ -268,44 +237,6 @@ idTrigger_Multi::idTrigger_Multi( void ) {
 	touchOther = false;
 	triggerFirst = false;
 	triggerWithSelf = false;
-}
-
-/*
-================
-idTrigger_Multi::Save
-================
-*/
-void idTrigger_Multi::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( wait );
-	savefile->WriteFloat( random );
-	savefile->WriteFloat( delay );
-	savefile->WriteFloat( random_delay );
-	savefile->WriteInt( nextTriggerTime );
-	savefile->WriteString( requires );
-	savefile->WriteInt( removeItem );
-	savefile->WriteBool( touchClient );
-	savefile->WriteBool( touchOther );
-	savefile->WriteBool( triggerFirst );
-	savefile->WriteBool( triggerWithSelf );
-}
-
-/*
-================
-idTrigger_Multi::Restore
-================
-*/
-void idTrigger_Multi::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( wait );
-	savefile->ReadFloat( random );
-	savefile->ReadFloat( delay );
-	savefile->ReadFloat( random_delay );
-	savefile->ReadInt( nextTriggerTime );
-	savefile->ReadString( requires );
-	savefile->ReadInt( removeItem );
-	savefile->ReadBool( touchClient );
-	savefile->ReadBool( touchOther );
-	savefile->ReadBool( triggerFirst );
-	savefile->ReadBool( triggerWithSelf );
 }
 
 /*
@@ -541,36 +472,6 @@ idTrigger_EntityName::idTrigger_EntityName( void ) {
 
 /*
 ================
-idTrigger_EntityName::Save
-================
-*/
-void idTrigger_EntityName::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( wait );
-	savefile->WriteFloat( random );
-	savefile->WriteFloat( delay );
-	savefile->WriteFloat( random_delay );
-	savefile->WriteInt( nextTriggerTime );
-	savefile->WriteBool( triggerFirst );
-	savefile->WriteString( entityName );
-}
-
-/*
-================
-idTrigger_EntityName::Restore
-================
-*/
-void idTrigger_EntityName::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( wait );
-	savefile->ReadFloat( random );
-	savefile->ReadFloat( delay );
-	savefile->ReadFloat( random_delay );
-	savefile->ReadInt( nextTriggerTime );
-	savefile->ReadBool( triggerFirst );
-	savefile->ReadString( entityName );
-}
-
-/*
-================
 idTrigger_EntityName::Spawn
 ================
 */
@@ -727,34 +628,6 @@ idTrigger_Timer::idTrigger_Timer( void ) {
 
 /*
 ================
-idTrigger_Timer::Save
-================
-*/
-void idTrigger_Timer::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( random );
-	savefile->WriteFloat( wait );
-	savefile->WriteBool( on );
-	savefile->WriteFloat( delay );
-	savefile->WriteString( onName );
-	savefile->WriteString( offName );
-}
-
-/*
-================
-idTrigger_Timer::Restore
-================
-*/
-void idTrigger_Timer::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( random );
-	savefile->ReadFloat( wait );
-	savefile->ReadBool( on );
-	savefile->ReadFloat( delay );
-	savefile->ReadString( onName );
-	savefile->ReadString( offName );
-}
-
-/*
-================
 idTrigger_Timer::Spawn
 
 Repeatedly fires its targets.
@@ -868,28 +741,6 @@ idTrigger_Count::idTrigger_Count( void ) {
 
 /*
 ================
-idTrigger_Count::Save
-================
-*/
-void idTrigger_Count::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( goal );
-	savefile->WriteInt( count );
-	savefile->WriteFloat( delay );
-}
-
-/*
-================
-idTrigger_Count::Restore
-================
-*/
-void idTrigger_Count::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( goal );
-	savefile->ReadInt( count );
-	savefile->ReadFloat( delay );
-}
-
-/*
-================
 idTrigger_Count::Spawn
 ================
 */
@@ -955,28 +806,6 @@ idTrigger_Hurt::idTrigger_Hurt( void ) {
 	on = false;
 	delay = 0.0f;
 	nextTime = 0;
-}
-
-/*
-================
-idTrigger_Hurt::Save
-================
-*/
-void idTrigger_Hurt::Save( idSaveGame *savefile ) const {
-	savefile->WriteBool( on );
-	savefile->WriteFloat( delay );
-	savefile->WriteInt( nextTime );
-}
-
-/*
-================
-idTrigger_Hurt::Restore
-================
-*/
-void idTrigger_Hurt::Restore( idRestoreGame *savefile ) {
-	savefile->ReadBool( on );
-	savefile->ReadFloat( delay );
-	savefile->ReadInt( nextTime );
 }
 
 /*
@@ -1109,24 +938,6 @@ void idTrigger_Touch::Spawn( void ) {
 	if ( spawnArgs.GetBool( "start_on" ) ) {
 		BecomeActive( TH_THINK );
 	}
-}
-
-/*
-================
-idTrigger_Touch::Save
-================
-*/
-void idTrigger_Touch::Save( idSaveGame *savefile ) {
-	savefile->WriteClipModel( clipModel );
-}
-
-/*
-================
-idTrigger_Touch::Restore
-================
-*/
-void idTrigger_Touch::Restore( idRestoreGame *savefile ) {
-	savefile->ReadClipModel( clipModel );
 }
 
 /*

@@ -167,7 +167,7 @@ set(src_imgui
 	"./engine/external/imgui/examples/imgui_impl_opengl3.h"
 	"./engine/external/imgui/examples/imgui_impl_win32.cpp"
 	"./engine/external/imgui/examples/imgui_impl_win32.h"
-) 
+)
 
 add_library(engineExternal STATIC ${engineDependFiles} ${src_imgui})
 set_target_properties(engineExternal PROPERTIES LINK_FLAGS "/PDB:\"engineExternal.pdb\"")

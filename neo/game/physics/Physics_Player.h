@@ -76,9 +76,6 @@ public:
 
 							idPhysics_Player( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 							// initialisation
 	void					SetSpeed( const float newWalkSpeed, const float newCrouchSpeed );
 	void					SetMaxStepHeight( const float newMaxStepHeight );

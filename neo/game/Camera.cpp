@@ -89,28 +89,6 @@ idCameraView::idCameraView() {
 
 /*
 ===============
-idCameraView::Save
-================
-*/
-void idCameraView::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( fov );
-	savefile->WriteObject( attachedTo );
-	savefile->WriteObject( attachedView );
-}
-
-/*
-===============
-idCameraView::Restore
-================
-*/
-void idCameraView::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( fov );
-	savefile->ReadObject( reinterpret_cast<idClass *&>( attachedTo ) );
-	savefile->ReadObject( reinterpret_cast<idClass *&>( attachedView ) );
-}
-
-/*
-===============
 idCameraView::Event_SetAttachments
 ================
 */
@@ -262,36 +240,6 @@ idCameraAnim::~idCameraAnim() {
 	if ( gameLocal.GetCamera() == this ) {
 		gameLocal.SetCamera( NULL );
 	}
-}
-
-/*
-===============
-idCameraAnim::Save
-================
-*/
-void idCameraAnim::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( threadNum );
-	savefile->WriteVec3( offset );
-	savefile->WriteInt( frameRate );
-	savefile->WriteInt( starttime );
-	savefile->WriteInt( cycle );
-	activator.Save( savefile );
-}
-
-/*
-===============
-idCameraAnim::Restore
-================
-*/
-void idCameraAnim::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( threadNum );
-	savefile->ReadVec3( offset );
-	savefile->ReadInt( frameRate );
-	savefile->ReadInt( starttime );
-	savefile->ReadInt( cycle );
-	activator.Restore( savefile );
-
-	LoadAnim();
 }
 
 /*

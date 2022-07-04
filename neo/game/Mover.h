@@ -50,9 +50,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Killed( idEntity *inflictor, idEntity *attacker, int damage, const idVec3 &dir, int location );
 
 	virtual void			WriteToSnapshot( idBitMsgDelta &msg ) const;
@@ -219,9 +216,6 @@ public:
 
 	void					Spawn();
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual bool			HandleSingleGuiCommand( idEntity *entityGui, idLexer *src );
 	void					Event_GotoFloor( int floor );
 	floorInfo_s *			GetFloorInfo( int floor );
@@ -292,9 +286,6 @@ public:
 							~idMover_Binary();
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual void			PreBind( void );
 	virtual void			PostBind( void );
@@ -383,9 +374,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Think( void );
 	virtual void			PreBind( void );
 	virtual void			PostBind( void );
@@ -453,9 +441,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Think( void );
 	virtual void			PreBind( void );
 	virtual void			PostBind( void );
@@ -489,9 +474,6 @@ public:
 							idMover_Periodic( void );
 
 	void					Spawn( void );
-	
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual void			Think( void );
 
@@ -513,9 +495,6 @@ public:
 							idRotater( void );
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 private:
 	idEntityPtr<idEntity>	activatedBy;

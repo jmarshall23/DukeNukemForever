@@ -39,33 +39,6 @@ END_CLASS
 
 /*
 ================
-idForce_Grab::Save
-================
-*/
-void idForce_Grab::Save( idSaveGame *savefile ) const {
-	
-	savefile->WriteFloat( damping );
-	savefile->WriteVec3( goalPosition );
-	savefile->WriteFloat( distanceToGoal );
-	savefile->WriteInt( id );
-}
-
-/*
-================
-idForce_Grab::Restore
-================
-*/
-void idForce_Grab::Restore( idRestoreGame *savefile ) {
-
-	//Note: Owner needs to call set physics
-	savefile->ReadFloat( damping );
-	savefile->ReadVec3( goalPosition );
-	savefile->ReadFloat( distanceToGoal );
-	savefile->ReadInt( id );
-}
-
-/*
-================
 idForce_Grab::idForce_Grab
 ================
 */

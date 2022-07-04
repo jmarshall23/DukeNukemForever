@@ -57,9 +57,6 @@ public:
 							idAF( void );
 							~idAF( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					SetAnimator( idAnimator *a ) { animator = a; }
 	bool					Load( idEntity *ent, const char *fileName );
 	bool					IsLoaded( void ) const { return isLoaded && self != NULL; }

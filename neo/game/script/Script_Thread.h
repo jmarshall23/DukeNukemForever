@@ -75,6 +75,8 @@ extern const idEventDef EV_Thread_FadeTo;
 extern const idEventDef EV_Thread_Restart;
 
 class idThread : public idClass {
+	TYPEINFO_CUSTOM_SAVELOAD
+
 private:
 	static idThread				*currentThread;
 
@@ -212,10 +214,6 @@ public:
 
 								// tells the thread manager not to delete this thread when it ends
 	void						ManualDelete( void );
-
-	// save games
-	void						Save( idSaveGame *savefile ) const;				// archives object for save game file
-	void						Restore( idRestoreGame *savefile );				// unarchives object from save game file
 
 	void						EnableDebugInfo( void ) { interpreter.debug = true; };
 	void						DisableDebugInfo( void ) { interpreter.debug = false; };

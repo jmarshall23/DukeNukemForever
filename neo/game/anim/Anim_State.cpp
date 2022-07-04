@@ -35,59 +35,6 @@ idAnimState::~idAnimState() {
 
 /*
 =====================
-idAnimState::Save
-=====================
-*/
-void idAnimState::Save(idSaveGame* savefile) const {
-
-	savefile->WriteBool(idleAnim);
-	savefile->WriteInt(animBlendFrames);
-	savefile->WriteInt(lastAnimBlendFrames);
-
-	savefile->WriteObject(self);
-
-	// Save the entity owner of the animator
-	savefile->WriteObject(animator->GetEntity());
-
-	savefile->WriteInt(channel);
-	savefile->WriteBool(disabled);
-
-	// RAVEN BEGIN
-	// abahr:
-	stateThread.Save(savefile);
-	// RAVEN END
-}
-
-/*
-=====================
-idAnimState::Restore
-=====================
-*/
-void idAnimState::Restore(idRestoreGame* savefile) {
-
-	savefile->ReadBool(idleAnim);
-	savefile->ReadInt(animBlendFrames);
-	savefile->ReadInt(lastAnimBlendFrames);
-
-	savefile->ReadObject(reinterpret_cast<idClass*&>(self));
-
-	idEntity* animowner;
-	savefile->ReadObject(reinterpret_cast<idClass*&>(animowner));
-	if (animowner) {
-		animator = animowner->GetAnimator();
-	}
-
-	savefile->ReadInt(channel);
-	savefile->ReadBool(disabled);
-
-	// RAVEN BEGIN
-	// abahr:
-	stateThread.Restore(savefile, self);
-	// RAVEN END
-}
-
-/*
-=====================
 idAnimState::Init
 =====================
 */

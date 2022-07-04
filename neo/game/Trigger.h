@@ -51,9 +51,6 @@ public:
 
 	const function_t *	GetScriptFunction( void ) const;
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	virtual void		Enable( void );
 	virtual void		Disable( void );
 
@@ -82,9 +79,6 @@ public:
 						idTrigger_Multi( void );
 
 	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 #ifdef CTF    
 protected:
@@ -126,9 +120,6 @@ public:
 
 						idTrigger_EntityName( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Spawn( void );
 
 private:
@@ -159,9 +150,6 @@ public:
 	CLASS_PROTOTYPE( idTrigger_Timer );
 
 						idTrigger_Timer( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	void				Spawn( void );
 
@@ -195,9 +183,6 @@ public:
 
 						idTrigger_Count( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Spawn( void );
 
 private:
@@ -223,9 +208,6 @@ public:
 	CLASS_PROTOTYPE( idTrigger_Hurt );
 
 						idTrigger_Hurt( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	void				Spawn( void );
 
@@ -274,9 +256,6 @@ public:
 
 	void				Spawn( void );
 	virtual void		Think( void );
-
-	void				Save( idSaveGame *savefile );
-	void				Restore( idRestoreGame *savefile );
 
 	virtual void		Enable( void );
 	virtual void		Disable( void );

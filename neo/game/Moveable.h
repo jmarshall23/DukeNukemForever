@@ -49,9 +49,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Think( void );
 
 	virtual void			Hide( void );
@@ -119,9 +116,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					BarrelThink( void );
 	virtual void			Think( void );
 	virtual bool			GetPhysicsToVisualTransform( idVec3 &origin, idMat3 &axis );
@@ -155,9 +149,6 @@ public:
 							~idExplodingBarrel();
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 #ifdef _D3XP
 	bool					IsStable( void );

@@ -44,9 +44,6 @@ public:
 							idTestModel();
 							~idTestModel();
 
-	void					Save( idSaveGame *savefile );
-	void					Restore( idRestoreGame *savefile );
-
 	void					Spawn( void );
 
 	virtual bool			ShouldConstructScriptObjectAtSpawn( void ) const;

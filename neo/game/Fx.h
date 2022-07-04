@@ -60,9 +60,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Think();
 	void					Setup( const char *fx );
 	void					Run( int time );

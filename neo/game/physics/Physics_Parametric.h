@@ -67,9 +67,6 @@ public:
 							idPhysics_Parametric( void );
 							~idPhysics_Parametric( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					SetPusher( int flags );
 	bool					IsPusher( void ) const;
 

@@ -44,9 +44,6 @@ public:
 							idIK( void );
 	virtual					~idIK( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	bool					IsInitialized( void ) const;
 
 	virtual bool			Init( idEntity *self, const char *anim, const idVec3 &modelOffset );
@@ -79,9 +76,6 @@ public:
 
 							idIK_Walk( void );
 	virtual					~idIK_Walk( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual bool			Init( idEntity *self, const char *anim, const idVec3 &modelOffset );
 	virtual void			Evaluate( void );
@@ -150,9 +144,6 @@ public:
 
 							idIK_Reach( void );
 	virtual					~idIK_Reach( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual bool			Init( idEntity *self, const char *anim, const idVec3 &modelOffset );
 	virtual void			Evaluate( void );

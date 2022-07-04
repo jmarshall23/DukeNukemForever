@@ -48,9 +48,6 @@ public :
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					Create( idEntity *owner, const idVec3 &start, const idVec3 &dir );
 	virtual void			Launch( const idVec3 &start, const idVec3 &dir, const idVec3 &pushVelocity, const float timeSinceFire = 0.0f, const float launchPower = 1.0f, const float dmgPower = 1.0f );
 	virtual void			FreeLightDef( void );
@@ -147,9 +144,6 @@ public :
 							idGuidedProjectile( void );
 							~idGuidedProjectile( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					Spawn( void );
 	virtual void			Think( void );
 	virtual void			Launch( const idVec3 &start, const idVec3 &dir, const idVec3 &pushVelocity, const float timeSinceFire = 0.0f, const float launchPower = 1.0f, const float dmgPower = 1.0f );
@@ -180,8 +174,6 @@ class idSoulCubeMissile : public idGuidedProjectile {
 public:
 	CLASS_PROTOTYPE ( idSoulCubeMissile );
 	~idSoulCubeMissile();
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	void					Spawn( void );
 	virtual void			Think( void );
@@ -219,9 +211,6 @@ public :
 							idBFGProjectile();
 							~idBFGProjectile();
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					Spawn( void );
 	virtual void			Think( void );
 	virtual void			Launch( const idVec3 &start, const idVec3 &dir, const idVec3 &pushVelocity, const float timeSinceFire = 0.0f, const float launchPower = 1.0f, const float dmgPower = 1.0f );
@@ -247,9 +236,6 @@ public:
 
 	idHomingProjectile();
 	~idHomingProjectile();
-
-	void					Save(idSaveGame* savefile) const;
-	void					Restore(idRestoreGame* savefile);
 
 	void					Spawn();
 	virtual void			Think();
@@ -289,10 +275,6 @@ public :
 
 							idDebris();
 							~idDebris();
-
-	// save games
-	void					Save( idSaveGame *savefile ) const;					// archives object for save game file
-	void					Restore( idRestoreGame *savefile );					// unarchives object from save game file
 
 	void					Spawn( void );
 

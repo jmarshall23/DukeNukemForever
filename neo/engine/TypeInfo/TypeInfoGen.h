@@ -83,17 +83,22 @@ public:
 	bool						isConst;
 	bool						isStatic;
 	idStr						paramStateInput;
-	bool						isValidFunction;
+	bool						isValidFunction;	
 };
 
 class idClassTypeInfo
 {
 public:
+	idClassTypeInfo() {
+		isTypedClass = false;
+	}
+
 	idStr						typeName;
 	idStr						superType;
 	idStr						scope;
 	bool						unnamed;
 	bool						isTemplate;
+	bool						isTypedClass;
 	idList<idClassVariableInfo>	variables;
 	idList< rvmClassFunctionInfo> functions;
 };

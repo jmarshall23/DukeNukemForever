@@ -61,56 +61,6 @@ idPhysics_Base::~idPhysics_Base( void ) {
 
 /*
 ================
-idPhysics_Base::Save
-================
-*/
-void idPhysics_Base::Save( idSaveGame *savefile ) const {
-	int i;
-
-	savefile->WriteObject( self );
-	savefile->WriteInt( clipMask );
-	savefile->WriteVec3( gravityVector );
-	savefile->WriteVec3( gravityNormal );
-
-	savefile->WriteInt( contacts.Num() );
-	for ( i = 0; i < contacts.Num(); i++ ) {
-		savefile->WriteContactInfo( contacts[i] );
-	}
-
-	savefile->WriteInt( contactEntities.Num() );
-	for ( i = 0; i < contactEntities.Num(); i++ ) {
-		contactEntities[i].Save( savefile );
-	}
-}
-
-/*
-================
-idPhysics_Base::Restore
-================
-*/
-void idPhysics_Base::Restore( idRestoreGame *savefile ) {
-	int i, num;
-
-	savefile->ReadObject( reinterpret_cast<idClass *&>( self ) );
-	savefile->ReadInt( clipMask );
-	savefile->ReadVec3( gravityVector );
-	savefile->ReadVec3( gravityNormal );
-
-	savefile->ReadInt( num );
-	contacts.SetNum( num );
-	for ( i = 0; i < contacts.Num(); i++ ) {
-		savefile->ReadContactInfo( contacts[i] );
-	}
-
-	savefile->ReadInt( num );
-	contactEntities.SetNum( num );
-	for ( i = 0; i < contactEntities.Num(); i++ ) {
-		contactEntities[i].Restore( savefile );
-	}
-}
-
-/*
-================
 idPhysics_Base::SetSelf
 ================
 */

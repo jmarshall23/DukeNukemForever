@@ -99,7 +99,7 @@ void idSaveGame::Close( void ) {
 	idClipModel::SaveTraceModels( this );
 
 	for( i = 1; i < objects.Num(); i++ ) {
-		CallSave_r( objects[ i ]->GetType(), objects[ i ] );
+		objects[i]->Save(this);
 	}
 
 	objects.Clear();
@@ -123,23 +123,6 @@ void idSaveGame::WriteObjectList( void ) {
 	for( i = 1; i < objects.Num(); i++ ) {
 		WriteString( objects[ i ]->GetClassname() );
 	}
-}
-
-/*
-================
-idSaveGame::CallSave_r
-================
-*/
-void idSaveGame::CallSave_r( const idTypeInfo *cls, const idClass *obj ) {
-	if ( cls->super ) {
-		CallSave_r( cls->super, obj );
-		if ( cls->super->Save == cls->Save ) {
-			// don't call save on this inheritance level since the function was called in the super class
-			return;
-		}
-	}
-	
-	( obj->*cls->Save )( this );
 }
 
 /*
@@ -346,7 +329,7 @@ idSaveGame::WriteStaticObject
 ================
 */
 void idSaveGame::WriteStaticObject( const idClass &obj ) {
-	CallSave_r( obj.GetType(), &obj );
+	obj.Save(this);	
 }
 
 /*
@@ -836,7 +819,7 @@ void idRestoreGame::RestoreObjects( void ) {
 
 	// restore all the objects
 	for( i = 1; i < objects.Num(); i++ ) {
-		CallRestore_r( objects[ i ]->GetType(), objects[ i ] );
+		objects[i]->Restore(this);
 	}
 
 	// regenerate render entities and render lights because are not saved
@@ -888,22 +871,6 @@ void idRestoreGame::Error( const char *fmt, ... ) {
 	gameLocal.Error( "%s", text );
 }
 
-/*
-================
-idRestoreGame::CallRestore_r
-================
-*/
-void idRestoreGame::CallRestore_r( const idTypeInfo *cls, idClass *obj ) {
-	if ( cls->super ) {
-		CallRestore_r( cls->super, obj );
-		if ( cls->super->Restore == cls->Restore ) {
-			// don't call save on this inheritance level since the function was called in the super class
-			return;
-		}
-	}
-	
-	( obj->*cls->Restore )( this );
-}
 
 /*
 ================
@@ -1095,8 +1062,8 @@ void idRestoreGame::ReadObject( idClass *&obj ) {
 idRestoreGame::ReadStaticObject
 ================
 */
-void idRestoreGame::ReadStaticObject( idClass &obj ) {
-	CallRestore_r( obj.GetType(), &obj );
+void idRestoreGame::ReadStaticObject( idClass &obj ) {	
+	obj.Restore(this);
 }
 
 /*

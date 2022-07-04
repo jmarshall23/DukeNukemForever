@@ -45,9 +45,6 @@ public:
 							idItem();
 	virtual					~idItem();
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					Spawn( void );
 	void					GetAttributes( idDict &attributes );
 	virtual bool			GiveToPlayer( idPlayer *player );
@@ -107,9 +104,6 @@ public:
 
 							idItemPowerup();
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					Spawn();
 	virtual bool			GiveToPlayer( idPlayer *player );
 
@@ -123,9 +117,6 @@ public:
 	CLASS_PROTOTYPE( idObjective );
 
 							idObjective();
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	void					Spawn();
 
@@ -159,9 +150,6 @@ public:
 
 							idMoveableItem();
 	virtual					~idMoveableItem();
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	void					Spawn( void );
 	virtual void			Think( void );
@@ -297,9 +285,6 @@ public:
 	CLASS_PROTOTYPE( idObjectiveComplete );
 
 							idObjectiveComplete();
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	void					Spawn();
 

@@ -54,9 +54,6 @@ class idForce_Field : public idForce {
 public:
 	CLASS_PROTOTYPE( idForce_Field );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 						idForce_Field( void );
 	virtual				~idForce_Field( void );
 						// uniform constant force

@@ -45,9 +45,6 @@ public:
 							idPhysics_StaticMulti( void );
 							~idPhysics_StaticMulti( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					RemoveIndex( int id = 0, bool freeClipModel = true );
 
 public:	// common physics interface

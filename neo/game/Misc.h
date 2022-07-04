@@ -76,9 +76,6 @@ public:
 
 	void				Spawn( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	virtual bool		ClientReceiveEvent( int event, int time, const idBitMsg &msg );
 
 private:
@@ -106,9 +103,6 @@ public:
 	CLASS_PROTOTYPE( idActivator );
 
 	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	virtual void		Think( void );
 
@@ -154,9 +148,6 @@ public:
 	CLASS_PROTOTYPE( idDamagable );
 
 						idDamagable( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	void				Spawn( void );
 	void				Killed( idEntity *inflictor, idEntity *attacker, int damage, const idVec3 &dir, int location );
@@ -236,9 +227,6 @@ class idForceField : public idEntity {
 public:
 	CLASS_PROTOTYPE( idForceField );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Spawn( void );
 
 	virtual void		Think( void );
@@ -268,9 +256,6 @@ public:
 
 							idAnimated();
 							~idAnimated();
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	void					Spawn( void );
 	virtual bool			LoadAF( void );
@@ -316,9 +301,6 @@ public:
 
 						idStaticEntity( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Spawn( void );
 	void				ShowEditingDialog( void );
 	virtual void		Hide( void );
@@ -356,9 +338,6 @@ public:
 
 						idFuncEmitter( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Spawn( void );
 	void				Event_Activate( idEntity *activator );
 
@@ -386,9 +365,6 @@ public:
 							idFuncSmoke();
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual void			Think( void );
 	void					Event_Activate( idEntity *activator );
@@ -436,9 +412,6 @@ public:
 
 	void				Spawn( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	virtual void		Think( void );
 
 private:
@@ -483,9 +456,6 @@ public:
 
 	void				Spawn( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Event_Activate( idEntity *activator );	
 
 private:
@@ -517,9 +487,6 @@ public:
 						idBeam();
 
 	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	virtual void		Think( void );
 
@@ -556,9 +523,6 @@ public:
 
 	void				Spawn( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 private:
 	void				Event_Touch( idEntity *other, trace_t *trace );
 
@@ -582,9 +546,6 @@ public:
 							idShaking();
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 private:
 	idPhysics_Parametric	physicsObj;
@@ -610,9 +571,6 @@ public:
 						idEarthQuake();
 
 	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	virtual void		Think( void );
 
@@ -646,9 +604,6 @@ public:
 
 	void				Spawn( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 private:
 	qhandle_t			portal;
 	bool				state;
@@ -672,9 +627,6 @@ public:
 						idFuncRadioChatter();
 
 	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 private:
 	float				time;
@@ -700,9 +652,6 @@ public:
 
 	void				Spawn( void );
 	void				Think( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 private:
 	void				Event_Activate( idEntity *activator );

@@ -138,9 +138,6 @@ public:
 	void					Spawn( void );
 	virtual void			Restart( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Hide( void );
 	virtual void			Show( void );
 	virtual int				GetDefaultSurfaceType( void ) const;

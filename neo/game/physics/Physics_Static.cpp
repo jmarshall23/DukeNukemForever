@@ -67,42 +67,6 @@ idPhysics_Static::~idPhysics_Static( void ) {
 
 /*
 ================
-idPhysics_Static::Save
-================
-*/
-void idPhysics_Static::Save( idSaveGame *savefile ) const {
-	savefile->WriteObject( self );
-
-	savefile->WriteVec3( current.origin );
-	savefile->WriteMat3( current.axis );
-	savefile->WriteVec3( current.localOrigin );
-	savefile->WriteMat3( current.localAxis );
-	savefile->WriteClipModel( clipModel );
-
-	savefile->WriteBool( hasMaster );
-	savefile->WriteBool( isOrientated );
-}
-
-/*
-================
-idPhysics_Static::Restore
-================
-*/
-void idPhysics_Static::Restore( idRestoreGame *savefile ) {
-	savefile->ReadObject( reinterpret_cast<idClass *&>( self ) );
-
-	savefile->ReadVec3( current.origin );
-	savefile->ReadMat3( current.axis );
-	savefile->ReadVec3( current.localOrigin );
-	savefile->ReadMat3( current.localAxis );
-	savefile->ReadClipModel( clipModel );
-
-	savefile->ReadBool( hasMaster );
-	savefile->ReadBool( isOrientated );
-}
-
-/*
-================
 idPhysics_Static::SetSelf
 ================
 */

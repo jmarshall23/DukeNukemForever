@@ -317,35 +317,6 @@ idEntity *idAFAttachment::GetBody( void ) const {
 
 /*
 ================
-idAFAttachment::Save
-
-archive object for savegame file
-================
-*/
-void idAFAttachment::Save( idSaveGame *savefile ) const {
-	savefile->WriteObject( body );
-	savefile->WriteInt( idleAnim );
-	savefile->WriteJoint( attachJoint );
-}
-
-/*
-================
-idAFAttachment::Restore
-
-unarchives object from save game file
-================
-*/
-void idAFAttachment::Restore( idRestoreGame *savefile ) {
-	savefile->ReadObject( reinterpret_cast<idClass *&>( body ) );
-	savefile->ReadInt( idleAnim );
-	savefile->ReadJoint( attachJoint );
-
-	SetCombatModel();
-	LinkCombat();
-}
-
-/*
-================
 idAFAttachment::Hide
 ================
 */
@@ -543,36 +514,6 @@ idAFEntity_Base::~idAFEntity_Base
 idAFEntity_Base::~idAFEntity_Base( void ) {
 	delete combatModel;
 	combatModel = NULL;
-}
-
-/*
-================
-idAFEntity_Base::Save
-================
-*/
-void idAFEntity_Base::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( combatModelContents );
-	savefile->WriteClipModel( combatModel );
-	savefile->WriteVec3( spawnOrigin );
-	savefile->WriteMat3( spawnAxis );
-	savefile->WriteInt( nextSoundTime );
-	af.Save( savefile );
-}
-
-/*
-================
-idAFEntity_Base::Restore
-================
-*/
-void idAFEntity_Base::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( combatModelContents );
-	savefile->ReadClipModel( combatModel );
-	savefile->ReadVec3( spawnOrigin );
-	savefile->ReadMat3( spawnAxis );
-	savefile->ReadInt( nextSoundTime );
-	LinkCombat();
-
-	af.Restore( savefile );
 }
 
 /*
@@ -979,41 +920,6 @@ idAFEntity_Gibbable::~idAFEntity_Gibbable() {
 
 /*
 ================
-idAFEntity_Gibbable::Save
-================
-*/
-void idAFEntity_Gibbable::Save( idSaveGame *savefile ) const {
-	savefile->WriteBool( gibbed );
-	savefile->WriteBool( combatModel != NULL );
-#ifdef _D3XP
-	savefile->WriteBool( wasThrown );
-#endif
-}
-
-/*
-================
-idAFEntity_Gibbable::Restore
-================
-*/
-void idAFEntity_Gibbable::Restore( idRestoreGame *savefile ) {
-	bool hasCombatModel;
-
-	savefile->ReadBool( gibbed );
-	savefile->ReadBool( hasCombatModel );
-#ifdef _D3XP
-	savefile->ReadBool( wasThrown );
-#endif
-
-	InitSkeletonModel();
-
-	if ( hasCombatModel ) {
-		SetCombatModel();
-		LinkCombat();
-	}
-}
-
-/*
-================
 idAFEntity_Gibbable::Spawn
 ================
 */
@@ -1299,24 +1205,6 @@ idAFEntity_Generic::~idAFEntity_Generic( void ) {
 
 /*
 ================
-idAFEntity_Generic::Save
-================
-*/
-void idAFEntity_Generic::Save( idSaveGame *savefile ) const {
-	savefile->WriteBool( keepRunningPhysics );
-}
-
-/*
-================
-idAFEntity_Generic::Restore
-================
-*/
-void idAFEntity_Generic::Restore( idRestoreGame *savefile ) {
-	savefile->ReadBool( keepRunningPhysics );
-}
-
-/*
-================
 idAFEntity_Generic::Think
 ================
 */
@@ -1445,24 +1333,6 @@ void idAFEntity_WithAttachedHead::Spawn( void ) {
 			head.GetEntity()->GetAnimator()->SetFrame( ANIMCHANNEL_ALL, anim, 0, gameLocal.time, 0 );
 		}
 	}
-}
-
-/*
-================
-idAFEntity_WithAttachedHead::Save
-================
-*/
-void idAFEntity_WithAttachedHead::Save( idSaveGame *savefile ) const {
-	head.Save( savefile );
-}
-
-/*
-================
-idAFEntity_WithAttachedHead::Restore
-================
-*/
-void idAFEntity_WithAttachedHead::Restore( idRestoreGame *savefile ) {
-	head.Restore( savefile );
 }
 
 /*
@@ -2562,23 +2432,6 @@ idAFEntity_SteamPipe::~idAFEntity_SteamPipe( void ) {
 
 /*
 ================
-idAFEntity_SteamPipe::Save
-================
-*/
-void idAFEntity_SteamPipe::Save( idSaveGame *savefile ) const {
-}
-
-/*
-================
-idAFEntity_SteamPipe::Restore
-================
-*/
-void idAFEntity_SteamPipe::Restore( idRestoreGame *savefile ) {
-	Spawn();
-}
-
-/*
-================
 idAFEntity_SteamPipe::Spawn
 ================
 */
@@ -2702,36 +2555,6 @@ idAFEntity_ClawFourFingers::idAFEntity_ClawFourFingers( void ) {
 	fingers[1]	= NULL;
 	fingers[2]	= NULL;
 	fingers[3]	= NULL;
-}
-
-/*
-================
-idAFEntity_ClawFourFingers::Save
-================
-*/
-void idAFEntity_ClawFourFingers::Save( idSaveGame *savefile ) const {
-	int i;
-
-	for ( i = 0; i < 4; i++ ) {
-		fingers[i]->Save( savefile );
-	}
-}
-
-/*
-================
-idAFEntity_ClawFourFingers::Restore
-================
-*/
-void idAFEntity_ClawFourFingers::Restore( idRestoreGame *savefile ) {
-	int i;
-
-	for ( i = 0; i < 4; i++ ) {
-		fingers[i] = static_cast<idAFConstraint_Hinge *>(af.GetPhysics()->GetConstraint( clawConstraintNames[i] ));
-		fingers[i]->Restore( savefile );
-	}
-
-	SetCombatModel();
-	LinkCombat();
 }
 
 /*
@@ -3240,40 +3063,6 @@ void idHarvestable::Init(idEntity* parent) {
 	PostEventMS( &EV_Harvest_SpawnHarvestTrigger, 0 );
 }
 
-void idHarvestable::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( triggersize );
-	savefile->WriteClipModel( trigger );
-	savefile->WriteFloat( giveDelay );
-	savefile->WriteFloat( removeDelay );
-	savefile->WriteBool( given );
-
-	player.Save( savefile );
-	savefile->WriteInt( startTime );
-
-	savefile->WriteBool( fxFollowPlayer );
-	fx.Save( savefile );
-	savefile->WriteString( fxOrient );
-
-	parentEnt.Save(savefile);
-}
-
-void idHarvestable::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( triggersize );
-	savefile->ReadClipModel( trigger );
-	savefile->ReadFloat( giveDelay );
-	savefile->ReadFloat( removeDelay );
-	savefile->ReadBool( given );
-
-	player.Restore( savefile );
-	savefile->ReadInt( startTime );
-
-	savefile->ReadBool( fxFollowPlayer );
-	fx.Restore( savefile );
-	savefile->ReadString( fxOrient );
-	
-	parentEnt.Restore(savefile);
-}
-
 void idHarvestable::SetParent(idEntity* parent) {
 	parentEnt = parent;
 }
@@ -3613,27 +3402,6 @@ idAFEntity_Harvest::~idAFEntity_Harvest() {
 		harvestEnt.GetEntity()->PostEventMS( &EV_Remove, 0 );
 	}
 	
-}
-
-/*
-================
-idAFEntity_Harvest::Save
-================
-*/
-void idAFEntity_Harvest::Save( idSaveGame *savefile ) const {
-	harvestEnt.Save(savefile);
-}
-
-/*
-================
-idAFEntity_Harvest::Restore
-================
-*/
-void idAFEntity_Harvest::Restore( idRestoreGame *savefile ) {
-	harvestEnt.Restore(savefile);
-	//if(harvestEnt.GetEntity()) {
-	//	harvestEnt.GetEntity()->SetParent(this);
-	//}
 }
 
 /*

@@ -44,9 +44,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Think( void );
 
 	virtual renderView_t *	GetRenderView();

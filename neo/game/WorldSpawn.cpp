@@ -116,30 +116,6 @@ void idWorldspawn::Spawn( void ) {
 }
 
 /*
-=================
-idWorldspawn::Save
-=================
-*/
-void idWorldspawn::Save( idRestoreGame *savefile ) {
-}
-
-/*
-=================
-idWorldspawn::Restore
-=================
-*/
-void idWorldspawn::Restore( idRestoreGame *savefile ) {
-	assert( gameLocal.world == this );
-
-	g_gravity.SetFloat( spawnArgs.GetFloat( "gravity", va( "%f", DEFAULT_GRAVITY ) ) );
-
-	// disable stamina on hell levels
-	if ( spawnArgs.GetBool( "no_stamina" ) ) {
-		pm_stamina.SetFloat( 0.0f );
-	}
-}
-
-/*
 ================
 idWorldspawn::~idWorldspawn
 ================

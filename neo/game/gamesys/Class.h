@@ -55,6 +55,10 @@ struct idEventFunc
 #define EVENT( event, function )	{ &( event ), ( void ( idClass::* )() )( &function ) },
 #define END_CLASS					{ NULL, NULL } };
 
+// jmarshall
+#define TYPEINFO_CUSTOM_SAVELOAD
+// jmarshall end
+
 
 class idEventArg
 {
@@ -128,15 +132,33 @@ It prototypes variables used in class instanciation and type checking.
 Use this on single inheritance concrete classes only.
 ================
 */
+
+// Remember to fill in both!!
+#ifndef ID_TYPEINFO
 #define CLASS_PROTOTYPE( nameofclass )									\
 public:																	\
 	static	idTypeInfo						Type;						\
 	static	idClass							*CreateInstance();	\
+	virtual void			Save(idSaveGame* savefile) const; \
+	virtual void			Restore(idRestoreGame* savefile); \
 	virtual	idTypeInfo						*GetType() const;		\
 	virtual intptr_t Invoke(const char* functionName, void *param1) override; \
 	virtual bool	 HasNativeFunction(const char* functionName) override; \
 	static	idEventFunc<nameofclass>		eventCallbacks[]
+#else
+#define CLASS_PROTOTYPE( nameofclass )									\
+public:																	\
+	static	idTypeInfo						Type;						\
+	static	idClass							*CreateInstance();	\
+	virtual void			Save(idSaveGame* savefile) const; \
+	virtual void			Restore(idRestoreGame* savefile); \
+	virtual	idTypeInfo						*GetType() const;		\
+	virtual intptr_t Invoke(const char* functionName, void *param1) override; \
+	virtual bool	 HasNativeFunction(const char* functionName) override; \
+	static	idEventFunc<nameofclass>		eventCallbacks[] \
+	TYPEINFO_CLASS_PROTOTYPE
 
+#endif
 
 /*
 ================

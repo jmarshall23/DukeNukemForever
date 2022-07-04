@@ -70,67 +70,6 @@ idAF::~idAF( void ) {
 
 /*
 ================
-idAF::Save
-================
-*/
-void idAF::Save( idSaveGame *savefile ) const {
-	savefile->WriteObject( self );
-	savefile->WriteString( GetName() );
-	savefile->WriteBool( hasBindConstraints );
-	savefile->WriteVec3( baseOrigin );
-	savefile->WriteMat3( baseAxis );
-	savefile->WriteInt( poseTime );
-	savefile->WriteInt( restStartTime );
-	savefile->WriteBool( isLoaded );
-	savefile->WriteBool( isActive );
-	savefile->WriteStaticObject( physicsObj );
-}
-
-/*
-================
-idAF::Restore
-================
-*/
-void idAF::Restore( idRestoreGame *savefile ) {
-	savefile->ReadObject( reinterpret_cast<idClass *&>( self ) );
-	savefile->ReadString( name );
-	savefile->ReadBool( hasBindConstraints );
-	savefile->ReadVec3( baseOrigin );
-	savefile->ReadMat3( baseAxis );
-	savefile->ReadInt( poseTime );
-	savefile->ReadInt( restStartTime );
-	savefile->ReadBool( isLoaded );
-	savefile->ReadBool( isActive );
-
-	animator = NULL;
-	modifiedAnim = 0;
-
-	if ( self ) {
-		SetAnimator( self->GetAnimator() );
-		Load( self, name );
-		if ( hasBindConstraints ) {
-			AddBindConstraints();
-		}
-	}
-
-	savefile->ReadStaticObject( physicsObj );
-
-	if ( self ) {
-		if ( isActive ) {
-			// clear all animations
-			animator->ClearAllAnims( gameLocal.time, 0 );
-			animator->ClearAllJoints();
-
-			// switch to articulated figure physics
-			self->RestorePhysics( &physicsObj );
-			physicsObj.EnableClip();
-		}
-		UpdateAnimation();
-	}
-}
-
-/*
-================
 idAF::UpdateAnimation
 ================
 */

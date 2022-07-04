@@ -63,38 +63,6 @@ idForce_Field::~idForce_Field( void ) {
 
 /*
 ================
-idForce_Field::Save
-================
-*/
-void idForce_Field::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( type );
-	savefile->WriteInt( applyType);
-	savefile->WriteFloat( magnitude );
-	savefile->WriteVec3( dir );
-	savefile->WriteFloat( randomTorque );
-	savefile->WriteBool( playerOnly );
-	savefile->WriteBool( monsterOnly );
-	savefile->WriteClipModel( clipModel );
-}
-
-/*
-================
-idForce_Field::Restore
-================
-*/
-void idForce_Field::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( (int &)type );
-	savefile->ReadInt( (int &)applyType);
-	savefile->ReadFloat( magnitude );
-	savefile->ReadVec3( dir );
-	savefile->ReadFloat( randomTorque );
-	savefile->ReadBool( playerOnly );
-	savefile->ReadBool( monsterOnly );
-	savefile->ReadClipModel( clipModel );
-}
-
-/*
-================
 idForce_Field::SetClipModel
 ================
 */

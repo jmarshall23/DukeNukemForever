@@ -76,24 +76,6 @@ idTestModel::idTestModel() {
 
 /*
 ================
-idTestModel::Save
-================
-*/
-void idTestModel::Save( idSaveGame *savefile ) {
-}
-
-/*
-================
-idTestModel::Restore
-================
-*/
-void idTestModel::Restore( idRestoreGame *savefile ) {
-	// FIXME: one day we may actually want to save/restore test models, but for now we'll just delete them
-	delete this;
-}
-
-/*
-================
 idTestModel::Spawn
 ================
 */

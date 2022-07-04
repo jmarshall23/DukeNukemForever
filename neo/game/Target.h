@@ -212,9 +212,6 @@ public:
 
 						idTarget_FadeEntity( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Think( void );
 
 private:
@@ -334,9 +331,6 @@ public:
 
 						idTarget_SetInfluence( void );
 
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
-
 	void				Spawn( void );
 
 private:
@@ -395,9 +389,6 @@ idTarget_SetFov
 class idTarget_SetFov : public idTarget {
 public:
 	CLASS_PROTOTYPE( idTarget_SetFov );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	void				Think( void );
 
@@ -489,9 +480,6 @@ public:
 						idTarget_Tip( void );
 
 	void				Spawn( void );
-
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 private:
 	idVec3				playerPos;

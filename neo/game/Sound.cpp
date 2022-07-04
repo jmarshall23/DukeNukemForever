@@ -69,38 +69,6 @@ idSound::idSound( void ) {
 
 /*
 ================
-idSound::Save
-================
-*/
-void idSound::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( lastSoundVol );
-	savefile->WriteFloat( soundVol );
-	savefile->WriteFloat( random );
-	savefile->WriteFloat( wait );
-	savefile->WriteBool( timerOn );
-	savefile->WriteVec3( shakeTranslate );
-	savefile->WriteAngles( shakeRotate );
-	savefile->WriteInt( playingUntilTime );
-}
-
-/*
-================
-idSound::Restore
-================
-*/
-void idSound::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( lastSoundVol );
-	savefile->ReadFloat( soundVol );
-	savefile->ReadFloat( random );
-	savefile->ReadFloat( wait );
-	savefile->ReadBool( timerOn );
-	savefile->ReadVec3( shakeTranslate );
-	savefile->ReadAngles( shakeRotate );
-	savefile->ReadInt( playingUntilTime );
-}
-
-/*
-================
 idSound::Spawn
 ================
 */

@@ -49,9 +49,6 @@ public:
 							idPhysics_Actor( void );
 							~idPhysics_Actor( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 							// get delta yaw of master
 	float					GetMasterDeltaYaw( void ) const;
 							// returns the ground entity

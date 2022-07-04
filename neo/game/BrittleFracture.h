@@ -60,9 +60,6 @@ public:
 								idBrittleFracture( void );
 	virtual						~idBrittleFracture( void );
 
-	void						Save( idSaveGame *savefile ) const;
-	void						Restore( idRestoreGame *savefile );
-
 	void						Spawn( void );
 
 	virtual void				Present( void );

@@ -64,9 +64,6 @@ public:
 
 							idPhysics_Monster( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 							// maximum step up the monster can take, default 18 units
 	void					SetMaxStepHeight( const float newMaxStepHeight );
 	float					GetMaxStepHeight( void ) const;

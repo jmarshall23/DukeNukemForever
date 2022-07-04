@@ -45,22 +45,6 @@ idPhysics::~idPhysics( void ) {
 
 /*
 ================
-idPhysics::Save
-================
-*/
-void idPhysics::Save( idSaveGame *savefile ) const {
-}
-
-/*
-================
-idPhysics::Restore
-================
-*/
-void idPhysics::Restore( idRestoreGame *savefile ) {
-}
-
-/*
-================
 idPhysics::SetClipBox
 ================
 */

@@ -189,72 +189,6 @@ void idMoveable::Spawn( void ) {
 
 /*
 ================
-idMoveable::Save
-================
-*/
-void idMoveable::Save( idSaveGame *savefile ) const {
-
-	savefile->WriteString( brokenModel );
-	savefile->WriteString( damage );
-#ifdef _D3XP
-	savefile->WriteString( monsterDamage );
-	savefile->WriteObject( attacker );
-#endif
-	savefile->WriteString( fxCollide );
-	savefile->WriteInt( nextCollideFxTime );
-	savefile->WriteFloat( minDamageVelocity );
-	savefile->WriteFloat( maxDamageVelocity );
-	savefile->WriteBool( explode );
-	savefile->WriteBool( unbindOnDeath );
-	savefile->WriteBool( allowStep );
-	savefile->WriteBool( canDamage );
-	savefile->WriteInt( nextDamageTime );
-	savefile->WriteInt( nextSoundTime );
-	savefile->WriteInt( initialSpline != NULL ? initialSpline->GetTime( 0 ) : -1 );
-	savefile->WriteVec3( initialSplineDir );
-
-	savefile->WriteStaticObject( physicsObj );
-}
-
-/*
-================
-idMoveable::Restore
-================
-*/
-void idMoveable::Restore( idRestoreGame *savefile ) {
-	int initialSplineTime;
-
-	savefile->ReadString( brokenModel );
-	savefile->ReadString( damage );
-#ifdef _D3XP
-	savefile->ReadString( monsterDamage );
-	savefile->ReadObject( reinterpret_cast<idClass *&>( attacker ) );
-#endif
-	savefile->ReadString( fxCollide );
-	savefile->ReadInt( nextCollideFxTime );
-	savefile->ReadFloat( minDamageVelocity );
-	savefile->ReadFloat( maxDamageVelocity );
-	savefile->ReadBool( explode );
-	savefile->ReadBool( unbindOnDeath );
-	savefile->ReadBool( allowStep );
-	savefile->ReadBool( canDamage );
-	savefile->ReadInt( nextDamageTime );
-	savefile->ReadInt( nextSoundTime );
-	savefile->ReadInt( initialSplineTime );
-	savefile->ReadVec3( initialSplineDir );
-
-	if ( initialSplineTime != -1 ) {
-		InitInitialSpline( initialSplineTime );
-	} else {
-		initialSpline = NULL;
-	}
-
-	savefile->ReadStaticObject( physicsObj );
-	RestorePhysics( &physicsObj );
-}
-
-/*
-================
 idMoveable::Hide
 ================
 */
@@ -646,34 +580,6 @@ idBarrel::idBarrel() {
 
 /*
 ================
-idBarrel::Save
-================
-*/
-void idBarrel::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( radius );
-	savefile->WriteInt( barrelAxis );
-	savefile->WriteVec3( lastOrigin );
-	savefile->WriteMat3( lastAxis );
-	savefile->WriteFloat( additionalRotation );
-	savefile->WriteMat3( additionalAxis );
-}
-
-/*
-================
-idBarrel::Restore
-================
-*/
-void idBarrel::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( radius );
-	savefile->ReadInt( barrelAxis );
-	savefile->ReadVec3( lastOrigin );
-	savefile->ReadMat3( lastAxis );
-	savefile->ReadFloat( additionalRotation );
-	savefile->ReadMat3( additionalAxis );
-}
-
-/*
-================
 idBarrel::BarrelThink
 ================
 */
@@ -855,63 +761,6 @@ idExplodingBarrel::~idExplodingBarrel() {
 	if ( lightDefHandle >= 0 ) {
 		gameRenderWorld->FreeLightDef( lightDefHandle );
 	}
-}
-
-/*
-================
-idExplodingBarrel::Save
-================
-*/
-void idExplodingBarrel::Save( idSaveGame *savefile ) const {
-	savefile->WriteVec3( spawnOrigin );
-	savefile->WriteMat3( spawnAxis );
-
-	savefile->WriteInt( state );
-	savefile->WriteInt( particleModelDefHandle );
-	savefile->WriteInt( lightDefHandle );
-
-	savefile->WriteRenderEntity( particleRenderEntity );
-	savefile->WriteRenderLight( light );
-
-	savefile->WriteInt( particleTime );
-	savefile->WriteInt( lightTime );
-	savefile->WriteFloat( time );
-
-#ifdef _D3XP
-	savefile->WriteBool( isStable );
-#endif
-}
-
-/*
-================
-idExplodingBarrel::Restore
-================
-*/
-void idExplodingBarrel::Restore( idRestoreGame *savefile ) {
-	savefile->ReadVec3( spawnOrigin );
-	savefile->ReadMat3( spawnAxis );
-
-	savefile->ReadInt( (int &)state );
-	savefile->ReadInt( (int &)particleModelDefHandle );
-	savefile->ReadInt( (int &)lightDefHandle );
-
-	savefile->ReadRenderEntity( particleRenderEntity );
-	savefile->ReadRenderLight( light );
-
-	savefile->ReadInt( particleTime );
-	savefile->ReadInt( lightTime );
-	savefile->ReadFloat( time );
-
-#ifdef _D3XP
-	savefile->ReadBool( isStable );
-
-	if ( lightDefHandle != -1 ) {
-		lightDefHandle = gameRenderWorld->AddLightDef( &light );
-	}
-	if ( particleModelDefHandle != -1 ) {
-		particleModelDefHandle = gameRenderWorld->AddEntityDef( &particleRenderEntity );
-	}
-#endif
 }
 
 /*

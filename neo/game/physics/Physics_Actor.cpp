@@ -64,46 +64,6 @@ idPhysics_Actor::~idPhysics_Actor( void ) {
 
 /*
 ================
-idPhysics_Actor::Save
-================
-*/
-void idPhysics_Actor::Save( idSaveGame *savefile ) const {
-
-	savefile->WriteClipModel( clipModel );
-	savefile->WriteMat3( clipModelAxis );
-
-	savefile->WriteFloat( mass );
-	savefile->WriteFloat( invMass );
-
-	savefile->WriteObject( masterEntity );
-	savefile->WriteFloat( masterYaw );
-	savefile->WriteFloat( masterDeltaYaw );
-
-	groundEntityPtr.Save( savefile );
-}
-
-/*
-================
-idPhysics_Actor::Restore
-================
-*/
-void idPhysics_Actor::Restore( idRestoreGame *savefile ) {
-
-	savefile->ReadClipModel( clipModel );
-	savefile->ReadMat3( clipModelAxis );
-
-	savefile->ReadFloat( mass );
-	savefile->ReadFloat( invMass );
-
-	savefile->ReadObject( reinterpret_cast<idClass *&>( masterEntity ) );
-	savefile->ReadFloat( masterYaw );
-	savefile->ReadFloat( masterDeltaYaw );
-
-	groundEntityPtr.Restore( savefile );
-}
-
-/*
-================
 idPhysics_Actor::SetClipModelAxis
 ================
 */

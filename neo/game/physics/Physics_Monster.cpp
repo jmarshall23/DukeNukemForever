@@ -294,52 +294,6 @@ void idPhysics_Monster_RestorePState( idRestoreGame *savefile, monsterPState_t &
 
 /*
 ================
-idPhysics_Monster::Save
-================
-*/
-void idPhysics_Monster::Save( idSaveGame *savefile ) const {
-
-	idPhysics_Monster_SavePState( savefile, current );
-	idPhysics_Monster_SavePState( savefile, saved );
-
-	savefile->WriteFloat( maxStepHeight );
-	savefile->WriteFloat( minFloorCosine );
-	savefile->WriteVec3( delta );
-
-	savefile->WriteBool( forceDeltaMove );
-	savefile->WriteBool( fly );
-	savefile->WriteBool( useVelocityMove );
-	savefile->WriteBool( noImpact );
-	
-	savefile->WriteInt( (int)moveResult );
-	savefile->WriteObject( blockingEntity );
-}
-
-/*
-================
-idPhysics_Monster::Restore
-================
-*/
-void idPhysics_Monster::Restore( idRestoreGame *savefile ) {
-
-	idPhysics_Monster_RestorePState( savefile, current );
-	idPhysics_Monster_RestorePState( savefile, saved );
-
-	savefile->ReadFloat( maxStepHeight );
-	savefile->ReadFloat( minFloorCosine );
-	savefile->ReadVec3( delta );
-
-	savefile->ReadBool( forceDeltaMove );
-	savefile->ReadBool( fly );
-	savefile->ReadBool( useVelocityMove );
-	savefile->ReadBool( noImpact );
-
-	savefile->ReadInt( (int &)moveResult );
-	savefile->ReadObject( reinterpret_cast<idClass *&>( blockingEntity ) );
-}
-
-/*
-================
 idPhysics_Monster::SetDelta
 ================
 */

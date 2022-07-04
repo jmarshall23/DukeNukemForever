@@ -331,8 +331,6 @@ private:
 
 public:
 								idAnimBlend();
-	void						Save( idSaveGame *savefile ) const;
-	void						Restore( idRestoreGame *savefile, const idDeclModelDef *modelDef );
 	const char					*AnimName( void ) const;
 	const char					*AnimFullName( void ) const;
 	float						GetWeight( int currenttime ) const;
@@ -405,9 +403,6 @@ public:
 
 	size_t						Allocated( void ) const;
 	size_t						Size( void ) const;
-
-	void						Save( idSaveGame *savefile ) const;					// archives object for save game file
-	void						Restore( idRestoreGame *savefile );					// unarchives object from save game file
 
 	void						SetEntity( idEntity *ent );
 	idEntity					*GetEntity( void ) const ;

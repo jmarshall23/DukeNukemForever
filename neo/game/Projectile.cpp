@@ -112,97 +112,6 @@ void idProjectile::Spawn( void ) {
 
 /*
 ================
-idProjectile::Save
-================
-*/
-void idProjectile::Save( idSaveGame *savefile ) const {
-
-	owner.Save( savefile );
-
-	projectileFlags_s flags = projectileFlags;
-	LittleBitField( &flags, sizeof( flags ) );
-	savefile->Write( &flags, sizeof( flags ) );
-
-	savefile->WriteFloat( thrust );
-	savefile->WriteInt( thrust_end );
-
-	savefile->WriteRenderLight( renderLight );
-	savefile->WriteInt( (int)lightDefHandle );
-	savefile->WriteVec3( lightOffset );
-	savefile->WriteInt( lightStartTime );
-	savefile->WriteInt( lightEndTime );
-	savefile->WriteVec3( lightColor );
-
-	savefile->WriteParticle( smokeFly );
-	savefile->WriteInt( smokeFlyTime );
-
-#ifdef _D3XP
-	savefile->WriteInt( originalTimeGroup );
-#endif
-
-	savefile->WriteInt( (int)state );
-
-	savefile->WriteFloat( damagePower );
-
-	savefile->WriteStaticObject( physicsObj );
-	savefile->WriteStaticObject( thruster );
-}
-
-/*
-================
-idProjectile::Restore
-================
-*/
-void idProjectile::Restore( idRestoreGame *savefile ) {
-
-	owner.Restore( savefile );
-
-	savefile->Read( &projectileFlags, sizeof( projectileFlags ) );
-	LittleBitField( &projectileFlags, sizeof( projectileFlags ) );
-
-	savefile->ReadFloat( thrust );
-	savefile->ReadInt( thrust_end );
-
-	savefile->ReadRenderLight( renderLight );
-	savefile->ReadInt( (int &)lightDefHandle );
-	savefile->ReadVec3( lightOffset );
-	savefile->ReadInt( lightStartTime );
-	savefile->ReadInt( lightEndTime );
-	savefile->ReadVec3( lightColor );
-
-	savefile->ReadParticle( smokeFly );
-	savefile->ReadInt( smokeFlyTime );
-
-#ifdef _D3XP
-	savefile->ReadInt( originalTimeGroup );
-#endif
-
-	savefile->ReadInt( (int &)state );
-
-	savefile->ReadFloat( damagePower );
-
-	savefile->ReadStaticObject( physicsObj );
-	RestorePhysics( &physicsObj );
-
-	savefile->ReadStaticObject( thruster );
-	thruster.SetPhysics( &physicsObj );
-
-	if ( smokeFly != NULL ) {
-		idVec3 dir;
-		dir = physicsObj.GetLinearVelocity();
-		dir.NormalizeFast();
-		gameLocal.smokeParticles->EmitSmoke( smokeFly, gameLocal.time, gameLocal.random.RandomFloat(), GetPhysics()->GetOrigin(), GetPhysics()->GetAxis(), timeGroup /*_D3XP*/ );
-	}
-
-#ifdef _D3XP
-	if ( lightDefHandle >= 0 ) {
-		lightDefHandle = gameRenderWorld->AddLightDef( &renderLight );
-	}
-#endif
-}
-
-/*
-================
 idProjectile::GetOwner
 ================
 */
@@ -1442,47 +1351,6 @@ void idGuidedProjectile::Spawn( void ) {
 
 /*
 ================
-idGuidedProjectile::Save
-================
-*/
-void idGuidedProjectile::Save( idSaveGame *savefile ) const {
-	enemy.Save( savefile );
-	savefile->WriteFloat( speed );
-	savefile->WriteAngles( rndScale );
-	savefile->WriteAngles( rndAng );
-	savefile->WriteInt( rndUpdateTime );
-	savefile->WriteFloat( turn_max );
-	savefile->WriteFloat( clamp_dist );
-	savefile->WriteAngles( angles );
-	savefile->WriteBool( burstMode );
-	savefile->WriteBool( unGuided );
-	savefile->WriteFloat( burstDist );
-	savefile->WriteFloat( burstVelocity );
-}
-
-/*
-================
-idGuidedProjectile::Restore
-================
-*/
-void idGuidedProjectile::Restore( idRestoreGame *savefile ) {
-	enemy.Restore( savefile );
-	savefile->ReadFloat( speed );
-	savefile->ReadAngles( rndScale );
-	savefile->ReadAngles( rndAng );
-	savefile->ReadInt( rndUpdateTime );
-	savefile->ReadFloat( turn_max );
-	savefile->ReadFloat( clamp_dist );
-	savefile->ReadAngles( angles );
-	savefile->ReadBool( burstMode );
-	savefile->ReadBool( unGuided );
-	savefile->ReadFloat( burstDist );
-	savefile->ReadFloat( burstVelocity );
-}
-
-
-/*
-================
 idGuidedProjectile::GetSeekPos
 ================
 */
@@ -1657,44 +1525,6 @@ idSoulCubeMissile::~idSoulCubeMissile
 =================
 */
 idSoulCubeMissile::~idSoulCubeMissile() {
-}
-
-/*
-================
-idSoulCubeMissile::Save
-================
-*/
-void idSoulCubeMissile::Save( idSaveGame *savefile ) const {
-	savefile->WriteVec3( startingVelocity );
-	savefile->WriteVec3( endingVelocity );
-	savefile->WriteFloat( accelTime );
-	savefile->WriteInt( launchTime );
-	savefile->WriteBool( killPhase );
-	savefile->WriteBool( returnPhase );
-	savefile->WriteVec3( destOrg);
-	savefile->WriteInt( orbitTime );
-	savefile->WriteVec3( orbitOrg );
-	savefile->WriteInt( smokeKillTime );
-	savefile->WriteParticle( smokeKill );
-}
-
-/*
-================
-idSoulCubeMissile::Restore
-================
-*/
-void idSoulCubeMissile::Restore( idRestoreGame *savefile ) {
-	savefile->ReadVec3( startingVelocity );
-	savefile->ReadVec3( endingVelocity );
-	savefile->ReadFloat( accelTime );
-	savefile->ReadInt( launchTime );
-	savefile->ReadBool( killPhase );
-	savefile->ReadBool( returnPhase );
-	savefile->ReadVec3( destOrg);
-	savefile->ReadInt( orbitTime );
-	savefile->ReadVec3( orbitOrg );
-	savefile->ReadInt( smokeKillTime );
-	savefile->ReadParticle( smokeKill );
 }
 
 /*
@@ -1905,57 +1735,6 @@ void idBFGProjectile::Spawn( void ) {
 	}
 	nextDamageTime = 0;
 	damageFreq = NULL;
-}
-
-/*
-================
-idBFGProjectile::Save
-================
-*/
-void idBFGProjectile::Save( idSaveGame *savefile ) const {
-	int i;
-
-	savefile->WriteInt( beamTargets.Num() );
-	for ( i = 0; i < beamTargets.Num(); i++ ) {
-		beamTargets[i].target.Save( savefile );
-		savefile->WriteRenderEntity( beamTargets[i].renderEntity );
-		savefile->WriteInt( beamTargets[i].modelDefHandle );
-	}
-
-	savefile->WriteRenderEntity( secondModel );
-	savefile->WriteInt( secondModelDefHandle );
-	savefile->WriteInt( nextDamageTime );
-	savefile->WriteString( damageFreq );
-}
-
-/*
-================
-idBFGProjectile::Restore
-================
-*/
-void idBFGProjectile::Restore( idRestoreGame *savefile ) {
-	int i, num;
-
-	savefile->ReadInt( num );
-	beamTargets.SetNum( num );
-	for ( i = 0; i < num; i++ ) {
-		beamTargets[i].target.Restore( savefile );
-		savefile->ReadRenderEntity( beamTargets[i].renderEntity );
-		savefile->ReadInt( beamTargets[i].modelDefHandle );
-
-		if ( beamTargets[i].modelDefHandle >= 0 ) {
-			beamTargets[i].modelDefHandle = gameRenderWorld->AddEntityDef( &beamTargets[i].renderEntity );
-		}
-	}
-
-	savefile->ReadRenderEntity( secondModel );
-	savefile->ReadInt( secondModelDefHandle );
-	savefile->ReadInt( nextDamageTime );
-	savefile->ReadString( damageFreq );
-
-	if ( secondModelDefHandle >= 0 ) {
-		secondModelDefHandle = gameRenderWorld->AddEntityDef( &secondModel );
-	}
 }
 
 /*
@@ -2370,37 +2149,6 @@ idDebris::~idDebris( void ) {
 
 /*
 =================
-idDebris::Save
-=================
-*/
-void idDebris::Save( idSaveGame *savefile ) const {
-	owner.Save( savefile );
-
-	savefile->WriteStaticObject( physicsObj );
-
-	savefile->WriteParticle( smokeFly );
-	savefile->WriteInt( smokeFlyTime );
-	savefile->WriteSoundShader( sndBounce );
-}
-
-/*
-=================
-idDebris::Restore
-=================
-*/
-void idDebris::Restore( idRestoreGame *savefile ) {
-	owner.Restore( savefile );
-
-	savefile->ReadStaticObject( physicsObj );
-	RestorePhysics( &physicsObj );
-
-	savefile->ReadParticle( smokeFly );
-	savefile->ReadInt( smokeFlyTime );
-	savefile->ReadSoundShader( sndBounce );
-}
-
-/*
-=================
 idDebris::Launch
 =================
 */
@@ -2729,49 +2477,6 @@ idHomingProjectile::Spawn
 void idHomingProjectile::Spawn()
 {
 }
-
-/*
-================
-idHomingProjectile::Save
-================
-*/
-void idHomingProjectile::Save(idSaveGame* savefile) const
-{
-	enemy.Save(savefile);
-	savefile->WriteFloat(speed);
-	savefile->WriteAngles(rndScale);
-	savefile->WriteAngles(rndAng);
-	savefile->WriteFloat(turn_max);
-	savefile->WriteFloat(clamp_dist);
-	savefile->WriteAngles(angles);
-	savefile->WriteBool(burstMode);
-	savefile->WriteBool(unGuided);
-	savefile->WriteFloat(burstDist);
-	savefile->WriteFloat(burstVelocity);
-	savefile->WriteVec3(seekPos);
-}
-
-/*
-================
-idHomingProjectile::Restore
-================
-*/
-void idHomingProjectile::Restore(idRestoreGame* savefile)
-{
-	enemy.Restore(savefile);
-	savefile->ReadFloat(speed);
-	savefile->ReadAngles(rndScale);
-	savefile->ReadAngles(rndAng);
-	savefile->ReadFloat(turn_max);
-	savefile->ReadFloat(clamp_dist);
-	savefile->ReadAngles(angles);
-	savefile->ReadBool(burstMode);
-	savefile->ReadBool(unGuided);
-	savefile->ReadFloat(burstDist);
-	savefile->ReadFloat(burstVelocity);
-	savefile->ReadVec3(seekPos);
-}
-
 
 /*
 ================

@@ -5226,42 +5226,6 @@ idAnimatedEntity::~idAnimatedEntity() {
 
 /*
 ================
-idAnimatedEntity::Save
-
-archives object for save game file
-================
-*/
-void idAnimatedEntity::Save( idSaveGame *savefile ) const {
-	animator.Save( savefile );
-
-	// Wounds are very temporary, ignored at this time
-	//damageEffect_t			*damageEffects;
-}
-
-/*
-================
-idAnimatedEntity::Restore
-
-unarchives object from save game file
-================
-*/
-void idAnimatedEntity::Restore( idRestoreGame *savefile ) {
-	animator.Restore( savefile );
-
-	// check if the entity has an MD5 model
-	if ( animator.ModelHandle() ) {
-		// set the callback to update the joints
-		renderEntity.callback = idEntity::ModelCallback;
-		animator.GetJoints( &renderEntity.numJoints, &renderEntity.joints );
-		animator.GetBounds( gameLocal.time, renderEntity.bounds );
-		if ( modelDefHandle != -1 ) {
-			gameRenderWorld->UpdateEntityDef( modelDefHandle, &renderEntity );
-		}
-	}
-}
-
-/*
-================
 idAnimatedEntity::ClientPredictionThink
 ================
 */

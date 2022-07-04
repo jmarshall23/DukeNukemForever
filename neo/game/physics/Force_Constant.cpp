@@ -56,29 +56,6 @@ idForce_Constant::~idForce_Constant( void ) {
 
 /*
 ================
-idForce_Constant::Save
-================
-*/
-void idForce_Constant::Save( idSaveGame *savefile ) const {
-	savefile->WriteVec3( force );
-	savefile->WriteInt( id );
-	savefile->WriteVec3( point );
-}
-
-/*
-================
-idForce_Constant::Restore
-================
-*/
-void idForce_Constant::Restore( idRestoreGame *savefile ) {
-	// Owner needs to call SetPhysics!!
-	savefile->ReadVec3( force );
-	savefile->ReadInt( id );
-	savefile->ReadVec3( point );
-}
-
-/*
-================
 idForce_Constant::SetPosition
 ================
 */

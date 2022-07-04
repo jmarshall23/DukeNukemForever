@@ -72,9 +72,6 @@ public:
 							idPhysics_RigidBody( void );
 							~idPhysics_RigidBody( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 							// initialisation
 	void					SetFriction( const float linear, const float angular, const float contact );
 	void					SetBouncyness( const float b );

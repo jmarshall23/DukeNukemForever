@@ -403,28 +403,6 @@ idTarget_FadeEntity::idTarget_FadeEntity( void ) {
 
 /*
 ================
-idTarget_FadeEntity::Save
-================
-*/
-void idTarget_FadeEntity::Save( idSaveGame *savefile ) const {
-	savefile->WriteVec4( fadeFrom );
-	savefile->WriteInt( fadeStart );
-	savefile->WriteInt( fadeEnd );
-}
-
-/*
-================
-idTarget_FadeEntity::Restore
-================
-*/
-void idTarget_FadeEntity::Restore( idRestoreGame *savefile ) {
-	savefile->ReadVec4( fadeFrom );
-	savefile->ReadInt( fadeStart );
-	savefile->ReadInt( fadeEnd );
-}
-
-/*
-================
 idTarget_FadeEntity::Event_Activate
 ================
 */
@@ -741,130 +719,6 @@ idTarget_SetInfluence::idTarget_SetInfluence( void ) {
 	switchToCamera = NULL;
 	soundFaded = false;
 	restoreOnTrigger = false;
-}
-
-/*
-================
-idTarget_SetInfluence::Save
-================
-*/
-void idTarget_SetInfluence::Save( idSaveGame *savefile ) const {
-	int i;
-
-	savefile->WriteInt( lightList.Num() );
-	for( i = 0; i < lightList.Num(); i++ ) {
-		savefile->WriteInt( lightList[ i ] );
-	}
-
-	savefile->WriteInt( guiList.Num() );
-	for( i = 0; i < guiList.Num(); i++ ) {
-		savefile->WriteInt( guiList[ i ] );
-	}
-
-	savefile->WriteInt( soundList.Num() );
-	for( i = 0; i < soundList.Num(); i++ ) {
-		savefile->WriteInt( soundList[ i ] );
-	}
-
-	savefile->WriteInt( genericList.Num() );
-	for( i = 0; i < genericList.Num(); i++ ) {
-		savefile->WriteInt( genericList[ i ] );
-	}
-
-	savefile->WriteFloat( flashIn );
-	savefile->WriteFloat( flashOut );
-
-	savefile->WriteFloat( delay );
-
-	savefile->WriteString( flashInSound );
-	savefile->WriteString( flashOutSound );
-
-	savefile->WriteObject( switchToCamera );
-
-	savefile->WriteFloat( fovSetting.GetStartTime() );
-	savefile->WriteFloat( fovSetting.GetDuration() );
-	savefile->WriteFloat( fovSetting.GetStartValue() );
-	savefile->WriteFloat( fovSetting.GetEndValue() );
-
-	savefile->WriteBool( soundFaded );
-	savefile->WriteBool( restoreOnTrigger );
-
-#ifdef _D3XP
-	savefile->WriteInt( savedGuiList.Num() );
-	for( i = 0; i < savedGuiList.Num(); i++ ) {
-		for(int j = 0; j < MAX_RENDERENTITY_GUI; j++) {
-			savefile->WriteUserInterface(savedGuiList[i].gui[j], savedGuiList[i].gui[j] ? savedGuiList[i].gui[j]->IsUniqued() : false);
-		}
-	}
-#endif
-}
-
-/*
-================
-idTarget_SetInfluence::Restore
-================
-*/
-void idTarget_SetInfluence::Restore( idRestoreGame *savefile ) {
-	int i, num;
-	int itemNum;
-	float set;
-
-	savefile->ReadInt( num );
-	for( i = 0; i < num; i++ ) {
-		savefile->ReadInt( itemNum );
-		lightList.Append( itemNum );
-	}
-
-	savefile->ReadInt( num );
-	for( i = 0; i < num; i++ ) {
-		savefile->ReadInt( itemNum );
-		guiList.Append( itemNum );
-	}
-
-	savefile->ReadInt( num );
-	for( i = 0; i < num; i++ ) {
-		savefile->ReadInt( itemNum );
-		soundList.Append( itemNum );
-	}
-
-	savefile->ReadInt( num );
-	for ( i = 0; i < num; i++ ) {
-		savefile->ReadInt( itemNum );
-		genericList.Append( itemNum );
-	}
-
-	savefile->ReadFloat( flashIn );
-	savefile->ReadFloat( flashOut );
-
-	savefile->ReadFloat( delay );
-
-	savefile->ReadString( flashInSound );
-	savefile->ReadString( flashOutSound );
-
-	savefile->ReadObject( reinterpret_cast<idClass *&>( switchToCamera ) );
-
-	savefile->ReadFloat( set );
-	fovSetting.SetStartTime( set );
-	savefile->ReadFloat( set );
-	fovSetting.SetDuration( set );
-	savefile->ReadFloat( set );
-	fovSetting.SetStartValue( set );
-	savefile->ReadFloat( set );
-	fovSetting.SetEndValue( set );
-
-	savefile->ReadBool( soundFaded );
-	savefile->ReadBool( restoreOnTrigger );
-
-#ifdef _D3XP
-	savefile->ReadInt( num );
-	for( i = 0; i < num; i++ ) {
-		SavedGui_t temp;
-		for(int j = 0; j < MAX_RENDERENTITY_GUI; j++) {
-			savefile->ReadUserInterface(temp.gui[j]);
-		}
-		savedGuiList.Append( temp );
-	}
-#endif
 }
 
 /*
@@ -1323,40 +1177,6 @@ CLASS_DECLARATION( idTarget, idTarget_SetFov )
 	EVENT( EV_Activate,	idTarget_SetFov::Event_Activate )
 END_CLASS
 
-
-/*
-================
-idTarget_SetFov::Save
-================
-*/
-void idTarget_SetFov::Save( idSaveGame *savefile ) const {
-
-	savefile->WriteFloat( fovSetting.GetStartTime() );
-	savefile->WriteFloat( fovSetting.GetDuration() );
-	savefile->WriteFloat( fovSetting.GetStartValue() );
-	savefile->WriteFloat( fovSetting.GetEndValue() );
-}
-
-/*
-================
-idTarget_SetFov::Restore
-================
-*/
-void idTarget_SetFov::Restore( idRestoreGame *savefile ) {
-	float setting;
-
-	savefile->ReadFloat( setting );
-	fovSetting.SetStartTime( setting );
-	savefile->ReadFloat( setting );
-	fovSetting.SetDuration( setting );
-	savefile->ReadFloat( setting );
-	fovSetting.SetStartValue( setting );
-	savefile->ReadFloat( setting );
-	fovSetting.SetEndValue( setting );
-
-	fovSetting.GetCurrentValue( gameLocal.time );
-}
-
 /*
 ================
 idTarget_SetFov::Event_Activate
@@ -1571,24 +1391,6 @@ idTarget_Tip::Spawn
 ================
 */
 void idTarget_Tip::Spawn( void ) {
-}
-
-/*
-================
-idTarget_Tip::Save
-================
-*/
-void idTarget_Tip::Save( idSaveGame *savefile ) const {
-	savefile->WriteVec3( playerPos );
-}
-
-/*
-================
-idTarget_Tip::Restore
-================
-*/
-void idTarget_Tip::Restore( idRestoreGame *savefile ) {
-	savefile->ReadVec3( playerPos );
 }
 
 /*

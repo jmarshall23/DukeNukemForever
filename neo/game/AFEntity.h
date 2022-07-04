@@ -101,9 +101,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	void					SetBody( idEntity *bodyEnt, const char *headModel, jointHandle_t attachJoint );
 	void					ClearBody( void );
 	idEntity *				GetBody( void ) const;
@@ -151,9 +148,6 @@ public:
 	virtual					~idAFEntity_Base( void );
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual void			Think( void );
 	virtual void			GetImpactInfo( idEntity *ent, int id, const idVec3 &point, impactInfo_t *info );
@@ -218,8 +212,6 @@ public:
 							~idAFEntity_Gibbable( void );
 
 	void					Spawn( void );
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 	virtual void			Present( void );
 	virtual	void			Damage( idEntity *inflictor, idEntity *attacker, const idVec3 &dir, const char *damageDefName, const float damageScale, const int location );
 #ifdef _D3XP
@@ -264,9 +256,6 @@ public:
 
 	void					Spawn( void );
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Think( void );
 	void					KeepRunningPhysics( void ) { keepRunningPhysics = true; }
 
@@ -293,9 +282,6 @@ public:
 							~idAFEntity_WithAttachedHead();
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	void					SetupHead( void );
 
@@ -482,9 +468,6 @@ public:
 							~idAFEntity_SteamPipe( void );
 
 	void					Spawn( void );
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
-
 	virtual void			Think( void );
 
 private:
@@ -514,8 +497,6 @@ public:
 							idAFEntity_ClawFourFingers( void );
 
 	void					Spawn( void );
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 private:
 	idAFConstraint_Hinge *	fingers[4];
@@ -540,8 +521,6 @@ public:
 
 	void				Spawn();
 	void				Init(idEntity* parent);
-	void				Save( idSaveGame *savefile ) const;
-	void				Restore( idRestoreGame *savefile );
 
 	void				SetParent(idEntity* parent);
 
@@ -593,9 +572,6 @@ public:
 	~idAFEntity_Harvest();
 
 	void					Spawn( void );
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual void			Think( void );
 

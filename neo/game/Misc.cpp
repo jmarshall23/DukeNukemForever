@@ -95,24 +95,6 @@ void idPlayerStart::Spawn( void ) {
 
 /*
 ================
-idPlayerStart::Save
-================
-*/
-void idPlayerStart::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( teleportStage );
-}
-
-/*
-================
-idPlayerStart::Restore
-================
-*/
-void idPlayerStart::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( teleportStage );
-}
-
-/*
-================
 idPlayerStart::ClientReceiveEvent
 ================
 */
@@ -260,28 +242,6 @@ void idPlayerStart::Event_TeleportPlayer( idEntity *activator ) {
 CLASS_DECLARATION( idEntity, idActivator )
 	EVENT( EV_Activate,		idActivator::Event_Activate )
 END_CLASS
-
-/*
-===============
-idActivator::Save
-================
-*/
-void idActivator::Save( idSaveGame *savefile ) const {
-	savefile->WriteBool( stay_on );
-}
-
-/*
-===============
-idActivator::Restore
-================
-*/
-void idActivator::Restore( idRestoreGame *savefile ) {
-	savefile->ReadBool( stay_on );
-
-	if ( stay_on ) {
-		BecomeActive( TH_THINK );
-	}
-}
 
 /*
 ===============
@@ -437,26 +397,6 @@ idDamagable::idDamagable
 idDamagable::idDamagable( void ) {
 	count = 0;
 	nextTriggerTime = 0;
-}
-
-/*
-================
-idDamagable::Save
-================
-*/
-void idDamagable::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( count );
-	savefile->WriteInt( nextTriggerTime );
-}
-
-/*
-================
-idDamagable::Restore
-================
-*/
-void idDamagable::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( count );
-	savefile->ReadInt( nextTriggerTime );
 }
 
 /*
@@ -799,24 +739,6 @@ void idForceField::Think( void ) {
 
 /*
 ================
-idForceField::Save
-================
-*/
-void idForceField::Save( idSaveGame *savefile ) const {
-	savefile->WriteStaticObject( forceField );
-}
-
-/*
-================
-idForceField::Restore
-================
-*/
-void idForceField::Restore( idRestoreGame *savefile ) {
-	savefile->ReadStaticObject( forceField );
-}
-
-/*
-================
 idForceField::Spawn
 ================
 */
@@ -954,36 +876,6 @@ idAnimated::idAnimated
 idAnimated::~idAnimated() {
 	delete combatModel;
 	combatModel = NULL;
-}
-
-/*
-===============
-idAnimated::Save
-================
-*/
-void idAnimated::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( current_anim_index );
-	savefile->WriteInt( num_anims );
-	savefile->WriteInt( anim );
-	savefile->WriteInt( blendFrames );
-	savefile->WriteJoint( soundJoint );
-	activator.Save( savefile );
-	savefile->WriteBool( activated );
-}
-
-/*
-===============
-idAnimated::Restore
-================
-*/
-void idAnimated::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( current_anim_index );
-	savefile->ReadInt( num_anims );
-	savefile->ReadInt( anim );
-	savefile->ReadInt( blendFrames );
-	savefile->ReadJoint( soundJoint );
-	activator.Restore( savefile );
-	savefile->ReadBool( activated );
 }
 
 /*
@@ -1420,36 +1312,6 @@ idStaticEntity::idStaticEntity( void ) {
 
 /*
 ===============
-idStaticEntity::Save
-===============
-*/
-void idStaticEntity::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( spawnTime );
-	savefile->WriteBool( active );
-	savefile->WriteVec4( fadeFrom );
-	savefile->WriteVec4( fadeTo );
-	savefile->WriteInt( fadeStart );
-	savefile->WriteInt( fadeEnd );
-	savefile->WriteBool( runGui );
-}
-
-/*
-===============
-idStaticEntity::Restore
-===============
-*/
-void idStaticEntity::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( spawnTime );
-	savefile->ReadBool( active );
-	savefile->ReadVec4( fadeFrom );
-	savefile->ReadVec4( fadeTo );
-	savefile->ReadInt( fadeStart );
-	savefile->ReadInt( fadeEnd );
-	savefile->ReadBool( runGui );
-}
-
-/*
-===============
 idStaticEntity::Spawn
 ===============
 */
@@ -1679,24 +1541,6 @@ void idFuncEmitter::Spawn( void ) {
 }
 
 /*
-===============
-idFuncEmitter::Save
-===============
-*/
-void idFuncEmitter::Save( idSaveGame *savefile ) const {
-	savefile->WriteBool( hidden );
-}
-
-/*
-===============
-idFuncEmitter::Restore
-===============
-*/
-void idFuncEmitter::Restore( idRestoreGame *savefile ) {
-	savefile->ReadBool( hidden );
-}
-
-/*
 ================
 idFuncEmitter::Event_Activate
 ================
@@ -1826,28 +1670,6 @@ idFuncSmoke::idFuncSmoke() {
 
 /*
 ===============
-idFuncSmoke::Save
-===============
-*/
-void idFuncSmoke::Save(	idSaveGame *savefile ) const {
-	savefile->WriteInt( smokeTime );
-	savefile->WriteParticle( smoke );
-	savefile->WriteBool( restart );
-}
-
-/*
-===============
-idFuncSmoke::Restore
-===============
-*/
-void idFuncSmoke::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( smokeTime );
-	savefile->ReadParticle( smoke );
-	savefile->ReadBool( restart );
-}
-
-/*
-===============
 idFuncSmoke::Spawn
 ===============
 */
@@ -1939,26 +1761,6 @@ void idTextEntity::Spawn( void ) {
 
 /*
 ================
-idTextEntity::Save
-================
-*/
-void idTextEntity::Save( idSaveGame *savefile ) const {
-	savefile->WriteString( text );
-	savefile->WriteBool( playerOriented );
-}
-
-/*
-================
-idTextEntity::Restore
-================
-*/
-void idTextEntity::Restore( idRestoreGame *savefile ) {
-	savefile->ReadString( text );
-	savefile->ReadBool( playerOriented );
-}
-
-/*
-================
 idTextEntity::Think
 ================
 */
@@ -1998,30 +1800,6 @@ idVacuumSeparatorEntity::idVacuumSeparatorEntity
 */
 idVacuumSeparatorEntity::idVacuumSeparatorEntity( void ) {
 	portal = 0;
-}
-
-/*
-================
-idVacuumSeparatorEntity::Save
-================
-*/
-void idVacuumSeparatorEntity::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( (int)portal );
-	savefile->WriteInt( 0 );
-}
-
-/*
-================
-idVacuumSeparatorEntity::Restore
-================
-*/
-void idVacuumSeparatorEntity::Restore( idRestoreGame *savefile ) {
-	int state;
-
-	savefile->ReadInt( (int &)portal );
-	savefile->ReadInt( state );
-
-	gameLocal.SetPortalState( portal, state );
 }
 
 /*
@@ -2147,26 +1925,6 @@ idBeam::idBeam
 idBeam::idBeam() {
 	target = NULL;
 	master = NULL;
-}
-
-/*
-===============
-idBeam::Save
-===============
-*/
-void idBeam::Save( idSaveGame *savefile ) const {
-	target.Save( savefile );
-	master.Save( savefile );
-}
-
-/*
-===============
-idBeam::Restore
-===============
-*/
-void idBeam::Restore( idRestoreGame *savefile ) {
-	target.Restore( savefile );
-	master.Restore( savefile );
 }
 
 /*
@@ -2342,25 +2100,6 @@ END_CLASS
 
 /*
 ================
-idLiquid::Save
-================
-*/
-void idLiquid::Save( idSaveGame *savefile ) const {
-	// Nothing to save
-}
-
-/*
-================
-idLiquid::Restore
-================
-*/
-void idLiquid::Restore( idRestoreGame *savefile ) {
-	//FIXME: NO!
-	Spawn();
-}
-
-/*
-================
 idLiquid::Spawn
 ================
 */
@@ -2410,27 +2149,6 @@ idShaking::idShaking
 */
 idShaking::idShaking() {
 	active = false;
-}
-
-/*
-===============
-idShaking::Save
-===============
-*/
-void idShaking::Save( idSaveGame *savefile ) const {
-	savefile->WriteBool( active );
-	savefile->WriteStaticObject( physicsObj );
-}
-
-/*
-===============
-idShaking::Restore
-===============
-*/
-void idShaking::Restore( idRestoreGame *savefile ) {
-	savefile->ReadBool( active );
-	savefile->ReadStaticObject( physicsObj );
-	RestorePhysics( &physicsObj );
 }
 
 /*
@@ -2509,42 +2227,6 @@ idEarthQuake::idEarthQuake() {
 	playerOriented = false;
 	disabled = false;
 	shakeTime = 0.0f;
-}
-
-/*
-===============
-idEarthQuake::Save
-===============
-*/
-void idEarthQuake::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( nextTriggerTime );
-	savefile->WriteInt( shakeStopTime );
-	savefile->WriteFloat( wait );
-	savefile->WriteFloat( random );
-	savefile->WriteBool( triggered );
-	savefile->WriteBool( playerOriented );
-	savefile->WriteBool( disabled );
-	savefile->WriteFloat( shakeTime );
-}
-
-/*
-===============
-idEarthQuake::Restore
-===============
-*/
-void idEarthQuake::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( nextTriggerTime );
-	savefile->ReadInt( shakeStopTime );
-	savefile->ReadFloat( wait );
-	savefile->ReadFloat( random );
-	savefile->ReadBool( triggered );
-	savefile->ReadBool( playerOriented );
-	savefile->ReadBool( disabled );
-	savefile->ReadFloat( shakeTime );
-
-	if ( shakeStopTime > gameLocal.time ) {
-		BecomeActive( TH_THINK );
-	}
 }
 
 /*
@@ -2670,27 +2352,6 @@ idFuncPortal::idFuncPortal() {
 
 /*
 ===============
-idFuncPortal::Save
-===============
-*/
-void idFuncPortal::Save( idSaveGame *savefile ) const {
-	savefile->WriteInt( (int)portal );
-	savefile->WriteBool( state );
-}
-
-/*
-===============
-idFuncPortal::Restore
-===============
-*/
-void idFuncPortal::Restore( idRestoreGame *savefile ) {
-	savefile->ReadInt( (int &)portal );
-	savefile->ReadBool( state );
-	gameLocal.SetPortalState( portal, state ? PS_BLOCK_ALL : PS_BLOCK_NONE );
-}
-
-/*
-===============
 idFuncPortal::Spawn
 ===============
 */
@@ -2733,24 +2394,6 @@ idFuncRadioChatter::idFuncRadioChatter
 */
 idFuncRadioChatter::idFuncRadioChatter() {
 	time = 0.0;
-}
-
-/*
-===============
-idFuncRadioChatter::Save
-===============
-*/
-void idFuncRadioChatter::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( time );
-}
-
-/*
-===============
-idFuncRadioChatter::Restore
-===============
-*/
-void idFuncRadioChatter::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( time );
 }
 
 /*
@@ -2841,49 +2484,6 @@ idShockwave::~idShockwave
 ===============
 */
 idShockwave::~idShockwave() {
-}
-
-/*
-===============
-idShockwave::Save
-===============
-*/
-void idShockwave::Save( idSaveGame *savefile ) const {
-	savefile->WriteBool( isActive );
-	savefile->WriteInt( startTime );
-	savefile->WriteInt( duration );
-
-	savefile->WriteFloat( startSize );
-	savefile->WriteFloat( endSize );
-	savefile->WriteFloat( currentSize );
-
-	savefile->WriteFloat( magnitude );
-
-	savefile->WriteFloat( height );
-	savefile->WriteBool( playerDamaged );
-	savefile->WriteFloat( playerDamageSize );
-}
-
-/*
-===============
-idShockwave::Restore
-===============
-*/
-void idShockwave::Restore( idRestoreGame *savefile ) {
-	savefile->ReadBool( isActive );
-	savefile->ReadInt( startTime );
-	savefile->ReadInt( duration );
-
-	savefile->ReadFloat( startSize );
-	savefile->ReadFloat( endSize );
-	savefile->ReadFloat( currentSize );
-
-	savefile->ReadFloat( magnitude );
-
-	savefile->ReadFloat( height );
-	savefile->ReadBool( playerDamaged );
-	savefile->ReadFloat( playerDamageSize );
-	
 }
 
 /*

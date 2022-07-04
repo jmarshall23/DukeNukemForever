@@ -45,9 +45,6 @@ public:
 
 	void			Spawn( void );
 
-	void			Save( idRestoreGame *savefile );
-	void			Restore( idRestoreGame *savefile );
-
 private:
 	void			Event_Remove( void );
 };

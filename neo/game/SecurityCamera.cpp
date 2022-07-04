@@ -61,62 +61,6 @@ END_CLASS
 
 /*
 ================
-idSecurityCamera::Save
-================
-*/
-void idSecurityCamera::Save( idSaveGame *savefile ) const {
-	savefile->WriteFloat( angle );
-	savefile->WriteFloat( sweepAngle );
-	savefile->WriteInt( modelAxis );
-	savefile->WriteBool( flipAxis );
-	savefile->WriteFloat( scanDist );
-	savefile->WriteFloat( scanFov );
-							
-	savefile->WriteFloat( sweepStart );
-	savefile->WriteFloat( sweepEnd );
-	savefile->WriteBool( negativeSweep );
-	savefile->WriteBool( sweeping );
-	savefile->WriteInt( alertMode );
-	savefile->WriteFloat( stopSweeping );
-	savefile->WriteFloat( scanFovCos );
-
-	savefile->WriteVec3( viewOffset );
-							
-	savefile->WriteInt( pvsArea );
-	savefile->WriteStaticObject( physicsObj );
-	savefile->WriteTraceModel( trm );
-}
-
-/*
-================
-idSecurityCamera::Restore
-================
-*/
-void idSecurityCamera::Restore( idRestoreGame *savefile ) {
-	savefile->ReadFloat( angle );
-	savefile->ReadFloat( sweepAngle );
-	savefile->ReadInt( modelAxis );
-	savefile->ReadBool( flipAxis );
-	savefile->ReadFloat( scanDist );
-	savefile->ReadFloat( scanFov );
-							
-	savefile->ReadFloat( sweepStart );
-	savefile->ReadFloat( sweepEnd );
-	savefile->ReadBool( negativeSweep );
-	savefile->ReadBool( sweeping );
-	savefile->ReadInt( alertMode );
-	savefile->ReadFloat( stopSweeping );
-	savefile->ReadFloat( scanFovCos );
-
-	savefile->ReadVec3( viewOffset );
-							
-	savefile->ReadInt( pvsArea );
-	savefile->ReadStaticObject( physicsObj );
-	savefile->ReadTraceModel( trm );
-}
-
-/*
-================
 idSecurityCamera::Spawn
 ================
 */

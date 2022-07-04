@@ -170,10 +170,10 @@ public:
 							idEntity();
 							~idEntity();
 
-	void					Spawn( void );
+	virtual void			Save(idSaveGame* savefile) const;
+	virtual void			Restore(idRestoreGame* savefile);
 
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
+	void					Spawn( void );
 
 	void					DestroySelf(void);
 
@@ -568,9 +568,6 @@ public:
 
 							idAnimatedEntity();
 							~idAnimatedEntity();
-
-	void					Save( idSaveGame *savefile ) const;
-	void					Restore( idRestoreGame *savefile );
 
 	virtual void			ClientPredictionThink( void );
 	virtual void			Think( void );

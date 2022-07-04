@@ -184,10 +184,6 @@ public:
 							idInventory() { Clear(); }
 							~idInventory() { Clear(); }
 
-	// save games
-	void					Save( idSaveGame *savefile ) const;					// archives object for save game file
-	void					Restore( idRestoreGame *savefile );					// unarchives object from save game file
-
 	void					Clear( void );
 	void					GivePowerUp( idPlayer *player, int powerup, int msec );
 	void					ClearPowerUps( void );
@@ -390,10 +386,6 @@ public:
 	void					Think( void );
 
 	virtual void			SetStartingInventory(void) { };
-
-	// save games
-	void					Save( idSaveGame *savefile ) const;					// archives object for save game file
-	void					Restore( idRestoreGame *savefile );					// unarchives object from save game file
 
 	virtual void			Hide( void );
 	virtual void			Show( void );
