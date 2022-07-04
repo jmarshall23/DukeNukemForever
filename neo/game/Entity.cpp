@@ -980,6 +980,15 @@ void idEntity::DormantEnd( void ) {
 
 /*
 ================
+idEntity::DestroySelf
+================
+*/
+void idEntity::DestroySelf(void) {
+	ProcessEvent(&EV_Remove);
+}
+
+/*
+================
 idEntity::IsActive
 ================
 */

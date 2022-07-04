@@ -1460,6 +1460,7 @@ void idStaticEntity::Spawn( void ) {
 	// an inline static model will not do anything at all
 	if (spawnArgs.GetBool("inline") || gameLocal.world->spawnArgs.GetBool("inlineAllStatics")) {
 		Hide();
+		DestroySelf();
 		return;
 	}
 
