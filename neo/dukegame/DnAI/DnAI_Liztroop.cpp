@@ -5,6 +5,7 @@
 #include "../../game/Game_local.h"
 
 #define LIZTROOP_FIRE_DISTANCE			500
+#define LIZTROOP_FORCE_FIREDISTANCE		200
 
 CLASS_DECLARATION(DnAI, DnLiztroop)
 END_CLASS
@@ -114,7 +115,7 @@ stateResult_t DnLiztroop::state_ApproachingEnemy(stateParms_t* parms)
 
 	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
 
-	if (distToEnemy > LIZTROOP_FIRE_DISTANCE || !isTargetVisible)
+	if (distToEnemy > LIZTROOP_FIRE_DISTANCE || !isTargetVisible || (CurrentlyPlayingSound() && distToEnemy >= LIZTROOP_FORCE_FIREDISTANCE))
 	{
 		UpdatePathToPosition(target->GetOrigin());
 		SetAnimation("walk", true);

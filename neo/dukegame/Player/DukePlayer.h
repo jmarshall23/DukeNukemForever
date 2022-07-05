@@ -32,11 +32,14 @@ public:
 
 	virtual idVec3			GetVisualOffset();
 	virtual idBounds		GetClipBounds();
+
+	virtual	void			Damage(idEntity* inflictor, idEntity* attacker, const idVec3& dir, const char* damageDefName, const float damageScale, const int location);
 private:
 	void					SetAnimation(const char* name, bool loop);
 	idVec3					ApplyLandDeflect(const idVec3& pos, float scale);
 
 	const idSoundShader*	dukeTauntShader;
+	const idSoundShader*	dukePainShader;
 
 	idList<const idSoundShader*> dukeJumpSounds;
 

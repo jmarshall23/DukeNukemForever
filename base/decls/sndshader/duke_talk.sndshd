@@ -1,3 +1,14 @@
+duke_pain
+{
+	dukevoice
+
+	sounds/duketalk2/pain/vs_pain1.ogg
+	sounds/duketalk2/pain/vs_pain2.ogg
+	sounds/duketalk2/pain/vs_pain3.ogg
+	sounds/duketalk2/pain/vs_pain4.ogg
+	sounds/duketalk2/pain/vs_pain5.ogg
+}
+
 duke_useshotgun
 {
 	dukevoice

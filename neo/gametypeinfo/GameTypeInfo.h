@@ -4649,6 +4649,7 @@ static classVariableInfo_t DnSchoolGirl_typeInfo[] = {
 
 static classVariableInfo_t DukePlayer_typeInfo[] = {
 	{ "const idSoundShader *", "dukeTauntShader", (intptr_t)(&((DukePlayer *)0)->dukeTauntShader), sizeof( ((DukePlayer *)0)->dukeTauntShader ) },
+	{ "const idSoundShader *", "dukePainShader", (intptr_t)(&((DukePlayer *)0)->dukePainShader), sizeof( ((DukePlayer *)0)->dukePainShader ) },
 	{ "idList < const idSoundShader * >", "dukeJumpSounds", (intptr_t)(&((DukePlayer *)0)->dukeJumpSounds), sizeof( ((DukePlayer *)0)->dukeJumpSounds ) },
 	{ "bool", "firstSwearTaunt", (intptr_t)(&((DukePlayer *)0)->firstSwearTaunt), sizeof( ((DukePlayer *)0)->firstSwearTaunt ) },
 	{ "float", "bob", (intptr_t)(&((DukePlayer *)0)->bob), sizeof( ((DukePlayer *)0)->bob ) },

@@ -53,6 +53,21 @@ void DukePlayer::Spawn(void)
 	SetAnimation("idle", true);
 
 	dukeTauntShader = declManager->FindSound("duke_killtaunt");
+	dukePainShader = declManager->FindSound("duke_pain");
+}
+
+/*
+==================
+DukePlayer::Damage
+==================
+*/
+void DukePlayer::Damage(idEntity* inflictor, idEntity* attacker, const idVec3& dir, const char* damageDefName, const float damageScale, const int location) {
+	int currentHealth = health;
+	idPlayer::Damage(inflictor, attacker, dir, damageDefName, damageScale, location);
+	if (currentHealth != health)
+	{
+		Event_DukeTalk("duke_pain");
+	}
 }
 
 /*
@@ -375,7 +390,7 @@ DukePlayer::GiveEgo
 void DukePlayer::GiveEgo(int amount) {
 	if (health + amount > 100)
 	{
-		amount = 100 - amount;
+		amount = (health + amount) - 100;
 	}
 
 	health += amount;

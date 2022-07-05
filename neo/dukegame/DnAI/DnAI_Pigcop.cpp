@@ -5,6 +5,7 @@
 #include "../../game/Game_local.h"
 
 #define PIGCOP_FIRE_DISTANCE			500
+#define PIGCOP_FORCE_FIREDISTANCE		200
 
 CLASS_DECLARATION(DnAI, DnPigcop)
 END_CLASS
@@ -131,7 +132,7 @@ stateResult_t DnPigcop::state_ApproachingEnemy(stateParms_t* parms)
 
 	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
 
-	if (distToEnemy > PIGCOP_FIRE_DISTANCE || !isTargetVisible)
+	if (distToEnemy > PIGCOP_FIRE_DISTANCE || !isTargetVisible || (CurrentlyPlayingSound() && distToEnemy >= PIGCOP_FORCE_FIREDISTANCE))
 	{
 		UpdatePathToPosition(target->GetOrigin());
 		SetAnimation("walk", true);
