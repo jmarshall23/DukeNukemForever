@@ -179,13 +179,13 @@
 {
 "classname" "light"
 "name" "light_30"
-"origin" "4768 1288 248"
-"noshadows" "0"
+"origin" "4768 1208 224"
+"noshadows" "1"
 "nospecular" "0"
 "nodiffuse" "0"
 "falloff" "0"
-"_color" "1 0.06 0.07"
-"light_radius" "500 500 500"
+"_color" "1 0.2 0.27"
+"light_radius" "300 400 300"
 }
 // entity 22
 {
@@ -25481,7 +25481,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.51 0.51 0.51"
 "light_radius" "75 75 700"
 }
@@ -25493,7 +25493,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.4 0.4 0.4"
 "light_radius" "300 300 200"
 }
@@ -25547,13 +25547,13 @@
 {
 "classname" "light"
 "name" "light_33"
-"origin" "6200 1176 72"
+"origin" "6096 1184 96"
 "noshadows" "0"
-"nospecular" "0"
+"nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0"
+"falloff" "0.000000"
 "_color" "1 0.87 0.64"
-"light_radius" "300 300 300"
+"light_radius" "500 300 200"
 }
 // entity 2835
 {
@@ -25608,39 +25608,39 @@
 {
 "classname" "light"
 "name" "light_38"
-"origin" "6224 832 72"
+"origin" "6120 840 96"
 "noshadows" "0"
-"nospecular" "0"
+"nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0"
+"falloff" "0.000000"
 "_color" "1 0.87 0.64"
-"light_radius" "300 300 300"
+"light_radius" "500 300 200"
 }
 // entity 2839
 {
 "classname" "light"
 "name" "light_39"
 "origin" "4384 24 72"
+"_brightness" "0.5"
 "noshadows" "1"
 "nospecular" "0"
 "nodiffuse" "0"
 "falloff" "0"
 "_color" "1 0.87 0.64"
-"light_radius" "300 300 300"
-"_brightness" "0.5"
+"light_radius" "300 300 120"
 }
 // entity 2840
 {
 "classname" "light"
 "name" "light_40"
-"origin" "3928 104 72"
+"origin" "3928 104 64"
+"_brightness" "0.5"
 "noshadows" "1"
 "nospecular" "0"
 "nodiffuse" "0"
 "falloff" "0"
 "_color" "1 0.87 0.64"
-"light_radius" "300 300 300"
-"_brightness" "0.5"
+"light_radius" "300 300 120"
 }
 // entity 2841
 {
@@ -25671,12 +25671,12 @@
 "classname" "light"
 "name" "light_43"
 "origin" "4296 344 384"
-"noshadows" "1"
-"nospecular" "0"
+"noshadows" "0"
+"nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0"
-"_color" "0.79 0.89 1"
-"light_radius" "500 500 500"
+"falloff" "0.000000"
+"_color" "1 0.87 0.64"
+"light_radius" "500 300 200"
 }
 // entity 2844
 {

@@ -34,6 +34,8 @@ renderProg interaction
 
 	pixel
 	{
+//		#define SPEC_ONLY_TEST
+
 		vec3 vTangent = vertex_texcoord0.xyz;
 		vec3 vBinormal = vertex_texcoord1.xyz;
 		vec3 vNormal = vertex_texcoord3.xyz;
@@ -68,7 +70,8 @@ renderProg interaction
 		{
 			vec3 lc = $lightcolor[i].xyz;
 
-			vec4 toLight = $globalLightOrigin[i] - vertex;	
+			vec4 toLight = $globalLightOrigin[i] - vertex;
+			float noSpecular = $globalLightOrigin[i].w;	
 
 			//# add together to become the half angle vector in object space (non-normalized)
 			vec4 halfAngleVector = toLight + toView;
@@ -88,11 +91,16 @@ renderProg interaction
 			float hDotN = dot3( normalize( halfAngleTangentVector ), localNormal );
 
 			// vec3 CalcSpecPBR(vec3 cameraVector, vec4 Cd, vec4 metallic, float roughness, vec3 H, vec3 N, vec3 L)
-			vec3 pbr = CalcSpecPBR(viewTangentVector.xyz, 
+			vec3 pbr = vec3(0, 0, 0);
+
+			if(noSpecular == 0)
+			{
+				pbr = CalcSpecPBR(viewTangentVector.xyz, 
 							diffuseMap.xyz, 
 							0.5, 
 							0.5, 
 							normalize(halfAngleTangentVector), localNormal, lightVector);
+			}
 
 			float attenuation = AttenuationPointLight(vertex_texcoord5.xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
 			float lit = dot3( localNormal, lightVector ) * attenuation;
@@ -103,8 +111,6 @@ renderProg interaction
 			float shadow = 1.0f; 
 			vec4 _shadowMapInfo = $shadowMapInfo[i];
 
-			pbr = pbr * 1.5;
-
 			if(_shadowMapInfo.w == 1)
 			{
 				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, vertex_texcoord5.xyz, $globalLightOrigin[i].xyz, _shadowMapInfo);
@@ -112,7 +118,7 @@ renderProg interaction
 #ifdef SPEC_ONLY_TEST
 			finalColor += (lc * ((pbr  * shadow * attenuation))) ;
 #else
-			finalColor += (lc * ((lit  * shadow) + (pbr  * shadow * attenuation))) ;
+			finalColor += (lc * ((lit  * shadow) + (pbr  * shadow * (attenuation * 2)))) ;
 #endif
 		}
 

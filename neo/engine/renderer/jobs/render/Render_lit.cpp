@@ -177,7 +177,7 @@ void idRender::DrawForwardLit( void ) {
 			tr.shadowMapInfoParm->SetVectorValue(shadowMapInfo, d);
 
 			// globalLightOrigin
-			idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, 1.0);
+			idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, vLight->lightDef->parms.noSpecular);
 			tr.globalLightOriginParam->SetVectorValue(lightOrigin, d);
 
 			// light color.
