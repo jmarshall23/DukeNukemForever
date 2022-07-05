@@ -63,10 +63,15 @@ renderProg interaction
 
 			vec3 lightTangentVector;
 			vec3 halfAngleTangentVector;
+			vec3 viewTangentVector;
 
 			lightTangentVector.x = dot3( vTangent, toLight );
 			lightTangentVector.y = dot3( vBinormal, toLight );
 			lightTangentVector.z = dot3( vNormal, toLight );
+
+			viewTangentVector.x = dot3( vTangent, toView );
+			viewTangentVector.y = dot3( vBinormal, toView );
+			viewTangentVector.z = dot3( vNormal, toView );
 		
 			halfAngleTangentVector.x = dot3( vTangent.xyz, halfAngleVector );
 			halfAngleTangentVector.y = dot3( vBinormal, halfAngleVector );
@@ -84,9 +89,13 @@ renderProg interaction
 
 			const float specularPower = 10.0f;
 			float hDotN = dot3( normalize( halfAngleTangentVector ), localNormal );
-			vec3 specularContribution = vec3( pow(hDotN, specularPower) );
 
-			vec3 specularColor = localNormal.x * specularContribution;
+			// vec3 CalcSpecPBR(vec3 cameraVector, vec4 Cd, vec4 metallic, float roughness, vec3 H, vec3 N, vec3 L)
+			vec3 pbr = CalcSpecPBR(viewTangentVector.xyz, 
+							diffuseMap.xyz, 
+							0, 
+							1, 
+							normalize(halfAngleTangentVector), localNormal, lightVector);
 
 			float attenuation = AttenuationPointLight(vertex_texcoord5.xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
 			float lit = dot3( localNormal, lightVector ) * attenuation;
@@ -97,15 +106,24 @@ renderProg interaction
 			float shadow = 1.0f; 
 			vec4 _shadowMapInfo = $shadowMapInfo[i];
 
+			pbr = pbr * 1.5;
+
 			if(_shadowMapInfo.w == 1)
 			{
 				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, vertex_texcoord5.xyz, $globalLightOrigin[i].xyz, _shadowMapInfo);
 			}
-
-			finalColor += (lc * (lit + specularColor))  * shadow;
+#ifdef SPEC_ONLY_TEST
+			finalColor += (lc * ((pbr  * shadow * attenuation))) ;
+#else
+			finalColor += (lc * ((lit  * shadow) + (pbr  * shadow * attenuation))) ;
+#endif
 		}
 
+#ifdef SPEC_ONLY_TEST
+		finalpixel_color.xyz = finalColor;
+#else
 		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * 3.0) + 0.3);
+#endif
 		finalpixel_color.w = diffuseMap.w;
 
 		finalpixel_color2.xyz = vertex_texcoord3.xyz;
