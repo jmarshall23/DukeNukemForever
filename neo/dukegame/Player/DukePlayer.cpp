@@ -366,3 +366,17 @@ idBounds DukePlayer::GetClipBounds()
 	bounds[1].Set(pm_bboxwidth.GetFloat() * 0.5f, pm_bboxwidth.GetFloat() * 0.5f, pm_normalheight.GetFloat());
 	return bounds;
 }
+
+/*
+===================
+DukePlayer::GiveEgo
+===================
+*/
+void DukePlayer::GiveEgo(int amount) {
+	if (health + amount > 100)
+	{
+		amount = 100 - amount;
+	}
+
+	health += amount;
+}

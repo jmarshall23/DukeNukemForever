@@ -23,7 +23,7 @@ entityDef monster_pigcop
 	"model"							"pigcop"
 	"editor_usage"					"Pigcop Monster"
 
-	"EgoKillValue"					"8"
+	"EgoKillValue"					"14"
 	"Health"						"50"
 
 	"editor_color"     "1 0 0"

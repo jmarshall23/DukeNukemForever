@@ -26,6 +26,8 @@ public:
 	void					Event_PlayDukeJumpSound(void);
 	void					Event_PlayRandomDukeTaunt(void);
 
+	void					GiveEgo(int amount);
+
 	virtual void			BobCycle(const idVec3& pushVelocity) override;
 
 	virtual idVec3			GetVisualOffset();

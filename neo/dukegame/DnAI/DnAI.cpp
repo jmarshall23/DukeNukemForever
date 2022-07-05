@@ -523,6 +523,7 @@ void DnAI::Killed(idEntity* inflictor, idEntity* attacker, int damage, const idV
 		if (player)
 		{
 			player->Event_PlayRandomDukeTaunt();
+			player->GiveEgo(EgoKillValue);
 		}
 	}
 
