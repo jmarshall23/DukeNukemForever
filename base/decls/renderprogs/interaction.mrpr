@@ -43,6 +43,23 @@ renderProg interaction
 		vec3 finalColor = vec3(0, 0, 0);
 
 		vec4 diffuseMap =			tex2D( $albedotexture, vertex_texcoord4.xy );
+		//# calculate normalized vector to viewer in R1
+		vec4 toView = normalize( $vieworigin - vertex );
+		
+		vec2 st = vertex_texcoord4.xy;
+		vec3 viewTangentVector;
+
+		viewTangentVector.x = dot3( vTangent, toView );
+		viewTangentVector.y = dot3( vBinormal, toView );
+		viewTangentVector.z = dot3( vNormal, toView );
+
+		vec4 bumpMap =			tex2D( $bumpmap, st );			
+		vec4 specMap =			tex2D( $specularmap, st );
+
+		vec3 localNormal;
+		localNormal.xy = bumpMap.wy - 0.5;
+		localNormal.z = sqrt( abs( dot( localNormal.xy, localNormal.xy ) - 0.25 ) );
+		localNormal = normalize( localNormal );
 
 		if(diffuseMap.w == 0)
 			discard;
@@ -51,41 +68,21 @@ renderProg interaction
 		{
 			vec3 lc = $lightcolor[i].xyz;
 
-			vec4 toLight = $globalLightOrigin[i] - vertex;
+			vec4 toLight = $globalLightOrigin[i] - vertex;	
 
-			//# calculate normalized vector to viewer in R1
-			vec4 toView = normalize( $vieworigin - vertex );
-		
 			//# add together to become the half angle vector in object space (non-normalized)
 			vec4 halfAngleVector = toLight + toView;
-
-			vec2 st = vertex_texcoord4.xy;
-
-			vec3 lightTangentVector;
 			vec3 halfAngleTangentVector;
-			vec3 viewTangentVector;
-
-			lightTangentVector.x = dot3( vTangent, toLight );
-			lightTangentVector.y = dot3( vBinormal, toLight );
-			lightTangentVector.z = dot3( vNormal, toLight );
-
-			viewTangentVector.x = dot3( vTangent, toView );
-			viewTangentVector.y = dot3( vBinormal, toView );
-			viewTangentVector.z = dot3( vNormal, toView );
-		
 			halfAngleTangentVector.x = dot3( vTangent.xyz, halfAngleVector );
 			halfAngleTangentVector.y = dot3( vBinormal, halfAngleVector );
 			halfAngleTangentVector.z = dot3( vNormal, halfAngleVector );
+			
+			vec3 lightTangentVector;
+			lightTangentVector.x = dot3( vTangent, toLight );
+			lightTangentVector.y = dot3( vBinormal, toLight );
+			lightTangentVector.z = dot3( vNormal, toLight );	
 
-			vec4 bumpMap =			tex2D( $bumpmap, st );			
-			vec4 specMap =			tex2D( $specularmap, st );
-
-			vec3 lightVector = normalize( lightTangentVector.xyz );
-
-			vec3 localNormal;
-			localNormal.xy = bumpMap.wy - 0.5;
-			localNormal.z = sqrt( abs( dot( localNormal.xy, localNormal.xy ) - 0.25 ) );
-			localNormal = normalize( localNormal );
+			vec3 lightVector = normalize( lightTangentVector.xyz );	
 
 			const float specularPower = 10.0f;
 			float hDotN = dot3( normalize( halfAngleTangentVector ), localNormal );
@@ -93,8 +90,8 @@ renderProg interaction
 			// vec3 CalcSpecPBR(vec3 cameraVector, vec4 Cd, vec4 metallic, float roughness, vec3 H, vec3 N, vec3 L)
 			vec3 pbr = CalcSpecPBR(viewTangentVector.xyz, 
 							diffuseMap.xyz, 
-							0, 
-							1, 
+							0.5, 
+							0.5, 
 							normalize(halfAngleTangentVector), localNormal, lightVector);
 
 			float attenuation = AttenuationPointLight(vertex_texcoord5.xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
