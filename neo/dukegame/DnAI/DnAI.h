@@ -177,6 +177,8 @@ public:
 protected:
 	void					SetAnimation(const char* anim, bool loop);
 
+	void					Hitscan(const idVec3& muzzleOrigin, const idVec3& dir, int num_hitscans, float spread, float power);
+
 	void					UpdatePathToPosition(idVec3 position);
 
 	idPlayer*				FindNewTarget();

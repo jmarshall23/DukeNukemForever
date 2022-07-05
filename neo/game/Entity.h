@@ -182,6 +182,9 @@ public:
 	const char *			GetName( void ) const;
 	virtual void			UpdateChangeableSpawnArgs( const idDict *source );
 
+	virtual idVec3			GetVisualOffset() { return vec3_zero; }
+	virtual idBounds		GetClipBounds() { return bounds_zero; }
+
 	idEntity* GetEntityKey(const char* key);
 
 	const char* GetKey(const char* key)

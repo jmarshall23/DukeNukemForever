@@ -27,7 +27,11 @@ public:
 	void					Event_PlayRandomDukeTaunt(void);
 
 	virtual void			BobCycle(const idVec3& pushVelocity) override;
+
+	virtual idVec3			GetVisualOffset();
+	virtual idBounds		GetClipBounds();
 private:
+	void					SetAnimation(const char* name, bool loop);
 	idVec3					ApplyLandDeflect(const idVec3& pos, float scale);
 
 	const idSoundShader*	dukeTauntShader;
@@ -38,4 +42,5 @@ private:
 
 	float					bob;
 	float					lastAppliedBobCycle;
+	idStr					currentAnimation;
 };

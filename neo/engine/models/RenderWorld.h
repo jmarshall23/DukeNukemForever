@@ -95,6 +95,9 @@ struct renderEntity_t {
 
 	void *					callbackData;			// used for whatever the callback wants
 
+	bool					hideInMainView;
+	bool					skipFrustumCulling;
+
 	// player bodies and possibly player shadows should be suppressed in views from
 	// that player's eyes, but will show up in mirrors and other subviews
 	// security cameras could suppress their model in their subviews if we add a way
@@ -386,7 +389,7 @@ public:
 	virtual guiPoint_t		GuiTrace( qhandle_t entityHandle, const idVec3 start, const idVec3 end ) const = 0;
 
 	// Traces vs the render model, possibly instantiating a dynamic version, and returns true if something was hit
-	virtual bool			ModelTrace( modelTrace_t &trace, qhandle_t entityHandle, const idVec3 &start, const idVec3 &end, const float radius ) const = 0;
+	virtual bool			ModelTrace( modelTrace_t &trace, qhandle_t entityHandle, const idVec3 &start, const idVec3 &end, const float radius, idVec3 offset = vec3_zero ) const = 0;
 
 	// Traces vs the whole rendered world. FIXME: we need some kind of material flags.
 	virtual bool			Trace( modelTrace_t &trace, const idVec3 &start, const idVec3 &end, const float radius, bool skipDynamic = true, bool skipPlayer = false ) const = 0;

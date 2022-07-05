@@ -155,6 +155,9 @@ void idRender::DrawForwardLit( void ) {
 		if (drawSurf->geo->numVerts == 0)
 			continue;
 
+		if(drawSurf->space->entityDef->parms.hideInMainView)
+			continue;
+
 		R_CreateAmbientCache((srfTriangles_t*)drawSurf->geo, true);;
 
 		if (drawSurf->geo->numVerts == 0)

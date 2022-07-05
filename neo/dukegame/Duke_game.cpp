@@ -39,6 +39,9 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 	// Calculate the end point of the trace
 	start = origin;
 	end = start + (dir.ToMat3() * idVec3(idMath::ClampFloat(0, 2048, range), 0, 0));
+
+	//gameRenderWorld->DebugLine(colorWhite, start, end, 1000);
+
 	contents = MASK_SHOT_RENDERMODEL | CONTENTS_WATER | CONTENTS_PROJECTILE;
 
 	TracePoint(owner, tr, start, end, contents, additionalIgnore);

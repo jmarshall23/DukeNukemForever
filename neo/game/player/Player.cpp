@@ -1546,6 +1546,8 @@ void idPlayer::Spawn( void ) {
 	SetCombatModel();
 
 	// supress model in non-player views, but allow it in mirrors and remote views
+	renderEntity.hideInMainView = true;
+	renderEntity.skipFrustumCulling = true;
 	renderEntity.suppressSurfaceInViewID = entityNumber+1;
 
 	// don't project shadow on self or weapon

@@ -8321,6 +8321,14 @@ intptr_t DukePlayer::Invoke(const char *functionName, void *param1) {
 		Event_PlayRandomDukeTaunt();
 		return 0;
 	};
+	if(functionNameHash == 193190) { // GetVisualOffset
+		GetVisualOffset();
+		return 0;
+	};
+	if(functionNameHash == 162727) { // GetClipBounds
+		GetClipBounds();
+		return 0;
+	};
 	return __super::Invoke(functionName, param1);
 
 };
@@ -8337,6 +8345,12 @@ bool DukePlayer::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 333292) { // Event_PlayRandomDukeTaunt
+		return true;
+	};
+	if(functionNameHash == 193190) { // GetVisualOffset
+		return true;
+	};
+	if(functionNameHash == 162727) { // GetClipBounds
 		return true;
 	};
 	return __super::HasNativeFunction(functionName);

@@ -1,5 +1,14 @@
 model model_player {
-      // mesh                    "models/joint.md5mesh" // TODO!
+      mesh              models/characters/Duke/duke.md5mesh
+      offset            (0 0 45)
+
+      anim af_pose		models/characters/Animations/Duke/idle.md5anim
+	  anim ik_pose		models/characters/Animations/Duke/idle.md5anim
+
+	  anim initial		models/characters/Animations/Duke/idle.md5anim
+
+      anim idle models/characters/Animations/Duke/idle.md5anim
+      anim walk models/characters/Animations/Duke/idle.md5anim
 }
 
 entityDef player_dukenukem {

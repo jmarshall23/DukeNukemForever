@@ -111,7 +111,10 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 	}
 
 	// draw it
-	RB_DrawElementsWithCounters(tri);
+	if (!surf->hideInMainView)
+	{
+		RB_DrawElementsWithCounters(tri);
+	}
 
 	if (pStage)
 	{

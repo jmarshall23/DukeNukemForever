@@ -346,6 +346,7 @@ drawSurf_t* R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitte
 	drawSurf->dsFlags = 0;
 	drawSurf->forceTwoSided = renderEntity->forceTwoSided;
 	drawSurf->numSurfRenderLights = 0;
+	drawSurf->hideInMainView = renderEntity->hideInMainView;
 
 	// bumping this offset each time causes surfaces with equal sort orders to still
 	// deterministically draw in the order they are added
@@ -609,7 +610,7 @@ void idRenderModelCommitted::AddDrawsurfs(int committedRenderModelId, const idRe
 			}
 		}
 
-		if (!R_CullLocalBox(tri->bounds, modelMatrix, 5, tr.viewDef->frustum)) {
+		if (def->parms.skipFrustumCulling || !R_CullLocalBox(tri->bounds, modelMatrix, 5, tr.viewDef->frustum)) {
 
 			def->visibleCount = tr.viewCount;
 

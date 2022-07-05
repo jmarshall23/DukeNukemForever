@@ -4653,6 +4653,7 @@ static classVariableInfo_t DukePlayer_typeInfo[] = {
 	{ "bool", "firstSwearTaunt", (intptr_t)(&((DukePlayer *)0)->firstSwearTaunt), sizeof( ((DukePlayer *)0)->firstSwearTaunt ) },
 	{ "float", "bob", (intptr_t)(&((DukePlayer *)0)->bob), sizeof( ((DukePlayer *)0)->bob ) },
 	{ "float", "lastAppliedBobCycle", (intptr_t)(&((DukePlayer *)0)->lastAppliedBobCycle), sizeof( ((DukePlayer *)0)->lastAppliedBobCycle ) },
+	{ "idStr", "currentAnimation", (intptr_t)(&((DukePlayer *)0)->currentAnimation), sizeof( ((DukePlayer *)0)->currentAnimation ) },
 	{ NULL, 0 }
 };
 

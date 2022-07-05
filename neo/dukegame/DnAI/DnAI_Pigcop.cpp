@@ -103,6 +103,12 @@ stateResult_t DnPigcop::state_ShootEnemy(stateParms_t* parms)
 		SetAnimation("fire", false);
 		StartSoundShader(fire_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
+		idVec3 muzzleOrigin = GetOrigin() + idVec3(0, 0, 40);
+		idVec3 muzzleDir = muzzleOrigin - (target->GetOrigin() + target->GetVisualOffset());
+
+		muzzleDir.Normalize();
+		Hitscan(muzzleOrigin, -muzzleDir, 1, 1, 20);
+
 		return SRESULT_WAIT;
 	}
 	else

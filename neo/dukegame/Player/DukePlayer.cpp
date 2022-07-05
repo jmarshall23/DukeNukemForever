@@ -50,6 +50,8 @@ void DukePlayer::Spawn(void)
 		dukeJumpSounds.AddUnique(snd);
 	}
 
+	SetAnimation("idle", true);
+
 	dukeTauntShader = declManager->FindSound("duke_killtaunt");
 }
 
@@ -300,4 +302,67 @@ void DukePlayer::BobCycle(const idVec3& pushVelocity) {
 
 		viewBob = localViewBob;
 	}
+}
+
+
+/*
+===============
+DukePlayer::SetAnimation
+===============
+*/
+void DukePlayer::SetAnimation(const char* name, bool loop)
+{
+	int				animNum;
+	int anim;
+	const idAnim* newanim;
+
+	animNum = animator.GetAnim(name);
+
+	if (currentAnimation == name)
+		return;
+
+	if (!animNum) {
+		gameLocal.Printf("Animation '%s' not found.\n", name);
+		return;
+	}
+
+	anim = animNum;
+	//starttime = gameLocal.time;
+	//animtime = animator.AnimLength(anim);
+	//headAnim = 0;
+
+	currentAnimation = name;
+
+	if (loop)
+	{
+		animator.CycleAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
+	}
+	else
+	{
+		animator.PlayAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
+	}
+	animator.RemoveOriginOffset(true);
+}
+
+/*
+===================
+DukePlayer::GetVisualOffset
+===================
+*/
+idVec3 DukePlayer::GetVisualOffset()
+{
+	return animator.ModelDef()->GetVisualOffset();
+}
+
+/*
+===================
+DukePlayer::GetClipBounds
+===================
+*/
+idBounds DukePlayer::GetClipBounds()
+{
+	idBounds bounds;
+	bounds[0].Set(-pm_bboxwidth.GetFloat() * 0.5f, -pm_bboxwidth.GetFloat() * 0.5f, 0);
+	bounds[1].Set(pm_bboxwidth.GetFloat() * 0.5f, pm_bboxwidth.GetFloat() * 0.5f, pm_normalheight.GetFloat());
+	return bounds;
 }

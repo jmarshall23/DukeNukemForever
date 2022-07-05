@@ -132,6 +132,7 @@ typedef struct drawSurf_s {
 
 // jmarshall
 	int numSurfRenderLights;
+	bool hideInMainView;
 	const idRenderLightCommitted* surfRenderLights[MAX_RENDERLIGHTS_PER_SURFACE];
 // jmarshall end
 } drawSurf_t;

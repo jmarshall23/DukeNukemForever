@@ -967,7 +967,7 @@ guiPoint_t	idRenderWorldLocal::GuiTrace( qhandle_t entityHandle, const idVec3 st
 idRenderWorldLocal::ModelTrace
 ===================
 */
-bool idRenderWorldLocal::ModelTrace( modelTrace_t &trace, qhandle_t entityHandle, const idVec3 &start, const idVec3 &end, const float radius ) const {
+bool idRenderWorldLocal::ModelTrace( modelTrace_t &trace, qhandle_t entityHandle, const idVec3 &start, const idVec3 &end, const float radius, idVec3 offset ) const {
 	int i;
 	bool collisionSurface;
 	const idModelSurface *surf;
@@ -997,7 +997,7 @@ bool idRenderWorldLocal::ModelTrace( modelTrace_t &trace, qhandle_t entityHandle
 	}
 
 	// transform the points into local space
-	R_AxisToModelMatrix( refEnt->axis, refEnt->origin, modelMatrix );
+	R_AxisToModelMatrix( refEnt->axis, refEnt->origin + offset, modelMatrix );
 	R_GlobalPointToLocal( modelMatrix, start, localStart );
 	R_GlobalPointToLocal( modelMatrix, end, localEnd );
 
