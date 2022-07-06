@@ -391,7 +391,7 @@ DukePlayer::GiveEgo
 void DukePlayer::GiveEgo(int amount) {
 	if (health + amount > 100)
 	{
-		amount = (health + amount) - 100;
+		return;
 	}
 
 	health += amount;

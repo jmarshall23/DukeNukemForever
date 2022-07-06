@@ -65,7 +65,7 @@ renderProg interaction
 
 		if(diffuseMap.w == 0)
 			discard;
-
+#ifndef NO_LIGHT_PASS
 		for(int i = 0; i < $numLights; i++)
 		{
 			vec3 lc = $lightcolor[i].xyz;
@@ -120,12 +120,18 @@ renderProg interaction
 #else
 			finalColor += (lc * ((lit  * shadow) + (pbr  * shadow * (attenuation * 2)))) ;
 #endif
-		}
+		}		
+#endif // NO_LIGHT_PASS
 
 #ifdef SPEC_ONLY_TEST
 		finalpixel_color.xyz = finalColor;
 #else
+
+#ifndef NO_LIGHT_PASS
 		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * 3.0) + 0.3);
+#else
+		finalpixel_color.xyz = diffuseMap.xyz;
+#endif
 #endif
 		finalpixel_color.w = diffuseMap.w;
 
@@ -135,4 +141,10 @@ renderProg interaction
 		finalpixel_color3.xyz = vertex.xyz;
 		finalpixel_color3.w = diffuseMap.w;
 	}
+}
+
+renderProg interaction_emissive
+{
+	inherit interaction
+	define NO_LIGHT_PASS
 }

@@ -27,7 +27,7 @@ bool dnGameLocal::TracePoint(const idEntity* ent, trace_t& results, const idVec3
 dnGameLocal::HitScan
 =====================
 */
-idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const idVec3& origFxOrigin, idEntity* owner, bool noFX, float damageScale, idEntity* additionalIgnore, int	areas[2], float range, int push)
+idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const idVec3& origFxOrigin, idEntity* owner, bool noFX, float damageScale, idEntity* additionalIgnore, int	areas[2], bool spawnDebris, float range, int push)
 {
 	idVec3		start;
 	idVec3		end;
@@ -58,8 +58,8 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 			ent->Damage(owner, owner, dir, "damage_generic", damageScale, CLIPMODEL_ID_TO_JOINT_HANDLE(tr.c.id));
 		}
 	}
-#if 0
-	if (!ent->fl.takedamage)
+#if 1
+	if (!ent->fl.takedamage && spawnDebris)
 	{
 		// spawn debris entities
 		int fxdebris = 12; // spawnArgs.GetInt("debris_count");

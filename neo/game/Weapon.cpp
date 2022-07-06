@@ -4191,7 +4191,7 @@ void idWeapon::Hitscan(const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int
 		}
 		dir.Normalize();
 
-		gameLocal.HitScan(muzzleOrigin, dir,muzzleOrigin, owner, false, 1.0f, NULL, areas);
+		gameLocal.HitScan(muzzleOrigin, dir,muzzleOrigin, owner, false, 1.0f, NULL, areas, i == 0);
 
 		//if (gameLocal.isServer) {
 		//	msg.WriteDir(dir, 24);
