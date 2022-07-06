@@ -331,7 +331,7 @@ R_AddDrawSurf
 =================
 */
 drawSurf_t* R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitted* space, const renderEntity_t* renderEntity,
-	const idMaterial* shader, const idScreenRect& scissor) {
+	const idMaterial* shader, const idScreenRect& scissor, idVec4 forceColor) {
 	drawSurf_t* drawSurf;
 	const float* shaderParms;
 	static float	refRegs[MAX_EXPRESSION_REGISTERS];	// don't put on stack, or VC++ will do a page touch
@@ -344,6 +344,7 @@ drawSurf_t* R_AddDrawSurf(const srfTriangles_t* tri, const idRenderModelCommitte
 	drawSurf->scissorRect = scissor;
 	drawSurf->sort = shader->GetSort() + tr.sortOffset;
 	drawSurf->dsFlags = 0;
+	drawSurf->forceColor = forceColor;
 	drawSurf->forceTwoSided = renderEntity->forceTwoSided;
 	drawSurf->numSurfRenderLights = 0;
 	drawSurf->hideInMainView = renderEntity->hideInMainView;

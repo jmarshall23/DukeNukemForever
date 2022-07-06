@@ -869,6 +869,7 @@ public:
 };
 
 extern idVec4 vec4_origin;
+extern idVec4 vec4_one;
 #define vec4_zero vec4_origin
 
 ID_INLINE idVec4::idVec4( void ) {

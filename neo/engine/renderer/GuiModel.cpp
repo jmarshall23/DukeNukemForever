@@ -207,7 +207,7 @@ void idGuiModel::EmitSurface( guiidModelSurface *surf, float modelMatrix[16], fl
 	idRenderMatrix::Multiply(projectionRenderMatrix, viewMat, guiSpace->mvp);
 
 	// add the surface, which might recursively create another gui
-	R_AddDrawSurf( tri, guiSpace, &renderEntity, surf->material, tr.viewDef->scissor );
+	R_AddDrawSurf( tri, guiSpace, &renderEntity, surf->material, tr.viewDef->scissor, idVec4(surf->color[0], surf->color[1], surf->color[2], surf->color[3]));
 }
 
 /*

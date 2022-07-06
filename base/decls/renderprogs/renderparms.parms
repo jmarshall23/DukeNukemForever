@@ -47,3 +47,5 @@ renderParm screeninfo { float4 }
 renderParm screennormaltexture { texture }
 renderParm screenxyztexture { texture }
 renderParm screendepthtexture { texture }
+
+renderParm genericinfo { float4 }

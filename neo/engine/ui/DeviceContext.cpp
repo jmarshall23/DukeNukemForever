@@ -98,7 +98,7 @@ void idDeviceContext::SetFont( int num ) {
 void idDeviceContext::Init() {
 	xScale = 0.0;
 	SetSize(VIRTUAL_WIDTH, VIRTUAL_HEIGHT);
-	whiteImage = declManager->FindMaterial("guis/assets/white.tga");
+	whiteImage = declManager->FindMaterial("_white");
 	whiteImage->SetSort( SS_GUI );
 	mbcs = false;
 	SetupFonts();

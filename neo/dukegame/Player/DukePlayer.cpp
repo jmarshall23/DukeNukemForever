@@ -67,6 +67,7 @@ void DukePlayer::Damage(idEntity* inflictor, idEntity* attacker, const idVec3& d
 	if (currentHealth != health)
 	{
 		Event_DukeTalk("duke_pain");
+		hud->HandleNamedEvent("damageflash");
 	}
 }
 

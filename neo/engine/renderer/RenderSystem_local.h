@@ -134,6 +134,7 @@ typedef struct drawSurf_s {
 	int numSurfRenderLights;
 	bool hideInMainView;
 	const idRenderLightCommitted* surfRenderLights[MAX_RENDERLIGHTS_PER_SURFACE];
+	idVec4 forceColor;
 // jmarshall end
 } drawSurf_t;
 
@@ -625,10 +626,12 @@ public:
 	rvmDeclRenderParam* atlasLookupParam;
 	rvmDeclRenderParam* vertexColorParm;
 	rvmDeclRenderParam* screenInfoParam;
+	rvmDeclRenderParam* genericShaderParam;
 
 	idStr					globalRenderInclude;
 
 	rvmDeclRenderProg*		guiTextureProgram;
+	rvmDeclRenderProg*		guiColorProgram;
 	rvmDeclRenderProg*		interactionProgram;
 	rvmDeclRenderProg*		occluderProgram;
 	rvmDeclRenderProg*		shadowMapProgram;	
@@ -1006,7 +1009,7 @@ bool R_IssueEntityDefCallback( idRenderEntityLocal *def );
 idRenderModel *R_EntityDefDynamicModel( idRenderEntityLocal *def );
 
 drawSurf_t *R_AddDrawSurf( const srfTriangles_t *tri, const idRenderModelCommitted *space, const renderEntity_t *renderEntity,
-					const idMaterial *shader, const idScreenRect &scissor );
+					const idMaterial *shader, const idScreenRect &scissor, idVec4 forceColor = vec4_one );
 
 
 bool R_CreateAmbientCache( srfTriangles_t *tri, bool needsLighting );

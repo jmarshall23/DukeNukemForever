@@ -3,10 +3,9 @@ renderProg guiTexture
 	vertex
 	{
 		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
-		if($vertexcolor.w == 2.0)
+		if($genericinfo.x == 1)
 		{
 			vertex_texcoord1 = $vertexcolor;
-			vertex_texcoord1.w = 1.0;
 		}
 		else
 		{
@@ -18,5 +17,19 @@ renderProg guiTexture
 	pixel
 	{
 		finalpixel_color = texture2D($albedotexture,vertex_texcoord0.st) * vertex_texcoord1;
+	}
+}
+
+renderProg guiColor
+{
+	vertex
+	{
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+		vertex_texcoord0 = attr_Color;
+	}
+
+	pixel
+	{
+		finalpixel_color = vertex_texcoord0;
 	}
 }

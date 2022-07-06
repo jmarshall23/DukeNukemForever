@@ -102,6 +102,9 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 		// see if we are a new-style stage
 		newShaderStage_t* newStage = pStage->newStage;	
 
+		idVec4 genericinfo;
+		genericinfo.Zero();
+
 		if (!newStage) {
 			//--------------------------
 			//
@@ -128,52 +131,23 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 			}
 
 			// select the vertex color source
-			if (pStage->vertexColor == SVC_IGNORE) {
-				color[3] = 2.0f;
-				tr.vertexColorParm->SetVectorValue(color);
+			if (pStage->vertexColor == SVC_IGNORE) {				
+				genericinfo.x = 1;
+
+				if (surf->forceColor != vec4_one)
+				{
+					tr.vertexColorParm->SetVectorValue(surf->forceColor);
+				}
+				else
+				{
+					tr.vertexColorParm->SetVectorValue(color);
+				}				
 			}
 			else {
 				tr.vertexColorParm->SetVectorValue(color);
 
 				glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(idDrawVert), (void*)&ac->color);
-				glEnableClientState(GL_COLOR_ARRAY);
-
-				if (pStage->vertexColor == SVC_INVERSE_MODULATE) {
-					GL_TexEnv(GL_COMBINE_ARB);
-					glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_ARB, GL_MODULATE);
-					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_ARB, GL_TEXTURE);
-					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_PRIMARY_COLOR_ARB);
-					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_RGB_ARB, GL_SRC_COLOR);
-					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_RGB_ARB, GL_ONE_MINUS_SRC_COLOR);
-					glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
-				}
-
-				// for vertex color and modulated color, we need to enable a second
-				// texture stage
-				if (color[0] != 1 || color[1] != 1 || color[2] != 1 || color[3] != 1) {
-					GL_SelectTexture(1);
-
-					globalImages->whiteImage->Bind();
-					GL_TexEnv(GL_COMBINE_ARB);
-
-					glTexEnvfv(GL_TEXTURE_ENV, GL_TEXTURE_ENV_COLOR, color);
-
-					glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_RGB_ARB, GL_MODULATE);
-					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_RGB_ARB, GL_PREVIOUS_ARB);
-					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_RGB_ARB, GL_CONSTANT_ARB);
-					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_RGB_ARB, GL_SRC_COLOR);
-					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_RGB_ARB, GL_SRC_COLOR);
-					glTexEnvi(GL_TEXTURE_ENV, GL_RGB_SCALE_ARB, 1);
-
-					glTexEnvi(GL_TEXTURE_ENV, GL_COMBINE_ALPHA_ARB, GL_MODULATE);
-					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE0_ALPHA_ARB, GL_PREVIOUS_ARB);
-					glTexEnvi(GL_TEXTURE_ENV, GL_SOURCE1_ALPHA_ARB, GL_CONSTANT_ARB);
-					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND0_ALPHA_ARB, GL_SRC_ALPHA);
-					glTexEnvi(GL_TEXTURE_ENV, GL_OPERAND1_ALPHA_ARB, GL_SRC_ALPHA);
-					glTexEnvi(GL_TEXTURE_ENV, GL_ALPHA_SCALE, 1);
-
-					GL_SelectTexture(0);
-				}
+				glEnableClientState(GL_COLOR_ARRAY);				
 			}
 		}
 
@@ -189,6 +163,8 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 
 		glEnableVertexAttribArrayARB(PC_ATTRIB_INDEX_COLOR);
 		glVertexAttribPointerARB(PC_ATTRIB_INDEX_COLOR, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(idDrawVert), (void*)&ac->color);
+
+		tr.genericShaderParam->SetVectorValue(genericinfo);
 
 		// draw it
 		if (newStage) {
@@ -221,12 +197,6 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 
 		if (pStage->vertexColor != SVC_IGNORE) {
 			glDisableClientState(GL_COLOR_ARRAY);
-
-			GL_SelectTexture(1);
-			GL_TexEnv(GL_MODULATE);
-			globalImages->BindNull();
-			GL_SelectTexture(0);
-			GL_TexEnv(GL_MODULATE);
 		}
 	}
 

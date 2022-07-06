@@ -48,4 +48,5 @@ void idRenderSystemLocal::InitRenderParms(void)
 	vertexScaleModulateParam = declManager->FindRenderParam("vertexcolormodulate");
 	vertexScaleAddParam = declManager->FindRenderParam("vertexcoloradd");
 	screenInfoParam = declManager->FindRenderParam("screeninfo");
+	genericShaderParam = declManager->FindRenderParam("genericinfo");
 }

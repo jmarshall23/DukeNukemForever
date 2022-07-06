@@ -1925,6 +1925,7 @@ void idRenderSystemLocal::Init( void ) {
 	globalRenderInclude = globalIncludeBuffer;
 
 	guiTextureProgram = FindRenderProgram("guiTexture");
+	guiColorProgram = FindRenderProgram("guiColor");
 	interactionProgram = FindRenderProgram("interaction");
 	shadowMapProgram = FindRenderProgram("shadowmap");
 	occluderProgram = FindRenderProgram("occluder");

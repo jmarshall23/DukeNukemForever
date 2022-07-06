@@ -8,6 +8,13 @@ textures/colors/white
    diffusemap textures/dummy_white.tga
 }
 
+guis/assets/white
+{
+	{
+		map guis/assets/white.tga
+	}
+}
+
 lights/defaultPointLight {
   lightFalloffImage makeintensity(textures/dummy_lighta.tga)
   {

@@ -3,6 +3,23 @@ windowDef Desktop
 	rect	0, 0, 1280, 720
 	backcolor	0, 0, 0, 0
 	nocursor	1
+
+	onNamedEvent damageflash {
+		resetTime "redflash" "0";
+		set "redflash::visible" "1";
+	}
+
+	windowDef redflash
+	{
+		rect	0, 0, 1280, 720
+		visible	0
+		backcolor	1,0,0,1
+
+		onTime 0 {
+			transition "backcolor" "1 0 0 0.5" "0 0 0 0" "300" ;
+		}
+	}
+
 	windowDef unnamed
 	{
 		rect	34,620,53,33
