@@ -1,1841 +1,1841 @@
 textures/EDF_1/ac3base_2tw
 {
 	diffusemap textures/EDF_1/ac3base_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ac3base_2tw_normal.tga
+	specularmap textures/EDF_1/ac3base_2tw_spec.tga
 }
 
 textures/EDF_1/ac3base_3tw
 {
 	diffusemap textures/EDF_1/ac3base_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ac3base_3tw_normal.tga
+	specularmap textures/EDF_1/ac3base_3tw_spec.tga
 }
 
 textures/EDF_1/ac3base_4tw
 {
 	diffusemap textures/EDF_1/ac3base_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ac3base_4tw_normal.tga
+	specularmap textures/EDF_1/ac3base_4tw_spec.tga
 }
 
 textures/EDF_1/alumo_dogface1tw
 {
 	diffusemap textures/EDF_1/alumo_dogface1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alumo_dogface1tw_normal.tga
+	specularmap textures/EDF_1/alumo_dogface1tw_spec.tga
 }
 
 textures/EDF_1/alumo_dogface2atw
 {
 	diffusemap textures/EDF_1/alumo_dogface2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alumo_dogface2atw_normal.tga
+	specularmap textures/EDF_1/alumo_dogface2atw_spec.tga
 }
 
 textures/EDF_1/alumo_dogface2tw
 {
 	diffusemap textures/EDF_1/alumo_dogface2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alumo_dogface2tw_normal.tga
+	specularmap textures/EDF_1/alumo_dogface2tw_spec.tga
 }
 
 textures/EDF_1/alumo_dogface3tw
 {
 	diffusemap textures/EDF_1/alumo_dogface3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alumo_dogface3tw_normal.tga
+	specularmap textures/EDF_1/alumo_dogface3tw_spec.tga
 }
 
 textures/EDF_1/alumo_dogface4tw
 {
 	diffusemap textures/EDF_1/alumo_dogface4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alumo_dogface4tw_normal.tga
+	specularmap textures/EDF_1/alumo_dogface4tw_spec.tga
 }
 
 textures/EDF_1/alumo_dogface5tw
 {
 	diffusemap textures/EDF_1/alumo_dogface5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alumo_dogface5tw_normal.tga
+	specularmap textures/EDF_1/alumo_dogface5tw_spec.tga
 }
 
 textures/EDF_1/alum_slatstw
 {
 	diffusemap textures/EDF_1/alum_slatstw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alum_slatstw_normal.tga
+	specularmap textures/EDF_1/alum_slatstw_spec.tga
 }
 
 textures/EDF_1/alum_trim_2tw
 {
 	diffusemap textures/EDF_1/alum_trim_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/alum_trim_2tw_normal.tga
+	specularmap textures/EDF_1/alum_trim_2tw_spec.tga
 }
 
 textures/EDF_1/asphalt_1
 {
 	diffusemap textures/EDF_1/asphalt_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/asphalt_1_normal.tga
+	specularmap textures/EDF_1/asphalt_1_spec.tga
 }
 
 textures/EDF_1/asphalt_2
 {
 	diffusemap textures/EDF_1/asphalt_2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/asphalt_2_normal.tga
+	specularmap textures/EDF_1/asphalt_2_spec.tga
 }
 
 textures/EDF_1/asphalt_5a
 {
 	diffusemap textures/EDF_1/asphalt_5a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/asphalt_5a_normal.tga
+	specularmap textures/EDF_1/asphalt_5a_spec.tga
 }
 
 textures/EDF_1/asphalt_5az
 {
 	diffusemap textures/EDF_1/asphalt_5az.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/asphalt_5az_normal.tga
+	specularmap textures/EDF_1/asphalt_5az_spec.tga
 }
 
 textures/EDF_1/asphalt_5xtw
 {
 	diffusemap textures/EDF_1/asphalt_5xtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/asphalt_5xtw_normal.tga
+	specularmap textures/EDF_1/asphalt_5xtw_spec.tga
 }
 
 textures/EDF_1/assfault_1tw
 {
 	diffusemap textures/EDF_1/assfault_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/assfault_1tw_normal.tga
+	specularmap textures/EDF_1/assfault_1tw_spec.tga
 }
 
 textures/EDF_1/assfault_1ztw
 {
 	diffusemap textures/EDF_1/assfault_1ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/assfault_1ztw_normal.tga
+	specularmap textures/EDF_1/assfault_1ztw_spec.tga
 }
 
 textures/EDF_1/assfault_2atw
 {
 	diffusemap textures/EDF_1/assfault_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/assfault_2atw_normal.tga
+	specularmap textures/EDF_1/assfault_2atw_spec.tga
 }
 
 textures/EDF_1/assfault_2tw
 {
 	diffusemap textures/EDF_1/assfault_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/assfault_2tw_normal.tga
+	specularmap textures/EDF_1/assfault_2tw_spec.tga
 }
 
 textures/EDF_1/barracks_win_1tw
 {
 	diffusemap textures/EDF_1/barracks_win_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/barracks_win_1tw_normal.tga
+	specularmap textures/EDF_1/barracks_win_1tw_spec.tga
 }
 
 textures/EDF_1/baseconk_1tw
 {
 	diffusemap textures/EDF_1/baseconk_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/baseconk_1tw_normal.tga
+	specularmap textures/EDF_1/baseconk_1tw_spec.tga
 }
 
 textures/EDF_1/baseconk_2tw
 {
 	diffusemap textures/EDF_1/baseconk_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/baseconk_2tw_normal.tga
+	specularmap textures/EDF_1/baseconk_2tw_spec.tga
 }
 
 textures/EDF_1/baseconk_3tw
 {
 	diffusemap textures/EDF_1/baseconk_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/baseconk_3tw_normal.tga
+	specularmap textures/EDF_1/baseconk_3tw_spec.tga
 }
 
 textures/EDF_1/baseconk_5tw
 {
 	diffusemap textures/EDF_1/baseconk_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/baseconk_5tw_normal.tga
+	specularmap textures/EDF_1/baseconk_5tw_spec.tga
 }
 
 textures/EDF_1/basefloort_1tw
 {
 	diffusemap textures/EDF_1/basefloort_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/basefloort_1tw_normal.tga
+	specularmap textures/EDF_1/basefloort_1tw_spec.tga
 }
 
 textures/EDF_1/basefloort_2tw
 {
 	diffusemap textures/EDF_1/basefloort_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/basefloort_2tw_normal.tga
+	specularmap textures/EDF_1/basefloort_2tw_spec.tga
 }
 
 textures/EDF_1/beano_met1tw
 {
 	diffusemap textures/EDF_1/beano_met1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/beano_met1tw_normal.tga
+	specularmap textures/EDF_1/beano_met1tw_spec.tga
 }
 
 textures/EDF_1/bigdirtpipe_1atw
 {
 	diffusemap textures/EDF_1/bigdirtpipe_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/bigdirtpipe_1atw_normal.tga
+	specularmap textures/EDF_1/bigdirtpipe_1atw_spec.tga
 }
 
 textures/EDF_1/blackdoor_1tw
 {
 	diffusemap textures/EDF_1/blackdoor_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blackdoor_1tw_normal.tga
+	specularmap textures/EDF_1/blackdoor_1tw_spec.tga
 }
 
 textures/EDF_1/blackdoor_2atw
 {
 	diffusemap textures/EDF_1/blackdoor_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blackdoor_2atw_normal.tga
+	specularmap textures/EDF_1/blackdoor_2atw_spec.tga
 }
 
 textures/EDF_1/blastwalls_5tw
 {
 	diffusemap textures/EDF_1/blastwalls_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blastwalls_5tw_normal.tga
+	specularmap textures/EDF_1/blastwalls_5tw_spec.tga
 }
 
 textures/EDF_1/blast_door_1tw
 {
 	diffusemap textures/EDF_1/blast_door_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_door_1tw_normal.tga
+	specularmap textures/EDF_1/blast_door_1tw_spec.tga
 }
 
 textures/EDF_1/blast_door_3tw
 {
 	diffusemap textures/EDF_1/blast_door_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_door_3tw_normal.tga
+	specularmap textures/EDF_1/blast_door_3tw_spec.tga
 }
 
 textures/EDF_1/blast_walls_1tw
 {
 	diffusemap textures/EDF_1/blast_walls_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_walls_1tw_normal.tga
+	specularmap textures/EDF_1/blast_walls_1tw_spec.tga
 }
 
 textures/EDF_1/blast_walls_2tw
 {
 	diffusemap textures/EDF_1/blast_walls_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_walls_2tw_normal.tga
+	specularmap textures/EDF_1/blast_walls_2tw_spec.tga
 }
 
 textures/EDF_1/blast_walls_4tw
 {
 	diffusemap textures/EDF_1/blast_walls_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_walls_4tw_normal.tga
+	specularmap textures/EDF_1/blast_walls_4tw_spec.tga
 }
 
 textures/EDF_1/blast_walls_6tw
 {
 	diffusemap textures/EDF_1/blast_walls_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_walls_6tw_normal.tga
+	specularmap textures/EDF_1/blast_walls_6tw_spec.tga
 }
 
 textures/EDF_1/blast_walls_7tw
 {
 	diffusemap textures/EDF_1/blast_walls_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_walls_7tw_normal.tga
+	specularmap textures/EDF_1/blast_walls_7tw_spec.tga
 }
 
 textures/EDF_1/blast_walls_8tw
 {
 	diffusemap textures/EDF_1/blast_walls_8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/blast_walls_8tw_normal.tga
+	specularmap textures/EDF_1/blast_walls_8tw_spec.tga
 }
 
 textures/EDF_1/bricklesby_1tw
 {
 	diffusemap textures/EDF_1/bricklesby_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/bricklesby_1tw_normal.tga
+	specularmap textures/EDF_1/bricklesby_1tw_spec.tga
 }
 
 textures/EDF_1/brtile_1
 {
 	diffusemap textures/EDF_1/brtile_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/brtile_1_normal.tga
+	specularmap textures/EDF_1/brtile_1_spec.tga
 }
 
 textures/EDF_1/br_bricklove_1tw
 {
 	diffusemap textures/EDF_1/br_bricklove_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/br_bricklove_1tw_normal.tga
+	specularmap textures/EDF_1/br_bricklove_1tw_spec.tga
 }
 
 textures/EDF_1/cemstripbrick
 {
 	diffusemap textures/EDF_1/cemstripbrick.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cemstripbrick_normal.tga
+	specularmap textures/EDF_1/cemstripbrick_spec.tga
 }
 
 textures/EDF_1/cem_snig1tw
 {
 	diffusemap textures/EDF_1/cem_snig1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cem_snig1tw_normal.tga
+	specularmap textures/EDF_1/cem_snig1tw_spec.tga
 }
 
 textures/EDF_1/cem_stripped1tw
 {
 	diffusemap textures/EDF_1/cem_stripped1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cem_stripped1tw_normal.tga
+	specularmap textures/EDF_1/cem_stripped1tw_spec.tga
 }
 
 textures/EDF_1/cem_trimmle_1atw
 {
 	diffusemap textures/EDF_1/cem_trimmle_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cem_trimmle_1atw_normal.tga
+	specularmap textures/EDF_1/cem_trimmle_1atw_spec.tga
 }
 
 textures/EDF_1/cem_trimmle_1lgtw
 {
 	diffusemap textures/EDF_1/cem_trimmle_1lgtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cem_trimmle_1lgtw_normal.tga
+	specularmap textures/EDF_1/cem_trimmle_1lgtw_spec.tga
 }
 
 textures/EDF_1/cem_trimmle_1tw
 {
 	diffusemap textures/EDF_1/cem_trimmle_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cem_trimmle_1tw_normal.tga
+	specularmap textures/EDF_1/cem_trimmle_1tw_spec.tga
 }
 
 textures/EDF_1/clodstairs_1tw
 {
 	diffusemap textures/EDF_1/clodstairs_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/clodstairs_1tw_normal.tga
+	specularmap textures/EDF_1/clodstairs_1tw_spec.tga
 }
 
 textures/EDF_1/companel_2
 {
 	diffusemap textures/EDF_1/companel_2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/companel_2_normal.tga
+	specularmap textures/EDF_1/companel_2_spec.tga
 }
 
 textures/EDF_1/conk_pock_1tw
 {
 	diffusemap textures/EDF_1/conk_pock_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/conk_pock_1tw_normal.tga
+	specularmap textures/EDF_1/conk_pock_1tw_spec.tga
 }
 
 textures/EDF_1/conk_pock_2tw
 {
 	diffusemap textures/EDF_1/conk_pock_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/conk_pock_2tw_normal.tga
+	specularmap textures/EDF_1/conk_pock_2tw_spec.tga
 }
 
 textures/EDF_1/conk_pock_3tw
 {
 	diffusemap textures/EDF_1/conk_pock_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/conk_pock_3tw_normal.tga
+	specularmap textures/EDF_1/conk_pock_3tw_spec.tga
 }
 
 textures/EDF_1/conk_pstir_2tw
 {
 	diffusemap textures/EDF_1/conk_pstir_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/conk_pstir_2tw_normal.tga
+	specularmap textures/EDF_1/conk_pstir_2tw_spec.tga
 }
 
 textures/EDF_1/con_streaksm
 {
 	diffusemap textures/EDF_1/con_streaksm.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/con_streaksm_normal.tga
+	specularmap textures/EDF_1/con_streaksm_spec.tga
 }
 
 textures/EDF_1/crack_baby1tw
 {
 	diffusemap textures/EDF_1/crack_baby1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/crack_baby1tw_normal.tga
+	specularmap textures/EDF_1/crack_baby1tw_spec.tga
 }
 
 textures/EDF_1/crack_baby2atw
 {
 	diffusemap textures/EDF_1/crack_baby2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/crack_baby2atw_normal.tga
+	specularmap textures/EDF_1/crack_baby2atw_spec.tga
 }
 
 textures/EDF_1/crack_baby2tw
 {
 	diffusemap textures/EDF_1/crack_baby2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/crack_baby2tw_normal.tga
+	specularmap textures/EDF_1/crack_baby2tw_spec.tga
 }
 
 textures/EDF_1/crack_baby3tw
 {
 	diffusemap textures/EDF_1/crack_baby3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/crack_baby3tw_normal.tga
+	specularmap textures/EDF_1/crack_baby3tw_spec.tga
 }
 
 textures/EDF_1/crack_baby4tw
 {
 	diffusemap textures/EDF_1/crack_baby4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/crack_baby4tw_normal.tga
+	specularmap textures/EDF_1/crack_baby4tw_spec.tga
 }
 
 textures/EDF_1/crack_baby6tw
 {
 	diffusemap textures/EDF_1/crack_baby6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/crack_baby6tw_normal.tga
+	specularmap textures/EDF_1/crack_baby6tw_spec.tga
 }
 
 textures/EDF_1/crakfa_conk_1tw
 {
 	diffusemap textures/EDF_1/crakfa_conk_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/crakfa_conk_1tw_normal.tga
+	specularmap textures/EDF_1/crakfa_conk_1tw_spec.tga
 }
 
 textures/EDF_1/cslab_trim_1
 {
 	diffusemap textures/EDF_1/cslab_trim_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cslab_trim_1_normal.tga
+	specularmap textures/EDF_1/cslab_trim_1_spec.tga
 }
 
 textures/EDF_1/cslab_trim_1a
 {
 	diffusemap textures/EDF_1/cslab_trim_1a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cslab_trim_1a_normal.tga
+	specularmap textures/EDF_1/cslab_trim_1a_spec.tga
 }
 
 textures/EDF_1/cslab_trim_2
 {
 	diffusemap textures/EDF_1/cslab_trim_2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cslab_trim_2_normal.tga
+	specularmap textures/EDF_1/cslab_trim_2_spec.tga
 }
 
 textures/EDF_1/cslab_trim_2a
 {
 	diffusemap textures/EDF_1/cslab_trim_2a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/cslab_trim_2a_normal.tga
+	specularmap textures/EDF_1/cslab_trim_2a_spec.tga
 }
 
 textures/EDF_1/c_slab_1
 {
 	diffusemap textures/EDF_1/c_slab_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/c_slab_1_normal.tga
+	specularmap textures/EDF_1/c_slab_1_spec.tga
 }
 
 textures/EDF_1/c_slab_2
 {
 	diffusemap textures/EDF_1/c_slab_2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/c_slab_2_normal.tga
+	specularmap textures/EDF_1/c_slab_2_spec.tga
 }
 
 textures/EDF_1/c_slab_3
 {
 	diffusemap textures/EDF_1/c_slab_3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/c_slab_3_normal.tga
+	specularmap textures/EDF_1/c_slab_3_spec.tga
 }
 
 textures/EDF_1/c_slab_3a
 {
 	diffusemap textures/EDF_1/c_slab_3a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/c_slab_3a_normal.tga
+	specularmap textures/EDF_1/c_slab_3a_spec.tga
 }
 
 textures/EDF_1/c_slab_3b
 {
 	diffusemap textures/EDF_1/c_slab_3b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/c_slab_3b_normal.tga
+	specularmap textures/EDF_1/c_slab_3b_spec.tga
 }
 
 textures/EDF_1/deskdraw1tw
 {
 	diffusemap textures/EDF_1/deskdraw1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/deskdraw1tw_normal.tga
+	specularmap textures/EDF_1/deskdraw1tw_spec.tga
 }
 
 textures/EDF_1/drip_cem_1
 {
 	diffusemap textures/EDF_1/drip_cem_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/drip_cem_1_normal.tga
+	specularmap textures/EDF_1/drip_cem_1_spec.tga
 }
 
 textures/EDF_1/drip_cem_2
 {
 	diffusemap textures/EDF_1/drip_cem_2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/drip_cem_2_normal.tga
+	specularmap textures/EDF_1/drip_cem_2_spec.tga
 }
 
 textures/EDF_1/drip_cem_2a
 {
 	diffusemap textures/EDF_1/drip_cem_2a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/drip_cem_2a_normal.tga
+	specularmap textures/EDF_1/drip_cem_2a_spec.tga
 }
 
 textures/EDF_1/drip_cem_3
 {
 	diffusemap textures/EDF_1/drip_cem_3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/drip_cem_3_normal.tga
+	specularmap textures/EDF_1/drip_cem_3_spec.tga
 }
 
 textures/EDF_1/drip_cem_4
 {
 	diffusemap textures/EDF_1/drip_cem_4.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/drip_cem_4_normal.tga
+	specularmap textures/EDF_1/drip_cem_4_spec.tga
 }
 
 textures/EDF_1/ed_whbrick
 {
 	diffusemap textures/EDF_1/ed_whbrick.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ed_whbrick_normal.tga
+	specularmap textures/EDF_1/ed_whbrick_spec.tga
 }
 
 textures/EDF_1/ed_whbrick2
 {
 	diffusemap textures/EDF_1/ed_whbrick2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ed_whbrick2_normal.tga
+	specularmap textures/EDF_1/ed_whbrick2_spec.tga
 }
 
 textures/EDF_1/ed_whbrick3
 {
 	diffusemap textures/EDF_1/ed_whbrick3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ed_whbrick3_normal.tga
+	specularmap textures/EDF_1/ed_whbrick3_spec.tga
 }
 
 textures/EDF_1/ed_whbrick4
 {
 	diffusemap textures/EDF_1/ed_whbrick4.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ed_whbrick4_normal.tga
+	specularmap textures/EDF_1/ed_whbrick4_spec.tga
 }
 
 textures/EDF_1/farcus1tw
 {
 	diffusemap textures/EDF_1/farcus1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/farcus1tw_normal.tga
+	specularmap textures/EDF_1/farcus1tw_spec.tga
 }
 
 textures/EDF_1/fer_beam_1tw
 {
 	diffusemap textures/EDF_1/fer_beam_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_beam_1tw_normal.tga
+	specularmap textures/EDF_1/fer_beam_1tw_spec.tga
 }
 
 textures/EDF_1/fer_riv_1tw
 {
 	diffusemap textures/EDF_1/fer_riv_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_riv_1tw_normal.tga
+	specularmap textures/EDF_1/fer_riv_1tw_spec.tga
 }
 
 textures/EDF_1/fer_scrats_1tw
 {
 	diffusemap textures/EDF_1/fer_scrats_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_scrats_1tw_normal.tga
+	specularmap textures/EDF_1/fer_scrats_1tw_spec.tga
 }
 
 textures/EDF_1/fer_scrats_2atw
 {
 	diffusemap textures/EDF_1/fer_scrats_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_scrats_2atw_normal.tga
+	specularmap textures/EDF_1/fer_scrats_2atw_spec.tga
 }
 
 textures/EDF_1/fer_scrats_3atw
 {
 	diffusemap textures/EDF_1/fer_scrats_3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_scrats_3atw_normal.tga
+	specularmap textures/EDF_1/fer_scrats_3atw_spec.tga
 }
 
 textures/EDF_1/fer_scrats_3tw
 {
 	diffusemap textures/EDF_1/fer_scrats_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_scrats_3tw_normal.tga
+	specularmap textures/EDF_1/fer_scrats_3tw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_2atw
 {
 	diffusemap textures/EDF_1/fer_yelplate_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_2atw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_2atw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_2btw
 {
 	diffusemap textures/EDF_1/fer_yelplate_2btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_2btw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_2btw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_2tw
 {
 	diffusemap textures/EDF_1/fer_yelplate_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_2tw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_2tw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_3tw
 {
 	diffusemap textures/EDF_1/fer_yelplate_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_3tw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_3tw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_4tw
 {
 	diffusemap textures/EDF_1/fer_yelplate_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_4tw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_4tw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_5atw
 {
 	diffusemap textures/EDF_1/fer_yelplate_5atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_5atw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_5atw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_5btw
 {
 	diffusemap textures/EDF_1/fer_yelplate_5btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_5btw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_5btw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_5tw
 {
 	diffusemap textures/EDF_1/fer_yelplate_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_5tw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_5tw_spec.tga
 }
 
 textures/EDF_1/fer_yelplate_6tw
 {
 	diffusemap textures/EDF_1/fer_yelplate_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/fer_yelplate_6tw_normal.tga
+	specularmap textures/EDF_1/fer_yelplate_6tw_spec.tga
 }
 
 textures/EDF_1/flatmetal_1tw
 {
 	diffusemap textures/EDF_1/flatmetal_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flatmetal_1tw_normal.tga
+	specularmap textures/EDF_1/flatmetal_1tw_spec.tga
 }
 
 textures/EDF_1/flo_con_1
 {
 	diffusemap textures/EDF_1/flo_con_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flo_con_1_normal.tga
+	specularmap textures/EDF_1/flo_con_1_spec.tga
 }
 
 textures/EDF_1/flo_con_2
 {
 	diffusemap textures/EDF_1/flo_con_2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flo_con_2_normal.tga
+	specularmap textures/EDF_1/flo_con_2_spec.tga
 }
 
 textures/EDF_1/flo_con_3
 {
 	diffusemap textures/EDF_1/flo_con_3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flo_con_3_normal.tga
+	specularmap textures/EDF_1/flo_con_3_spec.tga
 }
 
 textures/EDF_1/flo_con_3btw
 {
 	diffusemap textures/EDF_1/flo_con_3btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flo_con_3btw_normal.tga
+	specularmap textures/EDF_1/flo_con_3btw_spec.tga
 }
 
 textures/EDF_1/flo_con_4
 {
 	diffusemap textures/EDF_1/flo_con_4.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flo_con_4_normal.tga
+	specularmap textures/EDF_1/flo_con_4_spec.tga
 }
 
 textures/EDF_1/flo_con_4a
 {
 	diffusemap textures/EDF_1/flo_con_4a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flo_con_4a_normal.tga
+	specularmap textures/EDF_1/flo_con_4a_spec.tga
 }
 
 textures/EDF_1/flo_con_4ctw
 {
 	diffusemap textures/EDF_1/flo_con_4ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/flo_con_4ctw_normal.tga
+	specularmap textures/EDF_1/flo_con_4ctw_spec.tga
 }
 
 textures/EDF_1/gardop_1tw
 {
 	diffusemap textures/EDF_1/gardop_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/gardop_1tw_normal.tga
+	specularmap textures/EDF_1/gardop_1tw_spec.tga
 }
 
 textures/EDF_1/gatedo1tw
 {
 	diffusemap textures/EDF_1/gatedo1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/gatedo1tw_normal.tga
+	specularmap textures/EDF_1/gatedo1tw_spec.tga
 }
 
 textures/EDF_1/gatedo2tw
 {
 	diffusemap textures/EDF_1/gatedo2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/gatedo2tw_normal.tga
+	specularmap textures/EDF_1/gatedo2tw_spec.tga
 }
 
 textures/EDF_1/girderlie2
 {
 	diffusemap textures/EDF_1/girderlie2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/girderlie2_normal.tga
+	specularmap textures/EDF_1/girderlie2_spec.tga
 }
 
 textures/EDF_1/girderlie3
 {
 	diffusemap textures/EDF_1/girderlie3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/girderlie3_normal.tga
+	specularmap textures/EDF_1/girderlie3_spec.tga
 }
 
 textures/EDF_1/girder_1tw
 {
 	diffusemap textures/EDF_1/girder_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/girder_1tw_normal.tga
+	specularmap textures/EDF_1/girder_1tw_spec.tga
 }
 
 textures/EDF_1/girder_2tw
 {
 	diffusemap textures/EDF_1/girder_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/girder_2tw_normal.tga
+	specularmap textures/EDF_1/girder_2tw_spec.tga
 }
 
 textures/EDF_1/goddamhatch_1tw
 {
 	diffusemap textures/EDF_1/goddamhatch_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goddamhatch_1tw_normal.tga
+	specularmap textures/EDF_1/goddamhatch_1tw_spec.tga
 }
 
 textures/EDF_1/goddamvent_1atw
 {
 	diffusemap textures/EDF_1/goddamvent_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goddamvent_1atw_normal.tga
+	specularmap textures/EDF_1/goddamvent_1atw_spec.tga
 }
 
 textures/EDF_1/goddamwall_1ctw
 {
 	diffusemap textures/EDF_1/goddamwall_1ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goddamwall_1ctw_normal.tga
+	specularmap textures/EDF_1/goddamwall_1ctw_spec.tga
 }
 
 textures/EDF_1/goddamwall_1dtw
 {
 	diffusemap textures/EDF_1/goddamwall_1dtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goddamwall_1dtw_normal.tga
+	specularmap textures/EDF_1/goddamwall_1dtw_spec.tga
 }
 
 textures/EDF_1/goddamwall_1etw
 {
 	diffusemap textures/EDF_1/goddamwall_1etw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goddamwall_1etw_normal.tga
+	specularmap textures/EDF_1/goddamwall_1etw_spec.tga
 }
 
 textures/EDF_1/goddamwall_1tw
 {
 	diffusemap textures/EDF_1/goddamwall_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goddamwall_1tw_normal.tga
+	specularmap textures/EDF_1/goddamwall_1tw_spec.tga
 }
 
 textures/EDF_1/goddamwall_2tw
 {
 	diffusemap textures/EDF_1/goddamwall_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goddamwall_2tw_normal.tga
+	specularmap textures/EDF_1/goddamwall_2tw_spec.tga
 }
 
 textures/EDF_1/goopcarp_1tw
 {
 	diffusemap textures/EDF_1/goopcarp_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/goopcarp_1tw_normal.tga
+	specularmap textures/EDF_1/goopcarp_1tw_spec.tga
 }
 
 textures/EDF_1/green_met
 {
 	diffusemap textures/EDF_1/green_met.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/green_met_normal.tga
+	specularmap textures/EDF_1/green_met_spec.tga
 }
 
 textures/EDF_1/green_met2
 {
 	diffusemap textures/EDF_1/green_met2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/green_met2_normal.tga
+	specularmap textures/EDF_1/green_met2_spec.tga
 }
 
 textures/EDF_1/green_met3bl
 {
 	diffusemap textures/EDF_1/green_met3bl.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/green_met3bl_normal.tga
+	specularmap textures/EDF_1/green_met3bl_spec.tga
 }
 
 textures/EDF_1/green_met3var
 {
 	diffusemap textures/EDF_1/green_met3var.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/green_met3var_normal.tga
+	specularmap textures/EDF_1/green_met3var_spec.tga
 }
 
 textures/EDF_1/green_met5var
 {
 	diffusemap textures/EDF_1/green_met5var.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/green_met5var_normal.tga
+	specularmap textures/EDF_1/green_met5var_spec.tga
 }
 
 textures/EDF_1/green_met6tw
 {
 	diffusemap textures/EDF_1/green_met6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/green_met6tw_normal.tga
+	specularmap textures/EDF_1/green_met6tw_spec.tga
 }
 
 textures/EDF_1/halfbits_3tw
 {
 	diffusemap textures/EDF_1/halfbits_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/halfbits_3tw_normal.tga
+	specularmap textures/EDF_1/halfbits_3tw_spec.tga
 }
 
 textures/EDF_1/hang1-8_2tw
 {
 	diffusemap textures/EDF_1/hang1-8_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/hang1-8_2tw_normal.tga
+	specularmap textures/EDF_1/hang1-8_2tw_spec.tga
 }
 
 textures/EDF_1/hanger_1-8tw
 {
 	diffusemap textures/EDF_1/hanger_1-8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/hanger_1-8tw_normal.tga
+	specularmap textures/EDF_1/hanger_1-8tw_spec.tga
 }
 
 textures/EDF_1/hanger_easttw
 {
 	diffusemap textures/EDF_1/hanger_easttw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/hanger_easttw_normal.tga
+	specularmap textures/EDF_1/hanger_easttw_spec.tga
 }
 
 textures/EDF_1/hanger_southtw
 {
 	diffusemap textures/EDF_1/hanger_southtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/hanger_southtw_normal.tga
+	specularmap textures/EDF_1/hanger_southtw_spec.tga
 }
 
 textures/EDF_1/holepeb_1tw
 {
 	diffusemap textures/EDF_1/holepeb_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/holepeb_1tw_normal.tga
+	specularmap textures/EDF_1/holepeb_1tw_spec.tga
 }
 
 textures/EDF_1/lamp_trim
 {
 	diffusemap textures/EDF_1/lamp_trim.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/lamp_trim_normal.tga
+	specularmap textures/EDF_1/lamp_trim_spec.tga
 }
 
 textures/EDF_1/lout1tw
 {
 	diffusemap textures/EDF_1/lout1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/lout1tw_normal.tga
+	specularmap textures/EDF_1/lout1tw_spec.tga
 }
 
 textures/EDF_1/louvre_1tw
 {
 	diffusemap textures/EDF_1/louvre_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/louvre_1tw_normal.tga
+	specularmap textures/EDF_1/louvre_1tw_spec.tga
 }
 
 textures/EDF_1/madprops1tw
 {
 	diffusemap textures/EDF_1/madprops1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/madprops1tw_normal.tga
+	specularmap textures/EDF_1/madprops1tw_spec.tga
 }
 
 textures/EDF_1/manhole_1tw
 {
 	diffusemap textures/EDF_1/manhole_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/manhole_1tw_normal.tga
+	specularmap textures/EDF_1/manhole_1tw_spec.tga
 }
 
 textures/EDF_1/Metallo_1atw
 {
 	diffusemap textures/EDF_1/Metallo_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/Metallo_1atw_normal.tga
+	specularmap textures/EDF_1/Metallo_1atw_spec.tga
 }
 
 textures/EDF_1/Metallo_1tw
 {
 	diffusemap textures/EDF_1/Metallo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/Metallo_1tw_normal.tga
+	specularmap textures/EDF_1/Metallo_1tw_spec.tga
 }
 
 textures/EDF_1/met_trimmle1tw
 {
 	diffusemap textures/EDF_1/met_trimmle1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/met_trimmle1tw_normal.tga
+	specularmap textures/EDF_1/met_trimmle1tw_spec.tga
 }
 
 textures/EDF_1/mil_light_1tw
 {
 	diffusemap textures/EDF_1/mil_light_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/mil_light_1tw_normal.tga
+	specularmap textures/EDF_1/mil_light_1tw_spec.tga
 }
 
 textures/EDF_1/mil_light_broketw
 {
 	diffusemap textures/EDF_1/mil_light_broketw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/mil_light_broketw_normal.tga
+	specularmap textures/EDF_1/mil_light_broketw_spec.tga
 }
 
 textures/EDF_1/moreconk_1tw
 {
 	diffusemap textures/EDF_1/moreconk_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/moreconk_1tw_normal.tga
+	specularmap textures/EDF_1/moreconk_1tw_spec.tga
 }
 
 textures/EDF_1/moreconk_2atw
 {
 	diffusemap textures/EDF_1/moreconk_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/moreconk_2atw_normal.tga
+	specularmap textures/EDF_1/moreconk_2atw_spec.tga
 }
 
 textures/EDF_1/moreconk_2tw
 {
 	diffusemap textures/EDF_1/moreconk_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/moreconk_2tw_normal.tga
+	specularmap textures/EDF_1/moreconk_2tw_spec.tga
 }
 
 textures/EDF_1/moreconk_3atw
 {
 	diffusemap textures/EDF_1/moreconk_3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/moreconk_3atw_normal.tga
+	specularmap textures/EDF_1/moreconk_3atw_spec.tga
 }
 
 textures/EDF_1/moreconk_3tw
 {
 	diffusemap textures/EDF_1/moreconk_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/moreconk_3tw_normal.tga
+	specularmap textures/EDF_1/moreconk_3tw_spec.tga
 }
 
 textures/EDF_1/octogratefl_1tw
 {
 	diffusemap textures/EDF_1/octogratefl_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/octogratefl_1tw_normal.tga
+	specularmap textures/EDF_1/octogratefl_1tw_spec.tga
 }
 
 textures/EDF_1/oro_brick1tw
 {
 	diffusemap textures/EDF_1/oro_brick1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/oro_brick1tw_normal.tga
+	specularmap textures/EDF_1/oro_brick1tw_spec.tga
 }
 
 textures/EDF_1/pachinko_1tw
 {
 	diffusemap textures/EDF_1/pachinko_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/pachinko_1tw_normal.tga
+	specularmap textures/EDF_1/pachinko_1tw_spec.tga
 }
 
 textures/EDF_1/pachinko_2btw
 {
 	diffusemap textures/EDF_1/pachinko_2btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/pachinko_2btw_normal.tga
+	specularmap textures/EDF_1/pachinko_2btw_spec.tga
 }
 
 textures/EDF_1/pachinko_2ctw
 {
 	diffusemap textures/EDF_1/pachinko_2ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/pachinko_2ctw_normal.tga
+	specularmap textures/EDF_1/pachinko_2ctw_spec.tga
 }
 
 textures/EDF_1/pachinko_2tw
 {
 	diffusemap textures/EDF_1/pachinko_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/pachinko_2tw_normal.tga
+	specularmap textures/EDF_1/pachinko_2tw_spec.tga
 }
 
 textures/EDF_1/Parking3atw
 {
 	diffusemap textures/EDF_1/Parking3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/Parking3atw_normal.tga
+	specularmap textures/EDF_1/Parking3atw_spec.tga
 }
 
 textures/EDF_1/Parking3btw
 {
 	diffusemap textures/EDF_1/Parking3btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/Parking3btw_normal.tga
+	specularmap textures/EDF_1/Parking3btw_spec.tga
 }
 
 textures/EDF_1/Parking3tw
 {
 	diffusemap textures/EDF_1/Parking3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/Parking3tw_normal.tga
+	specularmap textures/EDF_1/Parking3tw_spec.tga
 }
 
 textures/EDF_1/Parking3ytw
 {
 	diffusemap textures/EDF_1/Parking3ytw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/Parking3ytw_normal.tga
+	specularmap textures/EDF_1/Parking3ytw_spec.tga
 }
 
 textures/EDF_1/pillbox_gird_1atw
 {
 	diffusemap textures/EDF_1/pillbox_gird_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/pillbox_gird_1atw_normal.tga
+	specularmap textures/EDF_1/pillbox_gird_1atw_spec.tga
 }
 
 textures/EDF_1/plas_off
 {
 	diffusemap textures/EDF_1/plas_off.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/plas_off_normal.tga
+	specularmap textures/EDF_1/plas_off_spec.tga
 }
 
 textures/EDF_1/plas_off2
 {
 	diffusemap textures/EDF_1/plas_off2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/plas_off2_normal.tga
+	specularmap textures/EDF_1/plas_off2_spec.tga
 }
 
 textures/EDF_1/plas_off3
 {
 	diffusemap textures/EDF_1/plas_off3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/plas_off3_normal.tga
+	specularmap textures/EDF_1/plas_off3_spec.tga
 }
 
 textures/EDF_1/ragged_plate_1tw
 {
 	diffusemap textures/EDF_1/ragged_plate_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ragged_plate_1tw_normal.tga
+	specularmap textures/EDF_1/ragged_plate_1tw_spec.tga
 }
 
 textures/EDF_1/ragged_plate_3tw
 {
 	diffusemap textures/EDF_1/ragged_plate_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ragged_plate_3tw_normal.tga
+	specularmap textures/EDF_1/ragged_plate_3tw_spec.tga
 }
 
 textures/EDF_1/rag_cem_1
 {
 	diffusemap textures/EDF_1/rag_cem_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/rag_cem_1_normal.tga
+	specularmap textures/EDF_1/rag_cem_1_spec.tga
 }
 
 textures/EDF_1/realwalk1atw
 {
 	diffusemap textures/EDF_1/realwalk1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk1atw_normal.tga
+	specularmap textures/EDF_1/realwalk1atw_spec.tga
 }
 
 textures/EDF_1/realwalk1btw
 {
 	diffusemap textures/EDF_1/realwalk1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk1btw_normal.tga
+	specularmap textures/EDF_1/realwalk1btw_spec.tga
 }
 
 textures/EDF_1/realwalk1tw
 {
 	diffusemap textures/EDF_1/realwalk1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk1tw_normal.tga
+	specularmap textures/EDF_1/realwalk1tw_spec.tga
 }
 
 textures/EDF_1/realwalk2rtw
 {
 	diffusemap textures/EDF_1/realwalk2rtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk2rtw_normal.tga
+	specularmap textures/EDF_1/realwalk2rtw_spec.tga
 }
 
 textures/EDF_1/realwalk2tw
 {
 	diffusemap textures/EDF_1/realwalk2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk2tw_normal.tga
+	specularmap textures/EDF_1/realwalk2tw_spec.tga
 }
 
 textures/EDF_1/realwalk3tw
 {
 	diffusemap textures/EDF_1/realwalk3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk3tw_normal.tga
+	specularmap textures/EDF_1/realwalk3tw_spec.tga
 }
 
 textures/EDF_1/realwalk3ztw
 {
 	diffusemap textures/EDF_1/realwalk3ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk3ztw_normal.tga
+	specularmap textures/EDF_1/realwalk3ztw_spec.tga
 }
 
 textures/EDF_1/realwalk4ztw
 {
 	diffusemap textures/EDF_1/realwalk4ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk4ztw_normal.tga
+	specularmap textures/EDF_1/realwalk4ztw_spec.tga
 }
 
 textures/EDF_1/realwalk5ztw
 {
 	diffusemap textures/EDF_1/realwalk5ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk5ztw_normal.tga
+	specularmap textures/EDF_1/realwalk5ztw_spec.tga
 }
 
 textures/EDF_1/realwalk6ztw
 {
 	diffusemap textures/EDF_1/realwalk6ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/realwalk6ztw_normal.tga
+	specularmap textures/EDF_1/realwalk6ztw_spec.tga
 }
 
 textures/EDF_1/roof_pebble
 {
 	diffusemap textures/EDF_1/roof_pebble.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/roof_pebble_normal.tga
+	specularmap textures/EDF_1/roof_pebble_spec.tga
 }
 
 textures/EDF_1/roof_pebble2
 {
 	diffusemap textures/EDF_1/roof_pebble2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/roof_pebble2_normal.tga
+	specularmap textures/EDF_1/roof_pebble2_spec.tga
 }
 
 textures/EDF_1/roof_pebble3
 {
 	diffusemap textures/EDF_1/roof_pebble3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/roof_pebble3_normal.tga
+	specularmap textures/EDF_1/roof_pebble3_spec.tga
 }
 
 textures/EDF_1/ruddybit1atw
 {
 	diffusemap textures/EDF_1/ruddybit1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ruddybit1atw_normal.tga
+	specularmap textures/EDF_1/ruddybit1atw_spec.tga
 }
 
 textures/EDF_1/ruddybit1tw
 {
 	diffusemap textures/EDF_1/ruddybit1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ruddybit1tw_normal.tga
+	specularmap textures/EDF_1/ruddybit1tw_spec.tga
 }
 
 textures/EDF_1/rustbase_2tw
 {
 	diffusemap textures/EDF_1/rustbase_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/rustbase_2tw_normal.tga
+	specularmap textures/EDF_1/rustbase_2tw_spec.tga
 }
 
 textures/EDF_1/rust_beam2tw
 {
 	diffusemap textures/EDF_1/rust_beam2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/rust_beam2tw_normal.tga
+	specularmap textures/EDF_1/rust_beam2tw_spec.tga
 }
 
 textures/EDF_1/rust_beamtw
 {
 	diffusemap textures/EDF_1/rust_beamtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/rust_beamtw_normal.tga
+	specularmap textures/EDF_1/rust_beamtw_spec.tga
 }
 
 textures/EDF_1/scadrub1tw
 {
 	diffusemap textures/EDF_1/scadrub1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/scadrub1tw_normal.tga
+	specularmap textures/EDF_1/scadrub1tw_spec.tga
 }
 
 textures/EDF_1/scramml1tw
 {
 	diffusemap textures/EDF_1/scramml1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/scramml1tw_normal.tga
+	specularmap textures/EDF_1/scramml1tw_spec.tga
 }
 
 textures/EDF_1/scuffflor_1tw
 {
 	diffusemap textures/EDF_1/scuffflor_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/scuffflor_1tw_normal.tga
+	specularmap textures/EDF_1/scuffflor_1tw_spec.tga
 }
 
 textures/EDF_1/scum_asphalt1tw
 {
 	diffusemap textures/EDF_1/scum_asphalt1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/scum_asphalt1tw_normal.tga
+	specularmap textures/EDF_1/scum_asphalt1tw_spec.tga
 }
 
 textures/EDF_1/scum_asphalt3tw
 {
 	diffusemap textures/EDF_1/scum_asphalt3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/scum_asphalt3tw_normal.tga
+	specularmap textures/EDF_1/scum_asphalt3tw_spec.tga
 }
 
 textures/EDF_1/scuxxout1tw
 {
 	diffusemap textures/EDF_1/scuxxout1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/scuxxout1tw_normal.tga
+	specularmap textures/EDF_1/scuxxout1tw_spec.tga
 }
 
 textures/EDF_1/sewciel1tw
 {
 	diffusemap textures/EDF_1/sewciel1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewciel1tw_normal.tga
+	specularmap textures/EDF_1/sewciel1tw_spec.tga
 }
 
 textures/EDF_1/sewciel2atw
 {
 	diffusemap textures/EDF_1/sewciel2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewciel2atw_normal.tga
+	specularmap textures/EDF_1/sewciel2atw_spec.tga
 }
 
 textures/EDF_1/sewciel2tw
 {
 	diffusemap textures/EDF_1/sewciel2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewciel2tw_normal.tga
+	specularmap textures/EDF_1/sewciel2tw_spec.tga
 }
 
 textures/EDF_1/sewdrippo_1tw
 {
 	diffusemap textures/EDF_1/sewdrippo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewdrippo_1tw_normal.tga
+	specularmap textures/EDF_1/sewdrippo_1tw_spec.tga
 }
 
 textures/EDF_1/sewdrippo_2tw
 {
 	diffusemap textures/EDF_1/sewdrippo_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewdrippo_2tw_normal.tga
+	specularmap textures/EDF_1/sewdrippo_2tw_spec.tga
 }
 
 textures/EDF_1/sewpatter_1tw
 {
 	diffusemap textures/EDF_1/sewpatter_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewpatter_1tw_normal.tga
+	specularmap textures/EDF_1/sewpatter_1tw_spec.tga
 }
 
 textures/EDF_1/sewpatter_2tw
 {
 	diffusemap textures/EDF_1/sewpatter_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewpatter_2tw_normal.tga
+	specularmap textures/EDF_1/sewpatter_2tw_spec.tga
 }
 
 textures/EDF_1/sewwall2atw
 {
 	diffusemap textures/EDF_1/sewwall2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewwall2atw_normal.tga
+	specularmap textures/EDF_1/sewwall2atw_spec.tga
 }
 
 textures/EDF_1/sewwall2tw
 {
 	diffusemap textures/EDF_1/sewwall2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sewwall2tw_normal.tga
+	specularmap textures/EDF_1/sewwall2tw_spec.tga
 }
 
 textures/EDF_1/sidewalk1tw
 {
 	diffusemap textures/EDF_1/sidewalk1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sidewalk1tw_normal.tga
+	specularmap textures/EDF_1/sidewalk1tw_spec.tga
 }
 
 textures/EDF_1/sidewalk2atw
 {
 	diffusemap textures/EDF_1/sidewalk2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sidewalk2atw_normal.tga
+	specularmap textures/EDF_1/sidewalk2atw_spec.tga
 }
 
 textures/EDF_1/sidewalk2tw
 {
 	diffusemap textures/EDF_1/sidewalk2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sidewalk2tw_normal.tga
+	specularmap textures/EDF_1/sidewalk2tw_spec.tga
 }
 
 textures/EDF_1/sidewalk4atw
 {
 	diffusemap textures/EDF_1/sidewalk4atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sidewalk4atw_normal.tga
+	specularmap textures/EDF_1/sidewalk4atw_spec.tga
 }
 
 textures/EDF_1/side_conk
 {
 	diffusemap textures/EDF_1/side_conk.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/side_conk_normal.tga
+	specularmap textures/EDF_1/side_conk_spec.tga
 }
 
 textures/EDF_1/side_conk2
 {
 	diffusemap textures/EDF_1/side_conk2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/side_conk2_normal.tga
+	specularmap textures/EDF_1/side_conk2_spec.tga
 }
 
 textures/EDF_1/silobrick_1tw
 {
 	diffusemap textures/EDF_1/silobrick_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silobrick_1tw_normal.tga
+	specularmap textures/EDF_1/silobrick_1tw_spec.tga
 }
 
 textures/EDF_1/silobrick_3
 {
 	diffusemap textures/EDF_1/silobrick_3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silobrick_3_normal.tga
+	specularmap textures/EDF_1/silobrick_3_spec.tga
 }
 
 textures/EDF_1/silobrick_4
 {
 	diffusemap textures/EDF_1/silobrick_4.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silobrick_4_normal.tga
+	specularmap textures/EDF_1/silobrick_4_spec.tga
 }
 
 textures/EDF_1/silobrick_5
 {
 	diffusemap textures/EDF_1/silobrick_5.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silobrick_5_normal.tga
+	specularmap textures/EDF_1/silobrick_5_spec.tga
 }
 
 textures/EDF_1/silobrick_6tw
 {
 	diffusemap textures/EDF_1/silobrick_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silobrick_6tw_normal.tga
+	specularmap textures/EDF_1/silobrick_6tw_spec.tga
 }
 
 textures/EDF_1/silobrick_7tw
 {
 	diffusemap textures/EDF_1/silobrick_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silobrick_7tw_normal.tga
+	specularmap textures/EDF_1/silobrick_7tw_spec.tga
 }
 
 textures/EDF_1/silo_ceil_1
 {
 	diffusemap textures/EDF_1/silo_ceil_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silo_ceil_1_normal.tga
+	specularmap textures/EDF_1/silo_ceil_1_spec.tga
 }
 
 textures/EDF_1/silo_tile1atw
 {
 	diffusemap textures/EDF_1/silo_tile1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silo_tile1atw_normal.tga
+	specularmap textures/EDF_1/silo_tile1atw_spec.tga
 }
 
 textures/EDF_1/silo_tile1btw
 {
 	diffusemap textures/EDF_1/silo_tile1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silo_tile1btw_normal.tga
+	specularmap textures/EDF_1/silo_tile1btw_spec.tga
 }
 
 textures/EDF_1/silo_tile1tw
 {
 	diffusemap textures/EDF_1/silo_tile1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silo_tile1tw_normal.tga
+	specularmap textures/EDF_1/silo_tile1tw_spec.tga
 }
 
 textures/EDF_1/silo_tile5atw
 {
 	diffusemap textures/EDF_1/silo_tile5atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/silo_tile5atw_normal.tga
+	specularmap textures/EDF_1/silo_tile5atw_spec.tga
 }
 
 textures/EDF_1/sil_pan_1aatw
 {
 	diffusemap textures/EDF_1/sil_pan_1aatw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sil_pan_1aatw_normal.tga
+	specularmap textures/EDF_1/sil_pan_1aatw_spec.tga
 }
 
 textures/EDF_1/sil_pan_1abtw
 {
 	diffusemap textures/EDF_1/sil_pan_1abtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sil_pan_1abtw_normal.tga
+	specularmap textures/EDF_1/sil_pan_1abtw_spec.tga
 }
 
 textures/EDF_1/sil_pan_1actw
 {
 	diffusemap textures/EDF_1/sil_pan_1actw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sil_pan_1actw_normal.tga
+	specularmap textures/EDF_1/sil_pan_1actw_spec.tga
 }
 
 textures/EDF_1/sil_pan_1atw
 {
 	diffusemap textures/EDF_1/sil_pan_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/sil_pan_1atw_normal.tga
+	specularmap textures/EDF_1/sil_pan_1atw_spec.tga
 }
 
 textures/EDF_1/small_vent_2tw
 {
 	diffusemap textures/EDF_1/small_vent_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/small_vent_2tw_normal.tga
+	specularmap textures/EDF_1/small_vent_2tw_spec.tga
 }
 
 textures/EDF_1/smat_ciel_1tw
 {
 	diffusemap textures/EDF_1/smat_ciel_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/smat_ciel_1tw_normal.tga
+	specularmap textures/EDF_1/smat_ciel_1tw_spec.tga
 }
 
 textures/EDF_1/splatdo_1tw
 {
 	diffusemap textures/EDF_1/splatdo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/splatdo_1tw_normal.tga
+	specularmap textures/EDF_1/splatdo_1tw_spec.tga
 }
 
 textures/EDF_1/srcruddybrick_1tw
 {
 	diffusemap textures/EDF_1/srcruddybrick_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/srcruddybrick_1tw_normal.tga
+	specularmap textures/EDF_1/srcruddybrick_1tw_spec.tga
 }
 
 textures/EDF_1/steelplate2
 {
 	diffusemap textures/EDF_1/steelplate2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/steelplate2_normal.tga
+	specularmap textures/EDF_1/steelplate2_spec.tga
 }
 
 textures/EDF_1/steelplate3
 {
 	diffusemap textures/EDF_1/steelplate3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/steelplate3_normal.tga
+	specularmap textures/EDF_1/steelplate3_spec.tga
 }
 
 textures/EDF_1/stinf_2tw
 {
 	diffusemap textures/EDF_1/stinf_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/stinf_2tw_normal.tga
+	specularmap textures/EDF_1/stinf_2tw_spec.tga
 }
 
 textures/EDF_1/tap_door_2tw
 {
 	diffusemap textures/EDF_1/tap_door_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tap_door_2tw_normal.tga
+	specularmap textures/EDF_1/tap_door_2tw_spec.tga
 }
 
 textures/EDF_1/tar_bit_2tw
 {
 	diffusemap textures/EDF_1/tar_bit_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tar_bit_2tw_normal.tga
+	specularmap textures/EDF_1/tar_bit_2tw_spec.tga
 }
 
 textures/EDF_1/thrashbrick_2tw
 {
 	diffusemap textures/EDF_1/thrashbrick_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/thrashbrick_2tw_normal.tga
+	specularmap textures/EDF_1/thrashbrick_2tw_spec.tga
 }
 
 textures/EDF_1/thrash_brick_1tw
 {
 	diffusemap textures/EDF_1/thrash_brick_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/thrash_brick_1tw_normal.tga
+	specularmap textures/EDF_1/thrash_brick_1tw_spec.tga
 }
 
 textures/EDF_1/tileo_1btw
 {
 	diffusemap textures/EDF_1/tileo_1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tileo_1btw_normal.tga
+	specularmap textures/EDF_1/tileo_1btw_spec.tga
 }
 
 textures/EDF_1/tileo_1tw
 {
 	diffusemap textures/EDF_1/tileo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tileo_1tw_normal.tga
+	specularmap textures/EDF_1/tileo_1tw_spec.tga
 }
 
 textures/EDF_1/tileo_2tw
 {
 	diffusemap textures/EDF_1/tileo_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tileo_2tw_normal.tga
+	specularmap textures/EDF_1/tileo_2tw_spec.tga
 }
 
 textures/EDF_1/tiny_venttw
 {
 	diffusemap textures/EDF_1/tiny_venttw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tiny_venttw_normal.tga
+	specularmap textures/EDF_1/tiny_venttw_spec.tga
 }
 
 textures/EDF_1/tiptop_1tw
 {
 	diffusemap textures/EDF_1/tiptop_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tiptop_1tw_normal.tga
+	specularmap textures/EDF_1/tiptop_1tw_spec.tga
 }
 
 textures/EDF_1/tiptop_2ctw
 {
 	diffusemap textures/EDF_1/tiptop_2ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tiptop_2ctw_normal.tga
+	specularmap textures/EDF_1/tiptop_2ctw_spec.tga
 }
 
 textures/EDF_1/toptrim
 {
 	diffusemap textures/EDF_1/toptrim.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/toptrim_normal.tga
+	specularmap textures/EDF_1/toptrim_spec.tga
 }
 
 textures/EDF_1/tow_steel_1atw
 {
 	diffusemap textures/EDF_1/tow_steel_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tow_steel_1atw_normal.tga
+	specularmap textures/EDF_1/tow_steel_1atw_spec.tga
 }
 
 textures/EDF_1/tow_steel_1btw
 {
 	diffusemap textures/EDF_1/tow_steel_1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tow_steel_1btw_normal.tga
+	specularmap textures/EDF_1/tow_steel_1btw_spec.tga
 }
 
 textures/EDF_1/tow_steel_1dbtw
 {
 	diffusemap textures/EDF_1/tow_steel_1dbtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tow_steel_1dbtw_normal.tga
+	specularmap textures/EDF_1/tow_steel_1dbtw_spec.tga
 }
 
 textures/EDF_1/tow_steel_1tw
 {
 	diffusemap textures/EDF_1/tow_steel_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/tow_steel_1tw_normal.tga
+	specularmap textures/EDF_1/tow_steel_1tw_spec.tga
 }
 
 textures/EDF_1/vaguepanel_1atw
 {
 	diffusemap textures/EDF_1/vaguepanel_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/vaguepanel_1atw_normal.tga
+	specularmap textures/EDF_1/vaguepanel_1atw_spec.tga
 }
 
 textures/EDF_1/vaguepanel_1tw
 {
 	diffusemap textures/EDF_1/vaguepanel_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/vaguepanel_1tw_normal.tga
+	specularmap textures/EDF_1/vaguepanel_1tw_spec.tga
 }
 
 textures/EDF_1/venticle_1
 {
 	diffusemap textures/EDF_1/venticle_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/venticle_1_normal.tga
+	specularmap textures/EDF_1/venticle_1_spec.tga
 }
 
 textures/EDF_1/venticle_1a
 {
 	diffusemap textures/EDF_1/venticle_1a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/venticle_1a_normal.tga
+	specularmap textures/EDF_1/venticle_1a_spec.tga
 }
 
 textures/EDF_1/venticle_3
 {
 	diffusemap textures/EDF_1/venticle_3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/venticle_3_normal.tga
+	specularmap textures/EDF_1/venticle_3_spec.tga
 }
 
 textures/EDF_1/ventry_1tw
 {
 	diffusemap textures/EDF_1/ventry_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ventry_1tw_normal.tga
+	specularmap textures/EDF_1/ventry_1tw_spec.tga
 }
 
 textures/EDF_1/ventythings_1tw
 {
 	diffusemap textures/EDF_1/ventythings_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/ventythings_1tw_normal.tga
+	specularmap textures/EDF_1/ventythings_1tw_spec.tga
 }
 
 textures/EDF_1/walkway1
 {
 	diffusemap textures/EDF_1/walkway1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/walkway1_normal.tga
+	specularmap textures/EDF_1/walkway1_spec.tga
 }
 
 textures/EDF_1/walkway2
 {
 	diffusemap textures/EDF_1/walkway2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/walkway2_normal.tga
+	specularmap textures/EDF_1/walkway2_spec.tga
 }
 
 textures/EDF_1/walkway2a
 {
 	diffusemap textures/EDF_1/walkway2a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/walkway2a_normal.tga
+	specularmap textures/EDF_1/walkway2a_spec.tga
 }
 
 textures/EDF_1/walkway2b
 {
 	diffusemap textures/EDF_1/walkway2b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/walkway2b_normal.tga
+	specularmap textures/EDF_1/walkway2b_spec.tga
 }
 
 textures/EDF_1/walkway2c
 {
 	diffusemap textures/EDF_1/walkway2c.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/walkway2c_normal.tga
+	specularmap textures/EDF_1/walkway2c_spec.tga
 }
 
 textures/EDF_1/warning_1tw
 {
 	diffusemap textures/EDF_1/warning_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/warning_1tw_normal.tga
+	specularmap textures/EDF_1/warning_1tw_spec.tga
 }
 
 textures/EDF_1/warning_2tw
 {
 	diffusemap textures/EDF_1/warning_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/warning_2tw_normal.tga
+	specularmap textures/EDF_1/warning_2tw_spec.tga
 }
 
 textures/EDF_1/warning_3tw
 {
 	diffusemap textures/EDF_1/warning_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/warning_3tw_normal.tga
+	specularmap textures/EDF_1/warning_3tw_spec.tga
 }
 
 textures/EDF_1/warning_4tw
 {
 	diffusemap textures/EDF_1/warning_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/warning_4tw_normal.tga
+	specularmap textures/EDF_1/warning_4tw_spec.tga
 }
 
 textures/EDF_1/wha_flakes_1tw
 {
 	diffusemap textures/EDF_1/wha_flakes_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/wha_flakes_1tw_normal.tga
+	specularmap textures/EDF_1/wha_flakes_1tw_spec.tga
 }
 
 textures/EDF_1/wha_flakes_2tw
 {
 	diffusemap textures/EDF_1/wha_flakes_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/wha_flakes_2tw_normal.tga
+	specularmap textures/EDF_1/wha_flakes_2tw_spec.tga
 }
 
 textures/EDF_1/wh_cem_1
 {
 	diffusemap textures/EDF_1/wh_cem_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/wh_cem_1_normal.tga
+	specularmap textures/EDF_1/wh_cem_1_spec.tga
 }
 
 textures/EDF_1/wh_cem_1b
 {
 	diffusemap textures/EDF_1/wh_cem_1b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/wh_cem_1b_normal.tga
+	specularmap textures/EDF_1/wh_cem_1b_spec.tga
 }
 
 textures/EDF_1/yellno_3tw
 {
 	diffusemap textures/EDF_1/yellno_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/yellno_3tw_normal.tga
+	specularmap textures/EDF_1/yellno_3tw_spec.tga
 }
 
 textures/EDF_1/yetmoreconk_1tw
 {
 	diffusemap textures/EDF_1/yetmoreconk_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/EDF_1/yetmoreconk_1tw_normal.tga
+	specularmap textures/EDF_1/yetmoreconk_1tw_spec.tga
 }
 

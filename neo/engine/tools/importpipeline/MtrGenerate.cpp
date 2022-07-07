@@ -43,7 +43,7 @@ void GenerateModelMaterials_f(const idCmdArgs& args)
 
 void GenerateMaterials_f(const idCmdArgs& args)
 {
-	idFileList *fileList = fileSystem->ListFilesTree("textures", ".tga");
+	idFileList *fileList = fileSystem->ListFilesTree("textures/EDF_1", ".tga");
 
 	for (int i = 0; i < fileList->GetNumFiles(); i++)
 	{
@@ -71,13 +71,16 @@ void GenerateMaterials_f(const idCmdArgs& args)
 		if(strstr(file.c_str(), "_normal"))
 			continue;
 
+		if (strstr(file.c_str(), "_spec"))
+			continue;
+
 		idFile *f = fileSystem->OpenFileAppend(va("decls/materials/generated_mtr/%s.mtr", folder.c_str()));
 
 		f->Printf("%s\n", file.c_str());
 		f->Printf("{\n");
 		f->Printf("\tdiffusemap %s.tga\n", file.c_str());
 		f->Printf("\tbumpmap %s_normal.tga\n", file.c_str());
-		f->Printf("\tspecularmap textures/common/nospec.tga\n");
+		f->Printf("\tspecularmap %s_spec.tga\n", file.c_str());
 		f->Printf("}\n\n");
 		fileSystem->CloseFile(f);
 	}
