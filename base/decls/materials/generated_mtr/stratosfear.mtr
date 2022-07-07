@@ -1,3353 +1,3353 @@
 textures/stratosfear/99_1atw
 {
 	diffusemap textures/stratosfear/99_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/99_1atw_normal.tga
+	specularmap textures/stratosfear/99_1atw_spec.tga
 }
 
 textures/stratosfear/99_1tw
 {
 	diffusemap textures/stratosfear/99_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/99_1tw_normal.tga
+	specularmap textures/stratosfear/99_1tw_spec.tga
 }
 
 textures/stratosfear/ahhh_1atw
 {
 	diffusemap textures/stratosfear/ahhh_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ahhh_1atw_normal.tga
+	specularmap textures/stratosfear/ahhh_1atw_spec.tga
 }
 
 textures/stratosfear/ahhh_1btw
 {
 	diffusemap textures/stratosfear/ahhh_1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ahhh_1btw_normal.tga
+	specularmap textures/stratosfear/ahhh_1btw_spec.tga
 }
 
 textures/stratosfear/ahhh_1ctw
 {
 	diffusemap textures/stratosfear/ahhh_1ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ahhh_1ctw_normal.tga
+	specularmap textures/stratosfear/ahhh_1ctw_spec.tga
 }
 
 textures/stratosfear/ahhh_1dtw
 {
 	diffusemap textures/stratosfear/ahhh_1dtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ahhh_1dtw_normal.tga
+	specularmap textures/stratosfear/ahhh_1dtw_spec.tga
 }
 
 textures/stratosfear/anatsign4tw
 {
 	diffusemap textures/stratosfear/anatsign4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/anatsign4tw_normal.tga
+	specularmap textures/stratosfear/anatsign4tw_spec.tga
 }
 
 textures/stratosfear/anat_1tw
 {
 	diffusemap textures/stratosfear/anat_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/anat_1tw_normal.tga
+	specularmap textures/stratosfear/anat_1tw_spec.tga
 }
 
 textures/stratosfear/anat_2tw
 {
 	diffusemap textures/stratosfear/anat_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/anat_2tw_normal.tga
+	specularmap textures/stratosfear/anat_2tw_spec.tga
 }
 
 textures/stratosfear/asphalted1_tw
 {
 	diffusemap textures/stratosfear/asphalted1_tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/asphalted1_tw_normal.tga
+	specularmap textures/stratosfear/asphalted1_tw_spec.tga
 }
 
 textures/stratosfear/astercarp2tw
 {
 	diffusemap textures/stratosfear/astercarp2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/astercarp2tw_normal.tga
+	specularmap textures/stratosfear/astercarp2tw_spec.tga
 }
 
 textures/stratosfear/astercarptw
 {
 	diffusemap textures/stratosfear/astercarptw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/astercarptw_normal.tga
+	specularmap textures/stratosfear/astercarptw_spec.tga
 }
 
 textures/stratosfear/asterpants1tw
 {
 	diffusemap textures/stratosfear/asterpants1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/asterpants1tw_normal.tga
+	specularmap textures/stratosfear/asterpants1tw_spec.tga
 }
 
 textures/stratosfear/atomicween_2tw
 {
 	diffusemap textures/stratosfear/atomicween_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/atomicween_2tw_normal.tga
+	specularmap textures/stratosfear/atomicween_2tw_spec.tga
 }
 
 textures/stratosfear/avaad_1tw
 {
 	diffusemap textures/stratosfear/avaad_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaad_1tw_normal.tga
+	specularmap textures/stratosfear/avaad_1tw_spec.tga
 }
 
 textures/stratosfear/avaad_2tw
 {
 	diffusemap textures/stratosfear/avaad_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaad_2tw_normal.tga
+	specularmap textures/stratosfear/avaad_2tw_spec.tga
 }
 
 textures/stratosfear/avaad_3tw
 {
 	diffusemap textures/stratosfear/avaad_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaad_3tw_normal.tga
+	specularmap textures/stratosfear/avaad_3tw_spec.tga
 }
 
 textures/stratosfear/avaan_1atw
 {
 	diffusemap textures/stratosfear/avaan_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaan_1atw_normal.tga
+	specularmap textures/stratosfear/avaan_1atw_spec.tga
 }
 
 textures/stratosfear/avaan_1btw
 {
 	diffusemap textures/stratosfear/avaan_1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaan_1btw_normal.tga
+	specularmap textures/stratosfear/avaan_1btw_spec.tga
 }
 
 textures/stratosfear/avaan_1ctw
 {
 	diffusemap textures/stratosfear/avaan_1ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaan_1ctw_normal.tga
+	specularmap textures/stratosfear/avaan_1ctw_spec.tga
 }
 
 textures/stratosfear/avaan_1dtw
 {
 	diffusemap textures/stratosfear/avaan_1dtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaan_1dtw_normal.tga
+	specularmap textures/stratosfear/avaan_1dtw_spec.tga
 }
 
 textures/stratosfear/avaan_1etw
 {
 	diffusemap textures/stratosfear/avaan_1etw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avaan_1etw_normal.tga
+	specularmap textures/stratosfear/avaan_1etw_spec.tga
 }
 
 textures/stratosfear/avadisp_1atw
 {
 	diffusemap textures/stratosfear/avadisp_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avadisp_1atw_normal.tga
+	specularmap textures/stratosfear/avadisp_1atw_spec.tga
 }
 
 textures/stratosfear/avag1
 {
 	diffusemap textures/stratosfear/avag1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avag1_normal.tga
+	specularmap textures/stratosfear/avag1_spec.tga
 }
 
 textures/stratosfear/avam_1tw
 {
 	diffusemap textures/stratosfear/avam_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avam_1tw_normal.tga
+	specularmap textures/stratosfear/avam_1tw_spec.tga
 }
 
 textures/stratosfear/avam_2tw
 {
 	diffusemap textures/stratosfear/avam_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avam_2tw_normal.tga
+	specularmap textures/stratosfear/avam_2tw_spec.tga
 }
 
 textures/stratosfear/avam_3tw
 {
 	diffusemap textures/stratosfear/avam_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avam_3tw_normal.tga
+	specularmap textures/stratosfear/avam_3tw_spec.tga
 }
 
 textures/stratosfear/avam_4tw
 {
 	diffusemap textures/stratosfear/avam_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avam_4tw_normal.tga
+	specularmap textures/stratosfear/avam_4tw_spec.tga
 }
 
 textures/stratosfear/avasignx2tw
 {
 	diffusemap textures/stratosfear/avasignx2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avasignx2tw_normal.tga
+	specularmap textures/stratosfear/avasignx2tw_spec.tga
 }
 
 textures/stratosfear/ava_1tw
 {
 	diffusemap textures/stratosfear/ava_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ava_1tw_normal.tga
+	specularmap textures/stratosfear/ava_1tw_spec.tga
 }
 
 textures/stratosfear/ava_2tw
 {
 	diffusemap textures/stratosfear/ava_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ava_2tw_normal.tga
+	specularmap textures/stratosfear/ava_2tw_spec.tga
 }
 
 textures/stratosfear/avfloor2tw
 {
 	diffusemap textures/stratosfear/avfloor2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avfloor2tw_normal.tga
+	specularmap textures/stratosfear/avfloor2tw_spec.tga
 }
 
 textures/stratosfear/avfloortw
 {
 	diffusemap textures/stratosfear/avfloortw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avfloortw_normal.tga
+	specularmap textures/stratosfear/avfloortw_spec.tga
 }
 
 textures/stratosfear/avlight1tw
 {
 	diffusemap textures/stratosfear/avlight1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/avlight1tw_normal.tga
+	specularmap textures/stratosfear/avlight1tw_spec.tga
 }
 
 textures/stratosfear/aweebieflo
 {
 	diffusemap textures/stratosfear/aweebieflo.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/aweebieflo_normal.tga
+	specularmap textures/stratosfear/aweebieflo_spec.tga
 }
 
 textures/stratosfear/aweeniegr_1ftw
 {
 	diffusemap textures/stratosfear/aweeniegr_1ftw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/aweeniegr_1ftw_normal.tga
+	specularmap textures/stratosfear/aweeniegr_1ftw_spec.tga
 }
 
 textures/stratosfear/aweeniegr_2atw
 {
 	diffusemap textures/stratosfear/aweeniegr_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/aweeniegr_2atw_normal.tga
+	specularmap textures/stratosfear/aweeniegr_2atw_spec.tga
 }
 
 textures/stratosfear/basefabav_1tw
 {
 	diffusemap textures/stratosfear/basefabav_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/basefabav_1tw_normal.tga
+	specularmap textures/stratosfear/basefabav_1tw_spec.tga
 }
 
 textures/stratosfear/beersign1tw
 {
 	diffusemap textures/stratosfear/beersign1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/beersign1tw_normal.tga
+	specularmap textures/stratosfear/beersign1tw_spec.tga
 }
 
 textures/stratosfear/bilbobag_1tw
 {
 	diffusemap textures/stratosfear/bilbobag_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/bilbobag_1tw_normal.tga
+	specularmap textures/stratosfear/bilbobag_1tw_spec.tga
 }
 
 textures/stratosfear/bilbobag_2tw
 {
 	diffusemap textures/stratosfear/bilbobag_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/bilbobag_2tw_normal.tga
+	specularmap textures/stratosfear/bilbobag_2tw_spec.tga
 }
 
 textures/stratosfear/billwithstrat1tw
 {
 	diffusemap textures/stratosfear/billwithstrat1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/billwithstrat1tw_normal.tga
+	specularmap textures/stratosfear/billwithstrat1tw_spec.tga
 }
 
 textures/stratosfear/billwithstrat2tw
 {
 	diffusemap textures/stratosfear/billwithstrat2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/billwithstrat2tw_normal.tga
+	specularmap textures/stratosfear/billwithstrat2tw_spec.tga
 }
 
 textures/stratosfear/bodymans1tw
 {
 	diffusemap textures/stratosfear/bodymans1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/bodymans1tw_normal.tga
+	specularmap textures/stratosfear/bodymans1tw_spec.tga
 }
 
 textures/stratosfear/boobaddy_1tw
 {
 	diffusemap textures/stratosfear/boobaddy_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobaddy_1tw_normal.tga
+	specularmap textures/stratosfear/boobaddy_1tw_spec.tga
 }
 
 textures/stratosfear/boobsh4atw
 {
 	diffusemap textures/stratosfear/boobsh4atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh4atw_normal.tga
+	specularmap textures/stratosfear/boobsh4atw_spec.tga
 }
 
 textures/stratosfear/boobsh4bctw
 {
 	diffusemap textures/stratosfear/boobsh4bctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh4bctw_normal.tga
+	specularmap textures/stratosfear/boobsh4bctw_spec.tga
 }
 
 textures/stratosfear/boobsh7tw
 {
 	diffusemap textures/stratosfear/boobsh7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh7tw_normal.tga
+	specularmap textures/stratosfear/boobsh7tw_spec.tga
 }
 
 textures/stratosfear/boobsh_2atw
 {
 	diffusemap textures/stratosfear/boobsh_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh_2atw_normal.tga
+	specularmap textures/stratosfear/boobsh_2atw_spec.tga
 }
 
 textures/stratosfear/boobsh_2btw
 {
 	diffusemap textures/stratosfear/boobsh_2btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh_2btw_normal.tga
+	specularmap textures/stratosfear/boobsh_2btw_spec.tga
 }
 
 textures/stratosfear/boobsh_2ctw
 {
 	diffusemap textures/stratosfear/boobsh_2ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh_2ctw_normal.tga
+	specularmap textures/stratosfear/boobsh_2ctw_spec.tga
 }
 
 textures/stratosfear/boobsh_2tw
 {
 	diffusemap textures/stratosfear/boobsh_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh_2tw_normal.tga
+	specularmap textures/stratosfear/boobsh_2tw_spec.tga
 }
 
 textures/stratosfear/boobsh_5tw
 {
 	diffusemap textures/stratosfear/boobsh_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh_5tw_normal.tga
+	specularmap textures/stratosfear/boobsh_5tw_spec.tga
 }
 
 textures/stratosfear/boobsh_6tw
 {
 	diffusemap textures/stratosfear/boobsh_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsh_6tw_normal.tga
+	specularmap textures/stratosfear/boobsh_6tw_spec.tga
 }
 
 textures/stratosfear/boobsrti_1tw
 {
 	diffusemap textures/stratosfear/boobsrti_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsrti_1tw_normal.tga
+	specularmap textures/stratosfear/boobsrti_1tw_spec.tga
 }
 
 textures/stratosfear/boobsrti_1vtw
 {
 	diffusemap textures/stratosfear/boobsrti_1vtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsrti_1vtw_normal.tga
+	specularmap textures/stratosfear/boobsrti_1vtw_spec.tga
 }
 
 textures/stratosfear/boobsrti_2tw
 {
 	diffusemap textures/stratosfear/boobsrti_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsrti_2tw_normal.tga
+	specularmap textures/stratosfear/boobsrti_2tw_spec.tga
 }
 
 textures/stratosfear/boobsrti_3tw
 {
 	diffusemap textures/stratosfear/boobsrti_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobsrti_3tw_normal.tga
+	specularmap textures/stratosfear/boobsrti_3tw_spec.tga
 }
 
 textures/stratosfear/boobst4ntw
 {
 	diffusemap textures/stratosfear/boobst4ntw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/boobst4ntw_normal.tga
+	specularmap textures/stratosfear/boobst4ntw_spec.tga
 }
 
 textures/stratosfear/brslatted_1tw
 {
 	diffusemap textures/stratosfear/brslatted_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/brslatted_1tw_normal.tga
+	specularmap textures/stratosfear/brslatted_1tw_spec.tga
 }
 
 textures/stratosfear/bumpybase_1tw
 {
 	diffusemap textures/stratosfear/bumpybase_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/bumpybase_1tw_normal.tga
+	specularmap textures/stratosfear/bumpybase_1tw_spec.tga
 }
 
 textures/stratosfear/buychez_1tw
 {
 	diffusemap textures/stratosfear/buychez_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/buychez_1tw_normal.tga
+	specularmap textures/stratosfear/buychez_1tw_spec.tga
 }
 
 textures/stratosfear/casinowall16aTW
 {
 	diffusemap textures/stratosfear/casinowall16aTW.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/casinowall16aTW_normal.tga
+	specularmap textures/stratosfear/casinowall16aTW_spec.tga
 }
 
 textures/stratosfear/casinowall19TW
 {
 	diffusemap textures/stratosfear/casinowall19TW.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/casinowall19TW_normal.tga
+	specularmap textures/stratosfear/casinowall19TW_spec.tga
 }
 
 textures/stratosfear/casinowall1bTW
 {
 	diffusemap textures/stratosfear/casinowall1bTW.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/casinowall1bTW_normal.tga
+	specularmap textures/stratosfear/casinowall1bTW_spec.tga
 }
 
 textures/stratosfear/casinowall1iTW
 {
 	diffusemap textures/stratosfear/casinowall1iTW.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/casinowall1iTW_normal.tga
+	specularmap textures/stratosfear/casinowall1iTW_spec.tga
 }
 
 textures/stratosfear/casinowall1vTW
 {
 	diffusemap textures/stratosfear/casinowall1vTW.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/casinowall1vTW_normal.tga
+	specularmap textures/stratosfear/casinowall1vTW_spec.tga
 }
 
 textures/stratosfear/ceiling2Atw
 {
 	diffusemap textures/stratosfear/ceiling2Atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ceiling2Atw_normal.tga
+	specularmap textures/stratosfear/ceiling2Atw_spec.tga
 }
 
 textures/stratosfear/ceiling3Atw
 {
 	diffusemap textures/stratosfear/ceiling3Atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ceiling3Atw_normal.tga
+	specularmap textures/stratosfear/ceiling3Atw_spec.tga
 }
 
 textures/stratosfear/checks_1tw
 {
 	diffusemap textures/stratosfear/checks_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/checks_1tw_normal.tga
+	specularmap textures/stratosfear/checks_1tw_spec.tga
 }
 
 textures/stratosfear/chi-post1tw
 {
 	diffusemap textures/stratosfear/chi-post1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/chi-post1tw_normal.tga
+	specularmap textures/stratosfear/chi-post1tw_spec.tga
 }
 
 textures/stratosfear/chi-post2tw
 {
 	diffusemap textures/stratosfear/chi-post2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/chi-post2tw_normal.tga
+	specularmap textures/stratosfear/chi-post2tw_spec.tga
 }
 
 textures/stratosfear/chi-post3tw
 {
 	diffusemap textures/stratosfear/chi-post3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/chi-post3tw_normal.tga
+	specularmap textures/stratosfear/chi-post3tw_spec.tga
 }
 
 textures/stratosfear/chi-post4tw
 {
 	diffusemap textures/stratosfear/chi-post4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/chi-post4tw_normal.tga
+	specularmap textures/stratosfear/chi-post4tw_spec.tga
 }
 
 textures/stratosfear/chi-post5tw
 {
 	diffusemap textures/stratosfear/chi-post5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/chi-post5tw_normal.tga
+	specularmap textures/stratosfear/chi-post5tw_spec.tga
 }
 
 textures/stratosfear/churchie1tw
 {
 	diffusemap textures/stratosfear/churchie1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/churchie1tw_normal.tga
+	specularmap textures/stratosfear/churchie1tw_spec.tga
 }
 
 textures/stratosfear/churchie2tw
 {
 	diffusemap textures/stratosfear/churchie2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/churchie2tw_normal.tga
+	specularmap textures/stratosfear/churchie2tw_spec.tga
 }
 
 textures/stratosfear/churchie3atw
 {
 	diffusemap textures/stratosfear/churchie3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/churchie3atw_normal.tga
+	specularmap textures/stratosfear/churchie3atw_spec.tga
 }
 
 textures/stratosfear/churchie4tw
 {
 	diffusemap textures/stratosfear/churchie4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/churchie4tw_normal.tga
+	specularmap textures/stratosfear/churchie4tw_spec.tga
 }
 
 textures/stratosfear/churchie4wtw
 {
 	diffusemap textures/stratosfear/churchie4wtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/churchie4wtw_normal.tga
+	specularmap textures/stratosfear/churchie4wtw_spec.tga
 }
 
 textures/stratosfear/churchie4xtw
 {
 	diffusemap textures/stratosfear/churchie4xtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/churchie4xtw_normal.tga
+	specularmap textures/stratosfear/churchie4xtw_spec.tga
 }
 
 textures/stratosfear/churchie5tw
 {
 	diffusemap textures/stratosfear/churchie5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/churchie5tw_normal.tga
+	specularmap textures/stratosfear/churchie5tw_spec.tga
 }
 
 textures/stratosfear/conk_pstir_3ctw
 {
 	diffusemap textures/stratosfear/conk_pstir_3ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/conk_pstir_3ctw_normal.tga
+	specularmap textures/stratosfear/conk_pstir_3ctw_spec.tga
 }
 
 textures/stratosfear/conk_pstir_4btw
 {
 	diffusemap textures/stratosfear/conk_pstir_4btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/conk_pstir_4btw_normal.tga
+	specularmap textures/stratosfear/conk_pstir_4btw_spec.tga
 }
 
 textures/stratosfear/conk_pstir_4ctw
 {
 	diffusemap textures/stratosfear/conk_pstir_4ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/conk_pstir_4ctw_normal.tga
+	specularmap textures/stratosfear/conk_pstir_4ctw_spec.tga
 }
 
 textures/stratosfear/conk_pstir_4tw
 {
 	diffusemap textures/stratosfear/conk_pstir_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/conk_pstir_4tw_normal.tga
+	specularmap textures/stratosfear/conk_pstir_4tw_spec.tga
 }
 
 textures/stratosfear/conk_pstir_5atw
 {
 	diffusemap textures/stratosfear/conk_pstir_5atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/conk_pstir_5atw_normal.tga
+	specularmap textures/stratosfear/conk_pstir_5atw_spec.tga
 }
 
 textures/stratosfear/conk_pstir_5ctw
 {
 	diffusemap textures/stratosfear/conk_pstir_5ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/conk_pstir_5ctw_normal.tga
+	specularmap textures/stratosfear/conk_pstir_5ctw_spec.tga
 }
 
 textures/stratosfear/conk_pstir_5tw
 {
 	diffusemap textures/stratosfear/conk_pstir_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/conk_pstir_5tw_normal.tga
+	specularmap textures/stratosfear/conk_pstir_5tw_spec.tga
 }
 
 textures/stratosfear/constructt_1tw
 {
 	diffusemap textures/stratosfear/constructt_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/constructt_1tw_normal.tga
+	specularmap textures/stratosfear/constructt_1tw_spec.tga
 }
 
 textures/stratosfear/constructt_2tw
 {
 	diffusemap textures/stratosfear/constructt_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/constructt_2tw_normal.tga
+	specularmap textures/stratosfear/constructt_2tw_spec.tga
 }
 
 textures/stratosfear/constructt_4tw
 {
 	diffusemap textures/stratosfear/constructt_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/constructt_4tw_normal.tga
+	specularmap textures/stratosfear/constructt_4tw_spec.tga
 }
 
 textures/stratosfear/constructt_7tw
 {
 	diffusemap textures/stratosfear/constructt_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/constructt_7tw_normal.tga
+	specularmap textures/stratosfear/constructt_7tw_spec.tga
 }
 
 textures/stratosfear/con_woods_1tw
 {
 	diffusemap textures/stratosfear/con_woods_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/con_woods_1tw_normal.tga
+	specularmap textures/stratosfear/con_woods_1tw_spec.tga
 }
 
 textures/stratosfear/cramps_1tw
 {
 	diffusemap textures/stratosfear/cramps_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/cramps_1tw_normal.tga
+	specularmap textures/stratosfear/cramps_1tw_spec.tga
 }
 
 textures/stratosfear/crane1ABC
 {
 	diffusemap textures/stratosfear/crane1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/crane1ABC_normal.tga
+	specularmap textures/stratosfear/crane1ABC_spec.tga
 }
 
 textures/stratosfear/crane1DBC
 {
 	diffusemap textures/stratosfear/crane1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/crane1DBC_normal.tga
+	specularmap textures/stratosfear/crane1DBC_spec.tga
 }
 
 textures/stratosfear/crane1EBC
 {
 	diffusemap textures/stratosfear/crane1EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/crane1EBC_normal.tga
+	specularmap textures/stratosfear/crane1EBC_spec.tga
 }
 
 textures/stratosfear/crane1FBC
 {
 	diffusemap textures/stratosfear/crane1FBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/crane1FBC_normal.tga
+	specularmap textures/stratosfear/crane1FBC_spec.tga
 }
 
 textures/stratosfear/crane1GBC
 {
 	diffusemap textures/stratosfear/crane1GBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/crane1GBC_normal.tga
+	specularmap textures/stratosfear/crane1GBC_spec.tga
 }
 
 textures/stratosfear/crane1HBC
 {
 	diffusemap textures/stratosfear/crane1HBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/crane1HBC_normal.tga
+	specularmap textures/stratosfear/crane1HBC_spec.tga
 }
 
 textures/stratosfear/cripesya_1tw
 {
 	diffusemap textures/stratosfear/cripesya_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/cripesya_1tw_normal.tga
+	specularmap textures/stratosfear/cripesya_1tw_spec.tga
 }
 
 textures/stratosfear/cross2tw
 {
 	diffusemap textures/stratosfear/cross2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/cross2tw_normal.tga
+	specularmap textures/stratosfear/cross2tw_spec.tga
 }
 
 textures/stratosfear/debris_laden5tw
 {
 	diffusemap textures/stratosfear/debris_laden5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/debris_laden5tw_normal.tga
+	specularmap textures/stratosfear/debris_laden5tw_spec.tga
 }
 
 textures/stratosfear/dinkotile1tw
 {
 	diffusemap textures/stratosfear/dinkotile1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/dinkotile1tw_normal.tga
+	specularmap textures/stratosfear/dinkotile1tw_spec.tga
 }
 
 textures/stratosfear/dirtymovie1tw
 {
 	diffusemap textures/stratosfear/dirtymovie1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/dirtymovie1tw_normal.tga
+	specularmap textures/stratosfear/dirtymovie1tw_spec.tga
 }
 
 textures/stratosfear/doorio_1tw
 {
 	diffusemap textures/stratosfear/doorio_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/doorio_1tw_normal.tga
+	specularmap textures/stratosfear/doorio_1tw_spec.tga
 }
 
 textures/stratosfear/farginsale_1tw
 {
 	diffusemap textures/stratosfear/farginsale_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/farginsale_1tw_normal.tga
+	specularmap textures/stratosfear/farginsale_1tw_spec.tga
 }
 
 textures/stratosfear/flintrock_1tw
 {
 	diffusemap textures/stratosfear/flintrock_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/flintrock_1tw_normal.tga
+	specularmap textures/stratosfear/flintrock_1tw_spec.tga
 }
 
 textures/stratosfear/flogrilly1tw
 {
 	diffusemap textures/stratosfear/flogrilly1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/flogrilly1tw_normal.tga
+	specularmap textures/stratosfear/flogrilly1tw_spec.tga
 }
 
 textures/stratosfear/gampcon2tw
 {
 	diffusemap textures/stratosfear/gampcon2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/gampcon2tw_normal.tga
+	specularmap textures/stratosfear/gampcon2tw_spec.tga
 }
 
 textures/stratosfear/gampcontw
 {
 	diffusemap textures/stratosfear/gampcontw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/gampcontw_normal.tga
+	specularmap textures/stratosfear/gampcontw_spec.tga
 }
 
 textures/stratosfear/gearflo1tw
 {
 	diffusemap textures/stratosfear/gearflo1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/gearflo1tw_normal.tga
+	specularmap textures/stratosfear/gearflo1tw_spec.tga
 }
 
 textures/stratosfear/gimmles_1atw
 {
 	diffusemap textures/stratosfear/gimmles_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/gimmles_1atw_normal.tga
+	specularmap textures/stratosfear/gimmles_1atw_spec.tga
 }
 
 textures/stratosfear/gimmles_1tw
 {
 	diffusemap textures/stratosfear/gimmles_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/gimmles_1tw_normal.tga
+	specularmap textures/stratosfear/gimmles_1tw_spec.tga
 }
 
 textures/stratosfear/girder_7tw
 {
 	diffusemap textures/stratosfear/girder_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/girder_7tw_normal.tga
+	specularmap textures/stratosfear/girder_7tw_spec.tga
 }
 
 textures/stratosfear/goldmap_1tw
 {
 	diffusemap textures/stratosfear/goldmap_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_1tw_normal.tga
+	specularmap textures/stratosfear/goldmap_1tw_spec.tga
 }
 
 textures/stratosfear/goldmap_2tw
 {
 	diffusemap textures/stratosfear/goldmap_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_2tw_normal.tga
+	specularmap textures/stratosfear/goldmap_2tw_spec.tga
 }
 
 textures/stratosfear/goldmap_3atw
 {
 	diffusemap textures/stratosfear/goldmap_3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_3atw_normal.tga
+	specularmap textures/stratosfear/goldmap_3atw_spec.tga
 }
 
 textures/stratosfear/goldmap_3tw
 {
 	diffusemap textures/stratosfear/goldmap_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_3tw_normal.tga
+	specularmap textures/stratosfear/goldmap_3tw_spec.tga
 }
 
 textures/stratosfear/goldmap_4atw
 {
 	diffusemap textures/stratosfear/goldmap_4atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_4atw_normal.tga
+	specularmap textures/stratosfear/goldmap_4atw_spec.tga
 }
 
 textures/stratosfear/goldmap_4tew
 {
 	diffusemap textures/stratosfear/goldmap_4tew.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_4tew_normal.tga
+	specularmap textures/stratosfear/goldmap_4tew_spec.tga
 }
 
 textures/stratosfear/goldmap_4ttw
 {
 	diffusemap textures/stratosfear/goldmap_4ttw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_4ttw_normal.tga
+	specularmap textures/stratosfear/goldmap_4ttw_spec.tga
 }
 
 textures/stratosfear/goldmap_4tw
 {
 	diffusemap textures/stratosfear/goldmap_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/goldmap_4tw_normal.tga
+	specularmap textures/stratosfear/goldmap_4tw_spec.tga
 }
 
 textures/stratosfear/hempo_1tw
 {
 	diffusemap textures/stratosfear/hempo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/hempo_1tw_normal.tga
+	specularmap textures/stratosfear/hempo_1tw_spec.tga
 }
 
 textures/stratosfear/hempo_3tw
 {
 	diffusemap textures/stratosfear/hempo_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/hempo_3tw_normal.tga
+	specularmap textures/stratosfear/hempo_3tw_spec.tga
 }
 
 textures/stratosfear/hempo_4tw
 {
 	diffusemap textures/stratosfear/hempo_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/hempo_4tw_normal.tga
+	specularmap textures/stratosfear/hempo_4tw_spec.tga
 }
 
 textures/stratosfear/jap_2tw
 {
 	diffusemap textures/stratosfear/jap_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/jap_2tw_normal.tga
+	specularmap textures/stratosfear/jap_2tw_spec.tga
 }
 
 textures/stratosfear/jubjube_2atw
 {
 	diffusemap textures/stratosfear/jubjube_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/jubjube_2atw_normal.tga
+	specularmap textures/stratosfear/jubjube_2atw_spec.tga
 }
 
 textures/stratosfear/jubjube_2tw
 {
 	diffusemap textures/stratosfear/jubjube_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/jubjube_2tw_normal.tga
+	specularmap textures/stratosfear/jubjube_2tw_spec.tga
 }
 
 textures/stratosfear/jubjube_3tw
 {
 	diffusemap textures/stratosfear/jubjube_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/jubjube_3tw_normal.tga
+	specularmap textures/stratosfear/jubjube_3tw_spec.tga
 }
 
 textures/stratosfear/kablammy_2tw
 {
 	diffusemap textures/stratosfear/kablammy_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/kablammy_2tw_normal.tga
+	specularmap textures/stratosfear/kablammy_2tw_spec.tga
 }
 
 textures/stratosfear/kablammy_3tw
 {
 	diffusemap textures/stratosfear/kablammy_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/kablammy_3tw_normal.tga
+	specularmap textures/stratosfear/kablammy_3tw_spec.tga
 }
 
 textures/stratosfear/kablammy_4tw
 {
 	diffusemap textures/stratosfear/kablammy_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/kablammy_4tw_normal.tga
+	specularmap textures/stratosfear/kablammy_4tw_spec.tga
 }
 
 textures/stratosfear/mabtrimme_1tw
 {
 	diffusemap textures/stratosfear/mabtrimme_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mabtrimme_1tw_normal.tga
+	specularmap textures/stratosfear/mabtrimme_1tw_spec.tga
 }
 
 textures/stratosfear/mabtrimme_2tw
 {
 	diffusemap textures/stratosfear/mabtrimme_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mabtrimme_2tw_normal.tga
+	specularmap textures/stratosfear/mabtrimme_2tw_spec.tga
 }
 
 textures/stratosfear/mabtrimme_3tw
 {
 	diffusemap textures/stratosfear/mabtrimme_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mabtrimme_3tw_normal.tga
+	specularmap textures/stratosfear/mabtrimme_3tw_spec.tga
 }
 
 textures/stratosfear/mallciel_27tw
 {
 	diffusemap textures/stratosfear/mallciel_27tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mallciel_27tw_normal.tga
+	specularmap textures/stratosfear/mallciel_27tw_spec.tga
 }
 
 textures/stratosfear/mallciel_28tw
 {
 	diffusemap textures/stratosfear/mallciel_28tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mallciel_28tw_normal.tga
+	specularmap textures/stratosfear/mallciel_28tw_spec.tga
 }
 
 textures/stratosfear/mallclothes1tw
 {
 	diffusemap textures/stratosfear/mallclothes1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mallclothes1tw_normal.tga
+	specularmap textures/stratosfear/mallclothes1tw_spec.tga
 }
 
 textures/stratosfear/mallclothes2tw
 {
 	diffusemap textures/stratosfear/mallclothes2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mallclothes2tw_normal.tga
+	specularmap textures/stratosfear/mallclothes2tw_spec.tga
 }
 
 textures/stratosfear/mallclothes_4atw
 {
 	diffusemap textures/stratosfear/mallclothes_4atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mallclothes_4atw_normal.tga
+	specularmap textures/stratosfear/mallclothes_4atw_spec.tga
 }
 
 textures/stratosfear/mallpicko_2tw
 {
 	diffusemap textures/stratosfear/mallpicko_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mallpicko_2tw_normal.tga
+	specularmap textures/stratosfear/mallpicko_2tw_spec.tga
 }
 
 textures/stratosfear/malltopl_6atw
 {
 	diffusemap textures/stratosfear/malltopl_6atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/malltopl_6atw_normal.tga
+	specularmap textures/stratosfear/malltopl_6atw_spec.tga
 }
 
 textures/stratosfear/malltopl_6tw
 {
 	diffusemap textures/stratosfear/malltopl_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/malltopl_6tw_normal.tga
+	specularmap textures/stratosfear/malltopl_6tw_spec.tga
 }
 
 textures/stratosfear/malltopwh_1tw
 {
 	diffusemap textures/stratosfear/malltopwh_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/malltopwh_1tw_normal.tga
+	specularmap textures/stratosfear/malltopwh_1tw_spec.tga
 }
 
 textures/stratosfear/malltopwh_1ytw
 {
 	diffusemap textures/stratosfear/malltopwh_1ytw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/malltopwh_1ytw_normal.tga
+	specularmap textures/stratosfear/malltopwh_1ytw_spec.tga
 }
 
 textures/stratosfear/malltop_4tw
 {
 	diffusemap textures/stratosfear/malltop_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/malltop_4tw_normal.tga
+	specularmap textures/stratosfear/malltop_4tw_spec.tga
 }
 
 textures/stratosfear/mall_wall2
 {
 	diffusemap textures/stratosfear/mall_wall2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/mall_wall2_normal.tga
+	specularmap textures/stratosfear/mall_wall2_spec.tga
 }
 
 textures/stratosfear/marbbrick99tw
 {
 	diffusemap textures/stratosfear/marbbrick99tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/marbbrick99tw_normal.tga
+	specularmap textures/stratosfear/marbbrick99tw_spec.tga
 }
 
 textures/stratosfear/marb_brick2nw
 {
 	diffusemap textures/stratosfear/marb_brick2nw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/marb_brick2nw_normal.tga
+	specularmap textures/stratosfear/marb_brick2nw_spec.tga
 }
 
 textures/stratosfear/marb_brick2tw
 {
 	diffusemap textures/stratosfear/marb_brick2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/marb_brick2tw_normal.tga
+	specularmap textures/stratosfear/marb_brick2tw_spec.tga
 }
 
 textures/stratosfear/maroonie_2tw
 {
 	diffusemap textures/stratosfear/maroonie_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/maroonie_2tw_normal.tga
+	specularmap textures/stratosfear/maroonie_2tw_spec.tga
 }
 
 textures/stratosfear/maroonie_3atw
 {
 	diffusemap textures/stratosfear/maroonie_3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/maroonie_3atw_normal.tga
+	specularmap textures/stratosfear/maroonie_3atw_spec.tga
 }
 
 textures/stratosfear/moonb1tw
 {
 	diffusemap textures/stratosfear/moonb1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/moonb1tw_normal.tga
+	specularmap textures/stratosfear/moonb1tw_spec.tga
 }
 
 textures/stratosfear/moonb2btw
 {
 	diffusemap textures/stratosfear/moonb2btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/moonb2btw_normal.tga
+	specularmap textures/stratosfear/moonb2btw_spec.tga
 }
 
 textures/stratosfear/moonb2tw
 {
 	diffusemap textures/stratosfear/moonb2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/moonb2tw_normal.tga
+	specularmap textures/stratosfear/moonb2tw_spec.tga
 }
 
 textures/stratosfear/moonb3tw
 {
 	diffusemap textures/stratosfear/moonb3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/moonb3tw_normal.tga
+	specularmap textures/stratosfear/moonb3tw_spec.tga
 }
 
 textures/stratosfear/moonb4tw
 {
 	diffusemap textures/stratosfear/moonb4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/moonb4tw_normal.tga
+	specularmap textures/stratosfear/moonb4tw_spec.tga
 }
 
 textures/stratosfear/neonbackstratw
 {
 	diffusemap textures/stratosfear/neonbackstratw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/neonbackstratw_normal.tga
+	specularmap textures/stratosfear/neonbackstratw_spec.tga
 }
 
 textures/stratosfear/oneon_2tw
 {
 	diffusemap textures/stratosfear/oneon_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_2tw_normal.tga
+	specularmap textures/stratosfear/oneon_2tw_spec.tga
 }
 
 textures/stratosfear/oneon_4tw
 {
 	diffusemap textures/stratosfear/oneon_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_4tw_normal.tga
+	specularmap textures/stratosfear/oneon_4tw_spec.tga
 }
 
 textures/stratosfear/oneon_6tw
 {
 	diffusemap textures/stratosfear/oneon_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_6tw_normal.tga
+	specularmap textures/stratosfear/oneon_6tw_spec.tga
 }
 
 textures/stratosfear/oneon_7atw
 {
 	diffusemap textures/stratosfear/oneon_7atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_7atw_normal.tga
+	specularmap textures/stratosfear/oneon_7atw_spec.tga
 }
 
 textures/stratosfear/oneon_7tw
 {
 	diffusemap textures/stratosfear/oneon_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_7tw_normal.tga
+	specularmap textures/stratosfear/oneon_7tw_spec.tga
 }
 
 textures/stratosfear/oneon_8atw
 {
 	diffusemap textures/stratosfear/oneon_8atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_8atw_normal.tga
+	specularmap textures/stratosfear/oneon_8atw_spec.tga
 }
 
 textures/stratosfear/oneon_8tw
 {
 	diffusemap textures/stratosfear/oneon_8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_8tw_normal.tga
+	specularmap textures/stratosfear/oneon_8tw_spec.tga
 }
 
 textures/stratosfear/oneon_9atw
 {
 	diffusemap textures/stratosfear/oneon_9atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_9atw_normal.tga
+	specularmap textures/stratosfear/oneon_9atw_spec.tga
 }
 
 textures/stratosfear/oneon_9tw
 {
 	diffusemap textures/stratosfear/oneon_9tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/oneon_9tw_normal.tga
+	specularmap textures/stratosfear/oneon_9tw_spec.tga
 }
 
 textures/stratosfear/ore_carp_1tw
 {
 	diffusemap textures/stratosfear/ore_carp_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ore_carp_1tw_normal.tga
+	specularmap textures/stratosfear/ore_carp_1tw_spec.tga
 }
 
 textures/stratosfear/ore_carp_2tw
 {
 	diffusemap textures/stratosfear/ore_carp_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ore_carp_2tw_normal.tga
+	specularmap textures/stratosfear/ore_carp_2tw_spec.tga
 }
 
 textures/stratosfear/ore_carp_3tw
 {
 	diffusemap textures/stratosfear/ore_carp_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/ore_carp_3tw_normal.tga
+	specularmap textures/stratosfear/ore_carp_3tw_spec.tga
 }
 
 textures/stratosfear/outtile_1tw
 {
 	diffusemap textures/stratosfear/outtile_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/outtile_1tw_normal.tga
+	specularmap textures/stratosfear/outtile_1tw_spec.tga
 }
 
 textures/stratosfear/parkey_1tw
 {
 	diffusemap textures/stratosfear/parkey_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/parkey_1tw_normal.tga
+	specularmap textures/stratosfear/parkey_1tw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_1tw
 {
 	diffusemap textures/stratosfear/plaswallchee_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_1tw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_1tw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_3tw
 {
 	diffusemap textures/stratosfear/plaswallchee_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_3tw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_3tw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_4tw
 {
 	diffusemap textures/stratosfear/plaswallchee_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_4tw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_4tw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_5tw
 {
 	diffusemap textures/stratosfear/plaswallchee_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_5tw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_5tw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_6atw
 {
 	diffusemap textures/stratosfear/plaswallchee_6atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_6atw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_6atw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_7tw
 {
 	diffusemap textures/stratosfear/plaswallchee_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_7tw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_7tw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_8ttw
 {
 	diffusemap textures/stratosfear/plaswallchee_8ttw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_8ttw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_8ttw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_8tw
 {
 	diffusemap textures/stratosfear/plaswallchee_8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_8tw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_8tw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_8utw
 {
 	diffusemap textures/stratosfear/plaswallchee_8utw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_8utw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_8utw_spec.tga
 }
 
 textures/stratosfear/plaswallchee_9tw
 {
 	diffusemap textures/stratosfear/plaswallchee_9tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/plaswallchee_9tw_normal.tga
+	specularmap textures/stratosfear/plaswallchee_9tw_spec.tga
 }
 
 textures/stratosfear/pockyfloor_1gtw
 {
 	diffusemap textures/stratosfear/pockyfloor_1gtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/pockyfloor_1gtw_normal.tga
+	specularmap textures/stratosfear/pockyfloor_1gtw_spec.tga
 }
 
 textures/stratosfear/pockyfloor_1htw
 {
 	diffusemap textures/stratosfear/pockyfloor_1htw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/pockyfloor_1htw_normal.tga
+	specularmap textures/stratosfear/pockyfloor_1htw_spec.tga
 }
 
 textures/stratosfear/pockyfloor_1tw
 {
 	diffusemap textures/stratosfear/pockyfloor_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/pockyfloor_1tw_normal.tga
+	specularmap textures/stratosfear/pockyfloor_1tw_spec.tga
 }
 
 textures/stratosfear/pockyfloor_2htw
 {
 	diffusemap textures/stratosfear/pockyfloor_2htw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/pockyfloor_2htw_normal.tga
+	specularmap textures/stratosfear/pockyfloor_2htw_spec.tga
 }
 
 textures/stratosfear/pockyfloor_3htw
 {
 	diffusemap textures/stratosfear/pockyfloor_3htw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/pockyfloor_3htw_normal.tga
+	specularmap textures/stratosfear/pockyfloor_3htw_spec.tga
 }
 
 textures/stratosfear/poppacap2tw
 {
 	diffusemap textures/stratosfear/poppacap2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/poppacap2tw_normal.tga
+	specularmap textures/stratosfear/poppacap2tw_spec.tga
 }
 
 textures/stratosfear/prole1bgtw
 {
 	diffusemap textures/stratosfear/prole1bgtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole1bgtw_normal.tga
+	specularmap textures/stratosfear/prole1bgtw_spec.tga
 }
 
 textures/stratosfear/prolebig_1tw
 {
 	diffusemap textures/stratosfear/prolebig_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prolebig_1tw_normal.tga
+	specularmap textures/stratosfear/prolebig_1tw_spec.tga
 }
 
 textures/stratosfear/prolebig_2tw
 {
 	diffusemap textures/stratosfear/prolebig_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prolebig_2tw_normal.tga
+	specularmap textures/stratosfear/prolebig_2tw_spec.tga
 }
 
 textures/stratosfear/prolesale_2tw
 {
 	diffusemap textures/stratosfear/prolesale_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prolesale_2tw_normal.tga
+	specularmap textures/stratosfear/prolesale_2tw_spec.tga
 }
 
 textures/stratosfear/proletflo1tw
 {
 	diffusemap textures/stratosfear/proletflo1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/proletflo1tw_normal.tga
+	specularmap textures/stratosfear/proletflo1tw_spec.tga
 }
 
 textures/stratosfear/proletflo2tw
 {
 	diffusemap textures/stratosfear/proletflo2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/proletflo2tw_normal.tga
+	specularmap textures/stratosfear/proletflo2tw_spec.tga
 }
 
 textures/stratosfear/prole_1tw
 {
 	diffusemap textures/stratosfear/prole_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole_1tw_normal.tga
+	specularmap textures/stratosfear/prole_1tw_spec.tga
 }
 
 textures/stratosfear/prole_2tw
 {
 	diffusemap textures/stratosfear/prole_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole_2tw_normal.tga
+	specularmap textures/stratosfear/prole_2tw_spec.tga
 }
 
 textures/stratosfear/prole_4aw
 {
 	diffusemap textures/stratosfear/prole_4aw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole_4aw_normal.tga
+	specularmap textures/stratosfear/prole_4aw_spec.tga
 }
 
 textures/stratosfear/prole_4bw
 {
 	diffusemap textures/stratosfear/prole_4bw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole_4bw_normal.tga
+	specularmap textures/stratosfear/prole_4bw_spec.tga
 }
 
 textures/stratosfear/prole_4dbw
 {
 	diffusemap textures/stratosfear/prole_4dbw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole_4dbw_normal.tga
+	specularmap textures/stratosfear/prole_4dbw_spec.tga
 }
 
 textures/stratosfear/prole_4w
 {
 	diffusemap textures/stratosfear/prole_4w.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole_4w_normal.tga
+	specularmap textures/stratosfear/prole_4w_spec.tga
 }
 
 textures/stratosfear/prole_5tw
 {
 	diffusemap textures/stratosfear/prole_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/prole_5tw_normal.tga
+	specularmap textures/stratosfear/prole_5tw_spec.tga
 }
 
 textures/stratosfear/purpcarp1tw
 {
 	diffusemap textures/stratosfear/purpcarp1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/purpcarp1tw_normal.tga
+	specularmap textures/stratosfear/purpcarp1tw_spec.tga
 }
 
 textures/stratosfear/purpura1tw
 {
 	diffusemap textures/stratosfear/purpura1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/purpura1tw_normal.tga
+	specularmap textures/stratosfear/purpura1tw_spec.tga
 }
 
 textures/stratosfear/rev99ad1tw
 {
 	diffusemap textures/stratosfear/rev99ad1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/rev99ad1tw_normal.tga
+	specularmap textures/stratosfear/rev99ad1tw_spec.tga
 }
 
 textures/stratosfear/rev99ad2tw
 {
 	diffusemap textures/stratosfear/rev99ad2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/rev99ad2tw_normal.tga
+	specularmap textures/stratosfear/rev99ad2tw_spec.tga
 }
 
 textures/stratosfear/runaway_1tw
 {
 	diffusemap textures/stratosfear/runaway_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/runaway_1tw_normal.tga
+	specularmap textures/stratosfear/runaway_1tw_spec.tga
 }
 
 textures/stratosfear/sandyconk_1tw
 {
 	diffusemap textures/stratosfear/sandyconk_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sandyconk_1tw_normal.tga
+	specularmap textures/stratosfear/sandyconk_1tw_spec.tga
 }
 
 textures/stratosfear/scabrous_1tw
 {
 	diffusemap textures/stratosfear/scabrous_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/scabrous_1tw_normal.tga
+	specularmap textures/stratosfear/scabrous_1tw_spec.tga
 }
 
 textures/stratosfear/sidewalk1ABC
 {
 	diffusemap textures/stratosfear/sidewalk1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sidewalk1ABC_normal.tga
+	specularmap textures/stratosfear/sidewalk1ABC_spec.tga
 }
 
 textures/stratosfear/sidewalk1BBC
 {
 	diffusemap textures/stratosfear/sidewalk1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sidewalk1BBC_normal.tga
+	specularmap textures/stratosfear/sidewalk1BBC_spec.tga
 }
 
 textures/stratosfear/sidewalk1CBC
 {
 	diffusemap textures/stratosfear/sidewalk1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sidewalk1CBC_normal.tga
+	specularmap textures/stratosfear/sidewalk1CBC_spec.tga
 }
 
 textures/stratosfear/sidewalk1DBC
 {
 	diffusemap textures/stratosfear/sidewalk1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sidewalk1DBC_normal.tga
+	specularmap textures/stratosfear/sidewalk1DBC_spec.tga
 }
 
 textures/stratosfear/sidewalk1EBC
 {
 	diffusemap textures/stratosfear/sidewalk1EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sidewalk1EBC_normal.tga
+	specularmap textures/stratosfear/sidewalk1EBC_spec.tga
 }
 
 textures/stratosfear/sigh_1tw
 {
 	diffusemap textures/stratosfear/sigh_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sigh_1tw_normal.tga
+	specularmap textures/stratosfear/sigh_1tw_spec.tga
 }
 
 textures/stratosfear/sigh_2tw
 {
 	diffusemap textures/stratosfear/sigh_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sigh_2tw_normal.tga
+	specularmap textures/stratosfear/sigh_2tw_spec.tga
 }
 
 textures/stratosfear/sigh_3tw
 {
 	diffusemap textures/stratosfear/sigh_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sigh_3tw_normal.tga
+	specularmap textures/stratosfear/sigh_3tw_spec.tga
 }
 
 textures/stratosfear/sigh_3xtw
 {
 	diffusemap textures/stratosfear/sigh_3xtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/sigh_3xtw_normal.tga
+	specularmap textures/stratosfear/sigh_3xtw_spec.tga
 }
 
 textures/stratosfear/slimtopvent_1tw
 {
 	diffusemap textures/stratosfear/slimtopvent_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/slimtopvent_1tw_normal.tga
+	specularmap textures/stratosfear/slimtopvent_1tw_spec.tga
 }
 
 textures/stratosfear/specks_conk1tw
 {
 	diffusemap textures/stratosfear/specks_conk1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/specks_conk1tw_normal.tga
+	specularmap textures/stratosfear/specks_conk1tw_spec.tga
 }
 
 textures/stratosfear/specks_conk2tw
 {
 	diffusemap textures/stratosfear/specks_conk2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/specks_conk2tw_normal.tga
+	specularmap textures/stratosfear/specks_conk2tw_spec.tga
 }
 
 textures/stratosfear/specks_conk3tw
 {
 	diffusemap textures/stratosfear/specks_conk3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/specks_conk3tw_normal.tga
+	specularmap textures/stratosfear/specks_conk3tw_spec.tga
 }
 
 textures/stratosfear/specks_conk4tw
 {
 	diffusemap textures/stratosfear/specks_conk4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/specks_conk4tw_normal.tga
+	specularmap textures/stratosfear/specks_conk4tw_spec.tga
 }
 
 textures/stratosfear/specks_conk5tw
 {
 	diffusemap textures/stratosfear/specks_conk5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/specks_conk5tw_normal.tga
+	specularmap textures/stratosfear/specks_conk5tw_spec.tga
 }
 
 textures/stratosfear/specks_conk6tw
 {
 	diffusemap textures/stratosfear/specks_conk6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/specks_conk6tw_normal.tga
+	specularmap textures/stratosfear/specks_conk6tw_spec.tga
 }
 
 textures/stratosfear/squamstrim_1atw
 {
 	diffusemap textures/stratosfear/squamstrim_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/squamstrim_1atw_normal.tga
+	specularmap textures/stratosfear/squamstrim_1atw_spec.tga
 }
 
 textures/stratosfear/squamstrim_1btw
 {
 	diffusemap textures/stratosfear/squamstrim_1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/squamstrim_1btw_normal.tga
+	specularmap textures/stratosfear/squamstrim_1btw_spec.tga
 }
 
 textures/stratosfear/squamstrim_1ctw
 {
 	diffusemap textures/stratosfear/squamstrim_1ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/squamstrim_1ctw_normal.tga
+	specularmap textures/stratosfear/squamstrim_1ctw_spec.tga
 }
 
 textures/stratosfear/starsbabs_1atw
 {
 	diffusemap textures/stratosfear/starsbabs_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/starsbabs_1atw_normal.tga
+	specularmap textures/stratosfear/starsbabs_1atw_spec.tga
 }
 
 textures/stratosfear/starsbabs_1tw
 {
 	diffusemap textures/stratosfear/starsbabs_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/starsbabs_1tw_normal.tga
+	specularmap textures/stratosfear/starsbabs_1tw_spec.tga
 }
 
 textures/stratosfear/steelsupport1AB
 {
 	diffusemap textures/stratosfear/steelsupport1AB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/steelsupport1AB_normal.tga
+	specularmap textures/stratosfear/steelsupport1AB_spec.tga
 }
 
 textures/stratosfear/stfront_1tw
 {
 	diffusemap textures/stratosfear/stfront_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stfront_1tw_normal.tga
+	specularmap textures/stratosfear/stfront_1tw_spec.tga
 }
 
 textures/stratosfear/stfront_2tw
 {
 	diffusemap textures/stratosfear/stfront_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stfront_2tw_normal.tga
+	specularmap textures/stratosfear/stfront_2tw_spec.tga
 }
 
 textures/stratosfear/stfront_3tw
 {
 	diffusemap textures/stratosfear/stfront_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stfront_3tw_normal.tga
+	specularmap textures/stratosfear/stfront_3tw_spec.tga
 }
 
 textures/stratosfear/storecom1tw
 {
 	diffusemap textures/stratosfear/storecom1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/storecom1tw_normal.tga
+	specularmap textures/stratosfear/storecom1tw_spec.tga
 }
 
 textures/stratosfear/storecom2tw
 {
 	diffusemap textures/stratosfear/storecom2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/storecom2tw_normal.tga
+	specularmap textures/stratosfear/storecom2tw_spec.tga
 }
 
 textures/stratosfear/storecom3tw
 {
 	diffusemap textures/stratosfear/storecom3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/storecom3tw_normal.tga
+	specularmap textures/stratosfear/storecom3tw_spec.tga
 }
 
 textures/stratosfear/storecom4tw
 {
 	diffusemap textures/stratosfear/storecom4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/storecom4tw_normal.tga
+	specularmap textures/stratosfear/storecom4tw_spec.tga
 }
 
 textures/stratosfear/storecom5tw
 {
 	diffusemap textures/stratosfear/storecom5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/storecom5tw_normal.tga
+	specularmap textures/stratosfear/storecom5tw_spec.tga
 }
 
 textures/stratosfear/storecom6tw
 {
 	diffusemap textures/stratosfear/storecom6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/storecom6tw_normal.tga
+	specularmap textures/stratosfear/storecom6tw_spec.tga
 }
 
 textures/stratosfear/strairduct1RC
 {
 	diffusemap textures/stratosfear/strairduct1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strairduct1RC_normal.tga
+	specularmap textures/stratosfear/strairduct1RC_spec.tga
 }
 
 textures/stratosfear/strairduct2RC
 {
 	diffusemap textures/stratosfear/strairduct2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strairduct2RC_normal.tga
+	specularmap textures/stratosfear/strairduct2RC_spec.tga
 }
 
 textures/stratosfear/strataircond1aR
 {
 	diffusemap textures/stratosfear/strataircond1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strataircond1aR_normal.tga
+	specularmap textures/stratosfear/strataircond1aR_spec.tga
 }
 
 textures/stratosfear/strataircond1bR
 {
 	diffusemap textures/stratosfear/strataircond1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strataircond1bR_normal.tga
+	specularmap textures/stratosfear/strataircond1bR_spec.tga
 }
 
 textures/stratosfear/strataircond1cR
 {
 	diffusemap textures/stratosfear/strataircond1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strataircond1cR_normal.tga
+	specularmap textures/stratosfear/strataircond1cR_spec.tga
 }
 
 textures/stratosfear/stratbdump1RC
 {
 	diffusemap textures/stratosfear/stratbdump1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratbdump1RC_normal.tga
+	specularmap textures/stratosfear/stratbdump1RC_spec.tga
 }
 
 textures/stratosfear/stratbdump2RC
 {
 	diffusemap textures/stratosfear/stratbdump2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratbdump2RC_normal.tga
+	specularmap textures/stratosfear/stratbdump2RC_spec.tga
 }
 
 textures/stratosfear/stratcbox1aRC
 {
 	diffusemap textures/stratosfear/stratcbox1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcbox1aRC_normal.tga
+	specularmap textures/stratosfear/stratcbox1aRC_spec.tga
 }
 
 textures/stratosfear/stratcbox1bRC
 {
 	diffusemap textures/stratosfear/stratcbox1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcbox1bRC_normal.tga
+	specularmap textures/stratosfear/stratcbox1bRC_spec.tga
 }
 
 textures/stratosfear/stratcceiling1R
 {
 	diffusemap textures/stratosfear/stratcceiling1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcceiling1R_normal.tga
+	specularmap textures/stratosfear/stratcceiling1R_spec.tga
 }
 
 textures/stratosfear/stratcdirt1RC
 {
 	diffusemap textures/stratosfear/stratcdirt1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcdirt1RC_normal.tga
+	specularmap textures/stratosfear/stratcdirt1RC_spec.tga
 }
 
 textures/stratosfear/stratceiling1aR
 {
 	diffusemap textures/stratosfear/stratceiling1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratceiling1aR_normal.tga
+	specularmap textures/stratosfear/stratceiling1aR_spec.tga
 }
 
 textures/stratosfear/stratceiling1bR
 {
 	diffusemap textures/stratosfear/stratceiling1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratceiling1bR_normal.tga
+	specularmap textures/stratosfear/stratceiling1bR_spec.tga
 }
 
 textures/stratosfear/stratceiling2aR
 {
 	diffusemap textures/stratosfear/stratceiling2aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratceiling2aR_normal.tga
+	specularmap textures/stratosfear/stratceiling2aR_spec.tga
 }
 
 textures/stratosfear/stratceiling2bR
 {
 	diffusemap textures/stratosfear/stratceiling2bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratceiling2bR_normal.tga
+	specularmap textures/stratosfear/stratceiling2bR_spec.tga
 }
 
 textures/stratosfear/stratcon2RC
 {
 	diffusemap textures/stratosfear/stratcon2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcon2RC_normal.tga
+	specularmap textures/stratosfear/stratcon2RC_spec.tga
 }
 
 textures/stratosfear/stratconbrick1a
 {
 	diffusemap textures/stratosfear/stratconbrick1a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratconbrick1a_normal.tga
+	specularmap textures/stratosfear/stratconbrick1a_spec.tga
 }
 
 textures/stratosfear/stratconbrick1b
 {
 	diffusemap textures/stratosfear/stratconbrick1b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratconbrick1b_normal.tga
+	specularmap textures/stratosfear/stratconbrick1b_spec.tga
 }
 
 textures/stratosfear/stratconbrick1c
 {
 	diffusemap textures/stratosfear/stratconbrick1c.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratconbrick1c_normal.tga
+	specularmap textures/stratosfear/stratconbrick1c_spec.tga
 }
 
 textures/stratosfear/stratcpower1aRC
 {
 	diffusemap textures/stratosfear/stratcpower1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcpower1aRC_normal.tga
+	specularmap textures/stratosfear/stratcpower1aRC_spec.tga
 }
 
 textures/stratosfear/stratcpower1bRC
 {
 	diffusemap textures/stratosfear/stratcpower1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcpower1bRC_normal.tga
+	specularmap textures/stratosfear/stratcpower1bRC_spec.tga
 }
 
 textures/stratosfear/stratcpower2RC
 {
 	diffusemap textures/stratosfear/stratcpower2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcpower2RC_normal.tga
+	specularmap textures/stratosfear/stratcpower2RC_spec.tga
 }
 
 textures/stratosfear/stratcpower3RC
 {
 	diffusemap textures/stratosfear/stratcpower3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcpower3RC_normal.tga
+	specularmap textures/stratosfear/stratcpower3RC_spec.tga
 }
 
 textures/stratosfear/stratcrebarRC
 {
 	diffusemap textures/stratosfear/stratcrebarRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcrebarRC_normal.tga
+	specularmap textures/stratosfear/stratcrebarRC_spec.tga
 }
 
 textures/stratosfear/stratcrebarsdwR
 {
 	diffusemap textures/stratosfear/stratcrebarsdwR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcrebarsdwR_normal.tga
+	specularmap textures/stratosfear/stratcrebarsdwR_spec.tga
 }
 
 textures/stratosfear/stratcsheetb1aR
 {
 	diffusemap textures/stratosfear/stratcsheetb1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcsheetb1aR_normal.tga
+	specularmap textures/stratosfear/stratcsheetb1aR_spec.tga
 }
 
 textures/stratosfear/stratcsheetb1bR
 {
 	diffusemap textures/stratosfear/stratcsheetb1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcsheetb1bR_normal.tga
+	specularmap textures/stratosfear/stratcsheetb1bR_spec.tga
 }
 
 textures/stratosfear/stratcsheetb1cR
 {
 	diffusemap textures/stratosfear/stratcsheetb1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcsheetb1cR_normal.tga
+	specularmap textures/stratosfear/stratcsheetb1cR_spec.tga
 }
 
 textures/stratosfear/stratcsheetb1tw
 {
 	diffusemap textures/stratosfear/stratcsheetb1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcsheetb1tw_normal.tga
+	specularmap textures/stratosfear/stratcsheetb1tw_spec.tga
 }
 
 textures/stratosfear/stratcwall1RC
 {
 	diffusemap textures/stratosfear/stratcwall1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcwall1RC_normal.tga
+	specularmap textures/stratosfear/stratcwall1RC_spec.tga
 }
 
 textures/stratosfear/stratcwall2RC
 {
 	diffusemap textures/stratosfear/stratcwall2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratcwall2RC_normal.tga
+	specularmap textures/stratosfear/stratcwall2RC_spec.tga
 }
 
 textures/stratosfear/stratdirt1RC
 {
 	diffusemap textures/stratosfear/stratdirt1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratdirt1RC_normal.tga
+	specularmap textures/stratosfear/stratdirt1RC_spec.tga
 }
 
 textures/stratosfear/stratdrywall1RC
 {
 	diffusemap textures/stratosfear/stratdrywall1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratdrywall1RC_normal.tga
+	specularmap textures/stratosfear/stratdrywall1RC_spec.tga
 }
 
 textures/stratosfear/stratfurbnch1aR
 {
 	diffusemap textures/stratosfear/stratfurbnch1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratfurbnch1aR_normal.tga
+	specularmap textures/stratosfear/stratfurbnch1aR_spec.tga
 }
 
 textures/stratosfear/stratfurbnch1bR
 {
 	diffusemap textures/stratosfear/stratfurbnch1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratfurbnch1bR_normal.tga
+	specularmap textures/stratosfear/stratfurbnch1bR_spec.tga
 }
 
 textures/stratosfear/stratfurbnch1cR
 {
 	diffusemap textures/stratosfear/stratfurbnch1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratfurbnch1cR_normal.tga
+	specularmap textures/stratosfear/stratfurbnch1cR_spec.tga
 }
 
 textures/stratosfear/stratfurbnch1dR
 {
 	diffusemap textures/stratosfear/stratfurbnch1dR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratfurbnch1dR_normal.tga
+	specularmap textures/stratosfear/stratfurbnch1dR_spec.tga
 }
 
 textures/stratosfear/stratfurbnch1eR
 {
 	diffusemap textures/stratosfear/stratfurbnch1eR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratfurbnch1eR_normal.tga
+	specularmap textures/stratosfear/stratfurbnch1eR_spec.tga
 }
 
 textures/stratosfear/stratladder1aRC
 {
 	diffusemap textures/stratosfear/stratladder1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratladder1aRC_normal.tga
+	specularmap textures/stratosfear/stratladder1aRC_spec.tga
 }
 
 textures/stratosfear/stratladder1bRC
 {
 	diffusemap textures/stratosfear/stratladder1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratladder1bRC_normal.tga
+	specularmap textures/stratosfear/stratladder1bRC_spec.tga
 }
 
 textures/stratosfear/stratmainflr1aR
 {
 	diffusemap textures/stratosfear/stratmainflr1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratmainflr1aR_normal.tga
+	specularmap textures/stratosfear/stratmainflr1aR_spec.tga
 }
 
 textures/stratosfear/stratmbeam1RC
 {
 	diffusemap textures/stratosfear/stratmbeam1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratmbeam1RC_normal.tga
+	specularmap textures/stratosfear/stratmbeam1RC_spec.tga
 }
 
 textures/stratosfear/stratmidtrim1RC
 {
 	diffusemap textures/stratosfear/stratmidtrim1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratmidtrim1RC_normal.tga
+	specularmap textures/stratosfear/stratmidtrim1RC_spec.tga
 }
 
 textures/stratosfear/stratmidtrim2RC
 {
 	diffusemap textures/stratosfear/stratmidtrim2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratmidtrim2RC_normal.tga
+	specularmap textures/stratosfear/stratmidtrim2RC_spec.tga
 }
 
 textures/stratosfear/stratmidwin1RC
 {
 	diffusemap textures/stratosfear/stratmidwin1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratmidwin1RC_normal.tga
+	specularmap textures/stratosfear/stratmidwin1RC_spec.tga
 }
 
 textures/stratosfear/stratneon1RC
 {
 	diffusemap textures/stratosfear/stratneon1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratneon1RC_normal.tga
+	specularmap textures/stratosfear/stratneon1RC_spec.tga
 }
 
 textures/stratosfear/stratneon2RC
 {
 	diffusemap textures/stratosfear/stratneon2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratneon2RC_normal.tga
+	specularmap textures/stratosfear/stratneon2RC_spec.tga
 }
 
 textures/stratosfear/stratneon3aRC
 {
 	diffusemap textures/stratosfear/stratneon3aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratneon3aRC_normal.tga
+	specularmap textures/stratosfear/stratneon3aRC_spec.tga
 }
 
 textures/stratosfear/stratneon3bRC
 {
 	diffusemap textures/stratosfear/stratneon3bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratneon3bRC_normal.tga
+	specularmap textures/stratosfear/stratneon3bRC_spec.tga
 }
 
 textures/stratosfear/stratoflag1B
 {
 	diffusemap textures/stratosfear/stratoflag1B.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratoflag1B_normal.tga
+	specularmap textures/stratosfear/stratoflag1B_spec.tga
 }
 
 textures/stratosfear/stratoflag1C
 {
 	diffusemap textures/stratosfear/stratoflag1C.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratoflag1C_normal.tga
+	specularmap textures/stratosfear/stratoflag1C_spec.tga
 }
 
 textures/stratosfear/stratoflr1bRC
 {
 	diffusemap textures/stratosfear/stratoflr1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratoflr1bRC_normal.tga
+	specularmap textures/stratosfear/stratoflr1bRC_spec.tga
 }
 
 textures/stratosfear/stratoflr2RC
 {
 	diffusemap textures/stratosfear/stratoflr2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratoflr2RC_normal.tga
+	specularmap textures/stratosfear/stratoflr2RC_spec.tga
 }
 
 textures/stratosfear/stratopcarpet1R
 {
 	diffusemap textures/stratosfear/stratopcarpet1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratopcarpet1R_normal.tga
+	specularmap textures/stratosfear/stratopcarpet1R_spec.tga
 }
 
 textures/stratosfear/stratopcarpet2R
 {
 	diffusemap textures/stratosfear/stratopcarpet2R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratopcarpet2R_normal.tga
+	specularmap textures/stratosfear/stratopcarpet2R_spec.tga
 }
 
 textures/stratosfear/stratopneon1RC
 {
 	diffusemap textures/stratosfear/stratopneon1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratopneon1RC_normal.tga
+	specularmap textures/stratosfear/stratopneon1RC_spec.tga
 }
 
 textures/stratosfear/stratoptil1tw
 {
 	diffusemap textures/stratosfear/stratoptil1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratoptil1tw_normal.tga
+	specularmap textures/stratosfear/stratoptil1tw_spec.tga
 }
 
 textures/stratosfear/stratoptil2tw
 {
 	diffusemap textures/stratosfear/stratoptil2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratoptil2tw_normal.tga
+	specularmap textures/stratosfear/stratoptil2tw_spec.tga
 }
 
 textures/stratosfear/stratopwall1RC
 {
 	diffusemap textures/stratosfear/stratopwall1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratopwall1RC_normal.tga
+	specularmap textures/stratosfear/stratopwall1RC_spec.tga
 }
 
 textures/stratosfear/stratopwall2RC
 {
 	diffusemap textures/stratosfear/stratopwall2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratopwall2RC_normal.tga
+	specularmap textures/stratosfear/stratopwall2RC_spec.tga
 }
 
 textures/stratosfear/stratportpot1aR
 {
 	diffusemap textures/stratosfear/stratportpot1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratportpot1aR_normal.tga
+	specularmap textures/stratosfear/stratportpot1aR_spec.tga
 }
 
 textures/stratosfear/stratportpot1bR
 {
 	diffusemap textures/stratosfear/stratportpot1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratportpot1bR_normal.tga
+	specularmap textures/stratosfear/stratportpot1bR_spec.tga
 }
 
 textures/stratosfear/stratportpot1cR
 {
 	diffusemap textures/stratosfear/stratportpot1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratportpot1cR_normal.tga
+	specularmap textures/stratosfear/stratportpot1cR_spec.tga
 }
 
 textures/stratosfear/stratportpot1dR
 {
 	diffusemap textures/stratosfear/stratportpot1dR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratportpot1dR_normal.tga
+	specularmap textures/stratosfear/stratportpot1dR_spec.tga
 }
 
 textures/stratosfear/stratportpot1eR
 {
 	diffusemap textures/stratosfear/stratportpot1eR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratportpot1eR_normal.tga
+	specularmap textures/stratosfear/stratportpot1eR_spec.tga
 }
 
 textures/stratosfear/stratportpot1fR
 {
 	diffusemap textures/stratosfear/stratportpot1fR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratportpot1fR_normal.tga
+	specularmap textures/stratosfear/stratportpot1fR_spec.tga
 }
 
 textures/stratosfear/stratpowerbox1a
 {
 	diffusemap textures/stratosfear/stratpowerbox1a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratpowerbox1a_normal.tga
+	specularmap textures/stratosfear/stratpowerbox1a_spec.tga
 }
 
 textures/stratosfear/stratpowerbox1b
 {
 	diffusemap textures/stratosfear/stratpowerbox1b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratpowerbox1b_normal.tga
+	specularmap textures/stratosfear/stratpowerbox1b_spec.tga
 }
 
 textures/stratosfear/stratroofmac1bR
 {
 	diffusemap textures/stratosfear/stratroofmac1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratroofmac1bR_normal.tga
+	specularmap textures/stratosfear/stratroofmac1bR_spec.tga
 }
 
 textures/stratosfear/stratroofmac1cR
 {
 	diffusemap textures/stratosfear/stratroofmac1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratroofmac1cR_normal.tga
+	specularmap textures/stratosfear/stratroofmac1cR_spec.tga
 }
 
 textures/stratosfear/stratroofmac2RC
 {
 	diffusemap textures/stratosfear/stratroofmac2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratroofmac2RC_normal.tga
+	specularmap textures/stratosfear/stratroofmac2RC_spec.tga
 }
 
 textures/stratosfear/stratrubble1RC
 {
 	diffusemap textures/stratosfear/stratrubble1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratrubble1RC_normal.tga
+	specularmap textures/stratosfear/stratrubble1RC_spec.tga
 }
 
 textures/stratosfear/stratrubble2RC
 {
 	diffusemap textures/stratosfear/stratrubble2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratrubble2RC_normal.tga
+	specularmap textures/stratosfear/stratrubble2RC_spec.tga
 }
 
 textures/stratosfear/stratscafold1RC
 {
 	diffusemap textures/stratosfear/stratscafold1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratscafold1RC_normal.tga
+	specularmap textures/stratosfear/stratscafold1RC_spec.tga
 }
 
 textures/stratosfear/stratscafold2RC
 {
 	diffusemap textures/stratosfear/stratscafold2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratscafold2RC_normal.tga
+	specularmap textures/stratosfear/stratscafold2RC_spec.tga
 }
 
 textures/stratosfear/stratshops1RC
 {
 	diffusemap textures/stratosfear/stratshops1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratshops1RC_normal.tga
+	specularmap textures/stratosfear/stratshops1RC_spec.tga
 }
 
 textures/stratosfear/strattop1RC
 {
 	diffusemap textures/stratosfear/strattop1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strattop1RC_normal.tga
+	specularmap textures/stratosfear/strattop1RC_spec.tga
 }
 
 textures/stratosfear/stratwoodstk1aR
 {
 	diffusemap textures/stratosfear/stratwoodstk1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratwoodstk1aR_normal.tga
+	specularmap textures/stratosfear/stratwoodstk1aR_spec.tga
 }
 
 textures/stratosfear/stratwoodstk1bR
 {
 	diffusemap textures/stratosfear/stratwoodstk1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratwoodstk1bR_normal.tga
+	specularmap textures/stratosfear/stratwoodstk1bR_spec.tga
 }
 
 textures/stratosfear/stratwoodwall1R
 {
 	diffusemap textures/stratosfear/stratwoodwall1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratwoodwall1R_normal.tga
+	specularmap textures/stratosfear/stratwoodwall1R_spec.tga
 }
 
 textures/stratosfear/stratwoodwall2R
 {
 	diffusemap textures/stratosfear/stratwoodwall2R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stratwoodwall2R_normal.tga
+	specularmap textures/stratosfear/stratwoodwall2R_spec.tga
 }
 
 textures/stratosfear/strbanister1bRC
 {
 	diffusemap textures/stratosfear/strbanister1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strbanister1bRC_normal.tga
+	specularmap textures/stratosfear/strbanister1bRC_spec.tga
 }
 
 textures/stratosfear/strbanister3RC
 {
 	diffusemap textures/stratosfear/strbanister3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strbanister3RC_normal.tga
+	specularmap textures/stratosfear/strbanister3RC_spec.tga
 }
 
 textures/stratosfear/strbeige1RC
 {
 	diffusemap textures/stratosfear/strbeige1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strbeige1RC_normal.tga
+	specularmap textures/stratosfear/strbeige1RC_spec.tga
 }
 
 textures/stratosfear/strbrickroad1RC
 {
 	diffusemap textures/stratosfear/strbrickroad1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strbrickroad1RC_normal.tga
+	specularmap textures/stratosfear/strbrickroad1RC_spec.tga
 }
 
 textures/stratosfear/strcarpet1RC
 {
 	diffusemap textures/stratosfear/strcarpet1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strcarpet1RC_normal.tga
+	specularmap textures/stratosfear/strcarpet1RC_spec.tga
 }
 
 textures/stratosfear/strceiling4aRC
 {
 	diffusemap textures/stratosfear/strceiling4aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strceiling4aRC_normal.tga
+	specularmap textures/stratosfear/strceiling4aRC_spec.tga
 }
 
 textures/stratosfear/strceiling4bRC
 {
 	diffusemap textures/stratosfear/strceiling4bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strceiling4bRC_normal.tga
+	specularmap textures/stratosfear/strceiling4bRC_spec.tga
 }
 
 textures/stratosfear/strceiling5RC
 {
 	diffusemap textures/stratosfear/strceiling5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strceiling5RC_normal.tga
+	specularmap textures/stratosfear/strceiling5RC_spec.tga
 }
 
 textures/stratosfear/strconpallet1aR
 {
 	diffusemap textures/stratosfear/strconpallet1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strconpallet1aR_normal.tga
+	specularmap textures/stratosfear/strconpallet1aR_spec.tga
 }
 
 textures/stratosfear/strconpallet1bR
 {
 	diffusemap textures/stratosfear/strconpallet1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strconpallet1bR_normal.tga
+	specularmap textures/stratosfear/strconpallet1bR_spec.tga
 }
 
 textures/stratosfear/strconpallet1cR
 {
 	diffusemap textures/stratosfear/strconpallet1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strconpallet1cR_normal.tga
+	specularmap textures/stratosfear/strconpallet1cR_spec.tga
 }
 
 textures/stratosfear/strconpallet1dR
 {
 	diffusemap textures/stratosfear/strconpallet1dR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strconpallet1dR_normal.tga
+	specularmap textures/stratosfear/strconpallet1dR_spec.tga
 }
 
 textures/stratosfear/strconstruc1RC
 {
 	diffusemap textures/stratosfear/strconstruc1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strconstruc1RC_normal.tga
+	specularmap textures/stratosfear/strconstruc1RC_spec.tga
 }
 
 textures/stratosfear/strconstruc2RC
 {
 	diffusemap textures/stratosfear/strconstruc2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strconstruc2RC_normal.tga
+	specularmap textures/stratosfear/strconstruc2RC_spec.tga
 }
 
 textures/stratosfear/strdecor1RC
 {
 	diffusemap textures/stratosfear/strdecor1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdecor1RC_normal.tga
+	specularmap textures/stratosfear/strdecor1RC_spec.tga
 }
 
 textures/stratosfear/strdirectory1RC
 {
 	diffusemap textures/stratosfear/strdirectory1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdirectory1RC_normal.tga
+	specularmap textures/stratosfear/strdirectory1RC_spec.tga
 }
 
 textures/stratosfear/strdoor2RC
 {
 	diffusemap textures/stratosfear/strdoor2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoor2RC_normal.tga
+	specularmap textures/stratosfear/strdoor2RC_spec.tga
 }
 
 textures/stratosfear/strdoor2tw
 {
 	diffusemap textures/stratosfear/strdoor2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoor2tw_normal.tga
+	specularmap textures/stratosfear/strdoor2tw_spec.tga
 }
 
 textures/stratosfear/strdoor3atw
 {
 	diffusemap textures/stratosfear/strdoor3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoor3atw_normal.tga
+	specularmap textures/stratosfear/strdoor3atw_spec.tga
 }
 
 textures/stratosfear/strdoor3RC
 {
 	diffusemap textures/stratosfear/strdoor3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoor3RC_normal.tga
+	specularmap textures/stratosfear/strdoor3RC_spec.tga
 }
 
 textures/stratosfear/strdoor3tw
 {
 	diffusemap textures/stratosfear/strdoor3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoor3tw_normal.tga
+	specularmap textures/stratosfear/strdoor3tw_spec.tga
 }
 
 textures/stratosfear/strdoor4RC
 {
 	diffusemap textures/stratosfear/strdoor4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoor4RC_normal.tga
+	specularmap textures/stratosfear/strdoor4RC_spec.tga
 }
 
 textures/stratosfear/strdoor4tw
 {
 	diffusemap textures/stratosfear/strdoor4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoor4tw_normal.tga
+	specularmap textures/stratosfear/strdoor4tw_spec.tga
 }
 
 textures/stratosfear/strdoortrim1RC
 {
 	diffusemap textures/stratosfear/strdoortrim1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdoortrim1RC_normal.tga
+	specularmap textures/stratosfear/strdoortrim1RC_spec.tga
 }
 
 textures/stratosfear/strdumpster1RC
 {
 	diffusemap textures/stratosfear/strdumpster1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strdumpster1RC_normal.tga
+	specularmap textures/stratosfear/strdumpster1RC_spec.tga
 }
 
 textures/stratosfear/stredwall2tw
 {
 	diffusemap textures/stratosfear/stredwall2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stredwall2tw_normal.tga
+	specularmap textures/stratosfear/stredwall2tw_spec.tga
 }
 
 textures/stratosfear/street1ABC
 {
 	diffusemap textures/stratosfear/street1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/street1ABC_normal.tga
+	specularmap textures/stratosfear/street1ABC_spec.tga
 }
 
 textures/stratosfear/street1BBC
 {
 	diffusemap textures/stratosfear/street1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/street1BBC_normal.tga
+	specularmap textures/stratosfear/street1BBC_spec.tga
 }
 
 textures/stratosfear/strgrate2RC
 {
 	diffusemap textures/stratosfear/strgrate2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strgrate2RC_normal.tga
+	specularmap textures/stratosfear/strgrate2RC_spec.tga
 }
 
 textures/stratosfear/strmaindoors1RC
 {
 	diffusemap textures/stratosfear/strmaindoors1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strmaindoors1RC_normal.tga
+	specularmap textures/stratosfear/strmaindoors1RC_spec.tga
 }
 
 textures/stratosfear/strmainsign1RC
 {
 	diffusemap textures/stratosfear/strmainsign1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strmainsign1RC_normal.tga
+	specularmap textures/stratosfear/strmainsign1RC_spec.tga
 }
 
 textures/stratosfear/strmap1RC
 {
 	diffusemap textures/stratosfear/strmap1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strmap1RC_normal.tga
+	specularmap textures/stratosfear/strmap1RC_spec.tga
 }
 
 textures/stratosfear/strmonycham1aRC
 {
 	diffusemap textures/stratosfear/strmonycham1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strmonycham1aRC_normal.tga
+	specularmap textures/stratosfear/strmonycham1aRC_spec.tga
 }
 
 textures/stratosfear/strmonycham1bRC
 {
 	diffusemap textures/stratosfear/strmonycham1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strmonycham1bRC_normal.tga
+	specularmap textures/stratosfear/strmonycham1bRC_spec.tga
 }
 
 textures/stratosfear/strmonycham1cRC
 {
 	diffusemap textures/stratosfear/strmonycham1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strmonycham1cRC_normal.tga
+	specularmap textures/stratosfear/strmonycham1cRC_spec.tga
 }
 
 textures/stratosfear/strpattern1RC
 {
 	diffusemap textures/stratosfear/strpattern1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strpattern1RC_normal.tga
+	specularmap textures/stratosfear/strpattern1RC_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1aR
 {
 	diffusemap textures/stratosfear/strshopBGirl1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1aR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1aR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1bR
 {
 	diffusemap textures/stratosfear/strshopBGirl1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1bR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1bR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1cR
 {
 	diffusemap textures/stratosfear/strshopBGirl1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1cR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1cR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1dR
 {
 	diffusemap textures/stratosfear/strshopBGirl1dR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1dR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1dR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1eR
 {
 	diffusemap textures/stratosfear/strshopBGirl1eR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1eR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1eR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1fR
 {
 	diffusemap textures/stratosfear/strshopBGirl1fR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1fR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1fR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1gR
 {
 	diffusemap textures/stratosfear/strshopBGirl1gR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1gR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1gR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1hR
 {
 	diffusemap textures/stratosfear/strshopBGirl1hR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1hR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1hR_spec.tga
 }
 
 textures/stratosfear/strshopBGirl1iR
 {
 	diffusemap textures/stratosfear/strshopBGirl1iR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopBGirl1iR_normal.tga
+	specularmap textures/stratosfear/strshopBGirl1iR_spec.tga
 }
 
 textures/stratosfear/strshopliq1aRC
 {
 	diffusemap textures/stratosfear/strshopliq1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopliq1aRC_normal.tga
+	specularmap textures/stratosfear/strshopliq1aRC_spec.tga
 }
 
 textures/stratosfear/strshopliq1bRC
 {
 	diffusemap textures/stratosfear/strshopliq1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopliq1bRC_normal.tga
+	specularmap textures/stratosfear/strshopliq1bRC_spec.tga
 }
 
 textures/stratosfear/strshopliq1cRC
 {
 	diffusemap textures/stratosfear/strshopliq1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopliq1cRC_normal.tga
+	specularmap textures/stratosfear/strshopliq1cRC_spec.tga
 }
 
 textures/stratosfear/strshopliq1dRC
 {
 	diffusemap textures/stratosfear/strshopliq1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopliq1dRC_normal.tga
+	specularmap textures/stratosfear/strshopliq1dRC_spec.tga
 }
 
 textures/stratosfear/strshopliq1eRC
 {
 	diffusemap textures/stratosfear/strshopliq1eRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopliq1eRC_normal.tga
+	specularmap textures/stratosfear/strshopliq1eRC_spec.tga
 }
 
 textures/stratosfear/strshopliq1fRC
 {
 	diffusemap textures/stratosfear/strshopliq1fRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopliq1fRC_normal.tga
+	specularmap textures/stratosfear/strshopliq1fRC_spec.tga
 }
 
 textures/stratosfear/strshopliq1gRC
 {
 	diffusemap textures/stratosfear/strshopliq1gRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopliq1gRC_normal.tga
+	specularmap textures/stratosfear/strshopliq1gRC_spec.tga
 }
 
 textures/stratosfear/strshopvid1aRC
 {
 	diffusemap textures/stratosfear/strshopvid1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopvid1aRC_normal.tga
+	specularmap textures/stratosfear/strshopvid1aRC_spec.tga
 }
 
 textures/stratosfear/strshopvid1bRC
 {
 	diffusemap textures/stratosfear/strshopvid1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopvid1bRC_normal.tga
+	specularmap textures/stratosfear/strshopvid1bRC_spec.tga
 }
 
 textures/stratosfear/strshopvid1cRC
 {
 	diffusemap textures/stratosfear/strshopvid1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopvid1cRC_normal.tga
+	specularmap textures/stratosfear/strshopvid1cRC_spec.tga
 }
 
 textures/stratosfear/strshopvid1dRC
 {
 	diffusemap textures/stratosfear/strshopvid1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strshopvid1dRC_normal.tga
+	specularmap textures/stratosfear/strshopvid1dRC_spec.tga
 }
 
 textures/stratosfear/strsign11RC
 {
 	diffusemap textures/stratosfear/strsign11RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign11RC_normal.tga
+	specularmap textures/stratosfear/strsign11RC_spec.tga
 }
 
 textures/stratosfear/strsign12RC
 {
 	diffusemap textures/stratosfear/strsign12RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign12RC_normal.tga
+	specularmap textures/stratosfear/strsign12RC_spec.tga
 }
 
 textures/stratosfear/strsign20RC
 {
 	diffusemap textures/stratosfear/strsign20RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign20RC_normal.tga
+	specularmap textures/stratosfear/strsign20RC_spec.tga
 }
 
 textures/stratosfear/strsign21RC
 {
 	diffusemap textures/stratosfear/strsign21RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign21RC_normal.tga
+	specularmap textures/stratosfear/strsign21RC_spec.tga
 }
 
 textures/stratosfear/strsign25RC
 {
 	diffusemap textures/stratosfear/strsign25RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign25RC_normal.tga
+	specularmap textures/stratosfear/strsign25RC_spec.tga
 }
 
 textures/stratosfear/strsign27RC
 {
 	diffusemap textures/stratosfear/strsign27RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign27RC_normal.tga
+	specularmap textures/stratosfear/strsign27RC_spec.tga
 }
 
 textures/stratosfear/strsign28RC
 {
 	diffusemap textures/stratosfear/strsign28RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign28RC_normal.tga
+	specularmap textures/stratosfear/strsign28RC_spec.tga
 }
 
 textures/stratosfear/strsign29RC
 {
 	diffusemap textures/stratosfear/strsign29RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign29RC_normal.tga
+	specularmap textures/stratosfear/strsign29RC_spec.tga
 }
 
 textures/stratosfear/strsign30RC
 {
 	diffusemap textures/stratosfear/strsign30RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign30RC_normal.tga
+	specularmap textures/stratosfear/strsign30RC_spec.tga
 }
 
 textures/stratosfear/strsign4RC
 {
 	diffusemap textures/stratosfear/strsign4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign4RC_normal.tga
+	specularmap textures/stratosfear/strsign4RC_spec.tga
 }
 
 textures/stratosfear/strsign5RC
 {
 	diffusemap textures/stratosfear/strsign5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign5RC_normal.tga
+	specularmap textures/stratosfear/strsign5RC_spec.tga
 }
 
 textures/stratosfear/strsign6RC
 {
 	diffusemap textures/stratosfear/strsign6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strsign6RC_normal.tga
+	specularmap textures/stratosfear/strsign6RC_spec.tga
 }
 
 textures/stratosfear/strstairstep1bR
 {
 	diffusemap textures/stratosfear/strstairstep1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strstairstep1bR_normal.tga
+	specularmap textures/stratosfear/strstairstep1bR_spec.tga
 }
 
 textures/stratosfear/strstairstep1RC
 {
 	diffusemap textures/stratosfear/strstairstep1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strstairstep1RC_normal.tga
+	specularmap textures/stratosfear/strstairstep1RC_spec.tga
 }
 
 textures/stratosfear/strtrim1RC
 {
 	diffusemap textures/stratosfear/strtrim1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strtrim1RC_normal.tga
+	specularmap textures/stratosfear/strtrim1RC_spec.tga
 }
 
 textures/stratosfear/strtrim2RC
 {
 	diffusemap textures/stratosfear/strtrim2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strtrim2RC_normal.tga
+	specularmap textures/stratosfear/strtrim2RC_spec.tga
 }
 
 textures/stratosfear/strtrim6RC
 {
 	diffusemap textures/stratosfear/strtrim6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strtrim6RC_normal.tga
+	specularmap textures/stratosfear/strtrim6RC_spec.tga
 }
 
 textures/stratosfear/strtrim7RC
 {
 	diffusemap textures/stratosfear/strtrim7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strtrim7RC_normal.tga
+	specularmap textures/stratosfear/strtrim7RC_spec.tga
 }
 
 textures/stratosfear/strwall2RC
 {
 	diffusemap textures/stratosfear/strwall2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwall2RC_normal.tga
+	specularmap textures/stratosfear/strwall2RC_spec.tga
 }
 
 textures/stratosfear/strwall3RC
 {
 	diffusemap textures/stratosfear/strwall3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwall3RC_normal.tga
+	specularmap textures/stratosfear/strwall3RC_spec.tga
 }
 
 textures/stratosfear/strwall4RC
 {
 	diffusemap textures/stratosfear/strwall4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwall4RC_normal.tga
+	specularmap textures/stratosfear/strwall4RC_spec.tga
 }
 
 textures/stratosfear/strwall5RC
 {
 	diffusemap textures/stratosfear/strwall5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwall5RC_normal.tga
+	specularmap textures/stratosfear/strwall5RC_spec.tga
 }
 
 textures/stratosfear/strwall6RC
 {
 	diffusemap textures/stratosfear/strwall6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwall6RC_normal.tga
+	specularmap textures/stratosfear/strwall6RC_spec.tga
 }
 
 textures/stratosfear/strwall7RC
 {
 	diffusemap textures/stratosfear/strwall7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwall7RC_normal.tga
+	specularmap textures/stratosfear/strwall7RC_spec.tga
 }
 
 textures/stratosfear/strwindow1RC
 {
 	diffusemap textures/stratosfear/strwindow1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwindow1RC_normal.tga
+	specularmap textures/stratosfear/strwindow1RC_spec.tga
 }
 
 textures/stratosfear/strwindow2RC
 {
 	diffusemap textures/stratosfear/strwindow2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwindow2RC_normal.tga
+	specularmap textures/stratosfear/strwindow2RC_spec.tga
 }
 
 textures/stratosfear/strwoodfloorRC
 {
 	diffusemap textures/stratosfear/strwoodfloorRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/strwoodfloorRC_normal.tga
+	specularmap textures/stratosfear/strwoodfloorRC_spec.tga
 }
 
 textures/stratosfear/stuccowall1ABC
 {
 	diffusemap textures/stratosfear/stuccowall1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall1ABC_normal.tga
+	specularmap textures/stratosfear/stuccowall1ABC_spec.tga
 }
 
 textures/stratosfear/stuccowall1BBC
 {
 	diffusemap textures/stratosfear/stuccowall1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall1BBC_normal.tga
+	specularmap textures/stratosfear/stuccowall1BBC_spec.tga
 }
 
 textures/stratosfear/stuccowall1CBC
 {
 	diffusemap textures/stratosfear/stuccowall1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall1CBC_normal.tga
+	specularmap textures/stratosfear/stuccowall1CBC_spec.tga
 }
 
 textures/stratosfear/stuccowall1DBC
 {
 	diffusemap textures/stratosfear/stuccowall1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall1DBC_normal.tga
+	specularmap textures/stratosfear/stuccowall1DBC_spec.tga
 }
 
 textures/stratosfear/stuccowall1EBC
 {
 	diffusemap textures/stratosfear/stuccowall1EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall1EBC_normal.tga
+	specularmap textures/stratosfear/stuccowall1EBC_spec.tga
 }
 
 textures/stratosfear/stuccowall1GBC
 {
 	diffusemap textures/stratosfear/stuccowall1GBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall1GBC_normal.tga
+	specularmap textures/stratosfear/stuccowall1GBC_spec.tga
 }
 
 textures/stratosfear/stuccowall2ABC
 {
 	diffusemap textures/stratosfear/stuccowall2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall2ABC_normal.tga
+	specularmap textures/stratosfear/stuccowall2ABC_spec.tga
 }
 
 textures/stratosfear/stuccowall2BBC
 {
 	diffusemap textures/stratosfear/stuccowall2BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall2BBC_normal.tga
+	specularmap textures/stratosfear/stuccowall2BBC_spec.tga
 }
 
 textures/stratosfear/stuccowall2CBC
 {
 	diffusemap textures/stratosfear/stuccowall2CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/stuccowall2CBC_normal.tga
+	specularmap textures/stratosfear/stuccowall2CBC_spec.tga
 }
 
 textures/stratosfear/supers_1atw
 {
 	diffusemap textures/stratosfear/supers_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/supers_1atw_normal.tga
+	specularmap textures/stratosfear/supers_1atw_spec.tga
 }
 
 textures/stratosfear/supers_1tw
 {
 	diffusemap textures/stratosfear/supers_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/supers_1tw_normal.tga
+	specularmap textures/stratosfear/supers_1tw_spec.tga
 }
 
 textures/stratosfear/supers_2tw
 {
 	diffusemap textures/stratosfear/supers_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/supers_2tw_normal.tga
+	specularmap textures/stratosfear/supers_2tw_spec.tga
 }
 
 textures/stratosfear/supers_2ztw
 {
 	diffusemap textures/stratosfear/supers_2ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/supers_2ztw_normal.tga
+	specularmap textures/stratosfear/supers_2ztw_spec.tga
 }
 
 textures/stratosfear/supers_3dtw
 {
 	diffusemap textures/stratosfear/supers_3dtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/supers_3dtw_normal.tga
+	specularmap textures/stratosfear/supers_3dtw_spec.tga
 }
 
 textures/stratosfear/supers_3etw
 {
 	diffusemap textures/stratosfear/supers_3etw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/supers_3etw_normal.tga
+	specularmap textures/stratosfear/supers_3etw_spec.tga
 }
 
 textures/stratosfear/thinlizzie_1tw
 {
 	diffusemap textures/stratosfear/thinlizzie_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/thinlizzie_1tw_normal.tga
+	specularmap textures/stratosfear/thinlizzie_1tw_spec.tga
 }
 
 textures/stratosfear/topcem_1tw
 {
 	diffusemap textures/stratosfear/topcem_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/topcem_1tw_normal.tga
+	specularmap textures/stratosfear/topcem_1tw_spec.tga
 }
 
 textures/stratosfear/topcem_drops
 {
 	diffusemap textures/stratosfear/topcem_drops.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/topcem_drops_normal.tga
+	specularmap textures/stratosfear/topcem_drops_spec.tga
 }
 
 textures/stratosfear/topcim_drops
 {
 	diffusemap textures/stratosfear/topcim_drops.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/topcim_drops_normal.tga
+	specularmap textures/stratosfear/topcim_drops_spec.tga
 }
 
 textures/stratosfear/trashcanstrat_1tw
 {
 	diffusemap textures/stratosfear/trashcanstrat_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/trashcanstrat_1tw_normal.tga
+	specularmap textures/stratosfear/trashcanstrat_1tw_spec.tga
 }
 
 textures/stratosfear/trashcanstrat_2tw
 {
 	diffusemap textures/stratosfear/trashcanstrat_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/trashcanstrat_2tw_normal.tga
+	specularmap textures/stratosfear/trashcanstrat_2tw_spec.tga
 }
 
 textures/stratosfear/tshirt1tw
 {
 	diffusemap textures/stratosfear/tshirt1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/tshirt1tw_normal.tga
+	specularmap textures/stratosfear/tshirt1tw_spec.tga
 }
 
 textures/stratosfear/veggate1RC
 {
 	diffusemap textures/stratosfear/veggate1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/veggate1RC_normal.tga
+	specularmap textures/stratosfear/veggate1RC_spec.tga
 }
 
 textures/stratosfear/vegshpcolumn1RC
 {
 	diffusemap textures/stratosfear/vegshpcolumn1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpcolumn1RC_normal.tga
+	specularmap textures/stratosfear/vegshpcolumn1RC_spec.tga
 }
 
 textures/stratosfear/vegshpdecor1RC
 {
 	diffusemap textures/stratosfear/vegshpdecor1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdecor1RC_normal.tga
+	specularmap textures/stratosfear/vegshpdecor1RC_spec.tga
 }
 
 textures/stratosfear/vegshpdisply11R
 {
 	diffusemap textures/stratosfear/vegshpdisply11R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply11R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply11R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply12R
 {
 	diffusemap textures/stratosfear/vegshpdisply12R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply12R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply12R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply15R
 {
 	diffusemap textures/stratosfear/vegshpdisply15R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply15R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply15R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply16R
 {
 	diffusemap textures/stratosfear/vegshpdisply16R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply16R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply16R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply17b
 {
 	diffusemap textures/stratosfear/vegshpdisply17b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply17b_normal.tga
+	specularmap textures/stratosfear/vegshpdisply17b_spec.tga
 }
 
 textures/stratosfear/vegshpdisply19a
 {
 	diffusemap textures/stratosfear/vegshpdisply19a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply19a_normal.tga
+	specularmap textures/stratosfear/vegshpdisply19a_spec.tga
 }
 
 textures/stratosfear/vegshpdisply19b
 {
 	diffusemap textures/stratosfear/vegshpdisply19b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply19b_normal.tga
+	specularmap textures/stratosfear/vegshpdisply19b_spec.tga
 }
 
 textures/stratosfear/vegshpdisply19c
 {
 	diffusemap textures/stratosfear/vegshpdisply19c.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply19c_normal.tga
+	specularmap textures/stratosfear/vegshpdisply19c_spec.tga
 }
 
 textures/stratosfear/vegshpdisply19d
 {
 	diffusemap textures/stratosfear/vegshpdisply19d.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply19d_normal.tga
+	specularmap textures/stratosfear/vegshpdisply19d_spec.tga
 }
 
 textures/stratosfear/vegshpdisply1RC
 {
 	diffusemap textures/stratosfear/vegshpdisply1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply1RC_normal.tga
+	specularmap textures/stratosfear/vegshpdisply1RC_spec.tga
 }
 
 textures/stratosfear/vegshpdisply25R
 {
 	diffusemap textures/stratosfear/vegshpdisply25R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply25R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply25R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply27R
 {
 	diffusemap textures/stratosfear/vegshpdisply27R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply27R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply27R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply28R
 {
 	diffusemap textures/stratosfear/vegshpdisply28R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply28R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply28R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply2RC
 {
 	diffusemap textures/stratosfear/vegshpdisply2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply2RC_normal.tga
+	specularmap textures/stratosfear/vegshpdisply2RC_spec.tga
 }
 
 textures/stratosfear/vegshpdisply33R
 {
 	diffusemap textures/stratosfear/vegshpdisply33R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply33R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply33R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply34R
 {
 	diffusemap textures/stratosfear/vegshpdisply34R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply34R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply34R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply35R
 {
 	diffusemap textures/stratosfear/vegshpdisply35R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply35R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply35R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply36R
 {
 	diffusemap textures/stratosfear/vegshpdisply36R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply36R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply36R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply40R
 {
 	diffusemap textures/stratosfear/vegshpdisply40R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply40R_normal.tga
+	specularmap textures/stratosfear/vegshpdisply40R_spec.tga
 }
 
 textures/stratosfear/vegshpdisply9aR
 {
 	diffusemap textures/stratosfear/vegshpdisply9aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply9aR_normal.tga
+	specularmap textures/stratosfear/vegshpdisply9aR_spec.tga
 }
 
 textures/stratosfear/vegshpdisply9bR
 {
 	diffusemap textures/stratosfear/vegshpdisply9bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpdisply9bR_normal.tga
+	specularmap textures/stratosfear/vegshpdisply9bR_spec.tga
 }
 
 textures/stratosfear/vegshpglasblk1R
 {
 	diffusemap textures/stratosfear/vegshpglasblk1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpglasblk1R_normal.tga
+	specularmap textures/stratosfear/vegshpglasblk1R_spec.tga
 }
 
 textures/stratosfear/vegshptrim2RC
 {
 	diffusemap textures/stratosfear/vegshptrim2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshptrim2RC_normal.tga
+	specularmap textures/stratosfear/vegshptrim2RC_spec.tga
 }
 
 textures/stratosfear/vegshptrim3bRC
 {
 	diffusemap textures/stratosfear/vegshptrim3bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshptrim3bRC_normal.tga
+	specularmap textures/stratosfear/vegshptrim3bRC_spec.tga
 }
 
 textures/stratosfear/vegshptrim3cRC
 {
 	diffusemap textures/stratosfear/vegshptrim3cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshptrim3cRC_normal.tga
+	specularmap textures/stratosfear/vegshptrim3cRC_spec.tga
 }
 
 textures/stratosfear/vegshptrim5RC
 {
 	diffusemap textures/stratosfear/vegshptrim5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshptrim5RC_normal.tga
+	specularmap textures/stratosfear/vegshptrim5RC_spec.tga
 }
 
 textures/stratosfear/vegshptrim6RC
 {
 	diffusemap textures/stratosfear/vegshptrim6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshptrim6RC_normal.tga
+	specularmap textures/stratosfear/vegshptrim6RC_spec.tga
 }
 
 textures/stratosfear/vegshptrim7bRC
 {
 	diffusemap textures/stratosfear/vegshptrim7bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshptrim7bRC_normal.tga
+	specularmap textures/stratosfear/vegshptrim7bRC_spec.tga
 }
 
 textures/stratosfear/vegshpwall4RC
 {
 	diffusemap textures/stratosfear/vegshpwall4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegshpwall4RC_normal.tga
+	specularmap textures/stratosfear/vegshpwall4RC_spec.tga
 }
 
 textures/stratosfear/vegtramvend1tw
 {
 	diffusemap textures/stratosfear/vegtramvend1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vegtramvend1tw_normal.tga
+	specularmap textures/stratosfear/vegtramvend1tw_spec.tga
 }
 
 textures/stratosfear/vinegarwo_1tw
 {
 	diffusemap textures/stratosfear/vinegarwo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/vinegarwo_1tw_normal.tga
+	specularmap textures/stratosfear/vinegarwo_1tw_spec.tga
 }
 
 textures/stratosfear/wank24tw
 {
 	diffusemap textures/stratosfear/wank24tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/wank24tw_normal.tga
+	specularmap textures/stratosfear/wank24tw_spec.tga
 }
 
 textures/stratosfear/weddo_1tw
 {
 	diffusemap textures/stratosfear/weddo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/weddo_1tw_normal.tga
+	specularmap textures/stratosfear/weddo_1tw_spec.tga
 }
 
 textures/stratosfear/weddo_2tw
 {
 	diffusemap textures/stratosfear/weddo_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/weddo_2tw_normal.tga
+	specularmap textures/stratosfear/weddo_2tw_spec.tga
 }
 
 textures/stratosfear/weeber7
 {
 	diffusemap textures/stratosfear/weeber7.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/weeber7_normal.tga
+	specularmap textures/stratosfear/weeber7_spec.tga
 }
 
 textures/stratosfear/weenawn2tw
 {
 	diffusemap textures/stratosfear/weenawn2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/weenawn2tw_normal.tga
+	specularmap textures/stratosfear/weenawn2tw_spec.tga
 }
 
 textures/stratosfear/wentop
 {
 	diffusemap textures/stratosfear/wentop.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/wentop_normal.tga
+	specularmap textures/stratosfear/wentop_spec.tga
 }
 
 textures/stratosfear/whitewee_1tw
 {
 	diffusemap textures/stratosfear/whitewee_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/whitewee_1tw_normal.tga
+	specularmap textures/stratosfear/whitewee_1tw_spec.tga
 }
 
 textures/stratosfear/whitewee_2tw
 {
 	diffusemap textures/stratosfear/whitewee_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/whitewee_2tw_normal.tga
+	specularmap textures/stratosfear/whitewee_2tw_spec.tga
 }
 
 textures/stratosfear/whitewee_2vtw
 {
 	diffusemap textures/stratosfear/whitewee_2vtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/whitewee_2vtw_normal.tga
+	specularmap textures/stratosfear/whitewee_2vtw_spec.tga
 }
 
 textures/stratosfear/whitewee_2wtw
 {
 	diffusemap textures/stratosfear/whitewee_2wtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/whitewee_2wtw_normal.tga
+	specularmap textures/stratosfear/whitewee_2wtw_spec.tga
 }
 
 textures/stratosfear/xspotte1tw
 {
 	diffusemap textures/stratosfear/xspotte1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/xspotte1tw_normal.tga
+	specularmap textures/stratosfear/xspotte1tw_spec.tga
 }
 
 textures/stratosfear/xxxvid1tw
 {
 	diffusemap textures/stratosfear/xxxvid1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/xxxvid1tw_normal.tga
+	specularmap textures/stratosfear/xxxvid1tw_spec.tga
 }
 
 textures/stratosfear/yahway_1tw
 {
 	diffusemap textures/stratosfear/yahway_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/yahway_1tw_normal.tga
+	specularmap textures/stratosfear/yahway_1tw_spec.tga
 }
 
 textures/stratosfear/yahway_2tw
 {
 	diffusemap textures/stratosfear/yahway_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/yahway_2tw_normal.tga
+	specularmap textures/stratosfear/yahway_2tw_spec.tga
 }
 
 textures/stratosfear/zwindow2tw
 {
 	diffusemap textures/stratosfear/zwindow2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/zwindow2tw_normal.tga
+	specularmap textures/stratosfear/zwindow2tw_spec.tga
 }
 
 textures/stratosfear/zwindow3tw
 {
 	diffusemap textures/stratosfear/zwindow3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/zwindow3tw_normal.tga
+	specularmap textures/stratosfear/zwindow3tw_spec.tga
 }
 
 textures/stratosfear/zwindow4atw
 {
 	diffusemap textures/stratosfear/zwindow4atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/zwindow4atw_normal.tga
+	specularmap textures/stratosfear/zwindow4atw_spec.tga
 }
 
 textures/stratosfear/zwindowtw
 {
 	diffusemap textures/stratosfear/zwindowtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/stratosfear/zwindowtw_normal.tga
+	specularmap textures/stratosfear/zwindowtw_spec.tga
 }
 
