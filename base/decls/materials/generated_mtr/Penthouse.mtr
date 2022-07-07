@@ -1,2604 +1,2604 @@
-textures/Penthouse/ALKsign12RC
+textures/penthouse/ALKsign12RC
 {
-	diffusemap textures/Penthouse/ALKsign12RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign12RC.tga
+	bumpmap textures/penthouse/ALKsign12RC_normal.tga
+	specularmap textures/penthouse/ALKsign12RC_spec.tga
 }
 
-textures/Penthouse/ALKsign13RC
+textures/penthouse/ALKsign13RC
 {
-	diffusemap textures/Penthouse/ALKsign13RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign13RC.tga
+	bumpmap textures/penthouse/ALKsign13RC_normal.tga
+	specularmap textures/penthouse/ALKsign13RC_spec.tga
 }
 
-textures/Penthouse/ALKsign14RC
+textures/penthouse/ALKsign14RC
 {
-	diffusemap textures/Penthouse/ALKsign14RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign14RC.tga
+	bumpmap textures/penthouse/ALKsign14RC_normal.tga
+	specularmap textures/penthouse/ALKsign14RC_spec.tga
 }
 
-textures/Penthouse/ALKsign15RC
+textures/penthouse/ALKsign15RC
 {
-	diffusemap textures/Penthouse/ALKsign15RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign15RC.tga
+	bumpmap textures/penthouse/ALKsign15RC_normal.tga
+	specularmap textures/penthouse/ALKsign15RC_spec.tga
 }
 
-textures/Penthouse/ALKsign16RC
+textures/penthouse/ALKsign16RC
 {
-	diffusemap textures/Penthouse/ALKsign16RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign16RC.tga
+	bumpmap textures/penthouse/ALKsign16RC_normal.tga
+	specularmap textures/penthouse/ALKsign16RC_spec.tga
 }
 
-textures/Penthouse/ALKsign1RC
+textures/penthouse/ALKsign1RC
 {
-	diffusemap textures/Penthouse/ALKsign1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign1RC.tga
+	bumpmap textures/penthouse/ALKsign1RC_normal.tga
+	specularmap textures/penthouse/ALKsign1RC_spec.tga
 }
 
-textures/Penthouse/ALKsign2RC
+textures/penthouse/ALKsign2RC
 {
-	diffusemap textures/Penthouse/ALKsign2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign2RC.tga
+	bumpmap textures/penthouse/ALKsign2RC_normal.tga
+	specularmap textures/penthouse/ALKsign2RC_spec.tga
 }
 
-textures/Penthouse/ALKsign3RC
+textures/penthouse/ALKsign3RC
 {
-	diffusemap textures/Penthouse/ALKsign3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign3RC.tga
+	bumpmap textures/penthouse/ALKsign3RC_normal.tga
+	specularmap textures/penthouse/ALKsign3RC_spec.tga
 }
 
-textures/Penthouse/ALKsign4RC
+textures/penthouse/ALKsign4RC
 {
-	diffusemap textures/Penthouse/ALKsign4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign4RC.tga
+	bumpmap textures/penthouse/ALKsign4RC_normal.tga
+	specularmap textures/penthouse/ALKsign4RC_spec.tga
 }
 
-textures/Penthouse/ALKsign5RC
+textures/penthouse/ALKsign5RC
 {
-	diffusemap textures/Penthouse/ALKsign5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign5RC.tga
+	bumpmap textures/penthouse/ALKsign5RC_normal.tga
+	specularmap textures/penthouse/ALKsign5RC_spec.tga
 }
 
-textures/Penthouse/ALKsign6RC
+textures/penthouse/ALKsign6RC
 {
-	diffusemap textures/Penthouse/ALKsign6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign6RC.tga
+	bumpmap textures/penthouse/ALKsign6RC_normal.tga
+	specularmap textures/penthouse/ALKsign6RC_spec.tga
 }
 
-textures/Penthouse/ALKsign7RC
+textures/penthouse/ALKsign7RC
 {
-	diffusemap textures/Penthouse/ALKsign7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign7RC.tga
+	bumpmap textures/penthouse/ALKsign7RC_normal.tga
+	specularmap textures/penthouse/ALKsign7RC_spec.tga
 }
 
-textures/Penthouse/ALKsign7tw
+textures/penthouse/ALKsign7tw
 {
-	diffusemap textures/Penthouse/ALKsign7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign7tw.tga
+	bumpmap textures/penthouse/ALKsign7tw_normal.tga
+	specularmap textures/penthouse/ALKsign7tw_spec.tga
 }
 
-textures/Penthouse/ALKsign8RC
+textures/penthouse/ALKsign8RC
 {
-	diffusemap textures/Penthouse/ALKsign8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/ALKsign8RC.tga
+	bumpmap textures/penthouse/ALKsign8RC_normal.tga
+	specularmap textures/penthouse/ALKsign8RC_spec.tga
 }
 
-textures/Penthouse/Bathtubfloor
+textures/penthouse/Bathtubfloor
 {
-	diffusemap textures/Penthouse/Bathtubfloor.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/Bathtubfloor.tga
+	bumpmap textures/penthouse/Bathtubfloor_normal.tga
+	specularmap textures/penthouse/Bathtubfloor_spec.tga
 }
 
-textures/Penthouse/bathtubside
+textures/penthouse/bathtubside
 {
-	diffusemap textures/Penthouse/bathtubside.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bathtubside.tga
+	bumpmap textures/penthouse/bathtubside_normal.tga
+	specularmap textures/penthouse/bathtubside_spec.tga
 }
 
-textures/Penthouse/bathtubside2
+textures/penthouse/bathtubside2
 {
-	diffusemap textures/Penthouse/bathtubside2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bathtubside2.tga
+	bumpmap textures/penthouse/bathtubside2_normal.tga
+	specularmap textures/penthouse/bathtubside2_spec.tga
 }
 
-textures/Penthouse/bigmarb_1tw
+textures/penthouse/bigmarb_1tw
 {
-	diffusemap textures/Penthouse/bigmarb_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bigmarb_1tw.tga
+	bumpmap textures/penthouse/bigmarb_1tw_normal.tga
+	specularmap textures/penthouse/bigmarb_1tw_spec.tga
 }
 
-textures/Penthouse/bigmarb_1ztw
+textures/penthouse/bigmarb_1ztw
 {
-	diffusemap textures/Penthouse/bigmarb_1ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bigmarb_1ztw.tga
+	bumpmap textures/penthouse/bigmarb_1ztw_normal.tga
+	specularmap textures/penthouse/bigmarb_1ztw_spec.tga
 }
 
-textures/Penthouse/bigmarb_6tw
+textures/penthouse/bigmarb_6tw
 {
-	diffusemap textures/Penthouse/bigmarb_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bigmarb_6tw.tga
+	bumpmap textures/penthouse/bigmarb_6tw_normal.tga
+	specularmap textures/penthouse/bigmarb_6tw_spec.tga
 }
 
-textures/Penthouse/bigmarb_7atw
+textures/penthouse/bigmarb_7atw
 {
-	diffusemap textures/Penthouse/bigmarb_7atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bigmarb_7atw.tga
+	bumpmap textures/penthouse/bigmarb_7atw_normal.tga
+	specularmap textures/penthouse/bigmarb_7atw_spec.tga
 }
 
-textures/Penthouse/bigmarb_7tw
+textures/penthouse/bigmarb_7tw
 {
-	diffusemap textures/Penthouse/bigmarb_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bigmarb_7tw.tga
+	bumpmap textures/penthouse/bigmarb_7tw_normal.tga
+	specularmap textures/penthouse/bigmarb_7tw_spec.tga
 }
 
-textures/Penthouse/bigmarb_8tw
+textures/penthouse/bigmarb_8tw
 {
-	diffusemap textures/Penthouse/bigmarb_8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bigmarb_8tw.tga
+	bumpmap textures/penthouse/bigmarb_8tw_normal.tga
+	specularmap textures/penthouse/bigmarb_8tw_spec.tga
 }
 
-textures/Penthouse/blimproll3atw
+textures/penthouse/blimproll3atw
 {
-	diffusemap textures/Penthouse/blimproll3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/blimproll3atw.tga
+	bumpmap textures/penthouse/blimproll3atw_normal.tga
+	specularmap textures/penthouse/blimproll3atw_spec.tga
 }
 
-textures/Penthouse/blimproll3tw
+textures/penthouse/blimproll3tw
 {
-	diffusemap textures/Penthouse/blimproll3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/blimproll3tw.tga
+	bumpmap textures/penthouse/blimproll3tw_normal.tga
+	specularmap textures/penthouse/blimproll3tw_spec.tga
 }
 
-textures/Penthouse/blkcieling1ABC
+textures/penthouse/blkcieling1ABC
 {
-	diffusemap textures/Penthouse/blkcieling1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/blkcieling1ABC.tga
+	bumpmap textures/penthouse/blkcieling1ABC_normal.tga
+	specularmap textures/penthouse/blkcieling1ABC_spec.tga
 }
 
-textures/Penthouse/blkcieling1BBC
+textures/penthouse/blkcieling1BBC
 {
-	diffusemap textures/Penthouse/blkcieling1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/blkcieling1BBC.tga
+	bumpmap textures/penthouse/blkcieling1BBC_normal.tga
+	specularmap textures/penthouse/blkcieling1BBC_spec.tga
 }
 
-textures/Penthouse/bobo16tw
+textures/penthouse/bobo16tw
 {
-	diffusemap textures/Penthouse/bobo16tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/bobo16tw.tga
+	bumpmap textures/penthouse/bobo16tw_normal.tga
+	specularmap textures/penthouse/bobo16tw_spec.tga
 }
 
-textures/Penthouse/book1E
+textures/penthouse/book1E
 {
-	diffusemap textures/Penthouse/book1E.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/book1E.tga
+	bumpmap textures/penthouse/book1E_normal.tga
+	specularmap textures/penthouse/book1E_spec.tga
 }
 
-textures/Penthouse/book1F
+textures/penthouse/book1F
 {
-	diffusemap textures/Penthouse/book1F.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/book1F.tga
+	bumpmap textures/penthouse/book1F_normal.tga
+	specularmap textures/penthouse/book1F_spec.tga
 }
 
-textures/Penthouse/books1ABC
+textures/penthouse/books1ABC
 {
-	diffusemap textures/Penthouse/books1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/books1ABC.tga
+	bumpmap textures/penthouse/books1ABC_normal.tga
+	specularmap textures/penthouse/books1ABC_spec.tga
 }
 
-textures/Penthouse/books1BBC
+textures/penthouse/books1BBC
 {
-	diffusemap textures/Penthouse/books1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/books1BBC.tga
+	bumpmap textures/penthouse/books1BBC_normal.tga
+	specularmap textures/penthouse/books1BBC_spec.tga
 }
 
-textures/Penthouse/books1CBC
+textures/penthouse/books1CBC
 {
-	diffusemap textures/Penthouse/books1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/books1CBC.tga
+	bumpmap textures/penthouse/books1CBC_normal.tga
+	specularmap textures/penthouse/books1CBC_spec.tga
 }
 
-textures/Penthouse/books1DBC
+textures/penthouse/books1DBC
 {
-	diffusemap textures/Penthouse/books1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/books1DBC.tga
+	bumpmap textures/penthouse/books1DBC_normal.tga
+	specularmap textures/penthouse/books1DBC_spec.tga
 }
 
-textures/Penthouse/BreakGlass1sah
+textures/penthouse/BreakGlass1sah
 {
-	diffusemap textures/Penthouse/BreakGlass1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/BreakGlass1sah.tga
+	bumpmap textures/penthouse/BreakGlass1sah_normal.tga
+	specularmap textures/penthouse/BreakGlass1sah_spec.tga
 }
 
-textures/Penthouse/BreakGlass1tw
+textures/penthouse/BreakGlass1tw
 {
-	diffusemap textures/Penthouse/BreakGlass1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/BreakGlass1tw.tga
+	bumpmap textures/penthouse/BreakGlass1tw_normal.tga
+	specularmap textures/penthouse/BreakGlass1tw_spec.tga
 }
 
-textures/Penthouse/BWallpaper1
+textures/penthouse/BWallpaper1
 {
-	diffusemap textures/Penthouse/BWallpaper1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/BWallpaper1.tga
+	bumpmap textures/penthouse/BWallpaper1_normal.tga
+	specularmap textures/penthouse/BWallpaper1_spec.tga
 }
 
-textures/Penthouse/BWallpaper2
+textures/penthouse/BWallpaper2
 {
-	diffusemap textures/Penthouse/BWallpaper2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/BWallpaper2.tga
+	bumpmap textures/penthouse/BWallpaper2_normal.tga
+	specularmap textures/penthouse/BWallpaper2_spec.tga
 }
 
-textures/Penthouse/carpet1BBC
+textures/penthouse/carpet1BBC
 {
-	diffusemap textures/Penthouse/carpet1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/carpet1BBC.tga
+	bumpmap textures/penthouse/carpet1BBC_normal.tga
+	specularmap textures/penthouse/carpet1BBC_spec.tga
 }
 
-textures/Penthouse/carpet1CBC
+textures/penthouse/carpet1CBC
 {
-	diffusemap textures/Penthouse/carpet1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/carpet1CBC.tga
+	bumpmap textures/penthouse/carpet1CBC_normal.tga
+	specularmap textures/penthouse/carpet1CBC_spec.tga
 }
 
-textures/Penthouse/carpet1ctw
+textures/penthouse/carpet1ctw
 {
-	diffusemap textures/Penthouse/carpet1ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/carpet1ctw.tga
+	bumpmap textures/penthouse/carpet1ctw_normal.tga
+	specularmap textures/penthouse/carpet1ctw_spec.tga
 }
 
-textures/Penthouse/Carpet_runner1s
+textures/penthouse/Carpet_runner1s
 {
-	diffusemap textures/Penthouse/Carpet_runner1s.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/Carpet_runner1s.tga
+	bumpmap textures/penthouse/Carpet_runner1s_normal.tga
+	specularmap textures/penthouse/Carpet_runner1s_spec.tga
 }
 
-textures/Penthouse/casinowall16TW
+textures/penthouse/casinowall16TW
 {
-	diffusemap textures/Penthouse/casinowall16TW.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/casinowall16TW.tga
+	bumpmap textures/penthouse/casinowall16TW_normal.tga
+	specularmap textures/penthouse/casinowall16TW_spec.tga
 }
 
-textures/Penthouse/coatofarms1sah
+textures/penthouse/coatofarms1sah
 {
-	diffusemap textures/Penthouse/coatofarms1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/coatofarms1sah.tga
+	bumpmap textures/penthouse/coatofarms1sah_normal.tga
+	specularmap textures/penthouse/coatofarms1sah_spec.tga
 }
 
-textures/Penthouse/coins1RC
+textures/penthouse/coins1RC
 {
-	diffusemap textures/Penthouse/coins1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/coins1RC.tga
+	bumpmap textures/penthouse/coins1RC_normal.tga
+	specularmap textures/penthouse/coins1RC_spec.tga
 }
 
-textures/Penthouse/coolasshit1tw
+textures/penthouse/coolasshit1tw
 {
-	diffusemap textures/Penthouse/coolasshit1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/coolasshit1tw.tga
+	bumpmap textures/penthouse/coolasshit1tw_normal.tga
+	specularmap textures/penthouse/coolasshit1tw_spec.tga
 }
 
-textures/Penthouse/coolasshit2tw
+textures/penthouse/coolasshit2tw
 {
-	diffusemap textures/Penthouse/coolasshit2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/coolasshit2tw.tga
+	bumpmap textures/penthouse/coolasshit2tw_normal.tga
+	specularmap textures/penthouse/coolasshit2tw_spec.tga
 }
 
-textures/Penthouse/coolasshit3tw
+textures/penthouse/coolasshit3tw
 {
-	diffusemap textures/Penthouse/coolasshit3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/coolasshit3tw.tga
+	bumpmap textures/penthouse/coolasshit3tw_normal.tga
+	specularmap textures/penthouse/coolasshit3tw_spec.tga
 }
 
-textures/Penthouse/Creepers1sah
+textures/penthouse/Creepers1sah
 {
-	diffusemap textures/Penthouse/Creepers1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/Creepers1sah.tga
+	bumpmap textures/penthouse/Creepers1sah_normal.tga
+	specularmap textures/penthouse/Creepers1sah_spec.tga
 }
 
-textures/Penthouse/Creepers2sah
+textures/penthouse/Creepers2sah
 {
-	diffusemap textures/Penthouse/Creepers2sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/Creepers2sah.tga
+	bumpmap textures/penthouse/Creepers2sah_normal.tga
+	specularmap textures/penthouse/Creepers2sah_spec.tga
 }
 
-textures/Penthouse/Creepers3sah
+textures/penthouse/Creepers3sah
 {
-	diffusemap textures/Penthouse/Creepers3sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/Creepers3sah.tga
+	bumpmap textures/penthouse/Creepers3sah_normal.tga
+	specularmap textures/penthouse/Creepers3sah_spec.tga
 }
 
-textures/Penthouse/dcv_wallefx1BC
+textures/penthouse/dcv_wallefx1BC
 {
-	diffusemap textures/Penthouse/dcv_wallefx1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dcv_wallefx1BC.tga
+	bumpmap textures/penthouse/dcv_wallefx1BC_normal.tga
+	specularmap textures/penthouse/dcv_wallefx1BC_spec.tga
 }
 
-textures/Penthouse/dcv_wallefx3BC
+textures/penthouse/dcv_wallefx3BC
 {
-	diffusemap textures/Penthouse/dcv_wallefx3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dcv_wallefx3BC.tga
+	bumpmap textures/penthouse/dcv_wallefx3BC_normal.tga
+	specularmap textures/penthouse/dcv_wallefx3BC_spec.tga
 }
 
-textures/Penthouse/dcv_wallefx4BC
+textures/penthouse/dcv_wallefx4BC
 {
-	diffusemap textures/Penthouse/dcv_wallefx4BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dcv_wallefx4BC.tga
+	bumpmap textures/penthouse/dcv_wallefx4BC_normal.tga
+	specularmap textures/penthouse/dcv_wallefx4BC_spec.tga
 }
 
-textures/Penthouse/dcv_wallefx5BC
+textures/penthouse/dcv_wallefx5BC
 {
-	diffusemap textures/Penthouse/dcv_wallefx5BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dcv_wallefx5BC.tga
+	bumpmap textures/penthouse/dcv_wallefx5BC_normal.tga
+	specularmap textures/penthouse/dcv_wallefx5BC_spec.tga
 }
 
-textures/Penthouse/decampo2tw
+textures/penthouse/decampo2tw
 {
-	diffusemap textures/Penthouse/decampo2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/decampo2tw.tga
+	bumpmap textures/penthouse/decampo2tw_normal.tga
+	specularmap textures/penthouse/decampo2tw_spec.tga
 }
 
-textures/Penthouse/Decorwall1sah
+textures/penthouse/Decorwall1sah
 {
-	diffusemap textures/Penthouse/Decorwall1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/Decorwall1sah.tga
+	bumpmap textures/penthouse/Decorwall1sah_normal.tga
+	specularmap textures/penthouse/Decorwall1sah_spec.tga
 }
 
-textures/Penthouse/dstove2tw
+textures/penthouse/dstove2tw
 {
-	diffusemap textures/Penthouse/dstove2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dstove2tw.tga
+	bumpmap textures/penthouse/dstove2tw_normal.tga
+	specularmap textures/penthouse/dstove2tw_spec.tga
 }
 
-textures/Penthouse/dstove3tw
+textures/penthouse/dstove3tw
 {
-	diffusemap textures/Penthouse/dstove3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dstove3tw.tga
+	bumpmap textures/penthouse/dstove3tw_normal.tga
+	specularmap textures/penthouse/dstove3tw_spec.tga
 }
 
-textures/Penthouse/dstovetw
+textures/penthouse/dstovetw
 {
-	diffusemap textures/Penthouse/dstovetw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dstovetw.tga
+	bumpmap textures/penthouse/dstovetw_normal.tga
+	specularmap textures/penthouse/dstovetw_spec.tga
 }
 
-textures/Penthouse/duke3d1tw
+textures/penthouse/duke3d1tw
 {
-	diffusemap textures/Penthouse/duke3d1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/duke3d1tw.tga
+	bumpmap textures/penthouse/duke3d1tw_normal.tga
+	specularmap textures/penthouse/duke3d1tw_spec.tga
 }
 
-textures/Penthouse/duke3d2tw
+textures/penthouse/duke3d2tw
 {
-	diffusemap textures/Penthouse/duke3d2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/duke3d2tw.tga
+	bumpmap textures/penthouse/duke3d2tw_normal.tga
+	specularmap textures/penthouse/duke3d2tw_spec.tga
 }
 
-textures/Penthouse/duke3d3tw
+textures/penthouse/duke3d3tw
 {
-	diffusemap textures/Penthouse/duke3d3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/duke3d3tw.tga
+	bumpmap textures/penthouse/duke3d3tw_normal.tga
+	specularmap textures/penthouse/duke3d3tw_spec.tga
 }
 
-textures/Penthouse/duke3d5tw
+textures/penthouse/duke3d5tw
 {
-	diffusemap textures/Penthouse/duke3d5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/duke3d5tw.tga
+	bumpmap textures/penthouse/duke3d5tw_normal.tga
+	specularmap textures/penthouse/duke3d5tw_spec.tga
 }
 
-textures/Penthouse/duke3d6tw
+textures/penthouse/duke3d6tw
 {
-	diffusemap textures/Penthouse/duke3d6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/duke3d6tw.tga
+	bumpmap textures/penthouse/duke3d6tw_normal.tga
+	specularmap textures/penthouse/duke3d6tw_spec.tga
 }
 
-textures/Penthouse/duke3d7tw
+textures/penthouse/duke3d7tw
 {
-	diffusemap textures/Penthouse/duke3d7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/duke3d7tw.tga
+	bumpmap textures/penthouse/duke3d7tw_normal.tga
+	specularmap textures/penthouse/duke3d7tw_spec.tga
 }
 
-textures/Penthouse/duke3d8tw
+textures/penthouse/duke3d8tw
 {
-	diffusemap textures/Penthouse/duke3d8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/duke3d8tw.tga
+	bumpmap textures/penthouse/duke3d8tw_normal.tga
+	specularmap textures/penthouse/duke3d8tw_spec.tga
 }
 
-textures/Penthouse/dukecv_floor1AB
+textures/penthouse/dukecv_floor1AB
 {
-	diffusemap textures/Penthouse/dukecv_floor1AB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukecv_floor1AB.tga
+	bumpmap textures/penthouse/dukecv_floor1AB_normal.tga
+	specularmap textures/penthouse/dukecv_floor1AB_spec.tga
 }
 
-textures/Penthouse/dukecv_wall1BC
+textures/penthouse/dukecv_wall1BC
 {
-	diffusemap textures/Penthouse/dukecv_wall1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukecv_wall1BC.tga
+	bumpmap textures/penthouse/dukecv_wall1BC_normal.tga
+	specularmap textures/penthouse/dukecv_wall1BC_spec.tga
 }
 
-textures/Penthouse/dukecv_wall2BC
+textures/penthouse/dukecv_wall2BC
 {
-	diffusemap textures/Penthouse/dukecv_wall2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukecv_wall2BC.tga
+	bumpmap textures/penthouse/dukecv_wall2BC_normal.tga
+	specularmap textures/penthouse/dukecv_wall2BC_spec.tga
 }
 
-textures/Penthouse/dukecv_wall3BC
+textures/penthouse/dukecv_wall3BC
 {
-	diffusemap textures/Penthouse/dukecv_wall3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukecv_wall3BC.tga
+	bumpmap textures/penthouse/dukecv_wall3BC_normal.tga
+	specularmap textures/penthouse/dukecv_wall3BC_spec.tga
 }
 
-textures/Penthouse/dukecv_wall4BC
+textures/penthouse/dukecv_wall4BC
 {
-	diffusemap textures/Penthouse/dukecv_wall4BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukecv_wall4BC.tga
+	bumpmap textures/penthouse/dukecv_wall4BC_normal.tga
+	specularmap textures/penthouse/dukecv_wall4BC_spec.tga
 }
 
-textures/Penthouse/dukepainting1AB
+textures/penthouse/dukepainting1AB
 {
-	diffusemap textures/Penthouse/dukepainting1AB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukepainting1AB.tga
+	bumpmap textures/penthouse/dukepainting1AB_normal.tga
+	specularmap textures/penthouse/dukepainting1AB_spec.tga
 }
 
-textures/Penthouse/dukepainting1BB
+textures/penthouse/dukepainting1BB
 {
-	diffusemap textures/Penthouse/dukepainting1BB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukepainting1BB.tga
+	bumpmap textures/penthouse/dukepainting1BB_normal.tga
+	specularmap textures/penthouse/dukepainting1BB_spec.tga
 }
 
-textures/Penthouse/dukt3d4
+textures/penthouse/dukt3d4
 {
-	diffusemap textures/Penthouse/dukt3d4.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/dukt3d4.tga
+	bumpmap textures/penthouse/dukt3d4_normal.tga
+	specularmap textures/penthouse/dukt3d4_spec.tga
 }
 
-textures/Penthouse/floor_marble3sa
+textures/penthouse/floor_marble3sa
 {
-	diffusemap textures/Penthouse/floor_marble3sa.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/floor_marble3sa.tga
+	bumpmap textures/penthouse/floor_marble3sa_normal.tga
+	specularmap textures/penthouse/floor_marble3sa_spec.tga
 }
 
-textures/Penthouse/flrMarble1ABC
+textures/penthouse/flrMarble1ABC
 {
-	diffusemap textures/Penthouse/flrMarble1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/flrMarble1ABC.tga
+	bumpmap textures/penthouse/flrMarble1ABC_normal.tga
+	specularmap textures/penthouse/flrMarble1ABC_spec.tga
 }
 
-textures/Penthouse/fountainwater1R
+textures/penthouse/fountainwater1R
 {
-	diffusemap textures/Penthouse/fountainwater1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/fountainwater1R.tga
+	bumpmap textures/penthouse/fountainwater1R_normal.tga
+	specularmap textures/penthouse/fountainwater1R_spec.tga
 }
 
-textures/Penthouse/fountainwater2R
+textures/penthouse/fountainwater2R
 {
-	diffusemap textures/Penthouse/fountainwater2R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/fountainwater2R.tga
+	bumpmap textures/penthouse/fountainwater2R_normal.tga
+	specularmap textures/penthouse/fountainwater2R_spec.tga
 }
 
-textures/Penthouse/fountainwater3RC
+textures/penthouse/fountainwater3RC
 {
-	diffusemap textures/Penthouse/fountainwater3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/fountainwater3RC.tga
+	bumpmap textures/penthouse/fountainwater3RC_normal.tga
+	specularmap textures/penthouse/fountainwater3RC_spec.tga
 }
 
-textures/Penthouse/fountainwater4RC
+textures/penthouse/fountainwater4RC
 {
-	diffusemap textures/Penthouse/fountainwater4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/fountainwater4RC.tga
+	bumpmap textures/penthouse/fountainwater4RC_normal.tga
+	specularmap textures/penthouse/fountainwater4RC_spec.tga
 }
 
-textures/Penthouse/freezer01sah
+textures/penthouse/freezer01sah
 {
-	diffusemap textures/Penthouse/freezer01sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/freezer01sah.tga
+	bumpmap textures/penthouse/freezer01sah_normal.tga
+	specularmap textures/penthouse/freezer01sah_spec.tga
 }
 
-textures/Penthouse/freezer02sah
+textures/penthouse/freezer02sah
 {
-	diffusemap textures/Penthouse/freezer02sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/freezer02sah.tga
+	bumpmap textures/penthouse/freezer02sah_normal.tga
+	specularmap textures/penthouse/freezer02sah_spec.tga
 }
 
-textures/Penthouse/genglass1RC
+textures/penthouse/genglass1RC
 {
-	diffusemap textures/Penthouse/genglass1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/genglass1RC.tga
+	bumpmap textures/penthouse/genglass1RC_normal.tga
+	specularmap textures/penthouse/genglass1RC_spec.tga
 }
 
-textures/Penthouse/glass01sah
+textures/penthouse/glass01sah
 {
-	diffusemap textures/Penthouse/glass01sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/glass01sah.tga
+	bumpmap textures/penthouse/glass01sah_normal.tga
+	specularmap textures/penthouse/glass01sah_spec.tga
 }
 
-textures/Penthouse/glass_broken2sa
+textures/penthouse/glass_broken2sa
 {
-	diffusemap textures/Penthouse/glass_broken2sa.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/glass_broken2sa.tga
+	bumpmap textures/penthouse/glass_broken2sa_normal.tga
+	specularmap textures/penthouse/glass_broken2sa_spec.tga
 }
 
-textures/Penthouse/grag2tw
+textures/penthouse/grag2tw
 {
-	diffusemap textures/Penthouse/grag2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/grag2tw.tga
+	bumpmap textures/penthouse/grag2tw_normal.tga
+	specularmap textures/penthouse/grag2tw_spec.tga
 }
 
-textures/Penthouse/gragtw
+textures/penthouse/gragtw
 {
-	diffusemap textures/Penthouse/gragtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/gragtw.tga
+	bumpmap textures/penthouse/gragtw_normal.tga
+	specularmap textures/penthouse/gragtw_spec.tga
 }
 
-textures/Penthouse/gratelight1mskB
+textures/penthouse/gratelight1mskB
 {
-	diffusemap textures/Penthouse/gratelight1mskB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/gratelight1mskB.tga
+	bumpmap textures/penthouse/gratelight1mskB_normal.tga
+	specularmap textures/penthouse/gratelight1mskB_spec.tga
 }
 
-textures/Penthouse/gratelight_efx1
+textures/penthouse/gratelight_efx1
 {
-	diffusemap textures/Penthouse/gratelight_efx1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/gratelight_efx1.tga
+	bumpmap textures/penthouse/gratelight_efx1_normal.tga
+	specularmap textures/penthouse/gratelight_efx1_spec.tga
 }
 
-textures/Penthouse/gratelight_efx2
+textures/penthouse/gratelight_efx2
 {
-	diffusemap textures/Penthouse/gratelight_efx2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/gratelight_efx2.tga
+	bumpmap textures/penthouse/gratelight_efx2_normal.tga
+	specularmap textures/penthouse/gratelight_efx2_spec.tga
 }
 
-textures/Penthouse/hefduke2sah
+textures/penthouse/hefduke2sah
 {
-	diffusemap textures/Penthouse/hefduke2sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/hefduke2sah.tga
+	bumpmap textures/penthouse/hefduke2sah_normal.tga
+	specularmap textures/penthouse/hefduke2sah_spec.tga
 }
 
-textures/Penthouse/leathflo1atw
+textures/penthouse/leathflo1atw
 {
-	diffusemap textures/Penthouse/leathflo1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/leathflo1atw.tga
+	bumpmap textures/penthouse/leathflo1atw_normal.tga
+	specularmap textures/penthouse/leathflo1atw_spec.tga
 }
 
-textures/Penthouse/leathflo1tw
+textures/penthouse/leathflo1tw
 {
-	diffusemap textures/Penthouse/leathflo1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/leathflo1tw.tga
+	bumpmap textures/penthouse/leathflo1tw_normal.tga
+	specularmap textures/penthouse/leathflo1tw_spec.tga
 }
 
-textures/Penthouse/lensflare2RC
+textures/penthouse/lensflare2RC
 {
-	diffusemap textures/Penthouse/lensflare2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/lensflare2RC.tga
+	bumpmap textures/penthouse/lensflare2RC_normal.tga
+	specularmap textures/penthouse/lensflare2RC_spec.tga
 }
 
-textures/Penthouse/level_dukesym1B
+textures/penthouse/level_dukesym1B
 {
-	diffusemap textures/Penthouse/level_dukesym1B.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/level_dukesym1B.tga
+	bumpmap textures/penthouse/level_dukesym1B_normal.tga
+	specularmap textures/penthouse/level_dukesym1B_spec.tga
 }
 
-textures/Penthouse/level_dukesym2B
+textures/penthouse/level_dukesym2B
 {
-	diffusemap textures/Penthouse/level_dukesym2B.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/level_dukesym2B.tga
+	bumpmap textures/penthouse/level_dukesym2B_normal.tga
+	specularmap textures/penthouse/level_dukesym2B_spec.tga
 }
 
-textures/Penthouse/level_staytuned
+textures/penthouse/level_staytuned
 {
-	diffusemap textures/Penthouse/level_staytuned.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/level_staytuned.tga
+	bumpmap textures/penthouse/level_staytuned_normal.tga
+	specularmap textures/penthouse/level_staytuned_spec.tga
 }
 
-textures/Penthouse/Maskdecor1sah
+textures/penthouse/Maskdecor1sah
 {
-	diffusemap textures/Penthouse/Maskdecor1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/Maskdecor1sah.tga
+	bumpmap textures/penthouse/Maskdecor1sah_normal.tga
+	specularmap textures/penthouse/Maskdecor1sah_spec.tga
 }
 
-textures/Penthouse/maywf_2atw
+textures/penthouse/maywf_2atw
 {
-	diffusemap textures/Penthouse/maywf_2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_2atw.tga
+	bumpmap textures/penthouse/maywf_2atw_normal.tga
+	specularmap textures/penthouse/maywf_2atw_spec.tga
 }
 
-textures/Penthouse/maywf_4tw
+textures/penthouse/maywf_4tw
 {
-	diffusemap textures/Penthouse/maywf_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_4tw.tga
+	bumpmap textures/penthouse/maywf_4tw_normal.tga
+	specularmap textures/penthouse/maywf_4tw_spec.tga
 }
 
-textures/Penthouse/maywf_5atw
+textures/penthouse/maywf_5atw
 {
-	diffusemap textures/Penthouse/maywf_5atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_5atw.tga
+	bumpmap textures/penthouse/maywf_5atw_normal.tga
+	specularmap textures/penthouse/maywf_5atw_spec.tga
 }
 
-textures/Penthouse/maywf_5btw
+textures/penthouse/maywf_5btw
 {
-	diffusemap textures/Penthouse/maywf_5btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_5btw.tga
+	bumpmap textures/penthouse/maywf_5btw_normal.tga
+	specularmap textures/penthouse/maywf_5btw_spec.tga
 }
 
-textures/Penthouse/maywf_5etw
+textures/penthouse/maywf_5etw
 {
-	diffusemap textures/Penthouse/maywf_5etw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_5etw.tga
+	bumpmap textures/penthouse/maywf_5etw_normal.tga
+	specularmap textures/penthouse/maywf_5etw_spec.tga
 }
 
-textures/Penthouse/maywf_5tw
+textures/penthouse/maywf_5tw
 {
-	diffusemap textures/Penthouse/maywf_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_5tw.tga
+	bumpmap textures/penthouse/maywf_5tw_normal.tga
+	specularmap textures/penthouse/maywf_5tw_spec.tga
 }
 
-textures/Penthouse/maywf_6btw
+textures/penthouse/maywf_6btw
 {
-	diffusemap textures/Penthouse/maywf_6btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_6btw.tga
+	bumpmap textures/penthouse/maywf_6btw_normal.tga
+	specularmap textures/penthouse/maywf_6btw_spec.tga
 }
 
-textures/Penthouse/maywf_6ctw
+textures/penthouse/maywf_6ctw
 {
-	diffusemap textures/Penthouse/maywf_6ctw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_6ctw.tga
+	bumpmap textures/penthouse/maywf_6ctw_normal.tga
+	specularmap textures/penthouse/maywf_6ctw_spec.tga
 }
 
-textures/Penthouse/maywf_6tw
+textures/penthouse/maywf_6tw
 {
-	diffusemap textures/Penthouse/maywf_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/maywf_6tw.tga
+	bumpmap textures/penthouse/maywf_6tw_normal.tga
+	specularmap textures/penthouse/maywf_6tw_spec.tga
 }
 
-textures/Penthouse/palmshack1bRC
+textures/penthouse/palmshack1bRC
 {
-	diffusemap textures/Penthouse/palmshack1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/palmshack1bRC.tga
+	bumpmap textures/penthouse/palmshack1bRC_normal.tga
+	specularmap textures/penthouse/palmshack1bRC_spec.tga
 }
 
-textures/Penthouse/patflor1tw
+textures/penthouse/patflor1tw
 {
-	diffusemap textures/Penthouse/patflor1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/patflor1tw.tga
+	bumpmap textures/penthouse/patflor1tw_normal.tga
+	specularmap textures/penthouse/patflor1tw_spec.tga
 }
 
-textures/Penthouse/patio14tw
+textures/penthouse/patio14tw
 {
-	diffusemap textures/Penthouse/patio14tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/patio14tw.tga
+	bumpmap textures/penthouse/patio14tw_normal.tga
+	specularmap textures/penthouse/patio14tw_spec.tga
 }
 
-textures/Penthouse/pattile1atw
+textures/penthouse/pattile1atw
 {
-	diffusemap textures/Penthouse/pattile1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pattile1atw.tga
+	bumpmap textures/penthouse/pattile1atw_normal.tga
+	specularmap textures/penthouse/pattile1atw_spec.tga
 }
 
-textures/Penthouse/pattile2atw
+textures/penthouse/pattile2atw
 {
-	diffusemap textures/Penthouse/pattile2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pattile2atw.tga
+	bumpmap textures/penthouse/pattile2atw_normal.tga
+	specularmap textures/penthouse/pattile2atw_spec.tga
 }
 
-textures/Penthouse/pattile4atw
+textures/penthouse/pattile4atw
 {
-	diffusemap textures/Penthouse/pattile4atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pattile4atw.tga
+	bumpmap textures/penthouse/pattile4atw_normal.tga
+	specularmap textures/penthouse/pattile4atw_spec.tga
 }
 
-textures/Penthouse/penshrkflr1RC
+textures/penthouse/penshrkflr1RC
 {
-	diffusemap textures/Penthouse/penshrkflr1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penshrkflr1RC.tga
+	bumpmap textures/penthouse/penshrkflr1RC_normal.tga
+	specularmap textures/penthouse/penshrkflr1RC_spec.tga
 }
 
-textures/Penthouse/pentbedcurt3RC
+textures/penthouse/pentbedcurt3RC
 {
-	diffusemap textures/Penthouse/pentbedcurt3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbedcurt3RC.tga
+	bumpmap textures/penthouse/pentbedcurt3RC_normal.tga
+	specularmap textures/penthouse/pentbedcurt3RC_spec.tga
 }
 
-textures/Penthouse/pentbedcurt4RC
+textures/penthouse/pentbedcurt4RC
 {
-	diffusemap textures/Penthouse/pentbedcurt4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbedcurt4RC.tga
+	bumpmap textures/penthouse/pentbedcurt4RC_normal.tga
+	specularmap textures/penthouse/pentbedcurt4RC_spec.tga
 }
 
-textures/Penthouse/pentbedfireplcR
+textures/penthouse/pentbedfireplcR
 {
-	diffusemap textures/Penthouse/pentbedfireplcR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbedfireplcR.tga
+	bumpmap textures/penthouse/pentbedfireplcR_normal.tga
+	specularmap textures/penthouse/pentbedfireplcR_spec.tga
 }
 
-textures/Penthouse/pentbednuke1bRC
+textures/penthouse/pentbednuke1bRC
 {
-	diffusemap textures/Penthouse/pentbednuke1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbednuke1bRC.tga
+	bumpmap textures/penthouse/pentbednuke1bRC_normal.tga
+	specularmap textures/penthouse/pentbednuke1bRC_spec.tga
 }
 
-textures/Penthouse/pentbedrmarb1RC
+textures/penthouse/pentbedrmarb1RC
 {
-	diffusemap textures/Penthouse/pentbedrmarb1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbedrmarb1RC.tga
+	bumpmap textures/penthouse/pentbedrmarb1RC_normal.tga
+	specularmap textures/penthouse/pentbedrmarb1RC_spec.tga
 }
 
-textures/Penthouse/pentbedwood1RC
+textures/penthouse/pentbedwood1RC
 {
-	diffusemap textures/Penthouse/pentbedwood1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbedwood1RC.tga
+	bumpmap textures/penthouse/pentbedwood1RC_normal.tga
+	specularmap textures/penthouse/pentbedwood1RC_spec.tga
 }
 
-textures/Penthouse/pentbloodstn2RC
+textures/penthouse/pentbloodstn2RC
 {
-	diffusemap textures/Penthouse/pentbloodstn2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbloodstn2RC.tga
+	bumpmap textures/penthouse/pentbloodstn2RC_normal.tga
+	specularmap textures/penthouse/pentbloodstn2RC_spec.tga
 }
 
-textures/Penthouse/pentbooks1RC
+textures/penthouse/pentbooks1RC
 {
-	diffusemap textures/Penthouse/pentbooks1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbooks1RC.tga
+	bumpmap textures/penthouse/pentbooks1RC_normal.tga
+	specularmap textures/penthouse/pentbooks1RC_spec.tga
 }
 
-textures/Penthouse/pentbooks2RC
+textures/penthouse/pentbooks2RC
 {
-	diffusemap textures/Penthouse/pentbooks2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbooks2RC.tga
+	bumpmap textures/penthouse/pentbooks2RC_normal.tga
+	specularmap textures/penthouse/pentbooks2RC_spec.tga
 }
 
-textures/Penthouse/pentbuild1RC
+textures/penthouse/pentbuild1RC
 {
-	diffusemap textures/Penthouse/pentbuild1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentbuild1RC.tga
+	bumpmap textures/penthouse/pentbuild1RC_normal.tga
+	specularmap textures/penthouse/pentbuild1RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet13aRC
+textures/penthouse/pentcarpet13aRC
 {
-	diffusemap textures/Penthouse/pentcarpet13aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet13aRC.tga
+	bumpmap textures/penthouse/pentcarpet13aRC_normal.tga
+	specularmap textures/penthouse/pentcarpet13aRC_spec.tga
 }
 
-textures/Penthouse/pentcarpet13bRC
+textures/penthouse/pentcarpet13bRC
 {
-	diffusemap textures/Penthouse/pentcarpet13bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet13bRC.tga
+	bumpmap textures/penthouse/pentcarpet13bRC_normal.tga
+	specularmap textures/penthouse/pentcarpet13bRC_spec.tga
 }
 
-textures/Penthouse/pentcarpet14RC
+textures/penthouse/pentcarpet14RC
 {
-	diffusemap textures/Penthouse/pentcarpet14RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet14RC.tga
+	bumpmap textures/penthouse/pentcarpet14RC_normal.tga
+	specularmap textures/penthouse/pentcarpet14RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet15RC
+textures/penthouse/pentcarpet15RC
 {
-	diffusemap textures/Penthouse/pentcarpet15RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet15RC.tga
+	bumpmap textures/penthouse/pentcarpet15RC_normal.tga
+	specularmap textures/penthouse/pentcarpet15RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet16RC
+textures/penthouse/pentcarpet16RC
 {
-	diffusemap textures/Penthouse/pentcarpet16RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet16RC.tga
+	bumpmap textures/penthouse/pentcarpet16RC_normal.tga
+	specularmap textures/penthouse/pentcarpet16RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet17RC
+textures/penthouse/pentcarpet17RC
 {
-	diffusemap textures/Penthouse/pentcarpet17RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet17RC.tga
+	bumpmap textures/penthouse/pentcarpet17RC_normal.tga
+	specularmap textures/penthouse/pentcarpet17RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet19RC
+textures/penthouse/pentcarpet19RC
 {
-	diffusemap textures/Penthouse/pentcarpet19RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet19RC.tga
+	bumpmap textures/penthouse/pentcarpet19RC_normal.tga
+	specularmap textures/penthouse/pentcarpet19RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet21aRC
+textures/penthouse/pentcarpet21aRC
 {
-	diffusemap textures/Penthouse/pentcarpet21aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet21aRC.tga
+	bumpmap textures/penthouse/pentcarpet21aRC_normal.tga
+	specularmap textures/penthouse/pentcarpet21aRC_spec.tga
 }
 
-textures/Penthouse/pentcarpet4RC
+textures/penthouse/pentcarpet4RC
 {
-	diffusemap textures/Penthouse/pentcarpet4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet4RC.tga
+	bumpmap textures/penthouse/pentcarpet4RC_normal.tga
+	specularmap textures/penthouse/pentcarpet4RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet5RC
+textures/penthouse/pentcarpet5RC
 {
-	diffusemap textures/Penthouse/pentcarpet5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet5RC.tga
+	bumpmap textures/penthouse/pentcarpet5RC_normal.tga
+	specularmap textures/penthouse/pentcarpet5RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet6RC
+textures/penthouse/pentcarpet6RC
 {
-	diffusemap textures/Penthouse/pentcarpet6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet6RC.tga
+	bumpmap textures/penthouse/pentcarpet6RC_normal.tga
+	specularmap textures/penthouse/pentcarpet6RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet7RC
+textures/penthouse/pentcarpet7RC
 {
-	diffusemap textures/Penthouse/pentcarpet7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet7RC.tga
+	bumpmap textures/penthouse/pentcarpet7RC_normal.tga
+	specularmap textures/penthouse/pentcarpet7RC_spec.tga
 }
 
-textures/Penthouse/pentcarpet9RC
+textures/penthouse/pentcarpet9RC
 {
-	diffusemap textures/Penthouse/pentcarpet9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcarpet9RC.tga
+	bumpmap textures/penthouse/pentcarpet9RC_normal.tga
+	specularmap textures/penthouse/pentcarpet9RC_spec.tga
 }
 
-textures/Penthouse/pentceil1RC
+textures/penthouse/pentceil1RC
 {
-	diffusemap textures/Penthouse/pentceil1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentceil1RC.tga
+	bumpmap textures/penthouse/pentceil1RC_normal.tga
+	specularmap textures/penthouse/pentceil1RC_spec.tga
 }
 
-textures/Penthouse/pentceil2RC
+textures/penthouse/pentceil2RC
 {
-	diffusemap textures/Penthouse/pentceil2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentceil2RC.tga
+	bumpmap textures/penthouse/pentceil2RC_normal.tga
+	specularmap textures/penthouse/pentceil2RC_spec.tga
 }
 
-textures/Penthouse/pentceil3BC
+textures/penthouse/pentceil3BC
 {
-	diffusemap textures/Penthouse/pentceil3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentceil3BC.tga
+	bumpmap textures/penthouse/pentceil3BC_normal.tga
+	specularmap textures/penthouse/pentceil3BC_spec.tga
 }
 
-textures/Penthouse/pentceiling1RC
+textures/penthouse/pentceiling1RC
 {
-	diffusemap textures/Penthouse/pentceiling1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentceiling1RC.tga
+	bumpmap textures/penthouse/pentceiling1RC_normal.tga
+	specularmap textures/penthouse/pentceiling1RC_spec.tga
 }
 
-textures/Penthouse/pentceiling4ARC
+textures/penthouse/pentceiling4ARC
 {
-	diffusemap textures/Penthouse/pentceiling4ARC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentceiling4ARC.tga
+	bumpmap textures/penthouse/pentceiling4ARC_normal.tga
+	specularmap textures/penthouse/pentceiling4ARC_spec.tga
 }
 
-textures/Penthouse/pentceiling5RC
+textures/penthouse/pentceiling5RC
 {
-	diffusemap textures/Penthouse/pentceiling5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentceiling5RC.tga
+	bumpmap textures/penthouse/pentceiling5RC_normal.tga
+	specularmap textures/penthouse/pentceiling5RC_spec.tga
 }
 
-textures/Penthouse/pentceiling6RC
+textures/penthouse/pentceiling6RC
 {
-	diffusemap textures/Penthouse/pentceiling6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentceiling6RC.tga
+	bumpmap textures/penthouse/pentceiling6RC_normal.tga
+	specularmap textures/penthouse/pentceiling6RC_spec.tga
 }
 
-textures/Penthouse/pentcurtain1RC
+textures/penthouse/pentcurtain1RC
 {
-	diffusemap textures/Penthouse/pentcurtain1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentcurtain1RC.tga
+	bumpmap textures/penthouse/pentcurtain1RC_normal.tga
+	specularmap textures/penthouse/pentcurtain1RC_spec.tga
 }
 
-textures/Penthouse/pentdoor2RC
+textures/penthouse/pentdoor2RC
 {
-	diffusemap textures/Penthouse/pentdoor2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoor2RC.tga
+	bumpmap textures/penthouse/pentdoor2RC_normal.tga
+	specularmap textures/penthouse/pentdoor2RC_spec.tga
 }
 
-textures/Penthouse/pentdoorknob1aR
+textures/penthouse/pentdoorknob1aR
 {
-	diffusemap textures/Penthouse/pentdoorknob1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoorknob1aR.tga
+	bumpmap textures/penthouse/pentdoorknob1aR_normal.tga
+	specularmap textures/penthouse/pentdoorknob1aR_spec.tga
 }
 
-textures/Penthouse/pentdoorknob1bR
+textures/penthouse/pentdoorknob1bR
 {
-	diffusemap textures/Penthouse/pentdoorknob1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoorknob1bR.tga
+	bumpmap textures/penthouse/pentdoorknob1bR_normal.tga
+	specularmap textures/penthouse/pentdoorknob1bR_spec.tga
 }
 
-textures/Penthouse/pentdoormain2aR
+textures/penthouse/pentdoormain2aR
 {
-	diffusemap textures/Penthouse/pentdoormain2aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoormain2aR.tga
+	bumpmap textures/penthouse/pentdoormain2aR_normal.tga
+	specularmap textures/penthouse/pentdoormain2aR_spec.tga
 }
 
-textures/Penthouse/pentdoormain2cR
+textures/penthouse/pentdoormain2cR
 {
-	diffusemap textures/Penthouse/pentdoormain2cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoormain2cR.tga
+	bumpmap textures/penthouse/pentdoormain2cR_normal.tga
+	specularmap textures/penthouse/pentdoormain2cR_spec.tga
 }
 
-textures/Penthouse/pentdoormain2dR
+textures/penthouse/pentdoormain2dR
 {
-	diffusemap textures/Penthouse/pentdoormain2dR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoormain2dR.tga
+	bumpmap textures/penthouse/pentdoormain2dR_normal.tga
+	specularmap textures/penthouse/pentdoormain2dR_spec.tga
 }
 
-textures/Penthouse/pentdoormain2eR
+textures/penthouse/pentdoormain2eR
 {
-	diffusemap textures/Penthouse/pentdoormain2eR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoormain2eR.tga
+	bumpmap textures/penthouse/pentdoormain2eR_normal.tga
+	specularmap textures/penthouse/pentdoormain2eR_spec.tga
 }
 
-textures/Penthouse/pentdoormain2fR
+textures/penthouse/pentdoormain2fR
 {
-	diffusemap textures/Penthouse/pentdoormain2fR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoormain2fR.tga
+	bumpmap textures/penthouse/pentdoormain2fR_normal.tga
+	specularmap textures/penthouse/pentdoormain2fR_spec.tga
 }
 
-textures/Penthouse/pentdoormain2gR
+textures/penthouse/pentdoormain2gR
 {
-	diffusemap textures/Penthouse/pentdoormain2gR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoormain2gR.tga
+	bumpmap textures/penthouse/pentdoormain2gR_normal.tga
+	specularmap textures/penthouse/pentdoormain2gR_spec.tga
 }
 
-textures/Penthouse/pentdoortrim1RC
+textures/penthouse/pentdoortrim1RC
 {
-	diffusemap textures/Penthouse/pentdoortrim1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoortrim1RC.tga
+	bumpmap textures/penthouse/pentdoortrim1RC_normal.tga
+	specularmap textures/penthouse/pentdoortrim1RC_spec.tga
 }
 
-textures/Penthouse/pentdoortrim2RC
+textures/penthouse/pentdoortrim2RC
 {
-	diffusemap textures/Penthouse/pentdoortrim2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentdoortrim2RC.tga
+	bumpmap textures/penthouse/pentdoortrim2RC_normal.tga
+	specularmap textures/penthouse/pentdoortrim2RC_spec.tga
 }
 
-textures/Penthouse/pente1tw
+textures/penthouse/pente1tw
 {
-	diffusemap textures/Penthouse/pente1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pente1tw.tga
+	bumpmap textures/penthouse/pente1tw_normal.tga
+	specularmap textures/penthouse/pente1tw_spec.tga
 }
 
-textures/Penthouse/pentexconc1bRC
+textures/penthouse/pentexconc1bRC
 {
-	diffusemap textures/Penthouse/pentexconc1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentexconc1bRC.tga
+	bumpmap textures/penthouse/pentexconc1bRC_normal.tga
+	specularmap textures/penthouse/pentexconc1bRC_spec.tga
 }
 
-textures/Penthouse/pentexconc1cRC
+textures/penthouse/pentexconc1cRC
 {
-	diffusemap textures/Penthouse/pentexconc1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentexconc1cRC.tga
+	bumpmap textures/penthouse/pentexconc1cRC_normal.tga
+	specularmap textures/penthouse/pentexconc1cRC_spec.tga
 }
 
-textures/Penthouse/pentexnet1aRC
+textures/penthouse/pentexnet1aRC
 {
-	diffusemap textures/Penthouse/pentexnet1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentexnet1aRC.tga
+	bumpmap textures/penthouse/pentexnet1aRC_normal.tga
+	specularmap textures/penthouse/pentexnet1aRC_spec.tga
 }
 
-textures/Penthouse/pentexnet1bRC
+textures/penthouse/pentexnet1bRC
 {
-	diffusemap textures/Penthouse/pentexnet1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentexnet1bRC.tga
+	bumpmap textures/penthouse/pentexnet1bRC_normal.tga
+	specularmap textures/penthouse/pentexnet1bRC_spec.tga
 }
 
-textures/Penthouse/pentextbuild10R
+textures/penthouse/pentextbuild10R
 {
-	diffusemap textures/Penthouse/pentextbuild10R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild10R.tga
+	bumpmap textures/penthouse/pentextbuild10R_normal.tga
+	specularmap textures/penthouse/pentextbuild10R_spec.tga
 }
 
-textures/Penthouse/pentextbuild12R
+textures/penthouse/pentextbuild12R
 {
-	diffusemap textures/Penthouse/pentextbuild12R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild12R.tga
+	bumpmap textures/penthouse/pentextbuild12R_normal.tga
+	specularmap textures/penthouse/pentextbuild12R_spec.tga
 }
 
-textures/Penthouse/pentextbuild13R
+textures/penthouse/pentextbuild13R
 {
-	diffusemap textures/Penthouse/pentextbuild13R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild13R.tga
+	bumpmap textures/penthouse/pentextbuild13R_normal.tga
+	specularmap textures/penthouse/pentextbuild13R_spec.tga
 }
 
-textures/Penthouse/pentextbuild14a
+textures/penthouse/pentextbuild14a
 {
-	diffusemap textures/Penthouse/pentextbuild14a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild14a.tga
+	bumpmap textures/penthouse/pentextbuild14a_normal.tga
+	specularmap textures/penthouse/pentextbuild14a_spec.tga
 }
 
-textures/Penthouse/pentextbuild14b
+textures/penthouse/pentextbuild14b
 {
-	diffusemap textures/Penthouse/pentextbuild14b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild14b.tga
+	bumpmap textures/penthouse/pentextbuild14b_normal.tga
+	specularmap textures/penthouse/pentextbuild14b_spec.tga
 }
 
-textures/Penthouse/pentextbuild16R
+textures/penthouse/pentextbuild16R
 {
-	diffusemap textures/Penthouse/pentextbuild16R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild16R.tga
+	bumpmap textures/penthouse/pentextbuild16R_normal.tga
+	specularmap textures/penthouse/pentextbuild16R_spec.tga
 }
 
-textures/Penthouse/pentextbuild17R
+textures/penthouse/pentextbuild17R
 {
-	diffusemap textures/Penthouse/pentextbuild17R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild17R.tga
+	bumpmap textures/penthouse/pentextbuild17R_normal.tga
+	specularmap textures/penthouse/pentextbuild17R_spec.tga
 }
 
-textures/Penthouse/pentextbuild18R
+textures/penthouse/pentextbuild18R
 {
-	diffusemap textures/Penthouse/pentextbuild18R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild18R.tga
+	bumpmap textures/penthouse/pentextbuild18R_normal.tga
+	specularmap textures/penthouse/pentextbuild18R_spec.tga
 }
 
-textures/Penthouse/pentextbuild19R
+textures/penthouse/pentextbuild19R
 {
-	diffusemap textures/Penthouse/pentextbuild19R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild19R.tga
+	bumpmap textures/penthouse/pentextbuild19R_normal.tga
+	specularmap textures/penthouse/pentextbuild19R_spec.tga
 }
 
-textures/Penthouse/pentextbuild1RC
+textures/penthouse/pentextbuild1RC
 {
-	diffusemap textures/Penthouse/pentextbuild1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild1RC.tga
+	bumpmap textures/penthouse/pentextbuild1RC_normal.tga
+	specularmap textures/penthouse/pentextbuild1RC_spec.tga
 }
 
-textures/Penthouse/pentextbuild20R
+textures/penthouse/pentextbuild20R
 {
-	diffusemap textures/Penthouse/pentextbuild20R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild20R.tga
+	bumpmap textures/penthouse/pentextbuild20R_normal.tga
+	specularmap textures/penthouse/pentextbuild20R_spec.tga
 }
 
-textures/Penthouse/pentextbuild21R
+textures/penthouse/pentextbuild21R
 {
-	diffusemap textures/Penthouse/pentextbuild21R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild21R.tga
+	bumpmap textures/penthouse/pentextbuild21R_normal.tga
+	specularmap textures/penthouse/pentextbuild21R_spec.tga
 }
 
-textures/Penthouse/pentextbuild22R
+textures/penthouse/pentextbuild22R
 {
-	diffusemap textures/Penthouse/pentextbuild22R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild22R.tga
+	bumpmap textures/penthouse/pentextbuild22R_normal.tga
+	specularmap textures/penthouse/pentextbuild22R_spec.tga
 }
 
-textures/Penthouse/pentextbuild23R
+textures/penthouse/pentextbuild23R
 {
-	diffusemap textures/Penthouse/pentextbuild23R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild23R.tga
+	bumpmap textures/penthouse/pentextbuild23R_normal.tga
+	specularmap textures/penthouse/pentextbuild23R_spec.tga
 }
 
-textures/Penthouse/pentextbuild3RC
+textures/penthouse/pentextbuild3RC
 {
-	diffusemap textures/Penthouse/pentextbuild3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild3RC.tga
+	bumpmap textures/penthouse/pentextbuild3RC_normal.tga
+	specularmap textures/penthouse/pentextbuild3RC_spec.tga
 }
 
-textures/Penthouse/pentextbuild5RC
+textures/penthouse/pentextbuild5RC
 {
-	diffusemap textures/Penthouse/pentextbuild5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild5RC.tga
+	bumpmap textures/penthouse/pentextbuild5RC_normal.tga
+	specularmap textures/penthouse/pentextbuild5RC_spec.tga
 }
 
-textures/Penthouse/pentextbuild7RC
+textures/penthouse/pentextbuild7RC
 {
-	diffusemap textures/Penthouse/pentextbuild7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild7RC.tga
+	bumpmap textures/penthouse/pentextbuild7RC_normal.tga
+	specularmap textures/penthouse/pentextbuild7RC_spec.tga
 }
 
-textures/Penthouse/pentextbuild8RC
+textures/penthouse/pentextbuild8RC
 {
-	diffusemap textures/Penthouse/pentextbuild8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild8RC.tga
+	bumpmap textures/penthouse/pentextbuild8RC_normal.tga
+	specularmap textures/penthouse/pentextbuild8RC_spec.tga
 }
 
-textures/Penthouse/pentextbuild9RC
+textures/penthouse/pentextbuild9RC
 {
-	diffusemap textures/Penthouse/pentextbuild9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild9RC.tga
+	bumpmap textures/penthouse/pentextbuild9RC_normal.tga
+	specularmap textures/penthouse/pentextbuild9RC_spec.tga
 }
 
-textures/Penthouse/pentextbuild9tw
+textures/penthouse/pentextbuild9tw
 {
-	diffusemap textures/Penthouse/pentextbuild9tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuild9tw.tga
+	bumpmap textures/penthouse/pentextbuild9tw_normal.tga
+	specularmap textures/penthouse/pentextbuild9tw_spec.tga
 }
 
-textures/Penthouse/pentextbuildtw
+textures/penthouse/pentextbuildtw
 {
-	diffusemap textures/Penthouse/pentextbuildtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextbuildtw.tga
+	bumpmap textures/penthouse/pentextbuildtw_normal.tga
+	specularmap textures/penthouse/pentextbuildtw_spec.tga
 }
 
-textures/Penthouse/pentextgold1RC
+textures/penthouse/pentextgold1RC
 {
-	diffusemap textures/Penthouse/pentextgold1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentextgold1RC.tga
+	bumpmap textures/penthouse/pentextgold1RC_normal.tga
+	specularmap textures/penthouse/pentextgold1RC_spec.tga
 }
 
-textures/Penthouse/pentfelt1RC
+textures/penthouse/pentfelt1RC
 {
-	diffusemap textures/Penthouse/pentfelt1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfelt1RC.tga
+	bumpmap textures/penthouse/pentfelt1RC_normal.tga
+	specularmap textures/penthouse/pentfelt1RC_spec.tga
 }
 
-textures/Penthouse/pentfelt2RC
+textures/penthouse/pentfelt2RC
 {
-	diffusemap textures/Penthouse/pentfelt2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfelt2RC.tga
+	bumpmap textures/penthouse/pentfelt2RC_normal.tga
+	specularmap textures/penthouse/pentfelt2RC_spec.tga
 }
 
-textures/Penthouse/pentfelt3RC
+textures/penthouse/pentfelt3RC
 {
-	diffusemap textures/Penthouse/pentfelt3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfelt3RC.tga
+	bumpmap textures/penthouse/pentfelt3RC_normal.tga
+	specularmap textures/penthouse/pentfelt3RC_spec.tga
 }
 
-textures/Penthouse/pentfelt5RC
+textures/penthouse/pentfelt5RC
 {
-	diffusemap textures/Penthouse/pentfelt5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfelt5RC.tga
+	bumpmap textures/penthouse/pentfelt5RC_normal.tga
+	specularmap textures/penthouse/pentfelt5RC_spec.tga
 }
 
-textures/Penthouse/pentfirebrick1R
+textures/penthouse/pentfirebrick1R
 {
-	diffusemap textures/Penthouse/pentfirebrick1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfirebrick1R.tga
+	bumpmap textures/penthouse/pentfirebrick1R_normal.tga
+	specularmap textures/penthouse/pentfirebrick1R_spec.tga
 }
 
-textures/Penthouse/pentfireplace1a
+textures/penthouse/pentfireplace1a
 {
-	diffusemap textures/Penthouse/pentfireplace1a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfireplace1a.tga
+	bumpmap textures/penthouse/pentfireplace1a_normal.tga
+	specularmap textures/penthouse/pentfireplace1a_spec.tga
 }
 
-textures/Penthouse/pentfireplace1b
+textures/penthouse/pentfireplace1b
 {
-	diffusemap textures/Penthouse/pentfireplace1b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfireplace1b.tga
+	bumpmap textures/penthouse/pentfireplace1b_normal.tga
+	specularmap textures/penthouse/pentfireplace1b_spec.tga
 }
 
-textures/Penthouse/pentfireplace1c
+textures/penthouse/pentfireplace1c
 {
-	diffusemap textures/Penthouse/pentfireplace1c.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfireplace1c.tga
+	bumpmap textures/penthouse/pentfireplace1c_normal.tga
+	specularmap textures/penthouse/pentfireplace1c_spec.tga
 }
 
-textures/Penthouse/pentflrdrain1RC
+textures/penthouse/pentflrdrain1RC
 {
-	diffusemap textures/Penthouse/pentflrdrain1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentflrdrain1RC.tga
+	bumpmap textures/penthouse/pentflrdrain1RC_normal.tga
+	specularmap textures/penthouse/pentflrdrain1RC_spec.tga
 }
 
-textures/Penthouse/pentfurdres1aRC
+textures/penthouse/pentfurdres1aRC
 {
-	diffusemap textures/Penthouse/pentfurdres1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfurdres1aRC.tga
+	bumpmap textures/penthouse/pentfurdres1aRC_normal.tga
+	specularmap textures/penthouse/pentfurdres1aRC_spec.tga
 }
 
-textures/Penthouse/pentfurdres1bRC
+textures/penthouse/pentfurdres1bRC
 {
-	diffusemap textures/Penthouse/pentfurdres1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfurdres1bRC.tga
+	bumpmap textures/penthouse/pentfurdres1bRC_normal.tga
+	specularmap textures/penthouse/pentfurdres1bRC_spec.tga
 }
 
-textures/Penthouse/pentfurdres1dRC
+textures/penthouse/pentfurdres1dRC
 {
-	diffusemap textures/Penthouse/pentfurdres1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfurdres1dRC.tga
+	bumpmap textures/penthouse/pentfurdres1dRC_normal.tga
+	specularmap textures/penthouse/pentfurdres1dRC_spec.tga
 }
 
-textures/Penthouse/pentfurdres2aRC
+textures/penthouse/pentfurdres2aRC
 {
-	diffusemap textures/Penthouse/pentfurdres2aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfurdres2aRC.tga
+	bumpmap textures/penthouse/pentfurdres2aRC_normal.tga
+	specularmap textures/penthouse/pentfurdres2aRC_spec.tga
 }
 
-textures/Penthouse/pentfurdres2bRC
+textures/penthouse/pentfurdres2bRC
 {
-	diffusemap textures/Penthouse/pentfurdres2bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfurdres2bRC.tga
+	bumpmap textures/penthouse/pentfurdres2bRC_normal.tga
+	specularmap textures/penthouse/pentfurdres2bRC_spec.tga
 }
 
-textures/Penthouse/pentfurdres2cRC
+textures/penthouse/pentfurdres2cRC
 {
-	diffusemap textures/Penthouse/pentfurdres2cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfurdres2cRC.tga
+	bumpmap textures/penthouse/pentfurdres2cRC_normal.tga
+	specularmap textures/penthouse/pentfurdres2cRC_spec.tga
 }
 
-textures/Penthouse/pentfurdres2dRC
+textures/penthouse/pentfurdres2dRC
 {
-	diffusemap textures/Penthouse/pentfurdres2dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentfurdres2dRC.tga
+	bumpmap textures/penthouse/pentfurdres2dRC_normal.tga
+	specularmap textures/penthouse/pentfurdres2dRC_spec.tga
 }
 
-textures/Penthouse/pentglass4RC
+textures/penthouse/pentglass4RC
 {
-	diffusemap textures/Penthouse/pentglass4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentglass4RC.tga
+	bumpmap textures/penthouse/pentglass4RC_normal.tga
+	specularmap textures/penthouse/pentglass4RC_spec.tga
 }
 
-textures/Penthouse/pentglass6RC
+textures/penthouse/pentglass6RC
 {
-	diffusemap textures/Penthouse/pentglass6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentglass6RC.tga
+	bumpmap textures/penthouse/pentglass6RC_normal.tga
+	specularmap textures/penthouse/pentglass6RC_spec.tga
 }
 
-textures/Penthouse/pentglass9RC
+textures/penthouse/pentglass9RC
 {
-	diffusemap textures/Penthouse/pentglass9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentglass9RC.tga
+	bumpmap textures/penthouse/pentglass9RC_normal.tga
+	specularmap textures/penthouse/pentglass9RC_spec.tga
 }
 
-textures/Penthouse/pentgolddecor2R
+textures/penthouse/pentgolddecor2R
 {
-	diffusemap textures/Penthouse/pentgolddecor2R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentgolddecor2R.tga
+	bumpmap textures/penthouse/pentgolddecor2R_normal.tga
+	specularmap textures/penthouse/pentgolddecor2R_spec.tga
 }
 
-textures/Penthouse/pentgrate1RC
+textures/penthouse/pentgrate1RC
 {
-	diffusemap textures/Penthouse/pentgrate1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentgrate1RC.tga
+	bumpmap textures/penthouse/pentgrate1RC_normal.tga
+	specularmap textures/penthouse/pentgrate1RC_spec.tga
 }
 
-textures/Penthouse/pentice1RC
+textures/penthouse/pentice1RC
 {
-	diffusemap textures/Penthouse/pentice1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentice1RC.tga
+	bumpmap textures/penthouse/pentice1RC_normal.tga
+	specularmap textures/penthouse/pentice1RC_spec.tga
 }
 
-textures/Penthouse/penticemach1aRC
+textures/penthouse/penticemach1aRC
 {
-	diffusemap textures/Penthouse/penticemach1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penticemach1aRC.tga
+	bumpmap textures/penthouse/penticemach1aRC_normal.tga
+	specularmap textures/penthouse/penticemach1aRC_spec.tga
 }
 
-textures/Penthouse/penticemach1bRC
+textures/penthouse/penticemach1bRC
 {
-	diffusemap textures/Penthouse/penticemach1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penticemach1bRC.tga
+	bumpmap textures/penthouse/penticemach1bRC_normal.tga
+	specularmap textures/penthouse/penticemach1bRC_spec.tga
 }
 
-textures/Penthouse/penticemach1cRC
+textures/penthouse/penticemach1cRC
 {
-	diffusemap textures/Penthouse/penticemach1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penticemach1cRC.tga
+	bumpmap textures/penthouse/penticemach1cRC_normal.tga
+	specularmap textures/penthouse/penticemach1cRC_spec.tga
 }
 
-textures/Penthouse/penticemach1eRC
+textures/penthouse/penticemach1eRC
 {
-	diffusemap textures/Penthouse/penticemach1eRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penticemach1eRC.tga
+	bumpmap textures/penthouse/penticemach1eRC_normal.tga
+	specularmap textures/penthouse/penticemach1eRC_spec.tga
 }
 
-textures/Penthouse/penticemach1fRC
+textures/penthouse/penticemach1fRC
 {
-	diffusemap textures/Penthouse/penticemach1fRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penticemach1fRC.tga
+	bumpmap textures/penthouse/penticemach1fRC_normal.tga
+	specularmap textures/penthouse/penticemach1fRC_spec.tga
 }
 
-textures/Penthouse/pentjac1aRC
+textures/penthouse/pentjac1aRC
 {
-	diffusemap textures/Penthouse/pentjac1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentjac1aRC.tga
+	bumpmap textures/penthouse/pentjac1aRC_normal.tga
+	specularmap textures/penthouse/pentjac1aRC_spec.tga
 }
 
-textures/Penthouse/pentjac1dRC
+textures/penthouse/pentjac1dRC
 {
-	diffusemap textures/Penthouse/pentjac1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentjac1dRC.tga
+	bumpmap textures/penthouse/pentjac1dRC_normal.tga
+	specularmap textures/penthouse/pentjac1dRC_spec.tga
 }
 
-textures/Penthouse/pentjac1fRC
+textures/penthouse/pentjac1fRC
 {
-	diffusemap textures/Penthouse/pentjac1fRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentjac1fRC.tga
+	bumpmap textures/penthouse/pentjac1fRC_normal.tga
+	specularmap textures/penthouse/pentjac1fRC_spec.tga
 }
 
-textures/Penthouse/pentjac1gRC
+textures/penthouse/pentjac1gRC
 {
-	diffusemap textures/Penthouse/pentjac1gRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentjac1gRC.tga
+	bumpmap textures/penthouse/pentjac1gRC_normal.tga
+	specularmap textures/penthouse/pentjac1gRC_spec.tga
 }
 
-textures/Penthouse/pentjac1hRC
+textures/penthouse/pentjac1hRC
 {
-	diffusemap textures/Penthouse/pentjac1hRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentjac1hRC.tga
+	bumpmap textures/penthouse/pentjac1hRC_normal.tga
+	specularmap textures/penthouse/pentjac1hRC_spec.tga
 }
 
-textures/Penthouse/pentladder1aRC
+textures/penthouse/pentladder1aRC
 {
-	diffusemap textures/Penthouse/pentladder1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentladder1aRC.tga
+	bumpmap textures/penthouse/pentladder1aRC_normal.tga
+	specularmap textures/penthouse/pentladder1aRC_spec.tga
 }
 
-textures/Penthouse/pentladder2RC
+textures/penthouse/pentladder2RC
 {
-	diffusemap textures/Penthouse/pentladder2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentladder2RC.tga
+	bumpmap textures/penthouse/pentladder2RC_normal.tga
+	specularmap textures/penthouse/pentladder2RC_spec.tga
 }
 
-textures/Penthouse/pentladder3RC
+textures/penthouse/pentladder3RC
 {
-	diffusemap textures/Penthouse/pentladder3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentladder3RC.tga
+	bumpmap textures/penthouse/pentladder3RC_normal.tga
+	specularmap textures/penthouse/pentladder3RC_spec.tga
 }
 
-textures/Penthouse/pentladder4RC
+textures/penthouse/pentladder4RC
 {
-	diffusemap textures/Penthouse/pentladder4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentladder4RC.tga
+	bumpmap textures/penthouse/pentladder4RC_normal.tga
+	specularmap textures/penthouse/pentladder4RC_spec.tga
 }
 
-textures/Penthouse/pentlatch1RC
+textures/penthouse/pentlatch1RC
 {
-	diffusemap textures/Penthouse/pentlatch1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentlatch1RC.tga
+	bumpmap textures/penthouse/pentlatch1RC_normal.tga
+	specularmap textures/penthouse/pentlatch1RC_spec.tga
 }
 
-textures/Penthouse/pentleaves2RC
+textures/penthouse/pentleaves2RC
 {
-	diffusemap textures/Penthouse/pentleaves2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentleaves2RC.tga
+	bumpmap textures/penthouse/pentleaves2RC_normal.tga
+	specularmap textures/penthouse/pentleaves2RC_spec.tga
 }
 
-textures/Penthouse/pentlensflare1R
+textures/penthouse/pentlensflare1R
 {
-	diffusemap textures/Penthouse/pentlensflare1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentlensflare1R.tga
+	bumpmap textures/penthouse/pentlensflare1R_normal.tga
+	specularmap textures/penthouse/pentlensflare1R_spec.tga
 }
 
-textures/Penthouse/pentlibwall2RC
+textures/penthouse/pentlibwall2RC
 {
-	diffusemap textures/Penthouse/pentlibwall2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentlibwall2RC.tga
+	bumpmap textures/penthouse/pentlibwall2RC_normal.tga
+	specularmap textures/penthouse/pentlibwall2RC_spec.tga
 }
 
-textures/Penthouse/pentlight1RC
+textures/penthouse/pentlight1RC
 {
-	diffusemap textures/Penthouse/pentlight1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentlight1RC.tga
+	bumpmap textures/penthouse/pentlight1RC_normal.tga
+	specularmap textures/penthouse/pentlight1RC_spec.tga
 }
 
-textures/Penthouse/pentmarble1RC
+textures/penthouse/pentmarble1RC
 {
-	diffusemap textures/Penthouse/pentmarble1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarble1RC.tga
+	bumpmap textures/penthouse/pentmarble1RC_normal.tga
+	specularmap textures/penthouse/pentmarble1RC_spec.tga
 }
 
-textures/Penthouse/pentmarble2RC
+textures/penthouse/pentmarble2RC
 {
-	diffusemap textures/Penthouse/pentmarble2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarble2RC.tga
+	bumpmap textures/penthouse/pentmarble2RC_normal.tga
+	specularmap textures/penthouse/pentmarble2RC_spec.tga
 }
 
-textures/Penthouse/pentmarble3RC
+textures/penthouse/pentmarble3RC
 {
-	diffusemap textures/Penthouse/pentmarble3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarble3RC.tga
+	bumpmap textures/penthouse/pentmarble3RC_normal.tga
+	specularmap textures/penthouse/pentmarble3RC_spec.tga
 }
 
-textures/Penthouse/pentmarble4RC
+textures/penthouse/pentmarble4RC
 {
-	diffusemap textures/Penthouse/pentmarble4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarble4RC.tga
+	bumpmap textures/penthouse/pentmarble4RC_normal.tga
+	specularmap textures/penthouse/pentmarble4RC_spec.tga
 }
 
-textures/Penthouse/pentmarbleflr1R
+textures/penthouse/pentmarbleflr1R
 {
-	diffusemap textures/Penthouse/pentmarbleflr1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarbleflr1R.tga
+	bumpmap textures/penthouse/pentmarbleflr1R_normal.tga
+	specularmap textures/penthouse/pentmarbleflr1R_spec.tga
 }
 
-textures/Penthouse/pentmarbleflr2R
+textures/penthouse/pentmarbleflr2R
 {
-	diffusemap textures/Penthouse/pentmarbleflr2R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarbleflr2R.tga
+	bumpmap textures/penthouse/pentmarbleflr2R_normal.tga
+	specularmap textures/penthouse/pentmarbleflr2R_spec.tga
 }
 
-textures/Penthouse/pentmarstair1aR
+textures/penthouse/pentmarstair1aR
 {
-	diffusemap textures/Penthouse/pentmarstair1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarstair1aR.tga
+	bumpmap textures/penthouse/pentmarstair1aR_normal.tga
+	specularmap textures/penthouse/pentmarstair1aR_spec.tga
 }
 
-textures/Penthouse/pentmarstair1bR
+textures/penthouse/pentmarstair1bR
 {
-	diffusemap textures/Penthouse/pentmarstair1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmarstair1bR.tga
+	bumpmap textures/penthouse/pentmarstair1bR_normal.tga
+	specularmap textures/penthouse/pentmarstair1bR_spec.tga
 }
 
-textures/Penthouse/pentmedalionRC
+textures/penthouse/pentmedalionRC
 {
-	diffusemap textures/Penthouse/pentmedalionRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmedalionRC.tga
+	bumpmap textures/penthouse/pentmedalionRC_normal.tga
+	specularmap textures/penthouse/pentmedalionRC_spec.tga
 }
 
-textures/Penthouse/pentmtlshelf1aR
+textures/penthouse/pentmtlshelf1aR
 {
-	diffusemap textures/Penthouse/pentmtlshelf1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmtlshelf1aR.tga
+	bumpmap textures/penthouse/pentmtlshelf1aR_normal.tga
+	specularmap textures/penthouse/pentmtlshelf1aR_spec.tga
 }
 
-textures/Penthouse/pentmtlshelf1RC
+textures/penthouse/pentmtlshelf1RC
 {
-	diffusemap textures/Penthouse/pentmtlshelf1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmtlshelf1RC.tga
+	bumpmap textures/penthouse/pentmtlshelf1RC_normal.tga
+	specularmap textures/penthouse/pentmtlshelf1RC_spec.tga
 }
 
-textures/Penthouse/pentmtlshelf2RC
+textures/penthouse/pentmtlshelf2RC
 {
-	diffusemap textures/Penthouse/pentmtlshelf2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentmtlshelf2RC.tga
+	bumpmap textures/penthouse/pentmtlshelf2RC_normal.tga
+	specularmap textures/penthouse/pentmtlshelf2RC_spec.tga
 }
 
-textures/Penthouse/pentparch1RC
+textures/penthouse/pentparch1RC
 {
-	diffusemap textures/Penthouse/pentparch1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentparch1RC.tga
+	bumpmap textures/penthouse/pentparch1RC_normal.tga
+	specularmap textures/penthouse/pentparch1RC_spec.tga
 }
 
-textures/Penthouse/pentparchtrim1R
+textures/penthouse/pentparchtrim1R
 {
-	diffusemap textures/Penthouse/pentparchtrim1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentparchtrim1R.tga
+	bumpmap textures/penthouse/pentparchtrim1R_normal.tga
+	specularmap textures/penthouse/pentparchtrim1R_spec.tga
 }
 
-textures/Penthouse/pentpceiling1RC
+textures/penthouse/pentpceiling1RC
 {
-	diffusemap textures/Penthouse/pentpceiling1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpceiling1RC.tga
+	bumpmap textures/penthouse/pentpceiling1RC_normal.tga
+	specularmap textures/penthouse/pentpceiling1RC_spec.tga
 }
 
-textures/Penthouse/pentpcolumnbRC
+textures/penthouse/pentpcolumnbRC
 {
-	diffusemap textures/Penthouse/pentpcolumnbRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpcolumnbRC.tga
+	bumpmap textures/penthouse/pentpcolumnbRC_normal.tga
+	specularmap textures/penthouse/pentpcolumnbRC_spec.tga
 }
 
-textures/Penthouse/pentpcolumnRC
+textures/penthouse/pentpcolumnRC
 {
-	diffusemap textures/Penthouse/pentpcolumnRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpcolumnRC.tga
+	bumpmap textures/penthouse/pentpcolumnRC_normal.tga
+	specularmap textures/penthouse/pentpcolumnRC_spec.tga
 }
 
-textures/Penthouse/pentpgoldtrim1R
+textures/penthouse/pentpgoldtrim1R
 {
-	diffusemap textures/Penthouse/pentpgoldtrim1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpgoldtrim1R.tga
+	bumpmap textures/penthouse/pentpgoldtrim1R_normal.tga
+	specularmap textures/penthouse/pentpgoldtrim1R_spec.tga
 }
 
-textures/Penthouse/pentpictframe1R
+textures/penthouse/pentpictframe1R
 {
-	diffusemap textures/Penthouse/pentpictframe1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpictframe1R.tga
+	bumpmap textures/penthouse/pentpictframe1R_normal.tga
+	specularmap textures/penthouse/pentpictframe1R_spec.tga
 }
 
-textures/Penthouse/pentpicture1RC
+textures/penthouse/pentpicture1RC
 {
-	diffusemap textures/Penthouse/pentpicture1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpicture1RC.tga
+	bumpmap textures/penthouse/pentpicture1RC_normal.tga
+	specularmap textures/penthouse/pentpicture1RC_spec.tga
 }
 
-textures/Penthouse/pentpicture2RC
+textures/penthouse/pentpicture2RC
 {
-	diffusemap textures/Penthouse/pentpicture2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpicture2RC.tga
+	bumpmap textures/penthouse/pentpicture2RC_normal.tga
+	specularmap textures/penthouse/pentpicture2RC_spec.tga
 }
 
-textures/Penthouse/pentplaque1RC
+textures/penthouse/pentplaque1RC
 {
-	diffusemap textures/Penthouse/pentplaque1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentplaque1RC.tga
+	bumpmap textures/penthouse/pentplaque1RC_normal.tga
+	specularmap textures/penthouse/pentplaque1RC_spec.tga
 }
 
-textures/Penthouse/pentpmarble1RC
+textures/penthouse/pentpmarble1RC
 {
-	diffusemap textures/Penthouse/pentpmarble1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpmarble1RC.tga
+	bumpmap textures/penthouse/pentpmarble1RC_normal.tga
+	specularmap textures/penthouse/pentpmarble1RC_spec.tga
 }
 
-textures/Penthouse/pentpool1aRC
+textures/penthouse/pentpool1aRC
 {
-	diffusemap textures/Penthouse/pentpool1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool1aRC.tga
+	bumpmap textures/penthouse/pentpool1aRC_normal.tga
+	specularmap textures/penthouse/pentpool1aRC_spec.tga
 }
 
-textures/Penthouse/pentpool1dRC
+textures/penthouse/pentpool1dRC
 {
-	diffusemap textures/Penthouse/pentpool1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool1dRC.tga
+	bumpmap textures/penthouse/pentpool1dRC_normal.tga
+	specularmap textures/penthouse/pentpool1dRC_spec.tga
 }
 
-textures/Penthouse/pentpool1fRC
+textures/penthouse/pentpool1fRC
 {
-	diffusemap textures/Penthouse/pentpool1fRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool1fRC.tga
+	bumpmap textures/penthouse/pentpool1fRC_normal.tga
+	specularmap textures/penthouse/pentpool1fRC_spec.tga
 }
 
-textures/Penthouse/pentpool1gRC
+textures/penthouse/pentpool1gRC
 {
-	diffusemap textures/Penthouse/pentpool1gRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool1gRC.tga
+	bumpmap textures/penthouse/pentpool1gRC_normal.tga
+	specularmap textures/penthouse/pentpool1gRC_spec.tga
 }
 
-textures/Penthouse/pentpool1iRC
+textures/penthouse/pentpool1iRC
 {
-	diffusemap textures/Penthouse/pentpool1iRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool1iRC.tga
+	bumpmap textures/penthouse/pentpool1iRC_normal.tga
+	specularmap textures/penthouse/pentpool1iRC_spec.tga
 }
 
-textures/Penthouse/pentpool1kRC
+textures/penthouse/pentpool1kRC
 {
-	diffusemap textures/Penthouse/pentpool1kRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool1kRC.tga
+	bumpmap textures/penthouse/pentpool1kRC_normal.tga
+	specularmap textures/penthouse/pentpool1kRC_spec.tga
 }
 
-textures/Penthouse/pentpool1lRC
+textures/penthouse/pentpool1lRC
 {
-	diffusemap textures/Penthouse/pentpool1lRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool1lRC.tga
+	bumpmap textures/penthouse/pentpool1lRC_normal.tga
+	specularmap textures/penthouse/pentpool1lRC_spec.tga
 }
 
-textures/Penthouse/pentpool2bRC
+textures/penthouse/pentpool2bRC
 {
-	diffusemap textures/Penthouse/pentpool2bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool2bRC.tga
+	bumpmap textures/penthouse/pentpool2bRC_normal.tga
+	specularmap textures/penthouse/pentpool2bRC_spec.tga
 }
 
-textures/Penthouse/pentpool2cRC
+textures/penthouse/pentpool2cRC
 {
-	diffusemap textures/Penthouse/pentpool2cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpool2cRC.tga
+	bumpmap textures/penthouse/pentpool2cRC_normal.tga
+	specularmap textures/penthouse/pentpool2cRC_spec.tga
 }
 
-textures/Penthouse/pentpooltable1R
+textures/penthouse/pentpooltable1R
 {
-	diffusemap textures/Penthouse/pentpooltable1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpooltable1R.tga
+	bumpmap textures/penthouse/pentpooltable1R_normal.tga
+	specularmap textures/penthouse/pentpooltable1R_spec.tga
 }
 
-textures/Penthouse/pentpooltable3R
+textures/penthouse/pentpooltable3R
 {
-	diffusemap textures/Penthouse/pentpooltable3R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpooltable3R.tga
+	bumpmap textures/penthouse/pentpooltable3R_normal.tga
+	specularmap textures/penthouse/pentpooltable3R_spec.tga
 }
 
-textures/Penthouse/pentpreflect2RC
+textures/penthouse/pentpreflect2RC
 {
-	diffusemap textures/Penthouse/pentpreflect2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpreflect2RC.tga
+	bumpmap textures/penthouse/pentpreflect2RC_normal.tga
+	specularmap textures/penthouse/pentpreflect2RC_spec.tga
 }
 
-textures/Penthouse/pentpreflectRC
+textures/penthouse/pentpreflectRC
 {
-	diffusemap textures/Penthouse/pentpreflectRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpreflectRC.tga
+	bumpmap textures/penthouse/pentpreflectRC_normal.tga
+	specularmap textures/penthouse/pentpreflectRC_spec.tga
 }
 
-textures/Penthouse/pentpwall1RC
+textures/penthouse/pentpwall1RC
 {
-	diffusemap textures/Penthouse/pentpwall1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpwall1RC.tga
+	bumpmap textures/penthouse/pentpwall1RC_normal.tga
+	specularmap textures/penthouse/pentpwall1RC_spec.tga
 }
 
-textures/Penthouse/pentpwallbot1RC
+textures/penthouse/pentpwallbot1RC
 {
-	diffusemap textures/Penthouse/pentpwallbot1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpwallbot1RC.tga
+	bumpmap textures/penthouse/pentpwallbot1RC_normal.tga
+	specularmap textures/penthouse/pentpwallbot1RC_spec.tga
 }
 
-textures/Penthouse/pentpwalltop1RC
+textures/penthouse/pentpwalltop1RC
 {
-	diffusemap textures/Penthouse/pentpwalltop1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpwalltop1RC.tga
+	bumpmap textures/penthouse/pentpwalltop1RC_normal.tga
+	specularmap textures/penthouse/pentpwalltop1RC_spec.tga
 }
 
-textures/Penthouse/pentpwalltop2RC
+textures/penthouse/pentpwalltop2RC
 {
-	diffusemap textures/Penthouse/pentpwalltop2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpwalltop2RC.tga
+	bumpmap textures/penthouse/pentpwalltop2RC_normal.tga
+	specularmap textures/penthouse/pentpwalltop2RC_spec.tga
 }
 
-textures/Penthouse/pentpwalltrim1R
+textures/penthouse/pentpwalltrim1R
 {
-	diffusemap textures/Penthouse/pentpwalltrim1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentpwalltrim1R.tga
+	bumpmap textures/penthouse/pentpwalltrim1R_normal.tga
+	specularmap textures/penthouse/pentpwalltrim1R_spec.tga
 }
 
-textures/Penthouse/pentrgravel1RC
+textures/penthouse/pentrgravel1RC
 {
-	diffusemap textures/Penthouse/pentrgravel1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentrgravel1RC.tga
+	bumpmap textures/penthouse/pentrgravel1RC_normal.tga
+	specularmap textures/penthouse/pentrgravel1RC_spec.tga
 }
 
-textures/Penthouse/pentrgravel2RC
+textures/penthouse/pentrgravel2RC
 {
-	diffusemap textures/Penthouse/pentrgravel2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentrgravel2RC.tga
+	bumpmap textures/penthouse/pentrgravel2RC_normal.tga
+	specularmap textures/penthouse/pentrgravel2RC_spec.tga
 }
 
-textures/Penthouse/pentripple1RC
+textures/penthouse/pentripple1RC
 {
-	diffusemap textures/Penthouse/pentripple1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentripple1RC.tga
+	bumpmap textures/penthouse/pentripple1RC_normal.tga
+	specularmap textures/penthouse/pentripple1RC_spec.tga
 }
 
-textures/Penthouse/pentroof1RC
+textures/penthouse/pentroof1RC
 {
-	diffusemap textures/Penthouse/pentroof1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentroof1RC.tga
+	bumpmap textures/penthouse/pentroof1RC_normal.tga
+	specularmap textures/penthouse/pentroof1RC_spec.tga
 }
 
-textures/Penthouse/pentshelf1RC
+textures/penthouse/pentshelf1RC
 {
-	diffusemap textures/Penthouse/pentshelf1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentshelf1RC.tga
+	bumpmap textures/penthouse/pentshelf1RC_normal.tga
+	specularmap textures/penthouse/pentshelf1RC_spec.tga
 }
 
-textures/Penthouse/pentshelf2RC
+textures/penthouse/pentshelf2RC
 {
-	diffusemap textures/Penthouse/pentshelf2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentshelf2RC.tga
+	bumpmap textures/penthouse/pentshelf2RC_normal.tga
+	specularmap textures/penthouse/pentshelf2RC_spec.tga
 }
 
-textures/Penthouse/pentsoda10RC
+textures/penthouse/pentsoda10RC
 {
-	diffusemap textures/Penthouse/pentsoda10RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda10RC.tga
+	bumpmap textures/penthouse/pentsoda10RC_normal.tga
+	specularmap textures/penthouse/pentsoda10RC_spec.tga
 }
 
-textures/Penthouse/pentsoda1bRC
+textures/penthouse/pentsoda1bRC
 {
-	diffusemap textures/Penthouse/pentsoda1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda1bRC.tga
+	bumpmap textures/penthouse/pentsoda1bRC_normal.tga
+	specularmap textures/penthouse/pentsoda1bRC_spec.tga
 }
 
-textures/Penthouse/pentsoda1cRC
+textures/penthouse/pentsoda1cRC
 {
-	diffusemap textures/Penthouse/pentsoda1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda1cRC.tga
+	bumpmap textures/penthouse/pentsoda1cRC_normal.tga
+	specularmap textures/penthouse/pentsoda1cRC_spec.tga
 }
 
-textures/Penthouse/pentsoda1dRC
+textures/penthouse/pentsoda1dRC
 {
-	diffusemap textures/Penthouse/pentsoda1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda1dRC.tga
+	bumpmap textures/penthouse/pentsoda1dRC_normal.tga
+	specularmap textures/penthouse/pentsoda1dRC_spec.tga
 }
 
-textures/Penthouse/pentsoda2RC
+textures/penthouse/pentsoda2RC
 {
-	diffusemap textures/Penthouse/pentsoda2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda2RC.tga
+	bumpmap textures/penthouse/pentsoda2RC_normal.tga
+	specularmap textures/penthouse/pentsoda2RC_spec.tga
 }
 
-textures/Penthouse/pentsoda3RC
+textures/penthouse/pentsoda3RC
 {
-	diffusemap textures/Penthouse/pentsoda3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda3RC.tga
+	bumpmap textures/penthouse/pentsoda3RC_normal.tga
+	specularmap textures/penthouse/pentsoda3RC_spec.tga
 }
 
-textures/Penthouse/pentsoda4RC
+textures/penthouse/pentsoda4RC
 {
-	diffusemap textures/Penthouse/pentsoda4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda4RC.tga
+	bumpmap textures/penthouse/pentsoda4RC_normal.tga
+	specularmap textures/penthouse/pentsoda4RC_spec.tga
 }
 
-textures/Penthouse/pentsoda5RC
+textures/penthouse/pentsoda5RC
 {
-	diffusemap textures/Penthouse/pentsoda5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda5RC.tga
+	bumpmap textures/penthouse/pentsoda5RC_normal.tga
+	specularmap textures/penthouse/pentsoda5RC_spec.tga
 }
 
-textures/Penthouse/pentsoda6RC
+textures/penthouse/pentsoda6RC
 {
-	diffusemap textures/Penthouse/pentsoda6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda6RC.tga
+	bumpmap textures/penthouse/pentsoda6RC_normal.tga
+	specularmap textures/penthouse/pentsoda6RC_spec.tga
 }
 
-textures/Penthouse/pentsoda7RC
+textures/penthouse/pentsoda7RC
 {
-	diffusemap textures/Penthouse/pentsoda7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda7RC.tga
+	bumpmap textures/penthouse/pentsoda7RC_normal.tga
+	specularmap textures/penthouse/pentsoda7RC_spec.tga
 }
 
-textures/Penthouse/pentsoda8RC
+textures/penthouse/pentsoda8RC
 {
-	diffusemap textures/Penthouse/pentsoda8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda8RC.tga
+	bumpmap textures/penthouse/pentsoda8RC_normal.tga
+	specularmap textures/penthouse/pentsoda8RC_spec.tga
 }
 
-textures/Penthouse/pentsoda9RC
+textures/penthouse/pentsoda9RC
 {
-	diffusemap textures/Penthouse/pentsoda9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentsoda9RC.tga
+	bumpmap textures/penthouse/pentsoda9RC_normal.tga
+	specularmap textures/penthouse/pentsoda9RC_spec.tga
 }
 
-textures/Penthouse/pentstair1RC
+textures/penthouse/pentstair1RC
 {
-	diffusemap textures/Penthouse/pentstair1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentstair1RC.tga
+	bumpmap textures/penthouse/pentstair1RC_normal.tga
+	specularmap textures/penthouse/pentstair1RC_spec.tga
 }
 
-textures/Penthouse/penttrim10RC
+textures/penthouse/penttrim10RC
 {
-	diffusemap textures/Penthouse/penttrim10RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penttrim10RC.tga
+	bumpmap textures/penthouse/penttrim10RC_normal.tga
+	specularmap textures/penthouse/penttrim10RC_spec.tga
 }
 
-textures/Penthouse/penttrim2RC
+textures/penthouse/penttrim2RC
 {
-	diffusemap textures/Penthouse/penttrim2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penttrim2RC.tga
+	bumpmap textures/penthouse/penttrim2RC_normal.tga
+	specularmap textures/penthouse/penttrim2RC_spec.tga
 }
 
-textures/Penthouse/penttrim3RC
+textures/penthouse/penttrim3RC
 {
-	diffusemap textures/Penthouse/penttrim3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penttrim3RC.tga
+	bumpmap textures/penthouse/penttrim3RC_normal.tga
+	specularmap textures/penthouse/penttrim3RC_spec.tga
 }
 
-textures/Penthouse/penttrim7RC
+textures/penthouse/penttrim7RC
 {
-	diffusemap textures/Penthouse/penttrim7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penttrim7RC.tga
+	bumpmap textures/penthouse/penttrim7RC_normal.tga
+	specularmap textures/penthouse/penttrim7RC_spec.tga
 }
 
-textures/Penthouse/penttrim8RC
+textures/penthouse/penttrim8RC
 {
-	diffusemap textures/Penthouse/penttrim8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penttrim8RC.tga
+	bumpmap textures/penthouse/penttrim8RC_normal.tga
+	specularmap textures/penthouse/penttrim8RC_spec.tga
 }
 
-textures/Penthouse/penttrim9aRC
+textures/penthouse/penttrim9aRC
 {
-	diffusemap textures/Penthouse/penttrim9aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/penttrim9aRC.tga
+	bumpmap textures/penthouse/penttrim9aRC_normal.tga
+	specularmap textures/penthouse/penttrim9aRC_spec.tga
 }
 
-textures/Penthouse/pentwall1RC
+textures/penthouse/pentwall1RC
 {
-	diffusemap textures/Penthouse/pentwall1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwall1RC.tga
+	bumpmap textures/penthouse/pentwall1RC_normal.tga
+	specularmap textures/penthouse/pentwall1RC_spec.tga
 }
 
-textures/Penthouse/pentwall2RC
+textures/penthouse/pentwall2RC
 {
-	diffusemap textures/Penthouse/pentwall2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwall2RC.tga
+	bumpmap textures/penthouse/pentwall2RC_normal.tga
+	specularmap textures/penthouse/pentwall2RC_spec.tga
 }
 
-textures/Penthouse/pentwall3RC
+textures/penthouse/pentwall3RC
 {
-	diffusemap textures/Penthouse/pentwall3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwall3RC.tga
+	bumpmap textures/penthouse/pentwall3RC_normal.tga
+	specularmap textures/penthouse/pentwall3RC_spec.tga
 }
 
-textures/Penthouse/pentwallpaper1R
+textures/penthouse/pentwallpaper1R
 {
-	diffusemap textures/Penthouse/pentwallpaper1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwallpaper1R.tga
+	bumpmap textures/penthouse/pentwallpaper1R_normal.tga
+	specularmap textures/penthouse/pentwallpaper1R_spec.tga
 }
 
-textures/Penthouse/pentwo1tw
+textures/penthouse/pentwo1tw
 {
-	diffusemap textures/Penthouse/pentwo1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwo1tw.tga
+	bumpmap textures/penthouse/pentwo1tw_normal.tga
+	specularmap textures/penthouse/pentwo1tw_spec.tga
 }
 
-textures/Penthouse/pentwo2atw
+textures/penthouse/pentwo2atw
 {
-	diffusemap textures/Penthouse/pentwo2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwo2atw.tga
+	bumpmap textures/penthouse/pentwo2atw_normal.tga
+	specularmap textures/penthouse/pentwo2atw_spec.tga
 }
 
-textures/Penthouse/pentwo2btw
+textures/penthouse/pentwo2btw
 {
-	diffusemap textures/Penthouse/pentwo2btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwo2btw.tga
+	bumpmap textures/penthouse/pentwo2btw_normal.tga
+	specularmap textures/penthouse/pentwo2btw_spec.tga
 }
 
-textures/Penthouse/pentwo2tw
+textures/penthouse/pentwo2tw
 {
-	diffusemap textures/Penthouse/pentwo2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwo2tw.tga
+	bumpmap textures/penthouse/pentwo2tw_normal.tga
+	specularmap textures/penthouse/pentwo2tw_spec.tga
 }
 
-textures/Penthouse/pentwo3tw
+textures/penthouse/pentwo3tw
 {
-	diffusemap textures/Penthouse/pentwo3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwo3tw.tga
+	bumpmap textures/penthouse/pentwo3tw_normal.tga
+	specularmap textures/penthouse/pentwo3tw_spec.tga
 }
 
-textures/Penthouse/pentwo5tw
+textures/penthouse/pentwo5tw
 {
-	diffusemap textures/Penthouse/pentwo5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwo5tw.tga
+	bumpmap textures/penthouse/pentwo5tw_normal.tga
+	specularmap textures/penthouse/pentwo5tw_spec.tga
 }
 
-textures/Penthouse/pentwo9tw
+textures/penthouse/pentwo9tw
 {
-	diffusemap textures/Penthouse/pentwo9tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwo9tw.tga
+	bumpmap textures/penthouse/pentwo9tw_normal.tga
+	specularmap textures/penthouse/pentwo9tw_spec.tga
 }
 
-textures/Penthouse/pentwood1RC
+textures/penthouse/pentwood1RC
 {
-	diffusemap textures/Penthouse/pentwood1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood1RC.tga
+	bumpmap textures/penthouse/pentwood1RC_normal.tga
+	specularmap textures/penthouse/pentwood1RC_spec.tga
 }
 
-textures/Penthouse/pentwood2RC
+textures/penthouse/pentwood2RC
 {
-	diffusemap textures/Penthouse/pentwood2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood2RC.tga
+	bumpmap textures/penthouse/pentwood2RC_normal.tga
+	specularmap textures/penthouse/pentwood2RC_spec.tga
 }
 
-textures/Penthouse/pentwood3RC
+textures/penthouse/pentwood3RC
 {
-	diffusemap textures/Penthouse/pentwood3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood3RC.tga
+	bumpmap textures/penthouse/pentwood3RC_normal.tga
+	specularmap textures/penthouse/pentwood3RC_spec.tga
 }
 
-textures/Penthouse/pentwood3tw
+textures/penthouse/pentwood3tw
 {
-	diffusemap textures/Penthouse/pentwood3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood3tw.tga
+	bumpmap textures/penthouse/pentwood3tw_normal.tga
+	specularmap textures/penthouse/pentwood3tw_spec.tga
 }
 
-textures/Penthouse/pentwood4RC
+textures/penthouse/pentwood4RC
 {
-	diffusemap textures/Penthouse/pentwood4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood4RC.tga
+	bumpmap textures/penthouse/pentwood4RC_normal.tga
+	specularmap textures/penthouse/pentwood4RC_spec.tga
 }
 
-textures/Penthouse/pentwood5RC
+textures/penthouse/pentwood5RC
 {
-	diffusemap textures/Penthouse/pentwood5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood5RC.tga
+	bumpmap textures/penthouse/pentwood5RC_normal.tga
+	specularmap textures/penthouse/pentwood5RC_spec.tga
 }
 
-textures/Penthouse/pentwood6RC
+textures/penthouse/pentwood6RC
 {
-	diffusemap textures/Penthouse/pentwood6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood6RC.tga
+	bumpmap textures/penthouse/pentwood6RC_normal.tga
+	specularmap textures/penthouse/pentwood6RC_spec.tga
 }
 
-textures/Penthouse/pentwood6tw
+textures/penthouse/pentwood6tw
 {
-	diffusemap textures/Penthouse/pentwood6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood6tw.tga
+	bumpmap textures/penthouse/pentwood6tw_normal.tga
+	specularmap textures/penthouse/pentwood6tw_spec.tga
 }
 
-textures/Penthouse/pentwood7RC
+textures/penthouse/pentwood7RC
 {
-	diffusemap textures/Penthouse/pentwood7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwood7RC.tga
+	bumpmap textures/penthouse/pentwood7RC_normal.tga
+	specularmap textures/penthouse/pentwood7RC_spec.tga
 }
 
-textures/Penthouse/pentwooddecor3a
+textures/penthouse/pentwooddecor3a
 {
-	diffusemap textures/Penthouse/pentwooddecor3a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwooddecor3a.tga
+	bumpmap textures/penthouse/pentwooddecor3a_normal.tga
+	specularmap textures/penthouse/pentwooddecor3a_spec.tga
 }
 
-textures/Penthouse/pentwooddecor3b
+textures/penthouse/pentwooddecor3b
 {
-	diffusemap textures/Penthouse/pentwooddecor3b.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwooddecor3b.tga
+	bumpmap textures/penthouse/pentwooddecor3b_normal.tga
+	specularmap textures/penthouse/pentwooddecor3b_spec.tga
 }
 
-textures/Penthouse/pentwooddecor4R
+textures/penthouse/pentwooddecor4R
 {
-	diffusemap textures/Penthouse/pentwooddecor4R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/pentwooddecor4R.tga
+	bumpmap textures/penthouse/pentwooddecor4R_normal.tga
+	specularmap textures/penthouse/pentwooddecor4R_spec.tga
 }
 
-textures/Penthouse/phouseblocks1AB
+textures/penthouse/phouseblocks1AB
 {
-	diffusemap textures/Penthouse/phouseblocks1AB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phouseblocks1AB.tga
+	bumpmap textures/penthouse/phouseblocks1AB_normal.tga
+	specularmap textures/penthouse/phouseblocks1AB_spec.tga
 }
 
-textures/Penthouse/phouseblocks1CB
+textures/penthouse/phouseblocks1CB
 {
-	diffusemap textures/Penthouse/phouseblocks1CB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phouseblocks1CB.tga
+	bumpmap textures/penthouse/phouseblocks1CB_normal.tga
+	specularmap textures/penthouse/phouseblocks1CB_spec.tga
 }
 
-textures/Penthouse/phouseblocks1EB
+textures/penthouse/phouseblocks1EB
 {
-	diffusemap textures/Penthouse/phouseblocks1EB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phouseblocks1EB.tga
+	bumpmap textures/penthouse/phouseblocks1EB_normal.tga
+	specularmap textures/penthouse/phouseblocks1EB_spec.tga
 }
 
-textures/Penthouse/phousewall1ABC
+textures/penthouse/phousewall1ABC
 {
-	diffusemap textures/Penthouse/phousewall1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall1ABC.tga
+	bumpmap textures/penthouse/phousewall1ABC_normal.tga
+	specularmap textures/penthouse/phousewall1ABC_spec.tga
 }
 
-textures/Penthouse/phousewall1FBC
+textures/penthouse/phousewall1FBC
 {
-	diffusemap textures/Penthouse/phousewall1FBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall1FBC.tga
+	bumpmap textures/penthouse/phousewall1FBC_normal.tga
+	specularmap textures/penthouse/phousewall1FBC_spec.tga
 }
 
-textures/Penthouse/phousewall1HBC
+textures/penthouse/phousewall1HBC
 {
-	diffusemap textures/Penthouse/phousewall1HBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall1HBC.tga
+	bumpmap textures/penthouse/phousewall1HBC_normal.tga
+	specularmap textures/penthouse/phousewall1HBC_spec.tga
 }
 
-textures/Penthouse/phousewall1IBC
+textures/penthouse/phousewall1IBC
 {
-	diffusemap textures/Penthouse/phousewall1IBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall1IBC.tga
+	bumpmap textures/penthouse/phousewall1IBC_normal.tga
+	specularmap textures/penthouse/phousewall1IBC_spec.tga
 }
 
-textures/Penthouse/phousewall2HBC
+textures/penthouse/phousewall2HBC
 {
-	diffusemap textures/Penthouse/phousewall2HBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall2HBC.tga
+	bumpmap textures/penthouse/phousewall2HBC_normal.tga
+	specularmap textures/penthouse/phousewall2HBC_spec.tga
 }
 
-textures/Penthouse/phousewall3ABC
+textures/penthouse/phousewall3ABC
 {
-	diffusemap textures/Penthouse/phousewall3ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall3ABC.tga
+	bumpmap textures/penthouse/phousewall3ABC_normal.tga
+	specularmap textures/penthouse/phousewall3ABC_spec.tga
 }
 
-textures/Penthouse/phousewall3BBC
+textures/penthouse/phousewall3BBC
 {
-	diffusemap textures/Penthouse/phousewall3BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall3BBC.tga
+	bumpmap textures/penthouse/phousewall3BBC_normal.tga
+	specularmap textures/penthouse/phousewall3BBC_spec.tga
 }
 
-textures/Penthouse/phousewall3CBC
+textures/penthouse/phousewall3CBC
 {
-	diffusemap textures/Penthouse/phousewall3CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewall3CBC.tga
+	bumpmap textures/penthouse/phousewall3CBC_normal.tga
+	specularmap textures/penthouse/phousewall3CBC_spec.tga
 }
 
-textures/Penthouse/phousewalltrim1
+textures/penthouse/phousewalltrim1
 {
-	diffusemap textures/Penthouse/phousewalltrim1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewalltrim1.tga
+	bumpmap textures/penthouse/phousewalltrim1_normal.tga
+	specularmap textures/penthouse/phousewalltrim1_spec.tga
 }
 
-textures/Penthouse/phousewalltrim2
+textures/penthouse/phousewalltrim2
 {
-	diffusemap textures/Penthouse/phousewalltrim2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewalltrim2.tga
+	bumpmap textures/penthouse/phousewalltrim2_normal.tga
+	specularmap textures/penthouse/phousewalltrim2_spec.tga
 }
 
-textures/Penthouse/phousewood1BBC
+textures/penthouse/phousewood1BBC
 {
-	diffusemap textures/Penthouse/phousewood1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/phousewood1BBC.tga
+	bumpmap textures/penthouse/phousewood1BBC_normal.tga
+	specularmap textures/penthouse/phousewood1BBC_spec.tga
 }
 
-textures/Penthouse/plaque1tw
+textures/penthouse/plaque1tw
 {
-	diffusemap textures/Penthouse/plaque1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/plaque1tw.tga
+	bumpmap textures/penthouse/plaque1tw_normal.tga
+	specularmap textures/penthouse/plaque1tw_spec.tga
 }
 
-textures/Penthouse/plaque2tw
+textures/penthouse/plaque2tw
 {
-	diffusemap textures/Penthouse/plaque2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/plaque2tw.tga
+	bumpmap textures/penthouse/plaque2tw_normal.tga
+	specularmap textures/penthouse/plaque2tw_spec.tga
 }
 
-textures/Penthouse/plaque3tw
+textures/penthouse/plaque3tw
 {
-	diffusemap textures/Penthouse/plaque3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/plaque3tw.tga
+	bumpmap textures/penthouse/plaque3tw_normal.tga
+	specularmap textures/penthouse/plaque3tw_spec.tga
 }
 
-textures/Penthouse/plaque4tw
+textures/penthouse/plaque4tw
 {
-	diffusemap textures/Penthouse/plaque4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/plaque4tw.tga
+	bumpmap textures/penthouse/plaque4tw_normal.tga
+	specularmap textures/penthouse/plaque4tw_spec.tga
 }
 
-textures/Penthouse/popcornmach1aRC
+textures/penthouse/popcornmach1aRC
 {
-	diffusemap textures/Penthouse/popcornmach1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/popcornmach1aRC.tga
+	bumpmap textures/penthouse/popcornmach1aRC_normal.tga
+	specularmap textures/penthouse/popcornmach1aRC_spec.tga
 }
 
-textures/Penthouse/popcornmach1bRC
+textures/penthouse/popcornmach1bRC
 {
-	diffusemap textures/Penthouse/popcornmach1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/popcornmach1bRC.tga
+	bumpmap textures/penthouse/popcornmach1bRC_normal.tga
+	specularmap textures/penthouse/popcornmach1bRC_spec.tga
 }
 
-textures/Penthouse/popcornmach1cRC
+textures/penthouse/popcornmach1cRC
 {
-	diffusemap textures/Penthouse/popcornmach1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/popcornmach1cRC.tga
+	bumpmap textures/penthouse/popcornmach1cRC_normal.tga
+	specularmap textures/penthouse/popcornmach1cRC_spec.tga
 }
 
-textures/Penthouse/popcornmach1dRC
+textures/penthouse/popcornmach1dRC
 {
-	diffusemap textures/Penthouse/popcornmach1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/popcornmach1dRC.tga
+	bumpmap textures/penthouse/popcornmach1dRC_normal.tga
+	specularmap textures/penthouse/popcornmach1dRC_spec.tga
 }
 
-textures/Penthouse/p_tile1tw
+textures/penthouse/p_tile1tw
 {
-	diffusemap textures/Penthouse/p_tile1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/p_tile1tw.tga
+	bumpmap textures/penthouse/p_tile1tw_normal.tga
+	specularmap textures/penthouse/p_tile1tw_spec.tga
 }
 
-textures/Penthouse/p_tile2tw
+textures/penthouse/p_tile2tw
 {
-	diffusemap textures/Penthouse/p_tile2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/p_tile2tw.tga
+	bumpmap textures/penthouse/p_tile2tw_normal.tga
+	specularmap textures/penthouse/p_tile2tw_spec.tga
 }
 
-textures/Penthouse/scumbled1tw
+textures/penthouse/scumbled1tw
 {
-	diffusemap textures/Penthouse/scumbled1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/scumbled1tw.tga
+	bumpmap textures/penthouse/scumbled1tw_normal.tga
+	specularmap textures/penthouse/scumbled1tw_spec.tga
 }
 
-textures/Penthouse/sexpads_1tw
+textures/penthouse/sexpads_1tw
 {
-	diffusemap textures/Penthouse/sexpads_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sexpads_1tw.tga
+	bumpmap textures/penthouse/sexpads_1tw_normal.tga
+	specularmap textures/penthouse/sexpads_1tw_spec.tga
 }
 
-textures/Penthouse/sharkflr1sah
+textures/penthouse/sharkflr1sah
 {
-	diffusemap textures/Penthouse/sharkflr1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sharkflr1sah.tga
+	bumpmap textures/penthouse/sharkflr1sah_normal.tga
+	specularmap textures/penthouse/sharkflr1sah_spec.tga
 }
 
-textures/Penthouse/sharklkr1sah
+textures/penthouse/sharklkr1sah
 {
-	diffusemap textures/Penthouse/sharklkr1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sharklkr1sah.tga
+	bumpmap textures/penthouse/sharklkr1sah_normal.tga
+	specularmap textures/penthouse/sharklkr1sah_spec.tga
 }
 
-textures/Penthouse/sharkwl1sah
+textures/penthouse/sharkwl1sah
 {
-	diffusemap textures/Penthouse/sharkwl1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sharkwl1sah.tga
+	bumpmap textures/penthouse/sharkwl1sah_normal.tga
+	specularmap textures/penthouse/sharkwl1sah_spec.tga
 }
 
-textures/Penthouse/sharkwl2sah
+textures/penthouse/sharkwl2sah
 {
-	diffusemap textures/Penthouse/sharkwl2sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sharkwl2sah.tga
+	bumpmap textures/penthouse/sharkwl2sah_normal.tga
+	specularmap textures/penthouse/sharkwl2sah_spec.tga
 }
 
-textures/Penthouse/sharkwl3sah
+textures/penthouse/sharkwl3sah
 {
-	diffusemap textures/Penthouse/sharkwl3sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sharkwl3sah.tga
+	bumpmap textures/penthouse/sharkwl3sah_normal.tga
+	specularmap textures/penthouse/sharkwl3sah_spec.tga
 }
 
-textures/Penthouse/shield2sah
+textures/penthouse/shield2sah
 {
-	diffusemap textures/Penthouse/shield2sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/shield2sah.tga
+	bumpmap textures/penthouse/shield2sah_normal.tga
+	specularmap textures/penthouse/shield2sah_spec.tga
 }
 
-textures/Penthouse/show1tw
+textures/penthouse/show1tw
 {
-	diffusemap textures/Penthouse/show1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/show1tw.tga
+	bumpmap textures/penthouse/show1tw_normal.tga
+	specularmap textures/penthouse/show1tw_spec.tga
 }
 
-textures/Penthouse/show2tw
+textures/penthouse/show2tw
 {
-	diffusemap textures/Penthouse/show2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/show2tw.tga
+	bumpmap textures/penthouse/show2tw_normal.tga
+	specularmap textures/penthouse/show2tw_spec.tga
 }
 
-textures/Penthouse/show4tw
+textures/penthouse/show4tw
 {
-	diffusemap textures/Penthouse/show4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/show4tw.tga
+	bumpmap textures/penthouse/show4tw_normal.tga
+	specularmap textures/penthouse/show4tw_spec.tga
 }
 
-textures/Penthouse/show5tw
+textures/penthouse/show5tw
 {
-	diffusemap textures/Penthouse/show5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/show5tw.tga
+	bumpmap textures/penthouse/show5tw_normal.tga
+	specularmap textures/penthouse/show5tw_spec.tga
 }
 
-textures/Penthouse/slated1tw
+textures/penthouse/slated1tw
 {
-	diffusemap textures/Penthouse/slated1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/slated1tw.tga
+	bumpmap textures/penthouse/slated1tw_normal.tga
+	specularmap textures/penthouse/slated1tw_spec.tga
 }
 
-textures/Penthouse/slated2tw
+textures/penthouse/slated2tw
 {
-	diffusemap textures/Penthouse/slated2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/slated2tw.tga
+	bumpmap textures/penthouse/slated2tw_normal.tga
+	specularmap textures/penthouse/slated2tw_spec.tga
 }
 
-textures/Penthouse/sofa1ABC
+textures/penthouse/sofa1ABC
 {
-	diffusemap textures/Penthouse/sofa1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sofa1ABC.tga
+	bumpmap textures/penthouse/sofa1ABC_normal.tga
+	specularmap textures/penthouse/sofa1ABC_spec.tga
 }
 
-textures/Penthouse/sofa1CBC
+textures/penthouse/sofa1CBC
 {
-	diffusemap textures/Penthouse/sofa1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/sofa1CBC.tga
+	bumpmap textures/penthouse/sofa1CBC_normal.tga
+	specularmap textures/penthouse/sofa1CBC_spec.tga
 }
 
-textures/Penthouse/teak1atw
+textures/penthouse/teak1atw
 {
-	diffusemap textures/Penthouse/teak1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1atw.tga
+	bumpmap textures/penthouse/teak1atw_normal.tga
+	specularmap textures/penthouse/teak1atw_spec.tga
 }
 
-textures/Penthouse/teak1aztw
+textures/penthouse/teak1aztw
 {
-	diffusemap textures/Penthouse/teak1aztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1aztw.tga
+	bumpmap textures/penthouse/teak1aztw_normal.tga
+	specularmap textures/penthouse/teak1aztw_spec.tga
 }
 
-textures/Penthouse/teak1b2stw
+textures/penthouse/teak1b2stw
 {
-	diffusemap textures/Penthouse/teak1b2stw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1b2stw.tga
+	bumpmap textures/penthouse/teak1b2stw_normal.tga
+	specularmap textures/penthouse/teak1b2stw_spec.tga
 }
 
-textures/Penthouse/teak1brtw
+textures/penthouse/teak1brtw
 {
-	diffusemap textures/Penthouse/teak1brtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1brtw.tga
+	bumpmap textures/penthouse/teak1brtw_normal.tga
+	specularmap textures/penthouse/teak1brtw_spec.tga
 }
 
-textures/Penthouse/teak1bstw
+textures/penthouse/teak1bstw
 {
-	diffusemap textures/Penthouse/teak1bstw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1bstw.tga
+	bumpmap textures/penthouse/teak1bstw_normal.tga
+	specularmap textures/penthouse/teak1bstw_spec.tga
 }
 
-textures/Penthouse/teak1btw
+textures/penthouse/teak1btw
 {
-	diffusemap textures/Penthouse/teak1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1btw.tga
+	bumpmap textures/penthouse/teak1btw_normal.tga
+	specularmap textures/penthouse/teak1btw_spec.tga
 }
 
-textures/Penthouse/teak1burtw
+textures/penthouse/teak1burtw
 {
-	diffusemap textures/Penthouse/teak1burtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1burtw.tga
+	bumpmap textures/penthouse/teak1burtw_normal.tga
+	specularmap textures/penthouse/teak1burtw_spec.tga
 }
 
-textures/Penthouse/teak1butw
+textures/penthouse/teak1butw
 {
-	diffusemap textures/Penthouse/teak1butw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1butw.tga
+	bumpmap textures/penthouse/teak1butw_normal.tga
+	specularmap textures/penthouse/teak1butw_spec.tga
 }
 
-textures/Penthouse/teak1bytw
+textures/penthouse/teak1bytw
 {
-	diffusemap textures/Penthouse/teak1bytw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1bytw.tga
+	bumpmap textures/penthouse/teak1bytw_normal.tga
+	specularmap textures/penthouse/teak1bytw_spec.tga
 }
 
-textures/Penthouse/teak1bztw
+textures/penthouse/teak1bztw
 {
-	diffusemap textures/Penthouse/teak1bztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/teak1bztw.tga
+	bumpmap textures/penthouse/teak1bztw_normal.tga
+	specularmap textures/penthouse/teak1bztw_spec.tga
 }
 
-textures/Penthouse/viddyquip1tw
+textures/penthouse/viddyquip1tw
 {
-	diffusemap textures/Penthouse/viddyquip1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/viddyquip1tw.tga
+	bumpmap textures/penthouse/viddyquip1tw_normal.tga
+	specularmap textures/penthouse/viddyquip1tw_spec.tga
 }
 
-textures/Penthouse/waterfall2RC
+textures/penthouse/waterfall2RC
 {
-	diffusemap textures/Penthouse/waterfall2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/waterfall2RC.tga
+	bumpmap textures/penthouse/waterfall2RC_normal.tga
+	specularmap textures/penthouse/waterfall2RC_spec.tga
 }
 
-textures/Penthouse/whores!_1tw
+textures/penthouse/whores!_1tw
 {
-	diffusemap textures/Penthouse/whores!_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/whores!_1tw.tga
+	bumpmap textures/penthouse/whores!_1tw_normal.tga
+	specularmap textures/penthouse/whores!_1tw_spec.tga
 }
 
-textures/Penthouse/whores!_2tw
+textures/penthouse/whores!_2tw
 {
-	diffusemap textures/Penthouse/whores!_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/whores!_2tw.tga
+	bumpmap textures/penthouse/whores!_2tw_normal.tga
+	specularmap textures/penthouse/whores!_2tw_spec.tga
 }
 
-textures/Penthouse/whores!_3tw
+textures/penthouse/whores!_3tw
 {
-	diffusemap textures/Penthouse/whores!_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/whores!_3tw.tga
+	bumpmap textures/penthouse/whores!_3tw_normal.tga
+	specularmap textures/penthouse/whores!_3tw_spec.tga
 }
 
-textures/Penthouse/whores!_5tw
+textures/penthouse/whores!_5tw
 {
-	diffusemap textures/Penthouse/whores!_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/whores!_5tw.tga
+	bumpmap textures/penthouse/whores!_5tw_normal.tga
+	specularmap textures/penthouse/whores!_5tw_spec.tga
 }
 
-textures/Penthouse/whores!_tw
+textures/penthouse/whores!_tw
 {
-	diffusemap textures/Penthouse/whores!_tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/whores!_tw.tga
+	bumpmap textures/penthouse/whores!_tw_normal.tga
+	specularmap textures/penthouse/whores!_tw_spec.tga
 }
 
-textures/Penthouse/woodfloor1ABC
+textures/penthouse/woodfloor1ABC
 {
-	diffusemap textures/Penthouse/woodfloor1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	diffusemap textures/penthouse/woodfloor1ABC.tga
+	bumpmap textures/penthouse/woodfloor1ABC_normal.tga
+	specularmap textures/penthouse/woodfloor1ABC_spec.tga
 }
 
