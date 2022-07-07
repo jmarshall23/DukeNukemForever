@@ -30,7 +30,7 @@ If you have questions concerning this license or the applicable additional terms
 #define __RENDERWORLDLOCAL_H__
 
 // assume any lightDef or entityDef index above this is an internal error
-const int LUDICROUS_INDEX	= 10000;
+const int LUDICROUS_INDEX	= 20000;
 
 
 typedef struct portal_s {
