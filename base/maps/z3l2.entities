@@ -1,5 +1,17 @@
 // entity 0
 {
+"classname" "light"
+"name" "light_1"
+"origin" "-1696 -32 -8"
+}
+// entity 1
+{
+"classname" "info_player_start"
+"name" "info_player_start_1"
+"origin" "-2088 456 -232"
+}
+// entity 2
+{
 "classname" "func_static"
 "model" "maps/z3l2/plane_0.obj"
 "name" "func_static_0"
@@ -7,7 +19,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/fer_scrats_2atw"
 }
-// entity 1
+// entity 3
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_1.obj"
@@ -16,7 +28,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/piiecemi_1"
 }
-// entity 2
+// entity 4
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_2.obj"
@@ -25,7 +37,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino4ctw"
 }
-// entity 3
+// entity 5
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_3.obj"
@@ -34,7 +46,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/flatmetal_1tw"
 }
-// entity 4
+// entity 6
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_4.obj"
@@ -43,7 +55,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/fer_yelplate_2tw"
 }
-// entity 5
+// entity 7
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_5.obj"
@@ -52,7 +64,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/gobble_3rtw"
 }
-// entity 6
+// entity 8
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_6.obj"
@@ -61,7 +73,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino6tw"
 }
-// entity 7
+// entity 9
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_7.obj"
@@ -70,7 +82,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/minjail1cRC"
 }
-// entity 8
+// entity 10
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_8.obj"
@@ -79,7 +91,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/rag_cem_1"
 }
-// entity 9
+// entity 11
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_9.obj"
@@ -88,7 +100,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/woodpanelwall_2"
 }
-// entity 10
+// entity 12
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_10.obj"
@@ -97,7 +109,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/scuffflor_1tw"
 }
-// entity 11
+// entity 13
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_11.obj"
@@ -106,7 +118,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/basefloort_1tw"
 }
-// entity 12
+// entity 14
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_12.obj"
@@ -115,7 +127,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/betterpap_3tw"
 }
-// entity 13
+// entity 15
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_13.obj"
@@ -124,7 +136,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabgib_1htw"
 }
-// entity 14
+// entity 16
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_14.obj"
@@ -133,7 +145,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/girder_1tw"
 }
-// entity 15
+// entity 17
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_15.obj"
@@ -142,7 +154,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/window8RC"
 }
-// entity 16
+// entity 18
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_16.obj"
@@ -151,7 +163,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/betterpap_2tw"
 }
-// entity 17
+// entity 19
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_17.obj"
@@ -160,7 +172,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/window13RC"
 }
-// entity 18
+// entity 20
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_18.obj"
@@ -169,7 +181,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/alumo_dogface2atw"
 }
-// entity 19
+// entity 21
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_19.obj"
@@ -178,7 +190,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabgib_1tw"
 }
-// entity 20
+// entity 22
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_20.obj"
@@ -187,7 +199,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabgib_1jtw"
 }
-// entity 21
+// entity 23
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_21.obj"
@@ -196,7 +208,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwood2RC"
 }
-// entity 22
+// entity 24
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_22.obj"
@@ -205,7 +217,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarmetal1RC"
 }
-// entity 23
+// entity 25
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_23.obj"
@@ -214,7 +226,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwinboarded1R"
 }
-// entity 24
+// entity 26
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_24.obj"
@@ -223,7 +235,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/mintrim2RC"
 }
-// entity 25
+// entity 27
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_25.obj"
@@ -232,7 +244,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/scabgiber_2tw"
 }
-// entity 26
+// entity 28
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_26.obj"
@@ -241,7 +253,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/dirtyconcrete1A"
 }
-// entity 27
+// entity 29
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_27.obj"
@@ -250,7 +262,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Grandcanyon/cynground4bRC"
 }
-// entity 28
+// entity 30
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_28.obj"
@@ -259,7 +271,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/drip_cem_4"
 }
-// entity 29
+// entity 31
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_29.obj"
@@ -268,7 +280,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/rockful1atw"
 }
-// entity 30
+// entity 32
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_30.obj"
@@ -277,7 +289,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino6atw"
 }
-// entity 31
+// entity 33
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_31.obj"
@@ -286,7 +298,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/crack_baby1tw"
 }
-// entity 32
+// entity 34
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_32.obj"
@@ -295,7 +307,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/hotel_gas/concktile"
 }
-// entity 33
+// entity 35
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_33.obj"
@@ -304,7 +316,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Grandcanyon/cynrock15RC"
 }
-// entity 34
+// entity 36
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_34.obj"
@@ -313,7 +325,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/tiptop_1tw"
 }
-// entity 35
+// entity 37
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_35.obj"
@@ -322,7 +334,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/crakkyah_3tw"
 }
-// entity 36
+// entity 38
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_36.obj"
@@ -331,7 +343,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/stepford_1tw"
 }
-// entity 37
+// entity 39
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_37.obj"
@@ -340,7 +352,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/gobble_3atw"
 }
-// entity 38
+// entity 40
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_38.obj"
@@ -349,7 +361,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwinboarded2R"
 }
-// entity 39
+// entity 41
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_39.obj"
@@ -358,7 +370,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabgib_1ctw"
 }
-// entity 40
+// entity 42
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_40.obj"
@@ -367,7 +379,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/betweener1tw"
 }
-// entity 41
+// entity 43
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_41.obj"
@@ -376,7 +388,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino8tw"
 }
-// entity 42
+// entity 44
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_42.obj"
@@ -385,7 +397,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/gobble_3stw"
 }
-// entity 43
+// entity 45
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_43.obj"
@@ -394,7 +406,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwood1RC"
 }
-// entity 44
+// entity 46
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_44.obj"
@@ -403,7 +415,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/minwood6RC"
 }
-// entity 45
+// entity 47
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_45.obj"
@@ -412,7 +424,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/hotel_gas/gar_roof2"
 }
-// entity 46
+// entity 48
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_46.obj"
@@ -421,7 +433,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntmetalpart15R"
 }
-// entity 47
+// entity 49
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_47.obj"
@@ -430,7 +442,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/minplaster5RC"
 }
-// entity 48
+// entity 50
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_48.obj"
@@ -439,7 +451,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/slwwood5RC"
 }
-// entity 49
+// entity 51
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_49.obj"
@@ -448,7 +460,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/cov_floor_1tw"
 }
-// entity 50
+// entity 52
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_50.obj"
@@ -457,7 +469,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntconcrete1RC"
 }
-// entity 51
+// entity 53
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_51.obj"
@@ -466,7 +478,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/mindoor13RC"
 }
-// entity 52
+// entity 54
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_52.obj"
@@ -475,7 +487,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/girder_2tw"
 }
-// entity 53
+// entity 55
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_53.obj"
@@ -484,7 +496,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/yellno_3tw"
 }
-// entity 54
+// entity 56
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_54.obj"
@@ -493,7 +505,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntmach2cRC"
 }
-// entity 55
+// entity 57
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_55.obj"
@@ -502,7 +514,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/rail1BBC"
 }
-// entity 56
+// entity 58
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_56.obj"
@@ -511,7 +523,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/cov_floor_2tw"
 }
-// entity 57
+// entity 59
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_57.obj"
@@ -520,7 +532,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino4utw"
 }
-// entity 58
+// entity 60
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_58.obj"
@@ -529,7 +541,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/flo_con_1"
 }
-// entity 59
+// entity 61
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_59.obj"
@@ -538,7 +550,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino4ttw"
 }
-// entity 60
+// entity 62
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_60.obj"
@@ -547,7 +559,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino4tw"
 }
-// entity 61
+// entity 63
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_61.obj"
@@ -556,7 +568,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/cov_floor_3tw"
 }
-// entity 62
+// entity 64
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_62.obj"
@@ -565,7 +577,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/scum_asphalt1tw"
 }
-// entity 63
+// entity 65
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_63.obj"
@@ -574,7 +586,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino9bcw"
 }
-// entity 64
+// entity 66
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_64.obj"
@@ -583,7 +595,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/cem_stripped1tw"
 }
-// entity 65
+// entity 67
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_65.obj"
@@ -592,7 +604,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/theatwin1tw"
 }
-// entity 66
+// entity 68
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_66.obj"
@@ -601,7 +613,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/fer_beam_1tw"
 }
-// entity 67
+// entity 69
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_67.obj"
@@ -610,7 +622,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/fer_riv_1tw"
 }
-// entity 68
+// entity 70
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_68.obj"
@@ -619,7 +631,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/pillbox_gird_1atw"
 }
-// entity 69
+// entity 71
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_69.obj"
@@ -628,7 +640,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwall3RC"
 }
-// entity 70
+// entity 72
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_70.obj"
@@ -637,7 +649,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarwall18aRC"
 }
-// entity 71
+// entity 73
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_71.obj"
@@ -646,7 +658,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntground1caRC"
 }
-// entity 72
+// entity 74
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_72.obj"
@@ -655,7 +667,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/messytiles1DBC"
 }
-// entity 73
+// entity 75
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_73.obj"
@@ -664,7 +676,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntracks1RC"
 }
-// entity 74
+// entity 76
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_74.obj"
@@ -673,7 +685,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntrackside1RC"
 }
-// entity 75
+// entity 77
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_75.obj"
@@ -682,7 +694,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntmetalpart3RC"
 }
-// entity 76
+// entity 78
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_76.obj"
@@ -691,7 +703,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/minrocks1aRC"
 }
-// entity 77
+// entity 79
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_77.obj"
@@ -700,7 +712,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntgraveltrk1RC"
 }
-// entity 78
+// entity 80
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_78.obj"
@@ -709,7 +721,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntrainsidebotR"
 }
-// entity 79
+// entity 81
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_79.obj"
@@ -718,7 +730,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino8mtw"
 }
-// entity 80
+// entity 82
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_80.obj"
@@ -727,7 +739,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/Rust1ABC"
 }
-// entity 81
+// entity 83
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_81.obj"
@@ -736,7 +748,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntraincar4aRC"
 }
-// entity 82
+// entity 84
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_82.obj"
@@ -745,7 +757,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntraininsideRC"
 }
-// entity 83
+// entity 85
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_83.obj"
@@ -754,7 +766,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/crack_baby3tw"
 }
-// entity 84
+// entity 86
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_84.obj"
@@ -763,7 +775,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/umberto_1tw"
 }
-// entity 85
+// entity 87
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_85.obj"
@@ -772,7 +784,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/oilboard_1tw"
 }
-// entity 86
+// entity 88
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_86.obj"
@@ -781,7 +793,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Airforcebase2/ZonePortal"
 }
-// entity 87
+// entity 89
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_87.obj"
@@ -790,7 +802,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/flo_con_4a"
 }
-// entity 88
+// entity 90
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_88.obj"
@@ -799,7 +811,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntraincar1aRC"
 }
-// entity 89
+// entity 91
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_89.obj"
@@ -808,7 +820,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntraincar1bRC"
 }
-// entity 90
+// entity 92
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_90.obj"
@@ -817,7 +829,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntraintruck2aR"
 }
-// entity 91
+// entity 93
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_91.obj"
@@ -826,7 +838,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/gencobweb2cRC"
 }
-// entity 92
+// entity 94
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_92.obj"
@@ -835,7 +847,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino9atw"
 }
-// entity 93
+// entity 95
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_93.obj"
@@ -844,7 +856,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino4vtw"
 }
-// entity 94
+// entity 96
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_94.obj"
@@ -853,7 +865,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/oilboard_2atw"
 }
-// entity 95
+// entity 97
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_95.obj"
@@ -862,7 +874,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/pantdoorztw"
 }
-// entity 96
+// entity 98
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_96.obj"
@@ -871,7 +883,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/gencobweb1cRC"
 }
-// entity 97
+// entity 99
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_97.obj"
@@ -880,7 +892,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Dam/damvalveRC"
 }
-// entity 98
+// entity 100
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_98.obj"
@@ -889,7 +901,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/rappamap_1tw"
 }
-// entity 99
+// entity 101
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_99.obj"
@@ -898,7 +910,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/blast_door_3tw"
 }
-// entity 100
+// entity 102
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_100.obj"
@@ -907,7 +919,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/minplaster4RC"
 }
-// entity 101
+// entity 103
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_101.obj"
@@ -916,7 +928,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntbeam2RC"
 }
-// entity 102
+// entity 104
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_102.obj"
@@ -925,7 +937,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino9vtw"
 }
-// entity 103
+// entity 105
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_103.obj"
@@ -934,7 +946,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwood4RC"
 }
-// entity 104
+// entity 106
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_104.obj"
@@ -943,7 +955,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/concretefloor2R"
 }
-// entity 105
+// entity 107
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_105.obj"
@@ -952,7 +964,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/rustbase_2tw"
 }
-// entity 106
+// entity 108
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_106.obj"
@@ -961,7 +973,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratbdump2RC"
 }
-// entity 107
+// entity 109
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_107.obj"
@@ -970,7 +982,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarwall9RC"
 }
-// entity 108
+// entity 110
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_108.obj"
@@ -979,7 +991,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Conveyor/ConveyorPositiY"
 }
-// entity 109
+// entity 111
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_109.obj"
@@ -988,7 +1000,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Conveyor/ConveyorPositiX"
 }
-// entity 110
+// entity 112
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_110.obj"
@@ -997,7 +1009,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/green_met3var"
 }
-// entity 111
+// entity 113
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_111.obj"
@@ -1006,7 +1018,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntmach2bRC"
 }
-// entity 112
+// entity 114
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_112.obj"
@@ -1015,7 +1027,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarceiling2R"
 }
-// entity 113
+// entity 115
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_113.obj"
@@ -1024,7 +1036,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntmetalpart12a"
 }
-// entity 114
+// entity 116
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_114.obj"
@@ -1033,7 +1045,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/crack_baby4tw"
 }
-// entity 115
+// entity 117
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_115.obj"
@@ -1042,7 +1054,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/c_slab_3b"
 }
-// entity 116
+// entity 118
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_116.obj"
@@ -1051,7 +1063,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Conveyor/ConveyorNegatiY"
 }
-// entity 117
+// entity 119
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_117.obj"
@@ -1060,7 +1072,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/c_slab_2"
 }
-// entity 118
+// entity 120
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_118.obj"
@@ -1069,7 +1081,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntsludge3RC"
 }
-// entity 119
+// entity 121
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_119.obj"
@@ -1078,7 +1090,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntmach2aRC"
 }
-// entity 120
+// entity 122
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_120.obj"
@@ -1087,7 +1099,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratopcarpet2R"
 }
-// entity 121
+// entity 123
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_121.obj"
@@ -1096,7 +1108,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Grandcanyon/cynground2cRC"
 }
-// entity 122
+// entity 124
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_122.obj"
@@ -1105,7 +1117,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntground1bRC"
 }
-// entity 123
+// entity 125
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_123.obj"
@@ -1114,7 +1126,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntground1caaRC"
 }
-// entity 124
+// entity 126
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_124.obj"
@@ -1123,7 +1135,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/cracksand_1atw"
 }
-// entity 125
+// entity 127
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_125.obj"
@@ -1132,7 +1144,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/planko_1ztw"
 }
-// entity 126
+// entity 128
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_126.obj"
@@ -1141,7 +1153,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/madprops1tw"
 }
-// entity 127
+// entity 129
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_127.obj"
@@ -1150,7 +1162,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Dam/damsign30RC"
 }
-// entity 128
+// entity 130
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_128.obj"
@@ -1159,7 +1171,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/dirtyfloor1RC"
 }
-// entity 129
+// entity 131
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_129.obj"
@@ -1168,7 +1180,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/crack_baby2atw"
 }
-// entity 130
+// entity 132
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_130.obj"
@@ -1177,7 +1189,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino9btw"
 }
-// entity 131
+// entity 133
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_131.obj"
@@ -1186,7 +1198,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarwall7RC"
 }
-// entity 132
+// entity 134
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_132.obj"
@@ -1195,7 +1207,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hwall1BC"
 }
-// entity 133
+// entity 135
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_133.obj"
@@ -1204,7 +1216,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/concrete1RC"
 }
-// entity 134
+// entity 136
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_134.obj"
@@ -1213,7 +1225,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/indeconk_1tw"
 }
-// entity 135
+// entity 137
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_135.obj"
@@ -1222,7 +1234,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino5tw"
 }
-// entity 136
+// entity 138
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_136.obj"
@@ -1231,7 +1243,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/minplaster1RC"
 }
-// entity 137
+// entity 139
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_137.obj"
@@ -1240,7 +1252,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabtrim_1tw"
 }
-// entity 138
+// entity 140
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_138.obj"
@@ -1249,7 +1261,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabgib_1atw"
 }
-// entity 139
+// entity 141
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_139.obj"
@@ -1258,7 +1270,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino10atw"
 }
-// entity 140
+// entity 142
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_140.obj"
@@ -1267,7 +1279,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/hotel_gas/outwall_2tw"
 }
-// entity 141
+// entity 143
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_141.obj"
@@ -1276,7 +1288,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino4btw"
 }
-// entity 142
+// entity 144
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_142.obj"
@@ -1285,7 +1297,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/bricks5BC"
 }
-// entity 143
+// entity 145
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_143.obj"
@@ -1294,7 +1306,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/bra_door1atw"
 }
-// entity 144
+// entity 146
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_144.obj"
@@ -1303,7 +1315,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/fence1RC"
 }
-// entity 145
+// entity 147
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_145.obj"
@@ -1312,7 +1324,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Dam/damfloorplaq1RC"
 }
-// entity 146
+// entity 148
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_146.obj"
@@ -1321,7 +1333,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/palete1aRC"
 }
-// entity 147
+// entity 149
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_147.obj"
@@ -1330,7 +1342,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/palete1bRC"
 }
-// entity 148
+// entity 150
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_148.obj"
@@ -1339,7 +1351,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabgib_1btw"
 }
-// entity 149
+// entity 151
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_149.obj"
@@ -1348,7 +1360,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mino2tw"
 }
-// entity 150
+// entity 152
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_150.obj"
@@ -1357,7 +1369,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Dam/damstairstep3RC"
 }
-// entity 151
+// entity 153
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_151.obj"
@@ -1366,7 +1378,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Dam/damcrete3RC"
 }
-// entity 152
+// entity 154
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_152.obj"
@@ -1375,7 +1387,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/slugcrakke_1tw"
 }
-// entity 153
+// entity 155
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_153.obj"
@@ -1384,7 +1396,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/rockful1tw"
 }
-// entity 154
+// entity 156
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_154.obj"
@@ -1393,7 +1405,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/sewwall2tw"
 }
-// entity 155
+// entity 157
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_155.obj"
@@ -1402,7 +1414,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/gencobweb1dRC"
 }
-// entity 156
+// entity 158
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_156.obj"
@@ -1411,7 +1423,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/slwdirt1RC"
 }
-// entity 157
+// entity 159
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_157.obj"
@@ -1420,7 +1432,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/sputz_1tw"
 }
-// entity 158
+// entity 160
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_158.obj"
@@ -1429,7 +1441,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntground2fRC"
 }
-// entity 159
+// entity 161
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_159.obj"
@@ -1438,7 +1450,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/wha_flakes_2tw"
 }
-// entity 160
+// entity 162
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_160.obj"
@@ -1447,7 +1459,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/skyboxes/haze1RC"
 }
-// entity 161
+// entity 163
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_161.obj"
@@ -1456,7 +1468,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/skyboxes/cloud3aRC"
 }
-// entity 162
+// entity 164
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_162.obj"
@@ -1465,7 +1477,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/stall"
 }
-// entity 163
+// entity 165
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_163.obj"
@@ -1474,7 +1486,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/wha_flakes_1tw"
 }
-// entity 164
+// entity 166
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_164.obj"
@@ -1483,7 +1495,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/ed_whbrick4"
 }
-// entity 165
+// entity 167
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_165.obj"
@@ -1492,7 +1504,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/silobrick_6tw"
 }
-// entity 166
+// entity 168
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_166.obj"
@@ -1501,7 +1513,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/oro_brick1tw"
 }
-// entity 167
+// entity 169
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_167.obj"
@@ -1510,7 +1522,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/metaltrim3ABC"
 }
-// entity 168
+// entity 170
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_168.obj"
@@ -1519,7 +1531,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarwall20RC"
 }
-// entity 169
+// entity 171
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_169.obj"
@@ -1528,7 +1540,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwindows1RC"
 }
-// entity 170
+// entity 172
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_170.obj"
@@ -1537,7 +1549,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwindows3aRC"
 }
-// entity 171
+// entity 173
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_171.obj"
@@ -1546,7 +1558,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntwindows3bRC"
 }
-// entity 172
+// entity 174
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_172.obj"
@@ -1555,7 +1567,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/drip_cem_2a"
 }
-// entity 173
+// entity 175
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_173.obj"
@@ -1564,7 +1576,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/scabgib_1itw"
 }
-// entity 174
+// entity 176
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_174.obj"
@@ -1573,7 +1585,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarwall17aRC"
 }
-// entity 175
+// entity 177
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_175.obj"
@@ -1582,7 +1594,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/prOnruff_1btw"
 }
-// entity 176
+// entity 178
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_176.obj"
@@ -1591,7 +1603,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntbeam3RC"
 }
-// entity 177
+// entity 179
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_177.obj"
@@ -1600,7 +1612,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntbeam1bRC"
 }
-// entity 178
+// entity 180
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_178.obj"
@@ -1609,7 +1621,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/bunkerAwallRC"
 }
-// entity 179
+// entity 181
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_179.obj"
@@ -1618,7 +1630,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntbridge1bRC"
 }
-// entity 180
+// entity 182
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_180.obj"
@@ -1627,7 +1639,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/wallbrick1RC"
 }
-// entity 181
+// entity 183
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_181.obj"
@@ -1636,7 +1648,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/cabflam1bRC"
 }
-// entity 182
+// entity 184
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_182.obj"
@@ -1645,7 +1657,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntmetalpart10R"
 }
-// entity 183
+// entity 185
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_183.obj"
@@ -1654,7 +1666,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/metaltrim1RC"
 }
-// entity 184
+// entity 186
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_184.obj"
@@ -1663,7 +1675,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Grandcanyon/cynground4dRC"
 }
-// entity 185
+// entity 187
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_185.obj"
@@ -1672,7 +1684,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/rockful1btw"
 }
-// entity 186
+// entity 188
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_186.obj"
@@ -1681,7 +1693,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Grandcanyon/cynground4cRC"
 }
-// entity 187
+// entity 189
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_187.obj"
@@ -1690,7 +1702,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/cem_chipp_2tw"
 }
-// entity 188
+// entity 190
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_188.obj"
@@ -1699,7 +1711,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Mineshaft/mntsludge2RC"
 }
-// entity 189
+// entity 191
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_189.obj"
@@ -1708,7 +1720,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/slwneonbulb1aRC"
 }
-// entity 190
+// entity 192
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_190.obj"
@@ -1717,7 +1729,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/slwneonbulb3aRC"
 }
-// entity 191
+// entity 193
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_191.obj"
@@ -1726,7 +1738,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/smutco_6tw"
 }
-// entity 192
+// entity 194
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_192.obj"
@@ -1735,7 +1747,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcrebarRC"
 }
-// entity 193
+// entity 195
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_193.obj"
@@ -1744,7 +1756,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark11RC"
 }
-// entity 194
+// entity 196
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_194.obj"
@@ -1753,7 +1765,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark6RC"
 }
-// entity 195
+// entity 197
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_195.obj"
@@ -1762,7 +1774,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genrust1RC"
 }
-// entity 196
+// entity 198
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_196.obj"
@@ -1771,7 +1783,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnModulation/poopster_1tw"
 }
-// entity 197
+// entity 199
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_197.obj"
@@ -1780,7 +1792,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnModulation/flecks_3tw"
 }
-// entity 198
+// entity 200
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_198.obj"
@@ -1789,7 +1801,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark23RC"
 }
-// entity 199
+// entity 201
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_199.obj"
@@ -1798,7 +1810,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnModulation/anarchthis_2ctw"
 }
-// entity 200
+// entity 202
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_200.obj"
@@ -1807,7 +1819,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Dam/damdecal7RC"
 }
-// entity 201
+// entity 203
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_201.obj"
@@ -1816,7 +1828,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratpowerbox1b"
 }
-// entity 202
+// entity 204
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_202.obj"
@@ -1825,7 +1837,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark24RC"
 }
-// entity 203
+// entity 205
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_203.obj"
@@ -1834,7 +1846,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnModulation/anarchthis_1tw"
 }
-// entity 204
+// entity 206
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_204.obj"
@@ -1843,7 +1855,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark22RC"
 }
-// entity 205
+// entity 207
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_205.obj"
@@ -1852,7 +1864,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark21RC"
 }
-// entity 206
+// entity 208
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_206.obj"
@@ -1861,7 +1873,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark12RC"
 }
-// entity 207
+// entity 209
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_207.obj"
@@ -1870,7 +1882,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genburnt1RC"
 }
-// entity 208
+// entity 210
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_208.obj"
@@ -1879,7 +1891,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/rail2ABC"
 }
-// entity 209
+// entity 211
 {
 "classname" "func_static"
 "model" "maps/z3l2/plane_209.obj"
