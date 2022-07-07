@@ -1,4522 +1,4522 @@
 textures/vegas/advertise1RC
 {
 	diffusemap textures/vegas/advertise1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/advertise1RC_normal.tga
+	specularmap textures/vegas/advertise1RC_spec.tga
 }
 
 textures/vegas/alg_rock1tw
 {
 	diffusemap textures/vegas/alg_rock1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/alg_rock1tw_normal.tga
+	specularmap textures/vegas/alg_rock1tw_spec.tga
 }
 
 textures/vegas/alg_rock2tw
 {
 	diffusemap textures/vegas/alg_rock2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/alg_rock2tw_normal.tga
+	specularmap textures/vegas/alg_rock2tw_spec.tga
 }
 
 textures/vegas/alg_rock4tw
 {
 	diffusemap textures/vegas/alg_rock4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/alg_rock4tw_normal.tga
+	specularmap textures/vegas/alg_rock4tw_spec.tga
 }
 
 textures/vegas/alg_rock5atw
 {
 	diffusemap textures/vegas/alg_rock5atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/alg_rock5atw_normal.tga
+	specularmap textures/vegas/alg_rock5atw_spec.tga
 }
 
 textures/vegas/alg_rock5tw
 {
 	diffusemap textures/vegas/alg_rock5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/alg_rock5tw_normal.tga
+	specularmap textures/vegas/alg_rock5tw_spec.tga
 }
 
 textures/vegas/anilight1aRC
 {
 	diffusemap textures/vegas/anilight1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/anilight1aRC_normal.tga
+	specularmap textures/vegas/anilight1aRC_spec.tga
 }
 
 textures/vegas/anilight1bRC
 {
 	diffusemap textures/vegas/anilight1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/anilight1bRC_normal.tga
+	specularmap textures/vegas/anilight1bRC_spec.tga
 }
 
 textures/vegas/aqua1ABC
 {
 	diffusemap textures/vegas/aqua1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/aqua1ABC_normal.tga
+	specularmap textures/vegas/aqua1ABC_spec.tga
 }
 
 textures/vegas/aquacrap_1tw
 {
 	diffusemap textures/vegas/aquacrap_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/aquacrap_1tw_normal.tga
+	specularmap textures/vegas/aquacrap_1tw_spec.tga
 }
 
 textures/vegas/aquacrap_2tw
 {
 	diffusemap textures/vegas/aquacrap_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/aquacrap_2tw_normal.tga
+	specularmap textures/vegas/aquacrap_2tw_spec.tga
 }
 
 textures/vegas/aquacrap_3tw
 {
 	diffusemap textures/vegas/aquacrap_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/aquacrap_3tw_normal.tga
+	specularmap textures/vegas/aquacrap_3tw_spec.tga
 }
 
 textures/vegas/aquarium_1tw
 {
 	diffusemap textures/vegas/aquarium_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/aquarium_1tw_normal.tga
+	specularmap textures/vegas/aquarium_1tw_spec.tga
 }
 
 textures/vegas/arch1BC
 {
 	diffusemap textures/vegas/arch1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/arch1BC_normal.tga
+	specularmap textures/vegas/arch1BC_spec.tga
 }
 
 textures/vegas/awning2RC
 {
 	diffusemap textures/vegas/awning2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/awning2RC_normal.tga
+	specularmap textures/vegas/awning2RC_spec.tga
 }
 
 textures/vegas/bamner3atw
 {
 	diffusemap textures/vegas/bamner3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/bamner3atw_normal.tga
+	specularmap textures/vegas/bamner3atw_spec.tga
 }
 
 textures/vegas/bamnner2Atw
 {
 	diffusemap textures/vegas/bamnner2Atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/bamnner2Atw_normal.tga
+	specularmap textures/vegas/bamnner2Atw_spec.tga
 }
 
 textures/vegas/bamnner2tw
 {
 	diffusemap textures/vegas/bamnner2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/bamnner2tw_normal.tga
+	specularmap textures/vegas/bamnner2tw_spec.tga
 }
 
 textures/vegas/banner7tw
 {
 	diffusemap textures/vegas/banner7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/banner7tw_normal.tga
+	specularmap textures/vegas/banner7tw_spec.tga
 }
 
 textures/vegas/banner8tw
 {
 	diffusemap textures/vegas/banner8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/banner8tw_normal.tga
+	specularmap textures/vegas/banner8tw_spec.tga
 }
 
 textures/vegas/banner9tw
 {
 	diffusemap textures/vegas/banner9tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/banner9tw_normal.tga
+	specularmap textures/vegas/banner9tw_spec.tga
 }
 
 textures/vegas/baspwall_1tw
 {
 	diffusemap textures/vegas/baspwall_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/baspwall_1tw_normal.tga
+	specularmap textures/vegas/baspwall_1tw_spec.tga
 }
 
 textures/vegas/baspwall_2tw
 {
 	diffusemap textures/vegas/baspwall_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/baspwall_2tw_normal.tga
+	specularmap textures/vegas/baspwall_2tw_spec.tga
 }
 
 textures/vegas/baspwall_3tw
 {
 	diffusemap textures/vegas/baspwall_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/baspwall_3tw_normal.tga
+	specularmap textures/vegas/baspwall_3tw_spec.tga
 }
 
 textures/vegas/baspwall_4ntw
 {
 	diffusemap textures/vegas/baspwall_4ntw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/baspwall_4ntw_normal.tga
+	specularmap textures/vegas/baspwall_4ntw_spec.tga
 }
 
 textures/vegas/baspwall_4tw
 {
 	diffusemap textures/vegas/baspwall_4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/baspwall_4tw_normal.tga
+	specularmap textures/vegas/baspwall_4tw_spec.tga
 }
 
 textures/vegas/Belagio1aRC
 {
 	diffusemap textures/vegas/Belagio1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/Belagio1aRC_normal.tga
+	specularmap textures/vegas/Belagio1aRC_spec.tga
 }
 
 textures/vegas/Belagio1eRC
 {
 	diffusemap textures/vegas/Belagio1eRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/Belagio1eRC_normal.tga
+	specularmap textures/vegas/Belagio1eRC_spec.tga
 }
 
 textures/vegas/blue1ABC
 {
 	diffusemap textures/vegas/blue1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/blue1ABC_normal.tga
+	specularmap textures/vegas/blue1ABC_spec.tga
 }
 
 textures/vegas/blue1BBC
 {
 	diffusemap textures/vegas/blue1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/blue1BBC_normal.tga
+	specularmap textures/vegas/blue1BBC_spec.tga
 }
 
 textures/vegas/blue1CBC
 {
 	diffusemap textures/vegas/blue1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/blue1CBC_normal.tga
+	specularmap textures/vegas/blue1CBC_spec.tga
 }
 
 textures/vegas/Booty_neon1
 {
 	diffusemap textures/vegas/Booty_neon1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/Booty_neon1_normal.tga
+	specularmap textures/vegas/Booty_neon1_spec.tga
 }
 
 textures/vegas/botpill1tw
 {
 	diffusemap textures/vegas/botpill1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/botpill1tw_normal.tga
+	specularmap textures/vegas/botpill1tw_spec.tga
 }
 
 textures/vegas/botpill2tw
 {
 	diffusemap textures/vegas/botpill2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/botpill2tw_normal.tga
+	specularmap textures/vegas/botpill2tw_spec.tga
 }
 
 textures/vegas/botpill3tw
 {
 	diffusemap textures/vegas/botpill3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/botpill3tw_normal.tga
+	specularmap textures/vegas/botpill3tw_spec.tga
 }
 
 textures/vegas/botpill4tw
 {
 	diffusemap textures/vegas/botpill4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/botpill4tw_normal.tga
+	specularmap textures/vegas/botpill4tw_spec.tga
 }
 
 textures/vegas/botpill5atw
 {
 	diffusemap textures/vegas/botpill5atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/botpill5atw_normal.tga
+	specularmap textures/vegas/botpill5atw_spec.tga
 }
 
 textures/vegas/botpill5tw
 {
 	diffusemap textures/vegas/botpill5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/botpill5tw_normal.tga
+	specularmap textures/vegas/botpill5tw_spec.tga
 }
 
 textures/vegas/boxbann_1tw
 {
 	diffusemap textures/vegas/boxbann_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/boxbann_1tw_normal.tga
+	specularmap textures/vegas/boxbann_1tw_spec.tga
 }
 
 textures/vegas/boxingmofo_1tw
 {
 	diffusemap textures/vegas/boxingmofo_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/boxingmofo_1tw_normal.tga
+	specularmap textures/vegas/boxingmofo_1tw_spec.tga
 }
 
 textures/vegas/boxingmofo_2tw
 {
 	diffusemap textures/vegas/boxingmofo_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/boxingmofo_2tw_normal.tga
+	specularmap textures/vegas/boxingmofo_2tw_spec.tga
 }
 
 textures/vegas/boxingmofo_3tw
 {
 	diffusemap textures/vegas/boxingmofo_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/boxingmofo_3tw_normal.tga
+	specularmap textures/vegas/boxingmofo_3tw_spec.tga
 }
 
 textures/vegas/brokenmirror2RC
 {
 	diffusemap textures/vegas/brokenmirror2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/brokenmirror2RC_normal.tga
+	specularmap textures/vegas/brokenmirror2RC_spec.tga
 }
 
 textures/vegas/BuildingAsiaAB
 {
 	diffusemap textures/vegas/BuildingAsiaAB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/BuildingAsiaAB_normal.tga
+	specularmap textures/vegas/BuildingAsiaAB_spec.tga
 }
 
 textures/vegas/BuildingBallysAB
 {
 	diffusemap textures/vegas/BuildingBallysAB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/BuildingBallysAB_normal.tga
+	specularmap textures/vegas/BuildingBallysAB_spec.tga
 }
 
 textures/vegas/BuildingCaesarsAB
 {
 	diffusemap textures/vegas/BuildingCaesarsAB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/BuildingCaesarsAB_normal.tga
+	specularmap textures/vegas/BuildingCaesarsAB_spec.tga
 }
 
 textures/vegas/BuildingFlamingoAB
 {
 	diffusemap textures/vegas/BuildingFlamingoAB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/BuildingFlamingoAB_normal.tga
+	specularmap textures/vegas/BuildingFlamingoAB_spec.tga
 }
 
 textures/vegas/BuildingLKAB
 {
 	diffusemap textures/vegas/BuildingLKAB.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/BuildingLKAB_normal.tga
+	specularmap textures/vegas/BuildingLKAB_spec.tga
 }
 
 textures/vegas/bulletBC
 {
 	diffusemap textures/vegas/bulletBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/bulletBC_normal.tga
+	specularmap textures/vegas/bulletBC_spec.tga
 }
 
 textures/vegas/bush1bRC
 {
 	diffusemap textures/vegas/bush1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/bush1bRC_normal.tga
+	specularmap textures/vegas/bush1bRC_spec.tga
 }
 
 textures/vegas/bush2aRC
 {
 	diffusemap textures/vegas/bush2aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/bush2aRC_normal.tga
+	specularmap textures/vegas/bush2aRC_spec.tga
 }
 
 textures/vegas/caesars1sah
 {
 	diffusemap textures/vegas/caesars1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/caesars1sah_normal.tga
+	specularmap textures/vegas/caesars1sah_spec.tga
 }
 
 textures/vegas/caesarsRC
 {
 	diffusemap textures/vegas/caesarsRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/caesarsRC_normal.tga
+	specularmap textures/vegas/caesarsRC_spec.tga
 }
 
 textures/vegas/carpburn1ABC
 {
 	diffusemap textures/vegas/carpburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/carpburn1ABC_normal.tga
+	specularmap textures/vegas/carpburn1ABC_spec.tga
 }
 
 textures/vegas/carpburn1DBC
 {
 	diffusemap textures/vegas/carpburn1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/carpburn1DBC_normal.tga
+	specularmap textures/vegas/carpburn1DBC_spec.tga
 }
 
 textures/vegas/carpburn1EBC
 {
 	diffusemap textures/vegas/carpburn1EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/carpburn1EBC_normal.tga
+	specularmap textures/vegas/carpburn1EBC_spec.tga
 }
 
 textures/vegas/carpburn2ABC
 {
 	diffusemap textures/vegas/carpburn2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/carpburn2ABC_normal.tga
+	specularmap textures/vegas/carpburn2ABC_spec.tga
 }
 
 textures/vegas/carvedtrim1BC
 {
 	diffusemap textures/vegas/carvedtrim1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/carvedtrim1BC_normal.tga
+	specularmap textures/vegas/carvedtrim1BC_spec.tga
 }
 
 textures/vegas/casino10aRC
 {
 	diffusemap textures/vegas/casino10aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10aRC_normal.tga
+	specularmap textures/vegas/casino10aRC_spec.tga
 }
 
 textures/vegas/casino10bRC
 {
 	diffusemap textures/vegas/casino10bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10bRC_normal.tga
+	specularmap textures/vegas/casino10bRC_spec.tga
 }
 
 textures/vegas/casino10cRC
 {
 	diffusemap textures/vegas/casino10cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10cRC_normal.tga
+	specularmap textures/vegas/casino10cRC_spec.tga
 }
 
 textures/vegas/casino10dRC
 {
 	diffusemap textures/vegas/casino10dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10dRC_normal.tga
+	specularmap textures/vegas/casino10dRC_spec.tga
 }
 
 textures/vegas/casino10eRC
 {
 	diffusemap textures/vegas/casino10eRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10eRC_normal.tga
+	specularmap textures/vegas/casino10eRC_spec.tga
 }
 
 textures/vegas/casino10fRC
 {
 	diffusemap textures/vegas/casino10fRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10fRC_normal.tga
+	specularmap textures/vegas/casino10fRC_spec.tga
 }
 
 textures/vegas/casino10gRC
 {
 	diffusemap textures/vegas/casino10gRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10gRC_normal.tga
+	specularmap textures/vegas/casino10gRC_spec.tga
 }
 
 textures/vegas/casino10hRC
 {
 	diffusemap textures/vegas/casino10hRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10hRC_normal.tga
+	specularmap textures/vegas/casino10hRC_spec.tga
 }
 
 textures/vegas/casino10iRC
 {
 	diffusemap textures/vegas/casino10iRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10iRC_normal.tga
+	specularmap textures/vegas/casino10iRC_spec.tga
 }
 
 textures/vegas/casino10jRC
 {
 	diffusemap textures/vegas/casino10jRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino10jRC_normal.tga
+	specularmap textures/vegas/casino10jRC_spec.tga
 }
 
 textures/vegas/casino11aRC
 {
 	diffusemap textures/vegas/casino11aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino11aRC_normal.tga
+	specularmap textures/vegas/casino11aRC_spec.tga
 }
 
 textures/vegas/casino11cRC
 {
 	diffusemap textures/vegas/casino11cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino11cRC_normal.tga
+	specularmap textures/vegas/casino11cRC_spec.tga
 }
 
 textures/vegas/casino12RC
 {
 	diffusemap textures/vegas/casino12RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino12RC_normal.tga
+	specularmap textures/vegas/casino12RC_spec.tga
 }
 
 textures/vegas/casino13RC
 {
 	diffusemap textures/vegas/casino13RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino13RC_normal.tga
+	specularmap textures/vegas/casino13RC_spec.tga
 }
 
 textures/vegas/casino1aRC
 {
 	diffusemap textures/vegas/casino1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino1aRC_normal.tga
+	specularmap textures/vegas/casino1aRC_spec.tga
 }
 
 textures/vegas/casino1bRC
 {
 	diffusemap textures/vegas/casino1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino1bRC_normal.tga
+	specularmap textures/vegas/casino1bRC_spec.tga
 }
 
 textures/vegas/casino2RC
 {
 	diffusemap textures/vegas/casino2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino2RC_normal.tga
+	specularmap textures/vegas/casino2RC_spec.tga
 }
 
 textures/vegas/casino3aRC
 {
 	diffusemap textures/vegas/casino3aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino3aRC_normal.tga
+	specularmap textures/vegas/casino3aRC_spec.tga
 }
 
 textures/vegas/casino3hRC
 {
 	diffusemap textures/vegas/casino3hRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino3hRC_normal.tga
+	specularmap textures/vegas/casino3hRC_spec.tga
 }
 
 textures/vegas/casino4RC
 {
 	diffusemap textures/vegas/casino4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino4RC_normal.tga
+	specularmap textures/vegas/casino4RC_spec.tga
 }
 
 textures/vegas/casino5aRC
 {
 	diffusemap textures/vegas/casino5aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino5aRC_normal.tga
+	specularmap textures/vegas/casino5aRC_spec.tga
 }
 
 textures/vegas/casino5bRC
 {
 	diffusemap textures/vegas/casino5bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino5bRC_normal.tga
+	specularmap textures/vegas/casino5bRC_spec.tga
 }
 
 textures/vegas/casino6bRC
 {
 	diffusemap textures/vegas/casino6bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino6bRC_normal.tga
+	specularmap textures/vegas/casino6bRC_spec.tga
 }
 
 textures/vegas/casino6RC
 {
 	diffusemap textures/vegas/casino6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino6RC_normal.tga
+	specularmap textures/vegas/casino6RC_spec.tga
 }
 
 textures/vegas/casino7aRC
 {
 	diffusemap textures/vegas/casino7aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino7aRC_normal.tga
+	specularmap textures/vegas/casino7aRC_spec.tga
 }
 
 textures/vegas/casino7bRC
 {
 	diffusemap textures/vegas/casino7bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino7bRC_normal.tga
+	specularmap textures/vegas/casino7bRC_spec.tga
 }
 
 textures/vegas/casino7cRC
 {
 	diffusemap textures/vegas/casino7cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino7cRC_normal.tga
+	specularmap textures/vegas/casino7cRC_spec.tga
 }
 
 textures/vegas/casino8RC
 {
 	diffusemap textures/vegas/casino8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino8RC_normal.tga
+	specularmap textures/vegas/casino8RC_spec.tga
 }
 
 textures/vegas/casino9aRC
 {
 	diffusemap textures/vegas/casino9aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino9aRC_normal.tga
+	specularmap textures/vegas/casino9aRC_spec.tga
 }
 
 textures/vegas/casino9bRC
 {
 	diffusemap textures/vegas/casino9bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino9bRC_normal.tga
+	specularmap textures/vegas/casino9bRC_spec.tga
 }
 
 textures/vegas/casino9cRC
 {
 	diffusemap textures/vegas/casino9cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casino9cRC_normal.tga
+	specularmap textures/vegas/casino9cRC_spec.tga
 }
 
 textures/vegas/casinocarpet1RC
 {
 	diffusemap textures/vegas/casinocarpet1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinocarpet1RC_normal.tga
+	specularmap textures/vegas/casinocarpet1RC_spec.tga
 }
 
 textures/vegas/casinodoor1BC
 {
 	diffusemap textures/vegas/casinodoor1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinodoor1BC_normal.tga
+	specularmap textures/vegas/casinodoor1BC_spec.tga
 }
 
 textures/vegas/casinodoor2BC
 {
 	diffusemap textures/vegas/casinodoor2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinodoor2BC_normal.tga
+	specularmap textures/vegas/casinodoor2BC_spec.tga
 }
 
 textures/vegas/casinodoor3BC
 {
 	diffusemap textures/vegas/casinodoor3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinodoor3BC_normal.tga
+	specularmap textures/vegas/casinodoor3BC_spec.tga
 }
 
 textures/vegas/casinodoor4BBC
 {
 	diffusemap textures/vegas/casinodoor4BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinodoor4BBC_normal.tga
+	specularmap textures/vegas/casinodoor4BBC_spec.tga
 }
 
 textures/vegas/casinodoor4BC
 {
 	diffusemap textures/vegas/casinodoor4BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinodoor4BC_normal.tga
+	specularmap textures/vegas/casinodoor4BC_spec.tga
 }
 
 textures/vegas/casinodoor4CBC
 {
 	diffusemap textures/vegas/casinodoor4CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinodoor4CBC_normal.tga
+	specularmap textures/vegas/casinodoor4CBC_spec.tga
 }
 
 textures/vegas/casinowall10BBC
 {
 	diffusemap textures/vegas/casinowall10BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall10BBC_normal.tga
+	specularmap textures/vegas/casinowall10BBC_spec.tga
 }
 
 textures/vegas/casinowall10CBC
 {
 	diffusemap textures/vegas/casinowall10CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall10CBC_normal.tga
+	specularmap textures/vegas/casinowall10CBC_spec.tga
 }
 
 textures/vegas/casinowall11ABC
 {
 	diffusemap textures/vegas/casinowall11ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall11ABC_normal.tga
+	specularmap textures/vegas/casinowall11ABC_spec.tga
 }
 
 textures/vegas/casinowall11BBC
 {
 	diffusemap textures/vegas/casinowall11BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall11BBC_normal.tga
+	specularmap textures/vegas/casinowall11BBC_spec.tga
 }
 
 textures/vegas/casinowall1ABBC
 {
 	diffusemap textures/vegas/casinowall1ABBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall1ABBC_normal.tga
+	specularmap textures/vegas/casinowall1ABBC_spec.tga
 }
 
 textures/vegas/casinowall1BC
 {
 	diffusemap textures/vegas/casinowall1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall1BC_normal.tga
+	specularmap textures/vegas/casinowall1BC_spec.tga
 }
 
 textures/vegas/casinowall1CBC
 {
 	diffusemap textures/vegas/casinowall1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall1CBC_normal.tga
+	specularmap textures/vegas/casinowall1CBC_spec.tga
 }
 
 textures/vegas/casinowall1DBC
 {
 	diffusemap textures/vegas/casinowall1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall1DBC_normal.tga
+	specularmap textures/vegas/casinowall1DBC_spec.tga
 }
 
 textures/vegas/casinowall2ABC
 {
 	diffusemap textures/vegas/casinowall2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall2ABC_normal.tga
+	specularmap textures/vegas/casinowall2ABC_spec.tga
 }
 
 textures/vegas/casinowall2BBC
 {
 	diffusemap textures/vegas/casinowall2BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall2BBC_normal.tga
+	specularmap textures/vegas/casinowall2BBC_spec.tga
 }
 
 textures/vegas/casinowall3ABC
 {
 	diffusemap textures/vegas/casinowall3ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall3ABC_normal.tga
+	specularmap textures/vegas/casinowall3ABC_spec.tga
 }
 
 textures/vegas/casinowall3Atw
 {
 	diffusemap textures/vegas/casinowall3Atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall3Atw_normal.tga
+	specularmap textures/vegas/casinowall3Atw_spec.tga
 }
 
 textures/vegas/casinowall3BBC
 {
 	diffusemap textures/vegas/casinowall3BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall3BBC_normal.tga
+	specularmap textures/vegas/casinowall3BBC_spec.tga
 }
 
 textures/vegas/casinowall3Catw
 {
 	diffusemap textures/vegas/casinowall3Catw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall3Catw_normal.tga
+	specularmap textures/vegas/casinowall3Catw_spec.tga
 }
 
 textures/vegas/casinowall3CBC
 {
 	diffusemap textures/vegas/casinowall3CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall3CBC_normal.tga
+	specularmap textures/vegas/casinowall3CBC_spec.tga
 }
 
 textures/vegas/casinowall3DBC
 {
 	diffusemap textures/vegas/casinowall3DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall3DBC_normal.tga
+	specularmap textures/vegas/casinowall3DBC_spec.tga
 }
 
 textures/vegas/casinowall5ABC
 {
 	diffusemap textures/vegas/casinowall5ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall5ABC_normal.tga
+	specularmap textures/vegas/casinowall5ABC_spec.tga
 }
 
 textures/vegas/casinowall5BBC
 {
 	diffusemap textures/vegas/casinowall5BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall5BBC_normal.tga
+	specularmap textures/vegas/casinowall5BBC_spec.tga
 }
 
 textures/vegas/casinowall5CBC
 {
 	diffusemap textures/vegas/casinowall5CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall5CBC_normal.tga
+	specularmap textures/vegas/casinowall5CBC_spec.tga
 }
 
 textures/vegas/casinowall5EBC
 {
 	diffusemap textures/vegas/casinowall5EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall5EBC_normal.tga
+	specularmap textures/vegas/casinowall5EBC_spec.tga
 }
 
 textures/vegas/casinowall6BBC
 {
 	diffusemap textures/vegas/casinowall6BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall6BBC_normal.tga
+	specularmap textures/vegas/casinowall6BBC_spec.tga
 }
 
 textures/vegas/casinowall7BBC
 {
 	diffusemap textures/vegas/casinowall7BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall7BBC_normal.tga
+	specularmap textures/vegas/casinowall7BBC_spec.tga
 }
 
 textures/vegas/casinowall9ABC
 {
 	diffusemap textures/vegas/casinowall9ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall9ABC_normal.tga
+	specularmap textures/vegas/casinowall9ABC_spec.tga
 }
 
 textures/vegas/casinowall9CBC
 {
 	diffusemap textures/vegas/casinowall9CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall9CBC_normal.tga
+	specularmap textures/vegas/casinowall9CBC_spec.tga
 }
 
 textures/vegas/casinowall9EBC
 {
 	diffusemap textures/vegas/casinowall9EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall9EBC_normal.tga
+	specularmap textures/vegas/casinowall9EBC_spec.tga
 }
 
 textures/vegas/casinowall9FBC
 {
 	diffusemap textures/vegas/casinowall9FBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall9FBC_normal.tga
+	specularmap textures/vegas/casinowall9FBC_spec.tga
 }
 
 textures/vegas/casinowall9HBC
 {
 	diffusemap textures/vegas/casinowall9HBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall9HBC_normal.tga
+	specularmap textures/vegas/casinowall9HBC_spec.tga
 }
 
 textures/vegas/casinowall9IBC
 {
 	diffusemap textures/vegas/casinowall9IBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowall9IBC_normal.tga
+	specularmap textures/vegas/casinowall9IBC_spec.tga
 }
 
 textures/vegas/casinowalltrm1B
 {
 	diffusemap textures/vegas/casinowalltrm1B.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowalltrm1B_normal.tga
+	specularmap textures/vegas/casinowalltrm1B_spec.tga
 }
 
 textures/vegas/casinowood1BC
 {
 	diffusemap textures/vegas/casinowood1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowood1BC_normal.tga
+	specularmap textures/vegas/casinowood1BC_spec.tga
 }
 
 textures/vegas/casinowood1tw
 {
 	diffusemap textures/vegas/casinowood1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casinowood1tw_normal.tga
+	specularmap textures/vegas/casinowood1tw_spec.tga
 }
 
 textures/vegas/casionwall3EBC
 {
 	diffusemap textures/vegas/casionwall3EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casionwall3EBC_normal.tga
+	specularmap textures/vegas/casionwall3EBC_spec.tga
 }
 
 textures/vegas/casionwall3Etw
 {
 	diffusemap textures/vegas/casionwall3Etw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/casionwall3Etw_normal.tga
+	specularmap textures/vegas/casionwall3Etw_spec.tga
 }
 
 textures/vegas/cdoorburn1ABC
 {
 	diffusemap textures/vegas/cdoorburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn1ABC_normal.tga
+	specularmap textures/vegas/cdoorburn1ABC_spec.tga
 }
 
 textures/vegas/cdoorburn1BBC
 {
 	diffusemap textures/vegas/cdoorburn1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn1BBC_normal.tga
+	specularmap textures/vegas/cdoorburn1BBC_spec.tga
 }
 
 textures/vegas/cdoorburn1CBC
 {
 	diffusemap textures/vegas/cdoorburn1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn1CBC_normal.tga
+	specularmap textures/vegas/cdoorburn1CBC_spec.tga
 }
 
 textures/vegas/cdoorburn2BBC
 {
 	diffusemap textures/vegas/cdoorburn2BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn2BBC_normal.tga
+	specularmap textures/vegas/cdoorburn2BBC_spec.tga
 }
 
 textures/vegas/cdoorburn2CBC
 {
 	diffusemap textures/vegas/cdoorburn2CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn2CBC_normal.tga
+	specularmap textures/vegas/cdoorburn2CBC_spec.tga
 }
 
 textures/vegas/cdoorburn3ABC
 {
 	diffusemap textures/vegas/cdoorburn3ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn3ABC_normal.tga
+	specularmap textures/vegas/cdoorburn3ABC_spec.tga
 }
 
 textures/vegas/cdoorburn3BBC
 {
 	diffusemap textures/vegas/cdoorburn3BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn3BBC_normal.tga
+	specularmap textures/vegas/cdoorburn3BBC_spec.tga
 }
 
 textures/vegas/cdoorburn3CBC
 {
 	diffusemap textures/vegas/cdoorburn3CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn3CBC_normal.tga
+	specularmap textures/vegas/cdoorburn3CBC_spec.tga
 }
 
 textures/vegas/cdoorburn4ABC
 {
 	diffusemap textures/vegas/cdoorburn4ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn4ABC_normal.tga
+	specularmap textures/vegas/cdoorburn4ABC_spec.tga
 }
 
 textures/vegas/cdoorburn4BBC
 {
 	diffusemap textures/vegas/cdoorburn4BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cdoorburn4BBC_normal.tga
+	specularmap textures/vegas/cdoorburn4BBC_spec.tga
 }
 
 textures/vegas/ceasrcrosswRC
 {
 	diffusemap textures/vegas/ceasrcrosswRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceasrcrosswRC_normal.tga
+	specularmap textures/vegas/ceasrcrosswRC_spec.tga
 }
 
 textures/vegas/ceasrwall2RC
 {
 	diffusemap textures/vegas/ceasrwall2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceasrwall2RC_normal.tga
+	specularmap textures/vegas/ceasrwall2RC_spec.tga
 }
 
 textures/vegas/ceasrwall3RC
 {
 	diffusemap textures/vegas/ceasrwall3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceasrwall3RC_normal.tga
+	specularmap textures/vegas/ceasrwall3RC_spec.tga
 }
 
 textures/vegas/ceasshops1sah
 {
 	diffusemap textures/vegas/ceasshops1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceasshops1sah_normal.tga
+	specularmap textures/vegas/ceasshops1sah_spec.tga
 }
 
 textures/vegas/ceiling1RC
 {
 	diffusemap textures/vegas/ceiling1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceiling1RC_normal.tga
+	specularmap textures/vegas/ceiling1RC_spec.tga
 }
 
 textures/vegas/ceiling2RC
 {
 	diffusemap textures/vegas/ceiling2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceiling2RC_normal.tga
+	specularmap textures/vegas/ceiling2RC_spec.tga
 }
 
 textures/vegas/ceiling3RC
 {
 	diffusemap textures/vegas/ceiling3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceiling3RC_normal.tga
+	specularmap textures/vegas/ceiling3RC_spec.tga
 }
 
 textures/vegas/ceiling4RC
 {
 	diffusemap textures/vegas/ceiling4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceiling4RC_normal.tga
+	specularmap textures/vegas/ceiling4RC_spec.tga
 }
 
 textures/vegas/cescarpet1RC
 {
 	diffusemap textures/vegas/cescarpet1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cescarpet1RC_normal.tga
+	specularmap textures/vegas/cescarpet1RC_spec.tga
 }
 
 textures/vegas/cescarpet3RC
 {
 	diffusemap textures/vegas/cescarpet3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cescarpet3RC_normal.tga
+	specularmap textures/vegas/cescarpet3RC_spec.tga
 }
 
 textures/vegas/cesceiling1RC
 {
 	diffusemap textures/vegas/cesceiling1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cesceiling1RC_normal.tga
+	specularmap textures/vegas/cesceiling1RC_spec.tga
 }
 
 textures/vegas/cesceilingtrm1R
 {
 	diffusemap textures/vegas/cesceilingtrm1R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cesceilingtrm1R_normal.tga
+	specularmap textures/vegas/cesceilingtrm1R_spec.tga
 }
 
 textures/vegas/cesdoor1RC
 {
 	diffusemap textures/vegas/cesdoor1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cesdoor1RC_normal.tga
+	specularmap textures/vegas/cesdoor1RC_spec.tga
 }
 
 textures/vegas/ceselevator1bRC
 {
 	diffusemap textures/vegas/ceselevator1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceselevator1bRC_normal.tga
+	specularmap textures/vegas/ceselevator1bRC_spec.tga
 }
 
 textures/vegas/cesfloor1RC
 {
 	diffusemap textures/vegas/cesfloor1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cesfloor1RC_normal.tga
+	specularmap textures/vegas/cesfloor1RC_spec.tga
 }
 
 textures/vegas/cesfloor2RC
 {
 	diffusemap textures/vegas/cesfloor2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cesfloor2RC_normal.tga
+	specularmap textures/vegas/cesfloor2RC_spec.tga
 }
 
 textures/vegas/cesrail1RC
 {
 	diffusemap textures/vegas/cesrail1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cesrail1RC_normal.tga
+	specularmap textures/vegas/cesrail1RC_spec.tga
 }
 
 textures/vegas/cesrail2RC
 {
 	diffusemap textures/vegas/cesrail2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cesrail2RC_normal.tga
+	specularmap textures/vegas/cesrail2RC_spec.tga
 }
 
 textures/vegas/ceswall1avtw
 {
 	diffusemap textures/vegas/ceswall1avtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceswall1avtw_normal.tga
+	specularmap textures/vegas/ceswall1avtw_spec.tga
 }
 
 textures/vegas/ceswall1bRC
 {
 	diffusemap textures/vegas/ceswall1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceswall1bRC_normal.tga
+	specularmap textures/vegas/ceswall1bRC_spec.tga
 }
 
 textures/vegas/ceswall1cRC
 {
 	diffusemap textures/vegas/ceswall1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceswall1cRC_normal.tga
+	specularmap textures/vegas/ceswall1cRC_spec.tga
 }
 
 textures/vegas/ceswall1dRC
 {
 	diffusemap textures/vegas/ceswall1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceswall1dRC_normal.tga
+	specularmap textures/vegas/ceswall1dRC_spec.tga
 }
 
 textures/vegas/ceswall1vtw
 {
 	diffusemap textures/vegas/ceswall1vtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ceswall1vtw_normal.tga
+	specularmap textures/vegas/ceswall1vtw_spec.tga
 }
 
 textures/vegas/china_tree_1tw
 {
 	diffusemap textures/vegas/china_tree_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/china_tree_1tw_normal.tga
+	specularmap textures/vegas/china_tree_1tw_spec.tga
 }
 
 textures/vegas/chineecurt1tw
 {
 	diffusemap textures/vegas/chineecurt1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/chineecurt1tw_normal.tga
+	specularmap textures/vegas/chineecurt1tw_spec.tga
 }
 
 textures/vegas/chineeflo_3atw
 {
 	diffusemap textures/vegas/chineeflo_3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/chineeflo_3atw_normal.tga
+	specularmap textures/vegas/chineeflo_3atw_spec.tga
 }
 
 textures/vegas/chineeflo_3btw
 {
 	diffusemap textures/vegas/chineeflo_3btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/chineeflo_3btw_normal.tga
+	specularmap textures/vegas/chineeflo_3btw_spec.tga
 }
 
 textures/vegas/cieling1BBC
 {
 	diffusemap textures/vegas/cieling1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1BBC_normal.tga
+	specularmap textures/vegas/cieling1BBC_spec.tga
 }
 
 textures/vegas/cieling1E3BC
 {
 	diffusemap textures/vegas/cieling1E3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1E3BC_normal.tga
+	specularmap textures/vegas/cieling1E3BC_spec.tga
 }
 
 textures/vegas/cieling1EBC
 {
 	diffusemap textures/vegas/cieling1EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1EBC_normal.tga
+	specularmap textures/vegas/cieling1EBC_spec.tga
 }
 
 textures/vegas/cieling1FBC
 {
 	diffusemap textures/vegas/cieling1FBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1FBC_normal.tga
+	specularmap textures/vegas/cieling1FBC_spec.tga
 }
 
 textures/vegas/cieling1GBC
 {
 	diffusemap textures/vegas/cieling1GBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1GBC_normal.tga
+	specularmap textures/vegas/cieling1GBC_spec.tga
 }
 
 textures/vegas/cieling1hBC
 {
 	diffusemap textures/vegas/cieling1hBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1hBC_normal.tga
+	specularmap textures/vegas/cieling1hBC_spec.tga
 }
 
 textures/vegas/cieling1iBC
 {
 	diffusemap textures/vegas/cieling1iBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1iBC_normal.tga
+	specularmap textures/vegas/cieling1iBC_spec.tga
 }
 
 textures/vegas/cieling1jBC
 {
 	diffusemap textures/vegas/cieling1jBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling1jBC_normal.tga
+	specularmap textures/vegas/cieling1jBC_spec.tga
 }
 
 textures/vegas/cieling2aBC
 {
 	diffusemap textures/vegas/cieling2aBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cieling2aBC_normal.tga
+	specularmap textures/vegas/cieling2aBC_spec.tga
 }
 
 textures/vegas/cielingbrn1ABC
 {
 	diffusemap textures/vegas/cielingbrn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn1ABC_normal.tga
+	specularmap textures/vegas/cielingbrn1ABC_spec.tga
 }
 
 textures/vegas/cielingbrn1CBC
 {
 	diffusemap textures/vegas/cielingbrn1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn1CBC_normal.tga
+	specularmap textures/vegas/cielingbrn1CBC_spec.tga
 }
 
 textures/vegas/cielingbrn1DBC
 {
 	diffusemap textures/vegas/cielingbrn1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn1DBC_normal.tga
+	specularmap textures/vegas/cielingbrn1DBC_spec.tga
 }
 
 textures/vegas/cielingbrn1EBC
 {
 	diffusemap textures/vegas/cielingbrn1EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn1EBC_normal.tga
+	specularmap textures/vegas/cielingbrn1EBC_spec.tga
 }
 
 textures/vegas/cielingbrn2ABC
 {
 	diffusemap textures/vegas/cielingbrn2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn2ABC_normal.tga
+	specularmap textures/vegas/cielingbrn2ABC_spec.tga
 }
 
 textures/vegas/cielingbrn2CBC
 {
 	diffusemap textures/vegas/cielingbrn2CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn2CBC_normal.tga
+	specularmap textures/vegas/cielingbrn2CBC_spec.tga
 }
 
 textures/vegas/cielingbrn2EBC
 {
 	diffusemap textures/vegas/cielingbrn2EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn2EBC_normal.tga
+	specularmap textures/vegas/cielingbrn2EBC_spec.tga
 }
 
 textures/vegas/cielingbrn3ABC
 {
 	diffusemap textures/vegas/cielingbrn3ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn3ABC_normal.tga
+	specularmap textures/vegas/cielingbrn3ABC_spec.tga
 }
 
 textures/vegas/cielingbrn3BBC
 {
 	diffusemap textures/vegas/cielingbrn3BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn3BBC_normal.tga
+	specularmap textures/vegas/cielingbrn3BBC_spec.tga
 }
 
 textures/vegas/cielingbrn3DBC
 {
 	diffusemap textures/vegas/cielingbrn3DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn3DBC_normal.tga
+	specularmap textures/vegas/cielingbrn3DBC_spec.tga
 }
 
 textures/vegas/cielingbrn4ABC
 {
 	diffusemap textures/vegas/cielingbrn4ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn4ABC_normal.tga
+	specularmap textures/vegas/cielingbrn4ABC_spec.tga
 }
 
 textures/vegas/cielingbrn4BBC
 {
 	diffusemap textures/vegas/cielingbrn4BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn4BBC_normal.tga
+	specularmap textures/vegas/cielingbrn4BBC_spec.tga
 }
 
 textures/vegas/cielingbrn4EBC
 {
 	diffusemap textures/vegas/cielingbrn4EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cielingbrn4EBC_normal.tga
+	specularmap textures/vegas/cielingbrn4EBC_spec.tga
 }
 
 textures/vegas/citywall1ABC
 {
 	diffusemap textures/vegas/citywall1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/citywall1ABC_normal.tga
+	specularmap textures/vegas/citywall1ABC_spec.tga
 }
 
 textures/vegas/colamach1sah
 {
 	diffusemap textures/vegas/colamach1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/colamach1sah_normal.tga
+	specularmap textures/vegas/colamach1sah_spec.tga
 }
 
 textures/vegas/cover1BmskBC
 {
 	diffusemap textures/vegas/cover1BmskBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cover1BmskBC_normal.tga
+	specularmap textures/vegas/cover1BmskBC_spec.tga
 }
 
 textures/vegas/crackdwall1BC
 {
 	diffusemap textures/vegas/crackdwall1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/crackdwall1BC_normal.tga
+	specularmap textures/vegas/crackdwall1BC_spec.tga
 }
 
 textures/vegas/crampsrock1tw
 {
 	diffusemap textures/vegas/crampsrock1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/crampsrock1tw_normal.tga
+	specularmap textures/vegas/crampsrock1tw_spec.tga
 }
 
 textures/vegas/crampsrock2tw
 {
 	diffusemap textures/vegas/crampsrock2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/crampsrock2tw_normal.tga
+	specularmap textures/vegas/crampsrock2tw_spec.tga
 }
 
 textures/vegas/cwallburn1ABC
 {
 	diffusemap textures/vegas/cwallburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn1ABC_normal.tga
+	specularmap textures/vegas/cwallburn1ABC_spec.tga
 }
 
 textures/vegas/cwallburn1BBC
 {
 	diffusemap textures/vegas/cwallburn1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn1BBC_normal.tga
+	specularmap textures/vegas/cwallburn1BBC_spec.tga
 }
 
 textures/vegas/cwallburn1CBC
 {
 	diffusemap textures/vegas/cwallburn1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn1CBC_normal.tga
+	specularmap textures/vegas/cwallburn1CBC_spec.tga
 }
 
 textures/vegas/cwallburn2ABC
 {
 	diffusemap textures/vegas/cwallburn2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn2ABC_normal.tga
+	specularmap textures/vegas/cwallburn2ABC_spec.tga
 }
 
 textures/vegas/cwallburn2BBC
 {
 	diffusemap textures/vegas/cwallburn2BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn2BBC_normal.tga
+	specularmap textures/vegas/cwallburn2BBC_spec.tga
 }
 
 textures/vegas/cwallburn2CBC
 {
 	diffusemap textures/vegas/cwallburn2CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn2CBC_normal.tga
+	specularmap textures/vegas/cwallburn2CBC_spec.tga
 }
 
 textures/vegas/cwallburn2DBC
 {
 	diffusemap textures/vegas/cwallburn2DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn2DBC_normal.tga
+	specularmap textures/vegas/cwallburn2DBC_spec.tga
 }
 
 textures/vegas/cwallburn2EBC
 {
 	diffusemap textures/vegas/cwallburn2EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn2EBC_normal.tga
+	specularmap textures/vegas/cwallburn2EBC_spec.tga
 }
 
 textures/vegas/cwallburn2FBC
 {
 	diffusemap textures/vegas/cwallburn2FBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn2FBC_normal.tga
+	specularmap textures/vegas/cwallburn2FBC_spec.tga
 }
 
 textures/vegas/cwallburn3ABC
 {
 	diffusemap textures/vegas/cwallburn3ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn3ABC_normal.tga
+	specularmap textures/vegas/cwallburn3ABC_spec.tga
 }
 
 textures/vegas/cwallburn3BBC
 {
 	diffusemap textures/vegas/cwallburn3BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn3BBC_normal.tga
+	specularmap textures/vegas/cwallburn3BBC_spec.tga
 }
 
 textures/vegas/cwallburn3CBC
 {
 	diffusemap textures/vegas/cwallburn3CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn3CBC_normal.tga
+	specularmap textures/vegas/cwallburn3CBC_spec.tga
 }
 
 textures/vegas/cwallburn4ABC
 {
 	diffusemap textures/vegas/cwallburn4ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn4ABC_normal.tga
+	specularmap textures/vegas/cwallburn4ABC_spec.tga
 }
 
 textures/vegas/cwallburn4DBC
 {
 	diffusemap textures/vegas/cwallburn4DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn4DBC_normal.tga
+	specularmap textures/vegas/cwallburn4DBC_spec.tga
 }
 
 textures/vegas/cwallburn4EBC
 {
 	diffusemap textures/vegas/cwallburn4EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn4EBC_normal.tga
+	specularmap textures/vegas/cwallburn4EBC_spec.tga
 }
 
 textures/vegas/cwallburn4FBC
 {
 	diffusemap textures/vegas/cwallburn4FBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/cwallburn4FBC_normal.tga
+	specularmap textures/vegas/cwallburn4FBC_spec.tga
 }
 
 textures/vegas/dcslotsign2RC
 {
 	diffusemap textures/vegas/dcslotsign2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/dcslotsign2RC_normal.tga
+	specularmap textures/vegas/dcslotsign2RC_spec.tga
 }
 
 textures/vegas/Decorwall1tw
 {
 	diffusemap textures/vegas/Decorwall1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/Decorwall1tw_normal.tga
+	specularmap textures/vegas/Decorwall1tw_spec.tga
 }
 
 textures/vegas/display1RC
 {
 	diffusemap textures/vegas/display1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/display1RC_normal.tga
+	specularmap textures/vegas/display1RC_spec.tga
 }
 
 textures/vegas/dollarsie_1tw
 {
 	diffusemap textures/vegas/dollarsie_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/dollarsie_1tw_normal.tga
+	specularmap textures/vegas/dollarsie_1tw_spec.tga
 }
 
 textures/vegas/dollarsie_2tw
 {
 	diffusemap textures/vegas/dollarsie_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/dollarsie_2tw_normal.tga
+	specularmap textures/vegas/dollarsie_2tw_spec.tga
 }
 
 textures/vegas/drain1RC
 {
 	diffusemap textures/vegas/drain1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/drain1RC_normal.tga
+	specularmap textures/vegas/drain1RC_spec.tga
 }
 
 textures/vegas/dukepants1RC
 {
 	diffusemap textures/vegas/dukepants1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/dukepants1RC_normal.tga
+	specularmap textures/vegas/dukepants1RC_spec.tga
 }
 
 textures/vegas/dukeshirt1RC
 {
 	diffusemap textures/vegas/dukeshirt1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/dukeshirt1RC_normal.tga
+	specularmap textures/vegas/dukeshirt1RC_spec.tga
 }
 
 textures/vegas/dukesym3BC
 {
 	diffusemap textures/vegas/dukesym3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/dukesym3BC_normal.tga
+	specularmap textures/vegas/dukesym3BC_spec.tga
 }
 
 textures/vegas/elevdorbrn1BC
 {
 	diffusemap textures/vegas/elevdorbrn1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/elevdorbrn1BC_normal.tga
+	specularmap textures/vegas/elevdorbrn1BC_spec.tga
 }
 
 textures/vegas/elevdorbrn2BC
 {
 	diffusemap textures/vegas/elevdorbrn2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/elevdorbrn2BC_normal.tga
+	specularmap textures/vegas/elevdorbrn2BC_spec.tga
 }
 
 textures/vegas/elvis3tw
 {
 	diffusemap textures/vegas/elvis3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/elvis3tw_normal.tga
+	specularmap textures/vegas/elvis3tw_spec.tga
 }
 
 textures/vegas/elvistw
 {
 	diffusemap textures/vegas/elvistw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/elvistw_normal.tga
+	specularmap textures/vegas/elvistw_spec.tga
 }
 
 textures/vegas/elvis_1atw
 {
 	diffusemap textures/vegas/elvis_1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/elvis_1atw_normal.tga
+	specularmap textures/vegas/elvis_1atw_spec.tga
 }
 
 textures/vegas/esc_flat1sah
 {
 	diffusemap textures/vegas/esc_flat1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/esc_flat1sah_normal.tga
+	specularmap textures/vegas/esc_flat1sah_spec.tga
 }
 
 textures/vegas/esc_rail1sah
 {
 	diffusemap textures/vegas/esc_rail1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/esc_rail1sah_normal.tga
+	specularmap textures/vegas/esc_rail1sah_spec.tga
 }
 
 textures/vegas/fancybrick_1
 {
 	diffusemap textures/vegas/fancybrick_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/fancybrick_1_normal.tga
+	specularmap textures/vegas/fancybrick_1_spec.tga
 }
 
 textures/vegas/fancybrick_2tw
 {
 	diffusemap textures/vegas/fancybrick_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/fancybrick_2tw_normal.tga
+	specularmap textures/vegas/fancybrick_2tw_spec.tga
 }
 
 textures/vegas/flamingo1sah
 {
 	diffusemap textures/vegas/flamingo1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flamingo1sah_normal.tga
+	specularmap textures/vegas/flamingo1sah_spec.tga
 }
 
 textures/vegas/flower1RC
 {
 	diffusemap textures/vegas/flower1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flower1RC_normal.tga
+	specularmap textures/vegas/flower1RC_spec.tga
 }
 
 textures/vegas/flrMarble1ABC
 {
 	diffusemap textures/vegas/flrMarble1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flrMarble1ABC_normal.tga
+	specularmap textures/vegas/flrMarble1ABC_spec.tga
 }
 
 textures/vegas/flrMarble1CBC
 {
 	diffusemap textures/vegas/flrMarble1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flrMarble1CBC_normal.tga
+	specularmap textures/vegas/flrMarble1CBC_spec.tga
 }
 
 textures/vegas/flrMarble1DBC
 {
 	diffusemap textures/vegas/flrMarble1DBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flrMarble1DBC_normal.tga
+	specularmap textures/vegas/flrMarble1DBC_spec.tga
 }
 
 textures/vegas/flwrfloor1ABC
 {
 	diffusemap textures/vegas/flwrfloor1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flwrfloor1ABC_normal.tga
+	specularmap textures/vegas/flwrfloor1ABC_spec.tga
 }
 
 textures/vegas/flwrfloor1BBC
 {
 	diffusemap textures/vegas/flwrfloor1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flwrfloor1BBC_normal.tga
+	specularmap textures/vegas/flwrfloor1BBC_spec.tga
 }
 
 textures/vegas/flwrfloor1CBC
 {
 	diffusemap textures/vegas/flwrfloor1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/flwrfloor1CBC_normal.tga
+	specularmap textures/vegas/flwrfloor1CBC_spec.tga
 }
 
 textures/vegas/forbcity1stw
 {
 	diffusemap textures/vegas/forbcity1stw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbcity1stw_normal.tga
+	specularmap textures/vegas/forbcity1stw_spec.tga
 }
 
 textures/vegas/forbcity2tw
 {
 	diffusemap textures/vegas/forbcity2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbcity2tw_normal.tga
+	specularmap textures/vegas/forbcity2tw_spec.tga
 }
 
 textures/vegas/forbgranny_1tw
 {
 	diffusemap textures/vegas/forbgranny_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbgranny_1tw_normal.tga
+	specularmap textures/vegas/forbgranny_1tw_spec.tga
 }
 
 textures/vegas/forbid_wall_1tw
 {
 	diffusemap textures/vegas/forbid_wall_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_1tw_normal.tga
+	specularmap textures/vegas/forbid_wall_1tw_spec.tga
 }
 
 textures/vegas/forbid_wall_3atw
 {
 	diffusemap textures/vegas/forbid_wall_3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_3atw_normal.tga
+	specularmap textures/vegas/forbid_wall_3atw_spec.tga
 }
 
 textures/vegas/forbid_wall_3tw
 {
 	diffusemap textures/vegas/forbid_wall_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_3tw_normal.tga
+	specularmap textures/vegas/forbid_wall_3tw_spec.tga
 }
 
 textures/vegas/forbid_wall_5tw
 {
 	diffusemap textures/vegas/forbid_wall_5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_5tw_normal.tga
+	specularmap textures/vegas/forbid_wall_5tw_spec.tga
 }
 
 textures/vegas/forbid_wall_6tw
 {
 	diffusemap textures/vegas/forbid_wall_6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_6tw_normal.tga
+	specularmap textures/vegas/forbid_wall_6tw_spec.tga
 }
 
 textures/vegas/forbid_wall_7tw
 {
 	diffusemap textures/vegas/forbid_wall_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_7tw_normal.tga
+	specularmap textures/vegas/forbid_wall_7tw_spec.tga
 }
 
 textures/vegas/forbid_wall_8tw
 {
 	diffusemap textures/vegas/forbid_wall_8tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_8tw_normal.tga
+	specularmap textures/vegas/forbid_wall_8tw_spec.tga
 }
 
 textures/vegas/forbid_wall_9tw
 {
 	diffusemap textures/vegas/forbid_wall_9tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_9tw_normal.tga
+	specularmap textures/vegas/forbid_wall_9tw_spec.tga
 }
 
 textures/vegas/forbid_wall_ztw
 {
 	diffusemap textures/vegas/forbid_wall_ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wall_ztw_normal.tga
+	specularmap textures/vegas/forbid_wall_ztw_spec.tga
 }
 
 textures/vegas/forbid_wood_7tw
 {
 	diffusemap textures/vegas/forbid_wood_7tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forbid_wood_7tw_normal.tga
+	specularmap textures/vegas/forbid_wood_7tw_spec.tga
 }
 
 textures/vegas/forb_floor_2tw
 {
 	diffusemap textures/vegas/forb_floor_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forb_floor_2tw_normal.tga
+	specularmap textures/vegas/forb_floor_2tw_spec.tga
 }
 
 textures/vegas/forb_roof_1tw
 {
 	diffusemap textures/vegas/forb_roof_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forb_roof_1tw_normal.tga
+	specularmap textures/vegas/forb_roof_1tw_spec.tga
 }
 
 textures/vegas/forb_wall4ab_1btw
 {
 	diffusemap textures/vegas/forb_wall4ab_1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forb_wall4ab_1btw_normal.tga
+	specularmap textures/vegas/forb_wall4ab_1btw_spec.tga
 }
 
 textures/vegas/forb_wall4ab_1tw
 {
 	diffusemap textures/vegas/forb_wall4ab_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/forb_wall4ab_1tw_normal.tga
+	specularmap textures/vegas/forb_wall4ab_1tw_spec.tga
 }
 
 textures/vegas/freeslotpull1RC
 {
 	diffusemap textures/vegas/freeslotpull1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/freeslotpull1RC_normal.tga
+	specularmap textures/vegas/freeslotpull1RC_spec.tga
 }
 
 textures/vegas/genericblack1BC
 {
 	diffusemap textures/vegas/genericblack1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/genericblack1BC_normal.tga
+	specularmap textures/vegas/genericblack1BC_spec.tga
 }
 
 textures/vegas/genericgold1BC
 {
 	diffusemap textures/vegas/genericgold1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/genericgold1BC_normal.tga
+	specularmap textures/vegas/genericgold1BC_spec.tga
 }
 
 textures/vegas/gimblechine4tw
 {
 	diffusemap textures/vegas/gimblechine4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/gimblechine4tw_normal.tga
+	specularmap textures/vegas/gimblechine4tw_spec.tga
 }
 
 textures/vegas/gimblechine5etw
 {
 	diffusemap textures/vegas/gimblechine5etw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/gimblechine5etw_normal.tga
+	specularmap textures/vegas/gimblechine5etw_spec.tga
 }
 
 textures/vegas/Glass22sah
 {
 	diffusemap textures/vegas/Glass22sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/Glass22sah_normal.tga
+	specularmap textures/vegas/Glass22sah_spec.tga
 }
 
 textures/vegas/goddamitetw
 {
 	diffusemap textures/vegas/goddamitetw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/goddamitetw_normal.tga
+	specularmap textures/vegas/goddamitetw_spec.tga
 }
 
 textures/vegas/goldtrim1RC
 {
 	diffusemap textures/vegas/goldtrim1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/goldtrim1RC_normal.tga
+	specularmap textures/vegas/goldtrim1RC_spec.tga
 }
 
 textures/vegas/goldtrmbrn1BC
 {
 	diffusemap textures/vegas/goldtrmbrn1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/goldtrmbrn1BC_normal.tga
+	specularmap textures/vegas/goldtrmbrn1BC_spec.tga
 }
 
 textures/vegas/goldtrmbrn2BC
 {
 	diffusemap textures/vegas/goldtrmbrn2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/goldtrmbrn2BC_normal.tga
+	specularmap textures/vegas/goldtrmbrn2BC_spec.tga
 }
 
 textures/vegas/goldtrmbrn3BC
 {
 	diffusemap textures/vegas/goldtrmbrn3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/goldtrmbrn3BC_normal.tga
+	specularmap textures/vegas/goldtrmbrn3BC_spec.tga
 }
 
 textures/vegas/greekwall1ABC
 {
 	diffusemap textures/vegas/greekwall1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/greekwall1ABC_normal.tga
+	specularmap textures/vegas/greekwall1ABC_spec.tga
 }
 
 textures/vegas/greekwall2ABC
 {
 	diffusemap textures/vegas/greekwall2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/greekwall2ABC_normal.tga
+	specularmap textures/vegas/greekwall2ABC_spec.tga
 }
 
 textures/vegas/greekwall2BBC
 {
 	diffusemap textures/vegas/greekwall2BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/greekwall2BBC_normal.tga
+	specularmap textures/vegas/greekwall2BBC_spec.tga
 }
 
 textures/vegas/hardrock1sah
 {
 	diffusemap textures/vegas/hardrock1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/hardrock1sah_normal.tga
+	specularmap textures/vegas/hardrock1sah_spec.tga
 }
 
 textures/vegas/howzatwoods_1tw
 {
 	diffusemap textures/vegas/howzatwoods_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/howzatwoods_1tw_normal.tga
+	specularmap textures/vegas/howzatwoods_1tw_spec.tga
 }
 
 textures/vegas/imperial1sah
 {
 	diffusemap textures/vegas/imperial1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/imperial1sah_normal.tga
+	specularmap textures/vegas/imperial1sah_spec.tga
 }
 
 textures/vegas/insign1atw
 {
 	diffusemap textures/vegas/insign1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/insign1atw_normal.tga
+	specularmap textures/vegas/insign1atw_spec.tga
 }
 
 textures/vegas/insign1btw
 {
 	diffusemap textures/vegas/insign1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/insign1btw_normal.tga
+	specularmap textures/vegas/insign1btw_spec.tga
 }
 
 textures/vegas/insign1tw
 {
 	diffusemap textures/vegas/insign1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/insign1tw_normal.tga
+	specularmap textures/vegas/insign1tw_spec.tga
 }
 
 textures/vegas/JackpotCanvas1KS
 {
 	diffusemap textures/vegas/JackpotCanvas1KS.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/JackpotCanvas1KS_normal.tga
+	specularmap textures/vegas/JackpotCanvas1KS_spec.tga
 }
 
 textures/vegas/jukebox1RC
 {
 	diffusemap textures/vegas/jukebox1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/jukebox1RC_normal.tga
+	specularmap textures/vegas/jukebox1RC_spec.tga
 }
 
 textures/vegas/kynnalight4tw
 {
 	diffusemap textures/vegas/kynnalight4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/kynnalight4tw_normal.tga
+	specularmap textures/vegas/kynnalight4tw_spec.tga
 }
 
 textures/vegas/ladyfloout1tw
 {
 	diffusemap textures/vegas/ladyfloout1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ladyfloout1tw_normal.tga
+	specularmap textures/vegas/ladyfloout1tw_spec.tga
 }
 
 textures/vegas/ladyfloout3
 {
 	diffusemap textures/vegas/ladyfloout3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ladyfloout3_normal.tga
+	specularmap textures/vegas/ladyfloout3_spec.tga
 }
 
 textures/vegas/ladyfloout3c
 {
 	diffusemap textures/vegas/ladyfloout3c.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ladyfloout3c_normal.tga
+	specularmap textures/vegas/ladyfloout3c_spec.tga
 }
 
 textures/vegas/ladykiller1sah
 {
 	diffusemap textures/vegas/ladykiller1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ladykiller1sah_normal.tga
+	specularmap textures/vegas/ladykiller1sah_spec.tga
 }
 
 textures/vegas/ladyluck1sah
 {
 	diffusemap textures/vegas/ladyluck1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ladyluck1sah_normal.tga
+	specularmap textures/vegas/ladyluck1sah_spec.tga
 }
 
 textures/vegas/ledge1RC
 {
 	diffusemap textures/vegas/ledge1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ledge1RC_normal.tga
+	specularmap textures/vegas/ledge1RC_spec.tga
 }
 
 textures/vegas/ledge2RC
 {
 	diffusemap textures/vegas/ledge2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ledge2RC_normal.tga
+	specularmap textures/vegas/ledge2RC_spec.tga
 }
 
 textures/vegas/light1aRC
 {
 	diffusemap textures/vegas/light1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/light1aRC_normal.tga
+	specularmap textures/vegas/light1aRC_spec.tga
 }
 
 textures/vegas/light1bRC
 {
 	diffusemap textures/vegas/light1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/light1bRC_normal.tga
+	specularmap textures/vegas/light1bRC_spec.tga
 }
 
 textures/vegas/light2RC
 {
 	diffusemap textures/vegas/light2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/light2RC_normal.tga
+	specularmap textures/vegas/light2RC_spec.tga
 }
 
 textures/vegas/lk_neon1sah
 {
 	diffusemap textures/vegas/lk_neon1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/lk_neon1sah_normal.tga
+	specularmap textures/vegas/lk_neon1sah_spec.tga
 }
 
 textures/vegas/loopdy1tw
 {
 	diffusemap textures/vegas/loopdy1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/loopdy1tw_normal.tga
+	specularmap textures/vegas/loopdy1tw_spec.tga
 }
 
 textures/vegas/luxor1sah
 {
 	diffusemap textures/vegas/luxor1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/luxor1sah_normal.tga
+	specularmap textures/vegas/luxor1sah_spec.tga
 }
 
 textures/vegas/mabwater1
 {
 	diffusemap textures/vegas/mabwater1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mabwater1_normal.tga
+	specularmap textures/vegas/mabwater1_spec.tga
 }
 
 textures/vegas/mabwater_2tw
 {
 	diffusemap textures/vegas/mabwater_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mabwater_2tw_normal.tga
+	specularmap textures/vegas/mabwater_2tw_spec.tga
 }
 
 textures/vegas/MalWal1BC
 {
 	diffusemap textures/vegas/MalWal1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/MalWal1BC_normal.tga
+	specularmap textures/vegas/MalWal1BC_spec.tga
 }
 
 textures/vegas/MalWalRmsk1BC
 {
 	diffusemap textures/vegas/MalWalRmsk1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/MalWalRmsk1BC_normal.tga
+	specularmap textures/vegas/MalWalRmsk1BC_spec.tga
 }
 
 textures/vegas/marbcol_1tw
 {
 	diffusemap textures/vegas/marbcol_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/marbcol_1tw_normal.tga
+	specularmap textures/vegas/marbcol_1tw_spec.tga
 }
 
 textures/vegas/marble1RC
 {
 	diffusemap textures/vegas/marble1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/marble1RC_normal.tga
+	specularmap textures/vegas/marble1RC_spec.tga
 }
 
 textures/vegas/marblefloor1RC
 {
 	diffusemap textures/vegas/marblefloor1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/marblefloor1RC_normal.tga
+	specularmap textures/vegas/marblefloor1RC_spec.tga
 }
 
 textures/vegas/marbsteps_1tw
 {
 	diffusemap textures/vegas/marbsteps_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/marbsteps_1tw_normal.tga
+	specularmap textures/vegas/marbsteps_1tw_spec.tga
 }
 
 textures/vegas/matador_1tw
 {
 	diffusemap textures/vegas/matador_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/matador_1tw_normal.tga
+	specularmap textures/vegas/matador_1tw_spec.tga
 }
 
 textures/vegas/matador_2tw
 {
 	diffusemap textures/vegas/matador_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/matador_2tw_normal.tga
+	specularmap textures/vegas/matador_2tw_spec.tga
 }
 
 textures/vegas/medalburn1ABC
 {
 	diffusemap textures/vegas/medalburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/medalburn1ABC_normal.tga
+	specularmap textures/vegas/medalburn1ABC_spec.tga
 }
 
 textures/vegas/Men_neon2sah
 {
 	diffusemap textures/vegas/Men_neon2sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/Men_neon2sah_normal.tga
+	specularmap textures/vegas/Men_neon2sah_spec.tga
 }
 
 textures/vegas/million_1A
 {
 	diffusemap textures/vegas/million_1A.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/million_1A_normal.tga
+	specularmap textures/vegas/million_1A_spec.tga
 }
 
 textures/vegas/million_2A
 {
 	diffusemap textures/vegas/million_2A.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/million_2A_normal.tga
+	specularmap textures/vegas/million_2A_spec.tga
 }
 
 textures/vegas/million_3A
 {
 	diffusemap textures/vegas/million_3A.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/million_3A_normal.tga
+	specularmap textures/vegas/million_3A_spec.tga
 }
 
 textures/vegas/mirage1sah
 {
 	diffusemap textures/vegas/mirage1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mirage1sah_normal.tga
+	specularmap textures/vegas/mirage1sah_spec.tga
 }
 
 textures/vegas/mirage2sah
 {
 	diffusemap textures/vegas/mirage2sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mirage2sah_normal.tga
+	specularmap textures/vegas/mirage2sah_spec.tga
 }
 
 textures/vegas/mirageRC
 {
 	diffusemap textures/vegas/mirageRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mirageRC_normal.tga
+	specularmap textures/vegas/mirageRC_spec.tga
 }
 
 textures/vegas/modulation
 {
 	diffusemap textures/vegas/modulation.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/modulation_normal.tga
+	specularmap textures/vegas/modulation_spec.tga
 }
 
 textures/vegas/monte1aRC
 {
 	diffusemap textures/vegas/monte1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/monte1aRC_normal.tga
+	specularmap textures/vegas/monte1aRC_spec.tga
 }
 
 textures/vegas/monte1bRC
 {
 	diffusemap textures/vegas/monte1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/monte1bRC_normal.tga
+	specularmap textures/vegas/monte1bRC_spec.tga
 }
 
 textures/vegas/mrbleburn1BC
 {
 	diffusemap textures/vegas/mrbleburn1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn1BC_normal.tga
+	specularmap textures/vegas/mrbleburn1BC_spec.tga
 }
 
 textures/vegas/mrbleburn1CBC
 {
 	diffusemap textures/vegas/mrbleburn1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn1CBC_normal.tga
+	specularmap textures/vegas/mrbleburn1CBC_spec.tga
 }
 
 textures/vegas/mrbleburn1EBC
 {
 	diffusemap textures/vegas/mrbleburn1EBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn1EBC_normal.tga
+	specularmap textures/vegas/mrbleburn1EBC_spec.tga
 }
 
 textures/vegas/mrbleburn2BC
 {
 	diffusemap textures/vegas/mrbleburn2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn2BC_normal.tga
+	specularmap textures/vegas/mrbleburn2BC_spec.tga
 }
 
 textures/vegas/mrbleburn3ABC
 {
 	diffusemap textures/vegas/mrbleburn3ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn3ABC_normal.tga
+	specularmap textures/vegas/mrbleburn3ABC_spec.tga
 }
 
 textures/vegas/mrbleburn4ABC
 {
 	diffusemap textures/vegas/mrbleburn4ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn4ABC_normal.tga
+	specularmap textures/vegas/mrbleburn4ABC_spec.tga
 }
 
 textures/vegas/mrbleburn5ABC
 {
 	diffusemap textures/vegas/mrbleburn5ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn5ABC_normal.tga
+	specularmap textures/vegas/mrbleburn5ABC_spec.tga
 }
 
 textures/vegas/mrbleburn6ABC
 {
 	diffusemap textures/vegas/mrbleburn6ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mrbleburn6ABC_normal.tga
+	specularmap textures/vegas/mrbleburn6ABC_spec.tga
 }
 
 textures/vegas/mtrimburn1ABC
 {
 	diffusemap textures/vegas/mtrimburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mtrimburn1ABC_normal.tga
+	specularmap textures/vegas/mtrimburn1ABC_spec.tga
 }
 
 textures/vegas/mtrimburn2ABC
 {
 	diffusemap textures/vegas/mtrimburn2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mtrimburn2ABC_normal.tga
+	specularmap textures/vegas/mtrimburn2ABC_spec.tga
 }
 
 textures/vegas/mulchtw
 {
 	diffusemap textures/vegas/mulchtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/mulchtw_normal.tga
+	specularmap textures/vegas/mulchtw_spec.tga
 }
 
 textures/vegas/newnasc2x_tw
 {
 	diffusemap textures/vegas/newnasc2x_tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/newnasc2x_tw_normal.tga
+	specularmap textures/vegas/newnasc2x_tw_spec.tga
 }
 
 textures/vegas/newnasc2_tw
 {
 	diffusemap textures/vegas/newnasc2_tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/newnasc2_tw_normal.tga
+	specularmap textures/vegas/newnasc2_tw_spec.tga
 }
 
 textures/vegas/newnasc_tw
 {
 	diffusemap textures/vegas/newnasc_tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/newnasc_tw_normal.tga
+	specularmap textures/vegas/newnasc_tw_spec.tga
 }
 
 textures/vegas/noids_1tw
 {
 	diffusemap textures/vegas/noids_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/noids_1tw_normal.tga
+	specularmap textures/vegas/noids_1tw_spec.tga
 }
 
 textures/vegas/nowswim_1tw
 {
 	diffusemap textures/vegas/nowswim_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/nowswim_1tw_normal.tga
+	specularmap textures/vegas/nowswim_1tw_spec.tga
 }
 
 textures/vegas/nowswim_2tw
 {
 	diffusemap textures/vegas/nowswim_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/nowswim_2tw_normal.tga
+	specularmap textures/vegas/nowswim_2tw_spec.tga
 }
 
 textures/vegas/numbers1aBC
 {
 	diffusemap textures/vegas/numbers1aBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/numbers1aBC_normal.tga
+	specularmap textures/vegas/numbers1aBC_spec.tga
 }
 
 textures/vegas/numbers2aBC
 {
 	diffusemap textures/vegas/numbers2aBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/numbers2aBC_normal.tga
+	specularmap textures/vegas/numbers2aBC_spec.tga
 }
 
 textures/vegas/numbers3aBC
 {
 	diffusemap textures/vegas/numbers3aBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/numbers3aBC_normal.tga
+	specularmap textures/vegas/numbers3aBC_spec.tga
 }
 
 textures/vegas/numbers4aBC
 {
 	diffusemap textures/vegas/numbers4aBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/numbers4aBC_normal.tga
+	specularmap textures/vegas/numbers4aBC_spec.tga
 }
 
 textures/vegas/numbers5aBC
 {
 	diffusemap textures/vegas/numbers5aBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/numbers5aBC_normal.tga
+	specularmap textures/vegas/numbers5aBC_spec.tga
 }
 
 textures/vegas/orange1ABC
 {
 	diffusemap textures/vegas/orange1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/orange1ABC_normal.tga
+	specularmap textures/vegas/orange1ABC_spec.tga
 }
 
 textures/vegas/outwardd1atw
 {
 	diffusemap textures/vegas/outwardd1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/outwardd1atw_normal.tga
+	specularmap textures/vegas/outwardd1atw_spec.tga
 }
 
 textures/vegas/outwardd1btw
 {
 	diffusemap textures/vegas/outwardd1btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/outwardd1btw_normal.tga
+	specularmap textures/vegas/outwardd1btw_spec.tga
 }
 
 textures/vegas/outwardd1tw
 {
 	diffusemap textures/vegas/outwardd1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/outwardd1tw_normal.tga
+	specularmap textures/vegas/outwardd1tw_spec.tga
 }
 
 textures/vegas/panlight1RC
 {
 	diffusemap textures/vegas/panlight1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/panlight1RC_normal.tga
+	specularmap textures/vegas/panlight1RC_spec.tga
 }
 
 textures/vegas/pavement1RC
 {
 	diffusemap textures/vegas/pavement1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pavement1RC_normal.tga
+	specularmap textures/vegas/pavement1RC_spec.tga
 }
 
 textures/vegas/peoplemover1aRC
 {
 	diffusemap textures/vegas/peoplemover1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/peoplemover1aRC_normal.tga
+	specularmap textures/vegas/peoplemover1aRC_spec.tga
 }
 
 textures/vegas/peoplemover1bRC
 {
 	diffusemap textures/vegas/peoplemover1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/peoplemover1bRC_normal.tga
+	specularmap textures/vegas/peoplemover1bRC_spec.tga
 }
 
 textures/vegas/peoplemover1cRC
 {
 	diffusemap textures/vegas/peoplemover1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/peoplemover1cRC_normal.tga
+	specularmap textures/vegas/peoplemover1cRC_spec.tga
 }
 
 textures/vegas/pilarburn1ABC
 {
 	diffusemap textures/vegas/pilarburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pilarburn1ABC_normal.tga
+	specularmap textures/vegas/pilarburn1ABC_spec.tga
 }
 
 textures/vegas/pilarburn1BBC
 {
 	diffusemap textures/vegas/pilarburn1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pilarburn1BBC_normal.tga
+	specularmap textures/vegas/pilarburn1BBC_spec.tga
 }
 
 textures/vegas/pilarburn1CBC
 {
 	diffusemap textures/vegas/pilarburn1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pilarburn1CBC_normal.tga
+	specularmap textures/vegas/pilarburn1CBC_spec.tga
 }
 
 textures/vegas/pillar1ABC
 {
 	diffusemap textures/vegas/pillar1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pillar1ABC_normal.tga
+	specularmap textures/vegas/pillar1ABC_spec.tga
 }
 
 textures/vegas/pillar1BBC
 {
 	diffusemap textures/vegas/pillar1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pillar1BBC_normal.tga
+	specularmap textures/vegas/pillar1BBC_spec.tga
 }
 
 textures/vegas/pincent_1tw
 {
 	diffusemap textures/vegas/pincent_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pincent_1tw_normal.tga
+	specularmap textures/vegas/pincent_1tw_spec.tga
 }
 
 textures/vegas/planetpimp1tw
 {
 	diffusemap textures/vegas/planetpimp1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/planetpimp1tw_normal.tga
+	specularmap textures/vegas/planetpimp1tw_spec.tga
 }
 
 textures/vegas/plantablust_1tw
 {
 	diffusemap textures/vegas/plantablust_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantablust_1tw_normal.tga
+	specularmap textures/vegas/plantablust_1tw_spec.tga
 }
 
 textures/vegas/plantation1mtw
 {
 	diffusemap textures/vegas/plantation1mtw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantation1mtw_normal.tga
+	specularmap textures/vegas/plantation1mtw_spec.tga
 }
 
 textures/vegas/plantation1tw
 {
 	diffusemap textures/vegas/plantation1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantation1tw_normal.tga
+	specularmap textures/vegas/plantation1tw_spec.tga
 }
 
 textures/vegas/plantbase2tw
 {
 	diffusemap textures/vegas/plantbase2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantbase2tw_normal.tga
+	specularmap textures/vegas/plantbase2tw_spec.tga
 }
 
 textures/vegas/plantbase3tw
 {
 	diffusemap textures/vegas/plantbase3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantbase3tw_normal.tga
+	specularmap textures/vegas/plantbase3tw_spec.tga
 }
 
 textures/vegas/plantbrick1atw
 {
 	diffusemap textures/vegas/plantbrick1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantbrick1atw_normal.tga
+	specularmap textures/vegas/plantbrick1atw_spec.tga
 }
 
 textures/vegas/plantbrick1tw
 {
 	diffusemap textures/vegas/plantbrick1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantbrick1tw_normal.tga
+	specularmap textures/vegas/plantbrick1tw_spec.tga
 }
 
 textures/vegas/plantdoor_1tw
 {
 	diffusemap textures/vegas/plantdoor_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantdoor_1tw_normal.tga
+	specularmap textures/vegas/plantdoor_1tw_spec.tga
 }
 
 textures/vegas/plantface1tw
 {
 	diffusemap textures/vegas/plantface1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantface1tw_normal.tga
+	specularmap textures/vegas/plantface1tw_spec.tga
 }
 
 textures/vegas/plantface2tw
 {
 	diffusemap textures/vegas/plantface2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantface2tw_normal.tga
+	specularmap textures/vegas/plantface2tw_spec.tga
 }
 
 textures/vegas/plantface4tw
 {
 	diffusemap textures/vegas/plantface4tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantface4tw_normal.tga
+	specularmap textures/vegas/plantface4tw_spec.tga
 }
 
 textures/vegas/plantface5atw
 {
 	diffusemap textures/vegas/plantface5atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantface5atw_normal.tga
+	specularmap textures/vegas/plantface5atw_spec.tga
 }
 
 textures/vegas/plantface5tw
 {
 	diffusemap textures/vegas/plantface5tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantface5tw_normal.tga
+	specularmap textures/vegas/plantface5tw_spec.tga
 }
 
 textures/vegas/plantface5ztw
 {
 	diffusemap textures/vegas/plantface5ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantface5ztw_normal.tga
+	specularmap textures/vegas/plantface5ztw_spec.tga
 }
 
 textures/vegas/plantrim1BC
 {
 	diffusemap textures/vegas/plantrim1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantrim1BC_normal.tga
+	specularmap textures/vegas/plantrim1BC_spec.tga
 }
 
 textures/vegas/plantrim3tw
 {
 	diffusemap textures/vegas/plantrim3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantrim3tw_normal.tga
+	specularmap textures/vegas/plantrim3tw_spec.tga
 }
 
 textures/vegas/plantstairs1tw
 {
 	diffusemap textures/vegas/plantstairs1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantstairs1tw_normal.tga
+	specularmap textures/vegas/plantstairs1tw_spec.tga
 }
 
 textures/vegas/plantstairs2tw
 {
 	diffusemap textures/vegas/plantstairs2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantstairs2tw_normal.tga
+	specularmap textures/vegas/plantstairs2tw_spec.tga
 }
 
 textures/vegas/planttrim2tw
 {
 	diffusemap textures/vegas/planttrim2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/planttrim2tw_normal.tga
+	specularmap textures/vegas/planttrim2tw_spec.tga
 }
 
 textures/vegas/planttrim2ztw
 {
 	diffusemap textures/vegas/planttrim2ztw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/planttrim2ztw_normal.tga
+	specularmap textures/vegas/planttrim2ztw_spec.tga
 }
 
 textures/vegas/plantwall7atw
 {
 	diffusemap textures/vegas/plantwall7atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantwall7atw_normal.tga
+	specularmap textures/vegas/plantwall7atw_spec.tga
 }
 
 textures/vegas/plantwall7btw
 {
 	diffusemap textures/vegas/plantwall7btw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plantwall7btw_normal.tga
+	specularmap textures/vegas/plantwall7btw_spec.tga
 }
 
 textures/vegas/plant_cobble1atw
 {
 	diffusemap textures/vegas/plant_cobble1atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plant_cobble1atw_normal.tga
+	specularmap textures/vegas/plant_cobble1atw_spec.tga
 }
 
 textures/vegas/plant_cobble2tw
 {
 	diffusemap textures/vegas/plant_cobble2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plant_cobble2tw_normal.tga
+	specularmap textures/vegas/plant_cobble2tw_spec.tga
 }
 
 textures/vegas/plant_cobble4atw
 {
 	diffusemap textures/vegas/plant_cobble4atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plant_cobble4atw_normal.tga
+	specularmap textures/vegas/plant_cobble4atw_spec.tga
 }
 
 textures/vegas/plant_wank_1tw
 {
 	diffusemap textures/vegas/plant_wank_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plant_wank_1tw_normal.tga
+	specularmap textures/vegas/plant_wank_1tw_spec.tga
 }
 
 textures/vegas/plan_w1tw
 {
 	diffusemap textures/vegas/plan_w1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plan_w1tw_normal.tga
+	specularmap textures/vegas/plan_w1tw_spec.tga
 }
 
 textures/vegas/plan_w2tw
 {
 	diffusemap textures/vegas/plan_w2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plan_w2tw_normal.tga
+	specularmap textures/vegas/plan_w2tw_spec.tga
 }
 
 textures/vegas/plonkie1tw
 {
 	diffusemap textures/vegas/plonkie1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/plonkie1tw_normal.tga
+	specularmap textures/vegas/plonkie1tw_spec.tga
 }
 
 textures/vegas/posttw
 {
 	diffusemap textures/vegas/posttw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/posttw_normal.tga
+	specularmap textures/vegas/posttw_spec.tga
 }
 
 textures/vegas/pshipwood1RC
 {
 	diffusemap textures/vegas/pshipwood1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pshipwood1RC_normal.tga
+	specularmap textures/vegas/pshipwood1RC_spec.tga
 }
 
 textures/vegas/pshipwood2RC
 {
 	diffusemap textures/vegas/pshipwood2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pshipwood2RC_normal.tga
+	specularmap textures/vegas/pshipwood2RC_spec.tga
 }
 
 textures/vegas/pshipwood3RC
 {
 	diffusemap textures/vegas/pshipwood3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pshipwood3RC_normal.tga
+	specularmap textures/vegas/pshipwood3RC_spec.tga
 }
 
 textures/vegas/pshipwood4RC
 {
 	diffusemap textures/vegas/pshipwood4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pshipwood4RC_normal.tga
+	specularmap textures/vegas/pshipwood4RC_spec.tga
 }
 
 textures/vegas/pshipwood5RC
 {
 	diffusemap textures/vegas/pshipwood5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/pshipwood5RC_normal.tga
+	specularmap textures/vegas/pshipwood5RC_spec.tga
 }
 
 textures/vegas/purple1ABC
 {
 	diffusemap textures/vegas/purple1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/purple1ABC_normal.tga
+	specularmap textures/vegas/purple1ABC_spec.tga
 }
 
 textures/vegas/rail1RC
 {
 	diffusemap textures/vegas/rail1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/rail1RC_normal.tga
+	specularmap textures/vegas/rail1RC_spec.tga
 }
 
 textures/vegas/rail1shadmaskRC
 {
 	diffusemap textures/vegas/rail1shadmaskRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/rail1shadmaskRC_normal.tga
+	specularmap textures/vegas/rail1shadmaskRC_spec.tga
 }
 
 textures/vegas/rail2mskBC
 {
 	diffusemap textures/vegas/rail2mskBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/rail2mskBC_normal.tga
+	specularmap textures/vegas/rail2mskBC_spec.tga
 }
 
 textures/vegas/rail2RC
 {
 	diffusemap textures/vegas/rail2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/rail2RC_normal.tga
+	specularmap textures/vegas/rail2RC_spec.tga
 }
 
 textures/vegas/red1ABC
 {
 	diffusemap textures/vegas/red1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/red1ABC_normal.tga
+	specularmap textures/vegas/red1ABC_spec.tga
 }
 
 textures/vegas/red1BBC
 {
 	diffusemap textures/vegas/red1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/red1BBC_normal.tga
+	specularmap textures/vegas/red1BBC_spec.tga
 }
 
 textures/vegas/red1CBC
 {
 	diffusemap textures/vegas/red1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/red1CBC_normal.tga
+	specularmap textures/vegas/red1CBC_spec.tga
 }
 
 textures/vegas/redchair1RC
 {
 	diffusemap textures/vegas/redchair1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/redchair1RC_normal.tga
+	specularmap textures/vegas/redchair1RC_spec.tga
 }
 
 textures/vegas/redneonchina_1tw
 {
 	diffusemap textures/vegas/redneonchina_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/redneonchina_1tw_normal.tga
+	specularmap textures/vegas/redneonchina_1tw_spec.tga
 }
 
 textures/vegas/redneonchina_2tw
 {
 	diffusemap textures/vegas/redneonchina_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/redneonchina_2tw_normal.tga
+	specularmap textures/vegas/redneonchina_2tw_spec.tga
 }
 
 textures/vegas/rockiewall_1tw
 {
 	diffusemap textures/vegas/rockiewall_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/rockiewall_1tw_normal.tga
+	specularmap textures/vegas/rockiewall_1tw_spec.tga
 }
 
 textures/vegas/ropeladder1BC
 {
 	diffusemap textures/vegas/ropeladder1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/ropeladder1BC_normal.tga
+	specularmap textures/vegas/ropeladder1BC_spec.tga
 }
 
 textures/vegas/round0_1BC
 {
 	diffusemap textures/vegas/round0_1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/round0_1BC_normal.tga
+	specularmap textures/vegas/round0_1BC_spec.tga
 }
 
 textures/vegas/roundsign
 {
 	diffusemap textures/vegas/roundsign.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/roundsign_normal.tga
+	specularmap textures/vegas/roundsign_spec.tga
 }
 
 textures/vegas/royaleRC
 {
 	diffusemap textures/vegas/royaleRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/royaleRC_normal.tga
+	specularmap textures/vegas/royaleRC_spec.tga
 }
 
 textures/vegas/rug1RC
 {
 	diffusemap textures/vegas/rug1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/rug1RC_normal.tga
+	specularmap textures/vegas/rug1RC_spec.tga
 }
 
 textures/vegas/satan1tw
 {
 	diffusemap textures/vegas/satan1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/satan1tw_normal.tga
+	specularmap textures/vegas/satan1tw_spec.tga
 }
 
 textures/vegas/sidewalk1RC
 {
 	diffusemap textures/vegas/sidewalk1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sidewalk1RC_normal.tga
+	specularmap textures/vegas/sidewalk1RC_spec.tga
 }
 
 textures/vegas/sign10aRC
 {
 	diffusemap textures/vegas/sign10aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign10aRC_normal.tga
+	specularmap textures/vegas/sign10aRC_spec.tga
 }
 
 textures/vegas/sign10cRC
 {
 	diffusemap textures/vegas/sign10cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign10cRC_normal.tga
+	specularmap textures/vegas/sign10cRC_spec.tga
 }
 
 textures/vegas/sign10dRC
 {
 	diffusemap textures/vegas/sign10dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign10dRC_normal.tga
+	specularmap textures/vegas/sign10dRC_spec.tga
 }
 
 textures/vegas/sign11bRC
 {
 	diffusemap textures/vegas/sign11bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign11bRC_normal.tga
+	specularmap textures/vegas/sign11bRC_spec.tga
 }
 
 textures/vegas/sign11RC
 {
 	diffusemap textures/vegas/sign11RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign11RC_normal.tga
+	specularmap textures/vegas/sign11RC_spec.tga
 }
 
 textures/vegas/sign12RC
 {
 	diffusemap textures/vegas/sign12RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign12RC_normal.tga
+	specularmap textures/vegas/sign12RC_spec.tga
 }
 
 textures/vegas/sign13RC
 {
 	diffusemap textures/vegas/sign13RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign13RC_normal.tga
+	specularmap textures/vegas/sign13RC_spec.tga
 }
 
 textures/vegas/sign14RC
 {
 	diffusemap textures/vegas/sign14RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign14RC_normal.tga
+	specularmap textures/vegas/sign14RC_spec.tga
 }
 
 textures/vegas/sign15RC
 {
 	diffusemap textures/vegas/sign15RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign15RC_normal.tga
+	specularmap textures/vegas/sign15RC_spec.tga
 }
 
 textures/vegas/sign16RC
 {
 	diffusemap textures/vegas/sign16RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign16RC_normal.tga
+	specularmap textures/vegas/sign16RC_spec.tga
 }
 
 textures/vegas/sign17RC
 {
 	diffusemap textures/vegas/sign17RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign17RC_normal.tga
+	specularmap textures/vegas/sign17RC_spec.tga
 }
 
 textures/vegas/sign19RC
 {
 	diffusemap textures/vegas/sign19RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign19RC_normal.tga
+	specularmap textures/vegas/sign19RC_spec.tga
 }
 
 textures/vegas/sign1RC
 {
 	diffusemap textures/vegas/sign1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign1RC_normal.tga
+	specularmap textures/vegas/sign1RC_spec.tga
 }
 
 textures/vegas/sign20RC
 {
 	diffusemap textures/vegas/sign20RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign20RC_normal.tga
+	specularmap textures/vegas/sign20RC_spec.tga
 }
 
 textures/vegas/sign21RC
 {
 	diffusemap textures/vegas/sign21RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign21RC_normal.tga
+	specularmap textures/vegas/sign21RC_spec.tga
 }
 
 textures/vegas/sign23RC
 {
 	diffusemap textures/vegas/sign23RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign23RC_normal.tga
+	specularmap textures/vegas/sign23RC_spec.tga
 }
 
 textures/vegas/sign24RC
 {
 	diffusemap textures/vegas/sign24RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign24RC_normal.tga
+	specularmap textures/vegas/sign24RC_spec.tga
 }
 
 textures/vegas/sign26RC
 {
 	diffusemap textures/vegas/sign26RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign26RC_normal.tga
+	specularmap textures/vegas/sign26RC_spec.tga
 }
 
 textures/vegas/sign27RC
 {
 	diffusemap textures/vegas/sign27RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign27RC_normal.tga
+	specularmap textures/vegas/sign27RC_spec.tga
 }
 
 textures/vegas/sign28RC
 {
 	diffusemap textures/vegas/sign28RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign28RC_normal.tga
+	specularmap textures/vegas/sign28RC_spec.tga
 }
 
 textures/vegas/sign29RC
 {
 	diffusemap textures/vegas/sign29RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign29RC_normal.tga
+	specularmap textures/vegas/sign29RC_spec.tga
 }
 
 textures/vegas/sign2RC
 {
 	diffusemap textures/vegas/sign2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign2RC_normal.tga
+	specularmap textures/vegas/sign2RC_spec.tga
 }
 
 textures/vegas/sign30RC
 {
 	diffusemap textures/vegas/sign30RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign30RC_normal.tga
+	specularmap textures/vegas/sign30RC_spec.tga
 }
 
 textures/vegas/sign31aRC
 {
 	diffusemap textures/vegas/sign31aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign31aRC_normal.tga
+	specularmap textures/vegas/sign31aRC_spec.tga
 }
 
 textures/vegas/sign31bRC
 {
 	diffusemap textures/vegas/sign31bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign31bRC_normal.tga
+	specularmap textures/vegas/sign31bRC_spec.tga
 }
 
 textures/vegas/sign33RC
 {
 	diffusemap textures/vegas/sign33RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign33RC_normal.tga
+	specularmap textures/vegas/sign33RC_spec.tga
 }
 
 textures/vegas/sign35RC
 {
 	diffusemap textures/vegas/sign35RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign35RC_normal.tga
+	specularmap textures/vegas/sign35RC_spec.tga
 }
 
 textures/vegas/sign38RC
 {
 	diffusemap textures/vegas/sign38RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign38RC_normal.tga
+	specularmap textures/vegas/sign38RC_spec.tga
 }
 
 textures/vegas/sign3RC
 {
 	diffusemap textures/vegas/sign3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign3RC_normal.tga
+	specularmap textures/vegas/sign3RC_spec.tga
 }
 
 textures/vegas/sign4RC
 {
 	diffusemap textures/vegas/sign4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign4RC_normal.tga
+	specularmap textures/vegas/sign4RC_spec.tga
 }
 
 textures/vegas/sign5RC
 {
 	diffusemap textures/vegas/sign5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign5RC_normal.tga
+	specularmap textures/vegas/sign5RC_spec.tga
 }
 
 textures/vegas/sign6RC
 {
 	diffusemap textures/vegas/sign6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign6RC_normal.tga
+	specularmap textures/vegas/sign6RC_spec.tga
 }
 
 textures/vegas/sign6tw
 {
 	diffusemap textures/vegas/sign6tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign6tw_normal.tga
+	specularmap textures/vegas/sign6tw_spec.tga
 }
 
 textures/vegas/sign6_2tw
 {
 	diffusemap textures/vegas/sign6_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign6_2tw_normal.tga
+	specularmap textures/vegas/sign6_2tw_spec.tga
 }
 
 textures/vegas/sign6_3atw
 {
 	diffusemap textures/vegas/sign6_3atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign6_3atw_normal.tga
+	specularmap textures/vegas/sign6_3atw_spec.tga
 }
 
 textures/vegas/sign6_3tw
 {
 	diffusemap textures/vegas/sign6_3tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign6_3tw_normal.tga
+	specularmap textures/vegas/sign6_3tw_spec.tga
 }
 
 textures/vegas/sign7RC
 {
 	diffusemap textures/vegas/sign7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign7RC_normal.tga
+	specularmap textures/vegas/sign7RC_spec.tga
 }
 
 textures/vegas/sign8aRC
 {
 	diffusemap textures/vegas/sign8aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign8aRC_normal.tga
+	specularmap textures/vegas/sign8aRC_spec.tga
 }
 
 textures/vegas/sign8bRC
 {
 	diffusemap textures/vegas/sign8bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign8bRC_normal.tga
+	specularmap textures/vegas/sign8bRC_spec.tga
 }
 
 textures/vegas/sign9cRC
 {
 	diffusemap textures/vegas/sign9cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sign9cRC_normal.tga
+	specularmap textures/vegas/sign9cRC_spec.tga
 }
 
 textures/vegas/sinstadt1tw
 {
 	diffusemap textures/vegas/sinstadt1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/sinstadt1tw_normal.tga
+	specularmap textures/vegas/sinstadt1tw_spec.tga
 }
 
 textures/vegas/slotled_0
 {
 	diffusemap textures/vegas/slotled_0.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_0_normal.tga
+	specularmap textures/vegas/slotled_0_spec.tga
 }
 
 textures/vegas/slotled_1
 {
 	diffusemap textures/vegas/slotled_1.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_1_normal.tga
+	specularmap textures/vegas/slotled_1_spec.tga
 }
 
 textures/vegas/slotled_10
 {
 	diffusemap textures/vegas/slotled_10.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_10_normal.tga
+	specularmap textures/vegas/slotled_10_spec.tga
 }
 
 textures/vegas/slotled_120
 {
 	diffusemap textures/vegas/slotled_120.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_120_normal.tga
+	specularmap textures/vegas/slotled_120_spec.tga
 }
 
 textures/vegas/slotled_15
 {
 	diffusemap textures/vegas/slotled_15.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_15_normal.tga
+	specularmap textures/vegas/slotled_15_spec.tga
 }
 
 textures/vegas/slotled_160
 {
 	diffusemap textures/vegas/slotled_160.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_160_normal.tga
+	specularmap textures/vegas/slotled_160_spec.tga
 }
 
 textures/vegas/slotled_1600
 {
 	diffusemap textures/vegas/slotled_1600.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_1600_normal.tga
+	specularmap textures/vegas/slotled_1600_spec.tga
 }
 
 textures/vegas/slotled_2
 {
 	diffusemap textures/vegas/slotled_2.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_2_normal.tga
+	specularmap textures/vegas/slotled_2_spec.tga
 }
 
 textures/vegas/slotled_20
 {
 	diffusemap textures/vegas/slotled_20.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_20_normal.tga
+	specularmap textures/vegas/slotled_20_spec.tga
 }
 
 textures/vegas/slotled_240
 {
 	diffusemap textures/vegas/slotled_240.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_240_normal.tga
+	specularmap textures/vegas/slotled_240_spec.tga
 }
 
 textures/vegas/slotled_2400
 {
 	diffusemap textures/vegas/slotled_2400.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_2400_normal.tga
+	specularmap textures/vegas/slotled_2400_spec.tga
 }
 
 textures/vegas/slotled_25
 {
 	diffusemap textures/vegas/slotled_25.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_25_normal.tga
+	specularmap textures/vegas/slotled_25_spec.tga
 }
 
 textures/vegas/slotled_3
 {
 	diffusemap textures/vegas/slotled_3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_3_normal.tga
+	specularmap textures/vegas/slotled_3_spec.tga
 }
 
 textures/vegas/slotled_30
 {
 	diffusemap textures/vegas/slotled_30.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_30_normal.tga
+	specularmap textures/vegas/slotled_30_spec.tga
 }
 
 textures/vegas/slotled_40
 {
 	diffusemap textures/vegas/slotled_40.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_40_normal.tga
+	specularmap textures/vegas/slotled_40_spec.tga
 }
 
 textures/vegas/slotled_5
 {
 	diffusemap textures/vegas/slotled_5.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_5_normal.tga
+	specularmap textures/vegas/slotled_5_spec.tga
 }
 
 textures/vegas/slotled_50
 {
 	diffusemap textures/vegas/slotled_50.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_50_normal.tga
+	specularmap textures/vegas/slotled_50_spec.tga
 }
 
 textures/vegas/slotled_75
 {
 	diffusemap textures/vegas/slotled_75.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_75_normal.tga
+	specularmap textures/vegas/slotled_75_spec.tga
 }
 
 textures/vegas/slotled_80
 {
 	diffusemap textures/vegas/slotled_80.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_80_normal.tga
+	specularmap textures/vegas/slotled_80_spec.tga
 }
 
 textures/vegas/slotled_800
 {
 	diffusemap textures/vegas/slotled_800.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_800_normal.tga
+	specularmap textures/vegas/slotled_800_spec.tga
 }
 
 textures/vegas/slotled_blank
 {
 	diffusemap textures/vegas/slotled_blank.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotled_blank_normal.tga
+	specularmap textures/vegas/slotled_blank_spec.tga
 }
 
 textures/vegas/slotmachbotm1BC
 {
 	diffusemap textures/vegas/slotmachbotm1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotmachbotm1BC_normal.tga
+	specularmap textures/vegas/slotmachbotm1BC_spec.tga
 }
 
 textures/vegas/slotmachine1BC
 {
 	diffusemap textures/vegas/slotmachine1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotmachine1BC_normal.tga
+	specularmap textures/vegas/slotmachine1BC_spec.tga
 }
 
 textures/vegas/slotmachine1RC
 {
 	diffusemap textures/vegas/slotmachine1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotmachine1RC_normal.tga
+	specularmap textures/vegas/slotmachine1RC_spec.tga
 }
 
 textures/vegas/slotmachmid1BC
 {
 	diffusemap textures/vegas/slotmachmid1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotmachmid1BC_normal.tga
+	specularmap textures/vegas/slotmachmid1BC_spec.tga
 }
 
 textures/vegas/slotmachmid2BC
 {
 	diffusemap textures/vegas/slotmachmid2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotmachmid2BC_normal.tga
+	specularmap textures/vegas/slotmachmid2BC_spec.tga
 }
 
 textures/vegas/slotmachside1RC
 {
 	diffusemap textures/vegas/slotmachside1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotmachside1RC_normal.tga
+	specularmap textures/vegas/slotmachside1RC_spec.tga
 }
 
 textures/vegas/slotmachtop1BC
 {
 	diffusemap textures/vegas/slotmachtop1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slotmachtop1BC_normal.tga
+	specularmap textures/vegas/slotmachtop1BC_spec.tga
 }
 
 textures/vegas/slottumbler1BC
 {
 	diffusemap textures/vegas/slottumbler1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slottumbler1BC_normal.tga
+	specularmap textures/vegas/slottumbler1BC_spec.tga
 }
 
 textures/vegas/slummedout_1tw
 {
 	diffusemap textures/vegas/slummedout_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slummedout_1tw_normal.tga
+	specularmap textures/vegas/slummedout_1tw_spec.tga
 }
 
 textures/vegas/slwptrchflr1tw
 {
 	diffusemap textures/vegas/slwptrchflr1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/slwptrchflr1tw_normal.tga
+	specularmap textures/vegas/slwptrchflr1tw_spec.tga
 }
 
 textures/vegas/stars_2tw
 {
 	diffusemap textures/vegas/stars_2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/stars_2tw_normal.tga
+	specularmap textures/vegas/stars_2tw_spec.tga
 }
 
 textures/vegas/stonewall1ABC
 {
 	diffusemap textures/vegas/stonewall1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/stonewall1ABC_normal.tga
+	specularmap textures/vegas/stonewall1ABC_spec.tga
 }
 
 textures/vegas/stonewall1BBC
 {
 	diffusemap textures/vegas/stonewall1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/stonewall1BBC_normal.tga
+	specularmap textures/vegas/stonewall1BBC_spec.tga
 }
 
 textures/vegas/stonewall1RC
 {
 	diffusemap textures/vegas/stonewall1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/stonewall1RC_normal.tga
+	specularmap textures/vegas/stonewall1RC_spec.tga
 }
 
 textures/vegas/stratariel1sah
 {
 	diffusemap textures/vegas/stratariel1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/stratariel1sah_normal.tga
+	specularmap textures/vegas/stratariel1sah_spec.tga
 }
 
 textures/vegas/suite_0bc
 {
 	diffusemap textures/vegas/suite_0bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_0bc_normal.tga
+	specularmap textures/vegas/suite_0bc_spec.tga
 }
 
 textures/vegas/suite_1bc
 {
 	diffusemap textures/vegas/suite_1bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_1bc_normal.tga
+	specularmap textures/vegas/suite_1bc_spec.tga
 }
 
 textures/vegas/suite_2bc
 {
 	diffusemap textures/vegas/suite_2bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_2bc_normal.tga
+	specularmap textures/vegas/suite_2bc_spec.tga
 }
 
 textures/vegas/suite_3bc
 {
 	diffusemap textures/vegas/suite_3bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_3bc_normal.tga
+	specularmap textures/vegas/suite_3bc_spec.tga
 }
 
 textures/vegas/suite_4bc
 {
 	diffusemap textures/vegas/suite_4bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_4bc_normal.tga
+	specularmap textures/vegas/suite_4bc_spec.tga
 }
 
 textures/vegas/suite_5bc
 {
 	diffusemap textures/vegas/suite_5bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_5bc_normal.tga
+	specularmap textures/vegas/suite_5bc_spec.tga
 }
 
 textures/vegas/suite_6bc
 {
 	diffusemap textures/vegas/suite_6bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_6bc_normal.tga
+	specularmap textures/vegas/suite_6bc_spec.tga
 }
 
 textures/vegas/suite_7bc
 {
 	diffusemap textures/vegas/suite_7bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_7bc_normal.tga
+	specularmap textures/vegas/suite_7bc_spec.tga
 }
 
 textures/vegas/suite_8bc
 {
 	diffusemap textures/vegas/suite_8bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_8bc_normal.tga
+	specularmap textures/vegas/suite_8bc_spec.tga
 }
 
 textures/vegas/suite_9bc
 {
 	diffusemap textures/vegas/suite_9bc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/suite_9bc_normal.tga
+	specularmap textures/vegas/suite_9bc_spec.tga
 }
 
 textures/vegas/tilefloor1BC
 {
 	diffusemap textures/vegas/tilefloor1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tilefloor1BC_normal.tga
+	specularmap textures/vegas/tilefloor1BC_spec.tga
 }
 
 textures/vegas/tilefloor1RC
 {
 	diffusemap textures/vegas/tilefloor1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tilefloor1RC_normal.tga
+	specularmap textures/vegas/tilefloor1RC_spec.tga
 }
 
 textures/vegas/tilesburn1ABC
 {
 	diffusemap textures/vegas/tilesburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tilesburn1ABC_normal.tga
+	specularmap textures/vegas/tilesburn1ABC_spec.tga
 }
 
 textures/vegas/tilesburn2ABC
 {
 	diffusemap textures/vegas/tilesburn2ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tilesburn2ABC_normal.tga
+	specularmap textures/vegas/tilesburn2ABC_spec.tga
 }
 
 textures/vegas/trampanel1BC
 {
 	diffusemap textures/vegas/trampanel1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trampanel1BC_normal.tga
+	specularmap textures/vegas/trampanel1BC_spec.tga
 }
 
 textures/vegas/trampanel2BC
 {
 	diffusemap textures/vegas/trampanel2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trampanel2BC_normal.tga
+	specularmap textures/vegas/trampanel2BC_spec.tga
 }
 
 textures/vegas/tramwall01sah
 {
 	diffusemap textures/vegas/tramwall01sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tramwall01sah_normal.tga
+	specularmap textures/vegas/tramwall01sah_spec.tga
 }
 
 textures/vegas/tram_carpet1sah
 {
 	diffusemap textures/vegas/tram_carpet1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tram_carpet1sah_normal.tga
+	specularmap textures/vegas/tram_carpet1sah_spec.tga
 }
 
 textures/vegas/tram_skylit1sah
 {
 	diffusemap textures/vegas/tram_skylit1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tram_skylit1sah_normal.tga
+	specularmap textures/vegas/tram_skylit1sah_spec.tga
 }
 
 textures/vegas/tram_trim1sah
 {
 	diffusemap textures/vegas/tram_trim1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tram_trim1sah_normal.tga
+	specularmap textures/vegas/tram_trim1sah_spec.tga
 }
 
 textures/vegas/treasure1sah
 {
 	diffusemap textures/vegas/treasure1sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/treasure1sah_normal.tga
+	specularmap textures/vegas/treasure1sah_spec.tga
 }
 
 textures/vegas/treasure2sah
 {
 	diffusemap textures/vegas/treasure2sah.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/treasure2sah_normal.tga
+	specularmap textures/vegas/treasure2sah_spec.tga
 }
 
 textures/vegas/trimburn1Abc
 {
 	diffusemap textures/vegas/trimburn1Abc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trimburn1Abc_normal.tga
+	specularmap textures/vegas/trimburn1Abc_spec.tga
 }
 
 textures/vegas/trimburn1Bbc
 {
 	diffusemap textures/vegas/trimburn1Bbc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trimburn1Bbc_normal.tga
+	specularmap textures/vegas/trimburn1Bbc_spec.tga
 }
 
 textures/vegas/trimburn1Cbc
 {
 	diffusemap textures/vegas/trimburn1Cbc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trimburn1Cbc_normal.tga
+	specularmap textures/vegas/trimburn1Cbc_spec.tga
 }
 
 textures/vegas/trimburn2Abc
 {
 	diffusemap textures/vegas/trimburn2Abc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trimburn2Abc_normal.tga
+	specularmap textures/vegas/trimburn2Abc_spec.tga
 }
 
 textures/vegas/trimburn2Bbc
 {
 	diffusemap textures/vegas/trimburn2Bbc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trimburn2Bbc_normal.tga
+	specularmap textures/vegas/trimburn2Bbc_spec.tga
 }
 
 textures/vegas/trimburn2Cbc
 {
 	diffusemap textures/vegas/trimburn2Cbc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trimburn2Cbc_normal.tga
+	specularmap textures/vegas/trimburn2Cbc_spec.tga
 }
 
 textures/vegas/trimburn3Abc
 {
 	diffusemap textures/vegas/trimburn3Abc.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/trimburn3Abc_normal.tga
+	specularmap textures/vegas/trimburn3Abc_spec.tga
 }
 
 textures/vegas/tv1RC
 {
 	diffusemap textures/vegas/tv1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/tv1RC_normal.tga
+	specularmap textures/vegas/tv1RC_spec.tga
 }
 
 textures/vegas/veganisigntm1aR
 {
 	diffusemap textures/vegas/veganisigntm1aR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/veganisigntm1aR_normal.tga
+	specularmap textures/vegas/veganisigntm1aR_spec.tga
 }
 
 textures/vegas/veganisigntm1bR
 {
 	diffusemap textures/vegas/veganisigntm1bR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/veganisigntm1bR_normal.tga
+	specularmap textures/vegas/veganisigntm1bR_spec.tga
 }
 
 textures/vegas/veganisigntm1cR
 {
 	diffusemap textures/vegas/veganisigntm1cR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/veganisigntm1cR_normal.tga
+	specularmap textures/vegas/veganisigntm1cR_spec.tga
 }
 
 textures/vegas/veganisigntmsdR
 {
 	diffusemap textures/vegas/veganisigntmsdR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/veganisigntmsdR_normal.tga
+	specularmap textures/vegas/veganisigntmsdR_spec.tga
 }
 
 textures/vegas/vegblackj1aRC
 {
 	diffusemap textures/vegas/vegblackj1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegblackj1aRC_normal.tga
+	specularmap textures/vegas/vegblackj1aRC_spec.tga
 }
 
 textures/vegas/vegbuilding15RC
 {
 	diffusemap textures/vegas/vegbuilding15RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegbuilding15RC_normal.tga
+	specularmap textures/vegas/vegbuilding15RC_spec.tga
 }
 
 textures/vegas/vegbuilding16RC
 {
 	diffusemap textures/vegas/vegbuilding16RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegbuilding16RC_normal.tga
+	specularmap textures/vegas/vegbuilding16RC_spec.tga
 }
 
 textures/vegas/vegbuilding19RC
 {
 	diffusemap textures/vegas/vegbuilding19RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegbuilding19RC_normal.tga
+	specularmap textures/vegas/vegbuilding19RC_spec.tga
 }
 
 textures/vegas/vegcarpet10aRC
 {
 	diffusemap textures/vegas/vegcarpet10aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet10aRC_normal.tga
+	specularmap textures/vegas/vegcarpet10aRC_spec.tga
 }
 
 textures/vegas/vegcarpet13aRC
 {
 	diffusemap textures/vegas/vegcarpet13aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet13aRC_normal.tga
+	specularmap textures/vegas/vegcarpet13aRC_spec.tga
 }
 
 textures/vegas/vegcarpet14aRC
 {
 	diffusemap textures/vegas/vegcarpet14aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet14aRC_normal.tga
+	specularmap textures/vegas/vegcarpet14aRC_spec.tga
 }
 
 textures/vegas/vegcarpet1aRC
 {
 	diffusemap textures/vegas/vegcarpet1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet1aRC_normal.tga
+	specularmap textures/vegas/vegcarpet1aRC_spec.tga
 }
 
 textures/vegas/vegcarpet1bRC
 {
 	diffusemap textures/vegas/vegcarpet1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet1bRC_normal.tga
+	specularmap textures/vegas/vegcarpet1bRC_spec.tga
 }
 
 textures/vegas/vegcarpet2aRC
 {
 	diffusemap textures/vegas/vegcarpet2aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet2aRC_normal.tga
+	specularmap textures/vegas/vegcarpet2aRC_spec.tga
 }
 
 textures/vegas/vegcarpet5aRC
 {
 	diffusemap textures/vegas/vegcarpet5aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet5aRC_normal.tga
+	specularmap textures/vegas/vegcarpet5aRC_spec.tga
 }
 
 textures/vegas/vegcarpet6aRC
 {
 	diffusemap textures/vegas/vegcarpet6aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet6aRC_normal.tga
+	specularmap textures/vegas/vegcarpet6aRC_spec.tga
 }
 
 textures/vegas/vegcarpet8aRC
 {
 	diffusemap textures/vegas/vegcarpet8aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet8aRC_normal.tga
+	specularmap textures/vegas/vegcarpet8aRC_spec.tga
 }
 
 textures/vegas/vegcarpet9bRC
 {
 	diffusemap textures/vegas/vegcarpet9bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcarpet9bRC_normal.tga
+	specularmap textures/vegas/vegcarpet9bRC_spec.tga
 }
 
 textures/vegas/vegcasspr1RC
 {
 	diffusemap textures/vegas/vegcasspr1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcasspr1RC_normal.tga
+	specularmap textures/vegas/vegcasspr1RC_spec.tga
 }
 
 textures/vegas/vegcasspr2RC
 {
 	diffusemap textures/vegas/vegcasspr2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcasspr2RC_normal.tga
+	specularmap textures/vegas/vegcasspr2RC_spec.tga
 }
 
 textures/vegas/vegcasspr4RC
 {
 	diffusemap textures/vegas/vegcasspr4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcasspr4RC_normal.tga
+	specularmap textures/vegas/vegcasspr4RC_spec.tga
 }
 
 textures/vegas/vegcasspr5RC
 {
 	diffusemap textures/vegas/vegcasspr5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcasspr5RC_normal.tga
+	specularmap textures/vegas/vegcasspr5RC_spec.tga
 }
 
 textures/vegas/vegcasspr6RC
 {
 	diffusemap textures/vegas/vegcasspr6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcasspr6RC_normal.tga
+	specularmap textures/vegas/vegcasspr6RC_spec.tga
 }
 
 textures/vegas/vegcasspr7RC
 {
 	diffusemap textures/vegas/vegcasspr7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcasspr7RC_normal.tga
+	specularmap textures/vegas/vegcasspr7RC_spec.tga
 }
 
 textures/vegas/vegcasspr9RC
 {
 	diffusemap textures/vegas/vegcasspr9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcasspr9RC_normal.tga
+	specularmap textures/vegas/vegcasspr9RC_spec.tga
 }
 
 textures/vegas/vegceasign10RC
 {
 	diffusemap textures/vegas/vegceasign10RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegceasign10RC_normal.tga
+	specularmap textures/vegas/vegceasign10RC_spec.tga
 }
 
 textures/vegas/vegceasign11RC
 {
 	diffusemap textures/vegas/vegceasign11RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegceasign11RC_normal.tga
+	specularmap textures/vegas/vegceasign11RC_spec.tga
 }
 
 textures/vegas/vegceasign8RC
 {
 	diffusemap textures/vegas/vegceasign8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegceasign8RC_normal.tga
+	specularmap textures/vegas/vegceasign8RC_spec.tga
 }
 
 textures/vegas/vegceasign9RC
 {
 	diffusemap textures/vegas/vegceasign9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegceasign9RC_normal.tga
+	specularmap textures/vegas/vegceasign9RC_spec.tga
 }
 
 textures/vegas/vegceasr1bRC
 {
 	diffusemap textures/vegas/vegceasr1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegceasr1bRC_normal.tga
+	specularmap textures/vegas/vegceasr1bRC_spec.tga
 }
 
 textures/vegas/vegcircus1aRC
 {
 	diffusemap textures/vegas/vegcircus1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegcircus1aRC_normal.tga
+	specularmap textures/vegas/vegcircus1aRC_spec.tga
 }
 
 textures/vegas/vegdrainpipe1dR
 {
 	diffusemap textures/vegas/vegdrainpipe1dR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegdrainpipe1dR_normal.tga
+	specularmap textures/vegas/vegdrainpipe1dR_spec.tga
 }
 
 textures/vegas/vegdrainpipe1eR
 {
 	diffusemap textures/vegas/vegdrainpipe1eR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegdrainpipe1eR_normal.tga
+	specularmap textures/vegas/vegdrainpipe1eR_spec.tga
 }
 
 textures/vegas/vegeiffle1bRC
 {
 	diffusemap textures/vegas/vegeiffle1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegeiffle1bRC_normal.tga
+	specularmap textures/vegas/vegeiffle1bRC_spec.tga
 }
 
 textures/vegas/vegelevator1bRC
 {
 	diffusemap textures/vegas/vegelevator1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegelevator1bRC_normal.tga
+	specularmap textures/vegas/vegelevator1bRC_spec.tga
 }
 
 textures/vegas/vegelevator1cRC
 {
 	diffusemap textures/vegas/vegelevator1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegelevator1cRC_normal.tga
+	specularmap textures/vegas/vegelevator1cRC_spec.tga
 }
 
 textures/vegas/vegelevator1dRC
 {
 	diffusemap textures/vegas/vegelevator1dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegelevator1dRC_normal.tga
+	specularmap textures/vegas/vegelevator1dRC_spec.tga
 }
 
 textures/vegas/vegelevator1eRC
 {
 	diffusemap textures/vegas/vegelevator1eRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegelevator1eRC_normal.tga
+	specularmap textures/vegas/vegelevator1eRC_spec.tga
 }
 
 textures/vegas/vegelevator1fRC
 {
 	diffusemap textures/vegas/vegelevator1fRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegelevator1fRC_normal.tga
+	specularmap textures/vegas/vegelevator1fRC_spec.tga
 }
 
 textures/vegas/vegenbuild1RC
 {
 	diffusemap textures/vegas/vegenbuild1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegenbuild1RC_normal.tga
+	specularmap textures/vegas/vegenbuild1RC_spec.tga
 }
 
 textures/vegas/vegesclatr1RC
 {
 	diffusemap textures/vegas/vegesclatr1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegesclatr1RC_normal.tga
+	specularmap textures/vegas/vegesclatr1RC_spec.tga
 }
 
 textures/vegas/vegexcal1aRC
 {
 	diffusemap textures/vegas/vegexcal1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegexcal1aRC_normal.tga
+	specularmap textures/vegas/vegexcal1aRC_spec.tga
 }
 
 textures/vegas/vegfireani3RC
 {
 	diffusemap textures/vegas/vegfireani3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfireani3RC_normal.tga
+	specularmap textures/vegas/vegfireani3RC_spec.tga
 }
 
 textures/vegas/vegfloor10RC
 {
 	diffusemap textures/vegas/vegfloor10RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor10RC_normal.tga
+	specularmap textures/vegas/vegfloor10RC_spec.tga
 }
 
 textures/vegas/vegfloor15RC
 {
 	diffusemap textures/vegas/vegfloor15RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor15RC_normal.tga
+	specularmap textures/vegas/vegfloor15RC_spec.tga
 }
 
 textures/vegas/vegfloor16RC
 {
 	diffusemap textures/vegas/vegfloor16RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor16RC_normal.tga
+	specularmap textures/vegas/vegfloor16RC_spec.tga
 }
 
 textures/vegas/vegfloor17RC
 {
 	diffusemap textures/vegas/vegfloor17RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor17RC_normal.tga
+	specularmap textures/vegas/vegfloor17RC_spec.tga
 }
 
 textures/vegas/vegfloor1RC
 {
 	diffusemap textures/vegas/vegfloor1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor1RC_normal.tga
+	specularmap textures/vegas/vegfloor1RC_spec.tga
 }
 
 textures/vegas/vegfloor22RC
 {
 	diffusemap textures/vegas/vegfloor22RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor22RC_normal.tga
+	specularmap textures/vegas/vegfloor22RC_spec.tga
 }
 
 textures/vegas/vegfloor24RC
 {
 	diffusemap textures/vegas/vegfloor24RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor24RC_normal.tga
+	specularmap textures/vegas/vegfloor24RC_spec.tga
 }
 
 textures/vegas/vegfloor2RC
 {
 	diffusemap textures/vegas/vegfloor2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor2RC_normal.tga
+	specularmap textures/vegas/vegfloor2RC_spec.tga
 }
 
 textures/vegas/vegfloor32RC
 {
 	diffusemap textures/vegas/vegfloor32RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor32RC_normal.tga
+	specularmap textures/vegas/vegfloor32RC_spec.tga
 }
 
 textures/vegas/vegfloor36RC
 {
 	diffusemap textures/vegas/vegfloor36RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor36RC_normal.tga
+	specularmap textures/vegas/vegfloor36RC_spec.tga
 }
 
 textures/vegas/vegfloor38RC
 {
 	diffusemap textures/vegas/vegfloor38RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor38RC_normal.tga
+	specularmap textures/vegas/vegfloor38RC_spec.tga
 }
 
 textures/vegas/vegfloor4aRC
 {
 	diffusemap textures/vegas/vegfloor4aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor4aRC_normal.tga
+	specularmap textures/vegas/vegfloor4aRC_spec.tga
 }
 
 textures/vegas/vegfloor4bRC
 {
 	diffusemap textures/vegas/vegfloor4bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor4bRC_normal.tga
+	specularmap textures/vegas/vegfloor4bRC_spec.tga
 }
 
 textures/vegas/vegfloor5RC
 {
 	diffusemap textures/vegas/vegfloor5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor5RC_normal.tga
+	specularmap textures/vegas/vegfloor5RC_spec.tga
 }
 
 textures/vegas/vegfloor6RC
 {
 	diffusemap textures/vegas/vegfloor6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor6RC_normal.tga
+	specularmap textures/vegas/vegfloor6RC_spec.tga
 }
 
 textures/vegas/vegfloor8RC
 {
 	diffusemap textures/vegas/vegfloor8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor8RC_normal.tga
+	specularmap textures/vegas/vegfloor8RC_spec.tga
 }
 
 textures/vegas/vegfloor9RC
 {
 	diffusemap textures/vegas/vegfloor9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfloor9RC_normal.tga
+	specularmap textures/vegas/vegfloor9RC_spec.tga
 }
 
 textures/vegas/vegfront1aRC
 {
 	diffusemap textures/vegas/vegfront1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegfront1aRC_normal.tga
+	specularmap textures/vegas/vegfront1aRC_spec.tga
 }
 
 textures/vegas/veglux1RC
 {
 	diffusemap textures/vegas/veglux1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/veglux1RC_normal.tga
+	specularmap textures/vegas/veglux1RC_spec.tga
 }
 
 textures/vegas/vegmgm1RC
 {
 	diffusemap textures/vegas/vegmgm1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegmgm1RC_normal.tga
+	specularmap textures/vegas/vegmgm1RC_spec.tga
 }
 
 textures/vegas/vegmirage1RC
 {
 	diffusemap textures/vegas/vegmirage1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegmirage1RC_normal.tga
+	specularmap textures/vegas/vegmirage1RC_spec.tga
 }
 
 textures/vegas/vegmirage2RC
 {
 	diffusemap textures/vegas/vegmirage2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegmirage2RC_normal.tga
+	specularmap textures/vegas/vegmirage2RC_spec.tga
 }
 
 textures/vegas/vegnewyork1aRC
 {
 	diffusemap textures/vegas/vegnewyork1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegnewyork1aRC_normal.tga
+	specularmap textures/vegas/vegnewyork1aRC_spec.tga
 }
 
 textures/vegas/vegosheas1aRC
 {
 	diffusemap textures/vegas/vegosheas1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegosheas1aRC_normal.tga
+	specularmap textures/vegas/vegosheas1aRC_spec.tga
 }
 
 textures/vegas/vegpeople2RC
 {
 	diffusemap textures/vegas/vegpeople2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegpeople2RC_normal.tga
+	specularmap textures/vegas/vegpeople2RC_spec.tga
 }
 
 textures/vegas/vegpeople4RC
 {
 	diffusemap textures/vegas/vegpeople4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegpeople4RC_normal.tga
+	specularmap textures/vegas/vegpeople4RC_spec.tga
 }
 
 textures/vegas/vegpeoplemov1RC
 {
 	diffusemap textures/vegas/vegpeoplemov1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegpeoplemov1RC_normal.tga
+	specularmap textures/vegas/vegpeoplemov1RC_spec.tga
 }
 
 textures/vegas/vegpeoplemov3
 {
 	diffusemap textures/vegas/vegpeoplemov3.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegpeoplemov3_normal.tga
+	specularmap textures/vegas/vegpeoplemov3_spec.tga
 }
 
 textures/vegas/vegplant1RC
 {
 	diffusemap textures/vegas/vegplant1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegplant1RC_normal.tga
+	specularmap textures/vegas/vegplant1RC_spec.tga
 }
 
 textures/vegas/vegroullaytopbR
 {
 	diffusemap textures/vegas/vegroullaytopbR.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegroullaytopbR_normal.tga
+	specularmap textures/vegas/vegroullaytopbR_spec.tga
 }
 
 textures/vegas/vegsstrato1RC
 {
 	diffusemap textures/vegas/vegsstrato1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegsstrato1RC_normal.tga
+	specularmap textures/vegas/vegsstrato1RC_spec.tga
 }
 
 textures/vegas/vegtile1RC
 {
 	diffusemap textures/vegas/vegtile1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtile1RC_normal.tga
+	specularmap textures/vegas/vegtile1RC_spec.tga
 }
 
 textures/vegas/vegtile2RC
 {
 	diffusemap textures/vegas/vegtile2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtile2RC_normal.tga
+	specularmap textures/vegas/vegtile2RC_spec.tga
 }
 
 textures/vegas/vegtile4RC
 {
 	diffusemap textures/vegas/vegtile4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtile4RC_normal.tga
+	specularmap textures/vegas/vegtile4RC_spec.tga
 }
 
 textures/vegas/vegtile5RC
 {
 	diffusemap textures/vegas/vegtile5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtile5RC_normal.tga
+	specularmap textures/vegas/vegtile5RC_spec.tga
 }
 
 textures/vegas/vegtramchair1RC
 {
 	diffusemap textures/vegas/vegtramchair1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtramchair1RC_normal.tga
+	specularmap textures/vegas/vegtramchair1RC_spec.tga
 }
 
 textures/vegas/vegtramsign6RC
 {
 	diffusemap textures/vegas/vegtramsign6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtramsign6RC_normal.tga
+	specularmap textures/vegas/vegtramsign6RC_spec.tga
 }
 
 textures/vegas/vegtramvend1aRC
 {
 	diffusemap textures/vegas/vegtramvend1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtramvend1aRC_normal.tga
+	specularmap textures/vegas/vegtramvend1aRC_spec.tga
 }
 
 textures/vegas/vegtramvend1bRC
 {
 	diffusemap textures/vegas/vegtramvend1bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtramvend1bRC_normal.tga
+	specularmap textures/vegas/vegtramvend1bRC_spec.tga
 }
 
 textures/vegas/vegtramvent1RC
 {
 	diffusemap textures/vegas/vegtramvent1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtramvent1RC_normal.tga
+	specularmap textures/vegas/vegtramvent1RC_spec.tga
 }
 
 textures/vegas/vegtree1aRC
 {
 	diffusemap textures/vegas/vegtree1aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtree1aRC_normal.tga
+	specularmap textures/vegas/vegtree1aRC_spec.tga
 }
 
 textures/vegas/vegtree2aRC
 {
 	diffusemap textures/vegas/vegtree2aRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtree2aRC_normal.tga
+	specularmap textures/vegas/vegtree2aRC_spec.tga
 }
 
 textures/vegas/vegtree2dRC
 {
 	diffusemap textures/vegas/vegtree2dRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtree2dRC_normal.tga
+	specularmap textures/vegas/vegtree2dRC_spec.tga
 }
 
 textures/vegas/vegtree4RC
 {
 	diffusemap textures/vegas/vegtree4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtree4RC_normal.tga
+	specularmap textures/vegas/vegtree4RC_spec.tga
 }
 
 textures/vegas/vegtree5RC
 {
 	diffusemap textures/vegas/vegtree5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtree5RC_normal.tga
+	specularmap textures/vegas/vegtree5RC_spec.tga
 }
 
 textures/vegas/vegtres3RC
 {
 	diffusemap textures/vegas/vegtres3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtres3RC_normal.tga
+	specularmap textures/vegas/vegtres3RC_spec.tga
 }
 
 textures/vegas/vegtres4RC
 {
 	diffusemap textures/vegas/vegtres4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtres4RC_normal.tga
+	specularmap textures/vegas/vegtres4RC_spec.tga
 }
 
 textures/vegas/vegtres5RC
 {
 	diffusemap textures/vegas/vegtres5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtres5RC_normal.tga
+	specularmap textures/vegas/vegtres5RC_spec.tga
 }
 
 textures/vegas/vegtres7RC
 {
 	diffusemap textures/vegas/vegtres7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtres7RC_normal.tga
+	specularmap textures/vegas/vegtres7RC_spec.tga
 }
 
 textures/vegas/vegtres8RC
 {
 	diffusemap textures/vegas/vegtres8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegtres8RC_normal.tga
+	specularmap textures/vegas/vegtres8RC_spec.tga
 }
 
 textures/vegas/vegwallnight1RC
 {
 	diffusemap textures/vegas/vegwallnight1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwallnight1RC_normal.tga
+	specularmap textures/vegas/vegwallnight1RC_spec.tga
 }
 
 textures/vegas/vegwater1RC
 {
 	diffusemap textures/vegas/vegwater1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwater1RC_normal.tga
+	specularmap textures/vegas/vegwater1RC_spec.tga
 }
 
 textures/vegas/vegwater4RC
 {
 	diffusemap textures/vegas/vegwater4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwater4RC_normal.tga
+	specularmap textures/vegas/vegwater4RC_spec.tga
 }
 
 textures/vegas/vegwaterani1RC
 {
 	diffusemap textures/vegas/vegwaterani1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwaterani1RC_normal.tga
+	specularmap textures/vegas/vegwaterani1RC_spec.tga
 }
 
 textures/vegas/vegwaterani4RC
 {
 	diffusemap textures/vegas/vegwaterani4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwaterani4RC_normal.tga
+	specularmap textures/vegas/vegwaterani4RC_spec.tga
 }
 
 textures/vegas/vegwaterani6RC
 {
 	diffusemap textures/vegas/vegwaterani6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwaterani6RC_normal.tga
+	specularmap textures/vegas/vegwaterani6RC_spec.tga
 }
 
 textures/vegas/vegwateripple3RC
 {
 	diffusemap textures/vegas/vegwateripple3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwateripple3RC_normal.tga
+	specularmap textures/vegas/vegwateripple3RC_spec.tga
 }
 
 textures/vegas/vegwaterripple4RC
 {
 	diffusemap textures/vegas/vegwaterripple4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwaterripple4RC_normal.tga
+	specularmap textures/vegas/vegwaterripple4RC_spec.tga
 }
 
 textures/vegas/vegwaterstrip4R
 {
 	diffusemap textures/vegas/vegwaterstrip4R.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwaterstrip4R_normal.tga
+	specularmap textures/vegas/vegwaterstrip4R_spec.tga
 }
 
 textures/vegas/vegwelcomeRC
 {
 	diffusemap textures/vegas/vegwelcomeRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vegwelcomeRC_normal.tga
+	specularmap textures/vegas/vegwelcomeRC_spec.tga
 }
 
 textures/vegas/vidpokermid1BC
 {
 	diffusemap textures/vegas/vidpokermid1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vidpokermid1BC_normal.tga
+	specularmap textures/vegas/vidpokermid1BC_spec.tga
 }
 
 textures/vegas/vidpokermid2BC
 {
 	diffusemap textures/vegas/vidpokermid2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vidpokermid2BC_normal.tga
+	specularmap textures/vegas/vidpokermid2BC_spec.tga
 }
 
 textures/vegas/vineladdyer2atw
 {
 	diffusemap textures/vegas/vineladdyer2atw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vineladdyer2atw_normal.tga
+	specularmap textures/vegas/vineladdyer2atw_spec.tga
 }
 
 textures/vegas/vineladdyer2tw
 {
 	diffusemap textures/vegas/vineladdyer2tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vineladdyer2tw_normal.tga
+	specularmap textures/vegas/vineladdyer2tw_spec.tga
 }
 
 textures/vegas/vineywall_1tw
 {
 	diffusemap textures/vegas/vineywall_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vineywall_1tw_normal.tga
+	specularmap textures/vegas/vineywall_1tw_spec.tga
 }
 
 textures/vegas/vnum10RC
 {
 	diffusemap textures/vegas/vnum10RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum10RC_normal.tga
+	specularmap textures/vegas/vnum10RC_spec.tga
 }
 
 textures/vegas/vnum13RC
 {
 	diffusemap textures/vegas/vnum13RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum13RC_normal.tga
+	specularmap textures/vegas/vnum13RC_spec.tga
 }
 
 textures/vegas/vnum1RC
 {
 	diffusemap textures/vegas/vnum1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum1RC_normal.tga
+	specularmap textures/vegas/vnum1RC_spec.tga
 }
 
 textures/vegas/vnum2RC
 {
 	diffusemap textures/vegas/vnum2RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum2RC_normal.tga
+	specularmap textures/vegas/vnum2RC_spec.tga
 }
 
 textures/vegas/vnum3RC
 {
 	diffusemap textures/vegas/vnum3RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum3RC_normal.tga
+	specularmap textures/vegas/vnum3RC_spec.tga
 }
 
 textures/vegas/vnum4RC
 {
 	diffusemap textures/vegas/vnum4RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum4RC_normal.tga
+	specularmap textures/vegas/vnum4RC_spec.tga
 }
 
 textures/vegas/vnum5RC
 {
 	diffusemap textures/vegas/vnum5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum5RC_normal.tga
+	specularmap textures/vegas/vnum5RC_spec.tga
 }
 
 textures/vegas/vnum6RC
 {
 	diffusemap textures/vegas/vnum6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum6RC_normal.tga
+	specularmap textures/vegas/vnum6RC_spec.tga
 }
 
 textures/vegas/vnum7RC
 {
 	diffusemap textures/vegas/vnum7RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum7RC_normal.tga
+	specularmap textures/vegas/vnum7RC_spec.tga
 }
 
 textures/vegas/vnum8RC
 {
 	diffusemap textures/vegas/vnum8RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum8RC_normal.tga
+	specularmap textures/vegas/vnum8RC_spec.tga
 }
 
 textures/vegas/vnum9RC
 {
 	diffusemap textures/vegas/vnum9RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/vnum9RC_normal.tga
+	specularmap textures/vegas/vnum9RC_spec.tga
 }
 
 textures/vegas/volwall1RC
 {
 	diffusemap textures/vegas/volwall1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/volwall1RC_normal.tga
+	specularmap textures/vegas/volwall1RC_spec.tga
 }
 
 textures/vegas/wallpaper1BC
 {
 	diffusemap textures/vegas/wallpaper1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/wallpaper1BC_normal.tga
+	specularmap textures/vegas/wallpaper1BC_spec.tga
 }
 
 textures/vegas/wallpaper3BC
 {
 	diffusemap textures/vegas/wallpaper3BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/wallpaper3BC_normal.tga
+	specularmap textures/vegas/wallpaper3BC_spec.tga
 }
 
 textures/vegas/wallpaper4BC
 {
 	diffusemap textures/vegas/wallpaper4BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/wallpaper4BC_normal.tga
+	specularmap textures/vegas/wallpaper4BC_spec.tga
 }
 
 textures/vegas/wallpburn1ABC
 {
 	diffusemap textures/vegas/wallpburn1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/wallpburn1ABC_normal.tga
+	specularmap textures/vegas/wallpburn1ABC_spec.tga
 }
 
 textures/vegas/walltrim1aBC
 {
 	diffusemap textures/vegas/walltrim1aBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/walltrim1aBC_normal.tga
+	specularmap textures/vegas/walltrim1aBC_spec.tga
 }
 
 textures/vegas/wdncover1ABC
 {
 	diffusemap textures/vegas/wdncover1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/wdncover1ABC_normal.tga
+	specularmap textures/vegas/wdncover1ABC_spec.tga
 }
 
 textures/vegas/wdncover1BBC
 {
 	diffusemap textures/vegas/wdncover1BBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/wdncover1BBC_normal.tga
+	specularmap textures/vegas/wdncover1BBC_spec.tga
 }
 
 textures/vegas/white1ABC
 {
 	diffusemap textures/vegas/white1ABC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/white1ABC_normal.tga
+	specularmap textures/vegas/white1ABC_spec.tga
 }
 
 textures/vegas/white1CBC
 {
 	diffusemap textures/vegas/white1CBC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/white1CBC_normal.tga
+	specularmap textures/vegas/white1CBC_spec.tga
 }
 
 textures/vegas/whiteboard2BC
 {
 	diffusemap textures/vegas/whiteboard2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/whiteboard2BC_normal.tga
+	specularmap textures/vegas/whiteboard2BC_spec.tga
 }
 
 textures/vegas/whitechap1RC
 {
 	diffusemap textures/vegas/whitechap1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/whitechap1RC_normal.tga
+	specularmap textures/vegas/whitechap1RC_spec.tga
 }
 
 textures/vegas/whitechap5RC
 {
 	diffusemap textures/vegas/whitechap5RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/whitechap5RC_normal.tga
+	specularmap textures/vegas/whitechap5RC_spec.tga
 }
 
 textures/vegas/whitechap6RC
 {
 	diffusemap textures/vegas/whitechap6RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/whitechap6RC_normal.tga
+	specularmap textures/vegas/whitechap6RC_spec.tga
 }
 
 textures/vegas/woodpart1cRC
 {
 	diffusemap textures/vegas/woodpart1cRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/woodpart1cRC_normal.tga
+	specularmap textures/vegas/woodpart1cRC_spec.tga
 }
 
 textures/vegas/woodtrim2BC
 {
 	diffusemap textures/vegas/woodtrim2BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/woodtrim2BC_normal.tga
+	specularmap textures/vegas/woodtrim2BC_spec.tga
 }
 
 textures/vegas/woodwall1BC
 {
 	diffusemap textures/vegas/woodwall1BC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/woodwall1BC_normal.tga
+	specularmap textures/vegas/woodwall1BC_spec.tga
 }
 
 textures/vegas/wwallbr_1tw
 {
 	diffusemap textures/vegas/wwallbr_1tw.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
+	bumpmap textures/vegas/wwallbr_1tw_normal.tga
+	specularmap textures/vegas/wwallbr_1tw_spec.tga
 }
 
