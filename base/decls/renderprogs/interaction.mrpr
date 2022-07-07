@@ -123,6 +123,8 @@ renderProg interaction
 		}		
 #endif // NO_LIGHT_PASS
 
+		finalColor = clamp(finalColor, 0.0, 10.0);
+
 #ifdef SPEC_ONLY_TEST
 		finalpixel_color.xyz = finalColor;
 #else

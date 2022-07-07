@@ -73,6 +73,9 @@ public:
 					idPlane( void );
 					idPlane( float a, float b, float c, float d );
 					idPlane( const idVec3 &normal, const float dist );
+// rbdoom3bfg
+					explicit idPlane(const idVec3& v0, const idVec3& v1, const idVec3& v2, bool fixDegenerate = false);
+// rbdoom3bfg end
 
 	float			operator[]( int index ) const;
 	float &			operator[]( int index );
@@ -174,6 +177,13 @@ ID_INLINE idPlane &idPlane::operator=( const idVec3 &v ) {
 	d = 0;
 	return *this;
 }
+
+// rbdoom3bfg
+ID_INLINE idPlane::idPlane(const idVec3& v0, const idVec3& v1, const idVec3& v2, bool fixDegenerate)
+{
+	FromPoints(v0, v1, v2, fixDegenerate);
+}
+// rbdoom3bfg end
 
 ID_INLINE idPlane idPlane::operator+( const idPlane &p ) const {
 	return idPlane( a + p.a, b + p.b, c + p.c, d + p.d );

@@ -149,10 +149,13 @@ void idRender::DrawForwardLit( void ) {
 	{
 		const drawSurf_t* drawSurf = drawSurfs[i];
 
-		if (drawSurf->numSurfRenderLights == 0)
-			continue;
+		//if (drawSurf->numSurfRenderLights == 0)
+		//	continue;
 
 		if (drawSurf->geo->numVerts == 0)
+			continue;
+
+		if(drawSurf->space->entityDef == nullptr)
 			continue;
 
 		if(drawSurf->space->entityDef->parms.hideInMainView)

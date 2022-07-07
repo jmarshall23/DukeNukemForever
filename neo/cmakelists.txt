@@ -147,6 +147,7 @@ file(GLOB toolSourceFiles
 
 file(GLOB engineDependFiles
     "engine/external/glew/*.c*"
+    "engine/external/mikktspace/*.c*"
     "engine/sound/vorbissrc/*.c*"
     "engine/sound/vorbis/*.c*"
     "engine/sound/OggVorbis/oggsrc/*.c*"
