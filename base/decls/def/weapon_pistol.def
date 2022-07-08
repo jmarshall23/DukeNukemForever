@@ -25,7 +25,8 @@ entityDef weapon_pistol {
 	"editor_usage"				"Pistol"
 	"editor_rotatable"		"1"
 
-	"view_model_offset"			"10 4 -14"
+	"view_model_offset"			"10 5 -12"
+	"view_model_fov"			"110"
 
 	"spawnclass"				"idItem"
 	"size"						"32 32 32"

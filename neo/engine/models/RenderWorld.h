@@ -160,6 +160,10 @@ struct renderEntity_t {
 	float					lerp;
 
 	bool					forceTwoSided;
+
+	float					customFOV;
+	float					fov_x;
+	float					fov_y;
 // jmarshall end
 
 };

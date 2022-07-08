@@ -681,6 +681,13 @@ void idWeapon::GetWeaponDef( const char* objectname, int ammoinclip )
 	vmodel = weaponDef->dict.GetString( "model_view" );
 	SetModel( vmodel );
 
+	// Assign a custom FOV to the first person weapon.
+	renderEntity.customFOV = weaponDef->dict.GetFloat("view_model_fov");
+	if (renderEntity.customFOV > 0)
+	{
+		gameLocal.CalcFov(renderEntity.customFOV, renderEntity.fov_x, renderEntity.fov_y);
+	}
+
 	// setup the world model
 	InitWorldModel( weaponDef );
 

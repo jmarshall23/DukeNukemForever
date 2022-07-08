@@ -4,3 +4,10 @@ guis/mainmenu/dnf_logo
 		map guis/mainmenu/dnf_logo.tga
 	}
 }
+
+guis/hud/hudfin1920
+{
+	{
+		map guis/hud/hudfin1920.tga
+	}
+}

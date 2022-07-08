@@ -18,54 +18,32 @@ windowDef Desktop
 		onTime 0 {
 			transition "backcolor" "1 0 0 0.5" "0 0 0 0" "300" ;
 		}
-	}
 
-	windowDef unnamed
-	{
-		rect	34,620,53,33
-		visible	1
-		forecolor	1,1,1,1
-		text	"Ego"
-		textscale	0.5
 	}
-	windowDef unnamed1
+	windowDef hudfin1920
 	{
-		rect	1111,621,86,33
+		rect	1,617,1280,102
 		visible	1
-		forecolor	1,1,1,1
-		text	"Ammo"
-		textscale	0.5
+		matcolor	1,1,1,1
+		background	"guis/hud/hudfin1920"
 	}
-	windowDef unnamed2
+	windowDef egoWindow
 	{
-		rect	90,622,68,33
+		rect	217,662,79,41
 		visible	1
 		forecolor	1,1,1,1
 		text	"gui::player_ego"
-		textscale	0.5
+		textscale	0.69999999
+		textalign	1
+		textalignx	-6
 	}
 	windowDef unnamed11
 	{
-		rect	1191,621,80,33
+		rect	746,662,76,39
 		visible	1
 		forecolor	1,1,1,1
 		text	"gui::player_ammo"
-		textscale	0.5
-	}
-	windowDef unnamed12
-	{
-		rect	1111,650,86,33
-		visible	1
-		forecolor	1,1,1,1
-		text	"Clips"
-		textscale	0.5
-	}
-	windowDef unnamed111
-	{
-		rect	1194,650,80,33
-		visible	1
-		forecolor	1,1,1,1
-		text	"gui::player_clips"
-		textscale	0.5
+		textscale	0.60000002
+		textalign	1
 	}
 }

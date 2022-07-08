@@ -60,6 +60,7 @@ void R_LocalPlaneToGlobal( const float modelMatrix[16], const idPlane &in, idPla
 
 void R_SetupViewMatrix( idRenderWorldCommitted *viewDef );
 void R_SetupProjectionMatrix( idRenderWorldCommitted *viewDef );
+void R_SetupProjectionMatrix(idRenderWorldCommitted* viewDef, float custom_fov_x, float custom_fov_y, float projectionMatrix[16]);
 
 void R_MatrixFullInverse(const float a[16], float r[16]);
 void R_SetupUnprojection(idRenderWorldCommitted* viewDef);

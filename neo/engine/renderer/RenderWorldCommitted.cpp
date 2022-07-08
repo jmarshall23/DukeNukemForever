@@ -263,7 +263,21 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 		idRenderMatrix viewMat;
 
 		idRenderMatrix::Transpose(*(idRenderMatrix*)vEnt->modelViewMatrix, viewMat);
-		idRenderMatrix::Multiply(tr.viewDef->projectionRenderMatrix, viewMat, vEnt->mvp);
+
+		if (vEnt->entityDef->parms.customFOV == 0)
+		{
+			idRenderMatrix::Multiply(tr.viewDef->projectionRenderMatrix, viewMat, vEnt->mvp);
+		}
+		else
+		{
+			float customProjectionMatrix[16];
+			idRenderMatrix customProjectionRenderMatrix;
+
+			R_SetupProjectionMatrix(this, vEnt->entityDef->parms.fov_x, vEnt->entityDef->parms.fov_y, customProjectionMatrix);
+
+			idRenderMatrix::Transpose(*(idRenderMatrix*)customProjectionMatrix, customProjectionRenderMatrix);
+			idRenderMatrix::Multiply(customProjectionRenderMatrix, viewMat, vEnt->mvp);
+		}
 
 		vEnt->AddDrawsurfs(i, tr.viewDef->viewLights);
 	}

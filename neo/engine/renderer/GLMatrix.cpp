@@ -455,6 +455,78 @@ void R_SetupProjectionMatrix( idRenderWorldCommitted *viewDef ) {
 	//}
 }
 
+void R_SetupProjectionMatrix(idRenderWorldCommitted* viewDef, float custom_fov_x, float custom_fov_y, float projectionMatrix[16]) {
+	// random jittering is usefull when multiple
+	// frames are going to be blended together
+	// for motion blurred anti-aliasing
+	float jitterx, jittery;
+	if (r_jitter.GetBool()) {
+		static idRandom random;
+		jitterx = random.RandomFloat();
+		jittery = random.RandomFloat();
+	}
+	else {
+		jitterx = 0.0f;
+		jittery = 0.0f;
+	}
+
+	//
+	// set up projection matrix
+	//
+	const float zNear = (viewDef->renderView.cramZNear) ? (r_znear.GetFloat() * 0.25f) : r_znear.GetFloat();
+
+	float ymax = zNear * tan(custom_fov_y * idMath::PI / 360.0f);
+	float ymin = -ymax;
+
+	float xmax = zNear * tan(custom_fov_x * idMath::PI / 360.0f);
+	float xmin = -xmax;
+
+	const float width = xmax - xmin;
+	const float height = ymax - ymin;
+
+	const int viewWidth = viewDef->viewport.x2 - viewDef->viewport.x1 + 1;
+	const int viewHeight = viewDef->viewport.y2 - viewDef->viewport.y1 + 1;
+
+	jitterx = jitterx * width / viewWidth;
+	jitterx += r_centerX.GetFloat();
+	//	jitterx += viewDef->renderView.stereoScreenSeparation;
+	xmin += jitterx * width;
+	xmax += jitterx * width;
+
+	jittery = jittery * height / viewHeight;
+	jittery += r_centerY.GetFloat();
+	ymin += jittery * height;
+	ymax += jittery * height;
+
+	projectionMatrix[0 * 4 + 0] = 2.0f * zNear / width;
+	projectionMatrix[1 * 4 + 0] = 0.0f;
+	projectionMatrix[2 * 4 + 0] = (xmax + xmin) / width;	// normally 0
+	projectionMatrix[3 * 4 + 0] = 0.0f;
+
+	projectionMatrix[0 * 4 + 1] = 0.0f;
+	projectionMatrix[1 * 4 + 1] = 2.0f * zNear / height;
+	projectionMatrix[2 * 4 + 1] = (ymax + ymin) / height;	// normally 0
+	projectionMatrix[3 * 4 + 1] = 0.0f;
+
+	// this is the far-plane-at-infinity formulation, and
+	// crunches the Z range slightly so w=0 vertexes do not
+	// rasterize right at the wraparound point
+	projectionMatrix[0 * 4 + 2] = 0.0f;
+	projectionMatrix[1 * 4 + 2] = 0.0f;
+	projectionMatrix[2 * 4 + 2] = -0.999f; // adjust value to prevent imprecision issues
+	projectionMatrix[3 * 4 + 2] = -2.0f * zNear;
+
+	projectionMatrix[0 * 4 + 3] = 0.0f;
+	projectionMatrix[1 * 4 + 3] = 0.0f;
+	projectionMatrix[2 * 4 + 3] = -1.0f;
+	projectionMatrix[3 * 4 + 3] = 0.0f;
+
+	//if ( viewDef->renderView.flipProjection ) {
+	//	viewDef->projectionMatrix[1*4+1] = -viewDef->projectionMatrix[1*4+1];
+	//	viewDef->projectionMatrix[1*4+3] = -viewDef->projectionMatrix[1*4+3];
+	//}
+}
+
 
 /*
 =================
