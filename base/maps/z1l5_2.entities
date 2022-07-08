@@ -1,5 +1,19 @@
 // entity 0
 {
+"classname" "monster_pigcop"
+"name" "monster_pigcop_1"
+"origin" "1640 5208 -424"
+"angle" "270"
+}
+// entity 1
+{
+"classname" "monster_liztroop"
+"name" "monster_liztroop_1"
+"origin" "1632 4592 -424"
+"angle" "180"
+}
+// entity 2
+{
 "classname" "light"
 "name" "light_3"
 "origin" "1792 4864 -400"
@@ -10,7 +24,7 @@
 "_color" "1 0.18 0.2"
 "light_radius" "150 150 150"
 }
-// entity 1
+// entity 3
 {
 "classname" "light"
 "name" "light_2"
@@ -22,7 +36,7 @@
 "_color" "1 0 0.08"
 "light_radius" "150 150 150"
 }
-// entity 2
+// entity 4
 {
 "classname" "light"
 "name" "light_1"
@@ -34,14 +48,14 @@
 "_color" "1 1 1"
 "light_radius" "150 150 150"
 }
-// entity 3
+// entity 5
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
 "origin" "1304 4216 -424"
 "angle" "90"
 }
-// entity 4
+// entity 6
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_0.obj"
@@ -50,7 +64,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/forbgranny_1tw"
 }
-// entity 5
+// entity 7
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_1.obj"
@@ -59,7 +73,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/sigh_1tw"
 }
-// entity 6
+// entity 8
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_2.obj"
@@ -68,7 +82,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_8utw"
 }
-// entity 7
+// entity 9
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_3.obj"
@@ -77,7 +91,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/silobrick_4"
 }
-// entity 8
+// entity 10
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_4.obj"
@@ -86,7 +100,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/c_slab_1"
 }
-// entity 9
+// entity 11
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_5.obj"
@@ -95,7 +109,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/supers_1tw"
 }
-// entity 10
+// entity 12
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_6.obj"
@@ -104,7 +118,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/smat_ciel_1tw"
 }
-// entity 11
+// entity 13
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_7.obj"
@@ -113,7 +127,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/gridles_1tw"
 }
-// entity 12
+// entity 14
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_8.obj"
@@ -122,7 +136,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/goldmap_4tw"
 }
-// entity 13
+// entity 15
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_9.obj"
@@ -131,7 +145,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/goldmap_4tew"
 }
-// entity 14
+// entity 16
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_10.obj"
@@ -140,7 +154,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/silobrick_3"
 }
-// entity 15
+// entity 17
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_11.obj"
@@ -149,7 +163,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/specks_conk5tw"
 }
-// entity 16
+// entity 18
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_12.obj"
@@ -158,7 +172,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/silobrick_5"
 }
-// entity 17
+// entity 19
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_13.obj"
@@ -167,7 +181,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/specks_conk4tw"
 }
-// entity 18
+// entity 20
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_14.obj"
@@ -176,7 +190,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/supers_2ztw"
 }
-// entity 19
+// entity 21
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_15.obj"
@@ -185,7 +199,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh_5tw"
 }
-// entity 20
+// entity 22
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_16.obj"
@@ -194,7 +208,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/marbbrick99tw"
 }
-// entity 21
+// entity 23
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_17.obj"
@@ -203,7 +217,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/sigh_3tw"
 }
-// entity 22
+// entity 24
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_18.obj"
@@ -212,7 +226,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/casinowall11ABC"
 }
-// entity 23
+// entity 25
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_19.obj"
@@ -221,7 +235,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strwall5RC"
 }
-// entity 24
+// entity 26
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_20.obj"
@@ -230,7 +244,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_9tw"
 }
-// entity 25
+// entity 27
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_21.obj"
@@ -239,7 +253,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/pentmarstair1aR"
 }
-// entity 26
+// entity 28
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_22.obj"
@@ -248,7 +262,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mallciel_28tw"
 }
-// entity 27
+// entity 29
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_23.obj"
@@ -257,7 +271,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/sigh_2tw"
 }
-// entity 28
+// entity 30
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_24.obj"
@@ -266,7 +280,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/gimmles_1tw"
 }
-// entity 29
+// entity 31
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_25.obj"
@@ -275,7 +289,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/oneon_7atw"
 }
-// entity 30
+// entity 32
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_26.obj"
@@ -284,7 +298,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/ava_1tw"
 }
-// entity 31
+// entity 33
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_27.obj"
@@ -293,7 +307,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mallpicko_2tw"
 }
-// entity 32
+// entity 34
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_28.obj"
@@ -302,7 +316,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/bodymans1tw"
 }
-// entity 33
+// entity 35
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_29.obj"
@@ -311,7 +325,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/cieling1BBC"
 }
-// entity 34
+// entity 36
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_30.obj"
@@ -320,7 +334,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratoflr2RC"
 }
-// entity 35
+// entity 37
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_31.obj"
@@ -329,7 +343,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mabtrimme_3tw"
 }
-// entity 36
+// entity 38
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_32.obj"
@@ -338,7 +352,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/pockyfloor_1tw"
 }
-// entity 37
+// entity 39
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_33.obj"
@@ -347,7 +361,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avaad_2tw"
 }
-// entity 38
+// entity 40
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_34.obj"
@@ -356,7 +370,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avlight1tw"
 }
-// entity 39
+// entity 41
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_35.obj"
@@ -365,7 +379,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratceiling2aR"
 }
-// entity 40
+// entity 42
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_36.obj"
@@ -374,7 +388,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/neonbackstratw"
 }
-// entity 41
+// entity 43
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_37.obj"
@@ -383,7 +397,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/area51_level2/probeam1RC"
 }
-// entity 42
+// entity 44
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_38.obj"
@@ -392,7 +406,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/area51_level2/prometal1RC"
 }
-// entity 43
+// entity 45
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_39.obj"
@@ -401,7 +415,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avasignx2tw"
 }
-// entity 44
+// entity 46
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_40.obj"
@@ -410,7 +424,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avaan_1btw"
 }
-// entity 45
+// entity 47
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_41.obj"
@@ -419,7 +433,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/malltop_4tw"
 }
-// entity 46
+// entity 48
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_42.obj"
@@ -428,7 +442,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/Creepers1sah"
 }
-// entity 47
+// entity 49
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_43.obj"
@@ -437,7 +451,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratroofmac2RC"
 }
-// entity 48
+// entity 50
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_44.obj"
@@ -446,7 +460,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strdoortrim1RC"
 }
-// entity 49
+// entity 51
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_45.obj"
@@ -455,7 +469,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/veggate1RC"
 }
-// entity 50
+// entity 52
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_46.obj"
@@ -464,7 +478,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avfloortw"
 }
-// entity 51
+// entity 53
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_47.obj"
@@ -473,7 +487,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/woodtrim2BC"
 }
-// entity 52
+// entity 54
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_48.obj"
@@ -482,7 +496,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avadisp_1atw"
 }
-// entity 53
+// entity 55
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_49.obj"
@@ -491,7 +505,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/basefabav_1tw"
 }
-// entity 54
+// entity 56
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_50.obj"
@@ -500,7 +514,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avaad_3tw"
 }
-// entity 55
+// entity 57
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_51.obj"
@@ -509,7 +523,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/xspotte1tw"
 }
-// entity 56
+// entity 58
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_52.obj"
@@ -518,7 +532,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratdrywall1RC"
 }
-// entity 57
+// entity 59
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_53.obj"
@@ -527,7 +541,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratwoodwall1R"
 }
-// entity 58
+// entity 60
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_54.obj"
@@ -536,7 +550,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strsign30RC"
 }
-// entity 59
+// entity 61
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_55.obj"
@@ -545,7 +559,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/pentlight1RC"
 }
-// entity 60
+// entity 62
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_56.obj"
@@ -554,7 +568,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/esc_flat1sah"
 }
-// entity 61
+// entity 63
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_57.obj"
@@ -563,7 +577,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh7tw"
 }
-// entity 62
+// entity 64
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_58.obj"
@@ -572,7 +586,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratwoodstk1aR"
 }
-// entity 63
+// entity 65
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_59.obj"
@@ -581,7 +595,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratwoodstk1bR"
 }
-// entity 64
+// entity 66
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_60.obj"
@@ -590,7 +604,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobst4ntw"
 }
-// entity 65
+// entity 67
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_61.obj"
@@ -599,7 +613,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcwall1RC"
 }
-// entity 66
+// entity 68
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_62.obj"
@@ -608,7 +622,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh_2btw"
 }
-// entity 67
+// entity 69
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_63.obj"
@@ -617,7 +631,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh_2ctw"
 }
-// entity 68
+// entity 70
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_64.obj"
@@ -626,7 +640,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/bumpybase_1tw"
 }
-// entity 69
+// entity 71
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_65.obj"
@@ -635,7 +649,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_8tw"
 }
-// entity 70
+// entity 72
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_66.obj"
@@ -644,7 +658,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mabtrimme_1tw"
 }
-// entity 71
+// entity 73
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_67.obj"
@@ -653,7 +667,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_1tw"
 }
-// entity 72
+// entity 74
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_68.obj"
@@ -662,7 +676,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strwoodfloorRC"
 }
-// entity 73
+// entity 75
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_69.obj"
@@ -671,7 +685,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobaddy_1tw"
 }
-// entity 74
+// entity 76
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_70.obj"
@@ -680,7 +694,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/99_1atw"
 }
-// entity 75
+// entity 77
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_71.obj"
@@ -689,7 +703,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1hR"
 }
-// entity 76
+// entity 78
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_72.obj"
@@ -698,7 +712,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/ladykiller1sah"
 }
-// entity 77
+// entity 79
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_73.obj"
@@ -707,7 +721,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/concretefloor2R"
 }
-// entity 78
+// entity 80
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_74.obj"
@@ -716,7 +730,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/ceilingvent1RC"
 }
-// entity 79
+// entity 81
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_75.obj"
@@ -725,7 +739,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/brothel/slwmhceiling1RC"
 }
-// entity 80
+// entity 82
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_76.obj"
@@ -734,7 +748,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/ceiling2Atw"
 }
-// entity 81
+// entity 83
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_77.obj"
@@ -743,7 +757,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/ceiling2BBC"
 }
-// entity 82
+// entity 84
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_78.obj"
@@ -752,7 +766,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratmainflr1aR"
 }
-// entity 83
+// entity 85
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_79.obj"
@@ -761,7 +775,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/boardldeb_1tw"
 }
-// entity 84
+// entity 86
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_80.obj"
@@ -770,7 +784,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratbdump2RC"
 }
-// entity 85
+// entity 87
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_81.obj"
@@ -779,7 +793,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/ceiling2ABC"
 }
-// entity 86
+// entity 88
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_82.obj"
@@ -788,7 +802,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/gridceile_1tw"
 }
-// entity 87
+// entity 89
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_83.obj"
@@ -797,7 +811,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dcasino/DCgurter1CBC"
 }
-// entity 88
+// entity 90
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_84.obj"
@@ -806,7 +820,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1gR"
 }
-// entity 89
+// entity 91
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_85.obj"
@@ -815,7 +829,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshptrim3cRC"
 }
-// entity 90
+// entity 92
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_86.obj"
@@ -824,7 +838,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/malltopwh_1ytw"
 }
-// entity 91
+// entity 93
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_87.obj"
@@ -833,7 +847,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/intgymbeamRC"
 }
-// entity 92
+// entity 94
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_88.obj"
@@ -842,7 +856,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/casinowood1BC"
 }
-// entity 93
+// entity 95
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_89.obj"
@@ -851,7 +865,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/casinowall1CBC"
 }
-// entity 94
+// entity 96
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_90.obj"
@@ -860,7 +874,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avfloor2tw"
 }
-// entity 95
+// entity 97
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_91.obj"
@@ -869,7 +883,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcbox1aRC"
 }
-// entity 96
+// entity 98
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_92.obj"
@@ -878,7 +892,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcbox1bRC"
 }
-// entity 97
+// entity 99
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_93.obj"
@@ -887,7 +901,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply12R"
 }
-// entity 98
+// entity 100
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_94.obj"
@@ -896,7 +910,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply11R"
 }
-// entity 99
+// entity 101
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_95.obj"
@@ -905,7 +919,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mallclothes_4atw"
 }
-// entity 100
+// entity 102
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_96.obj"
@@ -914,7 +928,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1aR"
 }
-// entity 101
+// entity 103
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_97.obj"
@@ -923,7 +937,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1iR"
 }
-// entity 102
+// entity 104
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_98.obj"
@@ -932,7 +946,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1dR"
 }
-// entity 103
+// entity 105
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_99.obj"
@@ -941,7 +955,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1cR"
 }
-// entity 104
+// entity 106
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_100.obj"
@@ -950,7 +964,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mallclothes1tw"
 }
-// entity 105
+// entity 107
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_101.obj"
@@ -959,7 +973,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mallclothes2tw"
 }
-// entity 106
+// entity 108
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_102.obj"
@@ -968,7 +982,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/area51_level2/prometalwall1RC"
 }
-// entity 107
+// entity 109
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_103.obj"
@@ -977,7 +991,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/tramwall01sah"
 }
-// entity 108
+// entity 110
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_104.obj"
@@ -986,7 +1000,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/esc_rail1sah"
 }
-// entity 109
+// entity 111
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_105.obj"
@@ -995,7 +1009,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/specks_conk6tw"
 }
-// entity 110
+// entity 112
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_106.obj"
@@ -1004,7 +1018,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/supers_2tw"
 }
-// entity 111
+// entity 113
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_107.obj"
@@ -1013,7 +1027,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/ragged_plate_1tw"
 }
-// entity 112
+// entity 114
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_108.obj"
@@ -1022,7 +1036,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/hotel_gas/gravel_dirt_1tw"
 }
-// entity 113
+// entity 115
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_109.obj"
@@ -1031,7 +1045,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/puddle1sah"
 }
-// entity 114
+// entity 116
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_110.obj"
@@ -1040,7 +1054,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/sign11RC"
 }
-// entity 115
+// entity 117
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_111.obj"
@@ -1049,7 +1063,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/tileo_1tw"
 }
-// entity 116
+// entity 118
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_112.obj"
@@ -1058,7 +1072,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/tileo_2tw"
 }
-// entity 117
+// entity 119
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_113.obj"
@@ -1067,7 +1081,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/tileo_1btw"
 }
-// entity 118
+// entity 120
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_114.obj"
@@ -1076,7 +1090,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/vegtramvend1bRC"
 }
-// entity 119
+// entity 121
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_115.obj"
@@ -1085,7 +1099,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegtramvend1tw"
 }
-// entity 120
+// entity 122
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_116.obj"
@@ -1094,7 +1108,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/glazzies2tw"
 }
-// entity 121
+// entity 123
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_117.obj"
@@ -1103,7 +1117,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/hangarceiling1R"
 }
-// entity 122
+// entity 124
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_118.obj"
@@ -1112,7 +1126,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/holeygird_1tw"
 }
-// entity 123
+// entity 125
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_119.obj"
@@ -1121,7 +1135,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Airforcebase2/fireext1ja"
 }
-// entity 124
+// entity 126
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_120.obj"
@@ -1130,7 +1144,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/dirtmask_2tw"
 }
-// entity 125
+// entity 127
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_121.obj"
@@ -1139,7 +1153,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/girder_1tw"
 }
-// entity 126
+// entity 128
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_122.obj"
@@ -1148,7 +1162,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/beano_met1tw"
 }
-// entity 127
+// entity 129
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_123.obj"
@@ -1157,7 +1171,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/colamach1sah"
 }
-// entity 128
+// entity 130
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_124.obj"
@@ -1166,7 +1180,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/doorjam_2tw"
 }
-// entity 129
+// entity 131
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_125.obj"
@@ -1175,7 +1189,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/papers1tw"
 }
-// entity 130
+// entity 132
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_126.obj"
@@ -1184,7 +1198,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strdoor3atw"
 }
-// entity 131
+// entity 133
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_127.obj"
@@ -1193,7 +1207,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strdoor4RC"
 }
-// entity 132
+// entity 134
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_128.obj"
@@ -1202,7 +1216,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_8ttw"
 }
-// entity 133
+// entity 135
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_129.obj"
@@ -1211,7 +1225,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/AirforceSmacks05/ClockWall12hrs"
 }
-// entity 134
+// entity 136
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_130.obj"
@@ -1220,7 +1234,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/supers_1atw"
 }
-// entity 135
+// entity 137
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_131.obj"
@@ -1229,7 +1243,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strdoor3tw"
 }
-// entity 136
+// entity 138
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_132.obj"
@@ -1238,7 +1252,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/scum_asphalt1tw"
 }
-// entity 137
+// entity 139
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_133.obj"
@@ -1247,7 +1261,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_6atw"
 }
-// entity 138
+// entity 140
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_134.obj"
@@ -1256,7 +1270,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/malltopl_6atw"
 }
-// entity 139
+// entity 141
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_135.obj"
@@ -1265,7 +1279,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh_6tw"
 }
-// entity 140
+// entity 142
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_136.obj"
@@ -1274,7 +1288,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/basefloort_1tw"
 }
-// entity 141
+// entity 143
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_137.obj"
@@ -1283,7 +1297,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/constructt_2tw"
 }
-// entity 142
+// entity 144
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_138.obj"
@@ -1292,7 +1306,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratladder1aRC"
 }
-// entity 143
+// entity 145
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_139.obj"
@@ -1301,7 +1315,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strbeige1RC"
 }
-// entity 144
+// entity 146
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_140.obj"
@@ -1310,7 +1324,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strconpallet1dR"
 }
-// entity 145
+// entity 147
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_141.obj"
@@ -1319,7 +1333,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratscafold2RC"
 }
-// entity 146
+// entity 148
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_142.obj"
@@ -1328,7 +1342,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh4atw"
 }
-// entity 147
+// entity 149
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_143.obj"
@@ -1337,7 +1351,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/ceiling1dRC"
 }
-// entity 148
+// entity 150
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_144.obj"
@@ -1346,7 +1360,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh_2tw"
 }
-// entity 149
+// entity 151
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_145.obj"
@@ -1355,7 +1369,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh_2atw"
 }
-// entity 150
+// entity 152
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_146.obj"
@@ -1364,7 +1378,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strceiling4aRC"
 }
-// entity 151
+// entity 153
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_147.obj"
@@ -1373,7 +1387,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/silo_tile5atw"
 }
-// entity 152
+// entity 154
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_148.obj"
@@ -1382,7 +1396,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/messytiles1BBC"
 }
-// entity 153
+// entity 155
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_149.obj"
@@ -1391,7 +1405,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/tap_door_2tw"
 }
-// entity 154
+// entity 156
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_150.obj"
@@ -1400,7 +1414,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/hotel_gas/craz_door"
 }
-// entity 155
+// entity 157
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_151.obj"
@@ -1409,7 +1423,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Miningtown/mintrim7RC"
 }
-// entity 156
+// entity 158
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_152.obj"
@@ -1418,7 +1432,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/Rust1ABC"
 }
-// entity 157
+// entity 159
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_153.obj"
@@ -1427,7 +1441,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/kojak_rocks_1tw"
 }
-// entity 158
+// entity 160
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_154.obj"
@@ -1436,7 +1450,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/blue1ABC"
 }
-// entity 159
+// entity 161
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_155.obj"
@@ -1445,7 +1459,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/boobsh4bctw"
 }
-// entity 160
+// entity 162
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_156.obj"
@@ -1454,7 +1468,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1fR"
 }
-// entity 161
+// entity 163
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_157.obj"
@@ -1463,7 +1477,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/102_2atw"
 }
-// entity 162
+// entity 164
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_158.obj"
@@ -1472,7 +1486,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratpowerbox1b"
 }
-// entity 163
+// entity 165
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_159.obj"
@@ -1481,7 +1495,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/blkcieling1BBC"
 }
-// entity 164
+// entity 166
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_160.obj"
@@ -1490,7 +1504,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/gampcontw"
 }
-// entity 165
+// entity 167
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_161.obj"
@@ -1499,7 +1513,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/dirtmask_1tw"
 }
-// entity 166
+// entity 168
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_162.obj"
@@ -1508,7 +1522,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/standard1RC"
 }
-// entity 167
+// entity 169
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_163.obj"
@@ -1517,7 +1531,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratconbrick1a"
 }
-// entity 168
+// entity 170
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_164.obj"
@@ -1526,7 +1540,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratconbrick1b"
 }
-// entity 169
+// entity 171
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_165.obj"
@@ -1535,7 +1549,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratconbrick1c"
 }
-// entity 170
+// entity 172
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_166.obj"
@@ -1544,7 +1558,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/clodstairs_1tw"
 }
-// entity 171
+// entity 173
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_167.obj"
@@ -1553,7 +1567,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply19a"
 }
-// entity 172
+// entity 174
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_168.obj"
@@ -1562,7 +1576,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply19b"
 }
-// entity 173
+// entity 175
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_169.obj"
@@ -1571,7 +1585,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply19d"
 }
-// entity 174
+// entity 176
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_170.obj"
@@ -1580,7 +1594,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply19c"
 }
-// entity 175
+// entity 177
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_171.obj"
@@ -1589,7 +1603,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply36R"
 }
-// entity 176
+// entity 178
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_172.obj"
@@ -1598,7 +1612,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/ceswall1bRC"
 }
-// entity 177
+// entity 179
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_173.obj"
@@ -1607,7 +1621,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply28R"
 }
-// entity 178
+// entity 180
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_174.obj"
@@ -1616,7 +1630,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratceiling2bR"
 }
-// entity 179
+// entity 181
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_175.obj"
@@ -1625,7 +1639,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strmonycham1bRC"
 }
-// entity 180
+// entity 182
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_176.obj"
@@ -1634,7 +1648,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopliq1dRC"
 }
-// entity 181
+// entity 183
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_177.obj"
@@ -1643,7 +1657,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcwall2RC"
 }
-// entity 182
+// entity 184
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_178.obj"
@@ -1652,7 +1666,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply35R"
 }
-// entity 183
+// entity 185
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_179.obj"
@@ -1661,7 +1675,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply33R"
 }
-// entity 184
+// entity 186
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_180.obj"
@@ -1670,7 +1684,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply34R"
 }
-// entity 185
+// entity 187
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_181.obj"
@@ -1679,7 +1693,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply15R"
 }
-// entity 186
+// entity 188
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_182.obj"
@@ -1688,7 +1702,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply16R"
 }
-// entity 187
+// entity 189
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_183.obj"
@@ -1697,7 +1711,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply2RC"
 }
-// entity 188
+// entity 190
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_184.obj"
@@ -1706,7 +1720,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply1RC"
 }
-// entity 189
+// entity 191
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_185.obj"
@@ -1715,7 +1729,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/spanko_web1tw"
 }
-// entity 190
+// entity 192
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_186.obj"
@@ -1724,7 +1738,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Airforcebase2/exit2JA"
 }
-// entity 191
+// entity 193
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_187.obj"
@@ -1733,7 +1747,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/silo_tile1btw"
 }
-// entity 192
+// entity 194
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_188.obj"
@@ -1742,7 +1756,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/t_generic/genmark25RC"
 }
-// entity 193
+// entity 195
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_189.obj"
@@ -1751,7 +1765,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/detrit_2tw"
 }
-// entity 194
+// entity 196
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_190.obj"
@@ -1760,7 +1774,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/gampcon2tw"
 }
-// entity 195
+// entity 197
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_191.obj"
@@ -1769,7 +1783,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_5tw"
 }
-// entity 196
+// entity 198
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_192.obj"
@@ -1778,7 +1792,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/hotel_gas/met_door"
 }
-// entity 197
+// entity 199
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_193.obj"
@@ -1787,7 +1801,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcrebarRC"
 }
-// entity 198
+// entity 200
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_194.obj"
@@ -1796,7 +1810,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_2/gobble_1tw"
 }
-// entity 199
+// entity 201
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_195.obj"
@@ -1805,7 +1819,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/brtile_1"
 }
-// entity 200
+// entity 202
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_196.obj"
@@ -1814,7 +1828,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/con_woods_1tw"
 }
-// entity 201
+// entity 203
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_197.obj"
@@ -1823,7 +1837,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_7tw"
 }
-// entity 202
+// entity 204
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_198.obj"
@@ -1832,7 +1846,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/detrit_1tw"
 }
-// entity 203
+// entity 205
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_199.obj"
@@ -1841,7 +1855,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/supers_3etw"
 }
-// entity 204
+// entity 206
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_200.obj"
@@ -1850,7 +1864,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcsheetb1tw"
 }
-// entity 205
+// entity 207
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_201.obj"
@@ -1859,7 +1873,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcsheetb1bR"
 }
-// entity 206
+// entity 208
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_202.obj"
@@ -1868,7 +1882,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcsheetb1aR"
 }
-// entity 207
+// entity 209
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_203.obj"
@@ -1877,7 +1891,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnMaskFX/pipers_2tw"
 }
-// entity 208
+// entity 210
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_204.obj"
@@ -1886,7 +1900,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/supers_3dtw"
 }
-// entity 209
+// entity 211
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_205.obj"
@@ -1895,7 +1909,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnModulation/splatterp_1tw"
 }
-// entity 210
+// entity 212
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_206.obj"
@@ -1904,7 +1918,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dnModulation/splatterp_2tw"
 }
-// entity 211
+// entity 213
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_207.obj"
@@ -1913,7 +1927,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dcasino/dcasshop5RC"
 }
-// entity 212
+// entity 214
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_208.obj"
@@ -1922,7 +1936,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopliq1fRC"
 }
-// entity 213
+// entity 215
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_209.obj"
@@ -1931,7 +1945,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopliq1aRC"
 }
-// entity 214
+// entity 216
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_210.obj"
@@ -1940,7 +1954,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshpdisply25R"
 }
-// entity 215
+// entity 217
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_211.obj"
@@ -1949,7 +1963,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/pentwall3RC"
 }
-// entity 216
+// entity 218
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_212.obj"
@@ -1958,7 +1972,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopvid1cRC"
 }
-// entity 217
+// entity 219
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_213.obj"
@@ -1967,7 +1981,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/mallciel_27tw"
 }
-// entity 218
+// entity 220
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_214.obj"
@@ -1976,7 +1990,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopliq1gRC"
 }
-// entity 219
+// entity 221
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_215.obj"
@@ -1985,7 +1999,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopliq1eRC"
 }
-// entity 220
+// entity 222
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_216.obj"
@@ -1994,7 +2008,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopliq1bRC"
 }
-// entity 221
+// entity 223
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_217.obj"
@@ -2003,7 +2017,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopvid1aRC"
 }
-// entity 222
+// entity 224
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_218.obj"
@@ -2012,7 +2026,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopliq1cRC"
 }
-// entity 223
+// entity 225
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_219.obj"
@@ -2021,7 +2035,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/marb_brick2tw"
 }
-// entity 224
+// entity 226
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_220.obj"
@@ -2030,7 +2044,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/99_1tw"
 }
-// entity 225
+// entity 227
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_221.obj"
@@ -2039,7 +2053,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/moonb3tw"
 }
-// entity 226
+// entity 228
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_222.obj"
@@ -2048,7 +2062,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dcasino/dcasshop6RC"
 }
-// entity 227
+// entity 229
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_223.obj"
@@ -2057,7 +2071,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dcasino/dcasshop2RC"
 }
-// entity 228
+// entity 230
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_224.obj"
@@ -2066,7 +2080,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/moonb1tw"
 }
-// entity 229
+// entity 231
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_225.obj"
@@ -2075,7 +2089,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/moonb4tw"
 }
-// entity 230
+// entity 232
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_226.obj"
@@ -2084,7 +2098,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/casino5aRC"
 }
-// entity 231
+// entity 233
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_227.obj"
@@ -2093,7 +2107,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/skyboxes/night1RC"
 }
-// entity 232
+// entity 234
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_228.obj"
@@ -2102,7 +2116,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/sign38RC"
 }
-// entity 233
+// entity 235
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_229.obj"
@@ -2111,7 +2125,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/moonb2btw"
 }
-// entity 234
+// entity 236
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_230.obj"
@@ -2120,7 +2134,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/asterpants1tw"
 }
-// entity 235
+// entity 237
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_231.obj"
@@ -2129,7 +2143,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/moonb2tw"
 }
-// entity 236
+// entity 238
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_232.obj"
@@ -2138,7 +2152,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/farginsale_1tw"
 }
-// entity 237
+// entity 239
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_233.obj"
@@ -2147,7 +2161,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/sinstadt1tw"
 }
-// entity 238
+// entity 240
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_234.obj"
@@ -2156,7 +2170,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/ladyluck1sah"
 }
-// entity 239
+// entity 241
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_235.obj"
@@ -2165,7 +2179,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avam_1tw"
 }
-// entity 240
+// entity 242
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_236.obj"
@@ -2174,7 +2188,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avam_4tw"
 }
-// entity 241
+// entity 243
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_237.obj"
@@ -2183,7 +2197,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avam_3tw"
 }
-// entity 242
+// entity 244
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_238.obj"
@@ -2192,7 +2206,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/avam_2tw"
 }
-// entity 243
+// entity 245
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_239.obj"
@@ -2201,7 +2215,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/m_generic/boxside2aRC"
 }
-// entity 244
+// entity 246
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_240.obj"
@@ -2210,7 +2224,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/astercarptw"
 }
-// entity 245
+// entity 247
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_241.obj"
@@ -2219,7 +2233,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/flogrilly1tw"
 }
-// entity 246
+// entity 248
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_242.obj"
@@ -2228,7 +2242,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/vegshptrim2RC"
 }
-// entity 247
+// entity 249
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_243.obj"
@@ -2237,7 +2251,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/oneon_2tw"
 }
-// entity 248
+// entity 250
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_244.obj"
@@ -2246,7 +2260,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strsign11RC"
 }
-// entity 249
+// entity 251
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_245.obj"
@@ -2255,7 +2269,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/hardrock1sah"
 }
-// entity 250
+// entity 252
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_246.obj"
@@ -2264,7 +2278,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/mirageRC"
 }
-// entity 251
+// entity 253
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_247.obj"
@@ -2273,7 +2287,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/m_zone5_area51/scontainer1BC"
 }
-// entity 252
+// entity 254
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_248.obj"
@@ -2282,7 +2296,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/veganisigntmsdR"
 }
-// entity 253
+// entity 255
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_249.obj"
@@ -2291,7 +2305,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/malltopwh_1tw"
 }
-// entity 254
+// entity 256
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_250.obj"
@@ -2300,7 +2314,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/vegelevator1cRC"
 }
-// entity 255
+// entity 257
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_251.obj"
@@ -2309,7 +2323,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/oneon_9atw"
 }
-// entity 256
+// entity 258
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_252.obj"
@@ -2318,7 +2332,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strshopBGirl1bR"
 }
-// entity 257
+// entity 259
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_253.obj"
@@ -2327,7 +2341,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/stratariel1sah"
 }
-// entity 258
+// entity 260
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_254.obj"
@@ -2336,7 +2350,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/cripesya_1tw"
 }
-// entity 259
+// entity 261
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_255.obj"
@@ -2345,7 +2359,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/starsbabs_1tw"
 }
-// entity 260
+// entity 262
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_256.obj"
@@ -2354,7 +2368,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/rev99ad1tw"
 }
-// entity 261
+// entity 263
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_257.obj"
@@ -2363,7 +2377,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/rev99ad2tw"
 }
-// entity 262
+// entity 264
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_258.obj"
@@ -2372,7 +2386,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/goldmap_3tw"
 }
-// entity 263
+// entity 265
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_259.obj"
@@ -2381,7 +2395,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/buychez_1tw"
 }
-// entity 264
+// entity 266
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_260.obj"
@@ -2390,7 +2404,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/dcasino/neonO_onBC"
 }
-// entity 265
+// entity 267
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_261.obj"
@@ -2399,7 +2413,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/oneon_9tw"
 }
-// entity 266
+// entity 268
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_262.obj"
@@ -2408,7 +2422,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/plaswallchee_4tw"
 }
-// entity 267
+// entity 269
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_263.obj"
@@ -2417,7 +2431,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/EDF_1/flo_con_2"
 }
-// entity 268
+// entity 270
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_264.obj"
@@ -2426,7 +2440,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratopcarpet1R"
 }
-// entity 269
+// entity 271
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_265.obj"
@@ -2435,7 +2449,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/phousewall1HBC"
 }
-// entity 270
+// entity 272
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_266.obj"
@@ -2444,7 +2458,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcrebarsdwR"
 }
-// entity 271
+// entity 273
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_267.obj"
@@ -2453,7 +2467,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/constructt_1tw"
 }
-// entity 272
+// entity 274
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_268.obj"
@@ -2462,7 +2476,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/carpet1BBC"
 }
-// entity 273
+// entity 275
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_269.obj"
@@ -2471,7 +2485,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/intwall3EBC"
 }
-// entity 274
+// entity 276
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_270.obj"
@@ -2480,7 +2494,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/stratcsheetb1cR"
 }
-// entity 275
+// entity 277
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_271.obj"
@@ -2489,7 +2503,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/pentpool1iRC"
 }
-// entity 276
+// entity 278
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_272.obj"
@@ -2498,7 +2512,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/airforcebase/intwall3ABC"
 }
-// entity 277
+// entity 279
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_273.obj"
@@ -2507,7 +2521,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/astercarp2tw"
 }
-// entity 278
+// entity 280
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_274.obj"
@@ -2516,7 +2530,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/stratosfear/strairduct2RC"
 }
-// entity 279
+// entity 281
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_275.obj"
@@ -2525,7 +2539,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/dukecv_wall2BC"
 }
-// entity 280
+// entity 282
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_276.obj"
@@ -2534,7 +2548,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/pentsoda7RC"
 }
-// entity 281
+// entity 283
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_277.obj"
@@ -2543,7 +2557,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/vegas/casino10jRC"
 }
-// entity 282
+// entity 284
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_278.obj"
@@ -2552,7 +2566,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/Penthouse/dukecv_floor1AB"
 }
-// entity 283
+// entity 285
 {
 "classname" "func_static"
 "model" "maps/z1l5_2/plane_279.obj"
@@ -2561,7 +2575,7 @@
 "origin" "0 0 0"
 "forceshader" "textures/a51_base1/A51b1mtlkybdRC"
 }
-// entity 284
+// entity 286
 {
 "classname" "light"
 "name" "light_4"
@@ -2573,7 +2587,7 @@
 "_color" "1 1 1"
 "light_radius" "150 150 150"
 }
-// entity 285
+// entity 287
 {
 "classname" "light"
 "name" "light_5"
@@ -2585,7 +2599,7 @@
 "_color" "1 1 1"
 "light_radius" "300 150 150"
 }
-// entity 286
+// entity 288
 {
 "classname" "light"
 "name" "light_6"
@@ -2593,11 +2607,11 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.58 0.58 0.58"
 "light_radius" "200 200 200"
 }
-// entity 287
+// entity 289
 {
 "classname" "light"
 "name" "light_7"
@@ -2605,11 +2619,11 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.53 0.53 0.53"
 "light_radius" "200 200 200"
 }
-// entity 288
+// entity 290
 {
 "classname" "light"
 "name" "light_8"
@@ -2621,7 +2635,7 @@
 "_color" "0.5 0.07 0"
 "light_radius" "400 400 200"
 }
-// entity 289
+// entity 291
 {
 "classname" "light"
 "name" "light_9"
@@ -2629,11 +2643,11 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.49 0.49 0.49"
 "light_radius" "200 200 200"
 }
-// entity 290
+// entity 292
 {
 "classname" "light"
 "name" "light_10"

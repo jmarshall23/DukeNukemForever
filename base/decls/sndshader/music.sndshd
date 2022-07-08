@@ -11,3 +11,10 @@ E1L1
 	
 	sounds/music2/city_loop.ogg
 }
+
+E1L2
+{
+	looping
+
+	sounds/music2/underground_loop.ogg
+}

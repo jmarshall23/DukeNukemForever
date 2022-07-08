@@ -2,6 +2,7 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
+"music" "E1L2"
 // primitive 0
 {
  brushDef3
