@@ -50,6 +50,8 @@ windowDef Desktop
 	{
 		rect	0,0,1280,720
 		visible	0
+		background	"dnf_menu_back"
+	
 		windowDef unnamed2
 		{
 			rect	366,42,581,181
@@ -59,7 +61,7 @@ windowDef Desktop
 		}
 		windowDef unnamed
 		{
-			rect	10,224,1308,66
+			rect	10,244,1308,66
 			visible	1
 			forecolor	1,1,1,1
 			text	"New Game"
@@ -68,7 +70,7 @@ windowDef Desktop
 		}
 		windowDef unnamed1
 		{
-			rect	10,280,1308,66
+			rect	10,300,1308,66
 			visible	1
 			forecolor	1,1,1,1
 			text	"Load Game"
@@ -77,7 +79,7 @@ windowDef Desktop
 		}
 		windowDef unnamed11
 		{
-			rect	12,340,1308,66
+			rect	12,360,1308,66
 			visible	1
 			forecolor	1,1,1,1
 			text	"Options"
@@ -86,7 +88,7 @@ windowDef Desktop
 		}
 		windowDef unnamed111
 		{
-			rect	10,404,1308,66
+			rect	10,424,1308,66
 			visible	1
 			forecolor	1,1,1,1
 			text	"Credits"
@@ -95,7 +97,7 @@ windowDef Desktop
 		}
 		windowDef unnamed1111
 		{
-			rect	10,468,1308,66
+			rect	10,488,1308,66
 			visible	1
 			forecolor	1,1,1,1
 			text	"Exit Game"

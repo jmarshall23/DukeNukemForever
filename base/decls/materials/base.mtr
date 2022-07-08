@@ -14,3 +14,10 @@ dnf_intro_video
 		videomap videos/intro.bik
 	}
 }
+
+dnf_menu_back
+{
+	{
+		videomap loop videos/menuback.bik
+	}
+}
