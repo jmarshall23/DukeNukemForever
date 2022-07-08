@@ -29,6 +29,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #pragma hdrstop
 #include "sys_local.h"
+#include "win32/win_local.h"
 
 const char * sysLanguageNames[] = {
 	"english", "spanish", "italian", "german", "french", "russian", 
@@ -154,6 +155,15 @@ sysEvent_t idSysLocal::GenerateMouseMoveEvent( int deltax, int deltay ) {
 
 void idSysLocal::FPU_EnableExceptions( int exceptions ) {
 	Sys_FPU_EnableExceptions( exceptions );
+}
+
+void idSysLocal::GetGameWindowInfo(int& width, int& height) {
+	
+	RECT rect;
+	GetWindowRect(win32.hWnd, &rect);
+
+	width = rect.right - rect.left;
+	height = rect.bottom - rect.top;
 }
 
 /*

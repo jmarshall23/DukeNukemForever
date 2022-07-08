@@ -561,6 +561,8 @@ void idRenderSystemLocal::BeginFrame( int windowWidth, int windowHeight ) {
 		return;
 	}
 
+	sys->GetGameWindowInfo(glConfig.vidWidth, glConfig.vidHeight);
+
 	// determine which back end we will use
 	SetBackEndRenderer();
 
