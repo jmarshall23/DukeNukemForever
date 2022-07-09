@@ -369,6 +369,8 @@ int CCamWnd::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 	// indicate start of glyph display lists
 	glListBase(g_qeglobals.d_font_list);
 
+	SetWindowTheme(GetSafeHwnd(), L"DarkMode_Explorer", NULL);
+
 	// report OpenGL information
 	common->Printf("GL_VENDOR: %s\n", glGetString(GL_VENDOR));
 	common->Printf("GL_RENDERER: %s\n", glGetString(GL_RENDERER));

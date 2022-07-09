@@ -469,6 +469,7 @@ If you have questions concerning this license or the applicable additional terms
 #define IDD_DIALOG_XY			                   10556
 #define IDD_DIALOG_XZ			                   10557
 #define IDD_DIALOG_YZ			                   10558
+#define IDD_WAITDLG_PROGRESS					10559
 
 #define ID_COLOR_SUPERMAL                        30000
 #define ID_Menu                                  30001

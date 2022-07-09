@@ -387,7 +387,7 @@ entity_t *EntityFromMapEntity(idMapEntity *mapent, CWaitDlg *dlg) {
 					} else if (prim->GetType() == idMapPrimitive::TYPE_PATCH) {
 						sprintf(status, "Reading primitive %i (patch)", i);
 					}
-					dlg->SetText(status, true);
+					dlg->SetText(status, ((float)i) / (float)count, true);
 				}
 				if ( dlg->CancelPressed() ) {
 					return ent;
@@ -464,7 +464,7 @@ void Map_LoadFile(const char *filename) {
 				if ( (GetTickCount() - lastUpdate) > 50 ) {
 					lastUpdate = GetTickCount();
 					sprintf(status, "Loading entity %i (%s)...", i, classname.c_str());
-					dlg.SetText(status);
+					dlg.SetText(status, (((float)i)/(float)count));
 				}
 				if ( dlg.CancelPressed() ) {
 					Sys_Status("Map load cancelled.\n");
