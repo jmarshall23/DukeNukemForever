@@ -6586,7 +6586,8 @@ void CMainFrame::OnShowDoom()
 	::ShowWindow(win32.hWnd, show);
 
 // jmarshall
-	renderSystem->NukeShadowMapCache();
+	cmdSystem->BufferCommandText(CMD_EXEC_NOW, "disconnect");
+	cmdSystem->BufferCommandText(CMD_EXEC_NOW, va("devmap %s", fileSystem->OSPathToRelativePath(currentmap) + strlen("maps\\")));
 // jmarshall end
 }
 

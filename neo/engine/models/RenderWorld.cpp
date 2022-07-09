@@ -386,7 +386,7 @@ void idRenderWorldLocal::UpdateLightDef( qhandle_t lightHandle, const renderLigh
 		}
 	} else {
 		// create a new one
-		light = new idRenderLightLocal;
+		light = new idRenderLightLocal();
 		lightDefs[lightHandle] = light;
 
 		light->world = this;
@@ -430,6 +430,12 @@ void idRenderWorldLocal::FreeLightDef( qhandle_t lightHandle ) {
 	if ( !light ) {
 		common->Printf( "idRenderWorld::FreeLightDef: handle %i is NULL\n", lightHandle );
 		return;
+	}
+
+	if (light->currentOcclusionQuery != nullptr)
+	{
+		delete light->currentOcclusionQuery;
+		light->currentOcclusionQuery = NULL;
 	}
 
 	light->FreeLightDefDerivedData();
