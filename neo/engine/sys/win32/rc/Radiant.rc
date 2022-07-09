@@ -554,6 +554,13 @@ BEGIN
         MENUITEM "Snap to grid",                ID_VIEW_SHOWTRIGGERS
         , CHECKED
     END
+
+    POPUP "&Play Test"
+    BEGIN
+            MENUITEM "Play Test Level", ID_PLAYTEST_LEVEL
+    END
+
+
     POPUP "Ma&terials"
     BEGIN
         MENUITEM "Show In &Use\tU",             ID_TEXTURES_SHOWINUSE

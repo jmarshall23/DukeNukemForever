@@ -877,6 +877,8 @@ If you have questions concerning this license or the applicable additional terms
 #define ID_SELECTION_VIEW_WIREFRAMEOFF           30403
 #define ID_SELECTION_VIEW_VISIBLEON              30404
 #define ID_SELECTION_VIEW_VISIBLEOFF             30405
+#define ID_PLAYTEST_LEVEL						 30406
+
 #define ID_ENTITY_START                          40000
 #define ID_ENTITY_END                            45000
 

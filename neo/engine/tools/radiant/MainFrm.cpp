@@ -660,7 +660,7 @@ BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_COMMAND(ID_SELECT_BYBOUNDINGBRUSH, OnSelectByBoundingBrush)
 	ON_COMMAND(ID_SELECTION_COMBINE, OnSelectionCombine)
 	ON_COMMAND(ID_PATCH_COMBINE, OnPatchCombine)
-	ON_COMMAND(ID_SHOW_DOOM, OnShowDoom)
+	ON_COMMAND(ID_PLAYTEST_LEVEL, OnShowDoom)
 	ON_COMMAND(ID_VIEW_RENDERMODE, OnViewRendermode)
 	ON_COMMAND(ID_VIEW_REBUILDRENDERDATA, OnViewRebuildrenderdata)
 	ON_COMMAND(ID_VIEW_REALTIMEREBUILD, OnViewRealtimerebuild)
@@ -1093,7 +1093,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 	if (CFrameWnd::OnCreate(lpCreateStruct) == -1) {
 		return -1;
 	}
-
+#if 0
 	UINT	nID = (g_PrefsDlg.m_bWideToolbar) ? IDR_TOOLBAR_ADVANCED : IDR_TOOLBAR1;
 
 	if (!m_wndToolBar.CreateEx(this, TBSTYLE_FLAT, WS_CHILD | WS_VISIBLE | CBRS_TOP
@@ -1101,14 +1101,14 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 		TRACE0("Failed to create toolbar\n");
 		return -1;	// fail to create
 	}
-
+#endif
 	if (!m_wndStatusBar.Create(this) || !m_wndStatusBar.SetIndicators(indicators, sizeof(indicators) / sizeof(UINT))) {
 		TRACE0("Failed to create status bar\n");
 		return -1;	// fail to create
 	}
 
 	m_bCamPreview = true;
-
+#if 0
 	m_wndToolBar.GetToolBarCtrl().CheckButton(ID_SCALELOCKX, FALSE);
 	m_wndToolBar.GetToolBarCtrl().CheckButton(ID_SCALELOCKY, FALSE);
 	m_wndToolBar.GetToolBarCtrl().CheckButton(ID_SCALELOCKZ, FALSE);
@@ -1126,13 +1126,13 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 	m_wndToolBar.EnableDocking(CBRS_ALIGN_ANY);
 	EnableDocking(CBRS_ALIGN_ANY);
 	DockControlBar(&m_wndToolBar);
-
+#endif
 	g_nScaleHow = 0;
-
+#if 0
 	m_wndTextureBar.Create(this, IDD_TEXTUREBAR, CBRS_BOTTOM, 7433);
 	m_wndTextureBar.EnableDocking(CBRS_ALIGN_ANY);
 	DockControlBar(&m_wndTextureBar);
-
+#endif
 	g_qeglobals.d_lpMruMenu = CreateMruMenuDefault();
 
 	m_bAutoMenuEnable = FALSE;
@@ -1169,8 +1169,9 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 	SetGridStatus();
 	SetTexValStatus();
 	SetButtonMenuStates();
+#if 0
 	LoadBarState("RadiantToolBars2");
-
+#endif
 	SetActiveXY(m_pXYWnd);
 	m_pXYWnd->SetFocus();
 
