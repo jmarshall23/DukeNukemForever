@@ -345,121 +345,7 @@ BEGIN
         MENUITEM SEPARATOR
         MENUITEM "Preferences...",              ID_PREFS
     END
-    POPUP "&View"
-    BEGIN
-        POPUP "Toggle"
-        BEGIN
-            MENUITEM "Camera View",                 ID_TOGGLECAMERA
-            MENUITEM "Console View",                ID_TOGGLECONSOLE
-            MENUITEM "Entity View",                 ID_VIEW_ENTITY
-            MENUITEM "Groups View",                 ID_VIEW_GROUPS
-            MENUITEM "XY (Top)",                    ID_TOGGLEVIEW
-            MENUITEM "YZ (Side)",                   ID_TOGGLEVIEW_YZ
-            MENUITEM "XZ (Front)",                  ID_TOGGLEVIEW_XZ
-            MENUITEM "Z View",                      ID_TOGGLEZ
-        END
-        MENUITEM SEPARATOR
-        MENUITEM "&Center\tEnd",                ID_VIEW_CENTER
-        MENUITEM "&Up Floor\tPage Up",          ID_VIEW_UPFLOOR
-        MENUITEM "&Down Floor\tPage Down",      ID_VIEW_DOWNFLOOR
-        MENUITEM SEPARATOR
-        MENUITEM "&Next (XY, YZ, XY)\tCtrl-TAB", ID_VIEW_NEXTVIEW
-        POPUP "Layout"
-        BEGIN
-            MENUITEM "XY (Top)",                    ID_VIEW_XY
-            MENUITEM "YZ",                          ID_VIEW_SIDE
-            MENUITEM "XZ",                          ID_VIEW_FRONT
-        END
-        POPUP "Zoom"
-        BEGIN
-            MENUITEM "&XY 100%",                    ID_VIEW_100
-            MENUITEM "XY Zoom &In\tDelete",         ID_VIEW_ZOOMIN
-            MENUITEM "XY Zoom &Out\tInsert",        ID_VIEW_ZOOMOUT
-            MENUITEM SEPARATOR
-            MENUITEM "&Z 100%",                     ID_VIEW_Z100
-            MENUITEM "Z Zoo&m In\tctrl-Delete",     ID_VIEW_ZZOOMIN
-            MENUITEM "Z Zoom O&ut\tctrl-Insert",    ID_VIEW_ZZOOMOUT
-            MENUITEM SEPARATOR
-            MENUITEM "Cubic Clip Zoom In\tctrl-]",  ID_VIEW_CUBEIN
-            MENUITEM "Cubic Clip Zoom Out\tctrl-[", ID_VIEW_CUBEOUT
-        END
-        MENUITEM SEPARATOR
-        POPUP "Show"
-        BEGIN
-            MENUITEM "Show &Names",                 ID_VIEW_SHOWNAMES
-            , CHECKED
-            MENUITEM "Show Blocks",                 ID_VIEW_SHOWBLOCKS
-            , CHECKED
-            MENUITEM "Show C&oordinates",           ID_VIEW_SHOWCOORDINATES
-            , CHECKED
-            MENUITEM "Show &Entities",              ID_VIEW_SHOWENT, CHECKED
-            MENUITEM "Show &Path",                  ID_VIEW_SHOWPATH
-            , CHECKED
-            MENUITEM "Show &Lights",                ID_VIEW_SHOWLIGHTS
-            , CHECKED
-            MENUITEM "Show Dynamics",               ID_VIEW_SHOWWATER
-            , CHECKED
-            MENUITEM "Show Clip &Brush",            ID_VIEW_SHOWCLIP
-            , CHECKED
-            MENUITEM "Show &Hint Brush",            ID_VIEW_SHOWHINT
-            , CHECKED
-            MENUITEM "Show Wor&ld",                 ID_VIEW_SHOWWORLD
-            , CHECKED
-            MENUITEM "Show Detail\tctrl-D",         ID_VIEW_SHOWDETAIL
-            , CHECKED
-            MENUITEM "Show Curves",                 ID_VIEW_SHOWCURVES
-            , CHECKED
-            MENUITEM "Show Caulk",                  ID_VIEW_SHOWCAULK
-            , CHECKED
-            MENUITEM "Show Angles",                 ID_VIEW_SHOWANGLES
-            , CHECKED
-            MENUITEM "Show Vis Portals",            ID_VIEW_SHOW_SHOWVISPORTALS
-            , CHECKED
-            MENUITEM "Show No Draw",                ID_VIEW_SHOW_NODRAW
-            , CHECKED
-            MENUITEM "Show Combat Nodes",           ID_VIEW_SHOWCOMBATNODES
-            , CHECKED
-            MENUITEM "Show Triggers",               ID_VIEW_SHOWTRIGGERS
-            , CHECKED
-        END
-        POPUP "Hide/Show"
-        BEGIN
-            MENUITEM "Hide Selected",               ID_VIEW_HIDESHOW_HIDESELECTED
-
-            MENUITEM "Hide Not Selected",           ID_VIEW_HIDESHOW_HIDENOTSELECTED
-
-            MENUITEM "Show Hidden",                 ID_VIEW_HIDESHOW_SHOWHIDDEN
-
-        END
-        MENUITEM "Cycle Precision Cursor",      ID_PRECISION_CURSOR_CYCLE
-        MENUITEM SEPARATOR
-        POPUP "Entities as"
-        BEGIN
-            MENUITEM "Bounding box",                ID_VIEW_ENTITIESAS_BOUNDINGBOX
-
-            MENUITEM "Wireframe",                   ID_VIEW_ENTITIESAS_WIREFRAME
-
-            MENUITEM "Selected Wireframe",          ID_VIEW_ENTITIESAS_SELECTEDWIREFRAME
-
-            MENUITEM "Selected Skinned",            ID_VIEW_ENTITIESAS_SELECTEDSKINNED
-
-            MENUITEM "Skinned",                     ID_VIEW_ENTITIESAS_SKINNED
-
-            MENUITEM "Skinned and Boxed",           ID_VIEW_ENTITIESAS_SKINNEDANDBOXED
-
-        END
-        MENUITEM SEPARATOR
-        MENUITEM "Cubic Clipping",              ID_VIEW_CUBICCLIPPING
-        , CHECKED
-        MENUITEM SEPARATOR
-        MENUITEM "Render Mode",                 ID_VIEW_RENDERMODE
-        MENUITEM "Realtime Rebuild",            ID_VIEW_REALTIMEREBUILD
-        MENUITEM "Render Light Outlines",       ID_VIEW_RENDERENTITYOUTLINES
-        MENUITEM "Material Animation",          ID_VIEW_MATERIALANIMATION
-        MENUITEM "Rebuild Render Data",         ID_VIEW_REBUILDRENDERDATA
-        MENUITEM "Render Selection",            ID_VIEW_RENDERSELECTION
-        MENUITEM "Render Sound",                ID_VIEW_RENDERSOUND
-    END
+   
     POPUP "&Selection"
     BEGIN
         POPUP "Drag"
@@ -560,85 +446,6 @@ BEGIN
             MENUITEM "Play Test Level", ID_PLAYTEST_LEVEL
     END
 
-
-    POPUP "Ma&terials"
-    BEGIN
-        MENUITEM "Show In &Use\tU",             ID_TEXTURES_SHOWINUSE
-        MENUITEM "Show &All\tCtrl-A",           ID_TEXTURES_SHOWALL
-        MENUITEM "&Hide All",                   ID_TEXTURES_HIDEALL
-        MENUITEM SEPARATOR
-        MENUITEM "&Surface Inspector\tS",       ID_TEXTURES_INSPECTOR
-        MENUITEM SEPARATOR
-        MENUITEM "Find / Replace...",           ID_TEXTURE_REPLACEALL
-        MENUITEM SEPARATOR
-        POPUP "Texture Lock"
-        BEGIN
-            MENUITEM "Moves",                       ID_TOGGLE_LOCK, CHECKED
-            MENUITEM "Rotations",                   ID_TOGGLE_ROTATELOCK
-            , CHECKED
-        END
-        MENUITEM SEPARATOR
-        MENUITEM "Reload",                      ID_TEXTURES_RELOADSHADERS
-        MENUITEM SEPARATOR
-        POPUP "Texture Window Scale"
-        BEGIN
-            MENUITEM "200%",                        ID_TEXTURES_TEXTUREWINDOWSCALE_200
-
-            MENUITEM "100%",                        ID_TEXTURES_TEXTUREWINDOWSCALE_100
-
-            MENUITEM "50%",                         ID_TEXTURES_TEXTUREWINDOWSCALE_50
-
-            MENUITEM "25%",                         ID_TEXTURES_TEXTUREWINDOWSCALE_25
-
-            MENUITEM "10%",                         ID_TEXTURES_TEXTUREWINDOWSCALE_10
-
-        END
-        MENUITEM SEPARATOR
-        MENUITEM "Generate Material List",      ID_MATERIALS_GENERATEMATERIALSLIST
-
-    END
-    POPUP "&Misc"
-    BEGIN
-        MENUITEM "&Benchmark",                  ID_MISC_BENCHMARK
-        POPUP "&Colors"
-        BEGIN
-            POPUP "Themes"
-            BEGIN
-                MENUITEM "QE4 Original",                ID_COLOR_SETORIGINAL
-                MENUITEM "Q3Radiant Original",          ID_COLOR_SETQER
-                MENUITEM "Black and Green",             ID_COLOR_SETBLACK
-                MENUITEM "Max/Maya/Lightwave",          ID_THEMES_MAX
-                MENUITEM "Super Mal",                   ID_COLOR_SUPERMAL
-            END
-            MENUITEM SEPARATOR
-            MENUITEM "&Texture Background...",      ID_TEXTUREBK
-            MENUITEM "Grid Background...",          ID_COLORS_XYBK
-            MENUITEM "Grid Major...",               ID_COLORS_MAJOR
-            MENUITEM "Grid Minor...",               ID_COLORS_MINOR
-            MENUITEM "Grid Text...",                ID_COLORS_GRIDTEXT
-            MENUITEM "Grid Block...",               ID_COLORS_GRIDBLOCK
-            MENUITEM "Default Brush...",            ID_COLORS_BRUSH
-            MENUITEM "Selected Brush...",           ID_COLORS_SELECTEDBRUSH
-            MENUITEM "Clipper...",                  ID_COLORS_CLIPPER
-            MENUITEM "Active View name...",         ID_COLORS_VIEWNAME
-        END
-        MENUITEM "&Gamma...",                   ID_MISC_GAMMA
-        MENUITEM "Find brush...",               ID_MISC_FINDBRUSH
-        MENUITEM "Next leak spot\tctrl-l",      ID_MISC_NEXTLEAKSPOT
-        MENUITEM "Previous leak spot\tctrl-p",  ID_MISC_PREVIOUSLEAKSPOT
-        MENUITEM "&Print XY View",              ID_MISC_PRINTXY
-        MENUITEM "&Select Entity Color...\tK",  ID_MISC_SELECTENTITYCOLOR
-        MENUITEM "Find or Replace Entity",      ID_MISC_FINDORREPLACEENTITY
-        MENUITEM "SetViewPos",                  ID_MISC_SETVIEWPOS
-    END
-    POPUP "&Region"
-    BEGIN
-        MENUITEM "&Off",                        ID_REGION_OFF
-        MENUITEM "&Set XY",                     ID_REGION_SETXY
-        MENUITEM "Set &Tall Brush",             ID_REGION_SETTALLBRUSH
-        MENUITEM "Set &Brush",                  ID_REGION_SETBRUSH
-        MENUITEM "Set Se&lected Brushes",       ID_REGION_SETSELECTION
-    END
     POPUP "&Brush"
     BEGIN
         MENUITEM "3 sided\tctrl-3",             ID_BRUSH_3SIDED
@@ -742,12 +549,7 @@ BEGIN
         MENUITEM "Combine",                     ID_PATCH_COMBINE
         MENUITEM SEPARATOR
         MENUITEM "Nurb Editor",                 ID_PATCH_NURBEDITOR
-    END
-    POPUP "P&lugins"
-    BEGIN
-        MENUITEM "Refresh",                     ID_PLUGINS_REFRESH
-        MENUITEM SEPARATOR
-    END
+    END    
     POPUP "&Help"
     BEGIN
         MENUITEM "Help\tF1",                    ID_HELP
