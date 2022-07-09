@@ -67,7 +67,7 @@ public:
   operator float*() {return m_ptClip.ToFloatPtr();};
 };
 
-class CXYWnd : public CDialog
+class CXYWnd : public CDialogEx
 {
   DECLARE_DYNCREATE(CXYWnd);
 // Construction

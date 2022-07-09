@@ -472,6 +472,8 @@ extern bool WriteFileString( FILE *fp, char *string, ... );
 extern void MemFile_fprintf(CMemFile* pMemFile, const char* pText, ...);
 extern void SaveWindowPlacement(HWND hwnd, const char* pName);
 extern bool LoadWindowPlacement(HWND hwnd, const char* pName);
+
+void SaveDialogPlacement(CDialog* dlg, const char* pName);
 extern bool ConfirmModified (void);
 extern void DoPatchInspector();
 void UpdatePatchInspector();

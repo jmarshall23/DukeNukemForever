@@ -61,7 +61,7 @@ typedef struct
 // CCamWnd window
 class CXYWnd;
 
-class CCamWnd : public CDialog
+class CCamWnd : public CDialogEx
 {
   DECLARE_DYNCREATE(CCamWnd);
 // Construction

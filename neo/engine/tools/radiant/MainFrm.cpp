@@ -1462,6 +1462,15 @@ void SaveWindowPlacement(HWND hwnd, const char *pName) {
 	}
 }
 
+void SaveDialogPlacement(CDialog *dlg, const char* pName) {
+	WINDOWPLACEMENT wp;
+	wp.length = sizeof(WINDOWPLACEMENT);
+	if (dlg->GetWindowPlacement(&wp)) {
+		SaveRegistryInfo(pName, &wp, sizeof(wp));
+	}
+}
+
+
 /*
  =======================================================================================================================
  =======================================================================================================================
@@ -1480,10 +1489,6 @@ void CMainFrame::OnDestroy() {
 
 	SaveWindowPlacement(GetSafeHwnd(), "radiant_MainWindowPlace");
 
-	SaveWindowPlacement(m_pXYWnd->GetSafeHwnd(), "radiant_xywindow");
-	SaveWindowPlacement(m_pXZWnd->GetSafeHwnd(), "radiant_xzwindow");
-	SaveWindowPlacement(m_pYZWnd->GetSafeHwnd(), "radiant_yzwindow");
-	SaveWindowPlacement(m_pCamWnd->GetSafeHwnd(), "radiant_camerawindow");
 	SaveWindowPlacement(m_pZWnd->GetSafeHwnd(), "radiant_zwindow");
 	SaveWindowState(g_Inspectors->texWnd.GetSafeHwnd(), "radiant_texwindow");
 

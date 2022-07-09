@@ -214,6 +214,8 @@ void CCamWnd::SetXYFriend(CXYWnd *pWnd) {
  =======================================================================================================================
  */
 void CCamWnd::OnDestroy() {
+	SaveDialogPlacement(this, "radiant_camerawindow");
+
 	CWnd::OnDestroy();
 }
 

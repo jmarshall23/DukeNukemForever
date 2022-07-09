@@ -3986,6 +3986,13 @@ void CXYWnd::VectorCopyXY(const idVec3 &in, idVec3 &out) {
  =======================================================================================================================
  */
 void CXYWnd::OnDestroy() {
+	if (m_nViewType == XY)
+	{
+		SaveDialogPlacement(this, "radiant_xywindow");
+		SaveDialogPlacement(this, "radiant_xzwindow");
+		SaveDialogPlacement(this, "radiant_yzwindow");
+	}
+
 	CWnd::OnDestroy();
 
 	// delete this;
