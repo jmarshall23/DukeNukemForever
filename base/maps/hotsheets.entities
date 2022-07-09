@@ -6,7 +6,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.47 0.47 0.47"
 "light_radius" "300 300 300"
 }
@@ -18,7 +18,7 @@
 "noshadows" "0"
 "nospecular" "0"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 0.22 0.22"
 "light_radius" "300 300 300"
 }
@@ -32,8 +32,8 @@
 {
 "classname" "info_player_start"
 "name" "info_player_start_1"
-"origin" "4456 -12248 -296"
-"angle" "90"
+"origin" "-496 -12312 -296"
+"angle" "0"
 }
 // entity 4
 {

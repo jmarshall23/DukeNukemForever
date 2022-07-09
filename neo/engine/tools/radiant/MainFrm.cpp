@@ -1174,6 +1174,9 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 	SetActiveXY(m_pXYWnd);
 	m_pXYWnd->SetFocus();
 
+	CMFCVisualManager::SetDefaultManager(RUNTIME_CLASS(CMFCVisualManagerVS2008));
+	CDockingManager::SetDockingMode(DT_SMART);
+
 	PostMessage(WM_KEYDOWN, 'O', NULL);
 
 	if ( radiant_entityMode.GetBool() ) {
@@ -1184,6 +1187,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct) {
 
 	#define IDI_ICON1 4001
 	SetIcon(AfxGetApp()->LoadIcon(IDI_ICON1), false);
+
+	SetWindowTheme(GetSafeHwnd(), L"EXPLORER", NULL);
 
 	return 0;
 }
@@ -1728,21 +1733,21 @@ BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext *pContext) {
 	GetClientRect(rctParent);
 
 	m_pCamWnd = new CCamWnd();
-	m_pCamWnd->Create(CAMERA_WINDOW_CLASS, "", QE3_CHILDSTYLE, rect, this, 1234);
+	m_pCamWnd->Create(IDD_DIALOG_CAMERA, this);
 
 	m_pZWnd = new CZWnd();
 	m_pZWnd->Create(Z_WINDOW_CLASS, "", QE3_CHILDSTYLE, rect, this, 1238);
 
 	m_pXYWnd = new CXYWnd();
-	m_pXYWnd->Create(XY_WINDOW_CLASS, "", QE3_CHILDSTYLE, rect, this, 1235);
+	m_pXYWnd->Create(IDD_DIALOG_XY, this); // XY_WINDOW_CLASS, "", QE3_CHILDSTYLE, rect, this, 1235);
 	m_pXYWnd->SetViewType(XY);
 
 	m_pXZWnd = new CXYWnd();
-	m_pXZWnd->Create(XY_WINDOW_CLASS, "", QE3_CHILDSTYLE, rect, this, 1236);
+	m_pXZWnd->Create(IDD_DIALOG_XZ, this);
 	m_pXZWnd->SetViewType(XZ);
 
 	m_pYZWnd = new CXYWnd();
-	m_pYZWnd->Create(XY_WINDOW_CLASS, "", QE3_CHILDSTYLE, rect, this, 1237);
+	m_pYZWnd->Create(IDD_DIALOG_YZ, this);
 	m_pYZWnd->SetViewType(YZ);
 
 	m_pCamWnd->SetXYFriend(m_pXYWnd);
@@ -5291,7 +5296,7 @@ void CMainFrame::OnSelectBrushesOnly() {
 void CMainFrame::OnDynamicLighting() {
 	CCamWnd *pCam = new CCamWnd();
 	CRect	rect(100, 100, 300, 300);
-	pCam->Create(CAMERA_WINDOW_CLASS, "", WS_OVERLAPPEDWINDOW, rect, GetDesktopWindow(), 12345);
+	pCam->Create(IDD_DIALOG_CAMERA, this);
 	pCam->ShowWindow(SW_SHOW);
 }
 

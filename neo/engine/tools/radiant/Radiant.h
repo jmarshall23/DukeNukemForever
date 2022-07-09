@@ -42,7 +42,7 @@ If you have questions concerning this license or the applicable additional terms
 // See Radiant.cpp for the implementation of this class
 //
 
-class CRadiantApp : public CWinApp
+class CRadiantApp : public CWinAppEx
 {
 
 public:

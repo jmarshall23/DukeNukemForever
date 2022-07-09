@@ -9,6 +9,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_DEBUG ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY_RELEASE ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
+IF( WIN32 )
+    SET ( CMAKE_SHARED_LINKER_FLAGS /MANIFEST:NO )
+ENDIF( WIN32 )
 
 # Allow addressing more memory on a 64-bit host.
 add_link_options("/LARGEADDRESSAWARE")
@@ -178,6 +181,7 @@ add_executable(DukeNukemForever ${engineSourceFiles} ${toolSourceFiles} ./engine
 target_compile_definitions(DukeNukemForever PUBLIC -D__DOOM_DLL__)
 add_dependencies(DukeNukemForever game)
 target_link_directories(DukeNukemForever PUBLIC engine/external/bink/)
-target_link_libraries(DukeNukemForever idLib engineExternal opengl32.lib binkw32.lib dinput8.lib dxguid.lib winmm.lib wsock32.lib dsound.lib glu32.lib dbghelp.lib iphlpapi.lib)
+target_link_libraries(DukeNukemForever idLib engineExternal delayimp.lib opengl32.lib binkw32.lib dinput8.lib dxguid.lib winmm.lib wsock32.lib dsound.lib glu32.lib dbghelp.lib iphlpapi.lib)
 target_precompile_headers(DukeNukemForever PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/idlib/precompiled.h)
-set_target_properties(DukeNukemForever PROPERTIES OUTPUT_NAME "DukeNukemForever" LINK_FLAGS "/STACK:16777216,16777216 /SUBSYSTEM:WINDOWS /PDB:\"DukeNukemForever.pdb\"")
+set_target_properties(DukeNukemForever PROPERTIES OUTPUT_NAME "DukeNukemForever" LINK_FLAGS "/DelayLoad:ComCtl32.dll /STACK:16777216,16777216 /SUBSYSTEM:WINDOWS /PDB:\"DukeNukemForever.pdb\"")
+

@@ -245,6 +245,7 @@ void			idSysLocal::OpenURL( const char *url, bool quit ) { }
 void			idSysLocal::StartProcess( const char *exeName, bool quit ) { }
 
 void			idSysLocal::FPU_EnableExceptions( int exceptions ) { }
+void			idSysLocal::GetGameWindowInfo(int &, int &) { }
 
 idSysLocal		sysLocal;
 idSys *			sys = &sysLocal;

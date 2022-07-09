@@ -35,6 +35,11 @@ If you have questions concerning this license or the applicable additional terms
 #define DEBUG_NEW new
 #endif
 
+#pragma comment (lib, "Msimg32")
+#include <Vsstyle.h>
+#include <uxtheme.h> 
+#pragma comment(lib, "UxTheme")
+
 // this define to use HTREEITEM and MFC stuff in the headers
 #define QERTYPES_USE_MFC
 #include "qertypes.h"

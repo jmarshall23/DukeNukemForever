@@ -465,6 +465,10 @@ If you have questions concerning this license or the applicable additional terms
 #define IDC_FIND                                 10552
 #define IDC_PROMPT                               10553
 #define IDC_CHECK_SELECTALLMATCHING              10554
+#define IDD_DIALOG_CAMERA		                   10555
+#define IDD_DIALOG_XY			                   10556
+#define IDD_DIALOG_XZ			                   10557
+#define IDD_DIALOG_YZ			                   10558
 
 #define ID_COLOR_SUPERMAL                        30000
 #define ID_Menu                                  30001

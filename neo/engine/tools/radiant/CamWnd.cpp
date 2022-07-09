@@ -155,28 +155,6 @@ LONG WINAPI CamWndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 // =======================================================================================================================
 //
 BOOL CCamWnd::PreCreateWindow(CREATESTRUCT &cs) {
-	WNDCLASS	wc;
-	HINSTANCE	hInstance = AfxGetInstanceHandle();
-	if (::GetClassInfo(hInstance, CAMERA_WINDOW_CLASS, &wc) == FALSE) {
-		// Register a new class
-		memset(&wc, 0, sizeof(wc));
-
-		// wc.style = CS_NOCLOSE | CS_OWNDC;
-		wc.style = CS_NOCLOSE;
-		wc.lpszClassName = CAMERA_WINDOW_CLASS;
-		wc.hCursor = LoadCursor(NULL, IDC_ARROW);
-		wc.lpfnWndProc = CamWndProc;
-		if (AfxRegisterClass(&wc) == FALSE) {
-			Error("CCamWnd RegisterClass: failed");
-		}
-	}
-
-	cs.lpszClass = CAMERA_WINDOW_CLASS;
-	cs.lpszName = "CAM";
-	if (cs.style != QE3_CHILDSTYLE) {
-		cs.style = QE3_SPLITTER_STYLE;
-	}
-
 	BOOL	bResult = CWnd::PreCreateWindow(cs);
 
 	//
