@@ -32,8 +32,6 @@ If you have questions concerning this license or the applicable additional terms
 // device context support for gui stuff
 //
 
-#include "Rectangle.h"
-
 const int VIRTUAL_WIDTH = SCREEN_WIDTH;
 const int VIRTUAL_HEIGHT = SCREEN_HEIGHT;
 const int BLINK_DIVISOR = 200;

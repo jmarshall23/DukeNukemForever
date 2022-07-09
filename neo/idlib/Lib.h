@@ -197,6 +197,7 @@ public:
 #include "geometry/Surface_Polytope.h"
 #include "geometry/Surface_SweptSpline.h"
 #include "geometry/TraceModel.h"
+#include "geometry/Rectangle.h"
 
 // text manipulation
 #include "Str.h"

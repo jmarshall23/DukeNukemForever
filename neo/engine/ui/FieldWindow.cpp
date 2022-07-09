@@ -29,7 +29,6 @@ If you have questions concerning this license or the applicable additional terms
 
 #pragma hdrstop
 
-#include "DeviceContext.h"
 #include "Window.h"
 #include "UserInterfaceLocal.h"
 #include "FieldWindow.h"

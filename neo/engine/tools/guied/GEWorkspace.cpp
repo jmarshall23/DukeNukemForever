@@ -32,7 +32,6 @@ If you have questions concerning this license or the applicable additional terms
 #include "../../sys/win32/rc/guied_resource.h"
 #include "../../renderer/RenderSystem_local.h"
 #include "../../sys/win32/win_local.h"
-#include "../../ui/DeviceContext.h"
 #include "../../ui/EditWindow.h"
 #include "../../ui/ListWindow.h"
 #include "../../ui/BindWindow.h"
