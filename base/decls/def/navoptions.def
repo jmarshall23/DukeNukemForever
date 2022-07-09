@@ -1,7 +1,7 @@
 entityDef navBot
 {
-	"m_cellSize"  				"2.0"
-	"m_cellHeight"  			"5.0"
+	"m_cellSize"  				"19.0"
+	"m_cellHeight"  			"10.0"
 	"m_agentHeight"  			"2.0"
 	"m_agentRadius"  			"20.6"
 	"m_agentMaxClimb"  			"20.9"
