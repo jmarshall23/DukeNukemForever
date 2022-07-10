@@ -58,7 +58,7 @@ extern	PFNWGLSETPBUFFERATTRIBARBPROC	wglSetPbufferAttribARB;
 
 #define	MAX_OSPATH			256
 
-#define	WINDOW_STYLE	(WS_OVERLAPPED|WS_BORDER|WS_CAPTION|WS_VISIBLE | WS_THICKFRAME)
+#define	WINDOW_STYLE	(WS_OVERLAPPED|WS_BORDER|WS_CAPTION|WS_THICKFRAME)
 
 void	Sys_QueEvent( int time, sysEventType_t type, int value, int value2, int ptrLength, void *ptr );
 

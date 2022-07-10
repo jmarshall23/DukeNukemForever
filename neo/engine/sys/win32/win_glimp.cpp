@@ -564,7 +564,7 @@ static bool GLW_CreateWindow( glimpParms_t parms ) {
 	//
 	if ( parms.fullScreen ) {
 		exstyle = WS_EX_TOPMOST;
-		stylebits = WS_POPUP|WS_VISIBLE|WS_SYSMENU;
+		stylebits = WS_POPUP|WS_SYSMENU;
 
 		x = 0;
 		y = 0;
@@ -586,23 +586,8 @@ static bool GLW_CreateWindow( glimpParms_t parms ) {
 		w = r.right - r.left;
 		h = r.bottom - r.top;
 
-		x = win32.win_xpos.GetInteger();
-		y = win32.win_ypos.GetInteger();
-
-		// adjust window coordinates if necessary 
-		// so that the window is completely on screen
-		if ( x + w > win32.desktopWidth ) {
-			x = ( win32.desktopWidth - w );
-		}
-		if ( y + h > win32.desktopHeight ) {
-			y = ( win32.desktopHeight - h );
-		}
-		if ( x < 0 ) {
-			x = 0;
-		}
-		if ( y < 0 ) {
-			y = 0;
-		}
+		x = (GetSystemMetrics(SM_CXSCREEN) - parms.width) / 2;
+		y = (GetSystemMetrics(SM_CYSCREEN) - parms.height) / 2;
 	}
 
 	win32.hWnd = CreateWindowEx (
@@ -623,7 +608,7 @@ static bool GLW_CreateWindow( glimpParms_t parms ) {
 
 	::SetTimer( win32.hWnd, 0, 100, NULL );
 
-	ShowWindow( win32.hWnd, SW_SHOW );
+	ShowWindow( win32.hWnd, SW_HIDE );
 	UpdateWindow( win32.hWnd );
 	common->Printf( "...created window @ %d,%d (%dx%d)\n", x, y, w, h );
 

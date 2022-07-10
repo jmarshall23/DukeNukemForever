@@ -441,6 +441,7 @@ void Sys_ShowConsole( int visLevel, bool quitOnClose ) {
 			ShowWindow( s_wcd.hWnd, SW_HIDE );
 		break;
 		case 1:
+			sys->ShowSplashScreen(false);
 			ShowWindow( s_wcd.hWnd, SW_SHOWNORMAL );
 			SendMessage( s_wcd.hwndBuffer, EM_LINESCROLL, 0, 0xffff );
 		break;

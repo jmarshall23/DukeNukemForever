@@ -1177,6 +1177,21 @@ EXCEPTION_DISPOSITION __cdecl _except_handler( struct _EXCEPTION_RECORD *Excepti
 							/*	FPU_EXCEPTION_NUMERIC_UNDERFLOW |		*/	\
 							/*	FPU_EXCEPTION_INEXACT_RESULT |			*/	\
 								0
+/*
+==================
+idSysLocal::ShowGameWindow
+==================
+*/
+void idSysLocal::ShowGameWindow(bool show) {
+	if (show)
+	{
+		ShowWindow(win32.hWnd, SW_SHOW);
+	}
+	else
+	{
+		ShowWindow(win32.hWnd, SW_HIDE);
+	}
+}
 
 /*
 ==================
@@ -1203,6 +1218,9 @@ int WINAPI WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLin
 
 	win32.hInstance = hInstance;
 	idStr::Copynz( sys_cmdline, lpCmdLine, sizeof( sys_cmdline ) );
+
+	// Show the splash screen.
+	sys->ShowSplashScreen(true);
 
 	// done before Com/Sys_Init since we need this for error output
 	Sys_CreateConsole();

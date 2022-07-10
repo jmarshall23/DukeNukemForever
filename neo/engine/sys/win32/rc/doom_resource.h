@@ -28,6 +28,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #define IDB_BITMAP_LOGO                          4000
 #define IDI_ICON1                                4001
+#define IDB_BITMAP_SPLASH						 4002
 
 
 

@@ -75,6 +75,9 @@ public:
 	virtual void			StartProcess( const char *exeName, bool quit );
 
 	virtual void			GetGameWindowInfo(int& width, int& height);
+
+	virtual void			ShowSplashScreen(bool show);
+	virtual void			ShowGameWindow(bool show);
 };
 
 #endif /* !__SYS_LOCAL__ */

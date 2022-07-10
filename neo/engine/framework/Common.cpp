@@ -2884,6 +2884,10 @@ void idCommonLocal::Init( int argc, const char **argv, const char *cmdline ) {
 			session->StartMenu( true );
 		}
 
+		// Show the game window and hide the splash screen.
+		sys->ShowGameWindow(true);
+		sys->ShowSplashScreen(false);
+
 		Printf( "--- Common Initialization Complete ---\n" );
 
 		// print all warnings queued during initialization

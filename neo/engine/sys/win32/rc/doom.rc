@@ -98,6 +98,8 @@ END
 #endif    // APSTUDIO_INVOKED
 
 
+IDB_BITMAP_SPLASH          BITMAP                  "res\\splash.bmp"
+
 /////////////////////////////////////////////////////////////////////////////
 //
 // Icon
