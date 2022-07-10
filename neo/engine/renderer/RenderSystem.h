@@ -31,6 +31,7 @@ If you have questions concerning this license or the applicable additional terms
 
 class rvmToolGui;
 class idRenderTexture;
+class idFont;
 
 /*
 ===============================================================================
@@ -103,11 +104,7 @@ typedef struct glconfig_s {
 
 
 // font support 
-const int GLYPH_START			= 0;
-const int GLYPH_END				= 255;
-const int GLYPH_CHARSTART		= 32;
-const int GLYPH_CHAREND			= 127;
-const int GLYPHS_PER_FONT		= GLYPH_END - GLYPH_START + 1;
+static const int GLYPHS_PER_FONT = 256;
 
 typedef struct {
 	int					height;			// number of scan lines
@@ -194,11 +191,9 @@ public:
 	virtual void			EndLevelLoad( void ) = 0;
 
 	// font support
-	virtual bool			RegisterFont( const char *fontName, fontInfoEx_t &font ) = 0;
+	virtual idFont*			RegisterFont(const char* fontName) = 0;
 
-	// GUI drawing just involves shader parameter setting and axial image subsections
-	virtual void			SetColor( const idVec4 &rgba ) = 0;
-	virtual void			SetColor4( float r, float g, float b, float a ) = 0;
+	virtual idDrawVert*		AllocTris(int numVerts, const triIndex_t* indexes, int numIndexes, const idMaterial* material) = 0;
 
 	virtual void			DrawStretchPic( const idDrawVert *verts, const glIndex_t *indexes, int vertCount, int indexCount, const idMaterial *material,
 											bool clip = true, float min_x = 0.0f, float min_y = 0.0f, float max_x = 640.0f, float max_y = 480.0f ) = 0;

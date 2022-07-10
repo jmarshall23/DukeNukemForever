@@ -26,10 +26,11 @@ If you have questions concerning this license or the applicable additional terms
 ===========================================================================
 */
 
+#pragma once
 
 typedef struct {
 	const idMaterial	*material;
-	float				color[4];
+	idVec4				color;
 	int					firstVert;
 	int					numVerts;
 	int					firstIndex;
@@ -47,6 +48,10 @@ public:
 	
 	void	EmitToCurrentView( float modelMatrix[16], bool depthHack );
 	void	EmitFullScreen();
+
+	// the returned pointer will be in write-combined memory, so only make contiguous
+	// 32 bit writes and never read from it.
+	idDrawVert* AllocTris(int numVerts, const triIndex_t* indexes, int numIndexes, const idMaterial* material, const uint64 glState);
 
 	// these calls are forwarded from the renderer
 	void	SetColor( float r, float g, float b, float a );

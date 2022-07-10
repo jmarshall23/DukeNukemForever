@@ -189,7 +189,7 @@ void idGuiModel::EmitSurface( guiidModelSurface *surf, float modelMatrix[16], fl
 
 	renderEntity_t renderEntity;
 	memset( &renderEntity, 0, sizeof( renderEntity ) );
-	memcpy( renderEntity.shaderParms, surf->color, sizeof( surf->color ) );
+	memcpy( renderEntity.shaderParms, surf->color.ToFloatPtr(), sizeof( surf->color ) );
 
 	idRenderModelCommitted *guiSpace = (idRenderModelCommitted *)R_ClearedFrameAlloc( sizeof( *guiSpace ) );
 	memcpy( guiSpace->modelMatrix, modelMatrix, sizeof( guiSpace->modelMatrix ) );
@@ -660,3 +660,59 @@ void idGuiModel::DrawStretchTri( idVec2 p1, idVec2 p2, idVec2 p3, idVec2 t1, idV
 	memcpy( &verts[numVerts], tempVerts, vertCount * sizeof( verts[0] ) );
 }
 
+
+/*
+=============
+AllocTris
+=============
+*/
+idDrawVert* idGuiModel::AllocTris(int vertCount, const triIndex_t* tempIndexes, int indexCount, const idMaterial* material, const uint64 glState) {
+	if (material == NULL) {
+		return NULL;
+	}
+	//if (numIndexes + indexCount > MAX_INDEXES) {
+	//	static int warningFrame = 0;
+	//	if (warningFrame != tr.frameCount) {
+	//		warningFrame = tr.frameCount;
+	//		idLib::Warning("idGuiModel::AllocTris: MAX_INDEXES exceeded");
+	//	}
+	//	return NULL;
+	//}
+	//if (numVerts + vertCount > MAX_VERTS) {
+	//	static int warningFrame = 0;
+	//	if (warningFrame != tr.frameCount) {
+	//		warningFrame = tr.frameCount;
+	//		idLib::Warning("idGuiModel::AllocTris: MAX_VERTS exceeded");
+	//	}
+	//	return NULL;
+	//}
+
+	// break the current surface if we are changing to a new material or we can't
+	// fit the data into our allocated block
+	if (material != surf->material || deviceContext->GetColor() != surf->color) {
+		if (surf->numVerts) {
+			AdvanceSurf();
+		}
+		surf->material = material;
+		surf->color = deviceContext->GetColor();
+	}
+
+	int numVerts = verts.Num();
+	int numIndexes = indexes.Num();
+	int startVert = numVerts;
+	int startIndex = numIndexes;
+
+	verts.AssureSize(numVerts + vertCount);
+	indexes.AssureSize(numIndexes + indexCount);
+
+	idDrawVert* vert = &verts[numVerts];
+
+	for (int i = 0; i < indexCount; i++) {
+		indexes[startIndex + i] = startVert + tempIndexes[i] - surf->firstVert;
+	}
+
+	surf->numVerts += vertCount;
+	surf->numIndexes += indexCount;
+
+	return vert;
+}

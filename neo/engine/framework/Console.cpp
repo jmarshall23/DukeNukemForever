@@ -849,7 +849,7 @@ void idConsoleLocal::DrawInput() {
 		autoCompleteLength = strlen(consoleField.GetBuffer()) - consoleField.GetAutoCompleteLength();
 
 		if (autoCompleteLength > 0) {
-			renderSystem->SetColor4(.8f, .2f, .2f, .45f);
+			deviceContext->SetColor4(.8f, .2f, .2f, .45f);
 
 			renderSystem->DrawStretchPic(2 * SMALLCHAR_WIDTH + consoleField.GetAutoCompleteLength() * SMALLCHAR_WIDTH,
 				y + 2, autoCompleteLength * SMALLCHAR_WIDTH, SMALLCHAR_HEIGHT - 2, 0, 0, 0, 0, consoleShader);
@@ -857,7 +857,7 @@ void idConsoleLocal::DrawInput() {
 		}
 	}
 
-	renderSystem->SetColor(idStr::ColorForIndex(C_COLOR_WHITE));
+	deviceContext->SetColor(idStr::ColorForIndex(C_COLOR_WHITE));
 
 	renderSystem->DrawSmallChar(1 * SMALLCHAR_WIDTH, y, ']', localConsole.charSetShader);
 
@@ -884,7 +884,7 @@ void idConsoleLocal::DrawNotify() {
 	}
 
 	currentColor = idStr::ColorIndex(C_COLOR_WHITE);
-	renderSystem->SetColor(idStr::ColorForIndex(currentColor));
+	deviceContext->SetColor(idStr::ColorForIndex(currentColor));
 
 	v = 0;
 	for (i = current - NUM_CON_TIMES + 1; i <= current; i++) {
@@ -907,7 +907,7 @@ void idConsoleLocal::DrawNotify() {
 			}
 			if (idStr::ColorIndex(text_p[x] >> 8) != currentColor) {
 				currentColor = idStr::ColorIndex(text_p[x] >> 8);
-				renderSystem->SetColor(idStr::ColorForIndex(currentColor));
+				deviceContext->SetColor(idStr::ColorForIndex(currentColor));
 			}
 			renderSystem->DrawSmallChar((x + 1) * SMALLCHAR_WIDTH, v, text_p[x] & 0xff, localConsole.charSetShader);
 		}
@@ -915,7 +915,7 @@ void idConsoleLocal::DrawNotify() {
 		v += SMALLCHAR_HEIGHT;
 	}
 
-	renderSystem->SetColor(colorWhite);
+	deviceContext->SetColor(colorWhite);
 }
 
 /*
@@ -943,7 +943,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 		lines = SCREEN_HEIGHT;
 	}
 
-	renderSystem->SetColor(colorBlack);
+	deviceContext->SetColor(colorBlack);
 
 	// draw the background
 	y = frac * SCREEN_HEIGHT - 2;
@@ -954,7 +954,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 		renderSystem->DrawStretchPic(0, 0, SCREEN_WIDTH, y, 0, 1.0f - displayFrac, 1, 1, consoleShader);
 	}
 
-	renderSystem->SetColor(colorGold);
+	deviceContext->SetColor(colorGold);
 
 	renderSystem->DrawStretchPic(0, y, SCREEN_WIDTH, 2, 0, 0, 0, 0, whiteShader);
 
@@ -977,7 +977,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 
 	}
 
-	renderSystem->SetColor(colorWhite);
+	deviceContext->SetColor(colorWhite);
 
 
 
@@ -990,7 +990,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 	// draw from the bottom up
 	if (display != current) {
 		// draw arrows to show the buffer is backscrolled
-		renderSystem->SetColor(idStr::ColorForIndex(C_COLOR_WHITE));
+		deviceContext->SetColor(idStr::ColorForIndex(C_COLOR_WHITE));
 		for (x = 0; x < LINE_WIDTH; x += 4) {
 			renderSystem->DrawSmallChar((x + 1) * SMALLCHAR_WIDTH, idMath::FtoiFast(y), '^', localConsole.charSetShader);
 		}
@@ -1005,7 +1005,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 	}
 
 	currentColor = idStr::ColorIndex(C_COLOR_WHITE);
-	renderSystem->SetColor(idStr::ColorForIndex(currentColor));
+	deviceContext->SetColor(idStr::ColorForIndex(currentColor));
 
 	for (i = 0; i < rows; i++, y -= SMALLCHAR_HEIGHT, row--) {
 		if (row < 0) {
@@ -1025,7 +1025,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 
 			if (idStr::ColorIndex(text_p[x] >> 8) != currentColor) {
 				currentColor = idStr::ColorIndex(text_p[x] >> 8);
-				renderSystem->SetColor(idStr::ColorForIndex(currentColor));
+				deviceContext->SetColor(idStr::ColorForIndex(currentColor));
 			}
 			renderSystem->DrawSmallChar((x + 1) * SMALLCHAR_WIDTH, idMath::FtoiFast(y), text_p[x] & 0xff, localConsole.charSetShader);
 		}
@@ -1034,7 +1034,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 	// draw the input prompt, user text, and cursor if desired
 	DrawInput();
 
-	renderSystem->SetColor(colorWhite);
+	deviceContext->SetColor(colorWhite);
 }
 
 

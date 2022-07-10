@@ -237,28 +237,6 @@ idRenderSystemLocal::~idRenderSystemLocal( void ) {
 
 /*
 =============
-SetColor
-
-This can be used to pass general information to the current material, not
-just colors
-=============
-*/
-void idRenderSystemLocal::SetColor( const idVec4 &rgba ) {
-	guiModel->SetColor( rgba[0], rgba[1], rgba[2], rgba[3] );
-}
-
-
-/*
-=============
-SetColor4
-=============
-*/
-void idRenderSystemLocal::SetColor4( float r, float g, float b, float a ) {
-	guiModel->SetColor( r, g, b, a );
-}
-
-/*
-=============
 DrawStretchPic
 =============
 */
@@ -362,16 +340,16 @@ void idRenderSystemLocal::DrawSmallStringExt( int x, int y, const char *string, 
 	// draw the colored text
 	s = (const unsigned char*)string;
 	xx = x;
-	SetColor( setColor );
+	deviceContext->SetColor( setColor );
 	while ( *s ) {
 		if ( idStr::IsColor( (const char*)s ) ) {
 			if ( !forceColor ) {
 				if ( *(s+1) == C_COLOR_DEFAULT ) {
-					SetColor( setColor );
+					deviceContext->SetColor( setColor );
 				} else {
 					color = idStr::ColorForIndex( *(s+1) );
 					color[3] = setColor[3];
-					SetColor( color );
+					deviceContext->SetColor( color );
 				}
 			}
 			s += 2;
@@ -381,7 +359,7 @@ void idRenderSystemLocal::DrawSmallStringExt( int x, int y, const char *string, 
 		xx += SMALLCHAR_WIDTH;
 		s++;
 	}
-	SetColor( colorWhite );
+	deviceContext->SetColor( colorWhite );
 }
 
 /*
@@ -435,16 +413,16 @@ void idRenderSystemLocal::DrawBigStringExt( int x, int y, const char *string, co
 	// draw the colored text
 	s = string;
 	xx = x;
-	SetColor( setColor );
+	deviceContext->SetColor( setColor );
 	while ( *s ) {
 		if ( idStr::IsColor( s ) ) {
 			if ( !forceColor ) {
 				if ( *(s+1) == C_COLOR_DEFAULT ) {
-					SetColor( setColor );
+					deviceContext->SetColor( setColor );
 				} else {
 					color = idStr::ColorForIndex( *(s+1) );
 					color[3] = setColor[3];
-					SetColor( color );
+					deviceContext->SetColor( color );
 				}
 			}
 			s += 2;
@@ -454,7 +432,7 @@ void idRenderSystemLocal::DrawBigStringExt( int x, int y, const char *string, co
 		xx += BIGCHAR_WIDTH;
 		s++;
 	}
-	SetColor( colorWhite );
+	deviceContext->SetColor( colorWhite );
 }
 
 //======================================================================================
@@ -1133,4 +1111,13 @@ void idRenderSystemLocal::ClearRenderTarget(bool clearColor, bool clearDepth, fl
 
 	cmd->clearDepthValue = depthValue;
 	cmd->clearColorValue = idVec4(red, green, blue, 1.0);
+}
+
+/*
+=============
+idRenderSystemLocal::AllocTris
+=============
+*/
+idDrawVert* idRenderSystemLocal::AllocTris(int numVerts, const triIndex_t* indexes, int numIndexes, const idMaterial* material) {
+	return guiModel->AllocTris(numVerts, indexes, numIndexes, material, 0);
 }

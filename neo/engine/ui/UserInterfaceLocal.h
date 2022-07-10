@@ -138,7 +138,6 @@ public:
 
 private:
 	idRectangle					screenRect;
-	idDeviceContext				dc;
 
 	idList<idUserInterfaceLocal*> guis;
 	idList<idUserInterfaceLocal*> demoGuis;

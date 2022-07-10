@@ -1741,3 +1741,69 @@ idStr idStr::FormatNumber( int number ) {
 	return string;
 }
 
+
+/*
+========================
+idStr::AppendUTF8Char
+========================
+*/
+void idStr::AppendUTF8Char(uint32 c) {
+	if (c < 0x80) {
+		Append((char)c);
+	}
+	else if (c < 0x800) { // 11 bits
+		Append((char)(0xC0 | (c >> 6)));
+		Append((char)(0x80 | (c & 0x3F)));
+	}
+	else if (c < 0x10000) { // 16 bits
+		Append((char)(0xE0 | (c >> 12)));
+		Append((char)(0x80 | ((c >> 6) & 0x3F)));
+		Append((char)(0x80 | (c & 0x3F)));
+	}
+	else if (c < 0x200000) {	// 21 bits
+		Append((char)(0xF0 | (c >> 18)));
+		Append((char)(0x80 | ((c >> 12) & 0x3F)));
+		Append((char)(0x80 | ((c >> 6) & 0x3F)));
+		Append((char)(0x80 | (c & 0x3F)));
+	}
+	else {
+		// UTF-8 can encode up to 6 bytes. Why don't we support that?
+		// This is an invalid Unicode character
+		Append('?');
+	}
+}
+
+/*
+========================
+idStr::UTF8Char
+========================
+*/
+uint32 idStr::UTF8Char(const byte* s, int& idx) {
+	if (idx >= 0) {
+		while (s[idx] != '\0') {
+			uint32 cindex = s[idx];
+			if (cindex < 0x80) {
+				idx++;
+				return cindex;
+			}
+			int trailing = 0;
+			if (cindex >= 0xc0) {
+				static const byte trailingBytes[64] = {
+					1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+					2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2, 3,3,3,3,3,3,3,3,4,4,4,4,5,5,5,5
+				};
+				trailing = trailingBytes[cindex - 0xc0];
+			}
+			static const uint32 trailingMask[6] = { 0x0000007f, 0x0000001f, 0x0000000f, 0x00000007, 0x00000003, 0x00000001 };
+			cindex &= trailingMask[trailing];
+			while (trailing-- > 0) {
+				cindex <<= 6;
+				cindex += s[++idx] & 0x0000003f;
+			}
+			idx++;
+			return cindex;
+		}
+	}
+	idx++;
+	return 0;	// return a null terminator if out of range
+}

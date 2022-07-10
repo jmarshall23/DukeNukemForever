@@ -475,9 +475,9 @@ public:
 	virtual void			FreeRenderWorld( idRenderWorld *rw );
 	virtual void			BeginLevelLoad( void );
 	virtual void			EndLevelLoad( void );
-	virtual bool			RegisterFont( const char *fontName, fontInfoEx_t &font );
-	virtual void			SetColor( const idVec4 &rgba );
-	virtual void			SetColor4( float r, float g, float b, float a );
+	virtual idFont*			RegisterFont(const char* fontName);
+	virtual idDrawVert*		AllocTris(int numVerts, const triIndex_t* indexes, int numIndexes, const idMaterial* material);
+
 	virtual void			DrawStretchPic ( const idDrawVert *verts, const glIndex_t *indexes, int vertCount, int indexCount, const idMaterial *material,
 											bool clip = true, float x = 0.0f, float y = 0.0f, float w = 640.0f, float h = 0.0f );
 	virtual void			DrawStretchPic ( float x, float y, float w, float h, float s1, float t1, float s2, float t2, const idMaterial *material );
@@ -638,6 +638,8 @@ public:
 	rvmDeclRenderProg*		shadowMapAlbedoProgram;
 
 	unsigned short			gammaTable[256];	// brightness / gamma modify this
+
+	idList<idFont*>			fonts;
 };
 
 extern backEndState_t		backEnd;

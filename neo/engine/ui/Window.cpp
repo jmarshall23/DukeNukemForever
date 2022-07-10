@@ -114,7 +114,7 @@ void idWindow::CommonInit() {
 	flags = 0;
 	lastTimeRun = 0;
 	origin.Zero();
-	fontNum = 0;
+	font = nullptr;
 	timeLine = -1;
 	xOffset = yOffset = 0.0;
 	cursor = 0;
@@ -292,7 +292,7 @@ idWindow::SetFont
 ================
 */
 void idWindow::SetFont() {
-	dc->SetFont(fontNum);
+	dc->SetFont(font);
 }
 
 /*
@@ -2041,9 +2041,9 @@ bool idWindow::ParseInternalVar(const char *_name, idParser *src) {
 		return true;
 	}
 	if ( idStr::Icmp( _name, "font" ) == 0 ) {
-		idStr fontStr;
-		ParseString( src, fontStr );
-		fontNum = dc->FindFont( fontStr );
+		idStr fontName;
+		ParseString(src, fontName);
+		font = renderSystem->RegisterFont(fontName);
 		return true;
 	}
 	return false;
@@ -3479,7 +3479,7 @@ void idWindow::WriteToSaveGame( idFile *savefile ) {
 	savefile->Write( &drawRect, sizeof( drawRect ) );
 	savefile->Write( &clientRect, sizeof( clientRect ) );
 	savefile->Write( &origin, sizeof( origin ) );
-	savefile->Write( &fontNum, sizeof( fontNum ) );
+	//savefile->Write( &fontNum, sizeof( fontNum ) );
 	savefile->Write( &timeLine, sizeof( timeLine ) );
 	savefile->Write( &xOffset, sizeof( xOffset ) );
 	savefile->Write( &yOffset, sizeof( yOffset ) );
@@ -3624,7 +3624,7 @@ void idWindow::ReadFromSaveGame( idFile *savefile ) {
 	savefile->Read( &drawRect, sizeof( drawRect ) );
 	savefile->Read( &clientRect, sizeof( clientRect ) );
 	savefile->Read( &origin, sizeof( origin ) );
-	savefile->Read( &fontNum, sizeof( fontNum ) );
+	//savefile->Read( &fontNum, sizeof( fontNum ) );
 	savefile->Read( &timeLine, sizeof( timeLine ) );
 	savefile->Read( &xOffset, sizeof( xOffset ) );
 	savefile->Read( &yOffset, sizeof( yOffset ) );

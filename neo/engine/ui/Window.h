@@ -388,7 +388,7 @@ protected:
 	idVec2	shear;
 
 	signed char	textShadow;
-	unsigned char fontNum;
+	idFont *font;
 	unsigned char cursor;					//
 	signed char	textAlign;
 

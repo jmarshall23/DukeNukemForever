@@ -162,6 +162,7 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 #include "../engine/models/ModelManager.h"
 #include "../engine/renderer/RenderSystem.h"
 #include "../engine/models/RenderWorld.h"
+#include "../engine/renderer/Font.h"
 #include "../engine/renderer/DeviceContext.h"
 
 // sound engine

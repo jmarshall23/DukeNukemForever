@@ -70,7 +70,7 @@ protected:
 	idRectangle 	clientRect;			// client area
 	idRectangle 	textRect;
 	idVec2			origin;
-	int 			fontNum;
+	idFont			*font;
 	float 			matScalex;
 	float 			matScaley;
 	float 			borderSize;

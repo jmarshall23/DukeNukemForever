@@ -48,13 +48,13 @@ idUserInterfaceManager *	uiManager = &uiManagerLocal;
 
 void idUserInterfaceManagerLocal::Init() {
 	screenRect = idRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-	dc.Init();
+	deviceContext->Init();
 }
 
 void idUserInterfaceManagerLocal::Shutdown() {
 	guis.DeleteContents( true );
 	demoGuis.DeleteContents( true );
-	dc.Shutdown();
+	deviceContext->Shutdown();
 }
 
 void idUserInterfaceManagerLocal::Touch( const char *name ) {
@@ -75,7 +75,7 @@ void idUserInterfaceManagerLocal::WritePrecacheCommands( idFile *f ) {
 }
 
 void idUserInterfaceManagerLocal::SetSize( float width, float height ) {
-	dc.SetSize( width, height );
+	deviceContext->SetSize( width, height );
 }
 
 void idUserInterfaceManagerLocal::BeginLevelLoad() {
@@ -297,7 +297,7 @@ bool idUserInterfaceLocal::InitFromFile( const char *qpath, bool rebuild, bool c
 		idToken token;
 		while( src.ReadToken( &token ) ) {
 			if ( idStr::Icmp( token, "windowDef" ) == 0 ) {
-				desktop->SetDC( &uiManagerLocal.dc );
+				desktop->SetDC( deviceContext );
 				if ( desktop->Parse( &src, rebuild ) ) {
 					desktop->SetFlag( WIN_DESKTOP );
 					desktop->FixupParms();
@@ -308,7 +308,7 @@ bool idUserInterfaceLocal::InitFromFile( const char *qpath, bool rebuild, bool c
 
 		state.Set( "name", qpath );
 	} else {
-		desktop->SetDC( &uiManagerLocal.dc );
+		desktop->SetDC(deviceContext);
 		desktop->SetFlag( WIN_DESKTOP );
 		desktop->name = "Desktop";
 		desktop->text = va( "Invalid GUI: %s", qpath );
@@ -370,17 +370,17 @@ void idUserInterfaceLocal::Redraw( int _time ) {
 	}
 	if ( !loading && desktop ) {
 		time = _time;
-		uiManagerLocal.dc.PushClipRect( uiManagerLocal.screenRect );
+		deviceContext->PushClipRect( uiManagerLocal.screenRect );
 		desktop->Redraw( 0, 0 );
-		uiManagerLocal.dc.PopClipRect();
+		deviceContext->PopClipRect();
 	}
 }
 
 void idUserInterfaceLocal::DrawCursor() {
 	if ( !desktop || desktop->GetFlags() & WIN_MENUGUI ) {
-		uiManagerLocal.dc.DrawCursor(&cursorX, &cursorY, 32.0f );
+		deviceContext->DrawCursor(&cursorX, &cursorY, 32.0f );
 	} else {
-		uiManagerLocal.dc.DrawCursor(&cursorX, &cursorY, 64.0f );
+		deviceContext->DrawCursor(&cursorX, &cursorY, 64.0f );
 	}
 }
 
@@ -468,7 +468,7 @@ void idUserInterfaceLocal::ReadFromDemoFile( class idDemoFile *f ) {
 		f->Log("creating new gui\n");
 		desktop = new idWindow(this);
 	   	desktop->SetFlag( WIN_DESKTOP );
-	   	desktop->SetDC( &uiManagerLocal.dc );
+	   	desktop->SetDC(deviceContext);
 		desktop->ReadFromDemoFile(f);
 	} else {
 		f->Log("re-using gui\n");

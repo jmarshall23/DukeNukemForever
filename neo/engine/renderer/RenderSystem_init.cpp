@@ -1958,8 +1958,6 @@ idRenderSystemLocal::Shutdown
 void idRenderSystemLocal::Shutdown( void ) {	
 	common->Printf( "idRenderSystem::Shutdown()\n" );
 
-	R_DoneFreeType( );
-
 	if ( glConfig.isInitialized ) {
 		globalImages->PurgeAllImages();
 	}
@@ -2100,3 +2098,21 @@ void idRenderSystemLocal::GetCardCaps( bool &oldCard, bool &nv10or20 ) {
 	oldCard = ( tr.backEndRenderer == BE_ARB || tr.backEndRenderer == BE_R200 || tr.backEndRenderer == BE_NV10 || tr.backEndRenderer == BE_NV20 );
 }
 
+/*
+============
+idRenderSystemLocal::RegisterFont
+============
+*/
+idFont* idRenderSystemLocal::RegisterFont(const char* fontName) {
+	idStr baseFontName = fontName;
+	baseFontName.Replace("fonts/", "");
+	for (int i = 0; i < fonts.Num(); i++) {
+		if (idStr::Icmp(fonts[i]->GetName(), baseFontName) == 0) {
+			fonts[i]->Touch();
+			return fonts[i];
+		}
+	}
+	idFont* newFont = new idFont(baseFontName);
+	fonts.Append(newFont);
+	return newFont;
+}

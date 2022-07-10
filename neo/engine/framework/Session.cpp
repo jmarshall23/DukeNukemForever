@@ -2216,7 +2216,7 @@ void	idSessionLocal::DrawWipeModel() {
 	}
 
 	float fade = ( float )( latchedTic - wipeStartTic ) / ( wipeStopTic - wipeStartTic );
-	renderSystem->SetColor4( 1, 1, 1, fade );
+	deviceContext->SetColor4( 1, 1, 1, fade );
 	renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 1, 1, wipeMaterial );
 }
 
@@ -2299,9 +2299,9 @@ void idSessionLocal::DrawCmdGraph() {
 	if ( !com_showAngles.GetBool() ) {
 		return;
 	}
-	renderSystem->SetColor4( 0.1f, 0.1f, 0.1f, 1.0f );
+	deviceContext->SetColor4( 0.1f, 0.1f, 0.1f, 1.0f );
 	renderSystem->DrawStretchPic( 0, 480-ANGLE_GRAPH_HEIGHT, MAX_BUFFERED_USERCMD*ANGLE_GRAPH_STRETCH, ANGLE_GRAPH_HEIGHT, 0, 0, 1, 1, whiteMaterial );
-	renderSystem->SetColor4( 0.9f, 0.9f, 0.9f, 1.0f );
+	deviceContext->SetColor4( 0.9f, 0.9f, 0.9f, 1.0f );
 	for ( int i = 0 ; i < MAX_BUFFERED_USERCMD-4 ; i++ ) {
 		usercmd_t	cmd = usercmdGen->TicCmd( latchedTicNumber - (MAX_BUFFERED_USERCMD-4) + i );
 		int h = cmd.angles[1];
@@ -2369,7 +2369,7 @@ void idSessionLocal::Draw() {
 		// if testing a gui, clear the screen and draw it
 		// clear the background, in case the tested gui is transparent
 		// NOTE that you can't use this for aviGame recording, it will tick at real com_frameTime between screenshots..
-		renderSystem->SetColor( colorBlack );
+		deviceContext->SetColor( colorBlack );
 		renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 1, 1, declManager->FindMaterial( "_white" ) );
 		guiTest->Redraw( com_frameTime );
 	} else if ( guiActive && !guiActive->State().GetBool( "gameDraw" ) ) {
@@ -2399,7 +2399,7 @@ void idSessionLocal::Draw() {
 			time_gameDraw += ( end - start );	// note time used for com_speeds
 		}
 		if ( !gameDraw ) {
-			renderSystem->SetColor( colorBlack );
+			deviceContext->SetColor( colorBlack );
 			renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 1, 1, declManager->FindMaterial( "_white" ) );
 		}
 
@@ -2420,7 +2420,7 @@ void idSessionLocal::Draw() {
 				emptyDrawCount = 0;
 				StartMenu();
 			}
-			renderSystem->SetColor4( 0, 0, 0, 1 );
+			deviceContext->SetColor4( 0, 0, 0, 1 );
 			renderSystem->DrawStretchPic( 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, 0, 0, 1, 1, declManager->FindMaterial( "_white" ) );
 		}
 #else

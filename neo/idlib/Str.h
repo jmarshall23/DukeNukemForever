@@ -214,6 +214,9 @@ public:
 	idStr &				RemoveColors( void );
 	void				CapLength( int );
 	void				Fill( const char ch, int newlen );
+	uint32				UTF8Char(const byte* s, int& idx);
+	void				AppendUTF8Char(uint32 c);
+	uint32				UTF8Char(int& idx);
 
 	int					Find( const char c, int start = 0, int end = -1 ) const;
 	int					Find( const char *text, bool casesensitive = true, int start = 0, int end = -1 ) const;
@@ -1047,6 +1050,15 @@ ID_INLINE int idStr::ColorIndex( int c ) {
 
 ID_INLINE int idStr::DynamicMemoryUsed() const {
 	return ( data == baseBuffer ) ? 0 : alloced;
+}
+
+/*
+========================
+idStr::UTF8Char
+========================
+*/
+ID_INLINE uint32 idStr::UTF8Char(int& idx) {
+	return UTF8Char((byte*)data, idx);
 }
 
 #endif /* !__STR_H__ */
