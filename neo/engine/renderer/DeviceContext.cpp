@@ -49,7 +49,7 @@ void idDeviceContext::Init() {
 	yScale = 1.0f;
 	xOffset = 0.0f;
 	yOffset = 0.0f;
-	whiteImage = declManager->FindMaterial("guis/assets/white.tga");
+	whiteImage = declManager->FindMaterial("_white");
 	whiteImage->SetSort(SS_GUI);
 	activeFont = renderSystem->RegisterFont("arial");
 	colorPurple = idVec4(1, 0, 1, 1);
