@@ -46,6 +46,7 @@ idUserInterfaceManager *	uiManager = NULL;
 idDeclManager *				declManager = NULL;
 idCollisionModelManager *	collisionModelManager = NULL;
 rvmNavigationManager*		navigationManager = NULL;
+idSession*					session			= NULL;
 idCVar *					idCVar::staticVars = NULL;
 
 idCVar com_forceGenericSIMD( "com_forceGenericSIMD", "0", CVAR_BOOL|CVAR_SYSTEM, "force generic platform independent SIMD" );
@@ -139,6 +140,7 @@ extern "C" gameExport_t *GetGameAPI( gameImport_t *import ) {
 		declManager					= import->declManager;
 		collisionModelManager		= import->collisionModelManager;
 		navigationManager			= import->navigationManager;
+		session						= import->session;
 	}
 
 	// set interface pointers used by idLib
@@ -361,6 +363,8 @@ void idGameLocal::Init( void ) {
 	navigationManager->Init();
 
 	InitGameRender();
+
+	InitGuis();
 
 	gamestate = GAMESTATE_NOMAP;
 
@@ -2687,25 +2691,6 @@ idUserInterface* idGameLocal::StartMenu( void ) {
 	}
 	return mpGame.StartMenu();
 }
-
-/*
-================
-idGameLocal::HandleGuiCommands
-================
-*/
-const char* idGameLocal::HandleGuiCommands( const char *menuCommand ) {
-	if ( !isMultiplayer ) {
-		return NULL;
-	}
-	return mpGame.HandleGuiCommands( menuCommand );
-}
-
-/*
-================
-idGameLocal::HandleMainMenuCommands
-================
-*/
-void idGameLocal::HandleMainMenuCommands( const char *menuCommand, idUserInterface *gui ) { }
 
 /*
 ================

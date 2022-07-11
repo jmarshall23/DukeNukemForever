@@ -21,9 +21,17 @@ struct DnRenderPlatform
 //
 class dnGameLocal : public idGameLocal {
 public:
+	virtual void			InitGuis();
 	virtual void			InitGameRender();
 
 	virtual bool			Draw(int clientNum);
+	virtual void			StartMainMenu(bool playIntro);
+
+	virtual void			HandleInGameCommands(const char* menuCommand);
+	virtual void			HandleMainMenuCommands(const char* menuCommand);
+	virtual const char*		HandleGuiCommands(const char* menuCommand);
+
+	virtual idUserInterface* GetMainMenuUI(void);
 
 	virtual DukePlayer* GetLocalDukePlayer() { return (DukePlayer*)GetLocalPlayer(); }
 
@@ -35,4 +43,6 @@ private:
 	void					DrawPortalSky(renderView_t &hackedView);
 
 	DnRenderPlatform		renderPlatform;
+
+	idUserInterface*		guiMainMenu;
 };

@@ -100,6 +100,11 @@ public:
 	virtual void	StartMenu( bool playIntro = false ) = 0;
 
 	virtual void	SetGUI( idUserInterface *gui, HandleGuiCommand_t handle ) = 0;
+	virtual bool		IsMapSpawned(void) = 0;
+
+	virtual void	CloseActiveMenu(void) = 0;
+
+	virtual void	ExitMenu(void) = 0;
 
 	// Updates gui and dispatched events to it
 	virtual void	GuiFrameEvents() = 0;
@@ -148,6 +153,8 @@ public:
 	virtual const char *GetCurrentMapName( void ) = 0;
 
 	virtual int		GetSaveGameVersion( void ) = 0;
+
+	virtual idSoundWorld* GetMenuSoundWorld(void) = 0;
 
 	// The render world and sound world used for this session.
 	idRenderWorld *	rw;

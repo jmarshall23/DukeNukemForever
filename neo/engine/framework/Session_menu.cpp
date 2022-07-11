@@ -50,7 +50,7 @@ idSessionLocal::StartMainMenu
 ==============
 */
 void idSessionLocal::StartMenu( bool playIntro ) {
-	if ( guiActive == guiMainMenu ) {
+	if ( guiActive == game->GetMainMenuUI() ) {
 		return;
 	}
 
@@ -67,18 +67,9 @@ void idSessionLocal::StartMenu( bool playIntro ) {
 	// start playing the menu sounds
 	soundSystem->SetPlayingSoundWorld( menuSoundWorld );
 
-	SetGUI( guiMainMenu, NULL );
-	guiMainMenu->HandleNamedEvent( playIntro ? "playIntro" : "noIntro" );
-
-
-	if(fileSystem->HasD3XP()) {
-		guiMainMenu->SetStateString("game_list", common->GetLanguageDict()->GetString( "#str_07202" ));
-	} else {
-		guiMainMenu->SetStateString("game_list", common->GetLanguageDict()->GetString( "#str_07212" ));
-	}
+	game->StartMainMenu(playIntro);	
 
 	console->Close();
-
 }
 
 /*
@@ -99,9 +90,8 @@ void idSessionLocal::SetGUI( idUserInterface *gui, HandleGuiCommand_t handle ) {
 		return;
 	}
 
-	if ( guiActive == guiMainMenu ) {
+	if ( guiActive == game->GetMainMenuUI() ) {
 		SetSaveGameGuiVars();
-		SetMainMenuGuiVars();
 	} else if ( guiActive == guiRestartMenu ) {
 		SetSaveGameGuiVars();
 	}
@@ -242,95 +232,6 @@ void idSessionLocal::SetModsMenuGuiVars( void ) {
 	fileSystem->FreeModList( list );
 }
 
-
-/*
-===============
-idSessionLocal::SetMainMenuSkin
-===============
-*/
-void idSessionLocal::SetMainMenuSkin( void ) {
-	// skins
-	idStr str = cvarSystem->GetCVarString( "mod_validSkins" );
-	idStr uiSkin = cvarSystem->GetCVarString( "ui_skin" );
-	idStr skin;
-	int skinId = 1;
-	int count = 1;
-	while ( str.Length() ) {
-		int n = str.Find( ";" );
-		if ( n >= 0 ) {
-			skin = str.Left( n );
-			str = str.Right( str.Length() - n - 1 );
-		} else {
-			skin = str;
-			str = "";
-		}
-		if ( skin.Icmp( uiSkin ) == 0 ) {
-			skinId = count;
-		}
-		count++;
-	}
-
-	for ( int i = 0; i < count; i++ ) {
-		guiMainMenu->SetStateInt( va( "skin%i", i+1 ), 0 );
-	}
-	guiMainMenu->SetStateInt( va( "skin%i", skinId ), 1 );
-}
-
-/*
-===============
-idSessionLocal::SetPbMenuGuiVars
-===============
-*/
-void idSessionLocal::SetPbMenuGuiVars( void ) {
-}
-
-/*
-===============
-idSessionLocal::SetMainMenuGuiVars
-===============
-*/
-void idSessionLocal::SetMainMenuGuiVars( void ) {
-
-	guiMainMenu->SetStateString( "serverlist_sel_0", "-1" );
-	guiMainMenu->SetStateString( "serverlist_selid_0", "-1" ); 
-
-	guiMainMenu->SetStateInt( "com_machineSpec", com_machineSpec.GetInteger() );
-
-	// "inetGame" will hold a hand-typed inet address, which is not archived to a cvar
-	guiMainMenu->SetStateString( "inetGame", "" );
-
-	// key bind names
-	guiMainMenu->SetKeyBindingNames();
-
-	// flag for in-game menu
-	if ( mapSpawned ) {
-		guiMainMenu->SetStateString( "inGame", IsMultiplayer() ? "2" : "1" );
-	} else {
-		guiMainMenu->SetStateString( "inGame", "0" );
-	}
-
-	SetCDKeyGuiVars( );
-#ifdef ID_DEMO_BUILD
-	guiMainMenu->SetStateString( "nightmare", "0" );
-#else
-	guiMainMenu->SetStateString( "nightmare", cvarSystem->GetCVarBool( "g_nightmare" ) ? "1" : "0" );
-#endif
-	guiMainMenu->SetStateString( "browser_levelshot", "guis/assets/splash/pdtempa" );
-
-	SetMainMenuSkin();
-	// Mods Menu
-	SetModsMenuGuiVars();
-
-	guiMsg->SetStateString( "visible_hasxp", fileSystem->HasD3XP() ? "1" : "0" );
-
-#if defined( __linux__ )
-	guiMainMenu->SetStateString( "driver_prompt", "1" );
-#else
-	guiMainMenu->SetStateString( "driver_prompt", "0" );
-#endif
-
-	SetPbMenuGuiVars();
-}
 
 /*
 ==============
@@ -549,9 +450,9 @@ idSessionLocal::UpdateMPLevelShot
 ==============
 */
 void idSessionLocal::UpdateMPLevelShot( void ) {
-	char screenshot[ MAX_STRING_CHARS ];
-	fileSystem->FindMapScreenshot( cvarSystem->GetCVarString( "si_map" ), screenshot, MAX_STRING_CHARS );
-	guiMainMenu->SetStateString( "current_levelshot", screenshot );
+	//char screenshot[ MAX_STRING_CHARS ];
+	//fileSystem->FindMapScreenshot( cvarSystem->GetCVarString( "si_map" ), screenshot, MAX_STRING_CHARS );
+	//guiMainMenu->SetStateString( "current_levelshot", screenshot );
 }
 
 /*
@@ -561,6 +462,7 @@ idSessionLocal::HandleMainMenuCommands
 Executes any commands returned by the gui
 ==============
 */
+#if 0 // reference only jmarshall 7/1/2022
 void idSessionLocal::HandleMainMenuCommands( const char *menuCommand ) {
 	// execute the command from the menu
 	int icmd;
@@ -1050,6 +952,7 @@ void idSessionLocal::HandleMainMenuCommands( const char *menuCommand ) {
 		}
 	}
 }
+#endif
 
 /*
 ==============
@@ -1090,32 +993,6 @@ void idSessionLocal::HandleChatMenuCommands( const char *menuCommand ) {
 
 /*
 ==============
-idSessionLocal::HandleInGameCommands
-
-Executes any commands returned by the gui
-==============
-*/
-void idSessionLocal::HandleInGameCommands( const char *menuCommand ) {
-	// execute the command from the menu
-	idCmdArgs args;
-
-	args.TokenizeString( menuCommand, false );
-
-	const char *cmd = args.Argv( 0 );
-	if ( !idStr::Icmp( cmd, "close" ) ) {
-		if ( guiActive ) {
-			sysEvent_t  ev;
-			ev.evType = SE_NONE;
-			const char	*cmd;
-			cmd = guiActive->HandleEvent( &ev, com_frameTime );
-			guiActive->Activate( false, com_frameTime );
-			guiActive = NULL;
-		}
-	}
-}
-
-/*
-==============
 idSessionLocal::DispatchCommand
 ==============
 */
@@ -1125,8 +1002,15 @@ void idSessionLocal::DispatchCommand( idUserInterface *gui, const char *menuComm
 		gui = guiActive;
 	}
 
-	if ( gui == guiMainMenu ) {
-		HandleMainMenuCommands( menuCommand );
+	if ( gui == game->GetMainMenuUI() ) {
+		if (mapSpawned)
+		{
+			game->HandleInGameCommands(menuCommand);
+		}
+		else
+		{
+			game->HandleMainMenuCommands(menuCommand);
+		}
 		return;
 	} else if ( gui == guiIntro) {
 		HandleIntroMenuCommands( menuCommand );
@@ -1144,7 +1028,7 @@ void idSessionLocal::DispatchCommand( idUserInterface *gui, const char *menuComm
 			StartMenu();
 		} else if ( strstr( cmd, "sound " ) == cmd ) {
 			// pipe the GUI sound commands not handled by the game to the main menu code
-			HandleMainMenuCommands( cmd );
+			game->HandleMainMenuCommands( cmd );
 		}
 	} else if ( guiHandle ) {
 		if ( (*guiHandle)( menuCommand ) ) {
@@ -1152,10 +1036,6 @@ void idSessionLocal::DispatchCommand( idUserInterface *gui, const char *menuComm
 		}
 	} else if ( !doIngame ) {
 		common->DPrintf( "idSessionLocal::DispatchCommand: no dispatch found for command '%s'\n", menuCommand );
-	}
-
-	if ( doIngame ) {
-		HandleInGameCommands( menuCommand );
 	}
 }
 
@@ -1646,9 +1526,21 @@ idSessionLocal::SetCDKeyGuiVars
 ===============
 */
 void idSessionLocal::SetCDKeyGuiVars( void ) {
-	if ( !guiMainMenu ) {
-		return;
+
+}
+
+/*
+===============
+idSessionLocal::CloseActiveMenu
+===============
+*/
+void idSessionLocal::CloseActiveMenu(void) {
+	if (guiActive) {
+		sysEvent_t  ev;
+		ev.evType = SE_NONE;
+		const char* cmd;
+		cmd = guiActive->HandleEvent(&ev, com_frameTime);
+		guiActive->Activate(false, com_frameTime);
+		guiActive = NULL;
 	}
-	guiMainMenu->SetStateString( "str_d3key_state", common->GetLanguageDict()->GetString( va( "#str_071%d", 86 + cdkey_state ) ) );
-	guiMainMenu->SetStateString( "str_xpkey_state", common->GetLanguageDict()->GetString( va( "#str_071%d", 86 + xpkey_state ) ) );
 }

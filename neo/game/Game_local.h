@@ -395,8 +395,6 @@ public:
 	virtual gameReturn_t	RunFrame( const usercmd_t *clientCmds );
 	virtual escReply_t		HandleESC( idUserInterface **gui );
 	virtual idUserInterface	*StartMenu( void );
-	virtual const char *	HandleGuiCommands( const char *menuCommand );
-	virtual void			HandleMainMenuCommands( const char *menuCommand, idUserInterface *gui );
 	virtual allowReply_t	ServerAllowClient( int numClients, const char *IP, const char *guid, const char *password, char reason[MAX_STRING_CHARS] );
 	virtual void			ServerClientConnect( int clientNum, const char *guid );
 	virtual void			ServerClientBegin( int clientNum );
@@ -418,6 +416,7 @@ public:
 	virtual void				GetMapLoadingGUI( char gui[ MAX_STRING_CHARS ] );
 
 	virtual void			InitGameRender() = 0;
+	virtual void			InitGuis() = 0;
 
 	// ---------------------- Public idGameLocal Interface -------------------
 

@@ -188,16 +188,6 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 #include "../engine/external/imgui/examples/imgui_impl_win32.h"
 #endif
 
-//-----------------------------------------------------
-
-#ifndef _D3SDK
-
-#ifdef GAME_DLL
-
-#include "../game/Game_local.h"
-
-#else
-
 #include "../engine/framework/DemoChecksum.h"
 
 // framework
@@ -208,6 +198,16 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 #include "../engine/framework/Console.h"
 #include "../engine/framework/DemoFile.h"
 #include "../engine/framework/Session.h"
+
+//-----------------------------------------------------
+
+#ifndef _D3SDK
+
+#ifdef GAME_DLL
+
+#include "../game/Game_local.h"
+
+#else
 
 // asynchronous networking
 #include "../engine/framework/async/AsyncNetwork.h"

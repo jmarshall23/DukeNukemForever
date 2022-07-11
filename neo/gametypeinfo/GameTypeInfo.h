@@ -2141,6 +2141,7 @@ static classVariableInfo_t DnRenderPlatform_typeInfo[] = {
 
 static classVariableInfo_t dnGameLocal_typeInfo[] = {
 	{ "DnRenderPlatform", "renderPlatform", (intptr_t)(&((dnGameLocal *)0)->renderPlatform), sizeof( ((dnGameLocal *)0)->renderPlatform ) },
+	{ "idUserInterface *", "guiMainMenu", (intptr_t)(&((dnGameLocal *)0)->guiMainMenu), sizeof( ((dnGameLocal *)0)->guiMainMenu ) },
 	{ NULL, 0 }
 };
 

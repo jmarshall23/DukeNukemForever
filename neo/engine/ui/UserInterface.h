@@ -41,7 +41,6 @@ If you have questions concerning this license or the applicable additional terms
 class idFile;
 class idDemoFile;
 
-
 class idUserInterface {
 public:
 	virtual						~idUserInterface() {};

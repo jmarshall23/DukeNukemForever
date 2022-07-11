@@ -23,7 +23,7 @@ windowDef Desktop
 	onNamedEvent NoIntro {
 		set "dnfIntroVideo::visible" "0" ;
 		set "desktop::introplaying" "0" ;
-		set "dnfIntroVideo::visible" "1";
+		set "dnfMainMenu::visible" "1";
 	}
 
 	onNamedEvent PlayIntro {

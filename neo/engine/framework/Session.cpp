@@ -352,7 +352,7 @@ idSessionLocal::idSessionLocal
 ===============
 */
 idSessionLocal::idSessionLocal() {
-	guiInGame = guiMainMenu = guiIntro \
+	guiInGame = guiIntro \
 		= guiRestartMenu = guiLoading = guiGameOver = guiActive \
 		= guiTest = guiMsg = guiMsgRestore = guiTakeNotes = NULL;	
 	
@@ -2922,15 +2922,10 @@ void idSessionLocal::Init() {
 
 	menuSoundWorld = soundSystem->AllocSoundWorld( rw );
 
-	// we have a single instance of the main menu
-#ifndef ID_DEMO_BUILD
-	guiMainMenu = uiManager->FindGui( "guis/mainmenu.gui", true, false, true );
-#else
-	guiMainMenu = uiManager->FindGui( "guis/demo_mainmenu.gui", true, false, true );
-#endif
+
 	guiMainMenu_MapList = uiManager->AllocListGUI();
-	guiMainMenu_MapList->Config( guiMainMenu, "mapList" );
-	idAsyncNetwork::client.serverList.GUIConfig( guiMainMenu, "serverList" );
+//	guiMainMenu_MapList->Config( guiMainMenu, "mapList" );
+//	idAsyncNetwork::client.serverList.GUIConfig( guiMainMenu, "serverList" );
 	guiRestartMenu = uiManager->FindGui( "guis/restart.gui", true, false, true );
 	guiGameOver = uiManager->FindGui( "guis/gameover.gui", true, false, true );
 	guiMsg = uiManager->FindGui( "guis/msg.gui", true, false, true );
@@ -2978,7 +2973,7 @@ idSessionLocal::SetPlayingSoundWorld
 ===============
 */
 void idSessionLocal::SetPlayingSoundWorld() {
-	if ( guiActive && ( guiActive == guiMainMenu || guiActive == guiIntro || guiActive == guiLoading || ( guiActive == guiMsg && !mapSpawned ) ) ) {
+	if ( guiActive && ( guiActive == game->GetMainMenuUI() || guiActive == guiIntro || guiActive == guiLoading || ( guiActive == guiMsg && !mapSpawned ) ) ) {
 		soundSystem->SetPlayingSoundWorld( menuSoundWorld );
 	} else {
 		soundSystem->SetPlayingSoundWorld( sw );

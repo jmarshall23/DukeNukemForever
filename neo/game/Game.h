@@ -29,6 +29,8 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __GAME_H__
 #define __GAME_H__
 
+class idSession;
+
 /*
 ===============================================================================
 
@@ -83,6 +85,12 @@ public:
 
 	// Set the local client number. Distinguishes listen ( == 0 ) / dedicated ( == -1 )
 	virtual void				SetLocalClient( int clientNum ) = 0;
+
+	// Starts the mainmenu.
+	virtual void				StartMainMenu(bool playIntro) = 0;
+
+	// Returns the mainmenu UI.
+	virtual idUserInterface*	GetMainMenuUI(void) = 0;
 
 	// Sets the user info for a client.
 	// if canModify is true, the game can modify the user info in the returned dictionary pointer, server will forward the change back
@@ -139,7 +147,10 @@ public:
 	virtual const char *		HandleGuiCommands( const char *menuCommand ) = 0;
 
 	// main menu commands not caught in the engine are passed here
-	virtual void				HandleMainMenuCommands( const char *menuCommand, idUserInterface *gui ) = 0;
+	virtual void				HandleMainMenuCommands( const char *menuCommand ) = 0;
+
+	// Handles in game commands.
+	virtual void				HandleInGameCommands(const char* menuCommand) = 0;
 
 	// Early check to deny connect.
 	virtual allowReply_t		ServerAllowClient( int numClients, const char *IP, const char *guid, const char *password, char reason[MAX_STRING_CHARS] ) = 0;
@@ -320,7 +331,7 @@ extern idGameEdit *				gameEdit;
 ===============================================================================
 */
 
-const int GAME_API_VERSION		= 3001;
+const int GAME_API_VERSION		= 3003;
 
 typedef struct {
 
@@ -338,6 +349,7 @@ typedef struct {
 	idDeclManager *				declManager;			// declaration manager
 	idCollisionModelManager *	collisionModelManager;	// collision model manager
 	rvmNavigationManager*		navigationManager;
+	idSession*					session;
 } gameImport_t;
 
 typedef struct {

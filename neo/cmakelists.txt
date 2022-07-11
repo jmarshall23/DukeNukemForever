@@ -53,7 +53,7 @@ file(GLOB gameBaseFiles
      "game/physics/*.cpp"
      "game/script/*.cpp"
      "gamedecls/*.cpp*"
-)
+) 
 
 file(GLOB typeInfoGenFiles
     "engine/typeinfo/*.cpp*"
@@ -185,3 +185,4 @@ target_link_libraries(DukeNukemForever idLib engineExternal delayimp.lib opengl3
 target_precompile_headers(DukeNukemForever PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/idlib/precompiled.h)
 set_target_properties(DukeNukemForever PROPERTIES OUTPUT_NAME "DukeNukemForever" LINK_FLAGS "/DelayLoad:ComCtl32.dll /STACK:16777216,16777216 /SUBSYSTEM:WINDOWS /PDB:\"DukeNukemForever.pdb\"")
 
+ 

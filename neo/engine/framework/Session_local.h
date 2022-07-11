@@ -124,9 +124,15 @@ public:
 	virtual bool		WaitingForGameAuth( void );
 	virtual void		CDKeysAuthReply( bool valid, const char *auth_msg );
 
+	virtual void		CloseActiveMenu(void);
+
+	virtual bool		IsMapSpawned(void) { return mapSpawned; }
+
 	virtual int			GetSaveGameVersion( void );
 
 	virtual const char *GetCurrentMapName();
+
+	virtual idSoundWorld* GetMenuSoundWorld(void) { return menuSoundWorld; }
 
 	//=====================================
 
@@ -234,7 +240,6 @@ public:
 	HandleGuiCommand_t	guiHandle;
 
 	idUserInterface *	guiInGame;
-	idUserInterface *	guiMainMenu;
 	idListGUI *			guiMainMenu_MapList;		// easy map list handling
 	idUserInterface *	guiRestartMenu;
 	idUserInterface *	guiLoading;
@@ -318,8 +323,6 @@ public:
 	void				DispatchCommand( idUserInterface *gui, const char *menuCommand, bool doIngame = true );
 	void				MenuEvent( const sysEvent_t *event );
 	bool				HandleSaveGameMenuCommand( idCmdArgs &args, int &icmd );
-	void				HandleInGameCommands( const char *menuCommand );
-	void				HandleMainMenuCommands( const char *menuCommand );
 	void				HandleChatMenuCommands( const char *menuCommand );
 	void				HandleIntroMenuCommands( const char *menuCommand );
 	void				HandleRestartMenuCommands( const char *menuCommand );
@@ -330,11 +333,9 @@ public:
 	void				UpdateMPLevelShot( void );
 
 	void				SetSaveGameGuiVars( void );
-	void				SetMainMenuGuiVars( void );
+	;
 	void				SetModsMenuGuiVars( void );
-	void				SetMainMenuSkin( void );
-	void				SetPbMenuGuiVars( void );
-	
+
 private:
 	bool				BoxDialogSanityCheck( void );
 	void				EmitGameAuth( void );
