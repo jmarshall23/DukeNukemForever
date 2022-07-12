@@ -14,6 +14,7 @@ struct DnRenderPlatform
 
 	const idMaterial* upscaleFrontEndResolveMaterial;
 	const idMaterial* ssaoMaterial;
+	const idMaterial* bloomMaterial;
 };
 
 //

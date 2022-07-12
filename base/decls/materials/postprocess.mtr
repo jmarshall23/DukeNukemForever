@@ -18,3 +18,14 @@ postprocess/ssao
 		screendepthtexture _frontEndRenderPassResolvedDepth
 	}
 }
+
+postprocess/bloom
+{
+	{
+		blend add
+
+		renderprog postprocess_bloom
+		
+		screenmaterialtexture _frontEndRenderPassResolvedColor3
+	}
+}

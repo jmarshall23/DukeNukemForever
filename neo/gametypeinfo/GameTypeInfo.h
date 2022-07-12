@@ -2136,6 +2136,7 @@ static classVariableInfo_t DnRenderPlatform_typeInfo[] = {
 	{ "DnFullscreenRenderTarget *", "frontEndPassRenderTargetResolved", (intptr_t)(&((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved), sizeof( ((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved ) },
 	{ "const idMaterial *", "upscaleFrontEndResolveMaterial", (intptr_t)(&((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial), sizeof( ((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial ) },
 	{ "const idMaterial *", "ssaoMaterial", (intptr_t)(&((DnRenderPlatform *)0)->ssaoMaterial), sizeof( ((DnRenderPlatform *)0)->ssaoMaterial ) },
+	{ "const idMaterial *", "bloomMaterial", (intptr_t)(&((DnRenderPlatform *)0)->bloomMaterial), sizeof( ((DnRenderPlatform *)0)->bloomMaterial ) },
 	{ NULL, 0 }
 };
 

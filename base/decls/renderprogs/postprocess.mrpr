@@ -190,3 +190,24 @@ postprocess_upscale
         finalpixel_color.w = 1;
 	}
 }
+
+postprocess_bloom
+{
+	vertex
+	{
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+		vertex_texcoord0 = attr_TexCoord0;
+	}
+
+	pixel
+	{
+		vec2 texcoord = vertex_texcoord0.xy;
+
+		float skippass = texture2D($screenmaterialtexture, vertex_texcoord0.xy).y;
+		if(skippass == 0)
+			discard;
+
+		finalpixel_color.xyz = blur13($albedotexture, vertex_texcoord0.xy, $screeninfo.xy  * 0.25, vec2(0, 1)).xyz;
+ 		finalpixel_color.xyz += blur13($albedotexture, vertex_texcoord0.xy, $screeninfo.xy  * 0.25, vec2(1, 0)).xyz;
+	}
+}

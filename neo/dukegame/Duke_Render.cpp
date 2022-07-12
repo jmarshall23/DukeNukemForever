@@ -17,6 +17,7 @@ void dnGameLocal::InitGameRender(void)
 
 	renderPlatform.upscaleFrontEndResolveMaterial = declManager->FindMaterial("postprocess/upScaleFrontEndResolve", false);
 	renderPlatform.ssaoMaterial = declManager->FindMaterial("postprocess/ssao", false);
+	renderPlatform.bloomMaterial = declManager->FindMaterial("postprocess/bloom", false);
 }
 
 /*
@@ -114,6 +115,7 @@ bool dnGameLocal::Draw(int clientNum) {
 	// Draw the resolved target.
 	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.upscaleFrontEndResolveMaterial);
 	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.ssaoMaterial);
+	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.bloomMaterial);
 
 	// Finally draw the player hud.
 	player->DrawHUD(hud);
