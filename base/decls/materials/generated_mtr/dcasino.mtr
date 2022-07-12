@@ -873,13 +873,6 @@ textures/dcasino/dcasgreenfeltRC
 	specularmap textures/common/nospec.tga
 }
 
-textures/dcasino/dcaslogo1RC
-{
-	diffusemap textures/dcasino/dcaslogo1RC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
-}
-
 textures/dcasino/dcaslogo2RC
 {
 	diffusemap textures/dcasino/dcaslogo2RC.tga

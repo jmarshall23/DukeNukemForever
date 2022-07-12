@@ -154,7 +154,13 @@ renderProg interaction
 		finalpixel_color3.xyz = vertex.xyz;
 		finalpixel_color3.w = diffuseMap.w;
 
-		finalpixel_color4 = vec4(0.0, 0.0, 0.0, diffuseMap.w);
+#ifdef EMISSIVE
+		float emissive = 1.0;
+#else
+		float emissive = 0.0;
+#endif
+
+		finalpixel_color4 = vec4(0.0, emissive, 0.0, diffuseMap.w);
 	}
 }
 
@@ -162,6 +168,7 @@ renderProg interaction_emissive
 {
 	inherit interaction
 	define NO_LIGHT_PASS
+	define EMISSIVE
 }
 
 renderProg interaction_water

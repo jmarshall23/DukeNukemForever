@@ -8,6 +8,15 @@ textures/vegas/sunbrst
 	}
 }
 
+textures/dcasino/dcaslogo1RC
+{
+	customInteractionProgram interaction_emissive
+
+	diffusemap textures/dcasino/dcaslogo1RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
 textures/vegas/vegwateripple3RC
 {
 	noZPresspass
