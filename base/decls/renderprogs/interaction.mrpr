@@ -44,11 +44,22 @@ renderProg interaction
 
 		vec3 finalColor = vec3(0, 0, 0);
 
-		vec4 diffuseMap =			tex2D( $albedotexture, vertex_texcoord4.xy );
+		float time = $screeninfo.z;
+		vec2 st = vertex_texcoord4.xy;
+
+#ifdef WATER_FALL
+		st.y += time * 0.001;
+#endif
+
+		vec4 diffuseMap =			tex2D( $albedotexture, st );
 		//# calculate normalized vector to viewer in R1
 		vec4 toView = normalize( $vieworigin - vertex );
+
+
+#ifdef WATER_PASS
+		diffuseMap.w = diffuseMap.w * 0.5;
+#endif
 		
-		vec2 st = vertex_texcoord4.xy;
 		vec3 viewTangentVector;
 
 		viewTangentVector.x = dot3( vTangent, toView );
@@ -149,4 +160,17 @@ renderProg interaction_emissive
 {
 	inherit interaction
 	define NO_LIGHT_PASS
+}
+
+renderProg interaction_water
+{
+	inherit interaction
+	define WATER_PASS
+}
+
+renderProg interaction_waterfall
+{
+	inherit interaction
+	define WATER_PASS
+	define WATER_FALL
 }

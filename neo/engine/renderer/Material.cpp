@@ -111,6 +111,8 @@ void idMaterial::CommonInit() {
 	suppressInSubview = false;
 	refCount = 0;
 	portalSky = false;
+	noZPresspass = false;
+	customInteractionProgram = nullptr;
 
 	decalInfo.stayTime = 10000;
 	decalInfo.fadeTime = 4000;
@@ -1813,6 +1815,19 @@ void idMaterial::ParseMaterial( idLexer &src ) {
 		// renderbump <args...>
 		else if ( !token.Icmp( "renderbump") ) {
 			src.ParseRestOfLine( renderBump );
+			continue;
+		}
+		else if (!token.Icmp("noZPresspass")) {
+			noZPresspass = true;
+			continue;
+		}
+		else if (!token.Icmp("customInteractionProgram")) {
+			src.ReadToken(&token);
+			customInteractionProgram = tr.FindRenderProgram(token);
+			if (!customInteractionProgram)
+			{
+				common->FatalError("Failed to find custom interaction program %s\n", token.c_str());
+			}
 			continue;
 		}
 		// diffusemap for stage shortcut

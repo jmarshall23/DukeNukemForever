@@ -460,6 +460,9 @@ public:
 						// into each other.
 	bool				NoFragment( void ) const { return ( surfaceFlags & SURF_NOFRAGMENT ) != 0; }
 
+						// Returns a custom interaction program.
+	rvmDeclRenderProg*  GetCustomInteractionProgram(void) const { return customInteractionProgram; }
+
 	//------------------------------------------------------------------
 	// light shader specific functions, only called for light entities
 
@@ -568,6 +571,9 @@ public:
 
 	//------------------------------------------------------------------
 
+	// Returns if this material should be rendered in the zprepass.
+	bool				ShouldRenderZPrepass(void) const { return !noZPresspass; }
+
 						// gets an image for the editor to use
 	idImage *			GetEditorImage( void ) const;
 	int					GetImageWidth( void ) const;
@@ -637,6 +643,8 @@ private:
 
 	int					spectrum;			// for invisible writing, used for both lights and surfaces
 
+	bool				noZPresspass;		// should this material be omitted from doing a z-prepass
+
 	float				polygonOffset;
 
 	int					contentFlags;		// content flags
@@ -691,6 +699,8 @@ private:
 	bool				suppressInSubview;
 	bool				portalSky;
 	int					refCount;
+
+	rvmDeclRenderProg*  customInteractionProgram;
 };
 
 typedef idList<const idMaterial *> idMatList;

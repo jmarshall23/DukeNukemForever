@@ -4058,13 +4058,6 @@ textures/t_generic/genwater1RC
 	specularmap textures/common/nospec.tga
 }
 
-textures/t_generic/genwater2a
-{
-	diffusemap textures/t_generic/genwater2a.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
-}
-
 textures/t_generic/genwater2RC
 {
 	diffusemap textures/t_generic/genwater2RC.tga

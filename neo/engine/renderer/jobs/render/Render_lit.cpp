@@ -117,7 +117,14 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	tr.specularTextureParam->SetImage(din->specularImage);
 
 	// draw it
-	tr.interactionProgram->Bind();
+	if (din->surf->material->GetCustomInteractionProgram())
+	{
+		din->surf->material->GetCustomInteractionProgram()->Bind();;
+	}
+	else
+	{
+		tr.interactionProgram->Bind();
+	}
 	RB_DrawElementsWithCounters( din->surf->geo );
 }
 
@@ -193,7 +200,7 @@ void idRender::DrawForwardLit( void ) {
 		}
 
 		// perform setup here that will be constant for all interactions
-		GL_State(GLS_SRCBLEND_ONE | GLS_DSTBLEND_ONE | GLS_DEPTHMASK | backEnd.depthFunc);
+		GL_State(GLS_SRCBLEND_SRC_ALPHA | GLS_DSTBLEND_ONE_MINUS_SRC_ALPHA );
 
 		// set the vertex pointers
 		idDrawVert* ac = (idDrawVert*)vertexCache.Position(drawSurf->geo->ambientCache);

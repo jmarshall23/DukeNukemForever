@@ -19,6 +19,10 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 	tri = surf->geo;
 	shader = surf->material;
 
+	if (!shader->ShouldRenderZPrepass()) {
+		return;
+	}
+
 	if (surf->forceTwoSided)
 	{
 		GL_Cull(CT_TWO_SIDED);

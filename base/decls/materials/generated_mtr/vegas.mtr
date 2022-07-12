@@ -4247,20 +4247,6 @@ textures/vegas/vegwaterani4RC
 	specularmap textures/vegas/vegwaterani4RC_spec.tga
 }
 
-textures/vegas/vegwaterani6RC
-{
-	diffusemap textures/vegas/vegwaterani6RC.tga
-	bumpmap textures/vegas/vegwaterani6RC_normal.tga
-	specularmap textures/vegas/vegwaterani6RC_spec.tga
-}
-
-textures/vegas/vegwateripple3RC
-{
-	diffusemap textures/vegas/vegwateripple3RC.tga
-	bumpmap textures/vegas/vegwateripple3RC_normal.tga
-	specularmap textures/vegas/vegwateripple3RC_spec.tga
-}
-
 textures/vegas/vegwaterripple4RC
 {
 	diffusemap textures/vegas/vegwaterripple4RC.tga

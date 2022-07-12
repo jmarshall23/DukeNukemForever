@@ -4,3 +4,51 @@ textures/vegas/sunbrst
 		videomap loop videos/sunbrst.bik
 	}
 }
+
+textures/vegas/vegwateripple3RC
+{
+	noZPresspass
+	noShadows
+	twoSided
+	customInteractionProgram interaction_water
+
+	diffusemap textures/vegas/vegwateripple3RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/vegas/vegwateripple3RC_spec.tga
+}
+
+textures/vegas/vegwaterani6RC
+{
+	noZPresspass
+	noShadows
+	twoSided
+	customInteractionProgram interaction_water
+
+	diffusemap textures/vegas/vegwaterani6RC.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/vegas/vegwaterani6RC_spec.tga
+}
+
+textures/Dam/waterwhite
+{
+	noZPresspass
+	noShadows
+	twoSided
+	customInteractionProgram interaction_water
+
+	diffusemap textures/Dam/waterwhite.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
+
+textures/t_generic/genwater2a
+{
+	noZPresspass
+	noShadows
+	twoSided
+	customInteractionProgram interaction_waterfall
+
+	diffusemap textures/t_generic/genwater2a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
