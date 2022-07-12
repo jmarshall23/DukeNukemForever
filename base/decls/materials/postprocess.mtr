@@ -14,6 +14,7 @@ postprocess/ssao
 		renderprog postprocess_ssao
 		screennormaltexture _frontEndRenderPassResolvedColor1
 		screenxyztexture _frontEndRenderPassResolvedColor2
+		screenmaterialtexture _frontEndRenderPassResolvedColor3
 		screendepthtexture _frontEndRenderPassResolvedDepth
 	}
 }

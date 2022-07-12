@@ -33,3 +33,18 @@ renderProg guiColor
 		finalpixel_color = vertex_texcoord0;
 	}
 }
+
+renderProg albedoNoSSAO
+{
+	vertex
+	{
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+		vertex_texcoord0 = attr_TexCoord0;
+	}
+
+	pixel
+	{
+		finalpixel_color = texture2D($albedotexture,vertex_texcoord0.st);
+		finalpixel_color4 = vec4(1.0, 0.0, 0.0, finalpixel_color.w);
+	}
+}

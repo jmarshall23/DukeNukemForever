@@ -177,6 +177,11 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 				}
 			}
 
+			if (pStage->texture.cinematic)
+			{
+				RB_BindVariableStageImage(&pStage->texture, nullptr);
+			}
+
 			newStage->renderProgram->Bind();
 		}
 		else {

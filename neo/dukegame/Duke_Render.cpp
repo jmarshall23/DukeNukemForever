@@ -12,8 +12,8 @@ dnGameLocal::InitGameRender
 */
 void dnGameLocal::InitGameRender(void)
 {
-	renderPlatform.frontEndPassRenderTarget = new DnFullscreenRenderTarget("frontEndRenderPass", true, true, true, FMT_RGBAF16, FMT_RGBAF16);
-	renderPlatform.frontEndPassRenderTargetResolved = new DnFullscreenRenderTarget("frontEndRenderPassResolved", true, true, false, FMT_RGBAF16, FMT_RGBAF16);
+	renderPlatform.frontEndPassRenderTarget = new DnFullscreenRenderTarget("frontEndRenderPass", true, true, true, FMT_RGBAF16, FMT_RGBAF16, FMT_RGBA8);
+	renderPlatform.frontEndPassRenderTargetResolved = new DnFullscreenRenderTarget("frontEndRenderPassResolved", true, true, false, FMT_RGBAF16, FMT_RGBAF16, FMT_RGBA8);
 
 	renderPlatform.upscaleFrontEndResolveMaterial = declManager->FindMaterial("postprocess/upScaleFrontEndResolve", false);
 	renderPlatform.ssaoMaterial = declManager->FindMaterial("postprocess/ssao", false);

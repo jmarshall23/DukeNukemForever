@@ -10,6 +10,11 @@ postprocess_ssao
 	{
 		vec2 texcoord = vertex_texcoord0.xy;
 
+		float skippass = texture2D($screenmaterialtexture, vertex_texcoord0.xy).x;
+		if(skippass != 0)
+			discard;
+		
+
 		const float total_strength = 1.5;
   const float base = 0.2;
   

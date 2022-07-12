@@ -153,6 +153,8 @@ renderProg interaction
 
 		finalpixel_color3.xyz = vertex.xyz;
 		finalpixel_color3.w = diffuseMap.w;
+
+		finalpixel_color4 = vec4(0.0, 0.0, 0.0, diffuseMap.w);
 	}
 }
 

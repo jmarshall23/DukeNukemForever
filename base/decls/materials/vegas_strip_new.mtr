@@ -1,6 +1,7 @@
 textures/vegas/sunbrst
 {
 	{
+		renderprog albedoNoSSAO
 		videomap loop videos/sunbrst.bik
 	}
 }
