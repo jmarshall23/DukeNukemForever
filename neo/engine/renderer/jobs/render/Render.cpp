@@ -390,8 +390,8 @@ void RB_BindVariableStageImage( const textureStage_t *texture, const float *shad
 		cin = texture->cinematic->ImageForTime( (int)(1000 * ( backEnd.viewDef->floatTime + backEnd.viewDef->renderView.shaderParms[11] ) ) );
 
 		if ( cin.image ) {
-			globalImages->scratchImage2->UploadScratch( cin.image, cin.imageWidth, cin.imageHeight );
-			tr.albedoTextureParam->SetImage(globalImages->scratchImage2);
+			texture->cinematic->GetRenderImage()->UploadScratch(cin.image, cin.imageWidth, cin.imageHeight);
+			tr.albedoTextureParam->SetImage(texture->cinematic->GetRenderImage());
 		} else {
 			//globalImages->blackImage->Bind();
 			tr.albedoTextureParam->SetImage(globalImages->blackImage);

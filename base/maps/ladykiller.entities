@@ -1,8 +1,8 @@
 // entity 0
 {
 "classname" "info_player_start"
-"name" "info_player_start_1"
-"origin" "-1800 1160 -512"
+"name" "info_player_start_2"
+"origin" "-6024 9504 -448"
 }
 // entity 1
 {
@@ -524,7 +524,7 @@
 "name" "func_static_58"
 "inline" "1"
 "origin" "0 0 0"
-"forceshader" "textures/SMK4/s_sunbrst"
+"forceshader" "textures/vegas/sunbrst"
 }
 // entity 59
 {

@@ -83,6 +83,9 @@ public:
 
 	// closes the file and frees all allocated memory
 	virtual void		ResetTime(int time) = 0;
+
+	// returns the render image for this cinematic.
+	virtual idImage*	GetRenderImage() = 0;
 };
 
 #endif /* !__CINEMATIC_H__ */

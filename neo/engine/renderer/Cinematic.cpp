@@ -41,17 +41,25 @@ If you have questions concerning this license or the applicable additional terms
 
 class idCinematicLocal : public idCinematic {
 public:
+	idCinematicLocal();
+	~idCinematicLocal();
+
+
 	virtual bool			InitFromFile( const char *qpath, bool looping );
 	virtual cinData_t		ImageForTime( int milliseconds );
 	virtual void			Close();
 	virtual void			ResetTime(int time);
 	virtual bool			IsDone() { return isDone; }
+
+	virtual idImage*		GetRenderImage() { return renderImage; }
 private:
 	HBINK Bink = 0;
 	HBINKBUFFER Bink_buffer = 0;
 	cinData_t currentFrameData;
 	bool isLooping = false;
 	bool isDone = false;
+
+	idImage* renderImage;
 };
 
 //===========================================
@@ -73,6 +81,36 @@ idCinematic::ShutdownCinematic
 void idCinematic::ShutdownCinematic(void) {
 
 }
+
+/*
+====================
+idCinematicLocal::idCinematicLocal
+====================
+*/
+idCinematicLocal::idCinematicLocal() {
+	renderImage = nullptr;
+	Bink = nullptr;
+}
+
+/*
+====================
+idCinematicLocal::~idCinematicLocal
+====================
+*/
+idCinematicLocal::~idCinematicLocal() {
+	if (renderImage)
+	{
+		renderImage->PurgeImage();
+		renderImage = nullptr;
+	}
+
+	if (Bink)
+	{
+		BinkClose(Bink);
+		Bink = nullptr;
+	}
+}
+
 /*
 ====================
 idCinematic::Alloc
@@ -103,6 +141,24 @@ bool idCinematicLocal::InitFromFile(const char* qpath, bool looping) {
 	currentFrameData.imageHeight = Bink->Height;
 	currentFrameData.image = new byte[Bink->Width * Bink->Height * 4];
 	currentFrameData.status = FMV_PLAY;
+
+	{
+		idImageOpts opts;
+		static int numRenderImages = 0;
+
+		opts.format = FMT_RGBA8;
+		opts.colorFormat = CFM_DEFAULT;
+		opts.numLevels = 1;
+		opts.textureType = TT_2D;
+		opts.isPersistant = true;
+		opts.width = Bink->Width;
+		opts.height = Bink->Height;
+		opts.numMSAASamples = 0;
+
+		renderImage = renderSystem->CreateImage(va("_binkMovie%d", numRenderImages++), &opts, TF_NEAREST);
+	}
+
+	
 
 	isDone = false;
 	isLooping = looping;

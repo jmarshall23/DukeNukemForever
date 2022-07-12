@@ -1,0 +1,6 @@
+textures/vegas/sunbrst
+{
+	{
+		videomap loop videos/sunbrst.bik
+	}
+}
