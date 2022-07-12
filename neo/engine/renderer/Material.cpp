@@ -1333,6 +1333,10 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 					{
 						src.ReadToken(&token);
 						idImage* image = globalImages->GetImage(token);
+						if (image == nullptr)
+						{
+							image = globalImages->ImageFromFile(token, TF_LINEAR, TR_REPEAT, TD_DIFFUSE);
+						}
 						newStage.stageParms[newStage.numStageParms++].imageValue = image;						
 					}
 					break;

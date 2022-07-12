@@ -49,4 +49,6 @@ renderParm screenxyztexture { texture }
 renderParm screendepthtexture { texture }
 renderParm screenmaterialtexture { texture }
 
+renderParm customMask { texture }
+
 renderParm genericinfo { float4 }
