@@ -246,6 +246,8 @@ void			idSysLocal::StartProcess( const char *exeName, bool quit ) { }
 
 void			idSysLocal::FPU_EnableExceptions( int exceptions ) { }
 void			idSysLocal::GetGameWindowInfo(int &, int &) { }
+void			idSysLocal::ShowSplashScreen(bool show) { };
+void			idSysLocal::ShowGameWindow(bool show) { };
 
 idSysLocal		sysLocal;
 idSys *			sys = &sysLocal;
