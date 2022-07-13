@@ -1,0 +1,1662 @@
+// entity 0
+{
+"classname" "info_player_start"
+"name" "info_player_start_1"
+"origin" "-864 2688 2288"
+}
+// entity 1
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_0.obj"
+"name" "func_static_0"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/girder_1tw"
+}
+// entity 2
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_1.obj"
+"name" "func_static_1"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/crack_baby6tw"
+}
+// entity 3
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_2.obj"
+"name" "func_static_2"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/metalwall1ABC"
+}
+// entity 4
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_3.obj"
+"name" "func_static_3"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/plas_off2"
+}
+// entity 5
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_4.obj"
+"name" "func_static_4"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/ed_whbrick3"
+}
+// entity 6
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_5.obj"
+"name" "func_static_5"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/hotel_gas/door_typetrimtw"
+}
+// entity 7
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_6.obj"
+"name" "func_static_6"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/vegas/vegelevator1eRC"
+}
+// entity 8
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_7.obj"
+"name" "func_static_7"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/alum_trim_2tw"
+}
+// entity 9
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_8.obj"
+"name" "func_static_8"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/fer_yelplate_5btw"
+}
+// entity 10
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_9.obj"
+"name" "func_static_9"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/sil_pan_1abtw"
+}
+// entity 11
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_10.obj"
+"name" "func_static_10"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/rail1BBC"
+}
+// entity 12
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_11.obj"
+"name" "func_static_11"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/tiptop_1tw"
+}
+// entity 13
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_12.obj"
+"name" "func_static_12"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/ramplight1ABC"
+}
+// entity 14
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_13.obj"
+"name" "func_static_13"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/bilbobag_1tw"
+}
+// entity 15
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_14.obj"
+"name" "func_static_14"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Airforcebase2/FakeBackground"
+}
+// entity 16
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_15.obj"
+"name" "func_static_15"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/plas_off3"
+}
+// entity 17
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_16.obj"
+"name" "func_static_16"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/ceiling7RC"
+}
+// entity 18
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_17.obj"
+"name" "func_static_17"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/pachinko_2btw"
+}
+// entity 19
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_18.obj"
+"name" "func_static_18"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/ceiling2BBC"
+}
+// entity 20
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_19.obj"
+"name" "func_static_19"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/buildingwall1RC"
+}
+// entity 21
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_20.obj"
+"name" "func_static_20"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/sil_pan_1actw"
+}
+// entity 22
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_21.obj"
+"name" "func_static_21"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/girder_2tw"
+}
+// entity 23
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_22.obj"
+"name" "func_static_22"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/sil_pan_1atw"
+}
+// entity 24
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_23.obj"
+"name" "func_static_23"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/hiv_2tw"
+}
+// entity 25
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_24.obj"
+"name" "func_static_24"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/sil_pan_1aatw"
+}
+// entity 26
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_25.obj"
+"name" "func_static_25"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/steelsupport1tw"
+}
+// entity 27
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_26.obj"
+"name" "func_static_26"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/cables1BC"
+}
+// entity 28
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_27.obj"
+"name" "func_static_27"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/fer_yelplate_2tw"
+}
+// entity 29
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_28.obj"
+"name" "func_static_28"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/moreconk_3tw"
+}
+// entity 30
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_29.obj"
+"name" "func_static_29"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/ac3base_2tw"
+}
+// entity 31
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_30.obj"
+"name" "func_static_30"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/outsidelight3bR"
+}
+// entity 32
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_31.obj"
+"name" "func_static_31"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Airforcebase2/ZonePortal"
+}
+// entity 33
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_32.obj"
+"name" "func_static_32"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/roof_pebble"
+}
+// entity 34
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_33.obj"
+"name" "func_static_33"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/vegas/genericblack1BC"
+}
+// entity 35
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_34.obj"
+"name" "func_static_34"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/cloud3aRC"
+}
+// entity 36
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_35.obj"
+"name" "func_static_35"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/pachinko_2tw"
+}
+// entity 37
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_36.obj"
+"name" "func_static_36"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Dam/damcontrol1RC"
+}
+// entity 38
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_37.obj"
+"name" "func_static_37"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Dam/Dam_grate1sah"
+}
+// entity 39
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_38.obj"
+"name" "func_static_38"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/tow_steel_1dbtw"
+}
+// entity 40
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_39.obj"
+"name" "func_static_39"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/goddamwall_1ctw"
+}
+// entity 41
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_40.obj"
+"name" "func_static_40"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/goddamwall_1tw"
+}
+// entity 42
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_41.obj"
+"name" "func_static_41"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/area51/a51_beam01sah"
+}
+// entity 43
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_42.obj"
+"name" "func_static_42"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/steelplate2"
+}
+// entity 44
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_43.obj"
+"name" "func_static_43"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/cem_snig1tw"
+}
+// entity 45
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_44.obj"
+"name" "func_static_44"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/pachinko_1tw"
+}
+// entity 46
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_45.obj"
+"name" "func_static_45"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/goddamwall_2tw"
+}
+// entity 47
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_46.obj"
+"name" "func_static_46"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/light3RC"
+}
+// entity 48
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_47.obj"
+"name" "func_static_47"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_2/ventbits_4tw"
+}
+// entity 49
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_48.obj"
+"name" "func_static_48"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/goddamvent_1atw"
+}
+// entity 50
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_49.obj"
+"name" "func_static_49"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/stinf_2tw"
+}
+// entity 51
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_50.obj"
+"name" "func_static_50"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/goddamhatch_1tw"
+}
+// entity 52
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_51.obj"
+"name" "func_static_51"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/yetmoreconk_1tw"
+}
+// entity 53
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_52.obj"
+"name" "func_static_52"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/crack_baby2tw"
+}
+// entity 54
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_53.obj"
+"name" "func_static_53"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/flo_con_3"
+}
+// entity 55
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_54.obj"
+"name" "func_static_54"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/flo_con_4"
+}
+// entity 56
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_55.obj"
+"name" "func_static_55"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Streets/Sign_Caution3"
+}
+// entity 57
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_56.obj"
+"name" "func_static_56"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/stratladder1aRC"
+}
+// entity 58
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_57.obj"
+"name" "func_static_57"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/emponly_1tw"
+}
+// entity 59
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_58.obj"
+"name" "func_static_58"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/welcome_1tw"
+}
+// entity 60
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_59.obj"
+"name" "func_static_59"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/cautffam_1tw"
+}
+// entity 61
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_60.obj"
+"name" "func_static_60"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/stratcpower3RC"
+}
+// entity 62
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_61.obj"
+"name" "func_static_61"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/voltage1tw"
+}
+// entity 63
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_62.obj"
+"name" "func_static_62"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/baseconk_2tw"
+}
+// entity 64
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_63.obj"
+"name" "func_static_63"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/crack_baby1tw"
+}
+// entity 65
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_64.obj"
+"name" "func_static_64"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/flo_con_2"
+}
+// entity 66
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_65.obj"
+"name" "func_static_65"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/parkinglot2RC"
+}
+// entity 67
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_66.obj"
+"name" "func_static_66"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/striplights2RC"
+}
+// entity 68
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_67.obj"
+"name" "func_static_67"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/TresureIslandRC"
+}
+// entity 69
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_68.obj"
+"name" "func_static_68"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/StratosphereRC"
+}
+// entity 70
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_69.obj"
+"name" "func_static_69"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentrgravel2RC"
+}
+// entity 71
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_70.obj"
+"name" "func_static_70"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/fence1RC"
+}
+// entity 72
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_71.obj"
+"name" "func_static_71"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/a51_base1/A51pnlshine1MW"
+}
+// entity 73
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_72.obj"
+"name" "func_static_72"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/assfault_2tw"
+}
+// entity 74
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_73.obj"
+"name" "func_static_73"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/stratrubble2RC"
+}
+// entity 75
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_74.obj"
+"name" "func_static_74"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentexconc1cRC"
+}
+// entity 76
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_75.obj"
+"name" "func_static_75"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/basefloort_2tw"
+}
+// entity 77
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_76.obj"
+"name" "func_static_76"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/hotel_gas/gar_wallinn2"
+}
+// entity 78
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_77.obj"
+"name" "func_static_77"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/gensunsetglow1c"
+}
+// entity 79
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_78.obj"
+"name" "func_static_78"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/gendes7RC"
+}
+// entity 80
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_79.obj"
+"name" "func_static_79"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentmarble4RC"
+}
+// entity 81
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_80.obj"
+"name" "func_static_80"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/yellno_3tw"
+}
+// entity 82
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_81.obj"
+"name" "func_static_81"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/cem_trimmle_1atw"
+}
+// entity 83
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_82.obj"
+"name" "func_static_82"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/t_generic/blastmarks1RC"
+}
+// entity 84
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_83.obj"
+"name" "func_static_83"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/gardop_1tw"
+}
+// entity 85
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_84.obj"
+"name" "func_static_84"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Dam/damcabsideRC"
+}
+// entity 86
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_85.obj"
+"name" "func_static_85"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentshelf2RC"
+}
+// entity 87
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_86.obj"
+"name" "func_static_86"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentmtlshelf1RC"
+}
+// entity 88
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_87.obj"
+"name" "func_static_87"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/t_generic/blastmarks2RC"
+}
+// entity 89
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_88.obj"
+"name" "func_static_88"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Airforcebase2/caution2ja"
+}
+// entity 90
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_89.obj"
+"name" "func_static_89"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dcasino/DCgurter1CBC"
+}
+// entity 91
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_90.obj"
+"name" "func_static_90"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/chainfence1tw"
+}
+// entity 92
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_91.obj"
+"name" "func_static_91"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/goopcarp_1tw"
+}
+// entity 93
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_92.obj"
+"name" "func_static_92"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentexnet1aRC"
+}
+// entity 94
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_93.obj"
+"name" "func_static_93"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentexnet1bRC"
+}
+// entity 95
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_94.obj"
+"name" "func_static_94"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/halfbits_3tw"
+}
+// entity 96
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_95.obj"
+"name" "func_static_95"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/scuffflor_1tw"
+}
+// entity 97
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_96.obj"
+"name" "func_static_96"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/clodstairs_1tw"
+}
+// entity 98
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_97.obj"
+"name" "func_static_97"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/glazziestw"
+}
+// entity 99
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_98.obj"
+"name" "func_static_98"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/stratcpower1aRC"
+}
+// entity 100
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_99.obj"
+"name" "func_static_99"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/stratcpower2RC"
+}
+// entity 101
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_100.obj"
+"name" "func_static_100"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/t_generic/genburnt1RC"
+}
+// entity 102
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_101.obj"
+"name" "func_static_101"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/smallfence1ABC"
+}
+// entity 103
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_102.obj"
+"name" "func_static_102"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/dirtmask_2tw"
+}
+// entity 104
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_103.obj"
+"name" "func_static_103"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/strairduct2RC"
+}
+// entity 105
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_104.obj"
+"name" "func_static_104"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/moreconk_3atw"
+}
+// entity 106
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_105.obj"
+"name" "func_static_105"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Airforcebase2/fireext1ja"
+}
+// entity 107
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_106.obj"
+"name" "func_static_106"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Dam/toolwall1BC"
+}
+// entity 108
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_107.obj"
+"name" "func_static_107"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Dam/toolwall2BC"
+}
+// entity 109
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_108.obj"
+"name" "func_static_108"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Dam/toolwall3BC"
+}
+// entity 110
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_109.obj"
+"name" "func_static_109"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/AirforceSmacks04/LightStrike01"
+}
+// entity 111
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_110.obj"
+"name" "func_static_110"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/lamp_trim"
+}
+// entity 112
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_111.obj"
+"name" "func_static_111"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/plas_off"
+}
+// entity 113
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_112.obj"
+"name" "func_static_112"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/whiteboard1ABC"
+}
+// entity 114
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_113.obj"
+"name" "func_static_113"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/detrit_2tw"
+}
+// entity 115
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_114.obj"
+"name" "func_static_114"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnModulation/flecks_3tw"
+}
+// entity 116
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_115.obj"
+"name" "func_static_115"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/momento_3tw"
+}
+// entity 117
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_116.obj"
+"name" "func_static_116"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Penthouse/pentfurdres1bRC"
+}
+// entity 118
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_117.obj"
+"name" "func_static_117"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/momento_1tw"
+}
+// entity 119
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_118.obj"
+"name" "func_static_118"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/papers1tw"
+}
+// entity 120
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_119.obj"
+"name" "func_static_119"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/deskdraw1tw"
+}
+// entity 121
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_120.obj"
+"name" "func_static_120"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/bullboard1tw"
+}
+// entity 122
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_121.obj"
+"name" "func_static_121"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/airforcebase/ceiling2ABC"
+}
+// entity 123
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_122.obj"
+"name" "func_static_122"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/dnMaskFX/glazzies2tw"
+}
+// entity 124
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_123.obj"
+"name" "func_static_123"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/a51_base1/A51b1sheets1RC"
+}
+// entity 125
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_124.obj"
+"name" "func_static_124"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/t_generic/genunbglass1RC"
+}
+// entity 126
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_125.obj"
+"name" "func_static_125"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/a51_base1/A51b1wdpaper2RC"
+}
+// entity 127
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_126.obj"
+"name" "func_static_126"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/Dam/damgenstrut2RC"
+}
+// entity 128
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_127.obj"
+"name" "func_static_127"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/fer_yelplate_6tw"
+}
+// entity 129
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_128.obj"
+"name" "func_static_128"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/fer_yelplate_5tw"
+}
+// entity 130
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_129.obj"
+"name" "func_static_129"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/fer_yelplate_2atw"
+}
+// entity 131
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_130.obj"
+"name" "func_static_130"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/met_trimmle1tw"
+}
+// entity 132
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_131.obj"
+"name" "func_static_131"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/tow_steel_1tw"
+}
+// entity 133
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_132.obj"
+"name" "func_static_132"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/ventythings_1tw"
+}
+// entity 134
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_133.obj"
+"name" "func_static_133"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/ventry_1tw"
+}
+// entity 135
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_134.obj"
+"name" "func_static_134"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/cem_stripped1tw"
+}
+// entity 136
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_135.obj"
+"name" "func_static_135"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/tow_steel_1atw"
+}
+// entity 137
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_136.obj"
+"name" "func_static_136"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/pachinko_2ctw"
+}
+// entity 138
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_137.obj"
+"name" "func_static_137"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/tow_steel_1btw"
+}
+// entity 139
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_138.obj"
+"name" "func_static_138"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/beano_met1tw"
+}
+// entity 140
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_139.obj"
+"name" "func_static_139"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/stratosfear/asphalted1_tw"
+}
+// entity 141
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_140.obj"
+"name" "func_static_140"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/drip_cem_2a"
+}
+// entity 142
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_141.obj"
+"name" "func_static_141"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_2/conkurb_1btw"
+}
+// entity 143
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_142.obj"
+"name" "func_static_142"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/goddamwall_1etw"
+}
+// entity 144
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_143.obj"
+"name" "func_static_143"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_2/conkurb_1abtw"
+}
+// entity 145
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_144.obj"
+"name" "func_static_144"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/area51/a51light8onRC"
+}
+// entity 146
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_145.obj"
+"name" "func_static_145"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/silobrick_6tw"
+}
+// entity 147
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_146.obj"
+"name" "func_static_146"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/holepeb_1tw"
+}
+// entity 148
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_147.obj"
+"name" "func_static_147"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/strstreet1aRC"
+}
+// entity 149
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_148.obj"
+"name" "func_static_148"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/parkinglotRC"
+}
+// entity 150
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_149.obj"
+"name" "func_static_149"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/AladingroundRC"
+}
+// entity 151
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_150.obj"
+"name" "func_static_150"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/Belagio2RC"
+}
+// entity 152
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_151.obj"
+"name" "func_static_151"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/BallysgroundRC"
+}
+// entity 153
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_152.obj"
+"name" "func_static_152"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/Ceasarsground2R"
+}
+// entity 154
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_153.obj"
+"name" "func_static_153"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/stripladykiller"
+}
+// entity 155
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_154.obj"
+"name" "func_static_154"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/striptreesRC"
+}
+// entity 156
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_155.obj"
+"name" "func_static_155"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/Mirage2RC"
+}
+// entity 157
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_156.obj"
+"name" "func_static_156"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/CeasarsRC"
+}
+// entity 158
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_157.obj"
+"name" "func_static_157"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/VolcanofireRC"
+}
+// entity 159
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_158.obj"
+"name" "func_static_158"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/BelagioRC"
+}
+// entity 160
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_159.obj"
+"name" "func_static_159"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/striplights4RC"
+}
+// entity 161
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_160.obj"
+"name" "func_static_160"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/MandaBayRC"
+}
+// entity 162
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_161.obj"
+"name" "func_static_161"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/MonteCarloRC"
+}
+// entity 163
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_162.obj"
+"name" "func_static_162"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/stripbridge6RC"
+}
+// entity 164
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_163.obj"
+"name" "func_static_163"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/stripbridge5RC"
+}
+// entity 165
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_164.obj"
+"name" "func_static_164"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/BelagiopartsRC"
+}
+// entity 166
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_165.obj"
+"name" "func_static_165"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/BoardwalkcasRC"
+}
+// entity 167
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_166.obj"
+"name" "func_static_166"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/NY_Exlibur_LuxR"
+}
+// entity 168
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_167.obj"
+"name" "func_static_167"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/strcars5RC"
+}
+// entity 169
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_168.obj"
+"name" "func_static_168"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/strcars4RC"
+}
+// entity 170
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_169.obj"
+"name" "func_static_169"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/strcars2RC"
+}
+// entity 171
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_170.obj"
+"name" "func_static_170"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/BallysRC"
+}
+// entity 172
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_171.obj"
+"name" "func_static_171"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/Volcano1aRC"
+}
+// entity 173
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_172.obj"
+"name" "func_static_172"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/Imp_Har_VenRC"
+}
+// entity 174
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_173.obj"
+"name" "func_static_173"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/FlamingoRC"
+}
+// entity 175
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_174.obj"
+"name" "func_static_174"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/roadblk1sirenbRC"
+}
+// entity 176
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_175.obj"
+"name" "func_static_175"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/edfroadblk1RC"
+}
+// entity 177
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_176.obj"
+"name" "func_static_176"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/Mgm_PoloRC"
+}
+// entity 178
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_177.obj"
+"name" "func_static_177"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/AladinRC"
+}
+// entity 179
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_178.obj"
+"name" "func_static_178"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/Luxorbeam2RC"
+}
+// entity 180
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_179.obj"
+"name" "func_static_179"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/skyboxes/LuxorglowRC"
+}
+// entity 181
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_180.obj"
+"name" "func_static_180"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/AirforceSmacks04/FanGood"
+}
+// entity 182
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_181.obj"
+"name" "func_static_181"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/fer_yelplate_5atw"
+}
+// entity 183
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_182.obj"
+"name" "func_static_182"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/ac3base_4tw"
+}
+// entity 184
+{
+"classname" "func_static"
+"model" "maps/penthouseb/plane_183.obj"
+"name" "func_static_183"
+"inline" "1"
+"origin" "0 0 0"
+"forceshader" "textures/EDF_1/ac3base_3tw"
+}
