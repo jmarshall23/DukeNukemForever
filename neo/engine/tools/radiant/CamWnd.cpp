@@ -86,12 +86,15 @@ CCamWnd::CCamWnd() {
 	worldDirty = true;
 	worldModel = NULL;
 	renderMode = false;
+	lastRenderMode = false;
 	rebuildMode = false;
 	entityMode = false;
 	animationMode = false;
 	selectMode = false;
 	soundMode = false;
 	saveValid = false;
+	ambientLightInfoParam = declManager->FindRenderParam("ambientLightInfo", false);
+
 	Cam_Init();
 }
 
@@ -951,6 +954,24 @@ void CCamWnd::Cam_Draw() {
 	// the editor uses opposite pitch convention
 	idMat3	axis = idAngles( -m_Camera.angles.pitch, m_Camera.angles.yaw, m_Camera.angles.roll ).ToMat3();
 	g_qeglobals.sw->PlaceListener( m_Camera.origin, axis, 0, Sys_Milliseconds(), "Undefined" );
+
+	if (lastRenderMode != renderMode)
+	{		
+		lastRenderMode = renderMode;
+	}
+
+	ambientLightInfoParam->SetVectorValue(idVec4(0.3, 0.3, 0.3, 3.0));
+
+	if (world_entity)
+	{
+		const char* v = ValueForKey(world_entity, "ambientlight");
+
+		idVec4 ambientLightValue;
+		if (GetVector4ForKey(world_entity, "ambientlight", ambientLightValue))
+		{
+			ambientLightInfoParam->SetVectorValue(ambientLightValue);
+		}
+	}
 
 	if (renderMode) {
 		Cam_Render();

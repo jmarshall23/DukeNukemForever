@@ -154,6 +154,7 @@ protected:
 	idRenderModel	*worldModel;		// createRawModel of the brush and patch geometry
 	bool	worldDirty;
 	bool	renderMode;
+	bool	lastRenderMode;
 	bool	rebuildMode;
 	bool	entityMode;
 	bool	selectMode;
@@ -179,6 +180,7 @@ protected:
 	idVec3 saveOrg;
 	idAngles saveAng;
 	bool saveValid;
+	rvmDeclRenderParam* ambientLightInfoParam;
 
 	// Generated message map functions
 protected:

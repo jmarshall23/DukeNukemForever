@@ -146,7 +146,9 @@ renderProg interaction
 #else
 
 #ifndef NO_LIGHT_PASS
-		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * 3.0) + 0.3);
+		vec4 ambientLight = $ambientLightInfo;
+
+		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * ambientLight.w) + ambientLight.xyz);
 #else
 		finalpixel_color.xyz = diffuseMap.xyz;
 #endif

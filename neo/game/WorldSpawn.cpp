@@ -78,8 +78,14 @@ void idWorldspawn::Spawn( void ) {
 		gamePortalSkyWorld = renderSystem->AllocRenderWorld();
 		gamePortalSkyWorld->InitFromMap(va("maps/%s", skybox.c_str()));
 	}
+// jmarshall end
 
-	
+// jmarshall - global ambient light.
+	// Set the global ambient light values.
+	rvmDeclRenderParam* ambientLightInfoParam = declManager->FindRenderParam("ambientLightInfo", false);;
+
+	idVec4 ambientLightInfo = spawnArgs.GetVec4("ambientlight", "0.3 0.3 0.3 3.0");
+	ambientLightInfoParam->SetVectorValue(ambientLightInfo);
 // jmarshall end
 
 	// disable stamina on hell levels
