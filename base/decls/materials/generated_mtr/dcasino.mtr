@@ -1013,13 +1013,6 @@ textures/dcasino/dcassign7aRC
 	specularmap textures/common/nospec.tga
 }
 
-textures/dcasino/dcassign7bRC
-{
-	diffusemap textures/dcasino/dcassign7bRC.tga
-	bumpmap textures/common/flatnormal.tga
-	specularmap textures/common/nospec.tga
-}
-
 textures/dcasino/dcaswallbotm1RC
 {
 	diffusemap textures/dcasino/dcaswallbotm1RC.tga

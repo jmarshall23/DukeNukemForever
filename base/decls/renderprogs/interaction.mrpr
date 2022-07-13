@@ -134,6 +134,11 @@ renderProg interaction
 		}		
 #endif // NO_LIGHT_PASS
 
+
+#ifdef EMISSIVE
+		diffuseMap.w *= length(diffuseMap.xyz);
+#endif
+
 		finalColor = clamp(finalColor, 0.0, 10.0);
 
 #ifdef SPEC_ONLY_TEST
