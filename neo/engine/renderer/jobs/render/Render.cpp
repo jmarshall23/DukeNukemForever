@@ -397,7 +397,7 @@ void RB_BindVariableStageImage( const textureStage_t *texture, const float *shad
 			tr.albedoTextureParam->SetImage(globalImages->blackImage);
 		}
 	} else {		
-		tr.albedoTextureParam->SetImage(texture->image);
+		tr.albedoTextureParam->SetImage(texture->image[0]);
 	}
 }
 
@@ -560,7 +560,16 @@ R_SetDrawInteractions
 */
 void R_SetDrawInteraction( const shaderStage_t *surfaceStage, const float *surfaceRegs,
 						  idImage **image, idVec4 matrix[2], float color[4] ) {
-	*image = surfaceStage->texture.image;
+	int animationId = ((int)(tr.frameShaderTime * 2.0f)) % MAX_ANIM_MAPS;
+
+
+	*image = surfaceStage->texture.image[animationId];
+
+	if (*image == nullptr)
+	{
+		*image = surfaceStage->texture.image[0];
+	}
+
 	if ( surfaceStage->texture.hasMatrix ) {
 		matrix[0][0] = surfaceRegs[surfaceStage->texture.matrix[0][0]];
 		matrix[0][1] = surfaceRegs[surfaceStage->texture.matrix[0][1]];

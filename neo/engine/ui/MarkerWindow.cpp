@@ -342,7 +342,7 @@ void idMarkerWindow::Activate(bool activate, idStr &act) {
 			}
 			const shaderStage_t *stage = background->GetStage(0);
 			if (stage) {
-				stage->texture.image->UploadScratch((byte*)imageBuff, 512, 64);			
+				stage->texture.image[0]->UploadScratch((byte*)imageBuff, 512, 64);
 			}
 			Mem_Free(imageBuff);
 		}

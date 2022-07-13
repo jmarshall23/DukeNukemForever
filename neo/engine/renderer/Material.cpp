@@ -201,12 +201,12 @@ idImage *idMaterial::GetEditorImage( void ) const {
 			int i;
 			for( i = 0; i < numStages; i++ ) {
 				if ( stages[i].lighting == SL_DIFFUSE ) {
-					editorImage = stages[i].texture.image;
+					editorImage = stages[i].texture.image[0];
 					break;
 				}
 			}
 			if ( !editorImage ) {
-				editorImage = stages[0].texture.image;
+				editorImage = stages[0].texture.image[0];
 			}
 		} else {
 			editorImage = globalImages->defaultImage;
@@ -933,7 +933,7 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 	textureUsage_t		td;
 	cubeFiles_t			cubeMap;
 	bool				allowPicmip;
-	char				imageName[MAX_IMAGE_NAME];
+	idStr				imageName[MAX_ANIM_MAPS];
 	int					a, b;
 	int					matrix[2][3];
 	newShaderStage_t	newStage;
@@ -986,7 +986,13 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 
 		if (  !token.Icmp( "map" ) ) {
 			str = R_ParsePastImageProgram( src );
-			idStr::Copynz( imageName, str, sizeof( imageName ) );
+			imageName[0] = str;
+			continue;
+		}
+
+		if (!token.Icmp("map2")) {
+			str = R_ParsePastImageProgram(src);
+			imageName[1] = str;
 			continue;
 		}
 
@@ -1042,20 +1048,6 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 			}
 			ts->cinematic = idCinematic::Alloc();
 			ts->cinematic->InitFromFile( token.c_str(), loop );
-			continue;
-		}
-
-		if ( !token.Icmp( "cubeMap" ) ) {
-			str = R_ParsePastImageProgram( src );
-			idStr::Copynz( imageName, str, sizeof( imageName ) );
-			cubeMap = CF_NATIVE;
-			continue;
-		}
-
-		if ( !token.Icmp( "cameraCubeMap" ) ) {
-			str = R_ParsePastImageProgram( src );
-			idStr::Copynz( imageName, str, sizeof( imageName ) );
-			cubeMap = CF_CAMERA;
 			continue;
 		}
 
@@ -1381,14 +1373,25 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 	}
 
 	// now load the image with all the parms we parsed
-	if ( imageName[0] ) {
-		ts->image = globalImages->ImageFromFile( imageName, tf, trp, td, cubeMap );
-		if ( !ts->image ) {
-			ts->image = globalImages->defaultImage;
+	for (int i = 0; i < MAX_ANIM_MAPS; i++)
+	{
+		if (i == 0)
+		{
+			if (imageName[0].Length() > 0) {
+				ts->image[0] = globalImages->ImageFromFile(imageName[0], tf, trp, td, cubeMap);
+				if (!ts->image[0]) {
+					ts->image[0] = globalImages->defaultImage;
+				}
+			}
+			else if (!ts->cinematic && !ts->dynamic && !ss->newStage) {
+				common->Warning("material '%s' had stage with no image", GetName());
+				ts->image[0] = globalImages->defaultImage;
+			}
 		}
-	} else if ( !ts->cinematic && !ts->dynamic && !ss->newStage ) {
-		common->Warning( "material '%s' had stage with no image", GetName() );
-		ts->image = globalImages->defaultImage;
+		else if (imageName[i].Length() > 0)
+		{
+			ts->image[i] = globalImages->ImageFromFile(imageName[i], tf, trp, td, cubeMap);
+		}
 	}
 }
 
@@ -2049,7 +2052,7 @@ bool idMaterial::Parse( const char *text, const int textLength ) {
 
 	for ( i = 0 ; i < numStages ; i++ ) {
 		shaderStage_t	*pStage = &pd->parseStages[i];
-		if ( pStage->texture.image == globalImages->currentRenderImage ) {
+		if ( pStage->texture.image[0] == globalImages->currentRenderImage ) {
 			if ( sort != SS_PORTAL_SKY ) {
 				sort = SS_POST_PROCESS;
 				coverage = MC_TRANSLUCENT;
@@ -2196,8 +2199,12 @@ void idMaterial::AddReference() {
 	for ( int i = 0; i < numStages; i++ ) {
 		shaderStage_t *s = &stages[i];
 
-		if ( s->texture.image ) {
-			s->texture.image->AddReference();
+		if ( s->texture.image[0]) {
+			s->texture.image[0]->AddReference();
+		}
+
+		if (s->texture.image[1]) {
+			s->texture.image[1]->AddReference();
 		}
 	}
 }
@@ -2332,7 +2339,7 @@ idMaterial::GetImageWidth
 */
 int idMaterial::GetImageWidth( void ) const {
 	assert( GetStage(0) && GetStage(0)->texture.image );
-	return GetStage(0)->texture.image->GetOpts().width;
+	return GetStage(0)->texture.image[0]->GetOpts().width;
 }
 
 /*
@@ -2342,7 +2349,7 @@ idMaterial::GetImageHeight
 */
 int idMaterial::GetImageHeight( void ) const {
 	assert( GetStage(0) && GetStage(0)->texture.image );
-	return GetStage(0)->texture.image->GetOpts().height;
+	return GetStage(0)->texture.image[0]->GetOpts().height;
 }
 
 /*
@@ -2459,7 +2466,7 @@ const char *idMaterial::ImageName( void ) const {
 	if ( numStages == 0 ) {
 		return "_scratch";
 	}
-	idImage	*image = stages[0].texture.image;
+	idImage	*image = stages[0].texture.image[0];
 	if ( image ) {
 		return image->GetName();
 	}

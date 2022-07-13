@@ -1153,20 +1153,6 @@ textures/penthouse/pentextbuild13R
 	specularmap textures/penthouse/pentextbuild13R_spec.tga
 }
 
-textures/penthouse/pentextbuild14a
-{
-	diffusemap textures/penthouse/pentextbuild14a.tga
-	bumpmap textures/penthouse/pentextbuild14a_normal.tga
-	specularmap textures/penthouse/pentextbuild14a_spec.tga
-}
-
-textures/penthouse/pentextbuild14b
-{
-	diffusemap textures/penthouse/pentextbuild14b.tga
-	bumpmap textures/penthouse/pentextbuild14b_normal.tga
-	specularmap textures/penthouse/pentextbuild14b_spec.tga
-}
-
 textures/penthouse/pentextbuild16R
 {
 	diffusemap textures/penthouse/pentextbuild16R.tga

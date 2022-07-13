@@ -336,10 +336,10 @@ static void R_RemoteRender( drawSurf_t *surf, textureStage_t *stage ) {
 	// copy this rendering to the image
 	stage->dynamicFrameCount = tr.frameCount;
 	if (!stage->image) {
-		stage->image = globalImages->scratchImage;
+		stage->image[0] = globalImages->scratchImage;
 	}
 
-	tr.CaptureRenderToImage( stage->image->GetName() );
+	tr.CaptureRenderToImage( stage->image[0]->GetName() );
 	tr.UnCrop();
 }
 
@@ -387,9 +387,9 @@ void R_MirrorRender( drawSurf_t *surf, textureStage_t *stage, idScreenRect sciss
 
 	// copy this rendering to the image
 	stage->dynamicFrameCount = tr.frameCount;
-	stage->image = globalImages->scratchImage;
+	stage->image[0] = globalImages->scratchImage;
 
-	tr.CaptureRenderToImage( stage->image->GetName() );
+	tr.CaptureRenderToImage( stage->image[0]->GetName() );
 	tr.UnCrop();
 }
 
@@ -437,9 +437,9 @@ void R_XrayRender( drawSurf_t *surf, textureStage_t *stage, idScreenRect scissor
 
 	// copy this rendering to the image
 	stage->dynamicFrameCount = tr.frameCount;
-	stage->image = globalImages->scratchImage2;
+	stage->image[0] = globalImages->scratchImage2;
 
-	tr.CaptureRenderToImage( stage->image->GetName() );
+	tr.CaptureRenderToImage( stage->image[0]->GetName() );
 	tr.UnCrop();
 }
 

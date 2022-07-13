@@ -373,7 +373,7 @@ void idGLDrawableMaterial::draw(int x, int y, int w, int h) {
 			gameEdit->ParseSpawnArgsToRenderLight( &spawnArgs, &parms );
 			lightDef = world->AddLightDef( &parms );
 
-			idImage *img = (mat->GetNumStages() > 0) ? mat->GetStage(0)->texture.image : mat->GetEditorImage();
+			idImage *img = (mat->GetNumStages() > 0) ? mat->GetStage(0)->texture.image[0] : mat->GetEditorImage();
 
 			if (img == NULL) {
 				common->Warning("Unable to load image for preview for %s", mat->GetName());
@@ -480,7 +480,7 @@ void idGLDrawableMaterial::setMedia(const char *name) {
 		if (material) {
 			const shaderStage_t *stage = (material->GetNumStages() > 0) ? material->GetStage(0) : NULL;
 			if (stage) {
-				img = stage->texture.image;
+				img = stage->texture.image[0];
 			} else {
 				img = material->GetEditorImage();
 			}

@@ -8,6 +8,34 @@ textures/vegas/sunbrst
 	}
 }
 
+textures/penthouse/pentextbuild14a
+{
+	customInteractionProgram interaction_nolight
+
+	{
+		blend diffusemap
+		map textures/penthouse/pentextbuild14a.tga
+		map2 textures/penthouse/pentextbuild14b.tga
+	}
+
+	bumpmap textures/penthouse/pentextbuild14a_normal.tga
+	specularmap textures/penthouse/pentextbuild14a_spec.tga
+}
+
+textures/penthouse/pentextbuild14b
+{
+	customInteractionProgram interaction_nolight
+
+	{
+		blend diffusemap
+		map textures/penthouse/pentextbuild14b.tga
+		map2 textures/penthouse/pentextbuild14a.tga
+	}
+
+	bumpmap textures/penthouse/pentextbuild14b_normal.tga
+	specularmap textures/penthouse/pentextbuild14b_spec.tga
+}
+
 
 textures/dcasino/dcassign7bRC
 {

@@ -169,6 +169,12 @@ renderProg interaction
 	}
 }
 
+renderProg interaction_nolight
+{
+	inherit interaction
+	define NO_LIGHT_PASS
+}
+
 renderProg interaction_emissive
 {
 	inherit interaction

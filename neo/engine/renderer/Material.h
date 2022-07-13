@@ -158,9 +158,10 @@ typedef enum {
 	TG_GLASSWARP
 } texgen_t;
 
+#define MAX_ANIM_MAPS   2
 typedef struct {
 	idCinematic *		cinematic;
-	idImage *			image;
+	idImage *			image[MAX_ANIM_MAPS];
 	texgen_t			texgen;
 	bool				hasMatrix;
 	int					matrix[2][3];	// we only allow a subset of the full projection matrix

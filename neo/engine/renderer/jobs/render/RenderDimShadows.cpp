@@ -133,9 +133,9 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			if(pStage == nullptr)
 				continue;
 
-			tr.albedoTextureParam->SetImage(pStage->texture.image);							
+			tr.albedoTextureParam->SetImage(pStage->texture.image[0]);
 
-			if (pStage->texture.image->IsTransparent())
+			if (pStage->texture.image[0]->IsTransparent())
 			{
 				tr.shadowMapAlbedoProgram->Bind();
 			}
