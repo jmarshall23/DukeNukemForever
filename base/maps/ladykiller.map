@@ -2,7 +2,7 @@ Version 2
 // entity 0
 {
 "classname" "worldspawn"
-"ambientlight" "0.1 0.05 0 3"
+"ambientlight" "0.3 0.261 0.192 3"
 // primitive 0
 {
  brushDef3
