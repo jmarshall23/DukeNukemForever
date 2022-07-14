@@ -100,6 +100,8 @@ public:
 	void SetProjectionMatrix();
 	void UpdateCameraView();
 
+	void Cam_Render(); // this is evil
+
 	void MapChange();
 
 	void BuildEntityRenderState( entity_t *ent, bool update, const renderView_t& renderView);
@@ -141,7 +143,6 @@ protected:
 	void InitCull();
 	bool CullBrush (brush_t *b, bool cubicOnly);
 	void Cam_Draw();
-	void Cam_Render();
 // jmarshall
 	void HandleDrop();
 	void OnEntityCreate(unsigned int nID);
