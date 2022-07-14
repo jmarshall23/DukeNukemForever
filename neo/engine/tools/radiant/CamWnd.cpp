@@ -1908,6 +1908,7 @@ void CCamWnd::Cam_Render() {
 	refdef.fov_x = 90;
 	refdef.fov_y = 2 * atan((float)m_Camera.height / m_Camera.width) * idMath::M_RAD2DEG;
 	refdef.time = eventLoop->Milliseconds();
+	refdef.isEditor = true;
 
 	// create the model, using explicit normals
 	BuildRendererState(refdef);

@@ -1039,7 +1039,7 @@ void idRender::RenderSingleView( const void *data ) {
 
 		tr.screenInfoParam->SetVectorValue(value);
 	}
-	else
+	else if(backEnd.viewDef->renderView.isEditor) // Editor can have full post processing disabled. 
 	{
 		idVec4 value;
 		value.Zero();		

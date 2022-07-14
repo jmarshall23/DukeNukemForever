@@ -247,6 +247,8 @@ typedef struct renderView_s {
 	bool					cramZNear;			// for cinematics, we want to set ZNear much lower
 	bool					forceUpdate;		// for an update 
 
+	bool					isEditor;
+
 	// time in milliseconds for shader effects and other time dependent rendering issues
 	int						time;
 	float					shaderParms[MAX_GLOBAL_SHADER_PARMS];		// can be used in any way by shader
