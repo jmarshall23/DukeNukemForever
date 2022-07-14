@@ -327,7 +327,7 @@ static HANDLE		hf;						/* file handle */
  =======================================================================================================================
  =======================================================================================================================
  */
-void OpenDialog(void) {
+bool OpenDialog(void) {
 	/* Obtain the system directory name and store it in szDirName. */
 	strcpy(szDirName, ValueForKey(g_qeglobals.d_project_entity, "mapspath"));
 	if (strlen(szDirName) == 0) {
@@ -356,7 +356,7 @@ void OpenDialog(void) {
 
 	/* Display the Open dialog box. */
 	if (!GetOpenFileName(&ofn)) {
-		return; // canceled
+		return false; // canceled
 	}
 
 	// Add the file in MRU. FIXME
@@ -370,6 +370,7 @@ void OpenDialog(void) {
 
 	g_PrefsDlg.SavePrefs();
 
+	return true;
 }
 
 /*

@@ -28,7 +28,7 @@ void DnLightComponent::Init(idEntity* parent, idVec3 radius, idVec3 color, bool 
 	args.SetVector("_color", color);
 	args.SetBool("noshadows", noShadows);
 
-	gameEdit->ParseSpawnArgsToRenderLight(&args, &renderLightParams);
+	gameLocal.ParseSpawnArgsToRenderLight(&args, &renderLightParams);
 	renderLightHandle = gameRenderWorld->AddLightDef(&renderLightParams);
 	parentEntity = parent;
 }

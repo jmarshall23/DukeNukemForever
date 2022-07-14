@@ -3590,6 +3590,7 @@ DrawProjectedLight
 ================
 */
 void DrawProjectedLight(brush_t *b, bool bSelected, bool texture) {
+#if 0 // jmarshall editor light debug
 	int		i;
 	idVec3	v1, v2, cross, vieworg, edge[8][2], v[4];
 	idVec3	target, start;
@@ -3693,6 +3694,7 @@ void DrawProjectedLight(brush_t *b, bool bSelected, bool texture) {
 	}
 
 	glPointSize(1);
+#endif
 }
 
 /*

@@ -83,6 +83,7 @@ void idRenderWindow::BuildAnimation(int time) {
 }
 
 void idRenderWindow::PreRender() {
+#if 0 // jmarshall
 	if (needsRender) {
 		world->InitFromMap( NULL );
 		idDict spawnArgs;
@@ -112,6 +113,7 @@ void idRenderWindow::PreRender() {
 		}
 		needsRender = false;
 	}
+#endif
 }
 
 void idRenderWindow::Render( int time ) {

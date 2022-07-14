@@ -117,13 +117,20 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	tr.specularTextureParam->SetImage(din->specularImage);
 
 	// draw it
-	if (din->surf->material->GetCustomInteractionProgram())
+	if (din->surf->space->entityDef->parms.isSelected)
 	{
-		din->surf->material->GetCustomInteractionProgram()->Bind();;
+		tr.interactionEditorSelectProgram->Bind();
 	}
 	else
 	{
-		tr.interactionProgram->Bind();
+		if (din->surf->material->GetCustomInteractionProgram())
+		{
+			din->surf->material->GetCustomInteractionProgram()->Bind();;
+		}
+		else
+		{
+			tr.interactionProgram->Bind();
+		}
 	}
 	RB_DrawElementsWithCounters( din->surf->geo );
 }

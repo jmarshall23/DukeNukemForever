@@ -43,6 +43,7 @@ file(GLOB dnGameFiles
      "dukegame/Weapons/*.cpp*"
      "dukegame/Renderer/*.cpp*"
      "dukegame/items/*.cpp*"
+     "dukegame/Editor/*.cpp*"
 )
 
 file(GLOB gameBaseFiles

@@ -3,6 +3,7 @@
 
 #include "GameSys/DukeCvar.h"
 #include "Renderer/DnFullscreenRenderTarget.h"
+#include "Duke_editor.h"
 
 //
 // DnRenderPlatform

@@ -100,6 +100,8 @@ public:
 	void SetProjectionMatrix();
 	void UpdateCameraView();
 
+	void MapChange();
+
 	void BuildEntityRenderState( entity_t *ent, bool update );
 	bool GetRenderMode() {
 		return renderMode;
@@ -152,6 +154,10 @@ protected:
 	// game renderer interaction
 	qhandle_t	worldModelDef;
 	idRenderModel	*worldModel;		// createRawModel of the brush and patch geometry
+	renderEntity_t	worldEntity;
+
+	float	projectionMatrix[16];
+
 	bool	worldDirty;
 	bool	renderMode;
 	bool	lastRenderMode;

@@ -93,6 +93,7 @@ CCamWnd::CCamWnd() {
 	selectMode = false;
 	soundMode = false;
 	saveValid = false;
+	worldModelDef = -1;
 	ambientLightInfoParam = declManager->FindRenderParam("ambientLightInfo", false);
 
 	Cam_Init();
@@ -455,6 +456,12 @@ void CCamWnd::Cam_BuildMatrix() {
 	m_Camera.vup.Normalize();
 	m_Camera.vpn.Normalize();
 	InitCull();
+}
+
+void CCamWnd::MapChange()
+{
+	worldModelDef = -1;
+	g_qeglobals.rw->InitFromMap(NULL);
 }
 
 /*
@@ -898,7 +905,7 @@ void CCamWnd::SetProjectionMatrix() {
 	float	xmin, xmax, ymin, ymax;
 	float	width, height;
 	float	zNear;
-	float	projectionMatrix[16];
+	
 
 	//
 	// set up projection matrix
@@ -934,8 +941,6 @@ void CCamWnd::SetProjectionMatrix() {
 	projectionMatrix[7] = 0;
 	projectionMatrix[11] = -1;
 	projectionMatrix[15] = 0;
-
-	glLoadMatrixf( projectionMatrix );
 #endif
 }
 
@@ -962,203 +967,49 @@ void CCamWnd::Cam_Draw() {
 
 	ambientLightInfoParam->SetVectorValue(idVec4(0.3, 0.3, 0.3, 3.0));
 
-	if (world_entity)
+	if (renderMode)
 	{
-		const char* v = ValueForKey(world_entity, "ambientlight");
-
-		idVec4 ambientLightValue;
-		if (GetVector4ForKey(world_entity, "ambientlight", ambientLightValue))
+		if (world_entity)
 		{
-			ambientLightInfoParam->SetVectorValue(ambientLightValue);
-		}
-	}
+			const char* v = ValueForKey(world_entity, "ambientlight");
 
-	if (renderMode) {
-		Cam_Render();
-	}
-
-	glViewport(0, 0, m_Camera.width, m_Camera.height);
-	glScissor(0, 0, m_Camera.width, m_Camera.height);
-	glClearColor(g_qeglobals.d_savedinfo.colors[COLOR_CAMERABACK][0], g_qeglobals.d_savedinfo.colors[COLOR_CAMERABACK][1], g_qeglobals.d_savedinfo.colors[COLOR_CAMERABACK][2], 0);
-
-	if (!renderMode) {
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	}
-
-	glDisable(GL_LIGHTING);
-	glMatrixMode(GL_PROJECTION);
-
-	SetProjectionMatrix();
-
-	glRotatef(-90, 1, 0, 0);	// put Z going up
-	glRotatef(90, 0, 0, 1);	// put Z going up
-	glRotatef(m_Camera.angles[0], 0, 1, 0);
-	glRotatef(-m_Camera.angles[1], 0, 0, 1);
-	glTranslatef(-m_Camera.origin[0], -m_Camera.origin[1], -m_Camera.origin[2]);
-
-	Cam_BuildMatrix();
-   
-	for (brush = active_brushes.next; brush != &active_brushes; brush = brush->next) {
-
-		if ( CullBrush(brush, false) ) {
-			continue;
-		}
-
-		if ( FilterBrush(brush) ) {
-			continue;
-		}
-
-		if (renderMode) {
-			if (!(entityMode && brush->owner->eclass->fixedsize)) {
-				continue;
+			idVec4 ambientLightValue;
+			if (GetVector4ForKey(world_entity, "ambientlight", ambientLightValue))
+			{
+				ambientLightInfoParam->SetVectorValue(ambientLightValue);
 			}
 		}
-
-		setGLMode(m_Camera.draw_mode);
-		Brush_Draw(brush);
+	}
+	else
+	{
+		// -1 ambient means no light pass. 
+		ambientLightInfoParam->SetVectorValue(idVec4(-1, -1, -1, -1));
 	}
 
+	g_qeglobals.rw->DebugClearLines(0);
+	g_qeglobals.rw->DebugClearPolygons(0);
 
-	//glDepthMask ( 1 ); // Ok, write now
-	glMatrixMode(GL_PROJECTION);
+	// DoomEdit originally grabbed the set projection matrix from the driver.
+	// This is obviously stupid but is required right now for entity selection.
+	// Please fix me.
+	{
+		glViewport(0, 0, m_Camera.width, m_Camera.height);
+		glScissor(0, 0, m_Camera.width, m_Camera.height);
 
-	glTranslatef(g_qeglobals.d_select_translate[0],g_qeglobals.d_select_translate[1],g_qeglobals.d_select_translate[2]);
+		glMatrixMode(GL_PROJECTION);
 
-	brush_t *pList = (g_bClipMode && g_pSplitList) ? g_pSplitList : &selected_brushes;
+		SetProjectionMatrix();
 
-	if (!renderMode) {
-		// draw normally
-		for (brush = pList->next; brush != pList; brush = brush->next) {
-			if (brush->pPatch) {
-				continue;
-			}
-			setGLMode(m_Camera.draw_mode);
-			Brush_Draw(brush, true);
-		}
+		glRotatef(-90, 1, 0, 0);	// put Z going up
+		glRotatef(90, 0, 0, 1);	// put Z going up
+		glRotatef(m_Camera.angles[0], 0, 1, 0);
+		glRotatef(-m_Camera.angles[1], 0, 0, 1);
+		glTranslatef(-m_Camera.origin[0], -m_Camera.origin[1], -m_Camera.origin[2]);
+
+		Cam_BuildMatrix();
 	}
-
-	// blend on top
-
-	setGLMode(m_Camera.draw_mode);
-	glDisable(GL_LIGHTING);
-	glColor4f( g_qeglobals.d_savedinfo.colors[COLOR_SELBRUSHES][0],g_qeglobals.d_savedinfo.colors[COLOR_SELBRUSHES][1],g_qeglobals.d_savedinfo.colors[COLOR_SELBRUSHES][2], 0.25f );
-	glEnable(GL_BLEND);
-	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	globalImages->BindNull();
-	for (brush = pList->next; brush != pList; brush = brush->next) {
-		if (brush->pPatch || brush->modelHandle > 0) {
-			Brush_Draw(brush, true);
-
-			// DHM - Nerve:: patch display lists/models mess with the state
-			glEnable(GL_BLEND);
-			glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
-			glColor4f( g_qeglobals.d_savedinfo.colors[COLOR_SELBRUSHES][0],g_qeglobals.d_savedinfo.colors[COLOR_SELBRUSHES][1],g_qeglobals.d_savedinfo.colors[COLOR_SELBRUSHES][2], 0.25f );
-			globalImages->BindNull();
-			continue;
-		}
-
-        if ( brush->owner->eclass->entityModel ) {
-            continue;
-        }
-
-		for (face = brush->brush_faces; face; face = face->next) {
-			Face_Draw(face);
-		}
-	}
-
-	int nCount = g_ptrSelectedFaces.GetSize();
-
-	if (!renderMode) {
-		for (int i = 0; i < nCount; i++) {
-			face_t	*selFace = reinterpret_cast < face_t * > (g_ptrSelectedFaces.GetAt(i));
-			Face_Draw(selFace);
-			DrawAxial(selFace);
-		}
-	} 
-
-	// non-zbuffered outline
-	glDisable(GL_BLEND);
-	glDisable(GL_DEPTH_TEST);
-	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
-	if (renderMode) {
-		glColor3f(1, 0, 0);
-		for (int i = 0; i < nCount; i++) {
-			face_t	*selFace = reinterpret_cast < face_t * > (g_ptrSelectedFaces.GetAt(i));
-			Face_Draw(selFace);
-		}
-	}
-
-	glColor3f(1, 1, 1);
-	for (brush = pList->next; brush != pList; brush = brush->next) {
-		if (brush->pPatch || brush->modelHandle > 0) {
-			continue;
-		}
-
-		for (face = brush->brush_faces; face; face = face->next) {
-			Face_Draw(face);
-		}
-	}
-	// edge / vertex flags
-	if (g_qeglobals.d_select_mode == sel_vertex) {
-		glPointSize(4);
-		glColor3f(0, 1, 0);
-		glBegin(GL_POINTS);
-		for (i = 0; i < g_qeglobals.d_numpoints; i++) {
-			glVertex3fv( g_qeglobals.d_points[i].ToFloatPtr() );
-		}
-
-		glEnd();
-		glPointSize(1);
-	}
-	else if (g_qeglobals.d_select_mode == sel_edge) {
-		float	*v1, *v2;
-
-		glPointSize(4);
-		glColor3f(0, 0, 1);
-		glBegin(GL_POINTS);
-		for (i = 0; i < g_qeglobals.d_numedges; i++) {
-			v1 = g_qeglobals.d_points[g_qeglobals.d_edges[i].p1].ToFloatPtr();
-			v2 = g_qeglobals.d_points[g_qeglobals.d_edges[i].p2].ToFloatPtr();
-			glVertex3f( (v1[0] + v2[0]) * 0.5f, (v1[1] + v2[1]) * 0.5f, (v1[2] + v2[2]) * 0.5f );
-		}
-
-		glEnd();
-		glPointSize(1);
-	}
-
-	g_splineList->draw (static_cast<bool>(g_qeglobals.d_select_mode == sel_addpoint || g_qeglobals.d_select_mode == sel_editpoint));
 	
-	if ( g_qeglobals.selectObject && (g_qeglobals.d_select_mode == sel_addpoint || g_qeglobals.d_select_mode == sel_editpoint) ) {
-		g_qeglobals.selectObject->drawSelection();
-	}
-
-	// draw pointfile
-	glEnable(GL_DEPTH_TEST);
-
-	DrawPathLines();
-
-	if (g_qeglobals.d_pointfile_display_list) {
-		Pointfile_Draw();
-	}
-
-	//
-	// bind back to the default texture so that we don't have problems elsewhere
-	// using/modifying texture maps between contexts
-	//
-	globalImages->BindNull();
-// jmarshall
-	glDisable(GL_TEXTURE_2D);
-// jmarshall end
-
-	glFinish();
-	QE_CheckOpenGLForErrors();
-
-	if (!renderMode) {
-		// clean up any deffered tri's
-		R_ToggleSmpFrame();
-	}
+	Cam_Render();
 }
 
 /*
@@ -1259,17 +1110,13 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 	Entity_UpdateSoundEmitter( ent );
 
 	// delete the existing def if we aren't creating a brand new world
-	if ( !update ) {
-		if ( ent->lightDef >= 0 ) {
-			g_qeglobals.rw->FreeLightDef( ent->lightDef );
-			ent->lightDef = -1;
-		}
-
-		if ( ent->modelDef >= 0 ) {
-			g_qeglobals.rw->FreeEntityDef( ent->modelDef );
-			ent->modelDef = -1;
-		}
-	}
+	//if ( !update ) {
+	//	if (ent->editorEntity)
+	//	{
+	//		gameEdit->FreeEditorEntity(ent->editorEntity);
+	//		ent->editorEntity = nullptr;
+	//	}
+	//}
 
 	// if an entity doesn't have any brushes at all, don't do anything
 	if ( ent->brushes.onext == &ent->brushes ) {
@@ -1279,6 +1126,15 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 	// if the brush isn't displayed (filtered or culled), don't do anything
 	if (FilterBrush(ent->brushes.onext)) {
 		return;
+	}
+
+	brush_t* b;
+	
+	bool isSelected = false;
+	for (b = ent->brushes.onext; b != &ent->brushes; b = b->onext) {
+		if (IsBrushSelected(b)) {
+			isSelected = true;
+		}
 	}
 
 	spawnArgs = ent->epairs;
@@ -1303,9 +1159,9 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 				Brush_ToTris( b, &tris, &mats, false, true);
 			}
 
-			if ( ent->modelDef >= 0 ) {
-				g_qeglobals.rw->FreeEntityDef( ent->modelDef );
-				ent->modelDef = -1;
+			if (ent->editorEntity) {
+				gameEdit->FreeEditorEntity(ent->editorEntity);
+				ent->editorEntity = nullptr;
 			}
 
 			idRenderModel *bmodel = renderModelManager->FindModel( name );
@@ -1330,22 +1186,13 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 			bmodel->FinishSurfaces();
 
 			renderModelManager->AddModel( bmodel );
+		} 
 
-			// FIXME: brush entities
-			gameEdit->ParseSpawnArgsToRenderEntity( &spawnArgs, &refent );
-
-			ent->modelDef = g_qeglobals.rw->AddEntityDef( &refent );
-
-		} else {
-			// use the game's epair parsing code so
-			// we can use the same renderEntity generation
-			gameEdit->ParseSpawnArgsToRenderEntity( &spawnArgs, &refent );
-						
-			if (ent->modelDef >= 0) {
-				g_qeglobals.rw->FreeEntityDef( ent->modelDef );
-			}
-			ent->modelDef = g_qeglobals.rw->AddEntityDef( &refent );
+		if (ent->editorEntity == nullptr) {
+			ent->editorEntity = gameEdit->AllocEditorEntity(g_qeglobals.rw, EDITOR_ENTITY_MODEL);
 		}
+
+		ent->editorEntity->Render(spawnArgs, isSelected);
 	}
 
 	// check for lightdefs
@@ -1359,20 +1206,11 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 	// use the game's epair parsing code so
 	// we can use the same renderLight generation
 
-	renderLight_t	lightParms;
-
-	gameEdit->ParseSpawnArgsToRenderLight( &spawnArgs, &lightParms );
-	lightParms.referenceSound = ent->soundEmitter;
-
-	if (update && ent->lightDef >= 0) {
-		g_qeglobals.rw->UpdateLightDef( ent->lightDef, &lightParms );
-	} else {
-		if (ent->lightDef >= 0) {
-			g_qeglobals.rw->FreeLightDef(ent->lightDef);
-		}
-		ent->lightDef = g_qeglobals.rw->AddLightDef( &lightParms );
+	if (ent->editorEntity == nullptr) {
+		ent->editorEntity = gameEdit->AllocEditorEntity(g_qeglobals.rw, EDITOR_ENTITY_LIGHT);
 	}
 
+	ent->editorEntity->Render(spawnArgs, isSelected);
 }
 
 void Tris_ToOBJ(const char *outFile, idTriList *tris, idMatList *mats) {
@@ -1706,21 +1544,24 @@ so it can be rendered by the game renderSystem
 =================
 */
 void CCamWnd::BuildRendererState() {
-	renderEntity_t	worldEntity;
 	entity_t	*ent;
 	brush_t		*brush;
 
-	FreeRendererState();
+	//FreeRendererState();
 
 	// the renderWorld holds all the references and defs
-	g_qeglobals.rw->InitFromMap( NULL );
+	//
+	//g_qeglobals.rw->InitFromMap( NULL );
 
 	// create the raw model for all the brushes
 	int numBrushes = 0;
 	int numSurfaces = 0;
 
 	// the renderModel for the world holds all the geometry that isn't in an entity
-	worldModel = renderModelManager->AllocModel();
+	if (!worldModel) {
+		worldModel = renderModelManager->AllocModel();
+	}
+
 	worldModel->InitEmpty( "EditorWorldModel" );
 
 	for ( brush_t *brushList = &active_brushes ; brushList ; 
@@ -1762,16 +1603,22 @@ void CCamWnd::BuildRendererState() {
 	// bound and clean the triangles
 	worldModel->FinishSurfaces();
 
-	// the worldEntity just has the handle for the worldModel
-	memset( &worldEntity, 0, sizeof( worldEntity ) );
-	worldEntity.hModel = worldModel;
-	worldEntity.axis = mat3_default;
-	worldEntity.shaderParms[0] = 1;
-	worldEntity.shaderParms[1] = 1;
-	worldEntity.shaderParms[2] = 1;
-	worldEntity.shaderParms[3] = 1;
-
-	worldModelDef = g_qeglobals.rw->AddEntityDef( &worldEntity );
+	if (worldModelDef == -1)
+	{
+		// the worldEntity just has the handle for the worldModel
+		memset(&worldEntity, 0, sizeof(worldEntity));
+		worldEntity.hModel = worldModel;
+		worldEntity.axis = mat3_default;
+		worldEntity.shaderParms[0] = 1;
+		worldEntity.shaderParms[1] = 1;
+		worldEntity.shaderParms[2] = 1;
+		worldEntity.shaderParms[3] = 1;
+		worldModelDef = g_qeglobals.rw->AddEntityDef(&worldEntity);
+	}
+	else
+	{
+		g_qeglobals.rw->UpdateEntityDef(worldModelDef , &worldEntity);
+	}
 
 	// create the light and model entities exactly the way the game code would
 	for ( ent = entities.next ; ent != &entities ; ent = ent->next ) {
@@ -1792,7 +1639,7 @@ void CCamWnd::BuildRendererState() {
 
 	//common->Printf("Render data used %d brushes\n", numBrushes);
 	worldDirty = false;
-	UpdateCaption();
+	//UpdateCaption();
 }
 
 /*
@@ -1811,8 +1658,8 @@ bool CCamWnd::UpdateRenderEntities() {
 
 	bool ret = false;
 	for ( entity_t *ent = entities.next ; ent != &entities ; ent = ent->next ) {
-		BuildEntityRenderState( ent, (ent->lightDef != -1 || ent->modelDef != -1 || ent->soundEmitter ) ? true : false );
-		if (ret == false && ent->modelDef || ent->lightDef) {
+		BuildEntityRenderState( ent, (ent->editorEntity != nullptr ) ? true : false );
+		if (ret == false && ent->editorEntity) {
 			ret = true;
 		}
 	}
@@ -1829,25 +1676,9 @@ CCamWnd::FreeRendererState
 void CCamWnd::FreeRendererState() {
 
 	for ( entity_t *ent = entities.next ; ent != &entities ; ent = ent->next ) {
-		if (ent->lightDef >= 0) {
-			g_qeglobals.rw->FreeLightDef( ent->lightDef );
-			ent->lightDef = -1;
-		}
-
-		if (ent->modelDef >= 0) {
-			renderEntity_t *refent = const_cast<renderEntity_t *>(g_qeglobals.rw->GetRenderEntity( ent->modelDef ));
-			if ( refent ) {
-				if ( refent->callbackData ) {
-					Mem_Free( refent->callbackData );
-					refent->callbackData = NULL;
-				}
-				if ( refent->joints ) {
-					Mem_Free16(refent->joints);
-					refent->joints = NULL;
-				}
-			}
-			g_qeglobals.rw->FreeEntityDef( ent->modelDef );
-			ent->modelDef = -1;
+		if (ent->editorEntity != nullptr) {
+			gameEdit->FreeEditorEntity(ent->editorEntity);
+			ent->editorEntity = nullptr;
 		}
 	}
 
@@ -1998,7 +1829,7 @@ CCamWnd::DrawEntityData
 extern void glBox(idVec4 &color, idVec3 &point, float size);
 
 void CCamWnd::DrawEntityData() {
-
+#if 0
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
 	glMatrixMode( GL_PROJECTION );
@@ -2049,7 +1880,7 @@ void CCamWnd::DrawEntityData() {
 		pass++;
 		glColor3fv( color.ToFloatPtr() );
 	}
-
+#endif
 }
 
 
@@ -2085,9 +1916,7 @@ void CCamWnd::Cam_Render() {
 	//	qwglSwapBuffers(dc.m_hDC);
 
 	// create the model, using explicit normals
-	if ( rebuildMode && worldDirty ) {
-		BuildRendererState();
-	}
+	BuildRendererState();
 
 	// render it
 	renderSystem->BeginFrame( m_Camera.width, m_Camera.height );
@@ -2122,7 +1951,6 @@ void CCamWnd::Cam_Render() {
 	// get back to the editor state
 	glMatrixMode( GL_MODELVIEW );
 	glLoadIdentity();
-	Cam_BuildMatrix();
 }
 
 

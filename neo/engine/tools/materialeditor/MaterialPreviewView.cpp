@@ -205,37 +205,7 @@ idGLDrawableView::~idGLDrawableView() {
 }
 
 void idGLDrawableView::ResetView( void ) {
-	idDict			spawnArgs;
-
-	InitWorld();
-
-	memset( &worldEntity, 0, sizeof( worldEntity ) );
-	spawnArgs.Clear();
-	spawnArgs.Set("classname", "func_static");
-	spawnArgs.Set("name", spawnArgs.GetString("model"));
-	spawnArgs.Set("origin", "0 0 0");
-
-	gameEdit->ParseSpawnArgsToRenderEntity(&spawnArgs, &worldEntity);
-
-	// load a model and set the current material as its customshader
-	worldModel = renderModelManager->FindModel("models/materialeditor/cube128.ase");
-	worldEntity.hModel = worldModel;
-
-	// current material
-	worldEntity.customShader = material;
-
-	// current rotation
-	worldEntity.axis = mat3_identity;
-
-	// set global shader parms
-	memset( globalParms, 0, sizeof( globalParms ) );
-	globalParms[0] = globalParms[1] = globalParms[2] = globalParms[3] = 1.f;
-
-	worldEntity.shaderParms[0] = 1.f;
-	worldEntity.shaderParms[1] = 1.f;
-	worldEntity.shaderParms[2] = 1.f;
-	worldEntity.shaderParms[3] = 1.f;
-	modelDefHandle = world->AddEntityDef( &worldEntity );
+	
 }
 
 void idGLDrawableView::InitWorld() {
@@ -357,33 +327,7 @@ void idGLDrawableView::mouseMove(float x, float y) {
 }
 
 void idGLDrawableView::addLight( void ) {
-	int				lightId;
-	idStr			str;
-	lightInfo_t		viewLight;
-	idDict			spawnArgs;
-
-	lightId = viewLights.Num();
-
-	spawnArgs.Set( "classname", "light" );
-	spawnArgs.Set( "name", va( "light_%d", lightId ) );
-	spawnArgs.Set( "origin", va( "-128 0 %d", (lightId * 16) ) );
-	spawnArgs.Set( "light", "300" );
-	spawnArgs.Set( "texture", "lights/defaultPointLight" );
-	sprintf( str, "%f %f %f", 1.f, 1.f, 1.f );
-	spawnArgs.Set( "_color", str );
-	gameEdit->ParseSpawnArgsToRenderLight( &spawnArgs, &viewLight.renderLight );
-
-	viewLight.lightDefHandle = world->AddLightDef( &viewLight.renderLight );
-	viewLight.origin = viewLight.renderLight.origin;
-	viewLight.shader = declManager->FindMaterial( "lights/defaultPointLight", false );
-	viewLight.color.x = viewLight.renderLight.shaderParms[ SHADERPARM_RED ];
-	viewLight.color.y = viewLight.renderLight.shaderParms[ SHADERPARM_GREEN ];
-	viewLight.color.z = viewLight.renderLight.shaderParms[ SHADERPARM_BLUE ];
-	viewLight.radius = 300.f;
-	viewLight.allowMove = true;
-
-	// Add light to the list
-	viewLights.Append( viewLight );
+	
 }
 
 void idGLDrawableView::deleteLight( const int lightId ) {

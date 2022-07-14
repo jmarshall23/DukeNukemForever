@@ -474,8 +474,7 @@ entity_t *Entity_New() {
 	ent->lightRotation.Identity();
 	ent->trackLightOrigin = false;
 	ent->rotation.Identity();
-	ent->lightDef = -1;
-	ent->modelDef = -1;
+	ent->editorEntity = nullptr;
 	ent->soundEmitter = NULL;
 	ent->curve = NULL;
 	return ent;
@@ -573,7 +572,6 @@ entity_t *Entity_PostParse(entity_t *ent, brush_t *pList) {
 
 	bool needsOrigin = !GetVectorForKey(ent, "origin", ent->origin);
 	const char	*pModel = ValueForKey(ent, "model");
-	const char* forceShaderStr = ValueForKey(ent, "forceshader");
 
 	const char *cp = ValueForKey(ent, "classname");
 
@@ -658,20 +656,6 @@ entity_t *Entity_PostParse(entity_t *ent, brush_t *pList) {
 		if (hasModel) {
 			// model entity
 			idRenderModel *modelHandle = renderModelManager->FindModel( pModel );
-
-			if (forceShaderStr)
-			{
-				const idMaterial* mat = declManager->FindMaterial(forceShaderStr, false);
-				if (mat)
-				{
-					for (int u = 0; u < modelHandle->NumSurfaces(); u++)
-					{
-						idModelSurface* surf = (idModelSurface*)modelHandle->Surface(u);
-
-						surf->shader = mat;
-					}
-				}
-			}
 
 			if ( dynamic_cast<idRenderModelPrt*>( modelHandle ) || dynamic_cast<idRenderModelLiquid*>( modelHandle ) ) {
 				bo.Zero();
@@ -1383,35 +1367,7 @@ Creates or updates the soundEmitter if needed
 ====================
 */
 void Entity_UpdateSoundEmitter( entity_t *ent ) {
-	bool	playing = false;
-
-	// if an entity doesn't have any brushes at all, don't do anything
-	// if the brush isn't displayed (filtered or culled), don't do anything
-	if ( g_pParentWnd->GetCamera()->GetSoundMode() 
-		&& ent->brushes.onext != &ent->brushes && !FilterBrush(ent->brushes.onext) ) {
-		// check for sounds
-		const char *v = ValueForKey( ent, "s_shader" );
-		if ( v[0] ) {
-			refSound_t	sound;
-
-			gameEdit->ParseSpawnArgsToRefSound( &ent->epairs, &sound );
-			if ( !sound.waitfortrigger ) {	// waitfortrigger will not start playing immediately
-				if ( !ent->soundEmitter ) {
-					ent->soundEmitter = g_qeglobals.sw->AllocSoundEmitter();
-				}
-				playing = true;
-				ent->soundEmitter->UpdateEmitter( ent->origin, 0, &sound.parms );
-				// always play on a single channel, so updates always override
-				ent->soundEmitter->StartSound( sound.shader, SCHANNEL_ONE );
-			}
-		}
-	}
-
-	// delete the soundEmitter if not used
-	if ( !playing && ent->soundEmitter ) {
-		ent->soundEmitter->Free( true );
-		ent->soundEmitter = NULL;
-	}
+	
 
 }
 

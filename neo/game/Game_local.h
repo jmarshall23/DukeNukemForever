@@ -544,6 +544,10 @@ public:
 
 	idEntity*				GetEntity(const char* name);
 
+	void					ParseSpawnArgsToRenderLight(const idDict* args, renderLight_t* renderLight);
+	void					ParseSpawnArgsToRenderEntity(const idDict* args, renderEntity_t* renderEntity);
+	void					ParseSpawnArgsToRefSound(const idDict* args, refSound_t* refSound);
+
 private:
 	const static int		INITIAL_SPAWN_COUNT = 1;
 

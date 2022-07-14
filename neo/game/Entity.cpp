@@ -219,14 +219,14 @@ void AddRenderGui( const char *name, idUserInterface **gui, const idDict *args )
 
 /*
 ================
-idGameEdit::ParseSpawnArgsToRenderEntity
+idGameLocal::ParseSpawnArgsToRenderEntity
 
 parse the static model parameters
 this is the canonical renderEntity parm parsing,
 which should be used by dmap and the editor
 ================
 */
-void idGameEdit::ParseSpawnArgsToRenderEntity( const idDict *args, renderEntity_t *renderEntity ) {
+void idGameLocal::ParseSpawnArgsToRenderEntity( const idDict *args, renderEntity_t *renderEntity ) {
 	int			i;
 	const char	*temp;
 	idVec3		color;
@@ -279,6 +279,13 @@ void idGameEdit::ParseSpawnArgsToRenderEntity( const idDict *args, renderEntity_
 
 	renderEntity->referenceSound = NULL;
 
+	const char* forceShaderStr = args->GetString("forceshader", "");
+
+	if (forceShaderStr[0])
+	{
+		renderEntity->customShader = declManager->FindMaterial(forceShaderStr, false);
+	}
+
 	// get shader parms
 	args->GetVector( "_color", "1 1 1", color );
 	renderEntity->shaderParms[ SHADERPARM_RED ]		= color[0];
@@ -314,14 +321,14 @@ void idGameEdit::ParseSpawnArgsToRenderEntity( const idDict *args, renderEntity_
 
 /*
 ================
-idGameEdit::ParseSpawnArgsToRefSound
+idGameLocal::ParseSpawnArgsToRefSound
 
 parse the sound parameters
 this is the canonical refSound parm parsing,
 which should be used by dmap and the editor
 ================
 */
-void idGameEdit::ParseSpawnArgsToRefSound( const idDict *args, refSound_t *refSound ) {
+void idGameLocal::ParseSpawnArgsToRefSound( const idDict *args, refSound_t *refSound ) {
 	const char	*temp;
 
 	memset( refSound, 0, sizeof( *refSound ) );
@@ -487,7 +494,7 @@ void idEntity::Spawn( void ) {
 	FixupLocalizedStrings();
 
 	// parse static models the same way the editor display does
-	gameEdit->ParseSpawnArgsToRenderEntity( &spawnArgs, &renderEntity );
+	gameLocal.ParseSpawnArgsToRenderEntity( &spawnArgs, &renderEntity );
 
 	renderEntity.entityNum = entityNumber;
 	
@@ -510,7 +517,7 @@ void idEntity::Spawn( void ) {
 	axis = renderEntity.axis;
 
 	// do the audio parsing the same way dmap and the editor do
-	gameEdit->ParseSpawnArgsToRefSound( &spawnArgs, &refSound );
+	gameLocal.ParseSpawnArgsToRefSound( &spawnArgs, &refSound );
 
 	// only play SCHANNEL_PRIVATE when sndworld->PlaceListener() is called with this listenerId
 	// don't spatialize sounds from the same entity

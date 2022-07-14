@@ -675,7 +675,7 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 	}
 	else
 	{
-		GL_Cull(CT_FRONT_SIDED);
+		GL_Cull(surf->material->GetCullType());
 	}
 
 	// change the matrix if needed
@@ -1035,6 +1035,14 @@ void idRender::RenderSingleView( const void *data ) {
 		value.Zero();
 		value.x = backEnd.renderTexture->GetWidth();
 		value.y = backEnd.renderTexture->GetHeight();
+		value.z = tr.frameCount;
+
+		tr.screenInfoParam->SetVectorValue(value);
+	}
+	else
+	{
+		idVec4 value;
+		value.Zero();		
 		value.z = tr.frameCount;
 
 		tr.screenInfoParam->SetVectorValue(value);

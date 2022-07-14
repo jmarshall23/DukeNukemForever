@@ -9,7 +9,7 @@
 
 	589 constants
 	57 enums
-	303 classes/structs/unions
+	305 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -2128,6 +2128,18 @@ static classVariableInfo_t DnFullscreenRenderTarget_typeInfo[] = {
 	{ "idImage *", "depthImage", (intptr_t)(&((DnFullscreenRenderTarget *)0)->depthImage), sizeof( ((DnFullscreenRenderTarget *)0)->depthImage ) },
 	{ "idRenderTexture *", "renderTexture", (intptr_t)(&((DnFullscreenRenderTarget *)0)->renderTexture), sizeof( ((DnFullscreenRenderTarget *)0)->renderTexture ) },
 	{ "int", "numMultiSamples", (intptr_t)(&((DnFullscreenRenderTarget *)0)->numMultiSamples), sizeof( ((DnFullscreenRenderTarget *)0)->numMultiSamples ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t dnEditorLight_typeInfo[] = {
+	{ ": qhandle_t", "renderLightHandle", (intptr_t)(&((dnEditorLight *)0)->renderLightHandle), sizeof( ((dnEditorLight *)0)->renderLightHandle ) },
+	{ "renderLight_t", "renderLightParams", (intptr_t)(&((dnEditorLight *)0)->renderLightParams), sizeof( ((dnEditorLight *)0)->renderLightParams ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t dnEditorModel_typeInfo[] = {
+	{ ": qhandle_t", "renderEntityHandle", (intptr_t)(&((dnEditorModel *)0)->renderEntityHandle), sizeof( ((dnEditorModel *)0)->renderEntityHandle ) },
+	{ "renderEntity_t", "renderEntityParams", (intptr_t)(&((dnEditorModel *)0)->renderEntityParams), sizeof( ((dnEditorModel *)0)->renderEntityParams ) },
 	{ NULL, 0 }
 };
 
@@ -4796,6 +4808,8 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "rvmGameDelayRemoveEntry_t", "", sizeof(rvmGameDelayRemoveEntry_t), rvmGameDelayRemoveEntry_t_typeInfo },
 	{ "idGameLocal", "idGame", sizeof(idGameLocal), idGameLocal_typeInfo },
 	{ "DnFullscreenRenderTarget", "", sizeof(DnFullscreenRenderTarget), DnFullscreenRenderTarget_typeInfo },
+	{ "dnEditorLight", "dnEditorEntity", sizeof(dnEditorLight), dnEditorLight_typeInfo },
+	{ "dnEditorModel", "dnEditorEntity", sizeof(dnEditorModel), dnEditorModel_typeInfo },
 	{ "DnRenderPlatform", "", sizeof(DnRenderPlatform), DnRenderPlatform_typeInfo },
 	{ "dnGameLocal", "idGameLocal", sizeof(dnGameLocal), dnGameLocal_typeInfo },
 	{ "idGameError", "idException", sizeof(idGameError), idGameError_typeInfo },

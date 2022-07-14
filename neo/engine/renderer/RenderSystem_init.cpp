@@ -1927,6 +1927,7 @@ void idRenderSystemLocal::Init( void ) {
 	guiTextureProgram = FindRenderProgram("guiTexture");
 	guiColorProgram = FindRenderProgram("guiColor");
 	interactionProgram = FindRenderProgram("interaction");
+	interactionEditorSelectProgram = FindRenderProgram("interaction_editorsel");
 	shadowMapProgram = FindRenderProgram("shadowmap");
 	occluderProgram = FindRenderProgram("occluder");
 

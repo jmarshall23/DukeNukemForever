@@ -1819,7 +1819,7 @@ void CMainFrame::OnSize(UINT nType, int cx, int cy) {
 	}
 }
 
-void	OpenDialog(void);
+bool	OpenDialog(void);
 void	SaveAsDialog(bool bRegion);
 void	Select_Ungroup();
 
@@ -1868,6 +1868,7 @@ void CMainFrame::OnFileLoadproject() {
 void CMainFrame::OnFileNew() {
 	if (ConfirmModified()) {
 		Map_New();
+		m_pCamWnd->MapChange();
 	}
 }
 
@@ -1877,7 +1878,10 @@ void CMainFrame::OnFileNew() {
  */
 void CMainFrame::OnFileOpen() {
 	if (ConfirmModified()) {
-		OpenDialog();
+		if (OpenDialog())
+		{
+			m_pCamWnd->MapChange();
+		}
 	}
 }
 

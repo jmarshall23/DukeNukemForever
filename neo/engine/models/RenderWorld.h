@@ -164,6 +164,8 @@ struct renderEntity_t {
 	float					customFOV;
 	float					fov_x;
 	float					fov_y;
+
+	bool					isSelected;
 // jmarshall end
 
 };

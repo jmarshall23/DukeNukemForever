@@ -1907,20 +1907,6 @@ void idMaterial::ParseMaterial( idLexer &src ) {
 	// shouldCreateBackSides() and change culling back to single sided,
 	// so we get proper tangent vectors on both sides
 
-	// we can't just call ReceivesLighting(), because the stages are still
-	// in temporary form
-	if ( cullType == CT_TWO_SIDED ) {
-		for ( i = 0 ; i < numStages ; i++ ) {
-			if ( pd->parseStages[i].lighting != SL_AMBIENT || pd->parseStages[i].texture.texgen != TG_EXPLICIT ) {
-				if ( cullType == CT_TWO_SIDED ) {
-					cullType = CT_FRONT_SIDED;
-					shouldCreateBackSides = true;
-				}
-				break;
-			}
-		}
-	}
-
 	// currently a surface can only have one unique texgen for all the stages on old hardware
 	texgen_t firstGen = TG_EXPLICIT;
 	for ( i = 0; i < numStages; i++ ) {

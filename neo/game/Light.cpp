@@ -77,7 +77,7 @@ this is the canonical renderLight parm parsing,
 which should be used by dmap and the editor
 ================
 */
-void idGameEdit::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t *renderLight ) {
+void idGameLocal::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t *renderLight ) {
 	bool	gotTarget, gotUp, gotRight;
 	const char	*texture;
 	idVec3	color;
@@ -188,12 +188,12 @@ void idLight::UpdateChangeableSpawnArgs( const idDict *source ) {
 		source->Print();
 	}
 	FreeSoundEmitter( true );
-	gameEdit->ParseSpawnArgsToRefSound( source ? source : &spawnArgs, &refSound );
+	gameLocal.ParseSpawnArgsToRefSound( source ? source : &spawnArgs, &refSound );
 	if ( refSound.shader && !refSound.waitfortrigger ) {
 		StartSoundShader( refSound.shader, SND_CHANNEL_ANY, 0, false, NULL );
 	}
 
-	gameEdit->ParseSpawnArgsToRenderLight( source ? source : &spawnArgs, &renderLight );
+	gameLocal.ParseSpawnArgsToRenderLight( source ? source : &spawnArgs, &renderLight );
 
 	UpdateVisuals();
 }
@@ -244,7 +244,7 @@ void idLight::Spawn( void ) {
 	const char *demonic_shader;
 
 	// do the parsing the same way dmap and the editor do
-	gameEdit->ParseSpawnArgsToRenderLight( &spawnArgs, &renderLight );
+	gameLocal.ParseSpawnArgsToRenderLight( &spawnArgs, &renderLight );
 
 	// we need the origin and axis relative to the physics origin/axis
 	localLightOrigin = ( renderLight.origin - GetPhysics()->GetOrigin() ) * GetPhysics()->GetAxis().Transpose();

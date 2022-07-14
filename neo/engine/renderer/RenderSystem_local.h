@@ -633,6 +633,7 @@ public:
 	rvmDeclRenderProg*		guiTextureProgram;
 	rvmDeclRenderProg*		guiColorProgram;
 	rvmDeclRenderProg*		interactionProgram;
+	rvmDeclRenderProg*		interactionEditorSelectProgram;
 	rvmDeclRenderProg*		occluderProgram;
 	rvmDeclRenderProg*		shadowMapProgram;	
 	rvmDeclRenderProg*		shadowMapAlbedoProgram;

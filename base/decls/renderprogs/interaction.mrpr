@@ -148,9 +148,21 @@ renderProg interaction
 #ifndef NO_LIGHT_PASS
 		vec4 ambientLight = $ambientLightInfo;
 
-		finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * ambientLight.w) + ambientLight.xyz);
+		if(ambientLight.w == -1)
+		{
+			finalpixel_color.xyz = diffuseMap.xyz;
+		}
+		else
+		{
+			finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * ambientLight.w) + ambientLight.xyz);
+		}
 #else
 		finalpixel_color.xyz = diffuseMap.xyz;
+
+#ifdef EDITOR_SELECT
+		finalpixel_color.xyz *= vec3(1.0, 0.5, 0.0);
+#endif
+
 #endif
 #endif
 		finalpixel_color.w = diffuseMap.w;
@@ -195,4 +207,11 @@ renderProg interaction_waterfall
 	inherit interaction
 	define WATER_PASS
 	define WATER_FALL
+}
+
+renderProg interaction_editorsel
+{
+	inherit interaction
+	define NO_LIGHT_PASS
+	define EDITOR_SELECT
 }

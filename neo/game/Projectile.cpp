@@ -1224,7 +1224,7 @@ void idProjectile::ReadFromSnapshot( const idBitMsgDelta &msg ) {
 			case FIZZLED:
 			case EXPLODED: {
 				StopSound( SND_CHANNEL_BODY2, false );
-				gameEdit->ParseSpawnArgsToRenderEntity( &spawnArgs, &renderEntity );
+				gameLocal.ParseSpawnArgsToRenderEntity( &spawnArgs, &renderEntity );
 				state = SPAWNED;
 				break;
 			}

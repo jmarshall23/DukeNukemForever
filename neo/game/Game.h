@@ -229,6 +229,28 @@ typedef struct {
 	soundShaderParms_t			parms;			// override volume, flags, etc
 } refSound_t;
 
+//
+// dnEditorEntity
+//
+class dnEditorEntity {
+public:
+	virtual void				Render(idDict& spawnArgs, bool isSelected) = 0;
+protected:
+	void						DrawSelectedGizmo(idVec3 origin);
+
+	idRenderWorld*				editorRenderWorld;
+};
+
+//
+// dnEditorEntityType_t
+//
+enum dnEditorEntityType_t {
+	EDITOR_ENTITY_UNKNOWN = 0,
+	EDITOR_ENTITY_LIGHT,
+	EDITOR_ENTITY_MODEL,
+	EDITOR_ENTITY_SOUND
+};
+
 enum {
 	TEST_PARTICLE_MODEL = 0,
 	TEST_PARTICLE_IMPACT,
@@ -245,10 +267,9 @@ class idGameEdit {
 public:
 	virtual						~idGameEdit( void ) {}
 
-	// These are the canonical idDict to parameter parsing routines used by both the game and tools.
-	virtual void				ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t *renderLight );
-	virtual void				ParseSpawnArgsToRenderEntity( const idDict *args, renderEntity_t *renderEntity );
-	virtual void				ParseSpawnArgsToRefSound( const idDict *args, refSound_t *refSound );
+								// Allocates a editor entity.
+	virtual dnEditorEntity*		AllocEditorEntity(idRenderWorld *editorRenderWorld, dnEditorEntityType_t editorEntityType);
+	virtual void				FreeEditorEntity(dnEditorEntity* entity);
 
 	// Animation system calls for non-game based skeletal rendering.
 	virtual idRenderModel *		ANIM_GetModelFromEntityDef( const char *classname );

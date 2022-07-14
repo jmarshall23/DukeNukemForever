@@ -433,79 +433,6 @@ static bool	ProcessMapEntity( idMapEntity *mapEnt ) {
 //===================================================================
 
 /*
-==============
-CreateMapLight
-
-==============
-*/
-static void CreateMapLight( const idMapEntity *mapEnt ) {
-	mapLight_t	*light;
-	bool	dynamic;
-
-	// designers can add the "noPrelight" flag to signal that
-	// the lights will move around, so we don't want
-	// to bother chopping up the surfaces under it or creating
-	// shadow volumes
-	mapEnt->epairs.GetBool( "noPrelight", "0", dynamic );
-	if ( dynamic ) {
-		return;
-	}
-
-	light = new mapLight_t;
-	light->name[0] = '\0';
-	light->shadowTris = NULL;
-
-	// parse parms exactly as the game do
-	// use the game's epair parsing code so
-	// we can use the same renderLight generation
-	gameEdit->ParseSpawnArgsToRenderLight( &mapEnt->epairs, &light->def.parms );
-
-	light->def.DeriveLightData();
-
-	// get the name for naming the shadow surfaces
-	const char	*name;
-
-	mapEnt->epairs.GetString( "name", "", &name );
-
-	idStr::Copynz( light->name, name, sizeof( light->name ) );
-	if ( !light->name[0] ) {
-		common->Error( "Light at (%f,%f,%f) didn't have a name",
-			light->def.parms.origin[0], light->def.parms.origin[1], light->def.parms.origin[2] );
-	}
-#if 0
-	// use the renderer code to get the bounding planes for the light
-	// based on all the parameters
-	R_RenderLightFrustum( light->parms, light->frustum );
-	light->lightShader = light->parms.shader;
-#endif
-
-	dmapGlobals.mapLights.Append( light );
-
-}
-
-/*
-==============
-CreateMapLights
-
-==============
-*/
-static void CreateMapLights( const idMapFile *dmapFile ) {
-	int		i;
-	const idMapEntity *mapEnt;
-	const char	*value;
-
-	for ( i = 0 ; i < dmapFile->GetNumEntities() ; i++ ) {
-		mapEnt = dmapFile->GetEntity(i);
-		mapEnt->epairs.GetString( "classname", "", &value);
-		if ( !idStr::Icmp( value, "light" ) ) {
-			CreateMapLight( mapEnt );
-		}
-
-	}
-
-}
-
-/*
 ================
 LoadDMapFile
 ================
@@ -549,7 +476,7 @@ bool LoadDMapFile( const char *filename ) {
 		ProcessMapEntity( dmapGlobals.dmapFile->GetEntity(i) );
 	}
 
-	CreateMapLights( dmapGlobals.dmapFile );
+	//CreateMapLights( dmapGlobals.dmapFile );
 
 	brushes = 0;
 	triSurfs = 0;
