@@ -178,6 +178,14 @@ ID_INLINE renderEntity_t::renderEntity_t()
 // jmarshall end
 
 
+enum renderLightType_t {
+	LIGHT_TYPE_UNKNOWN = 0,
+	LIGHT_TYPE_POINT,
+	LIGHT_TYPE_SPOTLIGHT,
+	LIGHT_TYPE_PARALLEL,
+	NUM_LIGHT_TYPES
+};
+
 struct renderLight_t {
 	idMat3					axis;				// rotation vectors, must be unit length
 	idVec3					origin;
@@ -197,8 +205,8 @@ struct renderLight_t {
 	bool					noShadows;			// (should we replace this with material parameters on the shader?)
 	bool					noSpecular;			// (should we replace this with material parameters on the shader?)
 
-	bool					pointLight;			// otherwise a projection light (should probably invert the sense of this, because points are way more common)
-	bool					parallel;			// lightCenter gives the direction to the light at infinity
+	renderLightType_t		lightType;
+
 	idVec3					lightRadius;		// xyz radius for point lights
 	idVec3					lightCenter;		// offset the lighting direction for shading and
 												// shadows, relative to origin

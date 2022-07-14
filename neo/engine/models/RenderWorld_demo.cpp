@@ -429,8 +429,7 @@ void	idRenderWorldLocal::WriteRenderLight( qhandle_t handle, const renderLight_t
 	session->writeDemo->WriteInt( light->allowLightInViewID );
 	session->writeDemo->WriteBool( light->noShadows );
 	session->writeDemo->WriteBool( light->noSpecular );
-	session->writeDemo->WriteBool( light->pointLight );
-	session->writeDemo->WriteBool( light->parallel );
+	session->writeDemo->WriteBool( light->lightType );
 	session->writeDemo->WriteVec3( light->lightRadius );
 	session->writeDemo->WriteVec3( light->lightCenter );
 	session->writeDemo->WriteVec3( light->target );
@@ -481,8 +480,7 @@ void	idRenderWorldLocal::ReadRenderLight( ) {
 	session->readDemo->ReadInt( light.allowLightInViewID );
 	session->readDemo->ReadBool( light.noShadows );
 	session->readDemo->ReadBool( light.noSpecular );
-	session->readDemo->ReadBool( light.pointLight );
-	session->readDemo->ReadBool( light.parallel );
+	//session->readDemo->ReadInt( light.lightType );
 	session->readDemo->ReadVec3( light.lightRadius );
 	session->readDemo->ReadVec3( light.lightCenter );
 	session->readDemo->ReadVec3( light.target );

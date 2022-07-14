@@ -84,7 +84,7 @@ Computes the light projection matrix for a point light.
 ========================
 */
 static float R_ComputePointLightProjectionMatrix(idRenderLightLocal* light, idRenderMatrix& localProject) {
-	assert(light->parms.pointLight);
+	//assert(light->parms.pointLight);
 
 	// A point light uses a box projection.
 	// This projects into the 0.0 - 1.0 texture range instead of -1.0 to 1.0 clip space range.
@@ -173,7 +173,7 @@ Computes the light projection matrix for a parallel light.
 ========================
 */
 static float R_ComputeParallelLightProjectionMatrix(idRenderLightLocal* light, idRenderMatrix& localProject) {
-	assert(light->parms.parallel);
+	//assert(light->parms.parallel);
 
 	// A parallel light uses a box projection.
 	// This projects into the 0.0 - 1.0 texture range instead of -1.0 to 1.0 clip space range.
@@ -204,7 +204,7 @@ void idRenderLightLocal::DeriveLightData(void) {
 		lightShader = parms.shader;
 	}
 	if (!lightShader) {
-		if (parms.pointLight) {
+		if (parms.lightType == LIGHT_TYPE_POINT) {
 			lightShader = declManager->FindMaterial("lights/defaultPointLight");
 		}
 		else {
@@ -218,7 +218,7 @@ void idRenderLightLocal::DeriveLightData(void) {
 		// use the falloff from the default shader of the correct type
 		const idMaterial* defaultShader;
 
-		if (parms.pointLight) {
+		if (parms.lightType == LIGHT_TYPE_POINT) {
 			defaultShader = declManager->FindMaterial("lights/defaultPointLight");
 			falloffImage = defaultShader->LightFalloffImage();
 		}
@@ -230,7 +230,7 @@ void idRenderLightLocal::DeriveLightData(void) {
 	}
 
 	// set the projection
-	if (!parms.pointLight) {
+	if (parms.lightType == LIGHT_TYPE_SPOTLIGHT || parms.lightType == LIGHT_TYPE_PARALLEL) {
 		// projected light
 
 		SetLightProject(lightProject, vec3_origin /* parms.origin */, parms.target,
@@ -267,7 +267,7 @@ void idRenderLightLocal::DeriveLightData(void) {
 
 	// adjust global light origin for off center projections and parallel projections
 	// we are just faking parallel by making it a very far off center for now
-	if (parms.parallel) {
+	if (parms.lightType == LIGHT_TYPE_PARALLEL) {
 		idVec3	dir;
 
 		dir = parms.lightCenter;
@@ -291,14 +291,19 @@ void idRenderLightLocal::DeriveLightData(void) {
 
 	idRenderMatrix localProject;
 	float zScale = 1.0f;
-	if (parms.parallel) {
-		zScale = R_ComputeParallelLightProjectionMatrix(this, localProject);
-	}
-	else if (parms.pointLight) {
-		zScale = R_ComputePointLightProjectionMatrix(this, localProject);
-	}
-	else {
-		zScale = R_ComputeSpotLightProjectionMatrix(this, localProject);
+	switch (parms.lightType)
+	{
+		case LIGHT_TYPE_POINT:
+			zScale = R_ComputePointLightProjectionMatrix(this, localProject);
+			break;
+
+		case LIGHT_TYPE_SPOTLIGHT:
+			zScale = R_ComputeSpotLightProjectionMatrix(this, localProject);
+			break;
+
+		case LIGHT_TYPE_PARALLEL:
+			zScale = R_ComputeParallelLightProjectionMatrix(this, localProject);
+			break;
 	}
 
 	// Rotate and translate the light projection by the light matrix.
@@ -357,7 +362,7 @@ Called at definition derivation time
 void idRenderLightLocal::MakeShadowFrustums(void) {
 	int		i, j;
 
-	if (parms.pointLight) {
+	if (parms.lightType == LIGHT_TYPE_POINT) {
 #if 0
 		idVec3	adjustedRadius;
 

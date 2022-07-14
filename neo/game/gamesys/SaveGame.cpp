@@ -545,8 +545,8 @@ void idSaveGame::WriteRenderLight( const renderLight_t &renderLight ) {
 	WriteInt( renderLight.allowLightInViewID );
 	WriteBool( renderLight.noShadows );
 	WriteBool( renderLight.noSpecular );
-	WriteBool( renderLight.pointLight );
-	WriteBool( renderLight.parallel );
+//	WriteBool( renderLight.pointLight );
+//	WriteBool( renderLight.parallel );
 
 	WriteVec3( renderLight.lightRadius );
 	WriteVec3( renderLight.lightCenter );
@@ -1308,8 +1308,8 @@ void idRestoreGame::ReadRenderLight( renderLight_t &renderLight ) {
 	ReadInt( renderLight.allowLightInViewID );
 	ReadBool( renderLight.noShadows );
 	ReadBool( renderLight.noSpecular );
-	ReadBool( renderLight.pointLight );
-	ReadBool( renderLight.parallel );
+	//ReadBool( renderLight.pointLight );
+	//ReadBool( renderLight.parallel );
 
 	ReadVec3( renderLight.lightRadius );
 	ReadVec3( renderLight.lightCenter );

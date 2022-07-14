@@ -674,7 +674,7 @@ void idWeapon::GetWeaponDef( const char* objectname, int ammoinclip )
 	{
 		guiLight.shader = declManager->FindMaterial( guiLightShader, false );
 		guiLight.lightRadius[0] = guiLight.lightRadius[1] = guiLight.lightRadius[2] = 3;
-		guiLight.pointLight = true;
+		guiLight.lightType = LIGHT_TYPE_POINT;
 	}
 
 	// setup the view model
@@ -768,7 +768,14 @@ void idWeapon::GetWeaponDef( const char* objectname, int ammoinclip )
 	guiLight.allowLightInViewID = owner->entityNumber + 1;
 	nozzleGlow.allowLightInViewID = owner->entityNumber + 1;
 
-	muzzleFlash.pointLight								= flashPointLight;
+	if (flashPointLight)
+	{
+		muzzleFlash.lightType = LIGHT_TYPE_POINT;
+	}
+	else
+	{
+		muzzleFlash.lightType = LIGHT_TYPE_SPOTLIGHT;
+	}
 	muzzleFlash.shader									= flashShader;
 	muzzleFlash.shaderParms[ SHADERPARM_RED ]			= flashColor[0];
 	muzzleFlash.shaderParms[ SHADERPARM_GREEN ]			= flashColor[1];
@@ -989,7 +996,7 @@ void idWeapon::GetWeaponDef( const char* objectname, int ammoinclip )
 
 			float radius = weaponDef->dict.GetFloat( va( "%s_radius", name.c_str() ) );
 			newLight.light.lightRadius[0] = newLight.light.lightRadius[1] = newLight.light.lightRadius[2] = radius;
-			newLight.light.pointLight = true;
+			newLight.light.lightType = LIGHT_TYPE_POINT;
 			newLight.light.noShadows = true;
 
 			newLight.light.allowLightInViewID = owner->entityNumber + 1;
@@ -1780,7 +1787,7 @@ void idWeapon::UpdateNozzleFx()
 		{
 			nozzleGlow.allowLightInViewID = owner->entityNumber + 1;
 		}
-		nozzleGlow.pointLight = true;
+		nozzleGlow.lightType = LIGHT_TYPE_POINT;
 		nozzleGlow.noShadows = true;
 		nozzleGlow.lightRadius.x = nozzleGlowRadius;
 		nozzleGlow.lightRadius.y = nozzleGlowRadius;

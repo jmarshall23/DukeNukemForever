@@ -151,7 +151,7 @@ void idProjectile::Create( idEntity *owner, const idVec3 &start, const idVec3 &d
 	shaderName = spawnArgs.GetString( "mtr_light_shader" );
 	if ( *(const char *)shaderName ) {
 		renderLight.shader = declManager->FindMaterial( shaderName, false );
-		renderLight.pointLight = true;
+		renderLight.lightType = LIGHT_TYPE_POINT;
 		renderLight.lightRadius[0] =
 		renderLight.lightRadius[1] =
 		renderLight.lightRadius[2] = spawnArgs.GetFloat( "light_radius" );
@@ -828,7 +828,7 @@ void idProjectile::Explode( const trace_t &collision, idEntity *ignore ) {
     
 	if ( *light_shader ) {
 		renderLight.shader = declManager->FindMaterial( light_shader, false );
-		renderLight.pointLight = true;
+		renderLight.lightType = LIGHT_TYPE_POINT;
 		renderLight.lightRadius[0] =
 		renderLight.lightRadius[1] =
 		renderLight.lightRadius[2] = spawnArgs.GetFloat( "explode_light_radius" );

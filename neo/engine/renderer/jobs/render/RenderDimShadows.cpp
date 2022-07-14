@@ -27,7 +27,7 @@ and non-cubic lights must take the largest length
 float	R_Shadow_CalcLightAxialSize(idRenderLightCommitted* vLight) {
 	float	max = 0;
 
-	if (!vLight->lightDef->parms.pointLight) {
+	if (vLight->lightDef->parms.lightType != LIGHT_TYPE_POINT) {
 		idVec3	dir = vLight->lightDef->parms.target - vLight->lightDef->parms.origin;
 		max = dir.Length();
 		return max;
@@ -631,7 +631,7 @@ void idRender::RenderShadowMaps(void) {
 		tr.globalLightOriginParam->SetVectorValue(lightOrigin);
 
 		// Render the pointlight shadows
-		if(vLight->lightDef->parms.pointLight) {
+		if(vLight->lightDef->parms.lightType == LIGHT_TYPE_POINT) {
 			RB_DrawPointlightShadow(vLight);
 		}
 		else {

@@ -116,7 +116,7 @@ void idGameLocal::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t
 	}
 
 	if ( !gotTarget ) {
-		renderLight->pointLight = true;
+		renderLight->lightType = LIGHT_TYPE_POINT;
 
 		// allow an optional relative center of light and shadow offset
 		args->GetVector( "light_center", "0 0 0", renderLight->lightCenter );
@@ -128,6 +128,9 @@ void idGameLocal::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t
 			args->GetFloat( "light", "300", radius );
 			renderLight->lightRadius[0] = renderLight->lightRadius[1] = renderLight->lightRadius[2] = radius;
 		}
+	}
+	else {
+		renderLight->lightType = LIGHT_TYPE_SPOTLIGHT;
 	}
 
 	// get the rotation matrix in either full form, or single angle form
@@ -168,7 +171,14 @@ void idGameLocal::ParseSpawnArgsToRenderLight( const idDict *args, renderLight_t
 	args->GetFloat( "shaderParm7", "0", renderLight->shaderParms[ SHADERPARM_MODE ] );
 	args->GetBool( "noshadows", "0", renderLight->noShadows );
 	args->GetBool( "nospecular", "0", renderLight->noSpecular );
-	args->GetBool( "parallel", "0", renderLight->parallel );
+
+	bool parallel;
+	args->GetBool( "parallel", "0", parallel );
+
+	if (parallel)
+	{
+		renderLight->lightType = LIGHT_TYPE_PARALLEL;
+	}
 
 	args->GetString( "texture", "lights/squarelight1", &texture );
 	// allow this to be NULL

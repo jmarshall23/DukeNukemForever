@@ -118,7 +118,7 @@ idScreenRect	idRenderLightCommitted::CalcLightScissorRectangle(void) {
 	idPlane			eye, clip;
 	idVec3			ndc;
 
-	if (lightDef->parms.pointLight) {
+	if (lightDef->parms.lightType == LIGHT_TYPE_POINT) {
 		idBounds bounds;
 		tr.viewDef->viewFrustum.ProjectionBounds(idBox(lightDef->parms.origin, lightDef->parms.lightRadius, lightDef->parms.axis), bounds);
 		return R_ScreenRectFromViewFrustumBounds(bounds);

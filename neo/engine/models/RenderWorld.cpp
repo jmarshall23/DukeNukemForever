@@ -374,7 +374,7 @@ void idRenderWorldLocal::UpdateLightDef( qhandle_t lightHandle, const renderLigh
 		if ( rlight->axis == light->parms.axis && rlight->end == light->parms.end &&
 			 rlight->lightCenter == light->parms.lightCenter && rlight->lightRadius == light->parms.lightRadius &&
 			 rlight->noShadows == light->parms.noShadows && rlight->origin == light->parms.origin &&
-			 rlight->parallel == light->parms.parallel && rlight->pointLight == light->parms.pointLight &&
+			 rlight->lightType == light->parms.lightType &&
 			 rlight->right == light->parms.right && rlight->start == light->parms.start &&
 			 rlight->target == light->parms.target && rlight->up == light->parms.up && 
 			 rlight->shader == light->lightShader && rlight->prelightModel == light->parms.prelightModel ) {

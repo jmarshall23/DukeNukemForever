@@ -934,7 +934,7 @@ void idExplodingBarrel::AddLight( const char *name, bool burn ) {
 	light.lightRadius.y = light.lightRadius.z = light.lightRadius.x;
 	light.origin = physicsObj.GetOrigin();
 	light.origin.z += 128;
-	light.pointLight = true;
+	light.lightType = LIGHT_TYPE_POINT;
 	light.shader = declManager->FindMaterial( name );
 	light.shaderParms[ SHADERPARM_RED ] = 2.0f;
 	light.shaderParms[ SHADERPARM_GREEN ] = 2.0f;

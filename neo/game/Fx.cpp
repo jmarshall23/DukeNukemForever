@@ -329,7 +329,7 @@ void idEntityFx::Run( int time ) {
 						useAction->renderLight.shaderParms[ SHADERPARM_TIMESCALE ]	= 1.0f;
 						useAction->renderLight.shaderParms[ SHADERPARM_TIMEOFFSET ] = -MS2SEC( time );
 						useAction->renderLight.referenceSound = refSound.referenceSound;
-						useAction->renderLight.pointLight = true;
+						useAction->renderLight.lightType = LIGHT_TYPE_POINT;
 						if ( fxaction.noshadows ) {
 							useAction->renderLight.noShadows = true;
 						}
