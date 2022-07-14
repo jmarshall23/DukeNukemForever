@@ -1121,3 +1121,12 @@ idRenderSystemLocal::AllocTris
 idDrawVert* idRenderSystemLocal::AllocTris(int numVerts, const triIndex_t* indexes, int numIndexes, const idMaterial* material) {
 	return guiModel->AllocTris(numVerts, indexes, numIndexes, material, 0);
 }
+
+/*
+=============
+idRenderSystemLocal::FreeStaticTriSurf
+=============
+*/
+void idRenderSystemLocal::FreeStaticTriSurf(srfTriangles_t* tri) {
+	R_FreeStaticTriSurf(tri);
+}

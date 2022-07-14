@@ -265,7 +265,6 @@ typedef struct {
 	idRenderTexture* destRenderTexture;
 } resolveRenderTargetCommand_t;
 
-
 //=======================================================================
 
 // this is the inital allocation for max number of drawsurfs
@@ -477,6 +476,10 @@ public:
 	virtual void			EndLevelLoad( void );
 	virtual idFont*			RegisterFont(const char* fontName);
 	virtual idDrawVert*		AllocTris(int numVerts, const triIndex_t* indexes, int numIndexes, const idMaterial* material);
+
+	virtual void			RenderLightFrustum(const renderLight_t& renderLight, idPlane lightFrustum[6]);
+	virtual srfTriangles_t*	PolytopeSurface(int numPlanes, const idPlane* planes, idWinding** windings);
+	virtual void			FreeStaticTriSurf(srfTriangles_t* tri);
 
 	virtual void			DrawStretchPic ( const idDrawVert *verts, const glIndex_t *indexes, int vertCount, int indexCount, const idMaterial *material,
 											bool clip = true, float x = 0.0f, float y = 0.0f, float w = 640.0f, float h = 0.0f );

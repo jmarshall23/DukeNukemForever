@@ -2132,7 +2132,7 @@ static classVariableInfo_t DnFullscreenRenderTarget_typeInfo[] = {
 };
 
 static classVariableInfo_t dnEditorLight_typeInfo[] = {
-	{ ": qhandle_t", "renderLightHandle", (intptr_t)(&((dnEditorLight *)0)->renderLightHandle), sizeof( ((dnEditorLight *)0)->renderLightHandle ) },
+	{ "qhandle_t", "renderLightHandle", (intptr_t)(&((dnEditorLight *)0)->renderLightHandle), sizeof( ((dnEditorLight *)0)->renderLightHandle ) },
 	{ "renderLight_t", "renderLightParams", (intptr_t)(&((dnEditorLight *)0)->renderLightParams), sizeof( ((dnEditorLight *)0)->renderLightParams ) },
 	{ NULL, 0 }
 };

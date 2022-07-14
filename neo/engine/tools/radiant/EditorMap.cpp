@@ -541,9 +541,7 @@ void Map_LoadFile(const char *filename) {
 
 	Texture_ShowInuse();
 
-	if (g_pParentWnd->GetCamera()->GetRenderMode()) {
-		g_pParentWnd->GetCamera()->BuildRendererState();
-	}
+	g_pParentWnd->GetCamera()->Invalidate(true);
 
 	Sys_EndWait();
 	Sys_UpdateWindows(W_ALL);

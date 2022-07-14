@@ -3073,7 +3073,7 @@ void Brush_UpdateLightPoints(brush_t *b, const idVec3 &offset) {
 	if (!(b->owner->eclass->nShowFlags & ECLASS_LIGHT)) {
 		if (b->modelHandle) {
 			g_bScreenUpdates = false;
-			g_pParentWnd->GetCamera()->BuildEntityRenderState(b->owner, true);
+//			g_pParentWnd->GetCamera()->BuildEntityRenderState(b->owner, true);
 			g_bScreenUpdates = true;
 		}
 		return;
@@ -3166,7 +3166,7 @@ void Brush_UpdateLightPoints(brush_t *b, const idVec3 &offset) {
 	}
 
 	g_bScreenUpdates = false;
-	g_pParentWnd->GetCamera()->BuildEntityRenderState(b->owner, true);
+//	g_pParentWnd->GetCamera()->BuildEntityRenderState(b->owner, true);
 	g_bScreenUpdates = true;
 
 }

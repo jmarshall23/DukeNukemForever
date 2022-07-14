@@ -1102,7 +1102,7 @@ Creates or updates modelDef and lightDef for an entity
 */
 int Brush_ToTris(brush_t *brush, idTriList *tris, idMatList *mats, bool models, bool bmodel);
 
-void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
+void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update, const renderView_t& renderView) {
 	const char	*v;
 	idDict		spawnArgs;
 	const char	*name = NULL;
@@ -1159,11 +1159,6 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 				Brush_ToTris( b, &tris, &mats, false, true);
 			}
 
-			if (ent->editorEntity) {
-				gameEdit->FreeEditorEntity(ent->editorEntity);
-				ent->editorEntity = nullptr;
-			}
-
 			idRenderModel *bmodel = renderModelManager->FindModel( name );
 
 			if ( bmodel ) {
@@ -1191,12 +1186,25 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 		if (ent->editorEntity == nullptr) {
 			ent->editorEntity = gameEdit->AllocEditorEntity(g_qeglobals.rw, EDITOR_ENTITY_MODEL);
 		}
-
-		ent->editorEntity->Render(spawnArgs, isSelected);
 	}
 
 	// check for lightdefs
 	if (!(ent->eclass->nShowFlags & ECLASS_LIGHT)) {
+		if (ent->eclass->fixedsize && ent->editorEntity == nullptr) {
+			ent->editorEntity = gameEdit->AllocEditorEntity(g_qeglobals.rw, EDITOR_ENTITY_GENERIC);
+		}
+
+		if (ent->eclass->fixedsize)
+		{
+			spawnArgs.SetVector("editor_mins", ent->eclass->mins);
+			spawnArgs.SetVector("editor_maxs", ent->eclass->maxs);
+		}
+
+		if (ent->editorEntity)
+		{
+			ent->editorEntity->Render(spawnArgs, isSelected, renderView);
+		}
+
 		return;
 	}
 
@@ -1210,7 +1218,7 @@ void CCamWnd::BuildEntityRenderState( entity_t *ent, bool update) {
 		ent->editorEntity = gameEdit->AllocEditorEntity(g_qeglobals.rw, EDITOR_ENTITY_LIGHT);
 	}
 
-	ent->editorEntity->Render(spawnArgs, isSelected);
+	ent->editorEntity->Render(spawnArgs, isSelected, renderView);
 }
 
 void Tris_ToOBJ(const char *outFile, idTriList *tris, idMatList *mats) {
@@ -1543,7 +1551,7 @@ Builds models, lightdefs, and modeldefs for the current editor data
 so it can be rendered by the game renderSystem
 =================
 */
-void CCamWnd::BuildRendererState() {
+void CCamWnd::BuildRendererState(const renderView_t& renderView) {
 	entity_t	*ent;
 	brush_t		*brush;
 
@@ -1634,36 +1642,12 @@ void CCamWnd::BuildRendererState() {
 			continue;
 		}
 
-		BuildEntityRenderState( ent, false );
+		BuildEntityRenderState( ent, false, renderView );
 	}
 
 	//common->Printf("Render data used %d brushes\n", numBrushes);
 	worldDirty = false;
 	//UpdateCaption();
-}
-
-/*
-===============================
-CCamWnd::UpdateRenderEntities
-
-  Creates a new entity state list
-  returns true if a repaint is needed
-===============================
-*/
-bool CCamWnd::UpdateRenderEntities() {
-
-	if (rebuildMode) {
-		return false;
-	}
-
-	bool ret = false;
-	for ( entity_t *ent = entities.next ; ent != &entities ; ent = ent->next ) {
-		BuildEntityRenderState( ent, (ent->editorEntity != nullptr ) ? true : false );
-		if (ret == false && ent->editorEntity) {
-			ret = true;
-		}
-	}
-	return ret;
 }
 
 /*
@@ -1913,29 +1897,23 @@ void CCamWnd::Cam_Render() {
 	glScissor( 0, 0, m_Camera.width, m_Camera.height );
 	glClear( GL_COLOR_BUFFER_BIT );
 
-	//	qwglSwapBuffers(dc.m_hDC);
-
-	// create the model, using explicit normals
-	BuildRendererState();
-
-	// render it
-	renderSystem->BeginFrame( m_Camera.width, m_Camera.height );
-
-	memset( &refdef, 0, sizeof( refdef ) );
+	memset(&refdef, 0, sizeof(refdef));
 	refdef.vieworg = m_Camera.origin;
 
 	// the editor uses opposite pitch convention
-	refdef.viewaxis = idAngles( -m_Camera.angles.pitch, m_Camera.angles.yaw, m_Camera.angles.roll ).ToMat3();
-	
+	refdef.viewaxis = idAngles(-m_Camera.angles.pitch, m_Camera.angles.yaw, m_Camera.angles.roll).ToMat3();
+
 	refdef.width = SCREEN_WIDTH;
 	refdef.height = SCREEN_HEIGHT;
 	refdef.fov_x = 90;
 	refdef.fov_y = 2 * atan((float)m_Camera.height / m_Camera.width) * idMath::M_RAD2DEG;
+	refdef.time = eventLoop->Milliseconds();
 
-	// only set in animation mode to give a consistent look 
-	if (animationMode) {
-		refdef.time = eventLoop->Milliseconds();
-	}
+	// create the model, using explicit normals
+	BuildRendererState(refdef);
+
+	// render it
+	renderSystem->BeginFrame( m_Camera.width, m_Camera.height );
 
 	g_qeglobals.rw->RenderScene( &refdef );
 

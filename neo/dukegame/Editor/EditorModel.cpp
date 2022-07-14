@@ -31,7 +31,7 @@ dnEditorModel::~dnEditorModel() {
 dnEditorModel::Render
 ======================
 */
-void dnEditorModel::Render(idDict& spawnArgs, bool isSelected) {
+void dnEditorModel::Render(idDict& spawnArgs, bool isSelected, const renderView_t& renderView) {
 	gameLocal.ParseSpawnArgsToRenderEntity(&spawnArgs, &renderEntityParams);
 
 	renderEntityParams.isSelected = isSelected;

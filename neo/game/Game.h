@@ -233,19 +233,32 @@ typedef struct {
 // dnEditorEntity
 //
 class dnEditorEntity {
-public:
-	virtual void				Render(idDict& spawnArgs, bool isSelected) = 0;
+public:	
+	dnEditorEntity(idRenderWorld* editorRenderWorld);
+
+	virtual void				Render(idDict& spawnArgs, bool isSelected, const renderView_t& renderView);
 protected:
+	dnEditorEntity() { }
+
 	void						DrawSelectedGizmo(idVec3 origin);
 
 	idRenderWorld*				editorRenderWorld;
 };
 
+/*
+======================
+dnEditorEntity::dnEditorEntity
+======================
+*/
+ID_INLINE dnEditorEntity::dnEditorEntity(idRenderWorld* editorRenderWorld) {
+	this->editorRenderWorld = editorRenderWorld;
+}
+
 //
 // dnEditorEntityType_t
 //
 enum dnEditorEntityType_t {
-	EDITOR_ENTITY_UNKNOWN = 0,
+	EDITOR_ENTITY_GENERIC = 0,
 	EDITOR_ENTITY_LIGHT,
 	EDITOR_ENTITY_MODEL,
 	EDITOR_ENTITY_SOUND

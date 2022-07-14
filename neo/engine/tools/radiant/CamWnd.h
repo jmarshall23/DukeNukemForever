@@ -90,7 +90,7 @@ public:
 	camera_t& Camera(){return m_Camera;};
 	void Cam_MouseControl(float dtime);
 	void Cam_ChangeFloor(bool up);
-	void BuildRendererState();
+	void BuildRendererState(const renderView_t &renderView);
 	void ToggleRenderMode();
 	void ToggleRebuildMode();
 	void ToggleEntityMode();
@@ -102,7 +102,7 @@ public:
 
 	void MapChange();
 
-	void BuildEntityRenderState( entity_t *ent, bool update );
+	void BuildEntityRenderState( entity_t *ent, bool update, const renderView_t& renderView);
 	bool GetRenderMode() {
 		return renderMode;
 	}
@@ -123,7 +123,6 @@ public:
 	}
 
 
-	bool UpdateRenderEntities();
 	void MarkWorldDirty();
 
 	void SetView( const idVec3 &origin, const idAngles &angles ) {

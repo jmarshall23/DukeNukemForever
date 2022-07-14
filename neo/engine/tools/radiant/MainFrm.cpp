@@ -6615,7 +6615,7 @@ void CMainFrame::OnViewRendermode()
 
 void CMainFrame::OnViewRebuildrenderdata() 
 {
-	m_pCamWnd->BuildRendererState();
+//	m_pCamWnd->BuildRendererState();
 	if (!m_pCamWnd->GetRenderMode()) {
 		OnViewRendermode();
 	}

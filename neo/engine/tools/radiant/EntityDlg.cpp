@@ -1067,7 +1067,7 @@ void CEntityDlg::UpdateKeyVal(const char *key, const char *val) {
 	if (editEntity) {
 		editEntity->epairs.Set(key, val);
 		SetKeyValPairs();
-		g_pParentWnd->GetCamera()->BuildEntityRenderState(editEntity, true);
+//		g_pParentWnd->GetCamera()->BuildEntityRenderState(editEntity, true);
 		Entity_UpdateSoundEmitter(editEntity);
 	}
 }
@@ -1094,7 +1094,7 @@ void CEntityDlg::UpdateFromAnimationFrame ( bool updateKeyValueDisplay )
 		SetKeyValPairs();
 	}
 
-	g_pParentWnd->GetCamera ()->BuildEntityRenderState (editEntity , true );
+//	g_pParentWnd->GetCamera ()->BuildEntityRenderState (editEntity , true );
 	Sys_UpdateWindows ( W_ALL );
 
 }

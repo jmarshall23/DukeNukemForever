@@ -725,3 +725,12 @@ srfTriangles_t* R_PolytopeSurface(int numPlanes, const idPlane* planes, idWindin
 
 	return tri;
 }
+
+/*
+=====================
+idRenderSystemLocal::PolytopeSurface
+=====================
+*/
+srfTriangles_t* idRenderSystemLocal::PolytopeSurface(int numPlanes, const idPlane* planes, idWinding** windings) {
+	return R_PolytopeSurface(numPlanes, planes, windings);
+}

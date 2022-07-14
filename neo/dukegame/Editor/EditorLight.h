@@ -10,9 +10,11 @@ public:
 	~dnEditorLight();
 
 	// Renders the light.
-	virtual void				Render(idDict& spawnArgs, bool isSelected) override;
+	virtual void				Render(idDict& spawnArgs, bool isSelected, const renderView_t& renderView) override;
 
 private:
+	void						DrawProjectedLight(void);
+
 	qhandle_t	renderLightHandle;
 	renderLight_t renderLightParams;
 };

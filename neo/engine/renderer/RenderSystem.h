@@ -32,6 +32,7 @@ If you have questions concerning this license or the applicable additional terms
 class rvmToolGui;
 class idRenderTexture;
 class idFont;
+struct renderLight_t;
 
 /*
 ===============================================================================
@@ -190,6 +191,10 @@ public:
 	virtual void			BeginLevelLoad( void ) = 0;
 	virtual void			EndLevelLoad( void ) = 0;
 
+	virtual void			RenderLightFrustum(const renderLight_t& renderLight, idPlane lightFrustum[6]) = 0;
+	virtual srfTriangles_t* PolytopeSurface(int numPlanes, const idPlane* planes, idWinding** windings) = 0;
+	virtual void			FreeStaticTriSurf(srfTriangles_t* tri) = 0;
+
 	// font support
 	virtual idFont*			RegisterFont(const char* fontName) = 0;
 
@@ -300,7 +305,7 @@ extern idRenderSystem *			renderSystem;
 //
 
 // returns the frustum planes in world space
-void R_RenderLightFrustum( const struct renderLight_s &renderLight, idPlane lightFrustum[6] );
+//void R_RenderLightFrustum( const struct renderLight_s &renderLight, idPlane lightFrustum[6] );
 
 // for use by dmap to do the carving-on-light-boundaries and for the editor for display
 void R_LightProjectionMatrix( const idVec3 &origin, const idPlane &rearPlane, idVec4 mat[4] );
