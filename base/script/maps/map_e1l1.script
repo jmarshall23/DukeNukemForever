@@ -1,0 +1,48 @@
+namespace map_e1l1 {
+	void edf_ship_think()
+	{
+		while( 1 )
+		{
+			if(!$duke_car.isMoving())
+			{
+				break;
+			}
+
+			$duke_car.startFx("fx/edf_shipfire");
+
+			sys.wait (0.3);
+		}
+
+		$edfcar_loc.startFx("fx/edf_shipfire");
+		$edfcar_loc.startSoundShader( "edf_duke_explosion2", -1 );
+
+		sys.wait (1.0);
+
+		$duke_car.remove();
+	}
+
+	void main()
+	{
+		entity dukePlayer;
+
+		// Get the local playing player.
+		dukePlayer = sys.getLocalPlayer();
+
+		// Son of a bitch!
+		dukePlayer.startDukeTalk("duke_pay02", 1);
+
+		// Move the dukecar to the location.
+		$duke_car.moveTo($edfcar_loc);
+		$duke_car.startSoundShader( "ambient_warjet", -1 );
+
+		// I like the rotation but its a bit too distracting.
+		// $duke_car.rotateUpTo(2, 620);
+
+		thread(edf_ship_think());
+
+		sys.wait(5.0);
+
+		// Where is nukem!
+		dukePlayer.startDukeTalk("morphix_whereisduke", 1);
+	}
+}
