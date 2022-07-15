@@ -12,9 +12,11 @@ struct DnRenderPlatform
 {
 	DnFullscreenRenderTarget* frontEndPassRenderTarget;
 	DnFullscreenRenderTarget* frontEndPassRenderTargetResolved;
+	DnFullscreenRenderTarget* ssaoRenderTarget;
 
 	const idMaterial* upscaleFrontEndResolveMaterial;
 	const idMaterial* ssaoMaterial;
+	const idMaterial* ssaoBlurMaterial;
 	const idMaterial* bloomMaterial;
 };
 

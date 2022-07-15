@@ -14,10 +14,12 @@ void dnGameLocal::InitGameRender(void)
 {
 	renderPlatform.frontEndPassRenderTarget = new DnFullscreenRenderTarget("frontEndRenderPass", true, true, true, FMT_RGBAF16, FMT_RGBAF16, FMT_RGBA8);
 	renderPlatform.frontEndPassRenderTargetResolved = new DnFullscreenRenderTarget("frontEndRenderPassResolved", true, true, false, FMT_RGBAF16, FMT_RGBAF16, FMT_RGBA8);
+	renderPlatform.ssaoRenderTarget = new DnFullscreenRenderTarget("ssaoRenderTarget", true, false, false);
 
 	renderPlatform.upscaleFrontEndResolveMaterial = declManager->FindMaterial("postprocess/upScaleFrontEndResolve", false);
 	renderPlatform.ssaoMaterial = declManager->FindMaterial("postprocess/ssao", false);
 	renderPlatform.bloomMaterial = declManager->FindMaterial("postprocess/bloom", false);
+	renderPlatform.ssaoBlurMaterial = declManager->FindMaterial("postprocess/ssao_blur", false);
 }
 
 /*
@@ -76,6 +78,7 @@ bool dnGameLocal::Draw(int clientNum) {
 	// Ensure out render targets are the right size.
 	renderPlatform.frontEndPassRenderTarget->Resize(renderSystem->GetScreenWidth(), renderSystem->GetScreenHeight());
 	renderPlatform.frontEndPassRenderTargetResolved->Resize(renderSystem->GetScreenWidth(), renderSystem->GetScreenHeight());
+	renderPlatform.ssaoRenderTarget->Resize(renderSystem->GetScreenWidth(), renderSystem->GetScreenHeight());
 
 	// Bind our MSAA texture for rendering and clear it out.
 	renderPlatform.frontEndPassRenderTarget->Bind();
@@ -114,7 +117,11 @@ bool dnGameLocal::Draw(int clientNum) {
 
 	// Draw the resolved target.
 	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.upscaleFrontEndResolveMaterial);
+
+	// Render the SSAO to a render target so we can blur it.
 	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.ssaoMaterial);
+
+	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.ssaoBlurMaterial);
 	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.bloomMaterial);
 
 	// Finally draw the player hud.

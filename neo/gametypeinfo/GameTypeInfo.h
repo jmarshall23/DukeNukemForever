@@ -2146,8 +2146,10 @@ static classVariableInfo_t dnEditorModel_typeInfo[] = {
 static classVariableInfo_t DnRenderPlatform_typeInfo[] = {
 	{ "DnFullscreenRenderTarget *", "frontEndPassRenderTarget", (intptr_t)(&((DnRenderPlatform *)0)->frontEndPassRenderTarget), sizeof( ((DnRenderPlatform *)0)->frontEndPassRenderTarget ) },
 	{ "DnFullscreenRenderTarget *", "frontEndPassRenderTargetResolved", (intptr_t)(&((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved), sizeof( ((DnRenderPlatform *)0)->frontEndPassRenderTargetResolved ) },
+	{ "DnFullscreenRenderTarget *", "ssaoRenderTarget", (intptr_t)(&((DnRenderPlatform *)0)->ssaoRenderTarget), sizeof( ((DnRenderPlatform *)0)->ssaoRenderTarget ) },
 	{ "const idMaterial *", "upscaleFrontEndResolveMaterial", (intptr_t)(&((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial), sizeof( ((DnRenderPlatform *)0)->upscaleFrontEndResolveMaterial ) },
 	{ "const idMaterial *", "ssaoMaterial", (intptr_t)(&((DnRenderPlatform *)0)->ssaoMaterial), sizeof( ((DnRenderPlatform *)0)->ssaoMaterial ) },
+	{ "const idMaterial *", "ssaoBlurMaterial", (intptr_t)(&((DnRenderPlatform *)0)->ssaoBlurMaterial), sizeof( ((DnRenderPlatform *)0)->ssaoBlurMaterial ) },
 	{ "const idMaterial *", "bloomMaterial", (intptr_t)(&((DnRenderPlatform *)0)->bloomMaterial), sizeof( ((DnRenderPlatform *)0)->bloomMaterial ) },
 	{ NULL, 0 }
 };

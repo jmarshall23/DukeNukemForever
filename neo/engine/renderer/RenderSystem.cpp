@@ -972,7 +972,7 @@ idRenderSystemLocal::AllocRenderTexture
 ===============
 */
 idRenderTexture* idRenderSystemLocal::AllocRenderTexture(const char* name, idImage* albedoTexture, idImage* depthTexture, idImage* colorImage2, idImage* colorImage3, idImage* colorImage4) {
-	idRenderTexture* renderTexture = new idRenderTexture(albedoTexture, depthTexture);
+	idRenderTexture* renderTexture = new idRenderTexture(name, albedoTexture, depthTexture);
 	if (colorImage2 != nullptr)
 	{
 		renderTexture->AddRenderImage(colorImage2);

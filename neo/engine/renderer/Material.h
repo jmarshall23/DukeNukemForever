@@ -43,6 +43,7 @@ class idUserInterface;
 class idMegaTexture;
 class rvmDeclRenderProg;
 class idRenderWorldCommitted;
+class idRenderTexture;
 
 // moved from image.h for default parm
 typedef enum {
@@ -201,6 +202,7 @@ typedef struct {
 
 typedef struct {
 	rvmDeclRenderProg*			renderProgram;
+	idRenderTexture*			renderTexture;
 
 	int numStageParms;
 	newShaderStageRenderParam_t stageParms[MAX_NEWSTAGE_RENDERPARMS];
@@ -699,7 +701,7 @@ private:
 
 	bool				suppressInSubview;
 	bool				portalSky;
-	int					refCount;
+	int					refCount;		
 
 	rvmDeclRenderProg*  customInteractionProgram;
 };

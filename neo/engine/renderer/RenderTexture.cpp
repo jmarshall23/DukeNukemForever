@@ -3,18 +3,38 @@
 
 #include "RenderSystem_local.h"
 
+idList<idRenderTexture*> idRenderTexture::renderTextures;
+
+/*
+========================
+idRenderTexture::FindRenderTexture
+========================
+*/
+idRenderTexture* idRenderTexture::FindRenderTexture(const char* name) {
+	for (int i = 0; i < renderTextures.Num(); i++)
+	{
+		if (renderTextures[i]->GetName() == name)
+			return renderTextures[i];
+	}
+	return nullptr;
+}
+
 /*
 ========================
 idRenderTexture::idRenderTexture
 ========================
 */
-idRenderTexture::idRenderTexture(idImage *colorImage, idImage *depthImage) {
+idRenderTexture::idRenderTexture(idStr name, idImage *colorImage, idImage *depthImage) {
 	deviceHandle = -1;
+	this->name = name;
+
 	if (colorImage != nullptr)
 	{
 		AddRenderImage(colorImage);
 	}
 	this->depthImage = depthImage;
+
+	renderTextures.Append(this);
 }
 
 /*

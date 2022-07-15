@@ -183,13 +183,27 @@ void RB_STD_T_RenderShaderPasses(const drawSurf_t* surf) {
 			}
 
 			newStage->renderProgram->Bind();
+
+			if (newStage->renderTexture)
+			{
+				newStage->renderTexture->MakeCurrent();
+				glClear(GL_DEPTH_BUFFER_BIT);
+			}
 		}
 		else {
 			tr.guiTextureProgram->Bind();
 		}
+
+		
+
 		RB_DrawElementsWithCounters(tri);
 
 		if (newStage) {
+			if (newStage->renderTexture)
+			{
+				newStage->renderTexture->BindNull();
+			}
+
 			newStage->renderProgram->BindNull();
 		}
 		else {

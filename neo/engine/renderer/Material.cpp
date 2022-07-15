@@ -1313,6 +1313,12 @@ void idMaterial::ParseStage( idLexer &src, const textureRepeat_t trpDefault ) {
 			newStage.renderProgram = tr.FindRenderProgram(token);
 			continue;
 		}
+
+		if (!token.Icmp("rendertexture")) {
+			src.ReadToken(&token);
+			newStage.renderTexture = idRenderTexture::FindRenderTexture(token);
+			continue;
+		}
 		
 		rvmDeclRenderParam* param = declManager->FindRenderParam(token, false);
 		if (param != nullptr && newStage.renderProgram != nullptr)

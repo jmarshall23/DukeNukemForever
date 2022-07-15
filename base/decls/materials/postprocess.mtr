@@ -9,13 +9,23 @@ postprocess/upScaleFrontEndResolve
 postprocess/ssao
 {
 	{
-		blend		modulate
+		// blend		modulate
 
+		rendertexture ssaoRenderTarget
 		renderprog postprocess_ssao
 		screennormaltexture _frontEndRenderPassResolvedColor1
 		screenxyztexture _frontEndRenderPassResolvedColor2
 		screenmaterialtexture _frontEndRenderPassResolvedColor3
 		screendepthtexture _frontEndRenderPassResolvedDepth
+	}
+}
+
+postprocess/ssao_blur
+{
+	{
+		blend		modulate
+		renderprog postprocess_ssao_blur
+		screenxyztexture _ssaoRenderTargetAlbedo
 	}
 }
 

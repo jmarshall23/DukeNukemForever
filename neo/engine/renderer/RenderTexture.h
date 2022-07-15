@@ -44,8 +44,10 @@ resident on the video hardware.
 */
 class idRenderTexture {
 public:
-							idRenderTexture(idImage *colorImage, idImage *depthImage);
+							idRenderTexture(idStr name, idImage *colorImage, idImage *depthImage);
 							~idRenderTexture();
+
+	static idRenderTexture* FindRenderTexture(const char* name);
 
 	ID_INLINE int			GetWidth() const { return ( colorImages.Num() > 0 ) ? colorImages[0]->GetUploadWidth() : depthImage->GetUploadWidth(); }
 	ID_INLINE int			GetHeight() const { return (colorImages.Num() > 0) ? colorImages[0]->GetUploadHeight() : depthImage->GetUploadHeight(); }
@@ -57,6 +59,8 @@ public:
 
 	void					Resize( int width, int height );
 
+	const idStr&			GetName() { return name; }
+
 	void					MakeCurrent( void );
 	static void				BindNull(void);
 
@@ -65,7 +69,9 @@ public:
 	void					AddRenderImage(idImage *image);
 	void					InitRenderTexture(void);
 private:
+	static idList<idRenderTexture*> renderTextures;
 
+	idStr				name;
 	idList<idImage *>	colorImages;
 	idImage *			depthImage;
 	GLuint				deviceHandle;
