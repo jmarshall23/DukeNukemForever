@@ -1,0 +1,15 @@
+// edfcar1.script
+//
+
+object edfcar1 {
+	void				init();
+};
+
+/*
+===========
+edfcar1::init
+===========
+*/
+void edfcar1::init() {
+	sys.print( "edf car spawn\n");
+}

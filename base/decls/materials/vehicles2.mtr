@@ -1,21 +1,21 @@
 models/vehicles/edfcar1/edfcar1_0
 {
-	{
-		map models/vehicles/edfcar1/edfcar1_0.tga
-	}
+	diffusemap models/vehicles/edfcar1/edfcar1_0.tga
+	bumpmap models/vehicles/edfcar1/edfcar1_0_normal.tga
+	specularmap models/vehicles/edfcar1/edfcar1_0_spec.tga
 }
 
 models/vehicles/edfcar1/edfcar1_1
 {
-	{
-		map models/vehicles/edfcar1/edfcar1_1.tga
-	}
+	diffusemap models/vehicles/edfcar1/edfcar1_1.tga
+	bumpmap models/vehicles/edfcar1/edfcar1_1_normal.tga
+	specularmap models/vehicles/edfcar1/edfcar1_1_spec.tga
 }
 
 models/vehicles/edfcar1/edfcar1_2
 {
-	{
-		map models/vehicles/edfcar1/edfcar1_2.tga
-	}
+	diffusemap models/vehicles/edfcar1/edfcar1_2.tga
+	bumpmap models/vehicles/edfcar1/edfcar1_2_normal.tga
+	specularmap models/vehicles/edfcar1/edfcar1_2_spec.tga
 }
 

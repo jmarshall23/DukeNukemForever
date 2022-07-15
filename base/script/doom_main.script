@@ -11,8 +11,11 @@ This is the main script that is loaded before any level scripts load.
 #include "script/doom_events.script"
 #include "script/doom_util.script"
 
+// duke decorations
+#include "script/decorations/edfcar1.script"
+
 // duke maps
-#include "script/map_e1l1.script"
+#include "script/maps/map_e1l1.script"
 
 void doom_main() {
 	sys.print( "Entering doom_main()\n");

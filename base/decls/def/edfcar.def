@@ -6,3 +6,11 @@ entityDef decoration_edfcar
 
 	"move_time"						"8"
 }
+
+entityDef decoration_edfcarstationary
+{
+	"spawnclass"					"dnDecoration"
+	"scriptobject"					"edfcar1"
+	"model"							"models/vehicles/edfcar1/edfcar1.md3"
+	"editor_usage"					"E1L1 edf car"
+}
