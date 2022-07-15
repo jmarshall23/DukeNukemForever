@@ -226,12 +226,6 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 		float* lightRegs = (float*)R_FrameAlloc(lightShader->GetNumRegisters() * sizeof(float));
 		vLight->shaderRegisters = lightRegs;
 		lightShader->EvaluateRegisters(lightRegs, lightDef->parms.shaderParms, tr.viewDef, lightDef->parms.referenceSound);
-
-		int litRenderTableSize = renderWorldFrontEnd->entityDefs.Num() * sizeof(idRenderEntityLocal);
-
-		vLight->litRenderEntityTableSize = renderWorldFrontEnd->entityDefs.Num();
-		vLight->litRenderEntities = (idRenderLightAttachedEntity*)R_FrameAlloc(litRenderTableSize);
-		memset(vLight->litRenderEntities, 0, litRenderTableSize);	
 	}
 
 	for (int i = 0; i < renderWorldFrontEnd->entityDefs.Num(); i++)
@@ -288,8 +282,6 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 	vLight = tr.viewDef->viewLights;
 	while (vLight != nullptr)
 	{
-		qsort(vLight->litRenderEntities, vLight->litRenderEntityTableSize, sizeof(idRenderLightAttachedEntity), (_CoreCrtNonSecureSearchSortCompareFunction)sortLightEntities);
-
 		vLight->lightDef->lightRendered = false;
 		vLight = vLight->next;
 	}

@@ -61,7 +61,4 @@ public:
 	idImage* falloffImage;				// falloff image used by backend
 
 	int						shadowMapSlice;
-
-	int litRenderEntityTableSize;
-	idRenderLightAttachedEntity*	litRenderEntities;
 };

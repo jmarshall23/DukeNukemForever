@@ -513,22 +513,6 @@ void idRenderModelCommitted::GenerateSurfaceLights(int committedRenderModelId, d
 			}
 
 			newDrawSurf->surfRenderLights[newDrawSurf->numSurfRenderLights++] = vLight;
-
-#ifdef _DEBUG
-			if (vLight->litRenderEntities[committedRenderModelId].entity != nullptr)
-			{
-				if (vLight->litRenderEntities[committedRenderModelId].entity != this->entityDef)
-				{
-					common->FatalError("idRenderModelCommitted::GenerateSurfaceLights: Broken light table!");
-				}
-			}
-#endif
-			idVec3 entityCenter = entityDef->parms.origin + entityDef->parms.hModel->Bounds().GetCenter();
-
-			float dist = (entityCenter - vLight->lightDef->parms.origin).LengthFast();
-
-			vLight->litRenderEntities[committedRenderModelId].entity = this->entityDef;
-			vLight->litRenderEntities[committedRenderModelId].distance = dist;
 		}
 
 		vLight = vLight->next;

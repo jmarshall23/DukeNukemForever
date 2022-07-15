@@ -48,22 +48,36 @@ float	R_Shadow_CalcLightAxialSize(idRenderLightCommitted* vLight) {
 RB_Shadow_RenderOccluders
 ==================
 */
-void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
-	for (int i = 0; i < vLight->litRenderEntityTableSize; i++)
-	{
-		if (vLight->litRenderEntities[i].entity == nullptr)
-			continue;
 
-		const idRenderEntityLocal* entityDef = vLight->litRenderEntities[i].entity;
+/*
+==================
+RB_Shadow_RenderOccluders
+==================
+*/
+void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
+	drawSurf_t** drawSurfs;
+	int			numDrawSurfs;
+
+	drawSurfs = (drawSurf_t**)&backEnd.viewDef->drawSurfs[0];
+	numDrawSurfs = backEnd.viewDef->numDrawSurfs;
+
+
+	const idRenderEntityLocal* lastEntityDef = nullptr;
+	for (int i = 0; i < numDrawSurfs; i++)
+	{
+		const idRenderEntityLocal* entityDef = drawSurfs[i]->space->entityDef;//  vLight->litRenderEntities[i].entity;
 		idRenderModel* inter = entityDef->viewEntity->renderModel;
+		
+		idBounds geoBounds = drawSurfs[i]->geo->bounds;
+		geoBounds.TranslateSelf(entityDef->parms.origin);
+		if (!geoBounds.IntersectsBounds(vLight->lightDef->globalLightBounds)) {
+			continue;
+		}
 
 		if (entityDef->parms.noShadow)
 			continue;
 
 		if (!entityDef) {
-			continue;
-		}
-		if (inter->NumSurfaces() < 1) {
 			continue;
 		}
 
@@ -72,31 +86,30 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 
 		// no need to check for current on this, because each interaction is always
 		// a different space
-		idRenderMatrix	matrix, transposeMatrix, mvp;
-		myGlMultMatrix(entityDef->modelMatrix, lightMatrix, matrix.GetFloatPtr());
-		
-		idRenderMatrix::Transpose(matrix, transposeMatrix);
-		idRenderMatrix::Multiply(lightProjectionMatrix, transposeMatrix, mvp);
 
-		RB_SetMVP(mvp);
-		RB_SetModelMatrix(entityDef->modelMatrix);
+		if (entityDef != lastEntityDef)
+		{
+			idRenderMatrix	matrix, transposeMatrix, mvp;
+			myGlMultMatrix(entityDef->modelMatrix, lightMatrix, matrix.GetFloatPtr());
 
-		tr.shadowMapProgram->Bind();
+			idRenderMatrix::Transpose(matrix, transposeMatrix);
+			idRenderMatrix::Multiply(lightProjectionMatrix, transposeMatrix, mvp);
+
+			RB_SetMVP(mvp);
+			RB_SetModelMatrix(entityDef->modelMatrix);
+
+			tr.shadowMapProgram->Bind();
+			lastEntityDef = entityDef;
+		}
 
 		// draw each surface
-		for (int i = 0; i < inter->NumSurfaces(); i++) {
-			const idModelSurface* surfInt = inter->Surface(i);
-
-			//if (!surfInt->geometry->ambientSurface) {
-			//	continue;
-			//}
-
-			if (surfInt->shader && !surfInt->shader->SurfaceCastsShadow()) {
+		{
+			if (drawSurfs[i]->material && !drawSurfs[i]->material->SurfaceCastsShadow()) {
 				continue;
 			}
 
-			if(surfInt->noShadow)
-				continue;
+			//if(surfInt->noShadow)
+			//	continue;
 
 			// cull it
 			//if (surfInt->expCulled == CULL_OCCLUDER_AND_RECEIVER) {
@@ -111,7 +124,7 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			//}			
 
 			// render it
-			const srfTriangles_t* tri = surfInt->geometry;
+			const srfTriangles_t* tri = drawSurfs[i]->geo;
 			if (!tri->ambientCache) {
 				continue;
 			}
@@ -119,7 +132,7 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			// set the vertex pointers
 			idDrawVert* ac = (idDrawVert*)vertexCache.Position(tri->ambientCache);
 			glVertexPointer(3, GL_FLOAT, sizeof(idDrawVert), ac->xyz.ToFloatPtr());
-			
+
 			//if (surfInt->skinning.HasSkinning()) {
 			//	const rvmSkeletalSurf_t* skinning = &surfInt->skinning;
 			//	RB_BindJointBuffer(skinning->jointBuffer, skinning->jointsInverted->ToFloatPtr(), skinning->numInvertedJoints, (void*)&ac->color, (void*)&ac->color2);
@@ -129,8 +142,8 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			//	surfInt->shader->GetEditorImage()->Bind();
 			//}
 
-			const shaderStage_t* pStage = surfInt->shader->GetAlbedoStage();
-			if(pStage == nullptr)
+			const shaderStage_t* pStage = drawSurfs[i]->material->GetAlbedoStage();
+			if (pStage == nullptr)
 				continue;
 
 			tr.albedoTextureParam->SetImage(pStage->texture.image[0]);
@@ -143,8 +156,8 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			{
 				tr.shadowMapProgram->Bind();
 			}
-			
-			
+
+
 			RB_DrawElementsWithCounters(tri);
 
 			//if (surfInt->skinning.HasSkinning()) {
