@@ -8,6 +8,162 @@ textures/vegas/sunbrst
 	}
 }
 
+textures/vegas/vegcasspr2RC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegcasspr2RC.tga
+	bumpmap textures/vegas/vegcasspr2RC_normal.tga
+	specularmap textures/vegas/vegcasspr2RC_spec.tga
+}
+
+
+textures/vegas/vegcasspr9RC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegcasspr9RC.tga
+	bumpmap textures/vegas/vegcasspr9RC_normal.tga
+	specularmap textures/vegas/vegcasspr9RC_spec.tga
+}
+
+textures/vegas/vegtres3RC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegtres3RC.tga
+	bumpmap textures/vegas/vegtres3RC_normal.tga
+	specularmap textures/vegas/vegtres3RC_spec.tga
+}
+
+textures/vegas/vegnewyork1aRC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegnewyork1aRC.tga
+	bumpmap textures/vegas/vegnewyork1aRC_normal.tga
+	specularmap textures/vegas/vegnewyork1aRC_spec.tga
+}
+
+
+textures/vegas/vegeiffle1bRC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegeiffle1bRC.tga
+	bumpmap textures/vegas/vegeiffle1bRC_normal.tga
+	specularmap textures/vegas/vegeiffle1bRC_spec.tga
+}
+
+textures/vegas/vegbuilding15RC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegbuilding15RC.tga
+	bumpmap textures/vegas/vegbuilding15RC_normal.tga
+	specularmap textures/vegas/vegbuilding15RC_spec.tga
+}
+
+textures/vegas/vegbuilding16RC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegbuilding16RC.tga
+	bumpmap textures/vegas/vegbuilding16RC_normal.tga
+	specularmap textures/vegas/vegbuilding16RC_spec.tga
+}
+
+textures/vegas/vegbuilding19RC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/vegbuilding19RC.tga
+	bumpmap textures/vegas/vegbuilding19RC_normal.tga
+	specularmap textures/vegas/vegbuilding19RC_spec.tga
+}
+
+textures/vegas/BuildingAsiaAB
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/BuildingAsiaAB.tga
+	bumpmap textures/vegas/BuildingAsiaAB_normal.tga
+	specularmap textures/vegas/BuildingAsiaAB_spec.tga
+}
+
+textures/vegas/BuildingCaesarsAB
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/BuildingCaesarsAB.tga
+	bumpmap textures/vegas/BuildingCaesarsAB_normal.tga
+	specularmap textures/vegas/BuildingCaesarsAB_spec.tga
+}
+
+textures/vegas/BuildingFlamingoAB
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/BuildingFlamingoAB.tga
+	bumpmap textures/vegas/BuildingFlamingoAB_normal.tga
+	specularmap textures/vegas/BuildingFlamingoAB_spec.tga
+}
+
+textures/vegas/BuildingLKAB
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/BuildingLKAB.tga
+	bumpmap textures/vegas/BuildingLKAB_normal.tga
+	specularmap textures/vegas/BuildingLKAB_spec.tga
+}
+
+textures/vegas/BuildingBallysAB
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/BuildingBallysAB.tga
+	bumpmap textures/vegas/BuildingBallysAB_normal.tga
+	specularmap textures/vegas/BuildingBallysAB_spec.tga
+}
+
+
+textures/vegas/casino6RC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/casino6RC.tga
+	bumpmap textures/vegas/casino6RC_normal.tga
+	specularmap textures/vegas/casino6RC_spec.tga
+}
+
+textures/vegas/monte1aRC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/monte1aRC.tga
+	bumpmap textures/vegas/monte1aRC_normal.tga
+	specularmap textures/vegas/monte1aRC_spec.tga
+}
+
+textures/vegas/Belagio1aRC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/Belagio1aRC.tga
+	bumpmap textures/vegas/Belagio1aRC_normal.tga
+	specularmap textures/vegas/Belagio1aRC_spec.tga
+}
+
+textures/vegas/Belagio1eRC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/Belagio1eRC.tga
+	bumpmap textures/vegas/Belagio1eRC_normal.tga
+	specularmap textures/vegas/Belagio1eRC_spec.tga
+}
+
 models/zone1_vegas/palm2/palm2_0
 {
 	diffusemap models/zone1_vegas/palm2/palm2_0.tga
@@ -57,6 +213,15 @@ textures/penthouse/pentextbuild14b
 
 	bumpmap textures/penthouse/pentextbuild14b_normal.tga
 	specularmap textures/penthouse/pentextbuild14b_spec.tga
+}
+
+textures/vegas/sinstadt1tw
+{
+	customInteractionProgram interaction_emissive
+
+	diffusemap textures/vegas/sinstadt1tw.tga
+	bumpmap textures/vegas/sinstadt1tw_normal.tga
+	specularmap textures/vegas/sinstadt1tw_spec.tga
 }
 
 

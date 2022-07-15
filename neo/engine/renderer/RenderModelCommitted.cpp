@@ -509,10 +509,12 @@ void idRenderModelCommitted::GenerateSurfaceLights(int committedRenderModelId, d
 		{
 			if (newDrawSurf->numSurfRenderLights >= MAX_RENDERLIGHTS_PER_SURFACE)
 			{
-				common->Error("Too many realtime shadow casting lights hitting surface.");
+			//	common->Error("Too many realtime shadow casting lights hitting surface.");
 			}
-
-			newDrawSurf->surfRenderLights[newDrawSurf->numSurfRenderLights++] = vLight;
+			else
+			{
+				newDrawSurf->surfRenderLights[newDrawSurf->numSurfRenderLights++] = vLight;
+			}
 		}
 
 		vLight = vLight->next;

@@ -180,20 +180,6 @@ textures/vegas/baspwall_4tw
 	specularmap textures/vegas/baspwall_4tw_spec.tga
 }
 
-textures/vegas/Belagio1aRC
-{
-	diffusemap textures/vegas/Belagio1aRC.tga
-	bumpmap textures/vegas/Belagio1aRC_normal.tga
-	specularmap textures/vegas/Belagio1aRC_spec.tga
-}
-
-textures/vegas/Belagio1eRC
-{
-	diffusemap textures/vegas/Belagio1eRC.tga
-	bumpmap textures/vegas/Belagio1eRC_normal.tga
-	specularmap textures/vegas/Belagio1eRC_spec.tga
-}
-
 textures/vegas/blue1ABC
 {
 	diffusemap textures/vegas/blue1ABC.tga
@@ -297,41 +283,6 @@ textures/vegas/brokenmirror2RC
 	diffusemap textures/vegas/brokenmirror2RC.tga
 	bumpmap textures/vegas/brokenmirror2RC_normal.tga
 	specularmap textures/vegas/brokenmirror2RC_spec.tga
-}
-
-textures/vegas/BuildingAsiaAB
-{
-	diffusemap textures/vegas/BuildingAsiaAB.tga
-	bumpmap textures/vegas/BuildingAsiaAB_normal.tga
-	specularmap textures/vegas/BuildingAsiaAB_spec.tga
-}
-
-textures/vegas/BuildingBallysAB
-{
-	diffusemap textures/vegas/BuildingBallysAB.tga
-	bumpmap textures/vegas/BuildingBallysAB_normal.tga
-	specularmap textures/vegas/BuildingBallysAB_spec.tga
-}
-
-textures/vegas/BuildingCaesarsAB
-{
-	diffusemap textures/vegas/BuildingCaesarsAB.tga
-	bumpmap textures/vegas/BuildingCaesarsAB_normal.tga
-	specularmap textures/vegas/BuildingCaesarsAB_spec.tga
-}
-
-textures/vegas/BuildingFlamingoAB
-{
-	diffusemap textures/vegas/BuildingFlamingoAB.tga
-	bumpmap textures/vegas/BuildingFlamingoAB_normal.tga
-	specularmap textures/vegas/BuildingFlamingoAB_spec.tga
-}
-
-textures/vegas/BuildingLKAB
-{
-	diffusemap textures/vegas/BuildingLKAB.tga
-	bumpmap textures/vegas/BuildingLKAB_normal.tga
-	specularmap textures/vegas/BuildingLKAB_spec.tga
 }
 
 textures/vegas/bulletBC
@@ -563,13 +514,6 @@ textures/vegas/casino6bRC
 	diffusemap textures/vegas/casino6bRC.tga
 	bumpmap textures/vegas/casino6bRC_normal.tga
 	specularmap textures/vegas/casino6bRC_spec.tga
-}
-
-textures/vegas/casino6RC
-{
-	diffusemap textures/vegas/casino6RC.tga
-	bumpmap textures/vegas/casino6RC_normal.tga
-	specularmap textures/vegas/casino6RC_spec.tga
 }
 
 textures/vegas/casino7aRC
@@ -2154,12 +2098,6 @@ textures/vegas/modulation
 	specularmap textures/vegas/modulation_spec.tga
 }
 
-textures/vegas/monte1aRC
-{
-	diffusemap textures/vegas/monte1aRC.tga
-	bumpmap textures/vegas/monte1aRC_normal.tga
-	specularmap textures/vegas/monte1aRC_spec.tga
-}
 
 textures/vegas/monte1bRC
 {
@@ -3092,13 +3030,6 @@ textures/vegas/sign9cRC
 	specularmap textures/vegas/sign9cRC_spec.tga
 }
 
-textures/vegas/sinstadt1tw
-{
-	diffusemap textures/vegas/sinstadt1tw.tga
-	bumpmap textures/vegas/sinstadt1tw_normal.tga
-	specularmap textures/vegas/sinstadt1tw_spec.tga
-}
-
 textures/vegas/slotled_0
 {
 	diffusemap textures/vegas/slotled_0.tga
@@ -3596,26 +3527,6 @@ textures/vegas/vegblackj1aRC
 	specularmap textures/vegas/vegblackj1aRC_spec.tga
 }
 
-textures/vegas/vegbuilding15RC
-{
-	diffusemap textures/vegas/vegbuilding15RC.tga
-	bumpmap textures/vegas/vegbuilding15RC_normal.tga
-	specularmap textures/vegas/vegbuilding15RC_spec.tga
-}
-
-textures/vegas/vegbuilding16RC
-{
-	diffusemap textures/vegas/vegbuilding16RC.tga
-	bumpmap textures/vegas/vegbuilding16RC_normal.tga
-	specularmap textures/vegas/vegbuilding16RC_spec.tga
-}
-
-textures/vegas/vegbuilding19RC
-{
-	diffusemap textures/vegas/vegbuilding19RC.tga
-	bumpmap textures/vegas/vegbuilding19RC_normal.tga
-	specularmap textures/vegas/vegbuilding19RC_spec.tga
-}
 
 textures/vegas/vegcarpet10aRC
 {
@@ -3694,13 +3605,6 @@ textures/vegas/vegcasspr1RC
 	specularmap textures/vegas/vegcasspr1RC_spec.tga
 }
 
-textures/vegas/vegcasspr2RC
-{
-	diffusemap textures/vegas/vegcasspr2RC.tga
-	bumpmap textures/vegas/vegcasspr2RC_normal.tga
-	specularmap textures/vegas/vegcasspr2RC_spec.tga
-}
-
 textures/vegas/vegcasspr4RC
 {
 	diffusemap textures/vegas/vegcasspr4RC.tga
@@ -3727,13 +3631,6 @@ textures/vegas/vegcasspr7RC
 	diffusemap textures/vegas/vegcasspr7RC.tga
 	bumpmap textures/vegas/vegcasspr7RC_normal.tga
 	specularmap textures/vegas/vegcasspr7RC_spec.tga
-}
-
-textures/vegas/vegcasspr9RC
-{
-	diffusemap textures/vegas/vegcasspr9RC.tga
-	bumpmap textures/vegas/vegcasspr9RC_normal.tga
-	specularmap textures/vegas/vegcasspr9RC_spec.tga
 }
 
 textures/vegas/vegceasign10RC
@@ -3790,13 +3687,6 @@ textures/vegas/vegdrainpipe1eR
 	diffusemap textures/vegas/vegdrainpipe1eR.tga
 	bumpmap textures/vegas/vegdrainpipe1eR_normal.tga
 	specularmap textures/vegas/vegdrainpipe1eR_spec.tga
-}
-
-textures/vegas/vegeiffle1bRC
-{
-	diffusemap textures/vegas/vegeiffle1bRC.tga
-	bumpmap textures/vegas/vegeiffle1bRC_normal.tga
-	specularmap textures/vegas/vegeiffle1bRC_spec.tga
 }
 
 textures/vegas/vegelevator1bRC
@@ -4016,13 +3906,6 @@ textures/vegas/vegmirage2RC
 	specularmap textures/vegas/vegmirage2RC_spec.tga
 }
 
-textures/vegas/vegnewyork1aRC
-{
-	diffusemap textures/vegas/vegnewyork1aRC.tga
-	bumpmap textures/vegas/vegnewyork1aRC_normal.tga
-	specularmap textures/vegas/vegnewyork1aRC_spec.tga
-}
-
 textures/vegas/vegosheas1aRC
 {
 	diffusemap textures/vegas/vegosheas1aRC.tga
@@ -4177,12 +4060,6 @@ textures/vegas/vegtree5RC
 	specularmap textures/vegas/vegtree5RC_spec.tga
 }
 
-textures/vegas/vegtres3RC
-{
-	diffusemap textures/vegas/vegtres3RC.tga
-	bumpmap textures/vegas/vegtres3RC_normal.tga
-	specularmap textures/vegas/vegtres3RC_spec.tga
-}
 
 textures/vegas/vegtres4RC
 {

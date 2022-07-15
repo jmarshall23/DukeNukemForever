@@ -165,6 +165,11 @@ renderProg interaction
 
 		finalColor = clamp(finalColor, 0.0, 10.0);
 
+#ifdef EXTRA_BRIGHT
+		finalColor += 0.5;
+#endif
+
+
 #ifdef SPEC_ONLY_TEST
 		finalpixel_color.xyz = finalColor;
 #else
@@ -218,6 +223,13 @@ renderProg interaction_emissive
 	inherit interaction
 	define NO_LIGHT_PASS
 	define EMISSIVE
+}
+
+renderProg interaction_lit_emissive
+{
+	inherit interaction
+	define EMISSIVE
+	define EXTRA_BRIGHT
 }
 
 renderProg interaction_water
