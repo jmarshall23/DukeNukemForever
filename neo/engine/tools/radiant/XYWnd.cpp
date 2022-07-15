@@ -1478,9 +1478,9 @@ void CXYWnd::OnPaint() {
 	}
 
 	if (bPaint) {
-		QE_CheckOpenGLForErrors();
+		//QE_CheckOpenGLForErrors();
 		XY_Draw();
-		QE_CheckOpenGLForErrors();
+		//QE_CheckOpenGLForErrors();
 
 		if (m_nViewType != XY) {
 			glPushMatrix();

@@ -759,6 +759,8 @@ void R_CreateSilIndexes( srfTriangles_t *tri ) {
 	int		i;
 	int		*remap;
 
+	return;
+
 	if ( tri->silIndexes ) {
 		triSilIndexAllocator.Free( tri->silIndexes );
 		tri->silIndexes = NULL;
@@ -2045,14 +2047,14 @@ void R_CleanupTriangles( srfTriangles_t *tri, bool createNormals, bool identifyS
 
 //	R_RemoveDuplicatedTriangles( tri );	// this may remove valid overlapped transparent triangles
 
-	R_RemoveDegenerateTriangles( tri );
+//	R_RemoveDegenerateTriangles( tri );
 
 	R_TestDegenerateTextureSpace( tri );
 
 //	R_RemoveUnusedVerts( tri );
 
 	if ( identifySilEdges ) {
-		R_IdentifySilEdges( tri, true );	// assume it is non-deformable, and omit coplanar edges
+//		R_IdentifySilEdges( tri, true );	// assume it is non-deformable, and omit coplanar edges
 	}
 
 	// bust vertexes that share a mirrored edge into separate vertexes
@@ -2061,7 +2063,7 @@ void R_CleanupTriangles( srfTriangles_t *tri, bool createNormals, bool identifyS
 	// optimize the index order (not working?)
 //	R_OrderIndexes( tri->numIndexes, tri->indexes );
 
-	R_CreateDupVerts( tri );
+//	R_CreateDupVerts( tri );
 
 	R_BoundTriSurf( tri );
 
@@ -2110,12 +2112,12 @@ deformInfo_t *R_BuildDeformInfo( int numVerts, const idDrawVert *verts, int numI
 //	R_RemoveDuplicatedTriangles( &tri );
 //	R_RemoveDegenerateTriangles( &tri );
 //	R_RemoveUnusedVerts( &tri );
-	R_IdentifySilEdges( &tri, false );			// we cannot remove coplanar edges, because
+//	R_IdentifySilEdges( &tri, false );			// we cannot remove coplanar edges, because
 												// they can deform to silhouettes
 
 	R_DuplicateMirroredVertexes( &tri );		// split mirror points into multiple points
 
-	R_CreateDupVerts( &tri );
+//	R_CreateDupVerts( &tri );
 
 	if ( useUnsmoothedTangents ) {
 		R_BuildDominantTris( &tri );

@@ -191,7 +191,7 @@ void CCamWnd::OnPaint() {
 		common->Printf("Please restart " EDITOR_WINDOWTEXT " if the camera view is not working\n");
 	}
 	else {
-		QE_CheckOpenGLForErrors();
+		//QE_CheckOpenGLForErrors();
 		g_pSplitList = NULL;
 		if (g_bClipMode) {
 			if (g_Clip1.Set() && g_Clip2.Set()) {
@@ -200,7 +200,7 @@ void CCamWnd::OnPaint() {
 		}
 
 		Cam_Draw();
-		QE_CheckOpenGLForErrors();
+		//QE_CheckOpenGLForErrors();
 		qwglSwapBuffers(dc.m_hDC);
 	}
 }
