@@ -166,7 +166,7 @@ renderProg interaction
 		finalColor = clamp(finalColor, 0.0, 10.0);
 
 #ifdef EXTRA_BRIGHT
-		finalColor += 0.5;
+		finalColor += 0.25;
 #endif
 
 

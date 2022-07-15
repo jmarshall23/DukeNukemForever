@@ -260,7 +260,7 @@ static void CleanupUTriangles( srfTriangles_t *tri ) {
 	R_RangeCheckIndexes( tri );
 	R_CreateSilIndexes( tri );
 //	R_RemoveDuplicatedTriangles( tri );	// this may remove valid overlapped transparent triangles
-	R_RemoveDegenerateTriangles( tri );
+//	R_RemoveDegenerateTriangles( tri );
 //	R_RemoveUnusedVerts( tri );
 
 	R_FreeStaticTriSurfSilIndexes( tri );
