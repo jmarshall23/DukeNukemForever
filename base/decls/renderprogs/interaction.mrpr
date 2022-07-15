@@ -80,8 +80,12 @@ renderProg interaction
 		for(int i = 0; i < $numLights; i++)
 		{
 			vec3 lc = $lightcolor[i].xyz;
+		
+			float lightType = $lightcolor[i].w;
 
 			vec4 toLight = $globalLightOrigin[i] - vertex;
+			vec4 toLight2 = vertex - $globalLightOrigin[i];
+
 			float noSpecular = $globalLightOrigin[i].w;	
 
 			//# add together to become the half angle vector in object space (non-normalized)
@@ -104,7 +108,7 @@ renderProg interaction
 			// vec3 CalcSpecPBR(vec3 cameraVector, vec4 Cd, vec4 metallic, float roughness, vec3 H, vec3 N, vec3 L)
 			vec3 pbr = vec3(0, 0, 0);
 
-			if(noSpecular == 0)
+			if(noSpecular == 0 || lightType == 2)
 			{
 				pbr = CalcSpecPBR(viewTangentVector.xyz, 
 							diffuseMap.xyz, 
@@ -113,7 +117,27 @@ renderProg interaction
 							normalize(halfAngleTangentVector), localNormal, lightVector);
 			}
 
-			float attenuation = AttenuationPointLight(vertex_texcoord5.xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
+			float attenuation = 0;
+			
+			// Point light.
+			if(lightType == 1)
+			{
+				attenuation = AttenuationPointLight(vertex_texcoord5.xyz, vec4($globalLightOrigin[i].xyz, 1.0), $globalLightExtents[i]);
+			}
+			else if(lightType == 2) // Spotlight
+			{
+				float d = distance(vertex.xyz, $globalLightOrigin[i].xyz);
+				float spotFalloff = dot(normalize(toLight2.xyz), -normalize(vec3($globalLightExtents[i].y, $globalLightExtents[i].z, $globalLightExtents[i].w)));
+				float cosAngle = $globalLightOrigin[i].w;
+
+				//spotFalloff = spotFalloff - cosAngle;
+				if(spotFalloff < 0)
+					continue;
+
+				attenuation = AttenuationSpotLight(d, $globalLightExtents[i].x, 1.0) * spotFalloff;
+			}
+			
+
 			float lit = dot3( localNormal, lightVector ) * attenuation;
 
 			if(lit <= 0)
@@ -124,7 +148,7 @@ renderProg interaction
 
 			if(_shadowMapInfo.w == 1)
 			{
-				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, vertex_texcoord5.xyz, $globalLightOrigin[i].xyz, _shadowMapInfo);
+				shadow = CalculateShadows($atlasLookup, $shadowMapAtlas, vertex_texcoord5.xyz, $globalLightOrigin[i].xyz, _shadowMapInfo, lightType);
 			}
 #ifdef SPEC_ONLY_TEST
 			finalColor += (lc * ((pbr  * shadow * attenuation))) ;

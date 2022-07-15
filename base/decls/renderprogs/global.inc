@@ -119,25 +119,36 @@ vec2 ShowSpotLightCoords(vec3 vertexPos, vec3 lightPos) {
 }
 #endif
 
-float CalculateShadows(sampler2D atlasLookup, sampler2D shadowMapAtlas, vec3 vertexPos, vec3 lightPos, vec4 ShadowMapInfo) {
+float CalculateShadows(sampler2D atlasLookup, sampler2D shadowMapAtlas, vec3 vertexPos, vec3 lightPos, vec4 ShadowMapInfo, float lightType) {
 	vec3 vertToLight = vertexPos - lightPos;
-#ifdef ID_SPOTLIGHT
-	vec4 shadowTexCoords;
-	vec4 _vertexPos = vec4(vertexPos.x, vertexPos.y, vertexPos.z, 1.0);
+	vec2 initialuv;
+	float slice;
 
-	shadowTexCoords.x = dot4(_vertexPos, shadowMatrixX);	
-	shadowTexCoords.y = dot4(_vertexPos, shadowMatrixY);
-	shadowTexCoords.z = dot4(_vertexPos, shadowMatrixZ);
-	shadowTexCoords.w = dot4(_vertexPos, shadowMatrixW);
+	if(lightType == 2)
+	{
+// jmarshall - I don't like the way I did this in IcedTech requires sending too much data to the GPU. Figure out another way to do this!
+#if 0
+		vec4 shadowTexCoords;
+		vec4 _vertexPos = vec4(vertexPos.x, vertexPos.y, vertexPos.z, 1.0);
 
-	vec2 initialuv = shadowTexCoords.xy / shadowTexCoords.w;
-	initialuv = initialuv * 0.5 + 0.5;
-	float slice = 0;	
-#else
-	vec3 cubeInfo = ComputeSampleCube(vertToLight);
-	vec2 initialuv = cubeInfo.xy;
-	float slice = cubeInfo.z;
+		shadowTexCoords.x = dot4(_vertexPos, shadowMatrixX);	
+		shadowTexCoords.y = dot4(_vertexPos, shadowMatrixY);
+		shadowTexCoords.z = dot4(_vertexPos, shadowMatrixZ);
+		shadowTexCoords.w = dot4(_vertexPos, shadowMatrixW);
+
+		vec2 initialuv = shadowTexCoords.xy / shadowTexCoords.w;
+		initialuv = initialuv * 0.5 + 0.5;
+		slice = 0;
 #endif
+		return 1;
+// jmarshall end
+	}
+	else if(lightType == 1)
+	{
+		vec3 cubeInfo = ComputeSampleCube(vertToLight);
+		initialuv = cubeInfo.xy;
+		slice = cubeInfo.z;
+	}
 
 	initialuv *= ShadowMapInfo.y;
 	

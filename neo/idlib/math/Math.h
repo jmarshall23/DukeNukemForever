@@ -256,6 +256,16 @@ public:
 	static int					Rand() { return rand(); }
 	static float				FRand() { return Rand() / (float)RAND_MAX; }
 	static float				FRandRange(float min, float max) { return min + (max - min) * FRand(); }
+
+	static float				Distance(idVec3 p1, idVec3 p2);
+	static float				DistanceSquared(idVec3 p1, idVec3 p2);
+	static float				AngleMod(float a);
+
+	static idVec3				CrossProduct(const idVec3& a, const idVec3& b);
+	static idVec3				CreateVector(float x, float y, float z);
+	static idVec4				CreateVector(float x, float y, float z, float w);
+
+	static idVec3				ReflectVector(idVec3 vector, idVec3 normal);
 // jmarshall end
 	static float				AngleNormalize360( float angle );
 	static float				AngleNormalize180( float angle );

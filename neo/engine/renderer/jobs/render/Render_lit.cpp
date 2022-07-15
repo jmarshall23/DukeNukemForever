@@ -189,8 +189,37 @@ void idRender::DrawForwardLit( void ) {
 		{
 			const idRenderLightCommitted* vLight = drawSurf->surfRenderLights[d];
 
+			float lightOriginAlpha = 0;
+
 			// globalLightExtents.
-			tr.globalLightExtentsParam->SetVectorValue(idVec4(vLight->lightDef->parms.lightRadius.x, vLight->lightDef->parms.lightRadius.y, vLight->lightDef->parms.lightRadius.z, 1.0f), d);
+			if (vLight->lightDef->parms.lightType == LIGHT_TYPE_POINT)
+			{
+				tr.globalLightExtentsParam->SetVectorValue(idVec4(vLight->lightDef->parms.lightRadius.x, vLight->lightDef->parms.lightRadius.y, vLight->lightDef->parms.lightRadius.z, 1.0f), d);
+			}
+			else if(vLight->lightDef->parms.lightType == LIGHT_TYPE_SPOTLIGHT)
+			{
+				float maxLightDistance = idMath::Distance(vLight->lightDef->parms.start, vLight->lightDef->parms.target);
+				idVec3 lightTarget = vLight->lightDef->parms.target + vLight->lightDef->parms.origin;
+				idVec3 lightRight = vLight->lightDef->parms.target + vLight->lightDef->parms.right;
+				idVec3 lightUp = vLight->lightDef->parms.target - vLight->lightDef->parms.up;
+
+				idVec3 rightDir = vLight->lightDef->parms.origin - lightRight;
+				rightDir.Normalize();
+
+				idVec3 leftUp = vLight->lightDef->parms.origin - lightUp;
+				leftUp.Normalize();
+
+				lightOriginAlpha = leftUp * rightDir; // Cosine angle.
+
+				idVec3 spotLightDir = vLight->lightDef->parms.origin - lightTarget;
+
+				idVec4 lightRadius(maxLightDistance, spotLightDir.x, spotLightDir.y, spotLightDir.z);
+				tr.globalLightExtentsParam->SetVectorValue(lightRadius, d);
+			}
+			else
+			{
+				common->FatalError("DrawForwardLit: Unknown light type");
+			}
 			
 			// shadowmap info
 			idVec4 shadowMapInfo(vLight->shadowMapSlice, renderShadowSystem.GetAtlasSampleScale(), renderShadowSystem.GetShadowMapAtlasSize(), !vLight->lightDef->parms.noShadows);
@@ -198,11 +227,14 @@ void idRender::DrawForwardLit( void ) {
 
 			// globalLightOrigin
 			idVec4 lightOrigin(vLight->lightDef->parms.origin.x, vLight->lightDef->parms.origin.y, vLight->lightDef->parms.origin.z, vLight->lightDef->parms.noSpecular);
+			if (vLight->lightDef->parms.lightType == LIGHT_TYPE_SPOTLIGHT)
+			{
+				lightOrigin.w = lightOriginAlpha;
+			}
 			tr.globalLightOriginParam->SetVectorValue(lightOrigin, d);
 
 			// light color.
-			idVec4 lightColor(vLight->lightDef->parms.lightColor.x, vLight->lightDef->parms.lightColor.y, vLight->lightDef->parms.lightColor.z, 1.0);
-			lightColor = lightColor * backEnd.lightScale;
+			idVec4 lightColor(vLight->lightDef->parms.lightColor.x * backEnd.lightScale, vLight->lightDef->parms.lightColor.y * backEnd.lightScale, vLight->lightDef->parms.lightColor.z * backEnd.lightScale, vLight->lightDef->parms.lightType);
 			tr.lightColorParam->SetVectorValue(lightColor, d);
 		}
 
