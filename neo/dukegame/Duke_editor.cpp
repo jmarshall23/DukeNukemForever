@@ -41,9 +41,9 @@ void idGameEdit::DrawEditor(renderView_t* view, idRenderWorld* editorRenderWorld
 		renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.bloomMaterial);
 
 		// Render the SSAO to a render target so we can blur it.
-		renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.ssaoMaterial);
+		//renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.ssaoMaterial);
 
-		renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.ssaoBlurMaterial);
+		//renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.ssaoBlurMaterial);
 	}
 
 	renderSystem->EndFrame(&frontEnd, &backEnd);
