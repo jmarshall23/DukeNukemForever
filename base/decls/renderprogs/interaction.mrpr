@@ -177,7 +177,7 @@ renderProg interaction
 #ifndef NO_LIGHT_PASS
 		vec4 ambientLight = $ambientLightInfo;
 
-		float ue1_detail_map_hack = clamp(bumpMap.g + 0.1, 0.0, 1.0);
+		float ue1_detail_map_hack = clamp(bumpMap.g * 1.5, 0.0, 1.0);
 
 		if(ambientLight.w == -1)
 		{
