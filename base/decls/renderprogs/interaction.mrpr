@@ -177,13 +177,15 @@ renderProg interaction
 #ifndef NO_LIGHT_PASS
 		vec4 ambientLight = $ambientLightInfo;
 
+		float ue1_detail_map_hack = clamp(bumpMap.g + 0.1, 0.0, 1.0);
+
 		if(ambientLight.w == -1)
 		{
 			finalpixel_color.xyz = diffuseMap.xyz;
 		}
 		else
 		{
-			finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * ambientLight.w) + ambientLight.xyz);
+			finalpixel_color.xyz = diffuseMap.xyz * ((finalColor * ambientLight.w) + (ambientLight.xyz * ue1_detail_map_hack));
 		}
 #else
 		finalpixel_color.xyz = diffuseMap.xyz;
