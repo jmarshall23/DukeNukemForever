@@ -1,3 +1,12 @@
+textures/skies/vegas1
+{
+	twosided
+
+	{
+		map models/skies/sky01.tga
+	}
+}
+
 textures/skies/la1
 {
 	{

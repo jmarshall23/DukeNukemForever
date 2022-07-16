@@ -1046,10 +1046,33 @@ void idRender::RenderSingleView( const void *data ) {
 		value.z = tr.frameCount;
 
 		tr.screenInfoParam->SetVectorValue(value);
-	}
+	}	
 
 	// clear the z buffer, set the projection matrix, etc
 	RB_BeginDrawingView();
+
+	if (backEnd.clearColor || backEnd.clearDepth)
+	{
+		if (backEnd.clearDepth) {
+			glStencilMask(0xff);
+			// some cards may have 7 bit stencil buffers, so don't assume this
+			// should be 128
+			glClearStencil(1 << (glConfig.stencilBits - 1));
+			glClearDepth(backEnd.clearDepthValue);
+			glClear(GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+		}
+
+		if (backEnd.clearColor) {
+			glClearColor(backEnd.clearColorValue[0], backEnd.clearColorValue[1], backEnd.clearColorValue[2], backEnd.clearColorValue[3]);
+			glClear(GL_COLOR_BUFFER_BIT);
+		}
+
+		glClearDepth(1.0f);
+
+		backEnd.clearColor = false;
+		backEnd.clearDepth = false;
+	}
+
 
 	// decide how much overbrighting we are going to do
 	RB_DetermineLightScale();

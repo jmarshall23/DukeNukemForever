@@ -1,0 +1,15 @@
+// entity 0
+{
+"classname" "func_static"
+"name" "func_static_1"
+"origin" "0 0 0"
+"inline" "1"
+"forceshader" "textures/skies/vegas1"
+"model" "models/skies/skydome.md3"
+}
+// entity 1
+{
+"classname" "info_portal_sky"
+"name" "info_portal_sky_1"
+"origin" "0 24 0"
+}

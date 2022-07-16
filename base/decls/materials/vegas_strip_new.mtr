@@ -1,11 +1,19 @@
 textures/vegas/sunbrst
 {
+	noShadows
 	{
 		blend blend
 		renderprog sunburstCasinoProgram
 		videomap loop videos/sunbrst.bik
 		customMask textures/pattern/poke_white.tga
 	}
+}
+
+textures/vegas/peoplemover1bRC
+{
+	diffusemap textures/vegas/peoplemover1bRC.tga
+	bumpmap textures/vegas/peoplemover1bRC_normal.tga
+	specularmap textures/vegas/peoplemover1bRC_spec.tga
 }
 
 textures/vegas/vegcasspr2RC

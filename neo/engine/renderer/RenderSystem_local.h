@@ -433,6 +433,12 @@ typedef struct {
 	int					c_copyFrameBuffer;
 
 	idRenderTexture	*	renderTexture;
+
+	bool				clearColor;
+	idVec4				clearColorValue;
+
+	bool				clearDepth;
+	float				clearDepthValue;
 } backEndState_t;
 
 

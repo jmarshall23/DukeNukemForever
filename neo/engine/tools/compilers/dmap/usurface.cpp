@@ -679,6 +679,13 @@ void PutPrimitivesInAreas( uEntity_t *e ) {
 			}
 			idRenderModel* model = renderModelManager->FindModel(modelName);
 
+			bool isMD3 = model->IsVertexAnimated();
+
+			if (isMD3)
+			{
+				model = model->InstantiateDynamicModel(nullptr, nullptr, nullptr);
+			}
+
 			idMat3	axis;
 			// get the rotation matrix in either full form, or single angle form
 			if (!entity->mapEntity->epairs.GetMatrix("rotation", "1 0 0 0 1 0 0 0 1", axis)) {
@@ -725,6 +732,11 @@ void PutPrimitivesInAreas( uEntity_t *e ) {
 
 					AddMapTriToAreas(mapTri, e);
 				}
+			}
+
+			if (isMD3)
+			{
+				delete model;
 			}
 		}
 	}

@@ -621,22 +621,10 @@ static void RB_ClearRenderTarget(const void* data) {
 
 	cmd = (renderClearBufferCommand_t*)data;
 
-	if (cmd->clearDepth) {
-		glStencilMask(0xff);
-		// some cards may have 7 bit stencil buffers, so don't assume this
-		// should be 128
-		glClearStencil(1 << (glConfig.stencilBits - 1));
-		glClearDepth(cmd->clearDepthValue);
-		glClear(GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
-	}
-
-	if (cmd->clearColor) {
-		glClearColor(cmd->clearColorValue[0], cmd->clearColorValue[1], cmd->clearColorValue[2], cmd->clearColorValue[3]);
-		glClear(GL_COLOR_BUFFER_BIT);
-	}
-
-	glClearDepth(1.0f);
-
+	backEnd.clearDepth = cmd->clearDepth;;
+	backEnd.clearColor = cmd->clearColor;
+	backEnd.clearColorValue = cmd->clearColorValue;
+	backEnd.clearDepthValue = cmd->clearDepthValue;
 }
 
 

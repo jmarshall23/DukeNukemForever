@@ -2309,13 +2309,6 @@ textures/vegas/peoplemover1aRC
 	specularmap textures/vegas/peoplemover1aRC_spec.tga
 }
 
-textures/vegas/peoplemover1bRC
-{
-	diffusemap textures/vegas/peoplemover1bRC.tga
-	bumpmap textures/vegas/peoplemover1bRC_normal.tga
-	specularmap textures/vegas/peoplemover1bRC_spec.tga
-}
-
 textures/vegas/peoplemover1cRC
 {
 	diffusemap textures/vegas/peoplemover1cRC.tga

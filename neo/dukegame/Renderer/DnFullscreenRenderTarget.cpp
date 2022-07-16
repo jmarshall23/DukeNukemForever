@@ -149,7 +149,7 @@ void DnFullscreenRenderTarget::Clear(void)
 	bool clearColor = albedoImage != nullptr;
 	bool clearDepth = depthImage != nullptr;
 
-	renderSystem->ClearRenderTarget(clearColor, clearDepth, 1.0f, 1.0f, 0.0f, 0.0f);
+	renderSystem->ClearRenderTarget(clearColor, clearDepth, 1.0f, 1.0f, 1.0f, 1.0f);
 }
 
 /*
