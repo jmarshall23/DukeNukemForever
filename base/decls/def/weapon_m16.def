@@ -1,0 +1,223 @@
+/***********************************************************************
+
+	weapon_m16.def
+
+	anim fire2					models/md5/weapons/m16_view/fire2.md5anim {
+		frame 1					sound_weapon player_m16_fire
+	}
+	
+	anim fire3 					models/md5/weapons/m16_view/fire3.md5anim {
+		frame 1					sound_weapon player_m16_fire
+	}
+	
+	anim fire4 					models/md5/weapons/m16_view/fire4.md5anim {
+		frame 1					sound_weapon player_m16_fire
+	}
+
+
+***********************************************************************/
+
+
+entityDef weapon_m16 {
+	"editor_color"				".3 .3 1"
+	"editor_mins"				"-16 -16 0"
+	"editor_maxs"				"16 16 32"
+	"editor_usage"				"m16"
+	"editor_rotatable"		"1"
+
+	"view_model_offset"			"9 4 -10"
+	"view_model_fov"			"90"
+
+	"spawnclass"				"idItem"
+	"size"						"32 32 32"
+	"model"						"models/weapons/m16/w_m16.lwo"
+	"model_view" 				"models/weapons/m16/m16.md3"
+	"model_world" 				"worldmodel_m16"
+	"joint_attach"				"m16_ATTACHER"
+	"def_dropItem"				"moveable_item_m16"
+	
+	"modelindex"				"MODELINDEX_SHOTGUN"
+
+	"inv_name"					"m16"
+	"inv_weapon"				"weapon_m16"
+	"inv_item"					"5"
+	"inv_ammo_bullets"			"15"
+	"icon"						"guis/assets/hud/wpn_1"
+
+	"weapon_class"				"dnWeaponM16"
+	"def_projectile"			"projectile_bullet_m16"
+	"ammoType"					"ammo_bullets"
+	"ammoRequired"				"1"
+	"clipSize"					"15"
+	"lowAmmo"					"4"
+	"mtr_flashShader"			"muzzleflash"
+	"flashColor"				"1 0.8 0.4"
+	"flashRadius"				"120"
+	"silent_fire"				"0"
+	"recoilTime"				"125"
+	"recoilAngles"				"-1 0 0"
+
+	"weaponAngleOffsetAverages" "10"
+	"weaponAngleOffsetScale" 	".25"
+	"weaponAngleOffsetMax"		"10"
+	"weaponOffsetTime"			"400"
+	"weaponOffsetScale"			"0.005"
+
+	"hide_time"					"0.3"								// time to hide weapon when talking to npcs or looking at guis
+	"hide_distance"				"-15"								// distance to offset weapon when talking to npcs or looking at guis
+
+	"smoke_muzzle"				"muzzlesmoke.prt"
+	"def_ejectBrass"			"debris_brass"
+	"ejectBrassDelay"			"10"
+	
+	"snd_acquire"				"sound_weapon_acquire"
+	"snd_respawn"				"sound_weapon_respawn"
+	
+	"skin_invisible"			"skins/m16_invis"
+	
+	"spread"					"0"
+}
+
+entityDef moveable_item_m16 {
+	"inherit"					"weapon_m16"
+	"spawnclass"				"idMoveableItem"
+	"density"					"0.05"
+	"friction"					"0.2"
+	"bouncyness"				"0"
+}
+
+model worldmodel_m16 {
+	mesh 						models/md5/weapons/m16_world/worldm16.md5mesh
+
+	anim idle 					models/md5/weapons/m16_world/m16_idle.md5anim
+	anim idle_empty				models/md5/weapons/m16_world/m16_idle.md5anim
+	anim aim					models/md5/weapons/m16_world/m16_idle.md5anim
+	anim fire1 					models/md5/weapons/m16_world/m16_idle.md5anim
+	anim putaway				models/md5/weapons/m16_world/m16_idle.md5anim
+	anim raise					models/md5/weapons/m16_world/m16_idle.md5anim
+	anim reload					models/md5/weapons/m16_world/m16_idle.md5anim
+	anim noammo					models/md5/weapons/m16_world/m16_idle.md5anim
+}
+
+model viewmodel_m16 {
+	mesh						models/weapons/m16/m16.md3
+	
+	anim raise 					models/md5/weapons/m16_view/raise.md5anim {
+		frame 7					sound_body player_m16_raise_01
+	}
+	anim idle					models/md5/weapons/m16_view/idle.md5anim
+	anim idle_empty				models/md5/weapons/m16_view/idle_empty.md5anim
+	
+	anim fire1					models/md5/weapons/m16_view/fire1.md5anim {
+		frame 1					sound_weapon player_m16_fire
+	}
+	
+	
+		
+	anim reload 				models/md5/weapons/m16_view/reload_empty.md5anim {
+		frame 1					sound_weapon player_m16_reload
+	}
+	
+	anim noammo 				models/md5/weapons/m16_view/empty_reload_start.md5anim {
+		frame 1					sound_body player_m16_empty
+	}
+
+	anim putaway 				models/md5/weapons/m16_view/put_away.md5anim
+}
+
+entityDef	damage_bullet_m16 {
+	"minDamage"			"9"
+	"maxDamage"			"14"
+	"kickDir"			"1 0 0"
+
+	"mtr_blob"			"genericDamage"
+	"blob_time"			"300"
+	"blob_size"			"400"
+	"blob_offset_x"		"400"
+
+	"knockback"			"1"
+	
+	"gib"				"1"
+	
+	
+	"smoke_wound_flesh"	"burstysquirt.prt"
+	"mtr_wound_flesh"	"textures/decals/hurt02"
+	"mtr_wound_metal"	"textures/decals/hurtmetal"
+	"mtr_wound_ricochet"	"textures/decals/hurtmetal"
+	"mtr_splat_flesh"	"textures/decals/dsplat2"
+	"mtr_splat_flesh2"	"textures/decals/dsplat5"
+	"mtr_splat_flesh3"	"textures/decals/dsplat7"
+	"mtr_splat_flesh4"	"textures/decals/dsplat11"
+	// the flesh impact is used in the damage so players hear it on their body
+	// the other impacts are played on detonation
+	"snd_flesh"			"bullet_impact_flesh"
+
+	"kick_time"			"400"
+	"kick_amplitude"	"1"
+
+	"dv_time"			"100"
+}
+
+entityDef projectile_bullet_m16 {
+	"spawnclass"				"idProjectile"
+	"mins"						"-1 -1 -1"
+	"maxs"						"1 1 1"
+	"cone"						"3"
+	"scale"						"0.1"
+	"noshadows"					"1"
+
+	"def_damage"				"damage_bullet_m16"
+
+	"launchFromBarrel"			"0"
+	"health"					"0"
+	"velocity"					"7200 0 0"	// .38 Special 600 fps.  Source: Petzal, David E. "How fast is a speeding bullet." Field and Stream. 97 (1992): 23
+	"angular_velocity"			"0 0 0"
+	"thrust"					"0"
+	"thrust_start"				"0"
+	"thrust_end"				"0"
+	"linear_friction"			"0"
+	"angular_friction"			"0"
+	"contact_friction"			"0"
+	"bounce"					"0.6"
+	"mass"						"2"
+	"gravity"					"0"
+	"fuse"						"4"
+
+	"detonate_on_fuse"			"0"
+	"detonate_on_death"			"0"
+	"detonate_on_world"			"1"
+	"detonate_on_actor"			"1"
+
+	"impact_damage_effect"		"1"
+	"impact_gib"				"1"
+
+	"mtr_detonate"				"textures/decals/bulleth02"
+	"mtr_detonate_glass"		"textures/decals/testbulletglass1"
+	"decal_size"				"10"
+
+	"model_smokespark"			"bulletsmokeandspark.prt"
+	"model_ricochet"			"bulletricochet.prt"
+
+
+	// played on collision with non-damagable entities
+	"snd_plastic"				"bullet_impact_plastic"
+	"snd_cardboard"				"bullet_impact_cardboard"
+	"snd_flesh"					"bullet_impact_flesh"
+	"snd_metal"					"bullet_impact_metal"
+	"snd_stone"					"bullet_impact_stone"
+	"snd_wood"					"bullet_impact_wood"
+	"snd_glass"					"bullet_impact_glass"
+	"snd_liquid"				"bullet_impact_liquid"
+	"snd_ricochet"				"bullet_ricochet"
+	//"snd_impact"				"bullet_impact_metal"
+								
+	"mtr_light_shader"			""
+	"light_color"				"0 0 0"
+	"light_radius"				"0"
+	"light_offset"				"0 0 0"
+
+	"mtr_explode_light_shader"	""
+	"explode_light_color"		"0 0 0"
+	"explode_light_radius"		"0"
+	"explode_light_fadetime"	"0"
+}

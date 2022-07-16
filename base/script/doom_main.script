@@ -16,6 +16,7 @@ This is the main script that is loaded before any level scripts load.
 
 // duke maps
 #include "script/maps/map_e1l1.script"
+#include "script/maps/map_ladykiller.script"
 
 void doom_main() {
 	sys.print( "Entering doom_main()\n");

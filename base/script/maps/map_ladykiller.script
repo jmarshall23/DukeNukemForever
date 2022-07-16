@@ -1,0 +1,12 @@
+namespace map_ladykiller {
+	void main()
+	{
+		entity dukePlayer;
+
+		// Get the local playing player.
+		dukePlayer = sys.getLocalPlayer();	
+
+		// Give the player the m16.
+		dukePlayer.giveInventoryItem("weapon_m16");
+	}
+}

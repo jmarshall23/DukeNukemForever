@@ -904,5 +904,6 @@ scriptEvent void	openPDA();
 scriptEvent float	inPDA();
 
 // jmarshall
+scriptEvent void	giveInventoryItem(string name);
 scriptEvent	void	startDukeTalk( string shaderName, float force );
 // jmarshall end

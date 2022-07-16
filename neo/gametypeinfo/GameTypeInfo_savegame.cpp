@@ -1164,6 +1164,14 @@ void dnWeaponShotgun::Restore(idRestoreGame* savefile) {
 	__super::Restore(savefile);
 }
 
+void dnWeaponM16::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void dnWeaponM16::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+
 void DnItem::Save(idSaveGame* savefile) const {
 	__super::Save(savefile);
 }

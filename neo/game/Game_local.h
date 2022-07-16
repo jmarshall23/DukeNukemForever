@@ -820,6 +820,7 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 #include "../dukegame/Weapons/Weapon_mightyfoot.h"
 #include "../dukegame/Weapons/weapon_pistol.h"
 #include "../dukegame/Weapons/weapon_shotgun.h"
+#include "../dukegame/Weapons/Weapon_m16.h"
 
 #include "../dukegame/Items/DnItem.h"
 
