@@ -197,25 +197,8 @@ void idImage::SetTexParameters() {
 	}
 #endif
 
-	switch( filter ) {
-		case TF_DEFAULT:
-			glTexParameterf(target, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-			glTexParameterf( target, GL_TEXTURE_MAG_FILTER, GL_LINEAR );
-			break;
-		case TF_LINEAR:
-			glTexParameterf( target, GL_TEXTURE_MIN_FILTER, GL_LINEAR );
-			glTexParameterf( target, GL_TEXTURE_MAG_FILTER, GL_LINEAR );
-			break;
-		case TF_NEAREST:
-			glTexParameterf( target, GL_TEXTURE_MIN_FILTER, GL_NEAREST );
-			glTexParameterf( target, GL_TEXTURE_MAG_FILTER, GL_NEAREST );
-			break;
-		default:
-			common->FatalError( "%s: bad texture filter %d", GetName(), filter );
-	}
-
-	glTexParameterf(target, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
-	glTexParameterf(target, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+	glTexParameterf(target, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameterf(target, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	{
 		// only do aniso filtering on mip mapped images
