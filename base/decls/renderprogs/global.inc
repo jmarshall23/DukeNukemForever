@@ -311,3 +311,11 @@ vec4 blur13(sampler2D image, vec2 uv, vec2 resolution, vec2 direction) {
   color += texture2D(image, uv - (off3 / resolution)) * 0.010381362401148057;
   return color;
 }
+
+float LinearFog(float d, float FogMin, float FogMax)
+{
+    if (d>=FogMax) return 1;
+    if (d<=FogMin) return 0;
+
+    return 1 - (FogMax - d) / (FogMax - FogMin);
+}

@@ -55,6 +55,8 @@ renderProg interaction
 		//# calculate normalized vector to viewer in R1
 		vec4 toView = normalize( $vieworigin - vertex );
 
+		float dist = distance($vieworigin, vertex);
+
 
 #ifdef WATER_PASS
 		diffuseMap.w = diffuseMap.w * 0.5;
@@ -169,7 +171,6 @@ renderProg interaction
 		finalColor += 0.25;
 #endif
 
-
 #ifdef SPEC_ONLY_TEST
 		finalpixel_color.xyz = finalColor;
 #else
@@ -197,6 +198,13 @@ renderProg interaction
 #endif
 #endif
 		finalpixel_color.w = diffuseMap.w;
+
+		float fog = LinearFog(dist, 1000, 2000);
+#ifndef EMISSIVE
+		finalpixel_color.xyz = mix(finalpixel_color.xyz, finalpixel_color.xyz * 0.5, fog);
+#else
+		finalpixel_color.xyz = mix(finalpixel_color.xyz, finalpixel_color.xyz * 0.75, fog);
+#endif
 
 		finalpixel_color2.xyz = vertex_texcoord3.xyz;
 		finalpixel_color2.w = diffuseMap.w;
