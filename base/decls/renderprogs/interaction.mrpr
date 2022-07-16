@@ -206,9 +206,9 @@ renderProg interaction
 
 		float fog = LinearFog(dist, 1000, 2000);
 #ifndef EMISSIVE
-		finalpixel_color.xyz = mix(finalpixel_color.xyz, finalpixel_color.xyz * 0.75, fog);
-#else
 		finalpixel_color.xyz = mix(finalpixel_color.xyz, finalpixel_color.xyz * 0.85, fog);
+#else
+		finalpixel_color.xyz = mix(finalpixel_color.xyz, finalpixel_color.xyz * 0.95, fog);
 #endif
 
 		finalpixel_color2.xyz = vertex_texcoord3.xyz;
