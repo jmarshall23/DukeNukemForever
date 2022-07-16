@@ -8,6 +8,7 @@ guis/mainmenu/dnf_logo
 guis/hud/hudfin1920
 {
 	{
+		blend add
 		map guis/hud/hudfin1920.tga
 	}
 }

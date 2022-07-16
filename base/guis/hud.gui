@@ -22,14 +22,14 @@ windowDef Desktop
 	}
 	windowDef hudfin1920
 	{
-		rect	1,617,1280,102
+		rect	821,617,247,78
 		visible	1
 		matcolor	1,1,1,1
 		background	"guis/hud/hudfin1920"
 	}
 	windowDef egoWindow
 	{
-		rect	217,662,79,41
+		rect	883,631,53,29
 		visible	1
 		forecolor	1,1,1,1
 		text	"gui::player_ego"
@@ -39,11 +39,11 @@ windowDef Desktop
 	}
 	windowDef unnamed11
 	{
-		rect	746,662,76,39
+		rect	987,634,27,23
 		visible	1
 		forecolor	1,1,1,1
 		text	"gui::player_ammo"
-		textscale	0.60000002
+		textscale	0.30000001
 		textalign	1
 	}
 }
