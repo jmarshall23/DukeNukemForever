@@ -108,6 +108,25 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 				continue;
 			}
 
+			if (drawSurfs[i]->material && drawSurfs[i]->material->GetCullType() == CT_TWO_SIDED)
+			{
+				GL_Cull(CT_TWO_SIDED);
+			}
+			else
+			{
+				//
+				// set polygon offset for the rendering
+				//
+				switch (r_shadowOccluderFacing.GetInteger()) {
+				case 0:	// front sides
+					GL_Cull(CT_TWO_SIDED);
+					break;
+				case 1:	// back sides
+					GL_Cull(CT_BACK_SIDED);
+					break;
+				}
+			}
+
 			//if(surfInt->noShadow)
 			//	continue;
 
@@ -461,33 +480,12 @@ Down
 	}
 
 	//RB_Shadow_CullInteractions(vLight, globalFrustum);
-
-
-	// FIXME: we want to skip the sampling as well as the generation when not casting shadows
-	if (r_shadows.GetBool() && !vLight->lightDef->parms.noShadows) {
-		//
-		// set polygon offset for the rendering
-		//
-		switch (r_shadowOccluderFacing.GetInteger()) {
-		case 0:	// front sides
-			glPolygonOffset(r_shadow_polyOfsFactor.GetFloat(), r_shadow_polyOfsUnits.GetFloat());
-			GL_Cull(CT_TWO_SIDED);
-			glEnable(GL_POLYGON_OFFSET_FILL);
-			RB_Shadow_RenderOccluders(vLight);
-			GL_Cull(CT_FRONT_SIDED);
-			glDisable(GL_POLYGON_OFFSET_FILL);
-			break;
-		case 1:	// back sides
-			glPolygonOffset(-r_shadow_polyOfsFactor.GetFloat(), -r_shadow_polyOfsUnits.GetFloat());
-			glEnable(GL_POLYGON_OFFSET_FILL);
-			GL_Cull(CT_BACK_SIDED);
-			RB_Shadow_RenderOccluders(vLight);
-			GL_Cull(CT_FRONT_SIDED);
-			glDisable(GL_POLYGON_OFFSET_FILL);
-			break;
-
-		}
+	if (r_shadows.GetBool())
+	{
+		RB_Shadow_RenderOccluders(vLight);
 	}
+
+	GL_Cull(CT_FRONT_SIDED);
 
 	// the current modelView matrix is not valid
 	backEnd.currentSpace = NULL;

@@ -10,6 +10,17 @@ textures/vegas/sunbrst
 }
 
 
+textures/vegas/rail1RC
+{
+	twoSided
+	forceShadows
+
+	diffusemap textures/vegas/rail1RC.tga
+	bumpmap textures/vegas/rail1RC_normal.tga
+	specularmap textures/vegas/rail1RC_spec.tga
+}
+
+
 textures/vegas/dukesym3BC
 {
 	customInteractionProgram interaction_lit_emissive

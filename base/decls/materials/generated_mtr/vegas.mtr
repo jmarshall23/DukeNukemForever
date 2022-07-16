@@ -2610,13 +2610,6 @@ textures/vegas/purple1ABC
 	specularmap textures/vegas/purple1ABC_spec.tga
 }
 
-textures/vegas/rail1RC
-{
-	diffusemap textures/vegas/rail1RC.tga
-	bumpmap textures/vegas/rail1RC_normal.tga
-	specularmap textures/vegas/rail1RC_spec.tga
-}
-
 textures/vegas/rail1shadmaskRC
 {
 	diffusemap textures/vegas/rail1shadmaskRC.tga
