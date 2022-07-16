@@ -9,6 +9,16 @@ textures/vegas/sunbrst
 	}
 }
 
+
+textures/vegas/dukesym3BC
+{
+	customInteractionProgram interaction_lit_emissive
+
+	diffusemap textures/vegas/dukesym3BC.tga
+	bumpmap textures/vegas/dukesym3BC_normal.tga
+	specularmap textures/vegas/dukesym3BC_spec.tga
+}
+
 textures/vegas/peoplemover1bRC
 {
 	diffusemap textures/vegas/peoplemover1bRC.tga

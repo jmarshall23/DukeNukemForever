@@ -2,6 +2,52 @@
 //
 
 #include "../game/Game_local.h"
+/*
+======================
+idGameEdit::DrawEditor
+======================
+*/
+void idGameEdit::DrawEditor(renderView_t* view, idRenderWorld* editorRenderWorld, float windowWidth, float windowHeight, bool renderMode)
+{
+	int	frontEnd, backEnd;
+
+	// render it
+	renderSystem->BeginFrame(windowWidth, windowHeight);
+
+	// Ensure out render targets are the right size.
+	gameLocal.renderPlatform.frontEndPassRenderTarget->Resize(windowWidth, windowHeight);
+	gameLocal.renderPlatform.frontEndPassRenderTargetResolved->Resize(windowWidth, windowHeight);
+	gameLocal.renderPlatform.ssaoRenderTarget->Resize(windowWidth, windowHeight);
+
+	// Bind our MSAA texture for rendering and clear it out.
+	gameLocal.renderPlatform.frontEndPassRenderTarget->Bind();
+	gameLocal.renderPlatform.frontEndPassRenderTarget->Clear();
+
+	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.blackMaterial);
+
+	// Render the editor world.
+	editorRenderWorld->RenderScene(view);
+
+	// Resolve MSAA.
+	DnFullscreenRenderTarget::BindNull();
+	gameLocal.renderPlatform.frontEndPassRenderTarget->ResolveMSAA(gameLocal.renderPlatform.frontEndPassRenderTargetResolved);
+
+	// Draw the resolved target.
+	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.upscaleFrontEndResolveMaterial);
+
+	// Render post process if we are in lit mode. 
+	if (renderMode)
+	{
+		renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.bloomMaterial);
+
+		// Render the SSAO to a render target so we can blur it.
+		renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.ssaoMaterial);
+
+		renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, gameLocal.renderPlatform.ssaoBlurMaterial);
+	}
+
+	renderSystem->EndFrame(&frontEnd, &backEnd);
+}
 
 /*
 ======================

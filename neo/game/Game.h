@@ -284,6 +284,9 @@ public:
 	virtual dnEditorEntity*		AllocEditorEntity(idRenderWorld *editorRenderWorld, dnEditorEntityType_t editorEntityType);
 	virtual void				FreeEditorEntity(dnEditorEntity* entity);
 
+	// Renders with the game render pipeline.
+	virtual void				DrawEditor(renderView_t* view, idRenderWorld *editorRenderWorld, float windowWidth, float windowHeight, bool renderMode);
+
 	// Animation system calls for non-game based skeletal rendering.
 	virtual idRenderModel *		ANIM_GetModelFromEntityDef( const char *classname );
 	virtual const idVec3 		&ANIM_GetModelOffsetFromEntityDef( const char *classname );

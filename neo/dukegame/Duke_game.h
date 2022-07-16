@@ -18,6 +18,7 @@ struct DnRenderPlatform
 	const idMaterial* ssaoMaterial;
 	const idMaterial* ssaoBlurMaterial;
 	const idMaterial* bloomMaterial;
+	const idMaterial* blackMaterial;
 };
 
 //
@@ -46,6 +47,7 @@ public:
 private:
 	void					DrawPortalSky(renderView_t &hackedView);
 
+public:
 	DnRenderPlatform		renderPlatform;
 
 	idUserInterface*		guiMainMenu;

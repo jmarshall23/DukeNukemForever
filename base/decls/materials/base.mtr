@@ -21,3 +21,10 @@ dnf_menu_back
 		videomap loop videos/menuback.bik
 	}
 }
+
+_black
+{
+	{
+		map _black
+	}
+}

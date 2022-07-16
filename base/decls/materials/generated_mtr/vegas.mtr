@@ -1468,13 +1468,6 @@ textures/vegas/dukeshirt1RC
 	specularmap textures/vegas/dukeshirt1RC_spec.tga
 }
 
-textures/vegas/dukesym3BC
-{
-	diffusemap textures/vegas/dukesym3BC.tga
-	bumpmap textures/vegas/dukesym3BC_normal.tga
-	specularmap textures/vegas/dukesym3BC_spec.tga
-}
-
 textures/vegas/elevdorbrn1BC
 {
 	diffusemap textures/vegas/elevdorbrn1BC.tga

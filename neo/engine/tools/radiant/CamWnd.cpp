@@ -1913,14 +1913,8 @@ void CCamWnd::Cam_Render() {
 	// create the model, using explicit normals
 	BuildRendererState(refdef);
 
-	// render it
-	renderSystem->BeginFrame( m_Camera.width, m_Camera.height );
-
-	g_qeglobals.rw->RenderScene( &refdef );
-
-	int	frontEnd, backEnd;
-
-	renderSystem->EndFrame( &frontEnd, &backEnd );
+	gameEdit->DrawEditor(&refdef, g_qeglobals.rw, m_Camera.width, m_Camera.height, renderMode);
+	
 //common->Printf( "front:%i back:%i\n", frontEnd, backEnd );
 
 	//glPopAttrib();

@@ -20,6 +20,7 @@ void dnGameLocal::InitGameRender(void)
 	renderPlatform.ssaoMaterial = declManager->FindMaterial("postprocess/ssao", false);
 	renderPlatform.bloomMaterial = declManager->FindMaterial("postprocess/bloom", false);
 	renderPlatform.ssaoBlurMaterial = declManager->FindMaterial("postprocess/ssao_blur", false);
+	renderPlatform.blackMaterial = declManager->FindMaterial("_black", false);	
 }
 
 /*

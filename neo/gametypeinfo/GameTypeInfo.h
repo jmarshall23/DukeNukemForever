@@ -2151,11 +2151,12 @@ static classVariableInfo_t DnRenderPlatform_typeInfo[] = {
 	{ "const idMaterial *", "ssaoMaterial", (intptr_t)(&((DnRenderPlatform *)0)->ssaoMaterial), sizeof( ((DnRenderPlatform *)0)->ssaoMaterial ) },
 	{ "const idMaterial *", "ssaoBlurMaterial", (intptr_t)(&((DnRenderPlatform *)0)->ssaoBlurMaterial), sizeof( ((DnRenderPlatform *)0)->ssaoBlurMaterial ) },
 	{ "const idMaterial *", "bloomMaterial", (intptr_t)(&((DnRenderPlatform *)0)->bloomMaterial), sizeof( ((DnRenderPlatform *)0)->bloomMaterial ) },
+	{ "const idMaterial *", "blackMaterial", (intptr_t)(&((DnRenderPlatform *)0)->blackMaterial), sizeof( ((DnRenderPlatform *)0)->blackMaterial ) },
 	{ NULL, 0 }
 };
 
 static classVariableInfo_t dnGameLocal_typeInfo[] = {
-	{ "DnRenderPlatform", "renderPlatform", (intptr_t)(&((dnGameLocal *)0)->renderPlatform), sizeof( ((dnGameLocal *)0)->renderPlatform ) },
+	{ ": DnRenderPlatform", "renderPlatform", (intptr_t)(&((dnGameLocal *)0)->renderPlatform), sizeof( ((dnGameLocal *)0)->renderPlatform ) },
 	{ "idUserInterface *", "guiMainMenu", (intptr_t)(&((dnGameLocal *)0)->guiMainMenu), sizeof( ((dnGameLocal *)0)->guiMainMenu ) },
 	{ NULL, 0 }
 };

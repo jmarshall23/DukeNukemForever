@@ -1,18 +1,25 @@
 // entity 0
 {
+"classname" "info_player_start"
+"name" "info_player_start_1"
+"origin" "1536 11344 240"
+"angle" "270"
+}
+// entity 1
+{
 "classname" "light"
 "name" "light_53"
 "origin" "-8448 9480 -56"
 "noshadows" "1"
 "nospecular" "1"
 "nodiffuse" "0"
-"falloff" "1.000000"
+"falloff" "1"
 "_color" "0.54 0.36 0.28"
 "light_target" "0 0 2048"
 "light_up" "0 -128 0"
 "light_right" "-128 0 0"
 }
-// entity 1
+// entity 2
 {
 "classname" "light"
 "name" "light_28"
@@ -24,7 +31,7 @@
 "_color" "1 1 1"
 "light_radius" "300 300 300"
 }
-// entity 2
+// entity 3
 {
 "classname" "light"
 "name" "light_22"
@@ -38,7 +45,7 @@
 "light_up" "0 -128 0"
 "light_right" "-128 0 0"
 }
-// entity 3
+// entity 4
 {
 "classname" "light"
 "name" "light_21"
@@ -50,14 +57,14 @@
 "_color" "0.4 0.11 0.08"
 "light_radius" "700 300 300"
 }
-// entity 4
+// entity 5
 {
 "classname" "func_static"
 "name" "palm_tree1"
 "origin" "-5088 9192 -448"
 "model" "models/zone1_vegas/palm2/palm2.md3"
 }
-// entity 5
+// entity 6
 {
 "classname" "light"
 "name" "edf_cop_light"
@@ -69,14 +76,14 @@
 "_color" "0.58 0.04 0.04"
 "light_radius" "600 600 600"
 }
-// entity 6
+// entity 7
 {
 "classname" "decoration_edfcarstationary"
 "name" "decoration_edfcarstationary_1"
 "origin" "-4456 8952 -512"
 "angle" "45"
 }
-// entity 7
+// entity 8
 {
 "classname" "light"
 "name" "light_13"
@@ -88,7 +95,7 @@
 "_color" "0.25 0.62 0.55"
 "light_radius" "1600 600 200"
 }
-// entity 8
+// entity 9
 {
 "classname" "light"
 "name" "light_7"
@@ -100,7 +107,7 @@
 "_color" "0.38 0.16 0.16"
 "light_radius" "500 300 300"
 }
-// entity 9
+// entity 10
 {
 "classname" "light"
 "name" "light_4"
@@ -114,7 +121,7 @@
 "light_up" "0 -128 0"
 "light_right" "-128 0 0"
 }
-// entity 10
+// entity 11
 {
 "classname" "light"
 "name" "light_1"
@@ -125,12 +132,6 @@
 "falloff" "0"
 "_color" "0.99 0.61 0.01"
 "light_radius" "1200 500 400"
-}
-// entity 11
-{
-"classname" "info_player_start"
-"name" "info_player_start_2"
-"origin" "-6024 9504 -448"
 }
 // entity 12
 {
