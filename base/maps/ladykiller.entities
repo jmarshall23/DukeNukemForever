@@ -3665,11 +3665,11 @@
 "classname" "light"
 "name" "light_118"
 "origin" "1600 10336 -312"
-"noshadows" "1"
+"noshadows" "0"
 "nospecular" "1"
 "nodiffuse" "0"
 "falloff" "0"
-"_color" "0.52 0.68 1"
+"_color" "0.29 0.38 0.57"
 "light_radius" "1000 1000 300"
 }
 // entity 366
@@ -3677,11 +3677,11 @@
 "classname" "light"
 "name" "light_119"
 "origin" "1720 9072 -312"
-"noshadows" "1"
+"noshadows" "0"
 "nospecular" "1"
 "nodiffuse" "0"
 "falloff" "0"
-"_color" "0.52 0.68 1"
+"_color" "0.28 0.37 0.55"
 "light_radius" "1000 1000 300"
 }
 // entity 367
@@ -3716,7 +3716,7 @@
 "noshadows" "1"
 "nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "0.52 0.68 1"
 "light_radius" "1400 1400 300"
 }
@@ -3740,7 +3740,7 @@
 "noshadows" "1"
 "nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 0.15 0.14"
 "light_radius" "1800 1800 300"
 }
@@ -3767,4 +3767,201 @@
 "falloff" "0"
 "_color" "1 0.15 0.14"
 "light_radius" "1800 1800 300"
+}
+// entity 374
+{
+"classname" "func_static"
+"name" "func_static_241"
+"origin" "1504 10736 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 375
+{
+"classname" "func_static"
+"name" "func_static_242"
+"origin" "2024 10752 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 376
+{
+"classname" "func_static"
+"name" "func_static_243"
+"origin" "1504 10264 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 377
+{
+"classname" "func_static"
+"name" "func_static_244"
+"origin" "1496 9632 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 378
+{
+"classname" "func_static"
+"name" "func_static_245"
+"origin" "1856 9288 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 379
+{
+"classname" "func_static"
+"name" "func_static_246"
+"origin" "1808 8840 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 380
+{
+"classname" "func_static"
+"name" "func_static_247"
+"origin" "1544 8536 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 381
+{
+"classname" "func_static"
+"name" "func_static_248"
+"origin" "1520 8048 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 382
+{
+"classname" "func_static"
+"name" "func_static_249"
+"origin" "1544 7664 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 383
+{
+"classname" "func_static"
+"name" "func_static_250"
+"origin" "1560 7248 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 384
+{
+"classname" "func_static"
+"name" "func_static_251"
+"origin" "1576 6536 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 385
+{
+"classname" "func_static"
+"name" "func_static_252"
+"origin" "1816 6224 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 386
+{
+"classname" "func_static"
+"name" "func_static_253"
+"origin" "1816 5472 -624"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 387
+{
+"classname" "light"
+"name" "light_127"
+"origin" "1880 5744 -312"
+"noshadows" "0"
+"nospecular" "1"
+"nodiffuse" "0"
+"falloff" "0"
+"_color" "0.28 0.37 0.55"
+"light_radius" "1000 1000 300"
+}
+// entity 388
+{
+"classname" "light"
+"name" "light_128"
+"origin" "1576 4704 -312"
+"noshadows" "0"
+"nospecular" "1"
+"nodiffuse" "0"
+"falloff" "0"
+"_color" "0.28 0.37 0.55"
+"light_radius" "1000 1000 300"
+}
+// entity 389
+{
+"classname" "light"
+"name" "light_129"
+"origin" "1688 3176 -312"
+"noshadows" "1"
+"nospecular" "1"
+"nodiffuse" "0"
+"falloff" "0"
+"_color" "0.28 0.37 0.55"
+"light_radius" "1000 1000 300"
+}
+// entity 390
+{
+"classname" "func_static"
+"name" "func_static_254"
+"origin" "1144 5448 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 391
+{
+"classname" "func_static"
+"name" "func_static_255"
+"origin" "1144 5920 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 392
+{
+"classname" "func_static"
+"name" "func_static_256"
+"origin" "1160 6376 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 393
+{
+"classname" "func_static"
+"name" "func_static_257"
+"origin" "1160 6984 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 394
+{
+"classname" "func_static"
+"name" "func_static_258"
+"origin" "1168 7552 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 395
+{
+"classname" "func_static"
+"name" "func_static_259"
+"origin" "1152 8096 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 396
+{
+"classname" "func_static"
+"name" "func_static_260"
+"origin" "1160 8872 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 397
+{
+"classname" "func_static"
+"name" "func_static_261"
+"origin" "1160 9624 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 398
+{
+"classname" "func_static"
+"name" "func_static_262"
+"origin" "1160 10304 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
+}
+// entity 399
+{
+"classname" "func_static"
+"name" "func_static_263"
+"origin" "1152 10816 -528"
+"model" "models/zone1_vegas/palm2/palm2.md3"
 }
