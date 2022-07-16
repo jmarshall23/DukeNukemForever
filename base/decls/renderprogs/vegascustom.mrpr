@@ -8,12 +8,11 @@ renderProg sunburstCasinoProgram
 
 	pixel
 	{
-		vec4 albedo = texture2D($albedotexture,vertex_texcoord0.st)  * 1.2;
 		vec4 mask  = texture2D($customMask,vertex_texcoord0.st * vec2(30, 18));
+		vec4 albedo = texture2D($albedotexture,vertex_texcoord0.st)  * 1.2;
 
 		albedo.w = mask.r;		
 
 		finalpixel_color = albedo;
-		// finalpixel_color4 = vec4(1.0, 1.0, 0.0, 1.0);
 	}
 }

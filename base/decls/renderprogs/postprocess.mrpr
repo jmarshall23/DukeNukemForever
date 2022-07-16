@@ -12,7 +12,10 @@ postprocess_ssao
 
 		float skippass = texture2D($screenmaterialtexture, vertex_texcoord0.xy).x;
 		if(skippass != 0)
-			discard;
+		{
+			finalpixel_color = vec4(1, 1, 1, 1);
+			return;
+		}
 		
 
 		const float total_strength = 1.5;

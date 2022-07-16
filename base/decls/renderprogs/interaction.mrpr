@@ -206,11 +206,13 @@ renderProg interaction
 
 #ifdef EMISSIVE
 		float emissive = 1.0;
+		float skipSSAO = 1.0;
 #else
 		float emissive = 0.0;
+		float skipSSAO = 0.0;
 #endif
 
-		finalpixel_color4 = vec4(0.0, emissive, 0.0, diffuseMap.w);
+		finalpixel_color4 = vec4(skipSSAO, emissive, 0.0, diffuseMap.w);
 	}
 }
 
