@@ -76,7 +76,15 @@ void idRenderModelStatic::ParseOBJ(rvmListSTL<idDrawVert> &drawVerts, const char
 
 			src.ReadRestOfLine(line);
 
-			int matches = sscanf(line.c_str(), "%d/%d %d/%d %d/%d", &vertexIndex[0], &uvIndex[0], &vertexIndex[1], &uvIndex[1], &vertexIndex[2], &uvIndex[2]);
+			if (normals.Num() > 0)
+			{
+				sscanf(line.c_str(), "%d/%d/%d %d/%d/%d %d/%d/%d", &vertexIndex[0], &uvIndex[0], &normalIndex[0], & vertexIndex[1], &uvIndex[1], &normalIndex[1], &vertexIndex[2], &uvIndex[2], &normalIndex[2]);
+			}
+			else
+			{
+				sscanf(line.c_str(), "%d/%d %d/%d %d/%d", &vertexIndex[0], &uvIndex[0], &vertexIndex[1], &uvIndex[1], &vertexIndex[2], &uvIndex[2]);
+			}
+			
 
 
 			for (int i = 0; i < 3; i++)
