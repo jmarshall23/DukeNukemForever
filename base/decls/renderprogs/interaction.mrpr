@@ -168,7 +168,7 @@ renderProg interaction
 		finalColor = clamp(finalColor, 0.0, 10.0);
 
 #ifdef EXTRA_BRIGHT
-		finalColor += 0.25;
+		finalColor.xyz += 0.25;
 #endif
 
 #ifdef SPEC_ONLY_TEST
@@ -176,7 +176,12 @@ renderProg interaction
 #else
 
 #ifndef NO_LIGHT_PASS
+
+#ifndef NO_AMBIENT
 		vec4 ambientLight = $ambientLightInfo;
+#else
+		vec4 ambientLight = vec4(0, 0, 0, $ambientLightInfo.w);
+#endif
 
 		float ue1_detail_map_hack = clamp(bumpMap.g * 1.5, 0.0, 1.0);
 
@@ -262,4 +267,12 @@ renderProg interaction_editorsel
 	inherit interaction
 	define NO_LIGHT_PASS
 	define EDITOR_SELECT
+}
+
+renderProg interaction_lit_emissivew
+{
+	inherit interaction
+	define EMISSIVE
+	define WATER_PASS
+	define NO_AMBIENT
 }

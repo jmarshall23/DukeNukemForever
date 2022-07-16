@@ -1619,7 +1619,7 @@ void CXYWnd::OnPaint() {
 		}
 
 		qwglSwapBuffers(dc.m_hDC);
-		TRACE("XY Paint\n");
+		//TRACE("XY Paint\n");
 	}
 }
 

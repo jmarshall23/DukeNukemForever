@@ -313,3 +313,15 @@ textures/t_generic/genwater2a
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
+
+textures/t_generic/genwater2a_emissive
+{
+	noZPresspass
+	noShadows
+	twoSided
+	customInteractionProgram interaction_lit_emissivew
+
+	diffusemap textures/t_generic/genwater2a.tga
+	bumpmap textures/common/flatnormal.tga
+	specularmap textures/common/nospec.tga
+}
