@@ -25,8 +25,8 @@ entityDef weapon_m16 {
 	"editor_usage"				"m16"
 	"editor_rotatable"		"1"
 
-	"view_model_offset"			"9 4 -10"
-	"view_model_fov"			"90"
+	"view_model_offset"			"9 3.2 -15"
+	"view_model_fov"			"88"
 
 	"spawnclass"				"idItem"
 	"size"						"32 32 32"
