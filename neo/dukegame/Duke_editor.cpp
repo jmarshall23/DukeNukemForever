@@ -60,6 +60,12 @@ void dnEditorEntity::Render(idDict& spawnArgs, bool isSelected, const renderView
 		name = spawnArgs.GetString("classname");
 	}
 
+	float angle = spawnArgs.GetFloat("angle");
+	idVec3 forward = idAngles(0.0f, angle, 0.0f).ToForward();
+
+	idVec3 midpoint = origin + idVec3(0, 0, maxs.z * 0.5f);
+	editorRenderWorld->DebugArrow(colorWhite, midpoint, midpoint + (forward * 50.0f), 20.0f);
+
 	editorRenderWorld->DebugBounds(colorWhite, idBounds(mins, maxs), origin, 0, true);
 	editorRenderWorld->DrawTextA(name, origin + idVec3(0, 0, maxs.z), 0.5f, colorWhite, renderView.viewaxis, 1, 0, true);
 }
