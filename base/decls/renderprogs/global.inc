@@ -208,6 +208,18 @@ float rand(float co) {
 	return fract(sin(co*(91.3458)) * 47453.5453); 
 }
 
+vec2 randnoise(vec2 coord, float width, float height, float noiseamount) //generating noise/pattern texture for dithering
+{
+  float noiseX = ((fract(1.0-coord.s*(width/2.0))*0.25)+(fract(coord.t*(height/2.0))*0.75))*2.0-1.0;
+  float noiseY = ((fract(1.0-coord.s*(width/2.0))*0.75)+(fract(coord.t*(height/2.0))*0.25))*2.0-1.0;
+
+  {
+    noiseX = clamp(fract(sin(dot(coord ,vec2(12.9898,78.233))) * 43758.5453),0.0,1.0)*2.0-1.0;
+    noiseY = clamp(fract(sin(dot(coord ,vec2(12.9898,78.233)*2.0)) * 43758.5453),0.0,1.0)*2.0-1.0;
+  }
+  return vec2(noiseX,noiseY)*noiseamount;
+}
+
 float DistributionGGX(vec3 N, vec3 H, float roughness)
 {
     float a      = roughness*roughness;
