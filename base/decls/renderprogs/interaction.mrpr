@@ -179,6 +179,7 @@ renderProg interaction
 
 #ifndef NO_AMBIENT
 		vec4 ambientLight = $ambientLightInfo;
+		ambientLight.xyz = ambientLight.xyz * 1.5;
 #else
 		vec4 ambientLight = vec4(0, 0, 0, $ambientLightInfo.w);
 #endif
