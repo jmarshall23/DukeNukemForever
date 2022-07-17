@@ -1220,6 +1220,14 @@ void DnLiztroop::Restore(idRestoreGame* savefile) {
 	__super::Restore(savefile);
 }
 
+void DnCivilian::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void DnCivilian::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+
 void DukePlayer::Save(idSaveGame* savefile) const {
 	__super::Save(savefile);
 }

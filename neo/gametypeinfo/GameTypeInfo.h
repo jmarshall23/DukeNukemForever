@@ -9,7 +9,7 @@
 
 	589 constants
 	57 enums
-	305 classes/structs/unions
+	306 classes/structs/unions
 	3 templates
 	7 max inheritance level for 'DnPigcop'
 
@@ -4667,6 +4667,10 @@ static classVariableInfo_t DnLiztroop_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t DnCivilian_typeInfo[] = {
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t DukePlayer_typeInfo[] = {
 	{ "const idSoundShader *", "dukeTauntShader", (intptr_t)(&((DukePlayer *)0)->dukeTauntShader), sizeof( ((DukePlayer *)0)->dukeTauntShader ) },
 	{ "const idSoundShader *", "dukePainShader", (intptr_t)(&((DukePlayer *)0)->dukePainShader), sizeof( ((DukePlayer *)0)->dukePainShader ) },
@@ -5053,6 +5057,7 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "DnAI", "idActor", sizeof(DnAI), DnAI_typeInfo },
 	{ "DnPigcop", "DnAI", sizeof(DnPigcop), DnPigcop_typeInfo },
 	{ "DnLiztroop", "DnAI", sizeof(DnLiztroop), DnLiztroop_typeInfo },
+	{ "DnCivilian", "DnAI", sizeof(DnCivilian), DnCivilian_typeInfo },
 	{ "DukePlayer", "idPlayer", sizeof(DukePlayer), DukePlayer_typeInfo },
 	{ "dnDecoration", "idMover", sizeof(dnDecoration), dnDecoration_typeInfo },
 	{ "opcode_t", "", sizeof(opcode_t), opcode_t_typeInfo },
