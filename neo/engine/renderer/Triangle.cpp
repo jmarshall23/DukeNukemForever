@@ -1611,15 +1611,9 @@ void R_DeriveTangents( srfTriangles_t *tri, bool allocFacePlanes ) {
 	}
 	planes = tri->facePlanes;
 
-#if 1
-
-	if ( !planes ) {
-		planes = (idPlane *)_alloca16( ( tri->numIndexes / 3 ) * sizeof( planes[0] ) );
+	if (!planes) {
+		planes = (idPlane*)_alloca16((tri->numIndexes / 3) * sizeof(planes[0]));
 	}
-
-	SIMDProcessor->DeriveTangents( planes, tri->verts, tri->numVerts, tri->indexes, tri->numIndexes );
-
-#else
 
 	for ( i = 0; i < tri->numVerts; i++ ) {
 		tri->verts[i].normal.Zero();
@@ -1682,7 +1676,7 @@ void R_DeriveTangents( srfTriangles_t *tri, bool allocFacePlanes ) {
 
 		// sum up the tangents and normals for each vertex on this face
 		for ( int j = 0 ; j < 3 ; j++ ) {
-			vert = &tri->verts[tri->indexes[i+j]];
+			idDrawVert *vert = &tri->verts[tri->indexes[i+j]];
 			vert->normal += normal;
 			vert->tangents[0] += tangents[0];
 			vert->tangents[1] += tangents[1];
@@ -1694,8 +1688,6 @@ void R_DeriveTangents( srfTriangles_t *tri, bool allocFacePlanes ) {
 			planes++;
 		}
 	}
-
-#endif
 
 #if 0
 
@@ -1771,6 +1763,33 @@ void R_DeriveTangents( srfTriangles_t *tri, bool allocFacePlanes ) {
 	}
 
 #endif
+
+	for (int i = 0; i < tri->numVerts; i++)
+	{
+		idVec3 newNormal = idVec3(0, 0, 0);
+		idVec3 newTangent = idVec3(0, 0, 0);
+		idVec3 newBinormal = idVec3(0, 0, 0);
+		int numNormals = 0;
+
+		for (int d = 0; d < tri->numVerts; d++)
+		{
+			if (tri->verts[i].xyz == tri->verts[d].xyz)
+			{
+				newNormal += tri->verts[d].normal;
+				newTangent += tri->verts[d].tangents[0];
+				newBinormal += tri->verts[d].tangents[1];
+				numNormals++;
+			}
+		}
+
+		newNormal = newNormal / ((float)numNormals);
+		newTangent = newTangent / ((float)numNormals);
+		newBinormal = newBinormal / ((float)numNormals);
+
+		tri->verts[i].normal = newNormal;
+		tri->verts[i].tangents[0] = newTangent;
+		tri->verts[i].tangents[1] = newBinormal;
+	}
 
 	tri->tangentsCalculated = true;
 	tri->facePlanesCalculated = true;
