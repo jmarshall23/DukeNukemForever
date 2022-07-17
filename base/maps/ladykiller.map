@@ -4,6 +4,7 @@ Version 2
 "classname" "worldspawn"
 "ambientlight" "0.3 0.261 0.192 3"
 "skybox" "vegas_sky"
+"music" "E1L1"
 "call" "map_ladykiller::main"
 // primitive 0
 {

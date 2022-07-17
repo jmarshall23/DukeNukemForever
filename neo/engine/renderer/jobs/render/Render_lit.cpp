@@ -180,8 +180,6 @@ void idRender::DrawForwardLit( void ) {
 		if (drawSurf->geo->numVerts == 0)
 			continue;
 
-		RB_SetModelMatrix(drawSurf->space->modelMatrix);
-
 		tr.numLightsParam->SetIntValue(drawSurf->numSurfRenderLights);
 		
 		// Build up the forward+ lighting path info for this draw surface.
