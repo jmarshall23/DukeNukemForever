@@ -13,7 +13,7 @@ DnCivilian::state_Begin
 */
 stateResult_t DnCivilian::state_Begin(stateParms_t* parms)
 {
-	SetAnimation("idle", true);
+	Event_SetAnimation("idle", true);
 	Event_SetState("state_Idle");
 
 	return SRESULT_DONE;

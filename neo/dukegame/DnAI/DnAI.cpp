@@ -1,7 +1,6 @@
 // DnAI.cpp
 //
 
-
 #include "../../game/Game_local.h"
 
 CLASS_DECLARATION(idActor, DnAI)
@@ -48,16 +47,6 @@ void DnAI::Spawn(void)
 	animator.SetJointPos((jointHandle_t)0, jointModTransform_t::JOINTMOD_LOCAL, eyeOffset);
 
 	SetState("state_Begin");
-}
-
-/*
-================
-DnAI::Hitscan
-================
-*/
-void DnAI::Hitscan(const idVec3& muzzleOrigin, const idVec3& dir, int num_hitscans, float spread, float power) {
-	int areas[10];
-	gameLocal.HitScan(muzzleOrigin, dir, muzzleOrigin, this, false, 1.0f, NULL, areas, false);
 }
 
 /*
@@ -121,54 +110,6 @@ bool DnAI::FacingIdeal()
 	}
 
 	return false;
-}
-
-/*
-=====================
-idAI::TurnToward
-=====================
-*/
-bool DnAI::TurnToward(float yaw)
-{
-	ideal_yaw = idMath::AngleNormalize180(yaw);
-	bool result = FacingIdeal();
-	return result;
-}
-
-/*
-=====================
-DnAI::TurnToward
-=====================
-*/
-bool DnAI::TurnToward(const idVec3& pos)
-{
-	idVec3 dir;
-	idVec3 local_dir;
-	float lengthSqr;
-
-	dir = physicsObj.GetOrigin() - pos;
-	physicsObj.GetGravityAxis().ProjectVector(dir, local_dir);
-	local_dir.z = 0.0f;
-	ideal_yaw = local_dir.ToYaw();
-
-	return true;
-}
-
-/*
-===============
-DnAI::FindNewTarget
-===============
-*/
-idPlayer* DnAI::FindNewTarget()
-{
-	idPlayer* localPlayer = gameLocal.GetLocalPlayer();
-
-	if (CanSee(localPlayer, false))
-	{
-		return localPlayer;
-	}
-
-	return nullptr;
 }
 
 /*
@@ -251,12 +192,12 @@ void DnAI::SlideMove()
 	move.obstacle = NULL;
 	if ((move.moveCommand == MOVE_FACE_ENEMY) && target)
 	{
-		TurnToward(targetLastSeenLocation);
+		Event_TurnToward(targetLastSeenLocation);
 		goalPos = move.moveDest;
 	}
 	else if ((move.moveCommand == MOVE_FACE_ENTITY) && move.goalEntity.GetEntity())
 	{
-		TurnToward(move.goalEntity.GetEntity()->GetPhysics()->GetOrigin());
+		Event_TurnToward(move.goalEntity.GetEntity()->GetPhysics()->GetOrigin());
 		goalPos = move.moveDest;
 	}
 
@@ -303,17 +244,17 @@ void DnAI::SlideMove()
 
 	if ((move.moveCommand == MOVE_FACE_ENEMY) && target)
 	{
-		TurnToward(targetLastSeenLocation);
+		Event_TurnToward(targetLastSeenLocation);
 	}
 	else if ((move.moveCommand == MOVE_FACE_ENTITY) && move.goalEntity.GetEntity())
 	{
-		TurnToward(move.goalEntity.GetEntity()->GetPhysics()->GetOrigin());
+		Event_TurnToward(move.goalEntity.GetEntity()->GetPhysics()->GetOrigin());
 	}
 	else if (move.moveCommand != MOVE_NONE)
 	{
 		if (vel.ToVec2().LengthSqr() > 0.1f)
 		{
-			TurnToward(vel.ToYaw());
+			Event_TurnToward(vel.ToYaw());
 		}
 	}
 	Turn();
@@ -354,46 +295,6 @@ void DnAI::StopMove(moveStatus_t status)
 	move.moveDir.Zero();
 	move.lastMoveOrigin.Zero();
 	move.lastMoveTime = gameLocal.time;
-}
-
-
-/*
-===============
-DnAI::SetAnimation
-===============
-*/
-void DnAI::SetAnimation(const char* name, bool loop)
-{
-	int				animNum;
-	int anim;
-	const idAnim* newanim;
-
-	animNum = animator.GetAnim(name);
-
-	if (currentAnimation == name)
-		return;
-
-	if (!animNum) {
-		gameLocal.Printf("Animation '%s' not found.\n", name);
-		return;
-	}
-
-	anim = animNum;
-	//starttime = gameLocal.time;
-	//animtime = animator.AnimLength(anim);
-	//headAnim = 0;
-
-	currentAnimation = name;
-
-	if (loop)
-	{
-		animator.CycleAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
-	}
-	else
-	{
-		animator.PlayAnim(ANIMCHANNEL_ALL, anim, gameLocal.time, 0);
-	}
-	animator.RemoveOriginOffset(true);
 }
 
 bool DnAI::CurrentlyPlayingSound()
@@ -473,37 +374,6 @@ bool DnAI::MoveToPosition(const idVec3& pos)
 	return true;
 }
 
-void DnAI::UpdatePathToPosition(idVec3 pos)
-{
-	if (pathWaypoints.Num() > 0)
-	{
-		float len = (pos - pathWaypoints[pathWaypoints.Num() - 1]).Length();
-		if (len < 150)
-		{
-			len = (GetOrigin() - pathWaypoints[waypointId]).Length();
-			if (len < 150)
-			{
-				waypointId++;
-
-				if (waypointId >= pathWaypoints.Num())
-					waypointId = pathWaypoints.Num() - 1;
-			}
-
-			MoveToPosition(pathWaypoints[waypointId]);
-
-			return;
-		}
-	}
-
-	waypointId = 0;
-	pathWaypoints.Clear();
-	if (!gameLocal.GetNavigation()->GetPathBetweenPoints(GetOrigin(), pos, pathWaypoints))
-	{
-		return;
-	}
-
-	MoveToPosition(pathWaypoints[0]);
-}
 
 bool DnAI::Pain(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location)
 {

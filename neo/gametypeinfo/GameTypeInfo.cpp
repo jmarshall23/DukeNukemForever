@@ -8146,15 +8146,15 @@ intptr_t DnAI::Invoke(const char *functionName, void *param1) {
 	if(functionNameHash == 97948) { // GetEnemy
 		return (intptr_t)GetEnemy();
 	};
-	if(functionNameHash == 162541) { // FindNewTarget
-		return (intptr_t)FindNewTarget();
+	if(functionNameHash == 244389) { // Event_FindNewTarget
+		return (intptr_t)Event_FindNewTarget();
 	};
-	if(functionNameHash == 181357) { // ResetAnimation
-		ResetAnimation();
+	if(functionNameHash == 264075) { // Event_ResetAnimation
+		Event_ResetAnimation();
 		return 0;
 	};
-	if(functionNameHash == 101603) { // StopMove
-		StopMove();
+	if(functionNameHash == 180637) { // Event_StopMove
+		Event_StopMove();
 		return 0;
 	};
 	if(functionNameHash == 250714) { // GetCurrentAnimation
@@ -8197,13 +8197,13 @@ bool DnAI::HasNativeFunction(const char *functionName) {
 	if(functionNameHash == 97948) { // GetEnemy
 		return true;
 	};
-	if(functionNameHash == 162541) { // FindNewTarget
+	if(functionNameHash == 244389) { // Event_FindNewTarget
 		return true;
 	};
-	if(functionNameHash == 181357) { // ResetAnimation
+	if(functionNameHash == 264075) { // Event_ResetAnimation
 		return true;
 	};
-	if(functionNameHash == 101603) { // StopMove
+	if(functionNameHash == 180637) { // Event_StopMove
 		return true;
 	};
 	if(functionNameHash == 250714) { // GetCurrentAnimation

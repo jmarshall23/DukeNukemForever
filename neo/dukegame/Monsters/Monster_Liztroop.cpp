@@ -17,7 +17,7 @@ DnLiztroop::state_Begin
 */
 stateResult_t DnLiztroop::state_Begin(stateParms_t* parms)
 {
-	SetAnimation("idle", false);
+	Event_SetAnimation("idle", false);
 
 	Event_SetState("state_Idle");
 
@@ -37,9 +37,9 @@ stateResult_t DnLiztroop::state_BeginDeath(stateParms_t* parms)
 {
 	Event_SetState("state_Killed");
 
-	StopMove();
+	Event_StopMove();
 
-	SetAnimation("death", false);
+	Event_SetAnimation("death", false);
 
 	StartSoundShader(death_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
@@ -66,7 +66,7 @@ stateResult_t DnLiztroop::state_ShootEnemy(stateParms_t* parms)
 	// If we are firing, don't make any new decisions until its done.
 	if ((animator.IsAnimating(gameLocal.time) || CurrentlyPlayingSound()) && GetCurrentAnimation() == "fire")
 	{
-		TurnToward(target->GetOrigin());
+		Event_TurnToward(target->GetOrigin());
 		animator.RemoveOriginOffset(true);
 		return SRESULT_WAIT;
 	}
@@ -82,16 +82,16 @@ stateResult_t DnLiztroop::state_ShootEnemy(stateParms_t* parms)
 			return SRESULT_DONE;
 		}
 
-		TurnToward(target->GetOrigin());
-		ResetAnimation();
-		SetAnimation("fire", false);
+		Event_TurnToward(target->GetOrigin());
+		Event_ResetAnimation();
+		Event_SetAnimation("fire", false);
 		StartSoundShader(fire_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
 		idVec3 muzzleOrigin = GetOrigin() + idVec3(0, 0, 40);
 		idVec3 muzzleDir = muzzleOrigin - (target->GetOrigin() + target->GetVisualOffset());
 
 		muzzleDir.Normalize();
-		Hitscan(muzzleOrigin, -muzzleDir, 1, 1, 10);
+		Event_Hitscan(muzzleOrigin, -muzzleDir, 1, 1, 10);
 
 		return SRESULT_WAIT;
 	}
@@ -117,12 +117,12 @@ stateResult_t DnLiztroop::state_ApproachingEnemy(stateParms_t* parms)
 
 	if (distToEnemy > LIZTROOP_FIRE_DISTANCE || !isTargetVisible || (CurrentlyPlayingSound() && distToEnemy >= LIZTROOP_FORCE_FIREDISTANCE))
 	{
-		UpdatePathToPosition(target->GetOrigin());
-		SetAnimation("walk", true);
+		Event_UpdatePathToPosition(target->GetOrigin());
+		Event_SetAnimation("walk", true);
 	}
 	else
 	{
-		StopMove();
+		Event_StopMove();
 		Event_SetState("state_ShootEnemy");
 		return SRESULT_DONE;
 	}
@@ -140,7 +140,7 @@ stateResult_t DnLiztroop::state_Idle(stateParms_t* parms)
 	switch (parms->stage)
 	{
 		case LIZTROOP_IDLE_WAITINGTPLAYER:
-			target = FindNewTarget();
+			target = Event_FindNewTarget();
 
 			if (target != nullptr)
 			{

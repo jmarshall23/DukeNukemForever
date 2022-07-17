@@ -167,24 +167,20 @@ public:
 	bool					CurrentlyPlayingSound();
 
 	bool					FacingIdeal();
-	bool					TurnToward(float yaw);
-	bool					TurnToward(const idVec3& pos);
+	bool					Event_TurnToward(float yaw);
+	bool					Event_TurnToward(const idVec3& pos);
 
 	bool					IsOnGround() { return AI_ONGROUND; }
 	bool					MoveToPosition(const idVec3& pos);
 
 	idEntity*				GetEnemy() { return target; }
 protected:
-	void					SetAnimation(const char* anim, bool loop);
-
-	void					Hitscan(const idVec3& muzzleOrigin, const idVec3& dir, int num_hitscans, float spread, float power);
-
-	void					UpdatePathToPosition(idVec3 position);
-
-	idPlayer*				FindNewTarget();
-
-	void					ResetAnimation() { currentAnimation = ""; }
-	void					StopMove() { StopMove(MOVE_STATUS_DONE); physicsObj.SetLinearVelocity(vec3_zero); }
+	void					Event_SetAnimation(const char* anim, bool loop);
+	void					Event_Hitscan(const idVec3& muzzleOrigin, const idVec3& dir, int num_hitscans, float spread, float power);
+	void					Event_UpdatePathToPosition(idVec3 position);
+	idPlayer*				Event_FindNewTarget();
+	void					Event_ResetAnimation();
+	void					Event_StopMove();
 
 	idStr					GetCurrentAnimation() { return currentAnimation; }
 protected:

@@ -17,7 +17,7 @@ DnPigcop::state_Begin
 */
 stateResult_t DnPigcop::state_Begin(stateParms_t* parms)
 {
-	SetAnimation("idle", false);
+	Event_SetAnimation("idle", false);
 
 	Event_SetState("state_Idle");
 
@@ -44,9 +44,9 @@ stateResult_t DnPigcop::state_BeginDeath(stateParms_t* parms)
 {
 	Event_SetState("state_Killed");
 
-	StopMove();
+	Event_StopMove();
 
-	SetAnimation("death", false);
+	Event_SetAnimation("death", false);
 
 	StartSoundShader(death_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
@@ -83,7 +83,7 @@ stateResult_t DnPigcop::state_ShootEnemy(stateParms_t* parms)
 	// If we are firing, don't make any new decisions until its done.
 	if ((animator.IsAnimating(gameLocal.time) || CurrentlyPlayingSound()) && GetCurrentAnimation() == "fire")
 	{
-		TurnToward(target->GetOrigin());
+		Event_TurnToward(target->GetOrigin());
 		animator.RemoveOriginOffset(true);
 		return SRESULT_WAIT;
 	}
@@ -99,16 +99,16 @@ stateResult_t DnPigcop::state_ShootEnemy(stateParms_t* parms)
 			return SRESULT_DONE;
 		}
 
-		TurnToward(target->GetOrigin());
-		ResetAnimation();
-		SetAnimation("fire", false);
+		Event_TurnToward(target->GetOrigin());
+		Event_ResetAnimation();
+		Event_SetAnimation("fire", false);
 		StartSoundShader(fire_sound, SND_CHANNEL_ANY, 0, false, nullptr);
 
 		idVec3 muzzleOrigin = GetOrigin() + idVec3(0, 0, 40);
 		idVec3 muzzleDir = muzzleOrigin - (target->GetOrigin() + target->GetVisualOffset());
 
 		muzzleDir.Normalize();
-		Hitscan(muzzleOrigin, -muzzleDir, 1, 1, 20);
+		Event_Hitscan(muzzleOrigin, -muzzleDir, 1, 1, 20);
 
 		return SRESULT_WAIT;
 	}
@@ -134,12 +134,12 @@ stateResult_t DnPigcop::state_ApproachingEnemy(stateParms_t* parms)
 
 	if (distToEnemy > PIGCOP_FIRE_DISTANCE || !isTargetVisible || (CurrentlyPlayingSound() && distToEnemy >= PIGCOP_FORCE_FIREDISTANCE))
 	{
-		UpdatePathToPosition(target->GetOrigin());
-		SetAnimation("walk", true);
+		Event_UpdatePathToPosition(target->GetOrigin());
+		Event_SetAnimation("walk", true);
 	}
 	else
 	{
-		StopMove();
+		Event_StopMove();
 		Event_SetState("state_ShootEnemy");
 		return SRESULT_DONE;
 	}
@@ -157,14 +157,14 @@ stateResult_t DnPigcop::state_Idle(stateParms_t* parms)
 	switch (parms->stage)
 	{
 		case PIGCOP_IDLE_WAITINGTPLAYER:
-			target = FindNewTarget();
+			target = Event_FindNewTarget();
 
 			if (target != nullptr)
 			{
 				targetLastSeenLocation = target->GetOrigin();
 				isTargetVisible = true;
 
-				SetAnimation("roar", false);
+				Event_SetAnimation("roar", false);
 				StartSoundShader(pig_awake, SND_CHANNEL_ANY, 0, false, nullptr);
 				parms->stage = PIGCOP_IDLE_ROAR;
 			}
