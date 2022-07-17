@@ -1,20 +1,20 @@
-// DnAI_Pigcop.h
+// Monster_Pigcop.h
 //
 
 #pragma once
 
-enum LIZTROOP_IDLE_STATE
+enum PIGCOP_IDLE_STATE
 {
-	LIZTROOP_IDLE_WAITINGTPLAYER = 0,
-	LIZTROOP_IDLE_ROAR
+	PIGCOP_IDLE_WAITINGTPLAYER = 0,
+	PIGCOP_IDLE_ROAR
 };
 
 //
-// DnLiztroop
+// DnPigcop
 //
-class DnLiztroop : public DnAI
+class DnPigcop : public DnAI
 {
-	CLASS_PROTOTYPE(DnLiztroop);
+	CLASS_PROTOTYPE(DnPigcop);
 public:
 	stateResult_t				state_Begin(stateParms_t* parms);
 	stateResult_t				state_Idle(stateParms_t* parms);
@@ -23,7 +23,12 @@ public:
 	stateResult_t				state_BeginDeath(stateParms_t* parms);
 	stateResult_t				state_Killed(stateParms_t* parms);
 private:
-	const idSoundShader* troop_awake;
+	const idSoundShader* pig_roam1;
+	const idSoundShader* pig_roam2;
+	const idSoundShader* pig_roam3;
+	const idSoundShader* pig_awake;
 	const idSoundShader* fire_sound;
 	const idSoundShader* death_sound;
+
+	DnMeshComponent shotgunMeshComponent;
 };
