@@ -183,7 +183,7 @@ renderProg interaction
 		vec4 ambientLight = vec4(0, 0, 0, $ambientLightInfo.w);
 #endif
 
-		float ue1_detail_map_hack = clamp(bumpMap.g * 1.5, 0.0, 1.0);
+		float ue1_detail_map_hack = clamp(bumpMap.g * 1.5, 0.0, 1.0) * length(diffuseMap.xyz);
 
 		if(ambientLight.w == -1)
 		{
