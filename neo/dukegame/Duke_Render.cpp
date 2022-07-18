@@ -122,9 +122,9 @@ bool dnGameLocal::Draw(int clientNum) {
 	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.bloomMaterial);
 
 	// Render the SSAO to a render target so we can blur it.
-	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.ssaoMaterial);
+	//renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.ssaoMaterial);
 
-	renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.ssaoBlurMaterial);	
+	//renderSystem->DrawStretchPic(0.0f, 0.0f, SCREEN_WIDTH, SCREEN_HEIGHT, 0.0f, 1.0f, 1.0f, 0.0f, renderPlatform.ssaoBlurMaterial);	
 
 	// Finally draw the player hud.
 	player->DrawHUD(hud);
