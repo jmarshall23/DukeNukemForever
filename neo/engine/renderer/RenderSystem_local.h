@@ -617,6 +617,16 @@ public:
 	rvmDeclRenderParam*		modelMatrixZ;
 	rvmDeclRenderParam*		modelMatrixW;
 
+	rvmDeclRenderParam*		viewMatrixX;
+	rvmDeclRenderParam*		viewMatrixY;
+	rvmDeclRenderParam*		viewMatrixZ;
+	rvmDeclRenderParam*		viewMatrixW;
+
+	rvmDeclRenderParam*		projectionMatrixX;
+	rvmDeclRenderParam*		projectionMatrixY;
+	rvmDeclRenderParam*		projectionMatrixZ;
+	rvmDeclRenderParam*		projectionMatrixW;
+
 	rvmDeclRenderParam* mvpMatrixX;
 	rvmDeclRenderParam* mvpMatrixY;
 	rvmDeclRenderParam* mvpMatrixZ;
@@ -1312,6 +1322,8 @@ idScreenRect R_CalcIntersectionScissor( const idRenderLightLocal * lightDef,
 
 void RB_SetModelMatrix(const float* modelMatrix);
 void RB_SetMVP(const idRenderMatrix& mvp);
+void RB_SetProjectionMatrix(const float* projectionMatrix);
+void RB_SetViewMatrix(const float* projectionMatrix);
 
 // transform Z in eye coordinates to window coordinates
 ID_INLINE void R_TransformEyeZToWin(float src_z, const float* projectionMatrix, float& dst_z) {

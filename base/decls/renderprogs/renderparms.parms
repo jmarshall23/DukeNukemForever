@@ -37,6 +37,16 @@ renderParm modelMatrixY { float4 }
 renderParm modelMatrixZ { float4 }
 renderParm modelMatrixW { float4 }
 
+renderParm viewMatrixX { float4 }
+renderParm viewMatrixY { float4 }
+renderParm viewMatrixZ { float4 }
+renderParm viewMatrixW { float4 }
+
+renderParm projectionMatrixX { float4 }
+renderParm projectionMatrixY { float4 }
+renderParm projectionMatrixZ { float4 }
+renderParm projectionMatrixW { float4 }
+
 renderParm vertexcolormodulate { float4 }
 renderParm vertexcoloradd { float4 }
 

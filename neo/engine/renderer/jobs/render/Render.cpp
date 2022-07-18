@@ -1026,6 +1026,9 @@ void idRender::RenderSingleView( const void *data ) {
 
 	RenderShadowMaps();
 
+	RB_SetViewMatrix(backEnd.viewDef->worldSpace.modelViewMatrix); // Despite this being called "modelview" its just "view".
+	RB_SetProjectionMatrix(backEnd.viewDef->projectionMatrix);
+
 	// If we have a backend rendertexture, assign it here.
 	if (backEnd.renderTexture)
 	{

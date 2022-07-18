@@ -26,6 +26,30 @@ void RB_SetModelMatrix(const idRenderMatrix& modelMatrix) {
 
 /*
 ================
+RB_SetProjectionMatrix
+================
+*/
+void RB_SetProjectionMatrix(const idRenderMatrix& modelMatrix) {
+	tr.projectionMatrixX->SetVectorValue(modelMatrix[0]);
+	tr.projectionMatrixY->SetVectorValue(modelMatrix[1]);
+	tr.projectionMatrixZ->SetVectorValue(modelMatrix[2]);
+	tr.projectionMatrixW->SetVectorValue(modelMatrix[3]);
+}
+
+/*
+================
+RB_SetViewMatrix
+================
+*/
+void RB_SetViewMatrix(const idRenderMatrix& modelMatrix) {
+	tr.viewMatrixX->SetVectorValue(modelMatrix[0]);
+	tr.viewMatrixY->SetVectorValue(modelMatrix[1]);
+	tr.viewMatrixZ->SetVectorValue(modelMatrix[2]);
+	tr.viewMatrixW->SetVectorValue(modelMatrix[3]);
+}
+
+/*
+================
 RB_SetModelMatrix
 ================
 */
@@ -36,4 +60,32 @@ void RB_SetModelMatrix(const float* modelMatrix) {
 
 	idRenderMatrix::Transpose(m, transposed);
 	RB_SetModelMatrix(transposed);
+}
+
+/*
+================
+RB_SetProjectionMatrix
+================
+*/
+void RB_SetProjectionMatrix(const float* projectionMatrix) {
+	idRenderMatrix m;
+	idRenderMatrix transposed;
+	memcpy(m.GetFloatPtr(), projectionMatrix, sizeof(float) * 16);
+
+	idRenderMatrix::Transpose(m, transposed);
+	RB_SetProjectionMatrix(transposed);
+}
+
+/*
+================
+RB_SetViewMatrix
+================
+*/
+void RB_SetViewMatrix(const float* projectionMatrix) {
+	idRenderMatrix m;
+	idRenderMatrix transposed;
+	memcpy(m.GetFloatPtr(), projectionMatrix, sizeof(float) * 16);
+
+	idRenderMatrix::Transpose(m, transposed);
+	RB_SetViewMatrix(transposed);
 }

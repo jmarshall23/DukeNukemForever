@@ -38,6 +38,16 @@ void idRenderSystemLocal::InitRenderParms(void)
 	modelMatrixZ = declManager->FindRenderParam("modelMatrixZ");
 	modelMatrixW = declManager->FindRenderParam("modelMatrixW");
 
+	viewMatrixX = declManager->FindRenderParam("viewMatrixX");
+	viewMatrixY = declManager->FindRenderParam("viewMatrixY");
+	viewMatrixZ = declManager->FindRenderParam("viewMatrixZ");
+	viewMatrixW = declManager->FindRenderParam("viewMatrixW");
+
+	projectionMatrixX = declManager->FindRenderParam("projectionMatrixX");
+	projectionMatrixY = declManager->FindRenderParam("projectionMatrixY");
+	projectionMatrixZ = declManager->FindRenderParam("projectionMatrixZ");
+	projectionMatrixW = declManager->FindRenderParam("projectionMatrixW");
+
 	mvpMatrixX = declManager->FindRenderParam("mvpMatrixX");
 	mvpMatrixY = declManager->FindRenderParam("mvpMatrixY");
 	mvpMatrixZ = declManager->FindRenderParam("mvpMatrixZ");
