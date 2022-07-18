@@ -98,7 +98,7 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			RB_SetMVP(mvp);
 			RB_SetModelMatrix(entityDef->modelMatrix);
 
-			tr.shadowMapProgram->Bind();
+			tr.shadowMapProgram[PROG_VARIANT_NONSKINNED]->Bind();
 			lastEntityDef = entityDef;
 		}
 
@@ -169,11 +169,11 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 
 			if (pStage->texture.image[0]->IsTransparent())
 			{
-				tr.shadowMapAlbedoProgram->Bind();
+				tr.shadowMapAlbedoProgram[PROG_VARIANT_NONSKINNED]->Bind();
 			}
 			else
 			{
-				tr.shadowMapProgram->Bind();
+				tr.shadowMapProgram[PROG_VARIANT_NONSKINNED]->Bind();
 			}
 
 
@@ -666,7 +666,7 @@ void idRender::RenderShadowMaps(void) {
 	idRenderTexture::BindNull();
 
 	// Reset the bound shader.
-	tr.shadowMapProgram->BindNull();
+	tr.shadowMapProgram[PROG_VARIANT_NONSKINNED]->BindNull();
 
 	tr.atlasLookupParam->SetImage(renderShadowSystem.GetAtlasLookupImage());
 	tr.shadowMapAtlasParam->SetImage(renderShadowSystem.GetShadowMapDepthAtlas());

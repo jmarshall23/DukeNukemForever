@@ -1,3 +1,5 @@
+// ================================================================================
+
 renderProg shadowmap
 {
 	vertex
@@ -15,7 +17,17 @@ renderProg shadowmap
 		vertex_texcoord1.x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
 		vertex_texcoord1.y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
 
+#ifdef SKINNED
+		vec3 vModelNormal = attr_Normal.xyz;
+		vec3 vModelTangent = attr_Tangent.xyz;
+		vec3 vModelBinormal = attr_Bitangent.xyz;
+
+		#include "skinning.inc"
+
+		gl_Position = TransformInputVertex(vertex_position, mvpx, mvpy, mvpz, mvpw);
+#else	
 		gl_Position = TransformVertex( mvpx, mvpy, mvpz, mvpw );
+#endif
 	}
 
 	pixel
@@ -32,8 +44,25 @@ renderProg shadowmap
 	}
 }
 
+renderProg shadowmap_skinned
+{
+	inherit shadowmap
+	define SKINNED
+}
+
+// ================================================================================
+
 renderProg shadowMapAlbedoSample
 {
 	inherit shadowmap
 	define SAMPLE_ALBEDO		
 }
+
+renderProg shadowMapAlbedoSample_skinned
+{
+	inherit shadowmap
+	define SAMPLE_ALBEDO	
+	define SKINNED	
+}
+
+// ================================================================================

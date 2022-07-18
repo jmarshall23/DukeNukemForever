@@ -113,7 +113,7 @@ void idRender::DrawTestOcclusion(void) {
 	RB_SetMVP(backEnd.viewDef->worldSpace.mvp);
 
 	tr.albedoTextureParam->SetImage(globalImages->whiteImage);
-	tr.occluderProgram->Bind();	
+	tr.occluderProgram[PROG_VARIANT_NONSKINNED]->Bind();
 
 	glColorMask(GL_FALSE, GL_FALSE, GL_FALSE, GL_FALSE);
 	glDepthMask(GL_FALSE);
@@ -134,5 +134,5 @@ void idRender::DrawTestOcclusion(void) {
 	glDepthMask(GL_TRUE);
 	glColorMask(GL_TRUE, GL_TRUE, GL_TRUE, GL_TRUE);
 
-	tr.occluderProgram->BindNull();
+	tr.occluderProgram[PROG_VARIANT_NONSKINNED]->BindNull();
 }

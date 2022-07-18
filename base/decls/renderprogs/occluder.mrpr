@@ -4,8 +4,17 @@ renderProg occluder
 	{
 		vertex_texcoord0.x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
 		vertex_texcoord0.y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
+#ifdef SKINNED
+		vec3 vModelNormal = attr_Normal.xyz;
+		vec3 vModelTangent = attr_Tangent.xyz;
+		vec3 vModelBinormal = attr_Bitangent.xyz;
 
+		#include "skinning.inc"
+
+		gl_Position = TransformInputVertex(vertex_position, $mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+#else	
 		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+#endif
 	}
 
 	pixel
@@ -17,4 +26,10 @@ renderProg occluder
 		
 		finalpixel_color = vec4(0.0, 0.0, 0.0, 1.0);
 	}
+}
+
+renderProg occluder_skinned
+{
+	inherit occluder
+	define SKINNED
 }

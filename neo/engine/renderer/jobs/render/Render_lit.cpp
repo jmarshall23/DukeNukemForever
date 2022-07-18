@@ -119,17 +119,17 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	// draw it
 	if (din->surf->space->entityDef->parms.isSelected)
 	{
-		tr.interactionEditorSelectProgram->Bind();
+		tr.interactionEditorSelectProgram[PROG_VARIANT_NONSKINNED]->Bind();
 	}
 	else
 	{
-		if (din->surf->material->GetCustomInteractionProgram())
+		if (din->surf->material->GetCustomInteractionProgram(PROG_VARIANT_NONSKINNED))
 		{
-			din->surf->material->GetCustomInteractionProgram()->Bind();;
+			din->surf->material->GetCustomInteractionProgram(PROG_VARIANT_NONSKINNED)->Bind();;
 		}
 		else
 		{
-			tr.interactionProgram->Bind();
+			tr.interactionProgram[PROG_VARIANT_NONSKINNED]->Bind();
 		}
 	}
 	RB_DrawElementsWithCounters( din->surf->geo );
@@ -253,7 +253,7 @@ void idRender::DrawForwardLit( void ) {
 		RB_CreateSingleDrawInteractions(drawSurf, RB_ARB2_DrawInteraction);
 
 		// disable features
-		tr.interactionProgram->BindNull();
+		tr.interactionProgram[PROG_VARIANT_NONSKINNED]->BindNull();
 
 		backEnd.glState.currenttmu = -1;
 		GL_SelectTexture(0);

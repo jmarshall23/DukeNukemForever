@@ -1465,6 +1465,46 @@ const char *idLexer::ParseBracedSection( idStr &out ) {
 			out += "\r\n";
 		}
 
+		if (token == "#")
+		{
+			if (!idLexer::ReadToken(&token)) {
+				Error("missing closing brace");
+				return out.c_str();
+			}
+
+			if (token == "include")
+			{
+				idStr filePath = filename;
+				filePath.StripFilename();
+
+				if (!idLexer::ReadToken(&token)) {
+					Error("missing closing brace");
+					return out.c_str();
+				}
+
+				idStr includePath = va("%s/%s", filePath.c_str(), token.c_str());
+
+				char* buffer;
+				if (fileSystem->ReadFile(includePath, (void **)&buffer, nullptr) == 0)
+				{
+					common->FatalError("Failed to include file %s", includePath.c_str());
+				}
+
+				out += "\n";
+				out += buffer;
+				out += "\n ";
+
+				fileSystem->FreeFile(buffer);
+				continue;
+			}
+			else
+			{
+				idLexer::UnreadToken(&token);
+				out += "# ";
+				continue;
+			}
+		}
+
 		if ( token.type == TT_PUNCTUATION ) {
 			if ( token[0] == '{' ) {
 				depth++;

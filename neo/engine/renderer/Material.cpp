@@ -112,7 +112,7 @@ void idMaterial::CommonInit() {
 	refCount = 0;
 	portalSky = false;
 	noZPresspass = false;
-	customInteractionProgram = nullptr;
+	memset(customInteractionProgram, 0, sizeof(customInteractionProgram));
 
 	decalInfo.stayTime = 10000;
 	decalInfo.fadeTime = 4000;
@@ -1836,8 +1836,18 @@ void idMaterial::ParseMaterial( idLexer &src ) {
 		}
 		else if (!token.Icmp("customInteractionProgram")) {
 			src.ReadToken(&token);
-			customInteractionProgram = tr.FindRenderProgram(token);
-			if (!customInteractionProgram)
+
+			// Load the non skinned variation.
+			customInteractionProgram[PROG_VARIANT_NONSKINNED] = tr.FindRenderProgram(token);
+			if (!customInteractionProgram[PROG_VARIANT_NONSKINNED])
+			{
+				common->FatalError("Failed to find custom interaction program %s\n", token.c_str());
+			}
+
+			// Load the non skinned variation.
+			idStr skinnedName = va("%s_skinned", token.c_str());
+			customInteractionProgram[PROG_VARIANT_SKINNED] = tr.FindRenderProgram(skinnedName);
+			if (!customInteractionProgram[PROG_VARIANT_SKINNED])
 			{
 				common->FatalError("Failed to find custom interaction program %s\n", token.c_str());
 			}

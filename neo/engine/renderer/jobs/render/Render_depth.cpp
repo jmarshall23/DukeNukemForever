@@ -111,7 +111,7 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 	{
 		tr.albedoTextureParam->SetImage(shader->GetEditorImage());
 		PrepareStageTexturing(pStage, surf, ac);
-		tr.occluderProgram->Bind();
+		tr.occluderProgram[PROG_VARIANT_NONSKINNED]->Bind();
 	}
 
 	// draw it
@@ -122,7 +122,7 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 
 	if (pStage)
 	{
-		tr.occluderProgram->BindNull();
+		tr.occluderProgram[PROG_VARIANT_NONSKINNED]->BindNull();
 		FinishStageTexturing(pStage, surf, ac);
 	}
 

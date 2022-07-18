@@ -189,6 +189,12 @@ typedef enum {
 	SVC_INVERSE_MODULATE
 } stageVertexColor_t;
 
+enum rvmProgramVariants_t {
+	PROG_VARIANT_NONSKINNED = 0,
+	PROG_VARIANT_SKINNED,
+	PROG_VARIANT_NUMVARIANTS
+};
+
 #define MAX_NEWSTAGE_RENDERPARMS			10
 
 typedef struct {
@@ -464,7 +470,7 @@ public:
 	bool				NoFragment( void ) const { return ( surfaceFlags & SURF_NOFRAGMENT ) != 0; }
 
 						// Returns a custom interaction program.
-	rvmDeclRenderProg*  GetCustomInteractionProgram(void) const { return customInteractionProgram; }
+	rvmDeclRenderProg*  GetCustomInteractionProgram(rvmProgramVariants_t variant) const { return customInteractionProgram[variant]; }
 
 	//------------------------------------------------------------------
 	// light shader specific functions, only called for light entities
@@ -703,7 +709,7 @@ private:
 	bool				portalSky;
 	int					refCount;		
 
-	rvmDeclRenderProg*  customInteractionProgram;
+	rvmDeclRenderProg*  customInteractionProgram[PROG_VARIANT_NUMVARIANTS];
 };
 
 typedef idList<const idMaterial *> idMatList;

@@ -64,3 +64,5 @@ renderParm customMask { texture }
 renderParm genericinfo { float4 }
 
 renderParm ambientLightInfo { float4 }
+
+renderParm matrices { float4_array 408 }

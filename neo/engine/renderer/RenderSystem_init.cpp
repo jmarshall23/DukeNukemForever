@@ -1926,12 +1926,16 @@ void idRenderSystemLocal::Init( void ) {
 
 	guiTextureProgram = FindRenderProgram("guiTexture");
 	guiColorProgram = FindRenderProgram("guiColor");
-	interactionProgram = FindRenderProgram("interaction");
-	interactionEditorSelectProgram = FindRenderProgram("interaction_editorsel");
-	shadowMapProgram = FindRenderProgram("shadowmap");
-	occluderProgram = FindRenderProgram("occluder");
-
-	shadowMapAlbedoProgram = FindRenderProgram("shadowMapAlbedoSample");
+	interactionProgram[PROG_VARIANT_NONSKINNED] = FindRenderProgram("interaction");
+	interactionProgram[PROG_VARIANT_SKINNED] = FindRenderProgram("interaction_skinned");
+	interactionEditorSelectProgram[PROG_VARIANT_NONSKINNED] = FindRenderProgram("interaction_editorsel");
+	interactionEditorSelectProgram[PROG_VARIANT_SKINNED] = FindRenderProgram("interaction_editorsel_skinned");
+	shadowMapProgram[PROG_VARIANT_NONSKINNED] = FindRenderProgram("shadowmap");
+	shadowMapProgram[PROG_VARIANT_SKINNED] = FindRenderProgram("shadowmap_skinned");
+	occluderProgram[PROG_VARIANT_NONSKINNED] = FindRenderProgram("occluder");
+	occluderProgram[PROG_VARIANT_SKINNED] = FindRenderProgram("occluder_skinned");
+	shadowMapAlbedoProgram[PROG_VARIANT_NONSKINNED] = FindRenderProgram("shadowMapAlbedoSample");
+	shadowMapAlbedoProgram[PROG_VARIANT_SKINNED] = FindRenderProgram("shadowMapAlbedoSample_skinned");
 // jmarshall end
 
 	R_InitMaterials();

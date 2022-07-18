@@ -6,6 +6,7 @@ in vec3		attr_Tangent;
 in vec3		attr_Bitangent;
 in vec3     attr_Normal;
 in vec4     attr_Color;
+in vec4     attr_Color2;
 #endif
 
 #ifdef ID_VERTEX_SHADER
@@ -183,6 +184,18 @@ vec4 TransformVertex(vec4 mvpX, vec4 mvpY, vec4 mvpZ, vec4 mvpW)
 	position.y = dot4( attr_Position, mvpY );
 	position.z = dot4( attr_Position, mvpZ );
 	position.w = dot4( attr_Position, mvpW );
+
+	return position;
+}
+
+vec4 TransformInputVertex(vec4 xyz, vec4 mvpX, vec4 mvpY, vec4 mvpZ, vec4 mvpW)
+{
+	vec4 position;
+
+	position.x = dot4( xyz, mvpX );
+	position.y = dot4( xyz, mvpY );
+	position.z = dot4( xyz, mvpZ );
+	position.w = dot4( xyz, mvpW );
 
 	return position;
 }

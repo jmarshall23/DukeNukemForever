@@ -1,12 +1,24 @@
+// ==============================================================
+
 renderProg interaction
 {
 	vertex
 	{
+#ifdef SKINNED
+		vec3 vModelNormal = attr_Normal.xyz;
+		vec3 vModelTangent = attr_Tangent.xyz;
+		vec3 vModelBinormal = attr_Bitangent.xyz;
+
+		#include "skinning.inc"
+
+		gl_Position = TransformInputVertex(vertex_position, $mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+#else		
 		vec3 vNormal = attr_Normal.xyz;
 		vec3 vTangent = attr_Tangent.xyz;
 		vec3 vBinormal = attr_Bitangent.xyz;
-		
+
 		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+#endif
 			
 		vec4 defaultTexCoord = vec4( 0.0f, 0.5f, 0.0f, 1.0f );
 
@@ -230,11 +242,28 @@ renderProg interaction
 	}
 }
 
+renderProg interaction_skinned
+{
+	inherit interaction
+	define SKINNED
+}
+
+// ==============================================================
+
 renderProg interaction_nolight
 {
 	inherit interaction
 	define NO_LIGHT_PASS
 }
+
+renderProg interaction_nolight_skinned
+{
+	inherit interaction
+	define NO_LIGHT_PASS
+	define SKINNED
+}
+
+// ==============================================================
 
 renderProg interaction_emissive
 {
@@ -243,6 +272,17 @@ renderProg interaction_emissive
 	define EMISSIVE
 }
 
+renderProg interaction_emissive_skinned
+{
+	inherit interaction
+	define NO_LIGHT_PASS
+	define EMISSIVE
+	define SKINNED
+}
+
+// ==============================================================
+
+
 renderProg interaction_lit_emissive
 {
 	inherit interaction
@@ -250,11 +290,30 @@ renderProg interaction_lit_emissive
 	define EXTRA_BRIGHT
 }
 
+renderProg interaction_lit_emissive_skinned
+{
+	inherit interaction
+	define EMISSIVE
+	define EXTRA_BRIGHT
+	define SKINNED
+}
+
+// ==============================================================
+
 renderProg interaction_water
 {
 	inherit interaction
 	define WATER_PASS
 }
+
+renderProg interaction_water_skinned
+{
+	inherit interaction
+	define WATER_PASS
+	define SKINNED
+}
+
+// ==============================================================
 
 renderProg interaction_waterfall
 {
@@ -263,12 +322,32 @@ renderProg interaction_waterfall
 	define WATER_FALL
 }
 
+renderProg interaction_waterfall_skinned
+{
+	inherit interaction
+	define WATER_PASS
+	define WATER_FALL
+	define SKINNED
+}
+
+// ==============================================================
+
 renderProg interaction_editorsel
 {
 	inherit interaction
 	define NO_LIGHT_PASS
 	define EDITOR_SELECT
 }
+
+renderProg interaction_editorsel_skinned
+{
+	inherit interaction
+	define NO_LIGHT_PASS
+	define EDITOR_SELECT
+	define SKINNED
+}
+
+// ==============================================================
 
 renderProg interaction_lit_emissivew
 {
@@ -277,3 +356,13 @@ renderProg interaction_lit_emissivew
 	define WATER_PASS
 	define NO_AMBIENT
 }
+
+renderProg interaction_lit_emissivew_skinned
+{
+	inherit interaction
+	define EMISSIVE
+	define WATER_PASS
+	define NO_AMBIENT
+	define SKINNED
+}
+// ==============================================================

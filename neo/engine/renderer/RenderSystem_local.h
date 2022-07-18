@@ -651,11 +651,11 @@ public:
 
 	rvmDeclRenderProg*		guiTextureProgram;
 	rvmDeclRenderProg*		guiColorProgram;
-	rvmDeclRenderProg*		interactionProgram;
-	rvmDeclRenderProg*		interactionEditorSelectProgram;
-	rvmDeclRenderProg*		occluderProgram;
-	rvmDeclRenderProg*		shadowMapProgram;	
-	rvmDeclRenderProg*		shadowMapAlbedoProgram;
+	rvmDeclRenderProg*		interactionProgram[PROG_VARIANT_NUMVARIANTS];
+	rvmDeclRenderProg*		interactionEditorSelectProgram[PROG_VARIANT_NUMVARIANTS];
+	rvmDeclRenderProg*		occluderProgram[PROG_VARIANT_NUMVARIANTS];
+	rvmDeclRenderProg*		shadowMapProgram[PROG_VARIANT_NUMVARIANTS];
+	rvmDeclRenderProg*		shadowMapAlbedoProgram[PROG_VARIANT_NUMVARIANTS];
 
 	unsigned short			gammaTable[256];	// brightness / gamma modify this
 
