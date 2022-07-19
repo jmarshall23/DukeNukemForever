@@ -43,7 +43,7 @@ rvmDeclRenderProg::ParseRenderParms
 ===================
 */
 idStr rvmDeclRenderProg::ParseRenderParms(idStr& bracketText, const char* programMacro) {
-	idStr uniforms = "#version 130\n";
+	idStr uniforms = "#version 140\n";
 	uniforms += va("#define %s\n", programMacro);
 	uniforms += globalText;
 	uniforms += "\n";
@@ -266,6 +266,7 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_BINORMAL, "attr_Bitangent");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_NORMAL, "attr_Normal");
 		glBindAttribLocation(program, PC_ATTRIB_INDEX_COLOR, "attr_Color");
+		glBindAttribLocation(program, PC_ATTRIB_INDEX_COLOR2, "attr_Color2");
 
 		glBindFragDataLocation(program, 0, "finalpixel_color");
 		glBindFragDataLocation(program, 1, "finalpixel_color2");
@@ -301,6 +302,12 @@ void rvmDeclRenderProg::LoadGLSLProgram(void) {
 		glDeleteProgram(program);
 		idLib::Error("While linking GLSL program %s there was a internal error\n", GetName());
 		return;
+	}
+
+	// get the uniform buffer binding for skinning joint matrices
+	GLint blockIndex = glGetUniformBlockIndex(program, "matrices_ubo");
+	if (blockIndex != -1) {
+		glUniformBlockBinding(program, blockIndex, 0);
 	}
 
 	int textureUnit = 0;

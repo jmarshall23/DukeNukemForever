@@ -248,7 +248,7 @@ void idGameLocal::ParseSpawnArgsToRenderEntity( const idDict *args, renderEntity
 		}
 	}
 	if ( renderEntity->hModel ) {
-		renderEntity->bounds = renderEntity->hModel->Bounds( renderEntity );
+		renderEntity->bounds = renderEntity->hModel->Bounds( nullptr );
 	} else {
 		renderEntity->bounds.Zero();
 	}

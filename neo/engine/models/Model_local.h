@@ -29,6 +29,7 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __MODEL_LOCAL_H__
 #define __MODEL_LOCAL_H__
 
+class idJointBuffer;
 class idRenderWorldCommitted;
 
 /*
@@ -46,6 +47,8 @@ public:
 
 								idRenderModelStatic();
 	virtual						~idRenderModelStatic();
+
+	virtual bool				IsSkeletalMesh() const override { return false; }
 
 	virtual void				InitFromFile( const char *fileName );
 	virtual void				PartialInitFromFile( const char *fileName );
@@ -119,6 +122,10 @@ public:
 	idBounds					bounds;
 	int							overlaysAdded;
 
+	// when an md5 is instantiated, the inverted joints array is stored to allow GPU skinning
+	int							numInvertedJoints;
+	idJointMat*					jointsInverted;
+
 protected:
 	int							lastModifiedFrame;
 	int							lastArchivedFrame;
@@ -141,9 +148,7 @@ protected:
 
 /*
 ===============================================================================
-
 	MD5 animated model
-
 ===============================================================================
 */
 
@@ -151,67 +156,82 @@ class idMD5Mesh {
 	friend class				idRenderModelMD5;
 
 public:
-								idMD5Mesh();
-								~idMD5Mesh();
+	idMD5Mesh();
+	~idMD5Mesh();
 
- 	void						ParseMesh( const idStr &name, idLexer &parser, int numJoints, const idJointMat *joints );
-	void						UpdateSurface( const struct renderEntity_t *ent, const idJointMat *joints, idModelSurface *surf );
-	idBounds					CalcBounds( const idJointMat *joints );
-	int							NearestJoint( int a, int b, int c ) const;
-	int							NumVerts( void ) const;
-	int							NumTris( void ) const;
-	int							NumWeights( void ) const;
-
+	void						ParseMesh(const idStr& fileName, idLexer& parser, int numJoints, const idJointMat* joints);
+	idBounds					CalcBounds(const idJointMat* joints);
+	int							NearestJoint(int a, int b, int c) const;
+	int							NumVerts(void) const;
+	int							NumTris(void) const;
+	int							NumWeights(void) const;
+	const idMaterial* GetShader(void) const { return shader; }
+public:
+	struct deformInfo_s* deformInfo;			// used to create srfTriangles_t from base frames and new vertexes
 private:
 	idList<idVec2>				texCoords;			// texture coordinates
 	int							numWeights;			// number of weights
-	idVec4 *					scaledWeights;		// joint weights
-	int *						weightIndex;		// pairs of: joint offset + bool true if next weight is for next vertex
-	const idMaterial *			shader;				// material applied to mesh
-	int							numTris;			// number of triangles
-	struct deformInfo_s *		deformInfo;			// used to create srfTriangles_t from base frames and new vertexes
+	idVec4* scaledWeights;		// joint weights
+	int* weightIndex;		// pairs of: joint offset + bool true if next weight is for next vertex
+	const idMaterial* shader;				// material applied to mesh
+	int							numTris;			// number of triangles	
 	int							surfaceNum;			// number of the static surface created for this mesh
 
-	void						TransformVerts( idDrawVert *verts, const idJointMat *joints );
-	void						TransformScaledVerts( idDrawVert *verts, const idJointMat *joints, float scale );
+	int							numMeshJoints;
+	float						maxJointVertDist;
+	byte* meshJoints;
+	idBounds					bounds;
 };
 
 class idRenderModelMD5 : public idRenderModelStatic {
 public:
-// jmarshall
+	// jmarshall
 	idRenderModelMD5();
 	~idRenderModelMD5();
-// jmarshall end
+	// jmarshall end
 
-	virtual void				InitFromFile( const char *fileName );
-	virtual dynamicModel_t		IsDynamicModel() const;
-	virtual idBounds			Bounds( const struct renderEntity_t *ent ) const;
-	virtual void				Print() const;
-	virtual void				List() const;
-	virtual void				TouchData();
-	virtual void				PurgeModel();
-	virtual void				LoadModel();
-	virtual int					Memory() const;
-	virtual idRenderModel *		InstantiateDynamicModel( const struct renderEntity_t *ent, const idRenderWorldCommitted *view, idRenderModel *cachedModel );
-	virtual int					NumJoints( void ) const;
-	virtual const idMD5Joint *	GetJoints( void ) const;
-	virtual jointHandle_t		GetJointHandle( const char *name ) const;
-	virtual const char *		GetJointName( jointHandle_t handle ) const;
-	virtual const idJointQuat *	GetDefaultPose( void ) const;
-	virtual int					NearestJoint( int surfaceNum, int a, int b, int c ) const;
-
+	virtual void				InitFromFile(const char* fileName) override;
+	virtual dynamicModel_t		IsDynamicModel() const override;
+	virtual idBounds			Bounds(const renderEntity_t* ent = NULL) const override;
+	virtual void				Print() const override;
+	virtual void				List() const override;
+	virtual void				TouchData() override;
+	virtual idRenderModel* InstantiateDynamicModel(const struct renderEntity_t* ent, const idRenderWorldCommitted* view, idRenderModel* cachedModel) override;
+	virtual void				PurgeModel() override;
+	virtual void				LoadModel() override;
+	virtual int					Memory() const override;
+	virtual int					NumJoints(void) const override;
+	virtual const idMD5Joint* GetJoints(void) const override;
+	virtual jointHandle_t		GetJointHandle(const char* name) const override;
+	virtual const char* GetJointName(jointHandle_t handle) const override;
+	virtual const idJointQuat* GetDefaultPose(void) const override;
+	virtual int					NearestJoint(int surfaceNum, int a, int b, int c) const override;
 private:
+	idJointBuffer* jointBuffer;
+
 	idList<idMD5Joint>			joints;
 	idList<idJointQuat>			defaultPose;
 	idList<idMD5Mesh>			meshes;
-// jmarshall
-	idJointMat*					poseMat3;
-// jmarshall end
+	// jmarshall
+	idJointMat* poseMat3;
+	idList<idJointMat>			invertedDefaultPose;
+	// jmarshall end
+	void						CalculateBounds(const idJointMat* joints);
+	void						DrawJoints(const renderEntity_t* ent, const struct renderView_t* view) const;
+	void						ParseJoint(idLexer& parser, idMD5Joint* joint, idJointQuat* defaultPose);
+};
 
-	void						CalculateBounds( const idJointMat *joints );
-	void						GetFrameBounds( const renderEntity_t *ent, idBounds &bounds ) const;
-	void						DrawJoints( const renderEntity_t *ent, const idRenderWorldCommitted *view ) const;
-	void						ParseJoint( idLexer &parser, idMD5Joint *joint, idJointQuat *defaultPose );
+//
+// idRenderModelMD5Instance
+//
+class idRenderModelMD5Instance : public idRenderModelStatic {
+public:
+	virtual bool				IsSkeletalMesh() const override;
+	void						CreateStaticMeshSurfaces(const idList<idMD5Mesh>& meshes);
+
+	void						UpdateSurfaceGPU(struct deformInfo_s* deformInfo, const const renderEntity_t* ent, idModelSurface* surf, const idMaterial* shader);
+public:
+	idJointBuffer* jointBuffer; // This is shared across all models of the same instance!
 };
 
 /*

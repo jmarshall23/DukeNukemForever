@@ -41,6 +41,8 @@ If you have questions concerning this license or the applicable additional terms
 // Win32
 #if defined(WIN32) || defined(_WIN32)
 
+#define ALIGN( x, a ) ( ( ( x ) + ((a)-1) ) & ~((a)-1) )
+
 #define	BUILD_STRING					"win-x86"
 #define BUILD_OS_ID						0
 #define	CPUSTRING						"x86"
@@ -546,5 +548,7 @@ extern idSys *				sys;
 
 bool Sys_LoadOpenAL( void );
 void Sys_FreeOpenAL( void );
+
+#include "sys_intrinsics.h"
 
 #endif /* !__SYS_PUBLIC__ */

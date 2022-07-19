@@ -105,6 +105,8 @@ public:
 	void			AxisProjection( const idVec3 &dir, float &min, float &max ) const;
 	void			AxisProjection( const idVec3 &origin, const idMat3 &axis, const idVec3 &dir, float &min, float &max ) const;
 
+	const float* ToFloatPtr() const;
+	float* ToFloatPtr();
 private:
 	idVec3			b[2];
 };
@@ -392,21 +394,30 @@ ID_INLINE void idBounds::AxisProjection( const idVec3 &dir, float &min, float &m
 	max = d1 + d2;
 }
 
-ID_INLINE void idBounds::AxisProjection( const idVec3 &origin, const idMat3 &axis, const idVec3 &dir, float &min, float &max ) const {
+ID_INLINE void idBounds::AxisProjection(const idVec3& origin, const idMat3& axis, const idVec3& dir, float& min, float& max) const {
 	float d1, d2;
 	idVec3 center, extents;
 
-	center = ( b[0] + b[1] ) * 0.5f;
+	center = (b[0] + b[1]) * 0.5f;
 	extents = b[1] - center;
 	center = origin + center * axis;
 
 	d1 = dir * center;
-	d2 = idMath::Fabs( extents[0] * ( dir * axis[0] ) ) +
-			idMath::Fabs( extents[1] * ( dir * axis[1] ) ) +
-				idMath::Fabs( extents[2] * ( dir * axis[2] ) );
+	d2 = idMath::Fabs(extents[0] * (dir * axis[0])) +
+		idMath::Fabs(extents[1] * (dir * axis[1])) +
+		idMath::Fabs(extents[2] * (dir * axis[2]));
 
 	min = d1 - d2;
 	max = d1 + d2;
 }
+
+ID_INLINE const float* idBounds::ToFloatPtr() const {
+	return &b[0].x;
+}
+
+ID_INLINE float* idBounds::ToFloatPtr() {
+	return &b[0].x;
+}
+
 
 #endif /* !__BV_BOUNDS_H__ */

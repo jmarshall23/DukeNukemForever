@@ -387,6 +387,14 @@ static void R_CheckPortableExtensions( void ) {
 
  	}
 
+	// GL_ARB_uniform_buffer_object
+	glConfig.uniformBufferAvailable = R_CheckExtension("GL_ARB_uniform_buffer_object");
+	if (glConfig.uniformBufferAvailable) {
+		glGetIntegerv(GL_UNIFORM_BUFFER_OFFSET_ALIGNMENT, (GLint*)&glConfig.uniformBufferOffsetAlignment);
+		if (glConfig.uniformBufferOffsetAlignment < 256) {
+			glConfig.uniformBufferOffsetAlignment = 256;
+		}
+	}
 }
 
 

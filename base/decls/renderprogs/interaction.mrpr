@@ -12,12 +12,24 @@ renderProg interaction
 		#include "skinning.inc"
 
 		gl_Position = TransformInputVertex(vertex_position, $mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+
+		//# textures 5 takes the base coordinates by the texture matrix
+		vertex_texcoord5.x = dot4( vertex_position, $modelMatrixX );
+		vertex_texcoord5.y = dot4( vertex_position, $modelMatrixY );
+		vertex_texcoord5.z = dot4( vertex_position, $modelMatrixZ );
+		vertex_texcoord5.w = dot4( vertex_position, $modelMatrixW );	
 #else		
 		vec3 vNormal = attr_Normal.xyz;
 		vec3 vTangent = attr_Tangent.xyz;
 		vec3 vBinormal = attr_Bitangent.xyz;
 
 		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+
+		//# textures 5 takes the base coordinates by the texture matrix
+		vertex_texcoord5.x = dot4( attr_Position, $modelMatrixX );
+		vertex_texcoord5.y = dot4( attr_Position, $modelMatrixY );
+		vertex_texcoord5.z = dot4( attr_Position, $modelMatrixZ );
+		vertex_texcoord5.w = dot4( attr_Position, $modelMatrixW );	
 #endif
 			
 		vec4 defaultTexCoord = vec4( 0.0f, 0.5f, 0.0f, 1.0f );
@@ -25,13 +37,7 @@ renderProg interaction
 		//# textures 4 takes the base coordinates by the texture matrix
 		vertex_texcoord4 = defaultTexCoord;
 		vertex_texcoord4.x = dot4( attr_TexCoord0.xy, $rpdiffusematrixs );
-		vertex_texcoord4.y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );
-
-		//# textures 5 takes the base coordinates by the texture matrix
-		vertex_texcoord5.x = dot4( attr_Position, $modelMatrixX );
-		vertex_texcoord5.y = dot4( attr_Position, $modelMatrixY );
-		vertex_texcoord5.z = dot4( attr_Position, $modelMatrixZ );
-		vertex_texcoord5.w = dot4( attr_Position, $modelMatrixW );		
+		vertex_texcoord4.y = dot4( attr_TexCoord0.xy, $rpdiffusematrixt );	
 
 		vertex_texcoord0.xyz = vTangent.xyz;
 		vertex_texcoord0.w = 0;

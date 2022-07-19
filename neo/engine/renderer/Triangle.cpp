@@ -2147,6 +2147,12 @@ deformInfo_t *R_BuildDeformInfo( int numVerts, const idDrawVert *verts, int numI
 	deform->numSourceVerts = numVerts;
 	deform->numOutputVerts = tri.numVerts;
 
+// jmarshall - Changed this to be a deep copy(Doom 3 BFG had this as a shallow copy).
+//	deform->verts = tri.verts;
+	deform->verts = new idDrawVert[deform->numOutputVerts];
+	memcpy(deform->verts, tri.verts, sizeof(idDrawVert) * deform->numOutputVerts);
+// jmarshall end
+
 	deform->numIndexes = numIndexes;
 	deform->indexes = tri.indexes;
 
@@ -2180,6 +2186,9 @@ R_FreeDeformInfo
 ===================
 */
 void R_FreeDeformInfo( deformInfo_t *deformInfo ) {
+	if (deformInfo->verts)
+		delete deformInfo->verts;
+
 	if ( deformInfo->indexes != NULL ) {
 		triIndexAllocator.Free( deformInfo->indexes );
 	}

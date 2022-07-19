@@ -278,6 +278,8 @@ public:
 
 // jmarshall - vertex animation support.
 	virtual bool				IsVertexAnimated() const = 0;
+
+	virtual bool				IsSkeletalMesh() const = 0;
 // jmarshall end
 
 	// dynamic models should return a fast, conservative approximation

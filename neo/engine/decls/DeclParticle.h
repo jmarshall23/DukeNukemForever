@@ -81,7 +81,7 @@ typedef enum {
 
 struct renderEntity_t;
 
-typedef struct renderView_s renderView_t;
+struct renderView_t;
 
 typedef struct {
 	const renderEntity_t *	renderEnt;			// for shaderParms, etc

@@ -9,6 +9,10 @@ in vec4     attr_Color;
 in vec4     attr_Color2;
 #endif
 
+#ifdef SKINNED
+	uniform matrices_ubo { vec4 matrices[408]; };
+#endif
+
 #ifdef ID_VERTEX_SHADER
 out vec4	vertex_texcoord0;
 out vec4	vertex_texcoord1;

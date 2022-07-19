@@ -60,6 +60,7 @@ public:
 	idVec3			normal;
 	idVec3			tangents[2];
 	byte			color[4];
+	byte			color2[4];
 #if 0 // was MACOS_X see comments concerning DRAWVERT_PADDED in Simd_Altivec.h 
 	float			padding;
 #endif
@@ -93,6 +94,7 @@ ID_INLINE void idDrawVert::Clear( void ) {
 	tangents[0].Zero();
 	tangents[1].Zero();
 	color[0] = color[1] = color[2] = color[3] = 0;
+	color2[0] = color2[1] = color2[2] = color2[3] = 0;
 }
 
 ID_INLINE void idDrawVert::Lerp( const idDrawVert &a, const idDrawVert &b, const float f ) {

@@ -2,6 +2,7 @@
 //
 
 #include "../../RenderSystem_local.h"
+#include "../../../models/Model_local.h"
 
 /*
 ==================
@@ -107,11 +108,21 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 
 	pStage = shader->GetAlbedoStage();
 
+	rvmProgramVariants_t programVariant = PROG_VARIANT_NONSKINNED;
+	if (surf->space->renderModel->IsSkeletalMesh()) {		
+		programVariant = PROG_VARIANT_SKINNED;
+	}
+
 	if (pStage)
 	{
 		tr.albedoTextureParam->SetImage(shader->GetEditorImage());
 		PrepareStageTexturing(pStage, surf, ac);
-		tr.occluderProgram[PROG_VARIANT_NONSKINNED]->Bind();
+		tr.occluderProgram[programVariant]->Bind();
+	}
+
+	if (surf->space->renderModel->IsSkeletalMesh()) {
+		idRenderModelMD5Instance* skinning = (idRenderModelMD5Instance*)surf->space->renderModel;
+		RB_BindJointBuffer(skinning->jointBuffer, skinning->jointsInverted->ToFloatPtr(), skinning->numInvertedJoints, (void*)&ac->color, (void*)&ac->color2);
 	}
 
 	// draw it
@@ -122,7 +133,7 @@ void idRender::DepthBufferPass(const drawSurf_t* surf) {
 
 	if (pStage)
 	{
-		tr.occluderProgram[PROG_VARIANT_NONSKINNED]->BindNull();
+		tr.occluderProgram[programVariant]->BindNull();
 		FinishStageTexturing(pStage, surf, ac);
 	}
 

@@ -27,6 +27,7 @@ If you have questions concerning this license or the applicable additional terms
 */
 
 #include "../../RenderSystem_local.h"
+#include "../../../models/Model_local.h"
 
 /*
 =========================================================================================
@@ -115,23 +116,30 @@ void	RB_ARB2_DrawInteraction( const drawInteraction_t *din ) {
 	tr.bumpmapTextureParam->SetImage(din->bumpImage);
 	tr.albedoTextureParam->SetImage(din->diffuseImage);
 	tr.specularTextureParam->SetImage(din->specularImage);
-
+	
 	// draw it
 	if (din->surf->space->entityDef->parms.isSelected)
 	{
-		tr.interactionEditorSelectProgram[PROG_VARIANT_NONSKINNED]->Bind();
+		tr.interactionEditorSelectProgram[din->programVariant]->Bind();
 	}
 	else
 	{
-		if (din->surf->material->GetCustomInteractionProgram(PROG_VARIANT_NONSKINNED))
+		if (din->surf->material->GetCustomInteractionProgram(din->programVariant))
 		{
-			din->surf->material->GetCustomInteractionProgram(PROG_VARIANT_NONSKINNED)->Bind();;
+			din->surf->material->GetCustomInteractionProgram(din->programVariant)->Bind();
 		}
 		else
 		{
-			tr.interactionProgram[PROG_VARIANT_NONSKINNED]->Bind();
+			tr.interactionProgram[din->programVariant]->Bind();
 		}
 	}
+
+	if (din->programVariant == PROG_VARIANT_SKINNED) {
+		idDrawVert* ac = nullptr;
+		idRenderModelMD5Instance* skinning = (idRenderModelMD5Instance*)din->surf->space->renderModel;
+		RB_BindJointBuffer(skinning->jointBuffer, skinning->jointsInverted->ToFloatPtr(), skinning->numInvertedJoints, (void*)&ac->color, (void*)&ac->color2);
+	}
+
 	RB_DrawElementsWithCounters( din->surf->geo );
 }
 
@@ -248,12 +256,21 @@ void idRender::DrawForwardLit( void ) {
 		glVertexAttribPointerARB(8, 2, GL_FLOAT, false, sizeof(idDrawVert), ac->st.ToFloatPtr());
 		glVertexPointer(3, GL_FLOAT, sizeof(idDrawVert), ac->xyz.ToFloatPtr());
 
+		rvmProgramVariants_t programVariant = PROG_VARIANT_NONSKINNED;
+		if (drawSurf->space->renderModel->IsSkeletalMesh()) {			
+			programVariant = PROG_VARIANT_SKINNED;
+		}
+
 		// this may cause RB_ARB2_DrawInteraction to be exacuted multiple
 		// times with different colors and images if the surface or light have multiple layers
-		RB_CreateSingleDrawInteractions(drawSurf, RB_ARB2_DrawInteraction);
+		RB_CreateSingleDrawInteractions(drawSurf, RB_ARB2_DrawInteraction, programVariant);
 
 		// disable features
-		tr.interactionProgram[PROG_VARIANT_NONSKINNED]->BindNull();
+		if (drawSurf->space->renderModel->IsSkeletalMesh()) {
+			RB_UnBindJointBuffer();
+		}
+
+		tr.interactionProgram[programVariant]->BindNull();
 
 		backEnd.glState.currenttmu = -1;
 		GL_SelectTexture(0);

@@ -60,7 +60,7 @@ void DnAI::SetupPhysics(void)
 
 	fl.solidForTeam = true;
 
-	idVec3 spawnOrigin = GetOrigin();
+	idVec3 spawnOrigin = GetOrigin() + idVec3(0, 0, 30);
 	idClipModel* clipModel = new idClipModel();
 
 	physicsObj.SetSelf(this);

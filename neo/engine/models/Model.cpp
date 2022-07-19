@@ -57,6 +57,7 @@ idRenderModelStatic::idRenderModelStatic() {
 	purged = false;
 	fastLoad = false;
 	reloadable = true;
+	jointsInverted = nullptr;
 	levelLoadReferenced = false;
 	timeStamp = 0;
 }

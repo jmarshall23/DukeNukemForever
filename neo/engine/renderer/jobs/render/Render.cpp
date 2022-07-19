@@ -656,7 +656,7 @@ This can be used by different draw_* backends to decompose a complex light / sur
 interaction into primitive interactions
 =============
 */
-void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInteraction)(const drawInteraction_t *) ) {
+void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInteraction)(const drawInteraction_t *), rvmProgramVariants_t programVariant) {
 	const idMaterial	*surfaceShader = surf->material;
 	const float			*surfaceRegs = surf->shaderRegisters;
 	drawInteraction_t	inter;
@@ -707,6 +707,7 @@ void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInterac
 	}
 
 	inter.surf = surf;
+	inter.programVariant = programVariant;
 //	inter.lightFalloffImage = vLight->falloffImage;
 
 	//R_GlobalPointToLocal( surf->space->modelMatrix, vLight->globalLightOrigin, inter.localLightOrigin.ToVec3() );

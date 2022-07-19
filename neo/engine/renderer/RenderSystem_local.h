@@ -192,6 +192,8 @@ typedef struct {
 	idVec4				bumpMatrix[2];
 	idVec4				diffuseMatrix[2];
 	idVec4				specularMatrix[2];
+
+	rvmProgramVariants_t programVariant;
 } drawInteraction_t;
 
 
@@ -1083,7 +1085,7 @@ void RB_RenderDrawSurfChainWithFunction( const drawSurf_t *drawSurfs,
 void RB_DrawShaderPasses( drawSurf_t **drawSurfs, int numDrawSurfs );
 void RB_LoadShaderTextureMatrix( const float *shaderRegisters, const textureStage_t *texture );
 void RB_GetShaderTextureMatrix( const float *shaderRegisters, const textureStage_t *texture, float matrix[16] );
-void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInteraction)(const drawInteraction_t *) );
+void RB_CreateSingleDrawInteractions( const drawSurf_t *surf, void (*DrawInteraction)(const drawInteraction_t *), rvmProgramVariants_t programVariant);
 
 const shaderStage_t *RB_SetLightTexture( const idRenderLightLocal *light );
 
@@ -1164,6 +1166,7 @@ typedef struct deformInfo_s {
 	// it will often be larger if the input had mirrored texture seams that needed
 	// to be busted for proper tangent spaces
 	int				numOutputVerts;
+	idDrawVert* verts;
 
 	int				numMirroredVerts;
 	int *			mirroredVerts;
@@ -1324,6 +1327,8 @@ void RB_SetModelMatrix(const float* modelMatrix);
 void RB_SetMVP(const idRenderMatrix& mvp);
 void RB_SetProjectionMatrix(const float* projectionMatrix);
 void RB_SetViewMatrix(const float* projectionMatrix);
+void RB_BindJointBuffer(idJointBuffer* jointBuffer, float* inverseJointPose, int numJoints, void* colorOffset, void* color2Offset);
+void RB_UnBindJointBuffer(void);
 
 // transform Z in eye coordinates to window coordinates
 ID_INLINE void R_TransformEyeZToWin(float src_z, const float* projectionMatrix, float& dst_z) {

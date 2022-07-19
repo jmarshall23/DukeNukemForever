@@ -69,8 +69,11 @@ const int SHADERPARM_PARTICLE_STOPTIME = 8;	// don't spawn any more particles af
 // guis
 const int MAX_RENDERENTITY_GUI		= 3;
 
+// the renderEntity_s::joints array needs to point at enough memory to store the number of joints rounded up to two for SIMD
+ID_INLINE int SIMD_ROUND_JOINTS(int numJoints) { return ((numJoints + 1) & ~1); }
+ID_INLINE void SIMD_INIT_LAST_JOINT(idJointMat* joints, int numJoints) { if (numJoints & 1) { joints[numJoints] = joints[numJoints - 1]; } }
 
-typedef bool(*deferredEntityCallback_t)( renderEntity_t *, const renderView_s * );
+typedef bool(*deferredEntityCallback_t)( renderEntity_t *, const renderView_t* );
 
 
 struct renderEntity_t {
@@ -130,7 +133,7 @@ struct renderEntity_t {
 	// networking: see WriteGUIToSnapshot / ReadGUIFromSnapshot
 	class idUserInterface * gui[ MAX_RENDERENTITY_GUI ];
 
-	struct renderView_s	*	remoteRenderView;		// any remote camera surfaces will use this
+	struct renderView_t*	remoteRenderView;		// any remote camera surfaces will use this
 
 	int						numJoints;
 	idJointMat *			joints;					// array of joints that will modify vertices.
@@ -240,7 +243,7 @@ struct renderLight_t {
 };
 
 
-typedef struct renderView_s {
+struct renderView_t {
 	// player views will set this to a non-zero integer for model suppress / allow
 	// subviews (mirrors, cameras, etc) will always clear it to zero
 	int						viewID;
@@ -261,7 +264,7 @@ typedef struct renderView_s {
 	int						time;
 	float					shaderParms[MAX_GLOBAL_SHADER_PARMS];		// can be used in any way by shader
 	const idMaterial		*globalMaterial;							// used to override everything draw
-} renderView_t;
+};
 
 
 // exitPortal_t is returned by idRenderWorld::GetPortal()

@@ -2,6 +2,7 @@
 //
 
 #include "../../RenderSystem_local.h"
+#include "../../../models/Model_local.h"
 
 static idRenderMatrix	lightProjectionMatrix;
 static float	unflippedLightMatrix[16];
@@ -87,6 +88,11 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 		// no need to check for current on this, because each interaction is always
 		// a different space
 
+		rvmProgramVariants_t programVariant = PROG_VARIANT_NONSKINNED;
+		if (drawSurfs[i]->space->renderModel->IsSkeletalMesh()) {
+			programVariant = PROG_VARIANT_SKINNED;
+		}
+
 		if (entityDef != lastEntityDef)
 		{
 			idRenderMatrix	matrix, transposeMatrix, mvp;
@@ -98,7 +104,7 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 			RB_SetMVP(mvp);
 			RB_SetModelMatrix(entityDef->modelMatrix);
 
-			tr.shadowMapProgram[PROG_VARIANT_NONSKINNED]->Bind();
+			tr.shadowMapProgram[programVariant]->Bind();
 			lastEntityDef = entityDef;
 		}
 
@@ -169,19 +175,25 @@ void RB_Shadow_RenderOccluders(idRenderLightCommitted* vLight) {
 
 			if (pStage->texture.image[0]->IsTransparent())
 			{
-				tr.shadowMapAlbedoProgram[PROG_VARIANT_NONSKINNED]->Bind();
+				tr.shadowMapAlbedoProgram[programVariant]->Bind();
 			}
 			else
 			{
-				tr.shadowMapProgram[PROG_VARIANT_NONSKINNED]->Bind();
+				tr.shadowMapProgram[programVariant]->Bind();
 			}
 
 
-			RB_DrawElementsWithCounters(tri);
+			if (drawSurfs[i]->space->renderModel->IsSkeletalMesh()) {
+				idDrawVert* ac = nullptr;
+				idRenderModelMD5Instance* skinning = (idRenderModelMD5Instance*)drawSurfs[i]->space->renderModel;
+				RB_BindJointBuffer(skinning->jointBuffer, skinning->jointsInverted->ToFloatPtr(), skinning->numInvertedJoints, (void*)&ac->color, (void*)&ac->color2);
+			}
 
-			//if (surfInt->skinning.HasSkinning()) {
-				//RB_UnBindJointBuffer();
-			//}
+			RB_DrawElementsWithCounters(tri);
+			
+			if (drawSurfs[i]->space->renderModel->IsSkeletalMesh()) {
+				RB_UnBindJointBuffer();
+			}
 		}
 	}
 }

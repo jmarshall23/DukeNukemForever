@@ -16,7 +16,7 @@ enum rvmDeclRenderParmType_t {
 	RENDERPARM_TYPE_INT
 };
 
-#define MAX_RENDERPARM_ARRAY_SIZE		620
+#define MAX_RENDERPARM_ARRAY_SIZE		120
 
 //
 // rvmDeclRenderProg

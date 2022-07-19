@@ -5,6 +5,7 @@
 
 static const int PC_ATTRIB_INDEX_VERTEX = 0;
 static const int PC_ATTRIB_INDEX_COLOR = 3;
+static const int PC_ATTRIB_INDEX_COLOR2 = 4;
 static const int PC_ATTRIB_INDEX_ST = 8;
 static const int PC_ATTRIB_INDEX_TANGENT = 9;
 static const int PC_ATTRIB_INDEX_BINORMAL = 10;
