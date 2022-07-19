@@ -43,9 +43,15 @@ void dnEditorLight::Render(idDict& spawnArgs, bool isSelected, const renderView_
 		DrawProjectedLight();
 	}
 
+	idStr name = spawnArgs.GetString("name");
+	if (name == "")
+	{
+		name = spawnArgs.GetString("classname");
+	}
+
 	idVec4 color(renderLightParams.lightColor.x, renderLightParams.lightColor.y, renderLightParams.lightColor.z, 1);
 	editorRenderWorld->DebugBounds(color, idBounds(idVec3(-10, -10, -10), idVec3(10, 10, 10)), renderLightParams.origin, 0, true);
-
+	editorRenderWorld->DrawTextA(name, renderLightParams.origin + idVec3(0, 0, 20), 0.5f, colorWhite, renderView.viewaxis, 1, 0, true);
 	editorRenderWorld->UpdateLightDef(renderLightHandle, &renderLightParams);
 }
 
