@@ -121,6 +121,7 @@ public:
 	idList<idModelSurface>		surfaces;
 	idBounds					bounds;
 	int							overlaysAdded;
+	int							cacheFrame;
 
 	// when an md5 is instantiated, the inverted joints array is stored to allow GPU skinning
 	int							numInvertedJoints;

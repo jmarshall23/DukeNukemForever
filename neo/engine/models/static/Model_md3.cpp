@@ -309,6 +309,11 @@ idRenderModel *idRenderModelMD3::InstantiateDynamicModel( const struct renderEnt
 	idRenderModelStatic	*staticModel;
 
 	if ( cachedModel ) {
+		if ( ((idRenderModelStatic *)cachedModel)->cacheFrame == ent->frame)
+		{
+			return cachedModel;
+		}
+
 		delete cachedModel;
 		cachedModel = NULL;
 	}
@@ -332,6 +337,8 @@ idRenderModel *idRenderModelMD3::InstantiateDynamicModel( const struct renderEnt
 		oldframe = 0;
 		backlerp = 1.0f;
 	}
+
+	staticModel->cacheFrame = frame;
 // jmarshall end
 
 	for( i = 0; i < md3->numSurfaces; i++ ) {
