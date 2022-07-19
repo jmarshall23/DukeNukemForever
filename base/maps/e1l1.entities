@@ -91,7 +91,7 @@
 {
 "classname" "monster_liztroop"
 "name" "monster_liztroop_1"
-"origin" "4464 184 -56"
+"origin" "4464 192 -48"
 "angle" "90"
 }
 // entity 12
@@ -25551,7 +25551,7 @@
 "noshadows" "0"
 "nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 0.87 0.64"
 "light_radius" "500 300 200"
 }
@@ -25612,7 +25612,7 @@
 "noshadows" "0"
 "nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 0.87 0.64"
 "light_radius" "500 300 200"
 }
@@ -25674,7 +25674,7 @@
 "noshadows" "0"
 "nospecular" "1"
 "nodiffuse" "0"
-"falloff" "0.000000"
+"falloff" "0"
 "_color" "1 0.87 0.64"
 "light_radius" "500 300 200"
 }
@@ -25696,7 +25696,7 @@
 {
 "classname" "monster_pigcop"
 "name" "monster_pigcop_4"
-"origin" "4120 2272 -48"
+"origin" "4072 2272 -40"
 "angle" "0"
 }
 // entity 2847
