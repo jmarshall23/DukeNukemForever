@@ -60,11 +60,15 @@ void DnAI::SetupPhysics(void)
 
 	fl.solidForTeam = true;
 
-	idVec3 spawnOrigin = GetOrigin() + idVec3(0, 0, 30);
+	idVec3 spawnOrigin = GetOrigin();
 	idClipModel* clipModel = new idClipModel();
 
+	idBounds bounds;
+	bounds[0] = spawnArgs.GetVector("editor_mins");
+	bounds[1] = spawnArgs.GetVector("editor_maxs");
+
 	physicsObj.SetSelf(this);
-	idClipModel* newClip = new idClipModel(idTraceModel(renderEntity.hModel->Bounds()));
+	idClipModel* newClip = new idClipModel(idTraceModel(bounds));
 	newClip->Translate(spawnOrigin);
 	physicsObj.SetClipModel(newClip, 1.0f);
 	physicsObj.SetMass(spawnArgs.GetFloat("mass", "100"));
