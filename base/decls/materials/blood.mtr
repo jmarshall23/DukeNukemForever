@@ -1,0 +1,47 @@
+textures/particles/bloodsplat4
+{
+	noshadows
+	noselfshadow
+	
+	{ 			
+		blend 	gl_zero,gl_one_minus_src_color
+		map	textures/decals/bloodsplat4
+		vertexcolor
+	}
+}
+
+textures/particles/bloodspray5
+{
+	qer_editorimage textures/particles/bloodspray5
+	noshadows
+	{
+		blend	gl_zero, gl_one_minus_src_color		
+		rgb 2.0
+		map textures/particles/bloodspray5
+		vertexcolor
+	}
+}
+
+textures/particles/bloodsplat1
+{
+	noshadows
+	noselfshadow
+	
+	{ 			
+		blend 	gl_zero,gl_one_minus_src_color
+		map	textures/decals/bloodsplat1
+		vertexcolor
+	}
+}
+
+textures/particles/gib_chunk1
+{
+	qer_editorimage textures/particles/gib_chunk1
+	noshadows
+	{
+		blend	gl_zero, gl_one_minus_src_color		
+		rgb 2.0
+		map textures/particles/gib_trail2
+		vertexcolor
+	}
+}

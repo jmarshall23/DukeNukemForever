@@ -89,6 +89,10 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 	{
 		// TODO: Replace with effect.
 	}
+	else
+	{
+		idEntityFx::StartFx("fx/bloodwound", &tr.c.point, nullptr, ent, true);
+	}
 #endif
 	return ent;
 }
