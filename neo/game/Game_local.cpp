@@ -362,14 +362,7 @@ void idGameLocal::Init( void ) {
 
 	navigationManager->Init();
 
-	InitGameRender();
-
-	InitGuis();
-
 	gamestate = GAMESTATE_NOMAP;
-
-	Printf( "game initialized.\n" );
-	Printf( "--------------------------------------\n" );
 }
 
 /*

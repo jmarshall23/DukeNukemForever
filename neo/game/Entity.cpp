@@ -5147,6 +5147,19 @@ bool idEntity::ClientReceiveEvent( int event, int time, const idBitMsg &msg ) {
 	return false;
 }
 
+// RAVEN BEGIN
+// abahr: needed so client get the correct position
+/*
+================
+idEntity::GetPosition
+================
+*/
+void idEntity::GetPosition(idVec3& origin, idMat3& axis) const {
+	origin = renderEntity.origin;
+	axis = renderEntity.axis;
+}
+// RAVEN END
+
 #ifdef _D3XP
 /*
 ================

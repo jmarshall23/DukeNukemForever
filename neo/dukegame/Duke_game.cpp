@@ -2,6 +2,25 @@
 //
 
 #include "../game/Game_local.h"
+/*
+===================
+dnGameLocal::Init
+===================
+*/
+void dnGameLocal::Init(void) {
+	idGameLocal::Init();
+
+	clientSpawnCount = INITIAL_SPAWN_COUNT;
+	clientSpawnedEntities.Clear();
+	memset(clientEntities, 0, sizeof(clientEntities));
+	memset(clientSpawnIds, -1, sizeof(clientSpawnIds));
+
+	InitGuis();
+	InitGameRender();
+
+	Printf("3drealms game initialized.\n");
+	Printf("--------------------------------------\n");
+}
 
 /*
 ===================

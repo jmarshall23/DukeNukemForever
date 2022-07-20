@@ -37,6 +37,7 @@ file(GLOB idLibFiles
 file(GLOB dnGameFiles
      "dukegame/*.cpp*"
      "dukegame/Civilians/*.cpp*"
+     "dukegame/ClientGame/*.cpp*"
      "dukegame/DnAI/*.cpp*"     
      "dukegame/Monsters/*.cpp*"
      "dukegame/components/*.cpp*"

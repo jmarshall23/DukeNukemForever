@@ -29,6 +29,8 @@ If you have questions concerning this license or the applicable additional terms
 #ifndef __GAME_ENTITY_H__
 #define __GAME_ENTITY_H__
 
+class rvClientEntity;
+
 /*
 ===============================================================================
 
@@ -416,12 +418,14 @@ protected:
 	renderEntity_t			renderEntity;						// used to present a model to the renderer
 	int						modelDefHandle;						// handle to static renderer model
 	refSound_t				refSound;							// used to present sound to the audio engine
-
+public:
+	idLinkList <rvClientEntity>	 clientEntities;
+protected:
+	idEntity*				bindMaster;							// entity bound to if unequal NULL
+	jointHandle_t			bindJoint;							// joint bound to if unequal INVALID_JOINT
 private:
 	idPhysics_Static		defaultPhysicsObj;					// default physics object
 	idPhysics *				physics;							// physics used for this entity
-	idEntity *				bindMaster;							// entity bound to if unequal NULL
-	jointHandle_t			bindJoint;							// joint bound to if unequal INVALID_JOINT
 	int						bindBody;							// body bound to if unequal -1
 	idEntity *				teamMaster;							// master of the physics team
 	idEntity *				teamChain;							// next entity in physics team
@@ -454,6 +458,11 @@ private:
 public:
 	idVec3					GetOrigin(void);
 	idMat3					GetAxis(void);
+
+// RAVEN BEGIN
+	void					GetPosition(idVec3& origin, idMat3& axis) const;
+// RAVEN END
+
 
 	// events
 	void					Event_GetName( void );

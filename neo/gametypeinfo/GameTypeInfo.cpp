@@ -8425,6 +8425,447 @@ bool dnDecoration::HasNativeFunction(const char *functionName) {
 
 };
 
+intptr_t rvClientPhysics::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
+	if(functionNameHash == 134042) { // PopBindInfo
+		PopBindInfo();
+		return 0;
+	};
+	if(functionNameHash == 164482) { // PopOriginInfo
+		PopOriginInfo();
+		return 0;
+	};
+	if(functionNameHash == 138037) { // ClientStale
+		ClientStale();
+		return 0;
+	};
+	if(functionNameHash == 167596) { // ClientUnstale
+		ClientUnstale();
+		return 0;
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool rvClientPhysics::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 134042) { // PopBindInfo
+		return true;
+	};
+	if(functionNameHash == 164482) { // PopOriginInfo
+		return true;
+	};
+	if(functionNameHash == 138037) { // ClientStale
+		return true;
+	};
+	if(functionNameHash == 167596) { // ClientUnstale
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
+intptr_t rvClientModel::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
+	if(functionNameHash == 61762) { // Think
+		Think();
+		return 0;
+	};
+	if(functionNameHash == 193638) { // GetRenderEntity
+		return (intptr_t)GetRenderEntity();
+	};
+	if(functionNameHash == 150533) { // GetClassname
+		return (intptr_t)GetClassname();
+	};
+	if(functionNameHash == 161894) { // FreeEntityDef
+		FreeEntityDef();
+		return 0;
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return (intptr_t)GetAnimator();
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return (intptr_t)GetAnimator();
+	};
+	if(functionNameHash == 169460) { // UpdateVisuals
+		UpdateVisuals();
+		return 0;
+	};
+	if(functionNameHash == 137452) { // UpdateModel
+		UpdateModel();
+		return 0;
+	};
+	if(functionNameHash == 265676) { // UpdateModelTransform
+		UpdateModelTransform();
+		return 0;
+	};
+	if(functionNameHash == 209001) { // GetModelDefHandle
+		return (intptr_t)GetModelDefHandle();
+	};
+	if(functionNameHash == 90014) { // Present
+		Present();
+		return 0;
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool rvClientModel::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	if(functionNameHash == 193638) { // GetRenderEntity
+		return true;
+	};
+	if(functionNameHash == 150533) { // GetClassname
+		return true;
+	};
+	if(functionNameHash == 161894) { // FreeEntityDef
+		return true;
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return true;
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return true;
+	};
+	if(functionNameHash == 169460) { // UpdateVisuals
+		return true;
+	};
+	if(functionNameHash == 137452) { // UpdateModel
+		return true;
+	};
+	if(functionNameHash == 265676) { // UpdateModelTransform
+		return true;
+	};
+	if(functionNameHash == 209001) { // GetModelDefHandle
+		return true;
+	};
+	if(functionNameHash == 90014) { // Present
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
+intptr_t rvAnimatedClientEntity::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
+	if(functionNameHash == 61762) { // Think
+		Think();
+		return 0;
+	};
+	if(functionNameHash == 194183) { // UpdateAnimation
+		UpdateAnimation();
+		return 0;
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return (intptr_t)GetAnimator();
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return (intptr_t)GetAnimator();
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool rvAnimatedClientEntity::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	if(functionNameHash == 194183) { // UpdateAnimation
+		return true;
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return true;
+	};
+	if(functionNameHash == 138578) { // GetAnimator
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
+intptr_t rvClientMoveable::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
+	if(functionNameHash == 61762) { // Think
+		Think();
+		return 0;
+	};
+	if(functionNameHash == 127059) { // GetPhysics
+		return (intptr_t)GetPhysics();
+	};
+	if(functionNameHash == 193638) { // GetRenderEntity
+		return (intptr_t)GetRenderEntity();
+	};
+	if(functionNameHash == 161894) { // FreeEntityDef
+		FreeEntityDef();
+		return 0;
+	};
+	if(functionNameHash == 253452) { // Event_ClearDepthHack
+		Event_ClearDepthHack();
+		return 0;
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool rvClientMoveable::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	if(functionNameHash == 127059) { // GetPhysics
+		return true;
+	};
+	if(functionNameHash == 193638) { // GetRenderEntity
+		return true;
+	};
+	if(functionNameHash == 161894) { // FreeEntityDef
+		return true;
+	};
+	if(functionNameHash == 253452) { // Event_ClearDepthHack
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
+intptr_t rvClientAFEntity::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
+	if(functionNameHash == 61762) { // Think
+		Think();
+		return 0;
+	};
+	if(functionNameHash == 357711) { // UpdateAnimationControllers
+		UpdateAnimationControllers();
+		return 0;
+	};
+	if(functionNameHash == 161894) { // FreeEntityDef
+		FreeEntityDef();
+		return 0;
+	};
+	if(functionNameHash == 114409) { // IsActiveAF
+		return (intptr_t)IsActiveAF();
+	};
+	if(functionNameHash == 99503) { // GetAFName
+		return (intptr_t)GetAFName();
+	};
+	if(functionNameHash == 145077) { // GetAFPhysics
+		return (intptr_t)GetAFPhysics();
+	};
+	if(functionNameHash == 175242) { // SetCombatModel
+		SetCombatModel();
+		return 0;
+	};
+	if(functionNameHash == 173814) { // GetCombatModel
+		return (intptr_t)GetCombatModel();
+	};
+	if(functionNameHash == 123153) { // LinkCombat
+		LinkCombat();
+		return 0;
+	};
+	if(functionNameHash == 152332) { // UnlinkCombat
+		UnlinkCombat();
+		return 0;
+	};
+	if(functionNameHash == 233219) { // AddBindConstraints
+		AddBindConstraints();
+		return 0;
+	};
+	if(functionNameHash == 281702) { // RemoveBindConstraints
+		RemoveBindConstraints();
+		return 0;
+	};
+	if(functionNameHash == 238373) { // GetNoPlayerImpactFX
+		return (intptr_t)GetNoPlayerImpactFX();
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool rvClientAFEntity::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	if(functionNameHash == 357711) { // UpdateAnimationControllers
+		return true;
+	};
+	if(functionNameHash == 161894) { // FreeEntityDef
+		return true;
+	};
+	if(functionNameHash == 114409) { // IsActiveAF
+		return true;
+	};
+	if(functionNameHash == 99503) { // GetAFName
+		return true;
+	};
+	if(functionNameHash == 145077) { // GetAFPhysics
+		return true;
+	};
+	if(functionNameHash == 175242) { // SetCombatModel
+		return true;
+	};
+	if(functionNameHash == 173814) { // GetCombatModel
+		return true;
+	};
+	if(functionNameHash == 123153) { // LinkCombat
+		return true;
+	};
+	if(functionNameHash == 152332) { // UnlinkCombat
+		return true;
+	};
+	if(functionNameHash == 233219) { // AddBindConstraints
+		return true;
+	};
+	if(functionNameHash == 281702) { // RemoveBindConstraints
+		return true;
+	};
+	if(functionNameHash == 238373) { // GetNoPlayerImpactFX
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
+intptr_t rvClientAFAttachment::Invoke(const char *functionName, void *param1) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		Spawn();
+		return 0;
+	};
+	if(functionNameHash == 109036) { // ClearBody
+		ClearBody();
+		return 0;
+	};
+	if(functionNameHash == 83835) { // GetBody
+		return (intptr_t)GetBody();
+	};
+	if(functionNameHash == 61762) { // Think
+		Think();
+		return 0;
+	};
+	if(functionNameHash == 45590) { // Hide
+		Hide();
+		return 0;
+	};
+	if(functionNameHash == 50306) { // Show
+		Show();
+		return 0;
+	};
+	if(functionNameHash == 357711) { // UpdateAnimationControllers
+		UpdateAnimationControllers();
+		return 0;
+	};
+	if(functionNameHash == 175242) { // SetCombatModel
+		SetCombatModel();
+		return 0;
+	};
+	if(functionNameHash == 173814) { // GetCombatModel
+		return (intptr_t)GetCombatModel();
+	};
+	if(functionNameHash == 123153) { // LinkCombat
+		LinkCombat();
+		return 0;
+	};
+	if(functionNameHash == 152332) { // UnlinkCombat
+		UnlinkCombat();
+		return 0;
+	};
+	if(functionNameHash == 181822) { // InitCopyJoints
+		InitCopyJoints();
+		return 0;
+	};
+	if(functionNameHash == 235297) { // CopyJointsFromBody
+		CopyJointsFromBody();
+		return 0;
+	};
+	return __super::Invoke(functionName, param1);
+
+};
+
+bool rvClientAFAttachment::HasNativeFunction(const char *functionName) {
+	int functionNameHash = idStr::Hash(functionName);
+	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 109036) { // ClearBody
+		return true;
+	};
+	if(functionNameHash == 83835) { // GetBody
+		return true;
+	};
+	if(functionNameHash == 61762) { // Think
+		return true;
+	};
+	if(functionNameHash == 45590) { // Hide
+		return true;
+	};
+	if(functionNameHash == 50306) { // Show
+		return true;
+	};
+	if(functionNameHash == 357711) { // UpdateAnimationControllers
+		return true;
+	};
+	if(functionNameHash == 175242) { // SetCombatModel
+		return true;
+	};
+	if(functionNameHash == 173814) { // GetCombatModel
+		return true;
+	};
+	if(functionNameHash == 123153) { // LinkCombat
+		return true;
+	};
+	if(functionNameHash == 152332) { // UnlinkCombat
+		return true;
+	};
+	if(functionNameHash == 181822) { // InitCopyJoints
+		return true;
+	};
+	if(functionNameHash == 235297) { // CopyJointsFromBody
+		return true;
+	};
+	return __super::HasNativeFunction(functionName);
+
+};
+
 intptr_t idThread::Invoke(const char *functionName, void *param1) {
 	int functionNameHash = idStr::Hash(functionName);
 	if(functionNameHash == 149674) { // ManualDelete

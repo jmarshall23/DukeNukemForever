@@ -415,9 +415,6 @@ public:
 
 	virtual void				GetMapLoadingGUI( char gui[ MAX_STRING_CHARS ] );
 
-	virtual void			InitGameRender() = 0;
-	virtual void			InitGuis() = 0;
-
 	// ---------------------- Public idGameLocal Interface -------------------
 
 	void					Printf( const char *fmt, ... ) const id_attribute((format(printf,2,3)));
@@ -568,8 +565,6 @@ private:
 	idEntityPtr<idActor>	lastAIAlertEntity;
 	int						lastAIAlertTime;
 
-	idDict					spawnArgs;				// spawn args used during entity spawning  FIXME: shouldn't be necessary anymore
-
 	pvsHandle_t				playerPVS;				// merged pvs of all players
 	pvsHandle_t				playerConnectedAreas;	// all areas connected to any player area
 
@@ -651,6 +646,8 @@ private:
 	void					UpdateLagometer( int aheadOfServer, int dupeUsercmds );
 
 	idList<rvmGameDelayRemoveEntry_t> delayRemoveEntities;
+protected:
+	idDict					spawnArgs;				// spawn args used during entity spawning  FIXME: shouldn't be necessary anymore
 };
 
 #include "../dukegame/Duke_game.h"
@@ -829,6 +826,11 @@ const int	CINEMATIC_SKIP_DELAY	= SEC2MS( 2.0f );
 #include "../dukegame/DnAI/DnAI.h"
 #include "../dukegame/Player/DukePlayer.h"
 #include "../dukegame/Decoration.h"
+
+#include "../dukegame/ClientGame/ClientEntity.h"
+#include "../dukegame/ClientGame/ClientModel.h"
+#include "../dukegame/ClientGame/ClientMoveable.h"
+#include "../dukegame/ClientGame/ClientAFEntity.h"
 
 #include "script/Script_Compiler.h"
 #include "script/Script_Interpreter.h"

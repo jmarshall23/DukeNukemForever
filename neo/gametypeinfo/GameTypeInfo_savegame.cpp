@@ -1244,3 +1244,51 @@ void dnDecoration::Restore(idRestoreGame* savefile) {
 	__super::Restore(savefile);
 }
 
+void rvClientPhysics::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void rvClientPhysics::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+
+void rvClientModel::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void rvClientModel::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+
+void rvAnimatedClientEntity::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void rvAnimatedClientEntity::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+
+void rvClientMoveable::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void rvClientMoveable::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+
+void rvClientAFEntity::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void rvClientAFEntity::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+
+void rvClientAFAttachment::Save(idSaveGame* savefile) const {
+	__super::Save(savefile);
+}
+
+void rvClientAFAttachment::Restore(idRestoreGame* savefile) {
+	__super::Restore(savefile);
+}
+

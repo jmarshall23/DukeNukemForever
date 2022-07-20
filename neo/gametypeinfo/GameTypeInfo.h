@@ -7,10 +7,10 @@
 
 	This file has been generated with the Type Info Generator v1.1 (c) 2004 id Software
 
-	589 constants
+	590 constants
 	57 enums
-	306 classes/structs/unions
-	3 templates
+	314 classes/structs/unions
+	4 templates
 	7 max inheritance level for 'DnPigcop'
 
 ===================================================================================
@@ -261,6 +261,7 @@ static constantInfo_t constantInfo[] = {
 	{ "int", "SLOWMO_STATE_ON", "2" },
 	{ "int", "SLOWMO_STATE_RAMPDOWN", "3" },
 	{ ": const static int", "idGameLocal::INITIAL_SPAWN_COUNT", "1" },
+	{ ": const static int", "dnGameLocal::INITIAL_SPAWN_COUNT", "1" },
 	{ "int", "SND_CHANNEL_ANY", "0" },
 	{ "int", "SND_CHANNEL_VOICE", "0" },
 	{ "int", "SND_CHANNEL_VOICE2", "1" },
@@ -2095,7 +2096,6 @@ static classVariableInfo_t idGameLocal_typeInfo[] = {
 	{ "const idMaterial *", "globalMaterial", (intptr_t)(&((idGameLocal *)0)->globalMaterial), sizeof( ((idGameLocal *)0)->globalMaterial ) },
 	{ "idEntityPtr < idActor >", "lastAIAlertEntity", (intptr_t)(&((idGameLocal *)0)->lastAIAlertEntity), sizeof( ((idGameLocal *)0)->lastAIAlertEntity ) },
 	{ "int", "lastAIAlertTime", (intptr_t)(&((idGameLocal *)0)->lastAIAlertTime), sizeof( ((idGameLocal *)0)->lastAIAlertTime ) },
-	{ "idDict", "spawnArgs", (intptr_t)(&((idGameLocal *)0)->spawnArgs), sizeof( ((idGameLocal *)0)->spawnArgs ) },
 	{ "pvsHandle_t", "playerPVS", (intptr_t)(&((idGameLocal *)0)->playerPVS), sizeof( ((idGameLocal *)0)->playerPVS ) },
 	{ "pvsHandle_t", "playerConnectedAreas", (intptr_t)(&((idGameLocal *)0)->playerConnectedAreas), sizeof( ((idGameLocal *)0)->playerConnectedAreas ) },
 	{ "idVec3", "gravity", (intptr_t)(&((idGameLocal *)0)->gravity), sizeof( ((idGameLocal *)0)->gravity ) },
@@ -2120,6 +2120,7 @@ static classVariableInfo_t idGameLocal_typeInfo[] = {
 	{ "idStrList", "shakeSounds", (intptr_t)(&((idGameLocal *)0)->shakeSounds), sizeof( ((idGameLocal *)0)->shakeSounds ) },
 	{ "byte[16384]", "lagometer", (intptr_t)(&((idGameLocal *)0)->lagometer), sizeof( ((idGameLocal *)0)->lagometer ) },
 	{ "idList < rvmGameDelayRemoveEntry_t >", "delayRemoveEntities", (intptr_t)(&((idGameLocal *)0)->delayRemoveEntities), sizeof( ((idGameLocal *)0)->delayRemoveEntities ) },
+	{ ": idDict", "spawnArgs", (intptr_t)(&((idGameLocal *)0)->spawnArgs), sizeof( ((idGameLocal *)0)->spawnArgs ) },
 	{ NULL, 0 }
 };
 
@@ -2158,6 +2159,13 @@ static classVariableInfo_t DnRenderPlatform_typeInfo[] = {
 static classVariableInfo_t dnGameLocal_typeInfo[] = {
 	{ ": DnRenderPlatform", "renderPlatform", (intptr_t)(&((dnGameLocal *)0)->renderPlatform), sizeof( ((dnGameLocal *)0)->renderPlatform ) },
 	{ "idUserInterface *", "guiMainMenu", (intptr_t)(&((dnGameLocal *)0)->guiMainMenu), sizeof( ((dnGameLocal *)0)->guiMainMenu ) },
+	{ "rvClientEntity *[4096]", "clientEntities", (intptr_t)(&((dnGameLocal *)0)->clientEntities), sizeof( ((dnGameLocal *)0)->clientEntities ) },
+	{ "int[4096]", "clientSpawnIds", (intptr_t)(&((dnGameLocal *)0)->clientSpawnIds), sizeof( ((dnGameLocal *)0)->clientSpawnIds ) },
+	{ "idLinkList < rvClientEntity >", "clientSpawnedEntities", (intptr_t)(&((dnGameLocal *)0)->clientSpawnedEntities), sizeof( ((dnGameLocal *)0)->clientSpawnedEntities ) },
+	{ "int", "num_clientEntities", (intptr_t)(&((dnGameLocal *)0)->num_clientEntities), sizeof( ((dnGameLocal *)0)->num_clientEntities ) },
+	{ "int", "firstFreeClientIndex", (intptr_t)(&((dnGameLocal *)0)->firstFreeClientIndex), sizeof( ((dnGameLocal *)0)->firstFreeClientIndex ) },
+	{ "int", "clientSpawnCount", (intptr_t)(&((dnGameLocal *)0)->clientSpawnCount), sizeof( ((dnGameLocal *)0)->clientSpawnCount ) },
+	{ "int", "entityRegisterTime", (intptr_t)(&((dnGameLocal *)0)->entityRegisterTime), sizeof( ((dnGameLocal *)0)->entityRegisterTime ) },
 	{ NULL, 0 }
 };
 
@@ -2861,10 +2869,11 @@ static classVariableInfo_t idEntity_typeInfo[] = {
 	{ ": renderEntity_t", "renderEntity", (intptr_t)(&((idEntity *)0)->renderEntity), sizeof( ((idEntity *)0)->renderEntity ) },
 	{ "int", "modelDefHandle", (intptr_t)(&((idEntity *)0)->modelDefHandle), sizeof( ((idEntity *)0)->modelDefHandle ) },
 	{ "refSound_t", "refSound", (intptr_t)(&((idEntity *)0)->refSound), sizeof( ((idEntity *)0)->refSound ) },
+	{ ": idLinkList < rvClientEntity >", "clientEntities", (intptr_t)(&((idEntity *)0)->clientEntities), sizeof( ((idEntity *)0)->clientEntities ) },
+	{ ": idEntity *", "bindMaster", (intptr_t)(&((idEntity *)0)->bindMaster), sizeof( ((idEntity *)0)->bindMaster ) },
+	{ "jointHandle_t", "bindJoint", (intptr_t)(&((idEntity *)0)->bindJoint), sizeof( ((idEntity *)0)->bindJoint ) },
 	{ ": idPhysics_Static", "defaultPhysicsObj", (intptr_t)(&((idEntity *)0)->defaultPhysicsObj), sizeof( ((idEntity *)0)->defaultPhysicsObj ) },
 	{ "idPhysics *", "physics", (intptr_t)(&((idEntity *)0)->physics), sizeof( ((idEntity *)0)->physics ) },
-	{ "idEntity *", "bindMaster", (intptr_t)(&((idEntity *)0)->bindMaster), sizeof( ((idEntity *)0)->bindMaster ) },
-	{ "jointHandle_t", "bindJoint", (intptr_t)(&((idEntity *)0)->bindJoint), sizeof( ((idEntity *)0)->bindJoint ) },
 	{ "int", "bindBody", (intptr_t)(&((idEntity *)0)->bindBody), sizeof( ((idEntity *)0)->bindBody ) },
 	{ "idEntity *", "teamMaster", (intptr_t)(&((idEntity *)0)->teamMaster), sizeof( ((idEntity *)0)->teamMaster ) },
 	{ "idEntity *", "teamChain", (intptr_t)(&((idEntity *)0)->teamChain), sizeof( ((idEntity *)0)->teamChain ) },
@@ -4686,6 +4695,79 @@ static classVariableInfo_t dnDecoration_typeInfo[] = {
 	{ NULL, 0 }
 };
 
+static classVariableInfo_t rvClientEntity_typeInfo[] = {
+	{ ": int", "entityNumber", (intptr_t)(&((rvClientEntity *)0)->entityNumber), sizeof( ((rvClientEntity *)0)->entityNumber ) },
+	{ "idLinkList < rvClientEntity >", "spawnNode", (intptr_t)(&((rvClientEntity *)0)->spawnNode), sizeof( ((rvClientEntity *)0)->spawnNode ) },
+	{ "idLinkList < rvClientEntity >", "bindNode", (intptr_t)(&((rvClientEntity *)0)->bindNode), sizeof( ((rvClientEntity *)0)->bindNode ) },
+	{ "idDict", "spawnArgs", (intptr_t)(&((rvClientEntity *)0)->spawnArgs), sizeof( ((rvClientEntity *)0)->spawnArgs ) },
+	{ ": idPhysics_Static", "defaultPhysicsObj", (intptr_t)(&((rvClientEntity *)0)->defaultPhysicsObj), sizeof( ((rvClientEntity *)0)->defaultPhysicsObj ) },
+	{ "idPhysics *", "physics", (intptr_t)(&((rvClientEntity *)0)->physics), sizeof( ((rvClientEntity *)0)->physics ) },
+	{ "idVec3", "worldOrigin", (intptr_t)(&((rvClientEntity *)0)->worldOrigin), sizeof( ((rvClientEntity *)0)->worldOrigin ) },
+	{ "idVec3", "worldVelocity", (intptr_t)(&((rvClientEntity *)0)->worldVelocity), sizeof( ((rvClientEntity *)0)->worldVelocity ) },
+	{ "idMat3", "worldAxis", (intptr_t)(&((rvClientEntity *)0)->worldAxis), sizeof( ((rvClientEntity *)0)->worldAxis ) },
+	{ "idEntity *", "bindMaster", (intptr_t)(&((rvClientEntity *)0)->bindMaster), sizeof( ((rvClientEntity *)0)->bindMaster ) },
+	{ "idVec3", "bindOrigin", (intptr_t)(&((rvClientEntity *)0)->bindOrigin), sizeof( ((rvClientEntity *)0)->bindOrigin ) },
+	{ "idMat3", "bindAxis", (intptr_t)(&((rvClientEntity *)0)->bindAxis), sizeof( ((rvClientEntity *)0)->bindAxis ) },
+	{ "jointHandle_t", "bindJoint", (intptr_t)(&((rvClientEntity *)0)->bindJoint), sizeof( ((rvClientEntity *)0)->bindJoint ) },
+	{ "bool", "bindOrientated", (intptr_t)(&((rvClientEntity *)0)->bindOrientated), sizeof( ((rvClientEntity *)0)->bindOrientated ) },
+	{ "refSound_t", "refSound", (intptr_t)(&((rvClientEntity *)0)->refSound), sizeof( ((rvClientEntity *)0)->refSound ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t rvClientPhysics_typeInfo[] = {
+	{ "int", "currentEntityNumber", (intptr_t)(&((rvClientPhysics *)0)->currentEntityNumber), sizeof( ((rvClientPhysics *)0)->currentEntityNumber ) },
+	{ ": idEntity *", "pushedBindMaster", (intptr_t)(&((rvClientPhysics *)0)->pushedBindMaster), sizeof( ((rvClientPhysics *)0)->pushedBindMaster ) },
+	{ "jointHandle_t", "pushedBindJoint", (intptr_t)(&((rvClientPhysics *)0)->pushedBindJoint), sizeof( ((rvClientPhysics *)0)->pushedBindJoint ) },
+	{ "idVec3", "pushedOrigin", (intptr_t)(&((rvClientPhysics *)0)->pushedOrigin), sizeof( ((rvClientPhysics *)0)->pushedOrigin ) },
+	{ "idMat3", "pushedAxis", (intptr_t)(&((rvClientPhysics *)0)->pushedAxis), sizeof( ((rvClientPhysics *)0)->pushedAxis ) },
+	{ "bool", "pushedOrientated", (intptr_t)(&((rvClientPhysics *)0)->pushedOrientated), sizeof( ((rvClientPhysics *)0)->pushedOrientated ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t rvClientModel_typeInfo[] = {
+	{ "renderEntity_t", "renderEntity", (intptr_t)(&((rvClientModel *)0)->renderEntity), sizeof( ((rvClientModel *)0)->renderEntity ) },
+	{ "int", "entityDefHandle", (intptr_t)(&((rvClientModel *)0)->entityDefHandle), sizeof( ((rvClientModel *)0)->entityDefHandle ) },
+	{ "idStr", "classname", (intptr_t)(&((rvClientModel *)0)->classname), sizeof( ((rvClientModel *)0)->classname ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t rvAnimatedClientEntity_typeInfo[] = {
+	{ ": idAnimator", "animator", (intptr_t)(&((rvAnimatedClientEntity *)0)->animator), sizeof( ((rvAnimatedClientEntity *)0)->animator ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t rvClientMoveable_typeInfo[] = {
+	{ ": renderEntity_t", "renderEntity", (intptr_t)(&((rvClientMoveable *)0)->renderEntity), sizeof( ((rvClientMoveable *)0)->renderEntity ) },
+	{ "int", "entityDefHandle", (intptr_t)(&((rvClientMoveable *)0)->entityDefHandle), sizeof( ((rvClientMoveable *)0)->entityDefHandle ) },
+	{ "float", "trailAttenuateSpeed", (intptr_t)(&((rvClientMoveable *)0)->trailAttenuateSpeed), sizeof( ((rvClientMoveable *)0)->trailAttenuateSpeed ) },
+	{ "idPhysics_RigidBody", "physicsObj", (intptr_t)(&((rvClientMoveable *)0)->physicsObj), sizeof( ((rvClientMoveable *)0)->physicsObj ) },
+	{ "int", "bounceSoundTime", (intptr_t)(&((rvClientMoveable *)0)->bounceSoundTime), sizeof( ((rvClientMoveable *)0)->bounceSoundTime ) },
+	{ "const idSoundShader *", "bounceSoundShader", (intptr_t)(&((rvClientMoveable *)0)->bounceSoundShader), sizeof( ((rvClientMoveable *)0)->bounceSoundShader ) },
+	{ "bool", "mPlayBounceSoundOnce", (intptr_t)(&((rvClientMoveable *)0)->mPlayBounceSoundOnce), sizeof( ((rvClientMoveable *)0)->mPlayBounceSoundOnce ) },
+	{ "bool", "mHasBounced", (intptr_t)(&((rvClientMoveable *)0)->mHasBounced), sizeof( ((rvClientMoveable *)0)->mHasBounced ) },
+	{ "idInterpolate < float >", "scale", (intptr_t)(&((rvClientMoveable *)0)->scale), sizeof( ((rvClientMoveable *)0)->scale ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t rvClientAFEntity_typeInfo[] = {
+	{ ": idAF", "af", (intptr_t)(&((rvClientAFEntity *)0)->af), sizeof( ((rvClientAFEntity *)0)->af ) },
+	{ "idClipModel *", "combatModel", (intptr_t)(&((rvClientAFEntity *)0)->combatModel), sizeof( ((rvClientAFEntity *)0)->combatModel ) },
+	{ "int", "combatModelContents", (intptr_t)(&((rvClientAFEntity *)0)->combatModelContents), sizeof( ((rvClientAFEntity *)0)->combatModelContents ) },
+	{ "idVec3", "spawnOrigin", (intptr_t)(&((rvClientAFEntity *)0)->spawnOrigin), sizeof( ((rvClientAFEntity *)0)->spawnOrigin ) },
+	{ "idMat3", "spawnAxis", (intptr_t)(&((rvClientAFEntity *)0)->spawnAxis), sizeof( ((rvClientAFEntity *)0)->spawnAxis ) },
+	{ "int", "nextSoundTime", (intptr_t)(&((rvClientAFEntity *)0)->nextSoundTime), sizeof( ((rvClientAFEntity *)0)->nextSoundTime ) },
+	{ NULL, 0 }
+};
+
+static classVariableInfo_t rvClientAFAttachment_typeInfo[] = {
+	{ ": idAnimatedEntity *", "body", (intptr_t)(&((rvClientAFAttachment *)0)->body), sizeof( ((rvClientAFAttachment *)0)->body ) },
+	{ "idClipModel *", "combatModel", (intptr_t)(&((rvClientAFAttachment *)0)->combatModel), sizeof( ((rvClientAFAttachment *)0)->combatModel ) },
+	{ "int", "idleAnim", (intptr_t)(&((rvClientAFAttachment *)0)->idleAnim), sizeof( ((rvClientAFAttachment *)0)->idleAnim ) },
+	{ "jointHandle_t", "damageJoint", (intptr_t)(&((rvClientAFAttachment *)0)->damageJoint), sizeof( ((rvClientAFAttachment *)0)->damageJoint ) },
+	{ "idList < copyJoints_t >", "copyJoints", (intptr_t)(&((rvClientAFAttachment *)0)->copyJoints), sizeof( ((rvClientAFAttachment *)0)->copyJoints ) },
+	{ NULL, 0 }
+};
+
 static classVariableInfo_t opcode_t_typeInfo[] = {
 	{ "char *", "name", (intptr_t)(&((opcode_t *)0)->name), sizeof( ((opcode_t *)0)->name ) },
 	{ "char *", "opname", (intptr_t)(&((opcode_t *)0)->opname), sizeof( ((opcode_t *)0)->opname ) },
@@ -5060,6 +5142,14 @@ static classTypeInfo_t classTypeInfo[] = {
 	{ "DnCivilian", "DnAI", sizeof(DnCivilian), DnCivilian_typeInfo },
 	{ "DukePlayer", "idPlayer", sizeof(DukePlayer), DukePlayer_typeInfo },
 	{ "dnDecoration", "idMover", sizeof(dnDecoration), dnDecoration_typeInfo },
+	{ "rvClientEntity", "idClass", sizeof(rvClientEntity), rvClientEntity_typeInfo },
+//	{ "rvClientEntityPtr< class type >", "", sizeof(rvClientEntityPtr< class type >), rvClientEntityPtr_class_type__typeInfo },
+	{ "rvClientPhysics", "idEntity", sizeof(rvClientPhysics), rvClientPhysics_typeInfo },
+	{ "rvClientModel", "rvClientEntity", sizeof(rvClientModel), rvClientModel_typeInfo },
+	{ "rvAnimatedClientEntity", "rvClientModel", sizeof(rvAnimatedClientEntity), rvAnimatedClientEntity_typeInfo },
+	{ "rvClientMoveable", "rvClientEntity", sizeof(rvClientMoveable), rvClientMoveable_typeInfo },
+	{ "rvClientAFEntity", "rvAnimatedClientEntity", sizeof(rvClientAFEntity), rvClientAFEntity_typeInfo },
+	{ "rvClientAFAttachment", "rvClientAFEntity", sizeof(rvClientAFAttachment), rvClientAFAttachment_typeInfo },
 	{ "opcode_t", "", sizeof(opcode_t), opcode_t_typeInfo },
 	{ "idCompiler", "", sizeof(idCompiler), idCompiler_typeInfo },
 	{ "prstack_t", "", sizeof(prstack_t), prstack_t_typeInfo },
