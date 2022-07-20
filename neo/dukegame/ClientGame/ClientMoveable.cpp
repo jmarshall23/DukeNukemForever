@@ -42,8 +42,12 @@ rvClientMoveable::rvClientMoveable ( void ) {
 rvClientMoveable::~rvClientMoveable
 ================
 */
-rvClientMoveable::~rvClientMoveable ( void ) {
-	FreeEntityDef ( );
+rvClientMoveable::~rvClientMoveable ( void ) {	
+	gameLocal.clientGamePhysicsMutex.Lock();
+		FreeEntityDef();
+		gameLocal.UnregisterClientEntity(this);
+		gameLocal.clientEntityThreadWork.Remove(this);
+	gameLocal.clientGamePhysicsMutex.Unlock();
 
 	// Remove any trail effect if there is one
 	//if ( trailEffect ) {
@@ -79,7 +83,7 @@ void rvClientMoveable::Spawn ( void ) {
 	// parse static models the same way the editor display does
 	gameLocal.ParseSpawnArgsToRenderEntity( &spawnArgs, &renderEntity );
 
-	idTraceModel	trm;
+	//idTraceModel	trm;
 	int				clipShrink;
 	idStr			clipModelName;
 
@@ -89,25 +93,27 @@ void rvClientMoveable::Spawn ( void ) {
 		clipModelName = spawnArgs.GetString( "model" );		// use the visual model
 	}
 
-	if ( clipModelName == SIMPLE_TRI_NAME ) {
-		trm.SetupPolygon( simpleTri, 3 );
-	} else {
-		clipModelName.BackSlashesToSlashes();
+	//if ( clipModelName == SIMPLE_TRI_NAME ) {
+	//	trm.SetupPolygon( simpleTri, 3 );
+	//} else {
+	//	clipModelName.BackSlashesToSlashes();
+	//
+	//	if ( !collisionModelManager->TrmFromModel( gameLocal.GetMapName(), trm ) ) {
+	//		gameLocal.Error( "rvClientMoveable '%d': cannot load collision model %s", entityNumber, clipModelName.c_str() );
+	//		return;
+	//	}
+	//}
+	//
+	//// if the model should be shrunk
+	//clipShrink = spawnArgs.GetInt( "clipshrink" );
+	//if ( clipShrink != 0 ) {
+	//	trm.Shrink( clipShrink * CM_CLIP_EPSILON );
+	//}
 
-		if ( !collisionModelManager->TrmFromModel( gameLocal.GetMapName(), trm ) ) {
-			gameLocal.Error( "rvClientMoveable '%d': cannot load collision model %s", entityNumber, clipModelName.c_str() );
-			return;
-		}
-	}
-
-	// if the model should be shrunk
-	clipShrink = spawnArgs.GetInt( "clipshrink" );
-	if ( clipShrink != 0 ) {
-		trm.Shrink( clipShrink * CM_CLIP_EPSILON );
-	}
+	idRenderModel* model = renderModelManager->FindModel(clipModelName);
 
 	physicsObj.SetSelf ( gameLocal.entities[ENTITYNUM_CLIENT] );		
-	physicsObj.SetClipModel ( new idClipModel( trm ), spawnArgs.GetFloat ( "density", "0.5" ), entityNumber );
+	physicsObj.SetClipModel ( new idClipModel(model->Bounds()), spawnArgs.GetFloat ( "density", "0.5" ), entityNumber );
 
 	physicsObj.SetOrigin( GetOrigin() );
 	physicsObj.SetAxis( GetAxis() );
@@ -183,6 +189,8 @@ void rvClientMoveable::Think ( void ) {
 
 	renderEntity.origin = worldOrigin;
 	renderEntity.axis = worldAxis * scale.GetCurrentValue( gameLocal.GetTime() );
+
+	//gameRenderWorld->DebugBox(colorWhite,idBox(renderEntity.origin, idVec3(10, 10, 10), mat3_identity));
 
 	// add to refresh list
 	if ( entityDefHandle == -1 ) {

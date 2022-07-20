@@ -70,6 +70,9 @@ public:
 	void					Save( idSaveGame *savefile ) const;
 	void					Restore( idRestoreGame *savefile );
 
+	void					SetRecievesCollision(bool traceRecievesCollision);
+	bool					RecievesCollision(void) const;
+
 	void					Link( idClip &clp );				// must have been linked with an entity and id before
 	void					Link( idClip &clp, idEntity *ent, int newId, const idVec3 &newOrigin, const idMat3 &newAxis, int renderModelHandle = -1 );
 	void					Unlink( void );						// unlink from sectors
@@ -122,6 +125,7 @@ private:
 	cmHandle_t				collisionModelHandle;	// handle to collision model
 	int						traceModelIndex;		// trace model used for collision detection
 	int						renderModelHandle;		// render model def handle
+	bool					traceRecievesCollision;
 
 	struct clipLink_s *		clipLinks;				// links into sectors
 	int						touchCount;

@@ -1829,6 +1829,7 @@ static classVariableInfo_t idClipModel_typeInfo[] = {
 	{ "cmHandle_t", "collisionModelHandle", (intptr_t)(&((idClipModel *)0)->collisionModelHandle), sizeof( ((idClipModel *)0)->collisionModelHandle ) },
 	{ "int", "traceModelIndex", (intptr_t)(&((idClipModel *)0)->traceModelIndex), sizeof( ((idClipModel *)0)->traceModelIndex ) },
 	{ "int", "renderModelHandle", (intptr_t)(&((idClipModel *)0)->renderModelHandle), sizeof( ((idClipModel *)0)->renderModelHandle ) },
+	{ "bool", "traceRecievesCollision", (intptr_t)(&((idClipModel *)0)->traceRecievesCollision), sizeof( ((idClipModel *)0)->traceRecievesCollision ) },
 	{ "clipLink_s *", "clipLinks", (intptr_t)(&((idClipModel *)0)->clipLinks), sizeof( ((idClipModel *)0)->clipLinks ) },
 	{ "int", "touchCount", (intptr_t)(&((idClipModel *)0)->touchCount), sizeof( ((idClipModel *)0)->touchCount ) },
 	{ NULL, 0 }
@@ -2166,6 +2167,9 @@ static classVariableInfo_t dnGameLocal_typeInfo[] = {
 	{ "int", "firstFreeClientIndex", (intptr_t)(&((dnGameLocal *)0)->firstFreeClientIndex), sizeof( ((dnGameLocal *)0)->firstFreeClientIndex ) },
 	{ "int", "clientSpawnCount", (intptr_t)(&((dnGameLocal *)0)->clientSpawnCount), sizeof( ((dnGameLocal *)0)->clientSpawnCount ) },
 	{ "int", "entityRegisterTime", (intptr_t)(&((dnGameLocal *)0)->entityRegisterTime), sizeof( ((dnGameLocal *)0)->entityRegisterTime ) },
+	{ "idSysMutex", "clientGamePhysicsMutex", (intptr_t)(&((dnGameLocal *)0)->clientGamePhysicsMutex), sizeof( ((dnGameLocal *)0)->clientGamePhysicsMutex ) },
+	{ "idParallelJobList *", "clientPhysicsJob", (intptr_t)(&((dnGameLocal *)0)->clientPhysicsJob), sizeof( ((dnGameLocal *)0)->clientPhysicsJob ) },
+	{ "idList < rvClientEntity * >", "clientEntityThreadWork", (intptr_t)(&((dnGameLocal *)0)->clientEntityThreadWork), sizeof( ((dnGameLocal *)0)->clientEntityThreadWork ) },
 	{ NULL, 0 }
 };
 
@@ -4705,6 +4709,10 @@ static classVariableInfo_t rvClientEntity_typeInfo[] = {
 	{ "idVec3", "worldOrigin", (intptr_t)(&((rvClientEntity *)0)->worldOrigin), sizeof( ((rvClientEntity *)0)->worldOrigin ) },
 	{ "idVec3", "worldVelocity", (intptr_t)(&((rvClientEntity *)0)->worldVelocity), sizeof( ((rvClientEntity *)0)->worldVelocity ) },
 	{ "idMat3", "worldAxis", (intptr_t)(&((rvClientEntity *)0)->worldAxis), sizeof( ((rvClientEntity *)0)->worldAxis ) },
+	{ "idVec3", "worldOriginThread", (intptr_t)(&((rvClientEntity *)0)->worldOriginThread), sizeof( ((rvClientEntity *)0)->worldOriginThread ) },
+	{ "idVec3", "worldVelocityThread", (intptr_t)(&((rvClientEntity *)0)->worldVelocityThread), sizeof( ((rvClientEntity *)0)->worldVelocityThread ) },
+	{ "idMat3", "worldAxisThread", (intptr_t)(&((rvClientEntity *)0)->worldAxisThread), sizeof( ((rvClientEntity *)0)->worldAxisThread ) },
+	{ "bool", "hasThreadedResults", (intptr_t)(&((rvClientEntity *)0)->hasThreadedResults), sizeof( ((rvClientEntity *)0)->hasThreadedResults ) },
 	{ "idEntity *", "bindMaster", (intptr_t)(&((rvClientEntity *)0)->bindMaster), sizeof( ((rvClientEntity *)0)->bindMaster ) },
 	{ "idVec3", "bindOrigin", (intptr_t)(&((rvClientEntity *)0)->bindOrigin), sizeof( ((rvClientEntity *)0)->bindOrigin ) },
 	{ "idMat3", "bindAxis", (intptr_t)(&((rvClientEntity *)0)->bindAxis), sizeof( ((rvClientEntity *)0)->bindAxis ) },

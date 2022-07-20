@@ -5,6 +5,28 @@
 
 /*
 ===================
+dnGameLocal::ClientEntityJob_t
+===================
+*/
+void dnGameLocal::ClientEntityJob_t(void* params) {
+	while (true)
+	{
+		gameLocal.clientGamePhysicsMutex.Lock();
+
+		for (int i = 0; i < gameLocal.clientEntityThreadWork.Num(); i++) {
+			gameLocal.clientEntityThreadWork[i]->RunThreadedPhysics(ENTITYNUM_CLIENT);
+		}
+
+		gameLocal.clientEntityThreadWork.Clear();
+
+		gameLocal.clientGamePhysicsMutex.Unlock();
+
+		Sleep(1);
+	}
+}
+
+/*
+===================
 dnGameLocal::SpawnClientEntityDef
 
 Finds the spawn function for the client entity and calls it,

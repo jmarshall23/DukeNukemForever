@@ -47,6 +47,7 @@ idDeclManager *				declManager = NULL;
 idCollisionModelManager *	collisionModelManager = NULL;
 rvmNavigationManager*		navigationManager = NULL;
 idSession*					session			= NULL;
+idParallelJobManager*		parallelJobManager = NULL;
 idCVar *					idCVar::staticVars = NULL;
 
 idCVar com_forceGenericSIMD( "com_forceGenericSIMD", "0", CVAR_BOOL|CVAR_SYSTEM, "force generic platform independent SIMD" );
@@ -141,6 +142,7 @@ extern "C" gameExport_t *GetGameAPI( gameImport_t *import ) {
 		collisionModelManager		= import->collisionModelManager;
 		navigationManager			= import->navigationManager;
 		session						= import->session;
+		parallelJobManager			= import->parallelJobManager;
 	}
 
 	// set interface pointers used by idLib
@@ -2510,6 +2512,21 @@ gameReturn_t idGameLocal::RunFrame( const usercmd_t *clientCmds ) {
 		// service any pending events
 		idEvent::ServiceEvents();
 
+	//	gameLocal.clientGamePhysicsMutex.Lock();
+		gameLocal.clientEntityThreadWork.Clear();
+
+		// bdube: client entities
+		rvClientEntity* cent;
+		for (cent = gameLocal.clientSpawnedEntities.Next(); cent != NULL; cent = cent->spawnNode.Next()) {
+			cent->Think();
+		}
+
+		//gameLocal.clientGamePhysicsMutex.Unlock();
+
+		for (int i = 0; i < gameLocal.clientEntityThreadWork.Num(); i++) {
+			gameLocal.clientEntityThreadWork[i]->RunThreadedPhysics(ENTITYNUM_CLIENT);
+		}
+
 #ifdef _D3XP
 		// service pending fast events
 		fast.Get( time, previousTime, msec, framenum, realClientTime );
@@ -3273,6 +3290,14 @@ void idGameLocal::SpawnMapEntities( void ) {
 	args.SetInt( "spawn_entnum", ENTITYNUM_WORLD );
 	if ( !SpawnEntityDef( args ) || !entities[ ENTITYNUM_WORLD ] || !entities[ ENTITYNUM_WORLD ]->IsType( idWorldspawn::Type ) ) {
 		Error( "Problem spawning world entity" );
+	}
+
+	// bdube: dummy entity for client entities with physics
+	args.Clear();
+	args.SetInt("spawn_entnum", ENTITYNUM_CLIENT);
+	// jnewquist: Use accessor for static class type 
+	if (!SpawnEntityType(rvClientPhysics::Type, &args, true) || !entities[ENTITYNUM_CLIENT]) {
+		Error("Problem spawning client physics entity");
 	}
 
 	num = 1;

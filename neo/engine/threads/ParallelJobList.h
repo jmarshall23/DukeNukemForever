@@ -43,6 +43,7 @@ enum jobSyncType_t {
 enum jobListId_t {
 	JOBLIST_RENDERER_FRONTEND	= 0,
 	JOBLIST_RENDERER_BACKEND	= 1,
+	JOBLIST_GAME_CLIENTPHYSICS  = 2,
 	JOBLIST_UTILITY				= 9,			// won't print over-time warnings
 
 	MAX_JOBLISTS				= 32			// the editor may cause quite a few to be allocated
@@ -79,42 +80,42 @@ class idParallelJobList {
 	friend class idParallelJobManagerLocal;
 public:
 
-	void					AddJob( jobRun_t function, void * data );
-	CellSpursJob128 *		AddJobSPURS();
-	void					InsertSyncPoint( jobSyncType_t syncType );
+	virtual void					AddJob( jobRun_t function, void * data );
+	virtual CellSpursJob128 *		AddJobSPURS();
+	virtual void					InsertSyncPoint( jobSyncType_t syncType );
 
 	// Submit the jobs in this list.
-	void					Submit( idParallelJobList * waitForJobList = NULL, int parallelism = JOBLIST_PARALLELISM_DEFAULT );
+	virtual void					Submit( idParallelJobList * waitForJobList = NULL, int parallelism = JOBLIST_PARALLELISM_DEFAULT );
 	// Wait for the jobs in this list to finish. Will spin in place if any jobs are not done.
-	void					Wait();
+	virtual void					Wait();
 	// Try to wait for the jobs in this list to finish but either way return immediately. Returns true if all jobs are done.
-	bool					TryWait();
+	virtual bool					TryWait();
 	// returns true if the job list has been submitted.
-	bool					IsSubmitted() const;
+	virtual bool					IsSubmitted() const;
 
 	// Get the number of jobs executed in this job list.
-	unsigned int			GetNumExecutedJobs() const;
+	virtual unsigned int			GetNumExecutedJobs() const;
 	// Get the number of sync points.
-	unsigned int			GetNumSyncs() const;
+	virtual unsigned int			GetNumSyncs() const;
 	// Time at which the job list was submitted.
-	uint64_t					GetSubmitTimeMicroSec() const;
+	virtual uint64_t					GetSubmitTimeMicroSec() const;
 	// Time at which execution of this job list started.
-	uint64_t					GetStartTimeMicroSec() const;
+	virtual uint64_t					GetStartTimeMicroSec() const;
 	// Time at which all jobs in the list were executed.
-	uint64_t					GetFinishTimeMicroSec() const;
+	virtual uint64_t					GetFinishTimeMicroSec() const;
 	// Time the host thread waited for this job list to finish.
-	uint64_t					GetWaitTimeMicroSec() const;
+	virtual uint64_t					GetWaitTimeMicroSec() const;
 	// Get the total time all units spent processing this job list.
-	uint64_t					GetTotalProcessingTimeMicroSec() const;
+	virtual uint64_t					GetTotalProcessingTimeMicroSec() const;
 	// Get the total time all units wasted while processing this job list.
-	uint64_t					GetTotalWastedTimeMicroSec() const;
+	virtual uint64_t					GetTotalWastedTimeMicroSec() const;
 	// Time the given unit spent processing this job list.
-	uint64_t					GetUnitProcessingTimeMicroSec( int unit ) const;
+	virtual uint64_t					GetUnitProcessingTimeMicroSec( int unit ) const;
 	// Time the given unit wasted while processing this job list.
-	uint64_t					GetUnitWastedTimeMicroSec( int unit ) const;
+	virtual uint64_t					GetUnitWastedTimeMicroSec( int unit ) const;
 
 	// Get the job list ID
-	jobListId_t				GetId() const;
+	virtual jobListId_t				GetId() const;
 	// Get the color for profiling.
 	const idColor *			GetColor() const { return this->color; }
 
@@ -147,6 +148,8 @@ public:
 	virtual int					GetNumJobLists() const = 0;
 	virtual int					GetNumFreeJobLists() const = 0;
 	virtual idParallelJobList *	GetJobList( int index ) = 0;
+
+	virtual void				RegisterJob(jobRun_t function, const char* name) = 0;
 
 	virtual int					GetNumProcessingUnits() = 0;
 

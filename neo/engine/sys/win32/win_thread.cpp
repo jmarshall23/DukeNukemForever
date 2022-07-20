@@ -190,56 +190,6 @@ bool Sys_SignalWait( signalHandle_t & handle, int timeout ) {
 /*
 ================================================================================================
 
-	Mutex
-
-================================================================================================
-*/
-
-/*
-========================
-Sys_MutexCreate
-========================
-*/
-void Sys_MutexCreate( mutexHandle_t & handle ) {
-	InitializeCriticalSection( &handle );
-}
-
-/*
-========================
-Sys_MutexDestroy
-========================
-*/
-void Sys_MutexDestroy( mutexHandle_t & handle ) {
-	DeleteCriticalSection( &handle );
-}
-
-/*
-========================
-Sys_MutexLock
-========================
-*/
-bool Sys_MutexLock( mutexHandle_t & handle, bool blocking ) {
-	if ( TryEnterCriticalSection( &handle ) == 0 ) {
-		if ( !blocking ) {
-			return false;
-		}
-		EnterCriticalSection( &handle );
-	}
-	return true;
-}
-
-/*
-========================
-Sys_MutexUnlock
-========================
-*/
-void Sys_MutexUnlock( mutexHandle_t & handle ) {
-	LeaveCriticalSection( & handle );
-}
-
-/*
-================================================================================================
-
 	Interlocked Integer
 
 ================================================================================================

@@ -165,4 +165,56 @@ enum {
 	CRITICAL_SECTION_THREE
 };
 
+
+/*
+================================================================================================
+
+	Mutex
+
+================================================================================================
+*/
+
+/*
+========================
+Sys_MutexCreate
+========================
+*/
+ID_INLINE void Sys_MutexCreate(mutexHandle_t& handle) {
+	InitializeCriticalSection(&handle);
+}
+
+/*
+========================
+Sys_MutexDestroy
+========================
+*/
+ID_INLINE void Sys_MutexDestroy(mutexHandle_t& handle) {
+	DeleteCriticalSection(&handle);
+}
+
+/*
+========================
+Sys_MutexLock
+========================
+*/
+ID_INLINE bool Sys_MutexLock(mutexHandle_t& handle, bool blocking) {
+	if (TryEnterCriticalSection(&handle) == 0) {
+		if (!blocking) {
+			return false;
+		}
+		EnterCriticalSection(&handle);
+	}
+	return true;
+}
+
+/*
+========================
+Sys_MutexUnlock
+========================
+*/
+ID_INLINE void Sys_MutexUnlock(mutexHandle_t& handle) {
+	LeaveCriticalSection(&handle);
+}
+
+
 #endif	// !__SYS_THREADING_H__

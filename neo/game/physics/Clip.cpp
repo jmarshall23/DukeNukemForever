@@ -278,6 +278,7 @@ void idClipModel::Init( void ) {
 	axis.Identity();
 	bounds.Zero();
 	absBounds.Zero();
+	traceRecievesCollision = true;
 	material = NULL;
 	contents = CONTENTS_BODY;
 	collisionModelHandle = 0;
@@ -575,6 +576,26 @@ void idClipModel::Link( idClip &clp ) {
 	Link_r( clp.clipSectors );
 }
 
+// jmarshall
+/*
+================
+idClipModel::RecievesCollision
+================
+*/
+bool idClipModel::RecievesCollision(void) const {
+	return traceRecievesCollision;
+}
+
+/*
+================
+idClipModel::SetRecievesCollision
+================
+*/
+void idClipModel::SetRecievesCollision(bool traceRecievesCollision) {
+	this->traceRecievesCollision = traceRecievesCollision;
+}
+// jmarshall end
+
 /*
 ===============
 idClipModel::Link
@@ -772,6 +793,12 @@ void idClip::ClipModelsTouchingBounds_r( const struct clipSector_s *node, listPa
 		if ( !check->enabled ) {
 			continue;
 		}
+
+// jmarshall
+		if (!check->RecievesCollision()) {
+			continue;
+		}
+// jmarshall end
 
 		// avoid duplicates in the list
 		if ( check->touchCount == touchCount ) {
@@ -985,11 +1012,11 @@ ID_INLINE bool TestHugeTranslation( trace_t &results, const idClipModel *mdl, co
 		memset( &results.c, 0, sizeof( results.c ) );
 		results.c.point = start;
 
-		if ( mdl->GetEntity() ) {
-			gameLocal.Printf( "huge translation for clip model %d on entity %d '%s'\n", mdl->GetId(), mdl->GetEntity()->entityNumber, mdl->GetEntity()->GetName() );
-		} else {
-			gameLocal.Printf( "huge translation for clip model %d\n", mdl->GetId() );
-		}
+		//if ( mdl->GetEntity() ) {
+		//	gameLocal.Printf( "huge translation for clip model %d on entity %d '%s'\n", mdl->GetId(), mdl->GetEntity()->entityNumber, mdl->GetEntity()->GetName() );
+		//} else {
+		//	gameLocal.Printf( "huge translation for clip model %d\n", mdl->GetId() );
+		//}
 		return true;
 	}
 	return false;

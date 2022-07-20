@@ -55,9 +55,11 @@ public:
 	virtual bool		UpdateAnimationControllers( void );
 
 	void				InitDefaultPhysics	( const idVec3 &origin, const idMat3 &axis );
-protected:
+public:
 
 	void				RunPhysics			( void );
+
+	void				RunThreadedPhysics(int threadClient);
 
 	virtual void		UpdateBind			( void );
 	void				UpdateSound			( void );
@@ -78,6 +80,12 @@ protected:
 	idVec3						worldOrigin;
 	idVec3						worldVelocity;
 	idMat3						worldAxis;
+
+	idVec3						worldOriginThread;
+	idVec3						worldVelocityThread;
+	idMat3						worldAxisThread;
+
+	bool						hasThreadedResults;
 
 	idEntity					*bindMaster;
 	idVec3						bindOrigin;

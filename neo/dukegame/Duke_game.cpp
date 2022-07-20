@@ -10,6 +10,13 @@ dnGameLocal::Init
 void dnGameLocal::Init(void) {
 	idGameLocal::Init();
 
+	// Create the various jobs we need on the game side.
+	clientPhysicsJob = parallelJobManager->AllocJobList(JOBLIST_GAME_CLIENTPHYSICS, JOBLIST_PRIORITY_MEDIUM, 2, 0, NULL);
+	parallelJobManager->RegisterJob((jobRun_t)ClientEntityJob_t, "G_ClientPhysics");
+
+	//gameLocal.clientPhysicsJob->AddJobA((jobRun_t)dnGameLocal::ClientEntityJob_t, nullptr);
+	//gameLocal.clientPhysicsJob->Submit();
+
 	clientSpawnCount = INITIAL_SPAWN_COUNT;
 	clientSpawnedEntities.Clear();
 	memset(clientEntities, 0, sizeof(clientEntities));
@@ -80,52 +87,7 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 #if 1
 	if (!ent->fl.takedamage && spawnDebris)
 	{
-		// spawn debris entities
-		int fxdebris = 12; // spawnArgs.GetInt("debris_count");
-		if (fxdebris) {
-			const idDict* debris = gameLocal.FindEntityDefDict("debris_brass", false);
-			if (debris) {
-				int amount = gameLocal.random.RandomInt(fxdebris);
-				for (int i = 0; i < amount; i++) {
-					idEntity* ent;
-					idVec3 dir;
-					dir.x = gameLocal.random.CRandomFloat() * 4.0f;
-					dir.y = gameLocal.random.CRandomFloat() * 4.0f;
-					dir.z = gameLocal.random.RandomFloat() * 8.0f;
-					dir.Normalize();
-
-					gameLocal.SpawnEntityDef(*debris, &ent, false);
-					if (!ent || !ent->IsType(idDebris::Type)) {
-						gameLocal.Error("'projectile_debris' is not an idDebris");
-					}
-
-					idDebris* debris = static_cast<idDebris*>(ent);
-					debris->Create(owner, tr.c.point, dir.ToMat3());
-					debris->Launch(tr.c.material);
-				}
-			}
-			debris = gameLocal.FindEntityDefDict("projectile_shrapnel", false);
-			if (debris) {
-				int amount = gameLocal.random.RandomInt(fxdebris);
-				for (int i = 0; i < amount; i++) {
-					idEntity* ent;
-					idVec3 dir;
-					dir.x = gameLocal.random.CRandomFloat() * 8.0f;
-					dir.y = gameLocal.random.CRandomFloat() * 8.0f;
-					dir.z = gameLocal.random.RandomFloat() * 8.0f + 8.0f;
-					dir.Normalize();
-
-					gameLocal.SpawnEntityDef(*debris, &ent, false);
-					if (!ent || !ent->IsType(idDebris::Type)) {
-						gameLocal.Error("'projectile_shrapnel' is not an idDebris");
-					}
-
-					idDebris* debris = static_cast<idDebris*>(ent);
-					debris->Create(owner, tr.c.point, dir.ToMat3());
-					debris->Launch(tr.c.material);
-				}
-			}
-		}
+		// TODO: Replace with effect.
 	}
 #endif
 	return ent;

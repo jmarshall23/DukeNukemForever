@@ -2712,6 +2712,7 @@ void idCommonLocal::LoadGameDLL( void ) {
 	gameImport.collisionModelManager	= ::collisionModelManager;
 	gameImport.navigationManager		= ::navigationManager;
 	gameImport.session					= ::session;
+	gameImport.parallelJobManager		= ::parallelJobManager;
 
 	gameExport							= *GetGameAPI( &gameImport );
 

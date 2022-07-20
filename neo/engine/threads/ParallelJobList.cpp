@@ -1095,6 +1095,8 @@ public:
 
 	virtual void				WaitForAllJobLists();
 
+	virtual void				RegisterJob(jobRun_t function, const char* name);
+
 	void						Submit( idParallelJobList_Threads * jobList, int parallelism );
 
 private:
@@ -1145,6 +1147,20 @@ void idParallelJobManagerLocal::Shutdown() {
 	for ( int i = 0; i < MAX_JOB_THREADS; i++ ) {
 		threads[i].StopThread();
 	}
+}
+
+/*
+========================
+idParallelJobManagerLocal::RegisterJob
+========================
+*/
+void idParallelJobManagerLocal::RegisterJob(jobRun_t function, const char* name) {
+	if (IsRegisteredJob(function)) {
+		return;
+	}
+	registeredJobs[numRegisteredJobs].function = function;
+	registeredJobs[numRegisteredJobs].name = name;
+	numRegisteredJobs++;
 }
 
 /*

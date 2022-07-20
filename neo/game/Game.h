@@ -368,7 +368,7 @@ extern idGameEdit *				gameEdit;
 ===============================================================================
 */
 
-const int GAME_API_VERSION		= 3003;
+const int GAME_API_VERSION		= 3004;
 
 typedef struct {
 
@@ -387,6 +387,7 @@ typedef struct {
 	idCollisionModelManager *	collisionModelManager;	// collision model manager
 	rvmNavigationManager*		navigationManager;
 	idSession*					session;
+	idParallelJobManager*		parallelJobManager;
 } gameImport_t;
 
 typedef struct {

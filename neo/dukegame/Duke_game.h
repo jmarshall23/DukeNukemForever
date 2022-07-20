@@ -87,5 +87,12 @@ private:
 	const static int		INITIAL_SPAWN_COUNT = 1;
 
 	void					InitGuis();
-	void					InitGameRender();
+	void					InitGameRender();	
+public:
+	static void				ClientEntityJob_t(void* params);
+
+	idSysMutex				clientGamePhysicsMutex;
+
+	idParallelJobList* clientPhysicsJob;
+	idList<rvClientEntity*>		clientEntityThreadWork;
 };

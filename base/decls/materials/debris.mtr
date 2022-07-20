@@ -1,0 +1,7 @@
+models/mapobjects/debris/roc_c09
+{
+	twoSided
+	{
+		map models/particles/shrapnel/shrapnel.tga
+	}
+}
