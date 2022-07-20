@@ -8351,6 +8351,10 @@ intptr_t DukePlayer::Invoke(const char *functionName, void *param1) {
 		Spawn();
 		return 0;
 	};
+	if(functionNameHash == 61762) { // Think
+		Think();
+		return 0;
+	};
 	if(functionNameHash == 272744) { // SetStartingInventory
 		SetStartingInventory();
 		return 0;
@@ -8378,6 +8382,9 @@ intptr_t DukePlayer::Invoke(const char *functionName, void *param1) {
 bool DukePlayer::HasNativeFunction(const char *functionName) {
 	int functionNameHash = idStr::Hash(functionName);
 	if(functionNameHash == 63102) { // Spawn
+		return true;
+	};
+	if(functionNameHash == 61762) { // Think
 		return true;
 	};
 	if(functionNameHash == 272744) { // SetStartingInventory

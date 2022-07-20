@@ -19,6 +19,8 @@ DukePlayer::DukePlayer()
 	bob = 0.0f;
 	firstSwearTaunt = true;
 	lastAppliedBobCycle = 0.0f;
+
+	guiCrosshairColorParam = declManager->FindRenderParam("guiCrosshairColorParam");
 }
 
 /*
@@ -395,4 +397,22 @@ void DukePlayer::GiveEgo(int amount) {
 	}
 
 	health += amount;
+}
+
+/*
+===================
+DukePlayer::Think
+===================
+*/
+void DukePlayer::Think(void) {
+	idPlayer::Think();
+
+	if (gameLocal.AimHitPredict(firstPersonViewOrigin, firstPersonViewAxis.ToAngles().ToForward(), firstPersonViewOrigin, this, this) == AIM_HIT_AI)
+	{
+		guiCrosshairColorParam->SetVectorValue(colorRed);
+	}
+	else
+	{
+		guiCrosshairColorParam->SetVectorValue(colorWhite);
+	}
 }

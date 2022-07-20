@@ -67,6 +67,9 @@ void DnAI::SetupPhysics(void)
 	bounds[0] = spawnArgs.GetVector("editor_mins");
 	bounds[1] = spawnArgs.GetVector("editor_maxs");
 
+	bounds[0].z += 10.0f;
+	bounds[1].z += 20.0f;
+
 	physicsObj.SetSelf(this);
 	idClipModel* newClip = new idClipModel(idTraceModel(bounds));
 	newClip->Translate(spawnOrigin);

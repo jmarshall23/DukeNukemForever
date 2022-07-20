@@ -38,6 +38,15 @@ struct DnRenderPlatform
 };
 
 //
+// DnAimHitType_t
+//
+enum DnAimHitType_t {
+	AIM_HIT_NOTHING = 0,
+	AIM_HIT_AI,
+	AIM_HIT_CIVILIAN
+};
+
+//
 // dnGameLocal
 //
 class dnGameLocal : public idGameLocal {
@@ -59,6 +68,8 @@ public:
 	virtual idUserInterface* GetMainMenuUI(void);
 
 	virtual DukePlayer* GetLocalDukePlayer() { return (DukePlayer*)GetLocalPlayer(); }
+
+	DnAimHitType_t			AimHitPredict(const idVec3& origin, const idVec3& dir, const idVec3& origFxOrigin, idEntity* owner, idEntity* additionalIgnore, float range = 2048);
 
 	idEntity*				HitScan(const idVec3& origOrigin, const idVec3& origDir, const idVec3& origFxOrigin, idEntity* owner, bool noFX, float damageScale, idEntity* additionalIgnore, int	areas[2], bool spawnDebris, float range = 2048, int push = 5000);
 	bool					TracePoint(const idEntity* ent, trace_t& results, const idVec3& start, const idVec3& end, int contentMask, const idEntity* passEntity);

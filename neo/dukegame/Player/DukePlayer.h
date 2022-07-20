@@ -17,6 +17,7 @@ public:
 	DukePlayer();
 
 	void					Spawn(void);
+	void					Think(void);
 
 	virtual void			UpdateHudStats(idUserInterface* hud);
 	virtual void			SetStartingInventory(void);
@@ -48,4 +49,6 @@ private:
 	float					bob;
 	float					lastAppliedBobCycle;
 	idStr					currentAnimation;
+
+	rvmDeclRenderParam*		guiCrosshairColorParam;
 };

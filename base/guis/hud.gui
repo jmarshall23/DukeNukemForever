@@ -20,6 +20,15 @@ windowDef Desktop
 		}
 
 	}
+
+	windowDef crosshair
+	{
+		rect 617,354,37,33
+		visible	1
+		matcolor	1,1,1,1
+		background	"guis/hud/crosshair"
+	}
+
 	windowDef hudfin1920
 	{
 		rect	821,617,247,78

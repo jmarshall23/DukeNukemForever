@@ -1,0 +1,8 @@
+guis/hud/crosshair
+{
+	{
+		blend add
+		renderprog guiCrosshair
+		guiCrosshairTexture guis/hud/crosshair.tga
+	}
+}

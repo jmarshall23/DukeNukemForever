@@ -1,3 +1,18 @@
+renderProg guiCrosshair
+{
+	vertex
+	{
+		gl_Position = TransformVertex($mvpMatrixX, $mvpMatrixY, $mvpMatrixZ, $mvpMatrixW);
+		vertex_texcoord0 = attr_TexCoord0;
+	}
+
+	pixel
+	{
+		finalpixel_color = texture2D($guiCrosshairTexture,vertex_texcoord0.st);
+		finalpixel_color.xyz *= $guiCrosshairColorParam.xyz;
+	}
+}
+
 renderProg guiTexture
 {
 	vertex

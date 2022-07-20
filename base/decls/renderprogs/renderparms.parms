@@ -64,3 +64,6 @@ renderParm customMask { texture }
 renderParm genericinfo { float4 }
 
 renderParm ambientLightInfo { float4 }
+
+renderParm guiCrosshairColorParam { float4 }
+renderParm guiCrosshairTexture { texture }

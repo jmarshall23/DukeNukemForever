@@ -50,6 +50,41 @@ bool dnGameLocal::TracePoint(const idEntity* ent, trace_t& results, const idVec3
 
 /*
 =====================
+dnGameLocal::AimHitPredict
+=====================
+*/
+DnAimHitType_t dnGameLocal::AimHitPredict(const idVec3& origin, const idVec3& dir, const idVec3& origFxOrigin, idEntity* owner, idEntity* additionalIgnore, float range) {
+	idVec3		start;
+	idVec3		end;
+	int			contents;
+	trace_t		tr;
+
+	idEntity* ent = nullptr;
+
+	// Calculate the end point of the trace
+	start = origin;
+	end = start + (dir.ToMat3() * idVec3(idMath::ClampFloat(0, 2048, range), 0, 0));
+
+	//gameRenderWorld->DebugLine(colorWhite, start, end, 1000);
+
+	contents = MASK_SHOT_RENDERMODEL | CONTENTS_WATER | CONTENTS_PROJECTILE;
+
+	TracePoint(owner, tr, start, end, contents, additionalIgnore);
+
+	if (tr.fraction >= 1.0f || (tr.c.material && tr.c.material->GetSurfaceFlags() & SURF_NOIMPACT)) {
+		return AIM_HIT_NOTHING;
+	}
+	ent = entities[tr.c.entityNum];
+
+	if (ent->fl.takedamage) {
+		return AIM_HIT_AI;
+	}
+
+	return AIM_HIT_NOTHING;
+}
+
+/*
+=====================
 dnGameLocal::HitScan
 =====================
 */
@@ -66,7 +101,7 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 	start = origin;
 	end = start + (dir.ToMat3() * idVec3(idMath::ClampFloat(0, 2048, range), 0, 0));
 
-	//gameRenderWorld->DebugLine(colorWhite, start, end, 1000);
+//	gameRenderWorld->DebugLine(colorWhite, start, end, 1000);
 
 	contents = MASK_SHOT_RENDERMODEL | CONTENTS_WATER | CONTENTS_PROJECTILE;
 
