@@ -1,7 +1,27 @@
-models/mapobjects/debris/roc_c09
+textures/particles/rolling_smoke
 {
-	twoSided
+	qer_editorimage textures/particles/smokepuff2.tga
+	translucent
+	noshadows
+	
 	{
-		map models/particles/shrapnel/shrapnel.tga
+		blend blend
+		
+		map textures/particles/smokepuff2.tga
+		vertexcolor
+	}
+}
+
+textures/particles/fire
+{
+	qer_editorimage textures/particles/fire.tga
+	translucent
+	noshadows	
+					 
+	{
+      	blend gl_one, gl_one_minus_src_color
+		map textures/particles/fire.tga
+		vertexcolor
+		glowStage
 	}
 }

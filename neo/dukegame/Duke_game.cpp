@@ -85,9 +85,10 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 		}
 	}
 #if 1
-	if (!ent->fl.takedamage && spawnDebris)
+	if (!ent->fl.takedamage)
 	{
-		// TODO: Replace with effect.
+		idMat3 mat = tr.c.normal.ToAngles().ToMat3();
+		idEntityFx::StartFx("fx/debris", &tr.c.point, &mat, ent, true);
 	}
 	else
 	{
