@@ -92,7 +92,14 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 	}
 	else
 	{
-		idEntityFx::StartFx("fx/bloodwound", &tr.c.point, nullptr, ent, true);
+		idAngles ang = tr.c.normal.ToAngles();
+		idAngles ang2 = tr.c.normal.ToAngles();
+		ang.pitch += 90.0f;
+		//ang2.pitch -= 90.0f;
+		idMat3 mat = ang.ToMat3();
+		idMat3 mat2 = ang2.ToMat3();
+		idEntityFx::StartFx("fx/bloodwound", &tr.c.point, &mat, ent, true);
+		idEntityFx::StartFx("fx/bloodwound", &tr.c.point, &mat2, ent, true);
 	}
 #endif
 	return ent;
