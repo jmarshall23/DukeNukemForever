@@ -28,7 +28,9 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "ConsoleHistory.h"
 
-#define CONSOLE_FONT_SCALE				0.28f
+#define CONSOLE_FONT_SCALE				0.24f
+#undef SMALLCHAR_WIDTH
+#define SMALLCHAR_WIDTH 7
 
 void SCR_DrawTextLeftAlign(float& y, const char* text, ...) id_attribute((format(printf, 2, 3)));
 void SCR_DrawTextRightAlign(float& y, const char* text, ...) id_attribute((format(printf, 2, 3)));
@@ -951,6 +953,8 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 
 	renderSystem->DrawStretchPic(0, y, SCREEN_WIDTH, 2, 0, 0, 0, 0, whiteShader);
 
+	deviceContext->SetColor(colorRed);
+
 	// draw the version number
 	idStr version = va("%s.%i", ENGINE_VERSION, BUILD_NUMBER);
 	i = version.Length();
@@ -1016,7 +1020,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 
 		textPtr[0] = 0;
 		deviceContext->SetColor(idStr::ColorForIndex(currentColor));
-		deviceContext->DrawTextA(0, idMath::FtoiFast(y) + SMALLCHAR_HEIGHT, 0.28f, idStr::ColorForIndex(currentColor), temp, CONSOLE_FONT_SCALE, 0, true);
+		deviceContext->DrawTextA(0, idMath::FtoiFast(y) + SMALLCHAR_HEIGHT, CONSOLE_FONT_SCALE, idStr::ColorForIndex(currentColor), temp, CONSOLE_FONT_SCALE, 0, true);
 		currentColor = idStr::ColorIndex(C_COLOR_WHITE);
 		deviceContext->SetColor(idStr::ColorForIndex(currentColor));
 	}
