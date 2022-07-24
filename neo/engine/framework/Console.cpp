@@ -28,6 +28,8 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "ConsoleHistory.h"
 
+#define CONSOLE_FONT_SCALE				0.28f
+
 void SCR_DrawTextLeftAlign(float& y, const char* text, ...) id_attribute((format(printf, 2, 3)));
 void SCR_DrawTextRightAlign(float& y, const char* text, ...) id_attribute((format(printf, 2, 3)));
 
@@ -899,7 +901,7 @@ void idConsoleLocal::DrawNotify() {
 		}
 		textPtr[0] = 0;
 		deviceContext->SetColor(idStr::ColorForIndex(currentColor));
-		deviceContext->DrawTextA(0, v + SMALLCHAR_HEIGHT, 0.3f, idStr::ColorForIndex(currentColor), temp, 1.0f, 0, true);
+		deviceContext->DrawTextA(0, v + SMALLCHAR_HEIGHT, CONSOLE_FONT_SCALE, idStr::ColorForIndex(currentColor), temp, CONSOLE_FONT_SCALE, 0, true);
 		currentColor = idStr::ColorIndex(C_COLOR_WHITE);
 		deviceContext->SetColor(idStr::ColorForIndex(currentColor));
 
@@ -953,7 +955,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 	idStr version = va("%s.%i", ENGINE_VERSION, BUILD_NUMBER);
 	i = version.Length();
 
-	deviceContext->DrawTextA(SCREEN_WIDTH - (i) * SMALLCHAR_WIDTH, (lines - (SMALLCHAR_HEIGHT + SMALLCHAR_HEIGHT / 2)), 0.3f, colorGold, 
+	deviceContext->DrawTextA(SCREEN_WIDTH - (i) * SMALLCHAR_WIDTH, (lines - (SMALLCHAR_HEIGHT + SMALLCHAR_HEIGHT / 2)), CONSOLE_FONT_SCALE, colorGold,
 		version, 1.0, 0, true);
 
 
@@ -961,7 +963,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 	i = buildTime.Length();
 
 
-	deviceContext->DrawTextA(SCREEN_WIDTH - (i) * SMALLCHAR_WIDTH, (lines - (SMALLCHAR_HEIGHT + SMALLCHAR_HEIGHT / 2)) + SMALLCHAR_HEIGHT, 0.3f, colorGold,
+	deviceContext->DrawTextA(SCREEN_WIDTH - (i) * SMALLCHAR_WIDTH, (lines - (SMALLCHAR_HEIGHT + SMALLCHAR_HEIGHT / 2)) + SMALLCHAR_HEIGHT, CONSOLE_FONT_SCALE, colorGold,
 		buildTime, 1.0, 0, true);
 
 	deviceContext->SetColor(colorWhite);
@@ -1014,7 +1016,7 @@ void idConsoleLocal::DrawSolidConsole(float frac) {
 
 		textPtr[0] = 0;
 		deviceContext->SetColor(idStr::ColorForIndex(currentColor));
-		deviceContext->DrawTextA(0, idMath::FtoiFast(y) + SMALLCHAR_HEIGHT, 0.3f, idStr::ColorForIndex(currentColor), temp, 1.0f, 0, true);
+		deviceContext->DrawTextA(0, idMath::FtoiFast(y) + SMALLCHAR_HEIGHT, 0.28f, idStr::ColorForIndex(currentColor), temp, CONSOLE_FONT_SCALE, 0, true);
 		currentColor = idStr::ColorIndex(C_COLOR_WHITE);
 		deviceContext->SetColor(idStr::ColorForIndex(currentColor));
 	}
