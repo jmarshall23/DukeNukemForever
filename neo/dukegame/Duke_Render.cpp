@@ -1,7 +1,7 @@
 // Duke_Render.cpp
 //
 
-#include "../game/Game_local.h"
+#include "gamelib/Game_local.h"
 
 idCVar g_drawVisibleLights("g_drawVisibleLights", "0", CVAR_GAME | CVAR_CHEAT, "");
 

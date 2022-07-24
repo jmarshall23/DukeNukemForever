@@ -1,7 +1,7 @@
 // DukePlayer.cpp
 //
 
-#include "../../game/game_local.h"
+#include "../gamelib/game_local.h"
 
 const idEventDef EV_Player_DukeTalk("startDukeTalk", "sd");
 

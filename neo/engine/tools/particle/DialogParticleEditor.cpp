@@ -29,7 +29,6 @@ If you have questions concerning this license or the applicable additional terms
 
 #pragma hdrstop
 
-#include "../../game/game.h"
 #include "../../sys/win32/win_local.h"
 #include "../../sys/win32/rc/common_resource.h"
 #include "../../sys/win32/rc/Radiant_resource.h"

@@ -1,7 +1,7 @@
 // DnFullscreenRenderTarget.cpp
 //
 
-#include "../../game/Game_local.h"
+#include "../gamelib/game_local.h"
 
 /*
 =========================

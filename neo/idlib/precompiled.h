@@ -179,7 +179,7 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 #include "../engine/cm/CollisionModel.h"
 
 // game
-#include "../game/Game.h"
+#include "../dukegame/gamelib/Game.h"
 
 // Externals that need to be available across all the engine.
 #ifndef _D3SDK
@@ -205,7 +205,7 @@ const int MAX_EXPRESSION_REGISTERS = 4096;
 
 #ifdef GAME_DLL
 
-#include "../game/Game_local.h"
+#include "../dukegame/gamelib/Game_local.h"
 
 #else
 

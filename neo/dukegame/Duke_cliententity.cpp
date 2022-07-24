@@ -1,7 +1,7 @@
 // Duke_cliententity.cpp
 //
 
-#include "../game/Game_local.h"
+#include "gamelib/Game_local.h"
 
 /*
 ===================

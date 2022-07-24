@@ -2,7 +2,7 @@
 //
 
 
-#include "../../game/Game_local.h"
+#include "../gamelib/game_local.h"
 
 #define LIZTROOP_FIRE_DISTANCE			500
 #define LIZTROOP_FORCE_FIREDISTANCE		200

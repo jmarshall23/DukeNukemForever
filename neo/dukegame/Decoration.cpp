@@ -1,7 +1,7 @@
 // Decoration.cpp
 //
 
-#include "../game/Game_local.h"
+#include "gamelib/Game_local.h"
 
 CLASS_DECLARATION(idMover, dnDecoration)
 END_CLASS

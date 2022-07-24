@@ -47,16 +47,17 @@ file(GLOB dnGameFiles
      "dukegame/Renderer/*.cpp*"
      "dukegame/items/*.cpp*"
      "dukegame/Editor/*.cpp*"
+     "dukegame/Entities/*.cpp*"
+     "dukegame/decls/*.cpp*"
 )
 
 file(GLOB gameBaseFiles
-     "game/*.cpp*"
-     "game/anim/*.cpp*"
-     "game/gamesys/*.cpp*"
-     "game/player/*.cpp"
-     "game/physics/*.cpp"
-     "game/script/*.cpp"
-     "gamedecls/*.cpp*"
+     "dukegame/gamelib/*.cpp*"
+     "dukegame/gamelib/anim/*.cpp*"
+     "dukegame/gamelib/gamesys/*.cpp*"
+     "dukegame/gamelib/player/*.cpp"
+     "dukegame/gamelib/physics/*.cpp"
+     "dukegame/gamelib/script/*.cpp"
 ) 
 
 file(GLOB typeInfoGenFiles
@@ -64,7 +65,7 @@ file(GLOB typeInfoGenFiles
 )
 
 file(GLOB gameTypeInfoFiles
-    "gametypeinfo/*.cpp*"
+    "dukegame/typeinfo/*.cpp*"
 )
 
 set (toolSupportSrc 
@@ -94,7 +95,7 @@ target_link_libraries(typeinfogen idLib)
 target_precompile_headers(typeinfogen PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/idlib/precompiled.h)
 
 # Game Project 
-add_library(game SHARED  ${dnGameFiles} ${gameBaseFiles} game/Game.def )
+add_library(game SHARED  ${dnGameFiles} ${gameBaseFiles} dukegame/gamelib/Game.def )
 target_compile_definitions(game PRIVATE GAME_DLL=1 -D_D3XP -DCTF)
 target_link_libraries(game idLib gameTypeInfo)
 target_precompile_headers(game PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/idlib/precompiled.h)

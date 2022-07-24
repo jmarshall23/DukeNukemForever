@@ -3,7 +3,7 @@
 
 #pragma hdrstop
 
-#include "../../game/game_local.h"
+#include "../gamelib/game_local.h"
 
 CLASS_DECLARATION(rvmWeaponObject, dnWeaponM16)
 END_CLASS

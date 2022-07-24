@@ -2,7 +2,7 @@
 //
 
 
-#include "../../game/Game_local.h"
+#include "../gamelib/game_local.h"
 
 #define PIGCOP_FIRE_DISTANCE			500
 #define PIGCOP_FORCE_FIREDISTANCE		200

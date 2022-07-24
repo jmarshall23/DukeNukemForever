@@ -1,7 +1,7 @@
 // Civilian.cpp
 //
 
-#include "../../game/Game_local.h"
+#include "../gamelib/game_local.h"
 
 CLASS_DECLARATION(DnAI, DnCivilian)
 END_CLASS

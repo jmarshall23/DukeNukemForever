@@ -1,7 +1,8 @@
 // Duke_game.cpp
 //
 
-#include "../game/Game_local.h"
+#include "gamelib/Game_local.h"
+
 /*
 ===================
 dnGameLocal::Init

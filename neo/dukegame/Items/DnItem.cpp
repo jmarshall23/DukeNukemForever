@@ -1,7 +1,7 @@
 // DnItem.cpp
 //
 
-#include "../../game/game_local.h"
+#include "../gamelib/game_local.h"
 
 CLASS_DECLARATION(idEntity, DnItem)
 	EVENT(EV_Touch, DnItem::Event_Touch)

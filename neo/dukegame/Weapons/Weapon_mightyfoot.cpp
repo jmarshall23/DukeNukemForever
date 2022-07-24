@@ -1,7 +1,7 @@
 // weapon_fist.cpp
 //
 
-#include "../../game/game_local.h"
+#include "../gamelib/game_local.h"
 
 CLASS_DECLARATION(rvmWeaponObject, dnWeaponMightyFoot)
 END_CLASS
