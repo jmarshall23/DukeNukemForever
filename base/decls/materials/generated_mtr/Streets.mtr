@@ -1,6 +1,6 @@
-textures/Streets/alld-park1tw
+textures/Streets/alldpark1tw
 {
-	diffusemap textures/Streets/alld-park1tw.tga
+	diffusemap textures/Streets/alldpark1tw.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
@@ -138,30 +138,30 @@ textures/Streets/Sign_SpLim95
 	specularmap textures/common/nospec.tga
 }
 
-textures/Streets/TB_$Collect1
+textures/Streets/TB_Collect1
 {
-	diffusemap textures/Streets/TB_$Collect1.tga
+	diffusemap textures/Streets/TB_Collect1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Streets/TB_$Collect2
+textures/Streets/TB_Collect2
 {
-	diffusemap textures/Streets/TB_$Collect2.tga
+	diffusemap textures/Streets/TB_Collect2.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Streets/TB_$Collect3
+textures/Streets/TB_Collect3
 {
-	diffusemap textures/Streets/TB_$Collect3.tga
+	diffusemap textures/Streets/TB_Collect3.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Streets/TB_$Collect4
+textures/Streets/TB_Collect4
 {
-	diffusemap textures/Streets/TB_$Collect4.tga
+	diffusemap textures/Streets/TB_Collect4.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
@@ -194,9 +194,9 @@ textures/Streets/TB_Booth3
 	specularmap textures/common/nospec.tga
 }
 
-textures/Streets/TB_Exact$1
+textures/Streets/TB_Exact1
 {
-	diffusemap textures/Streets/TB_Exact$1.tga
+	diffusemap textures/Streets/TB_Exact1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

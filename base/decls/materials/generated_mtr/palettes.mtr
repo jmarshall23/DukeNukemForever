@@ -663,37 +663,37 @@ textures/palettes/Organic
 	specularmap textures/common/nospec.tga
 }
 
-textures/palettes/Pal-blue
+textures/palettes/Palblue
 {
-	diffusemap textures/palettes/Pal-blue.tga
+	diffusemap textures/palettes/Palblue.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/palettes/Pal-fir
+textures/palettes/Palfir
 {
-	diffusemap textures/palettes/Pal-fir.tga
+	diffusemap textures/palettes/Palfir.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/palettes/Pal-fir2
+textures/palettes/Palfir2
 {
-	diffusemap textures/palettes/Pal-fir2.tga
+	diffusemap textures/palettes/Palfir2.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/palettes/Pal-fir3
+textures/palettes/Palfir3
 {
-	diffusemap textures/palettes/Pal-fir3.tga
+	diffusemap textures/palettes/Palfir3.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/palettes/Pal-fir4
+textures/palettes/Palfir4
 {
-	diffusemap textures/palettes/Pal-fir4.tga
+	diffusemap textures/palettes/Palfir4.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

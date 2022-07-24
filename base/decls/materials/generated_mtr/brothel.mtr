@@ -117,16 +117,16 @@ textures/brothel/blackRC
 	specularmap textures/common/nospec.tga
 }
 
-textures/brothel/bloopw-1atw
+textures/brothel/bloopw1atw
 {
-	diffusemap textures/brothel/bloopw-1atw.tga
+	diffusemap textures/brothel/bloopw1atw.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/brothel/bloopw-1tw
+textures/brothel/bloopw1tw
 {
-	diffusemap textures/brothel/bloopw-1tw.tga
+	diffusemap textures/brothel/bloopw1tw.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
@@ -222,23 +222,23 @@ textures/brothel/brothbartop_1tw
 	specularmap textures/common/nospec.tga
 }
 
-textures/brothel/brothelplaster-3b
+textures/brothel/brothelplaster3b
 {
-	diffusemap textures/brothel/brothelplaster-3b.tga
+	diffusemap textures/brothel/brothelplaster3b.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/brothel/brothelplaster-3c
+textures/brothel/brothelplaster3c
 {
-	diffusemap textures/brothel/brothelplaster-3c.tga
+	diffusemap textures/brothel/brothelplaster3c.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/brothel/brothelplaster-3d
+textures/brothel/brothelplaster3d
 {
-	diffusemap textures/brothel/brothelplaster-3d.tga
+	diffusemap textures/brothel/brothelplaster3d.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

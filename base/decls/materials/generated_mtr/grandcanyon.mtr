@@ -467,72 +467,72 @@ textures/grandcanyon/cynsignback2RC
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/DETAIL~4
+textures/grandcanyon/DETAIL4
 {
-	diffusemap textures/grandcanyon/DETAIL~4.tga
+	diffusemap textures/grandcanyon/DETAIL4.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/DETAIL~7
+textures/grandcanyon/DETAIL7
 {
-	diffusemap textures/grandcanyon/DETAIL~7.tga
+	diffusemap textures/grandcanyon/DETAIL7.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/DETAIL~8
+textures/grandcanyon/DETAIL8
 {
-	diffusemap textures/grandcanyon/DETAIL~8.tga
+	diffusemap textures/grandcanyon/DETAIL8.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/DETAI~16
+textures/grandcanyon/DETAI16
 {
-	diffusemap textures/grandcanyon/DETAI~16.tga
+	diffusemap textures/grandcanyon/DETAI16.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/DETAI~17
+textures/grandcanyon/DETAI17
 {
-	diffusemap textures/grandcanyon/DETAI~17.tga
+	diffusemap textures/grandcanyon/DETAI17.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/DETAI~43
+textures/grandcanyon/DETAI43
 {
-	diffusemap textures/grandcanyon/DETAI~43.tga
+	diffusemap textures/grandcanyon/DETAI43.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/DOOR_E~2
+textures/grandcanyon/DOOR_E2
 {
-	diffusemap textures/grandcanyon/DOOR_E~2.tga
+	diffusemap textures/grandcanyon/DOOR_E2.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/GROUND~1
+textures/grandcanyon/GROUND1
 {
-	diffusemap textures/grandcanyon/GROUND~1.tga
+	diffusemap textures/grandcanyon/GROUND1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/GROUN~11
+textures/grandcanyon/GROUN11
 {
-	diffusemap textures/grandcanyon/GROUN~11.tga
+	diffusemap textures/grandcanyon/GROUN11.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/GROUN~13
+textures/grandcanyon/GROUN13
 {
-	diffusemap textures/grandcanyon/GROUN~13.tga
+	diffusemap textures/grandcanyon/GROUN13.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
@@ -544,51 +544,51 @@ textures/grandcanyon/PROP_SM
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/PROP_~40
+textures/grandcanyon/PROP_40
 {
-	diffusemap textures/grandcanyon/PROP_~40.tga
+	diffusemap textures/grandcanyon/PROP_40.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/SIGN_A~2
+textures/grandcanyon/SIGN_A2
 {
-	diffusemap textures/grandcanyon/SIGN_A~2.tga
+	diffusemap textures/grandcanyon/SIGN_A2.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/SIGN_B~1
+textures/grandcanyon/SIGN_B1
 {
-	diffusemap textures/grandcanyon/SIGN_B~1.tga
+	diffusemap textures/grandcanyon/SIGN_B1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/SIGN_C~3
+textures/grandcanyon/SIGN_C3
 {
-	diffusemap textures/grandcanyon/SIGN_C~3.tga
+	diffusemap textures/grandcanyon/SIGN_C3.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/SIGN_D~2
+textures/grandcanyon/SIGN_D2
 {
-	diffusemap textures/grandcanyon/SIGN_D~2.tga
+	diffusemap textures/grandcanyon/SIGN_D2.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/SIGN_G~1
+textures/grandcanyon/SIGN_G1
 {
-	diffusemap textures/grandcanyon/SIGN_G~1.tga
+	diffusemap textures/grandcanyon/SIGN_G1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/SIGN_N~1
+textures/grandcanyon/SIGN_N1
 {
-	diffusemap textures/grandcanyon/SIGN_N~1.tga
+	diffusemap textures/grandcanyon/SIGN_N1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
@@ -600,9 +600,9 @@ textures/grandcanyon/SIGN_SM
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/SIGN_S~2
+textures/grandcanyon/SIGN_S2
 {
-	diffusemap textures/grandcanyon/SIGN_S~2.tga
+	diffusemap textures/grandcanyon/SIGN_S2.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
@@ -614,51 +614,51 @@ textures/grandcanyon/WALL_SM
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/WALL_~11
+textures/grandcanyon/WALL_11
 {
-	diffusemap textures/grandcanyon/WALL_~11.tga
+	diffusemap textures/grandcanyon/WALL_11.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/WALL_~41
+textures/grandcanyon/WALL_41
 {
-	diffusemap textures/grandcanyon/WALL_~41.tga
+	diffusemap textures/grandcanyon/WALL_41.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/WALL_~43
+textures/grandcanyon/WALL_43
 {
-	diffusemap textures/grandcanyon/WALL_~43.tga
+	diffusemap textures/grandcanyon/WALL_43.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/WALL_~44
+textures/grandcanyon/WALL_44
 {
-	diffusemap textures/grandcanyon/WALL_~44.tga
+	diffusemap textures/grandcanyon/WALL_44.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/WALL_~49
+textures/grandcanyon/WALL_49
 {
-	diffusemap textures/grandcanyon/WALL_~49.tga
+	diffusemap textures/grandcanyon/WALL_49.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/WOOD_E~7
+textures/grandcanyon/WOOD_E7
 {
-	diffusemap textures/grandcanyon/WOOD_E~7.tga
+	diffusemap textures/grandcanyon/WOOD_E7.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/grandcanyon/WOOD_~15
+textures/grandcanyon/WOOD_15
 {
-	diffusemap textures/grandcanyon/WOOD_~15.tga
+	diffusemap textures/grandcanyon/WOOD_15.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

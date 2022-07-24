@@ -1629,23 +1629,23 @@ textures/m_zone1_vegas/Sword1sah
 	specularmap textures/common/nospec.tga
 }
 
-textures/m_zone1_vegas/t-rexsignRC
+textures/m_zone1_vegas/trexsignRC
 {
-	diffusemap textures/m_zone1_vegas/t-rexsignRC.tga
+	diffusemap textures/m_zone1_vegas/trexsignRC.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/m_zone1_vegas/t-rexskinRC
+textures/m_zone1_vegas/trexskinRC
 {
-	diffusemap textures/m_zone1_vegas/t-rexskinRC.tga
+	diffusemap textures/m_zone1_vegas/trexskinRC.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/m_zone1_vegas/t-rexteethRC
+textures/m_zone1_vegas/trexteethRC
 {
-	diffusemap textures/m_zone1_vegas/t-rexteethRC.tga
+	diffusemap textures/m_zone1_vegas/trexteethRC.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

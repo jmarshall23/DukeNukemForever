@@ -2546,39 +2546,39 @@ textures/penthouse/waterfall2RC
 	specularmap textures/penthouse/waterfall2RC_spec.tga
 }
 
-textures/penthouse/whores!_1tw
+textures/penthouse/whores_1tw
 {
-	diffusemap textures/penthouse/whores!_1tw.tga
-	bumpmap textures/penthouse/whores!_1tw_normal.tga
-	specularmap textures/penthouse/whores!_1tw_spec.tga
+	diffusemap textures/penthouse/whores_1tw.tga
+	bumpmap textures/penthouse/whores_1tw_normal.tga
+	specularmap textures/penthouse/whores_1tw_spec.tga
 }
 
-textures/penthouse/whores!_2tw
+textures/penthouse/whores_2tw
 {
-	diffusemap textures/penthouse/whores!_2tw.tga
-	bumpmap textures/penthouse/whores!_2tw_normal.tga
-	specularmap textures/penthouse/whores!_2tw_spec.tga
+	diffusemap textures/penthouse/whores_2tw.tga
+	bumpmap textures/penthouse/whores_2tw_normal.tga
+	specularmap textures/penthouse/whores_2tw_spec.tga
 }
 
-textures/penthouse/whores!_3tw
+textures/penthouse/whores_3tw
 {
-	diffusemap textures/penthouse/whores!_3tw.tga
-	bumpmap textures/penthouse/whores!_3tw_normal.tga
-	specularmap textures/penthouse/whores!_3tw_spec.tga
+	diffusemap textures/penthouse/whores_3tw.tga
+	bumpmap textures/penthouse/whores_3tw_normal.tga
+	specularmap textures/penthouse/whores_3tw_spec.tga
 }
 
-textures/penthouse/whores!_5tw
+textures/penthouse/whores_5tw
 {
-	diffusemap textures/penthouse/whores!_5tw.tga
-	bumpmap textures/penthouse/whores!_5tw_normal.tga
-	specularmap textures/penthouse/whores!_5tw_spec.tga
+	diffusemap textures/penthouse/whores_5tw.tga
+	bumpmap textures/penthouse/whores_5tw_normal.tga
+	specularmap textures/penthouse/whores_5tw_spec.tga
 }
 
-textures/penthouse/whores!_tw
+textures/penthouse/whores_tw
 {
-	diffusemap textures/penthouse/whores!_tw.tga
-	bumpmap textures/penthouse/whores!_tw_normal.tga
-	specularmap textures/penthouse/whores!_tw_spec.tga
+	diffusemap textures/penthouse/whores_tw.tga
+	bumpmap textures/penthouse/whores_tw_normal.tga
+	specularmap textures/penthouse/whores_tw_spec.tga
 }
 
 textures/penthouse/woodfloor1ABC

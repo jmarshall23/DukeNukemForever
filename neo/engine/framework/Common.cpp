@@ -559,27 +559,7 @@ idCommonLocal::PrintWarnings
 ==================
 */
 void idCommonLocal::PrintWarnings( void ) {
-	int i;
 
-	if ( !warningList.Num() ) {
-		return;
-	}
-
-	warningList.Sort();
-
-	Printf( "------------- Warnings ---------------\n" );
-	Printf( "during %s...\n", warningCaption.c_str() );
-
-	for ( i = 0; i < warningList.Num(); i++ ) {
-		Printf( S_COLOR_YELLOW "WARNING: " S_COLOR_RED "%s\n", warningList[i].c_str() );
-	}
-	if ( warningList.Num() ) {
-		if ( warningList.Num() >= MAX_WARNING_LIST ) {
-			Printf( "more than %d warnings\n", MAX_WARNING_LIST );
-		} else {
-			Printf( "%d warnings\n", warningList.Num() );
-		}
-	}
 }
 
 /*

@@ -40,23 +40,23 @@ textures/spacestation/hampertime_1tw
 	specularmap textures/common/nospec.tga
 }
 
-textures/spacestation/METAL_~7
+textures/spacestation/METAL_7
 {
-	diffusemap textures/spacestation/METAL_~7.tga
+	diffusemap textures/spacestation/METAL_7.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/spacestation/METAL~22
+textures/spacestation/METAL22
 {
-	diffusemap textures/spacestation/METAL~22.tga
+	diffusemap textures/spacestation/METAL22.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/spacestation/METAL~29
+textures/spacestation/METAL29
 {
-	diffusemap textures/spacestation/METAL~29.tga
+	diffusemap textures/spacestation/METAL29.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
@@ -117,23 +117,23 @@ textures/spacestation/spaceplate_1tw
 	specularmap textures/common/nospec.tga
 }
 
-textures/spacestation/WALL_H~2
+textures/spacestation/WALL_H2
 {
-	diffusemap textures/spacestation/WALL_H~2.tga
+	diffusemap textures/spacestation/WALL_H2.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/spacestation/WALL_H~4
+textures/spacestation/WALL_H4
 {
-	diffusemap textures/spacestation/WALL_H~4.tga
+	diffusemap textures/spacestation/WALL_H4.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/spacestation/WALL_H~8
+textures/spacestation/WALL_H8
 {
-	diffusemap textures/spacestation/WALL_H~8.tga
+	diffusemap textures/spacestation/WALL_H8.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

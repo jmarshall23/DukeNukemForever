@@ -488,39 +488,39 @@ textures/stratosfear/checks_1tw
 	specularmap textures/stratosfear/checks_1tw_spec.tga
 }
 
-textures/stratosfear/chi-post1tw
+textures/stratosfear/chipost1tw
 {
-	diffusemap textures/stratosfear/chi-post1tw.tga
-	bumpmap textures/stratosfear/chi-post1tw_normal.tga
-	specularmap textures/stratosfear/chi-post1tw_spec.tga
+	diffusemap textures/stratosfear/chipost1tw.tga
+	bumpmap textures/stratosfear/chipost1tw_normal.tga
+	specularmap textures/stratosfear/chipost1tw_spec.tga
 }
 
-textures/stratosfear/chi-post2tw
+textures/stratosfear/chipost2tw
 {
-	diffusemap textures/stratosfear/chi-post2tw.tga
-	bumpmap textures/stratosfear/chi-post2tw_normal.tga
-	specularmap textures/stratosfear/chi-post2tw_spec.tga
+	diffusemap textures/stratosfear/chipost2tw.tga
+	bumpmap textures/stratosfear/chipost2tw_normal.tga
+	specularmap textures/stratosfear/chipost2tw_spec.tga
 }
 
-textures/stratosfear/chi-post3tw
+textures/stratosfear/chipost3tw
 {
-	diffusemap textures/stratosfear/chi-post3tw.tga
-	bumpmap textures/stratosfear/chi-post3tw_normal.tga
-	specularmap textures/stratosfear/chi-post3tw_spec.tga
+	diffusemap textures/stratosfear/chipost3tw.tga
+	bumpmap textures/stratosfear/chipost3tw_normal.tga
+	specularmap textures/stratosfear/chipost3tw_spec.tga
 }
 
-textures/stratosfear/chi-post4tw
+textures/stratosfear/chipost4tw
 {
-	diffusemap textures/stratosfear/chi-post4tw.tga
-	bumpmap textures/stratosfear/chi-post4tw_normal.tga
-	specularmap textures/stratosfear/chi-post4tw_spec.tga
+	diffusemap textures/stratosfear/chipost4tw.tga
+	bumpmap textures/stratosfear/chipost4tw_normal.tga
+	specularmap textures/stratosfear/chipost4tw_spec.tga
 }
 
-textures/stratosfear/chi-post5tw
+textures/stratosfear/chipost5tw
 {
-	diffusemap textures/stratosfear/chi-post5tw.tga
-	bumpmap textures/stratosfear/chi-post5tw_normal.tga
-	specularmap textures/stratosfear/chi-post5tw_spec.tga
+	diffusemap textures/stratosfear/chipost5tw.tga
+	bumpmap textures/stratosfear/chipost5tw_normal.tga
+	specularmap textures/stratosfear/chipost5tw_spec.tga
 }
 
 textures/stratosfear/churchie1tw

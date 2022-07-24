@@ -1,125 +1,125 @@
-textures/Screenshots/!z1l1_1
+textures/Screenshots/z1l1_1
 {
-	diffusemap textures/Screenshots/!z1l1_1.tga
+	diffusemap textures/Screenshots/z1l1_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z1l2_1
+textures/Screenshots/z1l2_1
 {
-	diffusemap textures/Screenshots/!z1l2_1.tga
+	diffusemap textures/Screenshots/z1l2_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z1l3_1
+textures/Screenshots/z1l3_1
 {
-	diffusemap textures/Screenshots/!z1l3_1.tga
+	diffusemap textures/Screenshots/z1l3_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z1l4_1
+textures/Screenshots/z1l4_1
 {
-	diffusemap textures/Screenshots/!z1l4_1.tga
+	diffusemap textures/Screenshots/z1l4_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z1l5_1
+textures/Screenshots/z1l5_1
 {
-	diffusemap textures/Screenshots/!z1l5_1.tga
+	diffusemap textures/Screenshots/z1l5_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z2l1_1
+textures/Screenshots/z2l1_1
 {
-	diffusemap textures/Screenshots/!z2l1_1.tga
+	diffusemap textures/Screenshots/z2l1_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z2l2_1
+textures/Screenshots/z2l2_1
 {
-	diffusemap textures/Screenshots/!z2l2_1.tga
+	diffusemap textures/Screenshots/z2l2_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z2l3_1
+textures/Screenshots/z2l3_1
 {
-	diffusemap textures/Screenshots/!z2l3_1.tga
+	diffusemap textures/Screenshots/z2l3_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z3l1_1
+textures/Screenshots/z3l1_1
 {
-	diffusemap textures/Screenshots/!z3l1_1.tga
+	diffusemap textures/Screenshots/z3l1_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z3l2_1
+textures/Screenshots/z3l2_1
 {
-	diffusemap textures/Screenshots/!z3l2_1.tga
+	diffusemap textures/Screenshots/z3l2_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z3l3_1
+textures/Screenshots/z3l3_1
 {
-	diffusemap textures/Screenshots/!z3l3_1.tga
+	diffusemap textures/Screenshots/z3l3_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z4l1_1
+textures/Screenshots/z4l1_1
 {
-	diffusemap textures/Screenshots/!z4l1_1.tga
+	diffusemap textures/Screenshots/z4l1_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z4l2_1
+textures/Screenshots/z4l2_1
 {
-	diffusemap textures/Screenshots/!z4l2_1.tga
+	diffusemap textures/Screenshots/z4l2_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z4l3_1
+textures/Screenshots/z4l3_1
 {
-	diffusemap textures/Screenshots/!z4l3_1.tga
+	diffusemap textures/Screenshots/z4l3_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z5l1_1
+textures/Screenshots/z5l1_1
 {
-	diffusemap textures/Screenshots/!z5l1_1.tga
+	diffusemap textures/Screenshots/z5l1_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z5l2_1
+textures/Screenshots/z5l2_1
 {
-	diffusemap textures/Screenshots/!z5l2_1.tga
+	diffusemap textures/Screenshots/z5l2_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z6l1_1
+textures/Screenshots/z6l1_1
 {
-	diffusemap textures/Screenshots/!z6l1_1.tga
+	diffusemap textures/Screenshots/z6l1_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Screenshots/!z6l2_1
+textures/Screenshots/z6l2_1
 {
-	diffusemap textures/Screenshots/!z6l2_1.tga
+	diffusemap textures/Screenshots/z6l2_1.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

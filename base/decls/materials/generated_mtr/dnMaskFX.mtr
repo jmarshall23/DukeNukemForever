@@ -215,9 +215,9 @@ textures/dnMaskFX/hangcablesc_1tw
 	specularmap textures/common/nospec.tga
 }
 
-textures/dnMaskFX/hi-v_2tw
+textures/dnMaskFX/hiv_2tw
 {
-	diffusemap textures/dnMaskFX/hi-v_2tw.tga
+	diffusemap textures/dnMaskFX/hiv_2tw.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }

@@ -47,16 +47,16 @@ textures/Conveyor/tramPosY_tw
 	specularmap textures/common/nospec.tga
 }
 
-textures/Conveyor/truddybit-x1tw
+textures/Conveyor/truddybitx1tw
 {
-	diffusemap textures/Conveyor/truddybit-x1tw.tga
+	diffusemap textures/Conveyor/truddybitx1tw.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
 
-textures/Conveyor/truddybit-y1tw
+textures/Conveyor/truddybity1tw
 {
-	diffusemap textures/Conveyor/truddybit-y1tw.tga
+	diffusemap textures/Conveyor/truddybity1tw.tga
 	bumpmap textures/common/flatnormal.tga
 	specularmap textures/common/nospec.tga
 }
