@@ -1066,7 +1066,52 @@ void	idConsoleLocal::Draw(bool forceFullScreen) {
 
 	if (com_showFPS.GetInteger() > 0) {
 #ifdef ID_ALLOW_TOOLS
-		renderSystem->RenderToolGui(&displayFrameRateTool);
+		#define FPS_FRAMES 4
+
+		char* s;
+		int			w;
+		static int	previousTimes[FPS_FRAMES];
+		static int	index;
+		int		i, total;
+		int		fps = 0;
+		static	int	previous;
+		int		t, frameTime;
+		//rvmPerformanceMetrics_t* metrics;
+
+		// don't use serverTime, because that will be drifting to
+		// correct for internet lag changes, timescales, timedemos, etc
+		t = Sys_Milliseconds();
+		frameTime = t - previous;
+		previous = t;
+
+		previousTimes[index % FPS_FRAMES] = frameTime;
+		index++;
+		if (index > FPS_FRAMES) {
+			// average multiple frames together to smooth changes out a bit
+			total = 0;
+			for (i = 0; i < FPS_FRAMES; i++) {
+				total += previousTimes[i];
+			}
+			if (!total) {
+				total = 1;
+			}
+			fps = 10000 * FPS_FRAMES / total;
+			fps = (fps + 5) / 10;
+		}
+
+		if (fps > 100)
+			fps = 99;
+
+		idStr txt = va("Frame: %d FPS", fps);
+		deviceContext->DrawTextA(SCREEN_WIDTH - (txt.Length() * SMALLCHAR_WIDTH) - SMALLCHAR_WIDTH, y + SMALLCHAR_HEIGHT, CONSOLE_FONT_SCALE, colorWhite, txt, CONSOLE_FONT_SCALE, 0, true);
+		y += SMALLCHAR_HEIGHT;
+#ifdef _DEBUG
+		txt = "Debug Build";
+#else
+		txt = "Release Build";
+#endif
+		deviceContext->DrawTextA(SCREEN_WIDTH - (txt.Length() * SMALLCHAR_WIDTH) - SMALLCHAR_WIDTH, y + SMALLCHAR_HEIGHT, CONSOLE_FONT_SCALE, colorWhite, txt, CONSOLE_FONT_SCALE, 0, true);
+		//renderSystem->RenderToolGui(&displayFrameRateTool);
 #endif
 	}
 
