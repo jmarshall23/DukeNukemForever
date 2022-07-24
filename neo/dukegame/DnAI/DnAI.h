@@ -199,6 +199,7 @@ protected:
 
 	idList<idVec3>			pathWaypoints;
 	int						waypointId;
+	bool					AI_PAIN;
 private:
 	void					StopMove(moveStatus_t status);
 

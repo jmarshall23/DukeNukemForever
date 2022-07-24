@@ -17,6 +17,7 @@ DnAI::Spawn
 */
 void DnAI::Spawn(void)
 {
+	AI_PAIN = false;
 	target = nullptr;
 	isTargetVisible = false;
 	ideal_yaw = 0;
@@ -384,6 +385,12 @@ bool DnAI::MoveToPosition(const idVec3& pos)
 
 bool DnAI::Pain(idEntity* inflictor, idEntity* attacker, int damage, const idVec3& dir, int location)
 {
+	if (idMath::FRandRange(1.0f, 10.0f) < 5.0f)
+	{
+		Event_StopMove();
+		Event_SetState("state_ShootEnemy");
+		AI_PAIN = true;
+	}
 	return true;
 }
 
@@ -445,6 +452,8 @@ void DnAI::Think(void)
 	}
 
 	stateThread.Execute();
+
+	AI_PAIN = false;
 
 	if (health > 0)
 	{

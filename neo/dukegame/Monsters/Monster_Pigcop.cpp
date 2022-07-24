@@ -91,7 +91,7 @@ stateResult_t DnPigcop::state_ShootEnemy(stateParms_t* parms)
 	float distToEnemy = 0.0f;
 	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
 
-	if (distToEnemy < PIGCOP_FIRE_DISTANCE + 25)
+	if (distToEnemy < PIGCOP_FIRE_DISTANCE + 25 || AI_PAIN)
 	{
 		if (!isTargetVisible)
 		{

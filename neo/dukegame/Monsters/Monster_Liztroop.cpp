@@ -74,7 +74,7 @@ stateResult_t DnLiztroop::state_ShootEnemy(stateParms_t* parms)
 	float distToEnemy = 0.0f;
 	distToEnemy = (target->GetOrigin() - GetOrigin()).Length();
 
-	if (distToEnemy < LIZTROOP_FIRE_DISTANCE + 25)
+	if (distToEnemy < LIZTROOP_FIRE_DISTANCE + 25 || AI_PAIN)
 	{
 		if (!isTargetVisible)
 		{
