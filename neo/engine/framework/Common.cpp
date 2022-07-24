@@ -546,7 +546,7 @@ void idCommonLocal::Warning( const char *fmt, ... ) {
 	va_end( argptr );
 	msg[sizeof(msg)-1] = 0;
 
-	Printf( S_COLOR_YELLOW "WARNING: " S_COLOR_RED "%s\n", msg );
+	Printf( S_COLOR_YELLOW "WARNING: %s\n", msg );
 
 	if ( warningList.Num() < MAX_WARNING_LIST ) {
 		warningList.AddUnique( msg );

@@ -574,16 +574,13 @@ void idEditField::Draw( int x, int y, int width, bool showCursor, const idMateri
 	memcpy( str, buffer + prestep, drawLen );
 	str[ drawLen ] = 0;
 
-	// draw it
-	renderSystem->DrawSmallStringExt( x, y, str, colorWhite, false, shader );
+	// draw it!
+	
 
 	// draw the cursor
-	if ( !showCursor ) {
+	if ( !showCursor || (int)(com_ticNumber >> 4) & 1) {
+		deviceContext->DrawTextA(0, y + SMALLCHAR_HEIGHT, 0.3f, colorWhite, va("> %s", str), 1.0f, 0, true);
 		return;
-	}
-
-	if ( (int)( com_ticNumber >> 4 ) & 1 ) {
-		return;		// off blink
 	}
 
 	if ( idKeyInput::GetOverstrikeMode() ) {
@@ -600,5 +597,5 @@ void idEditField::Draw( int x, int y, int width, bool showCursor, const idMateri
 		}
 	}
 
-	renderSystem->DrawSmallChar( x + ( cursor - prestep ) * size, y, cursorChar, shader );
+	deviceContext->DrawTextA(0, y + SMALLCHAR_HEIGHT, 0.3f, colorWhite, va("> %s_", str), 1.0f, 0, true);
 }
