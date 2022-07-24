@@ -118,7 +118,7 @@ DnAI::Event_Hitscan
 */
 void DnAI::Event_Hitscan(const idVec3& muzzleOrigin, const idVec3& dir, int num_hitscans, float spread, float power) {
 	int areas[10];
-	gameLocal.HitScan(muzzleOrigin, dir, muzzleOrigin, this, false, 1.0f, NULL, areas, false);
+	gameLocal.HitScan("damage_generic", muzzleOrigin, dir, muzzleOrigin, this, false, 1.0f, NULL, areas, false);
 }
 
 /*

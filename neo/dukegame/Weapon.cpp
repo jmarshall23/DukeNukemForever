@@ -4150,7 +4150,7 @@ void idWeapon::ForceAmmoInClip()
 idWeapon::Hitscan
 ================
 */
-void idWeapon::Hitscan(const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int num_hitscans, float spread, float power) {
+void idWeapon::Hitscan(const char* damage_type, const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int num_hitscans, float spread, float power) {
 	//idVec3  fxOrigin;
 	//idMat3  fxAxis;
 	int		i;
@@ -4205,7 +4205,7 @@ void idWeapon::Hitscan(const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int
 		}
 		dir.Normalize();
 
-		gameLocal.HitScan(muzzleOrigin, dir,muzzleOrigin, owner, false, 1.0f, NULL, areas, i == 0);
+		gameLocal.HitScan(damage_type, muzzleOrigin, dir,muzzleOrigin, owner, false, 1.0f, NULL, areas, i == 0);
 
 		//if (gameLocal.isServer) {
 		//	msg.WriteDir(dir, 24);
@@ -4220,7 +4220,7 @@ void idWeapon::Hitscan(const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int
 }
 
 
-void idWeapon::Event_Attack(bool hitScan, int num_projectiles, float spread, float fuseOffset, float launchPower, float dmgPower)
+void idWeapon::Event_Attack(bool useHitscan, const char* damage_type, int num_projectiles, float spread, float fuseOffset)
 {
 	idVec3 muzzleOrigin;
 	idMat3 muzzleAxis;
@@ -4230,13 +4230,13 @@ void idWeapon::Event_Attack(bool hitScan, int num_projectiles, float spread, flo
 	muzzleAxis = playerViewAxis;
 	//muzzleOrigin += playerViewAxis[0] * muzzleOffset;
 
-	if (hitScan)
+	if (useHitscan)
 	{
-		Hitscan(muzzleOrigin, muzzleAxis, num_projectiles, spread, dmgPower);
+		Hitscan(damage_type, muzzleOrigin, muzzleAxis, num_projectiles, spread, 1.0f);
 	}
 	else
 	{
-		Event_LaunchProjectiles(num_projectiles, spread, fuseOffset, launchPower, dmgPower);
+		Event_LaunchProjectiles(num_projectiles, spread, fuseOffset, 1.0f, 1.0f);
 	}
 }
 // jmarshall end

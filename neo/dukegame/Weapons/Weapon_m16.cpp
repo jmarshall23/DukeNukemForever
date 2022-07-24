@@ -172,7 +172,7 @@ stateResult_t dnWeaponM16::Fire(stateParms_t* parms)
 			owner->StartSoundShader(snd_lowammo, SND_CHANNEL_ITEM, 0, false, &length);
 		}
 
-		owner->Event_Attack(true, M16_NUMPROJECTILES, spread, 0, 1, 1);
+		owner->Event_Attack(true, "damage_pistol", M16_NUMPROJECTILES, spread, 0);
 
 		//owner->Event_PlayAnim( ANIMCHANNEL_ALL, "fire", false );
 

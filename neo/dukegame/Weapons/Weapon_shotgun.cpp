@@ -11,7 +11,7 @@ END_CLASS
 #define SHOTGUN_FIRERATE		1.333
 #define SHOTGUN_LOWAMMO			2
 #define SHOTGUN_RELOADRATE		2
-#define	SHOTGUN_NUMPROJECTILES	13
+#define	SHOTGUN_NUMPROJECTILES	2
 
 #define DNSHOTGUN_IDLE_STARTFRAME	43
 #define DNSHOTGUN_IDLE_NUMFRAMES		 1
@@ -154,7 +154,7 @@ stateResult_t dnWeaponShotgun::Fire( stateParms_t* parms )
 		case FIRE_NOTSET:
 			next_attack = gameLocal.realClientTime + SEC2MS( SHOTGUN_FIRERATE );
 			
-			owner->Event_Attack(true, SHOTGUN_NUMPROJECTILES, spread, 0, 1, 1);
+			owner->Event_Attack(true, "damage_shotgun", SHOTGUN_NUMPROJECTILES, spread, 0);
 
 			//owner->Event_PlayAnim( ANIMCHANNEL_ALL, "fire", false );
 

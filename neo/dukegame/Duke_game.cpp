@@ -89,7 +89,7 @@ DnAimHitType_t dnGameLocal::AimHitPredict(const idVec3& origin, const idVec3& di
 dnGameLocal::HitScan
 =====================
 */
-idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const idVec3& origFxOrigin, idEntity* owner, bool noFX, float damageScale, idEntity* additionalIgnore, int	areas[2], bool spawnDebris, float range, int push)
+idEntity* dnGameLocal::HitScan(const char* damage_type, const idVec3& origin, const idVec3& dir, const idVec3& origFxOrigin, idEntity* owner, bool noFX, float damageScale, idEntity* additionalIgnore, int	areas[2], bool spawnDebris, float range, int push)
 {
 	idVec3		start;
 	idVec3		end;
@@ -117,7 +117,7 @@ idEntity* dnGameLocal::HitScan(const idVec3& origin, const idVec3& dir, const id
 	if (!gameLocal.isClient) {
 		if (ent->fl.takedamage)
 		{
-			ent->Damage(owner, owner, dir, "damage_generic", damageScale, CLIPMODEL_ID_TO_JOINT_HANDLE(tr.c.id));
+			ent->Damage(owner, owner, dir, damage_type, damageScale, CLIPMODEL_ID_TO_JOINT_HANDLE(tr.c.id));
 		}
 	}
 #if 1

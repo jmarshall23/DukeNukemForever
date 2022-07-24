@@ -307,8 +307,8 @@ public:
 	void					Event_NetEndReload();
 
 // jmarshall
-	void					Event_Attack(bool useHitscan, int num_projectiles, float spread, float fuseOffset, float launchPower, float dmgPower);
-	void					Hitscan(const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int num_hitscans, float spread, float power);
+	void					Event_Attack(bool useHitscan, const char *damage_type, int num_projectiles, float spread, float fuseOffset);
+	void					Hitscan(const char* damage_type, const idVec3& muzzleOrigin, const idMat3& muzzleAxis, int num_hitscans, float spread, float power);
 // jmarshall end
 
 	void					EnterCinematic();
