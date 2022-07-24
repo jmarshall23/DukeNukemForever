@@ -39,3 +39,31 @@ entityDef damage_shotgun {
 	"kick_time"		"400"
 	"knockback"		"10"
 }
+
+entityDef damage_pigcop {
+	"minDamage"		"20"
+	"maxDamage"		"26"
+	"mtr_blob"		"genericDamage" // seems to be a material for "screen blob" effects on damage
+	"blob_time"		"300"
+	"blob_size"		"400"
+	"blob_offset	_x"	"400"
+	"dv_time"		"100"
+	"kickDir"		"1 0 0"
+	"kick_amplitude"	"1"
+	"kick_time"		"400"
+	"knockback"		"10"
+}
+
+entityDef damage_liztoop {
+	"minDamage"		"15"
+	"maxDamage"		"25"
+	"mtr_blob"		"genericDamage" // seems to be a material for "screen blob" effects on damage
+	"blob_time"		"300"
+	"blob_size"		"400"
+	"blob_offset	_x"	"400"
+	"dv_time"		"100"
+	"kickDir"		"1 0 0"
+	"kick_amplitude"	"1"
+	"kick_time"		"400"
+	"knockback"		"10"
+}

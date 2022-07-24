@@ -176,7 +176,7 @@ public:
 	idEntity*				GetEnemy() { return target; }
 protected:
 	void					Event_SetAnimation(const char* anim, bool loop);
-	void					Event_Hitscan(const idVec3& muzzleOrigin, const idVec3& dir, int num_hitscans, float spread, float power);
+	void					Event_Hitscan(const char *damage_type, const idVec3& muzzleOrigin, const idVec3& dir, int num_hitscans, float spread, float power);
 	void					Event_UpdatePathToPosition(idVec3 position);
 	idPlayer*				Event_FindNewTarget();
 	void					Event_ResetAnimation();

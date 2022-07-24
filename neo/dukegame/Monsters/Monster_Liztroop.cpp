@@ -91,7 +91,7 @@ stateResult_t DnLiztroop::state_ShootEnemy(stateParms_t* parms)
 		idVec3 muzzleDir = muzzleOrigin - (target->GetOrigin() + target->GetVisualOffset());
 
 		muzzleDir.Normalize();
-		Event_Hitscan(muzzleOrigin, -muzzleDir, 1, 1, 10);
+		Event_Hitscan("damage_liztoop", muzzleOrigin, -muzzleDir, 1, 1, 10);
 
 		return SRESULT_WAIT;
 	}
