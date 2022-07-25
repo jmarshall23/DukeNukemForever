@@ -6,7 +6,10 @@ entityDef weapon_shotgun {
 	"editor_rotatable"		"1"
 
 	"view_model_offset"			"-2 5 -10"
+	"view_model_flashoffset"	"0 -7.5 20"
 	"view_model_fov"			"93"
+
+	"fx_muzzleflash"			"fx/muzzlefire2"
 
 	"spawnclass"				"idItem"
 	"size"						"32 32 32"

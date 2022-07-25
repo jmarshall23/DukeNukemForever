@@ -3567,6 +3567,9 @@ static classVariableInfo_t rvmWeaponObject_typeInfo[] = {
 
 static classVariableInfo_t idWeapon_typeInfo[] = {
 	{ ": idVec3", "gun_decl_offset", (intptr_t)(&((idWeapon *)0)->gun_decl_offset), sizeof( ((idWeapon *)0)->gun_decl_offset ) },
+	{ "idVec3", "gun_decl_flashoffset", (intptr_t)(&((idWeapon *)0)->gun_decl_flashoffset), sizeof( ((idWeapon *)0)->gun_decl_flashoffset ) },
+	{ "idStr", "fx_muzzleflash", (intptr_t)(&((idWeapon *)0)->fx_muzzleflash), sizeof( ((idWeapon *)0)->fx_muzzleflash ) },
+	{ "idEntityPtr < idEntityFx >[2]", "muzzleFireFX", (intptr_t)(&((idWeapon *)0)->muzzleFireFX), sizeof( ((idWeapon *)0)->muzzleFireFX ) },
 	{ "int", "animBlendFrames", (intptr_t)(&((idWeapon *)0)->animBlendFrames), sizeof( ((idWeapon *)0)->animBlendFrames ) },
 	{ "int", "animDoneTime", (intptr_t)(&((idWeapon *)0)->animDoneTime), sizeof( ((idWeapon *)0)->animDoneTime ) },
 	{ "bool", "isPlayerFlashlight", (intptr_t)(&((idWeapon *)0)->isPlayerFlashlight), sizeof( ((idWeapon *)0)->isPlayerFlashlight ) },

@@ -323,8 +323,16 @@ public:
 	idVec3					GetGunDeclOffset() const {
 		return gun_decl_offset;
 	}
+
+	idVec3					GetGunDeclFlashOffset() const {
+		return gun_decl_flashoffset;
+	}
 private:
 	idVec3					gun_decl_offset;
+	idVec3					gun_decl_flashoffset;
+	idStr					fx_muzzleflash;
+
+	idEntityPtr<idEntityFx> muzzleFireFX[2];
 
 	int						animBlendFrames;
 	int						animDoneTime;

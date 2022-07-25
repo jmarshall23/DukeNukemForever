@@ -139,6 +139,7 @@ stateResult_t dnWeaponShotgun::Fire( stateParms_t* parms )
 	enum FIRE_State
 	{
 		FIRE_NOTSET = 0,
+		FIRE_SHOOTWAIT,
 		FIRE_WAIT
 	};
 
@@ -153,13 +154,14 @@ stateResult_t dnWeaponShotgun::Fire( stateParms_t* parms )
 	{
 		case FIRE_NOTSET:
 			next_attack = gameLocal.realClientTime + SEC2MS( SHOTGUN_FIRERATE );
-			
-			owner->Event_Attack(true, "damage_shotgun", SHOTGUN_NUMPROJECTILES, spread, 0);
-
-			//owner->Event_PlayAnim( ANIMCHANNEL_ALL, "fire", false );
-
 			owner->StartSoundShader(fireSound, SND_CHANNEL_ANY, 0, false, nullptr);
 			owner->PlayVertexAnimation(DNSHOTGUN_FIRE_STARTFRAME, DNSHOTGUN_FIRE_NUMFRAMES, false);
+			parms->stage = FIRE_SHOOTWAIT;
+			parms->Wait(0.05f);
+			return SRESULT_WAIT;
+
+		case FIRE_SHOOTWAIT:
+			owner->Event_Attack(true, "damage_shotgun", SHOTGUN_NUMPROJECTILES, spread, 0);
 			parms->stage = FIRE_WAIT;
 			return SRESULT_WAIT;
 

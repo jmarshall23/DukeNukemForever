@@ -57,6 +57,10 @@ entityDef weapon_pistol {
 	"recoilTime"				"125"
 	"recoilAngles"				"-1 0 0"
 
+	"fx_muzzleflash"			"fx/muzzlefire"
+
+	"view_model_flashoffset"	"0 -6 16"
+
 	"weaponAngleOffsetAverages" "10"
 	"weaponAngleOffsetScale" 	".25"
 	"weaponAngleOffsetMax"		"10"

@@ -618,6 +618,8 @@ void idWeapon::GetWeaponDef( const char* objectname, int ammoinclip )
 	weaponDef			= gameLocal.FindEntityDef( objectname );
 
 	gun_decl_offset		= weaponDef->dict.GetVector("view_model_offset");
+	gun_decl_flashoffset = weaponDef->dict.GetVector("view_model_flashoffset");
+	fx_muzzleflash = weaponDef->dict.GetString("fx_muzzleflash", "");
 
 	ammoType			= GetAmmoNumForName( weaponDef->dict.GetString( "ammoType" ) );
 	ammoRequired		= weaponDef->dict.GetInt( "ammoRequired" );
@@ -1418,6 +1420,33 @@ void idWeapon::Think()
 		{
 			renderEntity.frame = (vertexAnimatedFrameStart + vertexAnimatedNumFrames) - 1;
 			renderEntity.lastFrame = (vertexAnimatedFrameStart + vertexAnimatedNumFrames) - 1;
+		}
+	}
+
+	if (muzzleFireFX[0].IsValid() && muzzleFireFX[1].IsValid())
+	{
+		idVec3 muzzleOrigin;
+		idMat3 muzzleAxis;
+
+		idVec3 forward = playerViewAxis[0] + playerViewAxis[2];
+
+		// go straight out of the view
+		muzzleOrigin = playerViewOrigin;
+		muzzleAxis = playerViewAxis;
+		//muzzleOrigin += playerViewAxis[0] * muzzleOffset;
+
+		idVec3 properGunOffset = GetGunDeclFlashOffset();
+
+		idVec3	gunpos(properGunOffset.x, properGunOffset.y, 0);
+
+		idVec3 flashLocation = viewWeaponOrigin - idVec3(0, 0, properGunOffset.z) + (forward * 30.0f);
+
+		flashLocation = flashLocation + gunpos * viewWeaponAxis;
+
+		for (int i = 0; i < 2; i++)
+		{
+			muzzleFireFX[i].GetEntity()->SetOrigin(flashLocation);
+			muzzleFireFX[i].GetEntity()->SetAxis(muzzleAxis);
 		}
 	}
 }
@@ -4228,7 +4257,18 @@ void idWeapon::Event_Attack(bool useHitscan, const char* damage_type, int num_pr
 	// go straight out of the view
 	muzzleOrigin = playerViewOrigin;
 	muzzleAxis = playerViewAxis;
-	//muzzleOrigin += playerViewAxis[0] * muzzleOffset;
+
+
+	if (fx_muzzleflash.Length() > 0)
+	{
+		muzzleFireFX[0] = idEntityFx::StartFx(fx_muzzleflash, &muzzleOrigin, &muzzleAxis, this, false);
+		muzzleFireFX[1] = idEntityFx::StartFx(fx_muzzleflash, &muzzleOrigin, &muzzleAxis, this, false);
+
+		for (int i = 0; i < 2; i++)
+		{
+			muzzleFireFX[i].GetEntity()->GetPhysics()->SetContents(0);
+		}
+	}
 
 	if (useHitscan)
 	{

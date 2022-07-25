@@ -4123,6 +4123,10 @@ intptr_t idWeapon::Invoke(const char *functionName, void *param1) {
 		GetGunDeclOffset();
 		return 0;
 	};
+	if(functionNameHash == 267755) { // GetGunDeclFlashOffset
+		GetGunDeclFlashOffset();
+		return 0;
+	};
 	if(functionNameHash == 170742) { // AlertMonsters
 		AlertMonsters();
 		return 0;
@@ -4387,6 +4391,9 @@ bool idWeapon::HasNativeFunction(const char *functionName) {
 		return true;
 	};
 	if(functionNameHash == 199891) { // GetGunDeclOffset
+		return true;
+	};
+	if(functionNameHash == 267755) { // GetGunDeclFlashOffset
 		return true;
 	};
 	if(functionNameHash == 170742) { // AlertMonsters
