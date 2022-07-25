@@ -579,7 +579,7 @@ void idEditField::Draw( int x, int y, int width, bool showCursor, const idMateri
 
 	// draw the cursor
 	if ( !showCursor || (int)(com_ticNumber >> 4) & 1) {
-		deviceContext->DrawTextA(0, y + SMALLCHAR_HEIGHT, 0.3f, colorWhite, va("> %s", str), 1.0f, 0, true);
+		deviceContext->DrawTextA(0, y + SMALLCHAR_HEIGHT, CONSOLE_FONT_SCALE, colorWhite, va("> %s", str), 1.0f, 0, true);
 		return;
 	}
 
@@ -597,5 +597,5 @@ void idEditField::Draw( int x, int y, int width, bool showCursor, const idMateri
 		}
 	}
 
-	deviceContext->DrawTextA(0, y + SMALLCHAR_HEIGHT, 0.3f, colorWhite, va("> %s_", str), 1.0f, 0, true);
+	deviceContext->DrawTextA(0, y + SMALLCHAR_HEIGHT, CONSOLE_FONT_SCALE, colorWhite, va("> %s_", str), 1.0f, 0, true);
 }

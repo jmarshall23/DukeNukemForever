@@ -28,7 +28,6 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "ConsoleHistory.h"
 
-#define CONSOLE_FONT_SCALE				0.24f
 #undef SMALLCHAR_WIDTH
 #define SMALLCHAR_WIDTH 7
 

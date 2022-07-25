@@ -90,6 +90,8 @@ extern HWND			com_hwndMsg;
 extern bool			com_outputMsg;
 #endif
 
+#define CONSOLE_FONT_SCALE				0.24f
+
 struct MemInfo_t {
 	idStr			filebase;
 
