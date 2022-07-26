@@ -238,6 +238,9 @@ void idRenderWorldCommitted::AddModelAndLightRefs(void) {
 		if (renderWorldFrontEnd->entityDefs[i] == nullptr)
 			continue;
 
+		if(renderWorldFrontEnd->entityDefs[i]->parms.hModel->IsDefaultModel())
+			continue;
+
 		// remove decals that are completely faded away
 		renderWorldFrontEnd->entityDefs[i]->FreeEntityDefFadedDecals(tr.viewDef->renderView.time);
 
