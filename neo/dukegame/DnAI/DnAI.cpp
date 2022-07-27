@@ -387,6 +387,11 @@ bool DnAI::Pain(idEntity* inflictor, idEntity* attacker, int damage, const idVec
 {
 	if (idMath::FRandRange(1.0f, 10.0f) < 5.0f)
 	{
+		if (target == nullptr)
+		{
+			target = (idActor *)attacker;
+		}
+
 		Event_StopMove();
 		Event_SetState("state_ShootEnemy");
 		AI_PAIN = true;
