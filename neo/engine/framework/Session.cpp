@@ -1656,7 +1656,7 @@ void idSessionLocal::ExecuteMapChange( bool noFadeWipe ) {
 	// actually purge/load the media
 	if ( !reloadingSameMap ) {
 		renderSystem->EndLevelLoad();
-		soundSystem->EndLevelLoad( mapString.c_str() );
+		soundSystem->EndLevelLoad();
 		declManager->EndLevelLoad();
 		SetBytesNeededForMapLoad( mapString.c_str(), fileSystem->GetReadCount() );
 	}
@@ -2536,7 +2536,7 @@ void idSessionLocal::RunSessionTic(void)
 	// nothing useful for it to do.
 	while (1) {
 		// jmarshall - remove async thread.
-		extern idCVar com_timescale;
+		extern idCVar timescale;
 		int	msec = Sys_Milliseconds();
 		if (!lastTicMsec) {
 			lastTicMsec = msec - USERCMD_MSEC;
@@ -2545,7 +2545,7 @@ void idSessionLocal::RunSessionTic(void)
 		int ticMsec = USERCMD_MSEC;
 
 		// the number of msec per tic can be varies with the timescale cvar
-		float _timescale = com_timescale.GetFloat();
+		float _timescale = timescale.GetFloat();
 		if (_timescale != 1.0f) {
 			ticMsec /= _timescale;
 			if (ticMsec < 1) {
@@ -2580,11 +2580,6 @@ idSessionLocal::Frame
 ===============
 */
 void idSessionLocal::Frame() {
-
-	if ( com_asyncSound.GetInteger() == 0 ) {
-		soundSystem->AsyncUpdate( Sys_Milliseconds() );
-	}
-
 	// Editors that completely take over the game
 	if ( com_editorActive && ( com_editors & ( EDITOR_RADIANT | EDITOR_GUI ) ) ) {
 		return;
@@ -2624,6 +2619,8 @@ void idSessionLocal::Frame() {
 	}
 
 	RunSessionTic();
+
+	soundSystem->Render();
 
 	if ( authEmitTimeout ) {
 		// waiting for a game auth

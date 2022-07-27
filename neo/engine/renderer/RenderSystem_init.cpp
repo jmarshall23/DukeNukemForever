@@ -1676,7 +1676,7 @@ void R_VidRestart_f( const idCmdArgs &args ) {
 
 	if ( full ) {
 		// free all of our texture numbers
-		soundSystem->ShutdownHW();
+		soundSystem->Shutdown();
 		Sys_ShutdownInput();
 		globalImages->PurgeAllImages();
 		// free the context and close the window

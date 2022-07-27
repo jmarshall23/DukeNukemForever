@@ -121,7 +121,6 @@ file(GLOB engineSourceFiles
     "engine/models/skeletal/*.cpp*"
     "engine/models/static/*.cpp*"
     "engine/navigation/*.cpp*"
-    "engine/openal/*.cpp*"
     "engine/renderer/*.cpp*"
     "engine/renderer/imagetools/*.cpp*"
     "engine/renderer/imagetools/color/*.cpp*"
@@ -129,6 +128,7 @@ file(GLOB engineSourceFiles
     "engine/renderer/jobs/render/*.cpp*"
     "engine/threads/*.cpp*"
     "engine/sound/*.cpp*"
+    "engine/sound/XAudio2/*.cpp*"
     "engine/sys/*.cpp*"
     "engine/sys/win32/*.cpp*" 
     "engine/ui/*.cpp*"
@@ -156,10 +156,8 @@ file(GLOB toolSourceFiles
 file(GLOB engineDependFiles
     "engine/external/glew/*.c*"
     "engine/external/mikktspace/*.c*"
-    "engine/sound/vorbissrc/*.c*"
-    "engine/sound/vorbis/*.c*"
-    "engine/sound/OggVorbis/oggsrc/*.c*"
-    "engine/sound/OggVorbis/vorbissrc/*.c*"
+    "engine/external/OggVorbis/oggsrc/*.c*"
+    "engine/external/OggVorbis/vorbissrc/*.c*"
 ) 
   
 set(src_imgui
@@ -185,6 +183,7 @@ set_target_properties(engineExternal PROPERTIES LINK_FLAGS "/PDB:\"engineExterna
 add_executable(DukeNukemForever ${engineSourceFiles} ${toolSourceFiles} ./engine/sys/win32/rc/doom.rc)
 target_compile_definitions(DukeNukemForever PUBLIC -D__DOOM_DLL__)
 add_dependencies(DukeNukemForever game)
+target_include_directories(DukeNukemForever PUBLIC engine/external/minidx9/include/)
 target_link_directories(DukeNukemForever PUBLIC engine/external/bink/)
 target_link_libraries(DukeNukemForever idLib engineExternal delayimp.lib opengl32.lib binkw32.lib dinput8.lib dxguid.lib winmm.lib wsock32.lib dsound.lib glu32.lib dbghelp.lib iphlpapi.lib)
 target_precompile_headers(DukeNukemForever PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/idlib/precompiled.h)

@@ -74,7 +74,7 @@ bool dnGameLocal::Draw(int clientNum) {
 	idUserInterface* hud = player->hud;
 
 	// place the sound origin for the player
-	gameSoundWorld->PlaceListener(view->vieworg, view->viewaxis, player->entityNumber + 1, gameLocal.slow.time, hud ? hud->State().GetString("location") : "Undefined");
+	gameSoundWorld->PlaceListener(view->vieworg, view->viewaxis, player->entityNumber + 1);
 
 	// Ensure out render targets are the right size.
 	renderPlatform.frontEndPassRenderTarget->Resize(renderSystem->GetScreenWidth(), renderSystem->GetScreenHeight());

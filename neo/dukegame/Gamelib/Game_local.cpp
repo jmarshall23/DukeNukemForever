@@ -885,7 +885,7 @@ void idGameLocal::LoadMap( const char *mapName, int randseed ) {
 #ifdef _D3XP
 	// clear envirosuit sound fx
 	gameSoundWorld->SetEnviroSuit( false );
-	gameSoundWorld->SetSlowmo( false );
+	//gameSoundWorld->SetSlowmo( false );
 #endif
 
 	InitAsyncNetwork();
@@ -1022,7 +1022,7 @@ void idGameLocal::LocalMapRestart( ) {
 #ifdef _D3XP
 		// clear envirosuit sound fx
 		gameSoundWorld->SetEnviroSuit( false );
-		gameSoundWorld->SetSlowmo( false );
+	//	gameSoundWorld->SetSlowmo( false );
 #endif
 	}
 
@@ -1454,12 +1454,12 @@ bool idGameLocal::InitFromSaveGame( const char *mapName, idRenderWorld *renderWo
 
 	if ( slowmoState == SLOWMO_STATE_OFF ) {
 		if ( gameSoundWorld ) {
-			gameSoundWorld->SetSlowmo( false );
+			//gameSoundWorld->SetSlowmo( false );
 		}
 	}
 	else {
 		if ( gameSoundWorld ) {
-			gameSoundWorld->SetSlowmo( true );
+			//gameSoundWorld->SetSlowmo( true );
 		}
 	}
 	if ( gameSoundWorld ) {
@@ -4574,7 +4574,7 @@ void idGameLocal::ComputeSlowMsec() {
 
 		// stop the sounds
 		if ( gameSoundWorld ) {
-			gameSoundWorld->SetSlowmo( false );
+//			gameSoundWorld->SetSlowmo( false );
 			gameSoundWorld->SetSlowmoSpeed( 1 );
 		}
 
@@ -4600,7 +4600,7 @@ void idGameLocal::ComputeSlowMsec() {
 
 		slowmoMsec = msec;
 		if ( gameSoundWorld ) {
-			gameSoundWorld->SetSlowmo( true );
+		//	gameSoundWorld->SetSlowmo( true );
 			gameSoundWorld->SetSlowmoSpeed( slowmoMsec / (float)USERCMD_MSEC );
 		}
 	}
@@ -4636,7 +4636,7 @@ void idGameLocal::ComputeSlowMsec() {
 			slowmoMsec = 16;
 			slowmoState = SLOWMO_STATE_OFF;
 			if ( gameSoundWorld ) {
-				gameSoundWorld->SetSlowmo( false );
+			//	gameSoundWorld->SetSlowmo( false );
 			}
 		}
 		else {

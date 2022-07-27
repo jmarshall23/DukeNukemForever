@@ -75,7 +75,7 @@ idCVar com_showMemoryUsage( "com_showMemoryUsage", "0", CVAR_BOOL|CVAR_SYSTEM|CV
 idCVar com_showAsyncStats( "com_showAsyncStats", "0", CVAR_BOOL|CVAR_SYSTEM|CVAR_NOCHEAT, "show async network stats" );
 idCVar com_showSoundDecoders( "com_showSoundDecoders", "0", CVAR_BOOL|CVAR_SYSTEM|CVAR_NOCHEAT, "show sound decoders" );
 idCVar com_timestampPrints( "com_timestampPrints", "0", CVAR_SYSTEM, "print time with each console print, 1 = msec, 2 = sec", 0, 2, idCmdSystem::ArgCompletion_Integer<0,2> );
-idCVar com_timescale( "timescale", "1", CVAR_SYSTEM | CVAR_FLOAT, "scales the time", 0.1f, 10.0f );
+idCVar timescale( "timescale", "1", CVAR_SYSTEM | CVAR_FLOAT, "scales the time", 0.1f, 10.0f );
 idCVar com_logFile( "logFile", "0", CVAR_SYSTEM | CVAR_NOCHEAT, "1 = buffer log, 2 = flush after each print", 0, 2, idCmdSystem::ArgCompletion_Integer<0,2> );
 idCVar com_logFileName( "logFileName", "qconsole.log", CVAR_SYSTEM | CVAR_NOCHEAT, "name of log file, if empty, qconsole.log will be used" );
 idCVar com_makingBuild( "com_makingBuild", "0", CVAR_BOOL | CVAR_SYSTEM, "1 when making a build" );
@@ -2523,7 +2523,7 @@ void idCommonLocal::Frame( void ) {
 			// rate is very very low, limit the number of frames we will run
 			const int clampedDeltaMilliseconds = min(deltaMilliseconds, com_deltaTimeClamp.GetInteger());
 
-			gameTimeResidual += clampedDeltaMilliseconds * com_timescale.GetFloat();
+			gameTimeResidual += clampedDeltaMilliseconds * timescale.GetFloat();
 
 			// don't run any frames when paused
 			//if (pauseGame) {
@@ -2597,7 +2597,7 @@ void idCommonLocal::Frame( void ) {
 			session->UpdateScreen( false );
 		}
 
-		soundSystem->AsyncUpdate(Sys_Milliseconds());
+		//soundSystem->AsyncUpdate(Sys_Milliseconds());
 
 		// report timing information
 		if ( com_speeds.GetBool() ) {
@@ -3102,7 +3102,6 @@ void idCommonLocal::ShutdownGame( bool reloading ) {
 	if ( sw ) {
 		sw->StopAllSounds();
 	}
-	soundSystem->ClearBuffer();
 
 	// shutdown the script debugger
 	// DebuggerServerShutdown();

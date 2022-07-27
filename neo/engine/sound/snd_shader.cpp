@@ -1,53 +1,44 @@
 /*
 ===========================================================================
 
-Doom 3 GPL Source Code
-Copyright (C) 1999-2011 id Software LLC, a ZeniMax Media company. 
+Doom 3 BFG Edition GPL Source Code
+Copyright (C) 1993-2012 id Software LLC, a ZeniMax Media company. 
 
-This file is part of the Doom 3 GPL Source Code (?Doom 3 Source Code?).  
+This file is part of the Doom 3 BFG Edition GPL Source Code ("Doom 3 BFG Edition Source Code").  
 
-Doom 3 Source Code is free software: you can redistribute it and/or modify
+Doom 3 BFG Edition Source Code is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-Doom 3 Source Code is distributed in the hope that it will be useful,
+Doom 3 BFG Edition Source Code is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with Doom 3 Source Code.  If not, see <http://www.gnu.org/licenses/>.
+along with Doom 3 BFG Edition Source Code.  If not, see <http://www.gnu.org/licenses/>.
 
-In addition, the Doom 3 Source Code is also subject to certain additional terms. You should have received a copy of these additional terms immediately following the terms and conditions of the GNU General Public License which accompanied the Doom 3 Source Code.  If not, please request a copy in writing from id Software at the address below.
+In addition, the Doom 3 BFG Edition Source Code is also subject to certain additional terms. You should have received a copy of these additional terms immediately following the terms and conditions of the GNU General Public License which accompanied the Doom 3 BFG Edition Source Code.  If not, please request a copy in writing from id Software at the address below.
 
 If you have questions concerning this license or the applicable additional terms, you may contact in writing id Software LLC, c/o ZeniMax Media Inc., Suite 120, Rockville, Maryland 20850 USA.
 
 ===========================================================================
 */
 
-
-#pragma hdrstop
-
 #include "snd_local.h"
 
+extern idCVar s_maxSamples;
 
 /*
 ===============
 idSoundShader::Init
 ===============
 */
-void idSoundShader::Init( void ) {
-	desc = "<no description>";
-	errorDuringParse = false;
-	onDemand = false;
-	numEntries = 0;
-	numLeadins = 0;
+void idSoundShader::Init() {
+	leadin = false;
 	leadinVolume = 0;
 	altSound = NULL;
-// jmarshall
-	isDukeVoice = false;
-// jmarshall end
 }
 
 /*
@@ -55,7 +46,7 @@ void idSoundShader::Init( void ) {
 idSoundShader::idSoundShader
 ===============
 */
-idSoundShader::idSoundShader( void ) {
+idSoundShader::idSoundShader() {
 	Init();
 }
 
@@ -64,7 +55,7 @@ idSoundShader::idSoundShader( void ) {
 idSoundShader::~idSoundShader
 ===============
 */
-idSoundShader::~idSoundShader( void ) {
+idSoundShader::~idSoundShader() {
 }
 
 /*
@@ -72,7 +63,7 @@ idSoundShader::~idSoundShader( void ) {
 idSoundShader::Size
 =================
 */
-size_t idSoundShader::Size( void ) const {
+size_t idSoundShader::Size() const {
 	return sizeof( idSoundShader );
 }
 
@@ -82,8 +73,6 @@ idSoundShader::idSoundShader::FreeData
 ===============
 */
 void idSoundShader::FreeData() {
-	numEntries = 0;
-	numLeadins = 0;
 }
 
 /*
@@ -91,7 +80,7 @@ void idSoundShader::FreeData() {
 idSoundShader::SetDefaultText
 ===================
 */
-bool idSoundShader::SetDefaultText( void ) {
+bool idSoundShader::SetDefaultText() {
 	idStr wavname;
 
 	wavname = GetName();
@@ -138,10 +127,7 @@ bool idSoundShader::Parse( const char *text, const int textLength ) {
 	src.SetFlags( DECL_LEXER_FLAGS );
 	src.SkipUntilString( "{" );
 
-	// deeper functions can set this, which will cause MakeDefault() to be called at the end
-	errorDuringParse = false;
-
-	if ( !ParseShader( src ) || errorDuringParse ) {
+	if ( !ParseShader( src ) ) {
 		MakeDefault();
 		return false;
 	}
@@ -154,7 +140,6 @@ idSoundShader::ParseShader
 ===============
 */
 bool idSoundShader::ParseShader( idLexer &src ) {
-	int			i;
 	idToken		token;
 
 	parms.minDistance = 1;
@@ -163,21 +148,12 @@ bool idSoundShader::ParseShader( idLexer &src ) {
 	parms.shakes = 0;
 	parms.soundShaderFlags = 0;
 	parms.soundClass = 0;
+	parms.isDukeVoice = false;
 
 	speakerMask = 0;
 	altSound = NULL;
 
-	for( i = 0; i < SOUND_MAX_LIST_WAVS; i++ ) {
-		leadins[i] = NULL;
-		entries[i] = NULL;
-	}
-	numEntries = 0;
-	numLeadins = 0;
-
-	int	maxSamples = idSoundSystemLocal::s_maxSoundsPerShader.GetInteger();
-	if ( com_makingBuild.GetBool() || maxSamples <= 0 || maxSamples > SOUND_MAX_LIST_WAVS ) {
-		maxSamples = SOUND_MAX_LIST_WAVS;
-	}
+	entries.Clear();
 
 	while ( 1 ) {
 		if ( !src.ExpectAnyToken( &token ) ) {
@@ -189,16 +165,15 @@ bool idSoundShader::ParseShader( idLexer &src ) {
 		}
 		// minimum number of sounds
 		else if ( !token.Icmp( "minSamples" ) ) {
-			maxSamples = idMath::ClampInt( src.ParseInt(), SOUND_MAX_LIST_WAVS, maxSamples );
+			src.ParseInt();
 		}
 		// description
 		else if ( !token.Icmp( "description" ) ) {
 			src.ReadTokenOnLine( &token );
-			desc = token.c_str();
 		}
 // jmarshall
 		else if (!token.Icmp("dukevoice")) {
-			isDukeVoice = true;
+			parms.isDukeVoice = true;
 		}
 // jmarshall end
 		// mindistance
@@ -221,12 +196,12 @@ bool idSoundShader::ParseShader( idLexer &src ) {
 		}
 		// reverb
 		else if ( !token.Icmp( "reverb" ) ) {
-			int reg0 = src.ParseFloat();
+			src.ParseFloat();
 			if ( !src.ExpectTokenString( "," ) ) {
 				src.FreeSource();
 				return false;
 			}
-			int reg1 = src.ParseFloat();
+			src.ParseFloat();
 			// no longer supported
 		}
 		// volume
@@ -236,6 +211,7 @@ bool idSoundShader::ParseShader( idLexer &src ) {
 		// leadinVolume is used to allow light breaking leadin sounds to be much louder than the broken loop
 		else if ( !token.Icmp( "leadinVolume" ) ) {
 			leadinVolume = src.ParseFloat();
+			leadin = true;
 		}
 		// speaker mask
 		else if ( !token.Icmp( "mask_center" ) ) {
@@ -324,45 +300,22 @@ bool idSoundShader::ParseShader( idLexer &src ) {
 		else if ( !token.Icmp( "omnidirectional" ) ) {
 			parms.soundShaderFlags |= SSF_OMNIDIRECTIONAL;
 		}
-		// onDemand can't be a parms, because we must track all references and overrides would confuse it
 		else if ( !token.Icmp( "onDemand" ) ) {
 			// no longer loading sounds on demand
-			//onDemand = true;
 		}
-
 		// the wave files
 		else if ( !token.Icmp( "leadin" ) ) {
-			// add to the leadin list
-			if ( !src.ReadToken( &token ) ) {
-				src.Warning( "Expected sound after leadin" );
-				return false;
-			}
-			if ( soundSystemLocal.soundCache && numLeadins < maxSamples ) {
-				leadins[ numLeadins ] = soundSystemLocal.soundCache->FindSound( token.c_str(), onDemand );
-				numLeadins++;
-			}
+			leadin = true;
 		} else if ( token.Find( ".wav", false ) != -1 || token.Find( ".ogg", false ) != -1 ) {
+			if ( token.IcmpPrefixPath( "sound/vo/" ) == 0 || token.IcmpPrefixPath( "sound/guis/" ) == 0 ) {
+				parms.soundShaderFlags |= SSF_VO;
+			}
+			if ( token.IcmpPrefixPath( "sound/musical/" ) == 0 ) {
+				parms.soundShaderFlags |= SSF_MUSIC;
+			}
 			// add to the wav list
-			if ( soundSystemLocal.soundCache && numEntries < maxSamples ) {
-				token.BackSlashesToSlashes();
-				idStr lang = cvarSystem->GetCVarString( "sys_lang" );
-				if ( lang.Icmp( "english" ) != 0 && token.Find( "sound/vo/", false ) >= 0 ) {
-					idStr work = token;
-					work.ToLower();
-					work.StripLeading( "sound/vo/" );
-					work = va( "sound/vo/%s/%s", lang.c_str(), work.c_str() );
-					if ( fileSystem->ReadFile( work, NULL, NULL ) > 0 ) {
-						token = work;
-					} else {
-						// also try to find it with the .ogg extension
-						work.SetFileExtension( ".ogg" );
-						if ( fileSystem->ReadFile( work, NULL, NULL ) > 0 ) {
-							token = work;
-						}
-					}
-				} 					
-				entries[ numEntries ] = soundSystemLocal.soundCache->FindSound( token.c_str(), onDemand );
-				numEntries++;
+			if ( s_maxSamples.GetInteger() == 0 || ( s_maxSamples.GetInteger() > 0 && entries.Num() < s_maxSamples.GetInteger() ) ) {
+				entries.Append( soundSystemLocal.LoadSample( token.c_str() ) );
 			}
 		} else {
 			src.Warning( "unknown token '%s'", token.c_str() );
@@ -370,37 +323,7 @@ bool idSoundShader::ParseShader( idLexer &src ) {
 		}
 	}
 
-	if ( parms.shakes > 0.0f ) {
-		CheckShakesAndOgg();
-	}
-
 	return true;
-}
-
-/*
-===============
-idSoundShader::CheckShakesAndOgg
-===============
-*/
-bool idSoundShader::CheckShakesAndOgg( void ) const {
-	int i;
-	bool ret = false;
-
-	for ( i = 0; i < numLeadins; i++ ) {
-		if ( leadins[ i ]->objectInfo.wFormatTag == WAVE_FORMAT_TAG_OGG ) {
-			common->Warning( "sound shader '%s' has shakes and uses OGG file '%s'",
-								GetName(), leadins[ i ]->name.c_str() );
-			ret = true;
-		}
-	}
-	for ( i = 0; i < numEntries; i++ ) {
-		if ( entries[ i ]->objectInfo.wFormatTag == WAVE_FORMAT_TAG_OGG ) {
-			common->Warning( "sound shader '%s' has shakes and uses OGG file '%s'",
-								GetName(), entries[ i ]->name.c_str() );
-			ret = true;
-		}
-	}
-	return ret;
 }
 
 /*
@@ -412,21 +335,10 @@ void idSoundShader::List() const {
 	idStrList	shaders;
 
 	common->Printf( "%4i: %s\n", Index(), GetName() );
-	if ( idStr::Icmp( GetDescription(), "<no description>" ) != 0 ) {
-		common->Printf( "      description: %s\n", GetDescription() );
-	}
-	for( int k = 0; k < numLeadins ; k++ ) {
-		const idSoundSample *objectp = leadins[k];
-		if ( objectp ) {
-			common->Printf( "      %5dms %4dKb %s (LEADIN)\n", soundSystemLocal.SamplesToMilliseconds(objectp->LengthIn44kHzSamples()), (objectp->objectMemSize/1024)
-				,objectp->name.c_str() );
-		}
-	}
-	for( int k = 0; k < numEntries; k++ ) {
+	for( int k = 0; k < entries.Num(); k++ ) {
 		const idSoundSample *objectp = entries[k];
 		if ( objectp ) {
-			common->Printf( "      %5dms %4dKb %s\n", soundSystemLocal.SamplesToMilliseconds(objectp->LengthIn44kHzSamples()), (objectp->objectMemSize/1024)
-				,objectp->name.c_str() );
+			common->Printf( "      %5dms %4dKb %s\n", objectp->LengthInMsec(), (objectp->BufferSize()/1024), objectp->GetName() );
 		}
 	}
 }
@@ -436,7 +348,7 @@ void idSoundShader::List() const {
 idSoundShader::GetAltSound
 ===============
 */
-const idSoundShader *idSoundShader::GetAltSound( void ) const {
+const idSoundShader *idSoundShader::GetAltSound() const {
 	return altSound;
 }
 
@@ -460,21 +372,12 @@ float idSoundShader::GetMaxDistance() const {
 
 /*
 ===============
-idSoundShader::GetDescription
-===============
-*/
-const char *idSoundShader::GetDescription() const {
-	return desc;
-}
-
-/*
-===============
 idSoundShader::HasDefaultSound
 ===============
 */
 bool idSoundShader::HasDefaultSound() const {
-	for ( int i = 0; i < numEntries; i++ ) {
-		if ( entries[i] && entries[i]->defaultSound ) {
+	for ( int i = 0; i < entries.Num(); i++ ) {
+		if ( entries[i] && entries[i]->IsDefault() ) {
 			return true;
 		}
 	}
@@ -496,7 +399,7 @@ idSoundShader::GetNumSounds
 ===============
 */
 int idSoundShader::GetNumSounds() const {
-	return numLeadins + numEntries;
+	return entries.Num();
 }
 
 /*
@@ -505,14 +408,8 @@ idSoundShader::GetSound
 ===============
 */
 const char *idSoundShader::GetSound( int index ) const {
-	if ( index >= 0 ) {
-		if ( index < numLeadins ) {
-			return leadins[index]->name.c_str();
-		}
-		index -= numLeadins;
-		if ( index < numEntries ) {
-			return entries[index]->name.c_str();
-		}
+	if ( index >= 0 && index < entries.Num() ) {
+		return entries[index]->GetName();
 	}
 	return "";
 }

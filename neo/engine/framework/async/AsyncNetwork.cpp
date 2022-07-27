@@ -318,7 +318,7 @@ void idAsyncNetwork::SpawnServer_f( const idCmdArgs &args ) {
 				renderSystem->ShutdownOpenGL();
 			}
 			soundSystem->SetMute( true );
-			soundSystem->ShutdownHW();
+			soundSystem->Shutdown();
 			break;
 	}
 	// use serverMapRestart if we already have a running server
