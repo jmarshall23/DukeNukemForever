@@ -396,15 +396,13 @@ idSoundSample * idSoundSystemLocal::LoadSample( const char * name ) {
 	idSoundSample * sample = new idSoundSample;
 	sample->SetName( canonical );
 	sampleHash.Add( hashKey, samples.Append( sample ) );
-	//if ( !insideLevelLoad ) {
-	//	// Sound sample referenced before any map is loaded
-	//	sample->SetNeverPurge();
-	//	sample->LoadResource();
-	//} else {
-	//	sample->SetLevelLoadReferenced();
-	//}
-	sample->SetNeverPurge();
-	sample->LoadResource();
+	if ( !insideLevelLoad ) {
+		// Sound sample referenced before any map is loaded
+		sample->SetNeverPurge();
+		sample->LoadResource();
+	} else {
+		sample->SetLevelLoadReferenced();
+	}
 
 	//if ( cvarSystem->GetCVarBool( "fs_buildgame" ) ) {
 	//	fileSystem->AddSamplePreload( canonical );
@@ -485,6 +483,20 @@ void idSoundSystemLocal::EndLevelLoad() {
 	int		start = Sys_Milliseconds();
 	int		keepCount = 0;
 	int		loadCount = 0;
+
+	for (int i = 0; i < samples.Num(); i++) {
+		if (samples[i]->GetNeverPurge()) {
+			continue;
+		}
+		if (samples[i]->IsLoaded()) {
+			keepCount++;
+			continue;
+		}
+		if (samples[i]->GetLevelLoadReferenced()) {
+			samples[i]->LoadResource();			
+			loadCount++;
+		}
+	}
 
 	int	end = Sys_Milliseconds();
 
